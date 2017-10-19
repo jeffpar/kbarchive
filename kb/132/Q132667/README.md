@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132667: Icon Spacing Does Not Take Effect Automatically"
-permalink: kb/132/Q132667/
+permalink: /kb/132/Q132667/
 ---
 
 ## Q132667: Icon Spacing Does Not Take Effect Automatically

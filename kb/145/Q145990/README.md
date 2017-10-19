@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145990: Windows 95 Update Information Tool (Qfecheck.exe)"
-permalink: kb/145/Q145990/
+permalink: /kb/145/Q145990/
 ---
 
 ## Q145990: Windows 95 Update Information Tool (Qfecheck.exe)

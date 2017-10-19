@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148511: INFO: Default Content of the Srcsafe.ini File"
-permalink: kb/148/Q148511/
+permalink: /kb/148/Q148511/
 ---
 
 ## Q148511: INFO: Default Content of the Srcsafe.ini File

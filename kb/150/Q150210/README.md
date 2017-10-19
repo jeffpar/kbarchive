@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150210: FIX: DBCombo Control Does Not Allow Selection on Modal Form"
-permalink: kb/150/Q150210/
+permalink: /kb/150/Q150210/
 ---
 
 ## Q150210: FIX: DBCombo Control Does Not Allow Selection on Modal Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294905: SMS: Build 698 or Later Is Required to Use the Advertview Tool"
-permalink: kb/294/Q294905/
+permalink: /kb/294/Q294905/
 ---
 
 ## Q294905: SMS: Build 698 or Later Is Required to Use the Advertview Tool

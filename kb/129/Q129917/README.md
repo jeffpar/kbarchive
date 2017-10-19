@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129917: How to Determine Which Tables Exist in a DBC"
-permalink: kb/129/Q129917/
+permalink: /kb/129/Q129917/
 ---
 
 ## Q129917: How to Determine Which Tables Exist in a DBC

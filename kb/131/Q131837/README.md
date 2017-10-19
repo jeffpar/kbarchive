@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131837: How to Return from an Event or Method"
-permalink: kb/131/Q131837/
+permalink: /kb/131/Q131837/
 ---
 
 ## Q131837: How to Return from an Event or Method

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236128: Deleting the Last User Privilege Deletes the Group Object"
-permalink: kb/236/Q236128/
+permalink: /kb/236/Q236128/
 ---
 
 ## Q236128: Deleting the Last User Privilege Deletes the Group Object

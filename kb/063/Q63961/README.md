@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63961: Exaggerated Mouse Tracking With Logitech 9 on Toshiba"
-permalink: kb/063/Q63961/
+permalink: /kb/063/Q63961/
 ---
 
 ## Q63961: Exaggerated Mouse Tracking With Logitech 9 on Toshiba

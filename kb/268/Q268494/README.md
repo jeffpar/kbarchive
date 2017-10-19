@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268494: XFOR: Messages Stuck in Outbound Waiting Delivery Queue in IMS"
-permalink: kb/268/Q268494/
+permalink: /kb/268/Q268494/
 ---
 
 ## Q268494: XFOR: Messages Stuck in Outbound Waiting Delivery Queue in IMS

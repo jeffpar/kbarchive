@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196313: XFOR: Calendar Connector Reports Error Event 5010"
-permalink: kb/196/Q196313/
+permalink: /kb/196/Q196313/
 ---
 
 ## Q196313: XFOR: Calendar Connector Reports Error Event 5010

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132633: Installing Lotus Notes Over a Network"
-permalink: kb/132/Q132633/
+permalink: /kb/132/Q132633/
 ---
 
 ## Q132633: Installing Lotus Notes Over a Network

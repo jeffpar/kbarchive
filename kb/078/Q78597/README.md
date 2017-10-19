@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78597: MS-DOS 5.0 or Later May Require a ROM BIOS Upgrade"
-permalink: kb/078/Q78597/
+permalink: /kb/078/Q78597/
 ---
 
 ## Q78597: MS-DOS 5.0 or Later May Require a ROM BIOS Upgrade

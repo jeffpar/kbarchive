@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190168: XCLN: Outlook Client Dials Incorrect Connectoid When Syncing"
-permalink: kb/190/Q190168/
+permalink: /kb/190/Q190168/
 ---
 
 ## Q190168: XCLN: Outlook Client Dials Incorrect Connectoid When Syncing

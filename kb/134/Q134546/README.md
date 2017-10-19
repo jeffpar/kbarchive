@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134546: Erratic Mouse Behavior in Programs in Full-Screen Text Mode"
-permalink: kb/134/Q134546/
+permalink: /kb/134/Q134546/
 ---
 
 ## Q134546: Erratic Mouse Behavior in Programs in Full-Screen Text Mode

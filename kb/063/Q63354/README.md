@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63354: Logitech DOS Mouse Driver 4.1 Required with Windows 3.0"
-permalink: kb/063/Q63354/
+permalink: /kb/063/Q63354/
 ---
 
 ## Q63354: Logitech DOS Mouse Driver 4.1 Required with Windows 3.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168042: PRB: Distributed Setup Requires Admin Privileges on Windows NT"
-permalink: kb/168/Q168042/
+permalink: /kb/168/Q168042/
 ---
 
 ## Q168042: PRB: Distributed Setup Requires Admin Privileges on Windows NT

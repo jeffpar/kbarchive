@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232383: XGEN: The Exchange Server 5.5 Evaluation and Migration Kit"
-permalink: kb/232/Q232383/
+permalink: /kb/232/Q232383/
 ---
 
 ## Q232383: XGEN: The Exchange Server 5.5 Evaluation and Migration Kit

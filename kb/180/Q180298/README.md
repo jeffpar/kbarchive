@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180298: Setup of Windows NT MMTA on Windows NT 4.0 Does Not Complete"
-permalink: kb/180/Q180298/
+permalink: /kb/180/Q180298/
 ---
 
 ## Q180298: Setup of Windows NT MMTA on Windows NT 4.0 Does Not Complete

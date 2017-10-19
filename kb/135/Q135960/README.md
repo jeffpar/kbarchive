@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135960: Compressed Drive Not Automatically Mounted"
-permalink: kb/135/Q135960/
+permalink: /kb/135/Q135960/
 ---
 
 ## Q135960: Compressed Drive Not Automatically Mounted

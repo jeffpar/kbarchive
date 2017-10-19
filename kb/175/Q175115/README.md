@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175115: XADM: Err Msg: There is Something Wrong with the INI File"
-permalink: kb/175/Q175115/
+permalink: /kb/175/Q175115/
 ---
 
 ## Q175115: XADM: Err Msg: There is Something Wrong with the INI File

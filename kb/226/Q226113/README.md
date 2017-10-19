@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226113: SMS: Client Does Not Use Existing Connection for CAP or DP"
-permalink: kb/226/Q226113/
+permalink: /kb/226/Q226113/
 ---
 
 ## Q226113: SMS: Client Does Not Use Existing Connection for CAP or DP

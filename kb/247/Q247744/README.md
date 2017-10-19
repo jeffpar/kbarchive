@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247744: Fighter Ace II: Polygon-Shaped Outlines Visible on Flap Textures"
-permalink: kb/247/Q247744/
+permalink: /kb/247/Q247744/
 ---
 
 ## Q247744: Fighter Ace II: Polygon-Shaped Outlines Visible on Flap Textures

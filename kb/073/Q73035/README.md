@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73035: Onboard System Memory Cache May Affect Profile Times"
-permalink: kb/073/Q73035/
+permalink: /kb/073/Q73035/
 ---
 
 ## Q73035: Onboard System Memory Cache May Affect Profile Times

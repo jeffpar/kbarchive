@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75129: Stacker Coprocessor Card with MS-DOS 5.0 and EMM386.EXE"
-permalink: kb/075/Q75129/
+permalink: /kb/075/Q75129/
 ---
 
 ## Q75129: Stacker Coprocessor Card with MS-DOS 5.0 and EMM386.EXE

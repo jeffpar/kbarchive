@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145702: PC Card Services Unavailable on Dell Latitude XP Notebook"
-permalink: kb/145/Q145702/
+permalink: /kb/145/Q145702/
 ---
 
 ## Q145702: PC Card Services Unavailable on Dell Latitude XP Notebook

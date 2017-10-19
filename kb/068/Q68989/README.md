@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68989: FIX: HELPMAKE Decodes Help Database Incorrectly"
-permalink: kb/068/Q68989/
+permalink: /kb/068/Q68989/
 ---
 
 ## Q68989: FIX: HELPMAKE Decodes Help Database Incorrectly

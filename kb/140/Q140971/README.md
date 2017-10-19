@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140971: WINS Service Generates a System Error 1 Incorrect Function"
-permalink: kb/140/Q140971/
+permalink: /kb/140/Q140971/
 ---
 
 ## Q140971: WINS Service Generates a System Error 1 Incorrect Function

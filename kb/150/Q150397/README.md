@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150397: Error Message: This Path Does Not Exist"
-permalink: kb/150/Q150397/
+permalink: /kb/150/Q150397/
 ---
 
 ## Q150397: Error Message: This Path Does Not Exist

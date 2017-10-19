@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267861: MS00-095: RAS Registry Modification Allowed Without Administrati"
-permalink: kb/267/Q267861/
+permalink: /kb/267/Q267861/
 ---
 
 ## Q267861: MS00-095: RAS Registry Modification Allowed Without Administrati

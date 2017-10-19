@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305586: FIX: Err Msg When You Attach Visual C++ Debugger to a Process"
-permalink: kb/305/Q305586/
+permalink: /kb/305/Q305586/
 ---
 
 ## Q305586: FIX: Err Msg When You Attach Visual C++ Debugger to a Process

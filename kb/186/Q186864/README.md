@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186864: XWEB: Text Indented Incorrectly When Replying to Message in OWA"
-permalink: kb/186/Q186864/
+permalink: /kb/186/Q186864/
 ---
 
 ## Q186864: XWEB: Text Indented Incorrectly When Replying to Message in OWA

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171777: Getadmin.exe Causes a STOP 0xC000021A"
-permalink: kb/171/Q171777/
+permalink: /kb/171/Q171777/
 ---
 
 ## Q171777: Getadmin.exe Causes a STOP 0xC000021A

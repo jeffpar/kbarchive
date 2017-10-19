@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268309: HOWTO: Associate an Icon with an eVB Application"
-permalink: kb/268/Q268309/
+permalink: /kb/268/Q268309/
 ---
 
 ## Q268309: HOWTO: Associate an Icon with an eVB Application

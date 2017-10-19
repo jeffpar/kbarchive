@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250439: STOP 0x0000000A While Printing in Windows NT 4.0"
-permalink: kb/250/Q250439/
+permalink: /kb/250/Q250439/
 ---
 
 ## Q250439: STOP 0x0000000A While Printing in Windows NT 4.0

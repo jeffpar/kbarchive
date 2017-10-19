@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155085: BUG: 3.0 WAIT WINDOW Display Performance Much Slower than 2.6"
-permalink: kb/155/Q155085/
+permalink: /kb/155/Q155085/
 ---
 
 ## Q155085: BUG: 3.0 WAIT WINDOW Display Performance Much Slower than 2.6

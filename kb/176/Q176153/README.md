@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176153: Bookshelf: Right-click Define Feature Does Not Function"
-permalink: kb/176/Q176153/
+permalink: /kb/176/Q176153/
 ---
 
 ## Q176153: Bookshelf: Right-click Define Feature Does Not Function

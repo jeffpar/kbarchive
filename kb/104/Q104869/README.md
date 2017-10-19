@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q104869: PC Adm: Err Msg: Import Error [72] Fullname Is Too Long"
-permalink: kb/104/Q104869/
+title: "Q104869: PC Adm: Err Msg: Import Error &#91;72&#93; Fullname Is Too Long"
+permalink: /kb/104/Q104869/
 ---
 
-## Q104869: PC Adm: Err Msg: Import Error [72] Fullname Is Too Long
+## Q104869: PC Adm: Err Msg: Import Error &#91;72&#93; Fullname Is Too Long
 
 	Article: Q104869
 	Product(s): Microsoft Mail For PC Networks

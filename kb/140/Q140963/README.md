@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140963: XADM: Error When Deleting a Public Folder Container"
-permalink: kb/140/Q140963/
+permalink: /kb/140/Q140963/
 ---
 
 ## Q140963: XADM: Error When Deleting a Public Folder Container

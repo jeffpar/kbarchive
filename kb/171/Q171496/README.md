@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171496: FIX: Bad Filename or Number with Get of UDT"
-permalink: kb/171/Q171496/
+permalink: /kb/171/Q171496/
 ---
 
 ## Q171496: FIX: Bad Filename or Number with Get of UDT

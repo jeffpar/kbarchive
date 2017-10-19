@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142673: NetWare Drives Become Inaccessible to Certain Applications"
-permalink: kb/142/Q142673/
+permalink: /kb/142/Q142673/
 ---
 
 ## Q142673: NetWare Drives Become Inaccessible to Certain Applications

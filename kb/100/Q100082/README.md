@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100082: Change Icon Title Fonts in Program Manager"
-permalink: kb/100/Q100082/
+permalink: /kb/100/Q100082/
 ---
 
 ## Q100082: Change Icon Title Fonts in Program Manager

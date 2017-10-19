@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155252: Host Name to IP Address Redirection in an IIS URL"
-permalink: kb/155/Q155252/
+permalink: /kb/155/Q155252/
 ---
 
 ## Q155252: Host Name to IP Address Redirection in an IIS URL

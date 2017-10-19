@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264114: PRB: VBCE -  Error Message &quot;INSTWZRD Encountered a Fatal Error&quot;"
-permalink: kb/264/Q264114/
+permalink: /kb/264/Q264114/
 ---
 
 ## Q264114: PRB: VBCE -  Error Message &quot;INSTWZRD Encountered a Fatal Error&quot;

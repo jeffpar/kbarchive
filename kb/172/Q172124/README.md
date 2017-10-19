@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172124: Poledit.exe Not Updated During WinNT SP3 Installation"
-permalink: kb/172/Q172124/
+permalink: /kb/172/Q172124/
 ---
 
 ## Q172124: Poledit.exe Not Updated During WinNT SP3 Installation

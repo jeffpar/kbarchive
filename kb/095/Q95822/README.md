@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95822: Bookshelf: Copied Pronunciations Incorrect"
-permalink: kb/095/Q95822/
+permalink: /kb/095/Q95822/
 ---
 
 ## Q95822: Bookshelf: Copied Pronunciations Incorrect

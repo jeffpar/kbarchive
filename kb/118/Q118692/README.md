@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118692: Printing Output is Always Directed to the Upper Output Tray"
-permalink: kb/118/Q118692/
+permalink: /kb/118/Q118692/
 ---
 
 ## Q118692: Printing Output is Always Directed to the Upper Output Tray

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184493: INFO: Programmer's Guide to Using Index Server Provider in VC++"
-permalink: kb/184/Q184493/
+permalink: /kb/184/Q184493/
 ---
 
 ## Q184493: INFO: Programmer's Guide to Using Index Server Provider in VC++

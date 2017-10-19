@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161118: XCLN: Troubleshooting POP3 Connections to Exchange Server"
-permalink: kb/161/Q161118/
+permalink: /kb/161/Q161118/
 ---
 
 ## Q161118: XCLN: Troubleshooting POP3 Connections to Exchange Server

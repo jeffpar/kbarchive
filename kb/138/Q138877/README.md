@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138877: RAS Authentication Retry Dialog Box Skipped"
-permalink: kb/138/Q138877/
+permalink: /kb/138/Q138877/
 ---
 
 ## Q138877: RAS Authentication Retry Dialog Box Skipped

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186345: STOP 0x00000044 When Running Wait.Exe"
-permalink: kb/186/Q186345/
+permalink: /kb/186/Q186345/
 ---
 
 ## Q186345: STOP 0x00000044 When Running Wait.Exe

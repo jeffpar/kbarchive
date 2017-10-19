@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156087: DOCERR: TABLEUPDATE() Improperly Documented in VFP 5.0 Help"
-permalink: kb/156/Q156087/
+permalink: /kb/156/Q156087/
 ---
 
 ## Q156087: DOCERR: TABLEUPDATE() Improperly Documented in VFP 5.0 Help

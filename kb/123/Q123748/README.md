@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123748: SNA Server Err Msg: Event 23, Outage Code &quot;2D&quot; (Abnormal Resp.)"
-permalink: kb/123/Q123748/
+permalink: /kb/123/Q123748/
 ---
 
 ## Q123748: SNA Server Err Msg: Event 23, Outage Code &quot;2D&quot; (Abnormal Resp.)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146005: Optimizing Windows NT for Performance"
-permalink: kb/146/Q146005/
+permalink: /kb/146/Q146005/
 ---
 
 ## Q146005: Optimizing Windows NT for Performance

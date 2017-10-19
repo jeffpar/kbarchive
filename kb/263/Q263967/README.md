@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263967: Domain Admins Group Is Not Added to Local Administrators Group"
-permalink: kb/263/Q263967/
+permalink: /kb/263/Q263967/
 ---
 
 ## Q263967: Domain Admins Group Is Not Added to Local Administrators Group

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152520: PRB: Opening a Dynaset on a SQL Server Stored Procedure"
-permalink: kb/152/Q152520/
+permalink: /kb/152/Q152520/
 ---
 
 ## Q152520: PRB: Opening a Dynaset on a SQL Server Stored Procedure

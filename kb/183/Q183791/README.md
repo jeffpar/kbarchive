@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183791: APPC/CPI-C Program Unexpectedly Hangs Through SNA Server 4.0"
-permalink: kb/183/Q183791/
+permalink: /kb/183/Q183791/
 ---
 
 ## Q183791: APPC/CPI-C Program Unexpectedly Hangs Through SNA Server 4.0

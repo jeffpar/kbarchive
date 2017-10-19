@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q30363: DOCERR: procedure Pprog(); Should Be procedure Pprog;"
-permalink: kb/030/Q30363/
+permalink: /kb/030/Q30363/
 ---
 
 ## Q30363: DOCERR: procedure Pprog(); Should Be procedure Pprog;

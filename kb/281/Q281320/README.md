@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281320: Err Msg: Setup Was Unable to Download the Required Components..."
-permalink: kb/281/Q281320/
+permalink: /kb/281/Q281320/
 ---
 
 ## Q281320: Err Msg: Setup Was Unable to Download the Required Components...

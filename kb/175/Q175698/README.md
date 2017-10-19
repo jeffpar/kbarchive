@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175698: XCLN: Exchange Client Top Support Issues and KB Articles"
-permalink: kb/175/Q175698/
+permalink: /kb/175/Q175698/
 ---
 
 ## Q175698: XCLN: Exchange Client Top Support Issues and KB Articles

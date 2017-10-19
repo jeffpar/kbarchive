@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181688: Developing for MS Agent: Examples Folder Cannot Be Read"
-permalink: kb/181/Q181688/
+permalink: /kb/181/Q181688/
 ---
 
 ## Q181688: Developing for MS Agent: Examples Folder Cannot Be Read

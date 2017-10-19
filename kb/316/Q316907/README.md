@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316907: HOW TO: Run a Post Setup Executable with InstallShield Express"
-permalink: kb/316/Q316907/
+permalink: /kb/316/Q316907/
 ---
 
 ## Q316907: HOW TO: Run a Post Setup Executable with InstallShield Express

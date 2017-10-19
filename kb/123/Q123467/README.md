@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123467: HOWTO: How to Create a New Database in SourceSafe"
-permalink: kb/123/Q123467/
+permalink: /kb/123/Q123467/
 ---
 
 ## Q123467: HOWTO: How to Create a New Database in SourceSafe

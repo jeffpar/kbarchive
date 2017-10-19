@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171272: FIX: SQL-SELECT into Array Causes Illegal Operation"
-permalink: kb/171/Q171272/
+permalink: /kb/171/Q171272/
 ---
 
 ## Q171272: FIX: SQL-SELECT into Array Causes Illegal Operation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174163: XADM: Cannot Edit Messages After Exceeding Storage Limit"
-permalink: kb/174/Q174163/
+permalink: /kb/174/Q174163/
 ---
 
 ## Q174163: XADM: Cannot Edit Messages After Exceeding Storage Limit

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122648: BUG: Outer Join with Another Table in FROM May Cause SQL_ERROR"
-permalink: kb/122/Q122648/
+permalink: /kb/122/Q122648/
 ---
 
 ## Q122648: BUG: Outer Join with Another Table in FROM May Cause SQL_ERROR

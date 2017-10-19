@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149054: INFO: Choosing an rdoResultset Cursortype"
-permalink: kb/149/Q149054/
+permalink: /kb/149/Q149054/
 ---
 
 ## Q149054: INFO: Choosing an rdoResultset Cursortype

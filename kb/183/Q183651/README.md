@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183651: Default Memory Settings for Lexmark Optra S 1250 Incorrect"
-permalink: kb/183/Q183651/
+permalink: /kb/183/Q183651/
 ---
 
 ## Q183651: Default Memory Settings for Lexmark Optra S 1250 Incorrect

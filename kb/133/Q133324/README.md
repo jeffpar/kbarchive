@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133324: PRB: Potential Limit of 64 Different .OCX Files per Process"
-permalink: kb/133/Q133324/
+permalink: /kb/133/Q133324/
 ---
 
 ## Q133324: PRB: Potential Limit of 64 Different .OCX Files per Process

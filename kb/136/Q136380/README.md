@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136380: PROFS: Propagating Existing PROFS Nodes to a New Postoffice"
-permalink: kb/136/Q136380/
+permalink: /kb/136/Q136380/
 ---
 
 ## Q136380: PROFS: Propagating Existing PROFS Nodes to a New Postoffice

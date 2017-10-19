@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158714: XCLN: Files Required for Eximwiz.exe"
-permalink: kb/158/Q158714/
+permalink: /kb/158/Q158714/
 ---
 
 ## Q158714: XCLN: Files Required for Eximwiz.exe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148271: XCLN: .Pst and .Pab Files Not Interchangeable"
-permalink: kb/148/Q148271/
+permalink: /kb/148/Q148271/
 ---
 
 ## Q148271: XCLN: .Pst and .Pab Files Not Interchangeable

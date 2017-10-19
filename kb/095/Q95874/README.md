@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95874: WFWG: Network Applications Unable to Find NetBIOS"
-permalink: kb/095/Q95874/
+permalink: /kb/095/Q95874/
 ---
 
 ## Q95874: WFWG: Network Applications Unable to Find NetBIOS

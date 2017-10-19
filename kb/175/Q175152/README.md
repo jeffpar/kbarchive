@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175152: FS98: Program Stops Responding in Introductory 737-400 Lesson"
-permalink: kb/175/Q175152/
+permalink: /kb/175/Q175152/
 ---
 
 ## Q175152: FS98: Program Stops Responding in Introductory 737-400 Lesson

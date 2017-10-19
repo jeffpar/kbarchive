@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281786: Plus! Game Pack: Players Voices Pause During Game Play"
-permalink: kb/281/Q281786/
+permalink: /kb/281/Q281786/
 ---
 
 ## Q281786: Plus! Game Pack: Players Voices Pause During Game Play

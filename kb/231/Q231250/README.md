@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231250: SMS: Deleting Collection Fails, Connection Status Remains Busy"
-permalink: kb/231/Q231250/
+permalink: /kb/231/Q231250/
 ---
 
 ## Q231250: SMS: Deleting Collection Fails, Connection Status Remains Busy

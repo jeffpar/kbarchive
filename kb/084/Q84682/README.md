@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84682: Microcom's Carbon Copy for Windows and Windows 3.1"
-permalink: kb/084/Q84682/
+permalink: /kb/084/Q84682/
 ---
 
 ## Q84682: Microcom's Carbon Copy for Windows and Windows 3.1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303531: Unable to Link to a Database"
-permalink: kb/303/Q303531/
+permalink: /kb/303/Q303531/
 ---
 
 ## Q303531: Unable to Link to a Database

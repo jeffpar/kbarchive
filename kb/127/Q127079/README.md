@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127079: PC Mac DB: Purpose and Location of LOWRCASE.GLB"
-permalink: kb/127/Q127079/
+permalink: /kb/127/Q127079/
 ---
 
 ## Q127079: PC Mac DB: Purpose and Location of LOWRCASE.GLB

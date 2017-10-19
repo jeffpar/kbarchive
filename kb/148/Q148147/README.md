@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148147: Cinemania/Music Central Wrong File Name:Update Won't Integrate"
-permalink: kb/148/Q148147/
+permalink: /kb/148/Q148147/
 ---
 
 ## Q148147: Cinemania/Music Central Wrong File Name:Update Won't Integrate

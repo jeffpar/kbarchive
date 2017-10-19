@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180171: PRB: FoxPro/Mac Table Operations Do Not Release Memory"
-permalink: kb/180/Q180171/
+permalink: /kb/180/Q180171/
 ---
 
 ## Q180171: PRB: FoxPro/Mac Table Operations Do Not Release Memory

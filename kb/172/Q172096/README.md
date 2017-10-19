@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172096: FIX: Forms Under Source Control Open Slowly"
-permalink: kb/172/Q172096/
+permalink: /kb/172/Q172096/
 ---
 
 ## Q172096: FIX: Forms Under Source Control Open Slowly

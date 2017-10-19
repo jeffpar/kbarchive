@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65880: MDIStat.exe Places a Status Bar in an MDI Frame Window"
-permalink: kb/065/Q65880/
+permalink: /kb/065/Q65880/
 ---
 
 ## Q65880: MDIStat.exe Places a Status Bar in an MDI Frame Window

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185604: Windows 3.x Client Returns One Local APPC LU Using Display Verb"
-permalink: kb/185/Q185604/
+permalink: /kb/185/Q185604/
 ---
 
 ## Q185604: Windows 3.x Client Returns One Local APPC LU Using Display Verb

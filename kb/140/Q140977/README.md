@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140977: Error When Copying Files from OS/2 2.x Client Computer"
-permalink: kb/140/Q140977/
+permalink: /kb/140/Q140977/
 ---
 
 ## Q140977: Error When Copying Files from OS/2 2.x Client Computer

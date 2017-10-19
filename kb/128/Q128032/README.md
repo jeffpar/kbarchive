@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128032: Baseball: Daily City Must Be Longer Than Two Characters"
-permalink: kb/128/Q128032/
+permalink: /kb/128/Q128032/
 ---
 
 ## Q128032: Baseball: Daily City Must Be Longer Than Two Characters

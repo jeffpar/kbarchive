@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49245: DOCERR: Error in Macro Example in MASM 5.1 Update Manual"
-permalink: kb/049/Q49245/
+permalink: /kb/049/Q49245/
 ---
 
 ## Q49245: DOCERR: Error in Macro Example in MASM 5.1 Update Manual

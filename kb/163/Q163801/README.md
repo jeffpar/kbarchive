@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163801: PRB: &quot;Error Locating Config File-Bad Path?&quot; in Visual FoxPro"
-permalink: kb/163/Q163801/
+permalink: /kb/163/Q163801/
 ---
 
 ## Q163801: PRB: &quot;Error Locating Config File-Bad Path?&quot; in Visual FoxPro

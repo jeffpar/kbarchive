@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100035: Mac Srv: Name of Mail Server Does Not Appear in Chooser"
-permalink: kb/100/Q100035/
+permalink: /kb/100/Q100035/
 ---
 
 ## Q100035: Mac Srv: Name of Mail Server Does Not Appear in Chooser

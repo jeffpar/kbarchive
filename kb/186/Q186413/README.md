@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186413: SMSINST: Rollback Feature Can Cause an &quot;UNWISE&quot; Error Message"
-permalink: kb/186/Q186413/
+permalink: /kb/186/Q186413/
 ---
 
 ## Q186413: SMSINST: Rollback Feature Can Cause an &quot;UNWISE&quot; Error Message

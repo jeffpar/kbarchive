@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141145: PRB: APPEND FROM to Logical Field Loads Literal t or y Values"
-permalink: kb/141/Q141145/
+permalink: /kb/141/Q141145/
 ---
 
 ## Q141145: PRB: APPEND FROM to Logical Field Loads Literal t or y Values

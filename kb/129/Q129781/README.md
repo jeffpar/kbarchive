@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129781: PC DB: Move User Err: A User Already Exists on the Postoffice"
-permalink: kb/129/Q129781/
+permalink: /kb/129/Q129781/
 ---
 
 ## Q129781: PC DB: Move User Err: A User Already Exists on the Postoffice

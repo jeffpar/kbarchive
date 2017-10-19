@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249721: Error Message: Data Area Passed to a System Call Is Too Small."
-permalink: kb/249/Q249721/
+permalink: /kb/249/Q249721/
 ---
 
 ## Q249721: Error Message: Data Area Passed to a System Call Is Too Small.

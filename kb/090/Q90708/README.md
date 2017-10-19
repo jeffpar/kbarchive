@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90708: WIN.INI Programs= Line, File Extensions, and Execution Order"
-permalink: kb/090/Q90708/
+permalink: /kb/090/Q90708/
 ---
 
 ## Q90708: WIN.INI Programs= Line, File Extensions, and Execution Order

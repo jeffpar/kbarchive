@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168028: FIX: C2955 Caused by the &quot;using&quot; Declaration"
-permalink: kb/168/Q168028/
+permalink: /kb/168/Q168028/
 ---
 
 ## Q168028: FIX: C2955 Caused by the &quot;using&quot; Declaration

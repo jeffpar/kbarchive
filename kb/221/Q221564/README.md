@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221564: HOWTO: Uninstall Visual SourceSafe 6.0"
-permalink: kb/221/Q221564/
+permalink: /kb/221/Q221564/
 ---
 
 ## Q221564: HOWTO: Uninstall Visual SourceSafe 6.0

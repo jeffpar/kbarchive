@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168262: XADM: Priv.edb and Pub.edb Date Stamp Incorrect"
-permalink: kb/168/Q168262/
+permalink: /kb/168/Q168262/
 ---
 
 ## Q168262: XADM: Priv.edb and Pub.edb Date Stamp Incorrect

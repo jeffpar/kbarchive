@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172645: Print LU Status Remains Pending If SNAPRINT Fails"
-permalink: kb/172/Q172645/
+permalink: /kb/172/Q172645/
 ---
 
 ## Q172645: Print LU Status Remains Pending If SNAPRINT Fails

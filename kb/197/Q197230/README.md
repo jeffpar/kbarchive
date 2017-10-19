@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197230: HOWTO: Deploy Visual SourceSafe Across a Proxy Server"
-permalink: kb/197/Q197230/
+permalink: /kb/197/Q197230/
 ---
 
 ## Q197230: HOWTO: Deploy Visual SourceSafe Across a Proxy Server

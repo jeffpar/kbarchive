@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134476: MS Paint Color Eraser Tool Does Not Erase Bitmap"
-permalink: kb/134/Q134476/
+permalink: /kb/134/Q134476/
 ---
 
 ## Q134476: MS Paint Color Eraser Tool Does Not Erase Bitmap

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149852: XCLN: Newprof Can Tell New Profiles to Deliver Mail to PST"
-permalink: kb/149/Q149852/
+permalink: /kb/149/Q149852/
 ---
 
 ## Q149852: XCLN: Newprof Can Tell New Profiles to Deliver Mail to PST

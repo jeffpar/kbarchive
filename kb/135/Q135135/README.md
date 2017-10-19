@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135135: Setup Hangs Some Racal Modems"
-permalink: kb/135/Q135135/
+permalink: /kb/135/Q135135/
 ---
 
 ## Q135135: Setup Hangs Some Racal Modems

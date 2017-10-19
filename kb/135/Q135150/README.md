@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135150: GP Fault in Beginning Reading When Clicking Jack"
-permalink: kb/135/Q135150/
+permalink: /kb/135/Q135150/
 ---
 
 ## Q135150: GP Fault in Beginning Reading When Clicking Jack

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178267: Route.exe Error Message: The Application Failed to Initialize"
-permalink: kb/178/Q178267/
+permalink: /kb/178/Q178267/
 ---
 
 ## Q178267: Route.exe Error Message: The Application Failed to Initialize

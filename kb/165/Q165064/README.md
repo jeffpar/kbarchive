@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165064: Group Policies Are Ignored, All Other Policies Work as Expected"
-permalink: kb/165/Q165064/
+permalink: /kb/165/Q165064/
 ---
 
 ## Q165064: Group Policies Are Ignored, All Other Policies Work as Expected

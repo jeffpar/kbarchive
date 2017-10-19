@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140346: Possible Reasons for OLE Control Registration Failure"
-permalink: kb/140/Q140346/
+permalink: /kb/140/Q140346/
 ---
 
 ## Q140346: Possible Reasons for OLE Control Registration Failure

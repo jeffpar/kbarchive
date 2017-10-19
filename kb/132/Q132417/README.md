@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132417: Mac Encarta 94: Animations No Longer Play"
-permalink: kb/132/Q132417/
+permalink: /kb/132/Q132417/
 ---
 
 ## Q132417: Mac Encarta 94: Animations No Longer Play

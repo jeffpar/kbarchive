@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135038: Cannot Scroll Through Printer List with Keyboard in Tools"
-permalink: kb/135/Q135038/
+permalink: /kb/135/Q135038/
 ---
 
 ## Q135038: Cannot Scroll Through Printer List with Keyboard in Tools

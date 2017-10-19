@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154684: Token Ring Server-Based Setup May Not Work Properly"
-permalink: kb/154/Q154684/
+permalink: /kb/154/Q154684/
 ---
 
 ## Q154684: Token Ring Server-Based Setup May Not Work Properly

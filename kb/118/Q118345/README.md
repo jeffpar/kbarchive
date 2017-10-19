@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118345: Problems Using Publisher's Paintbrush 2.0 in Windows 95"
-permalink: kb/118/Q118345/
+permalink: /kb/118/Q118345/
 ---
 
 ## Q118345: Problems Using Publisher's Paintbrush 2.0 in Windows 95

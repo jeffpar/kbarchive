@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263475: MapPoint 2001: How to Clear Entries from the Find Box"
-permalink: kb/263/Q263475/
+permalink: /kb/263/Q263475/
 ---
 
 ## Q263475: MapPoint 2001: How to Clear Entries from the Find Box

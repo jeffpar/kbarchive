@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86555: MHS: Versions of MHS Supported by the Gateway to MHS"
-permalink: kb/086/Q86555/
+permalink: /kb/086/Q86555/
 ---
 
 ## Q86555: MHS: Versions of MHS Supported by the Gateway to MHS

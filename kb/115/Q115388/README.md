@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115388: Ping and FTP Resolve IP Address with Leading Zero as Octal"
-permalink: kb/115/Q115388/
+permalink: /kb/115/Q115388/
 ---
 
 ## Q115388: Ping and FTP Resolve IP Address with Leading Zero as Octal

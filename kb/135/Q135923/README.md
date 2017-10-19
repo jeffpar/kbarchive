@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135923: ES688 Sound Chip Driver Available for Toshiba Notebook Computers"
-permalink: kb/135/Q135923/
+permalink: /kb/135/Q135923/
 ---
 
 ## Q135923: ES688 Sound Chip Driver Available for Toshiba Notebook Computers

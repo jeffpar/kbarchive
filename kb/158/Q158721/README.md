@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158721: How to Configure and Administer Personal Web Server"
-permalink: kb/158/Q158721/
+permalink: /kb/158/Q158721/
 ---
 
 ## Q158721: How to Configure and Administer Personal Web Server

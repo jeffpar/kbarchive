@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150228: BUG: BackColor Property of OCX Control Saved in Decimal"
-permalink: kb/150/Q150228/
+permalink: /kb/150/Q150228/
 ---
 
 ## Q150228: BUG: BackColor Property of OCX Control Saved in Decimal

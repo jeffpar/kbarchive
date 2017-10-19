@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91128: Lotus 1-2-3 for Windows GP Faults when Server Connection Lost"
-permalink: kb/091/Q91128/
+permalink: /kb/091/Q91128/
 ---
 
 ## Q91128: Lotus 1-2-3 for Windows GP Faults when Server Connection Lost

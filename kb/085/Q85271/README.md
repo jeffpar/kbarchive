@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85271: Word for MS-DOS Err Msg: System Integrity Violation"
-permalink: kb/085/Q85271/
+permalink: /kb/085/Q85271/
 ---
 
 ## Q85271: Word for MS-DOS Err Msg: System Integrity Violation

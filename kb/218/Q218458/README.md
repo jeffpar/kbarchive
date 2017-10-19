@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218458: Err Msg: CoGetClassObject, 0x80080005 Server Execution Failed"
-permalink: kb/218/Q218458/
+permalink: /kb/218/Q218458/
 ---
 
 ## Q218458: Err Msg: CoGetClassObject, 0x80080005 Server Execution Failed

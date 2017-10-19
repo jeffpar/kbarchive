@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250453: Determining Special Pool Tagging Options When Debugging"
-permalink: kb/250/Q250453/
+permalink: /kb/250/Q250453/
 ---
 
 ## Q250453: Determining Special Pool Tagging Options When Debugging

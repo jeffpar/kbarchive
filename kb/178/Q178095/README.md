@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178095: XADM: Access Violation when Importing Active Text File"
-permalink: kb/178/Q178095/
+permalink: /kb/178/Q178095/
 ---
 
 ## Q178095: XADM: Access Violation when Importing Active Text File

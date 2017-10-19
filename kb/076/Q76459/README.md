@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76459: Disabling Volume Label Request in Format"
-permalink: kb/076/Q76459/
+permalink: /kb/076/Q76459/
 ---
 
 ## Q76459: Disabling Volume Label Request in Format

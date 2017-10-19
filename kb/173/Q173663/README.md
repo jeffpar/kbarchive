@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173663: FP97: How to Use Microsoft Personal Web Server on Different Port"
-permalink: kb/173/Q173663/
+permalink: /kb/173/Q173663/
 ---
 
 ## Q173663: FP97: How to Use Microsoft Personal Web Server on Different Port

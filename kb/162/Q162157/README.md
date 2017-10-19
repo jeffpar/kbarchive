@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162157: Cyberbit Unicode Font Does Not Return Correct Charset"
-permalink: kb/162/Q162157/
+permalink: /kb/162/Q162157/
 ---
 
 ## Q162157: Cyberbit Unicode Font Does Not Return Correct Charset

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191851: Unattended Installation of Windows NT 4.0 Option Pack Fails"
-permalink: kb/191/Q191851/
+permalink: /kb/191/Q191851/
 ---
 
 ## Q191851: Unattended Installation of Windows NT 4.0 Option Pack Fails

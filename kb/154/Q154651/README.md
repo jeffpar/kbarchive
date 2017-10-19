@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154651: HOWTO: Determine When the Initialize Event of Class Gets Fired"
-permalink: kb/154/Q154651/
+permalink: /kb/154/Q154651/
 ---
 
 ## Q154651: HOWTO: Determine When the Initialize Event of Class Gets Fired

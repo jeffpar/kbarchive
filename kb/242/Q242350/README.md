@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242350: SQL Server 7.0 Administrator's Companion Comments and Correction"
-permalink: kb/242/Q242350/
+permalink: /kb/242/Q242350/
 ---
 
 ## Q242350: SQL Server 7.0 Administrator's Companion Comments and Correction

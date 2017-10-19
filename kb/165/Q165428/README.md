@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165428: LU3 Printers Do Not Translate Control Characters Correctly"
-permalink: kb/165/Q165428/
+permalink: /kb/165/Q165428/
 ---
 
 ## Q165428: LU3 Printers Do Not Translate Control Characters Correctly

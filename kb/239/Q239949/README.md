@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239949: PRB: 16-Bit Apps May Use 32-Bit DSNs if Duplicate DSNs Exist"
-permalink: kb/239/Q239949/
+permalink: /kb/239/Q239949/
 ---
 
 ## Q239949: PRB: 16-Bit Apps May Use 32-Bit DSNs if Duplicate DSNs Exist

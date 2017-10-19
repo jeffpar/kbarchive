@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152072: FIX: ASSERT in OLECLI1.CPP When Copying Embedding to Clipboard"
-permalink: kb/152/Q152072/
+permalink: /kb/152/Q152072/
 ---
 
 ## Q152072: FIX: ASSERT in OLECLI1.CPP When Copying Embedding to Clipboard

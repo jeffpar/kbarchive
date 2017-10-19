@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228951: Midtown Madness: Panoz GTR-1 Stops Abruptly when You Hop a Curb"
-permalink: kb/228/Q228951/
+permalink: /kb/228/Q228951/
 ---
 
 ## Q228951: Midtown Madness: Panoz GTR-1 Stops Abruptly when You Hop a Curb

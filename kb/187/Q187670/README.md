@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187670: HOWTO: Use RDO and ODBC Text Driver to Open a Delimited Text"
-permalink: kb/187/Q187670/
+permalink: /kb/187/Q187670/
 ---
 
 ## Q187670: HOWTO: Use RDO and ODBC Text Driver to Open a Delimited Text

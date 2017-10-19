@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257990: HOWTO: Obtain List of Pinned Files from OLE Automation in VC++"
-permalink: kb/257/Q257990/
+permalink: /kb/257/Q257990/
 ---
 
 ## Q257990: HOWTO: Obtain List of Pinned Files from OLE Automation in VC++

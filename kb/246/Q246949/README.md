@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246949: Offer Summarizer Reports SQL Error 105 with Corrupted .svf Files"
-permalink: kb/246/Q246949/
+permalink: /kb/246/Q246949/
 ---
 
 ## Q246949: Offer Summarizer Reports SQL Error 105 with Corrupted .svf Files

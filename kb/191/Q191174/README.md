@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191174: HOWTO: Create a Custom HTML Help Viewer in Visual FoxPro"
-permalink: kb/191/Q191174/
+permalink: /kb/191/Q191174/
 ---
 
 ## Q191174: HOWTO: Create a Custom HTML Help Viewer in Visual FoxPro

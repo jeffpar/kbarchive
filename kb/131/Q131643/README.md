@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131643: PRB: DashBoard Does Not Launch a Visual FoxPro Executable"
-permalink: kb/131/Q131643/
+permalink: /kb/131/Q131643/
 ---
 
 ## Q131643: PRB: DashBoard Does Not Launch a Visual FoxPro Executable

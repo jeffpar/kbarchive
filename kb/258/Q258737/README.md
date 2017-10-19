@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258737: FIX: DataSession Property Cannot Be Set in Session Subclass"
-permalink: kb/258/Q258737/
+permalink: /kb/258/Q258737/
 ---
 
 ## Q258737: FIX: DataSession Property Cannot Be Set in Session Subclass

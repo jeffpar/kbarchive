@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273565: Unexpected Error 0x8007c801 When You Start the FTP Service"
-permalink: kb/273/Q273565/
+permalink: /kb/273/Q273565/
 ---
 
 ## Q273565: Unexpected Error 0x8007c801 When You Start the FTP Service

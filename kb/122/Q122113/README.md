@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122113: MSB Human: Minimum System Requirements for Windows"
-permalink: kb/122/Q122113/
+permalink: /kb/122/Q122113/
 ---
 
 ## Q122113: MSB Human: Minimum System Requirements for Windows

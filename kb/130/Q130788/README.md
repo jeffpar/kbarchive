@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130788: Add/Remove Programs Selects Only the First Information File"
-permalink: kb/130/Q130788/
+permalink: /kb/130/Q130788/
 ---
 
 ## Q130788: Add/Remove Programs Selects Only the First Information File

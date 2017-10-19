@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192462: SMS: Client Stops Responding Using DisableFailedServerDialog"
-permalink: kb/192/Q192462/
+permalink: /kb/192/Q192462/
 ---
 
 ## Q192462: SMS: Client Stops Responding Using DisableFailedServerDialog

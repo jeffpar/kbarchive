@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259000: PRB: Space in CREATE FROM Field Name Causes Error"
-permalink: kb/259/Q259000/
+permalink: /kb/259/Q259000/
 ---
 
 ## Q259000: PRB: Space in CREATE FROM Field Name Causes Error

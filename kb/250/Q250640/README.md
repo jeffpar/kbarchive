@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250640: PRB: GetChunk Ignores Offset if Memo Field Included in GROUP BY"
-permalink: kb/250/Q250640/
+permalink: /kb/250/Q250640/
 ---
 
 ## Q250640: PRB: GetChunk Ignores Offset if Memo Field Included in GROUP BY

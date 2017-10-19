@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298124: Using An msn.com or hotmail.com Account That Was Formerly A Paid"
-permalink: kb/298/Q298124/
+permalink: /kb/298/Q298124/
 ---
 
 ## Q298124: Using An msn.com or hotmail.com Account That Was Formerly A Paid

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135041: DOC: Help File Gives Incorrect Info on ColumnCount Property"
-permalink: kb/135/Q135041/
+permalink: /kb/135/Q135041/
 ---
 
 ## Q135041: DOC: Help File Gives Incorrect Info on ColumnCount Property

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135314: Windows 95 Driver Library"
-permalink: kb/135/Q135314/
+permalink: /kb/135/Q135314/
 ---
 
 ## Q135314: Windows 95 Driver Library

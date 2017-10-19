@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312064: MapPoint 2002: Spatial Data Import COM Add-in Available"
-permalink: kb/312/Q312064/
+permalink: /kb/312/Q312064/
 ---
 
 ## Q312064: MapPoint 2002: Spatial Data Import COM Add-in Available

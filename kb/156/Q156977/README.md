@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156977: PRB: CRecordset Does Not Skip Deleted Records"
-permalink: kb/156/Q156977/
+permalink: /kb/156/Q156977/
 ---
 
 ## Q156977: PRB: CRecordset Does Not Skip Deleted Records

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274471: MSN Explorer Setup Does Not Recognize Installed Internet Explore"
-permalink: kb/274/Q274471/
+permalink: /kb/274/Q274471/
 ---
 
 ## Q274471: MSN Explorer Setup Does Not Recognize Installed Internet Explore

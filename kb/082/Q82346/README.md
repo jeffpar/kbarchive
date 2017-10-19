@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82346: What Is SEGENTRY.DAT?"
-permalink: kb/082/Q82346/
+permalink: /kb/082/Q82346/
 ---
 
 ## Q82346: What Is SEGENTRY.DAT?

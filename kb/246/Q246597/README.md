@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246597: XADM: OOF Received for Msg Sent to a DL Configured Not to Send"
-permalink: kb/246/Q246597/
+permalink: /kb/246/Q246597/
 ---
 
 ## Q246597: XADM: OOF Received for Msg Sent to a DL Configured Not to Send

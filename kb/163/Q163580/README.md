@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163580: WD97: Error Creating Pre-Existing Custom Document Property"
-permalink: kb/163/Q163580/
+permalink: /kb/163/Q163580/
 ---
 
 ## Q163580: WD97: Error Creating Pre-Existing Custom Document Property

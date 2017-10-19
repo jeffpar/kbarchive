@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155605: Pressing PRINT SCREEN During Setup Causes Reboot"
-permalink: kb/155/Q155605/
+permalink: /kb/155/Q155605/
 ---
 
 ## Q155605: Pressing PRINT SCREEN During Setup Causes Reboot

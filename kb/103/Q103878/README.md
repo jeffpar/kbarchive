@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103878: Overview: Network I/O Redirection"
-permalink: kb/103/Q103878/
+permalink: /kb/103/Q103878/
 ---
 
 ## Q103878: Overview: Network I/O Redirection

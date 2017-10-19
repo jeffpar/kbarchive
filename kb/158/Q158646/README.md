@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158646: SMS Trace and the SNMP Trap Receiver Log File"
-permalink: kb/158/Q158646/
+permalink: /kb/158/Q158646/
 ---
 
 ## Q158646: SMS Trace and the SNMP Trap Receiver Log File

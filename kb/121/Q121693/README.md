@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121693: How to Obtain Windows NT Version 3.5 U.S. Service Pack"
-permalink: kb/121/Q121693/
+permalink: /kb/121/Q121693/
 ---
 
 ## Q121693: How to Obtain Windows NT Version 3.5 U.S. Service Pack

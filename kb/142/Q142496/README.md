@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142496: Send Command from 32-Bit Program Starts Only MS Exchange"
-permalink: kb/142/Q142496/
+permalink: /kb/142/Q142496/
 ---
 
 ## Q142496: Send Command from 32-Bit Program Starts Only MS Exchange

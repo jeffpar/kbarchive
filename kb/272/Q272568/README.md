@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272568: Event ID 2019/2020 or &quot;Insufficient System Resources&quot; on DC"
-permalink: kb/272/Q272568/
+permalink: /kb/272/Q272568/
 ---
 
 ## Q272568: Event ID 2019/2020 or &quot;Insufficient System Resources&quot; on DC

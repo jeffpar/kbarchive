@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187962: HOWTO: Add Images to the CE ImageList Control"
-permalink: kb/187/Q187962/
+permalink: /kb/187/Q187962/
 ---
 
 ## Q187962: HOWTO: Add Images to the CE ImageList Control

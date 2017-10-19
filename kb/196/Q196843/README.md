@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196843: WD97: Some Fields Update While Other Fields Don't Update"
-permalink: kb/196/Q196843/
+permalink: /kb/196/Q196843/
 ---
 
 ## Q196843: WD97: Some Fields Update While Other Fields Don't Update

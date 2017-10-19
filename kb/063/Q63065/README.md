@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63065: Flight Simulator: Aspect Ratio Equations"
-permalink: kb/063/Q63065/
+permalink: /kb/063/Q63065/
 ---
 
 ## Q63065: Flight Simulator: Aspect Ratio Equations

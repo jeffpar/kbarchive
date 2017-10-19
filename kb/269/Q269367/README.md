@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269367: Synciwam Utility Does Not Function and Generates Error 80110414"
-permalink: kb/269/Q269367/
+permalink: /kb/269/Q269367/
 ---
 
 ## Q269367: Synciwam Utility Does Not Function and Generates Error 80110414

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254355: Access to Internet Services Manager Limited to Localhost"
-permalink: kb/254/Q254355/
+permalink: /kb/254/Q254355/
 ---
 
 ## Q254355: Access to Internet Services Manager Limited to Localhost

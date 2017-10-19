@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168341: SMS: Windows 95 PCM Fails to Run UNC Path Command Lines"
-permalink: kb/168/Q168341/
+permalink: /kb/168/Q168341/
 ---
 
 ## Q168341: SMS: Windows 95 PCM Fails to Run UNC Path Command Lines

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158351: Mac Multimedia: Network Connection May Cause Problems"
-permalink: kb/158/Q158351/
+permalink: /kb/158/Q158351/
 ---
 
 ## Q158351: Mac Multimedia: Network Connection May Cause Problems

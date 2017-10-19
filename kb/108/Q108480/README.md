@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108480: Set Up Applications Does Not Search Mapped Network Drives"
-permalink: kb/108/Q108480/
+permalink: /kb/108/Q108480/
 ---
 
 ## Q108480: Set Up Applications Does Not Search Mapped Network Drives

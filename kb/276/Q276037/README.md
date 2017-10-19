@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276037: SNA Server Access Violation After Logging Event 3"
-permalink: kb/276/Q276037/
+permalink: /kb/276/Q276037/
 ---
 
 ## Q276037: SNA Server Access Violation After Logging Event 3

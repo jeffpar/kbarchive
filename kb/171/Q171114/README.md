@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171114: Distributed Link Service Allows Link Type To Be Changed"
-permalink: kb/171/Q171114/
+permalink: /kb/171/Q171114/
 ---
 
 ## Q171114: Distributed Link Service Allows Link Type To Be Changed

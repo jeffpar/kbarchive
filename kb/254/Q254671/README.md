@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254671: RRAS Route Table Not Updated When It Receives an RIP Metric 16"
-permalink: kb/254/Q254671/
+permalink: /kb/254/Q254671/
 ---
 
 ## Q254671: RRAS Route Table Not Updated When It Receives an RIP Metric 16

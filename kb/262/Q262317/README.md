@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262317: SMS: WMI 1.5 Support in SMS 2.0 SP2"
-permalink: kb/262/Q262317/
+permalink: /kb/262/Q262317/
 ---
 
 ## Q262317: SMS: WMI 1.5 Support in SMS 2.0 SP2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184307: How to Obtain the Latest SNA Server Version 3.0 Service Pack"
-permalink: kb/184/Q184307/
+permalink: /kb/184/Q184307/
 ---
 
 ## Q184307: How to Obtain the Latest SNA Server Version 3.0 Service Pack

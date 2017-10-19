@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78720: PRINTQ Version 4.0 Requires STACKS Statement"
-permalink: kb/078/Q78720/
+permalink: /kb/078/Q78720/
 ---
 
 ## Q78720: PRINTQ Version 4.0 Requires STACKS Statement

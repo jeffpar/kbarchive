@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145926: How to Troubleshoot Windows 95 Shutdown Problems"
-permalink: kb/145/Q145926/
+permalink: /kb/145/Q145926/
 ---
 
 ## Q145926: How to Troubleshoot Windows 95 Shutdown Problems

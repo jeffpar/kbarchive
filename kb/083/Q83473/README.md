@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83473: Troubleshooting PostScript Printer Problems with TESTPS.TXT"
-permalink: kb/083/Q83473/
+permalink: /kb/083/Q83473/
 ---
 
 ## Q83473: Troubleshooting PostScript Printer Problems with TESTPS.TXT

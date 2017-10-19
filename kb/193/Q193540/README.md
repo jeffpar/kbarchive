@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193540: HOWTO: Read and Display UNICODE String on Visual Basic Form"
-permalink: kb/193/Q193540/
+permalink: /kb/193/Q193540/
 ---
 
 ## Q193540: HOWTO: Read and Display UNICODE String on Visual Basic Form

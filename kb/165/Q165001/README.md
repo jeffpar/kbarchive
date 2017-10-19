@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165001: Adding TCP/IP Support to RemoteBoot Workstations"
-permalink: kb/165/Q165001/
+permalink: /kb/165/Q165001/
 ---
 
 ## Q165001: Adding TCP/IP Support to RemoteBoot Workstations

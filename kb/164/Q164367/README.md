@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164367: BUG: Report Writer Selects Objects After Printing in Designer"
-permalink: kb/164/Q164367/
+permalink: /kb/164/Q164367/
 ---
 
 ## Q164367: BUG: Report Writer Selects Objects After Printing in Designer

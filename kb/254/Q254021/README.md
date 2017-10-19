@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254021: HOWTO: Return an Array of Recordsets from an ADO/RDS Server"
-permalink: kb/254/Q254021/
+permalink: /kb/254/Q254021/
 ---
 
 ## Q254021: HOWTO: Return an Array of Recordsets from an ADO/RDS Server

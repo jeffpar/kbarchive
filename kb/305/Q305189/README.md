@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305189: Preproduction Passport Registration Page Does Not Work Correctly"
-permalink: kb/305/Q305189/
+permalink: /kb/305/Q305189/
 ---
 
 ## Q305189: Preproduction Passport Registration Page Does Not Work Correctly

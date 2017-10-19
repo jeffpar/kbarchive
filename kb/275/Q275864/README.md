@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275864: COMTI TOR/AOR Changes"
-permalink: kb/275/Q275864/
+permalink: /kb/275/Q275864/
 ---
 
 ## Q275864: COMTI TOR/AOR Changes

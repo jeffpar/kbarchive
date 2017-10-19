@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102461: FIX: BROWSE KEY 0 Causes Errors When No Database Order Set"
-permalink: kb/102/Q102461/
+permalink: /kb/102/Q102461/
 ---
 
 ## Q102461: FIX: BROWSE KEY 0 Causes Errors When No Database Order Set

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82802: All Fonts Not Accessible in Aldus PageMaker 4.0"
-permalink: kb/082/Q82802/
+permalink: /kb/082/Q82802/
 ---
 
 ## Q82802: All Fonts Not Accessible in Aldus PageMaker 4.0

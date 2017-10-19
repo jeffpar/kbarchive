@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251056: PRB: Print Dialog May Not Appear with SET PRINT ON PROMPT"
-permalink: kb/251/Q251056/
+permalink: /kb/251/Q251056/
 ---
 
 ## Q251056: PRB: Print Dialog May Not Appear with SET PRINT ON PROMPT

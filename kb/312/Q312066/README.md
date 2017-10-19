@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312066: Computer Does Not Boot Without a Video Adapter with the SAK"
-permalink: kb/312/Q312066/
+permalink: /kb/312/Q312066/
 ---
 
 ## Q312066: Computer Does Not Boot Without a Video Adapter with the SAK

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179023: FIX: T-SQL Debugger Hangs When User Has No Execute Permission"
-permalink: kb/179/Q179023/
+permalink: /kb/179/Q179023/
 ---
 
 ## Q179023: FIX: T-SQL Debugger Hangs When User Has No Execute Permission

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247378: HTTP/1.1 Error 403 - Access Forbidden"
-permalink: kb/247/Q247378/
+permalink: /kb/247/Q247378/
 ---
 
 ## Q247378: HTTP/1.1 Error 403 - Access Forbidden

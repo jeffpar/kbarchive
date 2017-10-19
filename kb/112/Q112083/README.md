@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112083: PRB: &quot;Invalid or Missing .EXE&quot; w/ Backslashes in Folder Names"
-permalink: kb/112/Q112083/
+permalink: /kb/112/Q112083/
 ---
 
 ## Q112083: PRB: &quot;Invalid or Missing .EXE&quot; w/ Backslashes in Folder Names

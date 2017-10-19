@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177386: Cannot Use Certain GPS Receivers with Automap/Expedia"
-permalink: kb/177/Q177386/
+permalink: /kb/177/Q177386/
 ---
 
 ## Q177386: Cannot Use Certain GPS Receivers with Automap/Expedia

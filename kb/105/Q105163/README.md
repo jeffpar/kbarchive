@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105163: PC WSPlus: How to Change User Name Displayed on the Desktop"
-permalink: kb/105/Q105163/
+permalink: /kb/105/Q105163/
 ---
 
 ## Q105163: PC WSPlus: How to Change User Name Displayed on the Desktop

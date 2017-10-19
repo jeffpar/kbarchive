@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166323: Zone: How to Disable Prompt When You Receive a Cookie"
-permalink: kb/166/Q166323/
+permalink: /kb/166/Q166323/
 ---
 
 ## Q166323: Zone: How to Disable Prompt When You Receive a Cookie

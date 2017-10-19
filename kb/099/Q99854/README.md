@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99854: SMTP: Err Msg: 500 Huh?"
-permalink: kb/099/Q99854/
+permalink: /kb/099/Q99854/
 ---
 
 ## Q99854: SMTP: Err Msg: 500 Huh?

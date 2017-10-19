@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152370: How To Use the APPEND GENERAL Command with an Imager File"
-permalink: kb/152/Q152370/
+permalink: /kb/152/Q152370/
 ---
 
 ## Q152370: How To Use the APPEND GENERAL Command with an Imager File

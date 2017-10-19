@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142447: INFO: Summary List: Visual C++ Version 4.0 Known Problems"
-permalink: kb/142/Q142447/
+permalink: /kb/142/Q142447/
 ---
 
 ## Q142447: INFO: Summary List: Visual C++ Version 4.0 Known Problems

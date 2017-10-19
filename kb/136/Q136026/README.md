@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136026: Wrong Volume Label Returned to OS/2 Clients"
-permalink: kb/136/Q136026/
+permalink: /kb/136/Q136026/
 ---
 
 ## Q136026: Wrong Volume Label Returned to OS/2 Clients

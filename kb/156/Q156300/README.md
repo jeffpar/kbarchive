@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156300: STL Sample for the count_if Function"
-permalink: kb/156/Q156300/
+permalink: /kb/156/Q156300/
 ---
 
 ## Q156300: STL Sample for the count_if Function

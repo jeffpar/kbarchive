@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192168: XADM: Exchange Server Binaries Cannot Be Moved"
-permalink: kb/192/Q192168/
+permalink: /kb/192/Q192168/
 ---
 
 ## Q192168: XADM: Exchange Server Binaries Cannot Be Moved

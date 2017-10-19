@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66649: PRB: Cause of U4004 Error Message"
-permalink: kb/066/Q66649/
+permalink: /kb/066/Q66649/
 ---
 
 ## Q66649: PRB: Cause of U4004 Error Message

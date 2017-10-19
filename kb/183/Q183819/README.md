@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183819: DCOM over HTTP Method Calls May Hang for up to 15 Minutes"
-permalink: kb/183/Q183819/
+permalink: /kb/183/Q183819/
 ---
 
 ## Q183819: DCOM over HTTP Method Calls May Hang for up to 15 Minutes

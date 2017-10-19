@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169845: XFOR: Changing InOutThreads does not Affect IMS Performance"
-permalink: kb/169/Q169845/
+permalink: /kb/169/Q169845/
 ---
 
 ## Q169845: XFOR: Changing InOutThreads does not Affect IMS Performance

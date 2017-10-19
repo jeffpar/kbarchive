@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160472: Print Screen in Windows NT 4.0 Prints Only First Four Lines"
-permalink: kb/160/Q160472/
+permalink: /kb/160/Q160472/
 ---
 
 ## Q160472: Print Screen in Windows NT 4.0 Prints Only First Four Lines

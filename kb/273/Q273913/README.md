@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273913: XCLN: Maintaining Calendar Functionality for IMAP4/POP3 Clients"
-permalink: kb/273/Q273913/
+permalink: /kb/273/Q273913/
 ---
 
 ## Q273913: XCLN: Maintaining Calendar Functionality for IMAP4/POP3 Clients

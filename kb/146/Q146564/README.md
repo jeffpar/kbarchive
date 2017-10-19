@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146564: XCLN: Err Msg: Rules in Error"
-permalink: kb/146/Q146564/
+permalink: /kb/146/Q146564/
 ---
 
 ## Q146564: XCLN: Err Msg: Rules in Error

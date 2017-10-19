@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248645: Autologon for Terminal Server Clients Does Not Work"
-permalink: kb/248/Q248645/
+permalink: /kb/248/Q248645/
 ---
 
 ## Q248645: Autologon for Terminal Server Clients Does Not Work

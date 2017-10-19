@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173385: System Policy Editor Will Not Allow More Than 255 Characters"
-permalink: kb/173/Q173385/
+permalink: /kb/173/Q173385/
 ---
 
 ## Q173385: System Policy Editor Will Not Allow More Than 255 Characters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148362: Connecting Two Windows NT Computers with EiconCards"
-permalink: kb/148/Q148362/
+permalink: /kb/148/Q148362/
 ---
 
 ## Q148362: Connecting Two Windows NT Computers with EiconCards

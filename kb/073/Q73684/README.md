@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73684: FIX: MASM 6.0 May Initialize Every 256th Data Symbol"
-permalink: kb/073/Q73684/
+permalink: /kb/073/Q73684/
 ---
 
 ## Q73684: FIX: MASM 6.0 May Initialize Every 256th Data Symbol

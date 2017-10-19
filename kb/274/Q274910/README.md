@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274910: CFS2: Corsair Maximum Airspeed Is Slower Than Real Aircraft"
-permalink: kb/274/Q274910/
+permalink: /kb/274/Q274910/
 ---
 
 ## Q274910: CFS2: Corsair Maximum Airspeed Is Slower Than Real Aircraft

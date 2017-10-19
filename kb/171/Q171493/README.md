@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171493: FIX: Viewing Property Pages and Exiting Causes Memory Leak"
-permalink: kb/171/Q171493/
+permalink: /kb/171/Q171493/
 ---
 
 ## Q171493: FIX: Viewing Property Pages and Exiting Causes Memory Leak

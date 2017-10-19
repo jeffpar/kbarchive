@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195894: XADM: Access Violation While Processing Long DBCS BinHex Files"
-permalink: kb/195/Q195894/
+permalink: /kb/195/Q195894/
 ---
 
 ## Q195894: XADM: Access Violation While Processing Long DBCS BinHex Files

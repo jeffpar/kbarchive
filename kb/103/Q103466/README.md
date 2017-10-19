@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103466: REGION.BMP Not a Supported Paintbrush Format"
-permalink: kb/103/Q103466/
+permalink: /kb/103/Q103466/
 ---
 
 ## Q103466: REGION.BMP Not a Supported Paintbrush Format

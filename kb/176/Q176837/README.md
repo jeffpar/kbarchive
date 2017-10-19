@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176837: Bookshelf 98: Computer Stops Responding When Searching Online"
-permalink: kb/176/Q176837/
+permalink: /kb/176/Q176837/
 ---
 
 ## Q176837: Bookshelf 98: Computer Stops Responding When Searching Online

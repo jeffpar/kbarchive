@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231976: Disk Full Broadcast When Accessing Virtual CD-ROM Folder"
-permalink: kb/231/Q231976/
+permalink: /kb/231/Q231976/
 ---
 
 ## Q231976: Disk Full Broadcast When Accessing Virtual CD-ROM Folder

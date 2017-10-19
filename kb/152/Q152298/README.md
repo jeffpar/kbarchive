@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152298: BUG: Conflict with Fax Software when Receiving a Fax"
-permalink: kb/152/Q152298/
+permalink: /kb/152/Q152298/
 ---
 
 ## Q152298: BUG: Conflict with Fax Software when Receiving a Fax

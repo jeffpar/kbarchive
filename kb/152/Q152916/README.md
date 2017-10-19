@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152916: XCLN: MAC Client Can't Open Attachments from Migrated MAC PO"
-permalink: kb/152/Q152916/
+permalink: /kb/152/Q152916/
 ---
 
 ## Q152916: XCLN: MAC Client Can't Open Attachments from Migrated MAC PO

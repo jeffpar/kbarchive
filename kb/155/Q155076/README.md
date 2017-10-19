@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155076: Only Admins May Log in After Applying C2 Security from Reskit"
-permalink: kb/155/Q155076/
+permalink: /kb/155/Q155076/
 ---
 
 ## Q155076: Only Admins May Log in After Applying C2 Security from Reskit

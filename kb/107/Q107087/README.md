@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107087: SMTP: Err Msg: Warning No Return Path"
-permalink: kb/107/Q107087/
+permalink: /kb/107/Q107087/
 ---
 
 ## Q107087: SMTP: Err Msg: Warning No Return Path

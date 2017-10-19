@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186512: DEC Teamlinks Installation Notes"
-permalink: kb/186/Q186512/
+permalink: /kb/186/Q186512/
 ---
 
 ## Q186512: DEC Teamlinks Installation Notes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69339: Microsoft Mouse Problems with PC Tools and Windows"
-permalink: kb/069/Q69339/
+permalink: /kb/069/Q69339/
 ---
 
 ## Q69339: Microsoft Mouse Problems with PC Tools and Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194553: First SLI_OPEN is Not Traced When LUA API Tracing Enabled"
-permalink: kb/194/Q194553/
+permalink: /kb/194/Q194553/
 ---
 
 ## Q194553: First SLI_OPEN is Not Traced When LUA API Tracing Enabled

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145664: Inf Generator Tool Available"
-permalink: kb/145/Q145664/
+permalink: /kb/145/Q145664/
 ---
 
 ## Q145664: Inf Generator Tool Available

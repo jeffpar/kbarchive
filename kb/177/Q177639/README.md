@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177639: MngAgent Event 5137:Internal Error - Allocation Failed"
-permalink: kb/177/Q177639/
+permalink: /kb/177/Q177639/
 ---
 
 ## Q177639: MngAgent Event 5137:Internal Error - Allocation Failed

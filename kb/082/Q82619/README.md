@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82619: Two Mouse Cursors in Windowed MS-DOS Program, FAX.EXE"
-permalink: kb/082/Q82619/
+permalink: /kb/082/Q82619/
 ---
 
 ## Q82619: Two Mouse Cursors in Windowed MS-DOS Program, FAX.EXE

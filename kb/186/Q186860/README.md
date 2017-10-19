@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186860: Update Memory Settings and Add Exec Paper Size to Sharp Models"
-permalink: kb/186/Q186860/
+permalink: /kb/186/Q186860/
 ---
 
 ## Q186860: Update Memory Settings and Add Exec Paper Size to Sharp Models

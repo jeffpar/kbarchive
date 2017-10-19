@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298386: XADM: Error Message: Extension 'MBClean99' Could Not Be Loaded"
-permalink: kb/298/Q298386/
+permalink: /kb/298/Q298386/
 ---
 
 ## Q298386: XADM: Error Message: Extension 'MBClean99' Could Not Be Loaded

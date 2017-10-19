@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183394: XADM: Event Agent Fires Every 15 min If No Schedule Is Defined"
-permalink: kb/183/Q183394/
+permalink: /kb/183/Q183394/
 ---
 
 ## Q183394: XADM: Event Agent Fires Every 15 min If No Schedule Is Defined

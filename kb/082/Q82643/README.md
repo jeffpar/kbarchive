@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82643: Serial Communications Overview in Windows 3.1"
-permalink: kb/082/Q82643/
+permalink: /kb/082/Q82643/
 ---
 
 ## Q82643: Serial Communications Overview in Windows 3.1

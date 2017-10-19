@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66081: Using the OptiStar WORM Drive Software with Windows 3.0"
-permalink: kb/066/Q66081/
+permalink: /kb/066/Q66081/
 ---
 
 ## Q66081: Using the OptiStar WORM Drive Software with Windows 3.0

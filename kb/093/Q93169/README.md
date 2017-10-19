@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93169: Using Custom IRQ and I/O Settings with Windows for Workgroups"
-permalink: kb/093/Q93169/
+permalink: /kb/093/Q93169/
 ---
 
 ## Q93169: Using Custom IRQ and I/O Settings with Windows for Workgroups

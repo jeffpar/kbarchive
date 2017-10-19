@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164674: How to Use a .CMD or .BAT File as a CGI Script"
-permalink: kb/164/Q164674/
+permalink: /kb/164/Q164674/
 ---
 
 ## Q164674: How to Use a .CMD or .BAT File as a CGI Script

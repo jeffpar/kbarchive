@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71023: Authoring Device-Independent MIDI Files"
-permalink: kb/071/Q71023/
+permalink: /kb/071/Q71023/
 ---
 
 ## Q71023: Authoring Device-Independent MIDI Files

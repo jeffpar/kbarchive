@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197382: HOWTO: Keep Cluster Administrator from Reconnecting to a Cluster"
-permalink: kb/197/Q197382/
+permalink: /kb/197/Q197382/
 ---
 
 ## Q197382: HOWTO: Keep Cluster Administrator from Reconnecting to a Cluster

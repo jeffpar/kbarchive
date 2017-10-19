@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171084: How to Install a Certificate"
-permalink: kb/171/Q171084/
+permalink: /kb/171/Q171084/
 ---
 
 ## Q171084: How to Install a Certificate

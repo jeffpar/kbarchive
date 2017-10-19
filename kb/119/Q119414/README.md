@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119414: PC WRmt: Mail Remote for Windows Address List Creation"
-permalink: kb/119/Q119414/
+permalink: /kb/119/Q119414/
 ---
 
 ## Q119414: PC WRmt: Mail Remote for Windows Address List Creation

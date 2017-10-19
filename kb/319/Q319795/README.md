@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319795: PRB: Run-Time Error Occurs on Open of Encarta Interactivities"
-permalink: kb/319/Q319795/
+permalink: /kb/319/Q319795/
 ---
 
 ## Q319795: PRB: Run-Time Error Occurs on Open of Encarta Interactivities

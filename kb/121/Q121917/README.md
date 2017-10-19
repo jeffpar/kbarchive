@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121917: CONN: Stuck Handshake File When Postoffice on NTAS 3.1"
-permalink: kb/121/Q121917/
+permalink: /kb/121/Q121917/
 ---
 
 ## Q121917: CONN: Stuck Handshake File When Postoffice on NTAS 3.1

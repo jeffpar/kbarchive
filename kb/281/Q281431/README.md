@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281431: XADM: Logon Failure Event ID 677"
-permalink: kb/281/Q281431/
+permalink: /kb/281/Q281431/
 ---
 
 ## Q281431: XADM: Logon Failure Event ID 677

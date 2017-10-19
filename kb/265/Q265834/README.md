@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265834: XCLN: Help File Gives Wrong Location to Set Default OWA Server"
-permalink: kb/265/Q265834/
+permalink: /kb/265/Q265834/
 ---
 
 ## Q265834: XCLN: Help File Gives Wrong Location to Set Default OWA Server

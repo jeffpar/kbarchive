@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99057: PC Forms: Resolved Names Are Not Underlined"
-permalink: kb/099/Q99057/
+permalink: /kb/099/Q99057/
 ---
 
 ## Q99057: PC Forms: Resolved Names Are Not Underlined

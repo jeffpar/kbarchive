@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155998: Deadly Tide Requires Performance Test to Operate Properly"
-permalink: kb/155/Q155998/
+permalink: /kb/155/Q155998/
 ---
 
 ## Q155998: Deadly Tide Requires Performance Test to Operate Properly

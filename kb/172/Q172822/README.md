@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172822: Correct Modem Is Not Used To Connect to MSN"
-permalink: kb/172/Q172822/
+permalink: /kb/172/Q172822/
 ---
 
 ## Q172822: Correct Modem Is Not Used To Connect to MSN

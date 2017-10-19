@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248350: Kerberos Authentication Fails after Upgrading from IIS 4.0 to II"
-permalink: kb/248/Q248350/
+permalink: /kb/248/Q248350/
 ---
 
 ## Q248350: Kerberos Authentication Fails after Upgrading from IIS 4.0 to II

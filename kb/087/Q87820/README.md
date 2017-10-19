@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87820: CORE MCK PROMs for Microsoft OS/2 1.3"
-permalink: kb/087/Q87820/
+permalink: /kb/087/Q87820/
 ---
 
 ## Q87820: CORE MCK PROMs for Microsoft OS/2 1.3

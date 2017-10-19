@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126131: HOWTO: Speed Up Apps that Use the Microsoft Access ODBC Driver"
-permalink: kb/126/Q126131/
+permalink: /kb/126/Q126131/
 ---
 
 ## Q126131: HOWTO: Speed Up Apps that Use the Microsoft Access ODBC Driver

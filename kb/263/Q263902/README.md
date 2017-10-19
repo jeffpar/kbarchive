@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263902: PRB: Table/dbf File Record Count Incorrect Based on File Size"
-permalink: kb/263/Q263902/
+permalink: /kb/263/Q263902/
 ---
 
 ## Q263902: PRB: Table/dbf File Record Count Incorrect Based on File Size

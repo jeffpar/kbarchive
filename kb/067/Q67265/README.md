@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67265: Cannot Run Swapfile When Any Other Applications Are Running"
-permalink: kb/067/Q67265/
+permalink: /kb/067/Q67265/
 ---
 
 ## Q67265: Cannot Run Swapfile When Any Other Applications Are Running

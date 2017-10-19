@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172997: Error Message: Could Not Connect to the Proxy Server"
-permalink: kb/172/Q172997/
+permalink: /kb/172/Q172997/
 ---
 
 ## Q172997: Error Message: Could Not Connect to the Proxy Server

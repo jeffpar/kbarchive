@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48878: Mac Adm: Forwarding an Inquiry Message"
-permalink: kb/048/Q48878/
+permalink: /kb/048/Q48878/
 ---
 
 ## Q48878: Mac Adm: Forwarding an Inquiry Message

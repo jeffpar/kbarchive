@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153571: PCM Causes Dr. Watson AV if CurrentLogonServer Unavailable"
-permalink: kb/153/Q153571/
+permalink: /kb/153/Q153571/
 ---
 
 ## Q153571: PCM Causes Dr. Watson AV if CurrentLogonServer Unavailable

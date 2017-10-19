@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167114: SMS: PCM Service Is Now Available for Windows NT Clients"
-permalink: kb/167/Q167114/
+permalink: /kb/167/Q167114/
 ---
 
 ## Q167114: SMS: PCM Service Is Now Available for Windows NT Clients

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181207: FIX: CRuntimeClass Not Available for CInternetException"
-permalink: kb/181/Q181207/
+permalink: /kb/181/Q181207/
 ---
 
 ## Q181207: FIX: CRuntimeClass Not Available for CInternetException

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319936: XCON: The MTA Generates an Event ID 4283 Message"
-permalink: kb/319/Q319936/
+permalink: /kb/319/Q319936/
 ---
 
 ## Q319936: XCON: The MTA Generates an Event ID 4283 Message

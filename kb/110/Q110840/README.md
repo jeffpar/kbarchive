@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110840: Flight Simulator: Altitude Hold Must Be Within 35,000 Feet"
-permalink: kb/110/Q110840/
+permalink: /kb/110/Q110840/
 ---
 
 ## Q110840: Flight Simulator: Altitude Hold Must Be Within 35,000 Feet

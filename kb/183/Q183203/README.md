@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183203: Print Queue Backs Up When Connected to NetWare Server via LPR"
-permalink: kb/183/Q183203/
+permalink: /kb/183/Q183203/
 ---
 
 ## Q183203: Print Queue Backs Up When Connected to NetWare Server via LPR

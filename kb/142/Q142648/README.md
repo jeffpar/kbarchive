@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142648: STOP 0x00000024 in Ntfs.sys"
-permalink: kb/142/Q142648/
+permalink: /kb/142/Q142648/
 ---
 
 ## Q142648: STOP 0x00000024 in Ntfs.sys

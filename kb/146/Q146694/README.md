@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146694: XCLN: Remove All Leaves an Empty Program Group"
-permalink: kb/146/Q146694/
+permalink: /kb/146/Q146694/
 ---
 
 ## Q146694: XCLN: Remove All Leaves an Empty Program Group

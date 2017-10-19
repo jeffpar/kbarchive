@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183770: SMS: Snmpelea Unable to Open Security Event Log"
-permalink: kb/183/Q183770/
+permalink: /kb/183/Q183770/
 ---
 
 ## Q183770: SMS: Snmpelea Unable to Open Security Event Log

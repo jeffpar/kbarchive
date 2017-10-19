@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150859: Using SMSLS.INI to Map Domains Fails on SMS1.1J"
-permalink: kb/150/Q150859/
+permalink: /kb/150/Q150859/
 ---
 
 ## Q150859: Using SMSLS.INI to Map Domains Fails on SMS1.1J

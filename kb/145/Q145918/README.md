@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145918: FP: HTTP Error 400 Opening FrontPage Explorer"
-permalink: kb/145/Q145918/
+permalink: /kb/145/Q145918/
 ---
 
 ## Q145918: FP: HTTP Error 400 Opening FrontPage Explorer

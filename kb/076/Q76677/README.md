@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76677: How to Determine if BIOS Reports Floppy Drive Type Correctly"
-permalink: kb/076/Q76677/
+permalink: /kb/076/Q76677/
 ---
 
 ## Q76677: How to Determine if BIOS Reports Floppy Drive Type Correctly

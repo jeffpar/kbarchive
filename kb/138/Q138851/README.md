@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138851: PRB: SQL-SELECT INTO TABLE Creates Free Table Not DB Table"
-permalink: kb/138/Q138851/
+permalink: /kb/138/Q138851/
 ---
 
 ## Q138851: PRB: SQL-SELECT INTO TABLE Creates Free Table Not DB Table

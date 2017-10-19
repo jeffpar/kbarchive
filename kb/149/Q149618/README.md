@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149618: PRB: PageTimeout Defaults to Five Seconds in Jet 3.0"
-permalink: kb/149/Q149618/
+permalink: /kb/149/Q149618/
 ---
 
 ## Q149618: PRB: PageTimeout Defaults to Five Seconds in Jet 3.0

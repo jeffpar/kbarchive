@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194334: SP4 Installation Does Not Delete Reference to Previous Hotfixes"
-permalink: kb/194/Q194334/
+permalink: /kb/194/Q194334/
 ---
 
 ## Q194334: SP4 Installation Does Not Delete Reference to Previous Hotfixes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233977: WD97: Cannot Go to Bookmark in Unprotected Section of Document"
-permalink: kb/233/Q233977/
+permalink: /kb/233/Q233977/
 ---
 
 ## Q233977: WD97: Cannot Go to Bookmark in Unprotected Section of Document

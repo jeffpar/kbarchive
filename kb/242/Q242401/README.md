@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242401: HOWTO: Use a Timer With A Visual Basic SnapIn Project"
-permalink: kb/242/Q242401/
+permalink: /kb/242/Q242401/
 ---
 
 ## Q242401: HOWTO: Use a Timer With A Visual Basic SnapIn Project

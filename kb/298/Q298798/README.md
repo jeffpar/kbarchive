@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298798: BUG: Drag-and-Drop w/ Left Mouse Button Does Not Work on Win2K"
-permalink: kb/298/Q298798/
+permalink: /kb/298/Q298798/
 ---
 
 ## Q298798: BUG: Drag-and-Drop w/ Left Mouse Button Does Not Work on Win2K

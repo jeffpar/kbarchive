@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314995: Windows XP--Optimizing Modem Performance For MSN"
-permalink: kb/314/Q314995/
+permalink: /kb/314/Q314995/
 ---
 
 ## Q314995: Windows XP--Optimizing Modem Performance For MSN

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166064: WV: IPF in Word Viewer When Document Opened on Server"
-permalink: kb/166/Q166064/
+permalink: /kb/166/Q166064/
 ---
 
 ## Q166064: WV: IPF in Word Viewer When Document Opened on Server

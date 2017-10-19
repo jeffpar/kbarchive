@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89351: LAN Man 2.1 Test Summary (American Power Smart-UPS 600)"
-permalink: kb/089/Q89351/
+permalink: /kb/089/Q89351/
 ---
 
 ## Q89351: LAN Man 2.1 Test Summary (American Power Smart-UPS 600)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86383: PC WSPlus: Importing Long Appointments Hides Buttons"
-permalink: kb/086/Q86383/
+permalink: /kb/086/Q86383/
 ---
 
 ## Q86383: PC WSPlus: Importing Long Appointments Hides Buttons

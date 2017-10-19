@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162931: PRB: SourceSafe Commands not Available for RunCommand Method"
-permalink: kb/162/Q162931/
+permalink: /kb/162/Q162931/
 ---
 
 ## Q162931: PRB: SourceSafe Commands not Available for RunCommand Method

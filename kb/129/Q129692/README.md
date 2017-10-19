@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129692: Baseball 95: High Scores in Trivia Not Displayed During Game"
-permalink: kb/129/Q129692/
+permalink: /kb/129/Q129692/
 ---
 
 ## Q129692: Baseball 95: High Scores in Trivia Not Displayed During Game

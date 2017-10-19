@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298128: Dcpromo.exe Does Not Work When You Upgrade a BDC"
-permalink: kb/298/Q298128/
+permalink: /kb/298/Q298128/
 ---
 
 ## Q298128: Dcpromo.exe Does Not Work When You Upgrade a BDC

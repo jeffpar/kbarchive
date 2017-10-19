@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256335: Low Hard Disk Space May Damage a Roaming User Profile"
-permalink: kb/256/Q256335/
+permalink: /kb/256/Q256335/
 ---
 
 ## Q256335: Low Hard Disk Space May Damage a Roaming User Profile

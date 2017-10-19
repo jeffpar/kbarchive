@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141880: BUG: Object Browser's Member Options Dialog Help Gives Error"
-permalink: kb/141/Q141880/
+permalink: /kb/141/Q141880/
 ---
 
 ## Q141880: BUG: Object Browser's Member Options Dialog Help Gives Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152941: XCON: MTA Crashes Over Slow or Sporadic Network Connection"
-permalink: kb/152/Q152941/
+permalink: /kb/152/Q152941/
 ---
 
 ## Q152941: XCON: MTA Crashes Over Slow or Sporadic Network Connection

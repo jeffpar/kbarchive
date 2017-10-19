@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q38667: Mac DOS: Using Microsoft Mail with Windows/286"
-permalink: kb/038/Q38667/
+permalink: /kb/038/Q38667/
 ---
 
 ## Q38667: Mac DOS: Using Microsoft Mail with Windows/286

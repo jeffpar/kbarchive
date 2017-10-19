@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229063: BUG:GetDayBold Event Not Working as Expected w/MonthView Control"
-permalink: kb/229/Q229063/
+permalink: /kb/229/Q229063/
 ---
 
 ## Q229063: BUG:GetDayBold Event Not Working as Expected w/MonthView Control

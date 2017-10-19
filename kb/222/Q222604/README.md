@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222604: Configuring Cached Dfs Referral Expiration Time in Dfs 4.1"
-permalink: kb/222/Q222604/
+permalink: /kb/222/Q222604/
 ---
 
 ## Q222604: Configuring Cached Dfs Referral Expiration Time in Dfs 4.1

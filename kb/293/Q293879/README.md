@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293879: &quot;Unable to Write File&quot; Error After Changing Com.cfg"
-permalink: kb/293/Q293879/
+permalink: /kb/293/Q293879/
 ---
 
 ## Q293879: &quot;Unable to Write File&quot; Error After Changing Com.cfg

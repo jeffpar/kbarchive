@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166168: HOWTO: Use RUNDLL32 to Debug Control Panel Applets"
-permalink: kb/166/Q166168/
+permalink: /kb/166/Q166168/
 ---
 
 ## Q166168: HOWTO: Use RUNDLL32 to Debug Control Panel Applets

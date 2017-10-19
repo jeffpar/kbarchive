@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170668: Inetinfo.exe Access Violation When Querying DB2 Using SNA Server"
-permalink: kb/170/Q170668/
+permalink: /kb/170/Q170668/
 ---
 
 ## Q170668: Inetinfo.exe Access Violation When Querying DB2 Using SNA Server

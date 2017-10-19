@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196717: WD97: &quot;That That&quot; and &quot;Had Had&quot; Not Flagged as Repeated Words"
-permalink: kb/196/Q196717/
+permalink: /kb/196/Q196717/
 ---
 
 ## Q196717: WD97: &quot;That That&quot; and &quot;Had Had&quot; Not Flagged as Repeated Words

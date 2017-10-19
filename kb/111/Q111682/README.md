@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111682: How to Obtain Microsoft DLC and Microsoft TCP/IP"
-permalink: kb/111/Q111682/
+permalink: /kb/111/Q111682/
 ---
 
 ## Q111682: How to Obtain Microsoft DLC and Microsoft TCP/IP

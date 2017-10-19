@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207382: Desktop Themes Component Total Changes Randomly"
-permalink: kb/207/Q207382/
+permalink: /kb/207/Q207382/
 ---
 
 ## Q207382: Desktop Themes Component Total Changes Randomly

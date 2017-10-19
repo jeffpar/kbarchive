@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246072: Certificate Authorities: Using Digital Certificates"
-permalink: kb/246/Q246072/
+permalink: /kb/246/Q246072/
 ---
 
 ## Q246072: Certificate Authorities: Using Digital Certificates

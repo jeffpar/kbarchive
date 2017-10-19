@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216901: XCLN: Resources Free Busy Information Not Updated"
-permalink: kb/216/Q216901/
+permalink: /kb/216/Q216901/
 ---
 
 ## Q216901: XCLN: Resources Free Busy Information Not Updated

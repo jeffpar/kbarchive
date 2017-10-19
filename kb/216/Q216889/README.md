@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216889: FIX: DCOM95 1.2 or DCOM98 Causes Data Corruption in RPC Calls"
-permalink: kb/216/Q216889/
+permalink: /kb/216/Q216889/
 ---
 
 ## Q216889: FIX: DCOM95 1.2 or DCOM98 Causes Data Corruption in RPC Calls

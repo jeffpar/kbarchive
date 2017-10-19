@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216174: Do Not Install ExAir Site on a Public Web Site"
-permalink: kb/216/Q216174/
+permalink: /kb/216/Q216174/
 ---
 
 ## Q216174: Do Not Install ExAir Site on a Public Web Site

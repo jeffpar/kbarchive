@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141334: VSWAP32 Demos Multiple-View Switching in SDI"
-permalink: kb/141/Q141334/
+permalink: /kb/141/Q141334/
 ---
 
 ## Q141334: VSWAP32 Demos Multiple-View Switching in SDI

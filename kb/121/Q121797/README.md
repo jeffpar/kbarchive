@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121797: PC WSPlus:  Standard Response Buttons Unavailable"
-permalink: kb/121/Q121797/
+permalink: /kb/121/Q121797/
 ---
 
 ## Q121797: PC WSPlus:  Standard Response Buttons Unavailable

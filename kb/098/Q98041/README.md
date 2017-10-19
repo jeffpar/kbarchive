@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98041: INFO: Using CBitmapButton in CDialogBar and CFormView"
-permalink: kb/098/Q98041/
+permalink: /kb/098/Q98041/
 ---
 
 ## Q98041: INFO: Using CBitmapButton in CDialogBar and CFormView

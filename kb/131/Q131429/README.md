@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131429: Conner Backup Exec Incompatible with Long Filenames"
-permalink: kb/131/Q131429/
+permalink: /kb/131/Q131429/
 ---
 
 ## Q131429: Conner Backup Exec Incompatible with Long Filenames

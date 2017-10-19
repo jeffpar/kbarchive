@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150571: FIX: CWnd::DragAcceptFiles() in Books Online"
-permalink: kb/150/Q150571/
+permalink: /kb/150/Q150571/
 ---
 
 ## Q150571: FIX: CWnd::DragAcceptFiles() in Books Online

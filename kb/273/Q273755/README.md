@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273755: Access Violation in Mmc.exe Starting Server Certificate Wizard"
-permalink: kb/273/Q273755/
+permalink: /kb/273/Q273755/
 ---
 
 ## Q273755: Access Violation in Mmc.exe Starting Server Certificate Wizard

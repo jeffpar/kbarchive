@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192960: PRB: Cannot Release Procedure's FXP if Class Definition in PRG"
-permalink: kb/192/Q192960/
+permalink: /kb/192/Q192960/
 ---
 
 ## Q192960: PRB: Cannot Release Procedure's FXP if Class Definition in PRG

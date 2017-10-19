@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181480: FIX: MFC ODBC Cannot Update Access Date/Time with No Date"
-permalink: kb/181/Q181480/
+permalink: /kb/181/Q181480/
 ---
 
 ## Q181480: FIX: MFC ODBC Cannot Update Access Date/Time with No Date

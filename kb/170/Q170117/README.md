@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170117: HOW TO: Use GUID Fields in Access from Visual C++"
-permalink: kb/170/Q170117/
+permalink: /kb/170/Q170117/
 ---
 
 ## Q170117: HOW TO: Use GUID Fields in Access from Visual C++

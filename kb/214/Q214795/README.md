@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214795: How to Back Up and Restore a Print Server Configuration"
-permalink: kb/214/Q214795/
+permalink: /kb/214/Q214795/
 ---
 
 ## Q214795: How to Back Up and Restore a Print Server Configuration

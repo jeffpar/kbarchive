@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140239: SMODE Tool Does Not Affect Client for NetWare Networks"
-permalink: kb/140/Q140239/
+permalink: /kb/140/Q140239/
 ---
 
 ## Q140239: SMODE Tool Does Not Affect Client for NetWare Networks

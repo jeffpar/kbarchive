@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104900: DOCERR: Q Edit Descriptor and % Intrinsics Not Supported"
-permalink: kb/104/Q104900/
+permalink: /kb/104/Q104900/
 ---
 
 ## Q104900: DOCERR: Q Edit Descriptor and % Intrinsics Not Supported

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32905: Windows Version History"
-permalink: kb/032/Q32905/
+permalink: /kb/032/Q32905/
 ---
 
 ## Q32905: Windows Version History

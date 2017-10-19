@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130355: How to Validate Data by Using Customized Error Messages"
-permalink: kb/130/Q130355/
+permalink: /kb/130/Q130355/
 ---
 
 ## Q130355: How to Validate Data by Using Customized Error Messages

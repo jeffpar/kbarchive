@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159610: SMS: Access Violation Occurs with Pollinv.exe"
-permalink: kb/159/Q159610/
+permalink: /kb/159/Q159610/
 ---
 
 ## Q159610: SMS: Access Violation Occurs with Pollinv.exe

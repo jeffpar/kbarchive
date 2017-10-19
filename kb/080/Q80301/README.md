@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80301: How to Change the MS-DOS Cursor"
-permalink: kb/080/Q80301/
+permalink: /kb/080/Q80301/
 ---
 
 ## Q80301: How to Change the MS-DOS Cursor

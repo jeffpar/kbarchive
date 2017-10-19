@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187917: Baseball 3D: How to Configure and Use Game Controls"
-permalink: kb/187/Q187917/
+permalink: /kb/187/Q187917/
 ---
 
 ## Q187917: Baseball 3D: How to Configure and Use Game Controls

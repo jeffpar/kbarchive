@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250998: Access Violation in Cmd.exe in Long Batch Files Using &quot;FOR /F&quot;"
-permalink: kb/250/Q250998/
+permalink: /kb/250/Q250998/
 ---
 
 ## Q250998: Access Violation in Cmd.exe in Long Batch Files Using &quot;FOR /F&quot;

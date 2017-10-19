@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315839: SNABASE.exe Access Violation on HIS 2000 End User Client"
-permalink: kb/315/Q315839/
+permalink: /kb/315/Q315839/
 ---
 
 ## Q315839: SNABASE.exe Access Violation on HIS 2000 End User Client

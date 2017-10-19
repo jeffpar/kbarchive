@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112653: WFWG 3.11 Err Msg: Network Modules Not Loaded"
-permalink: kb/112/Q112653/
+permalink: /kb/112/Q112653/
 ---
 
 ## Q112653: WFWG 3.11 Err Msg: Network Modules Not Loaded

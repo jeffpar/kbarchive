@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262898: Cannot Start MMS As Either a Service or a Console Application"
-permalink: kb/262/Q262898/
+permalink: /kb/262/Q262898/
 ---
 
 ## Q262898: Cannot Start MMS As Either a Service or a Console Application

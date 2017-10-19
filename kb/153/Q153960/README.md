@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153960: XCLN: Can't Drill Down On Distribution List In Schedule+"
-permalink: kb/153/Q153960/
+permalink: /kb/153/Q153960/
 ---
 
 ## Q153960: XCLN: Can't Drill Down On Distribution List In Schedule+

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321329: HOWTO: Find Jet Database .mdb File Format Version"
-permalink: kb/321/Q321329/
+permalink: /kb/321/Q321329/
 ---
 
 ## Q321329: HOWTO: Find Jet Database .mdb File Format Version

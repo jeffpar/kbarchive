@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232599: XADM: Exchange Server Creating Illegal JIS Encoded Text"
-permalink: kb/232/Q232599/
+permalink: /kb/232/Q232599/
 ---
 
 ## Q232599: XADM: Exchange Server Creating Illegal JIS Encoded Text

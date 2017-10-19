@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127054: Loopback Functionality Does Not Work with Miniport Drivers"
-permalink: kb/127/Q127054/
+permalink: /kb/127/Q127054/
 ---
 
 ## Q127054: Loopback Functionality Does Not Work with Miniport Drivers

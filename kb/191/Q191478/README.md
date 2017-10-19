@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191478: INFO: Palm-size PC 1.0 Does Not Support VBCE Applications"
-permalink: kb/191/Q191478/
+permalink: /kb/191/Q191478/
 ---
 
 ## Q191478: INFO: Palm-size PC 1.0 Does Not Support VBCE Applications

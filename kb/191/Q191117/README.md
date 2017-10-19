@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191117: Jet Database Engine Programmer's Guide 2nd Edition Correction"
-permalink: kb/191/Q191117/
+permalink: /kb/191/Q191117/
 ---
 
 ## Q191117: Jet Database Engine Programmer's Guide 2nd Edition Correction

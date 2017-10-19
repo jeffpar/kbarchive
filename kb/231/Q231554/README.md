@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231554: MapPoint: Stops Responding When You Map Shaded Area Map"
-permalink: kb/231/Q231554/
+permalink: /kb/231/Q231554/
 ---
 
 ## Q231554: MapPoint: Stops Responding When You Map Shaded Area Map

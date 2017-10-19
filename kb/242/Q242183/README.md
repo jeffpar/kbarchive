@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242183: Cisco Cable Modem Cannot Receive IP Address from DHCP Server"
-permalink: kb/242/Q242183/
+permalink: /kb/242/Q242183/
 ---
 
 ## Q242183: Cisco Cable Modem Cannot Receive IP Address from DHCP Server

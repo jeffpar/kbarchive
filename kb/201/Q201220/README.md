@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201220: Err Msg: The Application Could Not Find a GPS on Your System"
-permalink: kb/201/Q201220/
+permalink: /kb/201/Q201220/
 ---
 
 ## Q201220: Err Msg: The Application Could Not Find a GPS on Your System

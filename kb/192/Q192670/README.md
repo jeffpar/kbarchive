@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192670: SMSINST: HKEY_USERS Values Not Scanned for During Repackage"
-permalink: kb/192/Q192670/
+permalink: /kb/192/Q192670/
 ---
 
 ## Q192670: SMSINST: HKEY_USERS Values Not Scanned for During Repackage

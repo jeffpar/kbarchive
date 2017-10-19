@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184937: Session Between Multihomed Computers May End Unexpectedly"
-permalink: kb/184/Q184937/
+permalink: /kb/184/Q184937/
 ---
 
 ## Q184937: Session Between Multihomed Computers May End Unexpectedly

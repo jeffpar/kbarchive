@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168924: Print to File with 5Si Mx PS Driver Inserts Wrong Control Code"
-permalink: kb/168/Q168924/
+permalink: /kb/168/Q168924/
 ---
 
 ## Q168924: Print to File with 5Si Mx PS Driver Inserts Wrong Control Code

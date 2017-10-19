@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299346: Windows 2000 Resource Kits Include Wrong Files"
-permalink: kb/299/Q299346/
+permalink: /kb/299/Q299346/
 ---
 
 ## Q299346: Windows 2000 Resource Kits Include Wrong Files

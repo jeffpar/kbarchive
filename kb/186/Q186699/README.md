@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186699: XWEB: MAC: Internet Explorer 4.0 Opens Attachments as ASP Files"
-permalink: kb/186/Q186699/
+permalink: /kb/186/Q186699/
 ---
 
 ## Q186699: XWEB: MAC: Internet Explorer 4.0 Opens Attachments as ASP Files

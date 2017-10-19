@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82487: Dark Printing TIFF Images to Panasonic KX-P1180"
-permalink: kb/082/Q82487/
+permalink: /kb/082/Q82487/
 ---
 
 ## Q82487: Dark Printing TIFF Images to Panasonic KX-P1180

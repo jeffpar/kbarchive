@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201836: SMS: SMSAPM32 Network Speed Detection on SMS2.0 NetWare Clients"
-permalink: kb/201/Q201836/
+permalink: /kb/201/Q201836/
 ---
 
 ## Q201836: SMS: SMSAPM32 Network Speed Detection on SMS2.0 NetWare Clients

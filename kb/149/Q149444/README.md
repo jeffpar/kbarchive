@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149444: Downstream PU to DEC Server May Fail with Event 56: XID Reject"
-permalink: kb/149/Q149444/
+permalink: /kb/149/Q149444/
 ---
 
 ## Q149444: Downstream PU to DEC Server May Fail with Event 56: XID Reject

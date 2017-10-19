@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189530: SMS: Scheduler Never Creates Send Request"
-permalink: kb/189/Q189530/
+permalink: /kb/189/Q189530/
 ---
 
 ## Q189530: SMS: Scheduler Never Creates Send Request

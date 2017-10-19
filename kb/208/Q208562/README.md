@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q208562: BUG: VBCE Special Methods Do Not Appear in IntelliSense Help"
-permalink: kb/208/Q208562/
+permalink: /kb/208/Q208562/
 ---
 
 ## Q208562: BUG: VBCE Special Methods Do Not Appear in IntelliSense Help

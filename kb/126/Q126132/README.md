@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126132: WINS: Push Notification Sent on Every Registration"
-permalink: kb/126/Q126132/
+permalink: /kb/126/Q126132/
 ---
 
 ## Q126132: WINS: Push Notification Sent on Every Registration

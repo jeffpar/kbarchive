@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256182: Games Err Msg: &lt;Game&gt; Requires DirectX &lt;version&gt; or Higher"
-permalink: kb/256/Q256182/
+permalink: /kb/256/Q256182/
 ---
 
 ## Q256182: Games Err Msg: &lt;Game&gt; Requires DirectX &lt;version&gt; or Higher

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161163: Third-Party Print Drivers May Not Upgrade with Windows NT"
-permalink: kb/161/Q161163/
+permalink: /kb/161/Q161163/
 ---
 
 ## Q161163: Third-Party Print Drivers May Not Upgrade with Windows NT

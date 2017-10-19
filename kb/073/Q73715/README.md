@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73715: Horsehead Bookend Is Cropped by Design"
-permalink: kb/073/Q73715/
+permalink: /kb/073/Q73715/
 ---
 
 ## Q73715: Horsehead Bookend Is Cropped by Design

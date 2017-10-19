@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174028: XWEB: Date Fields in OWA Meetings and Appointments Do Not Align"
-permalink: kb/174/Q174028/
+permalink: /kb/174/Q174028/
 ---
 
 ## Q174028: XWEB: Date Fields in OWA Meetings and Appointments Do Not Align

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183886: Access Violation in LSASS When Logging on System"
-permalink: kb/183/Q183886/
+permalink: /kb/183/Q183886/
 ---
 
 ## Q183886: Access Violation in LSASS When Logging on System

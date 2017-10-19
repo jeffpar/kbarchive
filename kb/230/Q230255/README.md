@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230255: SMS: Wuser32 Service Hangs on Windows NT Clients"
-permalink: kb/230/Q230255/
+permalink: /kb/230/Q230255/
 ---
 
 ## Q230255: SMS: Wuser32 Service Hangs on Windows NT Clients

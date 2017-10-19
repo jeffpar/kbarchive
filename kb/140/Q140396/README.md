@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140396: SMS Sender Manager Tool"
-permalink: kb/140/Q140396/
+permalink: /kb/140/Q140396/
 ---
 
 ## Q140396: SMS Sender Manager Tool

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59963: PRB: CodeView Does Display Source File Contents"
-permalink: kb/059/Q59963/
+permalink: /kb/059/Q59963/
 ---
 
 ## Q59963: PRB: CodeView Does Display Source File Contents

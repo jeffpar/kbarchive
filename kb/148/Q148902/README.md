@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148902: Bookshelf 96-97: Copy To Causes Unexpected Behavior in Office"
-permalink: kb/148/Q148902/
+permalink: /kb/148/Q148902/
 ---
 
 ## Q148902: Bookshelf 96-97: Copy To Causes Unexpected Behavior in Office

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258985: How to Turn Off The Microsoft Network 5.x"
-permalink: kb/258/Q258985/
+permalink: /kb/258/Q258985/
 ---
 
 ## Q258985: How to Turn Off The Microsoft Network 5.x

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121661: How to Use the TrueType Fonts Built into the Printer"
-permalink: kb/121/Q121661/
+permalink: /kb/121/Q121661/
 ---
 
 ## Q121661: How to Use the TrueType Fonts Built into the Printer

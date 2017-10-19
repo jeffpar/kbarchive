@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267251: COMTI Test Console Fails When You Use an Array of UDTs"
-permalink: kb/267/Q267251/
+permalink: /kb/267/Q267251/
 ---
 
 ## Q267251: COMTI Test Console Fails When You Use an Array of UDTs

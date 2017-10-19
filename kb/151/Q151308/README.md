@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151308: &quot;Access Denied&quot; When You Run AT Command on Remote Computer"
-permalink: kb/151/Q151308/
+permalink: /kb/151/Q151308/
 ---
 
 ## Q151308: &quot;Access Denied&quot; When You Run AT Command on Remote Computer

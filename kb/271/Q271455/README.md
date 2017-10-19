@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271455: Releasing a DHCP-Assigned IP Address at Shutdown in Windows NT"
-permalink: kb/271/Q271455/
+permalink: /kb/271/Q271455/
 ---
 
 ## Q271455: Releasing a DHCP-Assigned IP Address at Shutdown in Windows NT

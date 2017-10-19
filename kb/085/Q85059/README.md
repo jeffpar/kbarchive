@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85059: FFAPI: The Limitations of FFAPI"
-permalink: kb/085/Q85059/
+permalink: /kb/085/Q85059/
 ---
 
 ## Q85059: FFAPI: The Limitations of FFAPI

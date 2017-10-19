@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166624: XADM: Upgrading Active Server Page Scripts"
-permalink: kb/166/Q166624/
+permalink: /kb/166/Q166624/
 ---
 
 ## Q166624: XADM: Upgrading Active Server Page Scripts

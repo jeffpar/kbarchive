@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191639: PRB: Report Command Used In Visual FoxPro COM DLL Causes Error"
-permalink: kb/191/Q191639/
+permalink: /kb/191/Q191639/
 ---
 
 ## Q191639: PRB: Report Command Used In Visual FoxPro COM DLL Causes Error

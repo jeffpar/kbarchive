@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141192: Mandatory After Date Not Updated For Repeated Jobs"
-permalink: kb/141/Q141192/
+permalink: /kb/141/Q141192/
 ---
 
 ## Q141192: Mandatory After Date Not Updated For Repeated Jobs

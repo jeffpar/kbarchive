@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62053: Mac Hyp: Sending a Message After It Is Created"
-permalink: kb/062/Q62053/
+permalink: /kb/062/Q62053/
 ---
 
 ## Q62053: Mac Hyp: Sending a Message After It Is Created

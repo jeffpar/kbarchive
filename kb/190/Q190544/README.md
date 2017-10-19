@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190544: BUG: Compile of Report with #INCLUDE Causes VFP to Terminate"
-permalink: kb/190/Q190544/
+permalink: /kb/190/Q190544/
 ---
 
 ## Q190544: BUG: Compile of Report with #INCLUDE Causes VFP to Terminate

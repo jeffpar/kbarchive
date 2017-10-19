@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177869: XFOR: Messages with X.400 Address in From Field Not Delivered"
-permalink: kb/177/Q177869/
+permalink: /kb/177/Q177869/
 ---
 
 ## Q177869: XFOR: Messages with X.400 Address in From Field Not Delivered

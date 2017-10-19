@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97072: PC WRmt: Alphanumeric Characters Only in AT&amp;T Driver Addresses"
-permalink: kb/097/Q97072/
+permalink: /kb/097/Q97072/
 ---
 
 ## Q97072: PC WRmt: Alphanumeric Characters Only in AT&amp;T Driver Addresses

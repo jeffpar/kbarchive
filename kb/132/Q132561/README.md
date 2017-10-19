@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132561: PC Win: Routed Messages Do Not Print"
-permalink: kb/132/Q132561/
+permalink: /kb/132/Q132561/
 ---
 
 ## Q132561: PC Win: Routed Messages Do Not Print

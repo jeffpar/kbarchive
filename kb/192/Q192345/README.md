@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192345: FIX: DISPLAY/LIST DLLS NOCONSOLE Echo to Screen"
-permalink: kb/192/Q192345/
+permalink: /kb/192/Q192345/
 ---
 
 ## Q192345: FIX: DISPLAY/LIST DLLS NOCONSOLE Echo to Screen

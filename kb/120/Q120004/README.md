@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120004: Task-Switching Window Remains After TAB Key Is Released"
-permalink: kb/120/Q120004/
+permalink: /kb/120/Q120004/
 ---
 
 ## Q120004: Task-Switching Window Remains After TAB Key Is Released

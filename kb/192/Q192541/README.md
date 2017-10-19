@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192541: Err Msg: Mcdetect Caused an Invalid Page Fault in Msvcrt.dll"
-permalink: kb/192/Q192541/
+permalink: /kb/192/Q192541/
 ---
 
 ## Q192541: Err Msg: Mcdetect Caused an Invalid Page Fault in Msvcrt.dll

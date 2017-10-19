@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221673: FIX: Black Cursor in ControlSource Not Supported in Korean VFP"
-permalink: kb/221/Q221673/
+permalink: /kb/221/Q221673/
 ---
 
 ## Q221673: FIX: Black Cursor in ControlSource Not Supported in Korean VFP

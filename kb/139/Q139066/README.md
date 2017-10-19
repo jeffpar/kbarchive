@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139066: DOC: Incorrect Reference to TabWidth Property in Help"
-permalink: kb/139/Q139066/
+permalink: /kb/139/Q139066/
 ---
 
 ## Q139066: DOC: Incorrect Reference to TabWidth Property in Help

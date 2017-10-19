@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112551: Reinstalling Windows 3.10 Files over Windows 3.11"
-permalink: kb/112/Q112551/
+permalink: /kb/112/Q112551/
 ---
 
 ## Q112551: Reinstalling Windows 3.10 Files over Windows 3.11

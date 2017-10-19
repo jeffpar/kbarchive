@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188707: INFO: Visual C++ and the Year 2000, Years that Cause an Overflow"
-permalink: kb/188/Q188707/
+permalink: /kb/188/Q188707/
 ---
 
 ## Q188707: INFO: Visual C++ and the Year 2000, Years that Cause an Overflow

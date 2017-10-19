@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196842: WD97: How to Type Accented International Characters"
-permalink: kb/196/Q196842/
+permalink: /kb/196/Q196842/
 ---
 
 ## Q196842: WD97: How to Type Accented International Characters

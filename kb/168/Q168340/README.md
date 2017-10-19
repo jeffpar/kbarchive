@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168340: SMS: .Tmp Files Not Converted to .Raw Files In Logon.srv"
-permalink: kb/168/Q168340/
+permalink: /kb/168/Q168340/
 ---
 
 ## Q168340: SMS: .Tmp Files Not Converted to .Raw Files In Logon.srv

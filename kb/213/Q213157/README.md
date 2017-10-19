@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213157: SMS: Software Metering Does Not Accurately Report Usage"
-permalink: kb/213/Q213157/
+permalink: /kb/213/Q213157/
 ---
 
 ## Q213157: SMS: Software Metering Does Not Accurately Report Usage

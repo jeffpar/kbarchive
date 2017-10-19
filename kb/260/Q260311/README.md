@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260311: XADM: Mailbox Manager Stops Responding Clicking the Policies Tab"
-permalink: kb/260/Q260311/
+permalink: /kb/260/Q260311/
 ---
 
 ## Q260311: XADM: Mailbox Manager Stops Responding Clicking the Policies Tab

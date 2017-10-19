@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195546: Removal of Multimedia Device May Cause Resource Conflict"
-permalink: kb/195/Q195546/
+permalink: /kb/195/Q195546/
 ---
 
 ## Q195546: Removal of Multimedia Device May Cause Resource Conflict

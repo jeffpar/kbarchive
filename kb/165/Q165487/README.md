@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165487: Incorrect or Garbled Text on Tab Labels in Properties"
-permalink: kb/165/Q165487/
+permalink: /kb/165/Q165487/
 ---
 
 ## Q165487: Incorrect or Garbled Text on Tab Labels in Properties

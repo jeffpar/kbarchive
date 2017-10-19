@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168092: XCLN: Deleted PAB Entries Remain in PDLs"
-permalink: kb/168/Q168092/
+permalink: /kb/168/Q168092/
 ---
 
 ## Q168092: XCLN: Deleted PAB Entries Remain in PDLs

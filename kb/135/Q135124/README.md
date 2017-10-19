@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135124: System Keys Not Passed Through to Client Using Remote Control"
-permalink: kb/135/Q135124/
+permalink: /kb/135/Q135124/
 ---
 
 ## Q135124: System Keys Not Passed Through to Client Using Remote Control

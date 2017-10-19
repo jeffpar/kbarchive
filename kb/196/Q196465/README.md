@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196465: Err Msg: Your Password Must Be at Least 0 Characters Long..."
-permalink: kb/196/Q196465/
+permalink: /kb/196/Q196465/
 ---
 
 ## Q196465: Err Msg: Your Password Must Be at Least 0 Characters Long...

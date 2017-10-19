@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133428: PC DirSync: Information on the REQTRANS.GLB Transaction File"
-permalink: kb/133/Q133428/
+permalink: /kb/133/Q133428/
 ---
 
 ## Q133428: PC DirSync: Information on the REQTRANS.GLB Transaction File

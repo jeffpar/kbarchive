@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195932: DHCP Server of Service Pack 4 Ignores Reservations"
-permalink: kb/195/Q195932/
+permalink: /kb/195/Q195932/
 ---
 
 ## Q195932: DHCP Server of Service Pack 4 Ignores Reservations

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133738: How to Display Grid-Based Logical Fields as Other than T or F"
-permalink: kb/133/Q133738/
+permalink: /kb/133/Q133738/
 ---
 
 ## Q133738: How to Display Grid-Based Logical Fields as Other than T or F

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140859: TCP/IP Routing Basics for Windows NT"
-permalink: kb/140/Q140859/
+permalink: /kb/140/Q140859/
 ---
 
 ## Q140859: TCP/IP Routing Basics for Windows NT

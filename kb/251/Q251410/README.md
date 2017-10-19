@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251410: XADM: Backup Stops with Events 105 and 145 and Error 1032"
-permalink: kb/251/Q251410/
+permalink: /kb/251/Q251410/
 ---
 
 ## Q251410: XADM: Backup Stops with Events 105 and 145 and Error 1032

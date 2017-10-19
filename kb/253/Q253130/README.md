@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253130: PRB: Message Box in ExitInstance of MFC App Are Not Displayed"
-permalink: kb/253/Q253130/
+permalink: /kb/253/Q253130/
 ---
 
 ## Q253130: PRB: Message Box in ExitInstance of MFC App Are Not Displayed

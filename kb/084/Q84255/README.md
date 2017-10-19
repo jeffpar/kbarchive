@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84255: File Manager Reports Incorrect Disk Size on Novell Network"
-permalink: kb/084/Q84255/
+permalink: /kb/084/Q84255/
 ---
 
 ## Q84255: File Manager Reports Incorrect Disk Size on Novell Network

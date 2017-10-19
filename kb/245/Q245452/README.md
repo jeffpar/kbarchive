@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245452: Streets &amp; Trips 2000: Unable to Update Construction Information"
-permalink: kb/245/Q245452/
+permalink: /kb/245/Q245452/
 ---
 
 ## Q245452: Streets &amp; Trips 2000: Unable to Update Construction Information

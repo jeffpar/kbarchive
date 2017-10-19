@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146060: No Left-Hand Support for BallPoint Mouse in Windows 95"
-permalink: kb/146/Q146060/
+permalink: /kb/146/Q146060/
 ---
 
 ## Q146060: No Left-Hand Support for BallPoint Mouse in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152477: XFOR: Handshake Files Moved to BADMAIL Directory"
-permalink: kb/152/Q152477/
+permalink: /kb/152/Q152477/
 ---
 
 ## Q152477: XFOR: Handshake Files Moved to BADMAIL Directory

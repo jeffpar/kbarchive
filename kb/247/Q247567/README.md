@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247567: Service Pack 4 Switches Passed to Archive Do Not Work"
-permalink: kb/247/Q247567/
+permalink: /kb/247/Q247567/
 ---
 
 ## Q247567: Service Pack 4 Switches Passed to Archive Do Not Work

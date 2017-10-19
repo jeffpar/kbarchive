@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151685: Garmin GPS Interface Disk Contents (3.5 inch, 1.44 MB)"
-permalink: kb/151/Q151685/
+permalink: /kb/151/Q151685/
 ---
 
 ## Q151685: Garmin GPS Interface Disk Contents (3.5 inch, 1.44 MB)

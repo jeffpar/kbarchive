@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192402: The Plus Tab Is Missing from the Display Properties Dialog Box"
-permalink: kb/192/Q192402/
+permalink: /kb/192/Q192402/
 ---
 
 ## Q192402: The Plus Tab Is Missing from the Display Properties Dialog Box

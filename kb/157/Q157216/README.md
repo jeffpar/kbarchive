@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157216: PPT: PowerPoint Slide Shows Look Bad in 16 Colors"
-permalink: kb/157/Q157216/
+permalink: /kb/157/Q157216/
 ---
 
 ## Q157216: PPT: PowerPoint Slide Shows Look Bad in 16 Colors

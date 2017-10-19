@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183238: SNARAS Logs Events 101, 102, and 201 When Dialing Out"
-permalink: kb/183/Q183238/
+permalink: /kb/183/Q183238/
 ---
 
 ## Q183238: SNARAS Logs Events 101, 102, and 201 When Dialing Out

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149823: 3D Movie Maker: ErrMsg: You Do Not Have a Multimedia Driver"
-permalink: kb/149/Q149823/
+permalink: /kb/149/Q149823/
 ---
 
 ## Q149823: 3D Movie Maker: ErrMsg: You Do Not Have a Multimedia Driver

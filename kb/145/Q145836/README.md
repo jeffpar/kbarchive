@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145836: Fatal Exception in VMM(06) Caused by Damaged Registry"
-permalink: kb/145/Q145836/
+permalink: /kb/145/Q145836/
 ---
 
 ## Q145836: Fatal Exception in VMM(06) Caused by Damaged Registry

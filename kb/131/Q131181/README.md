@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131181: How to Manage the Exiting Process with QueryUnLoad Event"
-permalink: kb/131/Q131181/
+permalink: /kb/131/Q131181/
 ---
 
 ## Q131181: How to Manage the Exiting Process with QueryUnLoad Event

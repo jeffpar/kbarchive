@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142688: Tape Devices Tool Cannot Find Location for Floppy Tape Driver"
-permalink: kb/142/Q142688/
+permalink: /kb/142/Q142688/
 ---
 
 ## Q142688: Tape Devices Tool Cannot Find Location for Floppy Tape Driver

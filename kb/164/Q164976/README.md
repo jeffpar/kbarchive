@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164976: XADM: Encrypted Msgs Can't Be Forwarded w/ Inbox Rule"
-permalink: kb/164/Q164976/
+permalink: /kb/164/Q164976/
 ---
 
 ## Q164976: XADM: Encrypted Msgs Can't Be Forwarded w/ Inbox Rule

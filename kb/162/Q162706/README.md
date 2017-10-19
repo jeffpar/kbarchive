@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162706: PPT: Sample Code to Determine the Number of Open Presentations"
-permalink: kb/162/Q162706/
+permalink: /kb/162/Q162706/
 ---
 
 ## Q162706: PPT: Sample Code to Determine the Number of Open Presentations

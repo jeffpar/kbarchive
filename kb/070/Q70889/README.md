@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70889: PRB: SPY Updates Only One Line with Small Buffer"
-permalink: kb/070/Q70889/
+permalink: /kb/070/Q70889/
 ---
 
 ## Q70889: PRB: SPY Updates Only One Line with Small Buffer

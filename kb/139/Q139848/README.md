@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139848: Problems Using Microsoft Fax with RPI Modems"
-permalink: kb/139/Q139848/
+permalink: /kb/139/Q139848/
 ---
 
 ## Q139848: Problems Using Microsoft Fax with RPI Modems

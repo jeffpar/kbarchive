@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176768: SNA Server PU/LU Reactivation Fails After VTAM Z NET CANCEL"
-permalink: kb/176/Q176768/
+permalink: /kb/176/Q176768/
 ---
 
 ## Q176768: SNA Server PU/LU Reactivation Fails After VTAM Z NET CANCEL

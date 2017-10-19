@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153493: HOWTO: Perform a RollBack Without Losing History"
-permalink: kb/153/Q153493/
+permalink: /kb/153/Q153493/
 ---
 
 ## Q153493: HOWTO: Perform a RollBack Without Losing History

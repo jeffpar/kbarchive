@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70768: SETUP /N Does Not Create SYSTEM Subdirectory"
-permalink: kb/070/Q70768/
+permalink: /kb/070/Q70768/
 ---
 
 ## Q70768: SETUP /N Does Not Create SYSTEM Subdirectory

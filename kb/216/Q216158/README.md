@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216158: BUG: Multiple &quot;Please Insert Disk&quot; Messages Installing VB6 App"
-permalink: kb/216/Q216158/
+permalink: /kb/216/Q216158/
 ---
 
 ## Q216158: BUG: Multiple &quot;Please Insert Disk&quot; Messages Installing VB6 App

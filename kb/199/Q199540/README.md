@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199540: BUG: Memory Leaks When Using Bitmaps in VC++ Mac 4.0b 68K Apps"
-permalink: kb/199/Q199540/
+permalink: /kb/199/Q199540/
 ---
 
 ## Q199540: BUG: Memory Leaks When Using Bitmaps in VC++ Mac 4.0b 68K Apps

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74605: Advanced WDEB386 Features and Tips"
-permalink: kb/074/Q74605/
+permalink: /kb/074/Q74605/
 ---
 
 ## Q74605: Advanced WDEB386 Features and Tips

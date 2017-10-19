@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263835: XCON: MTA Stops (Event ID 9411), Free Disk Space More Than 10 MB"
-permalink: kb/263/Q263835/
+permalink: /kb/263/Q263835/
 ---
 
 ## Q263835: XCON: MTA Stops (Event ID 9411), Free Disk Space More Than 10 MB

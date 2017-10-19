@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162956: WD97: Cannot Delete Certain Objects in HTML Document"
-permalink: kb/162/Q162956/
+permalink: /kb/162/Q162956/
 ---
 
 ## Q162956: WD97: Cannot Delete Certain Objects in HTML Document

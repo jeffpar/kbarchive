@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114670: HOWTO: Passing Variables to SELECT-SQL w/o Using Macro Substitut"
-permalink: kb/114/Q114670/
+permalink: /kb/114/Q114670/
 ---
 
 ## Q114670: HOWTO: Passing Variables to SELECT-SQL w/o Using Macro Substitut

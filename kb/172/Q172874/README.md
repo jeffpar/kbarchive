@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172874: WD97: Web Publisher Does Not Make Absolute Paths Relative Paths"
-permalink: kb/172/Q172874/
+permalink: /kb/172/Q172874/
 ---
 
 ## Q172874: WD97: Web Publisher Does Not Make Absolute Paths Relative Paths

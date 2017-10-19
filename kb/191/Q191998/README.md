@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191998: BUG: Form Cannot Override Parent Class AutoCenter Setting"
-permalink: kb/191/Q191998/
+permalink: /kb/191/Q191998/
 ---
 
 ## Q191998: BUG: Form Cannot Override Parent Class AutoCenter Setting

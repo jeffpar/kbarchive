@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133322: List of Confirmed Bugs in Windows NT Version 3.51"
-permalink: kb/133/Q133322/
+permalink: /kb/133/Q133322/
 ---
 
 ## Q133322: List of Confirmed Bugs in Windows NT Version 3.51

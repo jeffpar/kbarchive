@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103337: EdtInfo.exe Retrieves Text Box Status w/Win Messages"
-permalink: kb/103/Q103337/
+permalink: /kb/103/Q103337/
 ---
 
 ## Q103337: EdtInfo.exe Retrieves Text Box Status w/Win Messages

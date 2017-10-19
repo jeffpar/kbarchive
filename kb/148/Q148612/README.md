@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148612: BUG: Scaling Metafiles in World Sample Fails Under Windows 95"
-permalink: kb/148/Q148612/
+permalink: /kb/148/Q148612/
 ---
 
 ## Q148612: BUG: Scaling Metafiles in World Sample Fails Under Windows 95

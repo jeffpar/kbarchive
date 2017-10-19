@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194344: Multimedia: Hangs While Updating Files or Program Does Not Start"
-permalink: kb/194/Q194344/
+permalink: /kb/194/Q194344/
 ---
 
 ## Q194344: Multimedia: Hangs While Updating Files or Program Does Not Start

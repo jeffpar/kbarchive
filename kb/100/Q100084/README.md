@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100084: Using the LINK32 -LIB Command"
-permalink: kb/100/Q100084/
+permalink: /kb/100/Q100084/
 ---
 
 ## Q100084: Using the LINK32 -LIB Command

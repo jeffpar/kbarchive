@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177151: FP97: DCOM Update Required for VSS Integration With MSPWS"
-permalink: kb/177/Q177151/
+permalink: /kb/177/Q177151/
 ---
 
 ## Q177151: FP97: DCOM Update Required for VSS Integration With MSPWS

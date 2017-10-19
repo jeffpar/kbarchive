@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131192: Frequently Asked Questions About Bulletin Boards"
-permalink: kb/131/Q131192/
+permalink: /kb/131/Q131192/
 ---
 
 ## Q131192: Frequently Asked Questions About Bulletin Boards

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97685: Installing AutoSketch 3.0 on a DoubleSpace-Compressed Drive"
-permalink: kb/097/Q97685/
+permalink: /kb/097/Q97685/
 ---
 
 ## Q97685: Installing AutoSketch 3.0 on a DoubleSpace-Compressed Drive

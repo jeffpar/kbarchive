@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142485: Streets 4.0: Highways Do Not Print Using HP Color Deskjet"
-permalink: kb/142/Q142485/
+permalink: /kb/142/Q142485/
 ---
 
 ## Q142485: Streets 4.0: Highways Do Not Print Using HP Color Deskjet

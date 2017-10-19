@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148894: How to Enforce Uniqueness in Visual FoxPro Memo Fields"
-permalink: kb/148/Q148894/
+permalink: /kb/148/Q148894/
 ---
 
 ## Q148894: How to Enforce Uniqueness in Visual FoxPro Memo Fields

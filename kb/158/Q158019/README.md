@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158019: SMS: Quick Windows Viewer Unavailable on RC French WinNT Client"
-permalink: kb/158/Q158019/
+permalink: /kb/158/Q158019/
 ---
 
 ## Q158019: SMS: Quick Windows Viewer Unavailable on RC French WinNT Client

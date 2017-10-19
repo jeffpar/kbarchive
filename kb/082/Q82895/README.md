@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82895: Klotski Uses Wrong Font Under Windows 3.1"
-permalink: kb/082/Q82895/
+permalink: /kb/082/Q82895/
 ---
 
 ## Q82895: Klotski Uses Wrong Font Under Windows 3.1

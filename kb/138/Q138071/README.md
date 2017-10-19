@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138071: INFO: Strings Passed to DLLs in Variants Aren't Converted to ANS"
-permalink: kb/138/Q138071/
+permalink: /kb/138/Q138071/
 ---
 
 ## Q138071: INFO: Strings Passed to DLLs in Variants Aren't Converted to ANS

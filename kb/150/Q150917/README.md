@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150917: ODI Client Hangs on Client Setup"
-permalink: kb/150/Q150917/
+permalink: /kb/150/Q150917/
 ---
 
 ## Q150917: ODI Client Hangs on Client Setup

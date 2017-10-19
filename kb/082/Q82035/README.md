@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82035: Popup Window Utility Inactive on Toshiba Laptops"
-permalink: kb/082/Q82035/
+permalink: /kb/082/Q82035/
 ---
 
 ## Q82035: Popup Window Utility Inactive on Toshiba Laptops

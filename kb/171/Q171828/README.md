@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171828: FIX: INET OpenURL Method Doesn't Download Complete Files"
-permalink: kb/171/Q171828/
+permalink: /kb/171/Q171828/
 ---
 
 ## Q171828: FIX: INET OpenURL Method Doesn't Download Complete Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232710: Privileges not Assigned if Two Users Start with Same Substring"
-permalink: kb/232/Q232710/
+permalink: /kb/232/Q232710/
 ---
 
 ## Q232710: Privileges not Assigned if Two Users Start with Same Substring

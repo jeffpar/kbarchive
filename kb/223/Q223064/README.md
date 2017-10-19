@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223064: FIX: Filter Changes on DataSource Cause DataGrid to be Incorrect"
-permalink: kb/223/Q223064/
+permalink: /kb/223/Q223064/
 ---
 
 ## Q223064: FIX: Filter Changes on DataSource Cause DataGrid to be Incorrect

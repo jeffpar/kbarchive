@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217151: Catalog Corruption Occurs after Indexing Is Complete"
-permalink: kb/217/Q217151/
+permalink: /kb/217/Q217151/
 ---
 
 ## Q217151: Catalog Corruption Occurs after Indexing Is Complete

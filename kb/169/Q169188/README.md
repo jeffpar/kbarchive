@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169188: Mac Cinemania 97: How to Manually Install Program"
-permalink: kb/169/Q169188/
+permalink: /kb/169/Q169188/
 ---
 
 ## Q169188: Mac Cinemania 97: How to Manually Install Program

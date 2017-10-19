@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90001: Voice Pilot Does Not Support MS-DOS Applications"
-permalink: kb/090/Q90001/
+permalink: /kb/090/Q90001/
 ---
 
 ## Q90001: Voice Pilot Does Not Support MS-DOS Applications

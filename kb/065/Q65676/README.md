@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65676: Windows Err Msg: Cannot Disable A20"
-permalink: kb/065/Q65676/
+permalink: /kb/065/Q65676/
 ---
 
 ## Q65676: Windows Err Msg: Cannot Disable A20

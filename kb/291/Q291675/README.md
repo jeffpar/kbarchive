@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291675: SMS: Advertisements Incorrectly Go to All Computers"
-permalink: kb/291/Q291675/
+permalink: /kb/291/Q291675/
 ---
 
 ## Q291675: SMS: Advertisements Incorrectly Go to All Computers

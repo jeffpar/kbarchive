@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103621: Running Visual C++ for Windows with Windows NT"
-permalink: kb/103/Q103621/
+permalink: /kb/103/Q103621/
 ---
 
 ## Q103621: Running Visual C++ for Windows with Windows NT

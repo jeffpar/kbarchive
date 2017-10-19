@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90920: Workgroup Connection Setup Program Is Black &amp; White on an 8514"
-permalink: kb/090/Q90920/
+permalink: /kb/090/Q90920/
 ---
 
 ## Q90920: Workgroup Connection Setup Program Is Black &amp; White on an 8514

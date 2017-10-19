@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291425: Cannot Use Local Profile When Logging Onto the Domain on Windows"
-permalink: kb/291/Q291425/
+permalink: /kb/291/Q291425/
 ---
 
 ## Q291425: Cannot Use Local Profile When Logging Onto the Domain on Windows

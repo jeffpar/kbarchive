@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151556: FP: Frame Wizard Erases Existing Content of Frame Set"
-permalink: kb/151/Q151556/
+permalink: /kb/151/Q151556/
 ---
 
 ## Q151556: FP: Frame Wizard Erases Existing Content of Frame Set

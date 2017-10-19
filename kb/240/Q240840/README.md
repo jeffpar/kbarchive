@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240840: Operator Started CPIC/APPC Application May Cause Events 60 and 7"
-permalink: kb/240/Q240840/
+permalink: /kb/240/Q240840/
 ---
 
 ## Q240840: Operator Started CPIC/APPC Application May Cause Events 60 and 7

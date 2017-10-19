@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154875: File &amp; Print Services for NetWare May Stop Intermittently"
-permalink: kb/154/Q154875/
+permalink: /kb/154/Q154875/
 ---
 
 ## Q154875: File &amp; Print Services for NetWare May Stop Intermittently

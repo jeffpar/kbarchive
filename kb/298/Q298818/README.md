@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298818: SMS: Duplicate SNMP Traps Sent on Windows 2000"
-permalink: kb/298/Q298818/
+permalink: /kb/298/Q298818/
 ---
 
 ## Q298818: SMS: Duplicate SNMP Traps Sent on Windows 2000

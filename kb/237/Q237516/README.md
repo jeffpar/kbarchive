@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237516: Encarta Encyclopedia 2000: Printed Maps Appear Completely Black"
-permalink: kb/237/Q237516/
+permalink: /kb/237/Q237516/
 ---
 
 ## Q237516: Encarta Encyclopedia 2000: Printed Maps Appear Completely Black

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155824: Installing a Panasonic KXL-D740 4X CDROM using KXLC002"
-permalink: kb/155/Q155824/
+permalink: /kb/155/Q155824/
 ---
 
 ## Q155824: Installing a Panasonic KXL-D740 4X CDROM using KXLC002

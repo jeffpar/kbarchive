@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172102: How to Remove Cached Entries from Address Box in Program Viewer"
-permalink: kb/172/Q172102/
+permalink: /kb/172/Q172102/
 ---
 
 ## Q172102: How to Remove Cached Entries from Address Box in Program Viewer

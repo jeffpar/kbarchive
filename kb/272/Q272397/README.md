@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272397: WD97: Photo Editor Doesn't Recognize Default Printer Change"
-permalink: kb/272/Q272397/
+permalink: /kb/272/Q272397/
 ---
 
 ## Q272397: WD97: Photo Editor Doesn't Recognize Default Printer Change

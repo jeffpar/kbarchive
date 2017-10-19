@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241224: WD97: Word Table Embedded in Another Document Has White Line"
-permalink: kb/241/Q241224/
+permalink: /kb/241/Q241224/
 ---
 
 ## Q241224: WD97: Word Table Embedded in Another Document Has White Line

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165881: WD97: Bullets Change to Other Characters When Changed to Text"
-permalink: kb/165/Q165881/
+permalink: /kb/165/Q165881/
 ---
 
 ## Q165881: WD97: Bullets Change to Other Characters When Changed to Text

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89842: System May Not Boot After Installing Intel Ether Express"
-permalink: kb/089/Q89842/
+permalink: /kb/089/Q89842/
 ---
 
 ## Q89842: System May Not Boot After Installing Intel Ether Express

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299712: Click Events Are Fired Twice in eVB Applications"
-permalink: kb/299/Q299712/
+permalink: /kb/299/Q299712/
 ---
 
 ## Q299712: Click Events Are Fired Twice in eVB Applications

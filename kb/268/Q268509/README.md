@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268509: WEP2K: Incorrect Scores Are Displayed for Saved Hearts Game"
-permalink: kb/268/Q268509/
+permalink: /kb/268/Q268509/
 ---
 
 ## Q268509: WEP2K: Incorrect Scores Are Displayed for Saved Hearts Game

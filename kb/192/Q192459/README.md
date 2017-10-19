@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192459: INFO: VBCE Unsupported Controls, Properties, Methods, and Events"
-permalink: kb/192/Q192459/
+permalink: /kb/192/Q192459/
 ---
 
 ## Q192459: INFO: VBCE Unsupported Controls, Properties, Methods, and Events

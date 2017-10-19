@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159596: Enabling The Prompt for Multiple Profiles in Windows Messaging"
-permalink: kb/159/Q159596/
+permalink: /kb/159/Q159596/
 ---
 
 ## Q159596: Enabling The Prompt for Multiple Profiles in Windows Messaging

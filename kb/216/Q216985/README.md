@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216985: BUG: Scrollbars Not Seen if Objects Placed Past Some Coordinates"
-permalink: kb/216/Q216985/
+permalink: /kb/216/Q216985/
 ---
 
 ## Q216985: BUG: Scrollbars Not Seen if Objects Placed Past Some Coordinates

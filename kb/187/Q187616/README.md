@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187616: FIX: The Dynamic Link Library Mfcce20d.dll Could Not Be Found"
-permalink: kb/187/Q187616/
+permalink: /kb/187/Q187616/
 ---
 
 ## Q187616: FIX: The Dynamic Link Library Mfcce20d.dll Could Not Be Found

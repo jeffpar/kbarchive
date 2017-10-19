@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188650: XADM: Restore of Private-Only Server Fails with Arcserve"
-permalink: kb/188/Q188650/
+permalink: /kb/188/Q188650/
 ---
 
 ## Q188650: XADM: Restore of Private-Only Server Fails with Arcserve

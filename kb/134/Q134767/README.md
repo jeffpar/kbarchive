@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134767: Lens Screen Saver Hangs with Diamond Viper Video Drivers"
-permalink: kb/134/Q134767/
+permalink: /kb/134/Q134767/
 ---
 
 ## Q134767: Lens Screen Saver Hangs with Diamond Viper Video Drivers

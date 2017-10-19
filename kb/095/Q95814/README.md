@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95814: EMM386.EXE May Cause PS/2 to Hang with HIGHSCAN"
-permalink: kb/095/Q95814/
+permalink: /kb/095/Q95814/
 ---
 
 ## Q95814: EMM386.EXE May Cause PS/2 to Hang with HIGHSCAN

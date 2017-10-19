@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129514: PRB: Loading and Unloading DLLs in the Design Environment"
-permalink: kb/129/Q129514/
+permalink: /kb/129/Q129514/
 ---
 
 ## Q129514: PRB: Loading and Unloading DLLs in the Design Environment

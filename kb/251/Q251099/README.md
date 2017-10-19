@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251099: Slow Performance in License Metering Administration Tool"
-permalink: kb/251/Q251099/
+permalink: /kb/251/Q251099/
 ---
 
 ## Q251099: Slow Performance in License Metering Administration Tool

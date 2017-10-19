@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194628: PRB: Learning Edition Does Not Ship With the Data Form Wizard"
-permalink: kb/194/Q194628/
+permalink: /kb/194/Q194628/
 ---
 
 ## Q194628: PRB: Learning Edition Does Not Ship With the Data Form Wizard

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189772: FIX: GETPEM() Function Does Not Return the Correct ParentClass"
-permalink: kb/189/Q189772/
+permalink: /kb/189/Q189772/
 ---
 
 ## Q189772: FIX: GETPEM() Function Does Not Return the Correct ParentClass

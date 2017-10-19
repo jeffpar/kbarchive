@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197160: NETDOM 1.7 Reports Access Denied with Windows NT 4.0 SP4"
-permalink: kb/197/Q197160/
+permalink: /kb/197/Q197160/
 ---
 
 ## Q197160: NETDOM 1.7 Reports Access Denied with Windows NT 4.0 SP4

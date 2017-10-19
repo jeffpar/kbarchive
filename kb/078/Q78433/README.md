@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78433: Detailed Explanation of EMM386.EXE Switches"
-permalink: kb/078/Q78433/
+permalink: /kb/078/Q78433/
 ---
 
 ## Q78433: Detailed Explanation of EMM386.EXE Switches

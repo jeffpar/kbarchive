@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228519: SBS: Settings for Internet Explorer Client Configuration"
-permalink: kb/228/Q228519/
+permalink: /kb/228/Q228519/
 ---
 
 ## Q228519: SBS: Settings for Internet Explorer Client Configuration

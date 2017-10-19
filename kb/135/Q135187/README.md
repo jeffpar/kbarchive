@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135187: Setup Reports That Windows NT Is Installed When It Is Not"
-permalink: kb/135/Q135187/
+permalink: /kb/135/Q135187/
 ---
 
 ## Q135187: Setup Reports That Windows NT Is Installed When It Is Not

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152486: Resolving PC Card Problems on Toshiba 400 Notebook Computers"
-permalink: kb/152/Q152486/
+permalink: /kb/152/Q152486/
 ---
 
 ## Q152486: Resolving PC Card Problems on Toshiba 400 Notebook Computers

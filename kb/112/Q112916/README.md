@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112916: PC Adm: Postoffice Database Storage Status Totals"
-permalink: kb/112/Q112916/
+permalink: /kb/112/Q112916/
 ---
 
 ## Q112916: PC Adm: Postoffice Database Storage Status Totals

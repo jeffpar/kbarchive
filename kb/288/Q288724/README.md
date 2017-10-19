@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288724: BUG: ATL COM Event Handler Arguments Received in Reverse Order"
-permalink: kb/288/Q288724/
+permalink: /kb/288/Q288724/
 ---
 
 ## Q288724: BUG: ATL COM Event Handler Arguments Received in Reverse Order

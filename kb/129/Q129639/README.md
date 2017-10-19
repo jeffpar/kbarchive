@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129639: Kids: ErrMsg: Insufficient Resources to Run..."
-permalink: kb/129/Q129639/
+permalink: /kb/129/Q129639/
 ---
 
 ## Q129639: Kids: ErrMsg: Insufficient Resources to Run...

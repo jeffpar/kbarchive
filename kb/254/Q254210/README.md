@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254210: Cannot Use Net View &#92;&#92;Localhost Command"
-permalink: kb/254/Q254210/
+permalink: /kb/254/Q254210/
 ---
 
 ## Q254210: Cannot Use Net View &#92;&#92;Localhost Command

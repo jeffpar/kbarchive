@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119312: Saved Search Uses @ as Replacement for &#42; in Filename"
-permalink: kb/119/Q119312/
+permalink: /kb/119/Q119312/
 ---
 
 ## Q119312: Saved Search Uses @ as Replacement for &#42; in Filename

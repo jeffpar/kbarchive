@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151215: XFOR: Exchange PCMTA Writes to SENT and RECV Logs"
-permalink: kb/151/Q151215/
+permalink: /kb/151/Q151215/
 ---
 
 ## Q151215: XFOR: Exchange PCMTA Writes to SENT and RECV Logs

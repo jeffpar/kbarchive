@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185887: DOC: Incomplete Documentation for SelPrint Method"
-permalink: kb/185/Q185887/
+permalink: /kb/185/Q185887/
 ---
 
 ## Q185887: DOC: Incomplete Documentation for SelPrint Method

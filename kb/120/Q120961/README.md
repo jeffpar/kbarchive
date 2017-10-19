@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120961: HOWTO: How to Sort a CStringArray in MFC"
-permalink: kb/120/Q120961/
+permalink: /kb/120/Q120961/
 ---
 
 ## Q120961: HOWTO: How to Sort a CStringArray in MFC

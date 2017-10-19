@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150511: Preventing SNA Server Keepalives on Idle LAN Connections"
-permalink: kb/150/Q150511/
+permalink: /kb/150/Q150511/
 ---
 
 ## Q150511: Preventing SNA Server Keepalives on Idle LAN Connections

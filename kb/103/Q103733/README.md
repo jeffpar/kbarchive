@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103733: Error Messages or Hangs Using 3Com EtherLink III (3C509)"
-permalink: kb/103/Q103733/
+permalink: /kb/103/Q103733/
 ---
 
 ## Q103733: Error Messages or Hangs Using 3Com EtherLink III (3C509)

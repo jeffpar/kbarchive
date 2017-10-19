@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161838: Programs That Lock 0 Bytes at Byte 0 Lock Entire File"
-permalink: kb/161/Q161838/
+permalink: /kb/161/Q161838/
 ---
 
 ## Q161838: Programs That Lock 0 Bytes at Byte 0 Lock Entire File

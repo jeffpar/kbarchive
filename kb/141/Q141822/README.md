@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141822: 3D Movie Maker: Default Text Color Not Available in Color List"
-permalink: kb/141/Q141822/
+permalink: /kb/141/Q141822/
 ---
 
 ## Q141822: 3D Movie Maker: Default Text Color Not Available in Color List

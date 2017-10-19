@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84708: Icon Background Colors in File Manager Don't Update"
-permalink: kb/084/Q84708/
+permalink: /kb/084/Q84708/
 ---
 
 ## Q84708: Icon Background Colors in File Manager Don't Update

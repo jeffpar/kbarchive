@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126457: VERIFY ON, COPY /V, XCOPY /V Commands Do Not Compare Data"
-permalink: kb/126/Q126457/
+permalink: /kb/126/Q126457/
 ---
 
 ## Q126457: VERIFY ON, COPY /V, XCOPY /V Commands Do Not Compare Data

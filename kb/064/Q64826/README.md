@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64826: DeskJet Does Not Print Extended Character Set in Courier"
-permalink: kb/064/Q64826/
+permalink: /kb/064/Q64826/
 ---
 
 ## Q64826: DeskJet Does Not Print Extended Character Set in Courier

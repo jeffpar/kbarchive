@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173666: SMSINST: Office 97 Does Not Show Template Icons"
-permalink: kb/173/Q173666/
+permalink: /kb/173/Q173666/
 ---
 
 ## Q173666: SMSINST: Office 97 Does Not Show Template Icons

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124717: How to Use the FXALERT() Function in FOXTOOLS.MLB"
-permalink: kb/124/Q124717/
+permalink: /kb/124/Q124717/
 ---
 
 ## Q124717: How to Use the FXALERT() Function in FOXTOOLS.MLB

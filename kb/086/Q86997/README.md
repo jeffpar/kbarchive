@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86997: Drivers Available for COMPAQ Q-Vision Video"
-permalink: kb/086/Q86997/
+permalink: /kb/086/Q86997/
 ---
 
 ## Q86997: Drivers Available for COMPAQ Q-Vision Video

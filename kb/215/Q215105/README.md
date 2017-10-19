@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215105: SMS: 16-Bit Files Remain After Upgrading to 32-Bit Windows 95/98"
-permalink: kb/215/Q215105/
+permalink: /kb/215/Q215105/
 ---
 
 ## Q215105: SMS: 16-Bit Files Remain After Upgrading to 32-Bit Windows 95/98

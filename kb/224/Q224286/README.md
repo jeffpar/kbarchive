@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224286: SMS: Client Accounts Used in Software Distribution"
-permalink: kb/224/Q224286/
+permalink: /kb/224/Q224286/
 ---
 
 ## Q224286: SMS: Client Accounts Used in Software Distribution

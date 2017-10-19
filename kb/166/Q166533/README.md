@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166533: XFOR: Message Body Corruption Due to Ambiguous Codepage"
-permalink: kb/166/Q166533/
+permalink: /kb/166/Q166533/
 ---
 
 ## Q166533: XFOR: Message Body Corruption Due to Ambiguous Codepage

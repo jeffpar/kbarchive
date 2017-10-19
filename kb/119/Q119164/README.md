@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119164: INFO: Use of Polygon() Versus PolyPolygon()"
-permalink: kb/119/Q119164/
+permalink: /kb/119/Q119164/
 ---
 
 ## Q119164: INFO: Use of Polygon() Versus PolyPolygon()

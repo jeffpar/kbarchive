@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160054: File Manager Will Not Browse Below the NetWare Volume"
-permalink: kb/160/Q160054/
+permalink: /kb/160/Q160054/
 ---
 
 ## Q160054: File Manager Will Not Browse Below the NetWare Volume

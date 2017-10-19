@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121717: PC DB: Err Msg: The Folder Conversion Process Was Halted..."
-permalink: kb/121/Q121717/
+permalink: /kb/121/Q121717/
 ---
 
 ## Q121717: PC DB: Err Msg: The Folder Conversion Process Was Halted...

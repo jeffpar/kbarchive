@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171744: FIX: DragIcon Property with Cursor Files Does Not Work in an EXE"
-permalink: kb/171/Q171744/
+permalink: /kb/171/Q171744/
 ---
 
 ## Q171744: FIX: DragIcon Property with Cursor Files Does Not Work in an EXE

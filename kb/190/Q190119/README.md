@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190119: Games Error Message: Error: 5"
-permalink: kb/190/Q190119/
+permalink: /kb/190/Q190119/
 ---
 
 ## Q190119: Games Error Message: Error: 5

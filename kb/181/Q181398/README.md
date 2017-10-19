@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181398: WD97: Macro to Remove a Subdirectory in Word for Windows"
-permalink: kb/181/Q181398/
+permalink: /kb/181/Q181398/
 ---
 
 ## Q181398: WD97: Macro to Remove a Subdirectory in Word for Windows

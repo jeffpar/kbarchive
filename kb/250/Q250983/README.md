@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250983: Using Netscape Server Push Technology with ASP"
-permalink: kb/250/Q250983/
+permalink: /kb/250/Q250983/
 ---
 
 ## Q250983: Using Netscape Server Push Technology with ASP

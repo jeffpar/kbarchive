@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150643: PRB: Setting Wrong System Date Causes Lost Project History"
-permalink: kb/150/Q150643/
+permalink: /kb/150/Q150643/
 ---
 
 ## Q150643: PRB: Setting Wrong System Date Causes Lost Project History

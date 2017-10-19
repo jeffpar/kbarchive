@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243852: &quot;STOP 0x00000024&quot; Error Message with Double-Take Software"
-permalink: kb/243/Q243852/
+permalink: /kb/243/Q243852/
 ---
 
 ## Q243852: &quot;STOP 0x00000024&quot; Error Message with Double-Take Software

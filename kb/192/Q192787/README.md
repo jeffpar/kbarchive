@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192787: FIX: Modal Characteristics Gone After Selecting OS's Taskbar"
-permalink: kb/192/Q192787/
+permalink: /kb/192/Q192787/
 ---
 
 ## Q192787: FIX: Modal Characteristics Gone After Selecting OS's Taskbar

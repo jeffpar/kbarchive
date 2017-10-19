@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120055: OS/2 IOPL Applications May Fail in Windows NT"
-permalink: kb/120/Q120055/
+permalink: /kb/120/Q120055/
 ---
 
 ## Q120055: OS/2 IOPL Applications May Fail in Windows NT

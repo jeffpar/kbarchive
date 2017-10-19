@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149131: Windows NT FTP Client Creates 0-Byte File"
-permalink: kb/149/Q149131/
+permalink: /kb/149/Q149131/
 ---
 
 ## Q149131: Windows NT FTP Client Creates 0-Byte File

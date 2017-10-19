@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137270: CD-ROM Drive Not Detected on Media Vision 3D Sound Card"
-permalink: kb/137/Q137270/
+permalink: /kb/137/Q137270/
 ---
 
 ## Q137270: CD-ROM Drive Not Detected on Media Vision 3D Sound Card

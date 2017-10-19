@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185693: XADM: Spinning Thread in Mad.exe During Routing Recalculation"
-permalink: kb/185/Q185693/
+permalink: /kb/185/Q185693/
 ---
 
 ## Q185693: XADM: Spinning Thread in Mad.exe During Routing Recalculation

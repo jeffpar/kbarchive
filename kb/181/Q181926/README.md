@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181926: HOWTO: Automate Mail Merge to Word97 SR-1 Using OLE and ODBC"
-permalink: kb/181/Q181926/
+permalink: /kb/181/Q181926/
 ---
 
 ## Q181926: HOWTO: Automate Mail Merge to Word97 SR-1 Using OLE and ODBC

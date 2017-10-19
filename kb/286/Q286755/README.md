@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286755: How to Create an Index on a Custom Property"
-permalink: kb/286/Q286755/
+permalink: /kb/286/Q286755/
 ---
 
 ## Q286755: How to Create an Index on a Custom Property

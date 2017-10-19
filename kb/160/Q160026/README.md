@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160026: Double-Clicking MSN Icon Displays AT&amp;T Worldnet Sign In Screen"
-permalink: kb/160/Q160026/
+permalink: /kb/160/Q160026/
 ---
 
 ## Q160026: Double-Clicking MSN Icon Displays AT&amp;T Worldnet Sign In Screen

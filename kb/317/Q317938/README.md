@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317938: PRB: &#42;Source Control cache is not always updated when it should"
-permalink: kb/317/Q317938/
+permalink: /kb/317/Q317938/
 ---
 
 ## Q317938: PRB: &#42;Source Control cache is not always updated when it should

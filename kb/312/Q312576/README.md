@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312576: User Without Shutdown Privileges Can Shut Down the Computer"
-permalink: kb/312/Q312576/
+permalink: /kb/312/Q312576/
 ---
 
 ## Q312576: User Without Shutdown Privileges Can Shut Down the Computer

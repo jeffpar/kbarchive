@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155584: PRB: Files Missing or Not Displayed in GUI Interface"
-permalink: kb/155/Q155584/
+permalink: /kb/155/Q155584/
 ---
 
 ## Q155584: PRB: Files Missing or Not Displayed in GUI Interface

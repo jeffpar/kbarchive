@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154892: How to Disconnect DUN Connection Using the Keyboard"
-permalink: kb/154/Q154892/
+permalink: /kb/154/Q154892/
 ---
 
 ## Q154892: How to Disconnect DUN Connection Using the Keyboard

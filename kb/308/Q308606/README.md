@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308606: FIX: VFP 7.0 Hangs If Immersion Desktop Software Is Running"
-permalink: kb/308/Q308606/
+permalink: /kb/308/Q308606/
 ---
 
 ## Q308606: FIX: VFP 7.0 Hangs If Immersion Desktop Software Is Running

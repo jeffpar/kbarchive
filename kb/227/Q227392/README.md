@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227392: FPNW Login.exe Errors for Dates After 7:15 P.M. January 18, 2038"
-permalink: kb/227/Q227392/
+permalink: /kb/227/Q227392/
 ---
 
 ## Q227392: FPNW Login.exe Errors for Dates After 7:15 P.M. January 18, 2038

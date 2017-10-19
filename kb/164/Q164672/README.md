@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164672: IE Does Not Interpret PERL Scripts Correctly as Plain Text"
-permalink: kb/164/Q164672/
+permalink: /kb/164/Q164672/
 ---
 
 ## Q164672: IE Does Not Interpret PERL Scripts Correctly as Plain Text

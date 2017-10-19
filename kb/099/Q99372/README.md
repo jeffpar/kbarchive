@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99372: Tuning LAN Manager RAS Servers for Windows NT RAS Clients"
-permalink: kb/099/Q99372/
+permalink: /kb/099/Q99372/
 ---
 
 ## Q99372: Tuning LAN Manager RAS Servers for Windows NT RAS Clients

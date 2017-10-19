@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152260: How to Set Exceptions in Compression Agent"
-permalink: kb/152/Q152260/
+permalink: /kb/152/Q152260/
 ---
 
 ## Q152260: How to Set Exceptions in Compression Agent

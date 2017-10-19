@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112547: Dial-Up Networking Hangs After Failed Multilink Attempt"
-permalink: kb/112/Q112547/
+permalink: /kb/112/Q112547/
 ---
 
 ## Q112547: Dial-Up Networking Hangs After Failed Multilink Attempt

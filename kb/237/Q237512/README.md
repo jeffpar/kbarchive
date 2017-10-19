@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237512: Encarta: Unexpected Behavior When You Double-Click a Shortcut"
-permalink: kb/237/Q237512/
+permalink: /kb/237/Q237512/
 ---
 
 ## Q237512: Encarta: Unexpected Behavior When You Double-Click a Shortcut

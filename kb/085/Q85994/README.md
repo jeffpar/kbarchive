@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85994: Patch Available for BlueMAX 6.x Drivers on PS/2"
-permalink: kb/085/Q85994/
+permalink: /kb/085/Q85994/
 ---
 
 ## Q85994: Patch Available for BlueMAX 6.x Drivers on PS/2

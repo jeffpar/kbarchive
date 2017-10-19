@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130353: No Special Effect Property for the Grid"
-permalink: kb/130/Q130353/
+permalink: /kb/130/Q130353/
 ---
 
 ## Q130353: No Special Effect Property for the Grid

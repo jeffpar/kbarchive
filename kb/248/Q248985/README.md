@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248985: BUG: UserControl Containing ADO Data Control Fails to Unload"
-permalink: kb/248/Q248985/
+permalink: /kb/248/Q248985/
 ---
 
 ## Q248985: BUG: UserControl Containing ADO Data Control Fails to Unload

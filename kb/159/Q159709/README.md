@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159709: Description of Microsoft Windows Encryption Pack 1"
-permalink: kb/159/Q159709/
+permalink: /kb/159/Q159709/
 ---
 
 ## Q159709: Description of Microsoft Windows Encryption Pack 1

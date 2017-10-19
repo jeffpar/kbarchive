@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113644: Single Digit Playback in Excel 5.0 Proofreader"
-permalink: kb/113/Q113644/
+permalink: /kb/113/Q113644/
 ---
 
 ## Q113644: Single Digit Playback in Excel 5.0 Proofreader

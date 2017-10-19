@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165206: Installing FPNW on a Standalone Windows NT Server"
-permalink: kb/165/Q165206/
+permalink: /kb/165/Q165206/
 ---
 
 ## Q165206: Installing FPNW on a Standalone Windows NT Server

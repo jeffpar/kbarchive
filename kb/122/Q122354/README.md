@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122354: Err Msg: Your Schedule File Is Locked"
-permalink: kb/122/Q122354/
+permalink: /kb/122/Q122354/
 ---
 
 ## Q122354: Err Msg: Your Schedule File Is Locked

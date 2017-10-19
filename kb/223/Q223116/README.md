@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223116: FIX: Public Type Statement Causes Application Error"
-permalink: kb/223/Q223116/
+permalink: /kb/223/Q223116/
 ---
 
 ## Q223116: FIX: Public Type Statement Causes Application Error

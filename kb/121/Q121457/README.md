@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121457: Using Microsoft FORTRAN 5.1 with Visual Basic"
-permalink: kb/121/Q121457/
+permalink: /kb/121/Q121457/
 ---
 
 ## Q121457: Using Microsoft FORTRAN 5.1 with Visual Basic

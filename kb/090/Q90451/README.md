@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90451: NetWare NCOPY to Local Drive Gives Sharing Violation"
-permalink: kb/090/Q90451/
+permalink: /kb/090/Q90451/
 ---
 
 ## Q90451: NetWare NCOPY to Local Drive Gives Sharing Violation

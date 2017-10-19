@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163249: HOWTO: Use Usercontrolmode with Wizstyle Button Classes in VFP"
-permalink: kb/163/Q163249/
+permalink: /kb/163/Q163249/
 ---
 
 ## Q163249: HOWTO: Use Usercontrolmode with Wizstyle Button Classes in VFP

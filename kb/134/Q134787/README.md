@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134787: Complete List of Shortcut Keys for PowerPoint 7.0"
-permalink: kb/134/Q134787/
+permalink: /kb/134/Q134787/
 ---
 
 ## Q134787: Complete List of Shortcut Keys for PowerPoint 7.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217772: PRB: CAsyncMonikerFile::Open() Fails in Visual C++ 5.0 MFC Apps"
-permalink: kb/217/Q217772/
+permalink: /kb/217/Q217772/
 ---
 
 ## Q217772: PRB: CAsyncMonikerFile::Open() Fails in Visual C++ 5.0 MFC Apps

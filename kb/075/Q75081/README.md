@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75081: Cannot Use /U Switch with DOS=LOW and MOUSE.COM Version 8.0"
-permalink: kb/075/Q75081/
+permalink: /kb/075/Q75081/
 ---
 
 ## Q75081: Cannot Use /U Switch with DOS=LOW and MOUSE.COM Version 8.0

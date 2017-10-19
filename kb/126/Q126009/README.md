@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126009: Windows NT 3.5 SETUP.TXT File"
-permalink: kb/126/Q126009/
+permalink: /kb/126/Q126009/
 ---
 
 ## Q126009: Windows NT 3.5 SETUP.TXT File

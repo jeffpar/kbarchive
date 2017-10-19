@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182068: BUG: ListView SubItemIndex Property Not Converted"
-permalink: kb/182/Q182068/
+permalink: /kb/182/Q182068/
 ---
 
 ## Q182068: BUG: ListView SubItemIndex Property Not Converted

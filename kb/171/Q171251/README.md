@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171251: Eicon Drivers not Copied when Updating to SNA 3.0 SP1"
-permalink: kb/171/Q171251/
+permalink: /kb/171/Q171251/
 ---
 
 ## Q171251: Eicon Drivers not Copied when Updating to SNA 3.0 SP1

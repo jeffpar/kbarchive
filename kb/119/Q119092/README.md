@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119092: STB Lightspeed Tseng 4000 W32p Not Detected as PCI Card"
-permalink: kb/119/Q119092/
+permalink: /kb/119/Q119092/
 ---
 
 ## Q119092: STB Lightspeed Tseng 4000 W32p Not Detected as PCI Card

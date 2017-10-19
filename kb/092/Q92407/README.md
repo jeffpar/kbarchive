@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92407: API Translation Buffers in Enhanced Mode Windows"
-permalink: kb/092/Q92407/
+permalink: /kb/092/Q92407/
 ---
 
 ## Q92407: API Translation Buffers in Enhanced Mode Windows

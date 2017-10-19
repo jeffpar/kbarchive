@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173249: FIX: Print Preview Doesn't Honor Font Width Setting"
-permalink: kb/173/Q173249/
+permalink: /kb/173/Q173249/
 ---
 
 ## Q173249: FIX: Print Preview Doesn't Honor Font Width Setting

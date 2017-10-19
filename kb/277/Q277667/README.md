@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277667: PRB: SELECT DISTINCT Fails with Microsoft ODBC for Oracle"
-permalink: kb/277/Q277667/
+permalink: /kb/277/Q277667/
 ---
 
 ## Q277667: PRB: SELECT DISTINCT Fails with Microsoft ODBC for Oracle

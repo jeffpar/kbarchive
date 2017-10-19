@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110772: PRB: Window Sizes in .EXE Change w/ MODIFY WINDOW SCREEN FONT"
-permalink: kb/110/Q110772/
+permalink: /kb/110/Q110772/
 ---
 
 ## Q110772: PRB: Window Sizes in .EXE Change w/ MODIFY WINDOW SCREEN FONT

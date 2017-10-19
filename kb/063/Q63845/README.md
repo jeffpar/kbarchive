@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63845: Using the HP QuietJet Printer with Windows Version 3.0"
-permalink: kb/063/Q63845/
+permalink: /kb/063/Q63845/
 ---
 
 ## Q63845: Using the HP QuietJet Printer with Windows Version 3.0

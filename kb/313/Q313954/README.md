@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313954: Streets &amp; Trips 2001: Pushpin Is Not Displayed After Placement"
-permalink: kb/313/Q313954/
+permalink: /kb/313/Q313954/
 ---
 
 ## Q313954: Streets &amp; Trips 2001: Pushpin Is Not Displayed After Placement

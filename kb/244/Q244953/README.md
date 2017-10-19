@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244953: HOWTO: Implement SourceSafe Integration with FrontPage 2000"
-permalink: kb/244/Q244953/
+permalink: /kb/244/Q244953/
 ---
 
 ## Q244953: HOWTO: Implement SourceSafe Integration with FrontPage 2000

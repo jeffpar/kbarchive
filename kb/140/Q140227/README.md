@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140227: BUG: MS-DOS Applications May Fail Printing to NetWare Printer"
-permalink: kb/140/Q140227/
+permalink: /kb/140/Q140227/
 ---
 
 ## Q140227: BUG: MS-DOS Applications May Fail Printing to NetWare Printer

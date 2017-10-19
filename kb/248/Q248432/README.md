@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248432: Inventory Based on String Occurrence in File Does Not Find Match"
-permalink: kb/248/Q248432/
+permalink: /kb/248/Q248432/
 ---
 
 ## Q248432: Inventory Based on String Occurrence in File Does Not Find Match

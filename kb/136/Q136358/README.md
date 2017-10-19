@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136358: Fury3: Windowed mode uses top 1/8 of screen with Actix Picaso"
-permalink: kb/136/Q136358/
+permalink: /kb/136/Q136358/
 ---
 
 ## Q136358: Fury3: Windowed mode uses top 1/8 of screen with Actix Picaso

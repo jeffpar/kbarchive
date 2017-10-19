@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77269: Setup May Give Disk Errors with Plus Passport Hard Drive"
-permalink: kb/077/Q77269/
+permalink: /kb/077/Q77269/
 ---
 
 ## Q77269: Setup May Give Disk Errors with Plus Passport Hard Drive

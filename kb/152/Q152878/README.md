@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152878: XADM: Wizard Sets Incorrect Concurrent Read Thread Range"
-permalink: kb/152/Q152878/
+permalink: /kb/152/Q152878/
 ---
 
 ## Q152878: XADM: Wizard Sets Incorrect Concurrent Read Thread Range

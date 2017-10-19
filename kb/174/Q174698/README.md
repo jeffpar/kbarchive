@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174698: XFOR: DXANOTES Stops Responding Due to Incorrect ID File"
-permalink: kb/174/Q174698/
+permalink: /kb/174/Q174698/
 ---
 
 ## Q174698: XFOR: DXANOTES Stops Responding Due to Incorrect ID File

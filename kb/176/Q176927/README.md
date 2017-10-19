@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176927: FP98: Newest to Oldest Order Doesn't Work in Discussion Web"
-permalink: kb/176/Q176927/
+permalink: /kb/176/Q176927/
 ---
 
 ## Q176927: FP98: Newest to Oldest Order Doesn't Work in Discussion Web

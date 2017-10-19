@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197017: INFO: Files Installed Win 98&#92;SYSTEM Folder Before VFP6 Setup"
-permalink: kb/197/Q197017/
+permalink: /kb/197/Q197017/
 ---
 
 ## Q197017: INFO: Files Installed Win 98&#92;SYSTEM Folder Before VFP6 Setup

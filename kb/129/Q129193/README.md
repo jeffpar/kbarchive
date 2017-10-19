@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129193: FIX: File Added with No Extension is Handled Incorrectly"
-permalink: kb/129/Q129193/
+permalink: /kb/129/Q129193/
 ---
 
 ## Q129193: FIX: File Added with No Extension is Handled Incorrectly

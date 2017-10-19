@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98757: FIX: Binary (or Unformatted) I/O Fails, Array Size &gt; 64K"
-permalink: kb/098/Q98757/
+permalink: /kb/098/Q98757/
 ---
 
 ## Q98757: FIX: Binary (or Unformatted) I/O Fails, Array Size &gt; 64K

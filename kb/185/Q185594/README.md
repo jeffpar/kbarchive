@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185594: Error Message: Access Violation in _INS0432._MP"
-permalink: kb/185/Q185594/
+permalink: /kb/185/Q185594/
 ---
 
 ## Q185594: Error Message: Access Violation in _INS0432._MP

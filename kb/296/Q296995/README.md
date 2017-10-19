@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296995: Find Printer Search Does Not Work on a Windows NT 4.0 Client"
-permalink: kb/296/Q296995/
+permalink: /kb/296/Q296995/
 ---
 
 ## Q296995: Find Printer Search Does Not Work on a Windows NT 4.0 Client

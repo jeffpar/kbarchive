@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186235: XFOR: NDR and Event 142 Sending to Lotus cc:Mail Recipient"
-permalink: kb/186/Q186235/
+permalink: /kb/186/Q186235/
 ---
 
 ## Q186235: XFOR: NDR and Event 142 Sending to Lotus cc:Mail Recipient

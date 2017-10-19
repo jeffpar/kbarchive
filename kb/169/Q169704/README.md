@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169704: XADM: Quota Ignored When Rule-Originated Message is Sent"
-permalink: kb/169/Q169704/
+permalink: /kb/169/Q169704/
 ---
 
 ## Q169704: XADM: Quota Ignored When Rule-Originated Message is Sent

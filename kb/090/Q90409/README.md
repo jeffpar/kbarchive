@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90409: Using a Mouse with FoxBASE+ and FoxBASE Central"
-permalink: kb/090/Q90409/
+permalink: /kb/090/Q90409/
 ---
 
 ## Q90409: Using a Mouse with FoxBASE+ and FoxBASE Central

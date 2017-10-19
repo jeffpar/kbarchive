@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166790: Novell DOS/WIN Client-32 Not Registering Hostname w/DHCP"
-permalink: kb/166/Q166790/
+permalink: /kb/166/Q166790/
 ---
 
 ## Q166790: Novell DOS/WIN Client-32 Not Registering Hostname w/DHCP

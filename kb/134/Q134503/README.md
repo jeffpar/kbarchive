@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134503: Parity Error Messages May Indicate Bad Memory"
-permalink: kb/134/Q134503/
+permalink: /kb/134/Q134503/
 ---
 
 ## Q134503: Parity Error Messages May Indicate Bad Memory

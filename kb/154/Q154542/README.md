@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154542: XFOR: IMC Delivery Restrictions Only Work for Outbound Mail"
-permalink: kb/154/Q154542/
+permalink: /kb/154/Q154542/
 ---
 
 ## Q154542: XFOR: IMC Delivery Restrictions Only Work for Outbound Mail

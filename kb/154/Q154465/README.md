@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154465: Cinemania 97 and Music Central 97: INTERNET.TXT Contents"
-permalink: kb/154/Q154465/
+permalink: /kb/154/Q154465/
 ---
 
 ## Q154465: Cinemania 97 and Music Central 97: INTERNET.TXT Contents

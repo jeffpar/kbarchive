@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150421: BUG: Cannot Change DBCS Font Size When Printing"
-permalink: kb/150/Q150421/
+permalink: /kb/150/Q150421/
 ---
 
 ## Q150421: BUG: Cannot Change DBCS Font Size When Printing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123501: PC Adm: Err Msg: Can Not Create User or Can Not Delete User"
-permalink: kb/123/Q123501/
+permalink: /kb/123/Q123501/
 ---
 
 ## Q123501: PC Adm: Err Msg: Can Not Create User or Can Not Delete User

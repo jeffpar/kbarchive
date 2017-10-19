@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131309: PRB: CONFIG.FPW w/ Multiple COMMAND= Lines Runs Only Last One"
-permalink: kb/131/Q131309/
+permalink: /kb/131/Q131309/
 ---
 
 ## Q131309: PRB: CONFIG.FPW w/ Multiple COMMAND= Lines Runs Only Last One

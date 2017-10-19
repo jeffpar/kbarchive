@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247132: HOW TO: Perform a Server-to-Server FTP Transfer by Using IIS"
-permalink: kb/247/Q247132/
+permalink: /kb/247/Q247132/
 ---
 
 ## Q247132: HOW TO: Perform a Server-to-Server FTP Transfer by Using IIS

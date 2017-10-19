@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260695: XADM: Third-Party Backup Program May Stop Working After Fix"
-permalink: kb/260/Q260695/
+permalink: /kb/260/Q260695/
 ---
 
 ## Q260695: XADM: Third-Party Backup Program May Stop Working After Fix

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132621: Cannot Start Help After Removing Disk from Disk Drive"
-permalink: kb/132/Q132621/
+permalink: /kb/132/Q132621/
 ---
 
 ## Q132621: Cannot Start Help After Removing Disk from Disk Drive

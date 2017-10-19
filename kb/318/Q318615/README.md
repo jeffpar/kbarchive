@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318615: FIX: VFP 7.0 Does Not Open Properly with Some Screen Readers"
-permalink: kb/318/Q318615/
+permalink: /kb/318/Q318615/
 ---
 
 ## Q318615: FIX: VFP 7.0 Does Not Open Properly with Some Screen Readers

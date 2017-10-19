@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75392: RESTORE /D Returns 'Restore File Sequence Error' Message"
-permalink: kb/075/Q75392/
+permalink: /kb/075/Q75392/
 ---
 
 ## Q75392: RESTORE /D Returns 'Restore File Sequence Error' Message

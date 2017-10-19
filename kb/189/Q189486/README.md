@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189486: HOWTO: Expose an MFC OLE Container to VBA Automation"
-permalink: kb/189/Q189486/
+permalink: /kb/189/Q189486/
 ---
 
 ## Q189486: HOWTO: Expose an MFC OLE Container to VBA Automation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141465: How to Install Symbols for Dr. Watson Error Debugging"
-permalink: kb/141/Q141465/
+permalink: /kb/141/Q141465/
 ---
 
 ## Q141465: How to Install Symbols for Dr. Watson Error Debugging

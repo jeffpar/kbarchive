@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153804: Encarta 97 World Atlas: Minimum System Requirements"
-permalink: kb/153/Q153804/
+permalink: /kb/153/Q153804/
 ---
 
 ## Q153804: Encarta 97 World Atlas: Minimum System Requirements

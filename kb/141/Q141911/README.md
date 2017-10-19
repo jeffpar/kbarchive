@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141911: PRB: Form with DeskTop=.T. Changes the Left or Top Properties"
-permalink: kb/141/Q141911/
+permalink: /kb/141/Q141911/
 ---
 
 ## Q141911: PRB: Form with DeskTop=.T. Changes the Left or Top Properties

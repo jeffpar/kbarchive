@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151043: PPT7: How to Customize Right Mouse Button Behavior in PowerPoint"
-permalink: kb/151/Q151043/
+permalink: /kb/151/Q151043/
 ---
 
 ## Q151043: PPT7: How to Customize Right Mouse Button Behavior in PowerPoint

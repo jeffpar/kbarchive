@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276339: Certificate Server/KMS Do Not Grant Certificate if DN Too Long"
-permalink: kb/276/Q276339/
+permalink: /kb/276/Q276339/
 ---
 
 ## Q276339: Certificate Server/KMS Do Not Grant Certificate if DN Too Long

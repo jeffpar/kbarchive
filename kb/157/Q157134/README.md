@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157134: WD97: 3-D Page Border is not Applied"
-permalink: kb/157/Q157134/
+permalink: /kb/157/Q157134/
 ---
 
 ## Q157134: WD97: 3-D Page Border is not Applied

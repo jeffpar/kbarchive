@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219325: Digital AlphaServer Cannot Start After Installing Service Pack 4"
-permalink: kb/219/Q219325/
+permalink: /kb/219/Q219325/
 ---
 
 ## Q219325: Digital AlphaServer Cannot Start After Installing Service Pack 4

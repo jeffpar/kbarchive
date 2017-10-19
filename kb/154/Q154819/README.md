@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154819: HOWTO: Access PC Bus Devices in Visual Basic for Windows"
-permalink: kb/154/Q154819/
+permalink: /kb/154/Q154819/
 ---
 
 ## Q154819: HOWTO: Access PC Bus Devices in Visual Basic for Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172708: BID Response Not Honoring Pacing Indicator from FMI Application"
-permalink: kb/172/Q172708/
+permalink: /kb/172/Q172708/
 ---
 
 ## Q172708: BID Response Not Honoring Pacing Indicator from FMI Application

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156013: INFO: Possible Uses for Offline Views in Visual FoxPro"
-permalink: kb/156/Q156013/
+permalink: /kb/156/Q156013/
 ---
 
 ## Q156013: INFO: Possible Uses for Offline Views in Visual FoxPro

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101540: PC WSPlus: Err Msg: Not a Valid File or Invalid Password"
-permalink: kb/101/Q101540/
+permalink: /kb/101/Q101540/
 ---
 
 ## Q101540: PC WSPlus: Err Msg: Not a Valid File or Invalid Password

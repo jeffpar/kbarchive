@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197612: Virtual and Physical Directories May Share the Same Name"
-permalink: kb/197/Q197612/
+permalink: /kb/197/Q197612/
 ---
 
 ## Q197612: Virtual and Physical Directories May Share the Same Name

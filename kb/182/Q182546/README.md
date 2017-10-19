@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182546: PPT: PowerPoint Saves Year in Three-Digit Format"
-permalink: kb/182/Q182546/
+permalink: /kb/182/Q182546/
 ---
 
 ## Q182546: PPT: PowerPoint Saves Year in Three-Digit Format

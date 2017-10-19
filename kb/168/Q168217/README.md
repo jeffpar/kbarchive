@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168217: FIX: Unattended Setup May Fail with 3Com 3C619B Tokenlink III A"
-permalink: kb/168/Q168217/
+permalink: /kb/168/Q168217/
 ---
 
 ## Q168217: FIX: Unattended Setup May Fail with 3Com 3C619B Tokenlink III A

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157330: Windows NT 4.0 PostScript Driver Prints Only Last Page"
-permalink: kb/157/Q157330/
+permalink: /kb/157/Q157330/
 ---
 
 ## Q157330: Windows NT 4.0 PostScript Driver Prints Only Last Page

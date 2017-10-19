@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99887: Information on NWLink"
-permalink: kb/099/Q99887/
+permalink: /kb/099/Q99887/
 ---
 
 ## Q99887: Information on NWLink

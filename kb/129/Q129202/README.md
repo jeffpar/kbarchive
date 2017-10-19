@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129202: PC Ext: Explanation of Opportunistic Locking on Windows NT"
-permalink: kb/129/Q129202/
+permalink: /kb/129/Q129202/
 ---
 
 ## Q129202: PC Ext: Explanation of Opportunistic Locking on Windows NT

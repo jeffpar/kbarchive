@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171253: Twinax Connections Fail"
-permalink: kb/171/Q171253/
+permalink: /kb/171/Q171253/
 ---
 
 ## Q171253: Twinax Connections Fail

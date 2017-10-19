@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197817: IIS4.0 Logs Incorrect Value for Time Taken in W3C Extended Log"
-permalink: kb/197/Q197817/
+permalink: /kb/197/Q197817/
 ---
 
 ## Q197817: IIS4.0 Logs Incorrect Value for Time Taken in W3C Extended Log

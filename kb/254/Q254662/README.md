@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254662: Event ID 5: TN5250 Generates Dr. Watson with Fault in DbgBreakPo"
-permalink: kb/254/Q254662/
+permalink: /kb/254/Q254662/
 ---
 
 ## Q254662: Event ID 5: TN5250 Generates Dr. Watson with Fault in DbgBreakPo

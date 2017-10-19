@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198289: XCLN: ErrMsg: Mapi32.dll Is Missing or Corrupted"
-permalink: kb/198/Q198289/
+permalink: /kb/198/Q198289/
 ---
 
 ## Q198289: XCLN: ErrMsg: Mapi32.dll Is Missing or Corrupted

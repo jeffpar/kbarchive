@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244052: AFP (Advanced Function Printing) Is Not Supported by SNA Server"
-permalink: kb/244/Q244052/
+permalink: /kb/244/Q244052/
 ---
 
 ## Q244052: AFP (Advanced Function Printing) Is Not Supported by SNA Server

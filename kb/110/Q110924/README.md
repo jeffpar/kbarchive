@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110924: No Master Browse Server Available with TCP/IP"
-permalink: kb/110/Q110924/
+permalink: /kb/110/Q110924/
 ---
 
 ## Q110924: No Master Browse Server Available with TCP/IP

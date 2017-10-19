@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135567: Novell Allow Tool Does Not Work on Windows 95 NCP Server"
-permalink: kb/135/Q135567/
+permalink: /kb/135/Q135567/
 ---
 
 ## Q135567: Novell Allow Tool Does Not Work on Windows 95 NCP Server

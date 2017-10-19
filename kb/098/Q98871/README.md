@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98871: PRB: Using HSZ in AFXEXT.H and DDEML.H"
-permalink: kb/098/Q98871/
+permalink: /kb/098/Q98871/
 ---
 
 ## Q98871: PRB: Using HSZ in AFXEXT.H and DDEML.H

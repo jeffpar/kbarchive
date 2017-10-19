@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159175: XFOR: Inbound Mail Failures on BinHex 4.0 Attachments"
-permalink: kb/159/Q159175/
+permalink: /kb/159/Q159175/
 ---
 
 ## Q159175: XFOR: Inbound Mail Failures on BinHex 4.0 Attachments

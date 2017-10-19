@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110308: HOWTO: Encrypt a String with Password Security"
-permalink: kb/110/Q110308/
+permalink: /kb/110/Q110308/
 ---
 
 ## Q110308: HOWTO: Encrypt a String with Password Security

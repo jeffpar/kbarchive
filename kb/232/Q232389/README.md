@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232389: XCON: DRAS Failing after You Upgrade to Windows NT 4.0 SP4"
-permalink: kb/232/Q232389/
+permalink: /kb/232/Q232389/
 ---
 
 ## Q232389: XCON: DRAS Failing after You Upgrade to Windows NT 4.0 SP4

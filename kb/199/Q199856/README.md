@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199856: FIX: SIZE Command Does Not Work in Internet Transfer Control"
-permalink: kb/199/Q199856/
+permalink: /kb/199/Q199856/
 ---
 
 ## Q199856: FIX: SIZE Command Does Not Work in Internet Transfer Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237711: NBA 2000: Computer Team Takes Free Throws After Fouling You"
-permalink: kb/237/Q237711/
+permalink: /kb/237/Q237711/
 ---
 
 ## Q237711: NBA 2000: Computer Team Takes Free Throws After Fouling You

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230300: Contents of Connection Manager Administration Kit Release Notes"
-permalink: kb/230/Q230300/
+permalink: /kb/230/Q230300/
 ---
 
 ## Q230300: Contents of Connection Manager Administration Kit Release Notes

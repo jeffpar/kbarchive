@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137730: PRB: Cannot Pass Parameters as Float ByVal to VB 4.0 Events"
-permalink: kb/137/Q137730/
+permalink: /kb/137/Q137730/
 ---
 
 ## Q137730: PRB: Cannot Pass Parameters as Float ByVal to VB 4.0 Events

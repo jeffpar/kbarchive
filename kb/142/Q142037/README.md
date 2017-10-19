@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142037: SNA Server Fails to Release Memory in SNA TCP/IP Interface DLL"
-permalink: kb/142/Q142037/
+permalink: /kb/142/Q142037/
 ---
 
 ## Q142037: SNA Server Fails to Release Memory in SNA TCP/IP Interface DLL

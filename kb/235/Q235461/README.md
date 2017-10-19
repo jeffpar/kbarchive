@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235461: Enhancing Performance in Internet Information Server 4.0"
-permalink: kb/235/Q235461/
+permalink: /kb/235/Q235461/
 ---
 
 ## Q235461: Enhancing Performance in Internet Information Server 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85342: WT1249: Pure Black and White Printing Add-in"
-permalink: kb/085/Q85342/
+permalink: /kb/085/Q85342/
 ---
 
 ## Q85342: WT1249: Pure Black and White Printing Add-in

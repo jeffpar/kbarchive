@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121946: How to Create a Status Bar in Every MDI Child Window"
-permalink: kb/121/Q121946/
+permalink: /kb/121/Q121946/
 ---
 
 ## Q121946: How to Create a Status Bar in Every MDI Child Window

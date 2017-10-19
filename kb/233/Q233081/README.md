@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233081: XGEN: What's New in Microsoft Exchange Server Version 5.5"
-permalink: kb/233/Q233081/
+permalink: /kb/233/Q233081/
 ---
 
 ## Q233081: XGEN: What's New in Microsoft Exchange Server Version 5.5

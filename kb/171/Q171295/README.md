@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171295: Fault Tolerant Systems May Encounter Problems with WinNT SP3"
-permalink: kb/171/Q171295/
+permalink: /kb/171/Q171295/
 ---
 
 ## Q171295: Fault Tolerant Systems May Encounter Problems with WinNT SP3

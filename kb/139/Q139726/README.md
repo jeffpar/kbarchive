@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139726: Hang or Power Loss During DriveSpace Operation"
-permalink: kb/139/Q139726/
+permalink: /kb/139/Q139726/
 ---
 
 ## Q139726: Hang or Power Loss During DriveSpace Operation

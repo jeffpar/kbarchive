@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159447: Applications Testing for Directory Existence Fail"
-permalink: kb/159/Q159447/
+permalink: /kb/159/Q159447/
 ---
 
 ## Q159447: Applications Testing for Directory Existence Fail

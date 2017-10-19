@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210513: Golf 99: Startup Screen Is Not Redrawn When You Quit a Round"
-permalink: kb/210/Q210513/
+permalink: /kb/210/Q210513/
 ---
 
 ## Q210513: Golf 99: Startup Screen Is Not Redrawn When You Quit a Round

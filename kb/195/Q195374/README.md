@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195374: BUG: PLIST Corruption or Crash with Call Attributive Profiling"
-permalink: kb/195/Q195374/
+permalink: /kb/195/Q195374/
 ---
 
 ## Q195374: BUG: PLIST Corruption or Crash with Call Attributive Profiling

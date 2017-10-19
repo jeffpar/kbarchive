@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257951: WD97: Incorrect Result Performing Mail Merge w/Excel Data Source"
-permalink: kb/257/Q257951/
+permalink: /kb/257/Q257951/
 ---
 
 ## Q257951: WD97: Incorrect Result Performing Mail Merge w/Excel Data Source

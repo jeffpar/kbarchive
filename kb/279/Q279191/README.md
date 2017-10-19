@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279191: FIX: Analyze.exe Fails to Repair/Remove Orphaned Files in VSS"
-permalink: kb/279/Q279191/
+permalink: /kb/279/Q279191/
 ---
 
 ## Q279191: FIX: Analyze.exe Fails to Repair/Remove Orphaned Files in VSS

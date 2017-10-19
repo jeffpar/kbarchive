@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103554: Running MS-DOS-Based Games with DoubleSpace"
-permalink: kb/103/Q103554/
+permalink: /kb/103/Q103554/
 ---
 
 ## Q103554: Running MS-DOS-Based Games with DoubleSpace

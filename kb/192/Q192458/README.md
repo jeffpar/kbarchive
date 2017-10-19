@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192458: Laptop PCMCIA Controller Not Recognized Under Windows NT"
-permalink: kb/192/Q192458/
+permalink: /kb/192/Q192458/
 ---
 
 ## Q192458: Laptop PCMCIA Controller Not Recognized Under Windows NT

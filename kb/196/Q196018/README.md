@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196018: System Preparation Tool Directory Not Deleted Upon Cloning"
-permalink: kb/196/Q196018/
+permalink: /kb/196/Q196018/
 ---
 
 ## Q196018: System Preparation Tool Directory Not Deleted Upon Cloning

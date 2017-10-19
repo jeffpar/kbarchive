@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146292: XADM: Create/Last Modified Unavailable After Clicking Apply"
-permalink: kb/146/Q146292/
+permalink: /kb/146/Q146292/
 ---
 
 ## Q146292: XADM: Create/Last Modified Unavailable After Clicking Apply

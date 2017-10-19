@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161287: HOWTO: Register 4.0 Add-ins for Visual Basic 5.0 or 6.0"
-permalink: kb/161/Q161287/
+permalink: /kb/161/Q161287/
 ---
 
 ## Q161287: HOWTO: Register 4.0 Add-ins for Visual Basic 5.0 or 6.0

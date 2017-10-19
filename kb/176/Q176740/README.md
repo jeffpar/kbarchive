@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176740: XFOR: Migrated GroupWise Users Cannot See Migrated Messages"
-permalink: kb/176/Q176740/
+permalink: /kb/176/Q176740/
 ---
 
 ## Q176740: XFOR: Migrated GroupWise Users Cannot See Migrated Messages

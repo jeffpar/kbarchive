@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118323: WFWG Err Msg: WINFILE Caused a GP Fault at 0009:028A..."
-permalink: kb/118/Q118323/
+permalink: /kb/118/Q118323/
 ---
 
 ## Q118323: WFWG Err Msg: WINFILE Caused a GP Fault at 0009:028A...

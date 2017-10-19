@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148680: Dialing with Eicon PCMCIA ISDN Adapter May Hang Computer"
-permalink: kb/148/Q148680/
+permalink: /kb/148/Q148680/
 ---
 
 ## Q148680: Dialing with Eicon PCMCIA ISDN Adapter May Hang Computer

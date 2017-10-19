@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90241: NET.EXE Does Not Save Passwords or Restore Connections"
-permalink: kb/090/Q90241/
+permalink: /kb/090/Q90241/
 ---
 
 ## Q90241: NET.EXE Does Not Save Passwords or Restore Connections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169715: XCON: Exchange Server MTA Generates Event ID 208"
-permalink: kb/169/Q169715/
+permalink: /kb/169/Q169715/
 ---
 
 ## Q169715: XCON: Exchange Server MTA Generates Event ID 208

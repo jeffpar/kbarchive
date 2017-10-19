@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76940: PRB: Value of hPrevInstance Incorrect"
-permalink: kb/076/Q76940/
+permalink: /kb/076/Q76940/
 ---
 
 ## Q76940: PRB: Value of hPrevInstance Incorrect

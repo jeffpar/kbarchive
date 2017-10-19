@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69832: Emulation Modes of Facit Printers with Windows"
-permalink: kb/069/Q69832/
+permalink: /kb/069/Q69832/
 ---
 
 ## Q69832: Emulation Modes of Facit Printers with Windows

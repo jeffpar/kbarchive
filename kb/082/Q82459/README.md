@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82459: Procom Technology's SCSI Driver Causes Windows Setup to Hang"
-permalink: kb/082/Q82459/
+permalink: /kb/082/Q82459/
 ---
 
 ## Q82459: Procom Technology's SCSI Driver Causes Windows Setup to Hang

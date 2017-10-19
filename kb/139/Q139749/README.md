@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139749: Program Starts During Microsoft Plus! Setup"
-permalink: kb/139/Q139749/
+permalink: /kb/139/Q139749/
 ---
 
 ## Q139749: Program Starts During Microsoft Plus! Setup

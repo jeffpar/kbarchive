@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166956: WD97: Many Page Breaks with &quot;First Page Footer&quot; Causes Problems"
-permalink: kb/166/Q166956/
+permalink: /kb/166/Q166956/
 ---
 
 ## Q166956: WD97: Many Page Breaks with &quot;First Page Footer&quot; Causes Problems

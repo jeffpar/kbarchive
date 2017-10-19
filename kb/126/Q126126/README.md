@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126126: Windows NT Setup Fails when SCSI Controller is Not Detected"
-permalink: kb/126/Q126126/
+permalink: /kb/126/Q126126/
 ---
 
 ## Q126126: Windows NT Setup Fails when SCSI Controller is Not Detected

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172815: Win3x 5250 Applet Traps When Wswappc.dll Not Unloaded"
-permalink: kb/172/Q172815/
+permalink: /kb/172/Q172815/
 ---
 
 ## Q172815: Win3x 5250 Applet Traps When Wswappc.dll Not Unloaded

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279141: FIX: Repeatedly Calling Create Class in Application Causes Error"
-permalink: kb/279/Q279141/
+permalink: /kb/279/Q279141/
 ---
 
 ## Q279141: FIX: Repeatedly Calling Create Class in Application Causes Error

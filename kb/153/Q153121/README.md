@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153121: XFOR: Migrating from WGPO to Exchange"
-permalink: kb/153/Q153121/
+permalink: /kb/153/Q153121/
 ---
 
 ## Q153121: XFOR: Migrating from WGPO to Exchange

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79212: HOWTO: Drawing Transparent Bitmaps"
-permalink: kb/079/Q79212/
+permalink: /kb/079/Q79212/
 ---
 
 ## Q79212: HOWTO: Drawing Transparent Bitmaps

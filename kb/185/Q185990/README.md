@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185990: HOWTO: Improve Performance of Object De-allocation"
-permalink: kb/185/Q185990/
+permalink: /kb/185/Q185990/
 ---
 
 ## Q185990: HOWTO: Improve Performance of Object De-allocation

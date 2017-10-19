@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158989: XADM: Factors affecting Exchange Directory Replication Speed"
-permalink: kb/158/Q158989/
+permalink: /kb/158/Q158989/
 ---
 
 ## Q158989: XADM: Factors affecting Exchange Directory Replication Speed

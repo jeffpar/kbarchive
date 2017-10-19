@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143104: FP: Browsing Web Returns List of Files Instead of Home Page"
-permalink: kb/143/Q143104/
+permalink: /kb/143/Q143104/
 ---
 
 ## Q143104: FP: Browsing Web Returns List of Files Instead of Home Page

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244719: FIX: Parameter Mismatch with Subqueries When Using Access ODBC"
-permalink: kb/244/Q244719/
+permalink: /kb/244/Q244719/
 ---
 
 ## Q244719: FIX: Parameter Mismatch with Subqueries When Using Access ODBC

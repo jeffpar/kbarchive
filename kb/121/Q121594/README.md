@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121594: Tasking Option Affects Server Service Priority"
-permalink: kb/121/Q121594/
+permalink: /kb/121/Q121594/
 ---
 
 ## Q121594: Tasking Option Affects Server Service Priority

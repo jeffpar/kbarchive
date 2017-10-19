@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129171: INFO: The Difference Among Visual FoxPro Numeric Data Types"
-permalink: kb/129/Q129171/
+permalink: /kb/129/Q129171/
 ---
 
 ## Q129171: INFO: The Difference Among Visual FoxPro Numeric Data Types

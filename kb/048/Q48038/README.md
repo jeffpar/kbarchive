@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48038: Mac Adm: Special/Reserved Keys for User Names"
-permalink: kb/048/Q48038/
+permalink: /kb/048/Q48038/
 ---
 
 ## Q48038: Mac Adm: Special/Reserved Keys for User Names

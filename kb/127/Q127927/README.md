@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127927: Application Error Running MorningStar Software"
-permalink: kb/127/Q127927/
+permalink: /kb/127/Q127927/
 ---
 
 ## Q127927: Application Error Running MorningStar Software

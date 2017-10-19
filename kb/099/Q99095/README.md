@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99095: How to Reset a Database Field to a Null Value in FoxPro"
-permalink: kb/099/Q99095/
+permalink: /kb/099/Q99095/
 ---
 
 ## Q99095: How to Reset a Database Field to a Null Value in FoxPro

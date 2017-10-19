@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134780: PPT7: Action Item Slides Not Written from Embedded Presentation"
-permalink: kb/134/Q134780/
+permalink: /kb/134/Q134780/
 ---
 
 ## Q134780: PPT7: Action Item Slides Not Written from Embedded Presentation

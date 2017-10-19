@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173495: XADM: IMS Advanced Tab Removed in Administrator Program"
-permalink: kb/173/Q173495/
+permalink: /kb/173/Q173495/
 ---
 
 ## Q173495: XADM: IMS Advanced Tab Removed in Administrator Program

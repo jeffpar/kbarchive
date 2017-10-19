@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171065: FIX: Breakpoint Skip Count Resets to Zero After First Pass"
-permalink: kb/171/Q171065/
+permalink: /kb/171/Q171065/
 ---
 
 ## Q171065: FIX: Breakpoint Skip Count Resets to Zero After First Pass

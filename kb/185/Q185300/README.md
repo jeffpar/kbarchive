@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185300: STOP 0x24 in Ntfs.sys Function NTFSMoveFile()"
-permalink: kb/185/Q185300/
+permalink: /kb/185/Q185300/
 ---
 
 ## Q185300: STOP 0x24 in Ntfs.sys Function NTFSMoveFile()

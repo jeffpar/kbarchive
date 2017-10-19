@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231857: Midtown Madness: Game Is Not Displayed on the Correct Monitor"
-permalink: kb/231/Q231857/
+permalink: /kb/231/Q231857/
 ---
 
 ## Q231857: Midtown Madness: Game Is Not Displayed on the Correct Monitor

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83498: Print Option Unavailable in Windows-Based Applications"
-permalink: kb/083/Q83498/
+permalink: /kb/083/Q83498/
 ---
 
 ## Q83498: Print Option Unavailable in Windows-Based Applications

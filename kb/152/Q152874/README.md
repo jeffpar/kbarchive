@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152874: XCON: MTA NDR's All Messages Sent in Year 2000"
-permalink: kb/152/Q152874/
+permalink: /kb/152/Q152874/
 ---
 
 ## Q152874: XCON: MTA NDR's All Messages Sent in Year 2000

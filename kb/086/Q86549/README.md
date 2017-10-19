@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86549: MHS: Steps That Must Be Completed Prior to Installation"
-permalink: kb/086/Q86549/
+permalink: /kb/086/Q86549/
 ---
 
 ## Q86549: MHS: Steps That Must Be Completed Prior to Installation

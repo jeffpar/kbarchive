@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217207: Type of Service Octet in IP Header Not Initialized on Alpha"
-permalink: kb/217/Q217207/
+permalink: /kb/217/Q217207/
 ---
 
 ## Q217207: Type of Service Octet in IP Header Not Initialized on Alpha

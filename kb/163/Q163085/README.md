@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163085: XCON: MTA Logs Warning Events When Queues Reach Specified Sizes"
-permalink: kb/163/Q163085/
+permalink: /kb/163/Q163085/
 ---
 
 ## Q163085: XCON: MTA Logs Warning Events When Queues Reach Specified Sizes

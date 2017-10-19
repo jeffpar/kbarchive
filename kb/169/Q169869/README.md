@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169869: MDG: Gimport on the TechNet CD Before Nov 96 Created MEM"
-permalink: kb/169/Q169869/
+permalink: /kb/169/Q169869/
 ---
 
 ## Q169869: MDG: Gimport on the TechNet CD Before Nov 96 Created MEM

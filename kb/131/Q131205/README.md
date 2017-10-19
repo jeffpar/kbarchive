@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131205: In Case of IPX Problems Get Latest Service Pack"
-permalink: kb/131/Q131205/
+permalink: /kb/131/Q131205/
 ---
 
 ## Q131205: In Case of IPX Problems Get Latest Service Pack

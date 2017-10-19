@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184325: XWEB: All Day Event Appears As Two Days Using OWA"
-permalink: kb/184/Q184325/
+permalink: /kb/184/Q184325/
 ---
 
 ## Q184325: XWEB: All Day Event Appears As Two Days Using OWA

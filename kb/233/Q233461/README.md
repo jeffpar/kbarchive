@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233461: Business Planner: Data Lost After Low Disk Space Warning Appears"
-permalink: kb/233/Q233461/
+permalink: /kb/233/Q233461/
 ---
 
 ## Q233461: Business Planner: Data Lost After Low Disk Space Warning Appears

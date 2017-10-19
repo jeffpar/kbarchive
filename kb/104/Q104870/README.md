@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q104870: PC DirSync: Err Msg: Fatal [202] No Valid Postoffice Found"
-permalink: kb/104/Q104870/
+title: "Q104870: PC DirSync: Err Msg: Fatal &#91;202&#93; No Valid Postoffice Found"
+permalink: /kb/104/Q104870/
 ---
 
-## Q104870: PC DirSync: Err Msg: Fatal [202] No Valid Postoffice Found
+## Q104870: PC DirSync: Err Msg: Fatal &#91;202&#93; No Valid Postoffice Found
 
 	Article: Q104870
 	Product(s): Microsoft Mail For PC Networks

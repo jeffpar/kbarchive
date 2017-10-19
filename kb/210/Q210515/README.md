@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210515: Golf 99: Distance Displayed on Screen Does Not Match Scorecard"
-permalink: kb/210/Q210515/
+permalink: /kb/210/Q210515/
 ---
 
 ## Q210515: Golf 99: Distance Displayed on Screen Does Not Match Scorecard

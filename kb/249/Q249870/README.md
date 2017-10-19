@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249870: XADM: Can't Access Client Permissions on Internet Newsgroup"
-permalink: kb/249/Q249870/
+permalink: /kb/249/Q249870/
 ---
 
 ## Q249870: XADM: Can't Access Client Permissions on Internet Newsgroup

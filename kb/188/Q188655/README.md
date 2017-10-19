@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188655: NetBIOS CacheTimeout Explanation"
-permalink: kb/188/Q188655/
+permalink: /kb/188/Q188655/
 ---
 
 ## Q188655: NetBIOS CacheTimeout Explanation

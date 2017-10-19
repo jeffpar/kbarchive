@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167628: SMS: Missing or Incomplete Inventory in SMS Database"
-permalink: kb/167/Q167628/
+permalink: /kb/167/Q167628/
 ---
 
 ## Q167628: SMS: Missing or Incomplete Inventory in SMS Database

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124319: BUG: Syntax Error When Using Qualified Table Name with Quotes"
-permalink: kb/124/Q124319/
+permalink: /kb/124/Q124319/
 ---
 
 ## Q124319: BUG: Syntax Error When Using Qualified Table Name with Quotes

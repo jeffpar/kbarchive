@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153927: HOWTO: Create Pie Charts Using the Circle Method in VB"
-permalink: kb/153/Q153927/
+permalink: /kb/153/Q153927/
 ---
 
 ## Q153927: HOWTO: Create Pie Charts Using the Circle Method in VB

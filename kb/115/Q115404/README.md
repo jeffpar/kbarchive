@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115404: ErrMsgs After Upgrade:&quot;Port Is Currently...&quot; or &quot;System Error&quot;"
-permalink: kb/115/Q115404/
+permalink: /kb/115/Q115404/
 ---
 
 ## Q115404: ErrMsgs After Upgrade:&quot;Port Is Currently...&quot; or &quot;System Error&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160651: OpenGL May Cause an Exception 0xc0000090"
-permalink: kb/160/Q160651/
+permalink: /kb/160/Q160651/
 ---
 
 ## Q160651: OpenGL May Cause an Exception 0xc0000090

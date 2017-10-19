@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194910: FIX: Cannot Set ImageList for ImageCombo at Design on MDIForm"
-permalink: kb/194/Q194910/
+permalink: /kb/194/Q194910/
 ---
 
 ## Q194910: FIX: Cannot Set ImageList for ImageCombo at Design on MDIForm

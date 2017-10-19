@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190111: FIX: In Grid, 2nd Character Overwrites 1st If Old Value Is NULL"
-permalink: kb/190/Q190111/
+permalink: /kb/190/Q190111/
 ---
 
 ## Q190111: FIX: In Grid, 2nd Character Overwrites 1st If Old Value Is NULL

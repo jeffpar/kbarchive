@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199960: XADM: XFOR: T-shooting Notes/SNADS/PROFS/GW Connectors"
-permalink: kb/199/Q199960/
+permalink: /kb/199/Q199960/
 ---
 
 ## Q199960: XADM: XFOR: T-shooting Notes/SNADS/PROFS/GW Connectors

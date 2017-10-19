@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179496: FIX: Class Builder Reports Property Procedures as Variants"
-permalink: kb/179/Q179496/
+permalink: /kb/179/Q179496/
 ---
 
 ## Q179496: FIX: Class Builder Reports Property Procedures as Variants

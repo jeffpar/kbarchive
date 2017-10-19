@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85548: Sound Blaster Configuration Changes with ATI Stereo FX Board"
-permalink: kb/085/Q85548/
+permalink: /kb/085/Q85548/
 ---
 
 ## Q85548: Sound Blaster Configuration Changes with ATI Stereo FX Board

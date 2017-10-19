@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117929: ALT, SHIFT Keys Stick or System Beeps w/Access Utility Enabled"
-permalink: kb/117/Q117929/
+permalink: /kb/117/Q117929/
 ---
 
 ## Q117929: ALT, SHIFT Keys Stick or System Beeps w/Access Utility Enabled

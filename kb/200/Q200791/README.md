@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200791: SMS: SMS 1.2 SP4 May Cause WinNT Clients Not to Report Inventory"
-permalink: kb/200/Q200791/
+permalink: /kb/200/Q200791/
 ---
 
 ## Q200791: SMS: SMS 1.2 SP4 May Cause WinNT Clients Not to Report Inventory

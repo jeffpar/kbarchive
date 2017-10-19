@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151197: XCLN: Import of MMF May Create Duplicate Messages in Inbox"
-permalink: kb/151/Q151197/
+permalink: /kb/151/Q151197/
 ---
 
 ## Q151197: XCLN: Import of MMF May Create Duplicate Messages in Inbox

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275225: Encarta Language Learning Online: Audio Dialogue Is Not Repeated"
-permalink: kb/275/Q275225/
+permalink: /kb/275/Q275225/
 ---
 
 ## Q275225: Encarta Language Learning Online: Audio Dialogue Is Not Repeated

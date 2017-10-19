@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146183: XADM: Optimizer Deletes Edb&#42;.log Files When Given Invalid Path"
-permalink: kb/146/Q146183/
+permalink: /kb/146/Q146183/
 ---
 
 ## Q146183: XADM: Optimizer Deletes Edb&#42;.log Files When Given Invalid Path

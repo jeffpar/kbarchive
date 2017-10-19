@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83546: Wrong Port Name in Windows 3.1 Getting Started Guide"
-permalink: kb/083/Q83546/
+permalink: /kb/083/Q83546/
 ---
 
 ## Q83546: Wrong Port Name in Windows 3.1 Getting Started Guide

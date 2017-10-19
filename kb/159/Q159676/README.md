@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159676: WD97: Close Method in Macro Fails in Protected Form"
-permalink: kb/159/Q159676/
+permalink: /kb/159/Q159676/
 ---
 
 ## Q159676: WD97: Close Method in Macro Fails in Protected Form

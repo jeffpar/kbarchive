@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129457: Anonymous Connections May Be Able to Obtain the Password Policy"
-permalink: kb/129/Q129457/
+permalink: /kb/129/Q129457/
 ---
 
 ## Q129457: Anonymous Connections May Be Able to Obtain the Password Policy

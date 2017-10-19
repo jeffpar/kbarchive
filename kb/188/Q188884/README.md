@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188884: Upgrading Localized Versions of Windows 95/98"
-permalink: kb/188/Q188884/
+permalink: /kb/188/Q188884/
 ---
 
 ## Q188884: Upgrading Localized Versions of Windows 95/98

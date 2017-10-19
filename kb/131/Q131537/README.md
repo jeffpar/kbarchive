@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131537: Mac Encarta 1995: Monitor Colors Appear Faded"
-permalink: kb/131/Q131537/
+permalink: /kb/131/Q131537/
 ---
 
 ## Q131537: Mac Encarta 1995: Monitor Colors Appear Faded

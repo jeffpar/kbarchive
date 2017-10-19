@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240229: PRB: Treeview Control NodeClick Event Not Raised"
-permalink: kb/240/Q240229/
+permalink: /kb/240/Q240229/
 ---
 
 ## Q240229: PRB: Treeview Control NodeClick Event Not Raised

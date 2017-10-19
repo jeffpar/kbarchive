@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178407: WD97: Punctuation May Cause Word to Constantly Check Same Word"
-permalink: kb/178/Q178407/
+permalink: /kb/178/Q178407/
 ---
 
 ## Q178407: WD97: Punctuation May Cause Word to Constantly Check Same Word

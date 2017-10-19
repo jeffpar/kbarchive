@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268485: XADM: Directory Import Fails When You Use a Command Line"
-permalink: kb/268/Q268485/
+permalink: /kb/268/Q268485/
 ---
 
 ## Q268485: XADM: Directory Import Fails When You Use a Command Line

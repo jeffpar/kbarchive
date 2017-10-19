@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86984: X400: Location of Log Files and When You Can Move Them"
-permalink: kb/086/Q86984/
+permalink: /kb/086/Q86984/
 ---
 
 ## Q86984: X400: Location of Log Files and When You Can Move Them

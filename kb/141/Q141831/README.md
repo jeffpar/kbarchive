@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141831: System Locks Up When Accessing Floppy Drive"
-permalink: kb/141/Q141831/
+permalink: /kb/141/Q141831/
 ---
 
 ## Q141831: System Locks Up When Accessing Floppy Drive

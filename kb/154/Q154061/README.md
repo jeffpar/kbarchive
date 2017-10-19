@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154061: SFM Fails to Bind to a Newly Installed Network Card"
-permalink: kb/154/Q154061/
+permalink: /kb/154/Q154061/
 ---
 
 ## Q154061: SFM Fails to Bind to a Newly Installed Network Card

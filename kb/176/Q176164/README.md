@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176164: FIX: Optional Argument Default Value Breaks Binary Compatibility"
-permalink: kb/176/Q176164/
+permalink: /kb/176/Q176164/
 ---
 
 ## Q176164: FIX: Optional Argument Default Value Breaks Binary Compatibility

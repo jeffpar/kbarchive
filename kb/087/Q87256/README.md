@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87256: CONN: Errors Running Connection Name Utility"
-permalink: kb/087/Q87256/
+permalink: /kb/087/Q87256/
 ---
 
 ## Q87256: CONN: Errors Running Connection Name Utility

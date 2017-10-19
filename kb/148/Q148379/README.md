@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148379: XCON: MTA Object Not Showing Up in Administrator Program"
-permalink: kb/148/Q148379/
+permalink: /kb/148/Q148379/
 ---
 
 ## Q148379: XCON: MTA Object Not Showing Up in Administrator Program

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166167: XCLN: Error Occurred During the Connection, Hardware Failure"
-permalink: kb/166/Q166167/
+permalink: /kb/166/Q166167/
 ---
 
 ## Q166167: XCLN: Error Occurred During the Connection, Hardware Failure

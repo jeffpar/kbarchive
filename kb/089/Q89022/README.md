@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89022: Event Managers or Launchers for Windows"
-permalink: kb/089/Q89022/
+permalink: /kb/089/Q89022/
 ---
 
 ## Q89022: Event Managers or Launchers for Windows

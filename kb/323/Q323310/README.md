@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323310: A &quot;Stop 0x1e&quot; Error Occurs in NetBT in Windows NT 4.0"
-permalink: kb/323/Q323310/
+permalink: /kb/323/Q323310/
 ---
 
 ## Q323310: A &quot;Stop 0x1e&quot; Error Occurs in NetBT in Windows NT 4.0

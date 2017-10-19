@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161932: XFOR: MtaCheck Causes Access Violation Exception Error"
-permalink: kb/161/Q161932/
+permalink: /kb/161/Q161932/
 ---
 
 ## Q161932: XFOR: MtaCheck Causes Access Violation Exception Error

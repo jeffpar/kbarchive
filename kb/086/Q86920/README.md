@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86920: DOC: OPENFILENAME lpstrInitialDir Documented Incorrectly"
-permalink: kb/086/Q86920/
+permalink: /kb/086/Q86920/
 ---
 
 ## Q86920: DOC: OPENFILENAME lpstrInitialDir Documented Incorrectly

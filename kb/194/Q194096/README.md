@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194096: FP98: How to Play Background Sound in Netscape Navigator"
-permalink: kb/194/Q194096/
+permalink: /kb/194/Q194096/
 ---
 
 ## Q194096: FP98: How to Play Background Sound in Netscape Navigator

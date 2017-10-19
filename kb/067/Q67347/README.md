@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67347: Windows 3.0 Runs in Incorrect Mode from Menu Programs"
-permalink: kb/067/Q67347/
+permalink: /kb/067/Q67347/
 ---
 
 ## Q67347: Windows 3.0 Runs in Incorrect Mode from Menu Programs

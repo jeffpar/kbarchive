@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95634: Manual Installation Err Msg: Incompatible Partition"
-permalink: kb/095/Q95634/
+permalink: /kb/095/Q95634/
 ---
 
 ## Q95634: Manual Installation Err Msg: Incompatible Partition

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170267: WD97: WordBasic MacroCopy Command Fails"
-permalink: kb/170/Q170267/
+permalink: /kb/170/Q170267/
 ---
 
 ## Q170267: WD97: WordBasic MacroCopy Command Fails

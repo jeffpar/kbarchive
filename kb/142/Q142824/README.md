@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142824: BUG: German Windows NT 3.51 Uses Wrong SNMP-Trap Port"
-permalink: kb/142/Q142824/
+permalink: /kb/142/Q142824/
 ---
 
 ## Q142824: BUG: German Windows NT 3.51 Uses Wrong SNMP-Trap Port

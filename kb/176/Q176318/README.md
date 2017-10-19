@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176318: WINS Manager Displays Dots Instead of Sixteenth Character"
-permalink: kb/176/Q176318/
+permalink: /kb/176/Q176318/
 ---
 
 ## Q176318: WINS Manager Displays Dots Instead of Sixteenth Character

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286785: PRB: DblClick() Doesn't Fire With Citrix MetaFrame ICA Client"
-permalink: kb/286/Q286785/
+permalink: /kb/286/Q286785/
 ---
 
 ## Q286785: PRB: DblClick() Doesn't Fire With Citrix MetaFrame ICA Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154077: Windows NT 4.0 Explorer Displays Incorrect File Size"
-permalink: kb/154/Q154077/
+permalink: /kb/154/Q154077/
 ---
 
 ## Q154077: Windows NT 4.0 Explorer Displays Incorrect File Size

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156896: XCON: Cannot Send to DL if Sender Does not have X.400 Address"
-permalink: kb/156/Q156896/
+permalink: /kb/156/Q156896/
 ---
 
 ## Q156896: XCON: Cannot Send to DL if Sender Does not have X.400 Address

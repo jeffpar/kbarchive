@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85695: PC Win: Two OLE Objects on One Line Print on Two Lines"
-permalink: kb/085/Q85695/
+permalink: /kb/085/Q85695/
 ---
 
 ## Q85695: PC Win: Two OLE Objects on One Line Print on Two Lines

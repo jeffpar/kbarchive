@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319057: How To Subscribe To A Favorite Web Page Using Macintosh Internet"
-permalink: kb/319/Q319057/
+permalink: /kb/319/Q319057/
 ---
 
 ## Q319057: How To Subscribe To A Favorite Web Page Using Macintosh Internet

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149177: Adaptec 2940 Series 1.2x BIOS Rev Adapters Fail on NT 3.51"
-permalink: kb/149/Q149177/
+permalink: /kb/149/Q149177/
 ---
 
 ## Q149177: Adaptec 2940 Series 1.2x BIOS Rev Adapters Fail on NT 3.51

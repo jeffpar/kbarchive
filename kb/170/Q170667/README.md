@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170667: Index Server CGI Error"
-permalink: kb/170/Q170667/
+permalink: /kb/170/Q170667/
 ---
 
 ## Q170667: Index Server CGI Error

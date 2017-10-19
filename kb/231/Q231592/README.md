@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231592: BUG: ATL ClassWizard Uses AfxGetStaticModuleState() in MFC EXE"
-permalink: kb/231/Q231592/
+permalink: /kb/231/Q231592/
 ---
 
 ## Q231592: BUG: ATL ClassWizard Uses AfxGetStaticModuleState() in MFC EXE

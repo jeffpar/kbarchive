@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230395: XADM: How to Display Multiple Users from the Address Book"
-permalink: kb/230/Q230395/
+permalink: /kb/230/Q230395/
 ---
 
 ## Q230395: XADM: How to Display Multiple Users from the Address Book

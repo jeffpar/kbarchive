@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97716: FltSim: Gravis MouseStick Doesn't Work Correctly"
-permalink: kb/097/Q97716/
+permalink: /kb/097/Q97716/
 ---
 
 ## Q97716: FltSim: Gravis MouseStick Doesn't Work Correctly

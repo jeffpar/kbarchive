@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153638: PowerPoint Colors Not Displayed Correctly During Remote Control"
-permalink: kb/153/Q153638/
+permalink: /kb/153/Q153638/
 ---
 
 ## Q153638: PowerPoint Colors Not Displayed Correctly During Remote Control

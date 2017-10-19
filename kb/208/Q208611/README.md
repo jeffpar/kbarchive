@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q208611: Urban Assault: Error Message While Installing Movie Player"
-permalink: kb/208/Q208611/
+permalink: /kb/208/Q208611/
 ---
 
 ## Q208611: Urban Assault: Error Message While Installing Movie Player

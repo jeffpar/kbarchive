@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257517: PRB: SQLBulkOperations Returns Function Sequence Error w/Jet 4.0"
-permalink: kb/257/Q257517/
+permalink: /kb/257/Q257517/
 ---
 
 ## Q257517: PRB: SQLBulkOperations Returns Function Sequence Error w/Jet 4.0

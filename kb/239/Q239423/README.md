@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239423: WD97: Cannot Include Footnote or Endnote Text in Word Count"
-permalink: kb/239/Q239423/
+permalink: /kb/239/Q239423/
 ---
 
 ## Q239423: WD97: Cannot Include Footnote or Endnote Text in Word Count

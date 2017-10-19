@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99163: Mac Bkup: Retrospect Remote Backup May Corrupt Local Data File"
-permalink: kb/099/Q99163/
+permalink: /kb/099/Q99163/
 ---
 
 ## Q99163: Mac Bkup: Retrospect Remote Backup May Corrupt Local Data File

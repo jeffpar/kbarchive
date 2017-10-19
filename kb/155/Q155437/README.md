@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155437: PRB: &quot;Invalid DOS Path&quot; Error Message"
-permalink: kb/155/Q155437/
+permalink: /kb/155/Q155437/
 ---
 
 ## Q155437: PRB: &quot;Invalid DOS Path&quot; Error Message

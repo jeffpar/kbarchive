@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225344: ICMP Redirect Attack Hangs Windows NT Server and Workstation"
-permalink: kb/225/Q225344/
+permalink: /kb/225/Q225344/
 ---
 
 ## Q225344: ICMP Redirect Attack Hangs Windows NT Server and Workstation

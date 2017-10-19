@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105925: MS-DOS-Based Applications on Compaq 4/33 Prolinea"
-permalink: kb/105/Q105925/
+permalink: /kb/105/Q105925/
 ---
 
 ## Q105925: MS-DOS-Based Applications on Compaq 4/33 Prolinea

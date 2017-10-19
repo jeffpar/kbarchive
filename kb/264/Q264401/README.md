@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264401: XFOR: Finding Instructions for Exchange Notes Connector Setup"
-permalink: kb/264/Q264401/
+permalink: /kb/264/Q264401/
 ---
 
 ## Q264401: XFOR: Finding Instructions for Exchange Notes Connector Setup

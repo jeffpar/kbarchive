@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141375: Winstone 97 May Fail on Windows NT 4.0"
-permalink: kb/141/Q141375/
+permalink: /kb/141/Q141375/
 ---
 
 ## Q141375: Winstone 97 May Fail on Windows NT 4.0

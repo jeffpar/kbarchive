@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304373: MapPoint 2002: System Requirements"
-permalink: kb/304/Q304373/
+permalink: /kb/304/Q304373/
 ---
 
 ## Q304373: MapPoint 2002: System Requirements

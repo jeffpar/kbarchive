@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134578: PIF File Properties Change After Use"
-permalink: kb/134/Q134578/
+permalink: /kb/134/Q134578/
 ---
 
 ## Q134578: PIF File Properties Change After Use

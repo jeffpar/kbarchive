@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257643: WD97: Spelling, Grammar Not Available in Word Running on Win2000"
-permalink: kb/257/Q257643/
+permalink: /kb/257/Q257643/
 ---
 
 ## Q257643: WD97: Spelling, Grammar Not Available in Word Running on Win2000

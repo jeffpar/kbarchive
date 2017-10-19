@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158897: PWS Pages Should Normally Be Stored in the Home Root Folder"
-permalink: kb/158/Q158897/
+permalink: /kb/158/Q158897/
 ---
 
 ## Q158897: PWS Pages Should Normally Be Stored in the Home Root Folder

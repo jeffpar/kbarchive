@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67941: Removing the Hidden File Attribute"
-permalink: kb/067/Q67941/
+permalink: /kb/067/Q67941/
 ---
 
 ## Q67941: Removing the Hidden File Attribute

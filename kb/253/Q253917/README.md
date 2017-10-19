@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253917: XADM: MAPI Read Receipt Functionality over Internet Mail Service"
-permalink: kb/253/Q253917/
+permalink: /kb/253/Q253917/
 ---
 
 ## Q253917: XADM: MAPI Read Receipt Functionality over Internet Mail Service

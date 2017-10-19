@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174070: Registry Replication in Microsoft Cluster Server"
-permalink: kb/174/Q174070/
+permalink: /kb/174/Q174070/
 ---
 
 ## Q174070: Registry Replication in Microsoft Cluster Server

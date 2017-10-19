@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140917: SMS Sender Sets Enormous Estimated Bandwidth in Registry"
-permalink: kb/140/Q140917/
+permalink: /kb/140/Q140917/
 ---
 
 ## Q140917: SMS Sender Sets Enormous Estimated Bandwidth in Registry

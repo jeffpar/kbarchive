@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119052: SNADS: Win Client Sees Duplicate Headers for Loopback Message"
-permalink: kb/119/Q119052/
+permalink: /kb/119/Q119052/
 ---
 
 ## Q119052: SNADS: Win Client Sees Duplicate Headers for Loopback Message

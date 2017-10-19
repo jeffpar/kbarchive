@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98344: DOCERR: Correction to MM Viewer DW_SIZE Message Parameters"
-permalink: kb/098/Q98344/
+permalink: /kb/098/Q98344/
 ---
 
 ## Q98344: DOCERR: Correction to MM Viewer DW_SIZE Message Parameters

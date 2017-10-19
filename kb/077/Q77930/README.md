@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77930: INFO: Modifying the System Menu of an MDI Child Window"
-permalink: kb/077/Q77930/
+permalink: /kb/077/Q77930/
 ---
 
 ## Q77930: INFO: Modifying the System Menu of an MDI Child Window

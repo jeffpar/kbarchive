@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139767: Julia Child: Intro Audio Plays After Starting Another Program"
-permalink: kb/139/Q139767/
+permalink: /kb/139/Q139767/
 ---
 
 ## Q139767: Julia Child: Intro Audio Plays After Starting Another Program

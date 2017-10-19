@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87634: PRB: Constant String Is Eliminated by the C++ Compiler"
-permalink: kb/087/Q87634/
+permalink: /kb/087/Q87634/
 ---
 
 ## Q87634: PRB: Constant String Is Eliminated by the C++ Compiler

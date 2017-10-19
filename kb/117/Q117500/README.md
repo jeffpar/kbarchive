@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117500: INFO: Using Accelerators with an MFC Modeless Dialog Box"
-permalink: kb/117/Q117500/
+permalink: /kb/117/Q117500/
 ---
 
 ## Q117500: INFO: Using Accelerators with an MFC Modeless Dialog Box

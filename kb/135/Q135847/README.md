@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135847: Files Open Slowly From NetWare Server"
-permalink: kb/135/Q135847/
+permalink: /kb/135/Q135847/
 ---
 
 ## Q135847: Files Open Slowly From NetWare Server

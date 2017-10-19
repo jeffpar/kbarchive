@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124641: Event ID 7000: RDR Service Failed to Start"
-permalink: kb/124/Q124641/
+permalink: /kb/124/Q124641/
 ---
 
 ## Q124641: Event ID 7000: RDR Service Failed to Start

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72486: Entertainment Pack File Sizes Differ Between Versions"
-permalink: kb/072/Q72486/
+permalink: /kb/072/Q72486/
 ---
 
 ## Q72486: Entertainment Pack File Sizes Differ Between Versions

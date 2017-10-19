@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186292: XADM: Database Size Increases Even Though Free Space Available"
-permalink: kb/186/Q186292/
+permalink: /kb/186/Q186292/
 ---
 
 ## Q186292: XADM: Database Size Increases Even Though Free Space Available

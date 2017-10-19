@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153496: Error Loading Windows NT Service Packs on RISC Platforms"
-permalink: kb/153/Q153496/
+permalink: /kb/153/Q153496/
 ---
 
 ## Q153496: Error Loading Windows NT Service Packs on RISC Platforms

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182915: 3270 Emulator Hangs and Returns X'1003' Error to Mainframe"
-permalink: kb/182/Q182915/
+permalink: /kb/182/Q182915/
 ---
 
 ## Q182915: 3270 Emulator Hangs and Returns X'1003' Error to Mainframe

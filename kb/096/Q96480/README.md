@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96480: Fp0779.exe ISDISKIN Utility"
-permalink: kb/096/Q96480/
+permalink: /kb/096/Q96480/
 ---
 
 ## Q96480: Fp0779.exe ISDISKIN Utility

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170020: WD97: 'Allow A4/Letter Paper Resizing' Option Does Not Support L"
-permalink: kb/170/Q170020/
+permalink: /kb/170/Q170020/
 ---
 
 ## Q170020: WD97: 'Allow A4/Letter Paper Resizing' Option Does Not Support L

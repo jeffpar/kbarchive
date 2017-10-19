@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74152: EMM386.EXE Slows Down System Performance"
-permalink: kb/074/Q74152/
+permalink: /kb/074/Q74152/
 ---
 
 ## Q74152: EMM386.EXE Slows Down System Performance

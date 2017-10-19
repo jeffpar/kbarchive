@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168289: PRB: Toolbar Buttons Not Updated/Painted Correctly in Windows 95"
-permalink: kb/168/Q168289/
+permalink: /kb/168/Q168289/
 ---
 
 ## Q168289: PRB: Toolbar Buttons Not Updated/Painted Correctly in Windows 95

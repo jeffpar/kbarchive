@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82918: PC Win: Modified Shadowed Message Is Not Updated in Mail"
-permalink: kb/082/Q82918/
+permalink: /kb/082/Q82918/
 ---
 
 ## Q82918: PC Win: Modified Shadowed Message Is Not Updated in Mail

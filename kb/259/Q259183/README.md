@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259183: SMS: Command Clean Utility Does Not Properly Clean History Recor"
-permalink: kb/259/Q259183/
+permalink: /kb/259/Q259183/
 ---
 
 ## Q259183: SMS: Command Clean Utility Does Not Properly Clean History Recor

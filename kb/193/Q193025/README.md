@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193025: FIX: Cannot Dynamically Add a Non-Licensed MFC Control"
-permalink: kb/193/Q193025/
+permalink: /kb/193/Q193025/
 ---
 
 ## Q193025: FIX: Cannot Dynamically Add a Non-Licensed MFC Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308523: Program Stops Responding and Black Screen Appears with IBM Mouse"
-permalink: kb/308/Q308523/
+permalink: /kb/308/Q308523/
 ---
 
 ## Q308523: Program Stops Responding and Black Screen Appears with IBM Mouse

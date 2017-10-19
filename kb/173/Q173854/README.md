@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173854: WD97: Cannot View Graphics Inserted with Image Submit Control"
-permalink: kb/173/Q173854/
+permalink: /kb/173/Q173854/
 ---
 
 ## Q173854: WD97: Cannot View Graphics Inserted with Image Submit Control

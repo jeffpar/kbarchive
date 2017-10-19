@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180622: STOP:0x0000001E with STATUS_INSUFFICIENT_RESOURCES in Sfmsrv.sys"
-permalink: kb/180/Q180622/
+permalink: /kb/180/Q180622/
 ---
 
 ## Q180622: STOP:0x0000001E with STATUS_INSUFFICIENT_RESOURCES in Sfmsrv.sys

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68974: Mac Form: Field w/o Scroll Bars Limited to 256 Characters"
-permalink: kb/068/Q68974/
+permalink: /kb/068/Q68974/
 ---
 
 ## Q68974: Mac Form: Field w/o Scroll Bars Limited to 256 Characters

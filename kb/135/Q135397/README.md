@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135397: Oceans 1.0 for Windows: Cannot Print from Help"
-permalink: kb/135/Q135397/
+permalink: /kb/135/Q135397/
 ---
 
 ## Q135397: Oceans 1.0 for Windows: Cannot Print from Help

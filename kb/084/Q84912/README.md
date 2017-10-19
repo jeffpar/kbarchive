@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84912: Reinstalling WRK May Not Re-Create a WRK Program Group"
-permalink: kb/084/Q84912/
+permalink: /kb/084/Q84912/
 ---
 
 ## Q84912: Reinstalling WRK May Not Re-Create a WRK Program Group

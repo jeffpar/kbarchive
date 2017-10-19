@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138093: PRB: Can't Use SET DEFAULT command to Set Default to UNC Path"
-permalink: kb/138/Q138093/
+permalink: /kb/138/Q138093/
 ---
 
 ## Q138093: PRB: Can't Use SET DEFAULT command to Set Default to UNC Path

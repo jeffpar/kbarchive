@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89275: DefaultDialogs=1 in WIN.INI Overrides Updated LANMAN21.DRV"
-permalink: kb/089/Q89275/
+permalink: /kb/089/Q89275/
 ---
 
 ## Q89275: DefaultDialogs=1 in WIN.INI Overrides Updated LANMAN21.DRV

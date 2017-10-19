@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156992: INFO: STL Sample for the Predicate Version of max_element Functi"
-permalink: kb/156/Q156992/
+permalink: /kb/156/Q156992/
 ---
 
 ## Q156992: INFO: STL Sample for the Predicate Version of max_element Functi

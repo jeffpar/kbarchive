@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193241: HOWTO: Synchronize Data Displayed on Two Different Forms"
-permalink: kb/193/Q193241/
+permalink: /kb/193/Q193241/
 ---
 
 ## Q193241: HOWTO: Synchronize Data Displayed on Two Different Forms

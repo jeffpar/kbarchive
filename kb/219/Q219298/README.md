@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219298: Fonts Display Incorrectly if More than 48 MB of Fonts Exists"
-permalink: kb/219/Q219298/
+permalink: /kb/219/Q219298/
 ---
 
 ## Q219298: Fonts Display Incorrectly if More than 48 MB of Fonts Exists

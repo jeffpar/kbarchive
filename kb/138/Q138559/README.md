@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138559: How to Append Records to a Grid"
-permalink: kb/138/Q138559/
+permalink: /kb/138/Q138559/
 ---
 
 ## Q138559: How to Append Records to a Grid

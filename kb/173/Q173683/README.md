@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173683: WD97: Error Message: &quot;Word Cannot Give a Document the Same Name&quot;"
-permalink: kb/173/Q173683/
+permalink: /kb/173/Q173683/
 ---
 
 ## Q173683: WD97: Error Message: &quot;Word Cannot Give a Document the Same Name&quot;

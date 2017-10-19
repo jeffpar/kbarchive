@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191671: FIX: Calling AINSTANCE in Loop Causes Memory Leak"
-permalink: kb/191/Q191671/
+permalink: /kb/191/Q191671/
 ---
 
 ## Q191671: FIX: Calling AINSTANCE in Loop Causes Memory Leak

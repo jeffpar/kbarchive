@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216661: How to Implement a Policy to Set the Date Format"
-permalink: kb/216/Q216661/
+permalink: /kb/216/Q216661/
 ---
 
 ## Q216661: How to Implement a Policy to Set the Date Format

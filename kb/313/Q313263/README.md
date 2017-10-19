@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313263: MSB: Sound Stops Working After You Enter the Schoolroom"
-permalink: kb/313/Q313263/
+permalink: /kb/313/Q313263/
 ---
 
 ## Q313263: MSB: Sound Stops Working After You Enter the Schoolroom

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96527: Mac RSC: Remote Server Connection Timeout"
-permalink: kb/096/Q96527/
+permalink: /kb/096/Q96527/
 ---
 
 ## Q96527: Mac RSC: Remote Server Connection Timeout

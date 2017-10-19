@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164429: XCLN: Windows for Workgroups Not Responding During Startup"
-permalink: kb/164/Q164429/
+permalink: /kb/164/Q164429/
 ---
 
 ## Q164429: XCLN: Windows for Workgroups Not Responding During Startup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159003: Microsoft Exchange Configuration May Not Run During Setup"
-permalink: kb/159/Q159003/
+permalink: /kb/159/Q159003/
 ---
 
 ## Q159003: Microsoft Exchange Configuration May Not Run During Setup

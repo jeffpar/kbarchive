@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193217: BUG: Editing Compiled Resource Causes Them to Disappear"
-permalink: kb/193/Q193217/
+permalink: /kb/193/Q193217/
 ---
 
 ## Q193217: BUG: Editing Compiled Resource Causes Them to Disappear

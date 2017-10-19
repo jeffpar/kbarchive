@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134565: Icon Arrangement Not Saved in Dial-Up Networking Folder"
-permalink: kb/134/Q134565/
+permalink: /kb/134/Q134565/
 ---
 
 ## Q134565: Icon Arrangement Not Saved in Dial-Up Networking Folder

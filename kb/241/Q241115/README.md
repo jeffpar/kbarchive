@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241115: DHCP Client Sends NetBIOS Name Instead of Host Name"
-permalink: kb/241/Q241115/
+permalink: /kb/241/Q241115/
 ---
 
 ## Q241115: DHCP Client Sends NetBIOS Name Instead of Host Name

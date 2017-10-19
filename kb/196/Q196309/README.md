@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196309: IIS 4.0 Stops Responding (Access Violates) When Adding Counter"
-permalink: kb/196/Q196309/
+permalink: /kb/196/Q196309/
 ---
 
 ## Q196309: IIS 4.0 Stops Responding (Access Violates) When Adding Counter

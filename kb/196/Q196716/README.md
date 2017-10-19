@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196716: WD97: Selecting &quot;(None)&quot; Resets Filter Comparison"
-permalink: kb/196/Q196716/
+permalink: /kb/196/Q196716/
 ---
 
 ## Q196716: WD97: Selecting &quot;(None)&quot; Resets Filter Comparison

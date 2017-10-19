@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279868: Using Reserved Names as the Site Code in SMS 2.0"
-permalink: kb/279/Q279868/
+permalink: /kb/279/Q279868/
 ---
 
 ## Q279868: Using Reserved Names as the Site Code in SMS 2.0

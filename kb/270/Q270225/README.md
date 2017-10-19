@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270225: WD97: Error Message: &quot;Run-time Error '5'&quot; When You Start Word"
-permalink: kb/270/Q270225/
+permalink: /kb/270/Q270225/
 ---
 
 ## Q270225: WD97: Error Message: &quot;Run-time Error '5'&quot; When You Start Word

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150616: BUG: Nmake Does Not Build Subproject of Type Makefile"
-permalink: kb/150/Q150616/
+permalink: /kb/150/Q150616/
 ---
 
 ## Q150616: BUG: Nmake Does Not Build Subproject of Type Makefile

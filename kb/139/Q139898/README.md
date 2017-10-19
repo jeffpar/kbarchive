@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139898: APPC/5250 Hot Backup Fails if Configured for &quot;On Demand&quot;"
-permalink: kb/139/Q139898/
+permalink: /kb/139/Q139898/
 ---
 
 ## Q139898: APPC/5250 Hot Backup Fails if Configured for &quot;On Demand&quot;

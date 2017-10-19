@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235985: INFO: Error Codes for VFPCOM Utility"
-permalink: kb/235/Q235985/
+permalink: /kb/235/Q235985/
 ---
 
 ## Q235985: INFO: Error Codes for VFPCOM Utility

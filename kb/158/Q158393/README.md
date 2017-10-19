@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158393: Soccer: Game Hangs When Red-Carded Player Takes Corner Kick"
-permalink: kb/158/Q158393/
+permalink: /kb/158/Q158393/
 ---
 
 ## Q158393: Soccer: Game Hangs When Red-Carded Player Takes Corner Kick

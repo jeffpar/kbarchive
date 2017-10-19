@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179405: FS98/2000: &quot;Go to Airport&quot; Search Filters No Longer Available"
-permalink: kb/179/Q179405/
+permalink: /kb/179/Q179405/
 ---
 
 ## Q179405: FS98/2000: &quot;Go to Airport&quot; Search Filters No Longer Available

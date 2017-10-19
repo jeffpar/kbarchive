@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167750: BUG: The pow() Function Doesn't Set Underflow Condition"
-permalink: kb/167/Q167750/
+permalink: /kb/167/Q167750/
 ---
 
 ## Q167750: BUG: The pow() Function Doesn't Set Underflow Condition

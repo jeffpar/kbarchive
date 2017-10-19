@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115484: Share-level Security Connection Behavior in Windows NT 3.5"
-permalink: kb/115/Q115484/
+permalink: /kb/115/Q115484/
 ---
 
 ## Q115484: Share-level Security Connection Behavior in Windows NT 3.5

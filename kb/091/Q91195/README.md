@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91195: Errors in Cover Letter for LAN Man 2.1 for 3Servers"
-permalink: kb/091/Q91195/
+permalink: /kb/091/Q91195/
 ---
 
 ## Q91195: Errors in Cover Letter for LAN Man 2.1 for 3Servers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258404: Baseball 2001: Colors on the Screen Appear Blotchy or Distorted"
-permalink: kb/258/Q258404/
+permalink: /kb/258/Q258404/
 ---
 
 ## Q258404: Baseball 2001: Colors on the Screen Appear Blotchy or Distorted

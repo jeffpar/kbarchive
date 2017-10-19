@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154862: Web Browsers May Fail When Accessing SSL Secure Pages"
-permalink: kb/154/Q154862/
+permalink: /kb/154/Q154862/
 ---
 
 ## Q154862: Web Browsers May Fail When Accessing SSL Secure Pages

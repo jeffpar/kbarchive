@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185038: XCLN: Message Recall Failure when Recalling a Message"
-permalink: kb/185/Q185038/
+permalink: /kb/185/Q185038/
 ---
 
 ## Q185038: XCLN: Message Recall Failure when Recalling a Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134953: X400: Err Msg: WARNING 0 or 3...: Could Not Load Sort Table"
-permalink: kb/134/Q134953/
+permalink: /kb/134/Q134953/
 ---
 
 ## Q134953: X400: Err Msg: WARNING 0 or 3...: Could Not Load Sort Table

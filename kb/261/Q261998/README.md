@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261998: Allegiance: Actions You Assign to Game Controller Do Not Occur"
-permalink: kb/261/Q261998/
+permalink: /kb/261/Q261998/
 ---
 
 ## Q261998: Allegiance: Actions You Assign to Game Controller Do Not Occur

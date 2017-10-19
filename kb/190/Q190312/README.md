@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190312: PRB: Computer &quot;Not Responding&quot; When Certain Commands Issued"
-permalink: kb/190/Q190312/
+permalink: /kb/190/Q190312/
 ---
 
 ## Q190312: PRB: Computer &quot;Not Responding&quot; When Certain Commands Issued

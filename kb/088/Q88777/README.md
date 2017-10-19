@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88777: SMTP: RFCs Supported by the Gateway"
-permalink: kb/088/Q88777/
+permalink: /kb/088/Q88777/
 ---
 
 ## Q88777: SMTP: RFCs Supported by the Gateway

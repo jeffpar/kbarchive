@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240651: Err Msg: One or More Shockwave Files Are Missing..."
-permalink: kb/240/Q240651/
+permalink: /kb/240/Q240651/
 ---
 
 ## Q240651: Err Msg: One or More Shockwave Files Are Missing...

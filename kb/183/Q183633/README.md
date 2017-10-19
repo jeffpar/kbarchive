@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183633: XADM: High CPU in Store.exe w/ Incorrectly Formatted Attachment"
-permalink: kb/183/Q183633/
+permalink: /kb/183/Q183633/
 ---
 
 ## Q183633: XADM: High CPU in Store.exe w/ Incorrectly Formatted Attachment

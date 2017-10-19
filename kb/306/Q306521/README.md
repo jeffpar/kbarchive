@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306521: SMS: SMS Service Manager May Not Connect"
-permalink: kb/306/Q306521/
+permalink: /kb/306/Q306521/
 ---
 
 ## Q306521: SMS: SMS Service Manager May Not Connect

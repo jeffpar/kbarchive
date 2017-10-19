@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200783: SMS: Standard Security in SQL Server"
-permalink: kb/200/Q200783/
+permalink: /kb/200/Q200783/
 ---
 
 ## Q200783: SMS: Standard Security in SQL Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190255: BUG: DHTML Page Designer Does Not Insert the &lt;HTML&gt; Tag"
-permalink: kb/190/Q190255/
+permalink: /kb/190/Q190255/
 ---
 
 ## Q190255: BUG: DHTML Page Designer Does Not Insert the &lt;HTML&gt; Tag

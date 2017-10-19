@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66078: Turning Off Autoswitching for Acer DVGA Board"
-permalink: kb/066/Q66078/
+permalink: /kb/066/Q66078/
 ---
 
 ## Q66078: Turning Off Autoswitching for Acer DVGA Board

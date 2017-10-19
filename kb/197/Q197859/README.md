@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197859: Server Roles in a Small Business Server Domain"
-permalink: kb/197/Q197859/
+permalink: /kb/197/Q197859/
 ---
 
 ## Q197859: Server Roles in a Small Business Server Domain

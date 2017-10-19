@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269617: HOWTO: Automatically Add Contacts to Outlook"
-permalink: kb/269/Q269617/
+permalink: /kb/269/Q269617/
 ---
 
 ## Q269617: HOWTO: Automatically Add Contacts to Outlook

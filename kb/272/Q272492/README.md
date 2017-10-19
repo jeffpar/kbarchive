@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272492: POP3 and IMAP Clients Are Not Authenicated on Exchange Server"
-permalink: kb/272/Q272492/
+permalink: /kb/272/Q272492/
 ---
 
 ## Q272492: POP3 and IMAP Clients Are Not Authenicated on Exchange Server

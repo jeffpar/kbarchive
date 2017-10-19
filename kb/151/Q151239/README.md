@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151239: INFO: Invokable TP Written as an Application to Run as a Service"
-permalink: kb/151/Q151239/
+permalink: /kb/151/Q151239/
 ---
 
 ## Q151239: INFO: Invokable TP Written as an Application to Run as a Service

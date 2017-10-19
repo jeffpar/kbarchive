@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184508: PDF Files May Need Recompilation under New Service Pack"
-permalink: kb/184/Q184508/
+permalink: /kb/184/Q184508/
 ---
 
 ## Q184508: PDF Files May Need Recompilation under New Service Pack

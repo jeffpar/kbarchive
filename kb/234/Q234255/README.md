@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234255: Internet Shortcuts with a URL Do Not Work"
-permalink: kb/234/Q234255/
+permalink: /kb/234/Q234255/
 ---
 
 ## Q234255: Internet Shortcuts with a URL Do Not Work

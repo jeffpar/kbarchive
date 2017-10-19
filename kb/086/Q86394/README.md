@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86394: PC OS2: MCV Date Format Incorrectly Set in US-Style"
-permalink: kb/086/Q86394/
+permalink: /kb/086/Q86394/
 ---
 
 ## Q86394: PC OS2: MCV Date Format Incorrectly Set in US-Style

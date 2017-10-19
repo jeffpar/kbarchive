@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159007: Encarta 1997: Manual Install Instructions for Windows 3.x"
-permalink: kb/159/Q159007/
+permalink: /kb/159/Q159007/
 ---
 
 ## Q159007: Encarta 1997: Manual Install Instructions for Windows 3.x

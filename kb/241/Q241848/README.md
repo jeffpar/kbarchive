@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241848: HOWTO: Tips for Setting Remote Debugging by Using Visual C++"
-permalink: kb/241/Q241848/
+permalink: /kb/241/Q241848/
 ---
 
 ## Q241848: HOWTO: Tips for Setting Remote Debugging by Using Visual C++

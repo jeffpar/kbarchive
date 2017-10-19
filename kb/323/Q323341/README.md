@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323341: SMS: Software Installation Account Does Not Work on Windows XP"
-permalink: kb/323/Q323341/
+permalink: /kb/323/Q323341/
 ---
 
 ## Q323341: SMS: Software Installation Account Does Not Work on Windows XP

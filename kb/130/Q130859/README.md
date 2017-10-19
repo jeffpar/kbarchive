@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130859: Windows NT Does Not Display the Startup Boot Menu"
-permalink: kb/130/Q130859/
+permalink: /kb/130/Q130859/
 ---
 
 ## Q130859: Windows NT Does Not Display the Startup Boot Menu

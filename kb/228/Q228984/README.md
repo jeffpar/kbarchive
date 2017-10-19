@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228984: Using Certificate Server 2.0 to Generate a Server Certificate"
-permalink: kb/228/Q228984/
+permalink: /kb/228/Q228984/
 ---
 
 ## Q228984: Using Certificate Server 2.0 to Generate a Server Certificate

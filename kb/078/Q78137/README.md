@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78137: Installing Multiple ELNK16 Adapters in a LAN Man Machine"
-permalink: kb/078/Q78137/
+permalink: /kb/078/Q78137/
 ---
 
 ## Q78137: Installing Multiple ELNK16 Adapters in a LAN Man Machine

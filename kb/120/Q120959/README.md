@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120959: DOC: Documentation on fmod() Is Incorrect"
-permalink: kb/120/Q120959/
+permalink: /kb/120/Q120959/
 ---
 
 ## Q120959: DOC: Documentation on fmod() Is Incorrect

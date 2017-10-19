@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94852: Pipe Dream Displays Incorrectly on EGA Systems"
-permalink: kb/094/Q94852/
+permalink: /kb/094/Q94852/
 ---
 
 ## Q94852: Pipe Dream Displays Incorrectly on EGA Systems

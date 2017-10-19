@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281204: SMS: Installing SMS 2.0 Clients on Terminal Server Clients"
-permalink: kb/281/Q281204/
+permalink: /kb/281/Q281204/
 ---
 
 ## Q281204: SMS: Installing SMS 2.0 Clients on Terminal Server Clients

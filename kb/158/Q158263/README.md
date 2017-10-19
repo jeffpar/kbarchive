@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158263: XGEN: README.TXT: Microsoft Exchange 4.0 U.S. Service Pack 3"
-permalink: kb/158/Q158263/
+permalink: /kb/158/Q158263/
 ---
 
 ## Q158263: XGEN: README.TXT: Microsoft Exchange 4.0 U.S. Service Pack 3

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162488: Err Msg: You Cannot Copy &quot;File Name&quot; Onto the Shared Disk..."
-permalink: kb/162/Q162488/
+permalink: /kb/162/Q162488/
 ---
 
 ## Q162488: Err Msg: You Cannot Copy &quot;File Name&quot; Onto the Shared Disk...

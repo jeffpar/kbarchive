@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242303: NDIS Driver May Not Properly Release Network Adapter's Resources"
-permalink: kb/242/Q242303/
+permalink: /kb/242/Q242303/
 ---
 
 ## Q242303: NDIS Driver May Not Properly Release Network Adapter's Resources

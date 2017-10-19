@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179241: Unable to Install a Joystick after Installing DirectX"
-permalink: kb/179/Q179241/
+permalink: /kb/179/Q179241/
 ---
 
 ## Q179241: Unable to Install a Joystick after Installing DirectX

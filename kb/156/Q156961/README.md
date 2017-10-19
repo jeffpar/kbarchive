@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156961: XFOR: Mac Connection Gateway Will Not Install on System 7.5.3"
-permalink: kb/156/Q156961/
+permalink: /kb/156/Q156961/
 ---
 
 ## Q156961: XFOR: Mac Connection Gateway Will Not Install on System 7.5.3

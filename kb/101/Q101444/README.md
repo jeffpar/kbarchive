@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101444: Mac Wkst: Unable to Access Local Mail File"
-permalink: kb/101/Q101444/
+permalink: /kb/101/Q101444/
 ---
 
 ## Q101444: Mac Wkst: Unable to Access Local Mail File

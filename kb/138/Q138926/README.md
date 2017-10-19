@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138926: Print Jobs Not Clearing for Compaq Pagemarq Printers"
-permalink: kb/138/Q138926/
+permalink: /kb/138/Q138926/
 ---
 
 ## Q138926: Print Jobs Not Clearing for Compaq Pagemarq Printers

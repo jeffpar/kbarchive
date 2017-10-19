@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129906: PRB: Listbox Not Properly Redrawn in Design Mode"
-permalink: kb/129/Q129906/
+permalink: /kb/129/Q129906/
 ---
 
 ## Q129906: PRB: Listbox Not Properly Redrawn in Design Mode

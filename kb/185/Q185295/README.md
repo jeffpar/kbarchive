@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185295: INFO: Results of Function Timing from Microsoft Source Profiler"
-permalink: kb/185/Q185295/
+permalink: /kb/185/Q185295/
 ---
 
 ## Q185295: INFO: Results of Function Timing from Microsoft Source Profiler

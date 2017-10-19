@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121800: PC WSPlus:  How to Use Schedule+  Without Microsoft Mail"
-permalink: kb/121/Q121800/
+permalink: /kb/121/Q121800/
 ---
 
 ## Q121800: PC WSPlus:  How to Use Schedule+  Without Microsoft Mail

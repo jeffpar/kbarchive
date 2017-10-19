@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173226: WD97: Document Containing FILLIN Fields May Not Prompt to Save"
-permalink: kb/173/Q173226/
+permalink: /kb/173/Q173226/
 ---
 
 ## Q173226: WD97: Document Containing FILLIN Fields May Not Prompt to Save

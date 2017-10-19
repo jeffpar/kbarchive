@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185488: HP Printers May Print Multiple Copies of Jobs or Separator Pages"
-permalink: kb/185/Q185488/
+permalink: /kb/185/Q185488/
 ---
 
 ## Q185488: HP Printers May Print Multiple Copies of Jobs or Separator Pages

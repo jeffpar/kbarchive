@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193398: BUG: Table Designer Record Length Wrong if Field(s) Allow Nulls"
-permalink: kb/193/Q193398/
+permalink: /kb/193/Q193398/
 ---
 
 ## Q193398: BUG: Table Designer Record Length Wrong if Field(s) Allow Nulls

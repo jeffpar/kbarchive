@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120045: BUG: Value of cbDSN in SQLConnect is Not Mapped Correctly"
-permalink: kb/120/Q120045/
+permalink: /kb/120/Q120045/
 ---
 
 ## Q120045: BUG: Value of cbDSN in SQLConnect is Not Mapped Correctly

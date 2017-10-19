@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145889: INFO: Why Floating Point Numbers May Lose Precision"
-permalink: kb/145/Q145889/
+permalink: /kb/145/Q145889/
 ---
 
 ## Q145889: INFO: Why Floating Point Numbers May Lose Precision

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176498: System Event Log Fills with WINS Event IDs 4125 and 4141"
-permalink: kb/176/Q176498/
+permalink: /kb/176/Q176498/
 ---
 
 ## Q176498: System Event Log Fills with WINS Event IDs 4125 and 4141

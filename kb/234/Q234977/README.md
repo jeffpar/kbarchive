@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234977: PRB: Error C0042116 &quot;Further Processing Has Stopped&quot;"
-permalink: kb/234/Q234977/
+permalink: /kb/234/Q234977/
 ---
 
 ## Q234977: PRB: Error C0042116 &quot;Further Processing Has Stopped&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157670: INFO: STL Sample for the Pair Logical Operator Functions"
-permalink: kb/157/Q157670/
+permalink: /kb/157/Q157670/
 ---
 
 ## Q157670: INFO: STL Sample for the Pair Logical Operator Functions

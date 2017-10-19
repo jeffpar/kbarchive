@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223374: Installing SP 4 Automatically Enables DHCP Logging"
-permalink: kb/223/Q223374/
+permalink: /kb/223/Q223374/
 ---
 
 ## Q223374: Installing SP 4 Automatically Enables DHCP Logging

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97848: EZTape Hangs or Generates Error with Compressed Drive"
-permalink: kb/097/Q97848/
+permalink: /kb/097/Q97848/
 ---
 
 ## Q97848: EZTape Hangs or Generates Error with Compressed Drive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149617: Eudora Changes Default MailTo Handler"
-permalink: kb/149/Q149617/
+permalink: /kb/149/Q149617/
 ---
 
 ## Q149617: Eudora Changes Default MailTo Handler

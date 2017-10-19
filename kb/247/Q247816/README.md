@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247816: Some SNA Print Sessions May Remain Pending when Autostarted"
-permalink: kb/247/Q247816/
+permalink: /kb/247/Q247816/
 ---
 
 ## Q247816: Some SNA Print Sessions May Remain Pending when Autostarted

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92902: Media Player Cannot Play Audio CD If CDAudio=0 in MPLAYER.INI"
-permalink: kb/092/Q92902/
+permalink: /kb/092/Q92902/
 ---
 
 ## Q92902: Media Player Cannot Play Audio CD If CDAudio=0 in MPLAYER.INI

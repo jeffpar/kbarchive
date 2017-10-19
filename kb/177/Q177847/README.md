@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177847: Error Message: Rundll32 Caused a Fault in Setupx"
-permalink: kb/177/Q177847/
+permalink: /kb/177/Q177847/
 ---
 
 ## Q177847: Error Message: Rundll32 Caused a Fault in Setupx

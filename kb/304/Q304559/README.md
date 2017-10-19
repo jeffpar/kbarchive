@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304559: The &quot;NBTSTAT -RR&quot; Command Does Not Refresh All Names"
-permalink: kb/304/Q304559/
+permalink: /kb/304/Q304559/
 ---
 
 ## Q304559: The &quot;NBTSTAT -RR&quot; Command Does Not Refresh All Names

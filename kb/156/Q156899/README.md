@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156899: INFO: STL Sample for the make_pair Function"
-permalink: kb/156/Q156899/
+permalink: /kb/156/Q156899/
 ---
 
 ## Q156899: INFO: STL Sample for the make_pair Function

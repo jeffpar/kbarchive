@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156267: HOWTO: Use the DataToClip Method"
-permalink: kb/156/Q156267/
+permalink: /kb/156/Q156267/
 ---
 
 ## Q156267: HOWTO: Use the DataToClip Method

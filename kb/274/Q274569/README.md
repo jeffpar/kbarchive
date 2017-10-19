@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274569: FIX: MTS or IIS w/ ODBC Connection Pooling Hangs If DB Unavail."
-permalink: kb/274/Q274569/
+permalink: /kb/274/Q274569/
 ---
 
 ## Q274569: FIX: MTS or IIS w/ ODBC Connection Pooling Hangs If DB Unavail.

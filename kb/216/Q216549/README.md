@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216549: Encarta 99: Introductory Audio Playback Is Intermittent or Quits"
-permalink: kb/216/Q216549/
+permalink: /kb/216/Q216549/
 ---
 
 ## Q216549: Encarta 99: Introductory Audio Playback Is Intermittent or Quits

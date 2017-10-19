@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176286: WD97: WordMail Template Not Displayed If Document Sent from Word"
-permalink: kb/176/Q176286/
+permalink: /kb/176/Q176286/
 ---
 
 ## Q176286: WD97: WordMail Template Not Displayed If Document Sent from Word

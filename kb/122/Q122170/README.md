@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122170: FIX: Cannot Set Breakpoint if Project Contains &#92;C++&#92; in Path"
-permalink: kb/122/Q122170/
+permalink: /kb/122/Q122170/
 ---
 
 ## Q122170: FIX: Cannot Set Breakpoint if Project Contains &#92;C++&#92; in Path

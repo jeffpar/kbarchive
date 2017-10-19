@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153532: Hierarchy Manager Floods Log with Errors"
-permalink: kb/153/Q153532/
+permalink: /kb/153/Q153532/
 ---
 
 ## Q153532: Hierarchy Manager Floods Log with Errors

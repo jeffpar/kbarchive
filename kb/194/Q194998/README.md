@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194998: XCON: Client Cannot Retrieve Message in Parts Using SSL"
-permalink: kb/194/Q194998/
+permalink: /kb/194/Q194998/
 ---
 
 ## Q194998: XCON: Client Cannot Retrieve Message in Parts Using SSL

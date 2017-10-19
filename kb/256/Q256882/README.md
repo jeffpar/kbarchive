@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256882: AoE II: Cannnot Change Population Limit When in Custom Scenario"
-permalink: kb/256/Q256882/
+permalink: /kb/256/Q256882/
 ---
 
 ## Q256882: AoE II: Cannnot Change Population Limit When in Custom Scenario

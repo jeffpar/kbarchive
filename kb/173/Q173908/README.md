@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173908: WD97: Errors Opening File If Low Memory or Low Disk Space"
-permalink: kb/173/Q173908/
+permalink: /kb/173/Q173908/
 ---
 
 ## Q173908: WD97: Errors Opening File If Low Memory or Low Disk Space

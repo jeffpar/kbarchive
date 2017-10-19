@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248737: Unattended Setup of NTOP May Fail on Multiprocessor Systems"
-permalink: kb/248/Q248737/
+permalink: /kb/248/Q248737/
 ---
 
 ## Q248737: Unattended Setup of NTOP May Fail on Multiprocessor Systems

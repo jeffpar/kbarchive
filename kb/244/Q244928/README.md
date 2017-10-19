@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244928: PRB: Unrecognized Phrase/Keyword Message Saving Remote Views"
-permalink: kb/244/Q244928/
+permalink: /kb/244/Q244928/
 ---
 
 ## Q244928: PRB: Unrecognized Phrase/Keyword Message Saving Remote Views

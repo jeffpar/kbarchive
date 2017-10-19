@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99377: Flight Simulator: ILS Seems Oversensitive"
-permalink: kb/099/Q99377/
+permalink: /kb/099/Q99377/
 ---
 
 ## Q99377: Flight Simulator: ILS Seems Oversensitive

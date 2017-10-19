@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89513: LAN Man 2.1 Test Summary (DigiBoard DigiCHANNEL C/X MCA)"
-permalink: kb/089/Q89513/
+permalink: /kb/089/Q89513/
 ---
 
 ## Q89513: LAN Man 2.1 Test Summary (DigiBoard DigiCHANNEL C/X MCA)

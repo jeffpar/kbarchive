@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122759: PC Win: Unexpected Cursor Movement When Using Arrow Keys"
-permalink: kb/122/Q122759/
+permalink: /kb/122/Q122759/
 ---
 
 ## Q122759: PC Win: Unexpected Cursor Movement When Using Arrow Keys

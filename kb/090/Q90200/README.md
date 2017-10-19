@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90200: Connect Network Drive Dialog Box Doesn't List All Shares"
-permalink: kb/090/Q90200/
+permalink: /kb/090/Q90200/
 ---
 
 ## Q90200: Connect Network Drive Dialog Box Doesn't List All Shares

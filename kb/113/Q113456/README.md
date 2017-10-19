@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113456: Problems Sending Faxes from MAPI-Enabled Applications"
-permalink: kb/113/Q113456/
+permalink: /kb/113/Q113456/
 ---
 
 ## Q113456: Problems Sending Faxes from MAPI-Enabled Applications

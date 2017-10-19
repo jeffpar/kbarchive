@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151697: SNA Server 2.11 May Send 2nd BID to 3270 Emulator in Error"
-permalink: kb/151/Q151697/
+permalink: /kb/151/Q151697/
 ---
 
 ## Q151697: SNA Server 2.11 May Send 2nd BID to 3270 Emulator in Error

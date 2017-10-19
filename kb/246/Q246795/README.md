@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246795: XCLN: Automatic Name Checking Stops on Some Outlook Clients"
-permalink: kb/246/Q246795/
+permalink: /kb/246/Q246795/
 ---
 
 ## Q246795: XCLN: Automatic Name Checking Stops on Some Outlook Clients

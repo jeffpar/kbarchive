@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177994: CICS Abend 'ADPL'"
-permalink: kb/177/Q177994/
+permalink: /kb/177/Q177994/
 ---
 
 ## Q177994: CICS Abend 'ADPL'

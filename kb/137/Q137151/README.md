@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137151: List of Confirmed Bugs in Systems Management Server 1.1"
-permalink: kb/137/Q137151/
+permalink: /kb/137/Q137151/
 ---
 
 ## Q137151: List of Confirmed Bugs in Systems Management Server 1.1

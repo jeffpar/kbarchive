@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117607: FIX: Common Dialog Classes Don't Update DDX Member Variables"
-permalink: kb/117/Q117607/
+permalink: /kb/117/Q117607/
 ---
 
 ## Q117607: FIX: Common Dialog Classes Don't Update DDX Member Variables

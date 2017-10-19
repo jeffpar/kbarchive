@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185003: XADM: Directory Replication Connector Schedule Changes With Dayl"
-permalink: kb/185/Q185003/
+permalink: /kb/185/Q185003/
 ---
 
 ## Q185003: XADM: Directory Replication Connector Schedule Changes With Dayl

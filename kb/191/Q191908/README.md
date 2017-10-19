@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191908: MHS: MHS Gateway Computer Problems Beginning With the Year 2000"
-permalink: kb/191/Q191908/
+permalink: /kb/191/Q191908/
 ---
 
 ## Q191908: MHS: MHS Gateway Computer Problems Beginning With the Year 2000

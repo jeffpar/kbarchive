@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148637: Windows 95/98 Overwrites Boot-Sector Field on Floppy Disks"
-permalink: kb/148/Q148637/
+permalink: /kb/148/Q148637/
 ---
 
 ## Q148637: Windows 95/98 Overwrites Boot-Sector Field on Floppy Disks

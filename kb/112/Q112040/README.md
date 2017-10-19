@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112040: X400: How to Perform an X.25 Eicon Trace"
-permalink: kb/112/Q112040/
+permalink: /kb/112/Q112040/
 ---
 
 ## Q112040: X400: How to Perform an X.25 Eicon Trace

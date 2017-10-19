@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309562: Proxy-to-Proxy Authentication Error after Installing IIS Patch"
-permalink: kb/309/Q309562/
+permalink: /kb/309/Q309562/
 ---
 
 ## Q309562: Proxy-to-Proxy Authentication Error after Installing IIS Patch

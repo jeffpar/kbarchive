@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96827: VSAFE Err Msg: &quot;...Is Trying to Modify System Memory&quot;"
-permalink: kb/096/Q96827/
+permalink: /kb/096/Q96827/
 ---
 
 ## Q96827: VSAFE Err Msg: &quot;...Is Trying to Modify System Memory&quot;

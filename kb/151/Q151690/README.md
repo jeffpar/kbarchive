@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151690: XCLN: What is the 'Custom' Rule Action For?"
-permalink: kb/151/Q151690/
+permalink: /kb/151/Q151690/
 ---
 
 ## Q151690: XCLN: What is the 'Custom' Rule Action For?

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197308: How to Obtain a Copy of a Notes Database Design Only?"
-permalink: kb/197/Q197308/
+permalink: /kb/197/Q197308/
 ---
 
 ## Q197308: How to Obtain a Copy of a Notes Database Design Only?

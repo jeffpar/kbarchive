@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116030: BUG: Help Compiler Indents Text Laid Out Above Bulleted Text"
-permalink: kb/116/Q116030/
+permalink: /kb/116/Q116030/
 ---
 
 ## Q116030: BUG: Help Compiler Indents Text Laid Out Above Bulleted Text

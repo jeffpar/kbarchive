@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245607: Terminal Server Edition Issues in a Domain Environment"
-permalink: kb/245/Q245607/
+permalink: /kb/245/Q245607/
 ---
 
 ## Q245607: Terminal Server Edition Issues in a Domain Environment

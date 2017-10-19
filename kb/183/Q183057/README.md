@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183057: XADM: Private Information Store Has High Disk Size Item Numbers"
-permalink: kb/183/Q183057/
+permalink: /kb/183/Q183057/
 ---
 
 ## Q183057: XADM: Private Information Store Has High Disk Size Item Numbers

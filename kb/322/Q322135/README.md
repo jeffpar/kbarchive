@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322135: Pocket Streets 2002: Err Msg: Error Extracting Support Files"
-permalink: kb/322/Q322135/
+permalink: /kb/322/Q322135/
 ---
 
 ## Q322135: Pocket Streets 2002: Err Msg: Error Extracting Support Files

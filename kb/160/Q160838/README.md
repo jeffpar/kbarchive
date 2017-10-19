@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160838: FP97: Cancel Operation Fails When Renaming Files, Folders"
-permalink: kb/160/Q160838/
+permalink: /kb/160/Q160838/
 ---
 
 ## Q160838: FP97: Cancel Operation Fails When Renaming Files, Folders

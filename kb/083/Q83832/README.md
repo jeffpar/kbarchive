@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83832: Novell Driver Versions for Windows 3.1"
-permalink: kb/083/Q83832/
+permalink: /kb/083/Q83832/
 ---
 
 ## Q83832: Novell Driver Versions for Windows 3.1

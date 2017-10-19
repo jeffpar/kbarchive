@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113187: Reasons for Failure of SetRestartDir"
-permalink: kb/113/Q113187/
+permalink: /kb/113/Q113187/
 ---
 
 ## Q113187: Reasons for Failure of SetRestartDir

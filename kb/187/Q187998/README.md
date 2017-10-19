@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187998: WD97: Invalid Page Fault in MSO97.DLL Inserting AutoText"
-permalink: kb/187/Q187998/
+permalink: /kb/187/Q187998/
 ---
 
 ## Q187998: WD97: Invalid Page Fault in MSO97.DLL Inserting AutoText

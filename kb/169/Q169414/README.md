@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169414: Cluster Service May Stop After Failover"
-permalink: kb/169/Q169414/
+permalink: /kb/169/Q169414/
 ---
 
 ## Q169414: Cluster Service May Stop After Failover

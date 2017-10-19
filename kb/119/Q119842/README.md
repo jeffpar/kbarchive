@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119842: PPT: &quot;Server Not Found&quot; Error Editing 3.0 Slide in 4.0"
-permalink: kb/119/Q119842/
+permalink: /kb/119/Q119842/
 ---
 
 ## Q119842: PPT: &quot;Server Not Found&quot; Error Editing 3.0 Slide in 4.0

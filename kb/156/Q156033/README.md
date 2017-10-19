@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156033: PRB: Unable to Reference SCX with Spaces in Filename"
-permalink: kb/156/Q156033/
+permalink: /kb/156/Q156033/
 ---
 
 ## Q156033: PRB: Unable to Reference SCX with Spaces in Filename

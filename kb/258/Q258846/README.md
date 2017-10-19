@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258846: 9-Digit Dialing Required in Belgium After July 1, 2000"
-permalink: kb/258/Q258846/
+permalink: /kb/258/Q258846/
 ---
 
 ## Q258846: 9-Digit Dialing Required in Belgium After July 1, 2000

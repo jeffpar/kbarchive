@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147736: BUG: Dialog Previewer May Incorrectly Draw Caption on Dialogs"
-permalink: kb/147/Q147736/
+permalink: /kb/147/Q147736/
 ---
 
 ## Q147736: BUG: Dialog Previewer May Incorrectly Draw Caption on Dialogs

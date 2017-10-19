@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82348: DriverLINX and DriverLINX/VB Problems in Standard Mode"
-permalink: kb/082/Q82348/
+permalink: /kb/082/Q82348/
 ---
 
 ## Q82348: DriverLINX and DriverLINX/VB Problems in Standard Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102122: Mac SMI: MAPI For AppleTalk Networks Error Codes"
-permalink: kb/102/Q102122/
+permalink: /kb/102/Q102122/
 ---
 
 ## Q102122: Mac SMI: MAPI For AppleTalk Networks Error Codes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252652: HOWTO: Use the SHGetFolderPath Function from Visual Basic"
-permalink: kb/252/Q252652/
+permalink: /kb/252/Q252652/
 ---
 
 ## Q252652: HOWTO: Use the SHGetFolderPath Function from Visual Basic

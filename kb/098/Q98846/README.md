@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98846: Netwkstasetuid2 (Return 5) Error Means Privilege Problem"
-permalink: kb/098/Q98846/
+permalink: /kb/098/Q98846/
 ---
 
 ## Q98846: Netwkstasetuid2 (Return 5) Error Means Privilege Problem

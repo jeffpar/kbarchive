@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152190: MSB Earth: Overview of Magic School Bus Explores the Earth"
-permalink: kb/152/Q152190/
+permalink: /kb/152/Q152190/
 ---
 
 ## Q152190: MSB Earth: Overview of Magic School Bus Explores the Earth

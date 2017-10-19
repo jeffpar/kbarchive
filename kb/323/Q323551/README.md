@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323551: Stop 0xA Occurs on a Windows NT 4.0 WINS Server"
-permalink: kb/323/Q323551/
+permalink: /kb/323/Q323551/
 ---
 
 ## Q323551: Stop 0xA Occurs on a Windows NT 4.0 WINS Server

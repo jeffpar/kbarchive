@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152913: XCLN: WindowsNT Client Toolbar Buttons Missing After SP2 Upgrade"
-permalink: kb/152/Q152913/
+permalink: /kb/152/Q152913/
 ---
 
 ## Q152913: XCLN: WindowsNT Client Toolbar Buttons Missing After SP2 Upgrade

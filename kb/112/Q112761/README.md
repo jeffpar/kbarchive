@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112761: SMTP: Maximum Number of Recipients Allowed"
-permalink: kb/112/Q112761/
+permalink: /kb/112/Q112761/
 ---
 
 ## Q112761: SMTP: Maximum Number of Recipients Allowed

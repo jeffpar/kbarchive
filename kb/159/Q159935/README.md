@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159935: &quot;User Not Allowed to Log on at This Computer&quot; Using C2CONFIG"
-permalink: kb/159/Q159935/
+permalink: /kb/159/Q159935/
 ---
 
 ## Q159935: &quot;User Not Allowed to Log on at This Computer&quot; Using C2CONFIG

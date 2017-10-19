@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189135: Err Msg: You Cannot Save While the File Is in Use by Another..."
-permalink: kb/189/Q189135/
+permalink: /kb/189/Q189135/
 ---
 
 ## Q189135: Err Msg: You Cannot Save While the File Is in Use by Another...

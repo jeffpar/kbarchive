@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130733: Cannot Connect with Evercom 2400 Modem"
-permalink: kb/130/Q130733/
+permalink: /kb/130/Q130733/
 ---
 
 ## Q130733: Cannot Connect with Evercom 2400 Modem

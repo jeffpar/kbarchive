@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255861: &quot;Event Log File Is Corrupt&quot; Error When Opening an Event Log File"
-permalink: kb/255/Q255861/
+permalink: /kb/255/Q255861/
 ---
 
 ## Q255861: &quot;Event Log File Is Corrupt&quot; Error When Opening an Event Log File

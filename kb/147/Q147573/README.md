@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147573: PRB: Microsoft Excel Not Registered in Running Object Table"
-permalink: kb/147/Q147573/
+permalink: /kb/147/Q147573/
 ---
 
 ## Q147573: PRB: Microsoft Excel Not Registered in Running Object Table

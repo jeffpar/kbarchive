@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94152: HPPCL5E: Adobe Type Manager Fonts Print at Wrong Size"
-permalink: kb/094/Q94152/
+permalink: /kb/094/Q94152/
 ---
 
 ## Q94152: HPPCL5E: Adobe Type Manager Fonts Print at Wrong Size

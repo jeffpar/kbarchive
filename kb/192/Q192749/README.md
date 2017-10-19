@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192749: Multiple SSL Connections May Cause Error Starting Security Sys"
-permalink: kb/192/Q192749/
+permalink: /kb/192/Q192749/
 ---
 
 ## Q192749: Multiple SSL Connections May Cause Error Starting Security Sys

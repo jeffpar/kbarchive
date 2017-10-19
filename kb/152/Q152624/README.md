@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152624: XADM: Err Msg: Event IDs 9297 and 3161"
-permalink: kb/152/Q152624/
+permalink: /kb/152/Q152624/
 ---
 
 ## Q152624: XADM: Err Msg: Event IDs 9297 and 3161

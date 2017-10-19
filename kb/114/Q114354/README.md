@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114354: How to Find the Number of Weekdays Between Two Dates"
-permalink: kb/114/Q114354/
+permalink: /kb/114/Q114354/
 ---
 
 ## Q114354: How to Find the Number of Weekdays Between Two Dates

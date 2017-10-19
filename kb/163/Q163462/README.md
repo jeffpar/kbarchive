@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163462: Kids Plus!: Fonts Installed with Microsoft Plus! For Kids"
-permalink: kb/163/Q163462/
+permalink: /kb/163/Q163462/
 ---
 
 ## Q163462: Kids Plus!: Fonts Installed with Microsoft Plus! For Kids

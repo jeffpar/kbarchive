@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181788: WD97: Using the Open Statement in Word VBA"
-permalink: kb/181/Q181788/
+permalink: /kb/181/Q181788/
 ---
 
 ## Q181788: WD97: Using the Open Statement in Word VBA

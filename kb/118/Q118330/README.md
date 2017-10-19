@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118330: INF: Driver Manager and Cursor Library Compatibility"
-permalink: kb/118/Q118330/
+permalink: /kb/118/Q118330/
 ---
 
 ## Q118330: INF: Driver Manager and Cursor Library Compatibility

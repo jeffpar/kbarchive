@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90896: WinLogin Err Msg: &quot;An Error Occurred While Saving Changes...&quot;"
-permalink: kb/090/Q90896/
+permalink: /kb/090/Q90896/
 ---
 
 ## Q90896: WinLogin Err Msg: &quot;An Error Occurred While Saving Changes...&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234615: Windows 95 Tools May Cause Illegal Operation During Shutdown"
-permalink: kb/234/Q234615/
+permalink: /kb/234/Q234615/
 ---
 
 ## Q234615: Windows 95 Tools May Cause Illegal Operation During Shutdown

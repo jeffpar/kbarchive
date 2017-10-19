@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158605: FIX: Driver Not Capable Error: SQL_COPT_SS_CONNECTION_DEAD"
-permalink: kb/158/Q158605/
+permalink: /kb/158/Q158605/
 ---
 
 ## Q158605: FIX: Driver Not Capable Error: SQL_COPT_SS_CONNECTION_DEAD

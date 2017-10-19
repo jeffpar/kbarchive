@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237270: Encarta 2000: How to Troubleshoot Issues Using Registry Keys"
-permalink: kb/237/Q237270/
+permalink: /kb/237/Q237270/
 ---
 
 ## Q237270: Encarta 2000: How to Troubleshoot Issues Using Registry Keys

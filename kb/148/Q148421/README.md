@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148421: XCLN: Messages Marked as Read when Moved from Client"
-permalink: kb/148/Q148421/
+permalink: /kb/148/Q148421/
 ---
 
 ## Q148421: XCLN: Messages Marked as Read when Moved from Client

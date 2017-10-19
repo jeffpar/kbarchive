@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187668: XFOR: Internet Mail Service Sets Text Color to &quot;Black&quot;"
-permalink: kb/187/Q187668/
+permalink: /kb/187/Q187668/
 ---
 
 ## Q187668: XFOR: Internet Mail Service Sets Text Color to &quot;Black&quot;

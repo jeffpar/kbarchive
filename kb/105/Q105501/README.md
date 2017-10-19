@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105501: Dial.exe - Dialing a Modem in Windows 3.1"
-permalink: kb/105/Q105501/
+permalink: /kb/105/Q105501/
 ---
 
 ## Q105501: Dial.exe - Dialing a Modem in Windows 3.1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104345: How to Determine If a Library Is Loaded in Memory"
-permalink: kb/104/Q104345/
+permalink: /kb/104/Q104345/
 ---
 
 ## Q104345: How to Determine If a Library Is Loaded in Memory

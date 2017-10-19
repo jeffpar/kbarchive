@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150420: Err: Win16 Subsystem Unable to Enter Protected Mode"
-permalink: kb/150/Q150420/
+permalink: /kb/150/Q150420/
 ---
 
 ## Q150420: Err: Win16 Subsystem Unable to Enter Protected Mode

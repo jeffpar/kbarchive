@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167880: WD97: Invalid Page Fault Dragging Copied Hyperlink"
-permalink: kb/167/Q167880/
+permalink: /kb/167/Q167880/
 ---
 
 ## Q167880: WD97: Invalid Page Fault Dragging Copied Hyperlink

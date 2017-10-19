@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138724: Notes on Installing SNA Server on Citrix's OEM version of WinNT"
-permalink: kb/138/Q138724/
+permalink: /kb/138/Q138724/
 ---
 
 ## Q138724: Notes on Installing SNA Server on Citrix's OEM version of WinNT

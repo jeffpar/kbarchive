@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127799: Files Not Deleted, Changes Not Occurring After You Run Setup"
-permalink: kb/127/Q127799/
+permalink: /kb/127/Q127799/
 ---
 
 ## Q127799: Files Not Deleted, Changes Not Occurring After You Run Setup

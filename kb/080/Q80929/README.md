@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80929: Installing IBM Personal Pageprinter 4216-020 with Windows"
-permalink: kb/080/Q80929/
+permalink: /kb/080/Q80929/
 ---
 
 ## Q80929: Installing IBM Personal Pageprinter 4216-020 with Windows

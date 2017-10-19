@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245045: XFOR: Restricting Inbound SMTP Mail Addressed to Encapsulated X."
-permalink: kb/245/Q245045/
+permalink: /kb/245/Q245045/
 ---
 
 ## Q245045: XFOR: Restricting Inbound SMTP Mail Addressed to Encapsulated X.

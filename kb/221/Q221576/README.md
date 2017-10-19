@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221576: INFO: How the Fast Get Operation Works in Visual SourceSafe"
-permalink: kb/221/Q221576/
+permalink: /kb/221/Q221576/
 ---
 
 ## Q221576: INFO: How the Fast Get Operation Works in Visual SourceSafe

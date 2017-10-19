@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84347: Change the Blinking Cursor to a Solid Cursor"
-permalink: kb/084/Q84347/
+permalink: /kb/084/Q84347/
 ---
 
 ## Q84347: Change the Blinking Cursor to a Solid Cursor

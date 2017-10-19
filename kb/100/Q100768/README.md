@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100768: X400: Downstream Users Receive Multiple Copies of Same Message"
-permalink: kb/100/Q100768/
+permalink: /kb/100/Q100768/
 ---
 
 ## Q100768: X400: Downstream Users Receive Multiple Copies of Same Message

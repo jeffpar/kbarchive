@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141829: PRB: Error Running Windows NT Cmd.exe in Windows 95"
-permalink: kb/141/Q141829/
+permalink: /kb/141/Q141829/
 ---
 
 ## Q141829: PRB: Error Running Windows NT Cmd.exe in Windows 95

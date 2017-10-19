@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166509: BUG: Column Name Greater Than 128 Characters Cause Error"
-permalink: kb/166/Q166509/
+permalink: /kb/166/Q166509/
 ---
 
 ## Q166509: BUG: Column Name Greater Than 128 Characters Cause Error

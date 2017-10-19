@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192592: XADM: Paged Pool Memory Leak Caused by Attachment Processing"
-permalink: kb/192/Q192592/
+permalink: /kb/192/Q192592/
 ---
 
 ## Q192592: XADM: Paged Pool Memory Leak Caused by Attachment Processing

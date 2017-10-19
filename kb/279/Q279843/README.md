@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279843: System Named Pipes Are Not Created with Appropriate Permissions"
-permalink: kb/279/Q279843/
+permalink: /kb/279/Q279843/
 ---
 
 ## Q279843: System Named Pipes Are Not Created with Appropriate Permissions

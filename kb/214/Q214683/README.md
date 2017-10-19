@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214683: WD97: Duplex Printing Does Not Work with Objects on Page"
-permalink: kb/214/Q214683/
+permalink: /kb/214/Q214683/
 ---
 
 ## Q214683: WD97: Duplex Printing Does Not Work with Objects on Page

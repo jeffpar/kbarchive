@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117384: BUG: Unable to Hit Breakpoint on ELSE IF Statement"
-permalink: kb/117/Q117384/
+permalink: /kb/117/Q117384/
 ---
 
 ## Q117384: BUG: Unable to Hit Breakpoint on ELSE IF Statement

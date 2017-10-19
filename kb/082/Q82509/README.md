@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82509: Standard Mode May Require Increased File Handles"
-permalink: kb/082/Q82509/
+permalink: /kb/082/Q82509/
 ---
 
 ## Q82509: Standard Mode May Require Increased File Handles

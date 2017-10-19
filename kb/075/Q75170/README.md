@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75170: PRB: Some PWB Key Reassignments Do Not Work in Help Windows"
-permalink: kb/075/Q75170/
+permalink: /kb/075/Q75170/
 ---
 
 ## Q75170: PRB: Some PWB Key Reassignments Do Not Work in Help Windows

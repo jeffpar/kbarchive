@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127104: HOWTO: Set Up Multiple SourceSafe Databases"
-permalink: kb/127/Q127104/
+permalink: /kb/127/Q127104/
 ---
 
 ## Q127104: HOWTO: Set Up Multiple SourceSafe Databases

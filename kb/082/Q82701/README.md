@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82701: Fax Manager Allows Embedded Spaces in Filenames"
-permalink: kb/082/Q82701/
+permalink: /kb/082/Q82701/
 ---
 
 ## Q82701: Fax Manager Allows Embedded Spaces in Filenames

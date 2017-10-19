@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294440: Error Message: Operating System Was Unable to Load Your Profile"
-permalink: kb/294/Q294440/
+permalink: /kb/294/Q294440/
 ---
 
 ## Q294440: Error Message: Operating System Was Unable to Load Your Profile

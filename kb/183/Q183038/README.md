@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183038: FP97: Cannot Open or Create Webs Remotely w/MSPWS 4.0"
-permalink: kb/183/Q183038/
+permalink: /kb/183/Q183038/
 ---
 
 ## Q183038: FP97: Cannot Open or Create Webs Remotely w/MSPWS 4.0

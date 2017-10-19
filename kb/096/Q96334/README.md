@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96334: Windows for Workgroups or WC Hang on NETBIND Command"
-permalink: kb/096/Q96334/
+permalink: /kb/096/Q96334/
 ---
 
 ## Q96334: Windows for Workgroups or WC Hang on NETBIND Command

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113828: Sound System: Sound Blaster 16 Doesn't Play CD Audio"
-permalink: kb/113/Q113828/
+permalink: /kb/113/Q113828/
 ---
 
 ## Q113828: Sound System: Sound Blaster 16 Doesn't Play CD Audio

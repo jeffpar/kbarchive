@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162691: WD97: Text Missing, Saving as &quot;Hide Everything But Summary&quot;"
-permalink: kb/162/Q162691/
+permalink: /kb/162/Q162691/
 ---
 
 ## Q162691: WD97: Text Missing, Saving as &quot;Hide Everything But Summary&quot;

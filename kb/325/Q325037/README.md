@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325037: Dungeon Siege: Command-Line Switches, Troubleshooting Shortcuts"
-permalink: kb/325/Q325037/
+permalink: /kb/325/Q325037/
 ---
 
 ## Q325037: Dungeon Siege: Command-Line Switches, Troubleshooting Shortcuts

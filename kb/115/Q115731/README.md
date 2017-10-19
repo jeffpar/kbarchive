@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115731: How to Read Memo Field Data from Delimited ASCII Files"
-permalink: kb/115/Q115731/
+permalink: /kb/115/Q115731/
 ---
 
 ## Q115731: How to Read Memo Field Data from Delimited ASCII Files

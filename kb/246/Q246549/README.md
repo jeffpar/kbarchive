@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246549: Accelerated Remote Control Clients Lose Acceleration with SP1"
-permalink: kb/246/Q246549/
+permalink: /kb/246/Q246549/
 ---
 
 ## Q246549: Accelerated Remote Control Clients Lose Acceleration with SP1

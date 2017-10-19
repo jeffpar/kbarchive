@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193476: FIX: Type Info for &#95;&#95;asm Crashes Developer Studio"
-permalink: kb/193/Q193476/
+permalink: /kb/193/Q193476/
 ---
 
 ## Q193476: FIX: Type Info for &#95;&#95;asm Crashes Developer Studio

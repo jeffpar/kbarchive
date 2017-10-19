@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183557: MVS Invalid Conversion of String Data"
-permalink: kb/183/Q183557/
+permalink: /kb/183/Q183557/
 ---
 
 ## Q183557: MVS Invalid Conversion of String Data

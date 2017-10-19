@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199298: XCLN: Appointments Marked Private Can Be Viewed by Delegate"
-permalink: kb/199/Q199298/
+permalink: /kb/199/Q199298/
 ---
 
 ## Q199298: XCLN: Appointments Marked Private Can Be Viewed by Delegate

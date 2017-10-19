@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226551: Event Viewer Hangs or Cannot Start After Saving a Filter"
-permalink: kb/226/Q226551/
+permalink: /kb/226/Q226551/
 ---
 
 ## Q226551: Event Viewer Hangs or Cannot Start After Saving a Filter

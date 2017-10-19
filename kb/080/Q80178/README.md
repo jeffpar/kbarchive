@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80178: Mouse Systems OEM Driver for Windows"
-permalink: kb/080/Q80178/
+permalink: /kb/080/Q80178/
 ---
 
 ## Q80178: Mouse Systems OEM Driver for Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141879: PRB: Print Function Evaluation Order Has Changed"
-permalink: kb/141/Q141879/
+permalink: /kb/141/Q141879/
 ---
 
 ## Q141879: PRB: Print Function Evaluation Order Has Changed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240859: XADM: Admin.exe Stops Responding when Connected over Internet"
-permalink: kb/240/Q240859/
+permalink: /kb/240/Q240859/
 ---
 
 ## Q240859: XADM: Admin.exe Stops Responding when Connected over Internet

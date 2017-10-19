@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99249: Boot Block Configuration File Format"
-permalink: kb/099/Q99249/
+permalink: /kb/099/Q99249/
 ---
 
 ## Q99249: Boot Block Configuration File Format

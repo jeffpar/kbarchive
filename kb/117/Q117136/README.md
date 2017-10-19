@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117136: Extra Characters in MS-DOS Session with Voice Pilot Active"
-permalink: kb/117/Q117136/
+permalink: /kb/117/Q117136/
 ---
 
 ## Q117136: Extra Characters in MS-DOS Session with Voice Pilot Active

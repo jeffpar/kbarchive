@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274906: CFS2 Err Msg: Rundll32 Has Caused an Error in IVIVIDEO.AX"
-permalink: kb/274/Q274906/
+permalink: /kb/274/Q274906/
 ---
 
 ## Q274906: CFS2 Err Msg: Rundll32 Has Caused an Error in IVIVIDEO.AX

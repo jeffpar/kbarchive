@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132360: Error Message Setting Up Program Items: Invalid Path"
-permalink: kb/132/Q132360/
+permalink: /kb/132/Q132360/
 ---
 
 ## Q132360: Error Message Setting Up Program Items: Invalid Path

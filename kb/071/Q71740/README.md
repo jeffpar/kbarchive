@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71740: AST 386 and Bus Mouse Ports"
-permalink: kb/071/Q71740/
+permalink: /kb/071/Q71740/
 ---
 
 ## Q71740: AST 386 and Bus Mouse Ports

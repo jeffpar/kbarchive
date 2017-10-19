@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164400: XCON: Sockets Error 10022 When Connecting X.400 over TP4"
-permalink: kb/164/Q164400/
+permalink: /kb/164/Q164400/
 ---
 
 ## Q164400: XCON: Sockets Error 10022 When Connecting X.400 over TP4

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140357: BUG: No Warning Using Extern &quot;C&quot; in a Namespace"
-permalink: kb/140/Q140357/
+permalink: /kb/140/Q140357/
 ---
 
 ## Q140357: BUG: No Warning Using Extern &quot;C&quot; in a Namespace

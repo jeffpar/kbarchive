@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39531: How ROM BIOS Disk Limitation of 1024 Cylinders Affects MS-DOS"
-permalink: kb/039/Q39531/
+permalink: /kb/039/Q39531/
 ---
 
 ## Q39531: How ROM BIOS Disk Limitation of 1024 Cylinders Affects MS-DOS

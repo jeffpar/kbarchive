@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103954: Protocol Standards Defined by IEEE Project 802 and FDDI"
-permalink: kb/103/Q103954/
+permalink: /kb/103/Q103954/
 ---
 
 ## Q103954: Protocol Standards Defined by IEEE Project 802 and FDDI

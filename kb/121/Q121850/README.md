@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121850: Windows NT Hangs on Computers Using AMD PCNet Network Cards"
-permalink: kb/121/Q121850/
+permalink: /kb/121/Q121850/
 ---
 
 ## Q121850: Windows NT Hangs on Computers Using AMD PCNet Network Cards

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90526: Cannot Set Default Appointment Time in Schedule+"
-permalink: kb/090/Q90526/
+permalink: /kb/090/Q90526/
 ---
 
 ## Q90526: Cannot Set Default Appointment Time in Schedule+

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104672: INFO: Compiler Errors When Compiling a C++ File as a C File"
-permalink: kb/104/Q104672/
+permalink: /kb/104/Q104672/
 ---
 
 ## Q104672: INFO: Compiler Errors When Compiling a C++ File as a C File

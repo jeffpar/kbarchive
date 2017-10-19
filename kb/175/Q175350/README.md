@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175350: XCLN: AutoForwarded DBCS Message Is Corrupted"
-permalink: kb/175/Q175350/
+permalink: /kb/175/Q175350/
 ---
 
 ## Q175350: XCLN: AutoForwarded DBCS Message Is Corrupted

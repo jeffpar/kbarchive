@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271456: IIS 4.0 Causes Heap Corruption in CGI Application"
-permalink: kb/271/Q271456/
+permalink: /kb/271/Q271456/
 ---
 
 ## Q271456: IIS 4.0 Causes Heap Corruption in CGI Application

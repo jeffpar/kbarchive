@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188271: HOWTO: Print Contents of the Web Browser Control From VB"
-permalink: kb/188/Q188271/
+permalink: /kb/188/Q188271/
 ---
 
 ## Q188271: HOWTO: Print Contents of the Web Browser Control From VB

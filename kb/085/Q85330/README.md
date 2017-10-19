@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85330: BUG: GetModuleFileName() Returns Relative File Path"
-permalink: kb/085/Q85330/
+permalink: /kb/085/Q85330/
 ---
 
 ## Q85330: BUG: GetModuleFileName() Returns Relative File Path

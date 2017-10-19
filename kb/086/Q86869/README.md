@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86869: Windows 3.1x WIN87EM.DLL Patch for Intel 80387"
-permalink: kb/086/Q86869/
+permalink: /kb/086/Q86869/
 ---
 
 ## Q86869: Windows 3.1x WIN87EM.DLL Patch for Intel 80387

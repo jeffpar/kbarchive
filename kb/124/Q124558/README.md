@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124558: DriveSpace Err Msg: MINI.CAB File Is Missing or Damaged..."
-permalink: kb/124/Q124558/
+permalink: /kb/124/Q124558/
 ---
 
 ## Q124558: DriveSpace Err Msg: MINI.CAB File Is Missing or Damaged...

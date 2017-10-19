@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128073: PRB: Additem Does Not Add Elements to an Outline Control"
-permalink: kb/128/Q128073/
+permalink: /kb/128/Q128073/
 ---
 
 ## Q128073: PRB: Additem Does Not Add Elements to an Outline Control

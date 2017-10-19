@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140733: Manual Dial Setting Does Not Function After Restarting"
-permalink: kb/140/Q140733/
+permalink: /kb/140/Q140733/
 ---
 
 ## Q140733: Manual Dial Setting Does Not Function After Restarting

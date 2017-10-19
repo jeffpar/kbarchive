@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114939: WD97: Novell NetWare Network Privileges Required to Run Word"
-permalink: kb/114/Q114939/
+permalink: /kb/114/Q114939/
 ---
 
 ## Q114939: WD97: Novell NetWare Network Privileges Required to Run Word

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148957: NTBACKUP Fails With Application Error During Verify Process"
-permalink: kb/148/Q148957/
+permalink: /kb/148/Q148957/
 ---
 
 ## Q148957: NTBACKUP Fails With Application Error During Verify Process

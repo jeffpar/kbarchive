@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95532: Deleting Unneeded Files After Converting a Stacker Drive"
-permalink: kb/095/Q95532/
+permalink: /kb/095/Q95532/
 ---
 
 ## Q95532: Deleting Unneeded Files After Converting a Stacker Drive

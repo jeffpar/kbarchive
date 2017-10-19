@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165958: Getting Madge PCMCIA Token Card to Join a Domain During Setup"
-permalink: kb/165/Q165958/
+permalink: /kb/165/Q165958/
 ---
 
 ## Q165958: Getting Madge PCMCIA Token Card to Join a Domain During Setup

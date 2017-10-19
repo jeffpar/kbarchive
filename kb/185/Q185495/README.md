@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185495: Error Selecting Link for Online Documentation"
-permalink: kb/185/Q185495/
+permalink: /kb/185/Q185495/
 ---
 
 ## Q185495: Error Selecting Link for Online Documentation

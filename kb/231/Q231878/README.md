@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231878: Location of Winsock Proxy Client Configuration Information"
-permalink: kb/231/Q231878/
+permalink: /kb/231/Q231878/
 ---
 
 ## Q231878: Location of Winsock Proxy Client Configuration Information

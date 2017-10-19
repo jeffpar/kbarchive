@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175063: Host Security Integration Setup and Architectural Overview"
-permalink: kb/175/Q175063/
+permalink: /kb/175/Q175063/
 ---
 
 ## Q175063: Host Security Integration Setup and Architectural Overview

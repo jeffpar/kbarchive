@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148199: XCLN: Re-creating a Deleted Schedule+ Free/Busy Agent"
-permalink: kb/148/Q148199/
+permalink: /kb/148/Q148199/
 ---
 
 ## Q148199: XCLN: Re-creating a Deleted Schedule+ Free/Busy Agent

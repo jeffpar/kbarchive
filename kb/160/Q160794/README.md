@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160794: Removing or Adding a CD into Drive May Cause Errors"
-permalink: kb/160/Q160794/
+permalink: /kb/160/Q160794/
 ---
 
 ## Q160794: Removing or Adding a CD into Drive May Cause Errors

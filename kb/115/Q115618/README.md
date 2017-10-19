@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115618: PRB: Numeric Overflow (Data Was Lost)"
-permalink: kb/115/Q115618/
+permalink: /kb/115/Q115618/
 ---
 
 ## Q115618: PRB: Numeric Overflow (Data Was Lost)

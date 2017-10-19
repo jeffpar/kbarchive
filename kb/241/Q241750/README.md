@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241750: BUG: CHtmlView Leaks Memory by Not Releasing BSTRs"
-permalink: kb/241/Q241750/
+permalink: /kb/241/Q241750/
 ---
 
 ## Q241750: BUG: CHtmlView Leaks Memory by Not Releasing BSTRs

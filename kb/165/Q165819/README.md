@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165819: Error 3 -- The Specified Path Could Not Be Found"
-permalink: kb/165/Q165819/
+permalink: /kb/165/Q165819/
 ---
 
 ## Q165819: Error 3 -- The Specified Path Could Not Be Found

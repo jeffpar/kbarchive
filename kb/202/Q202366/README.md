@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202366: Outlook 98 Does Not Read Certificates from Certificate Server"
-permalink: kb/202/Q202366/
+permalink: /kb/202/Q202366/
 ---
 
 ## Q202366: Outlook 98 Does Not Read Certificates from Certificate Server

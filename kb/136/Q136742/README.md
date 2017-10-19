@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136742: Drives Use MS-DOS Compatibility Mode with Iomega Zip Drive"
-permalink: kb/136/Q136742/
+permalink: /kb/136/Q136742/
 ---
 
 ## Q136742: Drives Use MS-DOS Compatibility Mode with Iomega Zip Drive

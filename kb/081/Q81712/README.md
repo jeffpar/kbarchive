@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81712: QMS Printer Emulation and Windows"
-permalink: kb/081/Q81712/
+permalink: /kb/081/Q81712/
 ---
 
 ## Q81712: QMS Printer Emulation and Windows

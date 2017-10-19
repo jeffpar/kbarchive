@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159236: WD97: Help Topic for Supplemental Converters Listed Twice"
-permalink: kb/159/Q159236/
+permalink: /kb/159/Q159236/
 ---
 
 ## Q159236: WD97: Help Topic for Supplemental Converters Listed Twice

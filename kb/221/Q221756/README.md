@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221756: XADM: Support Boundaries for Snap Backup and Restoration"
-permalink: kb/221/Q221756/
+permalink: /kb/221/Q221756/
 ---
 
 ## Q221756: XADM: Support Boundaries for Snap Backup and Restoration

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81319: Cannot Print from Windows 3.0, 3.0a Accessory Applications"
-permalink: kb/081/Q81319/
+permalink: /kb/081/Q81319/
 ---
 
 ## Q81319: Cannot Print from Windows 3.0, 3.0a Accessory Applications

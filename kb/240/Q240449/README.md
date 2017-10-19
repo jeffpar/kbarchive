@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240449: Aciniupd Does Not Update Some Characters Properly into .ini File"
-permalink: kb/240/Q240449/
+permalink: /kb/240/Q240449/
 ---
 
 ## Q240449: Aciniupd Does Not Update Some Characters Properly into .ini File

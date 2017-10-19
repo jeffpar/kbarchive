@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162445: DOC: DECLARE DLL Example Has Incorrect Information"
-permalink: kb/162/Q162445/
+permalink: /kb/162/Q162445/
 ---
 
 ## Q162445: DOC: DECLARE DLL Example Has Incorrect Information

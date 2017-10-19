@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178495: FIX: Invalid Page Fault When Deleting Nodes in TreeView Control"
-permalink: kb/178/Q178495/
+permalink: /kb/178/Q178495/
 ---
 
 ## Q178495: FIX: Invalid Page Fault When Deleting Nodes in TreeView Control

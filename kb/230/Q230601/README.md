@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230601: CB Incorrectly Maps COBOL Data Types for Unsigned Display"
-permalink: kb/230/Q230601/
+permalink: /kb/230/Q230601/
 ---
 
 ## Q230601: CB Incorrectly Maps COBOL Data Types for Unsigned Display

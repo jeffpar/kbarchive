@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143356: XCLN: Err Msg: The Logon Attempt Timed Out While Waiting"
-permalink: kb/143/Q143356/
+permalink: /kb/143/Q143356/
 ---
 
 ## Q143356: XCLN: Err Msg: The Logon Attempt Timed Out While Waiting

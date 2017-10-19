@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258222: XADM: How Mailbox Manager Uses the System Cleanup Folder"
-permalink: kb/258/Q258222/
+permalink: /kb/258/Q258222/
 ---
 
 ## Q258222: XADM: How Mailbox Manager Uses the System Cleanup Folder

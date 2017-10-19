@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318380: IIS Status Codes"
-permalink: kb/318/Q318380/
+permalink: /kb/318/Q318380/
 ---
 
 ## Q318380: IIS Status Codes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255679: TPU: Outlook Bar Displayed After User Is Removed from Workspace"
-permalink: kb/255/Q255679/
+permalink: /kb/255/Q255679/
 ---
 
 ## Q255679: TPU: Outlook Bar Displayed After User Is Removed from Workspace

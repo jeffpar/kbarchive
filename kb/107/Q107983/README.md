@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107983: Flight Simulator 5.0: Error 039/+00901 on Pentium Processors"
-permalink: kb/107/Q107983/
+permalink: /kb/107/Q107983/
 ---
 
 ## Q107983: Flight Simulator 5.0: Error 039/+00901 on Pentium Processors

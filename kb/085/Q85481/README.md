@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85481: Keyboard Problems in Windows 3.1"
-permalink: kb/085/Q85481/
+permalink: /kb/085/Q85481/
 ---
 
 ## Q85481: Keyboard Problems in Windows 3.1

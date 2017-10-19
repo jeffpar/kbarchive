@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201047: XADM: Errors When You Attempt to Access Public Folders"
-permalink: kb/201/Q201047/
+permalink: /kb/201/Q201047/
 ---
 
 ## Q201047: XADM: Errors When You Attempt to Access Public Folders

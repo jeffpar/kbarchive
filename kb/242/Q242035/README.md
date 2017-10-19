@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242035: Printer Pooling Improvements in Windows NT 4.0 Service Pack 6"
-permalink: kb/242/Q242035/
+permalink: /kb/242/Q242035/
 ---
 
 ## Q242035: Printer Pooling Improvements in Windows NT 4.0 Service Pack 6

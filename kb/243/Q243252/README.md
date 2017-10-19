@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243252: BUG: Converting Access97 MDB to Access 2000 Format Using DAO 3.6"
-permalink: kb/243/Q243252/
+permalink: /kb/243/Q243252/
 ---
 
 ## Q243252: BUG: Converting Access97 MDB to Access 2000 Format Using DAO 3.6

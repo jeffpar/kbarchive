@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245120: &quot;STOP 0x0000003F&quot; When NAI Antivirus Software Is Installed"
-permalink: kb/245/Q245120/
+permalink: /kb/245/Q245120/
 ---
 
 ## Q245120: &quot;STOP 0x0000003F&quot; When NAI Antivirus Software Is Installed

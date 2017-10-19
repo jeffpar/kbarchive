@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162576: FPNW Clients Do Not Receive Printing Notification"
-permalink: kb/162/Q162576/
+permalink: /kb/162/Q162576/
 ---
 
 ## Q162576: FPNW Clients Do Not Receive Printing Notification

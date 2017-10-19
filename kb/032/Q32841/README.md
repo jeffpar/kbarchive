@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32841: INFO: How Bitfields Are Stored in Memory"
-permalink: kb/032/Q32841/
+permalink: /kb/032/Q32841/
 ---
 
 ## Q32841: INFO: How Bitfields Are Stored in Memory

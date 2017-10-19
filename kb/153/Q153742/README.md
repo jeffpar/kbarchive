@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153742: STOP 0x0000006F During System Initialization"
-permalink: kb/153/Q153742/
+permalink: /kb/153/Q153742/
 ---
 
 ## Q153742: STOP 0x0000006F During System Initialization

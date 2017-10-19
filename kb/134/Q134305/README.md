@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134305: PRB: Invalid DragIcon Property Is Ignored"
-permalink: kb/134/Q134305/
+permalink: /kb/134/Q134305/
 ---
 
 ## Q134305: PRB: Invalid DragIcon Property Is Ignored

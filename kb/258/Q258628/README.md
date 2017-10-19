@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258628: Baseball 2001: Field Radar Graphic Is Not Displayed Properly"
-permalink: kb/258/Q258628/
+permalink: /kb/258/Q258628/
 ---
 
 ## Q258628: Baseball 2001: Field Radar Graphic Is Not Displayed Properly

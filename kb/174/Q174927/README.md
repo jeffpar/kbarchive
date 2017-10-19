@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174927: Error Message During Setup of Noncritical Changes"
-permalink: kb/174/Q174927/
+permalink: /kb/174/Q174927/
 ---
 
 ## Q174927: Error Message During Setup of Noncritical Changes

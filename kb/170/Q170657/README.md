@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170657: Paste From Command Missing in Embedded Paint Object"
-permalink: kb/170/Q170657/
+permalink: /kb/170/Q170657/
 ---
 
 ## Q170657: Paste From Command Missing in Embedded Paint Object

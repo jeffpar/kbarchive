@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83455: PRB: XMS Version Information in MS-DOS Window Incorrect"
-permalink: kb/083/Q83455/
+permalink: /kb/083/Q83455/
 ---
 
 ## Q83455: PRB: XMS Version Information in MS-DOS Window Incorrect

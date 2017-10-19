@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q136009: PC NTMMTA: Err Msg: ...Invalid Service Account [1057]"
-permalink: kb/136/Q136009/
+title: "Q136009: PC NTMMTA: Err Msg: ...Invalid Service Account &#91;1057&#93;"
+permalink: /kb/136/Q136009/
 ---
 
-## Q136009: PC NTMMTA: Err Msg: ...Invalid Service Account [1057]
+## Q136009: PC NTMMTA: Err Msg: ...Invalid Service Account &#91;1057&#93;
 
 	Article: Q136009
 	Product(s): Microsoft Mail For PC Networks

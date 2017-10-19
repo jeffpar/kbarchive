@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75203: PC DOS: Unloading TSRs from Batch Files on NetWare LANs"
-permalink: kb/075/Q75203/
+permalink: /kb/075/Q75203/
 ---
 
 ## Q75203: PC DOS: Unloading TSRs from Batch Files on NetWare LANs

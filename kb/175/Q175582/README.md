@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175582: XWEB: Changing View in OWA Does Not Update Immediately"
-permalink: kb/175/Q175582/
+permalink: /kb/175/Q175582/
 ---
 
 ## Q175582: XWEB: Changing View in OWA Does Not Update Immediately

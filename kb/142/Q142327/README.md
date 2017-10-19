@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142327: Imaging for Windows 95 Version 1.0 Readme.txt File"
-permalink: kb/142/Q142327/
+permalink: /kb/142/Q142327/
 ---
 
 ## Q142327: Imaging for Windows 95 Version 1.0 Readme.txt File

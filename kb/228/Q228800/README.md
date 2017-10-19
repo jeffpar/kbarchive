@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228800: HOWTO: Call a Parameterized SQL Server Stored Procedure from RDO"
-permalink: kb/228/Q228800/
+permalink: /kb/228/Q228800/
 ---
 
 ## Q228800: HOWTO: Call a Parameterized SQL Server Stored Procedure from RDO

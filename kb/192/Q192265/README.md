@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192265: Winlogon Leaks Because of SMTPSVC Performance Counters"
-permalink: kb/192/Q192265/
+permalink: /kb/192/Q192265/
 ---
 
 ## Q192265: Winlogon Leaks Because of SMTPSVC Performance Counters

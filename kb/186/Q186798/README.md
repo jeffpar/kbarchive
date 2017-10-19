@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186798: Populating Connection Manager Profile Using the INS File"
-permalink: kb/186/Q186798/
+permalink: /kb/186/Q186798/
 ---
 
 ## Q186798: Populating Connection Manager Profile Using the INS File

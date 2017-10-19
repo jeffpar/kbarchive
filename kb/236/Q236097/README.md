@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236097: PRB: ReadMethod Returns Name of Method at Run Time"
-permalink: kb/236/Q236097/
+permalink: /kb/236/Q236097/
 ---
 
 ## Q236097: PRB: ReadMethod Returns Name of Method at Run Time

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195898: Incorrect Drive Size with Promise Technologies Ultra DMA Card"
-permalink: kb/195/Q195898/
+permalink: /kb/195/Q195898/
 ---
 
 ## Q195898: Incorrect Drive Size with Promise Technologies Ultra DMA Card

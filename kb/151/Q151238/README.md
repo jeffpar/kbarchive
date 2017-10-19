@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151238: SNA Server May Log Events 442, 443, 444, 445, and 446"
-permalink: kb/151/Q151238/
+permalink: /kb/151/Q151238/
 ---
 
 ## Q151238: SNA Server May Log Events 442, 443, 444, 445, and 446

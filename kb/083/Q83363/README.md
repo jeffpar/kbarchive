@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83363: Unlocking Large-Model Extra Data Segments"
-permalink: kb/083/Q83363/
+permalink: /kb/083/Q83363/
 ---
 
 ## Q83363: Unlocking Large-Model Extra Data Segments

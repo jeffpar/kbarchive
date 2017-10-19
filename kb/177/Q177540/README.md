@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177540: BUG: ODBC Trace Fails with Traditional Chinese version of VFP5"
-permalink: kb/177/Q177540/
+permalink: /kb/177/Q177540/
 ---
 
 ## Q177540: BUG: ODBC Trace Fails with Traditional Chinese version of VFP5

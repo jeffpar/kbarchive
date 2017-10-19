@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69299: Windows Err Msg: List of Kernel Program Messages"
-permalink: kb/069/Q69299/
+permalink: /kb/069/Q69299/
 ---
 
 ## Q69299: Windows Err Msg: List of Kernel Program Messages

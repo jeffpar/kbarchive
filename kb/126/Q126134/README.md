@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126134: FIX: Date/Time Fields Fail to Update When Using a Dynaset"
-permalink: kb/126/Q126134/
+permalink: /kb/126/Q126134/
 ---
 
 ## Q126134: FIX: Date/Time Fields Fail to Update When Using a Dynaset

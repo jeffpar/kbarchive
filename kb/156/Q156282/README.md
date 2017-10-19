@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156282: XCLN: Meeting Request Sent to Assistant Will NDR the Response"
-permalink: kb/156/Q156282/
+permalink: /kb/156/Q156282/
 ---
 
 ## Q156282: XCLN: Meeting Request Sent to Assistant Will NDR the Response

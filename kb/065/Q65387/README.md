@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65387: Mac Form: Cannot Create Custom Voice Mail Forms"
-permalink: kb/065/Q65387/
+permalink: /kb/065/Q65387/
 ---
 
 ## Q65387: Mac Form: Cannot Create Custom Voice Mail Forms

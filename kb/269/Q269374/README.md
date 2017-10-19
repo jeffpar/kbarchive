@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269374: XWEB: OWA Prompts Three Times for Credentials then Blank Page"
-permalink: kb/269/Q269374/
+permalink: /kb/269/Q269374/
 ---
 
 ## Q269374: XWEB: OWA Prompts Three Times for Credentials then Blank Page

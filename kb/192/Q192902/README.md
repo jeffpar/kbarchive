@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192902: HOWTO: Change Colors to Patterns with the MSChart Control"
-permalink: kb/192/Q192902/
+permalink: /kb/192/Q192902/
 ---
 
 ## Q192902: HOWTO: Change Colors to Patterns with the MSChart Control

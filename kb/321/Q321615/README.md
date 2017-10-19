@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321615: FIX: The SAK Function IsCmdFinished Returns Incorrect Value"
-permalink: kb/321/Q321615/
+permalink: /kb/321/Q321615/
 ---
 
 ## Q321615: FIX: The SAK Function IsCmdFinished Returns Incorrect Value

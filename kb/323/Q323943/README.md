@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323943: &quot;Zoo Tycoon Has Encountered&quot; Err Msg Starting Dinosaur Digs Game"
-permalink: kb/323/Q323943/
+permalink: /kb/323/Q323943/
 ---
 
 ## Q323943: &quot;Zoo Tycoon Has Encountered&quot; Err Msg Starting Dinosaur Digs Game

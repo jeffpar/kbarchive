@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177636: HOWTO: Check If Program Is Running in the IDE or an EXE File"
-permalink: kb/177/Q177636/
+permalink: /kb/177/Q177636/
 ---
 
 ## Q177636: HOWTO: Check If Program Is Running in the IDE or an EXE File

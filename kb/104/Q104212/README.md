@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104212: Sound System Err Msg: Cannot Find &quot;&lt;path&gt;&#92;PROOF.XLA&quot;"
-permalink: kb/104/Q104212/
+permalink: /kb/104/Q104212/
 ---
 
 ## Q104212: Sound System Err Msg: Cannot Find &quot;&lt;path&gt;&#92;PROOF.XLA&quot;

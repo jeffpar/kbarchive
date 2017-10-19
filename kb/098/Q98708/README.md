@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98708: Linked Microsoft Excel Graphs Resized in PowerPoint"
-permalink: kb/098/Q98708/
+permalink: /kb/098/Q98708/
 ---
 
 ## Q98708: Linked Microsoft Excel Graphs Resized in PowerPoint

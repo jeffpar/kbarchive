@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190573: Jetpack/WINADMIN Create Maintenance Files in System32"
-permalink: kb/190/Q190573/
+permalink: /kb/190/Q190573/
 ---
 
 ## Q190573: Jetpack/WINADMIN Create Maintenance Files in System32

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181022: Err: Cannot Write to LPTx Printing to Parallel Port"
-permalink: kb/181/Q181022/
+permalink: /kb/181/Q181022/
 ---
 
 ## Q181022: Err: Cannot Write to LPTx Printing to Parallel Port

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182905: XADM: How to Add Members to Distribution List Using CSV File"
-permalink: kb/182/Q182905/
+permalink: /kb/182/Q182905/
 ---
 
 ## Q182905: XADM: How to Add Members to Distribution List Using CSV File

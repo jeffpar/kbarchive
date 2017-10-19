@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158689: WD97: Self-Help and Online Support Options"
-permalink: kb/158/Q158689/
+permalink: /kb/158/Q158689/
 ---
 
 ## Q158689: WD97: Self-Help and Online Support Options

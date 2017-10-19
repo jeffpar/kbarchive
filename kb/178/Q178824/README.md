@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178824: Error Message: Your Password Is Too Short"
-permalink: kb/178/Q178824/
+permalink: /kb/178/Q178824/
 ---
 
 ## Q178824: Error Message: Your Password Is Too Short

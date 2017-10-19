@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223103: FIX: Memory Leak with Command Button on Japanese Windows 95C"
-permalink: kb/223/Q223103/
+permalink: /kb/223/Q223103/
 ---
 
 ## Q223103: FIX: Memory Leak with Command Button on Japanese Windows 95C

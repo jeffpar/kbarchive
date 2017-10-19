@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158913: PPT: Sample Macro Code To Visit Every Open Slide"
-permalink: kb/158/Q158913/
+permalink: /kb/158/Q158913/
 ---
 
 ## Q158913: PPT: Sample Macro Code To Visit Every Open Slide

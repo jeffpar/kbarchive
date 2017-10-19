@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308104: MSN Broadband DSL:  Sleep Mode May Cause Loss Of Connection"
-permalink: kb/308/Q308104/
+permalink: /kb/308/Q308104/
 ---
 
 ## Q308104: MSN Broadband DSL:  Sleep Mode May Cause Loss Of Connection

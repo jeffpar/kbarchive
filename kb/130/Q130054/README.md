@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130054: HOWTO: How to Determine the Japanese OEM Windows Version"
-permalink: kb/130/Q130054/
+permalink: /kb/130/Q130054/
 ---
 
 ## Q130054: HOWTO: How to Determine the Japanese OEM Windows Version

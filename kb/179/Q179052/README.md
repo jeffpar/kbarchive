@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179052: BUG: Transparent Label on Transparent Control Does Not Display"
-permalink: kb/179/Q179052/
+permalink: /kb/179/Q179052/
 ---
 
 ## Q179052: BUG: Transparent Label on Transparent Control Does Not Display

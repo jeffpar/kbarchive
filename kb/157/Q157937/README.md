@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157937: Not Able to Add Users from Domain"
-permalink: kb/157/Q157937/
+permalink: /kb/157/Q157937/
 ---
 
 ## Q157937: Not Able to Add Users from Domain

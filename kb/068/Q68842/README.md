@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68842: Exporting Paintbrush Images to CorelDRAW!"
-permalink: kb/068/Q68842/
+permalink: /kb/068/Q68842/
 ---
 
 ## Q68842: Exporting Paintbrush Images to CorelDRAW!

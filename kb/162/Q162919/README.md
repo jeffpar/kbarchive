@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162919: XFOR: Err Msg: The Network Name Could Not Be Found"
-permalink: kb/162/Q162919/
+permalink: /kb/162/Q162919/
 ---
 
 ## Q162919: XFOR: Err Msg: The Network Name Could Not Be Found

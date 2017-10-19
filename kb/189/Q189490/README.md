@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189490: XWEB: Outlook Web Access Address Finder Only Available for USA"
-permalink: kb/189/Q189490/
+permalink: /kb/189/Q189490/
 ---
 
 ## Q189490: XWEB: Outlook Web Access Address Finder Only Available for USA

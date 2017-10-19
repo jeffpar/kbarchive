@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159456: Using IOMEGA Zip IDE Insider under Windows NT"
-permalink: kb/159/Q159456/
+permalink: /kb/159/Q159456/
 ---
 
 ## Q159456: Using IOMEGA Zip IDE Insider under Windows NT

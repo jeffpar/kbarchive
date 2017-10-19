@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162565: How to Install CSNW or GSNW from Floppy Disks for Windows NT 4.0"
-permalink: kb/162/Q162565/
+permalink: /kb/162/Q162565/
 ---
 
 ## Q162565: How to Install CSNW or GSNW from Floppy Disks for Windows NT 4.0

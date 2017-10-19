@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120128: PPT: Bypassing Startup Dialog Boxes in PowerPoint"
-permalink: kb/120/Q120128/
+permalink: /kb/120/Q120128/
 ---
 
 ## Q120128: PPT: Bypassing Startup Dialog Boxes in PowerPoint

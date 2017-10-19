@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154846: AP Error Running Gdsset.exe in Japanese IIS"
-permalink: kb/154/Q154846/
+permalink: /kb/154/Q154846/
 ---
 
 ## Q154846: AP Error Running Gdsset.exe in Japanese IIS

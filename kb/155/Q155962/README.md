@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155962: WD97: Some Features Disabled After Setup"
-permalink: kb/155/Q155962/
+permalink: /kb/155/Q155962/
 ---
 
 ## Q155962: WD97: Some Features Disabled After Setup

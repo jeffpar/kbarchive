@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313921: FIX: Spanish Vers. of VFP 7.0 Doesn't Put Product ID in Registry"
-permalink: kb/313/Q313921/
+permalink: /kb/313/Q313921/
 ---
 
 ## Q313921: FIX: Spanish Vers. of VFP 7.0 Doesn't Put Product ID in Registry

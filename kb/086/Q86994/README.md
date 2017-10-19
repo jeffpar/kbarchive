@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86994: Updated ATI CRYSTAL Fonts Driver Required for Windows 3.1"
-permalink: kb/086/Q86994/
+permalink: /kb/086/Q86994/
 ---
 
 ## Q86994: Updated ATI CRYSTAL Fonts Driver Required for Windows 3.1

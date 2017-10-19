@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135328: FIX: TOP and LEFT Properties Do not Reset to Default"
-permalink: kb/135/Q135328/
+permalink: /kb/135/Q135328/
 ---
 
 ## Q135328: FIX: TOP and LEFT Properties Do not Reset to Default

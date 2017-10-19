@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187669: Unable to Use NetBIOS Resources over SLIP"
-permalink: kb/187/Q187669/
+permalink: /kb/187/Q187669/
 ---
 
 ## Q187669: Unable to Use NetBIOS Resources over SLIP

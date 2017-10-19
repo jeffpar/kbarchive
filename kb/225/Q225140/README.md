@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225140: FIX: COleDateTime::operator=(time_t) Breaks If Year Past 1999"
-permalink: kb/225/Q225140/
+permalink: /kb/225/Q225140/
 ---
 
 ## Q225140: FIX: COleDateTime::operator=(time_t) Breaks If Year Past 1999

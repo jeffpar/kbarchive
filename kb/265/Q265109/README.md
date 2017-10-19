@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265109: BUG: The STL list::sort() Function Doesn't Sort List of Pointers"
-permalink: kb/265/Q265109/
+permalink: /kb/265/Q265109/
 ---
 
 ## Q265109: BUG: The STL list::sort() Function Doesn't Sort List of Pointers

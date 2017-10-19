@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191546: PRB: Visual Basic Files Are Missing From Common&#92;Tools Directory"
-permalink: kb/191/Q191546/
+permalink: /kb/191/Q191546/
 ---
 
 ## Q191546: PRB: Visual Basic Files Are Missing From Common&#92;Tools Directory

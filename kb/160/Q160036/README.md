@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160036: %OS_VERSION in NetWare Logon Script Returns Incorrect Version"
-permalink: kb/160/Q160036/
+permalink: /kb/160/Q160036/
 ---
 
 ## Q160036: %OS_VERSION in NetWare Logon Script Returns Incorrect Version

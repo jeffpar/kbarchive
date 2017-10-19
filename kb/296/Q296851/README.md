@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296851: PRB: Error &quot;User Password/Validation Failed&quot;"
-permalink: kb/296/Q296851/
+permalink: /kb/296/Q296851/
 ---
 
 ## Q296851: PRB: Error &quot;User Password/Validation Failed&quot;

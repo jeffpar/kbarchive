@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159313: DOCERR: Incorrect Help Information on Number of Tables Open"
-permalink: kb/159/Q159313/
+permalink: /kb/159/Q159313/
 ---
 
 ## Q159313: DOCERR: Incorrect Help Information on Number of Tables Open

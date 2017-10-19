@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181067: WD97: Run-Time Error 5584 &quot;Too Many DDE Channels Are Open...&quot;"
-permalink: kb/181/Q181067/
+permalink: /kb/181/Q181067/
 ---
 
 ## Q181067: WD97: Run-Time Error 5584 &quot;Too Many DDE Channels Are Open...&quot;

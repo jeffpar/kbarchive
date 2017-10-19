@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168609: How to Use Display Heap (DH.EXE) Resource Kit Utility"
-permalink: kb/168/Q168609/
+permalink: /kb/168/Q168609/
 ---
 
 ## Q168609: How to Use Display Heap (DH.EXE) Resource Kit Utility

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191938: WD97: &quot;User Options&quot; File Location Path Has No Function"
-permalink: kb/191/Q191938/
+permalink: /kb/191/Q191938/
 ---
 
 ## Q191938: WD97: &quot;User Options&quot; File Location Path Has No Function

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242455: Incorrect Link in Mapping Client Certificates to User Accounts"
-permalink: kb/242/Q242455/
+permalink: /kb/242/Q242455/
 ---
 
 ## Q242455: Incorrect Link in Mapping Client Certificates to User Accounts

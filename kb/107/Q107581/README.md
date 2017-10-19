@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107581: NET USE in VM with NetWare Diskless Workstation"
-permalink: kb/107/Q107581/
+permalink: /kb/107/Q107581/
 ---
 
 ## Q107581: NET USE in VM with NetWare Diskless Workstation

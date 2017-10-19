@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165085: SNA 3.0 Setup Fails If Computer Name Starts with a Digit"
-permalink: kb/165/Q165085/
+permalink: /kb/165/Q165085/
 ---
 
 ## Q165085: SNA 3.0 Setup Fails If Computer Name Starts with a Digit

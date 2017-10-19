@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285144: Troubleshooting Microsoft Outlook Comments and Corrections"
-permalink: kb/285/Q285144/
+permalink: /kb/285/Q285144/
 ---
 
 ## Q285144: Troubleshooting Microsoft Outlook Comments and Corrections

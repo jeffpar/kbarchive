@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169175: FP: How to Create a Frameset Using the FrontPage Frames Wizard"
-permalink: kb/169/Q169175/
+permalink: /kb/169/Q169175/
 ---
 
 ## Q169175: FP: How to Create a Frameset Using the FrontPage Frames Wizard

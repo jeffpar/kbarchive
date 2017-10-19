@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155730: Objects Don't Appear When Viewed in Page on Personal Web Server"
-permalink: kb/155/Q155730/
+permalink: /kb/155/Q155730/
 ---
 
 ## Q155730: Objects Don't Appear When Viewed in Page on Personal Web Server

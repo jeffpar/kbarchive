@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214429: Stop 0xA in Netbt.sys When Querying the DNS for a NetBIOS Name"
-permalink: kb/214/Q214429/
+permalink: /kb/214/Q214429/
 ---
 
 ## Q214429: Stop 0xA in Netbt.sys When Querying the DNS for a NetBIOS Name

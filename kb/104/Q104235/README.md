@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104235: Operating the HP ScanJet IIC/P with Windows NT"
-permalink: kb/104/Q104235/
+permalink: /kb/104/Q104235/
 ---
 
 ## Q104235: Operating the HP ScanJet IIC/P with Windows NT

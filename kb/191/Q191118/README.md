@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191118: HOWTO: Create Context-Sensitive HTML Help in an MFC Application"
-permalink: kb/191/Q191118/
+permalink: /kb/191/Q191118/
 ---
 
 ## Q191118: HOWTO: Create Context-Sensitive HTML Help in an MFC Application

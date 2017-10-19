@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141830: NT Backup Cannot Back Up Microsoft Exchange Server"
-permalink: kb/141/Q141830/
+permalink: /kb/141/Q141830/
 ---
 
 ## Q141830: NT Backup Cannot Back Up Microsoft Exchange Server

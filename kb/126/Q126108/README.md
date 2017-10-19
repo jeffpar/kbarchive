@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126108: Cannot Share Program Manager Group Files"
-permalink: kb/126/Q126108/
+permalink: /kb/126/Q126108/
 ---
 
 ## Q126108: Cannot Share Program Manager Group Files

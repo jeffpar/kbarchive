@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184484: Err Msg: HTTP/1.0 403 Access Forbidden"
-permalink: kb/184/Q184484/
+permalink: /kb/184/Q184484/
 ---
 
 ## Q184484: Err Msg: HTTP/1.0 403 Access Forbidden

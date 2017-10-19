@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176876: HOWTO: Find VB32.EXE Without Searching the Hard Drive"
-permalink: kb/176/Q176876/
+permalink: /kb/176/Q176876/
 ---
 
 ## Q176876: HOWTO: Find VB32.EXE Without Searching the Hard Drive

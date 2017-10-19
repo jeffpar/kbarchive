@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249650: Error Message While Installing Year 2000 Resource CD-ROM"
-permalink: kb/249/Q249650/
+permalink: /kb/249/Q249650/
 ---
 
 ## Q249650: Error Message While Installing Year 2000 Resource CD-ROM

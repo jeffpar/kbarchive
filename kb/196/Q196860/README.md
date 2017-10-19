@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196860: WD97: Can't Rename or Delete File in Open Dialog Box (File Menu)"
-permalink: kb/196/Q196860/
+permalink: /kb/196/Q196860/
 ---
 
 ## Q196860: WD97: Can't Rename or Delete File in Open Dialog Box (File Menu)

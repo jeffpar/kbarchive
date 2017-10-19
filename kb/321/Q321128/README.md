@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321128: Streets &amp; Trips 2002: Program Prompts You to Insert Works CD-ROM"
-permalink: kb/321/Q321128/
+permalink: /kb/321/Q321128/
 ---
 
 ## Q321128: Streets &amp; Trips 2002: Program Prompts You to Insert Works CD-ROM

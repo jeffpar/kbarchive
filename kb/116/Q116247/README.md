@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116247: Computers in Docking Stations May Not Provide APM Support"
-permalink: kb/116/Q116247/
+permalink: /kb/116/Q116247/
 ---
 
 ## Q116247: Computers in Docking Stations May Not Provide APM Support

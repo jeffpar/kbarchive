@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164181: XCLN: How to Send a Form as a Text Only Message"
-permalink: kb/164/Q164181/
+permalink: /kb/164/Q164181/
 ---
 
 ## Q164181: XCLN: How to Send a Form as a Text Only Message

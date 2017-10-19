@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188689: Converting From ASCII-EBCDIC Using CPICs CMCNVI and CMCNVO"
-permalink: kb/188/Q188689/
+permalink: /kb/188/Q188689/
 ---
 
 ## Q188689: Converting From ASCII-EBCDIC Using CPICs CMCNVI and CMCNVO

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177654: Slow Network Performance Using NetBEUI Across Bridges"
-permalink: kb/177/Q177654/
+permalink: /kb/177/Q177654/
 ---
 
 ## Q177654: Slow Network Performance Using NetBEUI Across Bridges

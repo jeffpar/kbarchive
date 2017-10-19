@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224166: FP98: Script Wizard Button Disappears After Installing Internet"
-permalink: kb/224/Q224166/
+permalink: /kb/224/Q224166/
 ---
 
 ## Q224166: FP98: Script Wizard Button Disappears After Installing Internet

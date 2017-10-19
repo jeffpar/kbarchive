@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83480: Automatically Starting All Applications in a Given Group"
-permalink: kb/083/Q83480/
+permalink: /kb/083/Q83480/
 ---
 
 ## Q83480: Automatically Starting All Applications in a Given Group

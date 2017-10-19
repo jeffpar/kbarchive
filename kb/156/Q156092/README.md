@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156092: How to Make Program Manager the Shell in Windows NT 4.0"
-permalink: kb/156/Q156092/
+permalink: /kb/156/Q156092/
 ---
 
 ## Q156092: How to Make Program Manager the Shell in Windows NT 4.0

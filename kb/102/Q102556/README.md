@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102556: PC Ext: -Q4 Parameter Output Meanings"
-permalink: kb/102/Q102556/
+permalink: /kb/102/Q102556/
 ---
 
 ## Q102556: PC Ext: -Q4 Parameter Output Meanings

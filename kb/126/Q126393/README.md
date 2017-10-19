@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126393: INFO: SNA Server Configurations that Produce XID Rejections"
-permalink: kb/126/Q126393/
+permalink: /kb/126/Q126393/
 ---
 
 ## Q126393: INFO: SNA Server Configurations that Produce XID Rejections

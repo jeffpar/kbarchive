@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146749: Meeting Wizard: Planner Shows Incorrect Color"
-permalink: kb/146/Q146749/
+permalink: /kb/146/Q146749/
 ---
 
 ## Q146749: Meeting Wizard: Planner Shows Incorrect Color

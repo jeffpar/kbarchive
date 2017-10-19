@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263041: XWEB: Err. Mssg.: &quot;Internet Explorer Cannot Download...&quot;"
-permalink: kb/263/Q263041/
+permalink: /kb/263/Q263041/
 ---
 
 ## Q263041: XWEB: Err. Mssg.: &quot;Internet Explorer Cannot Download...&quot;

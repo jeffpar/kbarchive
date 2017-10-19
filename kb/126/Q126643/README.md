@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126643: PCM and PGC Cannot Connect to Servers With Long Names"
-permalink: kb/126/Q126643/
+permalink: /kb/126/Q126643/
 ---
 
 ## Q126643: PCM and PGC Cannot Connect to Servers With Long Names

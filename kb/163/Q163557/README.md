@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163557: GetLuaReturnCode Can Lead To TN3270 Service Access Violation"
-permalink: kb/163/Q163557/
+permalink: /kb/163/Q163557/
 ---
 
 ## Q163557: GetLuaReturnCode Can Lead To TN3270 Service Access Violation

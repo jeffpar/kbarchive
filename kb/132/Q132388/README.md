@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132388: Dogs: Can't Stop Dog Piano Movie After it Starts"
-permalink: kb/132/Q132388/
+permalink: /kb/132/Q132388/
 ---
 
 ## Q132388: Dogs: Can't Stop Dog Piano Movie After it Starts

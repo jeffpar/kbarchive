@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110105: How to Join Microsoft Developer Network (MSDN); CD-ROM Disk..."
-permalink: kb/110/Q110105/
+permalink: /kb/110/Q110105/
 ---
 
 ## Q110105: How to Join Microsoft Developer Network (MSDN); CD-ROM Disk...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155610: Network Neighborhood Cannot Open NFS Folders"
-permalink: kb/155/Q155610/
+permalink: /kb/155/Q155610/
 ---
 
 ## Q155610: Network Neighborhood Cannot Open NFS Folders

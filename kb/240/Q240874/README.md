@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240874: XFOR: Connecting GroupWise Systems over Exchange Server"
-permalink: kb/240/Q240874/
+permalink: /kb/240/Q240874/
 ---
 
 ## Q240874: XFOR: Connecting GroupWise Systems over Exchange Server

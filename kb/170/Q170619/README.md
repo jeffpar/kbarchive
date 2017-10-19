@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170619: Windows 95 ServiceProvider Priority Values Not Applied"
-permalink: kb/170/Q170619/
+permalink: /kb/170/Q170619/
 ---
 
 ## Q170619: Windows 95 ServiceProvider Priority Values Not Applied

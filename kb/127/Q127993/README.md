@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127993: PRB: Corrupt Binary File After Merging with SourceSafe"
-permalink: kb/127/Q127993/
+permalink: /kb/127/Q127993/
 ---
 
 ## Q127993: PRB: Corrupt Binary File After Merging with SourceSafe

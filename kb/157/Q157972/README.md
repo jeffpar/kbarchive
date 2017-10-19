@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157972: STL Sample for the basic_string::append Functions"
-permalink: kb/157/Q157972/
+permalink: /kb/157/Q157972/
 ---
 
 ## Q157972: STL Sample for the basic_string::append Functions

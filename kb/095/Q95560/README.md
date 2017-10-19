@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95560: MemMaker Converts Some Variables to Drive Letters"
-permalink: kb/095/Q95560/
+permalink: /kb/095/Q95560/
 ---
 
 ## Q95560: MemMaker Converts Some Variables to Drive Letters

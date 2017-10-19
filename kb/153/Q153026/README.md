@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153026: How To Show a ListView or TreeView Item Programmatically"
-permalink: kb/153/Q153026/
+permalink: /kb/153/Q153026/
 ---
 
 ## Q153026: How To Show a ListView or TreeView Item Programmatically

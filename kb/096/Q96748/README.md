@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96748: Detailed Description of lstrcmp and Alphabetic Characters"
-permalink: kb/096/Q96748/
+permalink: /kb/096/Q96748/
 ---
 
 ## Q96748: Detailed Description of lstrcmp and Alphabetic Characters

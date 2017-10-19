@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191701: PRB: Comments Echo to Command Window w/ SourceSafe Integration"
-permalink: kb/191/Q191701/
+permalink: /kb/191/Q191701/
 ---
 
 ## Q191701: PRB: Comments Echo to Command Window w/ SourceSafe Integration

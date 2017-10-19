@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187165: License Manager Issued to Field Does Not Reflect Name Change"
-permalink: kb/187/Q187165/
+permalink: /kb/187/Q187165/
 ---
 
 ## Q187165: License Manager Issued to Field Does Not Reflect Name Change

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123819: File Manager I/O Optimizations Slow other File Transfers"
-permalink: kb/123/Q123819/
+permalink: /kb/123/Q123819/
 ---
 
 ## Q123819: File Manager I/O Optimizations Slow other File Transfers

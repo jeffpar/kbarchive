@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86231: Creating a Page Break in Windows Write"
-permalink: kb/086/Q86231/
+permalink: /kb/086/Q86231/
 ---
 
 ## Q86231: Creating a Page Break in Windows Write

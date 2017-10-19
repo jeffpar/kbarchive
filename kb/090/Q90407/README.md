@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90407: WFWG Err Msg: EMM Exception Error #6... Old VNETBIOS.386"
-permalink: kb/090/Q90407/
+permalink: /kb/090/Q90407/
 ---
 
 ## Q90407: WFWG Err Msg: EMM Exception Error #6... Old VNETBIOS.386

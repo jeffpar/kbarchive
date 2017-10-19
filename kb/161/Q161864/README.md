@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161864: PRB: Return 0 in TextBox Valid Allows Switching Active Form"
-permalink: kb/161/Q161864/
+permalink: /kb/161/Q161864/
 ---
 
 ## Q161864: PRB: Return 0 in TextBox Valid Allows Switching Active Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103202: Hotfix for GPF or TCPIP_NODE Service Ring 3 Trap"
-permalink: kb/103/Q103202/
+permalink: /kb/103/Q103202/
 ---
 
 ## Q103202: Hotfix for GPF or TCPIP_NODE Service Ring 3 Trap

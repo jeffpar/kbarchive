@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157003: PC Adm: Microsoft Mail Administrator Program and VDM"
-permalink: kb/157/Q157003/
+permalink: /kb/157/Q157003/
 ---
 
 ## Q157003: PC Adm: Microsoft Mail Administrator Program and VDM

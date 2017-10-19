@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185329: How to Enable or Disable Network Bindings"
-permalink: kb/185/Q185329/
+permalink: /kb/185/Q185329/
 ---
 
 ## Q185329: How to Enable or Disable Network Bindings

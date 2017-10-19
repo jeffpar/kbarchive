@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142910: WinCim 2.0.1 Err Msg: Winsock Error: Host Not Found"
-permalink: kb/142/Q142910/
+permalink: /kb/142/Q142910/
 ---
 
 ## Q142910: WinCim 2.0.1 Err Msg: Winsock Error: Host Not Found

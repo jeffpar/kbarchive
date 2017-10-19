@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163726: STOP 0x0000001E with DPT PM2124 SCSI Adapter and Volume Set"
-permalink: kb/163/Q163726/
+permalink: /kb/163/Q163726/
 ---
 
 ## Q163726: STOP 0x0000001E with DPT PM2124 SCSI Adapter and Volume Set

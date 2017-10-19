@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235943: Doc Err: Updated Version of Content Analyzer Is Available"
-permalink: kb/235/Q235943/
+permalink: /kb/235/Q235943/
 ---
 
 ## Q235943: Doc Err: Updated Version of Content Analyzer Is Available

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251362: FIX: Suspend and Resume Thread Hangs Visual C++ Debugger"
-permalink: kb/251/Q251362/
+permalink: /kb/251/Q251362/
 ---
 
 ## Q251362: FIX: Suspend and Resume Thread Hangs Visual C++ Debugger

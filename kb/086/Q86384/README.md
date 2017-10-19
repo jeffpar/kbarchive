@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86384: PC WSPlus: Importing Calendar File Overwrites Notes"
-permalink: kb/086/Q86384/
+permalink: /kb/086/Q86384/
 ---
 
 ## Q86384: PC WSPlus: Importing Calendar File Overwrites Notes

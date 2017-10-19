@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143054: Err Msg: RUNDLL32.EXE Has Caused an Error in COMMCTRL.DLL"
-permalink: kb/143/Q143054/
+permalink: /kb/143/Q143054/
 ---
 
 ## Q143054: Err Msg: RUNDLL32.EXE Has Caused an Error in COMMCTRL.DLL

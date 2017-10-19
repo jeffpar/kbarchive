@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109850: DIR Command from Windows for Workgroups Returns Incomplete"
-permalink: kb/109/Q109850/
+permalink: /kb/109/Q109850/
 ---
 
 ## Q109850: DIR Command from Windows for Workgroups Returns Incomplete

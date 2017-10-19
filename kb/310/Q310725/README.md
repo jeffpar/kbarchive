@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310725: HOW TO: Run the IIS Lockdown Wizard Unattended in IIS"
-permalink: kb/310/Q310725/
+permalink: /kb/310/Q310725/
 ---
 
 ## Q310725: HOW TO: Run the IIS Lockdown Wizard Unattended in IIS

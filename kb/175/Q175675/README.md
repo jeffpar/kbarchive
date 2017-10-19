@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175675: Repeatedly Disconnected From ISP After a Set Amount of Time"
-permalink: kb/175/Q175675/
+permalink: /kb/175/Q175675/
 ---
 
 ## Q175675: Repeatedly Disconnected From ISP After a Set Amount of Time

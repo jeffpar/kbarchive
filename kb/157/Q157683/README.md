@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157683: XCLN: Forms Designed with Many Fields Might not Show Them All"
-permalink: kb/157/Q157683/
+permalink: /kb/157/Q157683/
 ---
 
 ## Q157683: XCLN: Forms Designed with Many Fields Might not Show Them All

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155569: MS Mail 3.5 Mail Service Manager Setup Does Not Work"
-permalink: kb/155/Q155569/
+permalink: /kb/155/Q155569/
 ---
 
 ## Q155569: MS Mail 3.5 Mail Service Manager Setup Does Not Work

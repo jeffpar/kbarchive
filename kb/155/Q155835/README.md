@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155835: PRB: ActiveX Controls That Do Not Work Correctly in VFP"
-permalink: kb/155/Q155835/
+permalink: /kb/155/Q155835/
 ---
 
 ## Q155835: PRB: ActiveX Controls That Do Not Work Correctly in VFP

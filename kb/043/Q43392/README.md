@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43392: INFO: Clarification of the &quot;g&quot; Format Specifier for printf()"
-permalink: kb/043/Q43392/
+permalink: /kb/043/Q43392/
 ---
 
 ## Q43392: INFO: Clarification of the &quot;g&quot; Format Specifier for printf()

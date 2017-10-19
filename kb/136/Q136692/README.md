@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136692: General Functionality of the Setup Wizard"
-permalink: kb/136/Q136692/
+permalink: /kb/136/Q136692/
 ---
 
 ## Q136692: General Functionality of the Setup Wizard

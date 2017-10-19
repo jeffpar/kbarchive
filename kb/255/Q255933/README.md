@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255933: SMS: User Must Log on for Win 9x to Run Mandatory Assignment"
-permalink: kb/255/Q255933/
+permalink: /kb/255/Q255933/
 ---
 
 ## Q255933: SMS: User Must Log on for Win 9x to Run Mandatory Assignment

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92447: Windows 3.1 and Serial Communications"
-permalink: kb/092/Q92447/
+permalink: /kb/092/Q92447/
 ---
 
 ## Q92447: Windows 3.1 and Serial Communications

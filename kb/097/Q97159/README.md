@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97159: READKEY() Doesn't Work with CTRL+PAGE UP &amp; CTRL+PAGE DOWN"
-permalink: kb/097/Q97159/
+permalink: /kb/097/Q97159/
 ---
 
 ## Q97159: READKEY() Doesn't Work with CTRL+PAGE UP &amp; CTRL+PAGE DOWN

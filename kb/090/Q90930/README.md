@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90930: Shared CD-ROM or Floppy Drives Must Contain a Disk At Startup"
-permalink: kb/090/Q90930/
+permalink: /kb/090/Q90930/
 ---
 
 ## Q90930: Shared CD-ROM or Floppy Drives Must Contain a Disk At Startup

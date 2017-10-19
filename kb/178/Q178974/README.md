@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178974: Encarta: Images Lose Quality when Copied and Pasted"
-permalink: kb/178/Q178974/
+permalink: /kb/178/Q178974/
 ---
 
 ## Q178974: Encarta: Images Lose Quality when Copied and Pasted

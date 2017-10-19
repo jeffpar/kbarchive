@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150224: FIX: ListView &amp; TreeView Not Visible if DragMode is Automatic"
-permalink: kb/150/Q150224/
+permalink: /kb/150/Q150224/
 ---
 
 ## Q150224: FIX: ListView &amp; TreeView Not Visible if DragMode is Automatic

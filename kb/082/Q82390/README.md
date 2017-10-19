@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82390: File Manager Fails Root Directory Searches with DEC Pathworks"
-permalink: kb/082/Q82390/
+permalink: /kb/082/Q82390/
 ---
 
 ## Q82390: File Manager Fails Root Directory Searches with DEC Pathworks

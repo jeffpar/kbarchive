@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265208: Determining LU Pool Usage Across Servers"
-permalink: kb/265/Q265208/
+permalink: /kb/265/Q265208/
 ---
 
 ## Q265208: Determining LU Pool Usage Across Servers

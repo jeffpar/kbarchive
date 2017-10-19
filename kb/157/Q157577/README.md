@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157577: Soccer: Troubleshooting Display Problems"
-permalink: kb/157/Q157577/
+permalink: /kb/157/Q157577/
 ---
 
 ## Q157577: Soccer: Troubleshooting Display Problems

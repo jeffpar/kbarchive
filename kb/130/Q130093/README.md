@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130093: Err Msg: Incorrect Response from the Network"
-permalink: kb/130/Q130093/
+permalink: /kb/130/Q130093/
 ---
 
 ## Q130093: Err Msg: Incorrect Response from the Network

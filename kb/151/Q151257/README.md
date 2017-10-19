@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151257: How to Modify a Report Preview Window Property"
-permalink: kb/151/Q151257/
+permalink: /kb/151/Q151257/
 ---
 
 ## Q151257: How to Modify a Report Preview Window Property

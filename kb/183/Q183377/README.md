@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183377: Official MS HTML Help Authoring Kit Comments and Corrections"
-permalink: kb/183/Q183377/
+permalink: /kb/183/Q183377/
 ---
 
 ## Q183377: Official MS HTML Help Authoring Kit Comments and Corrections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216738: SMS: WMI Terms and Concepts"
-permalink: kb/216/Q216738/
+permalink: /kb/216/Q216738/
 ---
 
 ## Q216738: SMS: WMI Terms and Concepts

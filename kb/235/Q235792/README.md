@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235792: SMSINST: Long Filename Is Truncated with Version Checking"
-permalink: kb/235/Q235792/
+permalink: /kb/235/Q235792/
 ---
 
 ## Q235792: SMSINST: Long Filename Is Truncated with Version Checking

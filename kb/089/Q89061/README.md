@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89061: FoxBASE+/386 Requirements"
-permalink: kb/089/Q89061/
+permalink: /kb/089/Q89061/
 ---
 
 ## Q89061: FoxBASE+/386 Requirements

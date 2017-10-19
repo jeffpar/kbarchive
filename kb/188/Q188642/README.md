@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188642: XADM: Monitoring Client Actions from the Administration Program"
-permalink: kb/188/Q188642/
+permalink: /kb/188/Q188642/
 ---
 
 ## Q188642: XADM: Monitoring Client Actions from the Administration Program

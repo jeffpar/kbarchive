@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103323: PATCH: Setupwiz.exe Updated VFP for Windows 3.0b Setup Wizard"
-permalink: kb/103/Q103323/
+permalink: /kb/103/Q103323/
 ---
 
 ## Q103323: PATCH: Setupwiz.exe Updated VFP for Windows 3.0b Setup Wizard

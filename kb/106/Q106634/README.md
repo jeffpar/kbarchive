@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106634: FIX: Incorrect Path Causes Setup Error"
-permalink: kb/106/Q106634/
+permalink: /kb/106/Q106634/
 ---
 
 ## Q106634: FIX: Incorrect Path Causes Setup Error

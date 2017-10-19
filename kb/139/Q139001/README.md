@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139001: PRB: Visual C++ Integration Does Not Recognize .CLW Files"
-permalink: kb/139/Q139001/
+permalink: /kb/139/Q139001/
 ---
 
 ## Q139001: PRB: Visual C++ Integration Does Not Recognize .CLW Files

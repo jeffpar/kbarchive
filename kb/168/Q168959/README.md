@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168959: Puzzle Collection: Description of Installation Types"
-permalink: kb/168/Q168959/
+permalink: /kb/168/Q168959/
 ---
 
 ## Q168959: Puzzle Collection: Description of Installation Types

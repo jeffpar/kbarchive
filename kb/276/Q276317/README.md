@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276317: Microsoft Classic Board Games: Background Music Is Not Played"
-permalink: kb/276/Q276317/
+permalink: /kb/276/Q276317/
 ---
 
 ## Q276317: Microsoft Classic Board Games: Background Music Is Not Played

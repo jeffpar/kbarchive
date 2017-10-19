@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134790: How to Add Code to Wizard-Generated Command Buttons"
-permalink: kb/134/Q134790/
+permalink: /kb/134/Q134790/
 ---
 
 ## Q134790: How to Add Code to Wizard-Generated Command Buttons

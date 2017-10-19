@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86054: How to Determine Amount of Extended Memory with DEBUG"
-permalink: kb/086/Q86054/
+permalink: /kb/086/Q86054/
 ---
 
 ## Q86054: How to Determine Amount of Extended Memory with DEBUG

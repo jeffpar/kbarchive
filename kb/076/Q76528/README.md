@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76528: Tabs in Write Not Working Properly for 9-Pin Printer Drivers"
-permalink: kb/076/Q76528/
+permalink: /kb/076/Q76528/
 ---
 
 ## Q76528: Tabs in Write Not Working Properly for 9-Pin Printer Drivers

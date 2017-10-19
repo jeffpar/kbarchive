@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213027: SMSINST: SMS Installer Is Unable to Display a Wait Message"
-permalink: kb/213/Q213027/
+permalink: /kb/213/Q213027/
 ---
 
 ## Q213027: SMSINST: SMS Installer Is Unable to Display a Wait Message

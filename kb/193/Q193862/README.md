@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193862: XIMS: Messages Sit in Inbound Awaiting Delivery Queue"
-permalink: kb/193/Q193862/
+permalink: /kb/193/Q193862/
 ---
 
 ## Q193862: XIMS: Messages Sit in Inbound Awaiting Delivery Queue

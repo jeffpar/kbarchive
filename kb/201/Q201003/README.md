@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201003: RRAS Services Do Not Start Correctly with Kixtart"
-permalink: kb/201/Q201003/
+permalink: /kb/201/Q201003/
 ---
 
 ## Q201003: RRAS Services Do Not Start Correctly with Kixtart

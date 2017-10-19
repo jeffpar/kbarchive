@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201122: XFOR: Troubleshooting Directory Synchronization with Lightspeed"
-permalink: kb/201/Q201122/
+permalink: /kb/201/Q201122/
 ---
 
 ## Q201122: XFOR: Troubleshooting Directory Synchronization with Lightspeed

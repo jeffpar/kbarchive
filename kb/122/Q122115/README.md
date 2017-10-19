@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122115: MSB: Theme Song Lyrics"
-permalink: kb/122/Q122115/
+permalink: /kb/122/Q122115/
 ---
 
 ## Q122115: MSB: Theme Song Lyrics

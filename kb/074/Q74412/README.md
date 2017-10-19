@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74412: Steady Timer Messages in a Dynamic-Link Library (DLL)"
-permalink: kb/074/Q74412/
+permalink: /kb/074/Q74412/
 ---
 
 ## Q74412: Steady Timer Messages in a Dynamic-Link Library (DLL)

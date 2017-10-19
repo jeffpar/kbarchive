@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167214: WD97: Heading Styles Missing From Style List"
-permalink: kb/167/Q167214/
+permalink: /kb/167/Q167214/
 ---
 
 ## Q167214: WD97: Heading Styles Missing From Style List

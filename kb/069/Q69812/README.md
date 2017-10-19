@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69812: ASD: How Flight Timing Gate Scoring Works"
-permalink: kb/069/Q69812/
+permalink: /kb/069/Q69812/
 ---
 
 ## Q69812: ASD: How Flight Timing Gate Scoring Works

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32857: BACKUP /A Prompts for Last Disk"
-permalink: kb/032/Q32857/
+permalink: /kb/032/Q32857/
 ---
 
 ## Q32857: BACKUP /A Prompts for Last Disk

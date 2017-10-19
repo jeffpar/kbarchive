@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110818: Mac Adm: Failure to Insert User into Group with Long Name"
-permalink: kb/110/Q110818/
+permalink: /kb/110/Q110818/
 ---
 
 ## Q110818: Mac Adm: Failure to Insert User into Group with Long Name

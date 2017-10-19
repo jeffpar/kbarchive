@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164862: XCON: MTA Raises Exception Error on X.25 Connections"
-permalink: kb/164/Q164862/
+permalink: /kb/164/Q164862/
 ---
 
 ## Q164862: XCON: MTA Raises Exception Error on X.25 Connections

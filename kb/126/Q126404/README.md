@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126404: How to Make Auto-Increment Keys in Wizard-Generated Screens"
-permalink: kb/126/Q126404/
+permalink: /kb/126/Q126404/
 ---
 
 ## Q126404: How to Make Auto-Increment Keys in Wizard-Generated Screens

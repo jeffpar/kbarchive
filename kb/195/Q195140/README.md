@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195140: WD97: Border Lost from Linked Microsoft Excel Spreadsheet"
-permalink: kb/195/Q195140/
+permalink: /kb/195/Q195140/
 ---
 
 ## Q195140: WD97: Border Lost from Linked Microsoft Excel Spreadsheet

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269105: SMS Provider May Not Recognize DMTF Dates"
-permalink: kb/269/Q269105/
+permalink: /kb/269/Q269105/
 ---
 
 ## Q269105: SMS Provider May Not Recognize DMTF Dates

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124416: Multimedia: No Sound with Soundscape Card"
-permalink: kb/124/Q124416/
+permalink: /kb/124/Q124416/
 ---
 
 ## Q124416: Multimedia: No Sound with Soundscape Card

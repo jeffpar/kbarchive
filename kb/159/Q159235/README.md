@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159235: APM Drive Spin Down Supported on IDE Devices Only"
-permalink: kb/159/Q159235/
+permalink: /kb/159/Q159235/
 ---
 
 ## Q159235: APM Drive Spin Down Supported on IDE Devices Only

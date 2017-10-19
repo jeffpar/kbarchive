@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137918: WD97: &quot;Disk Is full...&quot; or &quot;ScanDisk Cannot Check the Drive...&quot;"
-permalink: kb/137/Q137918/
+permalink: /kb/137/Q137918/
 ---
 
 ## Q137918: WD97: &quot;Disk Is full...&quot; or &quot;ScanDisk Cannot Check the Drive...&quot;

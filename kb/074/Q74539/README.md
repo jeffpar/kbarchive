@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74539: HOWTO: Draw the Icon for a Minimized Application"
-permalink: kb/074/Q74539/
+permalink: /kb/074/Q74539/
 ---
 
 ## Q74539: HOWTO: Draw the Icon for a Minimized Application

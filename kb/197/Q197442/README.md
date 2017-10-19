@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197442: WD97: Hidden Drop-Down List Box in Tools Customize Dialog Box"
-permalink: kb/197/Q197442/
+permalink: /kb/197/Q197442/
 ---
 
 ## Q197442: WD97: Hidden Drop-Down List Box in Tools Customize Dialog Box

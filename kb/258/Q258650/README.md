@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258650: Baseball 2001: Marker Is Not Displayed When You Hit a Fly Ball"
-permalink: kb/258/Q258650/
+permalink: /kb/258/Q258650/
 ---
 
 ## Q258650: Baseball 2001: Marker Is Not Displayed When You Hit a Fly Ball

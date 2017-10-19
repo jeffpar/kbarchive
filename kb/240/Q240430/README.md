@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240430: XADM: Recovering a Deleted Protocol Object"
-permalink: kb/240/Q240430/
+permalink: /kb/240/Q240430/
 ---
 
 ## Q240430: XADM: Recovering a Deleted Protocol Object

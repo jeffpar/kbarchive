@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131157: Err Msg Installing LaserWriter Pro 810: Could Not Create..."
-permalink: kb/131/Q131157/
+permalink: /kb/131/Q131157/
 ---
 
 ## Q131157: Err Msg Installing LaserWriter Pro 810: Could Not Create...

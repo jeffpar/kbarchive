@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134374: Misleading Message for Properties in Favorite Places"
-permalink: kb/134/Q134374/
+permalink: /kb/134/Q134374/
 ---
 
 ## Q134374: Misleading Message for Properties in Favorite Places

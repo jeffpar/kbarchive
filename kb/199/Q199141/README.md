@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199141: XCON: Creating Connector Disks from Select CD Subscription"
-permalink: kb/199/Q199141/
+permalink: /kb/199/Q199141/
 ---
 
 ## Q199141: XCON: Creating Connector Disks from Select CD Subscription

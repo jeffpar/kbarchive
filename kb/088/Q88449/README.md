@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88449: Distance Figures in Post Shot Dialog Are Not Correct"
-permalink: kb/088/Q88449/
+permalink: /kb/088/Q88449/
 ---
 
 ## Q88449: Distance Figures in Post Shot Dialog Are Not Correct

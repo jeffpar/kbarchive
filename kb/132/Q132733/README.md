@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132733: Upgrading to Windows 95 Setup Questions and Answers"
-permalink: kb/132/Q132733/
+permalink: /kb/132/Q132733/
 ---
 
 ## Q132733: Upgrading to Windows 95 Setup Questions and Answers

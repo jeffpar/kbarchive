@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82415: Banyan VINES Overwrites CMOS Settings"
-permalink: kb/082/Q82415/
+permalink: /kb/082/Q82415/
 ---
 
 ## Q82415: Banyan VINES Overwrites CMOS Settings

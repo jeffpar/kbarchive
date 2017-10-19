@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239082: XIMS: IMAP4 Client Hangs Attempting to Append Message Using SSL"
-permalink: kb/239/Q239082/
+permalink: /kb/239/Q239082/
 ---
 
 ## Q239082: XIMS: IMAP4 Client Hangs Attempting to Append Message Using SSL

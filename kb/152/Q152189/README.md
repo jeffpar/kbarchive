@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152189: MSB Ocean: Overview of Magic School Bus Explores the Ocean"
-permalink: kb/152/Q152189/
+permalink: /kb/152/Q152189/
 ---
 
 ## Q152189: MSB Ocean: Overview of Magic School Bus Explores the Ocean

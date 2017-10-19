@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58289: Graphics Pasted Too Small into Write"
-permalink: kb/058/Q58289/
+permalink: /kb/058/Q58289/
 ---
 
 ## Q58289: Graphics Pasted Too Small into Write

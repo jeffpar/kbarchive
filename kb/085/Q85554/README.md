@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85554: Loss of Environment Space in Windows 3.1 with Norton Desktop"
-permalink: kb/085/Q85554/
+permalink: /kb/085/Q85554/
 ---
 
 ## Q85554: Loss of Environment Space in Windows 3.1 with Norton Desktop

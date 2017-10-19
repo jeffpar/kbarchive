@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271253: Microsoft Reader Error Message: Error 0x8004005 (-2147467529)"
-permalink: kb/271/Q271253/
+permalink: /kb/271/Q271253/
 ---
 
 ## Q271253: Microsoft Reader Error Message: Error 0x8004005 (-2147467529)

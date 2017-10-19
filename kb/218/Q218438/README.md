@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218438: COPY Command Doesn't Work Correctly with More Than 255 Files"
-permalink: kb/218/Q218438/
+permalink: /kb/218/Q218438/
 ---
 
 ## Q218438: COPY Command Doesn't Work Correctly with More Than 255 Files

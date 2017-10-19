@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194208: Unable to Install GSNW on Windows NT Server 4.0"
-permalink: kb/194/Q194208/
+permalink: /kb/194/Q194208/
 ---
 
 ## Q194208: Unable to Install GSNW on Windows NT Server 4.0

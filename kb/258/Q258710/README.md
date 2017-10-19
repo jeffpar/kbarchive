@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258710: World Atlas Err Msg: ...Invalid Page Fault in Kernel32.dll..."
-permalink: kb/258/Q258710/
+permalink: /kb/258/Q258710/
 ---
 
 ## Q258710: World Atlas Err Msg: ...Invalid Page Fault in Kernel32.dll...

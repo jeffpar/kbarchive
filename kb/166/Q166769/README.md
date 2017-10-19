@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166769: PRB: MFC ActiveX Document Servers Require Compound File Support"
-permalink: kb/166/Q166769/
+permalink: /kb/166/Q166769/
 ---
 
 ## Q166769: PRB: MFC ActiveX Document Servers Require Compound File Support

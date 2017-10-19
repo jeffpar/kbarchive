@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190166: PRB: PDW Does Not Include .ASP and .HTM Files for Standard Setup"
-permalink: kb/190/Q190166/
+permalink: /kb/190/Q190166/
 ---
 
 ## Q190166: PRB: PDW Does Not Include .ASP and .HTM Files for Standard Setup

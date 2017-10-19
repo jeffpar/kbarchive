@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102106: PROFS: Using the IBM SENDFILE Command with PROFS Gateway"
-permalink: kb/102/Q102106/
+permalink: /kb/102/Q102106/
 ---
 
 ## Q102106: PROFS: Using the IBM SENDFILE Command with PROFS Gateway

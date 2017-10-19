@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141156: STOP Msg: 0x0000000A in SFMATALK.SYS After Receiving ATP Packet"
-permalink: kb/141/Q141156/
+permalink: /kb/141/Q141156/
 ---
 
 ## Q141156: STOP Msg: 0x0000000A in SFMATALK.SYS After Receiving ATP Packet

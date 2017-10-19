@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137910: Mac Srv: Site Name Appears in Services List"
-permalink: kb/137/Q137910/
+permalink: /kb/137/Q137910/
 ---
 
 ## Q137910: Mac Srv: Site Name Appears in Services List

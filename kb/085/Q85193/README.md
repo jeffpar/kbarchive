@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85193: PC Win: Err Msg: System Error, Application Terminated"
-permalink: kb/085/Q85193/
+permalink: /kb/085/Q85193/
 ---
 
 ## Q85193: PC Win: Err Msg: System Error, Application Terminated

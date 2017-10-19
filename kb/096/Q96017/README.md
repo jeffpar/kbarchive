@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96017: PROFS: Receive Command Drops the &quot;&#36;&quot; on Download"
-permalink: kb/096/Q96017/
+permalink: /kb/096/Q96017/
 ---
 
 ## Q96017: PROFS: Receive Command Drops the &quot;&#36;&quot; on Download

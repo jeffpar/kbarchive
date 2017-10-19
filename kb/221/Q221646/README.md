@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221646: FIX: ERR Files Contain Carriage Return and No Linefeed"
-permalink: kb/221/Q221646/
+permalink: /kb/221/Q221646/
 ---
 
 ## Q221646: FIX: ERR Files Contain Carriage Return and No Linefeed

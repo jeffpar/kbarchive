@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150550: HOWTO: Obtain Windows 3.1/Windows 95 Btrieve ODBC Interface"
-permalink: kb/150/Q150550/
+permalink: /kb/150/Q150550/
 ---
 
 ## Q150550: HOWTO: Obtain Windows 3.1/Windows 95 Btrieve ODBC Interface

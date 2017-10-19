@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q30580: HOWTO: Declare an Array of Pointers to Functions"
-permalink: kb/030/Q30580/
+permalink: /kb/030/Q30580/
 ---
 
 ## Q30580: HOWTO: Declare an Array of Pointers to Functions

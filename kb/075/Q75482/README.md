@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75482: Setup Repeatedly Prompts for Same Disk"
-permalink: kb/075/Q75482/
+permalink: /kb/075/Q75482/
 ---
 
 ## Q75482: Setup Repeatedly Prompts for Same Disk

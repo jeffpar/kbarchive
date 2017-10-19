@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195837: PRB: Error Returned When Attempting to Modify JET Database"
-permalink: kb/195/Q195837/
+permalink: /kb/195/Q195837/
 ---
 
 ## Q195837: PRB: Error Returned When Attempting to Modify JET Database

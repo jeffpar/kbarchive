@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66052: INFO: fflush() &amp; flushall() Do Not Write Data Directly to Disk"
-permalink: kb/066/Q66052/
+permalink: /kb/066/Q66052/
 ---
 
 ## Q66052: INFO: fflush() &amp; flushall() Do Not Write Data Directly to Disk

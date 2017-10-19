@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169770: XADM: How To Move Tracking Logs and Directory"
-permalink: kb/169/Q169770/
+permalink: /kb/169/Q169770/
 ---
 
 ## Q169770: XADM: How To Move Tracking Logs and Directory

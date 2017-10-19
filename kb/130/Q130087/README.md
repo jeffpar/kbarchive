@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130087: How to Troubleshoot Windows NT Boot Floppy Disk Problems"
-permalink: kb/130/Q130087/
+permalink: /kb/130/Q130087/
 ---
 
 ## Q130087: How to Troubleshoot Windows NT Boot Floppy Disk Problems

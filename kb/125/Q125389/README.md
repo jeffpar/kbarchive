@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125389: How to Simulate INT 15 Rather Than Calling EISA BIOS Directly"
-permalink: kb/125/Q125389/
+permalink: /kb/125/Q125389/
 ---
 
 ## Q125389: How to Simulate INT 15 Rather Than Calling EISA BIOS Directly

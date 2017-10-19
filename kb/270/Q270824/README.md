@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270824: ELL: Black Background, Unable to Read Text in Text Boxes"
-permalink: kb/270/Q270824/
+permalink: /kb/270/Q270824/
 ---
 
 ## Q270824: ELL: Black Background, Unable to Read Text in Text Boxes

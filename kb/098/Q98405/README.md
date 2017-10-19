@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98405: MemMaker Damages Related Files with Incorrect Path"
-permalink: kb/098/Q98405/
+permalink: /kb/098/Q98405/
 ---
 
 ## Q98405: MemMaker Damages Related Files with Incorrect Path

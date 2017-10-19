@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188772: XADM: Error for Incorrect Journal Recipient Is Informational"
-permalink: kb/188/Q188772/
+permalink: /kb/188/Q188772/
 ---
 
 ## Q188772: XADM: Error for Incorrect Journal Recipient Is Informational

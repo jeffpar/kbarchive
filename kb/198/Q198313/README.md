@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198313: WD97: Can't Cancel Options of &quot;Cannot Find Data Source&quot; Error"
-permalink: kb/198/Q198313/
+permalink: /kb/198/Q198313/
 ---
 
 ## Q198313: WD97: Can't Cancel Options of &quot;Cannot Find Data Source&quot; Error

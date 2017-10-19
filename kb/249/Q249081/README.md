@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249081: Password Synchronization Triggers Occurrences of Event 1314"
-permalink: kb/249/Q249081/
+permalink: /kb/249/Q249081/
 ---
 
 ## Q249081: Password Synchronization Triggers Occurrences of Event 1314

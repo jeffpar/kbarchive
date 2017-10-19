@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99470: Troubleshooting CD Audio Problems in Windows 3.1"
-permalink: kb/099/Q99470/
+permalink: /kb/099/Q99470/
 ---
 
 ## Q99470: Troubleshooting CD Audio Problems in Windows 3.1

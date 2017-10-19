@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39807: Error Code: 0006 in Flight Simulator Version 3.00 and 4.00"
-permalink: kb/039/Q39807/
+permalink: /kb/039/Q39807/
 ---
 
 ## Q39807: Error Code: 0006 in Flight Simulator Version 3.00 and 4.00

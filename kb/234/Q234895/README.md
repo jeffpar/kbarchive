@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234895: Microsoft Office 2000 Professional At a Glance Comments and Corr"
-permalink: kb/234/Q234895/
+permalink: /kb/234/Q234895/
 ---
 
 ## Q234895: Microsoft Office 2000 Professional At a Glance Comments and Corr

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169114: XADM: Find Service Pack and Account of Shut Down Server"
-permalink: kb/169/Q169114/
+permalink: /kb/169/Q169114/
 ---
 
 ## Q169114: XADM: Find Service Pack and Account of Shut Down Server

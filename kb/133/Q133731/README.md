@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133731: Error Message: Cannot Run This Version of Windows..."
-permalink: kb/133/Q133731/
+permalink: /kb/133/Q133731/
 ---
 
 ## Q133731: Error Message: Cannot Run This Version of Windows...

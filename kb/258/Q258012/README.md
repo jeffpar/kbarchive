@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258012: FIX: Endless Reboot Downloading Internet Package Created by PDW"
-permalink: kb/258/Q258012/
+permalink: /kb/258/Q258012/
 ---
 
 ## Q258012: FIX: Endless Reboot Downloading Internet Package Created by PDW

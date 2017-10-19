@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139908: Creating a SMSSAFE.TMP To Bypass Specific Hardware Detection"
-permalink: kb/139/Q139908/
+permalink: /kb/139/Q139908/
 ---
 
 ## Q139908: Creating a SMSSAFE.TMP To Bypass Specific Hardware Detection

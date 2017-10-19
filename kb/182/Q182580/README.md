@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182580: HOWTO: Set Up a Quick Menu for an ActiveDoc App"
-permalink: kb/182/Q182580/
+permalink: /kb/182/Q182580/
 ---
 
 ## Q182580: HOWTO: Set Up a Quick Menu for an ActiveDoc App

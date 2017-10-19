@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93107: File Manager Err Msg: Cannot Print Multiple Files"
-permalink: kb/093/Q93107/
+permalink: /kb/093/Q93107/
 ---
 
 ## Q93107: File Manager Err Msg: Cannot Print Multiple Files

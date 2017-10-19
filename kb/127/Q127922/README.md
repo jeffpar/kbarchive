@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127922: Setting BDC to be WINS Proxy Agent May Cause Broadcast Storms"
-permalink: kb/127/Q127922/
+permalink: /kb/127/Q127922/
 ---
 
 ## Q127922: Setting BDC to be WINS Proxy Agent May Cause Broadcast Storms

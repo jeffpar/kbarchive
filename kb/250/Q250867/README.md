@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250867: Cannot Install SP 6/6a with High Encryption Internet Explorer"
-permalink: kb/250/Q250867/
+permalink: /kb/250/Q250867/
 ---
 
 ## Q250867: Cannot Install SP 6/6a with High Encryption Internet Explorer

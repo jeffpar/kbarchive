@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196854: WD97: Mark All Button Unavailable in Mark Index Entry Dialog Box"
-permalink: kb/196/Q196854/
+permalink: /kb/196/Q196854/
 ---
 
 ## Q196854: WD97: Mark All Button Unavailable in Mark Index Entry Dialog Box

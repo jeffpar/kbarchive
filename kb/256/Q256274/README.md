@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256274: Index Server Searches Return IDQ Code Instead of Search Results"
-permalink: kb/256/Q256274/
+permalink: /kb/256/Q256274/
 ---
 
 ## Q256274: Index Server Searches Return IDQ Code Instead of Search Results

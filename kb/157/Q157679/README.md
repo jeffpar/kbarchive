@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157679: SMS: Logon Servers Inventoried Under Wrong Domain"
-permalink: kb/157/Q157679/
+permalink: /kb/157/Q157679/
 ---
 
 ## Q157679: SMS: Logon Servers Inventoried Under Wrong Domain

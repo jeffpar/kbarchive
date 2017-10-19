@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299304: XFOR: Random Inbound Messages Appear with Empty Fields"
-permalink: kb/299/Q299304/
+permalink: /kb/299/Q299304/
 ---
 
 ## Q299304: XFOR: Random Inbound Messages Appear with Empty Fields

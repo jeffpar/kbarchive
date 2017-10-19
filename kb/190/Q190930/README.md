@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190930: UDP Broadcast Forwarding by Cisco's IP Helper"
-permalink: kb/190/Q190930/
+permalink: /kb/190/Q190930/
 ---
 
 ## Q190930: UDP Broadcast Forwarding by Cisco's IP Helper

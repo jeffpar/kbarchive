@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120413: Microsoft Mail for PC Networks Version 3.2a Update"
-permalink: kb/120/Q120413/
+permalink: /kb/120/Q120413/
 ---
 
 ## Q120413: Microsoft Mail for PC Networks Version 3.2a Update

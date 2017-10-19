@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176737: XADM: Key Management Server Fails to Start and Logs Event 5060"
-permalink: kb/176/Q176737/
+permalink: /kb/176/Q176737/
 ---
 
 ## Q176737: XADM: Key Management Server Fails to Start and Logs Event 5060

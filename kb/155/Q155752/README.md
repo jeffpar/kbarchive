@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155752: Video Problems with #9 FX Vision 330 PCI Video Card on PowerPC"
-permalink: kb/155/Q155752/
+permalink: /kb/155/Q155752/
 ---
 
 ## Q155752: Video Problems with #9 FX Vision 330 PCI Video Card on PowerPC

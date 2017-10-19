@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175734: Frequently Asked Questions About Using Chat 2.0 on MSN"
-permalink: kb/175/Q175734/
+permalink: /kb/175/Q175734/
 ---
 
 ## Q175734: Frequently Asked Questions About Using Chat 2.0 on MSN

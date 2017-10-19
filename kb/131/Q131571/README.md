@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131571: Microsoft Fax Attachment Not Associated"
-permalink: kb/131/Q131571/
+permalink: /kb/131/Q131571/
 ---
 
 ## Q131571: Microsoft Fax Attachment Not Associated

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170517: Cannot Log on Using IPX After Installing SP3 on Windows NT 4.0"
-permalink: kb/170/Q170517/
+permalink: /kb/170/Q170517/
 ---
 
 ## Q170517: Cannot Log on Using IPX After Installing SP3 on Windows NT 4.0

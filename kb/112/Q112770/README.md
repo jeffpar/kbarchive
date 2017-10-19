@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112770: VB3 PRB: Making .EXE Error: Wrong Version of Runtime DLL"
-permalink: kb/112/Q112770/
+permalink: /kb/112/Q112770/
 ---
 
 ## Q112770: VB3 PRB: Making .EXE Error: Wrong Version of Runtime DLL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200034: HOWTO: Debug a Visual Basic Out-of-Process Server with Visual C+"
-permalink: kb/200/Q200034/
+permalink: /kb/200/Q200034/
 ---
 
 ## Q200034: HOWTO: Debug a Visual Basic Out-of-Process Server with Visual C+

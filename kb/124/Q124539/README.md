@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124539: How to Delete Multiple Shortcuts Simultaneously"
-permalink: kb/124/Q124539/
+permalink: /kb/124/Q124539/
 ---
 
 ## Q124539: How to Delete Multiple Shortcuts Simultaneously

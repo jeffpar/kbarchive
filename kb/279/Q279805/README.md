@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279805: XFOR: Incorrect Time Is Displayed in Read Receipt from GroupWise"
-permalink: kb/279/Q279805/
+permalink: /kb/279/Q279805/
 ---
 
 ## Q279805: XFOR: Incorrect Time Is Displayed in Read Receipt from GroupWise

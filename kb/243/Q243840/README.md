@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243840: Winlogon.exe Causes Performance Issues with Many Profiles"
-permalink: kb/243/Q243840/
+permalink: /kb/243/Q243840/
 ---
 
 ## Q243840: Winlogon.exe Causes Performance Issues with Many Profiles

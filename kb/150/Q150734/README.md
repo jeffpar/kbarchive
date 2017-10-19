@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150734: List of Bugs Fixed in Windows NT 4.0 and TSE SP4 (Part 1)"
-permalink: kb/150/Q150734/
+permalink: /kb/150/Q150734/
 ---
 
 ## Q150734: List of Bugs Fixed in Windows NT 4.0 and TSE SP4 (Part 1)

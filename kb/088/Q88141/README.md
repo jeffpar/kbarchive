@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88141: Setup Toolkit .INF File Format and Disk Labels"
-permalink: kb/088/Q88141/
+permalink: /kb/088/Q88141/
 ---
 
 ## Q88141: Setup Toolkit .INF File Format and Disk Labels

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245014: Err Msg: STOP 0xC0000263 Driver Entry Point Not Found."
-permalink: kb/245/Q245014/
+permalink: /kb/245/Q245014/
 ---
 
 ## Q245014: Err Msg: STOP 0xC0000263 Driver Entry Point Not Found.

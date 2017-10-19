@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121086: Obtaining the NetShare Utility for Workgroup Add-On for MS-DOS"
-permalink: kb/121/Q121086/
+permalink: /kb/121/Q121086/
 ---
 
 ## Q121086: Obtaining the NetShare Utility for Workgroup Add-On for MS-DOS

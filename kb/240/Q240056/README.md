@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240056: SMS: Forced Sites Registry Key Entry Causes Multiple Errors"
-permalink: kb/240/Q240056/
+permalink: /kb/240/Q240056/
 ---
 
 ## Q240056: SMS: Forced Sites Registry Key Entry Causes Multiple Errors

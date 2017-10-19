@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259688: XADM: How to Use Exmerge to Extract Data from a Database"
-permalink: kb/259/Q259688/
+permalink: /kb/259/Q259688/
 ---
 
 ## Q259688: XADM: How to Use Exmerge to Extract Data from a Database

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184051: XFOR: Queued Message Waiting for ETRN Never Expires"
-permalink: kb/184/Q184051/
+permalink: /kb/184/Q184051/
 ---
 
 ## Q184051: XFOR: Queued Message Waiting for ETRN Never Expires

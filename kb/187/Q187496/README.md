@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187496: Unix Browsers Cannot Use the HTMLA Backup Configuration Option"
-permalink: kb/187/Q187496/
+permalink: /kb/187/Q187496/
 ---
 
 ## Q187496: Unix Browsers Cannot Use the HTMLA Backup Configuration Option

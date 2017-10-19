@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103219: Testing to See if a Drive is a CD-ROM"
-permalink: kb/103/Q103219/
+permalink: /kb/103/Q103219/
 ---
 
 ## Q103219: Testing to See if a Drive is a CD-ROM

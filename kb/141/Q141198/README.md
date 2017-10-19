@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141198: Bookshelf 1994: Problems Printing Maps to the HP DeskJet 1200c"
-permalink: kb/141/Q141198/
+permalink: /kb/141/Q141198/
 ---
 
 ## Q141198: Bookshelf 1994: Problems Printing Maps to the HP DeskJet 1200c

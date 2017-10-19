@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165460: SNA Server 3.0 Install Path Must Be Eight Characters or Less"
-permalink: kb/165/Q165460/
+permalink: /kb/165/Q165460/
 ---
 
 ## Q165460: SNA Server 3.0 Install Path Must Be Eight Characters or Less

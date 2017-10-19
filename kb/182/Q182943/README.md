@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182943: BUG: &quot;Key&quot; Argument of SaveToolBar &amp; RestoreToolBar Doesn't Work"
-permalink: kb/182/Q182943/
+permalink: /kb/182/Q182943/
 ---
 
 ## Q182943: BUG: &quot;Key&quot; Argument of SaveToolBar &amp; RestoreToolBar Doesn't Work

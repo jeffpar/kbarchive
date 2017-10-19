@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93033: Cinemania: ListMaker Fails to Print Last Page"
-permalink: kb/093/Q93033/
+permalink: /kb/093/Q93033/
 ---
 
 ## Q93033: Cinemania: ListMaker Fails to Print Last Page

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216513: XCLN: Message Body is Blank Using Encryption &amp; Digital Sig."
-permalink: kb/216/Q216513/
+permalink: /kb/216/Q216513/
 ---
 
 ## Q216513: XCLN: Message Body is Blank Using Encryption &amp; Digital Sig.

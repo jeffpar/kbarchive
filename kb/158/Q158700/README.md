@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158700: WD97: AutoRecover Doesn't Create Recovered Document"
-permalink: kb/158/Q158700/
+permalink: /kb/158/Q158700/
 ---
 
 ## Q158700: WD97: AutoRecover Doesn't Create Recovered Document

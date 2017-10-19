@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302570: HOW TO: Configure Custom Error Messaging for Your Web Site"
-permalink: kb/302/Q302570/
+permalink: /kb/302/Q302570/
 ---
 
 ## Q302570: HOW TO: Configure Custom Error Messaging for Your Web Site

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166408: Multimedia: Does Not Dial AOL's Phone Number"
-permalink: kb/166/Q166408/
+permalink: /kb/166/Q166408/
 ---
 
 ## Q166408: Multimedia: Does Not Dial AOL's Phone Number

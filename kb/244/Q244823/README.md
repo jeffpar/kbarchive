@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244823: BUG: Numeric Hostnames Use Winsock Control Resolve Improperly"
-permalink: kb/244/Q244823/
+permalink: /kb/244/Q244823/
 ---
 
 ## Q244823: BUG: Numeric Hostnames Use Winsock Control Resolve Improperly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195931: Security Descriptor Size Increases Each Time Permissions Set"
-permalink: kb/195/Q195931/
+permalink: /kb/195/Q195931/
 ---
 
 ## Q195931: Security Descriptor Size Increases Each Time Permissions Set

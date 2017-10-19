@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304623: How to Move a Qwest.net Web Site To An MSN Communites Web Site"
-permalink: kb/304/Q304623/
+permalink: /kb/304/Q304623/
 ---
 
 ## Q304623: How to Move a Qwest.net Web Site To An MSN Communites Web Site

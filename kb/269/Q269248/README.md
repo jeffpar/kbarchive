@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269248: XADM: Exchange Installation Stops with Error ID C103798a"
-permalink: kb/269/Q269248/
+permalink: /kb/269/Q269248/
 ---
 
 ## Q269248: XADM: Exchange Installation Stops with Error ID C103798a

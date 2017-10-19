@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198075: PRB: Installing VB App Causes Error Determining Free Disk Space"
-permalink: kb/198/Q198075/
+permalink: /kb/198/Q198075/
 ---
 
 ## Q198075: PRB: Installing VB App Causes Error Determining Free Disk Space

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92868: FIX: CodeView 4.0 and 4.01 Cannot Debug COM Files"
-permalink: kb/092/Q92868/
+permalink: /kb/092/Q92868/
 ---
 
 ## Q92868: FIX: CodeView 4.0 and 4.01 Cannot Debug COM Files

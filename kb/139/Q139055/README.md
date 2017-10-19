@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139055: Problem Changing Computer Name Without Changing DNS Name"
-permalink: kb/139/Q139055/
+permalink: /kb/139/Q139055/
 ---
 
 ## Q139055: Problem Changing Computer Name Without Changing DNS Name

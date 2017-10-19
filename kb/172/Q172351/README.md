@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172351: Option to Change Windows Password Without Password Caching"
-permalink: kb/172/Q172351/
+permalink: /kb/172/Q172351/
 ---
 
 ## Q172351: Option to Change Windows Password Without Password Caching

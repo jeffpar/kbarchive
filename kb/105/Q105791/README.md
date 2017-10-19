@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105791: MS-DOS Setup Appears to Corrupt or Damage Windows .INI Files"
-permalink: kb/105/Q105791/
+permalink: /kb/105/Q105791/
 ---
 
 ## Q105791: MS-DOS Setup Appears to Corrupt or Damage Windows .INI Files

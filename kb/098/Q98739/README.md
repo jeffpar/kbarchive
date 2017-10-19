@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98739: The Window Sound System Autodemo"
-permalink: kb/098/Q98739/
+permalink: /kb/098/Q98739/
 ---
 
 ## Q98739: The Window Sound System Autodemo

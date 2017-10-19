@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151628: TN3270E May Get Unexpected Application Exception Violations"
-permalink: kb/151/Q151628/
+permalink: /kb/151/Q151628/
 ---
 
 ## Q151628: TN3270E May Get Unexpected Application Exception Violations

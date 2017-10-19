@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202046: SMS: Remote Control Supports Microsoft TCP/IP Stack Only"
-permalink: kb/202/Q202046/
+permalink: /kb/202/Q202046/
 ---
 
 ## Q202046: SMS: Remote Control Supports Microsoft TCP/IP Stack Only

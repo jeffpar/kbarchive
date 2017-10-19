@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117714: Windows NT Reboots Constantly w/ AMI BIOS"
-permalink: kb/117/Q117714/
+permalink: /kb/117/Q117714/
 ---
 
 ## Q117714: Windows NT Reboots Constantly w/ AMI BIOS

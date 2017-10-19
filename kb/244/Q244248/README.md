@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244248: AOE: The Rise of Rome: List of Campaigns and Scenarios"
-permalink: kb/244/Q244248/
+permalink: /kb/244/Q244248/
 ---
 
 ## Q244248: AOE: The Rise of Rome: List of Campaigns and Scenarios

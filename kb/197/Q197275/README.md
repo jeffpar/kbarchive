@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197275: FIX: _urlcombobox Class Closes Any Current Work Area"
-permalink: kb/197/Q197275/
+permalink: /kb/197/Q197275/
 ---
 
 ## Q197275: FIX: _urlcombobox Class Closes Any Current Work Area

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193930: XFOR: Exchange and Internet Mail Client Co-existence"
-permalink: kb/193/Q193930/
+permalink: /kb/193/Q193930/
 ---
 
 ## Q193930: XFOR: Exchange and Internet Mail Client Co-existence

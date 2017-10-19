@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189850: INFO: Using WinInet APIs Asynchronously Within Visual Basic"
-permalink: kb/189/Q189850/
+permalink: /kb/189/Q189850/
 ---
 
 ## Q189850: INFO: Using WinInet APIs Asynchronously Within Visual Basic

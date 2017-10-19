@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105046: HOWTO: How to Quit Windows from Within a FoxPro Application"
-permalink: kb/105/Q105046/
+permalink: /kb/105/Q105046/
 ---
 
 ## Q105046: HOWTO: How to Quit Windows from Within a FoxPro Application

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300507: Passport Encryption Key Sent Through Express Mail"
-permalink: kb/300/Q300507/
+permalink: /kb/300/Q300507/
 ---
 
 ## Q300507: Passport Encryption Key Sent Through Express Mail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323470: HOW TO: Create a Secure WebDAV Publishing Directory"
-permalink: kb/323/Q323470/
+permalink: /kb/323/Q323470/
 ---
 
 ## Q323470: HOW TO: Create a Secure WebDAV Publishing Directory

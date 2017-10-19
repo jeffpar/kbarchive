@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77404: PRB: SETUP.EXE Fails to Replace OEM Drivers"
-permalink: kb/077/Q77404/
+permalink: /kb/077/Q77404/
 ---
 
 ## Q77404: PRB: SETUP.EXE Fails to Replace OEM Drivers

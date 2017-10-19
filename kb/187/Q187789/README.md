@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187789: Step by Step: Novell NetWare to Windows NT Migration"
-permalink: kb/187/Q187789/
+permalink: /kb/187/Q187789/
 ---
 
 ## Q187789: Step by Step: Novell NetWare to Windows NT Migration

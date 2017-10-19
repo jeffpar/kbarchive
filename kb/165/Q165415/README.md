@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165415: Duplicate Windows Explorer File Menu Commands for Fonts Folder"
-permalink: kb/165/Q165415/
+permalink: /kb/165/Q165415/
 ---
 
 ## Q165415: Duplicate Windows Explorer File Menu Commands for Fonts Folder

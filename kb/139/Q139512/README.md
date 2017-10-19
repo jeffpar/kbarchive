@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139512: SNA Server MS-DOS Router Session Limit Increased to 10"
-permalink: kb/139/Q139512/
+permalink: /kb/139/Q139512/
 ---
 
 ## Q139512: SNA Server MS-DOS Router Session Limit Increased to 10

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199809: INFO: How VB Interprets Numbers, Constants and Numeric Types"
-permalink: kb/199/Q199809/
+permalink: /kb/199/Q199809/
 ---
 
 ## Q199809: INFO: How VB Interprets Numbers, Constants and Numeric Types

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259408: SMS: Threshold Settings for Sitestat Lost When CAP Unavailable"
-permalink: kb/259/Q259408/
+permalink: /kb/259/Q259408/
 ---
 
 ## Q259408: SMS: Threshold Settings for Sitestat Lost When CAP Unavailable

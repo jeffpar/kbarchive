@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149981: Baseball Daily No Longer Offered"
-permalink: kb/149/Q149981/
+permalink: /kb/149/Q149981/
 ---
 
 ## Q149981: Baseball Daily No Longer Offered

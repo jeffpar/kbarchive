@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245223: XFOR: Filter Rules for Lotus Notes and Exchange Server Dirsync"
-permalink: kb/245/Q245223/
+permalink: /kb/245/Q245223/
 ---
 
 ## Q245223: XFOR: Filter Rules for Lotus Notes and Exchange Server Dirsync

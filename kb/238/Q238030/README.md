@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238030: HOWTO: Create HTML Help for MFC Application on WinCE"
-permalink: kb/238/Q238030/
+permalink: /kb/238/Q238030/
 ---
 
 ## Q238030: HOWTO: Create HTML Help for MFC Application on WinCE

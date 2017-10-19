@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103179: ADT/ODE: Help Topic Does Not Exist Err Invoking Custom Help File"
-permalink: kb/103/Q103179/
+permalink: /kb/103/Q103179/
 ---
 
 ## Q103179: ADT/ODE: Help Topic Does Not Exist Err Invoking Custom Help File

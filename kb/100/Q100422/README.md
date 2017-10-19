@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100422: Duplex on Kyocera EcoSys a-Si FS-1500A Requires ROM Upgrade"
-permalink: kb/100/Q100422/
+permalink: /kb/100/Q100422/
 ---
 
 ## Q100422: Duplex on Kyocera EcoSys a-Si FS-1500A Requires ROM Upgrade

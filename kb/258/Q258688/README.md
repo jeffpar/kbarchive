@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258688: WebDAV Doesn't Work with Site Server P&amp;M Forms or Cookie Auth."
-permalink: kb/258/Q258688/
+permalink: /kb/258/Q258688/
 ---
 
 ## Q258688: WebDAV Doesn't Work with Site Server P&amp;M Forms or Cookie Auth.

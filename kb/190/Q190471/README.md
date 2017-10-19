@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190471: BUG: CTime::Format Returns Wrong Date If the Date Field Is NULL"
-permalink: kb/190/Q190471/
+permalink: /kb/190/Q190471/
 ---
 
 ## Q190471: BUG: CTime::Format Returns Wrong Date If the Date Field Is NULL

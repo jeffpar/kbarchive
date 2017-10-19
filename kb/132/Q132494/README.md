@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132494: PRB: Memory Leaks in SQL Srv Driver During Connect/Disconnect"
-permalink: kb/132/Q132494/
+permalink: /kb/132/Q132494/
 ---
 
 ## Q132494: PRB: Memory Leaks in SQL Srv Driver During Connect/Disconnect

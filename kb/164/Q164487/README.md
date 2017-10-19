@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164487: Briefcase May Take a Long Time to Update"
-permalink: kb/164/Q164487/
+permalink: /kb/164/Q164487/
 ---
 
 ## Q164487: Briefcase May Take a Long Time to Update

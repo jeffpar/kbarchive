@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186507: Terminal Server Commands: CNVRTUC"
-permalink: kb/186/Q186507/
+permalink: /kb/186/Q186507/
 ---
 
 ## Q186507: Terminal Server Commands: CNVRTUC

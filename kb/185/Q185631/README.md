@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185631: Connectivity Problems Using Olicom ATM Adapter"
-permalink: kb/185/Q185631/
+permalink: /kb/185/Q185631/
 ---
 
 ## Q185631: Connectivity Problems Using Olicom ATM Adapter

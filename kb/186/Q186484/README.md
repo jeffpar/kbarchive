@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186484: Netware Functionality in Terminal Server"
-permalink: kb/186/Q186484/
+permalink: /kb/186/Q186484/
 ---
 
 ## Q186484: Netware Functionality in Terminal Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171330: Explanation of Rtripinf.bat and Ipxinf.bat"
-permalink: kb/171/Q171330/
+permalink: /kb/171/Q171330/
 ---
 
 ## Q171330: Explanation of Rtripinf.bat and Ipxinf.bat

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112492: Schubert: Text Cut Off with ATI Mach 32 Large Fonts"
-permalink: kb/112/Q112492/
+permalink: /kb/112/Q112492/
 ---
 
 ## Q112492: Schubert: Text Cut Off with ATI Mach 32 Large Fonts

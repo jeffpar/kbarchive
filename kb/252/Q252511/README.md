@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252511: Statically Configured WINS Client Switches Between Servers"
-permalink: kb/252/Q252511/
+permalink: /kb/252/Q252511/
 ---
 
 ## Q252511: Statically Configured WINS Client Switches Between Servers

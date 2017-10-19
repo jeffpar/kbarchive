@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167707: PRB: Visual Basic Replaces Missing Controls with PictureBoxes"
-permalink: kb/167/Q167707/
+permalink: /kb/167/Q167707/
 ---
 
 ## Q167707: PRB: Visual Basic Replaces Missing Controls with PictureBoxes

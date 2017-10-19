@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180907: XFOR: Unable to Send Bitmap in Body of Message"
-permalink: kb/180/Q180907/
+permalink: /kb/180/Q180907/
 ---
 
 ## Q180907: XFOR: Unable to Send Bitmap in Body of Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141505: HOWTO: Use LoadResData with Binary Data"
-permalink: kb/141/Q141505/
+permalink: /kb/141/Q141505/
 ---
 
 ## Q141505: HOWTO: Use LoadResData with Binary Data

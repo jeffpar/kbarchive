@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174214: PRB: Form with Menu Displays Border w/ Borderstyle Set to None"
-permalink: kb/174/Q174214/
+permalink: /kb/174/Q174214/
 ---
 
 ## Q174214: PRB: Form with Menu Displays Border w/ Borderstyle Set to None

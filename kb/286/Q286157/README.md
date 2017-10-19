@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286157: Blank Page May Be Printed at the Start of Host Print Jobs"
-permalink: kb/286/Q286157/
+permalink: /kb/286/Q286157/
 ---
 
 ## Q286157: Blank Page May Be Printed at the Start of Host Print Jobs

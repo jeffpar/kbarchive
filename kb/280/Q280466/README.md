@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280466: Programs Using LDAP May Generate Access Violation Error Messages"
-permalink: kb/280/Q280466/
+permalink: /kb/280/Q280466/
 ---
 
 ## Q280466: Programs Using LDAP May Generate Access Violation Error Messages

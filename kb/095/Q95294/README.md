@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95294: Creating Modifiable Cursor in FoxPro with SQL SELECT"
-permalink: kb/095/Q95294/
+permalink: /kb/095/Q95294/
 ---
 
 ## Q95294: Creating Modifiable Cursor in FoxPro with SQL SELECT

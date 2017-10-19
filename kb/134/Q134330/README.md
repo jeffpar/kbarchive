@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134330: Logon Script Window Switches to Full Screen Under Windows 95"
-permalink: kb/134/Q134330/
+permalink: /kb/134/Q134330/
 ---
 
 ## Q134330: Logon Script Window Switches to Full Screen Under Windows 95

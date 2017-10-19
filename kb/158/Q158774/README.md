@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158774: Sage.dat Files Do Not Match When Compared After Backup"
-permalink: kb/158/Q158774/
+permalink: /kb/158/Q158774/
 ---
 
 ## Q158774: Sage.dat Files Do Not Match When Compared After Backup

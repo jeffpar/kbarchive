@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285104: PRB: SSARC.exe with the -X Switch Does Not Recurse Through Delet"
-permalink: kb/285/Q285104/
+permalink: /kb/285/Q285104/
 ---
 
 ## Q285104: PRB: SSARC.exe with the -X Switch Does Not Recurse Through Delet

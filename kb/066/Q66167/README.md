@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66167: Setup Needs the Following Disk: Entertainment Pack Disk 1"
-permalink: kb/066/Q66167/
+permalink: /kb/066/Q66167/
 ---
 
 ## Q66167: Setup Needs the Following Disk: Entertainment Pack Disk 1

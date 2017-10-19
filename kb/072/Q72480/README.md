@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72480: FIX: MASM 5.1/5.1a .OBJ May Cause LINK to Generate L2013 Error"
-permalink: kb/072/Q72480/
+permalink: /kb/072/Q72480/
 ---
 
 ## Q72480: FIX: MASM 5.1/5.1a .OBJ May Cause LINK to Generate L2013 Error

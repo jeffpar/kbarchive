@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140058: How To Prevent Auditable Activities When Security Log Is Full"
-permalink: kb/140/Q140058/
+permalink: /kb/140/Q140058/
 ---
 
 ## Q140058: How To Prevent Auditable Activities When Security Log Is Full

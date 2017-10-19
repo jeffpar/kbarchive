@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199695: XCLN: Outlook &amp; Exchange Downloads Outdated GAL from MSMail"
-permalink: kb/199/Q199695/
+permalink: /kb/199/Q199695/
 ---
 
 ## Q199695: XCLN: Outlook &amp; Exchange Downloads Outdated GAL from MSMail

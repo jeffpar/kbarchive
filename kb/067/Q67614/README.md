@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67614: PWB Hyperlink in PWB.HLP is Inconsistent in Version 1.1"
-permalink: kb/067/Q67614/
+permalink: /kb/067/Q67614/
 ---
 
 ## Q67614: PWB Hyperlink in PWB.HLP is Inconsistent in Version 1.1

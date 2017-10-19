@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155724: Energy Star Compliance Feature Unavailable in Windows NT 4.0"
-permalink: kb/155/Q155724/
+permalink: /kb/155/Q155724/
 ---
 
 ## Q155724: Energy Star Compliance Feature Unavailable in Windows NT 4.0

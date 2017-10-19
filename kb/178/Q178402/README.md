@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178402: XCLN: Determining Whether Outlook 8.03 is Exportable or NA Only"
-permalink: kb/178/Q178402/
+permalink: /kb/178/Q178402/
 ---
 
 ## Q178402: XCLN: Determining Whether Outlook 8.03 is Exportable or NA Only

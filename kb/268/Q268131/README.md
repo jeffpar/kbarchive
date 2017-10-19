@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268131: XADM: Store Uses Wrong Language Delivering Quota Warning to PF"
-permalink: kb/268/Q268131/
+permalink: /kb/268/Q268131/
 ---
 
 ## Q268131: XADM: Store Uses Wrong Language Delivering Quota Warning to PF

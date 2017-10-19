@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136988: Bookshelf 1995: Some Animations Do Not Have Audio"
-permalink: kb/136/Q136988/
+permalink: /kb/136/Q136988/
 ---
 
 ## Q136988: Bookshelf 1995: Some Animations Do Not Have Audio

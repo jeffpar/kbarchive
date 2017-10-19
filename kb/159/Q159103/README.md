@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159103: Certain PC Card Modems May not be Detected in WinNT 4.0"
-permalink: kb/159/Q159103/
+permalink: /kb/159/Q159103/
 ---
 
 ## Q159103: Certain PC Card Modems May not be Detected in WinNT 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60089: Using DEBUG to Start a Low-Level Format"
-permalink: kb/060/Q60089/
+permalink: /kb/060/Q60089/
 ---
 
 ## Q60089: Using DEBUG to Start a Low-Level Format

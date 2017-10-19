@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137333: DOC: How to Use the PX_Blob Function"
-permalink: kb/137/Q137333/
+permalink: /kb/137/Q137333/
 ---
 
 ## Q137333: DOC: How to Use the PX_Blob Function

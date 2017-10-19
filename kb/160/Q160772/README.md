@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160772: PRB: &quot;File does not exist&quot; Using FoxTools Functions"
-permalink: kb/160/Q160772/
+permalink: /kb/160/Q160772/
 ---
 
 ## Q160772: PRB: &quot;File does not exist&quot; Using FoxTools Functions

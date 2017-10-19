@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191693: BUG: Ambiguous Name Detection for Private Functions Named &quot;Main&quot;"
-permalink: kb/191/Q191693/
+permalink: /kb/191/Q191693/
 ---
 
 ## Q191693: BUG: Ambiguous Name Detection for Private Functions Named &quot;Main&quot;

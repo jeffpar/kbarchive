@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190038: BUG: Windowless OptionButton Events Not in Correct Order"
-permalink: kb/190/Q190038/
+permalink: /kb/190/Q190038/
 ---
 
 ## Q190038: BUG: Windowless OptionButton Events Not in Correct Order

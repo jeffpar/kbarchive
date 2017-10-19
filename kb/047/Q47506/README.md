@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47506: Mac Wkst: Address Mail and Notifier Window Keyboard Shortcuts"
-permalink: kb/047/Q47506/
+permalink: /kb/047/Q47506/
 ---
 
 ## Q47506: Mac Wkst: Address Mail and Notifier Window Keyboard Shortcuts

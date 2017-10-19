@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92766: ROM BIOS Shadowing Not an Advantage with Windows NT"
-permalink: kb/092/Q92766/
+permalink: /kb/092/Q92766/
 ---
 
 ## Q92766: ROM BIOS Shadowing Not an Advantage with Windows NT

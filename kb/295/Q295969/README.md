@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295969: XADM: The Information Store Service Is Caught in Deadlock"
-permalink: kb/295/Q295969/
+permalink: /kb/295/Q295969/
 ---
 
 ## Q295969: XADM: The Information Store Service Is Caught in Deadlock

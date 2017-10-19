@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135922: Windows NT Registry Parameters for WINS"
-permalink: kb/135/Q135922/
+permalink: /kb/135/Q135922/
 ---
 
 ## Q135922: Windows NT Registry Parameters for WINS

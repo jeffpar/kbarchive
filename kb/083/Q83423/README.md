@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83423: Windows File Manager Loses Disk Menu Commands with OS/2"
-permalink: kb/083/Q83423/
+permalink: /kb/083/Q83423/
 ---
 
 ## Q83423: Windows File Manager Loses Disk Menu Commands with OS/2

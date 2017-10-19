@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202006: SMS: Delete Special Uses Many Locks"
-permalink: kb/202/Q202006/
+permalink: /kb/202/Q202006/
 ---
 
 ## Q202006: SMS: Delete Special Uses Many Locks

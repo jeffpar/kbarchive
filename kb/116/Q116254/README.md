@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116254: System File Changes Installing Xircom CE10 Ethernet Adapter"
-permalink: kb/116/Q116254/
+permalink: /kb/116/Q116254/
 ---
 
 ## Q116254: System File Changes Installing Xircom CE10 Ethernet Adapter

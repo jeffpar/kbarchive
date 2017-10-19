@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123249: After Running ATI Mach32 Setup, System Uses Safe Mode Startup"
-permalink: kb/123/Q123249/
+permalink: /kb/123/Q123249/
 ---
 
 ## Q123249: After Running ATI Mach32 Setup, System Uses Safe Mode Startup

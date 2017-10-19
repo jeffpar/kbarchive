@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173241: Update to Windows for Workgroups TCP/IP for Out-of-Band Issue"
-permalink: kb/173/Q173241/
+permalink: /kb/173/Q173241/
 ---
 
 ## Q173241: Update to Windows for Workgroups TCP/IP for Out-of-Band Issue

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220021: FIX: CHtmlView Does Not Repaint Correctly in AppWizard MDI APP"
-permalink: kb/220/Q220021/
+permalink: /kb/220/Q220021/
 ---
 
 ## Q220021: FIX: CHtmlView Does Not Repaint Correctly in AppWizard MDI APP

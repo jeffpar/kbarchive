@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90332: Cannot Change Order of First Print Job in WFWG"
-permalink: kb/090/Q90332/
+permalink: /kb/090/Q90332/
 ---
 
 ## Q90332: Cannot Change Order of First Print Job in WFWG

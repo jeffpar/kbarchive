@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104119: Colors Are Strange or Text Is Hard to Read"
-permalink: kb/104/Q104119/
+permalink: /kb/104/Q104119/
 ---
 
 ## Q104119: Colors Are Strange or Text Is Hard to Read

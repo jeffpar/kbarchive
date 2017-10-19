@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100704: SMTP: Err Msg: SMTP_recv:protocol error"
-permalink: kb/100/Q100704/
+permalink: /kb/100/Q100704/
 ---
 
 ## Q100704: SMTP: Err Msg: SMTP_recv:protocol error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187139: Difficult to Determine Who Is Connected to a Terminal Server"
-permalink: kb/187/Q187139/
+permalink: /kb/187/Q187139/
 ---
 
 ## Q187139: Difficult to Determine Who Is Connected to a Terminal Server

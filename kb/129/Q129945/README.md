@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129945: PRB: hCtl May Be Invalidated by Visual Basic"
-permalink: kb/129/Q129945/
+permalink: /kb/129/Q129945/
 ---
 
 ## Q129945: PRB: hCtl May Be Invalidated by Visual Basic

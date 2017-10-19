@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179075: Flight Simulator: Computer Hangs when Using Virtual Pilot Pro"
-permalink: kb/179/Q179075/
+permalink: /kb/179/Q179075/
 ---
 
 ## Q179075: Flight Simulator: Computer Hangs when Using Virtual Pilot Pro

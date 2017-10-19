@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85315: Norton Desktop 2.0 Adds Options to Windows 3.1 File Manager"
-permalink: kb/085/Q85315/
+permalink: /kb/085/Q85315/
 ---
 
 ## Q85315: Norton Desktop 2.0 Adds Options to Windows 3.1 File Manager

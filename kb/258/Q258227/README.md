@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258227: SMS: Apostrophe in User Name or Group Name Causes SQL Errors"
-permalink: kb/258/Q258227/
+permalink: /kb/258/Q258227/
 ---
 
 ## Q258227: SMS: Apostrophe in User Name or Group Name Causes SQL Errors

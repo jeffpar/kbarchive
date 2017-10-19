@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59709: Cutting Large Image in Real Mode Windows 3.0 Paintbrush"
-permalink: kb/059/Q59709/
+permalink: /kb/059/Q59709/
 ---
 
 ## Q59709: Cutting Large Image in Real Mode Windows 3.0 Paintbrush

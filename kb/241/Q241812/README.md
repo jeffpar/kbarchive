@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241812: DUN Clients Cannot Obtain Access to the LAN"
-permalink: kb/241/Q241812/
+permalink: /kb/241/Q241812/
 ---
 
 ## Q241812: DUN Clients Cannot Obtain Access to the LAN

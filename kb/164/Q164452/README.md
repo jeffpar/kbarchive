@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164452: Err Msg: Network Device Type Is Incorrect"
-permalink: kb/164/Q164452/
+permalink: /kb/164/Q164452/
 ---
 
 ## Q164452: Err Msg: Network Device Type Is Incorrect

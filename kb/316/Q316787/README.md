@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316787: Invokable TP Registry Locations That Tpsetup.ex Creates"
-permalink: kb/316/Q316787/
+permalink: /kb/316/Q316787/
 ---
 
 ## Q316787: Invokable TP Registry Locations That Tpsetup.ex Creates

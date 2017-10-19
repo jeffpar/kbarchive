@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103854: PROFS: Maximum Mailbag Size Reads 00000000 on Host Access"
-permalink: kb/103/Q103854/
+permalink: /kb/103/Q103854/
 ---
 
 ## Q103854: PROFS: Maximum Mailbag Size Reads 00000000 on Host Access

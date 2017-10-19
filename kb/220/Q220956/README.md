@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220956: Err Msg: Cannot Find 'C:&#92;Program' or One of Its Components"
-permalink: kb/220/Q220956/
+permalink: /kb/220/Q220956/
 ---
 
 ## Q220956: Err Msg: Cannot Find 'C:&#92;Program' or One of Its Components

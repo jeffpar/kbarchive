@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252689: XCON: Extended Characters in Attachment Names Are Mishandled"
-permalink: kb/252/Q252689/
+permalink: /kb/252/Q252689/
 ---
 
 ## Q252689: XCON: Extended Characters in Attachment Names Are Mishandled

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198609: FIX: Write Statement Prints Double-Quote(&quot;)"
-permalink: kb/198/Q198609/
+permalink: /kb/198/Q198609/
 ---
 
 ## Q198609: FIX: Write Statement Prints Double-Quote(&quot;)

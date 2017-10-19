@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119053: MCI: Invalid Address Causes Delivery Failure to All Users"
-permalink: kb/119/Q119053/
+permalink: /kb/119/Q119053/
 ---
 
 ## Q119053: MCI: Invalid Address Causes Delivery Failure to All Users

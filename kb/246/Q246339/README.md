@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246339: XADM: Host Address in Admin.exe Indicates Blank IP Addresss"
-permalink: kb/246/Q246339/
+permalink: /kb/246/Q246339/
 ---
 
 ## Q246339: XADM: Host Address in Admin.exe Indicates Blank IP Addresss

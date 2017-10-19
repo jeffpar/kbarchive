@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112843: WFWG 3.11 Disk 1 Directory Listing (5.25 Inch, 1.2 MB)"
-permalink: kb/112/Q112843/
+permalink: /kb/112/Q112843/
 ---
 
 ## Q112843: WFWG 3.11 Disk 1 Directory Listing (5.25 Inch, 1.2 MB)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245031: Use a Script to Change Registry Permissions from Command Prompt."
-permalink: kb/245/Q245031/
+permalink: /kb/245/Q245031/
 ---
 
 ## Q245031: Use a Script to Change Registry Permissions from Command Prompt.

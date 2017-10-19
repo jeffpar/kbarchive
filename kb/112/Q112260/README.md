@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112260: PC WRmt: Several Minutes to Time Out Without Modem Attached"
-permalink: kb/112/Q112260/
+permalink: /kb/112/Q112260/
 ---
 
 ## Q112260: PC WRmt: Several Minutes to Time Out Without Modem Attached

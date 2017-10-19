@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321262: How to Upgrade Previous Versions of SNA Server to HIS 2000"
-permalink: kb/321/Q321262/
+permalink: /kb/321/Q321262/
 ---
 
 ## Q321262: How to Upgrade Previous Versions of SNA Server to HIS 2000

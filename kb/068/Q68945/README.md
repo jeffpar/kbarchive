@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68945: FIX: DWORD Local Variables Use Wrong Offset in MASM"
-permalink: kb/068/Q68945/
+permalink: /kb/068/Q68945/
 ---
 
 ## Q68945: FIX: DWORD Local Variables Use Wrong Offset in MASM

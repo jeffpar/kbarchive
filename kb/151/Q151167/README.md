@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151167: BUG: LNK2001 Error for Static Member in Class Template"
-permalink: kb/151/Q151167/
+permalink: /kb/151/Q151167/
 ---
 
 ## Q151167: BUG: LNK2001 Error for Static Member in Class Template

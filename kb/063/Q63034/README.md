@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63034: Windows 3.0 and the NEC Multispeed 80286"
-permalink: kb/063/Q63034/
+permalink: /kb/063/Q63034/
 ---
 
 ## Q63034: Windows 3.0 and the NEC Multispeed 80286

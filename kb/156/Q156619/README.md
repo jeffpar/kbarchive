@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156619: STL Sample for the min_element Function"
-permalink: kb/156/Q156619/
+permalink: /kb/156/Q156619/
 ---
 
 ## Q156619: STL Sample for the min_element Function

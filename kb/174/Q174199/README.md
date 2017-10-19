@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174199: XFOR: How to Change the NNTP Port"
-permalink: kb/174/Q174199/
+permalink: /kb/174/Q174199/
 ---
 
 ## Q174199: XFOR: How to Change the NNTP Port

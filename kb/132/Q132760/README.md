@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132760: Skewing Filled Rectangle in Paint Causes Confusing Image"
-permalink: kb/132/Q132760/
+permalink: /kb/132/Q132760/
 ---
 
 ## Q132760: Skewing Filled Rectangle in Paint Causes Confusing Image

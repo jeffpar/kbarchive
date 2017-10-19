@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196747: Org Chart Fails to Open When Called from Office Application"
-permalink: kb/196/Q196747/
+permalink: /kb/196/Q196747/
 ---
 
 ## Q196747: Org Chart Fails to Open When Called from Office Application

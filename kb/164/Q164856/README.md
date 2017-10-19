@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164856: XCON: MTA Fails to Pick Up DN of Servers with Similar Site Names"
-permalink: kb/164/Q164856/
+permalink: /kb/164/Q164856/
 ---
 
 ## Q164856: XCON: MTA Fails to Pick Up DN of Servers with Similar Site Names

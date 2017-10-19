@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244370: Mastering eCommerce Dev.: Business to Consumer Corrections"
-permalink: kb/244/Q244370/
+permalink: /kb/244/Q244370/
 ---
 
 ## Q244370: Mastering eCommerce Dev.: Business to Consumer Corrections

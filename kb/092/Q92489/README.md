@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92489: FIX: CodeView Quick Watch of Variable Name Gives CAN0017 Error"
-permalink: kb/092/Q92489/
+permalink: /kb/092/Q92489/
 ---
 
 ## Q92489: FIX: CodeView Quick Watch of Variable Name Gives CAN0017 Error

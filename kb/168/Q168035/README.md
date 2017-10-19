@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168035: XADM: Performance Monitor Counters for PCMTA Show Zero Values"
-permalink: kb/168/Q168035/
+permalink: /kb/168/Q168035/
 ---
 
 ## Q168035: XADM: Performance Monitor Counters for PCMTA Show Zero Values

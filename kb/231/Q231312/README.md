@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231312: Computer Name Missing in the Browsing List"
-permalink: kb/231/Q231312/
+permalink: /kb/231/Q231312/
 ---
 
 ## Q231312: Computer Name Missing in the Browsing List

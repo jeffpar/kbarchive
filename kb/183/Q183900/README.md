@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183900: WD97: Err Msg: &quot;Word Cannot Edit the Microsoft Drawing&quot;"
-permalink: kb/183/Q183900/
+permalink: /kb/183/Q183900/
 ---
 
 ## Q183900: WD97: Err Msg: &quot;Word Cannot Edit the Microsoft Drawing&quot;

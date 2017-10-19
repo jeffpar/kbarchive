@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146017: PRB: History in Explorer Differs from History File w/ Keywords"
-permalink: kb/146/Q146017/
+permalink: /kb/146/Q146017/
 ---
 
 ## Q146017: PRB: History in Explorer Differs from History File w/ Keywords

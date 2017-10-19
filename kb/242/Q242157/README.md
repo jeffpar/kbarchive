@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242157: XCON: TP4 Transport Protocol Not Supported Under Windows 2000"
-permalink: kb/242/Q242157/
+permalink: /kb/242/Q242157/
 ---
 
 ## Q242157: XCON: TP4 Transport Protocol Not Supported Under Windows 2000

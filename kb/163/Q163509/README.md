@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163509: ACC97: Object Description Property Not Saved in SourceSafe"
-permalink: kb/163/Q163509/
+permalink: /kb/163/Q163509/
 ---
 
 ## Q163509: ACC97: Object Description Property Not Saved in SourceSafe

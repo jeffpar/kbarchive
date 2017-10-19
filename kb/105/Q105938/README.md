@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105938: FORTRAN PowerStation 1.0 ANSWERS.TXT"
-permalink: kb/105/Q105938/
+permalink: /kb/105/Q105938/
 ---
 
 ## Q105938: FORTRAN PowerStation 1.0 ANSWERS.TXT

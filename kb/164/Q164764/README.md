@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164764: SMS: Eventcmi.exe Requires Incorrect Syntax in .CNF File"
-permalink: kb/164/Q164764/
+permalink: /kb/164/Q164764/
 ---
 
 ## Q164764: SMS: Eventcmi.exe Requires Incorrect Syntax in .CNF File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155222: How to Determine the ARC Path"
-permalink: kb/155/Q155222/
+permalink: /kb/155/Q155222/
 ---
 
 ## Q155222: How to Determine the ARC Path

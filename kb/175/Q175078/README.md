@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175078: SMS: Inventory Package Using Checksum and CRC Fails"
-permalink: kb/175/Q175078/
+permalink: /kb/175/Q175078/
 ---
 
 ## Q175078: SMS: Inventory Package Using Checksum and CRC Fails

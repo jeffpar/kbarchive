@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142345: WD97: Unable to Fax Mail Merge to Microsoft Fax from Word"
-permalink: kb/142/Q142345/
+permalink: /kb/142/Q142345/
 ---
 
 ## Q142345: WD97: Unable to Fax Mail Merge to Microsoft Fax from Word

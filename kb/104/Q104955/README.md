@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104955: WFW NCBS and SESSIONS Settings Affect only Real Mode NetBEUI"
-permalink: kb/104/Q104955/
+permalink: /kb/104/Q104955/
 ---
 
 ## Q104955: WFW NCBS and SESSIONS Settings Affect only Real Mode NetBEUI

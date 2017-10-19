@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177221: XADM: Errors Occur During Exchange Service Pack Upgrade"
-permalink: kb/177/Q177221/
+permalink: /kb/177/Q177221/
 ---
 
 ## Q177221: XADM: Errors Occur During Exchange Service Pack Upgrade

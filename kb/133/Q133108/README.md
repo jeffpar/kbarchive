@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133108: Advanced Port Replicator Support on Dell Latitude Computers"
-permalink: kb/133/Q133108/
+permalink: /kb/133/Q133108/
 ---
 
 ## Q133108: Advanced Port Replicator Support on Dell Latitude Computers

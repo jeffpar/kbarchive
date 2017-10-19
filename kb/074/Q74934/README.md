@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74934: DELL 486 Computers and Windows 3.0"
-permalink: kb/074/Q74934/
+permalink: /kb/074/Q74934/
 ---
 
 ## Q74934: DELL 486 Computers and Windows 3.0

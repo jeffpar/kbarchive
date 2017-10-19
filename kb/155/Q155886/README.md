@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155886: Domain Controller Not Found When Using DNS"
-permalink: kb/155/Q155886/
+permalink: /kb/155/Q155886/
 ---
 
 ## Q155886: Domain Controller Not Found When Using DNS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214979: SMS: Service Manager Does Not Connect to Secondary Site Servers"
-permalink: kb/214/Q214979/
+permalink: /kb/214/Q214979/
 ---
 
 ## Q214979: SMS: Service Manager Does Not Connect to Secondary Site Servers

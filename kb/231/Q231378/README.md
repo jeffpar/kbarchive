@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231378: SMS: Pcmwin32 Exits When It Is Unable to Initialize"
-permalink: kb/231/Q231378/
+permalink: /kb/231/Q231378/
 ---
 
 ## Q231378: SMS: Pcmwin32 Exits When It Is Unable to Initialize

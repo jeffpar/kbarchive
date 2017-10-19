@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146593: WD97: Corrupted Field Codes in Header or Footer"
-permalink: kb/146/Q146593/
+permalink: /kb/146/Q146593/
 ---
 
 ## Q146593: WD97: Corrupted Field Codes in Header or Footer

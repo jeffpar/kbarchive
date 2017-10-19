@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234687: How To Disable SNA NT Client Smart Multihoming"
-permalink: kb/234/Q234687/
+permalink: /kb/234/Q234687/
 ---
 
 ## Q234687: How To Disable SNA NT Client Smart Multihoming

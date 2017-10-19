@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258070: NUM LOCK Not Synchronized When Using ALT+TAB in Terminal Server"
-permalink: kb/258/Q258070/
+permalink: /kb/258/Q258070/
 ---
 
 ## Q258070: NUM LOCK Not Synchronized When Using ALT+TAB in Terminal Server

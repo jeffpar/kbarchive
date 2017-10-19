@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177689: Microsoft Age of Empires: Inside Moves Corrections and Comments"
-permalink: kb/177/Q177689/
+permalink: /kb/177/Q177689/
 ---
 
 ## Q177689: Microsoft Age of Empires: Inside Moves Corrections and Comments

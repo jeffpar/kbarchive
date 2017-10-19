@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150281: Unexplained DHCP Broadcasts Using Windows NT and RAS"
-permalink: kb/150/Q150281/
+permalink: /kb/150/Q150281/
 ---
 
 ## Q150281: Unexplained DHCP Broadcasts Using Windows NT and RAS

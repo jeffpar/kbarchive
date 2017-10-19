@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241580: H/PC Terminal Server Clients Using Too Many Licenses"
-permalink: kb/241/Q241580/
+permalink: /kb/241/Q241580/
 ---
 
 ## Q241580: H/PC Terminal Server Clients Using Too Many Licenses

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86607: PC WSPlus: Undoing Deleted Recurring Appointment"
-permalink: kb/086/Q86607/
+permalink: /kb/086/Q86607/
 ---
 
 ## Q86607: PC WSPlus: Undoing Deleted Recurring Appointment

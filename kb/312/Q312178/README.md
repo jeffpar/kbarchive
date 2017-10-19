@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312178: Internet Explorer And DirectX Versions Are Out Of Date"
-permalink: kb/312/Q312178/
+permalink: /kb/312/Q312178/
 ---
 
 ## Q312178: Internet Explorer And DirectX Versions Are Out Of Date

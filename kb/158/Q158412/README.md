@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158412: Cannot Install MSN with Proxy Server Set Up"
-permalink: kb/158/Q158412/
+permalink: /kb/158/Q158412/
 ---
 
 ## Q158412: Cannot Install MSN with Proxy Server Set Up

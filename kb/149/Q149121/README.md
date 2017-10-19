@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149121: XCON: Gateway Address Routing Table Information"
-permalink: kb/149/Q149121/
+permalink: /kb/149/Q149121/
 ---
 
 ## Q149121: XCON: Gateway Address Routing Table Information

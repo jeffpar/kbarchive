@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229989: Event Viewer Does Not Sort Events by Date and Time"
-permalink: kb/229/Q229989/
+permalink: /kb/229/Q229989/
 ---
 
 ## Q229989: Event Viewer Does Not Sort Events by Date and Time

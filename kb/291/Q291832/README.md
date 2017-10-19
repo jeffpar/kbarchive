@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291832: Customers Do Not Receive E-mail From MSN.com Or Hotmail.com Doma"
-permalink: kb/291/Q291832/
+permalink: /kb/291/Q291832/
 ---
 
 ## Q291832: Customers Do Not Receive E-mail From MSN.com Or Hotmail.com Doma

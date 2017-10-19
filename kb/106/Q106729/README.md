@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106729: FIX: EOF and BACKSPACE Cause GP Fault When the Unit Isn't Open"
-permalink: kb/106/Q106729/
+permalink: /kb/106/Q106729/
 ---
 
 ## Q106729: FIX: EOF and BACKSPACE Cause GP Fault When the Unit Isn't Open

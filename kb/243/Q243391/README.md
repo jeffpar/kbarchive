@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243391: Client Certificate Mapping Corrupts in Server-Side Variables"
-permalink: kb/243/Q243391/
+permalink: /kb/243/Q243391/
 ---
 
 ## Q243391: Client Certificate Mapping Corrupts in Server-Side Variables

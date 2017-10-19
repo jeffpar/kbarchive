@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164504: System Requirements for MS Office 97 Developer Edition"
-permalink: kb/164/Q164504/
+permalink: /kb/164/Q164504/
 ---
 
 ## Q164504: System Requirements for MS Office 97 Developer Edition

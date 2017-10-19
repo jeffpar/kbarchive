@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321447: Event ID 201:  No License Was Available"
-permalink: kb/321/Q321447/
+permalink: /kb/321/Q321447/
 ---
 
 ## Q321447: Event ID 201:  No License Was Available

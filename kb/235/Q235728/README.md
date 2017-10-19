@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235728: SMSINST: Edit .ini Fails on Win95/98 if Compiled w/ 32-Bit Only"
-permalink: kb/235/Q235728/
+permalink: /kb/235/Q235728/
 ---
 
 ## Q235728: SMSINST: Edit .ini Fails on Win95/98 if Compiled w/ 32-Bit Only

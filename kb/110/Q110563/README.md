@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110563: Changing the Default Font in Windows NT Microsoft Mail"
-permalink: kb/110/Q110563/
+permalink: /kb/110/Q110563/
 ---
 
 ## Q110563: Changing the Default Font in Windows NT Microsoft Mail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113176: SET PATH TO Syntax for Folder Names with Spaces"
-permalink: kb/113/Q113176/
+permalink: /kb/113/Q113176/
 ---
 
 ## Q113176: SET PATH TO Syntax for Folder Names with Spaces

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246420: How to Change the Time Zone in Interix"
-permalink: kb/246/Q246420/
+permalink: /kb/246/Q246420/
 ---
 
 ## Q246420: How to Change the Time Zone in Interix

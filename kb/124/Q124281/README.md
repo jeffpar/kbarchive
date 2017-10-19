@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124281: BBS Message Title Bar and Subject Line Differ When Using Tab"
-permalink: kb/124/Q124281/
+permalink: /kb/124/Q124281/
 ---
 
 ## Q124281: BBS Message Title Bar and Subject Line Differ When Using Tab

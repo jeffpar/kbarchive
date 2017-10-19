@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153472: Japanese MSN: Incorrect Access Numbers May Be Displayed"
-permalink: kb/153/Q153472/
+permalink: /kb/153/Q153472/
 ---
 
 ## Q153472: Japanese MSN: Incorrect Access Numbers May Be Displayed

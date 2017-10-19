@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140083: Compuserve Service Pack 2 Documentation Error"
-permalink: kb/140/Q140083/
+permalink: /kb/140/Q140083/
 ---
 
 ## Q140083: Compuserve Service Pack 2 Documentation Error

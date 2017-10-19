@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86440: Protocol Independence of RAS"
-permalink: kb/086/Q86440/
+permalink: /kb/086/Q86440/
 ---
 
 ## Q86440: Protocol Independence of RAS

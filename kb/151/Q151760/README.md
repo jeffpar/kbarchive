@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151760: Error 20091 When Client Dials RAS Server Using TCP/IP"
-permalink: kb/151/Q151760/
+permalink: /kb/151/Q151760/
 ---
 
 ## Q151760: Error 20091 When Client Dials RAS Server Using TCP/IP

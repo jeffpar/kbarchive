@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104252: Running MS-DOS 6.2 Step-Up over an OEM Version of MS-DOS 6.0"
-permalink: kb/104/Q104252/
+permalink: /kb/104/Q104252/
 ---
 
 ## Q104252: Running MS-DOS 6.2 Step-Up over an OEM Version of MS-DOS 6.0

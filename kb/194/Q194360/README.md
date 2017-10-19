@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194360: How to Determine the Version of Encarta Virtual Globe 99"
-permalink: kb/194/Q194360/
+permalink: /kb/194/Q194360/
 ---
 
 ## Q194360: How to Determine the Version of Encarta Virtual Globe 99

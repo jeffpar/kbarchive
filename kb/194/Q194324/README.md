@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194324: Data not Compressed from SNA Server to Host"
-permalink: kb/194/Q194324/
+permalink: /kb/194/Q194324/
 ---
 
 ## Q194324: Data not Compressed from SNA Server to Host

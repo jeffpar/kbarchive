@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160795: Incorrect Application Jumps to Foreground"
-permalink: kb/160/Q160795/
+permalink: /kb/160/Q160795/
 ---
 
 ## Q160795: Incorrect Application Jumps to Foreground

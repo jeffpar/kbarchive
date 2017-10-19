@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134214: PRB: Form Won't Scroll When Selecting Item Beyond Design Area"
-permalink: kb/134/Q134214/
+permalink: /kb/134/Q134214/
 ---
 
 ## Q134214: PRB: Form Won't Scroll When Selecting Item Beyond Design Area

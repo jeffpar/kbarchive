@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131984: Windows NT LPR to JetDirect Slower Than HP UX LPR"
-permalink: kb/131/Q131984/
+permalink: /kb/131/Q131984/
 ---
 
 ## Q131984: Windows NT LPR to JetDirect Slower Than HP UX LPR

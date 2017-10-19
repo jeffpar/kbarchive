@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243444: BUG: &lt;CSTDLIB&gt; Does Not Define the Namespace &quot;STD&quot;"
-permalink: kb/243/Q243444/
+permalink: /kb/243/Q243444/
 ---
 
 ## Q243444: BUG: &lt;CSTDLIB&gt; Does Not Define the Namespace &quot;STD&quot;

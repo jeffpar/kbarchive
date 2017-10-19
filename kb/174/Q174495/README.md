@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174495: ODE97: Setup Wizard Disk Images Do Not Contain Long File Names"
-permalink: kb/174/Q174495/
+permalink: /kb/174/Q174495/
 ---
 
 ## Q174495: ODE97: Setup Wizard Disk Images Do Not Contain Long File Names

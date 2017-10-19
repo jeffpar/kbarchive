@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170339: Cropped Pictures and Objects Are Resized"
-permalink: kb/170/Q170339/
+permalink: /kb/170/Q170339/
 ---
 
 ## Q170339: Cropped Pictures and Objects Are Resized

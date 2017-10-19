@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89464: LAN Man 2.1 Test Summary (American Power Smart-UPS 1250)"
-permalink: kb/089/Q89464/
+permalink: /kb/089/Q89464/
 ---
 
 ## Q89464: LAN Man 2.1 Test Summary (American Power Smart-UPS 1250)

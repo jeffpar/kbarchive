@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214600: Encarta Ref Suite 99 Err Msg: Please Insert the Disk Labeled..."
-permalink: kb/214/Q214600/
+permalink: /kb/214/Q214600/
 ---
 
 ## Q214600: Encarta Ref Suite 99 Err Msg: Please Insert the Disk Labeled...

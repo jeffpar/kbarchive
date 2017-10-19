@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171793: Information on Application Use of 4GT RAM Tuning"
-permalink: kb/171/Q171793/
+permalink: /kb/171/Q171793/
 ---
 
 ## Q171793: Information on Application Use of 4GT RAM Tuning

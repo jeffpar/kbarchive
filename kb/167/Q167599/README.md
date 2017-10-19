@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167599: 8 x 16 TrueType Font for MS-DOS Not Available"
-permalink: kb/167/Q167599/
+permalink: /kb/167/Q167599/
 ---
 
 ## Q167599: 8 x 16 TrueType Font for MS-DOS Not Available

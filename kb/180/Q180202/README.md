@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180202: WD97: How to Keep OnEntry Macro from Running at Document Open"
-permalink: kb/180/Q180202/
+permalink: /kb/180/Q180202/
 ---
 
 ## Q180202: WD97: How to Keep OnEntry Macro from Running at Document Open

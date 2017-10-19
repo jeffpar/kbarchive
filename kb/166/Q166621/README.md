@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166621: XADM: Gateway Out Threads Not Set Correctly by Perfwiz.exe"
-permalink: kb/166/Q166621/
+permalink: /kb/166/Q166621/
 ---
 
 ## Q166621: XADM: Gateway Out Threads Not Set Correctly by Perfwiz.exe

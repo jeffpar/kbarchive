@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129451: Microsoft Windows Simplified Chinese 3.2 Upgrade Is Available"
-permalink: kb/129/Q129451/
+permalink: /kb/129/Q129451/
 ---
 
 ## Q129451: Microsoft Windows Simplified Chinese 3.2 Upgrade Is Available

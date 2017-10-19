@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120433: Photoshop Screen Does Not Fully Redraw After Printing"
-permalink: kb/120/Q120433/
+permalink: /kb/120/Q120433/
 ---
 
 ## Q120433: Photoshop Screen Does Not Fully Redraw After Printing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111068: Configuring RAS Callback Time Parameters"
-permalink: kb/111/Q111068/
+permalink: /kb/111/Q111068/
 ---
 
 ## Q111068: Configuring RAS Callback Time Parameters

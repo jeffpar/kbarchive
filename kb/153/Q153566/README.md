@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153566: SMS: Remote Control of Schedule+ shows incorrect colors"
-permalink: kb/153/Q153566/
+permalink: /kb/153/Q153566/
 ---
 
 ## Q153566: SMS: Remote Control of Schedule+ shows incorrect colors

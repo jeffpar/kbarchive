@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132579: SHIFT+DEL Does Not Bypass the Recycle Bin"
-permalink: kb/132/Q132579/
+permalink: /kb/132/Q132579/
 ---
 
 ## Q132579: SHIFT+DEL Does Not Bypass the Recycle Bin

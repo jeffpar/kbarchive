@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91026: Obtain LOGSHOW/VIEWCFG Info Without Installing MS OS/2"
-permalink: kb/091/Q91026/
+permalink: /kb/091/Q91026/
 ---
 
 ## Q91026: Obtain LOGSHOW/VIEWCFG Info Without Installing MS OS/2

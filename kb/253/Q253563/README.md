@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253563: XFOR: How to Enable SSL for Exchange Server 5.5 on Windows 2000"
-permalink: kb/253/Q253563/
+permalink: /kb/253/Q253563/
 ---
 
 ## Q253563: XFOR: How to Enable SSL for Exchange Server 5.5 on Windows 2000

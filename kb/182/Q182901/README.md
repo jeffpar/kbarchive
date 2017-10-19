@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182901: XADM: Optimizer Error: One or More File Locations Are Not Valid"
-permalink: kb/182/Q182901/
+permalink: /kb/182/Q182901/
 ---
 
 ## Q182901: XADM: Optimizer Error: One or More File Locations Are Not Valid

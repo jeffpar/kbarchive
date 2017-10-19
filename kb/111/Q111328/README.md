@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111328: DosReadMailslot Reads Incorrect Data Under Stress"
-permalink: kb/111/Q111328/
+permalink: /kb/111/Q111328/
 ---
 
 ## Q111328: DosReadMailslot Reads Incorrect Data Under Stress

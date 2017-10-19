@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135909: Flight Simulator Display Options"
-permalink: kb/135/Q135909/
+permalink: /kb/135/Q135909/
 ---
 
 ## Q135909: Flight Simulator Display Options

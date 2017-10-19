@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162004: Setwiz5.exe the Updated VFP 5.0 for Windows Setup Wizard"
-permalink: kb/162/Q162004/
+permalink: /kb/162/Q162004/
 ---
 
 ## Q162004: Setwiz5.exe the Updated VFP 5.0 for Windows Setup Wizard

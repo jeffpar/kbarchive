@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80747: Supported File Types for Windows 3.1 Clipboard"
-permalink: kb/080/Q80747/
+permalink: /kb/080/Q80747/
 ---
 
 ## Q80747: Supported File Types for Windows 3.1 Clipboard

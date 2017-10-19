@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134309: PRB: Timer Event Does Not Fire If Timer Object Is on a Toolbar"
-permalink: kb/134/Q134309/
+permalink: /kb/134/Q134309/
 ---
 
 ## Q134309: PRB: Timer Event Does Not Fire If Timer Object Is on a Toolbar

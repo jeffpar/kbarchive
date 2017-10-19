@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242113: Cannot Log On to Windows NT Domain Using IPX/SPX and TCP/IP"
-permalink: kb/242/Q242113/
+permalink: /kb/242/Q242113/
 ---
 
 ## Q242113: Cannot Log On to Windows NT Domain Using IPX/SPX and TCP/IP

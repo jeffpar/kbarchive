@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177218: HOWTO: Return Array to VB from VC++ DLL or OLE Server"
-permalink: kb/177/Q177218/
+permalink: /kb/177/Q177218/
 ---
 
 ## Q177218: HOWTO: Return Array to VB from VC++ DLL or OLE Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157835: English Excel Worksheet Used Instead of German"
-permalink: kb/157/Q157835/
+permalink: /kb/157/Q157835/
 ---
 
 ## Q157835: English Excel Worksheet Used Instead of German

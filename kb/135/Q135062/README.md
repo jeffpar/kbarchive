@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135062: XCLN: How to Import Folders from a .PST File"
-permalink: kb/135/Q135062/
+permalink: /kb/135/Q135062/
 ---
 
 ## Q135062: XCLN: How to Import Folders from a .PST File

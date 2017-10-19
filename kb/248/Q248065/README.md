@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248065: How to Search for Unfiltered Documents in a Non Default Catalog"
-permalink: kb/248/Q248065/
+permalink: /kb/248/Q248065/
 ---
 
 ## Q248065: How to Search for Unfiltered Documents in a Non Default Catalog

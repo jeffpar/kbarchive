@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64515: Western Digital 7000 FASST SCSI Controller and Windows"
-permalink: kb/064/Q64515/
+permalink: /kb/064/Q64515/
 ---
 
 ## Q64515: Western Digital 7000 FASST SCSI Controller and Windows

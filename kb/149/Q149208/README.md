@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149208: Large File Transfers Fail w/MS-DOS Router and IBM PC Support"
-permalink: kb/149/Q149208/
+permalink: /kb/149/Q149208/
 ---
 
 ## Q149208: Large File Transfers Fail w/MS-DOS Router and IBM PC Support

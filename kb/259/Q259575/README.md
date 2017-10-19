@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259575: XADM:  How to Determine Which User Deleted an Exchange Recipient"
-permalink: kb/259/Q259575/
+permalink: /kb/259/Q259575/
 ---
 
 ## Q259575: XADM:  How to Determine Which User Deleted an Exchange Recipient

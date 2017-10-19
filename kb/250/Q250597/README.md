@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250597: PRB: Windows 2000 CD Not Found Discover Program Is Started"
-permalink: kb/250/Q250597/
+permalink: /kb/250/Q250597/
 ---
 
 ## Q250597: PRB: Windows 2000 CD Not Found Discover Program Is Started

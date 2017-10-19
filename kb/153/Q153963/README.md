@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153963: FIX: Exception in DrawCli When Displaying Summary Information"
-permalink: kb/153/Q153963/
+permalink: /kb/153/Q153963/
 ---
 
 ## Q153963: FIX: Exception in DrawCli When Displaying Summary Information

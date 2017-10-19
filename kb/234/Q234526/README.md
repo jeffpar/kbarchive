@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234526: PRB: Visual SourceSafe 6.0 SP3 Netsetup Installation Problem"
-permalink: kb/234/Q234526/
+permalink: /kb/234/Q234526/
 ---
 
 ## Q234526: PRB: Visual SourceSafe 6.0 SP3 Netsetup Installation Problem

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323316: HOW TO: Create an IIS Baseline by Using the Active Server Pages"
-permalink: kb/323/Q323316/
+permalink: /kb/323/Q323316/
 ---
 
 ## Q323316: HOW TO: Create an IIS Baseline by Using the Active Server Pages

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162513: Non-Activation XID Produces Event ID 23"
-permalink: kb/162/Q162513/
+permalink: /kb/162/Q162513/
 ---
 
 ## Q162513: Non-Activation XID Produces Event ID 23

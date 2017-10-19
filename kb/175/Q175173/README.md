@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175173: HOWTO: Use Word to Print General Fields in Report Designer"
-permalink: kb/175/Q175173/
+permalink: /kb/175/Q175173/
 ---
 
 ## Q175173: HOWTO: Use Word to Print General Fields in Report Designer

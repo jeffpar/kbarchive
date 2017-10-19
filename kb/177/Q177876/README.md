@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177876: Bookshelf: Cannot Use Mouse to Select More Than One Media Type"
-permalink: kb/177/Q177876/
+permalink: /kb/177/Q177876/
 ---
 
 ## Q177876: Bookshelf: Cannot Use Mouse to Select More Than One Media Type

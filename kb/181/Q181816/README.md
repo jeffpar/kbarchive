@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181816: WD97: How to Store and Retrieve Variables in Documents"
-permalink: kb/181/Q181816/
+permalink: /kb/181/Q181816/
 ---
 
 ## Q181816: WD97: How to Store and Retrieve Variables in Documents

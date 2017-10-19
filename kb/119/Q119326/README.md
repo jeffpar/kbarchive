@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119326: No File Information in Sound Control Panel"
-permalink: kb/119/Q119326/
+permalink: /kb/119/Q119326/
 ---
 
 ## Q119326: No File Information in Sound Control Panel

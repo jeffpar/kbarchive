@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86960: X400: X.400, X.200, and X.25 Acronyms"
-permalink: kb/086/Q86960/
+permalink: /kb/086/Q86960/
 ---
 
 ## Q86960: X400: X.400, X.200, and X.25 Acronyms

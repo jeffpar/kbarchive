@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174672: FS98/2000/CFS Err Msg: FLTSIM98 Caused an Invalid Page Fault..."
-permalink: kb/174/Q174672/
+permalink: /kb/174/Q174672/
 ---
 
 ## Q174672: FS98/2000/CFS Err Msg: FLTSIM98 Caused an Invalid Page Fault...

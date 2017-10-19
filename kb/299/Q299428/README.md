@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299428: How to Configure Passport for Multiple Sites on a Single Server"
-permalink: kb/299/Q299428/
+permalink: /kb/299/Q299428/
 ---
 
 ## Q299428: How to Configure Passport for Multiple Sites on a Single Server

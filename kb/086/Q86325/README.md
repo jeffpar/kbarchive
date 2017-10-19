@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86325: PC Win: Text in Comment Field Not Selected"
-permalink: kb/086/Q86325/
+permalink: /kb/086/Q86325/
 ---
 
 ## Q86325: PC Win: Text in Comment Field Not Selected

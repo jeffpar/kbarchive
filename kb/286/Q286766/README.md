@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286766: PRB: Unable to Change Location of MSDN Library After Install"
-permalink: kb/286/Q286766/
+permalink: /kb/286/Q286766/
 ---
 
 ## Q286766: PRB: Unable to Change Location of MSDN Library After Install

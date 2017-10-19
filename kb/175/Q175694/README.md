@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175694: MDG: Admin Notice 55"
-permalink: kb/175/Q175694/
+permalink: /kb/175/Q175694/
 ---
 
 ## Q175694: MDG: Admin Notice 55

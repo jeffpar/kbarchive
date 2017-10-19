@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87872: NORMAL.DOT Grows Each Time Bookshelf Setup Is Run"
-permalink: kb/087/Q87872/
+permalink: /kb/087/Q87872/
 ---
 
 ## Q87872: NORMAL.DOT Grows Each Time Bookshelf Setup Is Run

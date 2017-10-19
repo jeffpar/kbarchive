@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161433: Golf 3.0 Low-Res Courses Message When Starting New Game"
-permalink: kb/161/Q161433/
+permalink: /kb/161/Q161433/
 ---
 
 ## Q161433: Golf 3.0 Low-Res Courses Message When Starting New Game

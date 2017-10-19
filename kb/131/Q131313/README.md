@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131313: HOWTO: Create 32-bit Import Libraries Without .OBJs or Source"
-permalink: kb/131/Q131313/
+permalink: /kb/131/Q131313/
 ---
 
 ## Q131313: HOWTO: Create 32-bit Import Libraries Without .OBJs or Source

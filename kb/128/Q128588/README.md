@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128588: BUG: &quot;?&quot; Command with Function &quot;V1&quot; May Not Display Correctly"
-permalink: kb/128/Q128588/
+permalink: /kb/128/Q128588/
 ---
 
 ## Q128588: BUG: &quot;?&quot; Command with Function &quot;V1&quot; May Not Display Correctly

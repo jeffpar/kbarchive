@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219354: RCP Does Not Work on SP4 with a Permission Denied Error"
-permalink: kb/219/Q219354/
+permalink: /kb/219/Q219354/
 ---
 
 ## Q219354: RCP Does Not Work on SP4 with a Permission Denied Error

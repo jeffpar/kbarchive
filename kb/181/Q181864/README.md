@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181864: XADM: Setup /Q Prompts for Service Account"
-permalink: kb/181/Q181864/
+permalink: /kb/181/Q181864/
 ---
 
 ## Q181864: XADM: Setup /Q Prompts for Service Account

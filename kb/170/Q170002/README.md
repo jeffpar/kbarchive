@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170002: XCLN: Exchange Client Cannot Send Attachments on Citrix WinFrame"
-permalink: kb/170/Q170002/
+permalink: /kb/170/Q170002/
 ---
 
 ## Q170002: XCLN: Exchange Client Cannot Send Attachments on Citrix WinFrame

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q40138: Inner Marker Beacon Does Not Beep or Light for ILS Landings"
-permalink: kb/040/Q40138/
+permalink: /kb/040/Q40138/
 ---
 
 ## Q40138: Inner Marker Beacon Does Not Beep or Light for ILS Landings

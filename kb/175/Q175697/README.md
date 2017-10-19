@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175697: XWEB: Read Next Message Arrow Works Incorrectly After Move"
-permalink: kb/175/Q175697/
+permalink: /kb/175/Q175697/
 ---
 
 ## Q175697: XWEB: Read Next Message Arrow Works Incorrectly After Move

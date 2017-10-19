@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173063: Using File Open Command Causes Applications to Terminate"
-permalink: kb/173/Q173063/
+permalink: /kb/173/Q173063/
 ---
 
 ## Q173063: Using File Open Command Causes Applications to Terminate

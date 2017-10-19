@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270064: Attributes Do Not Flow When Case Sensitivity Changes"
-permalink: kb/270/Q270064/
+permalink: /kb/270/Q270064/
 ---
 
 ## Q270064: Attributes Do Not Flow When Case Sensitivity Changes

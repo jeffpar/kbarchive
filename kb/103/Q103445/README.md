@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103445: Advanced Server Hang with Service for Macintosh"
-permalink: kb/103/Q103445/
+permalink: /kb/103/Q103445/
 ---
 
 ## Q103445: Advanced Server Hang with Service for Macintosh

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125017: PC WSPlus: Tentative Appointments Do Not Show in Planner"
-permalink: kb/125/Q125017/
+permalink: /kb/125/Q125017/
 ---
 
 ## Q125017: PC WSPlus: Tentative Appointments Do Not Show in Planner

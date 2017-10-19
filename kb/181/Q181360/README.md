@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181360: MIDISmpl.exe Demonstrates How To Control MIDI Devices"
-permalink: kb/181/Q181360/
+permalink: /kb/181/Q181360/
 ---
 
 ## Q181360: MIDISmpl.exe Demonstrates How To Control MIDI Devices

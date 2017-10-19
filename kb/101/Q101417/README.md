@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101417: Accessing the Modem Status Register (MSR) in Windows"
-permalink: kb/101/Q101417/
+permalink: /kb/101/Q101417/
 ---
 
 ## Q101417: Accessing the Modem Status Register (MSR) in Windows

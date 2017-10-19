@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177410: No IGMP Packets Received When Using Starlight Software"
-permalink: kb/177/Q177410/
+permalink: /kb/177/Q177410/
 ---
 
 ## Q177410: No IGMP Packets Received When Using Starlight Software

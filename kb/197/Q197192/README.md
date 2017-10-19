@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197192: HOWTO: Find the Full Path of an Executable Given the Extension"
-permalink: kb/197/Q197192/
+permalink: /kb/197/Q197192/
 ---
 
 ## Q197192: HOWTO: Find the Full Path of an Executable Given the Extension

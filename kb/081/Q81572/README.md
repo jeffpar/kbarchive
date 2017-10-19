@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81572: Sysgen Tape Backup Hangs with MS-DOS 5.0 and later"
-permalink: kb/081/Q81572/
+permalink: /kb/081/Q81572/
 ---
 
 ## Q81572: Sysgen Tape Backup Hangs with MS-DOS 5.0 and later

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160176: Changing WinNT System Date May Generate a Stop 0x0000000A"
-permalink: kb/160/Q160176/
+permalink: /kb/160/Q160176/
 ---
 
 ## Q160176: Changing WinNT System Date May Generate a Stop 0x0000000A

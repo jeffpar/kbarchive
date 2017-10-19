@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189300: Unable to Recover Nested Public Folder"
-permalink: kb/189/Q189300/
+permalink: /kb/189/Q189300/
 ---
 
 ## Q189300: Unable to Recover Nested Public Folder

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142784: XCLN: Alert Window Does Not Close After Reading Message"
-permalink: kb/142/Q142784/
+permalink: /kb/142/Q142784/
 ---
 
 ## Q142784: XCLN: Alert Window Does Not Close After Reading Message

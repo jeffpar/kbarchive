@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162176: Thumbnail Image Doesn't Appear on Expected Gallery Page"
-permalink: kb/162/Q162176/
+permalink: /kb/162/Q162176/
 ---
 
 ## Q162176: Thumbnail Image Doesn't Appear on Expected Gallery Page

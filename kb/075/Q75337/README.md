@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75337: INFO: Program Manager Restrictions Settings"
-permalink: kb/075/Q75337/
+permalink: /kb/075/Q75337/
 ---
 
 ## Q75337: INFO: Program Manager Restrictions Settings

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271847: XADM: Backup Stops with Event ID 105 and Error 1808"
-permalink: kb/271/Q271847/
+permalink: /kb/271/Q271847/
 ---
 
 ## Q271847: XADM: Backup Stops with Event ID 105 and Error 1808

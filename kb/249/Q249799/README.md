@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249799: Slow Network Performance with Service Pack 4, 5, 6, or 6a"
-permalink: kb/249/Q249799/
+permalink: /kb/249/Q249799/
 ---
 
 ## Q249799: Slow Network Performance with Service Pack 4, 5, 6, or 6a

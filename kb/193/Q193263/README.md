@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193263: XFOR: Transcription DLL Changes Not Maintained After Restart"
-permalink: kb/193/Q193263/
+permalink: /kb/193/Q193263/
 ---
 
 ## Q193263: XFOR: Transcription DLL Changes Not Maintained After Restart

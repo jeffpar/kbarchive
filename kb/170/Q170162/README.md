@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170162: INFO: VB 6.0 Readme Part 3: Control Issues"
-permalink: kb/170/Q170162/
+permalink: /kb/170/Q170162/
 ---
 
 ## Q170162: INFO: VB 6.0 Readme Part 3: Control Issues

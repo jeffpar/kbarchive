@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150303: XCLN: How to Back Up Profile Rules to a Different .PST"
-permalink: kb/150/Q150303/
+permalink: /kb/150/Q150303/
 ---
 
 ## Q150303: XCLN: How to Back Up Profile Rules to a Different .PST

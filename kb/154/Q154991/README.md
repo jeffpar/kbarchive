@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154991: How to Set Up Dr. Surf to Work with MSN"
-permalink: kb/154/Q154991/
+permalink: /kb/154/Q154991/
 ---
 
 ## Q154991: How to Set Up Dr. Surf to Work with MSN

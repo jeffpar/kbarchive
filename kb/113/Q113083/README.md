@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113083: PC Forms: User Setup for Running on Windows NT"
-permalink: kb/113/Q113083/
+permalink: /kb/113/Q113083/
 ---
 
 ## Q113083: PC Forms: User Setup for Running on Windows NT

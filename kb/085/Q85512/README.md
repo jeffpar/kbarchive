@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85512: BUG: CodeView Executes Entire Single Statement Loop"
-permalink: kb/085/Q85512/
+permalink: /kb/085/Q85512/
 ---
 
 ## Q85512: BUG: CodeView Executes Entire Single Statement Loop

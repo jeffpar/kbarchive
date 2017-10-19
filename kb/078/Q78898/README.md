@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78898: Model LXT Maxtor IDE Drives Require Special Low-Level Utility"
-permalink: kb/078/Q78898/
+permalink: /kb/078/Q78898/
 ---
 
 ## Q78898: Model LXT Maxtor IDE Drives Require Special Low-Level Utility

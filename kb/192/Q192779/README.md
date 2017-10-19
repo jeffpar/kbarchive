@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192779: PRB: DAO Doesn't Support ISAM Formats on Alpha"
-permalink: kb/192/Q192779/
+permalink: /kb/192/Q192779/
 ---
 
 ## Q192779: PRB: DAO Doesn't Support ISAM Formats on Alpha

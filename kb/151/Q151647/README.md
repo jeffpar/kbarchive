@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151647: Multimedia: Hourglass Icon or Program Stops Responding"
-permalink: kb/151/Q151647/
+permalink: /kb/151/Q151647/
 ---
 
 ## Q151647: Multimedia: Hourglass Icon or Program Stops Responding

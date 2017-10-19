@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263064: XADM: Blackberry Service Stops If Exchange Server Comp. Offline"
-permalink: kb/263/Q263064/
+permalink: /kb/263/Q263064/
 ---
 
 ## Q263064: XADM: Blackberry Service Stops If Exchange Server Comp. Offline

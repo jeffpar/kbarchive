@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108298: SNADS: Running Linkage OS/2 SNADS Gateway and MMTA"
-permalink: kb/108/Q108298/
+permalink: /kb/108/Q108298/
 ---
 
 ## Q108298: SNADS: Running Linkage OS/2 SNADS Gateway and MMTA

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191767: LogicalDisk Partition Missing in Performance Monitor"
-permalink: kb/191/Q191767/
+permalink: /kb/191/Q191767/
 ---
 
 ## Q191767: LogicalDisk Partition Missing in Performance Monitor

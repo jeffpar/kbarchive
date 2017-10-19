@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143094: FP: How to Configure FrontPage to Work with an Image Editor"
-permalink: kb/143/Q143094/
+permalink: /kb/143/Q143094/
 ---
 
 ## Q143094: FP: How to Configure FrontPage to Work with an Image Editor

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216110: XFOR: Err Msg: System Cannot Find the File Specified"
-permalink: kb/216/Q216110/
+permalink: /kb/216/Q216110/
 ---
 
 ## Q216110: XFOR: Err Msg: System Cannot Find the File Specified

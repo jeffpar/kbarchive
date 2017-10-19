@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111685: AWFAX: Invalid Directory Accepted in Share Fax Modem Dialog"
-permalink: kb/111/Q111685/
+permalink: /kb/111/Q111685/
 ---
 
 ## Q111685: AWFAX: Invalid Directory Accepted in Share Fax Modem Dialog

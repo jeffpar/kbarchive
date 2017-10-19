@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223497: Err Msg: Logon Failure: User Not Granted the Requested Logon..."
-permalink: kb/223/Q223497/
+permalink: /kb/223/Q223497/
 ---
 
 ## Q223497: Err Msg: Logon Failure: User Not Granted the Requested Logon...

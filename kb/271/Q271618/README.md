@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271618: Cannot Open Research Organizer Files in Encarta Researcher"
-permalink: kb/271/Q271618/
+permalink: /kb/271/Q271618/
 ---
 
 ## Q271618: Cannot Open Research Organizer Files in Encarta Researcher

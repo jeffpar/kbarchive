@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232606: XADM: Changing the Port Used by the Directory for LDAP over SSL"
-permalink: kb/232/Q232606/
+permalink: /kb/232/Q232606/
 ---
 
 ## Q232606: XADM: Changing the Port Used by the Directory for LDAP over SSL

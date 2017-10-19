@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196913: WD97:Errors Saving Files or Running Wizards over PC-NFS Networks"
-permalink: kb/196/Q196913/
+permalink: /kb/196/Q196913/
 ---
 
 ## Q196913: WD97:Errors Saving Files or Running Wizards over PC-NFS Networks

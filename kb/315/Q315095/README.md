@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315095: FIX: WMI Queries Stop Responding on Host Integration Server 2000"
-permalink: kb/315/Q315095/
+permalink: /kb/315/Q315095/
 ---
 
 ## Q315095: FIX: WMI Queries Stop Responding on Host Integration Server 2000

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152883: XADM: Configuring IMC Properties Page on German PPC Platform"
-permalink: kb/152/Q152883/
+permalink: /kb/152/Q152883/
 ---
 
 ## Q152883: XADM: Configuring IMC Properties Page on German PPC Platform

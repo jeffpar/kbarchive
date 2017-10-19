@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135934: DriveSpace 3 Operation Fails if Disk Defragmenter Is Running"
-permalink: kb/135/Q135934/
+permalink: /kb/135/Q135934/
 ---
 
 ## Q135934: DriveSpace 3 Operation Fails if Disk Defragmenter Is Running

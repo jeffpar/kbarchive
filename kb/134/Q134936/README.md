@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134936: Network Printer Comments Missing"
-permalink: kb/134/Q134936/
+permalink: /kb/134/Q134936/
 ---
 
 ## Q134936: Network Printer Comments Missing

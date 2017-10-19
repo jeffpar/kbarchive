@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166601: XADM: Folder(s) Missing After Using Move Mailbox Command"
-permalink: kb/166/Q166601/
+permalink: /kb/166/Q166601/
 ---
 
 ## Q166601: XADM: Folder(s) Missing After Using Move Mailbox Command

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249855: Secondary DNS Behavior Does Not Match Configured Options"
-permalink: kb/249/Q249855/
+permalink: /kb/249/Q249855/
 ---
 
 ## Q249855: Secondary DNS Behavior Does Not Match Configured Options

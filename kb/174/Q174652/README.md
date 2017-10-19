@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174652: FIX: PrintForm Method Does Not Print Entire Form"
-permalink: kb/174/Q174652/
+permalink: /kb/174/Q174652/
 ---
 
 ## Q174652: FIX: PrintForm Method Does Not Print Entire Form

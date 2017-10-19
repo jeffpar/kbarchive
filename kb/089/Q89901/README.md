@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89901: Quick Recorder Resize when Playing Causes Random Data Display"
-permalink: kb/089/Q89901/
+permalink: /kb/089/Q89901/
 ---
 
 ## Q89901: Quick Recorder Resize when Playing Causes Random Data Display

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128746: Removing SNMP leaves SNMP Counters in Performance Monitor"
-permalink: kb/128/Q128746/
+permalink: /kb/128/Q128746/
 ---
 
 ## Q128746: Removing SNMP leaves SNMP Counters in Performance Monitor

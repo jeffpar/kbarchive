@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151264: SMS Enumerates Partial User List Configuring Logon"
-permalink: kb/151/Q151264/
+permalink: /kb/151/Q151264/
 ---
 
 ## Q151264: SMS Enumerates Partial User List Configuring Logon

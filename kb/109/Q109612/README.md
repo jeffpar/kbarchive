@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109612: How to Pass Parameters from Windows to FoxPro for Windows"
-permalink: kb/109/Q109612/
+permalink: /kb/109/Q109612/
 ---
 
 ## Q109612: How to Pass Parameters from Windows to FoxPro for Windows

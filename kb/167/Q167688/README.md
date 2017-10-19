@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167688: &quot;STOP 0x7B&quot; on DEC Alpha Personal Workstation During Setup"
-permalink: kb/167/Q167688/
+permalink: /kb/167/Q167688/
 ---
 
 ## Q167688: &quot;STOP 0x7B&quot; on DEC Alpha Personal Workstation During Setup

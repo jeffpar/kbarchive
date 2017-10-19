@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120211: Cannot Specify Save Directory for Flight Plans"
-permalink: kb/120/Q120211/
+permalink: /kb/120/Q120211/
 ---
 
 ## Q120211: Cannot Specify Save Directory for Flight Plans

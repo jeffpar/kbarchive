@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73232: Cannot Delete Files in MS-DOS Executive with DELETE Key"
-permalink: kb/073/Q73232/
+permalink: /kb/073/Q73232/
 ---
 
 ## Q73232: Cannot Delete Files in MS-DOS Executive with DELETE Key

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154162: Memory Leak in Perfmon.exe Occurs Monitoring WINS Counters"
-permalink: kb/154/Q154162/
+permalink: /kb/154/Q154162/
 ---
 
 ## Q154162: Memory Leak in Perfmon.exe Occurs Monitoring WINS Counters

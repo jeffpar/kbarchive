@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105067: Undelete Forces Exclusive (Full-Screen) Mode Under Windows"
-permalink: kb/105/Q105067/
+permalink: /kb/105/Q105067/
 ---
 
 ## Q105067: Undelete Forces Exclusive (Full-Screen) Mode Under Windows

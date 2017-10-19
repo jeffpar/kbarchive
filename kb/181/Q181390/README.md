@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181390: PRB: Grid with Focus Ignores Alias of Second Form"
-permalink: kb/181/Q181390/
+permalink: /kb/181/Q181390/
 ---
 
 ## Q181390: PRB: Grid with Focus Ignores Alias of Second Form

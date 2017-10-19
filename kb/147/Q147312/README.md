@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147312: PRB: Error Importing Control into Component Gallery"
-permalink: kb/147/Q147312/
+permalink: /kb/147/Q147312/
 ---
 
 ## Q147312: PRB: Error Importing Control into Component Gallery

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221672: FIX: Coverage Profiler Does Not Accept Long Coverage File Names"
-permalink: kb/221/Q221672/
+permalink: /kb/221/Q221672/
 ---
 
 ## Q221672: FIX: Coverage Profiler Does Not Accept Long Coverage File Names

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303112: Pandora's Box: Run-Time Error When You Attempt to Start Game"
-permalink: kb/303/Q303112/
+permalink: /kb/303/Q303112/
 ---
 
 ## Q303112: Pandora's Box: Run-Time Error When You Attempt to Start Game

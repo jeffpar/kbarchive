@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164542: MGET to an IBM Host FTP Server Returns Garbage Characters"
-permalink: kb/164/Q164542/
+permalink: /kb/164/Q164542/
 ---
 
 ## Q164542: MGET to an IBM Host FTP Server Returns Garbage Characters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68348: Changing Display Colors on Toshiba Laptops Using VCHAD.EXE"
-permalink: kb/068/Q68348/
+permalink: /kb/068/Q68348/
 ---
 
 ## Q68348: Changing Display Colors on Toshiba Laptops Using VCHAD.EXE

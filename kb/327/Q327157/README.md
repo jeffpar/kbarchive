@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q327157: 3270 Emulator Traps in the SNAGetUserRecord Function"
-permalink: kb/327/Q327157/
+permalink: /kb/327/Q327157/
 ---
 
 ## Q327157: 3270 Emulator Traps in the SNAGetUserRecord Function

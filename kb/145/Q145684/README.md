@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145684: BUG: ClearSel Method of Slider Sets SelStart Property to -1"
-permalink: kb/145/Q145684/
+permalink: /kb/145/Q145684/
 ---
 
 ## Q145684: BUG: ClearSel Method of Slider Sets SelStart Property to -1

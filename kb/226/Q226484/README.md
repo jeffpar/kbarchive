@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226484: Interface Table Contains WAN Interfaces Marked as LAN"
-permalink: kb/226/Q226484/
+permalink: /kb/226/Q226484/
 ---
 
 ## Q226484: Interface Table Contains WAN Interfaces Marked as LAN

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121423: WFWG Err Msg: Couldn't Locate Windows Installation"
-permalink: kb/121/Q121423/
+permalink: /kb/121/Q121423/
 ---
 
 ## Q121423: WFWG Err Msg: Couldn't Locate Windows Installation

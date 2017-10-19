@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281615: Combat Flight Simulator 2: Frame Rate Drops with Tool Tips"
-permalink: kb/281/Q281615/
+permalink: /kb/281/Q281615/
 ---
 
 ## Q281615: Combat Flight Simulator 2: Frame Rate Drops with Tool Tips

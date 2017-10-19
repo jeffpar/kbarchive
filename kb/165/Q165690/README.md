@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165690: INFO: Visual C++ 5.0 Readme, Microsoft Transaction Server"
-permalink: kb/165/Q165690/
+permalink: /kb/165/Q165690/
 ---
 
 ## Q165690: INFO: Visual C++ 5.0 Readme, Microsoft Transaction Server

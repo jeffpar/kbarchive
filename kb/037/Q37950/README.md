@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q37950: Using Asterisk Wildcard Expansion with Trailing Characters"
-permalink: kb/037/Q37950/
+permalink: /kb/037/Q37950/
 ---
 
 ## Q37950: Using Asterisk Wildcard Expansion with Trailing Characters

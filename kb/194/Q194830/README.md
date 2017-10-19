@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194830: Unicode Character Display Problem in Full-Screen MS-DOS Session"
-permalink: kb/194/Q194830/
+permalink: /kb/194/Q194830/
 ---
 
 ## Q194830: Unicode Character Display Problem in Full-Screen MS-DOS Session

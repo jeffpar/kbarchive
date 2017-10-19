@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91093: Quattro Pro 4.0 and NetWare Printing under WFWG"
-permalink: kb/091/Q91093/
+permalink: /kb/091/Q91093/
 ---
 
 ## Q91093: Quattro Pro 4.0 and NetWare Printing under WFWG

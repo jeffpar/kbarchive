@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172987: NEC 1800a CD-ROM Drive Will Not Play Audio After Applying SP3"
-permalink: kb/172/Q172987/
+permalink: /kb/172/Q172987/
 ---
 
 ## Q172987: NEC 1800a CD-ROM Drive Will Not Play Audio After Applying SP3

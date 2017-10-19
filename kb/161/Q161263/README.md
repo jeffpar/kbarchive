@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161263: Kids Plus!: Talk It!: Not All Characters Pronounced"
-permalink: kb/161/Q161263/
+permalink: /kb/161/Q161263/
 ---
 
 ## Q161263: Kids Plus!: Talk It!: Not All Characters Pronounced

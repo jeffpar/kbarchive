@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87405: PC DB: Structure of the HLP Directory"
-permalink: kb/087/Q87405/
+permalink: /kb/087/Q87405/
 ---
 
 ## Q87405: PC DB: Structure of the HLP Directory

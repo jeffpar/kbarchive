@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166547: XCLN: Mac Client Will Not Launch on PowerMacs Without Easy Open"
-permalink: kb/166/Q166547/
+permalink: /kb/166/Q166547/
 ---
 
 ## Q166547: XCLN: Mac Client Will Not Launch on PowerMacs Without Easy Open

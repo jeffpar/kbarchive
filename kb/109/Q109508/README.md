@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109508: &quot;Bad File Mode&quot; Error When Running MS-DOS Help"
-permalink: kb/109/Q109508/
+permalink: /kb/109/Q109508/
 ---
 
 ## Q109508: &quot;Bad File Mode&quot; Error When Running MS-DOS Help

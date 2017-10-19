@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158309: XFOR: Event ID 178 During Directory Synchronization"
-permalink: kb/158/Q158309/
+permalink: /kb/158/Q158309/
 ---
 
 ## Q158309: XFOR: Event ID 178 During Directory Synchronization

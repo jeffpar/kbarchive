@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60024: Mac DOS: Custom Forms on PC Workstations in Microsoft Mail"
-permalink: kb/060/Q60024/
+permalink: /kb/060/Q60024/
 ---
 
 ## Q60024: Mac DOS: Custom Forms on PC Workstations in Microsoft Mail

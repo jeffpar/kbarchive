@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184345: How to Configure Outlook 98 for Use With MSN The Microsoft Netwo"
-permalink: kb/184/Q184345/
+permalink: /kb/184/Q184345/
 ---
 
 ## Q184345: How to Configure Outlook 98 for Use With MSN The Microsoft Netwo

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182509: XADM: Directory Import/Export TAB Key Takes User to Unavailable"
-permalink: kb/182/Q182509/
+permalink: /kb/182/Q182509/
 ---
 
 ## Q182509: XADM: Directory Import/Export TAB Key Takes User to Unavailable

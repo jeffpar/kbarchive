@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217217: XFOR: How to Control Routing of Subdomains in IMS Routing"
-permalink: kb/217/Q217217/
+permalink: /kb/217/Q217217/
 ---
 
 ## Q217217: XFOR: How to Control Routing of Subdomains in IMS Routing

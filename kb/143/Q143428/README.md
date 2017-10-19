@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143428: DOCERR: SetWindowPos Declaration Incorrect in On-Line Help"
-permalink: kb/143/Q143428/
+permalink: /kb/143/Q143428/
 ---
 
 ## Q143428: DOCERR: SetWindowPos Declaration Incorrect in On-Line Help

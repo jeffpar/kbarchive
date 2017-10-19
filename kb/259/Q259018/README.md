@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259018: GetNextTimedEvent Halts and Does Not Allow Background Tasks to R"
-permalink: kb/259/Q259018/
+permalink: /kb/259/Q259018/
 ---
 
 ## Q259018: GetNextTimedEvent Halts and Does Not Allow Background Tasks to R

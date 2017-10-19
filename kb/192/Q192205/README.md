@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192205: XADM: Full Fidelity Not Maintained on Opaque-Signed Message"
-permalink: kb/192/Q192205/
+permalink: /kb/192/Q192205/
 ---
 
 ## Q192205: XADM: Full Fidelity Not Maintained on Opaque-Signed Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259067: Win2000: Only Administrator or Power User Can Run Legacy Program"
-permalink: kb/259/Q259067/
+permalink: /kb/259/Q259067/
 ---
 
 ## Q259067: Win2000: Only Administrator or Power User Can Run Legacy Program

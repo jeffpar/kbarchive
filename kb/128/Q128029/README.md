@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128029: Vector Fonts Not Available After Installing Plotter"
-permalink: kb/128/Q128029/
+permalink: /kb/128/Q128029/
 ---
 
 ## Q128029: Vector Fonts Not Available After Installing Plotter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249045: BUG: C2964 On Pointer-To-Member As Template Argument"
-permalink: kb/249/Q249045/
+permalink: /kb/249/Q249045/
 ---
 
 ## Q249045: BUG: C2964 On Pointer-To-Member As Template Argument

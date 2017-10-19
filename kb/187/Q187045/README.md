@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187045: Aciniupd.exe Has No Help Switches"
-permalink: kb/187/Q187045/
+permalink: /kb/187/Q187045/
 ---
 
 ## Q187045: Aciniupd.exe Has No Help Switches

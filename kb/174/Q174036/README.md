@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174036: XFOR: Exchange 5.0 IMS Won't Deliver Messages from 4.0 Server"
-permalink: kb/174/Q174036/
+permalink: /kb/174/Q174036/
 ---
 
 ## Q174036: XFOR: Exchange 5.0 IMS Won't Deliver Messages from 4.0 Server

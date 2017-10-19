@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100638: Cross-Platform Application Development in Windows NT"
-permalink: kb/100/Q100638/
+permalink: /kb/100/Q100638/
 ---
 
 ## Q100638: Cross-Platform Application Development in Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66530: SYS.COM Requirements in MS-DOS versions 2.0-6.0"
-permalink: kb/066/Q66530/
+permalink: /kb/066/Q66530/
 ---
 
 ## Q66530: SYS.COM Requirements in MS-DOS versions 2.0-6.0

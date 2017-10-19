@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86027: Err Msg: Cannot Start Windows in Standard Mode (Low Memory)"
-permalink: kb/086/Q86027/
+permalink: /kb/086/Q86027/
 ---
 
 ## Q86027: Err Msg: Cannot Start Windows in Standard Mode (Low Memory)

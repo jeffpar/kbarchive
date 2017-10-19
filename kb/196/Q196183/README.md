@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196183: XADM: Routing .dlls Aren't Removed by Exchange Server 5.5 Setup"
-permalink: kb/196/Q196183/
+permalink: /kb/196/Q196183/
 ---
 
 ## Q196183: XADM: Routing .dlls Aren't Removed by Exchange Server 5.5 Setup

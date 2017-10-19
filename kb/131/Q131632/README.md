@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131632: How to Play Audio CDs from Visual FoxPro"
-permalink: kb/131/Q131632/
+permalink: /kb/131/Q131632/
 ---
 
 ## Q131632: How to Play Audio CDs from Visual FoxPro

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124644: ATI Phone Number Incorrect in README.TXT Files"
-permalink: kb/124/Q124644/
+permalink: /kb/124/Q124644/
 ---
 
 ## Q124644: ATI Phone Number Incorrect in README.TXT Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126079: Destination Ski Disk Contents (3.5 Inch, 720K)"
-permalink: kb/126/Q126079/
+permalink: /kb/126/Q126079/
 ---
 
 ## Q126079: Destination Ski Disk Contents (3.5 Inch, 720K)

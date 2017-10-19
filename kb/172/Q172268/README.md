@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172268: PRB: Error Passing Recordset to Excel Using Automation From VB"
-permalink: kb/172/Q172268/
+permalink: /kb/172/Q172268/
 ---
 
 ## Q172268: PRB: Error Passing Recordset to Excel Using Automation From VB

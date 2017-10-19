@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86953: 3COM: Hardware Required by the 3Com Gateway"
-permalink: kb/086/Q86953/
+permalink: /kb/086/Q86953/
 ---
 
 ## Q86953: 3COM: Hardware Required by the 3Com Gateway

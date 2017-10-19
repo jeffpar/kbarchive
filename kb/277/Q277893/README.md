@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277893: How to Renew Certificates That Are Used with IIS 4.0"
-permalink: kb/277/Q277893/
+permalink: /kb/277/Q277893/
 ---
 
 ## Q277893: How to Renew Certificates That Are Used with IIS 4.0

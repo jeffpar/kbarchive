@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146411: Error Creating Msbatch.inf File Using Netsetup.exe"
-permalink: kb/146/Q146411/
+permalink: /kb/146/Q146411/
 ---
 
 ## Q146411: Error Creating Msbatch.inf File Using Netsetup.exe

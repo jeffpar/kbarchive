@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259718: Windows 2000 Resource Kit Setup Hangs"
-permalink: kb/259/Q259718/
+permalink: /kb/259/Q259718/
 ---
 
 ## Q259718: Windows 2000 Resource Kit Setup Hangs

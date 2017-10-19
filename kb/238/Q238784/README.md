@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238784: XFOR: Not All Messages Migrated from a cc:Mail DB8 Post Office"
-permalink: kb/238/Q238784/
+permalink: /kb/238/Q238784/
 ---
 
 ## Q238784: XFOR: Not All Messages Migrated from a cc:Mail DB8 Post Office

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123975: How to Read Fields in a Table from the LCK"
-permalink: kb/123/Q123975/
+permalink: /kb/123/Q123975/
 ---
 
 ## Q123975: How to Read Fields in a Table from the LCK

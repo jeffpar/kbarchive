@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39235: Declaring a Communal Variable of a Record Type"
-permalink: kb/039/Q39235/
+permalink: /kb/039/Q39235/
 ---
 
 ## Q39235: Declaring a Communal Variable of a Record Type

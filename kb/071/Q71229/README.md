@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71229: PRB: Windows Regions Do Not Scale"
-permalink: kb/071/Q71229/
+permalink: /kb/071/Q71229/
 ---
 
 ## Q71229: PRB: Windows Regions Do Not Scale

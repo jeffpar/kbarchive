@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66730: Video Seven BIOS Versions Required for Use with Windows"
-permalink: kb/066/Q66730/
+permalink: /kb/066/Q66730/
 ---
 
 ## Q66730: Video Seven BIOS Versions Required for Use with Windows

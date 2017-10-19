@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134693: Unable to Delete More than 250 Computers from Ad Hoc Query List"
-permalink: kb/134/Q134693/
+permalink: /kb/134/Q134693/
 ---
 
 ## Q134693: Unable to Delete More than 250 Computers from Ad Hoc Query List

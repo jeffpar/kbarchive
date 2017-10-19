@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168736: XFOR: Invalid PO During Migration From PC Mail"
-permalink: kb/168/Q168736/
+permalink: /kb/168/Q168736/
 ---
 
 ## Q168736: XFOR: Invalid PO During Migration From PC Mail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152087: Connpts.exe Implements Connection Points in MFC Apps"
-permalink: kb/152/Q152087/
+permalink: /kb/152/Q152087/
 ---
 
 ## Q152087: Connpts.exe Implements Connection Points in MFC Apps

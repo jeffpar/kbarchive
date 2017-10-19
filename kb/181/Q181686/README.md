@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181686: Windows 98 Beta Expires on December 31, 1998"
-permalink: kb/181/Q181686/
+permalink: /kb/181/Q181686/
 ---
 
 ## Q181686: Windows 98 Beta Expires on December 31, 1998

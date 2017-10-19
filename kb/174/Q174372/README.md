@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174372: WD97: Can't Type Last Character If Last Paragraph Mark Hidden"
-permalink: kb/174/Q174372/
+permalink: /kb/174/Q174372/
 ---
 
 ## Q174372: WD97: Can't Type Last Character If Last Paragraph Mark Hidden

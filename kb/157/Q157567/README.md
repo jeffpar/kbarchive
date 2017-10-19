@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157567: STL Sample for the prev_permutation Function"
-permalink: kb/157/Q157567/
+permalink: /kb/157/Q157567/
 ---
 
 ## Q157567: STL Sample for the prev_permutation Function

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161102: Removing &quot;Unknown Device&quot; Network Adapter Hangs Computer"
-permalink: kb/161/Q161102/
+permalink: /kb/161/Q161102/
 ---
 
 ## Q161102: Removing &quot;Unknown Device&quot; Network Adapter Hangs Computer

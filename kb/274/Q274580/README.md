@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274580: Creating Supplementary Timestamp Log in MMS Management Agent Log"
-permalink: kb/274/Q274580/
+permalink: /kb/274/Q274580/
 ---
 
 ## Q274580: Creating Supplementary Timestamp Log in MMS Management Agent Log

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190899: How to Determine the OS Type in a Logon Script"
-permalink: kb/190/Q190899/
+permalink: /kb/190/Q190899/
 ---
 
 ## Q190899: How to Determine the OS Type in a Logon Script

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282816: HOWTO: Remove a Visual Basic Project from Visual SourceSafe"
-permalink: kb/282/Q282816/
+permalink: /kb/282/Q282816/
 ---
 
 ## Q282816: HOWTO: Remove a Visual Basic Project from Visual SourceSafe

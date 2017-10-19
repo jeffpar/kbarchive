@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178929: XADM: How to Use the Event Log Tools in BORK Part Two"
-permalink: kb/178/Q178929/
+permalink: /kb/178/Q178929/
 ---
 
 ## Q178929: XADM: How to Use the Event Log Tools in BORK Part Two

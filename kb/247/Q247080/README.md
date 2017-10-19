@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247080: XADM: NDR After Deleting a User from DL in Other Site"
-permalink: kb/247/Q247080/
+permalink: /kb/247/Q247080/
 ---
 
 ## Q247080: XADM: NDR After Deleting a User from DL in Other Site

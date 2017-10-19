@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246830: Event ID 60 Occurs after Updating to Windows NT 4.0 SP4 or Later"
-permalink: kb/246/Q246830/
+permalink: /kb/246/Q246830/
 ---
 
 ## Q246830: Event ID 60 Occurs after Updating to Windows NT 4.0 SP4 or Later

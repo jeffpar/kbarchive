@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165482: XFOR: Connector for cc:Mail Fails With Some Non-US Time Zones"
-permalink: kb/165/Q165482/
+permalink: /kb/165/Q165482/
 ---
 
 ## Q165482: XFOR: Connector for cc:Mail Fails With Some Non-US Time Zones

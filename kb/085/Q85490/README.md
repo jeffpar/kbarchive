@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85490: PRB: Number Causes Help Compiler Invalid Context ID Error"
-permalink: kb/085/Q85490/
+permalink: /kb/085/Q85490/
 ---
 
 ## Q85490: PRB: Number Causes Help Compiler Invalid Context ID Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128722: Windows Hangs After Installing TCP/IP with WDCDRV.386"
-permalink: kb/128/Q128722/
+permalink: /kb/128/Q128722/
 ---
 
 ## Q128722: Windows Hangs After Installing TCP/IP with WDCDRV.386

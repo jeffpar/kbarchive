@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198857: XFOR: 8007010b Err: Notes/SNADS/PROFS Connector Fails To Install"
-permalink: kb/198/Q198857/
+permalink: /kb/198/Q198857/
 ---
 
 ## Q198857: XFOR: 8007010b Err: Notes/SNADS/PROFS Connector Fails To Install

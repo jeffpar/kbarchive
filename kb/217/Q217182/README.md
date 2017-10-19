@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217182: FIX: Descriptions Aren't Added to Registry with DECLARE_REGISTRY"
-permalink: kb/217/Q217182/
+permalink: /kb/217/Q217182/
 ---
 
 ## Q217182: FIX: Descriptions Aren't Added to Registry with DECLARE_REGISTRY

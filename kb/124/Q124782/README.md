@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124782: NBA Basketball Hangs After Running Maintenance Mode Setup"
-permalink: kb/124/Q124782/
+permalink: /kb/124/Q124782/
 ---
 
 ## Q124782: NBA Basketball Hangs After Running Maintenance Mode Setup

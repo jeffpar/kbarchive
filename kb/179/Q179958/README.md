@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179958: When to Use &quot;Already Verified Authentication&quot;"
-permalink: kb/179/Q179958/
+permalink: /kb/179/Q179958/
 ---
 
 ## Q179958: When to Use &quot;Already Verified Authentication&quot;

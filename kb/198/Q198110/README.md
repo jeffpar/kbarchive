@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198110: Combat Flight Simulator Does Not Detect Hardware Acceleration"
-permalink: kb/198/Q198110/
+permalink: /kb/198/Q198110/
 ---
 
 ## Q198110: Combat Flight Simulator Does Not Detect Hardware Acceleration

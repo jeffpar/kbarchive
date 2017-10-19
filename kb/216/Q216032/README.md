@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216032: Telnet 3270 Clients Experience Delay During Session Startup"
-permalink: kb/216/Q216032/
+permalink: /kb/216/Q216032/
 ---
 
 ## Q216032: Telnet 3270 Clients Experience Delay During Session Startup

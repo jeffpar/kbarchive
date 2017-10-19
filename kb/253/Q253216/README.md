@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253216: XADM: Online Backup Doesn't Detect Corruption on Multiprocessor"
-permalink: kb/253/Q253216/
+permalink: /kb/253/Q253216/
 ---
 
 ## Q253216: XADM: Online Backup Doesn't Detect Corruption on Multiprocessor

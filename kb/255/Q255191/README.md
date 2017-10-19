@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255191: Stop 0x7f Appears Using Compaq Carbon Copy and Cirrus Logic"
-permalink: kb/255/Q255191/
+permalink: /kb/255/Q255191/
 ---
 
 ## Q255191: Stop 0x7f Appears Using Compaq Carbon Copy and Cirrus Logic

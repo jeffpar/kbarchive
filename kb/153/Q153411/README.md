@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153411: Default APPC Are Not Resolved Correctly for OS/2 Clients"
-permalink: kb/153/Q153411/
+permalink: /kb/153/Q153411/
 ---
 
 ## Q153411: Default APPC Are Not Resolved Correctly for OS/2 Clients

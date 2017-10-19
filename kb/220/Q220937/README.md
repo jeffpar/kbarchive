@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220937: Installed Third-Party Printer Drivers Not Displayed in Wizard"
-permalink: kb/220/Q220937/
+permalink: /kb/220/Q220937/
 ---
 
 ## Q220937: Installed Third-Party Printer Drivers Not Displayed in Wizard

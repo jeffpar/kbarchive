@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256615: Setup Time-Out Attempting to Create Indexes on Large Tables"
-permalink: kb/256/Q256615/
+permalink: /kb/256/Q256615/
 ---
 
 ## Q256615: Setup Time-Out Attempting to Create Indexes on Large Tables

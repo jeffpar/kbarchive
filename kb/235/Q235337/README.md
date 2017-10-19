@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235337: Cannot Remove Internet Explorer 5 After You Uninstall Service Pa"
-permalink: kb/235/Q235337/
+permalink: /kb/235/Q235337/
 ---
 
 ## Q235337: Cannot Remove Internet Explorer 5 After You Uninstall Service Pa

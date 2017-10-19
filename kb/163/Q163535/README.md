@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163535: ODE97: List of Files You Can Redistribute with ODE Run-Time App"
-permalink: kb/163/Q163535/
+permalink: /kb/163/Q163535/
 ---
 
 ## Q163535: ODE97: List of Files You Can Redistribute with ODE Run-Time App

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274743: SMS: SQL Error 3023 in Collection Evaluator Log"
-permalink: kb/274/Q274743/
+permalink: /kb/274/Q274743/
 ---
 
 ## Q274743: SMS: SQL Error 3023 in Collection Evaluator Log

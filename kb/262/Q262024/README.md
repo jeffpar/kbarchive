@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262024: HOWTO: Use CPropertySheet as a Child of CSplitterWnd"
-permalink: kb/262/Q262024/
+permalink: /kb/262/Q262024/
 ---
 
 ## Q262024: HOWTO: Use CPropertySheet as a Child of CSplitterWnd

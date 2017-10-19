@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152304: Random Blue Screens Caused by Bad Packet and DLC.SYS"
-permalink: kb/152/Q152304/
+permalink: /kb/152/Q152304/
 ---
 
 ## Q152304: Random Blue Screens Caused by Bad Packet and DLC.SYS

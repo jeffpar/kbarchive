@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69197: SysEdit Err Msg: List of SysEdit Error Messages"
-permalink: kb/069/Q69197/
+permalink: /kb/069/Q69197/
 ---
 
 ## Q69197: SysEdit Err Msg: List of SysEdit Error Messages

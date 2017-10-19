@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131492: Recurring Appointment Dialog Box: ALT+Y Doesn't Work"
-permalink: kb/131/Q131492/
+permalink: /kb/131/Q131492/
 ---
 
 ## Q131492: Recurring Appointment Dialog Box: ALT+Y Doesn't Work

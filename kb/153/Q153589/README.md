@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153589: Compaq NetFlex-3/E Controller not Upgraded During WinNT 4.0 Setu"
-permalink: kb/153/Q153589/
+permalink: /kb/153/Q153589/
 ---
 
 ## Q153589: Compaq NetFlex-3/E Controller not Upgraded During WinNT 4.0 Setu

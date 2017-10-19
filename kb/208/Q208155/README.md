@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q208155: PRB: BK1503 when Building Large .bsc File"
-permalink: kb/208/Q208155/
+permalink: /kb/208/Q208155/
 ---
 
 ## Q208155: PRB: BK1503 when Building Large .bsc File

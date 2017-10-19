@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317478: HOW TO: Prevent IIS from Accepting Anon Requests During Install"
-permalink: kb/317/Q317478/
+permalink: /kb/317/Q317478/
 ---
 
 ## Q317478: HOW TO: Prevent IIS from Accepting Anon Requests During Install

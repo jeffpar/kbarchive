@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166561: XFOR: CCMC Not Handling Bad Messages Correctly"
-permalink: kb/166/Q166561/
+permalink: /kb/166/Q166561/
 ---
 
 ## Q166561: XFOR: CCMC Not Handling Bad Messages Correctly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137603: PPT: Unpacked PPT4.0 Presentation Requires PPT95"
-permalink: kb/137/Q137603/
+permalink: /kb/137/Q137603/
 ---
 
 ## Q137603: PPT: Unpacked PPT4.0 Presentation Requires PPT95

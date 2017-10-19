@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189924: BUG: Private Databound UserControl Loses DataBindings in EXE"
-permalink: kb/189/Q189924/
+permalink: /kb/189/Q189924/
 ---
 
 ## Q189924: BUG: Private Databound UserControl Loses DataBindings in EXE

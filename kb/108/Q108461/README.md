@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108461: FIX: DO Loop/Computed GOTO Errors with /Ox and /4Yb"
-permalink: kb/108/Q108461/
+permalink: /kb/108/Q108461/
 ---
 
 ## Q108461: FIX: DO Loop/Computed GOTO Errors with /Ox and /4Yb

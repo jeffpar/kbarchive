@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182547: XCON: Emsmta.exe Causes Access Violation In EMSMTA!HeapCheckFree"
-permalink: kb/182/Q182547/
+permalink: /kb/182/Q182547/
 ---
 
 ## Q182547: XCON: Emsmta.exe Causes Access Violation In EMSMTA!HeapCheckFree

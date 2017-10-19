@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248364: Updating Mime Types with ADSUTIL.VBS Results Corrupted Mime Type"
-permalink: kb/248/Q248364/
+permalink: /kb/248/Q248364/
 ---
 
 ## Q248364: Updating Mime Types with ADSUTIL.VBS Results Corrupted Mime Type

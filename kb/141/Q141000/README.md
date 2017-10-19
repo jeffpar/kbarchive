@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141000: Multimedia: Black Screen or No Sound When Starting Program"
-permalink: kb/141/Q141000/
+permalink: /kb/141/Q141000/
 ---
 
 ## Q141000: Multimedia: Black Screen or No Sound When Starting Program

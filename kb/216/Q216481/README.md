@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216481: PRB: ByRef Has No Effect on Form's Public Variables"
-permalink: kb/216/Q216481/
+permalink: /kb/216/Q216481/
 ---
 
 ## Q216481: PRB: ByRef Has No Effect on Form's Public Variables

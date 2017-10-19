@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191925: Automatic Logon Fails Using 5250 Applet"
-permalink: kb/191/Q191925/
+permalink: /kb/191/Q191925/
 ---
 
 ## Q191925: Automatic Logon Fails Using 5250 Applet

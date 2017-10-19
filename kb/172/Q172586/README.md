@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172586: How To Check the Version Number of DirectX Drivers in Windows 95"
-permalink: kb/172/Q172586/
+permalink: /kb/172/Q172586/
 ---
 
 ## Q172586: How To Check the Version Number of DirectX Drivers in Windows 95

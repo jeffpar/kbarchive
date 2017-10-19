@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98524: HIMEM.SYS Can Access Only 16 Megabytes on an IBM PS/2"
-permalink: kb/098/Q98524/
+permalink: /kb/098/Q98524/
 ---
 
 ## Q98524: HIMEM.SYS Can Access Only 16 Megabytes on an IBM PS/2

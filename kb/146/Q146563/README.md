@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146563: XCLN: Bad Headers from Resent NDR with Changed To: Field"
-permalink: kb/146/Q146563/
+permalink: /kb/146/Q146563/
 ---
 
 ## Q146563: XCLN: Bad Headers from Resent NDR with Changed To: Field

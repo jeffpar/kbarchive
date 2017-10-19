@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151306: WINS Partner Registry Settings May Be Deleted"
-permalink: kb/151/Q151306/
+permalink: /kb/151/Q151306/
 ---
 
 ## Q151306: WINS Partner Registry Settings May Be Deleted

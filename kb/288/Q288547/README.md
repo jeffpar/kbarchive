@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288547: SMS: WMI Returns Win32_Share Instances Indefinitely"
-permalink: kb/288/Q288547/
+permalink: /kb/288/Q288547/
 ---
 
 ## Q288547: SMS: WMI Returns Win32_Share Instances Indefinitely

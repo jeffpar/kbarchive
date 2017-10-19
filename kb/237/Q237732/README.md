@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237732: NFL 2000: Quits Unexpectedly If Main Screen Remains Displayed"
-permalink: kb/237/Q237732/
+permalink: /kb/237/Q237732/
 ---
 
 ## Q237732: NFL 2000: Quits Unexpectedly If Main Screen Remains Displayed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109057: WFWG 3.11: The Network Group and WINSETUP /P"
-permalink: kb/109/Q109057/
+permalink: /kb/109/Q109057/
 ---
 
 ## Q109057: WFWG 3.11: The Network Group and WINSETUP /P

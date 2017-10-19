@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185525: WD97: Opening Text Only Files Changes Right and Left Margins"
-permalink: kb/185/Q185525/
+permalink: /kb/185/Q185525/
 ---
 
 ## Q185525: WD97: Opening Text Only Files Changes Right and Left Margins

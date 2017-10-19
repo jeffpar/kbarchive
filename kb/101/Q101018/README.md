@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101018: How to Copy Memo or General Fields to New Records"
-permalink: kb/101/Q101018/
+permalink: /kb/101/Q101018/
 ---
 
 ## Q101018: How to Copy Memo or General Fields to New Records

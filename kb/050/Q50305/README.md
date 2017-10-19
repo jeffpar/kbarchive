@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50305: Plane Still Flies When Out of Fuel in World War I Ace"
-permalink: kb/050/Q50305/
+permalink: /kb/050/Q50305/
 ---
 
 ## Q50305: Plane Still Flies When Out of Fuel in World War I Ace

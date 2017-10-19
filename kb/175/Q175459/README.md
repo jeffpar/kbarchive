@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175459: Error: Missing Oleaut32.dll in Setup Program"
-permalink: kb/175/Q175459/
+permalink: /kb/175/Q175459/
 ---
 
 ## Q175459: Error: Missing Oleaut32.dll in Setup Program

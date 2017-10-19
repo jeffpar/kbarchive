@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297395: XADM: Performance Wizard Does Not Update File Location"
-permalink: kb/297/Q297395/
+permalink: /kb/297/Q297395/
 ---
 
 ## Q297395: XADM: Performance Wizard Does Not Update File Location

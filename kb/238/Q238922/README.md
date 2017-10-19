@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238922: Encarta 2000: Detailed Description of Registry Key Functions"
-permalink: kb/238/Q238922/
+permalink: /kb/238/Q238922/
 ---
 
 ## Q238922: Encarta 2000: Detailed Description of Registry Key Functions

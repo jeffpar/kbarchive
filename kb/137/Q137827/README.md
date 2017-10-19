@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137827: Program and .ini Files Not Transferred with User Profiles"
-permalink: kb/137/Q137827/
+permalink: /kb/137/Q137827/
 ---
 
 ## Q137827: Program and .ini Files Not Transferred with User Profiles

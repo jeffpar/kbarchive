@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134562: HyperTerminal: File Transfers Using Kermit Fails"
-permalink: kb/134/Q134562/
+permalink: /kb/134/Q134562/
 ---
 
 ## Q134562: HyperTerminal: File Transfers Using Kermit Fails

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107766: MAC Musical Instruments: README Contents"
-permalink: kb/107/Q107766/
+permalink: /kb/107/Q107766/
 ---
 
 ## Q107766: MAC Musical Instruments: README Contents

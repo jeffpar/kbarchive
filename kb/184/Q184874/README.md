@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184874: How to Change Access Numbers for MSN"
-permalink: kb/184/Q184874/
+permalink: /kb/184/Q184874/
 ---
 
 ## Q184874: How to Change Access Numbers for MSN

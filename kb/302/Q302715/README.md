@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302715: &quot;Page Cannot Be Displayed&quot; Error When Going Through Signup In MS"
-permalink: kb/302/Q302715/
+permalink: /kb/302/Q302715/
 ---
 
 ## Q302715: &quot;Page Cannot Be Displayed&quot; Error When Going Through Signup In MS

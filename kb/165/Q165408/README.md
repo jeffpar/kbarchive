@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165408: HOWTO: Append Menu to an Existing Top-Level Form Menu"
-permalink: kb/165/Q165408/
+permalink: /kb/165/Q165408/
 ---
 
 ## Q165408: HOWTO: Append Menu to an Existing Top-Level Form Menu

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165940: Dynamic Updates for Adding LUs to Pools Is Broken"
-permalink: kb/165/Q165940/
+permalink: /kb/165/Q165940/
 ---
 
 ## Q165940: Dynamic Updates for Adding LUs to Pools Is Broken

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274751: SMS: NetWare Clients May Lose Mapped Drives After Connection Att"
-permalink: kb/274/Q274751/
+permalink: /kb/274/Q274751/
 ---
 
 ## Q274751: SMS: NetWare Clients May Lose Mapped Drives After Connection Att

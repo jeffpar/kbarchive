@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262865: XCON: Do Not Replay .dat Files Removed by Mtacheck Utility"
-permalink: kb/262/Q262865/
+permalink: /kb/262/Q262865/
 ---
 
 ## Q262865: XCON: Do Not Replay .dat Files Removed by Mtacheck Utility

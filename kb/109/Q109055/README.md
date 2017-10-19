@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109055: MS-DLC Setup Err Msg: &quot;The Network Setup Process Could...&quot;"
-permalink: kb/109/Q109055/
+permalink: /kb/109/Q109055/
 ---
 
 ## Q109055: MS-DLC Setup Err Msg: &quot;The Network Setup Process Could...&quot;

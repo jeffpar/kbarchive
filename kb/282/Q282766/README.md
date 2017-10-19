@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282766: SQL Server 2000 Administrator's Pocket Consultant Comments and C"
-permalink: kb/282/Q282766/
+permalink: /kb/282/Q282766/
 ---
 
 ## Q282766: SQL Server 2000 Administrator's Pocket Consultant Comments and C

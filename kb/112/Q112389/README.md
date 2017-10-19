@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112389: The Unexpected QuickWin Error"
-permalink: kb/112/Q112389/
+permalink: /kb/112/Q112389/
 ---
 
 ## Q112389: The Unexpected QuickWin Error

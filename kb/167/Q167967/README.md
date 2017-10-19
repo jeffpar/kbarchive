@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167967: FIX: /Og Increments the Index of a Loop Too Soon"
-permalink: kb/167/Q167967/
+permalink: /kb/167/Q167967/
 ---
 
 ## Q167967: FIX: /Og Increments the Index of a Loop Too Soon

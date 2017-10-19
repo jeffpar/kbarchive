@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106659: How to Sum or Count Specific Fields in a Report"
-permalink: kb/106/Q106659/
+permalink: /kb/106/Q106659/
 ---
 
 ## Q106659: How to Sum or Count Specific Fields in a Report

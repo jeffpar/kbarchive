@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242563: AoE II: How to Move Campaigns, Scenarios to a Different Computer"
-permalink: kb/242/Q242563/
+permalink: /kb/242/Q242563/
 ---
 
 ## Q242563: AoE II: How to Move Campaigns, Scenarios to a Different Computer

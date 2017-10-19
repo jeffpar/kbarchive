@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272070: SMS: Logon Server Manager Cannot Modify VB Scripts for Logon"
-permalink: kb/272/Q272070/
+permalink: /kb/272/Q272070/
 ---
 
 ## Q272070: SMS: Logon Server Manager Cannot Modify VB Scripts for Logon

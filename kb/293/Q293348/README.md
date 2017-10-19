@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293348: HOWTO: Set Focus on a Column in a DataGrid Control"
-permalink: kb/293/Q293348/
+permalink: /kb/293/Q293348/
 ---
 
 ## Q293348: HOWTO: Set Focus on a Column in a DataGrid Control

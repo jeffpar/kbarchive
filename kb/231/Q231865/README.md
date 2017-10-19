@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231865: SNA Server Interoperability with Windows Load Balancing"
-permalink: kb/231/Q231865/
+permalink: /kb/231/Q231865/
 ---
 
 ## Q231865: SNA Server Interoperability with Windows Load Balancing

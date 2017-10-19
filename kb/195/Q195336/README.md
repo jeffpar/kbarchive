@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195336: Resource Kit Perfmib.dll Cannot Read Some SNMP Counters"
-permalink: kb/195/Q195336/
+permalink: /kb/195/Q195336/
 ---
 
 ## Q195336: Resource Kit Perfmib.dll Cannot Read Some SNMP Counters

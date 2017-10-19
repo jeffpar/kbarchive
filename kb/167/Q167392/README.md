@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167392: WD97: Changing Text Formatting Also Changes Paragraph Formatting"
-permalink: kb/167/Q167392/
+permalink: /kb/167/Q167392/
 ---
 
 ## Q167392: WD97: Changing Text Formatting Also Changes Paragraph Formatting

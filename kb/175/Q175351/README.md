@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175351: XWEB: OWA Send Does Not Work After Canceling Security Dialog"
-permalink: kb/175/Q175351/
+permalink: /kb/175/Q175351/
 ---
 
 ## Q175351: XWEB: OWA Send Does Not Work After Canceling Security Dialog

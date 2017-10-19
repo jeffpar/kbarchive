@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106274: Certain Network Adapters Can Use DMA Channels 0-3 Only"
-permalink: kb/106/Q106274/
+permalink: /kb/106/Q106274/
 ---
 
 ## Q106274: Certain Network Adapters Can Use DMA Channels 0-3 Only

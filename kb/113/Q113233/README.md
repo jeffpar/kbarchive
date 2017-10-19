@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113233: Windows 3.1 Disk 5 Directory Listing (3.5 Inch 1.44 MB)"
-permalink: kb/113/Q113233/
+permalink: /kb/113/Q113233/
 ---
 
 ## Q113233: Windows 3.1 Disk 5 Directory Listing (3.5 Inch 1.44 MB)

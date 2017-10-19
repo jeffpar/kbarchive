@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94942: DOCERR: Value Returned By Prologue Macro Documented Incorrectly"
-permalink: kb/094/Q94942/
+permalink: /kb/094/Q94942/
 ---
 
 ## Q94942: DOCERR: Value Returned By Prologue Macro Documented Incorrectly

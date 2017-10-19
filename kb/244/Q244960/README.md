@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244960: FIX: Analyze and DDUPD Return &quot;Out of Memory&quot;"
-permalink: kb/244/Q244960/
+permalink: /kb/244/Q244960/
 ---
 
 ## Q244960: FIX: Analyze and DDUPD Return &quot;Out of Memory&quot;

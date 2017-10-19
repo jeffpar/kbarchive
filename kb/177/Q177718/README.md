@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177718: CC: A Bridge Too Far: Err Msg: &quot;Unable to Start the Program...&quot;"
-permalink: kb/177/Q177718/
+permalink: /kb/177/Q177718/
 ---
 
 ## Q177718: CC: A Bridge Too Far: Err Msg: &quot;Unable to Start the Program...&quot;

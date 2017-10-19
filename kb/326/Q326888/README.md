@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326888: Network+ Certification Training Kit, Second Edition Comments and"
-permalink: kb/326/Q326888/
+permalink: /kb/326/Q326888/
 ---
 
 ## Q326888: Network+ Certification Training Kit, Second Edition Comments and

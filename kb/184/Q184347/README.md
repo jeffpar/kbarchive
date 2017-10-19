@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184347: Program Is Still Listed After It Is Uninstalled"
-permalink: kb/184/Q184347/
+permalink: /kb/184/Q184347/
 ---
 
 ## Q184347: Program Is Still Listed After It Is Uninstalled

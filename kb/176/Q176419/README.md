@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176419: FIX: Inet Control Method OpenURL Fails If No Proxy Selected"
-permalink: kb/176/Q176419/
+permalink: /kb/176/Q176419/
 ---
 
 ## Q176419: FIX: Inet Control Method OpenURL Fails If No Proxy Selected

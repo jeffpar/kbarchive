@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77279: Print Using Printer Resolution with Paintbrush"
-permalink: kb/077/Q77279/
+permalink: /kb/077/Q77279/
 ---
 
 ## Q77279: Print Using Printer Resolution with Paintbrush

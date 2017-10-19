@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86930: 3COM: What Must Be Done Before Installing the 3Com Gateway"
-permalink: kb/086/Q86930/
+permalink: /kb/086/Q86930/
 ---
 
 ## Q86930: 3COM: What Must Be Done Before Installing the 3Com Gateway

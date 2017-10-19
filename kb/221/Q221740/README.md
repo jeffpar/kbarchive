@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221740: FIX: Form Does Not Close After Using PEMSTATUS()"
-permalink: kb/221/Q221740/
+permalink: /kb/221/Q221740/
 ---
 
 ## Q221740: FIX: Form Does Not Close After Using PEMSTATUS()

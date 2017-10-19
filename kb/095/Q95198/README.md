@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95198: PRB: C2061 Error Generated When DEBUG_NEW Used in Application"
-permalink: kb/095/Q95198/
+permalink: /kb/095/Q95198/
 ---
 
 ## Q95198: PRB: C2061 Error Generated When DEBUG_NEW Used in Application

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163633: Err Msg: No Disk in Drive"
-permalink: kb/163/Q163633/
+permalink: /kb/163/Q163633/
 ---
 
 ## Q163633: Err Msg: No Disk in Drive

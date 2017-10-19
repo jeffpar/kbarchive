@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155961: WD97: ListNum Field Not Converted Saving to Word 6.0/95"
-permalink: kb/155/Q155961/
+permalink: /kb/155/Q155961/
 ---
 
 ## Q155961: WD97: ListNum Field Not Converted Saving to Word 6.0/95

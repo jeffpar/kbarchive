@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299681: FIX: Syntax Error on Form Makes Form Unusable"
-permalink: kb/299/Q299681/
+permalink: /kb/299/Q299681/
 ---
 
 ## Q299681: FIX: Syntax Error on Form Makes Form Unusable

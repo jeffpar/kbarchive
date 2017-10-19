@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82840: MathCAD Will Not Accept Some Characters from Character Map"
-permalink: kb/082/Q82840/
+permalink: /kb/082/Q82840/
 ---
 
 ## Q82840: MathCAD Will Not Accept Some Characters from Character Map

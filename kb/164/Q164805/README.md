@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164805: XADM: Contents of This Public Folder Currently Unavailable"
-permalink: kb/164/Q164805/
+permalink: /kb/164/Q164805/
 ---
 
 ## Q164805: XADM: Contents of This Public Folder Currently Unavailable

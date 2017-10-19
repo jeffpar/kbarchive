@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162545: WD97: Launching Word Corrupts Tseng Labs ET6000 Video"
-permalink: kb/162/Q162545/
+permalink: /kb/162/Q162545/
 ---
 
 ## Q162545: WD97: Launching Word Corrupts Tseng Labs ET6000 Video

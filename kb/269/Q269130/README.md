@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269130: Migrating NIS NETGROUP File to Active Directory May Not Work"
-permalink: kb/269/Q269130/
+permalink: /kb/269/Q269130/
 ---
 
 ## Q269130: Migrating NIS NETGROUP File to Active Directory May Not Work

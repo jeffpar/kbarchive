@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138484: Incorrect Placement When Minimizing Telnet Window"
-permalink: kb/138/Q138484/
+permalink: /kb/138/Q138484/
 ---
 
 ## Q138484: Incorrect Placement When Minimizing Telnet Window

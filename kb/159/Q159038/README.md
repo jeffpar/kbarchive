@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159038: P6 BIOS Must Configure Devices Behind PCI-to-PCI Bridge"
-permalink: kb/159/Q159038/
+permalink: /kb/159/Q159038/
 ---
 
 ## Q159038: P6 BIOS Must Configure Devices Behind PCI-to-PCI Bridge

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90496: 386 Enhanced Mode Boot Sequence for Windows for Workgroups"
-permalink: kb/090/Q90496/
+permalink: /kb/090/Q90496/
 ---
 
 ## Q90496: 386 Enhanced Mode Boot Sequence for Windows for Workgroups

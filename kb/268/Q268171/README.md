@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268171: TN3270 Application May Process a Screen of Host Data Twice"
-permalink: kb/268/Q268171/
+permalink: /kb/268/Q268171/
 ---
 
 ## Q268171: TN3270 Application May Process a Screen of Host Data Twice

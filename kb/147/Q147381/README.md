@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147381: How to Use System Policies On a Standalone Computer"
-permalink: kb/147/Q147381/
+permalink: /kb/147/Q147381/
 ---
 
 ## Q147381: How to Use System Policies On a Standalone Computer

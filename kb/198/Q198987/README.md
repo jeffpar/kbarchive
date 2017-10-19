@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198987: SMSINST: SMS Installer Dialog Box Does Not Display All Text"
-permalink: kb/198/Q198987/
+permalink: /kb/198/Q198987/
 ---
 
 ## Q198987: SMSINST: SMS Installer Dialog Box Does Not Display All Text

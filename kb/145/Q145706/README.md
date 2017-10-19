@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145706: New Local Schedule+ Files Do Not Synchronize with Server"
-permalink: kb/145/Q145706/
+permalink: /kb/145/Q145706/
 ---
 
 ## Q145706: New Local Schedule+ Files Do Not Synchronize with Server

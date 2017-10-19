@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189188: SMS: Miperf.bat - Add MIF File Counters to Performance Monitor"
-permalink: kb/189/Q189188/
+permalink: /kb/189/Q189188/
 ---
 
 ## Q189188: SMS: Miperf.bat - Add MIF File Counters to Performance Monitor

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99239: FIX: MASM Generates Incorrect Code for Indirect Addressing"
-permalink: kb/099/Q99239/
+permalink: /kb/099/Q99239/
 ---
 
 ## Q99239: FIX: MASM Generates Incorrect Code for Indirect Addressing

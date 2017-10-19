@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98964: Mac RSC: Common Problems and Solutions with Remote Server"
-permalink: kb/098/Q98964/
+permalink: /kb/098/Q98964/
 ---
 
 ## Q98964: Mac RSC: Common Problems and Solutions with Remote Server

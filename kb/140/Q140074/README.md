@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140074: Mac Gty: Removing Gateway Resources from Gateway Mail Server"
-permalink: kb/140/Q140074/
+permalink: /kb/140/Q140074/
 ---
 
 ## Q140074: Mac Gty: Removing Gateway Resources from Gateway Mail Server

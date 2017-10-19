@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78527: Using Oracle 5.1c with EMM386.EXE"
-permalink: kb/078/Q78527/
+permalink: /kb/078/Q78527/
 ---
 
 ## Q78527: Using Oracle 5.1c with EMM386.EXE

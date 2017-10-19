@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93154: Printing to Non-Default Printer Causes Errors/Corrupt Output"
-permalink: kb/093/Q93154/
+permalink: /kb/093/Q93154/
 ---
 
 ## Q93154: Printing to Non-Default Printer Causes Errors/Corrupt Output

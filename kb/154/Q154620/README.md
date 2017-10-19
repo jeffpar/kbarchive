@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154620: Windows NT 4.0 DNS Server Loses the Forwarders Settings"
-permalink: kb/154/Q154620/
+permalink: /kb/154/Q154620/
 ---
 
 ## Q154620: Windows NT 4.0 DNS Server Loses the Forwarders Settings

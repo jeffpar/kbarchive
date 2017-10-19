@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q35803: DOCERR: External Addresses in &quot;=&quot; Directive"
-permalink: kb/035/Q35803/
+permalink: /kb/035/Q35803/
 ---
 
 ## Q35803: DOCERR: External Addresses in &quot;=&quot; Directive

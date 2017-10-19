@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149264: BUG: ListView in Report View Mode Truncates First ListItem"
-permalink: kb/149/Q149264/
+permalink: /kb/149/Q149264/
 ---
 
 ## Q149264: BUG: ListView in Report View Mode Truncates First ListItem

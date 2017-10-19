@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115360: X400: Cursor Stays in First Column of Route Table"
-permalink: kb/115/Q115360/
+permalink: /kb/115/Q115360/
 ---
 
 ## Q115360: X400: Cursor Stays in First Column of Route Table

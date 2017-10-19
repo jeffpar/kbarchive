@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150536: Rcmd.exe Err Msg: Error 53 Failed to Connect to Server"
-permalink: kb/150/Q150536/
+permalink: /kb/150/Q150536/
 ---
 
 ## Q150536: Rcmd.exe Err Msg: Error 53 Failed to Connect to Server

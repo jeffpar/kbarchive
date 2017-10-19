@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136980: FIX: Entering Validation Rule in Table Designer Causes Error"
-permalink: kb/136/Q136980/
+permalink: /kb/136/Q136980/
 ---
 
 ## Q136980: FIX: Entering Validation Rule in Table Designer Causes Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267863: Profile Quota Error Message Is Not Reset in Danish Windows NT"
-permalink: kb/267/Q267863/
+permalink: /kb/267/Q267863/
 ---
 
 ## Q267863: Profile Quota Error Message Is Not Reset in Danish Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173361: The MSN Home Page Reloads Continuously When You Connect"
-permalink: kb/173/Q173361/
+permalink: /kb/173/Q173361/
 ---
 
 ## Q173361: The MSN Home Page Reloads Continuously When You Connect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269566: WD97: ErrMsg Clicking &quot;Exit&quot;, &quot;AutoCorrect&quot;, &quot;Increase Indent&quot;"
-permalink: kb/269/Q269566/
+permalink: /kb/269/Q269566/
 ---
 
 ## Q269566: WD97: ErrMsg Clicking &quot;Exit&quot;, &quot;AutoCorrect&quot;, &quot;Increase Indent&quot;

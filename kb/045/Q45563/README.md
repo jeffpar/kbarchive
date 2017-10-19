@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q45563: setbuf() Doesn't Control MS-DOS Buffer or Keyboard Buffer"
-permalink: kb/045/Q45563/
+permalink: /kb/045/Q45563/
 ---
 
 ## Q45563: setbuf() Doesn't Control MS-DOS Buffer or Keyboard Buffer

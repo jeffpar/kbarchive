@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254376: PRB: Err Msg: &quot;Access Is Denied&quot; When Client Accesses ASP Page"
-permalink: kb/254/Q254376/
+permalink: /kb/254/Q254376/
 ---
 
 ## Q254376: PRB: Err Msg: &quot;Access Is Denied&quot; When Client Accesses ASP Page

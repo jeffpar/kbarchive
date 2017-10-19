@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192062: CC: A Bridge Too Far Err Msg: Out of Command Data Space"
-permalink: kb/192/Q192062/
+permalink: /kb/192/Q192062/
 ---
 
 ## Q192062: CC: A Bridge Too Far Err Msg: Out of Command Data Space

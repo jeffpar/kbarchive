@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201144: Unable to Print Using the AppleTalk Network Protocol"
-permalink: kb/201/Q201144/
+permalink: /kb/201/Q201144/
 ---
 
 ## Q201144: Unable to Print Using the AppleTalk Network Protocol

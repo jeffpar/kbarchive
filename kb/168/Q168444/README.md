@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168444: Windows 95 Setup Problems with Plug and Play Program Active"
-permalink: kb/168/Q168444/
+permalink: /kb/168/Q168444/
 ---
 
 ## Q168444: Windows 95 Setup Problems with Plug and Play Program Active

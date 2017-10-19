@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175460: Inside Visual C++, 4th Ed. Corrections and Comments"
-permalink: kb/175/Q175460/
+permalink: /kb/175/Q175460/
 ---
 
 ## Q175460: Inside Visual C++, 4th Ed. Corrections and Comments

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113251: MULTICON Demonstrates Dynamic Icons"
-permalink: kb/113/Q113251/
+permalink: /kb/113/Q113251/
 ---
 
 ## Q113251: MULTICON Demonstrates Dynamic Icons

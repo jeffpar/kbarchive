@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247905: Bookshelf 98 Mac: Hangs When Click Bookshelf Icon on Menu Bar"
-permalink: kb/247/Q247905/
+permalink: /kb/247/Q247905/
 ---
 
 ## Q247905: Bookshelf 98 Mac: Hangs When Click Bookshelf Icon on Menu Bar

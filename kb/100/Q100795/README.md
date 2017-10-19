@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100795: MemMaker Err Msg: Bad Input Character (@)"
-permalink: kb/100/Q100795/
+permalink: /kb/100/Q100795/
 ---
 
 ## Q100795: MemMaker Err Msg: Bad Input Character (@)

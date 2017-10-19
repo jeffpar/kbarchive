@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139970: BUG:Text &amp; Value Properties of DBGrid Column Show Empty String"
-permalink: kb/139/Q139970/
+permalink: /kb/139/Q139970/
 ---
 
 ## Q139970: BUG:Text &amp; Value Properties of DBGrid Column Show Empty String

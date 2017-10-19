@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243790: Asheron's Call: Screen Turns Black After You Change Resolution"
-permalink: kb/243/Q243790/
+permalink: /kb/243/Q243790/
 ---
 
 ## Q243790: Asheron's Call: Screen Turns Black After You Change Resolution

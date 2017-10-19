@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135645: Setacl Doesn't Run When Converting to NTFS After Setup"
-permalink: kb/135/Q135645/
+permalink: /kb/135/Q135645/
 ---
 
 ## Q135645: Setacl Doesn't Run When Converting to NTFS After Setup

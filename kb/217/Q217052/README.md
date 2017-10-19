@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217052: Modem Configuration File Is Not Copied During Modem Installation"
-permalink: kb/217/Q217052/
+permalink: /kb/217/Q217052/
 ---
 
 ## Q217052: Modem Configuration File Is Not Copied During Modem Installation

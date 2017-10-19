@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169485: 3270 LU Assignments to Workstations Not Saved Properly"
-permalink: kb/169/Q169485/
+permalink: /kb/169/Q169485/
 ---
 
 ## Q169485: 3270 LU Assignments to Workstations Not Saved Properly

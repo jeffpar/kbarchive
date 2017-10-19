@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134340: Font Display Problems Using Systems Management Server Helpdesk"
-permalink: kb/134/Q134340/
+permalink: /kb/134/Q134340/
 ---
 
 ## Q134340: Font Display Problems Using Systems Management Server Helpdesk

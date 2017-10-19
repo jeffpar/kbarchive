@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147815: HOWTO: Create a Flashing Title Bar on a Visual Basic Form"
-permalink: kb/147/Q147815/
+permalink: /kb/147/Q147815/
 ---
 
 ## Q147815: HOWTO: Create a Flashing Title Bar on a Visual Basic Form

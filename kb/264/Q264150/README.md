@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264150: StarLancer: Choppy Sounds During Introductory Movie and in Game"
-permalink: kb/264/Q264150/
+permalink: /kb/264/Q264150/
 ---
 
 ## Q264150: StarLancer: Choppy Sounds During Introductory Movie and in Game

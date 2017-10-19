@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234760: Cannot Telnet into a Sun Solaris or HP-UX Server"
-permalink: kb/234/Q234760/
+permalink: /kb/234/Q234760/
 ---
 
 ## Q234760: Cannot Telnet into a Sun Solaris or HP-UX Server

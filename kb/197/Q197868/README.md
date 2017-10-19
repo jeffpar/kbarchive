@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197868: XCLN: Exchange Client Setup Hangs while Updating Your System"
-permalink: kb/197/Q197868/
+permalink: /kb/197/Q197868/
 ---
 
 ## Q197868: XCLN: Exchange Client Setup Hangs while Updating Your System

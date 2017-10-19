@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257274: License Server Components Are Not Updated in Intl. Versions"
-permalink: kb/257/Q257274/
+permalink: /kb/257/Q257274/
 ---
 
 ## Q257274: License Server Components Are Not Updated in Intl. Versions

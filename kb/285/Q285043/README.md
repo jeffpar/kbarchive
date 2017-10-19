@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285043: Combat Flight Simulator 2: Unable to Change Gunsight"
-permalink: kb/285/Q285043/
+permalink: /kb/285/Q285043/
 ---
 
 ## Q285043: Combat Flight Simulator 2: Unable to Change Gunsight

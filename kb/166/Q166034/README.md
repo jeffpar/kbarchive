@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166034: Writer 2: ErrMsg: Creative Writer Had Trouble Spell Checking..."
-permalink: kb/166/Q166034/
+permalink: /kb/166/Q166034/
 ---
 
 ## Q166034: Writer 2: ErrMsg: Creative Writer Had Trouble Spell Checking...

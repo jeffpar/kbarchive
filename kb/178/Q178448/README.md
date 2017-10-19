@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178448: FP98: Can't Change Design-Time Controls Properties After Saving"
-permalink: kb/178/Q178448/
+permalink: /kb/178/Q178448/
 ---
 
 ## Q178448: FP98: Can't Change Design-Time Controls Properties After Saving

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135721: No InfoMover NE4100 PCMCIA Adapter Choice in Control Panel"
-permalink: kb/135/Q135721/
+permalink: /kb/135/Q135721/
 ---
 
 ## Q135721: No InfoMover NE4100 PCMCIA Adapter Choice in Control Panel

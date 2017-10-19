@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66993: Noise Words Are Wildcards in &quot;Phrase Search&quot; in PRISM Browser"
-permalink: kb/066/Q66993/
+permalink: /kb/066/Q66993/
 ---
 
 ## Q66993: Noise Words Are Wildcards in &quot;Phrase Search&quot; in PRISM Browser

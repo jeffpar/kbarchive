@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143484: IIS Services Stop with Large Client Requests"
-permalink: kb/143/Q143484/
+permalink: /kb/143/Q143484/
 ---
 
 ## Q143484: IIS Services Stop with Large Client Requests

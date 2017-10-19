@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111758: Stacker Conversion ErrMsg: Dblspace Was Not Able to Convert..."
-permalink: kb/111/Q111758/
+permalink: /kb/111/Q111758/
 ---
 
 ## Q111758: Stacker Conversion ErrMsg: Dblspace Was Not Able to Convert...

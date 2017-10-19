@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164353: SMSINST: Command Line Parameter Order for Installer Executables"
-permalink: kb/164/Q164353/
+permalink: /kb/164/Q164353/
 ---
 
 ## Q164353: SMSINST: Command Line Parameter Order for Installer Executables

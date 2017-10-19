@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182683: Windows Taskbar Unavailable During IMS COBOL Import"
-permalink: kb/182/Q182683/
+permalink: /kb/182/Q182683/
 ---
 
 ## Q182683: Windows Taskbar Unavailable During IMS COBOL Import

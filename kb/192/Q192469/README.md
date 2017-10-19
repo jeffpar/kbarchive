@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192469: Can't Find Visual Basic 6 Step by Step Files"
-permalink: kb/192/Q192469/
+permalink: /kb/192/Q192469/
 ---
 
 ## Q192469: Can't Find Visual Basic 6 Step by Step Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189008: SBS Unable to Get Name Resolution with DNS"
-permalink: kb/189/Q189008/
+permalink: /kb/189/Q189008/
 ---
 
 ## Q189008: SBS Unable to Get Name Resolution with DNS

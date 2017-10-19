@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218979: PC Win: Cannot Specify Import or Export Date Later Than 2019"
-permalink: kb/218/Q218979/
+permalink: /kb/218/Q218979/
 ---
 
 ## Q218979: PC Win: Cannot Specify Import or Export Date Later Than 2019

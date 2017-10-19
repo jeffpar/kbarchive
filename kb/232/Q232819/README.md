@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232819: Err Msg: &quot;1782 Disk Controller Failure&quot; Compaq Deskpro"
-permalink: kb/232/Q232819/
+permalink: /kb/232/Q232819/
 ---
 
 ## Q232819: Err Msg: &quot;1782 Disk Controller Failure&quot; Compaq Deskpro

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159607: Flight Simulator 95: Joysticks Turn Off in Middle of Flight"
-permalink: kb/159/Q159607/
+permalink: /kb/159/Q159607/
 ---
 
 ## Q159607: Flight Simulator 95: Joysticks Turn Off in Middle of Flight

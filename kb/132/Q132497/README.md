@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132497: Dogs: Cannot View Images Outside of Dogs"
-permalink: kb/132/Q132497/
+permalink: /kb/132/Q132497/
 ---
 
 ## Q132497: Dogs: Cannot View Images Outside of Dogs

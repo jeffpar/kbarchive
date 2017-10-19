@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126400: SNA Server-AS/400 Connection Active, But No Sessions Negotiated"
-permalink: kb/126/Q126400/
+permalink: /kb/126/Q126400/
 ---
 
 ## Q126400: SNA Server-AS/400 Connection Active, But No Sessions Negotiated

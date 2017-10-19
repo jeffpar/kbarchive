@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299422: No Check Mark Next to Site Name When User Signs Out"
-permalink: kb/299/Q299422/
+permalink: /kb/299/Q299422/
 ---
 
 ## Q299422: No Check Mark Next to Site Name When User Signs Out

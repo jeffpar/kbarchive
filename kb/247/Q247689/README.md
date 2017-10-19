@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247689: XCLN: Readme in Exchange Server 5.5 SP3 Outlook Version Wrong"
-permalink: kb/247/Q247689/
+permalink: /kb/247/Q247689/
 ---
 
 ## Q247689: XCLN: Readme in Exchange Server 5.5 SP3 Outlook Version Wrong

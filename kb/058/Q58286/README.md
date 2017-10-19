@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58286: IBM 8514/A Display Adapter Support in Windows 3.0"
-permalink: kb/058/Q58286/
+permalink: /kb/058/Q58286/
 ---
 
 ## Q58286: IBM 8514/A Display Adapter Support in Windows 3.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68950: Windows Err Msg: Insufficient Memory to Run Setup for..."
-permalink: kb/068/Q68950/
+permalink: /kb/068/Q68950/
 ---
 
 ## Q68950: Windows Err Msg: Insufficient Memory to Run Setup for...

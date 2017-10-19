@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160055: Warning Event ID 4010 Generated on Windows NT LPD Server"
-permalink: kb/160/Q160055/
+permalink: /kb/160/Q160055/
 ---
 
 ## Q160055: Warning Event ID 4010 Generated on Windows NT LPD Server

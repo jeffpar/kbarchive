@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139139: Cannot Send E-mail to Address Containing Exclamation Point"
-permalink: kb/139/Q139139/
+permalink: /kb/139/Q139139/
 ---
 
 ## Q139139: Cannot Send E-mail to Address Containing Exclamation Point

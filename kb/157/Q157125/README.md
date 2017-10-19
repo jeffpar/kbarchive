@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157125: FIX: Setup Does Not Copy Visigenic's VSDRVM32.DLL File"
-permalink: kb/157/Q157125/
+permalink: /kb/157/Q157125/
 ---
 
 ## Q157125: FIX: Setup Does Not Copy Visigenic's VSDRVM32.DLL File

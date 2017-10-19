@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137127: Encarta 96 for Windows: Readme.wri Contents (Part 1 of 2)"
-permalink: kb/137/Q137127/
+permalink: /kb/137/Q137127/
 ---
 
 ## Q137127: Encarta 96 for Windows: Readme.wri Contents (Part 1 of 2)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216922: Certificate Server Does Not Create Backups of Installed Keys"
-permalink: kb/216/Q216922/
+permalink: /kb/216/Q216922/
 ---
 
 ## Q216922: Certificate Server Does Not Create Backups of Installed Keys

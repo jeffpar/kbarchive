@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179690: FIX: Launching COM Server with Long File Name Returns 0x80080005"
-permalink: kb/179/Q179690/
+permalink: /kb/179/Q179690/
 ---
 
 ## Q179690: FIX: Launching COM Server with Long File Name Returns 0x80080005

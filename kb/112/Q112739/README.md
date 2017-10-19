@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112739: Error Renaming Expanded Directory When Running NetWare 3.x"
-permalink: kb/112/Q112739/
+permalink: /kb/112/Q112739/
 ---
 
 ## Q112739: Error Renaming Expanded Directory When Running NetWare 3.x

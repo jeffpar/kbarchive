@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259429: XCLN: Error Message When You Open a Recurring Appointment"
-permalink: kb/259/Q259429/
+permalink: /kb/259/Q259429/
 ---
 
 ## Q259429: XCLN: Error Message When You Open a Recurring Appointment

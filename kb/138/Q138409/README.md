@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138409: Novell VLM Client Files Not Removed When COMMAND /C Used"
-permalink: kb/138/Q138409/
+permalink: /kb/138/Q138409/
 ---
 
 ## Q138409: Novell VLM Client Files Not Removed When COMMAND /C Used

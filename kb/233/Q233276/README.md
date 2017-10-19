@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233276: XCLN: Message Sent Times Inaccurately Match the Received Times"
-permalink: kb/233/Q233276/
+permalink: /kb/233/Q233276/
 ---
 
 ## Q233276: XCLN: Message Sent Times Inaccurately Match the Received Times

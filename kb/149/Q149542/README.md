@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149542: XFOR: IMC Error 1067 , Dr. Watson on MSEXCIMC.EXE"
-permalink: kb/149/Q149542/
+permalink: /kb/149/Q149542/
 ---
 
 ## Q149542: XFOR: IMC Error 1067 , Dr. Watson on MSEXCIMC.EXE

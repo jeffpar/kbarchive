@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176037: XWEB: Blank To: Line When Deleting Recurring Appointment"
-permalink: kb/176/Q176037/
+permalink: /kb/176/Q176037/
 ---
 
 ## Q176037: XWEB: Blank To: Line When Deleting Recurring Appointment

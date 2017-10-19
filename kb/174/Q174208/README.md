@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174208: XWEB: Netscape Macintosh Client Does not Show Folders Properly"
-permalink: kb/174/Q174208/
+permalink: /kb/174/Q174208/
 ---
 
 ## Q174208: XWEB: Netscape Macintosh Client Does not Show Folders Properly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101045: Encarta Err Msg: The Necessary Text Fonts Are Not Available"
-permalink: kb/101/Q101045/
+permalink: /kb/101/Q101045/
 ---
 
 ## Q101045: Encarta Err Msg: The Necessary Text Fonts Are Not Available

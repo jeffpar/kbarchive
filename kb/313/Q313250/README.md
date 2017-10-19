@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313250: PIP/Works: How to Troubleshoot Printing Issues"
-permalink: kb/313/Q313250/
+permalink: /kb/313/Q313250/
 ---
 
 ## Q313250: PIP/Works: How to Troubleshoot Printing Issues

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226814: SMS: &quot;Remote Execute&quot; Doesn't Open Files Associated with Program"
-permalink: kb/226/Q226814/
+permalink: /kb/226/Q226814/
 ---
 
 ## Q226814: SMS: &quot;Remote Execute&quot; Doesn't Open Files Associated with Program

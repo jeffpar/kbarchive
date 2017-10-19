@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175639: Windows 95/98 and Windows NT 4.0 Can Share Virtual Memory"
-permalink: kb/175/Q175639/
+permalink: /kb/175/Q175639/
 ---
 
 ## Q175639: Windows 95/98 and Windows NT 4.0 Can Share Virtual Memory

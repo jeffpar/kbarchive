@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123597: WinNT Err Msg: Error 614 Out of Buffers When Using RAS Script"
-permalink: kb/123/Q123597/
+permalink: /kb/123/Q123597/
 ---
 
 ## Q123597: WinNT Err Msg: Error 614 Out of Buffers When Using RAS Script

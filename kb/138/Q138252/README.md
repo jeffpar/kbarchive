@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138252: PPT7: Presentation Contains Blank Boxes If Saved as 4.0"
-permalink: kb/138/Q138252/
+permalink: /kb/138/Q138252/
 ---
 
 ## Q138252: PPT7: Presentation Contains Blank Boxes If Saved as 4.0

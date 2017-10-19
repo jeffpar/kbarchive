@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250907: XFOR: Cannot Open Internet Mail Service Page with SMTP Error"
-permalink: kb/250/Q250907/
+permalink: /kb/250/Q250907/
 ---
 
 ## Q250907: XFOR: Cannot Open Internet Mail Service Page with SMTP Error

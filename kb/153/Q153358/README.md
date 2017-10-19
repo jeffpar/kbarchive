@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153358: Wine Guide: Minimum System Requirements"
-permalink: kb/153/Q153358/
+permalink: /kb/153/Q153358/
 ---
 
 ## Q153358: Wine Guide: Minimum System Requirements

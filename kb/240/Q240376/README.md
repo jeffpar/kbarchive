@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240376: Err Msg: HTTP 500 - Internal Server Error"
-permalink: kb/240/Q240376/
+permalink: /kb/240/Q240376/
 ---
 
 ## Q240376: Err Msg: HTTP 500 - Internal Server Error

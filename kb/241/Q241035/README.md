@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241035: Mastering MS Visual Basic 6.0 Development Comments &amp; Corrections"
-permalink: kb/241/Q241035/
+permalink: /kb/241/Q241035/
 ---
 
 ## Q241035: Mastering MS Visual Basic 6.0 Development Comments &amp; Corrections

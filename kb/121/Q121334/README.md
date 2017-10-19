@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121334: Encarta 1994: Search Not Sorted By Word Frequency"
-permalink: kb/121/Q121334/
+permalink: /kb/121/Q121334/
 ---
 
 ## Q121334: Encarta 1994: Search Not Sorted By Word Frequency

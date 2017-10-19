@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150163: Gardening: Filter Choices Canceled As If Start Over Activated"
-permalink: kb/150/Q150163/
+permalink: /kb/150/Q150163/
 ---
 
 ## Q150163: Gardening: Filter Choices Canceled As If Start Over Activated

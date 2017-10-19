@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172083: PRB: Cannot Modify DataChanged Property of DBGrid Column Object"
-permalink: kb/172/Q172083/
+permalink: /kb/172/Q172083/
 ---
 
 ## Q172083: PRB: Cannot Modify DataChanged Property of DBGrid Column Object

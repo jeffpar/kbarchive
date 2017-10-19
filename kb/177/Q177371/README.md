@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177371: WD97: Picture/Object Does Not Show on Envelopes/Labels Tab"
-permalink: kb/177/Q177371/
+permalink: /kb/177/Q177371/
 ---
 
 ## Q177371: WD97: Picture/Object Does Not Show on Envelopes/Labels Tab

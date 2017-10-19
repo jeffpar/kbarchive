@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133341: ACC2: WX1200: Microsoft ADT Custom Controls Service Pack"
-permalink: kb/133/Q133341/
+permalink: /kb/133/Q133341/
 ---
 
 ## Q133341: ACC2: WX1200: Microsoft ADT Custom Controls Service Pack

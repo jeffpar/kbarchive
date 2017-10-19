@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126453: PC Win: Err Msg: Cannot Find XXXXXXXX.DRV"
-permalink: kb/126/Q126453/
+permalink: /kb/126/Q126453/
 ---
 
 ## Q126453: PC Win: Err Msg: Cannot Find XXXXXXXX.DRV

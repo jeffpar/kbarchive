@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175649: Adding New SCSI Controller to DEC Alpha May Prevent Startup"
-permalink: kb/175/Q175649/
+permalink: /kb/175/Q175649/
 ---
 
 ## Q175649: Adding New SCSI Controller to DEC Alpha May Prevent Startup

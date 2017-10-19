@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136667: PRB: Action Diagram Does Not Show Graphic Lines"
-permalink: kb/136/Q136667/
+permalink: /kb/136/Q136667/
 ---
 
 ## Q136667: PRB: Action Diagram Does Not Show Graphic Lines

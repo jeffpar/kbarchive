@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123871: PRB: Screen Saver Applications Cannot Be Debugged Properly"
-permalink: kb/123/Q123871/
+permalink: /kb/123/Q123871/
 ---
 
 ## Q123871: PRB: Screen Saver Applications Cannot Be Debugged Properly

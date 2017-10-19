@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66531: Copying from CON to a Subdirectory Doesn't Result in Error"
-permalink: kb/066/Q66531/
+permalink: /kb/066/Q66531/
 ---
 
 ## Q66531: Copying from CON to a Subdirectory Doesn't Result in Error

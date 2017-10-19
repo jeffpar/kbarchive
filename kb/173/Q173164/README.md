@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173164: PRB: Loading a Workspace Is Slow in Visual C++"
-permalink: kb/173/Q173164/
+permalink: /kb/173/Q173164/
 ---
 
 ## Q173164: PRB: Loading a Workspace Is Slow in Visual C++

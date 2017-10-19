@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239607: World Atlas: Error Message on Blue Screen When You Start Program"
-permalink: kb/239/Q239607/
+permalink: /kb/239/Q239607/
 ---
 
 ## Q239607: World Atlas: Error Message on Blue Screen When You Start Program

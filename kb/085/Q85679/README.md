@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85679: INFO: Changing Print Settings Mid-Job"
-permalink: kb/085/Q85679/
+permalink: /kb/085/Q85679/
 ---
 
 ## Q85679: INFO: Changing Print Settings Mid-Job

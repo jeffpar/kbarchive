@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q31747: INFO: Changing the Mouse Cursor for a Window"
-permalink: kb/031/Q31747/
+permalink: /kb/031/Q31747/
 ---
 
 ## Q31747: INFO: Changing the Mouse Cursor for a Window

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164145: Cannot Open File Accessing Visual FoxPro Database"
-permalink: kb/164/Q164145/
+permalink: /kb/164/Q164145/
 ---
 
 ## Q164145: Cannot Open File Accessing Visual FoxPro Database

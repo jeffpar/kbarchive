@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192585: Tutor Err Msg: Skyspace Caused an Invalid Page Fault..."
-permalink: kb/192/Q192585/
+permalink: /kb/192/Q192585/
 ---
 
 ## Q192585: Tutor Err Msg: Skyspace Caused an Invalid Page Fault...

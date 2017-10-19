@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201855: SMS: Dll.log on Client Does Not Report Date/Time on Error Messag"
-permalink: kb/201/Q201855/
+permalink: /kb/201/Q201855/
 ---
 
 ## Q201855: SMS: Dll.log on Client Does Not Report Date/Time on Error Messag

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316971: Pack Level Is Not Preserved When You Use the #import Directive"
-permalink: kb/316/Q316971/
+permalink: /kb/316/Q316971/
 ---
 
 ## Q316971: Pack Level Is Not Preserved When You Use the #import Directive

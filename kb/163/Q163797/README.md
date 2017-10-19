@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163797: HOWTO: Lock a SourceSafe Database"
-permalink: kb/163/Q163797/
+permalink: /kb/163/Q163797/
 ---
 
 ## Q163797: HOWTO: Lock a SourceSafe Database

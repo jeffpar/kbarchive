@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177644: Commenting Macintosh File Changes Date and Time Stamp"
-permalink: kb/177/Q177644/
+permalink: /kb/177/Q177644/
 ---
 
 ## Q177644: Commenting Macintosh File Changes Date and Time Stamp

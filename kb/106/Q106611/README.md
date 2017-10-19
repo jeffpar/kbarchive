@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106611: CD Sampler: Mouse Pointer Invisible During Demo"
-permalink: kb/106/Q106611/
+permalink: /kb/106/Q106611/
 ---
 
 ## Q106611: CD Sampler: Mouse Pointer Invisible During Demo

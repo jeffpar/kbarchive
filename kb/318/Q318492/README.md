@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318492: XADM: &quot;Access Denied&quot; Err Msg Occurs Starting Exchange Admin"
-permalink: kb/318/Q318492/
+permalink: /kb/318/Q318492/
 ---
 
 ## Q318492: XADM: &quot;Access Denied&quot; Err Msg Occurs Starting Exchange Admin

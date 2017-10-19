@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151557: FP: FrontPage Doesn't Support FTP, Gopher, Telnet, WAIS Protocol"
-permalink: kb/151/Q151557/
+permalink: /kb/151/Q151557/
 ---
 
 ## Q151557: FP: FrontPage Doesn't Support FTP, Gopher, Telnet, WAIS Protocol

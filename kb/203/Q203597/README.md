@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203597: Load Balancing PPTP with WLBS"
-permalink: kb/203/Q203597/
+permalink: /kb/203/Q203597/
 ---
 
 ## Q203597: Load Balancing PPTP with WLBS

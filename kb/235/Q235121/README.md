@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235121: Performance Optimizing Network Shares"
-permalink: kb/235/Q235121/
+permalink: /kb/235/Q235121/
 ---
 
 ## Q235121: Performance Optimizing Network Shares

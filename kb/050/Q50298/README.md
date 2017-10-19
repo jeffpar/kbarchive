@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50298: Standard Emulation for Star Micronics Printers"
-permalink: kb/050/Q50298/
+permalink: /kb/050/Q50298/
 ---
 
 ## Q50298: Standard Emulation for Star Micronics Printers

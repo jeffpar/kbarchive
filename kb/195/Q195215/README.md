@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195215: XFOR: Outbound SMTP with 8-Bit Data in the Message Body"
-permalink: kb/195/Q195215/
+permalink: /kb/195/Q195215/
 ---
 
 ## Q195215: XFOR: Outbound SMTP with 8-Bit Data in the Message Body

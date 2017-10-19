@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135177: Text-Screen Enhancement Programs May Not Work"
-permalink: kb/135/Q135177/
+permalink: /kb/135/Q135177/
 ---
 
 ## Q135177: Text-Screen Enhancement Programs May Not Work

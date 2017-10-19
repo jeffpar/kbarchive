@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75001: SAMPLE: Parent.exe Uses SetParent to Change Parent of Child"
-permalink: kb/075/Q75001/
+permalink: /kb/075/Q75001/
 ---
 
 ## Q75001: SAMPLE: Parent.exe Uses SetParent to Change Parent of Child

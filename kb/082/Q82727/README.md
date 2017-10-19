@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82727: HyperAccess 5 Occasionally Locks Up System"
-permalink: kb/082/Q82727/
+permalink: /kb/082/Q82727/
 ---
 
 ## Q82727: HyperAccess 5 Occasionally Locks Up System

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170978: PRB: MFC Browser Library (MFC.BSC) Can't Find MFC Source Files"
-permalink: kb/170/Q170978/
+permalink: /kb/170/Q170978/
 ---
 
 ## Q170978: PRB: MFC Browser Library (MFC.BSC) Can't Find MFC Source Files

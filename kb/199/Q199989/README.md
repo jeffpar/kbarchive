@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199989: XFOR: Completely Removing LinkAge V3.2 Connector Software"
-permalink: kb/199/Q199989/
+permalink: /kb/199/Q199989/
 ---
 
 ## Q199989: XFOR: Completely Removing LinkAge V3.2 Connector Software

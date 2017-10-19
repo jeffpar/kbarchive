@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300197: HOW TO: Ping an IP Address with Visual Basic by Using ICMP"
-permalink: kb/300/Q300197/
+permalink: /kb/300/Q300197/
 ---
 
 ## Q300197: HOW TO: Ping an IP Address with Visual Basic by Using ICMP

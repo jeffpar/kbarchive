@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120062: Corel Draw 5.0 Running in Second VDM Loses Data"
-permalink: kb/120/Q120062/
+permalink: /kb/120/Q120062/
 ---
 
 ## Q120062: Corel Draw 5.0 Running in Second VDM Loses Data

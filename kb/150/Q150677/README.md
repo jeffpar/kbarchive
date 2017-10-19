@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150677: FP: Internet Explorer 2.0 Does Not Recognize Right Alignment"
-permalink: kb/150/Q150677/
+permalink: /kb/150/Q150677/
 ---
 
 ## Q150677: FP: Internet Explorer 2.0 Does Not Recognize Right Alignment

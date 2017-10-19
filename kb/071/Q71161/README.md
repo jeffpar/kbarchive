@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71161: Appending Binary Files Using the COPY Command"
-permalink: kb/071/Q71161/
+permalink: /kb/071/Q71161/
 ---
 
 ## Q71161: Appending Binary Files Using the COPY Command

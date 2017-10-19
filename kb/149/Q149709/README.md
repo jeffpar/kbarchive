@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149709: PRB: Incorrect CListCtrl Painting During Label Editing"
-permalink: kb/149/Q149709/
+permalink: /kb/149/Q149709/
 ---
 
 ## Q149709: PRB: Incorrect CListCtrl Painting During Label Editing

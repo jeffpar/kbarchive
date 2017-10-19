@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142710: Lock Violation Opening NetWare Server File w/ Shareable Bit Set"
-permalink: kb/142/Q142710/
+permalink: /kb/142/Q142710/
 ---
 
 ## Q142710: Lock Violation Opening NetWare Server File w/ Shareable Bit Set

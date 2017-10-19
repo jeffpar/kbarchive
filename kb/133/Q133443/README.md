@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133443: PIFs Are Not Created in the PIF Folder"
-permalink: kb/133/Q133443/
+permalink: /kb/133/Q133443/
 ---
 
 ## Q133443: PIFs Are Not Created in the PIF Folder

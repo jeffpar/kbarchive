@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199814: SMS: Assigning Site System Roles to Distributed Servers"
-permalink: kb/199/Q199814/
+permalink: /kb/199/Q199814/
 ---
 
 ## Q199814: SMS: Assigning Site System Roles to Distributed Servers

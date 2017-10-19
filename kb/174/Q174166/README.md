@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174166: XFOR: Exchange Connectivity Log Browser Shows Unknown Entries"
-permalink: kb/174/Q174166/
+permalink: /kb/174/Q174166/
 ---
 
 ## Q174166: XFOR: Exchange Connectivity Log Browser Shows Unknown Entries

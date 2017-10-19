@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254540: XCON: GW Router Has Trouble with Multiple Messages with Same ATT"
-permalink: kb/254/Q254540/
+permalink: /kb/254/Q254540/
 ---
 
 ## Q254540: XCON: GW Router Has Trouble with Multiple Messages with Same ATT

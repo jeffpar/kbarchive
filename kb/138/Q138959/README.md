@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138959: Third-Party, Virus-Protection Products for Windows NT"
-permalink: kb/138/Q138959/
+permalink: /kb/138/Q138959/
 ---
 
 ## Q138959: Third-Party, Virus-Protection Products for Windows NT

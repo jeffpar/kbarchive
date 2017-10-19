@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75476: Cardfile: Card Size Cannot be Changed"
-permalink: kb/075/Q75476/
+permalink: /kb/075/Q75476/
 ---
 
 ## Q75476: Cardfile: Card Size Cannot be Changed

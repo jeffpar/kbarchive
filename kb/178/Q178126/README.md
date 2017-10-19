@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178126: SNA NT Clients Should not Fall Back to Named Pipes"
-permalink: kb/178/Q178126/
+permalink: /kb/178/Q178126/
 ---
 
 ## Q178126: SNA NT Clients Should not Fall Back to Named Pipes

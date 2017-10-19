@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124890: How to Use Modem AT Commands in HyperTerminal"
-permalink: kb/124/Q124890/
+permalink: /kb/124/Q124890/
 ---
 
 ## Q124890: How to Use Modem AT Commands in HyperTerminal

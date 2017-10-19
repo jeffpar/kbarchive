@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167233: Windows NT Boot Error Msg: Missing Last Known Good Menu"
-permalink: kb/167/Q167233/
+permalink: /kb/167/Q167233/
 ---
 
 ## Q167233: Windows NT Boot Error Msg: Missing Last Known Good Menu

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243220: COM Internet Services Do Not Work Without ProxyOverride Entry"
-permalink: kb/243/Q243220/
+permalink: /kb/243/Q243220/
 ---
 
 ## Q243220: COM Internet Services Do Not Work Without ProxyOverride Entry

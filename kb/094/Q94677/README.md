@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94677: Cannot Start Applications from Command Line with WFWG"
-permalink: kb/094/Q94677/
+permalink: /kb/094/Q94677/
 ---
 
 ## Q94677: Cannot Start Applications from Command Line with WFWG

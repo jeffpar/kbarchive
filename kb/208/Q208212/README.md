@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q208212: PRB: Error When Using Assign Method to Assign Object References"
-permalink: kb/208/Q208212/
+permalink: /kb/208/Q208212/
 ---
 
 ## Q208212: PRB: Error When Using Assign Method to Assign Object References

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171933: SNA Server 3.0 Appears to Ignore APPC Mode Priority Setting"
-permalink: kb/171/Q171933/
+permalink: /kb/171/Q171933/
 ---
 
 ## Q171933: SNA Server 3.0 Appears to Ignore APPC Mode Priority Setting

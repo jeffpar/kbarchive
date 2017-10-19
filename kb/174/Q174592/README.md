@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174592: Err Msg: This Printer Cannot Be Installed Now..."
-permalink: kb/174/Q174592/
+permalink: /kb/174/Q174592/
 ---
 
 ## Q174592: Err Msg: This Printer Cannot Be Installed Now...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285396: HOWTO: Obtain Office Constants from .OLB Files with VFP"
-permalink: kb/285/Q285396/
+permalink: /kb/285/Q285396/
 ---
 
 ## Q285396: HOWTO: Obtain Office Constants from .OLB Files with VFP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q33131: When One Disk in a BACKUP/RESTORE Sequence Is Bad"
-permalink: kb/033/Q33131/
+permalink: /kb/033/Q33131/
 ---
 
 ## Q33131: When One Disk in a BACKUP/RESTORE Sequence Is Bad

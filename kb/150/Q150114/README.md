@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150114: XFOR: IMC Doesn't Appear to Use All Mail Exchangers"
-permalink: kb/150/Q150114/
+permalink: /kb/150/Q150114/
 ---
 
 ## Q150114: XFOR: IMC Doesn't Appear to Use All Mail Exchangers

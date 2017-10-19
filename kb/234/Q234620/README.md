@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234620: PRB: Visual C++ Debugger Can Fail on Pentium III Computers"
-permalink: kb/234/Q234620/
+permalink: /kb/234/Q234620/
 ---
 
 ## Q234620: PRB: Visual C++ Debugger Can Fail on Pentium III Computers

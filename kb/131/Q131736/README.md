@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131736: TCP/IP: Load Balancing vs. Distributed Network Sessions"
-permalink: kb/131/Q131736/
+permalink: /kb/131/Q131736/
 ---
 
 ## Q131736: TCP/IP: Load Balancing vs. Distributed Network Sessions

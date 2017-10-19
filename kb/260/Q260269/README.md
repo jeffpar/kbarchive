@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260269: How to Enable UPN (or Single) Logon with IIS 5.0"
-permalink: kb/260/Q260269/
+permalink: /kb/260/Q260269/
 ---
 
 ## Q260269: How to Enable UPN (or Single) Logon with IIS 5.0

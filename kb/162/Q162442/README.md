@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162442: FIX: Setup Wizard Creates Disk Images That Cannot Be Copied"
-permalink: kb/162/Q162442/
+permalink: /kb/162/Q162442/
 ---
 
 ## Q162442: FIX: Setup Wizard Creates Disk Images That Cannot Be Copied

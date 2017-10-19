@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153002: BUG:SET PRINTER TO Portname COMx Connection Parameters Ignored"
-permalink: kb/153/Q153002/
+permalink: /kb/153/Q153002/
 ---
 
 ## Q153002: BUG:SET PRINTER TO Portname COMx Connection Parameters Ignored

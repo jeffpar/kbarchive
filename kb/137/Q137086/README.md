@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137086: No Output: Right-Hand ALT Key with UK Keyboard Layout"
-permalink: kb/137/Q137086/
+permalink: /kb/137/Q137086/
 ---
 
 ## Q137086: No Output: Right-Hand ALT Key with UK Keyboard Layout

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192589: Encarta 98 Research Organizer Err Msg: Cannot Find the File..."
-permalink: kb/192/Q192589/
+permalink: /kb/192/Q192589/
 ---
 
 ## Q192589: Encarta 98 Research Organizer Err Msg: Cannot Find the File...

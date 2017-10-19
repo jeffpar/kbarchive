@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138968: PRB: UpClick and DownClick Events Do Not Work for a List Box"
-permalink: kb/138/Q138968/
+permalink: /kb/138/Q138968/
 ---
 
 ## Q138968: PRB: UpClick and DownClick Events Do Not Work for a List Box

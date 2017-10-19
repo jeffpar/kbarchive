@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72886: DOCERR: MASM 6.0 Programmer's Guide Errors: Chapters 1-6"
-permalink: kb/072/Q72886/
+permalink: /kb/072/Q72886/
 ---
 
 ## Q72886: DOCERR: MASM 6.0 Programmer's Guide Errors: Chapters 1-6

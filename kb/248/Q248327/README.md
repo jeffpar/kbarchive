@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248327: XADM: Public Folder Conflict Notification Message"
-permalink: kb/248/Q248327/
+permalink: /kb/248/Q248327/
 ---
 
 ## Q248327: XADM: Public Folder Conflict Notification Message

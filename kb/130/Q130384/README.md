@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130384: Critical System Files Installed with Visual FoxPro 3.0 Setup"
-permalink: kb/130/Q130384/
+permalink: /kb/130/Q130384/
 ---
 
 ## Q130384: Critical System Files Installed with Visual FoxPro 3.0 Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171485: FIX: Visual Basic 5.0 Title Bar Paints Incorrectly"
-permalink: kb/171/Q171485/
+permalink: /kb/171/Q171485/
 ---
 
 ## Q171485: FIX: Visual Basic 5.0 Title Bar Paints Incorrectly

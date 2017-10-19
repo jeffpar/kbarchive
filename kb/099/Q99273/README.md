@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99273: An Exercise in Setting/Checking File Permissions"
-permalink: kb/099/Q99273/
+permalink: /kb/099/Q99273/
 ---
 
 ## Q99273: An Exercise in Setting/Checking File Permissions

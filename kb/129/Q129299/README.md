@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129299: Setup Requests Disk 9 with Multiple CD-ROM Drives"
-permalink: kb/129/Q129299/
+permalink: /kb/129/Q129299/
 ---
 
 ## Q129299: Setup Requests Disk 9 with Multiple CD-ROM Drives

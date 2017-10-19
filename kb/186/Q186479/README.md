@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186479: Terminal Server Commands: MIGRATE"
-permalink: kb/186/Q186479/
+permalink: /kb/186/Q186479/
 ---
 
 ## Q186479: Terminal Server Commands: MIGRATE

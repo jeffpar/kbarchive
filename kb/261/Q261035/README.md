@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261035: MCM2: Textures Become Distorted After Text Is Displayed"
-permalink: kb/261/Q261035/
+permalink: /kb/261/Q261035/
 ---
 
 ## Q261035: MCM2: Textures Become Distorted After Text Is Displayed

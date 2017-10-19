@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143308: BUG: Textwidth Method Does Not Return Foxel Units"
-permalink: kb/143/Q143308/
+permalink: /kb/143/Q143308/
 ---
 
 ## Q143308: BUG: Textwidth Method Does Not Return Foxel Units

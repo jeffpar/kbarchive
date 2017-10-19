@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309095: MCSE Readiness Review Exam 70-229: Microsoft SQL Server 2000 Dat"
-permalink: kb/309/Q309095/
+permalink: /kb/309/Q309095/
 ---
 
 ## Q309095: MCSE Readiness Review Exam 70-229: Microsoft SQL Server 2000 Dat

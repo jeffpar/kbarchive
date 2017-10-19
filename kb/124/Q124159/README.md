@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124159: Subsequent Backups Run Slower Than the First"
-permalink: kb/124/Q124159/
+permalink: /kb/124/Q124159/
 ---
 
 ## Q124159: Subsequent Backups Run Slower Than the First

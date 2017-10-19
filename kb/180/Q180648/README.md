@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180648: Windows NT 4.0 Traps with a Stop 0x24 or Stop 0xA"
-permalink: kb/180/Q180648/
+permalink: /kb/180/Q180648/
 ---
 
 ## Q180648: Windows NT 4.0 Traps with a Stop 0x24 or Stop 0xA

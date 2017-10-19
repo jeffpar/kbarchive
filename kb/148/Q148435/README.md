@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148435: CMD.EXE Help Refers To Non-Existing Registry Key"
-permalink: kb/148/Q148435/
+permalink: /kb/148/Q148435/
 ---
 
 ## Q148435: CMD.EXE Help Refers To Non-Existing Registry Key

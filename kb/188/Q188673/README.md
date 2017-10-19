@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188673: XADM: How to Assign a Group as Owner of a Distribution List"
-permalink: kb/188/Q188673/
+permalink: /kb/188/Q188673/
 ---
 
 ## Q188673: XADM: How to Assign a Group as Owner of a Distribution List

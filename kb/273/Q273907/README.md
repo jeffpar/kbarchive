@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273907: XCON: Restrictions Aren't Always Checked for Alternate Recipient"
-permalink: kb/273/Q273907/
+permalink: /kb/273/Q273907/
 ---
 
 ## Q273907: XCON: Restrictions Aren't Always Checked for Alternate Recipient

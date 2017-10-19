@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125218: Madge Smart 16/4 AT Plus Ringnode Token Ring Adapter Fails"
-permalink: kb/125/Q125218/
+permalink: /kb/125/Q125218/
 ---
 
 ## Q125218: Madge Smart 16/4 AT Plus Ringnode Token Ring Adapter Fails

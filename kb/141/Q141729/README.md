@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141729: Macintosh Ultimate Robot: Screen Saver Viewer Does Not Start"
-permalink: kb/141/Q141729/
+permalink: /kb/141/Q141729/
 ---
 
 ## Q141729: Macintosh Ultimate Robot: Screen Saver Viewer Does Not Start

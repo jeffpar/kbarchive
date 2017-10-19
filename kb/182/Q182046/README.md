@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182046: HOWTO: Work Around Bugs in Template Libraries"
-permalink: kb/182/Q182046/
+permalink: /kb/182/Q182046/
 ---
 
 ## Q182046: HOWTO: Work Around Bugs in Template Libraries

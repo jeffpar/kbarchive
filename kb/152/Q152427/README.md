@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152427: SNA Server Windows Enhanced APPC Router Win.ini Parameters"
-permalink: kb/152/Q152427/
+permalink: /kb/152/Q152427/
 ---
 
 ## Q152427: SNA Server Windows Enhanced APPC Router Win.ini Parameters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232270: &quot;Help on Property&quot; Command Unavailable in Network Monitor"
-permalink: kb/232/Q232270/
+permalink: /kb/232/Q232270/
 ---
 
 ## Q232270: &quot;Help on Property&quot; Command Unavailable in Network Monitor

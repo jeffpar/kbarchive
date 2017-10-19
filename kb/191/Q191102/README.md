@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191102: Golf 98/99: How to Host or Join a Multiplayer Game"
-permalink: kb/191/Q191102/
+permalink: /kb/191/Q191102/
 ---
 
 ## Q191102: Golf 98/99: How to Host or Join a Multiplayer Game

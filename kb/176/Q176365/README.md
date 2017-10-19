@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176365: Close Combat: Changing Settings Before Starting the Game"
-permalink: kb/176/Q176365/
+permalink: /kb/176/Q176365/
 ---
 
 ## Q176365: Close Combat: Changing Settings Before Starting the Game

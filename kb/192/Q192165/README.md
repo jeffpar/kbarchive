@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192165: Error: Terminal Server Has Ended Your Connection"
-permalink: kb/192/Q192165/
+permalink: /kb/192/Q192165/
 ---
 
 ## Q192165: Error: Terminal Server Has Ended Your Connection

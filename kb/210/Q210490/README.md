@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210490: Err Msg: Msgolf99 Caused an Invalid Page Fault in Module Unknown"
-permalink: kb/210/Q210490/
+permalink: /kb/210/Q210490/
 ---
 
 ## Q210490: Err Msg: Msgolf99 Caused an Invalid Page Fault in Module Unknown

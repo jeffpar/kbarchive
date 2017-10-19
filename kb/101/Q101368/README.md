@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101368: PC Win DOS: Windows and MS-DOS Client Folders"
-permalink: kb/101/Q101368/
+permalink: /kb/101/Q101368/
 ---
 
 ## Q101368: PC Win DOS: Windows and MS-DOS Client Folders

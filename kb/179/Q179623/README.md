@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179623: XADM: Store Terminates Unexpectedly in CbBinlen"
-permalink: kb/179/Q179623/
+permalink: /kb/179/Q179623/
 ---
 
 ## Q179623: XADM: Store Terminates Unexpectedly in CbBinlen

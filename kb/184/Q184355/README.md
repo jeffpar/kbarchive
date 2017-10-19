@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184355: MSN Err Msg: Iexplore Caused an Invalid Page Fault in Msjava.dll"
-permalink: kb/184/Q184355/
+permalink: /kb/184/Q184355/
 ---
 
 ## Q184355: MSN Err Msg: Iexplore Caused an Invalid Page Fault in Msjava.dll

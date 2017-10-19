@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175712: Starting America Online Disconnects The Microsoft Network"
-permalink: kb/175/Q175712/
+permalink: /kb/175/Q175712/
 ---
 
 ## Q175712: Starting America Online Disconnects The Microsoft Network

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179310: WD97: Word May Error/Quit During Grammar Check of Long Sentence"
-permalink: kb/179/Q179310/
+permalink: /kb/179/Q179310/
 ---
 
 ## Q179310: WD97: Word May Error/Quit During Grammar Check of Long Sentence

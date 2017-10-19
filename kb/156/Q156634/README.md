@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156634: Writer 2: Drop Caps Disappear When Posted"
-permalink: kb/156/Q156634/
+permalink: /kb/156/Q156634/
 ---
 
 ## Q156634: Writer 2: Drop Caps Disappear When Posted

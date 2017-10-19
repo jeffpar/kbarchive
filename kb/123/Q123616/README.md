@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123616: Blank APPSTART Icon"
-permalink: kb/123/Q123616/
+permalink: /kb/123/Q123616/
 ---
 
 ## Q123616: Blank APPSTART Icon

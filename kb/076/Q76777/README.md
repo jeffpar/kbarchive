@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76777: README.TXT: Running Specific Windows Applications"
-permalink: kb/076/Q76777/
+permalink: /kb/076/Q76777/
 ---
 
 ## Q76777: README.TXT: Running Specific Windows Applications

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q30502: FIX: A2107 with .RADIX 16 and Real Number Initialization"
-permalink: kb/030/Q30502/
+permalink: /kb/030/Q30502/
 ---
 
 ## Q30502: FIX: A2107 with .RADIX 16 and Real Number Initialization

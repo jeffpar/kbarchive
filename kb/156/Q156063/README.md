@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156063: XADM: Readme.wri: Microsoft Exchange Server 5.0 Release Notes"
-permalink: kb/156/Q156063/
+permalink: /kb/156/Q156063/
 ---
 
 ## Q156063: XADM: Readme.wri: Microsoft Exchange Server 5.0 Release Notes

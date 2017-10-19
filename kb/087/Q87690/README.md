@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87690: PRB: How to Resolve &quot;Too Many Files Open&quot; Error"
-permalink: kb/087/Q87690/
+permalink: /kb/087/Q87690/
 ---
 
 ## Q87690: PRB: How to Resolve &quot;Too Many Files Open&quot; Error

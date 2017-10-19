@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153330: PGC Cannot Find Server with NetWare, WFWNET, LANMan Connections"
-permalink: kb/153/Q153330/
+permalink: /kb/153/Q153330/
 ---
 
 ## Q153330: PGC Cannot Find Server with NetWare, WFWNET, LANMan Connections

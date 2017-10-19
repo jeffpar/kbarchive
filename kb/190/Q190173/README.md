@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190173: INFO: How Setup Wizard and PDW Compare File Versions and Dates"
-permalink: kb/190/Q190173/
+permalink: /kb/190/Q190173/
 ---
 
 ## Q190173: INFO: How Setup Wizard and PDW Compare File Versions and Dates

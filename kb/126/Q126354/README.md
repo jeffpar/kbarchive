@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126354: Video Performance and Display Problems with Matrox MGA Driver"
-permalink: kb/126/Q126354/
+permalink: /kb/126/Q126354/
 ---
 
 ## Q126354: Video Performance and Display Problems with Matrox MGA Driver

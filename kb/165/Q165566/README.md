@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165566: WD97: Cannot Use &quot;What's This?&quot; in Text Boxes"
-permalink: kb/165/Q165566/
+permalink: /kb/165/Q165566/
 ---
 
 ## Q165566: WD97: Cannot Use &quot;What's This?&quot; in Text Boxes

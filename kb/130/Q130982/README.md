@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130982: Windows 95 Does Not Support the Clix Mouse"
-permalink: kb/130/Q130982/
+permalink: /kb/130/Q130982/
 ---
 
 ## Q130982: Windows 95 Does Not Support the Clix Mouse

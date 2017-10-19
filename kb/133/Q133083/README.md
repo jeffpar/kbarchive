@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133083: PPT7: Presentation Designs Are the Same as Design Templates"
-permalink: kb/133/Q133083/
+permalink: /kb/133/Q133083/
 ---
 
 ## Q133083: PPT7: Presentation Designs Are the Same as Design Templates

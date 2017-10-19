@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66724: DFI 200h Mouse Settings Switch for Windows 3.0"
-permalink: kb/066/Q66724/
+permalink: /kb/066/Q66724/
 ---
 
 ## Q66724: DFI 200h Mouse Settings Switch for Windows 3.0

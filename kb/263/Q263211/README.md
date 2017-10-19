@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263211: AS/400 APPC Controller Goes to RCYPND When Connection Is Stopped"
-permalink: kb/263/Q263211/
+permalink: /kb/263/Q263211/
 ---
 
 ## Q263211: AS/400 APPC Controller Goes to RCYPND When Connection Is Stopped

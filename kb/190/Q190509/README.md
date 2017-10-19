@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190509: PRB: VC++ Does Not Convert Help Project File Paths"
-permalink: kb/190/Q190509/
+permalink: /kb/190/Q190509/
 ---
 
 ## Q190509: PRB: VC++ Does Not Convert Help Project File Paths

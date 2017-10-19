@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177898: Dragging LUs Between Pools of the Same Type Does Not Work"
-permalink: kb/177/Q177898/
+permalink: /kb/177/Q177898/
 ---
 
 ## Q177898: Dragging LUs Between Pools of the Same Type Does Not Work

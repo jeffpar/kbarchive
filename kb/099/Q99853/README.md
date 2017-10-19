@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99853: SMTP: Err Msg: WARNING Getline: NL with No CR"
-permalink: kb/099/Q99853/
+permalink: /kb/099/Q99853/
 ---
 
 ## Q99853: SMTP: Err Msg: WARNING Getline: NL with No CR

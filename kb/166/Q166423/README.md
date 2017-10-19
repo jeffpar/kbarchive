@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166423: Access Violation in SERVICES.EXE in EVENTLOG.DLL"
-permalink: kb/166/Q166423/
+permalink: /kb/166/Q166423/
 ---
 
 ## Q166423: Access Violation in SERVICES.EXE in EVENTLOG.DLL

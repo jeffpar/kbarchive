@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159255: Spike's World: How Do I Send Spike E-Mail?"
-permalink: kb/159/Q159255/
+permalink: /kb/159/Q159255/
 ---
 
 ## Q159255: Spike's World: How Do I Send Spike E-Mail?

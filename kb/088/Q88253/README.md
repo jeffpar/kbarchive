@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88253: Printer Settings Cannot Be Saved for More than One HP III"
-permalink: kb/088/Q88253/
+permalink: /kb/088/Q88253/
 ---
 
 ## Q88253: Printer Settings Cannot Be Saved for More than One HP III

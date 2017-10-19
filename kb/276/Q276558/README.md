@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276558: How to Uninstall and Reinstall SNA Server"
-permalink: kb/276/Q276558/
+permalink: /kb/276/Q276558/
 ---
 
 ## Q276558: How to Uninstall and Reinstall SNA Server

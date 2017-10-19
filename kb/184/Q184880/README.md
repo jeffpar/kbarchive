@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184880: XADM: Setup Does Not Detect Cluster Resources Properly"
-permalink: kb/184/Q184880/
+permalink: /kb/184/Q184880/
 ---
 
 ## Q184880: XADM: Setup Does Not Detect Cluster Resources Properly

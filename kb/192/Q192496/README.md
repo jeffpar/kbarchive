@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192496: Slow Write Performance Using IBM DOS Lan Requester"
-permalink: kb/192/Q192496/
+permalink: /kb/192/Q192496/
 ---
 
 ## Q192496: Slow Write Performance Using IBM DOS Lan Requester

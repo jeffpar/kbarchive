@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103649: Missing Network Printers on Macintosh Choosers"
-permalink: kb/103/Q103649/
+permalink: /kb/103/Q103649/
 ---
 
 ## Q103649: Missing Network Printers on Macintosh Choosers

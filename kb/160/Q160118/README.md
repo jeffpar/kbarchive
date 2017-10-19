@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160118: XADM: How to Print Out Members of a DL from Exchange"
-permalink: kb/160/Q160118/
+permalink: /kb/160/Q160118/
 ---
 
 ## Q160118: XADM: How to Print Out Members of a DL from Exchange

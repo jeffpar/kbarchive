@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163376: XADM: Invalid Message Embedded in Internet Message Causes NDR"
-permalink: kb/163/Q163376/
+permalink: /kb/163/Q163376/
 ---
 
 ## Q163376: XADM: Invalid Message Embedded in Internet Message Causes NDR

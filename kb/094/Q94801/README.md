@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94801: Windows for Workgroups 3.1 Retail Package Options (SKUs)"
-permalink: kb/094/Q94801/
+permalink: /kb/094/Q94801/
 ---
 
 ## Q94801: Windows for Workgroups 3.1 Retail Package Options (SKUs)

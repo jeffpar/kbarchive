@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102913: Scenes 1.0: Adding Pictures to Default PICSETS"
-permalink: kb/102/Q102913/
+permalink: /kb/102/Q102913/
 ---
 
 ## Q102913: Scenes 1.0: Adding Pictures to Default PICSETS

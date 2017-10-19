@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131824: PC NTMMTA: Press ESC and Y to Exit Monitor Window"
-permalink: kb/131/Q131824/
+permalink: /kb/131/Q131824/
 ---
 
 ## Q131824: PC NTMMTA: Press ESC and Y to Exit Monitor Window

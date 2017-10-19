@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99855: SMTP: Err Msg: 503 Bad Command Sequence"
-permalink: kb/099/Q99855/
+permalink: /kb/099/Q99855/
 ---
 
 ## Q99855: SMTP: Err Msg: 503 Bad Command Sequence

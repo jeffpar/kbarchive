@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236078: BUG: Mouse Clicks on Scrollbar of Open ComboBox are Trapped"
-permalink: kb/236/Q236078/
+permalink: /kb/236/Q236078/
 ---
 
 ## Q236078: BUG: Mouse Clicks on Scrollbar of Open ComboBox are Trapped

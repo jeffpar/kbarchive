@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261874: LAN_Sender Generates Error 487 on WNetAddConnection2 to Child"
-permalink: kb/261/Q261874/
+permalink: /kb/261/Q261874/
 ---
 
 ## Q261874: LAN_Sender Generates Error 487 on WNetAddConnection2 to Child

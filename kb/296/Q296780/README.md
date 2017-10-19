@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296780: SMS: Program Based on a Recurring Schedule Runs Multiple Times"
-permalink: kb/296/Q296780/
+permalink: /kb/296/Q296780/
 ---
 
 ## Q296780: SMS: Program Based on a Recurring Schedule Runs Multiple Times

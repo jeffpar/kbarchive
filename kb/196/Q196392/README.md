@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196392: MngAgent Access Violation In Function CStdAgentProxy::SetPending"
-permalink: kb/196/Q196392/
+permalink: /kb/196/Q196392/
 ---
 
 ## Q196392: MngAgent Access Violation In Function CStdAgentProxy::SetPending

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106128: Backup Err Msg: Backup Requires Configuration for This..."
-permalink: kb/106/Q106128/
+permalink: /kb/106/Q106128/
 ---
 
 ## Q106128: Backup Err Msg: Backup Requires Configuration for This...

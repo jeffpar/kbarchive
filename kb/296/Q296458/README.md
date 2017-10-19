@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296458: IIS Disregards Host Headers When Using Keep-Alives"
-permalink: kb/296/Q296458/
+permalink: /kb/296/Q296458/
 ---
 
 ## Q296458: IIS Disregards Host Headers When Using Keep-Alives

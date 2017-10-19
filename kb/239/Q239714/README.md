@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239714: PRB: ODBC Error Message 1526 - &quot;Connectivity Error&quot;"
-permalink: kb/239/Q239714/
+permalink: /kb/239/Q239714/
 ---
 
 ## Q239714: PRB: ODBC Error Message 1526 - &quot;Connectivity Error&quot;

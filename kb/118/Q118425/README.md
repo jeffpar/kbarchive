@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118425: Dangerous Creatures: Stack Overflow Error if Eject During AVI"
-permalink: kb/118/Q118425/
+permalink: /kb/118/Q118425/
 ---
 
 ## Q118425: Dangerous Creatures: Stack Overflow Error if Eject During AVI

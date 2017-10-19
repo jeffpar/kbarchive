@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192883: HOWTO: Modify the VC++ COMPLEXDB Sample to Work on a Web Page"
-permalink: kb/192/Q192883/
+permalink: /kb/192/Q192883/
 ---
 
 ## Q192883: HOWTO: Modify the VC++ COMPLEXDB Sample to Work on a Web Page

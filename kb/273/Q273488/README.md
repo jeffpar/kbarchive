@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273488: Reader Err Msg: You Are Attempting to Connect to an Invalid..."
-permalink: kb/273/Q273488/
+permalink: /kb/273/Q273488/
 ---
 
 ## Q273488: Reader Err Msg: You Are Attempting to Connect to an Invalid...

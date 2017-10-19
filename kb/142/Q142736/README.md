@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142736: PRB: RETRY Command in Method Causes Visual FoxPro to Quit"
-permalink: kb/142/Q142736/
+permalink: /kb/142/Q142736/
 ---
 
 ## Q142736: PRB: RETRY Command in Method Causes Visual FoxPro to Quit

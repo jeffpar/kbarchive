@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185053: Printing Duplex with HP LaserJet 5 PostScript Printer"
-permalink: kb/185/Q185053/
+permalink: /kb/185/Q185053/
 ---
 
 ## Q185053: Printing Duplex with HP LaserJet 5 PostScript Printer

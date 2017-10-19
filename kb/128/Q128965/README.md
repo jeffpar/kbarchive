@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128965: PC WSPlus: Compressing Schedule+ Calendar Files"
-permalink: kb/128/Q128965/
+permalink: /kb/128/Q128965/
 ---
 
 ## Q128965: PC WSPlus: Compressing Schedule+ Calendar Files

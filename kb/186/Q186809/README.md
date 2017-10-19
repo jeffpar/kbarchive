@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186809: Err Msg: HTTP Error 405, 405 Method Not Allowed"
-permalink: kb/186/Q186809/
+permalink: /kb/186/Q186809/
 ---
 
 ## Q186809: Err Msg: HTTP Error 405, 405 Method Not Allowed

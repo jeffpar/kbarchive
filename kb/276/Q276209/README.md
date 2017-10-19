@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276209: Print Session Timeout Problems When You Set Large TImeout Value"
-permalink: kb/276/Q276209/
+permalink: /kb/276/Q276209/
 ---
 
 ## Q276209: Print Session Timeout Problems When You Set Large TImeout Value

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174535: Access Violation When TCMAPP Exceeds 16 Users"
-permalink: kb/174/Q174535/
+permalink: /kb/174/Q174535/
 ---
 
 ## Q174535: Access Violation When TCMAPP Exceeds 16 Users

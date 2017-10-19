@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158952: RAS Detects Motorola BitSurfr Pro Incorrectly"
-permalink: kb/158/Q158952/
+permalink: /kb/158/Q158952/
 ---
 
 ## Q158952: RAS Detects Motorola BitSurfr Pro Incorrectly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139643: XADM: Error Writing Log Information to SA"
-permalink: kb/139/Q139643/
+permalink: /kb/139/Q139643/
 ---
 
 ## Q139643: XADM: Error Writing Log Information to SA

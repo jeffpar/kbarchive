@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134882: DOCERR: Incorrect Code Sample Coordinating Toolbars and Forms"
-permalink: kb/134/Q134882/
+permalink: /kb/134/Q134882/
 ---
 
 ## Q134882: DOCERR: Incorrect Code Sample Coordinating Toolbars and Forms

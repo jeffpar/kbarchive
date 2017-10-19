@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189139: INFO: x86 DEMO7 Sample and Configuration Information"
-permalink: kb/189/Q189139/
+permalink: /kb/189/Q189139/
 ---
 
 ## Q189139: INFO: x86 DEMO7 Sample and Configuration Information

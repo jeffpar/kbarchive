@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260147: FS2000 Error Message: Failed to Initialize GPS Engine"
-permalink: kb/260/Q260147/
+permalink: /kb/260/Q260147/
 ---
 
 ## Q260147: FS2000 Error Message: Failed to Initialize GPS Engine

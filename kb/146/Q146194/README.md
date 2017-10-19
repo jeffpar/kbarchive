@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146194: Covey ALT Key Combination Not Funtional on Some Tabs"
-permalink: kb/146/Q146194/
+permalink: /kb/146/Q146194/
 ---
 
 ## Q146194: Covey ALT Key Combination Not Funtional on Some Tabs

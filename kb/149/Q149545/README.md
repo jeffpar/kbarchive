@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149545: Err Msg: The Mail Headers Could Not Be Displayed"
-permalink: kb/149/Q149545/
+permalink: /kb/149/Q149545/
 ---
 
 ## Q149545: Err Msg: The Mail Headers Could Not Be Displayed

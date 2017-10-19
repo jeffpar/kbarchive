@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193487: SNACFG Displays APPC Session Security Key in Clear Text"
-permalink: kb/193/Q193487/
+permalink: /kb/193/Q193487/
 ---
 
 ## Q193487: SNACFG Displays APPC Session Security Key in Clear Text

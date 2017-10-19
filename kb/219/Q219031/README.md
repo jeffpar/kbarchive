@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219031: XADM: Default POP3 Line-Wrap Set to 72 Characters"
-permalink: kb/219/Q219031/
+permalink: /kb/219/Q219031/
 ---
 
 ## Q219031: XADM: Default POP3 Line-Wrap Set to 72 Characters

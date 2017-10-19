@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180531: Error Message Removing Microsoft Exchange or Proxy Server"
-permalink: kb/180/Q180531/
+permalink: /kb/180/Q180531/
 ---
 
 ## Q180531: Error Message Removing Microsoft Exchange or Proxy Server

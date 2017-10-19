@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119743: Error Attempting to Delete Groups with Member Groups Present"
-permalink: kb/119/Q119743/
+permalink: /kb/119/Q119743/
 ---
 
 ## Q119743: Error Attempting to Delete Groups with Member Groups Present

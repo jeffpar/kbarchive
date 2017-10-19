@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86786: LAYOUTS.WRI Lists Wrong Size for UNIDRV.DLL"
-permalink: kb/086/Q86786/
+permalink: /kb/086/Q86786/
 ---
 
 ## Q86786: LAYOUTS.WRI Lists Wrong Size for UNIDRV.DLL

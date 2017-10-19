@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73727: Opening Editor with the File Last Edited in MS-DOS Shell"
-permalink: kb/073/Q73727/
+permalink: /kb/073/Q73727/
 ---
 
 ## Q73727: Opening Editor with the File Last Edited in MS-DOS Shell

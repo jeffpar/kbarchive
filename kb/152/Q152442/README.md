@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152442: XADM: How to Populate the Display Name for the SA"
-permalink: kb/152/Q152442/
+permalink: /kb/152/Q152442/
 ---
 
 ## Q152442: XADM: How to Populate the Display Name for the SA

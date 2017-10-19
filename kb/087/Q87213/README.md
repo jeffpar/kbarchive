@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87213: PROFS: What Is HUB Mail, and What Are Its Advantages?"
-permalink: kb/087/Q87213/
+permalink: /kb/087/Q87213/
 ---
 
 ## Q87213: PROFS: What Is HUB Mail, and What Are Its Advantages?

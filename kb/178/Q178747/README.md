@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178747: How to Obtain a Foreign Language Version of DirectX"
-permalink: kb/178/Q178747/
+permalink: /kb/178/Q178747/
 ---
 
 ## Q178747: How to Obtain a Foreign Language Version of DirectX

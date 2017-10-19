@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196856: WD97: Part of Table Missing; Table Prints over Text"
-permalink: kb/196/Q196856/
+permalink: /kb/196/Q196856/
 ---
 
 ## Q196856: WD97: Part of Table Missing; Table Prints over Text

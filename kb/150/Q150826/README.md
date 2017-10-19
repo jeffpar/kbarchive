@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150826: Batch File to Display IIS Environment Variables from Browser"
-permalink: kb/150/Q150826/
+permalink: /kb/150/Q150826/
 ---
 
 ## Q150826: Batch File to Display IIS Environment Variables from Browser

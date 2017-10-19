@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316868: SMS: Advertisements Do Not Start When a User Logs On"
-permalink: kb/316/Q316868/
+permalink: /kb/316/Q316868/
 ---
 
 ## Q316868: SMS: Advertisements Do Not Start When a User Logs On

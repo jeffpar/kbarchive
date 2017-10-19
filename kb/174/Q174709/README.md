@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174709: XWEB: Err Msg: Exchange Server Down or HTTP Service Disabled"
-permalink: kb/174/Q174709/
+permalink: /kb/174/Q174709/
 ---
 
 ## Q174709: XWEB: Err Msg: Exchange Server Down or HTTP Service Disabled

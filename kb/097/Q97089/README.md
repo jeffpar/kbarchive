@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97089: Graphic Missing Border in Concise Columbia Encyclopedia"
-permalink: kb/097/Q97089/
+permalink: /kb/097/Q97089/
 ---
 
 ## Q97089: Graphic Missing Border in Concise Columbia Encyclopedia

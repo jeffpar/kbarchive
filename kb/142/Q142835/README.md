@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142835: BUG: DBCombo Issues Click Event While Scrolling"
-permalink: kb/142/Q142835/
+permalink: /kb/142/Q142835/
 ---
 
 ## Q142835: BUG: DBCombo Issues Click Event While Scrolling

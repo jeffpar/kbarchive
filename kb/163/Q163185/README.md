@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163185: PRB: Error with FILTER or WHERE Including This or Thisform"
-permalink: kb/163/Q163185/
+permalink: /kb/163/Q163185/
 ---
 
 ## Q163185: PRB: Error with FILTER or WHERE Including This or Thisform

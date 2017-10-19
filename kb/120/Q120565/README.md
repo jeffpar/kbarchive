@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120565: How to Read Text Mode Screen of MS-DOS Session in Windows"
-permalink: kb/120/Q120565/
+permalink: /kb/120/Q120565/
 ---
 
 ## Q120565: How to Read Text Mode Screen of MS-DOS Session in Windows

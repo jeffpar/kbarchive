@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248732: XCON: MTA Stops Processing While Handling Incoming Mail"
-permalink: kb/248/Q248732/
+permalink: /kb/248/Q248732/
 ---
 
 ## Q248732: XCON: MTA Stops Processing While Handling Incoming Mail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278457: Intermittent Hangs in Inetinfo with Microsoft SNA DB2 Provider"
-permalink: kb/278/Q278457/
+permalink: /kb/278/Q278457/
 ---
 
 ## Q278457: Intermittent Hangs in Inetinfo with Microsoft SNA DB2 Provider

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304016: SMS: Software Inventory Scans Drive M on Exchange 2000"
-permalink: kb/304/Q304016/
+permalink: /kb/304/Q304016/
 ---
 
 ## Q304016: SMS: Software Inventory Scans Drive M on Exchange 2000

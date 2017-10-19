@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71979: DOCERR: MASM 6.0 Makefile SNAP.MAK Gives U1073 NMAKE Errors"
-permalink: kb/071/Q71979/
+permalink: /kb/071/Q71979/
 ---
 
 ## Q71979: DOCERR: MASM 6.0 Makefile SNAP.MAK Gives U1073 NMAKE Errors

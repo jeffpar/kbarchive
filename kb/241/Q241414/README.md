@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241414: NtSetInformationObject() Does Not Check Object Handle in C2SS"
-permalink: kb/241/Q241414/
+permalink: /kb/241/Q241414/
 ---
 
 ## Q241414: NtSetInformationObject() Does Not Check Object Handle in C2SS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172185: C2config.exe Removes All Admin Permissions on International NT"
-permalink: kb/172/Q172185/
+permalink: /kb/172/Q172185/
 ---
 
 ## Q172185: C2config.exe Removes All Admin Permissions on International NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267853: Err Msg: Installation of This Application Has Been Corrupted"
-permalink: kb/267/Q267853/
+permalink: /kb/267/Q267853/
 ---
 
 ## Q267853: Err Msg: Installation of This Application Has Been Corrupted

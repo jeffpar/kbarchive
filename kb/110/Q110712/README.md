@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110712: ScanDisk Err Msg on System with Hard Card: ScanDisk Found..."
-permalink: kb/110/Q110712/
+permalink: /kb/110/Q110712/
 ---
 
 ## Q110712: ScanDisk Err Msg on System with Hard Card: ScanDisk Found...

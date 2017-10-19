@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274563: XADM: 0X3b Error Message Occurs When You Run ESEUTIL /D"
-permalink: kb/274/Q274563/
+permalink: /kb/274/Q274563/
 ---
 
 ## Q274563: XADM: 0X3b Error Message Occurs When You Run ESEUTIL /D

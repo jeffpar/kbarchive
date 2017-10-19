@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127189: DOCERR: Additional SourceSafe INI Settings"
-permalink: kb/127/Q127189/
+permalink: /kb/127/Q127189/
 ---
 
 ## Q127189: DOCERR: Additional SourceSafe INI Settings

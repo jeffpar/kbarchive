@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104859: FIX: &#36;STORAGE:2 or /4I2 Generates Incorrect Code"
-permalink: kb/104/Q104859/
+permalink: /kb/104/Q104859/
 ---
 
 ## Q104859: FIX: &#36;STORAGE:2 or /4I2 Generates Incorrect Code

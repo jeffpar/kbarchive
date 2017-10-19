@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226474: Err Msg: Active Server Pages, ASP 0131 Disallowed Parent Path"
-permalink: kb/226/Q226474/
+permalink: /kb/226/Q226474/
 ---
 
 ## Q226474: Err Msg: Active Server Pages, ASP 0131 Disallowed Parent Path

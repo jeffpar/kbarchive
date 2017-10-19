@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230220: TN3270 Emulators May Fail to Reconnect After Inactivity Timeout"
-permalink: kb/230/Q230220/
+permalink: /kb/230/Q230220/
 ---
 
 ## Q230220: TN3270 Emulators May Fail to Reconnect After Inactivity Timeout

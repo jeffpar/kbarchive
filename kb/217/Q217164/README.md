@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217164: FIX: Bad Code Is Generated When the Result of an Intrinsic Passe"
-permalink: kb/217/Q217164/
+permalink: /kb/217/Q217164/
 ---
 
 ## Q217164: FIX: Bad Code Is Generated When the Result of an Intrinsic Passe

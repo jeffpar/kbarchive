@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135204: Cannot Restore Files from HP 1300T Rewritable Optical Disk"
-permalink: kb/135/Q135204/
+permalink: /kb/135/Q135204/
 ---
 
 ## Q135204: Cannot Restore Files from HP 1300T Rewritable Optical Disk

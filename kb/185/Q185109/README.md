@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185109: XFOR: LinkAge Queue Viewer Is Not FIFO"
-permalink: kb/185/Q185109/
+permalink: /kb/185/Q185109/
 ---
 
 ## Q185109: XFOR: LinkAge Queue Viewer Is Not FIFO

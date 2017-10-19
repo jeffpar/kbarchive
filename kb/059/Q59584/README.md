@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59584: OS/2 Days Seminar: Misc. Communications Server Questions"
-permalink: kb/059/Q59584/
+permalink: /kb/059/Q59584/
 ---
 
 ## Q59584: OS/2 Days Seminar: Misc. Communications Server Questions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155149: Writer 2: Letter Size Tool Remains Depressed"
-permalink: kb/155/Q155149/
+permalink: /kb/155/Q155149/
 ---
 
 ## Q155149: Writer 2: Letter Size Tool Remains Depressed

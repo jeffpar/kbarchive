@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140583: How to Configure CD-ROM Caching for Windows 95"
-permalink: kb/140/Q140583/
+permalink: /kb/140/Q140583/
 ---
 
 ## Q140583: How to Configure CD-ROM Caching for Windows 95

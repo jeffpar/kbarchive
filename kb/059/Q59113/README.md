@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59113: Mac Srv: Managing &quot;Headless&quot; Servers with Farallon's Timbuktu"
-permalink: kb/059/Q59113/
+permalink: /kb/059/Q59113/
 ---
 
 ## Q59113: Mac Srv: Managing &quot;Headless&quot; Servers with Farallon's Timbuktu

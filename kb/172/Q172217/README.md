@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172217: ASP Returns Invalid Application Name Error Message"
-permalink: kb/172/Q172217/
+permalink: /kb/172/Q172217/
 ---
 
 ## Q172217: ASP Returns Invalid Application Name Error Message

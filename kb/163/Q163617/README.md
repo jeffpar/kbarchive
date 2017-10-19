@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163617: Equation Editor Hangs on Multiprocessor Computers"
-permalink: kb/163/Q163617/
+permalink: /kb/163/Q163617/
 ---
 
 ## Q163617: Equation Editor Hangs on Multiprocessor Computers

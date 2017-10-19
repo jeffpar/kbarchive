@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165251: WD97: Acceptable Values of wdLineWidth Constant (in wdLineStyle)"
-permalink: kb/165/Q165251/
+permalink: /kb/165/Q165251/
 ---
 
 ## Q165251: WD97: Acceptable Values of wdLineWidth Constant (in wdLineStyle)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190117: PRB: PACK May Cause the File Name to Change Case"
-permalink: kb/190/Q190117/
+permalink: /kb/190/Q190117/
 ---
 
 ## Q190117: PRB: PACK May Cause the File Name to Change Case

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174819: XWEB: Microsoft Exchange Active Server Components Templates"
-permalink: kb/174/Q174819/
+permalink: /kb/174/Q174819/
 ---
 
 ## Q174819: XWEB: Microsoft Exchange Active Server Components Templates

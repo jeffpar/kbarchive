@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194205: Err Msg: WAOL Caused an Invalid Page Fault in Module MSVCRT.DLL"
-permalink: kb/194/Q194205/
+permalink: /kb/194/Q194205/
 ---
 
 ## Q194205: Err Msg: WAOL Caused an Invalid Page Fault in Module MSVCRT.DLL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121333: Bookshelf: No Pronunciations in Dictionary"
-permalink: kb/121/Q121333/
+permalink: /kb/121/Q121333/
 ---
 
 ## Q121333: Bookshelf: No Pronunciations in Dictionary

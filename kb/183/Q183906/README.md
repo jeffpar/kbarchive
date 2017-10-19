@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183906: BUG: Drag From FileListBox Includes Extra Backslash"
-permalink: kb/183/Q183906/
+permalink: /kb/183/Q183906/
 ---
 
 ## Q183906: BUG: Drag From FileListBox Includes Extra Backslash

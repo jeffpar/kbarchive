@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236170: XCLN: Event Service Stops with Event ID 5"
-permalink: kb/236/Q236170/
+permalink: /kb/236/Q236170/
 ---
 
 ## Q236170: XCLN: Event Service Stops with Event ID 5

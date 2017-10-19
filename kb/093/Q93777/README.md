@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93777: Corrupt Swap File Warning After Removing Compressed Drive"
-permalink: kb/093/Q93777/
+permalink: /kb/093/Q93777/
 ---
 
 ## Q93777: Corrupt Swap File Warning After Removing Compressed Drive

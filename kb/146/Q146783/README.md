@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146783: XFOR: IMC Resolves Domain Names using MX Record Lookup"
-permalink: kb/146/Q146783/
+permalink: /kb/146/Q146783/
 ---
 
 ## Q146783: XFOR: IMC Resolves Domain Names using MX Record Lookup

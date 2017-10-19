@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263903: XADM: ArcServe 6.5 Does Not Work After Installing ESE Fix"
-permalink: kb/263/Q263903/
+permalink: /kb/263/Q263903/
 ---
 
 ## Q263903: XADM: ArcServe 6.5 Does Not Work After Installing ESE Fix

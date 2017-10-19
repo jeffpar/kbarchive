@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180454: Fonts Installed by Encarta 98 Encyclopedia for Windows"
-permalink: kb/180/Q180454/
+permalink: /kb/180/Q180454/
 ---
 
 ## Q180454: Fonts Installed by Encarta 98 Encyclopedia for Windows

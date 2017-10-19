@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39483: Mac DOS: Installing a LocalTalk Compatible Card in an IBM PC/XT"
-permalink: kb/039/Q39483/
+permalink: /kb/039/Q39483/
 ---
 
 ## Q39483: Mac DOS: Installing a LocalTalk Compatible Card in an IBM PC/XT

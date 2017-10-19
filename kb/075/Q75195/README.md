@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75195: Requesting MS-DOS Version Number with DEBUG"
-permalink: kb/075/Q75195/
+permalink: /kb/075/Q75195/
 ---
 
 ## Q75195: Requesting MS-DOS Version Number with DEBUG

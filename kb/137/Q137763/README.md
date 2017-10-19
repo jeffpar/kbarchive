@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137763: Cannot Print from 500 Nations if Using Spooler in Windows 95/98"
-permalink: kb/137/Q137763/
+permalink: /kb/137/Q137763/
 ---
 
 ## Q137763: Cannot Print from 500 Nations if Using Spooler in Windows 95/98

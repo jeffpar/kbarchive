@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295606: FP: How to Insert Script Code in a Shared Border of a Web"
-permalink: kb/295/Q295606/
+permalink: /kb/295/Q295606/
 ---
 
 ## Q295606: FP: How to Insert Script Code in a Shared Border of a Web

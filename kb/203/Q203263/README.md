@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203263: Cirel FPX X.25 Network Adapter Does Not Work Correctly"
-permalink: kb/203/Q203263/
+permalink: /kb/203/Q203263/
 ---
 
 ## Q203263: Cirel FPX X.25 Network Adapter Does Not Work Correctly

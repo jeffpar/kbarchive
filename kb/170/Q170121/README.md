@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170121: FP: Wrong Title after Changing File Extension from .TXT to .HTM"
-permalink: kb/170/Q170121/
+permalink: /kb/170/Q170121/
 ---
 
 ## Q170121: FP: Wrong Title after Changing File Extension from .TXT to .HTM

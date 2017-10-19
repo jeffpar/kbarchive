@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171070: SMSINST: May Not Restart System When Run by PCMSVC32"
-permalink: kb/171/Q171070/
+permalink: /kb/171/Q171070/
 ---
 
 ## Q171070: SMSINST: May Not Restart System When Run by PCMSVC32

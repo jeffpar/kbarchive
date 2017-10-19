@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75461: Sperry XDISK.SYS Is Incompatible with MS-DOS 5.0"
-permalink: kb/075/Q75461/
+permalink: /kb/075/Q75461/
 ---
 
 ## Q75461: Sperry XDISK.SYS Is Incompatible with MS-DOS 5.0

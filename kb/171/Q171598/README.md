@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171598: BUG: Properties Dialog Appears When TabStrip Double-Clicked"
-permalink: kb/171/Q171598/
+permalink: /kb/171/Q171598/
 ---
 
 ## Q171598: BUG: Properties Dialog Appears When TabStrip Double-Clicked

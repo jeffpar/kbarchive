@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264769: Event ID 576 Fills the Security Event Log When Auditing"
-permalink: kb/264/Q264769/
+permalink: /kb/264/Q264769/
 ---
 
 ## Q264769: Event ID 576 Fills the Security Event Log When Auditing

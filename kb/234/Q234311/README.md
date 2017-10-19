@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234311: PRB: Microsoft Word 2000 At A Glance Comments And Corrections"
-permalink: kb/234/Q234311/
+permalink: /kb/234/Q234311/
 ---
 
 ## Q234311: PRB: Microsoft Word 2000 At A Glance Comments And Corrections

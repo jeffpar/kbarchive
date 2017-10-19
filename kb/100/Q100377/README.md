@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100377: FIX: F1001: confold.c Line 253, Negative Integer Exponent"
-permalink: kb/100/Q100377/
+permalink: /kb/100/Q100377/
 ---
 
 ## Q100377: FIX: F1001: confold.c Line 253, Negative Integer Exponent

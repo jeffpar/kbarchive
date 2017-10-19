@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107103: X400: Gateway Requires P2 Originator Info for Display"
-permalink: kb/107/Q107103/
+permalink: /kb/107/Q107103/
 ---
 
 ## Q107103: X400: Gateway Requires P2 Originator Info for Display

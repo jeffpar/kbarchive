@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142170: PRPFONT - How to Set CPropertySheet Fonts"
-permalink: kb/142/Q142170/
+permalink: /kb/142/Q142170/
 ---
 
 ## Q142170: PRPFONT - How to Set CPropertySheet Fonts

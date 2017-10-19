@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317172: XADM: Exchange Server 5.5 and Network-Attached Storage"
-permalink: kb/317/Q317172/
+permalink: /kb/317/Q317172/
 ---
 
 ## Q317172: XADM: Exchange Server 5.5 and Network-Attached Storage

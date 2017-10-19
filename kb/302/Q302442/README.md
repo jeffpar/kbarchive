@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302442: &quot;No Local Numbers&quot; Error When Switching Connection From LAN To M"
-permalink: kb/302/Q302442/
+permalink: /kb/302/Q302442/
 ---
 
 ## Q302442: &quot;No Local Numbers&quot; Error When Switching Connection From LAN To M

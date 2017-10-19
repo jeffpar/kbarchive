@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119144: PC Win: Re-Creating MMF &amp; Still Maintaining Personal Groups"
-permalink: kb/119/Q119144/
+permalink: /kb/119/Q119144/
 ---
 
 ## Q119144: PC Win: Re-Creating MMF &amp; Still Maintaining Personal Groups

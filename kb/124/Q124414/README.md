@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124414: Video Problems in Grolier 6.0 After Installing VFW 1.1."
-permalink: kb/124/Q124414/
+permalink: /kb/124/Q124414/
 ---
 
 ## Q124414: Video Problems in Grolier 6.0 After Installing VFW 1.1.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93564: PC Ext: Err Msg: Error on Log File Open"
-permalink: kb/093/Q93564/
+permalink: /kb/093/Q93564/
 ---
 
 ## Q93564: PC Ext: Err Msg: Error on Log File Open

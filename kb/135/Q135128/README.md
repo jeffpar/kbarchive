@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135128: New Option Name Appears as &#42;&#42;iinvalid&#42;&#42; in DHCP Manager"
-permalink: kb/135/Q135128/
+permalink: /kb/135/Q135128/
 ---
 
 ## Q135128: New Option Name Appears as &#42;&#42;iinvalid&#42;&#42; in DHCP Manager

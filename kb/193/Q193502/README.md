@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193502: PRB: Cannot Quit VFP End Task Causes Application Error"
-permalink: kb/193/Q193502/
+permalink: /kb/193/Q193502/
 ---
 
 ## Q193502: PRB: Cannot Quit VFP End Task Causes Application Error

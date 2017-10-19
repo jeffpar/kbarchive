@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276378: Remote Control Does Not Work Even If Other Remote Tools Work"
-permalink: kb/276/Q276378/
+permalink: /kb/276/Q276378/
 ---
 
 ## Q276378: Remote Control Does Not Work Even If Other Remote Tools Work

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317132: &quot;0x0000007F&quot; Err on Windows NT Server 4.0, Terminal Server Ed"
-permalink: kb/317/Q317132/
+permalink: /kb/317/Q317132/
 ---
 
 ## Q317132: &quot;0x0000007F&quot; Err on Windows NT Server 4.0, Terminal Server Ed

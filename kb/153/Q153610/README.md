@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153610: PGC Defaults to Wrong Drive Mode After Period of Inactivity"
-permalink: kb/153/Q153610/
+permalink: /kb/153/Q153610/
 ---
 
 ## Q153610: PGC Defaults to Wrong Drive Mode After Period of Inactivity

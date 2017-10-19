@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264265: SMTP: Access Component Determines SMTP Gateway Already Installed"
-permalink: kb/264/Q264265/
+permalink: /kb/264/Q264265/
 ---
 
 ## Q264265: SMTP: Access Component Determines SMTP Gateway Already Installed

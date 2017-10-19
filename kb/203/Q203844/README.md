@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203844: Err Msg: Trip Planner 98 Requires 256 Colors and 640 x 480..."
-permalink: kb/203/Q203844/
+permalink: /kb/203/Q203844/
 ---
 
 ## Q203844: Err Msg: Trip Planner 98 Requires 256 Colors and 640 x 480...

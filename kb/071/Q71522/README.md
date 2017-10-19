@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71522: Windows: AUTOEXEC.BAT Is Not Run During Boot"
-permalink: kb/071/Q71522/
+permalink: /kb/071/Q71522/
 ---
 
 ## Q71522: Windows: AUTOEXEC.BAT Is Not Run During Boot

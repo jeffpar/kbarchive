@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124884: FIX: ALT+D and SPACE Both Map to Key Code Value of 32"
-permalink: kb/124/Q124884/
+permalink: /kb/124/Q124884/
 ---
 
 ## Q124884: FIX: ALT+D and SPACE Both Map to Key Code Value of 32

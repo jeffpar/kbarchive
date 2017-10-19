@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290508: Configuring the 3270 Emulator to Use SSO with the HAC"
-permalink: kb/290/Q290508/
+permalink: /kb/290/Q290508/
 ---
 
 ## Q290508: Configuring the 3270 Emulator to Use SSO with the HAC

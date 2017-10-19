@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251181: XADM: &quot;Lodctr Dsactrs.ini&quot; Error with Service Pack Upgrade"
-permalink: kb/251/Q251181/
+permalink: /kb/251/Q251181/
 ---
 
 ## Q251181: XADM: &quot;Lodctr Dsactrs.ini&quot; Error with Service Pack Upgrade

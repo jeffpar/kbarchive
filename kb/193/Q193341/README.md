@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193341: BUG: Circular Dependency Error With Embedded UserControls"
-permalink: kb/193/Q193341/
+permalink: /kb/193/Q193341/
 ---
 
 ## Q193341: BUG: Circular Dependency Error With Embedded UserControls

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94912: FIX: A2138, A2036 or Hang, Init Nested Structure Array"
-permalink: kb/094/Q94912/
+permalink: /kb/094/Q94912/
 ---
 
 ## Q94912: FIX: A2138, A2036 or Hang, Init Nested Structure Array

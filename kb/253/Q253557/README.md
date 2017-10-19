@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253557: XCLN: Outlook (CW) Meeting Request Going to Someone Else"
-permalink: kb/253/Q253557/
+permalink: /kb/253/Q253557/
 ---
 
 ## Q253557: XCLN: Outlook (CW) Meeting Request Going to Someone Else

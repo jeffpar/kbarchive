@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118875: FIX: ClassWizard &quot;Bind&quot;, &quot;Update Columns&quot; Buttons Disabled"
-permalink: kb/118/Q118875/
+permalink: /kb/118/Q118875/
 ---
 
 ## Q118875: FIX: ClassWizard &quot;Bind&quot;, &quot;Update Columns&quot; Buttons Disabled

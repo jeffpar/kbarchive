@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118532: SNADS: Attachments Result in Separate Messages"
-permalink: kb/118/Q118532/
+permalink: /kb/118/Q118532/
 ---
 
 ## Q118532: SNADS: Attachments Result in Separate Messages

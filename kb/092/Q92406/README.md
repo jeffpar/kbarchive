@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92406: Intel EtherExpress 16 Specifications"
-permalink: kb/092/Q92406/
+permalink: /kb/092/Q92406/
 ---
 
 ## Q92406: Intel EtherExpress 16 Specifications

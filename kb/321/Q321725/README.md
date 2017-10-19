@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321725: Err Msg: Unable to Determine the Computer File System Type (3.2)"
-permalink: kb/321/Q321725/
+permalink: /kb/321/Q321725/
 ---
 
 ## Q321725: Err Msg: Unable to Determine the Computer File System Type (3.2)

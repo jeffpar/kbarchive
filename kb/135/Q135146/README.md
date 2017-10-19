@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135146: McAfee Secure Station Clock Drawn Incorrectly"
-permalink: kb/135/Q135146/
+permalink: /kb/135/Q135146/
 ---
 
 ## Q135146: McAfee Secure Station Clock Drawn Incorrectly

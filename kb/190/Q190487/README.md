@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190487: PRB: MFC Debug DLLs Are Not Compatible Between Versions"
-permalink: kb/190/Q190487/
+permalink: /kb/190/Q190487/
 ---
 
 ## Q190487: PRB: MFC Debug DLLs Are Not Compatible Between Versions

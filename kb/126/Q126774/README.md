@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126774: Writer/Artist: Colors Lost When Pasting From Paintbrush"
-permalink: kb/126/Q126774/
+permalink: /kb/126/Q126774/
 ---
 
 ## Q126774: Writer/Artist: Colors Lost When Pasting From Paintbrush

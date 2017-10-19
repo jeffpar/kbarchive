@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172053: Restoring .lnk File Associations"
-permalink: kb/172/Q172053/
+permalink: /kb/172/Q172053/
 ---
 
 ## Q172053: Restoring .lnk File Associations

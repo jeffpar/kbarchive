@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154281: Microsoft Plus! Logo Screen Does Not Appear at Startup"
-permalink: kb/154/Q154281/
+permalink: /kb/154/Q154281/
 ---
 
 ## Q154281: Microsoft Plus! Logo Screen Does Not Appear at Startup

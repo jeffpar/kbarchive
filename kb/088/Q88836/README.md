@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88836: PC WSPlus: Invalid Password Prevents Changing to Online"
-permalink: kb/088/Q88836/
+permalink: /kb/088/Q88836/
 ---
 
 ## Q88836: PC WSPlus: Invalid Password Prevents Changing to Online

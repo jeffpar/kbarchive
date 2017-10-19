@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317653: XCON: Internet Mail Service Stops with Events 4116 and 4102"
-permalink: kb/317/Q317653/
+permalink: /kb/317/Q317653/
 ---
 
 ## Q317653: XCON: Internet Mail Service Stops with Events 4116 and 4102

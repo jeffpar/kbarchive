@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186607: Understanding the Remote Desktop Protocol (RDP)"
-permalink: kb/186/Q186607/
+permalink: /kb/186/Q186607/
 ---
 
 ## Q186607: Understanding the Remote Desktop Protocol (RDP)

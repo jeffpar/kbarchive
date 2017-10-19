@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q45146: DOCERR: Some Coprocessor Instructions Not Emulated"
-permalink: kb/045/Q45146/
+permalink: /kb/045/Q45146/
 ---
 
 ## Q45146: DOCERR: Some Coprocessor Instructions Not Emulated

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229082: Password Synchronization Using Rlogin May Not Work with UNIX"
-permalink: kb/229/Q229082/
+permalink: /kb/229/Q229082/
 ---
 
 ## Q229082: Password Synchronization Using Rlogin May Not Work with UNIX

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224298: HTML Page Sent to a Browser May Be Truncated"
-permalink: kb/224/Q224298/
+permalink: /kb/224/Q224298/
 ---
 
 ## Q224298: HTML Page Sent to a Browser May Be Truncated

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259578: XADM: Event ID 11/1023 Appear When Starting Exchange Event Svc"
-permalink: kb/259/Q259578/
+permalink: /kb/259/Q259578/
 ---
 
 ## Q259578: XADM: Event ID 11/1023 Appear When Starting Exchange Event Svc

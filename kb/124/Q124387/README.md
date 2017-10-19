@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124387: DOCERR: How to Use the MIXERLINECONTROLS dwControlType Flag"
-permalink: kb/124/Q124387/
+permalink: /kb/124/Q124387/
 ---
 
 ## Q124387: DOCERR: How to Use the MIXERLINECONTROLS dwControlType Flag

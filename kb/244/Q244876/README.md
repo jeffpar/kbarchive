@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244876: How to Determine if Windows Is Started in Debug Mode"
-permalink: kb/244/Q244876/
+permalink: /kb/244/Q244876/
 ---
 
 ## Q244876: How to Determine if Windows Is Started in Debug Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111019: List of Hardware Devices and Common I/O Base Address Conflicts"
-permalink: kb/111/Q111019/
+permalink: /kb/111/Q111019/
 ---
 
 ## Q111019: List of Hardware Devices and Common I/O Base Address Conflicts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166519: XCON: IMS Encapsulates the X.400 O/R Address"
-permalink: kb/166/Q166519/
+permalink: /kb/166/Q166519/
 ---
 
 ## Q166519: XCON: IMS Encapsulates the X.400 O/R Address

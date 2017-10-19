@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132115: Setup May Detect Already Installed Hardware on MCA Computer"
-permalink: kb/132/Q132115/
+permalink: /kb/132/Q132115/
 ---
 
 ## Q132115: Setup May Detect Already Installed Hardware on MCA Computer

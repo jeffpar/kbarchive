@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177683: Print Browse List May Not Refresh Location Information"
-permalink: kb/177/Q177683/
+permalink: /kb/177/Q177683/
 ---
 
 ## Q177683: Print Browse List May Not Refresh Location Information

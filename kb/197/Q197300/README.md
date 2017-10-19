@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197300: WD97: Save As Word 6.0/95 Loses Attached Template"
-permalink: kb/197/Q197300/
+permalink: /kb/197/Q197300/
 ---
 
 ## Q197300: WD97: Save As Word 6.0/95 Loses Attached Template

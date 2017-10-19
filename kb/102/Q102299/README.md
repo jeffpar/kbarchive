@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102299: X400: File Handles, RAM, and Disk Space Requirements"
-permalink: kb/102/Q102299/
+permalink: /kb/102/Q102299/
 ---
 
 ## Q102299: X400: File Handles, RAM, and Disk Space Requirements

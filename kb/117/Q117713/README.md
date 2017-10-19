@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117713: PC Win: Files Used with Regenerate Command"
-permalink: kb/117/Q117713/
+permalink: /kb/117/Q117713/
 ---
 
 ## Q117713: PC Win: Files Used with Regenerate Command

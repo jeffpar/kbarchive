@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126097: Shareware Driver Available for Wangtek 6130 and 6200"
-permalink: kb/126/Q126097/
+permalink: /kb/126/Q126097/
 ---
 
 ## Q126097: Shareware Driver Available for Wangtek 6130 and 6200

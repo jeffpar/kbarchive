@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178137: SMSINST: Compiling SMS Installer Scripts from the Command Line"
-permalink: kb/178/Q178137/
+permalink: /kb/178/Q178137/
 ---
 
 ## Q178137: SMSINST: Compiling SMS Installer Scripts from the Command Line

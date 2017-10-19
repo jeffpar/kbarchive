@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123694: Canceling the Network Install Wizard Causes Error on Restart"
-permalink: kb/123/Q123694/
+permalink: /kb/123/Q123694/
 ---
 
 ## Q123694: Canceling the Network Install Wizard Causes Error on Restart

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169676: XCON: DirRep Messages NDR Due to Connector Restrictions"
-permalink: kb/169/Q169676/
+permalink: /kb/169/Q169676/
 ---
 
 ## Q169676: XCON: DirRep Messages NDR Due to Connector Restrictions

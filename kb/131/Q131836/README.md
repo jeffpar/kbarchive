@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131836: PRB: Grid Not Refreshing Displaying a Cursor From Query"
-permalink: kb/131/Q131836/
+permalink: /kb/131/Q131836/
 ---
 
 ## Q131836: PRB: Grid Not Refreshing Displaying a Cursor From Query

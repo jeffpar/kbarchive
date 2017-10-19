@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165496: INFO: VSS Integration With MS Word and MS Excel"
-permalink: kb/165/Q165496/
+permalink: /kb/165/Q165496/
 ---
 
 ## Q165496: INFO: VSS Integration With MS Word and MS Excel

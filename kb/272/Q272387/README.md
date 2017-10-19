@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272387: Unable to Connect to Local LPT Port with NET USE Command, 'Error"
-permalink: kb/272/Q272387/
+permalink: /kb/272/Q272387/
 ---
 
 ## Q272387: Unable to Connect to Local LPT Port with NET USE Command, 'Error

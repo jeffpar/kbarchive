@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65382: Mac Form: Setting Command Keys for Mail Form Designer Objects"
-permalink: kb/065/Q65382/
+permalink: /kb/065/Q65382/
 ---
 
 ## Q65382: Mac Form: Setting Command Keys for Mail Form Designer Objects

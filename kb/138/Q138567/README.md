@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138567: BUG: Incorrect Function Name Binding in Function Templates"
-permalink: kb/138/Q138567/
+permalink: /kb/138/Q138567/
 ---
 
 ## Q138567: BUG: Incorrect Function Name Binding in Function Templates

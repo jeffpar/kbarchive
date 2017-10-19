@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135317: Application Exception in SNA Server 802.2 Link Service"
-permalink: kb/135/Q135317/
+permalink: /kb/135/Q135317/
 ---
 
 ## Q135317: Application Exception in SNA Server 802.2 Link Service

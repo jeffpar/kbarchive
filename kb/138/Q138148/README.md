@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138148: Visual SourceSafe Directory Listing"
-permalink: kb/138/Q138148/
+permalink: /kb/138/Q138148/
 ---
 
 ## Q138148: Visual SourceSafe Directory Listing

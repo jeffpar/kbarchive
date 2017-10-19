@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184290: XCLN: Unable to Load Out98prf.adm with Poledit"
-permalink: kb/184/Q184290/
+permalink: /kb/184/Q184290/
 ---
 
 ## Q184290: XCLN: Unable to Load Out98prf.adm with Poledit

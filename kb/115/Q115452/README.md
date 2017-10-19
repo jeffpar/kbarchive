@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115452: SMTP: Date and Time Stamps Different in Inbox and Message"
-permalink: kb/115/Q115452/
+permalink: /kb/115/Q115452/
 ---
 
 ## Q115452: SMTP: Date and Time Stamps Different in Inbox and Message

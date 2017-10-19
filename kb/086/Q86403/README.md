@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86403: PC MAPI: Custom Message Prints When Disabled"
-permalink: kb/086/Q86403/
+permalink: /kb/086/Q86403/
 ---
 
 ## Q86403: PC MAPI: Custom Message Prints When Disabled

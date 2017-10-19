@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321561: Phantom Connection Count When Keep-Alive Conns Switch HostHeader"
-permalink: kb/321/Q321561/
+permalink: /kb/321/Q321561/
 ---
 
 ## Q321561: Phantom Connection Count When Keep-Alive Conns Switch HostHeader

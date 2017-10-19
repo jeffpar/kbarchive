@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249105: &quot;Short Date Style&quot; Setting May Not Maintain 4-Digit Year Format"
-permalink: kb/249/Q249105/
+permalink: /kb/249/Q249105/
 ---
 
 ## Q249105: &quot;Short Date Style&quot; Setting May Not Maintain 4-Digit Year Format

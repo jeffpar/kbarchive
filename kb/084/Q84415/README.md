@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84415: DrawPerfect 1.0 Mouse Problems in Window Mode"
-permalink: kb/084/Q84415/
+permalink: /kb/084/Q84415/
 ---
 
 ## Q84415: DrawPerfect 1.0 Mouse Problems in Window Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243849: Nslookup &quot;ls&quot; Command Generates &quot;&#42;&#42;&#42;Can't List Domain&quot; Error"
-permalink: kb/243/Q243849/
+permalink: /kb/243/Q243849/
 ---
 
 ## Q243849: Nslookup &quot;ls&quot; Command Generates &quot;&#42;&#42;&#42;Can't List Domain&quot; Error

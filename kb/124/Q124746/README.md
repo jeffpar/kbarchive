@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124746: MHS: Err Msg: Invalid Address"
-permalink: kb/124/Q124746/
+permalink: /kb/124/Q124746/
 ---
 
 ## Q124746: MHS: Err Msg: Invalid Address

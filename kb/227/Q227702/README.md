@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227702: Queries Work Incorrectly with Mixed-Language Documents"
-permalink: kb/227/Q227702/
+permalink: /kb/227/Q227702/
 ---
 
 ## Q227702: Queries Work Incorrectly with Mixed-Language Documents

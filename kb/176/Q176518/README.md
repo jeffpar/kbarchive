@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176518: XCON: Recalculating Routing does not Remove Deleted Routes"
-permalink: kb/176/Q176518/
+permalink: /kb/176/Q176518/
 ---
 
 ## Q176518: XCON: Recalculating Routing does not Remove Deleted Routes

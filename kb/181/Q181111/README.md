@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181111: WD97: How to Automatically Display Drop-Down Form Field Contents"
-permalink: kb/181/Q181111/
+permalink: /kb/181/Q181111/
 ---
 
 ## Q181111: WD97: How to Automatically Display Drop-Down Form Field Contents

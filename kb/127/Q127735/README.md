@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127735: PC Win: Err Msg: File Manager Cannot Find Specified File..."
-permalink: kb/127/Q127735/
+permalink: /kb/127/Q127735/
 ---
 
 ## Q127735: PC Win: Err Msg: File Manager Cannot Find Specified File...

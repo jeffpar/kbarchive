@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172310: WD97: Bookman Font Fails to Print Bold on PS Printers"
-permalink: kb/172/Q172310/
+permalink: /kb/172/Q172310/
 ---
 
 ## Q172310: WD97: Bookman Font Fails to Print Bold on PS Printers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173398: SNA Win 3.x Application Fails over WinNT Client Thunking DLLs"
-permalink: kb/173/Q173398/
+permalink: /kb/173/Q173398/
 ---
 
 ## Q173398: SNA Win 3.x Application Fails over WinNT Client Thunking DLLs

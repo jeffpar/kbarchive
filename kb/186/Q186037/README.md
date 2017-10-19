@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186037: OFF97: Alki Language Proofing Tools Available"
-permalink: kb/186/Q186037/
+permalink: /kb/186/Q186037/
 ---
 
 ## Q186037: OFF97: Alki Language Proofing Tools Available

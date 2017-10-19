@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305462: Mouse and Keyboard Stop Working with Windows NT 4.0 SRP"
-permalink: kb/305/Q305462/
+permalink: /kb/305/Q305462/
 ---
 
 ## Q305462: Mouse and Keyboard Stop Working with Windows NT 4.0 SRP

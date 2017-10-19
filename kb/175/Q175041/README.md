@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175041: XFOR: Mail for Macintosh User Names with Bullet Points"
-permalink: kb/175/Q175041/
+permalink: /kb/175/Q175041/
 ---
 
 ## Q175041: XFOR: Mail for Macintosh User Names with Bullet Points

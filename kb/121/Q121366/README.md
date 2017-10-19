@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121366: INFO: PDB and DBG Files - What They Are and How They Work"
-permalink: kb/121/Q121366/
+permalink: /kb/121/Q121366/
 ---
 
 ## Q121366: INFO: PDB and DBG Files - What They Are and How They Work

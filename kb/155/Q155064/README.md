@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155064: PPT: Information About PointPlus"
-permalink: kb/155/Q155064/
+permalink: /kb/155/Q155064/
 ---
 
 ## Q155064: PPT: Information About PointPlus

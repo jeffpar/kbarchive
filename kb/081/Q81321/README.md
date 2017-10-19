@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81321: Maintaining PWB Display While Running a Program"
-permalink: kb/081/Q81321/
+permalink: /kb/081/Q81321/
 ---
 
 ## Q81321: Maintaining PWB Display While Running a Program

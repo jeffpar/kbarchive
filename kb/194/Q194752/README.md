@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194752: Golf 98/99: Distances Are Not Measured in Expected Units"
-permalink: kb/194/Q194752/
+permalink: /kb/194/Q194752/
 ---
 
 ## Q194752: Golf 98/99: Distances Are Not Measured in Expected Units

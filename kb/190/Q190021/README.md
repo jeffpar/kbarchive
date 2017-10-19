@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190021: XADM: Messages Sitting in IMS Inbound Queue Waiting Delivery"
-permalink: kb/190/Q190021/
+permalink: /kb/190/Q190021/
 ---
 
 ## Q190021: XADM: Messages Sitting in IMS Inbound Queue Waiting Delivery

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130531: HOWTO: Prevent Two Instances of a Form from Running"
-permalink: kb/130/Q130531/
+permalink: /kb/130/Q130531/
 ---
 
 ## Q130531: HOWTO: Prevent Two Instances of a Form from Running

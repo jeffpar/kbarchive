@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216719: Internet Explorer Stops Responding When Connecting to SSL-Enable"
-permalink: kb/216/Q216719/
+permalink: /kb/216/Q216719/
 ---
 
 ## Q216719: Internet Explorer Stops Responding When Connecting to SSL-Enable

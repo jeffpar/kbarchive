@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163291: TN3270E Sets Incorrect Sequence Number on ACKLUA Messages"
-permalink: kb/163/Q163291/
+permalink: /kb/163/Q163291/
 ---
 
 ## Q163291: TN3270E Sets Incorrect Sequence Number on ACKLUA Messages

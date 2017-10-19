@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277891: How to Renew Certificates That Are Used with IIS 5.0"
-permalink: kb/277/Q277891/
+permalink: /kb/277/Q277891/
 ---
 
 ## Q277891: How to Renew Certificates That Are Used with IIS 5.0

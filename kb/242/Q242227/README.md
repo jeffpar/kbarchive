@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242227: Age Of Empires II: Command Line Parameters"
-permalink: kb/242/Q242227/
+permalink: /kb/242/Q242227/
 ---
 
 ## Q242227: Age Of Empires II: Command Line Parameters

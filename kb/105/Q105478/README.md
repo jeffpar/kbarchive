@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105478: Windows NT 3.5 Inch Disk Contents (511)"
-permalink: kb/105/Q105478/
+permalink: /kb/105/Q105478/
 ---
 
 ## Q105478: Windows NT 3.5 Inch Disk Contents (511)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259714: NT 4.0 Resource Kit, Supplement Four Setup Hangs"
-permalink: kb/259/Q259714/
+permalink: /kb/259/Q259714/
 ---
 
 ## Q259714: NT 4.0 Resource Kit, Supplement Four Setup Hangs

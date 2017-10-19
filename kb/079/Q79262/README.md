@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79262: Windows Err Msg: Path Not Found (with Novell Network)"
-permalink: kb/079/Q79262/
+permalink: /kb/079/Q79262/
 ---
 
 ## Q79262: Windows Err Msg: Path Not Found (with Novell Network)

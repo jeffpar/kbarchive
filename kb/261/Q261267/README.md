@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261267: PRB: FoxPro Tables Accessed Through ODBC Are Not Updated"
-permalink: kb/261/Q261267/
+permalink: /kb/261/Q261267/
 ---
 
 ## Q261267: PRB: FoxPro Tables Accessed Through ODBC Are Not Updated

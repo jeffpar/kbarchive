@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199714: Cannot Join Domain Because of SMB Signing"
-permalink: kb/199/Q199714/
+permalink: /kb/199/Q199714/
 ---
 
 ## Q199714: Cannot Join Domain Because of SMB Signing

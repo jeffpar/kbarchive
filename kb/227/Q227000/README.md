@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227000: Dr. Watson Error in Termsrv.exe After Logon"
-permalink: kb/227/Q227000/
+permalink: /kb/227/Q227000/
 ---
 
 ## Q227000: Dr. Watson Error in Termsrv.exe After Logon

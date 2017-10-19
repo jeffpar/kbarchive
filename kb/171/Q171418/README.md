@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171418: WD97: Using Word as E-mail Editor in Outlook Changes Word View"
-permalink: kb/171/Q171418/
+permalink: /kb/171/Q171418/
 ---
 
 ## Q171418: WD97: Using Word as E-mail Editor in Outlook Changes Word View

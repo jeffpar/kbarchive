@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84388: Windows 3.1 Memory Limits"
-permalink: kb/084/Q84388/
+permalink: /kb/084/Q84388/
 ---
 
 ## Q84388: Windows 3.1 Memory Limits

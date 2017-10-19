@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274830: Metal Gear Solid: What's New in Metal Gear Solid"
-permalink: kb/274/Q274830/
+permalink: /kb/274/Q274830/
 ---
 
 ## Q274830: Metal Gear Solid: What's New in Metal Gear Solid

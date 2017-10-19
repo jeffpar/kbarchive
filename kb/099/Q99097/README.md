@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99097: HOWTO: Customize Common Dialog Box Parameter Blocks"
-permalink: kb/099/Q99097/
+permalink: /kb/099/Q99097/
 ---
 
 ## Q99097: HOWTO: Customize Common Dialog Box Parameter Blocks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252607: PRB: CopyFile Doesn't Work for Printer DeviceName w/Spaces on NT"
-permalink: kb/252/Q252607/
+permalink: /kb/252/Q252607/
 ---
 
 ## Q252607: PRB: CopyFile Doesn't Work for Printer DeviceName w/Spaces on NT

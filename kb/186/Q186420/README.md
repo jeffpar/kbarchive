@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186420: PRB: Status.dat File Is too Large"
-permalink: kb/186/Q186420/
+permalink: /kb/186/Q186420/
 ---
 
 ## Q186420: PRB: Status.dat File Is too Large

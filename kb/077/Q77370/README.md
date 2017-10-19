@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77370: Bookshelf Setup Creates New Program Group Each Time It's Run"
-permalink: kb/077/Q77370/
+permalink: /kb/077/Q77370/
 ---
 
 ## Q77370: Bookshelf Setup Creates New Program Group Each Time It's Run

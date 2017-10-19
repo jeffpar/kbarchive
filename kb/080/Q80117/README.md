@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80117: PRB: ml /D?WIN and CMACROS.INC Produce A2016 and A2008"
-permalink: kb/080/Q80117/
+permalink: /kb/080/Q80117/
 ---
 
 ## Q80117: PRB: ml /D?WIN and CMACROS.INC Produce A2016 and A2008

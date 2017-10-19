@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122293: LMHOSTS Lookup Can Cause Intermittent System Pauses"
-permalink: kb/122/Q122293/
+permalink: /kb/122/Q122293/
 ---
 
 ## Q122293: LMHOSTS Lookup Can Cause Intermittent System Pauses

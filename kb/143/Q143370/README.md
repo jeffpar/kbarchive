@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143370: Explorapedia Nature: Setup Runs Each Time You Insert the CD"
-permalink: kb/143/Q143370/
+permalink: /kb/143/Q143370/
 ---
 
 ## Q143370: Explorapedia Nature: Setup Runs Each Time You Insert the CD

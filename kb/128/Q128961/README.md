@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128961: XCLN: Err Msg: Windows Sockets Error: Failed in Connect"
-permalink: kb/128/Q128961/
+permalink: /kb/128/Q128961/
 ---
 
 ## Q128961: XCLN: Err Msg: Windows Sockets Error: Failed in Connect

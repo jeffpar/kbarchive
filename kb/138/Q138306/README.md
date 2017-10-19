@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138306: Setup Changes Date and Time Stamp of Installed Files"
-permalink: kb/138/Q138306/
+permalink: /kb/138/Q138306/
 ---
 
 ## Q138306: Setup Changes Date and Time Stamp of Installed Files

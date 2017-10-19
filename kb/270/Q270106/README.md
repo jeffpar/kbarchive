@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270106: PRB: VFP ODBC Driver in COM DLL Under MTS Package May Hang"
-permalink: kb/270/Q270106/
+permalink: /kb/270/Q270106/
 ---
 
 ## Q270106: PRB: VFP ODBC Driver in COM DLL Under MTS Package May Hang

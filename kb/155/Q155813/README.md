@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155813: XADM: Simplified Chinese MS Mail Connector Corrupts Messages"
-permalink: kb/155/Q155813/
+permalink: /kb/155/Q155813/
 ---
 
 ## Q155813: XADM: Simplified Chinese MS Mail Connector Corrupts Messages

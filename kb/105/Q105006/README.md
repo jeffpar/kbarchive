@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105006: How to Use the MsgBox() Function in FOXTOOLS.FLL"
-permalink: kb/105/Q105006/
+permalink: /kb/105/Q105006/
 ---
 
 ## Q105006: How to Use the MsgBox() Function in FOXTOOLS.FLL

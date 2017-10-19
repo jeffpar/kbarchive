@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240236: XFOR: Ctkeepdays Only Works with a Value of 1 or 7"
-permalink: kb/240/Q240236/
+permalink: /kb/240/Q240236/
 ---
 
 ## Q240236: XFOR: Ctkeepdays Only Works with a Value of 1 or 7

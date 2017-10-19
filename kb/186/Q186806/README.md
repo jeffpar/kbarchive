@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186806: Only 35 IP Addresses Listed In IIS Admin Drop-down Menu"
-permalink: kb/186/Q186806/
+permalink: /kb/186/Q186806/
 ---
 
 ## Q186806: Only 35 IP Addresses Listed In IIS Admin Drop-down Menu

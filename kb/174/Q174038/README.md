@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174038: XWEB: Tentative and Accepted Meeting Icons Identical in OWA"
-permalink: kb/174/Q174038/
+permalink: /kb/174/Q174038/
 ---
 
 ## Q174038: XWEB: Tentative and Accepted Meeting Icons Identical in OWA

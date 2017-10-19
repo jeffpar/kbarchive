@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303027: Age of Empires II: Computer Hangs When Loading The Age of Kings"
-permalink: kb/303/Q303027/
+permalink: /kb/303/Q303027/
 ---
 
 ## Q303027: Age of Empires II: Computer Hangs When Loading The Age of Kings

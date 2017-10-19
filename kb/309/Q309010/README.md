@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309010: XADM: Exchange Server 5.5 Post-SP4 Mbclean.exe Fixes Available"
-permalink: kb/309/Q309010/
+permalink: /kb/309/Q309010/
 ---
 
 ## Q309010: XADM: Exchange Server 5.5 Post-SP4 Mbclean.exe Fixes Available

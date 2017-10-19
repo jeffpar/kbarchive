@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122448: Unable to Run Windows Sockets Utilities with TCP/IP-32"
-permalink: kb/122/Q122448/
+permalink: /kb/122/Q122448/
 ---
 
 ## Q122448: Unable to Run Windows Sockets Utilities with TCP/IP-32

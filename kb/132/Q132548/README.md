@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132548: HOWTO: Use More Than One Table in a Combo or List Box"
-permalink: kb/132/Q132548/
+permalink: /kb/132/Q132548/
 ---
 
 ## Q132548: HOWTO: Use More Than One Table in a Combo or List Box

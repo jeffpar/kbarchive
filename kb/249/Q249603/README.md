@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249603: Using IISSYNC to Synchronize Clustered Web Sites on Windows 2000"
-permalink: kb/249/Q249603/
+permalink: /kb/249/Q249603/
 ---
 
 ## Q249603: Using IISSYNC to Synchronize Clustered Web Sites on Windows 2000

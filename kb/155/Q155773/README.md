@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155773: WD97: Changing Hypertext Display Text Doesn't Change URL"
-permalink: kb/155/Q155773/
+permalink: /kb/155/Q155773/
 ---
 
 ## Q155773: WD97: Changing Hypertext Display Text Doesn't Change URL

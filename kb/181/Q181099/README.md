@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181099: Some SNACFG Options Fail using a German version of Windows NT"
-permalink: kb/181/Q181099/
+permalink: /kb/181/Q181099/
 ---
 
 ## Q181099: Some SNACFG Options Fail using a German version of Windows NT

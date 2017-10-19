@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151011: Pregnancy: Text, &quot;Click here...&quot; Prints at Bottom of Articles"
-permalink: kb/151/Q151011/
+permalink: /kb/151/Q151011/
 ---
 
 ## Q151011: Pregnancy: Text, &quot;Click here...&quot; Prints at Bottom of Articles

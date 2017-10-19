@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149091: Power Users Can Modify Common Groups"
-permalink: kb/149/Q149091/
+permalink: /kb/149/Q149091/
 ---
 
 ## Q149091: Power Users Can Modify Common Groups

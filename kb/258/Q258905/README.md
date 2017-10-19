@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258905: Allegiance: Autopilot Does Not Function in Training Missions"
-permalink: kb/258/Q258905/
+permalink: /kb/258/Q258905/
 ---
 
 ## Q258905: Allegiance: Autopilot Does Not Function in Training Missions

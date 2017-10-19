@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80380: BUG: H2INC Doesn't Allow Multiple Files to Be Specified"
-permalink: kb/080/Q80380/
+permalink: /kb/080/Q80380/
 ---
 
 ## Q80380: BUG: H2INC Doesn't Allow Multiple Files to Be Specified

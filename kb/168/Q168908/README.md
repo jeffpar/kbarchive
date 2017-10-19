@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168908: How to Authenticate a User Against All Trusting Domains"
-permalink: kb/168/Q168908/
+permalink: /kb/168/Q168908/
 ---
 
 ## Q168908: How to Authenticate a User Against All Trusting Domains

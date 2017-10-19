@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122430: The Ultimate Haunted House 1.0: Macintosh System Requirements"
-permalink: kb/122/Q122430/
+permalink: /kb/122/Q122430/
 ---
 
 ## Q122430: The Ultimate Haunted House 1.0: Macintosh System Requirements

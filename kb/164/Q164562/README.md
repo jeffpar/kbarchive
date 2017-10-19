@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164562: SMS: Changing SMS Database Account Name or Password"
-permalink: kb/164/Q164562/
+permalink: /kb/164/Q164562/
 ---
 
 ## Q164562: SMS: Changing SMS Database Account Name or Password

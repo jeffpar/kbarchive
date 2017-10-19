@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306000: Answer to Anniversary Secret Question Date Format Not Validated"
-permalink: kb/306/Q306000/
+permalink: /kb/306/Q306000/
 ---
 
 ## Q306000: Answer to Anniversary Secret Question Date Format Not Validated

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121320: MS-DOS 6.22 StepUp Appears to Have Duplicate Files"
-permalink: kb/121/Q121320/
+permalink: /kb/121/Q121320/
 ---
 
 ## Q121320: MS-DOS 6.22 StepUp Appears to Have Duplicate Files

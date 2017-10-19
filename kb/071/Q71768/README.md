@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71768: PRB: CURRENT.STS Not Updated in Network Installation"
-permalink: kb/071/Q71768/
+permalink: /kb/071/Q71768/
 ---
 
 ## Q71768: PRB: CURRENT.STS Not Updated in Network Installation

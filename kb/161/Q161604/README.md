@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161604: SMS: PGC Application Is Reset with a &quot;Configure&quot; Status"
-permalink: kb/161/Q161604/
+permalink: /kb/161/Q161604/
 ---
 
 ## Q161604: SMS: PGC Application Is Reset with a &quot;Configure&quot; Status

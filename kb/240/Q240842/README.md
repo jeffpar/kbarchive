@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240842: Using Java Servlets on IIS"
-permalink: kb/240/Q240842/
+permalink: /kb/240/Q240842/
 ---
 
 ## Q240842: Using Java Servlets on IIS

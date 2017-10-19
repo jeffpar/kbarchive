@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150655: Mastering Visual C++ 4: Contents of README.WRI"
-permalink: kb/150/Q150655/
+permalink: /kb/150/Q150655/
 ---
 
 ## Q150655: Mastering Visual C++ 4: Contents of README.WRI

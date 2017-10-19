@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240866: BUG: C2989 and C2988 on Class Template Partial Specializations"
-permalink: kb/240/Q240866/
+permalink: /kb/240/Q240866/
 ---
 
 ## Q240866: BUG: C2989 and C2988 on Class Template Partial Specializations

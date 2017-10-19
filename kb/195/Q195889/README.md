@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195889: SnaBase Fails To Start When Using Novell's IntraNetware Client"
-permalink: kb/195/Q195889/
+permalink: /kb/195/Q195889/
 ---
 
 ## Q195889: SnaBase Fails To Start When Using Novell's IntraNetware Client

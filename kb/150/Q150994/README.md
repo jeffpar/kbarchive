@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150994: Encarta: Invalid Page Fault When Printing to Inkjet Printer"
-permalink: kb/150/Q150994/
+permalink: /kb/150/Q150994/
 ---
 
 ## Q150994: Encarta: Invalid Page Fault When Printing to Inkjet Printer

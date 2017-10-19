@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169122: Non-rfc Compliant DHCP Server Does Not Send DHCPNAK to Client"
-permalink: kb/169/Q169122/
+permalink: /kb/169/Q169122/
 ---
 
 ## Q169122: Non-rfc Compliant DHCP Server Does Not Send DHCPNAK to Client

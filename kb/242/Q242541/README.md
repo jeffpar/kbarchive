@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242541: Encarta: How to Obtain the DVD-ROM Version of Your Program"
-permalink: kb/242/Q242541/
+permalink: /kb/242/Q242541/
 ---
 
 ## Q242541: Encarta: How to Obtain the DVD-ROM Version of Your Program

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199653: SMS: What Is CHECK20?"
-permalink: kb/199/Q199653/
+permalink: /kb/199/Q199653/
 ---
 
 ## Q199653: SMS: What Is CHECK20?

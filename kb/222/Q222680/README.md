@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222680: OWA Does Not Work After Upgrading to Japanese Version of SBS 4.5"
-permalink: kb/222/Q222680/
+permalink: /kb/222/Q222680/
 ---
 
 ## Q222680: OWA Does Not Work After Upgrading to Japanese Version of SBS 4.5

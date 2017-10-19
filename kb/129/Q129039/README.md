@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129039: Situations Not Requiring Seed Routing"
-permalink: kb/129/Q129039/
+permalink: /kb/129/Q129039/
 ---
 
 ## Q129039: Situations Not Requiring Seed Routing

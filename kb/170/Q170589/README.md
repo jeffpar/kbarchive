@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170589: APPC Print Sessions Inactive w/ System 36 or AS/36 Host"
-permalink: kb/170/Q170589/
+permalink: /kb/170/Q170589/
 ---
 
 ## Q170589: APPC Print Sessions Inactive w/ System 36 or AS/36 Host

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96836: Using Disk Change Detection with Backup for MS-DOS or Windows"
-permalink: kb/096/Q96836/
+permalink: /kb/096/Q96836/
 ---
 
 ## Q96836: Using Disk Change Detection with Backup for MS-DOS or Windows

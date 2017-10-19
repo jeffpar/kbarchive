@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72100: WordPerfect 5.1 Retrieve Function Requires APPEND"
-permalink: kb/072/Q72100/
+permalink: /kb/072/Q72100/
 ---
 
 ## Q72100: WordPerfect 5.1 Retrieve Function Requires APPEND

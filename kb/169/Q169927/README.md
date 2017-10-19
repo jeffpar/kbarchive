@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169927: HOWTO: Get History Using SourceSafe OLE Automation in C++"
-permalink: kb/169/Q169927/
+permalink: /kb/169/Q169927/
 ---
 
 ## Q169927: HOWTO: Get History Using SourceSafe OLE Automation in C++

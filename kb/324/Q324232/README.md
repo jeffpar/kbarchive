@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q324232: IIS Virtual Directories w/ Services for UNIX Do Not Return Files"
-permalink: kb/324/Q324232/
+permalink: /kb/324/Q324232/
 ---
 
 ## Q324232: IIS Virtual Directories w/ Services for UNIX Do Not Return Files

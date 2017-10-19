@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115822: CD Sampler: Mouse Required Because No Keyboard Equivalents"
-permalink: kb/115/Q115822/
+permalink: /kb/115/Q115822/
 ---
 
 ## Q115822: CD Sampler: Mouse Required Because No Keyboard Equivalents

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123769: PRB: RC1120 Error When Building in Low Memory Conditions"
-permalink: kb/123/Q123769/
+permalink: /kb/123/Q123769/
 ---
 
 ## Q123769: PRB: RC1120 Error When Building in Low Memory Conditions

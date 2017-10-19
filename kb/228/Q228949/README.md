@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228949: Midtown Madness: Sparks Do Not Appear During Collisions"
-permalink: kb/228/Q228949/
+permalink: /kb/228/Q228949/
 ---
 
 ## Q228949: Midtown Madness: Sparks Do Not Appear During Collisions

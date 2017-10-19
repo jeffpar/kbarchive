@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191005: BUG: EXE Created Without File Extension on Windows 98"
-permalink: kb/191/Q191005/
+permalink: /kb/191/Q191005/
 ---
 
 ## Q191005: BUG: EXE Created Without File Extension on Windows 98

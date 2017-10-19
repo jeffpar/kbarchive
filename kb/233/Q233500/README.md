@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233500: Service Pack 5 No Longer Keeps a Separate PS1 Folder for IBM"
-permalink: kb/233/Q233500/
+permalink: /kb/233/Q233500/
 ---
 
 ## Q233500: Service Pack 5 No Longer Keeps a Separate PS1 Folder for IBM

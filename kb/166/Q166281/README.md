@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166281: HOWTO: Create and Implement a UserConnection"
-permalink: kb/166/Q166281/
+permalink: /kb/166/Q166281/
 ---
 
 ## Q166281: HOWTO: Create and Implement a UserConnection

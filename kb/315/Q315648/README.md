@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315648: HOW TO: Use Custom Formatting with a Visual Basic 6.0 Data Grid"
-permalink: kb/315/Q315648/
+permalink: /kb/315/Q315648/
 ---
 
 ## Q315648: HOW TO: Use Custom Formatting with a Visual Basic 6.0 Data Grid

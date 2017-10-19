@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122297: Comparison of MS-DOS Clients for Windows NT Version 3.5"
-permalink: kb/122/Q122297/
+permalink: /kb/122/Q122297/
 ---
 
 ## Q122297: Comparison of MS-DOS Clients for Windows NT Version 3.5

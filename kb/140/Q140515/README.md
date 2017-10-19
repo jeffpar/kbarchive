@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140515: BUG: VDM Apps Can Cause Other Applications to Redraw Slowly"
-permalink: kb/140/Q140515/
+permalink: /kb/140/Q140515/
 ---
 
 ## Q140515: BUG: VDM Apps Can Cause Other Applications to Redraw Slowly

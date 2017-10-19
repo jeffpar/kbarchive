@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51372: Mac Wkst: Notifier in Works Help Window Crashes or Quits Works"
-permalink: kb/051/Q51372/
+permalink: /kb/051/Q51372/
 ---
 
 ## Q51372: Mac Wkst: Notifier in Works Help Window Crashes or Quits Works

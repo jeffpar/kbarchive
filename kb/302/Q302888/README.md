@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302888: HOWTO: Schedule Metabase Backups Using WSH"
-permalink: kb/302/Q302888/
+permalink: /kb/302/Q302888/
 ---
 
 ## Q302888: HOWTO: Schedule Metabase Backups Using WSH

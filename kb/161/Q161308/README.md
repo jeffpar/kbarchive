@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161308: HOWTO: Modify Properties of an Object Passed ByVal"
-permalink: kb/161/Q161308/
+permalink: /kb/161/Q161308/
 ---
 
 ## Q161308: HOWTO: Modify Properties of an Object Passed ByVal

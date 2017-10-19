@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184487: WD97: Document Label Style Name Not Fully Displayed"
-permalink: kb/184/Q184487/
+permalink: /kb/184/Q184487/
 ---
 
 ## Q184487: WD97: Document Label Style Name Not Fully Displayed

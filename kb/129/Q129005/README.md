@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129005: Sockets Applications Do Not Switch to Second NIC if One"
-permalink: kb/129/Q129005/
+permalink: /kb/129/Q129005/
 ---
 
 ## Q129005: Sockets Applications Do Not Switch to Second NIC if One

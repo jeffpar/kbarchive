@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139679: PRB: ImageEdit Icon Not Created with Workstation Installation"
-permalink: kb/139/Q139679/
+permalink: /kb/139/Q139679/
 ---
 
 ## Q139679: PRB: ImageEdit Icon Not Created with Workstation Installation

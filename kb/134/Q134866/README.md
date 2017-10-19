@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134866: PPT7: Slow Performance or Memory Errors Running PowerPoint"
-permalink: kb/134/Q134866/
+permalink: /kb/134/Q134866/
 ---
 
 ## Q134866: PPT7: Slow Performance or Memory Errors Running PowerPoint

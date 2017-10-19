@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198704: XCLN: ErrMsg: 0x800ccc90, 0x800ccc18 &amp; Outlook Express"
-permalink: kb/198/Q198704/
+permalink: /kb/198/Q198704/
 ---
 
 ## Q198704: XCLN: ErrMsg: 0x800ccc90, 0x800ccc18 &amp; Outlook Express

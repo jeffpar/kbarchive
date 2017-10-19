@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145663: PC NTMMTA: Using the NT MMTA and RAS on the Same Server"
-permalink: kb/145/Q145663/
+permalink: /kb/145/Q145663/
 ---
 
 ## Q145663: PC NTMMTA: Using the NT MMTA and RAS on the Same Server

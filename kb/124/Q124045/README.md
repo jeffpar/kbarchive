@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124045: PROFS: Requirement for Free and Busy Times"
-permalink: kb/124/Q124045/
+permalink: /kb/124/Q124045/
 ---
 
 ## Q124045: PROFS: Requirement for Free and Busy Times

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253383: XCLN: Outlook Err Msg: There Was an Error When Printing Started"
-permalink: kb/253/Q253383/
+permalink: /kb/253/Q253383/
 ---
 
 ## Q253383: XCLN: Outlook Err Msg: There Was an Error When Printing Started

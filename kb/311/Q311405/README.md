@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311405: You May Be Unable to Install Drivers in the Tape Devices Tool"
-permalink: kb/311/Q311405/
+permalink: /kb/311/Q311405/
 ---
 
 ## Q311405: You May Be Unable to Install Drivers in the Tape Devices Tool

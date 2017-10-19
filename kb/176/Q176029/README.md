@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176029: Messenger Service Fails When Using Only NWLINK"
-permalink: kb/176/Q176029/
+permalink: /kb/176/Q176029/
 ---
 
 ## Q176029: Messenger Service Fails When Using Only NWLINK

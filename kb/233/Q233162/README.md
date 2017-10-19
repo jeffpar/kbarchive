@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233162: Err Msg: The System Could Not Find the File Specified."
-permalink: kb/233/Q233162/
+permalink: /kb/233/Q233162/
 ---
 
 ## Q233162: Err Msg: The System Could Not Find the File Specified.

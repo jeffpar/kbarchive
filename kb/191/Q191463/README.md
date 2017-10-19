@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191463: PRB: Cannot Create Control Array in VB6 DHTML Application"
-permalink: kb/191/Q191463/
+permalink: /kb/191/Q191463/
 ---
 
 ## Q191463: PRB: Cannot Create Control Array in VB6 DHTML Application

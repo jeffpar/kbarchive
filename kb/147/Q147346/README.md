@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147346: Event ID 28 from 8042prt on IBM PS/2 and Some PC Servers"
-permalink: kb/147/Q147346/
+permalink: /kb/147/Q147346/
 ---
 
 ## Q147346: Event ID 28 from 8042prt on IBM PS/2 and Some PC Servers

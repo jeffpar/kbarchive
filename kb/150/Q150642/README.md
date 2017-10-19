@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150642: HOWTO: Use SSInt.exe in Visual SourceSafe"
-permalink: kb/150/Q150642/
+permalink: /kb/150/Q150642/
 ---
 
 ## Q150642: HOWTO: Use SSInt.exe in Visual SourceSafe

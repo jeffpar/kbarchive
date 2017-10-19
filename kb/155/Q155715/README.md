@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155715: XADM: How to Resolve an Address Based on First Name"
-permalink: kb/155/Q155715/
+permalink: /kb/155/Q155715/
 ---
 
 ## Q155715: XADM: How to Resolve an Address Based on First Name

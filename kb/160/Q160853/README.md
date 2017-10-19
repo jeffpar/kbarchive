@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160853: SMS: Mandatory Jobs Will Be Blocked If Details Window Is Open"
-permalink: kb/160/Q160853/
+permalink: /kb/160/Q160853/
 ---
 
 ## Q160853: SMS: Mandatory Jobs Will Be Blocked If Details Window Is Open

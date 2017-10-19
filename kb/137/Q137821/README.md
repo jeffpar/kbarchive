@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137821: Removing Desktop Themes May Remove Fonts"
-permalink: kb/137/Q137821/
+permalink: /kb/137/Q137821/
 ---
 
 ## Q137821: Removing Desktop Themes May Remove Fonts

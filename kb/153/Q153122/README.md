@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153122: TrueImage Errors When Printing from a Macintosh"
-permalink: kb/153/Q153122/
+permalink: /kb/153/Q153122/
 ---
 
 ## Q153122: TrueImage Errors When Printing from a Macintosh

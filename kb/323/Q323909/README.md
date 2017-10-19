@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323909: ANONYMOUS LOGON Print Jobs Appear in Print Queue"
-permalink: kb/323/Q323909/
+permalink: /kb/323/Q323909/
 ---
 
 ## Q323909: ANONYMOUS LOGON Print Jobs Appear in Print Queue

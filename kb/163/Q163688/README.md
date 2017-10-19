@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163688: XCLN: Unable to Change Default Exchange Client Installation"
-permalink: kb/163/Q163688/
+permalink: /kb/163/Q163688/
 ---
 
 ## Q163688: XCLN: Unable to Change Default Exchange Client Installation

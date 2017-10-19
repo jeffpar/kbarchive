@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126006: Explorapedia: Err Msg: Cannot Open .TDF; Unable to Locate"
-permalink: kb/126/Q126006/
+permalink: /kb/126/Q126006/
 ---
 
 ## Q126006: Explorapedia: Err Msg: Cannot Open .TDF; Unable to Locate

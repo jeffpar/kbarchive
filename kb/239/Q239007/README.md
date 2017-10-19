@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239007: XCON: User Name Mapping Issues When Implementing MTA MIXER"
-permalink: kb/239/Q239007/
+permalink: /kb/239/Q239007/
 ---
 
 ## Q239007: XCON: User Name Mapping Issues When Implementing MTA MIXER

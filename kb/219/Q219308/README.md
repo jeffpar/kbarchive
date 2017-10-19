@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219308: Cannot Obtain Lease with DHCP Scopes Using Multicast Addresses"
-permalink: kb/219/Q219308/
+permalink: /kb/219/Q219308/
 ---
 
 ## Q219308: Cannot Obtain Lease with DHCP Scopes Using Multicast Addresses

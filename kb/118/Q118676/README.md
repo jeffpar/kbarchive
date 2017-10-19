@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118676: PC Ext: External Won't Dial Out Unless There Is Outbound Mail"
-permalink: kb/118/Q118676/
+permalink: /kb/118/Q118676/
 ---
 
 ## Q118676: PC Ext: External Won't Dial Out Unless There Is Outbound Mail

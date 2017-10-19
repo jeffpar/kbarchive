@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164900: SMS: Processor Name Only Allows 20 Characters"
-permalink: kb/164/Q164900/
+permalink: /kb/164/Q164900/
 ---
 
 ## Q164900: SMS: Processor Name Only Allows 20 Characters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172384: WINS Database Displays Hyphens Instead of NetBIOS Suffix"
-permalink: kb/172/Q172384/
+permalink: /kb/172/Q172384/
 ---
 
 ## Q172384: WINS Database Displays Hyphens Instead of NetBIOS Suffix

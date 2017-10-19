@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198057: WD97: Macro Virus Warning Message When You Start Word"
-permalink: kb/198/Q198057/
+permalink: /kb/198/Q198057/
 ---
 
 ## Q198057: WD97: Macro Virus Warning Message When You Start Word

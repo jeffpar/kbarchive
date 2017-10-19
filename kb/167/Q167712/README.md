@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167712: Fatal Exception Error in VREDIR with DCOM Program"
-permalink: kb/167/Q167712/
+permalink: /kb/167/Q167712/
 ---
 
 ## Q167712: Fatal Exception Error in VREDIR with DCOM Program

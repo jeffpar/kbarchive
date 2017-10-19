@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170278: Demand-dial Connection Fails with Event 20050"
-permalink: kb/170/Q170278/
+permalink: /kb/170/Q170278/
 ---
 
 ## Q170278: Demand-dial Connection Fails with Event 20050

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216858: HOWTO: Quick Sorting Using MFC CArray-Derived Classes"
-permalink: kb/216/Q216858/
+permalink: /kb/216/Q216858/
 ---
 
 ## Q216858: HOWTO: Quick Sorting Using MFC CArray-Derived Classes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295771: SMS: &quot;Restricted Group&quot; Policy Prevents SMS Client Installation"
-permalink: kb/295/Q295771/
+permalink: /kb/295/Q295771/
 ---
 
 ## Q295771: SMS: &quot;Restricted Group&quot; Policy Prevents SMS Client Installation

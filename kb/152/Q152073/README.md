@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152073: PRB: Wrapper Class for Automation Object May Be Incomplete"
-permalink: kb/152/Q152073/
+permalink: /kb/152/Q152073/
 ---
 
 ## Q152073: PRB: Wrapper Class for Automation Object May Be Incomplete

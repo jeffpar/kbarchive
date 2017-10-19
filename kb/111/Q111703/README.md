@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111703: PC DirSync: Microsoft Mail Srvmain.exe Version 3.2.14 Update"
-permalink: kb/111/Q111703/
+permalink: /kb/111/Q111703/
 ---
 
 ## Q111703: PC DirSync: Microsoft Mail Srvmain.exe Version 3.2.14 Update

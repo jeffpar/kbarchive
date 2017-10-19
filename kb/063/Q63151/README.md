@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63151: Flt Sim 4.00: Screen Options for Vectra CS-120 Portable"
-permalink: kb/063/Q63151/
+permalink: /kb/063/Q63151/
 ---
 
 ## Q63151: Flt Sim 4.00: Screen Options for Vectra CS-120 Portable

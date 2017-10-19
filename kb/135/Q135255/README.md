@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135255: Personal Address Book Displays At Sign (@) for Address"
-permalink: kb/135/Q135255/
+permalink: /kb/135/Q135255/
 ---
 
 ## Q135255: Personal Address Book Displays At Sign (@) for Address

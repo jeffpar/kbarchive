@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105018: X400: Err Msg: Could Not Activate Local TSAP from TTXT.EXE"
-permalink: kb/105/Q105018/
+permalink: /kb/105/Q105018/
 ---
 
 ## Q105018: X400: Err Msg: Could Not Activate Local TSAP from TTXT.EXE

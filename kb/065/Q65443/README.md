@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65443: Enhanced EMM386.SYS Parameters for Windows 3.0"
-permalink: kb/065/Q65443/
+permalink: /kb/065/Q65443/
 ---
 
 ## Q65443: Enhanced EMM386.SYS Parameters for Windows 3.0

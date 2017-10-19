@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167802: EXCEPTEX Traps MFC and Win32 Structured Exceptions"
-permalink: kb/167/Q167802/
+permalink: /kb/167/Q167802/
 ---
 
 ## Q167802: EXCEPTEX Traps MFC and Win32 Structured Exceptions

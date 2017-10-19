@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122325: Gateway 2000 Sound Board Not Compatible with WSS Drivers"
-permalink: kb/122/Q122325/
+permalink: /kb/122/Q122325/
 ---
 
 ## Q122325: Gateway 2000 Sound Board Not Compatible with WSS Drivers

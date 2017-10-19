@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75837: Using BACKUP/F After Installing the MS-DOS 5 Upgrade"
-permalink: kb/075/Q75837/
+permalink: /kb/075/Q75837/
 ---
 
 ## Q75837: Using BACKUP/F After Installing the MS-DOS 5 Upgrade

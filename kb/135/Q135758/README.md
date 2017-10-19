@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135758: PRB: Long Field Names Interfere with the Append Command"
-permalink: kb/135/Q135758/
+permalink: /kb/135/Q135758/
 ---
 
 ## Q135758: PRB: Long Field Names Interfere with the Append Command

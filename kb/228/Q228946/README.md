@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228946: Midtown Madness: Textures Are Not Displayed When You Start Race"
-permalink: kb/228/Q228946/
+permalink: /kb/228/Q228946/
 ---
 
 ## Q228946: Midtown Madness: Textures Are Not Displayed When You Start Race

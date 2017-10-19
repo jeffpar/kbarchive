@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128447: Enumeration of Large NTFS Directory Takes a Long Time"
-permalink: kb/128/Q128447/
+permalink: /kb/128/Q128447/
 ---
 
 ## Q128447: Enumeration of Large NTFS Directory Takes a Long Time

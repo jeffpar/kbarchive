@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102016: Mac Srv: User Names Listed in Italics in Address List"
-permalink: kb/102/Q102016/
+permalink: /kb/102/Q102016/
 ---
 
 ## Q102016: Mac Srv: User Names Listed in Italics in Address List

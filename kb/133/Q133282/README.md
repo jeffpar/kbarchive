@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133282: Favorites Not Shared Between Internet Explorer and MS Network"
-permalink: kb/133/Q133282/
+permalink: /kb/133/Q133282/
 ---
 
 ## Q133282: Favorites Not Shared Between Internet Explorer and MS Network

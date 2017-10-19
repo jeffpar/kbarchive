@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129857: When to Use the New 3.0 DAO TypeLib in Visual Basic"
-permalink: kb/129/Q129857/
+permalink: /kb/129/Q129857/
 ---
 
 ## Q129857: When to Use the New 3.0 DAO TypeLib in Visual Basic

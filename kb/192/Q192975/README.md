@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192975: BUG: ClassWizard Parsing Error with MBCS Helpstring in .odl File"
-permalink: kb/192/Q192975/
+permalink: /kb/192/Q192975/
 ---
 
 ## Q192975: BUG: ClassWizard Parsing Error with MBCS Helpstring in .odl File

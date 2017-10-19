@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115907: INF: ODBC Stored Procedures odbc#userid######## on SQL Server"
-permalink: kb/115/Q115907/
+permalink: /kb/115/Q115907/
 ---
 
 ## Q115907: INF: ODBC Stored Procedures odbc#userid######## on SQL Server

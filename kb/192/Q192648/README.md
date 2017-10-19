@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192648: FIX: Frame Disappears With Transparent Windowless Control"
-permalink: kb/192/Q192648/
+permalink: /kb/192/Q192648/
 ---
 
 ## Q192648: FIX: Frame Disappears With Transparent Windowless Control

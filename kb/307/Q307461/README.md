@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307461: When Typing E-mail And Answering An MSN Messenger Instant Messag"
-permalink: kb/307/Q307461/
+permalink: /kb/307/Q307461/
 ---
 
 ## Q307461: When Typing E-mail And Answering An MSN Messenger Instant Messag

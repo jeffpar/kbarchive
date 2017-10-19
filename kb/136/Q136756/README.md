@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136756: Display Applet Does Not Disable Drivers"
-permalink: kb/136/Q136756/
+permalink: /kb/136/Q136756/
 ---
 
 ## Q136756: Display Applet Does Not Disable Drivers

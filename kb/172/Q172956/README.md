@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172956: RAS Clients Fail to Connect with IP Assigned via DHCP"
-permalink: kb/172/Q172956/
+permalink: /kb/172/Q172956/
 ---
 
 ## Q172956: RAS Clients Fail to Connect with IP Assigned via DHCP

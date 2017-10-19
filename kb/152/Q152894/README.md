@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152894: XADM: Store Crashes When Passing 32K of Data to Event Log"
-permalink: kb/152/Q152894/
+permalink: /kb/152/Q152894/
 ---
 
 ## Q152894: XADM: Store Crashes When Passing 32K of Data to Event Log

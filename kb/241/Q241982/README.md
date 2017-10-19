@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241982: SMS: Subst Command Locks Out SMSCliToknAcct&amp; and SMSCCMBootAcct&amp;"
-permalink: kb/241/Q241982/
+permalink: /kb/241/Q241982/
 ---
 
 ## Q241982: SMS: Subst Command Locks Out SMSCliToknAcct&amp; and SMSCCMBootAcct&amp;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266042: XADM: Developing a Workflow Application using Exchange WP"
-permalink: kb/266/Q266042/
+permalink: /kb/266/Q266042/
 ---
 
 ## Q266042: XADM: Developing a Workflow Application using Exchange WP

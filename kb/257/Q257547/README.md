@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257547: Event ID 204 in Event Log and ASP Response Is Not Returned"
-permalink: kb/257/Q257547/
+permalink: /kb/257/Q257547/
 ---
 
 ## Q257547: Event ID 204 in Event Log and ASP Response Is Not Returned

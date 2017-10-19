@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192537: PRB: Threads Consume Virtual Memory Quicker on Windows CE 2.1"
-permalink: kb/192/Q192537/
+permalink: /kb/192/Q192537/
 ---
 
 ## Q192537: PRB: Threads Consume Virtual Memory Quicker on Windows CE 2.1

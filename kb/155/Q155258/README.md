@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155258: Level Indicator Does Not Work on MIPS with Wave Audio"
-permalink: kb/155/Q155258/
+permalink: /kb/155/Q155258/
 ---
 
 ## Q155258: Level Indicator Does Not Work on MIPS with Wave Audio

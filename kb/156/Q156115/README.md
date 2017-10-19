@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156115: Deadly Tide: Fatal Exception 0E After Pressing F3 Key"
-permalink: kb/156/Q156115/
+permalink: /kb/156/Q156115/
 ---
 
 ## Q156115: Deadly Tide: Fatal Exception 0E After Pressing F3 Key

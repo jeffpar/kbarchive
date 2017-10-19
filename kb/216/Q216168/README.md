@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216168: Using Windows 98 Desktop Themes with Windows NT"
-permalink: kb/216/Q216168/
+permalink: /kb/216/Q216168/
 ---
 
 ## Q216168: Using Windows 98 Desktop Themes with Windows NT

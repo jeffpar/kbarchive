@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148351: Multimedia: Some CD-ROM Drives Can't Properly Read Disc"
-permalink: kb/148/Q148351/
+permalink: /kb/148/Q148351/
 ---
 
 ## Q148351: Multimedia: Some CD-ROM Drives Can't Properly Read Disc

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222111: FIX: FFCs - _WebBrowser3 and 4 in _webview.vcx Give Ref. Error M"
-permalink: kb/222/Q222111/
+permalink: /kb/222/Q222111/
 ---
 
 ## Q222111: FIX: FFCs - _WebBrowser3 and 4 in _webview.vcx Give Ref. Error M

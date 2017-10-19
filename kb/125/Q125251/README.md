@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125251: PC DOS: Monitor Erases Message When Trying to Forward Message"
-permalink: kb/125/Q125251/
+permalink: /kb/125/Q125251/
 ---
 
 ## Q125251: PC DOS: Monitor Erases Message When Trying to Forward Message

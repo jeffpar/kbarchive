@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159141: CDFS Incorrectly Creates Short File Names for Some Files"
-permalink: kb/159/Q159141/
+permalink: /kb/159/Q159141/
 ---
 
 ## Q159141: CDFS Incorrectly Creates Short File Names for Some Files

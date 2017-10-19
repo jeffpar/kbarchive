@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74819: DESQview Version 2.33 or Earlier Conflicts with SETVER"
-permalink: kb/074/Q74819/
+permalink: /kb/074/Q74819/
 ---
 
 ## Q74819: DESQview Version 2.33 or Earlier Conflicts with SETVER

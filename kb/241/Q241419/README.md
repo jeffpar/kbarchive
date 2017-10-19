@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241419: SMS Executive Causes Access Violation Processing Prochist.dat"
-permalink: kb/241/Q241419/
+permalink: /kb/241/Q241419/
 ---
 
 ## Q241419: SMS Executive Causes Access Violation Processing Prochist.dat

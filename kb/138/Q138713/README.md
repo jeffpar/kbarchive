@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138713: Err Msg: Driver Entry Point Not Found After Service Pack Upgrade"
-permalink: kb/138/Q138713/
+permalink: /kb/138/Q138713/
 ---
 
 ## Q138713: Err Msg: Driver Entry Point Not Found After Service Pack Upgrade

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99391: INFO: Converting an RC File to Use Microsoft Foundation Classes"
-permalink: kb/099/Q99391/
+permalink: /kb/099/Q99391/
 ---
 
 ## Q99391: INFO: Converting an RC File to Use Microsoft Foundation Classes

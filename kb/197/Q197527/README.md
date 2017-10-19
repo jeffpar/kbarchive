@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197527: How to Automate Chkdsk"
-permalink: kb/197/Q197527/
+permalink: /kb/197/Q197527/
 ---
 
 ## Q197527: How to Automate Chkdsk

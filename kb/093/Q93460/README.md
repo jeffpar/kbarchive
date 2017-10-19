@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93460: README.WRI from Windows for Workgroups Version 3.1 (Part C)"
-permalink: kb/093/Q93460/
+permalink: /kb/093/Q93460/
 ---
 
 ## Q93460: README.WRI from Windows for Workgroups Version 3.1 (Part C)

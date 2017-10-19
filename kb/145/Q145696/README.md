@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145696: FIX: CDC::CreatePointFont() May Create Wrong Size Font"
-permalink: kb/145/Q145696/
+permalink: /kb/145/Q145696/
 ---
 
 ## Q145696: FIX: CDC::CreatePointFont() May Create Wrong Size Font

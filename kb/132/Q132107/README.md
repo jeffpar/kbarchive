@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132107: Mac Encarta 1995 Err Msg: Cannot Find Files Needed to Start..."
-permalink: kb/132/Q132107/
+permalink: /kb/132/Q132107/
 ---
 
 ## Q132107: Mac Encarta 1995 Err Msg: Cannot Find Files Needed to Start...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186566: Connection Configuration in Terminal Server"
-permalink: kb/186/Q186566/
+permalink: /kb/186/Q186566/
 ---
 
 ## Q186566: Connection Configuration in Terminal Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142829: BUG: DBGrid Align Before Retrieve Fields Causes Hidden Data"
-permalink: kb/142/Q142829/
+permalink: /kb/142/Q142829/
 ---
 
 ## Q142829: BUG: DBGrid Align Before Retrieve Fields Causes Hidden Data

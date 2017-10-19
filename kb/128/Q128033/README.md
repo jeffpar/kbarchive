@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128033: Unable to Read Text with a 16-color Video Driver"
-permalink: kb/128/Q128033/
+permalink: /kb/128/Q128033/
 ---
 
 ## Q128033: Unable to Read Text with a 16-color Video Driver

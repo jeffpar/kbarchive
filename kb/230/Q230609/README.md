@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230609: XADM: How to Post to Public Folders Using Fax Senior Gateway"
-permalink: kb/230/Q230609/
+permalink: /kb/230/Q230609/
 ---
 
 ## Q230609: XADM: How to Post to Public Folders Using Fax Senior Gateway

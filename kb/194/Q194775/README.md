@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194775: Combat Flight Simulator: Potential Cheating in Multiplayer Games"
-permalink: kb/194/Q194775/
+permalink: /kb/194/Q194775/
 ---
 
 ## Q194775: Combat Flight Simulator: Potential Cheating in Multiplayer Games

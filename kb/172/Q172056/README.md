@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172056: BUG: Private UserControls Do Not Support Data Binding"
-permalink: kb/172/Q172056/
+permalink: /kb/172/Q172056/
 ---
 
 ## Q172056: BUG: Private UserControls Do Not Support Data Binding

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137024: PRB: Asterisks Don't Hide an RDC Password Set in Design Time"
-permalink: kb/137/Q137024/
+permalink: /kb/137/Q137024/
 ---
 
 ## Q137024: PRB: Asterisks Don't Hide an RDC Password Set in Design Time

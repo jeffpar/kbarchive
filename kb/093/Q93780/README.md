@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93780: Installing WinLogin with Windows for Workgroups"
-permalink: kb/093/Q93780/
+permalink: /kb/093/Q93780/
 ---
 
 ## Q93780: Installing WinLogin with Windows for Workgroups

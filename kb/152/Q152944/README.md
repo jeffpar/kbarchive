@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152944: XFOR: IMC Not Receiving Inbound Mail from UNIX Hosts"
-permalink: kb/152/Q152944/
+permalink: /kb/152/Q152944/
 ---
 
 ## Q152944: XFOR: IMC Not Receiving Inbound Mail from UNIX Hosts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232471: XFOR: Notes to Exchange Replication Displays Inconsistent Times"
-permalink: kb/232/Q232471/
+permalink: /kb/232/Q232471/
 ---
 
 ## Q232471: XFOR: Notes to Exchange Replication Displays Inconsistent Times

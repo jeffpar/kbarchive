@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252463: Index Server Error Message Reveals Location of Web Folders"
-permalink: kb/252/Q252463/
+permalink: /kb/252/Q252463/
 ---
 
 ## Q252463: Index Server Error Message Reveals Location of Web Folders

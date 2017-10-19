@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181444: HOWTO: Pass an Automation Object from VB to a Visual C/C++ DLL"
-permalink: kb/181/Q181444/
+permalink: /kb/181/Q181444/
 ---
 
 ## Q181444: HOWTO: Pass an Automation Object from VB to a Visual C/C++ DLL

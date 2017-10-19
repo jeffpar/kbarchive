@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113752: HOWTO: Create a Table Using FoxPro Connectivity Kit"
-permalink: kb/113/Q113752/
+permalink: /kb/113/Q113752/
 ---
 
 ## Q113752: HOWTO: Create a Table Using FoxPro Connectivity Kit

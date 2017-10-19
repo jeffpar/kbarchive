@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246693: HOWTO: Get Document Statistics from Word via OLE Automation"
-permalink: kb/246/Q246693/
+permalink: /kb/246/Q246693/
 ---
 
 ## Q246693: HOWTO: Get Document Statistics from Word via OLE Automation

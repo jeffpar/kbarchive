@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79992: Saving High Scores in Tut's Tomb"
-permalink: kb/079/Q79992/
+permalink: /kb/079/Q79992/
 ---
 
 ## Q79992: Saving High Scores in Tut's Tomb

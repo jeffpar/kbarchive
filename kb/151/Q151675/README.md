@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151675: FIX: Re-throwing Exception Causes Abnormal Program Termination"
-permalink: kb/151/Q151675/
+permalink: /kb/151/Q151675/
 ---
 
 ## Q151675: FIX: Re-throwing Exception Causes Abnormal Program Termination

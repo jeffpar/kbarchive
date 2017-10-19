@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135548: PIF Editor Reserve Shortcut Keys Settings May Be Ineffective"
-permalink: kb/135/Q135548/
+permalink: /kb/135/Q135548/
 ---
 
 ## Q135548: PIF Editor Reserve Shortcut Keys Settings May Be Ineffective

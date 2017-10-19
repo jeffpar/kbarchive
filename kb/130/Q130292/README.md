@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130292: Windows NT Win16 Subsystem Crashes Printing from Quicken 4.0"
-permalink: kb/130/Q130292/
+permalink: /kb/130/Q130292/
 ---
 
 ## Q130292: Windows NT Win16 Subsystem Crashes Printing from Quicken 4.0

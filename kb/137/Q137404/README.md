@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137404: LAN Manager NETADMIN.EXE Does Not Work in Windows 95"
-permalink: kb/137/Q137404/
+permalink: /kb/137/Q137404/
 ---
 
 ## Q137404: LAN Manager NETADMIN.EXE Does Not Work in Windows 95

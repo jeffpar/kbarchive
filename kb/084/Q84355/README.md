@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84355: PC Paintbrush 4 Plus Err Msg: Can't Init Virtual Memory"
-permalink: kb/084/Q84355/
+permalink: /kb/084/Q84355/
 ---
 
 ## Q84355: PC Paintbrush 4 Plus Err Msg: Can't Init Virtual Memory

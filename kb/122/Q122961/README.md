@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122961: Print Job Stalls Printing to NEC NPDL2"
-permalink: kb/122/Q122961/
+permalink: /kb/122/Q122961/
 ---
 
 ## Q122961: Print Job Stalls Printing to NEC NPDL2

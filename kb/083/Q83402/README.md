@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83402: Removing Wingdings Font Disables Flying Windows Screen"
-permalink: kb/083/Q83402/
+permalink: /kb/083/Q83402/
 ---
 
 ## Q83402: Removing Wingdings Font Disables Flying Windows Screen

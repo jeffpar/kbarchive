@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97496: Use MSnull/IBMnull Driver with HP IIIsi Printer"
-permalink: kb/097/Q97496/
+permalink: /kb/097/Q97496/
 ---
 
 ## Q97496: Use MSnull/IBMnull Driver with HP IIIsi Printer

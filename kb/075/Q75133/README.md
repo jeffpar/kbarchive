@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75133: Installing MS-DOS Upgrade on a Texas Instruments Model 12"
-permalink: kb/075/Q75133/
+permalink: /kb/075/Q75133/
 ---
 
 ## Q75133: Installing MS-DOS Upgrade on a Texas Instruments Model 12

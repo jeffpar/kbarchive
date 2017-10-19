@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143187: HTTP Server MIB definitions"
-permalink: kb/143/Q143187/
+permalink: /kb/143/Q143187/
 ---
 
 ## Q143187: HTTP Server MIB definitions

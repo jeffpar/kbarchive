@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161286: HOWTO: Use a Common Dialog File Open Dialog with Win32 API"
-permalink: kb/161/Q161286/
+permalink: /kb/161/Q161286/
 ---
 
 ## Q161286: HOWTO: Use a Common Dialog File Open Dialog with Win32 API

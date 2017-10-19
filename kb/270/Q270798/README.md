@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270798: Encarta Language Learning: Menu Bar Is Missing"
-permalink: kb/270/Q270798/
+permalink: /kb/270/Q270798/
 ---
 
 ## Q270798: Encarta Language Learning: Menu Bar Is Missing

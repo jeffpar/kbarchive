@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238382: W3C Log File Format May Contain Spaces in CS-Username Field"
-permalink: kb/238/Q238382/
+permalink: /kb/238/Q238382/
 ---
 
 ## Q238382: W3C Log File Format May Contain Spaces in CS-Username Field

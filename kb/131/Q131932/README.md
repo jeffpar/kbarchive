@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131932: Error Occurs Mapping Over Existing Network Connection"
-permalink: kb/131/Q131932/
+permalink: /kb/131/Q131932/
 ---
 
 ## Q131932: Error Occurs Mapping Over Existing Network Connection

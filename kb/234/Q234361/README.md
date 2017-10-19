@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234361: XFOR: Notes Application Connector Prompts for Password with Pas"
-permalink: kb/234/Q234361/
+permalink: /kb/234/Q234361/
 ---
 
 ## Q234361: XFOR: Notes Application Connector Prompts for Password with Pas

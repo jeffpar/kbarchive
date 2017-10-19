@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196818: XFOR: How to Limit Recipients on Outbound SMTP Messages"
-permalink: kb/196/Q196818/
+permalink: /kb/196/Q196818/
 ---
 
 ## Q196818: XFOR: How to Limit Recipients on Outbound SMTP Messages

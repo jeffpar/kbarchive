@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164058: Passing Procedure Arguments in Visual Basic for Applications"
-permalink: kb/164/Q164058/
+permalink: /kb/164/Q164058/
 ---
 
 ## Q164058: Passing Procedure Arguments in Visual Basic for Applications

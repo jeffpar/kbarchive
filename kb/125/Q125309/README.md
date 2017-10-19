@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q125309: PRB: AllocMemoryDebug Gives Assertion or Trace Error on New[0]"
-permalink: kb/125/Q125309/
+title: "Q125309: PRB: AllocMemoryDebug Gives Assertion or Trace Error on New&#91;0&#93;"
+permalink: /kb/125/Q125309/
 ---
 
-## Q125309: PRB: AllocMemoryDebug Gives Assertion or Trace Error on New[0]
+## Q125309: PRB: AllocMemoryDebug Gives Assertion or Trace Error on New&#91;0&#93;
 
 	Article: Q125309
 	Product(s): Microsoft C Compiler

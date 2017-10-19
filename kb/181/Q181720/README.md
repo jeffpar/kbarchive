@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181720: PRB: MOVE 0 Works Only with RDO Server-Side Cursors"
-permalink: kb/181/Q181720/
+permalink: /kb/181/Q181720/
 ---
 
 ## Q181720: PRB: MOVE 0 Works Only with RDO Server-Side Cursors

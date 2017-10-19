@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200374: SMS: SMSINST: Automatic Rollback With the SMS Installer"
-permalink: kb/200/Q200374/
+permalink: /kb/200/Q200374/
 ---
 
 ## Q200374: SMS: SMSINST: Automatic Rollback With the SMS Installer

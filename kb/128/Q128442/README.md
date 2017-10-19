@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128442: ErrMsg: &quot;5735: Protocol Manager has reported...&quot; w/ 3Com NIC"
-permalink: kb/128/Q128442/
+permalink: /kb/128/Q128442/
 ---
 
 ## Q128442: ErrMsg: &quot;5735: Protocol Manager has reported...&quot; w/ 3Com NIC

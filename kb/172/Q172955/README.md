@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172955: FIX: ATL Service Causes Random Asserts in Run Member Function"
-permalink: kb/172/Q172955/
+permalink: /kb/172/Q172955/
 ---
 
 ## Q172955: FIX: ATL Service Causes Random Asserts in Run Member Function

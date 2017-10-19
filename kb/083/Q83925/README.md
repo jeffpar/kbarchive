@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83925: 16.66 cpi Line Printer Font on HP LaserJet IIIsi"
-permalink: kb/083/Q83925/
+permalink: /kb/083/Q83925/
 ---
 
 ## Q83925: 16.66 cpi Line Printer Font on HP LaserJet IIIsi

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142038: DOCERR: Bad Instructions for Converting FAT Partition to NTFS"
-permalink: kb/142/Q142038/
+permalink: /kb/142/Q142038/
 ---
 
 ## Q142038: DOCERR: Bad Instructions for Converting FAT Partition to NTFS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84519: Micronet SCSI Controller Requires MNDOSM.SYS"
-permalink: kb/084/Q84519/
+permalink: /kb/084/Q84519/
 ---
 
 ## Q84519: Micronet SCSI Controller Requires MNDOSM.SYS

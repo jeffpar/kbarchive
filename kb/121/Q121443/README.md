@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121443: Err Msg with Novell NetWare: Windows Cannot Write to This File"
-permalink: kb/121/Q121443/
+permalink: /kb/121/Q121443/
 ---
 
 ## Q121443: Err Msg with Novell NetWare: Windows Cannot Write to This File

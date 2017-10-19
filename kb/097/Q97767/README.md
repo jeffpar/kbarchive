@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97767: Using Novell's ODI Drivers with Windows for Workgroups"
-permalink: kb/097/Q97767/
+permalink: /kb/097/Q97767/
 ---
 
 ## Q97767: Using Novell's ODI Drivers with Windows for Workgroups

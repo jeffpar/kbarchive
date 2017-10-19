@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216473: XFOR: Migrating Mailbox w/Message from cc:Mail Release 8 Client"
-permalink: kb/216/Q216473/
+permalink: /kb/216/Q216473/
 ---
 
 ## Q216473: XFOR: Migrating Mailbox w/Message from cc:Mail Release 8 Client

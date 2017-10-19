@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174136: Err Msg: Not Enough Disk Space"
-permalink: kb/174/Q174136/
+permalink: /kb/174/Q174136/
 ---
 
 ## Q174136: Err Msg: Not Enough Disk Space

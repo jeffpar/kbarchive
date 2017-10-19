@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165593: Unable to Set Mouse Hot Corners Using Resource Kit Screen Savers"
-permalink: kb/165/Q165593/
+permalink: /kb/165/Q165593/
 ---
 
 ## Q165593: Unable to Set Mouse Hot Corners Using Resource Kit Screen Savers

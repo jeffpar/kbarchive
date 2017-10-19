@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82048: Windows 3.0 Err Msg: Second Instance of Windows"
-permalink: kb/082/Q82048/
+permalink: /kb/082/Q82048/
 ---
 
 ## Q82048: Windows 3.0 Err Msg: Second Instance of Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102327: INFO: Const Versus Non-Const CObList Objects"
-permalink: kb/102/Q102327/
+permalink: /kb/102/Q102327/
 ---
 
 ## Q102327: INFO: Const Versus Non-Const CObList Objects

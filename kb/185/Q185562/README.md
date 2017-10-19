@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185562: Golf 98/99 Err Msg: Requires Windows 95 with DirectX..."
-permalink: kb/185/Q185562/
+permalink: /kb/185/Q185562/
 ---
 
 ## Q185562: Golf 98/99 Err Msg: Requires Windows 95 with DirectX...

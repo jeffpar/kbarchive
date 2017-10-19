@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122474: Encarta 1995: Manual Installation Instructions for Windows 3.x"
-permalink: kb/122/Q122474/
+permalink: /kb/122/Q122474/
 ---
 
 ## Q122474: Encarta 1995: Manual Installation Instructions for Windows 3.x

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226115: SMS: Prefer Distribution Point Selection Require Path to Package"
-permalink: kb/226/Q226115/
+permalink: /kb/226/Q226115/
 ---
 
 ## Q226115: SMS: Prefer Distribution Point Selection Require Path to Package

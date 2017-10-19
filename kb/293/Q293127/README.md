@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293127: Net Logon of an NT 4 BDC Fails in Windows 2000 Domain"
-permalink: kb/293/Q293127/
+permalink: /kb/293/Q293127/
 ---
 
 ## Q293127: Net Logon of an NT 4 BDC Fails in Windows 2000 Domain

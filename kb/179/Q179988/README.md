@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179988: FIX: Problem with ListView's ColumnHeader Width Property"
-permalink: kb/179/Q179988/
+permalink: /kb/179/Q179988/
 ---
 
 ## Q179988: FIX: Problem with ListView's ColumnHeader Width Property

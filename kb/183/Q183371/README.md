@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183371: Jumpmenu.htm Returns JavaScript Error"
-permalink: kb/183/Q183371/
+permalink: /kb/183/Q183371/
 ---
 
 ## Q183371: Jumpmenu.htm Returns JavaScript Error

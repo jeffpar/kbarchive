@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225081: Cluster Resources Quorum Log Size Defaults to 64 KB"
-permalink: kb/225/Q225081/
+permalink: /kb/225/Q225081/
 ---
 
 ## Q225081: Cluster Resources Quorum Log Size Defaults to 64 KB

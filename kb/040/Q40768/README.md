@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q40768: Mac Srv: AppleShare, Print Server, &amp; Mail Server Coexistence"
-permalink: kb/040/Q40768/
+permalink: /kb/040/Q40768/
 ---
 
 ## Q40768: Mac Srv: AppleShare, Print Server, &amp; Mail Server Coexistence

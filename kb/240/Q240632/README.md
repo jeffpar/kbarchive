@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240632: World Atlas 2000: Hangs When You Disconnect from the Internet"
-permalink: kb/240/Q240632/
+permalink: /kb/240/Q240632/
 ---
 
 ## Q240632: World Atlas 2000: Hangs When You Disconnect from the Internet

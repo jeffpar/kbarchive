@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258788: Cannot Change Password in Windows Without Logging on to Domain"
-permalink: kb/258/Q258788/
+permalink: /kb/258/Q258788/
 ---
 
 ## Q258788: Cannot Change Password in Windows Without Logging on to Domain

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228487: PRB: System Error Message &quot;&amp;H80004015&quot; Running ActiveX DLL in ID"
-permalink: kb/228/Q228487/
+permalink: /kb/228/Q228487/
 ---
 
 ## Q228487: PRB: System Error Message &quot;&amp;H80004015&quot; Running ActiveX DLL in ID

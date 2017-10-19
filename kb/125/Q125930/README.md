@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125930: Paintbrush Image and Scroll Bar Disappears"
-permalink: kb/125/Q125930/
+permalink: /kb/125/Q125930/
 ---
 
 ## Q125930: Paintbrush Image and Scroll Bar Disappears

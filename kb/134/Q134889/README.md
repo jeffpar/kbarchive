@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134889: FIX: Filter Is Not Added for Integer Fields in View Wizards"
-permalink: kb/134/Q134889/
+permalink: /kb/134/Q134889/
 ---
 
 ## Q134889: FIX: Filter Is Not Added for Integer Fields in View Wizards

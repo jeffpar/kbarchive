@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167100: XCLN: Out of Memory Errors with Exchange 5.0 16-Bit Client"
-permalink: kb/167/Q167100/
+permalink: /kb/167/Q167100/
 ---
 
 ## Q167100: XCLN: Out of Memory Errors with Exchange 5.0 16-Bit Client

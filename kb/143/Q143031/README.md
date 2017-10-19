@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143031: Error Starting Mail Server in Windows NT 3.51 Resource Kit"
-permalink: kb/143/Q143031/
+permalink: /kb/143/Q143031/
 ---
 
 ## Q143031: Error Starting Mail Server in Windows NT 3.51 Resource Kit

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92401: Noise (Hissing) During Playback of Sound Files"
-permalink: kb/092/Q92401/
+permalink: /kb/092/Q92401/
 ---
 
 ## Q92401: Noise (Hissing) During Playback of Sound Files

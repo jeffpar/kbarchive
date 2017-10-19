@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165689: INFO: Visual C++ 5.0 Readme, Enterprise Edition Issues"
-permalink: kb/165/Q165689/
+permalink: /kb/165/Q165689/
 ---
 
 ## Q165689: INFO: Visual C++ 5.0 Readme, Enterprise Edition Issues

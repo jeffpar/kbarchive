@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93737: Using OnTrack's Disk Manager 5.1 with Windows 3.1"
-permalink: kb/093/Q93737/
+permalink: /kb/093/Q93737/
 ---
 
 ## Q93737: Using OnTrack's Disk Manager 5.1 with Windows 3.1

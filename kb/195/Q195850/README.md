@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195850: HOWTO: Determine the Windows Messaging Subsystem Default"
-permalink: kb/195/Q195850/
+permalink: /kb/195/Q195850/
 ---
 
 ## Q195850: HOWTO: Determine the Windows Messaging Subsystem Default

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137408: DOC: Can't Use ConnectName Property w/SQLGETPROP() Function"
-permalink: kb/137/Q137408/
+permalink: /kb/137/Q137408/
 ---
 
 ## Q137408: DOC: Can't Use ConnectName Property w/SQLGETPROP() Function

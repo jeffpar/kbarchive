@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122667: Writer: Card Borders Print Solid Green on HP DeskJet"
-permalink: kb/122/Q122667/
+permalink: /kb/122/Q122667/
 ---
 
 ## Q122667: Writer: Card Borders Print Solid Green on HP DeskJet

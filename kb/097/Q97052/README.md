@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97052: Redefining the Function Keys in FoxPro Config File"
-permalink: kb/097/Q97052/
+permalink: /kb/097/Q97052/
 ---
 
 ## Q97052: Redefining the Function Keys in FoxPro Config File

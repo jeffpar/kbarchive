@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105207: PRB: KRNL386: Unable to Enter Protected Mode"
-permalink: kb/105/Q105207/
+permalink: /kb/105/Q105207/
 ---
 
 ## Q105207: PRB: KRNL386: Unable to Enter Protected Mode

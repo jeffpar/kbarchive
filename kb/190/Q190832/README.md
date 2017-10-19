@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190832: RSERVICE Unable to Configure Service to Use the LocalSystem"
-permalink: kb/190/Q190832/
+permalink: /kb/190/Q190832/
 ---
 
 ## Q190832: RSERVICE Unable to Configure Service to Use the LocalSystem

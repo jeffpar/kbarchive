@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173787: MDG: Random Error &quot;Sign on ID or Password Incorrect&quot;"
-permalink: kb/173/Q173787/
+permalink: /kb/173/Q173787/
 ---
 
 ## Q173787: MDG: Random Error &quot;Sign on ID or Password Incorrect&quot;

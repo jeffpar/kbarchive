@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125461: Chat Options Return to Original Settings"
-permalink: kb/125/Q125461/
+permalink: /kb/125/Q125461/
 ---
 
 ## Q125461: Chat Options Return to Original Settings

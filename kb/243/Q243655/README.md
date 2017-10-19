@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243655: Trust Relationships Return &quot;STATUS_TRUSTED_DOMAIN_FAILURE&quot;"
-permalink: kb/243/Q243655/
+permalink: /kb/243/Q243655/
 ---
 
 ## Q243655: Trust Relationships Return &quot;STATUS_TRUSTED_DOMAIN_FAILURE&quot;

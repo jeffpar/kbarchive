@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148388: HOWTO: How to Change Default Control Focus on CPropertyPage"
-permalink: kb/148/Q148388/
+permalink: /kb/148/Q148388/
 ---
 
 ## Q148388: HOWTO: How to Change Default Control Focus on CPropertyPage

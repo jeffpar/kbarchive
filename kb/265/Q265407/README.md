@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265407: Motocross Madness 2: Certain Sounds Are Not Played in the Game"
-permalink: kb/265/Q265407/
+permalink: /kb/265/Q265407/
 ---
 
 ## Q265407: Motocross Madness 2: Certain Sounds Are Not Played in the Game

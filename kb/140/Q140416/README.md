@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140416: Remote Control Clients Are Grayed Out in SMS after Applying SP1"
-permalink: kb/140/Q140416/
+permalink: /kb/140/Q140416/
 ---
 
 ## Q140416: Remote Control Clients Are Grayed Out in SMS after Applying SP1

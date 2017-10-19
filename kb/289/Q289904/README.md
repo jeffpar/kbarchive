@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289904: HOWTO: Create a CD-ROM Setup Disk with the VFP 6.0 Setup Wizard"
-permalink: kb/289/Q289904/
+permalink: /kb/289/Q289904/
 ---
 
 ## Q289904: HOWTO: Create a CD-ROM Setup Disk with the VFP 6.0 Setup Wizard

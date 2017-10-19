@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181106: WD97: FileFind Command Does Not Open Advanced Find Dialog Box"
-permalink: kb/181/Q181106/
+permalink: /kb/181/Q181106/
 ---
 
 ## Q181106: WD97: FileFind Command Does Not Open Advanced Find Dialog Box

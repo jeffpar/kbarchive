@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194735: PC WRmt: Remote Mail Errors Using Custom Script"
-permalink: kb/194/Q194735/
+permalink: /kb/194/Q194735/
 ---
 
 ## Q194735: PC WRmt: Remote Mail Errors Using Custom Script

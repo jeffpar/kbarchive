@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143291: HOWTO: Resize CPropertyPages at Run Time"
-permalink: kb/143/Q143291/
+permalink: /kb/143/Q143291/
 ---
 
 ## Q143291: HOWTO: Resize CPropertyPages at Run Time

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172671: Print Server Does Not Honor Print Properties Set In Dialog"
-permalink: kb/172/Q172671/
+permalink: /kb/172/Q172671/
 ---
 
 ## Q172671: Print Server Does Not Honor Print Properties Set In Dialog

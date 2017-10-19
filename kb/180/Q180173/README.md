@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180173: PRB: &quot;The profile name is not valid&quot; with MAPISession Control"
-permalink: kb/180/Q180173/
+permalink: /kb/180/Q180173/
 ---
 
 ## Q180173: PRB: &quot;The profile name is not valid&quot; with MAPISession Control

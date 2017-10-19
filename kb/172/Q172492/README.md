@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172492: WD97: Templates and Wizards Not Included with SR-1 Patch"
-permalink: kb/172/Q172492/
+permalink: /kb/172/Q172492/
 ---
 
 ## Q172492: WD97: Templates and Wizards Not Included with SR-1 Patch

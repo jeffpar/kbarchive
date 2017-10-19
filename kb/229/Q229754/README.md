@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229754: XFOR: Web 3 cc:Mail Migration Wizard Does Not Migrate PAB"
-permalink: kb/229/Q229754/
+permalink: /kb/229/Q229754/
 ---
 
 ## Q229754: XFOR: Web 3 cc:Mail Migration Wizard Does Not Migrate PAB

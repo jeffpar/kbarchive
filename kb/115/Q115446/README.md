@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115446: X400: X400GATE.EXE Hangs on 74+ Characters in Subject Line"
-permalink: kb/115/Q115446/
+permalink: /kb/115/Q115446/
 ---
 
 ## Q115446: X400: X400GATE.EXE Hangs on 74+ Characters in Subject Line

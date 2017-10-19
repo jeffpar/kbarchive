@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157874: Writer 2: Minimum System Requirements"
-permalink: kb/157/Q157874/
+permalink: /kb/157/Q157874/
 ---
 
 ## Q157874: Writer 2: Minimum System Requirements

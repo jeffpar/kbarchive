@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39373: FIX: Warning A4057 Generated Instead of Error A2019"
-permalink: kb/039/Q39373/
+permalink: /kb/039/Q39373/
 ---
 
 ## Q39373: FIX: Warning A4057 Generated Instead of Error A2019

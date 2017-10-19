@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81685: Windows 3.1: KBFLOW.EXE Should Be Loaded from Virtual Machine"
-permalink: kb/081/Q81685/
+permalink: /kb/081/Q81685/
 ---
 
 ## Q81685: Windows 3.1: KBFLOW.EXE Should Be Loaded from Virtual Machine

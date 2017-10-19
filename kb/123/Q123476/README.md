@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123476: PRB:SoureSafe &quot;Error locking file&quot; on Windows NT or Multi-User"
-permalink: kb/123/Q123476/
+permalink: /kb/123/Q123476/
 ---
 
 ## Q123476: PRB:SoureSafe &quot;Error locking file&quot; on Windows NT or Multi-User

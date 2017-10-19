@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96700: MemMaker Cannot Continue if NewWave Is in Your AUTOEXEC.BAT"
-permalink: kb/096/Q96700/
+permalink: /kb/096/Q96700/
 ---
 
 ## Q96700: MemMaker Cannot Continue if NewWave Is in Your AUTOEXEC.BAT

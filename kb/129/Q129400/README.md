@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129400: FREE TABLE Command Removes Table from Corrupted Database"
-permalink: kb/129/Q129400/
+permalink: /kb/129/Q129400/
 ---
 
 ## Q129400: FREE TABLE Command Removes Table from Corrupted Database

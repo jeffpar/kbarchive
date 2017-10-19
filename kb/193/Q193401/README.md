@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193401: BUG: Can't Change UserControl FontTransparent if Default = False"
-permalink: kb/193/Q193401/
+permalink: /kb/193/Q193401/
 ---
 
 ## Q193401: BUG: Can't Change UserControl FontTransparent if Default = False

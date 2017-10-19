@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135940: Large Files Left on Host After Compressing with DriveSpace"
-permalink: kb/135/Q135940/
+permalink: /kb/135/Q135940/
 ---
 
 ## Q135940: Large Files Left on Host After Compressing with DriveSpace

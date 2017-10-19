@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138250: Updated Ifsmgr.vxd Resolves Problems with Tilde in 8.3 Names"
-permalink: kb/138/Q138250/
+permalink: /kb/138/Q138250/
 ---
 
 ## Q138250: Updated Ifsmgr.vxd Resolves Problems with Tilde in 8.3 Names

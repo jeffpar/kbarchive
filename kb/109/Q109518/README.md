@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109518: MAIL.WRI from Windows for Workgroups 3.11"
-permalink: kb/109/Q109518/
+permalink: /kb/109/Q109518/
 ---
 
 ## Q109518: MAIL.WRI from Windows for Workgroups 3.11

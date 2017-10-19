@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136824: BBS Window Does Not Close After Disconnect"
-permalink: kb/136/Q136824/
+permalink: /kb/136/Q136824/
 ---
 
 ## Q136824: BBS Window Does Not Close After Disconnect

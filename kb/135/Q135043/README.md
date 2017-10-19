@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135043: 500 Nations: Manual Installation Instructions"
-permalink: kb/135/Q135043/
+permalink: /kb/135/Q135043/
 ---
 
 ## Q135043: 500 Nations: Manual Installation Instructions

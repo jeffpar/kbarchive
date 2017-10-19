@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104371: PC DOS: Err Msg: Notice 98 No Log Folder Has Been Defined"
-permalink: kb/104/Q104371/
+permalink: /kb/104/Q104371/
 ---
 
 ## Q104371: PC DOS: Err Msg: Notice 98 No Log Folder Has Been Defined

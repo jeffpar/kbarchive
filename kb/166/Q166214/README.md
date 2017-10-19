@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166214: WD97: Sample VB Code To Determine Text Box (or Text Frame) Link"
-permalink: kb/166/Q166214/
+permalink: /kb/166/Q166214/
 ---
 
 ## Q166214: WD97: Sample VB Code To Determine Text Box (or Text Frame) Link

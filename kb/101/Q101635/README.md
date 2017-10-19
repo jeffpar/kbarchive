@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101635: Explorer Cannot Enumerate Path Longer than 260 Characters"
-permalink: kb/101/Q101635/
+permalink: /kb/101/Q101635/
 ---
 
 ## Q101635: Explorer Cannot Enumerate Path Longer than 260 Characters

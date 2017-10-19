@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282991: You Cannot Browse IP Addresses by Using a UNC switch in Windows"
-permalink: kb/282/Q282991/
+permalink: /kb/282/Q282991/
 ---
 
 ## Q282991: You Cannot Browse IP Addresses by Using a UNC switch in Windows

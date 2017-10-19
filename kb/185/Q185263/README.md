@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185263: FIX: Keyboard &quot;{PAUSE KEY}&quot; Command Hangs Visual FoxPro"
-permalink: kb/185/Q185263/
+permalink: /kb/185/Q185263/
 ---
 
 ## Q185263: FIX: Keyboard &quot;{PAUSE KEY}&quot; Command Hangs Visual FoxPro

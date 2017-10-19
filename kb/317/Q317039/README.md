@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317039: Nothing Happens When You Double-Click the Modems Icon"
-permalink: kb/317/Q317039/
+permalink: /kb/317/Q317039/
 ---
 
 ## Q317039: Nothing Happens When You Double-Click the Modems Icon

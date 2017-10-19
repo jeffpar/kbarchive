@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187431: TSAdmin Does Not List Servers Correctly"
-permalink: kb/187/Q187431/
+permalink: /kb/187/Q187431/
 ---
 
 ## Q187431: TSAdmin Does Not List Servers Correctly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135060: Access Denied Attempting to Change Client Domain Password"
-permalink: kb/135/Q135060/
+permalink: /kb/135/Q135060/
 ---
 
 ## Q135060: Access Denied Attempting to Change Client Domain Password

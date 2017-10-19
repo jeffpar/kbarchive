@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100004: Error Running MemMaker on a Tandy 3810 Laptop Computer"
-permalink: kb/100/Q100004/
+permalink: /kb/100/Q100004/
 ---
 
 ## Q100004: Error Running MemMaker on a Tandy 3810 Laptop Computer

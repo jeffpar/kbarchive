@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248399: MS00-007: Shared Workstation Setup May Permit Access to Recycle"
-permalink: kb/248/Q248399/
+permalink: /kb/248/Q248399/
 ---
 
 ## Q248399: MS00-007: Shared Workstation Setup May Permit Access to Recycle

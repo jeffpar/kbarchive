@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176202: How to Troubleshoot WINS Event IDs 4261 and 4262"
-permalink: kb/176/Q176202/
+permalink: /kb/176/Q176202/
 ---
 
 ## Q176202: How to Troubleshoot WINS Event IDs 4261 and 4262

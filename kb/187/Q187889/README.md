@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187889: WD97: Sample Macros to Turn a True or False Property On and Off"
-permalink: kb/187/Q187889/
+permalink: /kb/187/Q187889/
 ---
 
 ## Q187889: WD97: Sample Macros to Turn a True or False Property On and Off

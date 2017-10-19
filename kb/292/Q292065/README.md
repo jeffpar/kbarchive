@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q292065: Windows 2000 Resource Kits Missing Remote Administration Scripts"
-permalink: kb/292/Q292065/
+permalink: /kb/292/Q292065/
 ---
 
 ## Q292065: Windows 2000 Resource Kits Missing Remote Administration Scripts

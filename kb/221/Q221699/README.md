@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221699: XFOR: MTA Includes Else Doorways into Previous Route Siblings"
-permalink: kb/221/Q221699/
+permalink: /kb/221/Q221699/
 ---
 
 ## Q221699: XFOR: MTA Includes Else Doorways into Previous Route Siblings

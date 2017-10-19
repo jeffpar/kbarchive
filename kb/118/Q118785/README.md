@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118785: FFAPI: Tokens Required in a FFAPI File"
-permalink: kb/118/Q118785/
+permalink: /kb/118/Q118785/
 ---
 
 ## Q118785: FFAPI: Tokens Required in a FFAPI File

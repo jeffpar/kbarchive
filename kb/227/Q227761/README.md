@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227761: Unable to Install Service Pack 4 from Distributed File System"
-permalink: kb/227/Q227761/
+permalink: /kb/227/Q227761/
 ---
 
 ## Q227761: Unable to Install Service Pack 4 from Distributed File System

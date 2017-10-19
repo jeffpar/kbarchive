@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261228: XCLN: Users Cannot Connect to Exchange Server After DCPromo"
-permalink: kb/261/Q261228/
+permalink: /kb/261/Q261228/
 ---
 
 ## Q261228: XCLN: Users Cannot Connect to Exchange Server After DCPromo

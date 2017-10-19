@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248799: HOWTO: Insert NULL Data with ODBC API Functions"
-permalink: kb/248/Q248799/
+permalink: /kb/248/Q248799/
 ---
 
 ## Q248799: HOWTO: Insert NULL Data with ODBC API Functions

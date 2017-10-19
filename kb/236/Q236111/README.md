@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236111: XCLN: Client Cannot Change Windows NT or Windows 2000 Password"
-permalink: kb/236/Q236111/
+permalink: /kb/236/Q236111/
 ---
 
 ## Q236111: XCLN: Client Cannot Change Windows NT or Windows 2000 Password

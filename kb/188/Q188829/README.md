@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188829: XADM: Cannot View Message Text on Black Background"
-permalink: kb/188/Q188829/
+permalink: /kb/188/Q188829/
 ---
 
 ## Q188829: XADM: Cannot View Message Text on Black Background

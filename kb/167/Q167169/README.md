@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167169: FIX: COleDateTime::Format Throws a COleException(scode=E_FAIL)"
-permalink: kb/167/Q167169/
+permalink: /kb/167/Q167169/
 ---
 
 ## Q167169: FIX: COleDateTime::Format Throws a COleException(scode=E_FAIL)

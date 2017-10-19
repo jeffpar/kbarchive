@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114269: PRB: &quot;Overwrite Invalid FoxUser File...&quot; Each Time Fox Starts"
-permalink: kb/114/Q114269/
+permalink: /kb/114/Q114269/
 ---
 
 ## Q114269: PRB: &quot;Overwrite Invalid FoxUser File...&quot; Each Time Fox Starts

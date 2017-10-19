@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190148: BUG: ATL Object Wizard Doesn't Add Entry to Connection Point Map"
-permalink: kb/190/Q190148/
+permalink: /kb/190/Q190148/
 ---
 
 ## Q190148: BUG: ATL Object Wizard Doesn't Add Entry to Connection Point Map

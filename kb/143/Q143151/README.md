@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143151: Registry Corruption Detected During Restart of Windows NT"
-permalink: kb/143/Q143151/
+permalink: /kb/143/Q143151/
 ---
 
 ## Q143151: Registry Corruption Detected During Restart of Windows NT

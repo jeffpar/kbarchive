@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157936: SMC9232N Driver Causing Multiple STOP Messages"
-permalink: kb/157/Q157936/
+permalink: /kb/157/Q157936/
 ---
 
 ## Q157936: SMC9232N Driver Causing Multiple STOP Messages

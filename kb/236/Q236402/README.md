@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236402: Microsoft Systems Management Server 2.0 Training Kit Corrections"
-permalink: kb/236/Q236402/
+permalink: /kb/236/Q236402/
 ---
 
 ## Q236402: Microsoft Systems Management Server 2.0 Training Kit Corrections

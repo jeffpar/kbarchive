@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191742: IIS: Access Denied When Trying to Update Files on IIS Computer"
-permalink: kb/191/Q191742/
+permalink: /kb/191/Q191742/
 ---
 
 ## Q191742: IIS: Access Denied When Trying to Update Files on IIS Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190449: Corrupted SAM Hangs Windows NT Server"
-permalink: kb/190/Q190449/
+permalink: /kb/190/Q190449/
 ---
 
 ## Q190449: Corrupted SAM Hangs Windows NT Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103914: Err Msg with Adaptec 1542c: Cannot Write to Drive C:"
-permalink: kb/103/Q103914/
+permalink: /kb/103/Q103914/
 ---
 
 ## Q103914: Err Msg with Adaptec 1542c: Cannot Write to Drive C:

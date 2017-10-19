@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145566: FIX: App Error Occurs After Saving a Changed Module Name"
-permalink: kb/145/Q145566/
+permalink: /kb/145/Q145566/
 ---
 
 ## Q145566: FIX: App Error Occurs After Saving a Changed Module Name

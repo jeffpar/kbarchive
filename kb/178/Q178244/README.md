@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178244: XADM: Store Stops When POP3 Client Retrieves NDR for UTF-7 Msg"
-permalink: kb/178/Q178244/
+permalink: /kb/178/Q178244/
 ---
 
 ## Q178244: XADM: Store Stops When POP3 Client Retrieves NDR for UTF-7 Msg

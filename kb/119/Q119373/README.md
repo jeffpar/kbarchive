@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119373: Using a Numeric Hostname with TCP/IP-32"
-permalink: kb/119/Q119373/
+permalink: /kb/119/Q119373/
 ---
 
 ## Q119373: Using a Numeric Hostname with TCP/IP-32

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262878: FIX: Fatal Exception with Large Number of Variables or Objects"
-permalink: kb/262/Q262878/
+permalink: /kb/262/Q262878/
 ---
 
 ## Q262878: FIX: Fatal Exception with Large Number of Variables or Objects

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149104: New Users Not Prompted to Change Password"
-permalink: kb/149/Q149104/
+permalink: /kb/149/Q149104/
 ---
 
 ## Q149104: New Users Not Prompted to Change Password

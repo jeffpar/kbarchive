@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128253: Differences in Login Scripts in NetWare 4.x and NetWare 3.x"
-permalink: kb/128/Q128253/
+permalink: /kb/128/Q128253/
 ---
 
 ## Q128253: Differences in Login Scripts in NetWare 4.x and NetWare 3.x

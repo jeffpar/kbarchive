@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130488: Error Message: Error Trying to Add Trustee"
-permalink: kb/130/Q130488/
+permalink: /kb/130/Q130488/
 ---
 
 ## Q130488: Error Message: Error Trying to Add Trustee

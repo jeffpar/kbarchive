@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137939: Shortcut to MS-DOS-Based Program Limited to 62 Characters"
-permalink: kb/137/Q137939/
+permalink: /kb/137/Q137939/
 ---
 
 ## Q137939: Shortcut to MS-DOS-Based Program Limited to 62 Characters

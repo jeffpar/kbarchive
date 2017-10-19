@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171564: TCP/IP Dead Gateway Detection Algorithm Updated for Windows NT"
-permalink: kb/171/Q171564/
+permalink: /kb/171/Q171564/
 ---
 
 ## Q171564: TCP/IP Dead Gateway Detection Algorithm Updated for Windows NT

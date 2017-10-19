@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243402: XCON: Exchange Server MTA Event ID 9280"
-permalink: kb/243/Q243402/
+permalink: /kb/243/Q243402/
 ---
 
 ## Q243402: XCON: Exchange Server MTA Event ID 9280

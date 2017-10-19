@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151371: Thinkpad 760 Requires Updated Video Driver"
-permalink: kb/151/Q151371/
+permalink: /kb/151/Q151371/
 ---
 
 ## Q151371: Thinkpad 760 Requires Updated Video Driver

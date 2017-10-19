@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127137: Disk Defragmenter Continuously Loops At 50% Completed"
-permalink: kb/127/Q127137/
+permalink: /kb/127/Q127137/
 ---
 
 ## Q127137: Disk Defragmenter Continuously Loops At 50% Completed

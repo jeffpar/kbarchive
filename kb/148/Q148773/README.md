@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148773: White Text Appears Black When Printed from WordPad"
-permalink: kb/148/Q148773/
+permalink: /kb/148/Q148773/
 ---
 
 ## Q148773: White Text Appears Black When Printed from WordPad

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231920: How to Filter on TCP Header Information Using Network Monitor"
-permalink: kb/231/Q231920/
+permalink: /kb/231/Q231920/
 ---
 
 ## Q231920: How to Filter on TCP Header Information Using Network Monitor

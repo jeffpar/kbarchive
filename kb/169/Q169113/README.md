@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169113: XCON: Using X.400 Connector with TCP/IP in Cluster Environment"
-permalink: kb/169/Q169113/
+permalink: /kb/169/Q169113/
 ---
 
 ## Q169113: XCON: Using X.400 Connector with TCP/IP in Cluster Environment

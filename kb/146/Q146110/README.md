@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146110: Unable to Remove Network Connection Created by AT Scheduler"
-permalink: kb/146/Q146110/
+permalink: /kb/146/Q146110/
 ---
 
 ## Q146110: Unable to Remove Network Connection Created by AT Scheduler

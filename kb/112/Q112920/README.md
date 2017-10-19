@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112920: PC WSPlus: Users Disappear from Set Access Privileges List"
-permalink: kb/112/Q112920/
+permalink: /kb/112/Q112920/
 ---
 
 ## Q112920: PC WSPlus: Users Disappear from Set Access Privileges List

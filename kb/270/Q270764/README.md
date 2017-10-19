@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270764: ELL: Microphone Wizard Does Not Adjust Volume"
-permalink: kb/270/Q270764/
+permalink: /kb/270/Q270764/
 ---
 
 ## Q270764: ELL: Microphone Wizard Does Not Adjust Volume

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235769: SMS: Admin Guide Talks About Inbox on WinNT Logon Points"
-permalink: kb/235/Q235769/
+permalink: /kb/235/Q235769/
 ---
 
 ## Q235769: SMS: Admin Guide Talks About Inbox on WinNT Logon Points

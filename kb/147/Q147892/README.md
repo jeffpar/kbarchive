@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147892: FIX: Custom AppWizard Doesn't Support Multiple Languages"
-permalink: kb/147/Q147892/
+permalink: /kb/147/Q147892/
 ---
 
 ## Q147892: FIX: Custom AppWizard Doesn't Support Multiple Languages

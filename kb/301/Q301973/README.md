@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301973: Encarta World Atlas 2001: &quot;Msworld6 Caused IPF&quot; Err Msg"
-permalink: kb/301/Q301973/
+permalink: /kb/301/Q301973/
 ---
 
 ## Q301973: Encarta World Atlas 2001: &quot;Msworld6 Caused IPF&quot; Err Msg

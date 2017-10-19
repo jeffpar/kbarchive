@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107086: FAX: Doc Err: GammaFAX XP Board Is Not Supported"
-permalink: kb/107/Q107086/
+permalink: /kb/107/Q107086/
 ---
 
 ## Q107086: FAX: Doc Err: GammaFAX XP Board Is Not Supported

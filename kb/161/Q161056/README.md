@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161056: HOWTO: Iterate Controls on a Form from a Property Page"
-permalink: kb/161/Q161056/
+permalink: /kb/161/Q161056/
 ---
 
 ## Q161056: HOWTO: Iterate Controls on a Form from a Property Page

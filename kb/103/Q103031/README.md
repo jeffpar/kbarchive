@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103031: PRB: &quot;SQL Expression Too Complex&quot; with Long IN Clause"
-permalink: kb/103/Q103031/
+permalink: /kb/103/Q103031/
 ---
 
 ## Q103031: PRB: &quot;SQL Expression Too Complex&quot; with Long IN Clause

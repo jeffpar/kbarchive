@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260300: XADM: Online Defragmentation Stops with Event ID 183"
-permalink: kb/260/Q260300/
+permalink: /kb/260/Q260300/
 ---
 
 ## Q260300: XADM: Online Defragmentation Stops with Event ID 183

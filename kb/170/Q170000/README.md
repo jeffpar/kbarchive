@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170000: SMS: Stop 0E Error on Windows 95 While Running Inventory"
-permalink: kb/170/Q170000/
+permalink: /kb/170/Q170000/
 ---
 
 ## Q170000: SMS: Stop 0E Error on Windows 95 While Running Inventory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193967: HOWTO: Determine the New Month Selected in Calendar Control"
-permalink: kb/193/Q193967/
+permalink: /kb/193/Q193967/
 ---
 
 ## Q193967: HOWTO: Determine the New Month Selected in Calendar Control

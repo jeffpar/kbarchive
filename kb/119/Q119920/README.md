@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119920: ProComm Plus 2.0 for Windows Fax Services"
-permalink: kb/119/Q119920/
+permalink: /kb/119/Q119920/
 ---
 
 ## Q119920: ProComm Plus 2.0 for Windows Fax Services

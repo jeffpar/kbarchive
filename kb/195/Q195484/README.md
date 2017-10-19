@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195484: WD97: Schedule+ Contact List Not Sorted Alphabetically"
-permalink: kb/195/Q195484/
+permalink: /kb/195/Q195484/
 ---
 
 ## Q195484: WD97: Schedule+ Contact List Not Sorted Alphabetically

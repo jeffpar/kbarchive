@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295084: SMS: Program Does Not Run if User Is Not Logged On"
-permalink: kb/295/Q295084/
+permalink: /kb/295/Q295084/
 ---
 
 ## Q295084: SMS: Program Does Not Run if User Is Not Logged On

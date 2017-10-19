@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86666: PPT: Pantone(R) Color Conversion"
-permalink: kb/086/Q86666/
+permalink: /kb/086/Q86666/
 ---
 
 ## Q86666: PPT: Pantone(R) Color Conversion

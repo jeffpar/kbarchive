@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166016: WD97: Description of Compatibility Tab in Options Dialog Box"
-permalink: kb/166/Q166016/
+permalink: /kb/166/Q166016/
 ---
 
 ## Q166016: WD97: Description of Compatibility Tab in Options Dialog Box

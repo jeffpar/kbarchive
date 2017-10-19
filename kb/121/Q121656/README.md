@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121656: Third-Party Companion Products for Systems Management Server"
-permalink: kb/121/Q121656/
+permalink: /kb/121/Q121656/
 ---
 
 ## Q121656: Third-Party Companion Products for Systems Management Server

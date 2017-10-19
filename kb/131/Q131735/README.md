@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131735: How to Create Windows NT Boot Floppy Disks"
-permalink: kb/131/Q131735/
+permalink: /kb/131/Q131735/
 ---
 
 ## Q131735: How to Create Windows NT Boot Floppy Disks

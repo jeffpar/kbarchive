@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194919: Windows NT Boot Process Hangs Because of DST Manipulation"
-permalink: kb/194/Q194919/
+permalink: /kb/194/Q194919/
 ---
 
 ## Q194919: Windows NT Boot Process Hangs Because of DST Manipulation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158028: XADM: Changing the Exchange Organization Name"
-permalink: kb/158/Q158028/
+permalink: /kb/158/Q158028/
 ---
 
 ## Q158028: XADM: Changing the Exchange Organization Name

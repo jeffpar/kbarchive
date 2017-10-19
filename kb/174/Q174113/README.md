@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174113: Cannot Hear Music on the MSN Onstage Web Page"
-permalink: kb/174/Q174113/
+permalink: /kb/174/Q174113/
 ---
 
 ## Q174113: Cannot Hear Music on the MSN Onstage Web Page

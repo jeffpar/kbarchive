@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155923: Opening My Computer Is Slow with Multiple-Disk CD-ROM Changer"
-permalink: kb/155/Q155923/
+permalink: /kb/155/Q155923/
 ---
 
 ## Q155923: Opening My Computer Is Slow with Multiple-Disk CD-ROM Changer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181807: WD97: OLE Objects Appear Distorted When Saved as HTML"
-permalink: kb/181/Q181807/
+permalink: /kb/181/Q181807/
 ---
 
 ## Q181807: WD97: OLE Objects Appear Distorted When Saved as HTML

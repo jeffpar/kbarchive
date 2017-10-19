@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102469: How to Display Network Registry Parameters"
-permalink: kb/102/Q102469/
+permalink: /kb/102/Q102469/
 ---
 
 ## Q102469: How to Display Network Registry Parameters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188647: XADM: Folder Assistant Rule to Forward Messages May Fail"
-permalink: kb/188/Q188647/
+permalink: /kb/188/Q188647/
 ---
 
 ## Q188647: XADM: Folder Assistant Rule to Forward Messages May Fail

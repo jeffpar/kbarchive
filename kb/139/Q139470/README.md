@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139470: U.S. Robotics Sportster 28800 Modem Does Not Function with RAS"
-permalink: kb/139/Q139470/
+permalink: /kb/139/Q139470/
 ---
 
 ## Q139470: U.S. Robotics Sportster 28800 Modem Does Not Function with RAS

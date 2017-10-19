@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71736: PARTY.BMP and RIBBONS.BMP Omitted from Windows Version 3.00a"
-permalink: kb/071/Q71736/
+permalink: /kb/071/Q71736/
 ---
 
 ## Q71736: PARTY.BMP and RIBBONS.BMP Omitted from Windows Version 3.00a

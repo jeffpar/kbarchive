@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87487: X400: Setting the X.400 Log File Debug Option -LD"
-permalink: kb/087/Q87487/
+permalink: /kb/087/Q87487/
 ---
 
 ## Q87487: X400: Setting the X.400 Log File Debug Option -LD

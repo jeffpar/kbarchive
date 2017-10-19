@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234257: SMS: Secondary Site Server Processor Utilization Is Always High"
-permalink: kb/234/Q234257/
+permalink: /kb/234/Q234257/
 ---
 
 ## Q234257: SMS: Secondary Site Server Processor Utilization Is Always High

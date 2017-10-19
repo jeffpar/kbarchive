@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171083: SnaExp.exe Access Violation in CshrMemPool()"
-permalink: kb/171/Q171083/
+permalink: /kb/171/Q171083/
 ---
 
 ## Q171083: SnaExp.exe Access Violation in CshrMemPool()

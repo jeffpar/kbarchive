@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309707: Bicycle Games: Known Game-Play Issues"
-permalink: kb/309/Q309707/
+permalink: /kb/309/Q309707/
 ---
 
 ## Q309707: Bicycle Games: Known Game-Play Issues

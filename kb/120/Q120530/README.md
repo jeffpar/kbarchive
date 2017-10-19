@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120530: How to Obtain Printer Drivers from Hewlett-Packard"
-permalink: kb/120/Q120530/
+permalink: /kb/120/Q120530/
 ---
 
 ## Q120530: How to Obtain Printer Drivers from Hewlett-Packard

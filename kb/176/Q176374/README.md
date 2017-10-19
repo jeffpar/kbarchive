@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176374: FP: Broken Hyperlink after Creating Corporate Presence Web"
-permalink: kb/176/Q176374/
+permalink: /kb/176/Q176374/
 ---
 
 ## Q176374: FP: Broken Hyperlink after Creating Corporate Presence Web

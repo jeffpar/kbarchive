@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189623: HOWTO: Give Descriptions to Private Procedures"
-permalink: kb/189/Q189623/
+permalink: /kb/189/Q189623/
 ---
 
 ## Q189623: HOWTO: Give Descriptions to Private Procedures

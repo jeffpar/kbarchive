@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148493: XCLN: How to Change Location of Offline Address Book Files"
-permalink: kb/148/Q148493/
+permalink: /kb/148/Q148493/
 ---
 
 ## Q148493: XCLN: How to Change Location of Offline Address Book Files

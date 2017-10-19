@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122932: FIX: Special Characters in Path May Prevent File Access"
-permalink: kb/122/Q122932/
+permalink: /kb/122/Q122932/
 ---
 
 ## Q122932: FIX: Special Characters in Path May Prevent File Access

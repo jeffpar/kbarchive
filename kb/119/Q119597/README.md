@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119597: Incorrect Top Margin with Citizen Dot-Matrix Printers"
-permalink: kb/119/Q119597/
+permalink: /kb/119/Q119597/
 ---
 
 ## Q119597: Incorrect Top Margin with Citizen Dot-Matrix Printers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89723: Zenith 8086/8088 720K Floppy Drive with MS-DOS"
-permalink: kb/089/Q89723/
+permalink: /kb/089/Q89723/
 ---
 
 ## Q89723: Zenith 8086/8088 720K Floppy Drive with MS-DOS

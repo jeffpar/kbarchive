@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86942: 3COM: How to Check to See If Mail Is Queued for the Gateway"
-permalink: kb/086/Q86942/
+permalink: /kb/086/Q86942/
 ---
 
 ## Q86942: 3COM: How to Check to See If Mail Is Queued for the Gateway

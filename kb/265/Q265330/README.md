@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265330: XFOR: Message Text from SNADS Received As an Attachment"
-permalink: kb/265/Q265330/
+permalink: /kb/265/Q265330/
 ---
 
 ## Q265330: XFOR: Message Text from SNADS Received As an Attachment

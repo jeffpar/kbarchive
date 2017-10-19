@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141802: Dynamic Column Binding with MFC ODBC Database Classes"
-permalink: kb/141/Q141802/
+permalink: /kb/141/Q141802/
 ---
 
 ## Q141802: Dynamic Column Binding with MFC ODBC Database Classes

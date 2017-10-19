@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297233: Single MSN Internet Access Account On Two Computers--Connectivit"
-permalink: kb/297/Q297233/
+permalink: /kb/297/Q297233/
 ---
 
 ## Q297233: Single MSN Internet Access Account On Two Computers--Connectivit

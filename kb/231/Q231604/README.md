@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231604: Event ID 7023 When Server Service Does Not Start"
-permalink: kb/231/Q231604/
+permalink: /kb/231/Q231604/
 ---
 
 ## Q231604: Event ID 7023 When Server Service Does Not Start

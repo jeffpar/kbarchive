@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134652: GP Fault Or System Hang Using Windows NT Server Tools"
-permalink: kb/134/Q134652/
+permalink: /kb/134/Q134652/
 ---
 
 ## Q134652: GP Fault Or System Hang Using Windows NT Server Tools

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251301: ErrMsg: Error Occurred Getting Driver List from Inf File"
-permalink: kb/251/Q251301/
+permalink: /kb/251/Q251301/
 ---
 
 ## Q251301: ErrMsg: Error Occurred Getting Driver List from Inf File

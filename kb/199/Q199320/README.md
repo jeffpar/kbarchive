@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199320: DNS Forwarders Disappear Even with SP3 Applied"
-permalink: kb/199/Q199320/
+permalink: /kb/199/Q199320/
 ---
 
 ## Q199320: DNS Forwarders Disappear Even with SP3 Applied

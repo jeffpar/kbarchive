@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75529: Differences Between Tandy DOS 5.0 and MS-DOS 5.0"
-permalink: kb/075/Q75529/
+permalink: /kb/075/Q75529/
 ---
 
 ## Q75529: Differences Between Tandy DOS 5.0 and MS-DOS 5.0

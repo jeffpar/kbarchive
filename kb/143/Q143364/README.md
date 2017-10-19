@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143364: 3D Movie Maker: Tools Available on CD-ROM for Troubleshooting"
-permalink: kb/143/Q143364/
+permalink: /kb/143/Q143364/
 ---
 
 ## Q143364: 3D Movie Maker: Tools Available on CD-ROM for Troubleshooting

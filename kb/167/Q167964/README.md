@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167964: NetBT Sends Wrong IP Address for Multihomed Computer"
-permalink: kb/167/Q167964/
+permalink: /kb/167/Q167964/
 ---
 
 ## Q167964: NetBT Sends Wrong IP Address for Multihomed Computer

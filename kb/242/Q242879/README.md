@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242879: TP_Start Fails and Logs Event ID 705 if Installed in MTS Package"
-permalink: kb/242/Q242879/
+permalink: /kb/242/Q242879/
 ---
 
 ## Q242879: TP_Start Fails and Logs Event ID 705 if Installed in MTS Package

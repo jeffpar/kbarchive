@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197059: XFOR: POP3 Clients Cannot Log In with CTA via Membership Server"
-permalink: kb/197/Q197059/
+permalink: /kb/197/Q197059/
 ---
 
 ## Q197059: XFOR: POP3 Clients Cannot Log In with CTA via Membership Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245211: XADM: Incremental Backup Doesn't Work on Second Node of Cluster"
-permalink: kb/245/Q245211/
+permalink: /kb/245/Q245211/
 ---
 
 ## Q245211: XADM: Incremental Backup Doesn't Work on Second Node of Cluster

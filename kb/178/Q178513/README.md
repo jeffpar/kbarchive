@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178513: Bookshelf 98: Norton AntiVirus Identifies Unwise.exe as a Virus"
-permalink: kb/178/Q178513/
+permalink: /kb/178/Q178513/
 ---
 
 ## Q178513: Bookshelf 98: Norton AntiVirus Identifies Unwise.exe as a Virus

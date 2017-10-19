@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146088: Internet Service Manager Does Not Sort By State"
-permalink: kb/146/Q146088/
+permalink: /kb/146/Q146088/
 ---
 
 ## Q146088: Internet Service Manager Does Not Sort By State

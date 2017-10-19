@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166521: XFOR: X.400 Address is Encapsulated on SMTP Messages"
-permalink: kb/166/Q166521/
+permalink: /kb/166/Q166521/
 ---
 
 ## Q166521: XFOR: X.400 Address is Encapsulated on SMTP Messages

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136080: FIX: Memory Leak Reported in PLEX.CPP When Using CSocket"
-permalink: kb/136/Q136080/
+permalink: /kb/136/Q136080/
 ---
 
 ## Q136080: FIX: Memory Leak Reported in PLEX.CPP When Using CSocket

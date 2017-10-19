@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226528: Streets &amp; Trips 2000 Err Msg: Failed to Initialize - Terminating"
-permalink: kb/226/Q226528/
+permalink: /kb/226/Q226528/
 ---
 
 ## Q226528: Streets &amp; Trips 2000 Err Msg: Failed to Initialize - Terminating

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171355: International WinNT Unattended Installation Stops On Time Zone"
-permalink: kb/171/Q171355/
+permalink: /kb/171/Q171355/
 ---
 
 ## Q171355: International WinNT Unattended Installation Stops On Time Zone

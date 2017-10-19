@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107123: Removing SNA Links from Control Panel"
-permalink: kb/107/Q107123/
+permalink: /kb/107/Q107123/
 ---
 
 ## Q107123: Removing SNA Links from Control Panel

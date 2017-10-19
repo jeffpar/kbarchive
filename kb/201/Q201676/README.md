@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201676: Remote MMC Does Not Display All IP Addresses"
-permalink: kb/201/Q201676/
+permalink: /kb/201/Q201676/
 ---
 
 ## Q201676: Remote MMC Does Not Display All IP Addresses

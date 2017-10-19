@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286241: PRB: Error Saving NULL Value w/ ADODC and Bound Controls"
-permalink: kb/286/Q286241/
+permalink: /kb/286/Q286241/
 ---
 
 ## Q286241: PRB: Error Saving NULL Value w/ ADODC and Bound Controls

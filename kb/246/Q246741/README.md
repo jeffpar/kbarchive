@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246741: XADM: Admin Doesn't Export NT Accounts in Multiple Domains"
-permalink: kb/246/Q246741/
+permalink: /kb/246/Q246741/
 ---
 
 ## Q246741: XADM: Admin Doesn't Export NT Accounts in Multiple Domains

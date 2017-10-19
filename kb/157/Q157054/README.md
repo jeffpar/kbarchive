@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157054: STOP 0x0000000A when Accessing IIS After Windows NT 4 Upgrade"
-permalink: kb/157/Q157054/
+permalink: /kb/157/Q157054/
 ---
 
 ## Q157054: STOP 0x0000000A when Accessing IIS After Windows NT 4 Upgrade

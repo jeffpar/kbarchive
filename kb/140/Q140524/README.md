@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140524: SNA Server Event ID 18 Reports Incorrect Sense Data"
-permalink: kb/140/Q140524/
+permalink: /kb/140/Q140524/
 ---
 
 ## Q140524: SNA Server Event ID 18 Reports Incorrect Sense Data

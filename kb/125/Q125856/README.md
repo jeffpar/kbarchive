@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125856: How to Join a Domain from a Windows NT Workstation Using RAS"
-permalink: kb/125/Q125856/
+permalink: /kb/125/Q125856/
 ---
 
 ## Q125856: How to Join a Domain from a Windows NT Workstation Using RAS

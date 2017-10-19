@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139155: PRB: Current Edit Not Saved with TABLEUPDATE() from Toolbar"
-permalink: kb/139/Q139155/
+permalink: /kb/139/Q139155/
 ---
 
 ## Q139155: PRB: Current Edit Not Saved with TABLEUPDATE() from Toolbar

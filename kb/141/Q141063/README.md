@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141063: PC MAPI: How to Find the Name of the CMC DLL to Call"
-permalink: kb/141/Q141063/
+permalink: /kb/141/Q141063/
 ---
 
 ## Q141063: PC MAPI: How to Find the Name of the CMC DLL to Call

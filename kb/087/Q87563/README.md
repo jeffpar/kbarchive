@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87563: PPT: Non-PowerPoint Objects Have No Selection Box"
-permalink: kb/087/Q87563/
+permalink: /kb/087/Q87563/
 ---
 
 ## Q87563: PPT: Non-PowerPoint Objects Have No Selection Box

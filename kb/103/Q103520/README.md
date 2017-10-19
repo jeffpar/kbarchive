@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103520: MS-DOS 6.2 Defrag Uses XMS Memory When Available"
-permalink: kb/103/Q103520/
+permalink: /kb/103/Q103520/
 ---
 
 ## Q103520: MS-DOS 6.2 Defrag Uses XMS Memory When Available

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299849: FIX: Failed TABLEUPDATE Misplaces Record Pointer"
-permalink: kb/299/Q299849/
+permalink: /kb/299/Q299849/
 ---
 
 ## Q299849: FIX: Failed TABLEUPDATE Misplaces Record Pointer

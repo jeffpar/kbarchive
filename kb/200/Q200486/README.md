@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200486: XFOR: Adding Foreign Address Book to Notes Global Address List"
-permalink: kb/200/Q200486/
+permalink: /kb/200/Q200486/
 ---
 
 ## Q200486: XFOR: Adding Foreign Address Book to Notes Global Address List

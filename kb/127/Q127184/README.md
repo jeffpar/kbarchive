@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127184: Mac Bookshelf: Deleting Unwanted Queries"
-permalink: kb/127/Q127184/
+permalink: /kb/127/Q127184/
 ---
 
 ## Q127184: Mac Bookshelf: Deleting Unwanted Queries

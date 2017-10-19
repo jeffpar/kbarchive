@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97736: Paradox for Windows Cannot Access WFWG Shared Directory"
-permalink: kb/097/Q97736/
+permalink: /kb/097/Q97736/
 ---
 
 ## Q97736: Paradox for Windows Cannot Access WFWG Shared Directory

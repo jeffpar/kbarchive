@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86935: 3COM: What Directories Are Created During Installation"
-permalink: kb/086/Q86935/
+permalink: /kb/086/Q86935/
 ---
 
 ## Q86935: 3COM: What Directories Are Created During Installation

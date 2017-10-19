@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160625: Dialing Out Using 32-Bit Program Returns Busy Signal"
-permalink: kb/160/Q160625/
+permalink: /kb/160/Q160625/
 ---
 
 ## Q160625: Dialing Out Using 32-Bit Program Returns Busy Signal

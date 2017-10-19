@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262934: PRB: ADO Update Method Fails When SELECT Statement has Subquery"
-permalink: kb/262/Q262934/
+permalink: /kb/262/Q262934/
 ---
 
 ## Q262934: PRB: ADO Update Method Fails When SELECT Statement has Subquery

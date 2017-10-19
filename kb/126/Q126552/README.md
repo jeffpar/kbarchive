@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126552: INF: Performance Considerations with the ODBC Access 2.0 Drive"
-permalink: kb/126/Q126552/
+permalink: /kb/126/Q126552/
 ---
 
 ## Q126552: INF: Performance Considerations with the ODBC Access 2.0 Drive

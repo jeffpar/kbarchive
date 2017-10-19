@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171385: INFO: Article List for Troubleshooting Registry in Windows 95"
-permalink: kb/171/Q171385/
+permalink: /kb/171/Q171385/
 ---
 
 ## Q171385: INFO: Article List for Troubleshooting Registry in Windows 95

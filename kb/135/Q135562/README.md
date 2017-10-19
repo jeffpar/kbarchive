@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135562: FIX: Delete Trigger Fires Out of Order"
-permalink: kb/135/Q135562/
+permalink: /kb/135/Q135562/
 ---
 
 ## Q135562: FIX: Delete Trigger Fires Out of Order

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190684: HOWTO: Insert a Splash Screen into a Dialog-Based Application"
-permalink: kb/190/Q190684/
+permalink: /kb/190/Q190684/
 ---
 
 ## Q190684: HOWTO: Insert a Splash Screen into a Dialog-Based Application

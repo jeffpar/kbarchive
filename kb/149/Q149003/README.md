@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149003: Bookshelf 96-97 ErrMsg: &quot;Unable to Process File...&quot;"
-permalink: kb/149/Q149003/
+permalink: /kb/149/Q149003/
 ---
 
 ## Q149003: Bookshelf 96-97 ErrMsg: &quot;Unable to Process File...&quot;

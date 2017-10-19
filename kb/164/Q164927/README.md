@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164927: XCLN: Not All Rich Edit Fields Support File Attachments"
-permalink: kb/164/Q164927/
+permalink: /kb/164/Q164927/
 ---
 
 ## Q164927: XCLN: Not All Rich Edit Fields Support File Attachments

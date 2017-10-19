@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176208: Some Routers May Cause &quot;Duplicate IP Address&quot; Error Message"
-permalink: kb/176/Q176208/
+permalink: /kb/176/Q176208/
 ---
 
 ## Q176208: Some Routers May Cause &quot;Duplicate IP Address&quot; Error Message

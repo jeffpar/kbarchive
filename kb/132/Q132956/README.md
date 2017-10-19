@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132956: PC WRmt: Run w/ Megahertz EM114t Modem/Ethernet PCMCIA Card"
-permalink: kb/132/Q132956/
+permalink: /kb/132/Q132956/
 ---
 
 ## Q132956: PC WRmt: Run w/ Megahertz EM114t Modem/Ethernet PCMCIA Card

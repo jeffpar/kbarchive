@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98936: Description of Dr. Black Jack"
-permalink: kb/098/Q98936/
+permalink: /kb/098/Q98936/
 ---
 
 ## Q98936: Description of Dr. Black Jack

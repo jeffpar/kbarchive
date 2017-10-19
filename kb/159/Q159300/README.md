@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159300: XFOR: PCMTA Fails to Respond to NetBIOS Notification"
-permalink: kb/159/Q159300/
+permalink: /kb/159/Q159300/
 ---
 
 ## Q159300: XFOR: PCMTA Fails to Respond to NetBIOS Notification

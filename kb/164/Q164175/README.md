@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164175: XADM: Message Tracking Doesn't Track IMC-bound Mail"
-permalink: kb/164/Q164175/
+permalink: /kb/164/Q164175/
 ---
 
 ## Q164175: XADM: Message Tracking Doesn't Track IMC-bound Mail

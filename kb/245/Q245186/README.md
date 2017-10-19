@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245186: Print Jobs Are Not Printed and Spooler Service Stops Responding."
-permalink: kb/245/Q245186/
+permalink: /kb/245/Q245186/
 ---
 
 ## Q245186: Print Jobs Are Not Printed and Spooler Service Stops Responding.

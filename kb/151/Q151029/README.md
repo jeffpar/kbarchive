@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151029: Mac Bookshelf 96-97: CD Key Not Needed for Installation"
-permalink: kb/151/Q151029/
+permalink: /kb/151/Q151029/
 ---
 
 ## Q151029: Mac Bookshelf 96-97: CD Key Not Needed for Installation

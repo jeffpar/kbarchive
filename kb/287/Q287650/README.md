@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287650: BUG: &quot;Error loading printer driver&quot; with Space in Printer Name"
-permalink: kb/287/Q287650/
+permalink: /kb/287/Q287650/
 ---
 
 ## Q287650: BUG: &quot;Error loading printer driver&quot; with Space in Printer Name

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110897: Mac Gen: Summary List of Mail 3.1c Bug Fixes"
-permalink: kb/110/Q110897/
+permalink: /kb/110/Q110897/
 ---
 
 ## Q110897: Mac Gen: Summary List of Mail 3.1c Bug Fixes

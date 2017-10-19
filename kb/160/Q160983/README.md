@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160983: MSN Menus Not Updated or Welcome Page Continues to Appear"
-permalink: kb/160/Q160983/
+permalink: /kb/160/Q160983/
 ---
 
 ## Q160983: MSN Menus Not Updated or Welcome Page Continues to Appear

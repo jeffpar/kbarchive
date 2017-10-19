@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281603: SMS: Executive Service Hangs at Startup Waiting for User Respons"
-permalink: kb/281/Q281603/
+permalink: /kb/281/Q281603/
 ---
 
 ## Q281603: SMS: Executive Service Hangs at Startup Waiting for User Respons

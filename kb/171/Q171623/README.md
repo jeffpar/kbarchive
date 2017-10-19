@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171623: Unable to Define a Low-Priority LUA LU in SNA Server Manager"
-permalink: kb/171/Q171623/
+permalink: /kb/171/Q171623/
 ---
 
 ## Q171623: Unable to Define a Low-Priority LUA LU in SNA Server Manager

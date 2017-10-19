@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252425: SMS: Discovered Clients Not Installed By Windows NT"
-permalink: kb/252/Q252425/
+permalink: /kb/252/Q252425/
 ---
 
 ## Q252425: SMS: Discovered Clients Not Installed By Windows NT

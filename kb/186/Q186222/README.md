@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186222: BUG: Pasting Metafiles into Office Loses Lines and Box"
-permalink: kb/186/Q186222/
+permalink: /kb/186/Q186222/
 ---
 
 ## Q186222: BUG: Pasting Metafiles into Office Loses Lines and Box

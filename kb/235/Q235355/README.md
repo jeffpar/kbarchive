@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235355: PRB: CMonthCalCtl::GetCurSel(CTime) Returns Wrong Value"
-permalink: kb/235/Q235355/
+permalink: /kb/235/Q235355/
 ---
 
 ## Q235355: PRB: CMonthCalCtl::GetCurSel(CTime) Returns Wrong Value

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147777: 'Print Spooled Jobs First' Option Will Not Stay Selected"
-permalink: kb/147/Q147777/
+permalink: /kb/147/Q147777/
 ---
 
 ## Q147777: 'Print Spooled Jobs First' Option Will Not Stay Selected

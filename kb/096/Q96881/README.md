@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96881: Err Msg: Voice Pilot Cannot Support Application"
-permalink: kb/096/Q96881/
+permalink: /kb/096/Q96881/
 ---
 
 ## Q96881: Err Msg: Voice Pilot Cannot Support Application

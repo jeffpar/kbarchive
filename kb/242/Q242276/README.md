@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242276: XADM: KM Server with Subordinate CA Displays Error Message"
-permalink: kb/242/Q242276/
+permalink: /kb/242/Q242276/
 ---
 
 ## Q242276: XADM: KM Server with Subordinate CA Displays Error Message

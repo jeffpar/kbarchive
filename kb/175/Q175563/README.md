@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175563: XFOR: Apple Chooser Does Not Recognize Exchange Cluster Name"
-permalink: kb/175/Q175563/
+permalink: /kb/175/Q175563/
 ---
 
 ## Q175563: XFOR: Apple Chooser Does Not Recognize Exchange Cluster Name

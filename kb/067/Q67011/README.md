@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67011: EGA.SYS Command Line Parameters Message"
-permalink: kb/067/Q67011/
+permalink: /kb/067/Q67011/
 ---
 
 ## Q67011: EGA.SYS Command Line Parameters Message

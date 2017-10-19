@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142942: IDEA5251/PC Twinax Adapter Does Not Work with Windows NT"
-permalink: kb/142/Q142942/
+permalink: /kb/142/Q142942/
 ---
 
 ## Q142942: IDEA5251/PC Twinax Adapter Does Not Work with Windows NT

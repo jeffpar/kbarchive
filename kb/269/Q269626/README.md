@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269626: INFO: Permissions to Create Packages Using DB2OLEDB on DB2"
-permalink: kb/269/Q269626/
+permalink: /kb/269/Q269626/
 ---
 
 ## Q269626: INFO: Permissions to Create Packages Using DB2OLEDB on DB2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134531: Cannot Create Startup Disk During Setup w/Promise Controller"
-permalink: kb/134/Q134531/
+permalink: /kb/134/Q134531/
 ---
 
 ## Q134531: Cannot Create Startup Disk During Setup w/Promise Controller

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129546: No 600 dpi Option for Canon LBP-8 IV Printer"
-permalink: kb/129/Q129546/
+permalink: /kb/129/Q129546/
 ---
 
 ## Q129546: No 600 dpi Option for Canon LBP-8 IV Printer

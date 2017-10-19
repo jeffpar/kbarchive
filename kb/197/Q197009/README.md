@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197009: WD97: Tabs and Paragraph Commands Unavailable in Some Views"
-permalink: kb/197/Q197009/
+permalink: /kb/197/Q197009/
 ---
 
 ## Q197009: WD97: Tabs and Paragraph Commands Unavailable in Some Views

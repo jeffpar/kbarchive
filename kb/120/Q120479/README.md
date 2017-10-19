@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120479: Encarta Err Msg: Invalid MindMaze Game File"
-permalink: kb/120/Q120479/
+permalink: /kb/120/Q120479/
 ---
 
 ## Q120479: Encarta Err Msg: Invalid MindMaze Game File

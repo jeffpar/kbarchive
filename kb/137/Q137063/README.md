@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137063: World of Flight 1.0: Trouble.txt Contents"
-permalink: kb/137/Q137063/
+permalink: /kb/137/Q137063/
 ---
 
 ## Q137063: World of Flight 1.0: Trouble.txt Contents

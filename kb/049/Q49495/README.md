@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49495: FIX: F1001: ctypes.c When FORTRAN Program Contains &#36;NOLOOPOPT"
-permalink: kb/049/Q49495/
+permalink: /kb/049/Q49495/
 ---
 
 ## Q49495: FIX: F1001: ctypes.c When FORTRAN Program Contains &#36;NOLOOPOPT

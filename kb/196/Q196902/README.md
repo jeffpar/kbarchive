@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196902: BUG: UserControl Does Not Refresh the Menu"
-permalink: kb/196/Q196902/
+permalink: /kb/196/Q196902/
 ---
 
 ## Q196902: BUG: UserControl Does Not Refresh the Menu

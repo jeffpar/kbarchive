@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93183: SETUP/N Does Not See OEM0000x.INF Files in Shared Directory"
-permalink: kb/093/Q93183/
+permalink: /kb/093/Q93183/
 ---
 
 ## Q93183: SETUP/N Does Not See OEM0000x.INF Files in Shared Directory

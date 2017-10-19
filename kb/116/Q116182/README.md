@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116182: BUG: ClipCursor() Restricts Mouse Movement in Debugger"
-permalink: kb/116/Q116182/
+permalink: /kb/116/Q116182/
 ---
 
 ## Q116182: BUG: ClipCursor() Restricts Mouse Movement in Debugger

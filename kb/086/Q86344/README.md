@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86344: DELL PVGA600.DRV Video Driver Causes Corrupted Printing"
-permalink: kb/086/Q86344/
+permalink: /kb/086/Q86344/
 ---
 
 ## Q86344: DELL PVGA600.DRV Video Driver Causes Corrupted Printing

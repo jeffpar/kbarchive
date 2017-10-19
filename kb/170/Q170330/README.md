@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170330: HOTFIX /V Command Returns Errors"
-permalink: kb/170/Q170330/
+permalink: /kb/170/Q170330/
 ---
 
 ## Q170330: HOTFIX /V Command Returns Errors

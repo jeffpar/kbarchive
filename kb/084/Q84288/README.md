@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84288: File Manager Does Not Retain Expand All Option"
-permalink: kb/084/Q84288/
+permalink: /kb/084/Q84288/
 ---
 
 ## Q84288: File Manager Does Not Retain Expand All Option

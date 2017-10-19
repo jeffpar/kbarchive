@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155012: HOWTO: Error Codes in Windows NT Part 2 of 2"
-permalink: kb/155/Q155012/
+permalink: /kb/155/Q155012/
 ---
 
 ## Q155012: HOWTO: Error Codes in Windows NT Part 2 of 2

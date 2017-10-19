@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77138: Line Numbers for MASM Listing Files"
-permalink: kb/077/Q77138/
+permalink: /kb/077/Q77138/
 ---
 
 ## Q77138: Line Numbers for MASM Listing Files

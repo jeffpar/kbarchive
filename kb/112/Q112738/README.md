@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112738: After Logging Off Shared Installation of WFWG, GP Faults Occur"
-permalink: kb/112/Q112738/
+permalink: /kb/112/Q112738/
 ---
 
 ## Q112738: After Logging Off Shared Installation of WFWG, GP Faults Occur

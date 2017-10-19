@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62132: Mac Hyp: Getting the Name of the Message Sender"
-permalink: kb/062/Q62132/
+permalink: /kb/062/Q62132/
 ---
 
 ## Q62132: Mac Hyp: Getting the Name of the Message Sender

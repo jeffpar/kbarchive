@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116138: FIX: Visual Workbench Toolbar Buttons Don't Use Double-Click"
-permalink: kb/116/Q116138/
+permalink: /kb/116/Q116138/
 ---
 
 ## Q116138: FIX: Visual Workbench Toolbar Buttons Don't Use Double-Click

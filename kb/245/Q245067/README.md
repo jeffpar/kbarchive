@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245067: Cannot Synchronize Time on a Cluster"
-permalink: kb/245/Q245067/
+permalink: /kb/245/Q245067/
 ---
 
 ## Q245067: Cannot Synchronize Time on a Cluster

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184187: XADM: Unable to Connect to Server, Licenses Still Available"
-permalink: kb/184/Q184187/
+permalink: /kb/184/Q184187/
 ---
 
 ## Q184187: XADM: Unable to Connect to Server, Licenses Still Available

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257918: PRB: &quot;File is Missing or Invalid&quot; Error Message"
-permalink: kb/257/Q257918/
+permalink: /kb/257/Q257918/
 ---
 
 ## Q257918: PRB: &quot;File is Missing or Invalid&quot; Error Message

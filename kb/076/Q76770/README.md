@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76770: README.TXT: Using the Swapfile Utility"
-permalink: kb/076/Q76770/
+permalink: /kb/076/Q76770/
 ---
 
 ## Q76770: README.TXT: Using the Swapfile Utility

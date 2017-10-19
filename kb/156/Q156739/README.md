@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156739: BUG: Show Event Calls Refresh Despite NODEFAULT in Subclass"
-permalink: kb/156/Q156739/
+permalink: /kb/156/Q156739/
 ---
 
 ## Q156739: BUG: Show Event Calls Refresh Despite NODEFAULT in Subclass

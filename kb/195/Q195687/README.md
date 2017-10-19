@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195687: WD97: Bookmark at Beginning of Line Is Lost When Copying"
-permalink: kb/195/Q195687/
+permalink: /kb/195/Q195687/
 ---
 
 ## Q195687: WD97: Bookmark at Beginning of Line Is Lost When Copying

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125972: MS WIN 3.1 STEP BY STEP: Corrections and Comments"
-permalink: kb/125/Q125972/
+permalink: /kb/125/Q125972/
 ---
 
 ## Q125972: MS WIN 3.1 STEP BY STEP: Corrections and Comments

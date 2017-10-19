@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86553: MHS: How the Gateway Communicates with the MHS World"
-permalink: kb/086/Q86553/
+permalink: /kb/086/Q86553/
 ---
 
 ## Q86553: MHS: How the Gateway Communicates with the MHS World

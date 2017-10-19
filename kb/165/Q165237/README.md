@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165237: FIX: Word 97 Document Added to Visual SourceSafe as Text File"
-permalink: kb/165/Q165237/
+permalink: /kb/165/Q165237/
 ---
 
 ## Q165237: FIX: Word 97 Document Added to Visual SourceSafe as Text File

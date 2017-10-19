@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114367: Art Gallery Err Msg: Printer Device Must Be Raster Printer"
-permalink: kb/114/Q114367/
+permalink: /kb/114/Q114367/
 ---
 
 ## Q114367: Art Gallery Err Msg: Printer Device Must Be Raster Printer

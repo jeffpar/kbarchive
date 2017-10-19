@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133368: Julia Child: Extra Characters Print with Recipe"
-permalink: kb/133/Q133368/
+permalink: /kb/133/Q133368/
 ---
 
 ## Q133368: Julia Child: Extra Characters Print with Recipe

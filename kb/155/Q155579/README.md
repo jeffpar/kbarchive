@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155579: Shell Does Not Start After Logon"
-permalink: kb/155/Q155579/
+permalink: /kb/155/Q155579/
 ---
 
 ## Q155579: Shell Does Not Start After Logon

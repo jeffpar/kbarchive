@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190620: PRB: Error 3622 Open SQL Server Table with Identity Column"
-permalink: kb/190/Q190620/
+permalink: /kb/190/Q190620/
 ---
 
 ## Q190620: PRB: Error 3622 Open SQL Server Table with Identity Column

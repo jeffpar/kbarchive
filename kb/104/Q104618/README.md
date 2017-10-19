@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104618: HOW TO: Pass a char from C to MASM by Value &amp; Returning a char"
-permalink: kb/104/Q104618/
+permalink: /kb/104/Q104618/
 ---
 
 ## Q104618: HOW TO: Pass a char from C to MASM by Value &amp; Returning a char

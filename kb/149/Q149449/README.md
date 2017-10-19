@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149449: IR Communications Driver 2.0 Relnotes.doc (Part 1 of 2)"
-permalink: kb/149/Q149449/
+permalink: /kb/149/Q149449/
 ---
 
 ## Q149449: IR Communications Driver 2.0 Relnotes.doc (Part 1 of 2)

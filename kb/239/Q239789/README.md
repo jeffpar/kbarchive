@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239789: &quot;Access Violation&quot; Error with Program that Uses DdeAddData()"
-permalink: kb/239/Q239789/
+permalink: /kb/239/Q239789/
 ---
 
 ## Q239789: &quot;Access Violation&quot; Error with Program that Uses DdeAddData()

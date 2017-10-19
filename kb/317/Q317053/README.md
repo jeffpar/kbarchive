@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317053: &quot;STOP 0x00000067&quot; Err Msg When You Attempt to Start Windows"
-permalink: kb/317/Q317053/
+permalink: /kb/317/Q317053/
 ---
 
 ## Q317053: &quot;STOP 0x00000067&quot; Err Msg When You Attempt to Start Windows

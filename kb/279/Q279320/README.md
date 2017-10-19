@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279320: XFOR: Msgs in Internet Mail Service Pickup Moved to Bad Mail"
-permalink: kb/279/Q279320/
+permalink: /kb/279/Q279320/
 ---
 
 ## Q279320: XFOR: Msgs in Internet Mail Service Pickup Moved to Bad Mail

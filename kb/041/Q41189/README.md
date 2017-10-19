@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q41189: Maximum Number of MS-DOS Disk Partitions and Other Drives"
-permalink: kb/041/Q41189/
+permalink: /kb/041/Q41189/
 ---
 
 ## Q41189: Maximum Number of MS-DOS Disk Partitions and Other Drives

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135755: HOWTO: Use the OLE MAPI Control to Send Mail Messages"
-permalink: kb/135/Q135755/
+permalink: /kb/135/Q135755/
 ---
 
 ## Q135755: HOWTO: Use the OLE MAPI Control to Send Mail Messages

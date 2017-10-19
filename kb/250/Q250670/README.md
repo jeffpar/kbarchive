@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250670: PRB: VC++ IDE May Hang During a Build Due to Anti-Virus Software"
-permalink: kb/250/Q250670/
+permalink: /kb/250/Q250670/
 ---
 
 ## Q250670: PRB: VC++ IDE May Hang During a Build Due to Anti-Virus Software

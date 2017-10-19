@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104130: PC Win: Import/Export Does Not Work with Extended Characters"
-permalink: kb/104/Q104130/
+permalink: /kb/104/Q104130/
 ---
 
 ## Q104130: PC Win: Import/Export Does Not Work with Extended Characters

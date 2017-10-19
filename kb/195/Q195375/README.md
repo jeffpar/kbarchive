@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195375: FIX: ClassView Can Be Very Slow When Using SourceSafe"
-permalink: kb/195/Q195375/
+permalink: /kb/195/Q195375/
 ---
 
 ## Q195375: FIX: ClassView Can Be Very Slow When Using SourceSafe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150726: INFO: Files Installed with All Editions of Visual Basic 4.0"
-permalink: kb/150/Q150726/
+permalink: /kb/150/Q150726/
 ---
 
 ## Q150726: INFO: Files Installed with All Editions of Visual Basic 4.0

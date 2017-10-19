@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154826: XCLN: Running English Clients on DBCS OS Is Not Supported"
-permalink: kb/154/Q154826/
+permalink: /kb/154/Q154826/
 ---
 
 ## Q154826: XCLN: Running English Clients on DBCS OS Is Not Supported

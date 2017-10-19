@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154629: Automating Remote RAS Logons Using PAD.INF Scripts"
-permalink: kb/154/Q154629/
+permalink: /kb/154/Q154629/
 ---
 
 ## Q154629: Automating Remote RAS Logons Using PAD.INF Scripts

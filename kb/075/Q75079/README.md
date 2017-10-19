@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75079: FIX: NMAKE 1.13 May Return U1002: Invalid Macro Invocation '&#36;'"
-permalink: kb/075/Q75079/
+permalink: /kb/075/Q75079/
 ---
 
 ## Q75079: FIX: NMAKE 1.13 May Return U1002: Invalid Macro Invocation '&#36;'

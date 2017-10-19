@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99287: VidCap: Double Buffering Causes Dropped Frames"
-permalink: kb/099/Q99287/
+permalink: /kb/099/Q99287/
 ---
 
 ## Q99287: VidCap: Double Buffering Causes Dropped Frames

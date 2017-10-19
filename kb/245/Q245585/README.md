@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245585: XCON: SP3 MTA Replaces DDA Type RFC-822 w/DDA Type SMTP"
-permalink: kb/245/Q245585/
+permalink: /kb/245/Q245585/
 ---
 
 ## Q245585: XCON: SP3 MTA Replaces DDA Type RFC-822 w/DDA Type SMTP

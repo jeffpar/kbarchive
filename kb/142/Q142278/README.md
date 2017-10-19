@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142278: Windows 95 Updated Modem .inf Files Readme.txt File"
-permalink: kb/142/Q142278/
+permalink: /kb/142/Q142278/
 ---
 
 ## Q142278: Windows 95 Updated Modem .inf Files Readme.txt File

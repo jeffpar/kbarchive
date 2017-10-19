@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189847: INFO: New String and Format Functions in Visual Basic 6.0"
-permalink: kb/189/Q189847/
+permalink: /kb/189/Q189847/
 ---
 
 ## Q189847: INFO: New String and Format Functions in Visual Basic 6.0

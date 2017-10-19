@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191669: PRB: LNK2001: Unresolved External Symbol &#95;&#95;chkesp"
-permalink: kb/191/Q191669/
+permalink: /kb/191/Q191669/
 ---
 
 ## Q191669: PRB: LNK2001: Unresolved External Symbol &#95;&#95;chkesp

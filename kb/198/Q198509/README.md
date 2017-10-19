@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198509: XWEB: &quot;Unable to get your inbox&quot; Using OWA via Proxy Server"
-permalink: kb/198/Q198509/
+permalink: /kb/198/Q198509/
 ---
 
 ## Q198509: XWEB: &quot;Unable to get your inbox&quot; Using OWA via Proxy Server

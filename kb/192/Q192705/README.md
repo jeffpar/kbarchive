@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192705: PRB: Activation of VB MDI Child Window and ActiveX Control"
-permalink: kb/192/Q192705/
+permalink: /kb/192/Q192705/
 ---
 
 ## Q192705: PRB: Activation of VB MDI Child Window and ActiveX Control

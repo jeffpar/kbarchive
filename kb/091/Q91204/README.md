@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91204: Order in Which Applications Load from the StartUp Group"
-permalink: kb/091/Q91204/
+permalink: /kb/091/Q91204/
 ---
 
 ## Q91204: Order in Which Applications Load from the StartUp Group

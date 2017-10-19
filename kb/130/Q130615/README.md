@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130615: PRB: Unwanted Rebuilds Occur When Using NMAKE or Visual C++"
-permalink: kb/130/Q130615/
+permalink: /kb/130/Q130615/
 ---
 
 ## Q130615: PRB: Unwanted Rebuilds Occur When Using NMAKE or Visual C++

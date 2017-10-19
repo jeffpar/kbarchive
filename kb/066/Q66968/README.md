@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66968: Quick Troubleshooter Cannot Open Tools Group"
-permalink: kb/066/Q66968/
+permalink: /kb/066/Q66968/
 ---
 
 ## Q66968: Quick Troubleshooter Cannot Open Tools Group

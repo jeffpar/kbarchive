@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196821: INFO: Files in Windows 98&#92;System Folder for Microsoft VM"
-permalink: kb/196/Q196821/
+permalink: /kb/196/Q196821/
 ---
 
 ## Q196821: INFO: Files in Windows 98&#92;System Folder for Microsoft VM

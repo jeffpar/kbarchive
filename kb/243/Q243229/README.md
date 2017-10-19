@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243229: WD97: Postal Bar Code Will Not Fit on Some Labels"
-permalink: kb/243/Q243229/
+permalink: /kb/243/Q243229/
 ---
 
 ## Q243229: WD97: Postal Bar Code Will Not Fit on Some Labels

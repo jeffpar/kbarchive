@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143206: Bookshelf 1995 for the Macintosh Minimum System Requirements"
-permalink: kb/143/Q143206/
+permalink: /kb/143/Q143206/
 ---
 
 ## Q143206: Bookshelf 1995 for the Macintosh Minimum System Requirements

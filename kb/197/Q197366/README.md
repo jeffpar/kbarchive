@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197366: Data Corruption Recovering from Failed Mirror Set"
-permalink: kb/197/Q197366/
+permalink: /kb/197/Q197366/
 ---
 
 ## Q197366: Data Corruption Recovering from Failed Mirror Set

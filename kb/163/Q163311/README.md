@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163311: Number of Active Users Exceeds Number of Active Sessions"
-permalink: kb/163/Q163311/
+permalink: /kb/163/Q163311/
 ---
 
 ## Q163311: Number of Active Users Exceeds Number of Active Sessions

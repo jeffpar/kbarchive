@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251379: Encarta 2000 Err Msg: Encarta Encyclopedia Requires at Least 256"
-permalink: kb/251/Q251379/
+permalink: /kb/251/Q251379/
 ---
 
 ## Q251379: Encarta 2000 Err Msg: Encarta Encyclopedia Requires at Least 256

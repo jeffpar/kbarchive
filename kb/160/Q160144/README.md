@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160144: XADM: You do not have Permission to Access Portions..."
-permalink: kb/160/Q160144/
+permalink: /kb/160/Q160144/
 ---
 
 ## Q160144: XADM: You do not have Permission to Access Portions...

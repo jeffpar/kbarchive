@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121005: DHCP Options Supported by Clients"
-permalink: kb/121/Q121005/
+permalink: /kb/121/Q121005/
 ---
 
 ## Q121005: DHCP Options Supported by Clients

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86945: 3COM: How to Control Polling for New Mail"
-permalink: kb/086/Q86945/
+permalink: /kb/086/Q86945/
 ---
 
 ## Q86945: 3COM: How to Control Polling for New Mail

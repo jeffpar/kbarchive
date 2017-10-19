@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164791: SMS: PCM Does Not Disconnect from NetWare Distribution Server"
-permalink: kb/164/Q164791/
+permalink: /kb/164/Q164791/
 ---
 
 ## Q164791: SMS: PCM Does Not Disconnect from NetWare Distribution Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q11636: INFO: Windows Resource Numbering Starts at 1"
-permalink: kb/011/Q11636/
+permalink: /kb/011/Q11636/
 ---
 
 ## Q11636: INFO: Windows Resource Numbering Starts at 1

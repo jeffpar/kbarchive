@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246209: Encarta 2000: Hangs or Quits Unexpectedly When You Start Program"
-permalink: kb/246/Q246209/
+permalink: /kb/246/Q246209/
 ---
 
 ## Q246209: Encarta 2000: Hangs or Quits Unexpectedly When You Start Program

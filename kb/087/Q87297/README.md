@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87297: Additional Icons Available from WEP 1.0 and Windows 3.1"
-permalink: kb/087/Q87297/
+permalink: /kb/087/Q87297/
 ---
 
 ## Q87297: Additional Icons Available from WEP 1.0 and Windows 3.1

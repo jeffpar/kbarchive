@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113403: Drive Fails with Conner CFP 1060S Fixed Disk &amp; Firmware 1823"
-permalink: kb/113/Q113403/
+permalink: /kb/113/Q113403/
 ---
 
 ## Q113403: Drive Fails with Conner CFP 1060S Fixed Disk &amp; Firmware 1823

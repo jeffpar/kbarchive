@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138897: MS Fax Does Not Recognize the &quot;&#36;&quot; Calling Card Dialing Rule"
-permalink: kb/138/Q138897/
+permalink: /kb/138/Q138897/
 ---
 
 ## Q138897: MS Fax Does Not Recognize the &quot;&#36;&quot; Calling Card Dialing Rule

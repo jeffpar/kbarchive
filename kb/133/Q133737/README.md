@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133737: OLE Objects Don't Update with New Color Scheme"
-permalink: kb/133/Q133737/
+permalink: /kb/133/Q133737/
 ---
 
 ## Q133737: OLE Objects Don't Update with New Color Scheme

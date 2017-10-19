@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115036: Description of the Mail Merge Wizard"
-permalink: kb/115/Q115036/
+permalink: /kb/115/Q115036/
 ---
 
 ## Q115036: Description of the Mail Merge Wizard

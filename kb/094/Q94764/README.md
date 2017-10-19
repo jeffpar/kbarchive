@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94764: Video: No Frames Captured with New Media Graphics Cards"
-permalink: kb/094/Q94764/
+permalink: /kb/094/Q94764/
 ---
 
 ## Q94764: Video: No Frames Captured with New Media Graphics Cards

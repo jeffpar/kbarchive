@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126409: Automap Streets: No County Boundaries in Streets"
-permalink: kb/126/Q126409/
+permalink: /kb/126/Q126409/
 ---
 
 ## Q126409: Automap Streets: No County Boundaries in Streets

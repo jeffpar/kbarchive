@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241810: BUG: IDispEventImpl Event Handlers May Give Strange Parameters"
-permalink: kb/241/Q241810/
+permalink: /kb/241/Q241810/
 ---
 
 ## Q241810: BUG: IDispEventImpl Event Handlers May Give Strange Parameters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288548: HOWTO: Override MQMD MSMQ-MQSeries Bridge Extension Fields in VB"
-permalink: kb/288/Q288548/
+permalink: /kb/288/Q288548/
 ---
 
 ## Q288548: HOWTO: Override MQMD MSMQ-MQSeries Bridge Extension Fields in VB

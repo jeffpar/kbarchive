@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243087: IIS Does Not Start If French (Canadian) Is Set as System Locale"
-permalink: kb/243/Q243087/
+permalink: /kb/243/Q243087/
 ---
 
 ## Q243087: IIS Does Not Start If French (Canadian) Is Set as System Locale

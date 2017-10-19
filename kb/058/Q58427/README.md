@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58427: PRB: Changing STDIN Translation Mode from Text to Binary"
-permalink: kb/058/Q58427/
+permalink: /kb/058/Q58427/
 ---
 
 ## Q58427: PRB: Changing STDIN Translation Mode from Text to Binary

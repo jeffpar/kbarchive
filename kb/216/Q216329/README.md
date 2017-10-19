@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216329: Cluster Server Log Filling w/ Erroneous Security Descriptor Info"
-permalink: kb/216/Q216329/
+permalink: /kb/216/Q216329/
 ---
 
 ## Q216329: Cluster Server Log Filling w/ Erroneous Security Descriptor Info

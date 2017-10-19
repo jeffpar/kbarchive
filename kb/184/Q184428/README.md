@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184428: XADM: NDRs When Sending Mail To User On Moved Server"
-permalink: kb/184/Q184428/
+permalink: /kb/184/Q184428/
 ---
 
 ## Q184428: XADM: NDRs When Sending Mail To User On Moved Server

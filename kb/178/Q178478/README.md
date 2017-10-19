@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178478: WD97: Can't Send Word Document with Outlook Express"
-permalink: kb/178/Q178478/
+permalink: /kb/178/Q178478/
 ---
 
 ## Q178478: WD97: Can't Send Word Document with Outlook Express

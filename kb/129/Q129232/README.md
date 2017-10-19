@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129232: Program Group Control Requires Logon Validation"
-permalink: kb/129/Q129232/
+permalink: /kb/129/Q129232/
 ---
 
 ## Q129232: Program Group Control Requires Logon Validation

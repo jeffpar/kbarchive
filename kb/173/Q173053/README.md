@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173053: WD97: Files Not Added to &quot;Recent&quot; Folder"
-permalink: kb/173/Q173053/
+permalink: /kb/173/Q173053/
 ---
 
 ## Q173053: WD97: Files Not Added to &quot;Recent&quot; Folder

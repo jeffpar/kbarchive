@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157175: XCON: MTA Service Terminates Unexpectedly"
-permalink: kb/157/Q157175/
+permalink: /kb/157/Q157175/
 ---
 
 ## Q157175: XCON: MTA Service Terminates Unexpectedly

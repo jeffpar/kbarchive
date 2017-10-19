@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193434: Migration Changes NetWare Accounts Expiration Date"
-permalink: kb/193/Q193434/
+permalink: /kb/193/Q193434/
 ---
 
 ## Q193434: Migration Changes NetWare Accounts Expiration Date

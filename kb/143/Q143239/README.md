@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143239: 5250 Applet Defaults To a French Canadian Host Code Page"
-permalink: kb/143/Q143239/
+permalink: /kb/143/Q143239/
 ---
 
 ## Q143239: 5250 Applet Defaults To a French Canadian Host Code Page

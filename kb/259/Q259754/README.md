@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259754: Zone Err Msg: Invalid Page Fault If a Player Shoots the Moon"
-permalink: kb/259/Q259754/
+permalink: /kb/259/Q259754/
 ---
 
 ## Q259754: Zone Err Msg: Invalid Page Fault If a Player Shoots the Moon

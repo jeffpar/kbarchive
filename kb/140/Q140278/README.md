@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140278: PC NTMMTA: Err Msg: Can't Update Service..."
-permalink: kb/140/Q140278/
+permalink: /kb/140/Q140278/
 ---
 
 ## Q140278: PC NTMMTA: Err Msg: Can't Update Service...

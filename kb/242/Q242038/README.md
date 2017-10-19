@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242038: NTOP: NNTP Postings Renamed with .bad Extension During Recovery"
-permalink: kb/242/Q242038/
+permalink: /kb/242/Q242038/
 ---
 
 ## Q242038: NTOP: NNTP Postings Renamed with .bad Extension During Recovery

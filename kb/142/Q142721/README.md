@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142721: Cannot Run Microsoft Access Using MSNDS"
-permalink: kb/142/Q142721/
+permalink: /kb/142/Q142721/
 ---
 
 ## Q142721: Cannot Run Microsoft Access Using MSNDS

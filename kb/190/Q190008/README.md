@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190008: Using Host Header Names to Host Multiple Sites from 1 IP Address"
-permalink: kb/190/Q190008/
+permalink: /kb/190/Q190008/
 ---
 
 ## Q190008: Using Host Header Names to Host Multiple Sites from 1 IP Address

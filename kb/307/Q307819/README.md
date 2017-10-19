@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307819: BUG: Problems with Automated Installation of HIS Clients"
-permalink: kb/307/Q307819/
+permalink: /kb/307/Q307819/
 ---
 
 ## Q307819: BUG: Problems with Automated Installation of HIS Clients

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165371: XADM: Error Creating NT Account in Exchange Administrator"
-permalink: kb/165/Q165371/
+permalink: /kb/165/Q165371/
 ---
 
 ## Q165371: XADM: Error Creating NT Account in Exchange Administrator

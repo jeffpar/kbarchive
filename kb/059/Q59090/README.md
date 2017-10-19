@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59090: Flight Simulator: EGA Mode on Toshiba T3200"
-permalink: kb/059/Q59090/
+permalink: /kb/059/Q59090/
 ---
 
 ## Q59090: Flight Simulator: EGA Mode on Toshiba T3200

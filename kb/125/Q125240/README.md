@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125240: Bookshelf: Error Message During Search Using Word &quot;Near&quot;"
-permalink: kb/125/Q125240/
+permalink: /kb/125/Q125240/
 ---
 
 ## Q125240: Bookshelf: Error Message During Search Using Word &quot;Near&quot;

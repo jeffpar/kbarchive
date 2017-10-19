@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149749: PRB: DIM() Intrinsic Function does not Support Complex Numbers"
-permalink: kb/149/Q149749/
+permalink: /kb/149/Q149749/
 ---
 
 ## Q149749: PRB: DIM() Intrinsic Function does not Support Complex Numbers

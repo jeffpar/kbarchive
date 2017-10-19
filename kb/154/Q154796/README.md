@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154796: Close Combat: Playing Modem to Network"
-permalink: kb/154/Q154796/
+permalink: /kb/154/Q154796/
 ---
 
 ## Q154796: Close Combat: Playing Modem to Network

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130465: HOWTO: Connect to a Different Database Using ODBC"
-permalink: kb/130/Q130465/
+permalink: /kb/130/Q130465/
 ---
 
 ## Q130465: HOWTO: Connect to a Different Database Using ODBC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125877: WinWord 16 Cannot Open File When Path Contains Special Chars"
-permalink: kb/125/Q125877/
+permalink: /kb/125/Q125877/
 ---
 
 ## Q125877: WinWord 16 Cannot Open File When Path Contains Special Chars

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149788: BUG: Visual SourceSafe Books Online Isn't Properly Installed"
-permalink: kb/149/Q149788/
+permalink: /kb/149/Q149788/
 ---
 
 ## Q149788: BUG: Visual SourceSafe Books Online Isn't Properly Installed

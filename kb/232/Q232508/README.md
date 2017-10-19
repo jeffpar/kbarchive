@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232508: SMSINST: SMS Installer Incorrectly Draws Dialog Boxes"
-permalink: kb/232/Q232508/
+permalink: /kb/232/Q232508/
 ---
 
 ## Q232508: SMSINST: SMS Installer Incorrectly Draws Dialog Boxes

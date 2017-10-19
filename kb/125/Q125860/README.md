@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125860: Incorrect Range for RegistrySizeLimit in Resource Kit"
-permalink: kb/125/Q125860/
+permalink: /kb/125/Q125860/
 ---
 
 ## Q125860: Incorrect Range for RegistrySizeLimit in Resource Kit

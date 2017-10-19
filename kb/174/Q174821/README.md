@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174821: XADM: TCP/IP Error Messages Following Install and Reboot"
-permalink: kb/174/Q174821/
+permalink: /kb/174/Q174821/
 ---
 
 ## Q174821: XADM: TCP/IP Error Messages Following Install and Reboot

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257766: XADM: How to Move Exchange Server Folders"
-permalink: kb/257/Q257766/
+permalink: /kb/257/Q257766/
 ---
 
 ## Q257766: XADM: How to Move Exchange Server Folders

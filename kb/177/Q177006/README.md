@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177006: XADM: MTA May Fail During Mailstorms Involving Large DLs"
-permalink: kb/177/Q177006/
+permalink: /kb/177/Q177006/
 ---
 
 ## Q177006: XADM: MTA May Fail During Mailstorms Involving Large DLs

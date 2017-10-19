@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69570: Mac Srv: Server Hangs Immediately After Restart"
-permalink: kb/069/Q69570/
+permalink: /kb/069/Q69570/
 ---
 
 ## Q69570: Mac Srv: Server Hangs Immediately After Restart

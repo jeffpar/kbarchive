@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259514: XCLN: Modifying the Attachment Security Warning in OL 2K SR-1"
-permalink: kb/259/Q259514/
+permalink: /kb/259/Q259514/
 ---
 
 ## Q259514: XCLN: Modifying the Attachment Security Warning in OL 2K SR-1

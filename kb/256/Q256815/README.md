@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256815: MapPoint 2001: How to Create Web Links to Maps in Office"
-permalink: kb/256/Q256815/
+permalink: /kb/256/Q256815/
 ---
 
 ## Q256815: MapPoint 2001: How to Create Web Links to Maps in Office

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151088: Content of VFP for Mac Frequently Asked Questions Help File"
-permalink: kb/151/Q151088/
+permalink: /kb/151/Q151088/
 ---
 
 ## Q151088: Content of VFP for Mac Frequently Asked Questions Help File

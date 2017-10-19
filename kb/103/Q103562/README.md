@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103562: Using CTRL+F8 to Process Configuration Files on Host Drive"
-permalink: kb/103/Q103562/
+permalink: /kb/103/Q103562/
 ---
 
 ## Q103562: Using CTRL+F8 to Process Configuration Files on Host Drive

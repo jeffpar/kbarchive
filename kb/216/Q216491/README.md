@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216491: ERROR: Event ID 43: Crash Dump Is Disabled"
-permalink: kb/216/Q216491/
+permalink: /kb/216/Q216491/
 ---
 
 ## Q216491: ERROR: Event ID 43: Crash Dump Is Disabled

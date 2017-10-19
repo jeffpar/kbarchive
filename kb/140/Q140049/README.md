@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140049: Err Msg: The Service Has Not Been Started"
-permalink: kb/140/Q140049/
+permalink: /kb/140/Q140049/
 ---
 
 ## Q140049: Err Msg: The Service Has Not Been Started

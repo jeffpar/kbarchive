@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111922: How to Import ASCII Files with Nonstandard Delimiters"
-permalink: kb/111/Q111922/
+permalink: /kb/111/Q111922/
 ---
 
 ## Q111922: How to Import ASCII Files with Nonstandard Delimiters

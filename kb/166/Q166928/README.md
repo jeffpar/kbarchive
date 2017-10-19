@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166928: FIX: Public Properties of VB4 Class Are Passed by Reference"
-permalink: kb/166/Q166928/
+permalink: /kb/166/Q166928/
 ---
 
 ## Q166928: FIX: Public Properties of VB4 Class Are Passed by Reference

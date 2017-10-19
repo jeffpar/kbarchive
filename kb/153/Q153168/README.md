@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153168: MAC Address for OS/2 Warp Clients Reported Incorrectly"
-permalink: kb/153/Q153168/
+permalink: /kb/153/Q153168/
 ---
 
 ## Q153168: MAC Address for OS/2 Warp Clients Reported Incorrectly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224198: Stop 0x00000050 in Netbt Closing Outbound Connections"
-permalink: kb/224/Q224198/
+permalink: /kb/224/Q224198/
 ---
 
 ## Q224198: Stop 0x00000050 in Netbt Closing Outbound Connections

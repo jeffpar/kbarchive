@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126433: Haunted House Err Msg: HHOU04E9 GPF in HHOUSE.EXE"
-permalink: kb/126/Q126433/
+permalink: /kb/126/Q126433/
 ---
 
 ## Q126433: Haunted House Err Msg: HHOU04E9 GPF in HHOUSE.EXE

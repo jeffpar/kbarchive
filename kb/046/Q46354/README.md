@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q46354: Placing Dependent &amp; Target Files in Different Directories"
-permalink: kb/046/Q46354/
+permalink: /kb/046/Q46354/
 ---
 
 ## Q46354: Placing Dependent &amp; Target Files in Different Directories

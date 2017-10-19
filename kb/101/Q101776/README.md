@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101776: How Windows NT Detects Idle Time"
-permalink: kb/101/Q101776/
+permalink: /kb/101/Q101776/
 ---
 
 ## Q101776: How Windows NT Detects Idle Time

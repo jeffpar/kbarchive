@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128150: DOC: Help File Incorrectly States SYS(1037) Ignored by Windows"
-permalink: kb/128/Q128150/
+permalink: /kb/128/Q128150/
 ---
 
 ## Q128150: DOC: Help File Incorrectly States SYS(1037) Ignored by Windows

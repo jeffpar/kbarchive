@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229012: &quot;Hard Error&quot; with Disconnected WinStation Sessions"
-permalink: kb/229/Q229012/
+permalink: /kb/229/Q229012/
 ---
 
 ## Q229012: &quot;Hard Error&quot; with Disconnected WinStation Sessions

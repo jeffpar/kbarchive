@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265730: XCLN: Cannot Install OWA From an Exchange Server 5.5 Upgrade CD"
-permalink: kb/265/Q265730/
+permalink: /kb/265/Q265730/
 ---
 
 ## Q265730: XCLN: Cannot Install OWA From an Exchange Server 5.5 Upgrade CD

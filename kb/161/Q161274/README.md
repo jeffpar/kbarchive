@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161274: HOWTO: Port a Remote OLE Application to DCOM"
-permalink: kb/161/Q161274/
+permalink: /kb/161/Q161274/
 ---
 
 ## Q161274: HOWTO: Port a Remote OLE Application to DCOM

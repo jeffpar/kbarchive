@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177095: SAMPLE: SysTray.exe ActiveX Control Adds Icons to Status Area"
-permalink: kb/177/Q177095/
+permalink: /kb/177/Q177095/
 ---
 
 ## Q177095: SAMPLE: SysTray.exe ActiveX Control Adds Icons to Status Area

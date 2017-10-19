@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128156: PRB: Invalid Data Type for This Property Error"
-permalink: kb/128/Q128156/
+permalink: /kb/128/Q128156/
 ---
 
 ## Q128156: PRB: Invalid Data Type for This Property Error

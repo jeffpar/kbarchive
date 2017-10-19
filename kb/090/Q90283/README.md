@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90283: NDW 2.0 Network Disconnect Brings up WFWG Network Disconnect"
-permalink: kb/090/Q90283/
+permalink: /kb/090/Q90283/
 ---
 
 ## Q90283: NDW 2.0 Network Disconnect Brings up WFWG Network Disconnect

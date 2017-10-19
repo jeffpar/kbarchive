@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156523: SMS: Remote Control Redraw Problems with Diamond Video Card"
-permalink: kb/156/Q156523/
+permalink: /kb/156/Q156523/
 ---
 
 ## Q156523: SMS: Remote Control Redraw Problems with Diamond Video Card

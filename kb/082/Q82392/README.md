@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82392: PC Tools 7.1 May Incorrectly Add Group to Program Manager"
-permalink: kb/082/Q82392/
+permalink: /kb/082/Q82392/
 ---
 
 ## Q82392: PC Tools 7.1 May Incorrectly Add Group to Program Manager

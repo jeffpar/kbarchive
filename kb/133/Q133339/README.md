@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133339: Automating Client Services for NetWare (CSNW) Installation"
-permalink: kb/133/Q133339/
+permalink: /kb/133/Q133339/
 ---
 
 ## Q133339: Automating Client Services for NetWare (CSNW) Installation

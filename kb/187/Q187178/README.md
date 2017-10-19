@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187178: Mouse Pointer Location Undetected by RDP Client"
-permalink: kb/187/Q187178/
+permalink: /kb/187/Q187178/
 ---
 
 ## Q187178: Mouse Pointer Location Undetected by RDP Client

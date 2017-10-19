@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180733: HOWTO: Add Context-Sensitive Help to Your ActiveX Control"
-permalink: kb/180/Q180733/
+permalink: /kb/180/Q180733/
 ---
 
 ## Q180733: HOWTO: Add Context-Sensitive Help to Your ActiveX Control

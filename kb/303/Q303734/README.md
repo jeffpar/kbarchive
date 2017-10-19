@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303734: HOW TO: Configure the SMTP Virtual Server for Message Delivery"
-permalink: kb/303/Q303734/
+permalink: /kb/303/Q303734/
 ---
 
 ## Q303734: HOW TO: Configure the SMTP Virtual Server for Message Delivery

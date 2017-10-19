@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172885: NetWare Print Server Names With Periods Truncated in Explorer"
-permalink: kb/172/Q172885/
+permalink: /kb/172/Q172885/
 ---
 
 ## Q172885: NetWare Print Server Names With Periods Truncated in Explorer

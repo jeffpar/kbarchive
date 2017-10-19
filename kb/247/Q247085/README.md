@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247085: XWEB: Error: Failed to Connect to the Microsoft Exchange Server"
-permalink: kb/247/Q247085/
+permalink: /kb/247/Q247085/
 ---
 
 ## Q247085: XWEB: Error: Failed to Connect to the Microsoft Exchange Server

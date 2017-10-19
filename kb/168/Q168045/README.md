@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q168045: HOWTO: STL Sample For [list::merge] Function(s)"
-permalink: kb/168/Q168045/
+title: "Q168045: HOWTO: STL Sample For &#91;list::merge&#93; Function(s)"
+permalink: /kb/168/Q168045/
 ---
 
-## Q168045: HOWTO: STL Sample For [list::merge] Function(s)
+## Q168045: HOWTO: STL Sample For &#91;list::merge&#93; Function(s)
 
 	Article: Q168045
 	Product(s): Microsoft C Compiler

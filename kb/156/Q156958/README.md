@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156958: Serial Service Won't Stop with Serial Printer Installed"
-permalink: kb/156/Q156958/
+permalink: /kb/156/Q156958/
 ---
 
 ## Q156958: Serial Service Won't Stop with Serial Printer Installed

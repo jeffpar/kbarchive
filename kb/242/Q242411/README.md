@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242411: HOWTO: Determine the Currently Selected ScopePaneItem"
-permalink: kb/242/Q242411/
+permalink: /kb/242/Q242411/
 ---
 
 ## Q242411: HOWTO: Determine the Currently Selected ScopePaneItem

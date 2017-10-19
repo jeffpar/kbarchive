@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150137: BUG: T Edit Descriptor Fails to TAB Backward"
-permalink: kb/150/Q150137/
+permalink: /kb/150/Q150137/
 ---
 
 ## Q150137: BUG: T Edit Descriptor Fails to TAB Backward

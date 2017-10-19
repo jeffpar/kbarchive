@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136997: How to Run a Code Resource from a Visual C++ Application"
-permalink: kb/136/Q136997/
+permalink: /kb/136/Q136997/
 ---
 
 ## Q136997: How to Run a Code Resource from a Visual C++ Application

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75443: Gazelle Systems OPTune with MS-DOS Versions"
-permalink: kb/075/Q75443/
+permalink: /kb/075/Q75443/
 ---
 
 ## Q75443: Gazelle Systems OPTune with MS-DOS Versions

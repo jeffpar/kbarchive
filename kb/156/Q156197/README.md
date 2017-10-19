@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156197: ADT/ODE: Setup Repeatedly Prompts You for Disk2"
-permalink: kb/156/Q156197/
+permalink: /kb/156/Q156197/
 ---
 
 ## Q156197: ADT/ODE: Setup Repeatedly Prompts You for Disk2

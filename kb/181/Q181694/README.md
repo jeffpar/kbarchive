@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181694: XCLN: How to Upgrade Shared Workstation Installations of Exchang"
-permalink: kb/181/Q181694/
+permalink: /kb/181/Q181694/
 ---
 
 ## Q181694: XCLN: How to Upgrade Shared Workstation Installations of Exchang

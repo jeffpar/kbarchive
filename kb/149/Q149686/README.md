@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149686: Cannot Navigate from Online Viewer Titles at 2400 bps"
-permalink: kb/149/Q149686/
+permalink: /kb/149/Q149686/
 ---
 
 ## Q149686: Cannot Navigate from Online Viewer Titles at 2400 bps

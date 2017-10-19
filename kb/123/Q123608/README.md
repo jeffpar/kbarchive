@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123608: Olicom NIC Driver Does Not Install Correctly"
-permalink: kb/123/Q123608/
+permalink: /kb/123/Q123608/
 ---
 
 ## Q123608: Olicom NIC Driver Does Not Install Correctly

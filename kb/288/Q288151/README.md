@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288151: Shortcuts in Startup Group Do Not Run in Windows NT Workstation"
-permalink: kb/288/Q288151/
+permalink: /kb/288/Q288151/
 ---
 
 ## Q288151: Shortcuts in Startup Group Do Not Run in Windows NT Workstation

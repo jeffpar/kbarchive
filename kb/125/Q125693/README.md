@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125693: HOWTO: AngleArc in Windows 3.1, Win32s, and Windows 95"
-permalink: kb/125/Q125693/
+permalink: /kb/125/Q125693/
 ---
 
 ## Q125693: HOWTO: AngleArc in Windows 3.1, Win32s, and Windows 95

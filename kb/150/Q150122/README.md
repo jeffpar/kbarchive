@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150122: PRB: CDaoRecordView Toolbar Buttons Malfunction"
-permalink: kb/150/Q150122/
+permalink: /kb/150/Q150122/
 ---
 
 ## Q150122: PRB: CDaoRecordView Toolbar Buttons Malfunction

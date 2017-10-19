@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189802: DocErr: Perfmon Command Line Options Are Incorrect in Reskit"
-permalink: kb/189/Q189802/
+permalink: /kb/189/Q189802/
 ---
 
 ## Q189802: DocErr: Perfmon Command Line Options Are Incorrect in Reskit

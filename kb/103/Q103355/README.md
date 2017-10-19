@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103355: EXPORT/ COPY TO Commands Don't Work with Entire Tables"
-permalink: kb/103/Q103355/
+permalink: /kb/103/Q103355/
 ---
 
 ## Q103355: EXPORT/ COPY TO Commands Don't Work with Entire Tables

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185093: FTP Server Fails to Transfer Files Larger Than 4 Gigabytes"
-permalink: kb/185/Q185093/
+permalink: /kb/185/Q185093/
 ---
 
 ## Q185093: FTP Server Fails to Transfer Files Larger Than 4 Gigabytes

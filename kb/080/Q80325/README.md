@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80325: Application Cannot Define Subset of the Gestures"
-permalink: kb/080/Q80325/
+permalink: /kb/080/Q80325/
 ---
 
 ## Q80325: Application Cannot Define Subset of the Gestures

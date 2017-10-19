@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112084: PRB: SET TALK ON Does Not Work with SET STATUS BAR ON"
-permalink: kb/112/Q112084/
+permalink: /kb/112/Q112084/
 ---
 
 ## Q112084: PRB: SET TALK ON Does Not Work with SET STATUS BAR ON

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128976: MultiTech MT2834 Modem Incorrectly Reports Hardware Error"
-permalink: kb/128/Q128976/
+permalink: /kb/128/Q128976/
 ---
 
 ## Q128976: MultiTech MT2834 Modem Incorrectly Reports Hardware Error

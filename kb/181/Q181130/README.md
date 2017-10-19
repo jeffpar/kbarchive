@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181130: XFOR: Additional Characters Appear in Migrated cc:Mail Messages"
-permalink: kb/181/Q181130/
+permalink: /kb/181/Q181130/
 ---
 
 ## Q181130: XFOR: Additional Characters Appear in Migrated cc:Mail Messages

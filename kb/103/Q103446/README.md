@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103446: PC Adm: .CAL and .MMF Files Not Counted in Storage Status"
-permalink: kb/103/Q103446/
+permalink: /kb/103/Q103446/
 ---
 
 ## Q103446: PC Adm: .CAL and .MMF Files Not Counted in Storage Status

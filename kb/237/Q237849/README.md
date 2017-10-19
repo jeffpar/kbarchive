@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237849: FIPS 140-1 Validation for Cryptographic Service Providers"
-permalink: kb/237/Q237849/
+permalink: /kb/237/Q237849/
 ---
 
 ## Q237849: FIPS 140-1 Validation for Cryptographic Service Providers

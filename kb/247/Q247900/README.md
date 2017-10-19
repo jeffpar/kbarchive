@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247900: Cannot Log On After Removing Everyone Group from Permissions"
-permalink: kb/247/Q247900/
+permalink: /kb/247/Q247900/
 ---
 
 ## Q247900: Cannot Log On After Removing Everyone Group from Permissions

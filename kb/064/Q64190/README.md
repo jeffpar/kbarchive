@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64190: 256-Color Support in Windows"
-permalink: kb/064/Q64190/
+permalink: /kb/064/Q64190/
 ---
 
 ## Q64190: 256-Color Support in Windows

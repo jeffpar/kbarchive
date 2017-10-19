@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193578: BUG: Rollback Causes File Label Corruption"
-permalink: kb/193/Q193578/
+permalink: /kb/193/Q193578/
 ---
 
 ## Q193578: BUG: Rollback Causes File Label Corruption

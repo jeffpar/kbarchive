@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93374: MemMaker Doesn't Find SYSTEM.INI File on Network"
-permalink: kb/093/Q93374/
+permalink: /kb/093/Q93374/
 ---
 
 ## Q93374: MemMaker Doesn't Find SYSTEM.INI File on Network

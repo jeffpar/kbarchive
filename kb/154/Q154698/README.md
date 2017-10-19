@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154698: WinNT &amp; Microsoft Exchange 4.0 Takes Long Time to Shut Down"
-permalink: kb/154/Q154698/
+permalink: /kb/154/Q154698/
 ---
 
 ## Q154698: WinNT &amp; Microsoft Exchange 4.0 Takes Long Time to Shut Down

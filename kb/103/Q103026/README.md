@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103026: RAS Frame Format Diagram"
-permalink: kb/103/Q103026/
+permalink: /kb/103/Q103026/
 ---
 
 ## Q103026: RAS Frame Format Diagram

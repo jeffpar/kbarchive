@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87043: SMTP: Recommended Command-Line Parameters"
-permalink: kb/087/Q87043/
+permalink: /kb/087/Q87043/
 ---
 
 ## Q87043: SMTP: Recommended Command-Line Parameters

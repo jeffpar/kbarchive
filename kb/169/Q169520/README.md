@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169520: XFOR: Installing the Proxy Address Generator for Exchange-OV/VM"
-permalink: kb/169/Q169520/
+permalink: /kb/169/Q169520/
 ---
 
 ## Q169520: XFOR: Installing the Proxy Address Generator for Exchange-OV/VM

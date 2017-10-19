@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77821: Repartitioning Your Hard Disk After MS-DOS 5 Upgrade"
-permalink: kb/077/Q77821/
+permalink: /kb/077/Q77821/
 ---
 
 ## Q77821: Repartitioning Your Hard Disk After MS-DOS 5 Upgrade

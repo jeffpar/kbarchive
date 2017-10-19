@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186396: SMS: MIF File Renamer - Mifname.exe"
-permalink: kb/186/Q186396/
+permalink: /kb/186/Q186396/
 ---
 
 ## Q186396: SMS: MIF File Renamer - Mifname.exe

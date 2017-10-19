@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233182: Zone Err Msg: The File/Fileset &lt;Filename&gt; Is Unaccounted For"
-permalink: kb/233/Q233182/
+permalink: /kb/233/Q233182/
 ---
 
 ## Q233182: Zone Err Msg: The File/Fileset &lt;Filename&gt; Is Unaccounted For

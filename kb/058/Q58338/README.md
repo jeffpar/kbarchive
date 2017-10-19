@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q58338: Windows 3.0 WIN.INI [printerports] Section"
-permalink: kb/058/Q58338/
+title: "Q58338: Windows 3.0 WIN.INI &#91;printerports&#93; Section"
+permalink: /kb/058/Q58338/
 ---
 
-## Q58338: Windows 3.0 WIN.INI [printerports] Section
+## Q58338: Windows 3.0 WIN.INI &#91;printerports&#93; Section
 
 	Article: Q58338
 	Product(s): Microsoft Windows 95.x Retail Product

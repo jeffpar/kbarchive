@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149533: OLE Problems When Running 16-bit Applications on Windows NT"
-permalink: kb/149/Q149533/
+permalink: /kb/149/Q149533/
 ---
 
 ## Q149533: OLE Problems When Running 16-bit Applications on Windows NT

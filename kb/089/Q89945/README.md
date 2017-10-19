@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89945: Windows 3.1 Automated Setup May Show Incorrect Machine Type"
-permalink: kb/089/Q89945/
+permalink: /kb/089/Q89945/
 ---
 
 ## Q89945: Windows 3.1 Automated Setup May Show Incorrect Machine Type

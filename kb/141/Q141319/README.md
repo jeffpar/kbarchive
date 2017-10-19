@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141319: PRB: Setup Wizard Fails to Create Distribution Directory"
-permalink: kb/141/Q141319/
+permalink: /kb/141/Q141319/
 ---
 
 ## Q141319: PRB: Setup Wizard Fails to Create Distribution Directory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191663: PRB: Unresolved const type_info, &#95;&#95;CxxThrowException"
-permalink: kb/191/Q191663/
+permalink: /kb/191/Q191663/
 ---
 
 ## Q191663: PRB: Unresolved const type_info, &#95;&#95;CxxThrowException

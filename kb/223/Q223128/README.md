@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223128: FIX: Problems Saving Visual Basic Form to Visual SourceSafe"
-permalink: kb/223/Q223128/
+permalink: /kb/223/Q223128/
 ---
 
 ## Q223128: FIX: Problems Saving Visual Basic Form to Visual SourceSafe

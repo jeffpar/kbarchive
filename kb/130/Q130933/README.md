@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130933: Administrators Granted Connection with No License Available"
-permalink: kb/130/Q130933/
+permalink: /kb/130/Q130933/
 ---
 
 ## Q130933: Administrators Granted Connection with No License Available

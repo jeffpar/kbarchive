@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187988: PRB: ActiveX Control Is Parent Window of Modeless Dialog"
-permalink: kb/187/Q187988/
+permalink: /kb/187/Q187988/
 ---
 
 ## Q187988: PRB: ActiveX Control Is Parent Window of Modeless Dialog

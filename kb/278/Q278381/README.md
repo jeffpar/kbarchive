@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278381: Default Permissions For the MachineKeys Folders"
-permalink: kb/278/Q278381/
+permalink: /kb/278/Q278381/
 ---
 
 ## Q278381: Default Permissions For the MachineKeys Folders

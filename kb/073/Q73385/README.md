@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73385: Notebook 386SX Screen Saver Reboots in Enhanced Mode"
-permalink: kb/073/Q73385/
+permalink: /kb/073/Q73385/
 ---
 
 ## Q73385: Notebook 386SX Screen Saver Reboots in Enhanced Mode

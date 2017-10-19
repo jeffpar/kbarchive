@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140433: ScanDisk Err Msg: This Drive Was Compressed By a Program..."
-permalink: kb/140/Q140433/
+permalink: /kb/140/Q140433/
 ---
 
 ## Q140433: ScanDisk Err Msg: This Drive Was Compressed By a Program...

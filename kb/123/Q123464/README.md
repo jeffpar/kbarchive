@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123464: Obtaining Visual C++ 2.0 Run-Time Library Source Code"
-permalink: kb/123/Q123464/
+permalink: /kb/123/Q123464/
 ---
 
 ## Q123464: Obtaining Visual C++ 2.0 Run-Time Library Source Code

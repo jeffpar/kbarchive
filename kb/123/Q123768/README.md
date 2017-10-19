@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123768: PRB: Unresolved Externals for Inline Functions"
-permalink: kb/123/Q123768/
+permalink: /kb/123/Q123768/
 ---
 
 ## Q123768: PRB: Unresolved Externals for Inline Functions

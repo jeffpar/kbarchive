@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123814: Win NT Err Msg: MBR Checksum Error: A Virus May Be Present..."
-permalink: kb/123/Q123814/
+permalink: /kb/123/Q123814/
 ---
 
 ## Q123814: Win NT Err Msg: MBR Checksum Error: A Virus May Be Present...

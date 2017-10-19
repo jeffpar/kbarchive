@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130538: DHCP-Enabled MS-DOS Clients Do Not Resolve Host Names"
-permalink: kb/130/Q130538/
+permalink: /kb/130/Q130538/
 ---
 
 ## Q130538: DHCP-Enabled MS-DOS Clients Do Not Resolve Host Names

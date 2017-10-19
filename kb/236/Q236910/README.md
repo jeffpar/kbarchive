@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236910: XIMS: Cannot Open IMS Dial-Up Connections Tab on Windows 2000"
-permalink: kb/236/Q236910/
+permalink: /kb/236/Q236910/
 ---
 
 ## Q236910: XIMS: Cannot Open IMS Dial-Up Connections Tab on Windows 2000

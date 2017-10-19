@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313996: A+ Certification Readiness Review Comments and Corrections"
-permalink: kb/313/Q313996/
+permalink: /kb/313/Q313996/
 ---
 
 ## Q313996: A+ Certification Readiness Review Comments and Corrections

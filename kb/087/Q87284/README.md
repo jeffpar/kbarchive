@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87284: DOSKEY Maximum Buffer Size is 61900 Bytes"
-permalink: kb/087/Q87284/
+permalink: /kb/087/Q87284/
 ---
 
 ## Q87284: DOSKEY Maximum Buffer Size is 61900 Bytes

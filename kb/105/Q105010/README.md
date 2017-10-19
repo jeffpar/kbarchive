@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105010: How To Use the OpenComm() Function with FOXTOOLS.FLL"
-permalink: kb/105/Q105010/
+permalink: /kb/105/Q105010/
 ---
 
 ## Q105010: How To Use the OpenComm() Function with FOXTOOLS.FLL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235738: SMS: Restart Computer Options Fails when Logged on User Doesn't"
-permalink: kb/235/Q235738/
+permalink: /kb/235/Q235738/
 ---
 
 ## Q235738: SMS: Restart Computer Options Fails when Logged on User Doesn't

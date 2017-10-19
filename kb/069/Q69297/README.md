@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69297: Windows Err Msgs: Paintbrush Message List"
-permalink: kb/069/Q69297/
+permalink: /kb/069/Q69297/
 ---
 
 ## Q69297: Windows Err Msgs: Paintbrush Message List

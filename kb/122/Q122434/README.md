@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122434: Windows 95 Does Not Have Drivers for RGDI, DGIS, TIGA Adapters"
-permalink: kb/122/Q122434/
+permalink: /kb/122/Q122434/
 ---
 
 ## Q122434: Windows 95 Does Not Have Drivers for RGDI, DGIS, TIGA Adapters

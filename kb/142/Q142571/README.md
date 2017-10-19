@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142571: IBM ThinkPad BIOS Version Requirements for Windows 95"
-permalink: kb/142/Q142571/
+permalink: /kb/142/Q142571/
 ---
 
 ## Q142571: IBM ThinkPad BIOS Version Requirements for Windows 95

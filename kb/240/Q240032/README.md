@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240032: CG5: Err Msg: Msvcp60.dll Is Linked to the Missing Export Msvcrt"
-permalink: kb/240/Q240032/
+permalink: /kb/240/Q240032/
 ---
 
 ## Q240032: CG5: Err Msg: Msvcp60.dll Is Linked to the Missing Export Msvcrt

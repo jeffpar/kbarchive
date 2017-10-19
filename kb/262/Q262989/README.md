@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262989: XFOR: Lotus cc:Mail Migration Event 1030 Error Message"
-permalink: kb/262/Q262989/
+permalink: /kb/262/Q262989/
 ---
 
 ## Q262989: XFOR: Lotus cc:Mail Migration Event 1030 Error Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106732: BUG: Dependencies Not Scanned If Include Statement Is Labeled"
-permalink: kb/106/Q106732/
+permalink: /kb/106/Q106732/
 ---
 
 ## Q106732: BUG: Dependencies Not Scanned If Include Statement Is Labeled

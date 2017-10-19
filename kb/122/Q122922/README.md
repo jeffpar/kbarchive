@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122922: Supported Video Adapters on DEC Alpha AXP Systems"
-permalink: kb/122/Q122922/
+permalink: /kb/122/Q122922/
 ---
 
 ## Q122922: Supported Video Adapters on DEC Alpha AXP Systems

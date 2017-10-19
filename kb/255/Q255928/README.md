@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255928: &quot;STOP 0x1e&quot; After Installing Norton AntiVirus Updates"
-permalink: kb/255/Q255928/
+permalink: /kb/255/Q255928/
 ---
 
 ## Q255928: &quot;STOP 0x1e&quot; After Installing Norton AntiVirus Updates

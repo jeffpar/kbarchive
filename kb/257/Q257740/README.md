@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257740: PC DirSync: Global Reset for Microsoft Mail"
-permalink: kb/257/Q257740/
+permalink: /kb/257/Q257740/
 ---
 
 ## Q257740: PC DirSync: Global Reset for Microsoft Mail

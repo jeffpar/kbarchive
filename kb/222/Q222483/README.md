@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222483: SBS: Services Do Not Work After Installing Service Pack 3"
-permalink: kb/222/Q222483/
+permalink: /kb/222/Q222483/
 ---
 
 ## Q222483: SBS: Services Do Not Work After Installing Service Pack 3

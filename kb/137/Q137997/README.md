@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137997: XCLN: Message Finder Does Not Save View"
-permalink: kb/137/Q137997/
+permalink: /kb/137/Q137997/
 ---
 
 ## Q137997: XCLN: Message Finder Does Not Save View

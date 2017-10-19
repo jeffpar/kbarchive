@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170677: Appstation Administrator Cannot Install Sound Device Drivers"
-permalink: kb/170/Q170677/
+permalink: /kb/170/Q170677/
 ---
 
 ## Q170677: Appstation Administrator Cannot Install Sound Device Drivers

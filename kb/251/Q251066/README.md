@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251066: HOWTO: Determine If a Computer Is a Microsoft Terminal Server"
-permalink: kb/251/Q251066/
+permalink: /kb/251/Q251066/
 ---
 
 ## Q251066: HOWTO: Determine If a Computer Is a Microsoft Terminal Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137148: STOP 0x0000001E or System Hangs When Mirroring Seagate ST32550"
-permalink: kb/137/Q137148/
+permalink: /kb/137/Q137148/
 ---
 
 ## Q137148: STOP 0x0000001E or System Hangs When Mirroring Seagate ST32550

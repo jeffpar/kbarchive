@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192944: PRB: &quot;Class Not Registered&quot; Error on ImgEdit Property Page Show"
-permalink: kb/192/Q192944/
+permalink: /kb/192/Q192944/
 ---
 
 ## Q192944: PRB: &quot;Class Not Registered&quot; Error on ImgEdit Property Page Show

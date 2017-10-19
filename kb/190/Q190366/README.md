@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190366: XFOR: Cannot Reply to Messages Through a Cisco PIX Firewall"
-permalink: kb/190/Q190366/
+permalink: /kb/190/Q190366/
 ---
 
 ## Q190366: XFOR: Cannot Reply to Messages Through a Cisco PIX Firewall

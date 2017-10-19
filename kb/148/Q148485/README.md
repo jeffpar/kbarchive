@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148485: Service Pack 4 Causes Some Installation Programs To Fail"
-permalink: kb/148/Q148485/
+permalink: /kb/148/Q148485/
 ---
 
 ## Q148485: Service Pack 4 Causes Some Installation Programs To Fail

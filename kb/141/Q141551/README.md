@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141551: How to Hide the &quot;FoxPro Run Command&quot; Window in Visual FoxPro"
-permalink: kb/141/Q141551/
+permalink: /kb/141/Q141551/
 ---
 
 ## Q141551: How to Hide the &quot;FoxPro Run Command&quot; Window in Visual FoxPro

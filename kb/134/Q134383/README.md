@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134383: PC NTMMTA: NT MMTA Not Supported Under OS/2 (Any Version)"
-permalink: kb/134/Q134383/
+permalink: /kb/134/Q134383/
 ---
 
 ## Q134383: PC NTMMTA: NT MMTA Not Supported Under OS/2 (Any Version)

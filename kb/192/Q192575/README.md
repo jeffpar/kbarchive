@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192575: PRB: Modify of .H File From Project Not Using Syntax Coloring"
-permalink: kb/192/Q192575/
+permalink: /kb/192/Q192575/
 ---
 
 ## Q192575: PRB: Modify of .H File From Project Not Using Syntax Coloring

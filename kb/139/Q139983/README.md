@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139983: Class C Subnetting Options for RAS Routing"
-permalink: kb/139/Q139983/
+permalink: /kb/139/Q139983/
 ---
 
 ## Q139983: Class C Subnetting Options for RAS Routing

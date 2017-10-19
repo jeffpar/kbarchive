@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103470: NetBIOS Name Conflicts When NetBEUI Used on Multiple NICs"
-permalink: kb/103/Q103470/
+permalink: /kb/103/Q103470/
 ---
 
 ## Q103470: NetBIOS Name Conflicts When NetBEUI Used on Multiple NICs

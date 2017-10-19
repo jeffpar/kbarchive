@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177131: SMS: Cannot Remotely Monitor WinNT Client from Win95 NetMon"
-permalink: kb/177/Q177131/
+permalink: /kb/177/Q177131/
 ---
 
 ## Q177131: SMS: Cannot Remotely Monitor WinNT Client from Win95 NetMon

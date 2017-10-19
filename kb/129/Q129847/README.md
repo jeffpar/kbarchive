@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129847: HOWTO: How to Use the Upsizing (SQL) Wizard in Visual FoxPro"
-permalink: kb/129/Q129847/
+permalink: /kb/129/Q129847/
 ---
 
 ## Q129847: HOWTO: How to Use the Upsizing (SQL) Wizard in Visual FoxPro

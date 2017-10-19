@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170055: XCON: Unable to View MTA Queue"
-permalink: kb/170/Q170055/
+permalink: /kb/170/Q170055/
 ---
 
 ## Q170055: XCON: Unable to View MTA Queue

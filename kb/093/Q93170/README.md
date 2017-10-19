@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93170: BUG: PWB Stores Tabstops Value Incorrectly in TOOLS.INI"
-permalink: kb/093/Q93170/
+permalink: /kb/093/Q93170/
 ---
 
 ## Q93170: BUG: PWB Stores Tabstops Value Incorrectly in TOOLS.INI

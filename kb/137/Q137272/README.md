@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137272: Damaged Cabinet File on Non-DMF MS Plus! Disk Set"
-permalink: kb/137/Q137272/
+permalink: /kb/137/Q137272/
 ---
 
 ## Q137272: Damaged Cabinet File on Non-DMF MS Plus! Disk Set

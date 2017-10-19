@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258557: XFOR: How to Record Internet Messages Sent by an Exchange User"
-permalink: kb/258/Q258557/
+permalink: /kb/258/Q258557/
 ---
 
 ## Q258557: XFOR: How to Record Internet Messages Sent by an Exchange User

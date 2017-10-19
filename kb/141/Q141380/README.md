@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141380: TCP/IP Printing to a QMS 1725 Print System"
-permalink: kb/141/Q141380/
+permalink: /kb/141/Q141380/
 ---
 
 ## Q141380: TCP/IP Printing to a QMS 1725 Print System

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146452: Go To: on Contact Tab Not Work Until Sort Contacts"
-permalink: kb/146/Q146452/
+permalink: /kb/146/Q146452/
 ---
 
 ## Q146452: Go To: on Contact Tab Not Work Until Sort Contacts

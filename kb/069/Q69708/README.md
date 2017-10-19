@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69708: Debug Doesn't Accept SAL Mnemonic"
-permalink: kb/069/Q69708/
+permalink: /kb/069/Q69708/
 ---
 
 ## Q69708: Debug Doesn't Accept SAL Mnemonic

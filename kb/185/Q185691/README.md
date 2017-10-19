@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185691: X.25 Link Service May Hang When Using IBM's ARTIC Driver"
-permalink: kb/185/Q185691/
+permalink: /kb/185/Q185691/
 ---
 
 ## Q185691: X.25 Link Service May Hang When Using IBM's ARTIC Driver

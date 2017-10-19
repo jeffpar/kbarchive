@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287762: IBM SDLC Link Service Lacks Support for IRQ 7"
-permalink: kb/287/Q287762/
+permalink: /kb/287/Q287762/
 ---
 
 ## Q287762: IBM SDLC Link Service Lacks Support for IRQ 7

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68584: Avoid SetClassLong If Subclassing a Standard Control Class"
-permalink: kb/068/Q68584/
+permalink: /kb/068/Q68584/
 ---
 
 ## Q68584: Avoid SetClassLong If Subclassing a Standard Control Class

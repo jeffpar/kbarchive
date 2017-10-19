@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154117: No Drive Letter When Using PC-Card Type III Slot"
-permalink: kb/154/Q154117/
+permalink: /kb/154/Q154117/
 ---
 
 ## Q154117: No Drive Letter When Using PC-Card Type III Slot

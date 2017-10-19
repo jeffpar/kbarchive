@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187518: Apps Using Beep API on Multiprocessor Systems May Crash"
-permalink: kb/187/Q187518/
+permalink: /kb/187/Q187518/
 ---
 
 ## Q187518: Apps Using Beep API on Multiprocessor Systems May Crash

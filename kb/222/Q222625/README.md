@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222625: How to Close the MSN Quick View"
-permalink: kb/222/Q222625/
+permalink: /kb/222/Q222625/
 ---
 
 ## Q222625: How to Close the MSN Quick View

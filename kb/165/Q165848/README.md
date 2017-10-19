@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165848: Barr Channel Link Doesn't Support the Distribute Option"
-permalink: kb/165/Q165848/
+permalink: /kb/165/Q165848/
 ---
 
 ## Q165848: Barr Channel Link Doesn't Support the Distribute Option

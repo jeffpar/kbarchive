@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288301: Server Drops All Connections, System Logs Multiple Event 2000"
-permalink: kb/288/Q288301/
+permalink: /kb/288/Q288301/
 ---
 
 ## Q288301: Server Drops All Connections, System Logs Multiple Event 2000

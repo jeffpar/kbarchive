@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166394: HOWTO: Implement a Linked List in Visual Basic"
-permalink: kb/166/Q166394/
+permalink: /kb/166/Q166394/
 ---
 
 ## Q166394: HOWTO: Implement a Linked List in Visual Basic

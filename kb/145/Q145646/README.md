@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145646: MSB Ocean: Answers to Frizz's Treasure Hunt Clues"
-permalink: kb/145/Q145646/
+permalink: /kb/145/Q145646/
 ---
 
 ## Q145646: MSB Ocean: Answers to Frizz's Treasure Hunt Clues

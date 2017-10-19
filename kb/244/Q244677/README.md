@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244677: HOWTO: Create a Desktop Shortcut with the Windows Script Host"
-permalink: kb/244/Q244677/
+permalink: /kb/244/Q244677/
 ---
 
 ## Q244677: HOWTO: Create a Desktop Shortcut with the Windows Script Host

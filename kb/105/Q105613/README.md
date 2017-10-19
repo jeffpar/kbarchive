@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105613: README.TXT: Microsoft MS-DOS 6.2 (Part 2 of 4)"
-permalink: kb/105/Q105613/
+permalink: /kb/105/Q105613/
 ---
 
 ## Q105613: README.TXT: Microsoft MS-DOS 6.2 (Part 2 of 4)

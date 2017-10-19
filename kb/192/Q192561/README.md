@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192561: PRB: Error C2787 When Building a Project Using ATL 3.0"
-permalink: kb/192/Q192561/
+permalink: /kb/192/Q192561/
 ---
 
 ## Q192561: PRB: Error C2787 When Building a Project Using ATL 3.0

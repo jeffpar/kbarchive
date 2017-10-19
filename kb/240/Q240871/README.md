@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240871: BUG: Explicitly Specified Template Functions Not Overloaded"
-permalink: kb/240/Q240871/
+permalink: /kb/240/Q240871/
 ---
 
 ## Q240871: BUG: Explicitly Specified Template Functions Not Overloaded

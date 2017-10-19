@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155930: FIX: Grid on Page2 Does Not Refresh After ColumnCount Change"
-permalink: kb/155/Q155930/
+permalink: /kb/155/Q155930/
 ---
 
 ## Q155930: FIX: Grid on Page2 Does Not Refresh After ColumnCount Change

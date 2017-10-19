@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71863: Cannot Size Window or See Border Colors in Windows"
-permalink: kb/071/Q71863/
+permalink: /kb/071/Q71863/
 ---
 
 ## Q71863: Cannot Size Window or See Border Colors in Windows

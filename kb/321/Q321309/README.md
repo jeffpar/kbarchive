@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321309: MS02-019: Security Vulnerabilities in Internet Explorer"
-permalink: kb/321/Q321309/
+permalink: /kb/321/Q321309/
 ---
 
 ## Q321309: MS02-019: Security Vulnerabilities in Internet Explorer

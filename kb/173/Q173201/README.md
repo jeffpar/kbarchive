@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173201: XCLN: Exchange Brings Up IE Dial-up Connection on Start-up"
-permalink: kb/173/Q173201/
+permalink: /kb/173/Q173201/
 ---
 
 ## Q173201: XCLN: Exchange Brings Up IE Dial-up Connection on Start-up

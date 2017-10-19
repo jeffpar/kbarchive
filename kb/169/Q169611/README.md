@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169611: BUG: OLE AutoActivate Property Fails When Set To &quot;1 - GotFocus&quot;"
-permalink: kb/169/Q169611/
+permalink: /kb/169/Q169611/
 ---
 
 ## Q169611: BUG: OLE AutoActivate Property Fails When Set To &quot;1 - GotFocus&quot;

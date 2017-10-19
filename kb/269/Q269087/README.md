@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269087: XWEB: LoadLibrary Error Occurs When Registering CDO Files"
-permalink: kb/269/Q269087/
+permalink: /kb/269/Q269087/
 ---
 
 ## Q269087: XWEB: LoadLibrary Error Occurs When Registering CDO Files

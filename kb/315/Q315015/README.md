@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315015: Nddeagent.exe May Experience an Access Violation"
-permalink: kb/315/Q315015/
+permalink: /kb/315/Q315015/
 ---
 
 ## Q315015: Nddeagent.exe May Experience an Access Violation

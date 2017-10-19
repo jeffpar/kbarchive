@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270910: XCON: NDR Says Recipient Not Recognized When Large Message Sent"
-permalink: kb/270/Q270910/
+permalink: /kb/270/Q270910/
 ---
 
 ## Q270910: XCON: NDR Says Recipient Not Recognized When Large Message Sent

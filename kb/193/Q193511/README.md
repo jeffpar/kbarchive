@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193511: PRB: Can Not Debug Using IDE Over Windows CE Services"
-permalink: kb/193/Q193511/
+permalink: /kb/193/Q193511/
 ---
 
 ## Q193511: PRB: Can Not Debug Using IDE Over Windows CE Services

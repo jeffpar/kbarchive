@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322735: Issues with CRON When You Upgrade Interix 2.2 to SFU 3.0"
-permalink: kb/322/Q322735/
+permalink: /kb/322/Q322735/
 ---
 
 ## Q322735: Issues with CRON When You Upgrade Interix 2.2 to SFU 3.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326875: MCAD/MCSD Self-Paced Training Kit: Developing Windows-Based Appl"
-permalink: kb/326/Q326875/
+permalink: /kb/326/Q326875/
 ---
 
 ## Q326875: MCAD/MCSD Self-Paced Training Kit: Developing Windows-Based Appl

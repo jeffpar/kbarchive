@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193350: Virtual Globe Err Msg: Unable to Locate Favorites Folder..."
-permalink: kb/193/Q193350/
+permalink: /kb/193/Q193350/
 ---
 
 ## Q193350: Virtual Globe Err Msg: Unable to Locate Favorites Folder...

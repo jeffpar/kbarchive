@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132766: Plug and Play ISA Adapter Not Automatically Recognized"
-permalink: kb/132/Q132766/
+permalink: /kb/132/Q132766/
 ---
 
 ## Q132766: Plug and Play ISA Adapter Not Automatically Recognized

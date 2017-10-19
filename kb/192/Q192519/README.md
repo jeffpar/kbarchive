@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192519: XFOR: Cc: Field Moved to To: Field with MHS Extended Addressing"
-permalink: kb/192/Q192519/
+permalink: /kb/192/Q192519/
 ---
 
 ## Q192519: XFOR: Cc: Field Moved to To: Field with MHS Extended Addressing

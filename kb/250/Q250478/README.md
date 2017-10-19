@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250478: Streets 98 Err Msg: Application Can't Find GPS on Your System..."
-permalink: kb/250/Q250478/
+permalink: /kb/250/Q250478/
 ---
 
 ## Q250478: Streets 98 Err Msg: Application Can't Find GPS on Your System...

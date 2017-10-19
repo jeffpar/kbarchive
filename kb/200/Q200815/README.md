@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200815: NetBEUI Data Transfer Hangs on Intergraph Workstation"
-permalink: kb/200/Q200815/
+permalink: /kb/200/Q200815/
 ---
 
 ## Q200815: NetBEUI Data Transfer Hangs on Intergraph Workstation

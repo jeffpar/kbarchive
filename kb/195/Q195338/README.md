@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195338: FreeDoc Feature Not Supported In Outlook Web Access"
-permalink: kb/195/Q195338/
+permalink: /kb/195/Q195338/
 ---
 
 ## Q195338: FreeDoc Feature Not Supported In Outlook Web Access

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191815: Err Msg: Msnviewr Caused an Invalid Page Fault in Module Urlmon."
-permalink: kb/191/Q191815/
+permalink: /kb/191/Q191815/
 ---
 
 ## Q191815: Err Msg: Msnviewr Caused an Invalid Page Fault in Module Urlmon.

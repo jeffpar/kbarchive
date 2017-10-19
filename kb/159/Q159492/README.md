@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159492: PC Card Device Not Enumerated When Reinserted"
-permalink: kb/159/Q159492/
+permalink: /kb/159/Q159492/
 ---
 
 ## Q159492: PC Card Device Not Enumerated When Reinserted

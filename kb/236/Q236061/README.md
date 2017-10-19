@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236061: SMS: Zero Byte DDR Causes High CPU Usage by Discovery Data Mgr"
-permalink: kb/236/Q236061/
+permalink: /kb/236/Q236061/
 ---
 
 ## Q236061: SMS: Zero Byte DDR Causes High CPU Usage by Discovery Data Mgr

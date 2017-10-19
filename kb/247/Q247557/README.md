@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247557: IIS: How to Restart IIS Services by Using WSH with ADSI"
-permalink: kb/247/Q247557/
+permalink: /kb/247/Q247557/
 ---
 
 ## Q247557: IIS: How to Restart IIS Services by Using WSH with ADSI

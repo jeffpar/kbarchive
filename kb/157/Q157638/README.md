@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157638: WD97: Excel 97 Chart Object Becomes Picture Converting to Word 7"
-permalink: kb/157/Q157638/
+permalink: /kb/157/Q157638/
 ---
 
 ## Q157638: WD97: Excel 97 Chart Object Becomes Picture Converting to Word 7

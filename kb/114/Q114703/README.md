@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114703: DEL &#42;.&#42; Through Gateway Services for NetWare Leaves Files"
-permalink: kb/114/Q114703/
+permalink: /kb/114/Q114703/
 ---
 
 ## Q114703: DEL &#42;.&#42; Through Gateway Services for NetWare Leaves Files

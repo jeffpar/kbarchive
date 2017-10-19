@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156608: Err Msg: Account Unknown--Account Deleted"
-permalink: kb/156/Q156608/
+permalink: /kb/156/Q156608/
 ---
 
 ## Q156608: Err Msg: Account Unknown--Account Deleted

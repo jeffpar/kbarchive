@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254795: XADM: CDOSYS Stops While Sending or Posting by Using Port"
-permalink: kb/254/Q254795/
+permalink: /kb/254/Q254795/
 ---
 
 ## Q254795: XADM: CDOSYS Stops While Sending or Posting by Using Port

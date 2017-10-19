@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197077: Multiple Windows Open Automatically at Logon"
-permalink: kb/197/Q197077/
+permalink: /kb/197/Q197077/
 ---
 
 ## Q197077: Multiple Windows Open Automatically at Logon

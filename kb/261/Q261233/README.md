@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261233: Changing or Adding a Record Selection Formula in Crystal Reports"
-permalink: kb/261/Q261233/
+permalink: /kb/261/Q261233/
 ---
 
 ## Q261233: Changing or Adding a Record Selection Formula in Crystal Reports

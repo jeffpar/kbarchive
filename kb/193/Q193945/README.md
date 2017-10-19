@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193945: PRB: Warning Displays Saving Class With SET SAFETY OFF"
-permalink: kb/193/Q193945/
+permalink: /kb/193/Q193945/
 ---
 
 ## Q193945: PRB: Warning Displays Saving Class With SET SAFETY OFF

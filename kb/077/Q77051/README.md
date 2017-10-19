@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77051: Recorder Err Msg: Recorder Playback Aborted"
-permalink: kb/077/Q77051/
+permalink: /kb/077/Q77051/
 ---
 
 ## Q77051: Recorder Err Msg: Recorder Playback Aborted

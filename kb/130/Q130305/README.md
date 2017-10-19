@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130305: PRB: Error: &quot;The Fields in Table &lt;tablename&gt; Did Not Match...&quot;"
-permalink: kb/130/Q130305/
+permalink: /kb/130/Q130305/
 ---
 
 ## Q130305: PRB: Error: &quot;The Fields in Table &lt;tablename&gt; Did Not Match...&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255296: &quot;NET TIME&quot; Command Does Not Display the Time in Hungarian Window"
-permalink: kb/255/Q255296/
+permalink: /kb/255/Q255296/
 ---
 
 ## Q255296: &quot;NET TIME&quot; Command Does Not Display the Time in Hungarian Window

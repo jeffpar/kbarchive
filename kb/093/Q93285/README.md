@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93285: Windows Err Msg: The ATI FlexDesk Drivers Require 386 Enhanced"
-permalink: kb/093/Q93285/
+permalink: /kb/093/Q93285/
 ---
 
 ## Q93285: Windows Err Msg: The ATI FlexDesk Drivers Require 386 Enhanced

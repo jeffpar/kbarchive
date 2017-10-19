@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297531: PRB: Report Designer Menu Item Is Missing"
-permalink: kb/297/Q297531/
+permalink: /kb/297/Q297531/
 ---
 
 ## Q297531: PRB: Report Designer Menu Item Is Missing

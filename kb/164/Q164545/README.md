@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164545: ErrMsg: The Directory Name Is Invalid"
-permalink: kb/164/Q164545/
+permalink: /kb/164/Q164545/
 ---
 
 ## Q164545: ErrMsg: The Directory Name Is Invalid

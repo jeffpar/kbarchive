@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257834: CardBus Functionality in Windows 95"
-permalink: kb/257/Q257834/
+permalink: /kb/257/Q257834/
 ---
 
 ## Q257834: CardBus Functionality in Windows 95

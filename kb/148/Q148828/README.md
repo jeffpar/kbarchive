@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148828: Err Msg: Dlchlp.exe Is Required to Support 16-Bit Applications"
-permalink: kb/148/Q148828/
+permalink: /kb/148/Q148828/
 ---
 
 ## Q148828: Err Msg: Dlchlp.exe Is Required to Support 16-Bit Applications

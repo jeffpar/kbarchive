@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95733: PC Win: Spell Does Not Check Words Containing Numbers"
-permalink: kb/095/Q95733/
+permalink: /kb/095/Q95733/
 ---
 
 ## Q95733: PC Win: Spell Does Not Check Words Containing Numbers

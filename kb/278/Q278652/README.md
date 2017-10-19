@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278652: Games: Reduced Graphics Performance After Installing DirectX 8.0"
-permalink: kb/278/Q278652/
+permalink: /kb/278/Q278652/
 ---
 
 ## Q278652: Games: Reduced Graphics Performance After Installing DirectX 8.0

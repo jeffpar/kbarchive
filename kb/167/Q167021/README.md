@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167021: INFO: 3Com 3c900 Card Does Not Install During Unattended Setup"
-permalink: kb/167/Q167021/
+permalink: /kb/167/Q167021/
 ---
 
 ## Q167021: INFO: 3Com 3c900 Card Does Not Install During Unattended Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139604: Golf 2.0 for Windows: Multimedia Edition Readme.txt File"
-permalink: kb/139/Q139604/
+permalink: /kb/139/Q139604/
 ---
 
 ## Q139604: Golf 2.0 for Windows: Multimedia Edition Readme.txt File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123664: BUG: PAGE + Directive Doesn't Insert Form Feed in Listing File"
-permalink: kb/123/Q123664/
+permalink: /kb/123/Q123664/
 ---
 
 ## Q123664: BUG: PAGE + Directive Doesn't Insert Form Feed in Listing File

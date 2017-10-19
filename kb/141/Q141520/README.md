@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141520: Generic Text Driver Prints Control Characters and Blank Lines"
-permalink: kb/141/Q141520/
+permalink: /kb/141/Q141520/
 ---
 
 ## Q141520: Generic Text Driver Prints Control Characters and Blank Lines

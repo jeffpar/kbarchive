@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133469: Streets: Installing and Using Streets on Mobile Computers"
-permalink: kb/133/Q133469/
+permalink: /kb/133/Q133469/
 ---
 
 ## Q133469: Streets: Installing and Using Streets on Mobile Computers

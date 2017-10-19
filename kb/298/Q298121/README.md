@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298121: Free-to-paid"
-permalink: kb/298/Q298121/
+permalink: /kb/298/Q298121/
 ---
 
 ## Q298121: Free-to-paid

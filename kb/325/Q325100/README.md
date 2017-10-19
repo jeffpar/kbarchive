@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325100: Games: Error Message Received When You Try to Install a Game"
-permalink: kb/325/Q325100/
+permalink: /kb/325/Q325100/
 ---
 
 ## Q325100: Games: Error Message Received When You Try to Install a Game

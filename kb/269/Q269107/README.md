@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269107: Fax Service Is Missing After Upgrade from Windows NT Workstation"
-permalink: kb/269/Q269107/
+permalink: /kb/269/Q269107/
 ---
 
 ## Q269107: Fax Service Is Missing After Upgrade from Windows NT Workstation

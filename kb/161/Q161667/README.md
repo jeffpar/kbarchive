@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161667: WD97: Tab Spacing Incorrect in Online Layout View"
-permalink: kb/161/Q161667/
+permalink: /kb/161/Q161667/
 ---
 
 ## Q161667: WD97: Tab Spacing Incorrect in Online Layout View

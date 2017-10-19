@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152923: XCLN: Can't Change Expired Password From MAC Exchange Client"
-permalink: kb/152/Q152923/
+permalink: /kb/152/Q152923/
 ---
 
 ## Q152923: XCLN: Can't Change Expired Password From MAC Exchange Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300956: How to Manually Rebuild Performance Library Values"
-permalink: kb/300/Q300956/
+permalink: /kb/300/Q300956/
 ---
 
 ## Q300956: How to Manually Rebuild Performance Library Values

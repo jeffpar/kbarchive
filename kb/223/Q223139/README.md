@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223139: HOWTO: Add Support for Hosting VBScript to an ATL Application"
-permalink: kb/223/Q223139/
+permalink: /kb/223/Q223139/
 ---
 
 ## Q223139: HOWTO: Add Support for Hosting VBScript to an ATL Application

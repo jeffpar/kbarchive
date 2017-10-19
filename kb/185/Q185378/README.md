@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185378: IIS 4.0: FTP &quot;Bounce&quot; Attack and CERT Advisory CA-97.27"
-permalink: kb/185/Q185378/
+permalink: /kb/185/Q185378/
 ---
 
 ## Q185378: IIS 4.0: FTP &quot;Bounce&quot; Attack and CERT Advisory CA-97.27

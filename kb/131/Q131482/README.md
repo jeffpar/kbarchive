@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131482: Netstat Does Not Display Listening TCP Ports"
-permalink: kb/131/Q131482/
+permalink: /kb/131/Q131482/
 ---
 
 ## Q131482: Netstat Does Not Display Listening TCP Ports

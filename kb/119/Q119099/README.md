@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119099: BUG: Memory Leak with Desktop Database Drivers with USE"
-permalink: kb/119/Q119099/
+permalink: /kb/119/Q119099/
 ---
 
 ## Q119099: BUG: Memory Leak with Desktop Database Drivers with USE

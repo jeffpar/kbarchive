@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256199: XFOR: Migration Wizard May Not Work w. Events 8074, 8124, 8002"
-permalink: kb/256/Q256199/
+permalink: /kb/256/Q256199/
 ---
 
 ## Q256199: XFOR: Migration Wizard May Not Work w. Events 8074, 8124, 8002

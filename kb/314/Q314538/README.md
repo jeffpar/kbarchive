@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314538: Encarta 2002 Dictionary: Search Results List Is Incorrect"
-permalink: kb/314/Q314538/
+permalink: /kb/314/Q314538/
 ---
 
 ## Q314538: Encarta 2002 Dictionary: Search Results List Is Incorrect

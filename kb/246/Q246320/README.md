@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246320: System Administration of User Accounts with Interix"
-permalink: kb/246/Q246320/
+permalink: /kb/246/Q246320/
 ---
 
 ## Q246320: System Administration of User Accounts with Interix

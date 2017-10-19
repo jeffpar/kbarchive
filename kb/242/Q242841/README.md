@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242841: FS2000: Cannot Install on Beta Release of Windows 2000"
-permalink: kb/242/Q242841/
+permalink: /kb/242/Q242841/
 ---
 
 ## Q242841: FS2000: Cannot Install on Beta Release of Windows 2000

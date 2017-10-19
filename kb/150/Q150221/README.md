@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150221: FIX: DLLs Not Shown in the Add Reference...Browse Dialog Box"
-permalink: kb/150/Q150221/
+permalink: /kb/150/Q150221/
 ---
 
 ## Q150221: FIX: DLLs Not Shown in the Add Reference...Browse Dialog Box

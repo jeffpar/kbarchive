@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131724: PC Win: INSERT Key Does Not Allow Overstrike"
-permalink: kb/131/Q131724/
+permalink: /kb/131/Q131724/
 ---
 
 ## Q131724: PC Win: INSERT Key Does Not Allow Overstrike

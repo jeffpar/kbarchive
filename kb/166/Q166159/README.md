@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166159: NetBIOS Connections from a Multihomed Computer"
-permalink: kb/166/Q166159/
+permalink: /kb/166/Q166159/
 ---
 
 ## Q166159: NetBIOS Connections from a Multihomed Computer

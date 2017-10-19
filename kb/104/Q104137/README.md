@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104137: BUG: Iconic MDI Application Titles Do Not Update Properly"
-permalink: kb/104/Q104137/
+permalink: /kb/104/Q104137/
 ---
 
 ## Q104137: BUG: Iconic MDI Application Titles Do Not Update Properly

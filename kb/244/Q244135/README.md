@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244135: Too Many Printers Can Cause Unsuccessful Boot"
-permalink: kb/244/Q244135/
+permalink: /kb/244/Q244135/
 ---
 
 ## Q244135: Too Many Printers Can Cause Unsuccessful Boot

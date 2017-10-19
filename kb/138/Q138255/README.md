@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138255: Vfpmapi.exe Updated VFP for Windows FOXMAPI Files"
-permalink: kb/138/Q138255/
+permalink: /kb/138/Q138255/
 ---
 
 ## Q138255: Vfpmapi.exe Updated VFP for Windows FOXMAPI Files

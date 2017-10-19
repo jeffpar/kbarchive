@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303062: IIS - Secure Communications Edit Button Does Not Open Properties"
-permalink: kb/303/Q303062/
+permalink: /kb/303/Q303062/
 ---
 
 ## Q303062: IIS - Secure Communications Edit Button Does Not Open Properties

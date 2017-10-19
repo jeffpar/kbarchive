@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137415: Baseball 1995: Cursor Changes to Hand When Scrolling Text"
-permalink: kb/137/Q137415/
+permalink: /kb/137/Q137415/
 ---
 
 ## Q137415: Baseball 1995: Cursor Changes to Hand When Scrolling Text

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198607: PRB: Access Violation in VB Run-Time Using AddressOf"
-permalink: kb/198/Q198607/
+permalink: /kb/198/Q198607/
 ---
 
 ## Q198607: PRB: Access Violation in VB Run-Time Using AddressOf

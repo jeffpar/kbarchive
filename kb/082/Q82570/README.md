@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82570: Text Is Clipped in Micrografx Designer 3.1"
-permalink: kb/082/Q82570/
+permalink: /kb/082/Q82570/
 ---
 
 ## Q82570: Text Is Clipped in Micrografx Designer 3.1

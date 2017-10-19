@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117802: PC Ext: Display Options in Verbose Mode"
-permalink: kb/117/Q117802/
+permalink: /kb/117/Q117802/
 ---
 
 ## Q117802: PC Ext: Display Options in Verbose Mode

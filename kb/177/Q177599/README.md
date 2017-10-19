@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177599: XFOR: SNADS and PROFS Connectors Do Not Convert Note Objects"
-permalink: kb/177/Q177599/
+permalink: /kb/177/Q177599/
 ---
 
 ## Q177599: XFOR: SNADS and PROFS Connectors Do Not Convert Note Objects

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90331: Cannot View Computer Name When Real-Mode Redirector Is Loaded"
-permalink: kb/090/Q90331/
+permalink: /kb/090/Q90331/
 ---
 
 ## Q90331: Cannot View Computer Name When Real-Mode Redirector Is Loaded

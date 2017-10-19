@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140956: XCON: MTA: Aborts Connection After Legitimate RTSE Activity"
-permalink: kb/140/Q140956/
+permalink: /kb/140/Q140956/
 ---
 
 ## Q140956: XCON: MTA: Aborts Connection After Legitimate RTSE Activity

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186514: Terminal Server Does Not Support Sentinel Devices"
-permalink: kb/186/Q186514/
+permalink: /kb/186/Q186514/
 ---
 
 ## Q186514: Terminal Server Does Not Support Sentinel Devices

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193541: INFO: Visual Basic 5.0 Product Documentation Print Version"
-permalink: kb/193/Q193541/
+permalink: /kb/193/Q193541/
 ---
 
 ## Q193541: INFO: Visual Basic 5.0 Product Documentation Print Version

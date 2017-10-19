@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195555: Bookshelf: How to Turn Off Sounds and Visual Effects"
-permalink: kb/195/Q195555/
+permalink: /kb/195/Q195555/
 ---
 
 ## Q195555: Bookshelf: How to Turn Off Sounds and Visual Effects

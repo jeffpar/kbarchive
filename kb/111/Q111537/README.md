@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111537: PC Win: Frequently Asked Questions for Mail for Windows 3.2"
-permalink: kb/111/Q111537/
+permalink: /kb/111/Q111537/
 ---
 
 ## Q111537: PC Win: Frequently Asked Questions for Mail for Windows 3.2

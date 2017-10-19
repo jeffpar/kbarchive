@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196950: WD97: How Bin Selection Works on the HP LaserJet 4"
-permalink: kb/196/Q196950/
+permalink: /kb/196/Q196950/
 ---
 
 ## Q196950: WD97: How Bin Selection Works on the HP LaserJet 4

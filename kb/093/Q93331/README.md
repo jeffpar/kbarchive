@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93331: How to Specify Field Alignment in the Report Writer"
-permalink: kb/093/Q93331/
+permalink: /kb/093/Q93331/
 ---
 
 ## Q93331: How to Specify Field Alignment in the Report Writer

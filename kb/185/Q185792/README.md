@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185792: Shared Printers Are Unavailable After a Server Restart"
-permalink: kb/185/Q185792/
+permalink: /kb/185/Q185792/
 ---
 
 ## Q185792: Shared Printers Are Unavailable After a Server Restart

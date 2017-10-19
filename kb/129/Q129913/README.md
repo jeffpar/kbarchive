@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129913: FIX: Browse Key Record Pointer Moves Incorrectly"
-permalink: kb/129/Q129913/
+permalink: /kb/129/Q129913/
 ---
 
 ## Q129913: FIX: Browse Key Record Pointer Moves Incorrectly

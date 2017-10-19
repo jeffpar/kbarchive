@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58400: Cannot Design B-2 Bomber in Flight Simulator Promotional Ad"
-permalink: kb/058/Q58400/
+permalink: /kb/058/Q58400/
 ---
 
 ## Q58400: Cannot Design B-2 Bomber in Flight Simulator Promotional Ad

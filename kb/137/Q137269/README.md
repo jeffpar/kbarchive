@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137269: System Agent May Hang MS Backup"
-permalink: kb/137/Q137269/
+permalink: /kb/137/Q137269/
 ---
 
 ## Q137269: System Agent May Hang MS Backup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138023: Windows 3.x Control Panel Icons Appear in Windows 95"
-permalink: kb/138/Q138023/
+permalink: /kb/138/Q138023/
 ---
 
 ## Q138023: Windows 3.x Control Panel Icons Appear in Windows 95

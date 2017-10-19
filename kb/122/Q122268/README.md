@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122268: FIX: CTRL+Z Terminates File Load in Development Environment"
-permalink: kb/122/Q122268/
+permalink: /kb/122/Q122268/
 ---
 
 ## Q122268: FIX: CTRL+Z Terminates File Load in Development Environment

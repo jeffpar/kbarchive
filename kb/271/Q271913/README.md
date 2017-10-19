@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271913: XADM: CDO MAPI Session Logon Does Not Work Running As a Service"
-permalink: kb/271/Q271913/
+permalink: /kb/271/Q271913/
 ---
 
 ## Q271913: XADM: CDO MAPI Session Logon Does Not Work Running As a Service

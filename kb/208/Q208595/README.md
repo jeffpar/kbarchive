@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q208595: VBCE: Resetting Toolbars in the IDE Can Cause Application Error"
-permalink: kb/208/Q208595/
+permalink: /kb/208/Q208595/
 ---
 
 ## Q208595: VBCE: Resetting Toolbars in the IDE Can Cause Application Error

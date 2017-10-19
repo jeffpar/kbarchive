@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240374: Explorer Reverts New Folder Name to &quot;New Folder&quot; in SFM Volume"
-permalink: kb/240/Q240374/
+permalink: /kb/240/Q240374/
 ---
 
 ## Q240374: Explorer Reverts New Folder Name to &quot;New Folder&quot; in SFM Volume

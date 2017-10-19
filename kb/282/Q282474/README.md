@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282474: HOWTO: Print Using Custom Page Sizes on Windows NT/2000"
-permalink: kb/282/Q282474/
+permalink: /kb/282/Q282474/
 ---
 
 ## Q282474: HOWTO: Print Using Custom Page Sizes on Windows NT/2000

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82032: CD-ROM Drives Compatible with ProAudio Spectrum Card"
-permalink: kb/082/Q82032/
+permalink: /kb/082/Q82032/
 ---
 
 ## Q82032: CD-ROM Drives Compatible with ProAudio Spectrum Card

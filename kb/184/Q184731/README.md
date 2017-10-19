@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184731: XADM: MMC Does Not Run after MS Exchange Chat Installed on BDC"
-permalink: kb/184/Q184731/
+permalink: /kb/184/Q184731/
 ---
 
 ## Q184731: XADM: MMC Does Not Run after MS Exchange Chat Installed on BDC

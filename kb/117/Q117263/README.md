@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117263: How to Clear the Text of MaskedEdit Control w/o Clearing Mask"
-permalink: kb/117/Q117263/
+permalink: /kb/117/Q117263/
 ---
 
 ## Q117263: How to Clear the Text of MaskedEdit Control w/o Clearing Mask

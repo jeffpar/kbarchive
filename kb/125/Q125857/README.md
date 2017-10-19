@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125857: NET Command Does Not Return Errorlevel"
-permalink: kb/125/Q125857/
+permalink: /kb/125/Q125857/
 ---
 
 ## Q125857: NET Command Does Not Return Errorlevel

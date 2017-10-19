@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95396: WFWG Err Msg: Windows File Server... with SMC3000 Series"
-permalink: kb/095/Q95396/
+permalink: /kb/095/Q95396/
 ---
 
 ## Q95396: WFWG Err Msg: Windows File Server... with SMC3000 Series

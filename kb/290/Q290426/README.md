@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290426: PRB: Round() Function Does Not Accept Negative Parameters"
-permalink: kb/290/Q290426/
+permalink: /kb/290/Q290426/
 ---
 
 ## Q290426: PRB: Round() Function Does Not Accept Negative Parameters

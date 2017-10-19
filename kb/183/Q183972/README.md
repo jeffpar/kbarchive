@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183972: ODE/ADT: Error Running Setup.exe to Install Run-Time Application"
-permalink: kb/183/Q183972/
+permalink: /kb/183/Q183972/
 ---
 
 ## Q183972: ODE/ADT: Error Running Setup.exe to Install Run-Time Application

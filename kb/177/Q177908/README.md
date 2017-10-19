@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177908: ADT/ODE: There Is &quot;No Object in this Control&quot; Error Message"
-permalink: kb/177/Q177908/
+permalink: /kb/177/Q177908/
 ---
 
 ## Q177908: ADT/ODE: There Is &quot;No Object in this Control&quot; Error Message

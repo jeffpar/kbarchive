@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108022: Autopilot Flies to the Wrong Station"
-permalink: kb/108/Q108022/
+permalink: /kb/108/Q108022/
 ---
 
 ## Q108022: Autopilot Flies to the Wrong Station

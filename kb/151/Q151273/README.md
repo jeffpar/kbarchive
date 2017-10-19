@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151273: XGEN: Definitions of Folder Design Conflict Messages"
-permalink: kb/151/Q151273/
+permalink: /kb/151/Q151273/
 ---
 
 ## Q151273: XGEN: Definitions of Folder Design Conflict Messages

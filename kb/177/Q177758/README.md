@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177758: Bookshelf: How to Use the Parental Control Feature"
-permalink: kb/177/Q177758/
+permalink: /kb/177/Q177758/
 ---
 
 ## Q177758: Bookshelf: How to Use the Parental Control Feature

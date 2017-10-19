@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127848: PRB: RELEASE Command Does Not Release a Form"
-permalink: kb/127/Q127848/
+permalink: /kb/127/Q127848/
 ---
 
 ## Q127848: PRB: RELEASE Command Does Not Release a Form

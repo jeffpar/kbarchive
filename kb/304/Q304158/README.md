@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304158: Patch for &quot;HyperTerminal Buffer Overflow&quot; Vulnerability"
-permalink: kb/304/Q304158/
+permalink: /kb/304/Q304158/
 ---
 
 ## Q304158: Patch for &quot;HyperTerminal Buffer Overflow&quot; Vulnerability

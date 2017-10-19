@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253295: FIX: Loading/Unloading Form w/MSHFlexGrid Causes Resource Leak"
-permalink: kb/253/Q253295/
+permalink: /kb/253/Q253295/
 ---
 
 ## Q253295: FIX: Loading/Unloading Form w/MSHFlexGrid Causes Resource Leak

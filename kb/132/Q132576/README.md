@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132576: Compaq Elite Suspend Problems"
-permalink: kb/132/Q132576/
+permalink: /kb/132/Q132576/
 ---
 
 ## Q132576: Compaq Elite Suspend Problems

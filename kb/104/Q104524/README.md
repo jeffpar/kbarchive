@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104524: Incorrect Syntax for DOSSHELL.INI in MS-DOS Shell Help"
-permalink: kb/104/Q104524/
+permalink: /kb/104/Q104524/
 ---
 
 ## Q104524: Incorrect Syntax for DOSSHELL.INI in MS-DOS Shell Help

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245137: 'STOP: 0xC0000142 User32.dll' Error After Windows NT 4.0 Upgrade"
-permalink: kb/245/Q245137/
+permalink: /kb/245/Q245137/
 ---
 
 ## Q245137: 'STOP: 0xC0000142 User32.dll' Error After Windows NT 4.0 Upgrade

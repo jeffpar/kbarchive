@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134690: INVDOS Fails When Inventorying an Unformatted Partition"
-permalink: kb/134/Q134690/
+permalink: /kb/134/Q134690/
 ---
 
 ## Q134690: INVDOS Fails When Inventorying an Unformatted Partition

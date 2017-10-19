@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160593: PRB: Setup from Setup Wizard May Install OCX in Wrong Folder"
-permalink: kb/160/Q160593/
+permalink: /kb/160/Q160593/
 ---
 
 ## Q160593: PRB: Setup from Setup Wizard May Install OCX in Wrong Folder

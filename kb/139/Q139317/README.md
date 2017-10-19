@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139317: Encarta 1996: MSETUP.TXT Contents"
-permalink: kb/139/Q139317/
+permalink: /kb/139/Q139317/
 ---
 
 ## Q139317: Encarta 1996: MSETUP.TXT Contents

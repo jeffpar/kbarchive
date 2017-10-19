@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170233: MDG:Purpose of the POBOX in Remote Mail"
-permalink: kb/170/Q170233/
+permalink: /kb/170/Q170233/
 ---
 
 ## Q170233: MDG:Purpose of the POBOX in Remote Mail

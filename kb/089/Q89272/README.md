@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89272: Third-Party Products for FoxBASE+"
-permalink: kb/089/Q89272/
+permalink: /kb/089/Q89272/
 ---
 
 ## Q89272: Third-Party Products for FoxBASE+

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230167: BUG:DataCombo/DataList Not Displaying Recordset with Sort/Filter"
-permalink: kb/230/Q230167/
+permalink: /kb/230/Q230167/
 ---
 
 ## Q230167: BUG:DataCombo/DataList Not Displaying Recordset with Sort/Filter

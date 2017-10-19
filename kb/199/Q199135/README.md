@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199135: SMS: Using DeletePDF to Delete Imported PDFs"
-permalink: kb/199/Q199135/
+permalink: /kb/199/Q199135/
 ---
 
 ## Q199135: SMS: Using DeletePDF to Delete Imported PDFs

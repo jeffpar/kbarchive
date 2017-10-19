@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240804: Pause Statement Does Not Work in Logon Script"
-permalink: kb/240/Q240804/
+permalink: /kb/240/Q240804/
 ---
 
 ## Q240804: Pause Statement Does Not Work in Logon Script

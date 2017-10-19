@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161526: FP97: Heading Style Ignored in Converted Word Document"
-permalink: kb/161/Q161526/
+permalink: /kb/161/Q161526/
 ---
 
 ## Q161526: FP97: Heading Style Ignored in Converted Word Document

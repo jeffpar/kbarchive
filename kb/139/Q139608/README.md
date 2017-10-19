@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139608: SMB Traffic During Windows NT Domain Logon"
-permalink: kb/139/Q139608/
+permalink: /kb/139/Q139608/
 ---
 
 ## Q139608: SMB Traffic During Windows NT Domain Logon

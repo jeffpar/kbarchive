@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155522: XADM: SP2 or SP3 Server Upgrade Fails with 281 and 1171 Errors"
-permalink: kb/155/Q155522/
+permalink: /kb/155/Q155522/
 ---
 
 ## Q155522: XADM: SP2 or SP3 Server Upgrade Fails with 281 and 1171 Errors

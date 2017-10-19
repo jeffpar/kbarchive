@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67349: List of 8514/A Graphic Boards and Vendor-Supplied Drivers"
-permalink: kb/067/Q67349/
+permalink: /kb/067/Q67349/
 ---
 
 ## Q67349: List of 8514/A Graphic Boards and Vendor-Supplied Drivers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195368: WD97: Drag-and-Drop Edit Won't Swap Positions of 2 Table Rows"
-permalink: kb/195/Q195368/
+permalink: /kb/195/Q195368/
 ---
 
 ## Q195368: WD97: Drag-and-Drop Edit Won't Swap Positions of 2 Table Rows

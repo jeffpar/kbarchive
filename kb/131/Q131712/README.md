@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131712: STOP Msg: 0x0000007B or SCSI Devices Missing on Proliant 1500"
-permalink: kb/131/Q131712/
+permalink: /kb/131/Q131712/
 ---
 
 ## Q131712: STOP Msg: 0x0000007B or SCSI Devices Missing on Proliant 1500

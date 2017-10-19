@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319358: The Focus Rectangle Does Not Move As Expected"
-permalink: kb/319/Q319358/
+permalink: /kb/319/Q319358/
 ---
 
 ## Q319358: The Focus Rectangle Does Not Move As Expected

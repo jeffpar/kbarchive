@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199532: XWEB:Netscape Navigator for Solaris Corrupts Options Page in OWA"
-permalink: kb/199/Q199532/
+permalink: /kb/199/Q199532/
 ---
 
 ## Q199532: XWEB:Netscape Navigator for Solaris Corrupts Options Page in OWA

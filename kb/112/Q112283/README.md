@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112283: Mac Wkst: Shiva Config Init Version 3.4 and 3.5 Not Compatible"
-permalink: kb/112/Q112283/
+permalink: /kb/112/Q112283/
 ---
 
 ## Q112283: Mac Wkst: Shiva Config Init Version 3.4 and 3.5 Not Compatible

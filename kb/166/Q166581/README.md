@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166581: XADM: Exchange/cc:Mail Dirsync: CR w/ Corrupted Proxy Addresses"
-permalink: kb/166/Q166581/
+permalink: /kb/166/Q166581/
 ---
 
 ## Q166581: XADM: Exchange/cc:Mail Dirsync: CR w/ Corrupted Proxy Addresses

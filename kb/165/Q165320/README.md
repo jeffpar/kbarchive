@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165320: Shared Folder Gateway Hangs Getting Directory Listing"
-permalink: kb/165/Q165320/
+permalink: /kb/165/Q165320/
 ---
 
 ## Q165320: Shared Folder Gateway Hangs Getting Directory Listing

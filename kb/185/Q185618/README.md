@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185618: Schannel.dll and Schnl128.dll Updates in Windows NT 4.0 SP4"
-permalink: kb/185/Q185618/
+permalink: /kb/185/Q185618/
 ---
 
 ## Q185618: Schannel.dll and Schnl128.dll Updates in Windows NT 4.0 SP4

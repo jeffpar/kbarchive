@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186941: Mac Bookshelf 96-97 Err Msg: Unable to Start Because of an Error"
-permalink: kb/186/Q186941/
+permalink: /kb/186/Q186941/
 ---
 
 ## Q186941: Mac Bookshelf 96-97 Err Msg: Unable to Start Because of an Error

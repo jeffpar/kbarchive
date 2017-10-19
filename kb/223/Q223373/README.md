@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223373: SNA Server Rejects Host's BIND Response"
-permalink: kb/223/Q223373/
+permalink: /kb/223/Q223373/
 ---
 
 ## Q223373: SNA Server Rejects Host's BIND Response

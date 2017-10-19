@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207721: UA: No Start Button When You Attempt to Join Multiplayer Game"
-permalink: kb/207/Q207721/
+permalink: /kb/207/Q207721/
 ---
 
 ## Q207721: UA: No Start Button When You Attempt to Join Multiplayer Game

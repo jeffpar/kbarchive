@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101708: Platform Restrictions for MS-DOS-Based Graphics Programs"
-permalink: kb/101/Q101708/
+permalink: /kb/101/Q101708/
 ---
 
 ## Q101708: Platform Restrictions for MS-DOS-Based Graphics Programs

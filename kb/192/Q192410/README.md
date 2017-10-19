@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192410: Encarta Virtual Globe 1998 Does Not Start"
-permalink: kb/192/Q192410/
+permalink: /kb/192/Q192410/
 ---
 
 ## Q192410: Encarta Virtual Globe 1998 Does Not Start

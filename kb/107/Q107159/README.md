@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107159: MS-DOS 6.2 Stacker Conversion CONVERT.TXT File"
-permalink: kb/107/Q107159/
+permalink: /kb/107/Q107159/
 ---
 
 ## Q107159: MS-DOS 6.2 Stacker Conversion CONVERT.TXT File

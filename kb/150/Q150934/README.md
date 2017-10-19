@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150934: How to Create a Performance Monitor Log for NT Troubleshooting"
-permalink: kb/150/Q150934/
+permalink: /kb/150/Q150934/
 ---
 
 ## Q150934: How to Create a Performance Monitor Log for NT Troubleshooting

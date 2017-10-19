@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126546: Problems Running SNA Server 5250 Applet (Autoconnect Enabled)"
-permalink: kb/126/Q126546/
+permalink: /kb/126/Q126546/
 ---
 
 ## Q126546: Problems Running SNA Server 5250 Applet (Autoconnect Enabled)

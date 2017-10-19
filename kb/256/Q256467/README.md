@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256467: XADM: Information Store Doesn't Log Message in Event Log"
-permalink: kb/256/Q256467/
+permalink: /kb/256/Q256467/
 ---
 
 ## Q256467: XADM: Information Store Doesn't Log Message in Event Log

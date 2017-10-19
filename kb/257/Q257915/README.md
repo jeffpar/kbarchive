@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257915: Encarta 99 RO: Text in Field 2 on Notecard Appears as Asterisks"
-permalink: kb/257/Q257915/
+permalink: /kb/257/Q257915/
 ---
 
 ## Q257915: Encarta 99 RO: Text in Field 2 on Notecard Appears as Asterisks

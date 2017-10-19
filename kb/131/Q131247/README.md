@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131247: Microsoft Exchange Does Not Recognize Recipient"
-permalink: kb/131/Q131247/
+permalink: /kb/131/Q131247/
 ---
 
 ## Q131247: Microsoft Exchange Does Not Recognize Recipient

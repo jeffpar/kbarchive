@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313701: Logon Manager Does Not Appear When Outlook Express is Launched A"
-permalink: kb/313/Q313701/
+permalink: /kb/313/Q313701/
 ---
 
 ## Q313701: Logon Manager Does Not Appear When Outlook Express is Launched A

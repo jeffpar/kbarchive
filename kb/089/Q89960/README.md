@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q89960: Novell LPTx-options Setting in WIN.INI [Network] Section"
-permalink: kb/089/Q89960/
+title: "Q89960: Novell LPTx-options Setting in WIN.INI &#91;Network&#93; Section"
+permalink: /kb/089/Q89960/
 ---
 
-## Q89960: Novell LPTx-options Setting in WIN.INI [Network] Section
+## Q89960: Novell LPTx-options Setting in WIN.INI &#91;Network&#93; Section
 
 	Article: Q89960
 	Product(s): Microsoft Windows 95.x Retail Product

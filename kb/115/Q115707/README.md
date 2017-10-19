@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115707: FIX: C2857 Error Incorrectly Generated Using /Yc Option"
-permalink: kb/115/Q115707/
+permalink: /kb/115/Q115707/
 ---
 
 ## Q115707: FIX: C2857 Error Incorrectly Generated Using /Yc Option

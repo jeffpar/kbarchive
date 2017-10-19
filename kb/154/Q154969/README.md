@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154969: Problem Installing Rnaplus.inf File"
-permalink: kb/154/Q154969/
+permalink: /kb/154/Q154969/
 ---
 
 ## Q154969: Problem Installing Rnaplus.inf File

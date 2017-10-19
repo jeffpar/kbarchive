@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133093: Julia Child: Errors or System Hangs if CD-ROM is Removed"
-permalink: kb/133/Q133093/
+permalink: /kb/133/Q133093/
 ---
 
 ## Q133093: Julia Child: Errors or System Hangs if CD-ROM is Removed

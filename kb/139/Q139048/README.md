@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139048: BUG: Update SQL Works Incorrectly with RAND() in WHERE Clause"
-permalink: kb/139/Q139048/
+permalink: /kb/139/Q139048/
 ---
 
 ## Q139048: BUG: Update SQL Works Incorrectly with RAND() in WHERE Clause

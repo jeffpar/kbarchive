@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235196: SMS: Illegal Settings Can Be Set for Software Distribution"
-permalink: kb/235/Q235196/
+permalink: /kb/235/Q235196/
 ---
 
 ## Q235196: SMS: Illegal Settings Can Be Set for Software Distribution

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167966: FIX: C2248: Statics in Friends, No Access to Protected Members"
-permalink: kb/167/Q167966/
+permalink: /kb/167/Q167966/
 ---
 
 ## Q167966: FIX: C2248: Statics in Friends, No Access to Protected Members

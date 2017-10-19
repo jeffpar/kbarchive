@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163359: HOWTO: STL Sample for list::size,list::resize Functions"
-permalink: kb/163/Q163359/
+permalink: /kb/163/Q163359/
 ---
 
 ## Q163359: HOWTO: STL Sample for list::size,list::resize Functions

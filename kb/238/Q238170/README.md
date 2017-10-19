@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238170: XFOR: Lotus Notes Client Information"
-permalink: kb/238/Q238170/
+permalink: /kb/238/Q238170/
 ---
 
 ## Q238170: XFOR: Lotus Notes Client Information

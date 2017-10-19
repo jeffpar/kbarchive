@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169652: Windows 95 Stops Responding with CardBus Card Installed"
-permalink: kb/169/Q169652/
+permalink: /kb/169/Q169652/
 ---
 
 ## Q169652: Windows 95 Stops Responding with CardBus Card Installed

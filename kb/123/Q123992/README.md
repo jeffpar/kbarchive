@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123992: Basic Configurations for COM Ports in Windows 95"
-permalink: kb/123/Q123992/
+permalink: /kb/123/Q123992/
 ---
 
 ## Q123992: Basic Configurations for COM Ports in Windows 95

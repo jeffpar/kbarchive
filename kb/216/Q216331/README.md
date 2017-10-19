@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216331: PRB: Pages of Page Frame Activate with Click When the PageFrame."
-permalink: kb/216/Q216331/
+permalink: /kb/216/Q216331/
 ---
 
 ## Q216331: PRB: Pages of Page Frame Activate with Click When the PageFrame.

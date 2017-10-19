@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149696: FIX: Bad Code Generated for Inline Assembly Using Enumerators"
-permalink: kb/149/Q149696/
+permalink: /kb/149/Q149696/
 ---
 
 ## Q149696: FIX: Bad Code Generated for Inline Assembly Using Enumerators

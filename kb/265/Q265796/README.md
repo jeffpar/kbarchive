@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265796: HOWTO: Run ADOCE on the Pocket PC Platform"
-permalink: kb/265/Q265796/
+permalink: /kb/265/Q265796/
 ---
 
 ## Q265796: HOWTO: Run ADOCE on the Pocket PC Platform

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175939: White Paper: Avoiding the Top Ten Design Mistakes"
-permalink: kb/175/Q175939/
+permalink: /kb/175/Q175939/
 ---
 
 ## Q175939: White Paper: Avoiding the Top Ten Design Mistakes

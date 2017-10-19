@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157710: XCLN: CHT Default Font Incorrect"
-permalink: kb/157/Q157710/
+permalink: /kb/157/Q157710/
 ---
 
 ## Q157710: XCLN: CHT Default Font Incorrect

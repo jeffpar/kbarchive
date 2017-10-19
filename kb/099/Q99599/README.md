@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99599: FoxBASE+/Mac Err Msg: File Is in Use by Another"
-permalink: kb/099/Q99599/
+permalink: /kb/099/Q99599/
 ---
 
 ## Q99599: FoxBASE+/Mac Err Msg: File Is in Use by Another

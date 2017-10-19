@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q19973: Running Flight Simulator on an IBM PC AT with an EGA"
-permalink: kb/019/Q19973/
+permalink: /kb/019/Q19973/
 ---
 
 ## Q19973: Running Flight Simulator on an IBM PC AT with an EGA

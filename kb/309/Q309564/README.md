@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309564: MechCommander 2: Video RAM Error Setting Hardware Configuration"
-permalink: kb/309/Q309564/
+permalink: /kb/309/Q309564/
 ---
 
 ## Q309564: MechCommander 2: Video RAM Error Setting Hardware Configuration

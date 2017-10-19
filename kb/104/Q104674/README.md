@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104674: Chaining Interrupts Using MASM"
-permalink: kb/104/Q104674/
+permalink: /kb/104/Q104674/
 ---
 
 ## Q104674: Chaining Interrupts Using MASM

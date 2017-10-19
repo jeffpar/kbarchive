@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192310: WD97: Formula in Table Is Incorrect When Using Track Changes"
-permalink: kb/192/Q192310/
+permalink: /kb/192/Q192310/
 ---
 
 ## Q192310: WD97: Formula in Table Is Incorrect When Using Track Changes

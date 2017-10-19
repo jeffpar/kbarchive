@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141395: FIX: Problem Setting Focus to a Combobox from a PageFrame"
-permalink: kb/141/Q141395/
+permalink: /kb/141/Q141395/
 ---
 
 ## Q141395: FIX: Problem Setting Focus to a Combobox from a PageFrame

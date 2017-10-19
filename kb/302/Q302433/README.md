@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302433: Cannot Install Legacy Version Of MSN Software After Uninstalling"
-permalink: kb/302/Q302433/
+permalink: /kb/302/Q302433/
 ---
 
 ## Q302433: Cannot Install Legacy Version Of MSN Software After Uninstalling

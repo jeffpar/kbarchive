@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93594: BUG: No Warning Moving Segment Register to Extended Reg."
-permalink: kb/093/Q93594/
+permalink: /kb/093/Q93594/
 ---
 
 ## Q93594: BUG: No Warning Moving Segment Register to Extended Reg.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131408: Object Variables Return &quot;(Object)&quot; in Debug Window"
-permalink: kb/131/Q131408/
+permalink: /kb/131/Q131408/
 ---
 
 ## Q131408: Object Variables Return &quot;(Object)&quot; in Debug Window

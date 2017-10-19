@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172059: HOWTO: Show a Modal Form from an OLE Server DLL"
-permalink: kb/172/Q172059/
+permalink: /kb/172/Q172059/
 ---
 
 ## Q172059: HOWTO: Show a Modal Form from an OLE Server DLL

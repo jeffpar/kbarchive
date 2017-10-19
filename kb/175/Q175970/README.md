@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175970: White Paper on Developing Advanced ActiveX Controls"
-permalink: kb/175/Q175970/
+permalink: /kb/175/Q175970/
 ---
 
 ## Q175970: White Paper on Developing Advanced ActiveX Controls

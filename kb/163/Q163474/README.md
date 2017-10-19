@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163474: BUG: MessageBox with Keycomp=Windows Returns Incorrect Value"
-permalink: kb/163/Q163474/
+permalink: /kb/163/Q163474/
 ---
 
 ## Q163474: BUG: MessageBox with Keycomp=Windows Returns Incorrect Value

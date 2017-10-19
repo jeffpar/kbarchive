@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180822: FP98: How to Use Microsoft Forms 2.0 ActiveX Controls"
-permalink: kb/180/Q180822/
+permalink: /kb/180/Q180822/
 ---
 
 ## Q180822: FP98: How to Use Microsoft Forms 2.0 ActiveX Controls

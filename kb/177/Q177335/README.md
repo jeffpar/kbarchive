@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177335: How to Create a Demand Dial PPTP Interface"
-permalink: kb/177/Q177335/
+permalink: /kb/177/Q177335/
 ---
 
 ## Q177335: How to Create a Demand Dial PPTP Interface

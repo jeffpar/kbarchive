@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140858: PRB: _CRTDBG_MAP_ALLOC Does Not Work as Documented"
-permalink: kb/140/Q140858/
+permalink: /kb/140/Q140858/
 ---
 
 ## Q140858: PRB: _CRTDBG_MAP_ALLOC Does Not Work as Documented

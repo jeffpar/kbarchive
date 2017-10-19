@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101321: ADT: Cannot Select Any Object Except MS Access Menu"
-permalink: kb/101/Q101321/
+permalink: /kb/101/Q101321/
 ---
 
 ## Q101321: ADT: Cannot Select Any Object Except MS Access Menu

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185288: PRB: Cheyenne InocuLAN May Cause ATL Wizard to Crash DevStudio"
-permalink: kb/185/Q185288/
+permalink: /kb/185/Q185288/
 ---
 
 ## Q185288: PRB: Cheyenne InocuLAN May Cause ATL Wizard to Crash DevStudio

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82515: Harvard Graphics 3.0 Mouse Corruption Shown on Screen"
-permalink: kb/082/Q82515/
+permalink: /kb/082/Q82515/
 ---
 
 ## Q82515: Harvard Graphics 3.0 Mouse Corruption Shown on Screen

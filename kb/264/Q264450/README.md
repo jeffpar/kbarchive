@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264450: Reduced Working Set Size After Installing Windows NT SP6a"
-permalink: kb/264/Q264450/
+permalink: /kb/264/Q264450/
 ---
 
 ## Q264450: Reduced Working Set Size After Installing Windows NT SP6a

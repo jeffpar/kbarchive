@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64353: With &quot;deflang&quot; Switch, PWB Prompts for Setting Program List"
-permalink: kb/064/Q64353/
+permalink: /kb/064/Q64353/
 ---
 
 ## Q64353: With &quot;deflang&quot; Switch, PWB Prompts for Setting Program List

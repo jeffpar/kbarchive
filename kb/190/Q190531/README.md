@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190531: FIX: Calling delete or free() in ATL Causes Access Violation"
-permalink: kb/190/Q190531/
+permalink: /kb/190/Q190531/
 ---
 
 ## Q190531: FIX: Calling delete or free() in ATL Causes Access Violation

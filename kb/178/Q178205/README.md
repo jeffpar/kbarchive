@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178205: Connecting to a Server is Slow over RAS Using LMHOSTS File"
-permalink: kb/178/Q178205/
+permalink: /kb/178/Q178205/
 ---
 
 ## Q178205: Connecting to a Server is Slow over RAS Using LMHOSTS File

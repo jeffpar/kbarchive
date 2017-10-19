@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104285: Dinosaurs: Title Bar Is Wrong Color When Active/Inactive"
-permalink: kb/104/Q104285/
+permalink: /kb/104/Q104285/
 ---
 
 ## Q104285: Dinosaurs: Title Bar Is Wrong Color When Active/Inactive

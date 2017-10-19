@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163001: Err Msg: Stop 0x0000007f (Unexpected_ Kernel_ Mode_ Trap)"
-permalink: kb/163/Q163001/
+permalink: /kb/163/Q163001/
 ---
 
 ## Q163001: Err Msg: Stop 0x0000007f (Unexpected_ Kernel_ Mode_ Trap)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300424: Access Violation in Inetinfo.exe When an SMTP Message Received"
-permalink: kb/300/Q300424/
+permalink: /kb/300/Q300424/
 ---
 
 ## Q300424: Access Violation in Inetinfo.exe When an SMTP Message Received

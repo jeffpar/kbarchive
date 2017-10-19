@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121273: Pressing ENTER After DRVSPACE /DELETE Doesn't Delete Files"
-permalink: kb/121/Q121273/
+permalink: /kb/121/Q121273/
 ---
 
 ## Q121273: Pressing ENTER After DRVSPACE /DELETE Doesn't Delete Files

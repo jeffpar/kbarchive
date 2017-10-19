@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156653: Disabling the Installation of IE 2.0 During Setup"
-permalink: kb/156/Q156653/
+permalink: /kb/156/Q156653/
 ---
 
 ## Q156653: Disabling the Installation of IE 2.0 During Setup

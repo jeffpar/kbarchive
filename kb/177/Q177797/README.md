@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177797: WD97: Word 6.0/95 Not in &quot;Save As Type&quot; in Save As Dialog Box"
-permalink: kb/177/Q177797/
+permalink: /kb/177/Q177797/
 ---
 
 ## Q177797: WD97: Word 6.0/95 Not in &quot;Save As Type&quot; in Save As Dialog Box

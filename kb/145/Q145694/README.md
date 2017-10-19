@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145694: INFO: SaveSetting &amp; GetSetting Allow Nested Settings"
-permalink: kb/145/Q145694/
+permalink: /kb/145/Q145694/
 ---
 
 ## Q145694: INFO: SaveSetting &amp; GetSetting Allow Nested Settings

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213312: SMS: C++ Runtime Error in SMSMan.exe Using /Q Switch"
-permalink: kb/213/Q213312/
+permalink: /kb/213/Q213312/
 ---
 
 ## Q213312: SMS: C++ Runtime Error in SMSMan.exe Using /Q Switch

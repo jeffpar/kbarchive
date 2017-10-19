@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253438: Access Violation While Trying to Display File Properties"
-permalink: kb/253/Q253438/
+permalink: /kb/253/Q253438/
 ---
 
 ## Q253438: Access Violation While Trying to Display File Properties

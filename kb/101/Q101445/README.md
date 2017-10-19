@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101445: Mac Wkst: Enclosed Documents Become Unlocked"
-permalink: kb/101/Q101445/
+permalink: /kb/101/Q101445/
 ---
 
 ## Q101445: Mac Wkst: Enclosed Documents Become Unlocked

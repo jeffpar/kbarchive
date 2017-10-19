@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313289: HOW TO: Use the At.exe Command to Schedule Backup in Windows NT"
-permalink: kb/313/Q313289/
+permalink: /kb/313/Q313289/
 ---
 
 ## Q313289: HOW TO: Use the At.exe Command to Schedule Backup in Windows NT

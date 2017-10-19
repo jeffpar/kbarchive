@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189086: HOWTO: Create Context-Sensitive HTML Help in a Visual Basic App"
-permalink: kb/189/Q189086/
+permalink: /kb/189/Q189086/
 ---
 
 ## Q189086: HOWTO: Create Context-Sensitive HTML Help in a Visual Basic App

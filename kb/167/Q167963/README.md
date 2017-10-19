@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167963: Installing Program Requiring Specific Drive Letter"
-permalink: kb/167/Q167963/
+permalink: /kb/167/Q167963/
 ---
 
 ## Q167963: Installing Program Requiring Specific Drive Letter

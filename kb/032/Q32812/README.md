@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32812: FIX: A4001 May Be Caused By a Literal '&gt;' in Text Equate"
-permalink: kb/032/Q32812/
+permalink: /kb/032/Q32812/
 ---
 
 ## Q32812: FIX: A4001 May Be Caused By a Literal '&gt;' in Text Equate

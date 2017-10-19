@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202052: 3Dlabs Permedia 2 Video Drivers Cause Problems Under SP4"
-permalink: kb/202/Q202052/
+permalink: /kb/202/Q202052/
 ---
 
 ## Q202052: 3Dlabs Permedia 2 Video Drivers Cause Problems Under SP4

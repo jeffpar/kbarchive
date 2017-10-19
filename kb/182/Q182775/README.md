@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182775: Encarta Virtual Globe 1998: Minimum System Requirements"
-permalink: kb/182/Q182775/
+permalink: /kb/182/Q182775/
 ---
 
 ## Q182775: Encarta Virtual Globe 1998: Minimum System Requirements

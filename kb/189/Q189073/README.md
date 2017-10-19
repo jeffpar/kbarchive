@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189073: BUG: Step 2 of the MFC AppWizard Does Not Set Macro Values"
-permalink: kb/189/Q189073/
+permalink: /kb/189/Q189073/
 ---
 
 ## Q189073: BUG: Step 2 of the MFC AppWizard Does Not Set Macro Values

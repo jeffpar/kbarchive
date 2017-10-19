@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q212813: SMS: Comment Text Not Inserted With &quot;Insert line into Text File&quot;"
-permalink: kb/212/Q212813/
+permalink: /kb/212/Q212813/
 ---
 
 ## Q212813: SMS: Comment Text Not Inserted With &quot;Insert line into Text File&quot;

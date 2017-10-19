@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190130: INFO: Description of VB 6.0 Run Time and OLE Automation Files"
-permalink: kb/190/Q190130/
+permalink: /kb/190/Q190130/
 ---
 
 ## Q190130: INFO: Description of VB 6.0 Run Time and OLE Automation Files

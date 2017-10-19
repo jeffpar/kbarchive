@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254101: Network Adapter Teaming and Server Clustering"
-permalink: kb/254/Q254101/
+permalink: /kb/254/Q254101/
 ---
 
 ## Q254101: Network Adapter Teaming and Server Clustering

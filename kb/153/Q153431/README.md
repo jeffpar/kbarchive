@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153431: Explorapedia People: Listing of Files Installed and Modified"
-permalink: kb/153/Q153431/
+permalink: /kb/153/Q153431/
 ---
 
 ## Q153431: Explorapedia People: Listing of Files Installed and Modified

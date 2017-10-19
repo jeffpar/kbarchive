@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185048: Outwars: Background Music Echoes or Sounds Distorted"
-permalink: kb/185/Q185048/
+permalink: /kb/185/Q185048/
 ---
 
 ## Q185048: Outwars: Background Music Echoes or Sounds Distorted

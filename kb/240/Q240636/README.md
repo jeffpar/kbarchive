@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240636: World Atlas: Find Box Is Invisible in High Contrast Color Scheme"
-permalink: kb/240/Q240636/
+permalink: /kb/240/Q240636/
 ---
 
 ## Q240636: World Atlas: Find Box Is Invisible in High Contrast Color Scheme

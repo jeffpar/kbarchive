@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136817: How to Change Editor Settings"
-permalink: kb/136/Q136817/
+permalink: /kb/136/Q136817/
 ---
 
 ## Q136817: How to Change Editor Settings

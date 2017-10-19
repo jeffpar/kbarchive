@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183706: XFOR: File Status Table Contains Invalid Entry; Dirsync Fails"
-permalink: kb/183/Q183706/
+permalink: /kb/183/Q183706/
 ---
 
 ## Q183706: XFOR: File Status Table Contains Invalid Entry; Dirsync Fails

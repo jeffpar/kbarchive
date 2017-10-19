@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93164: WFWG: Network Button Does Not Appear in Open Dialog Box"
-permalink: kb/093/Q93164/
+permalink: /kb/093/Q93164/
 ---
 
 ## Q93164: WFWG: Network Button Does Not Appear in Open Dialog Box

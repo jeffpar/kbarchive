@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166043: DHCPAdmin Incorrectly Writes the BootFileTable in the Registry"
-permalink: kb/166/Q166043/
+permalink: /kb/166/Q166043/
 ---
 
 ## Q166043: DHCPAdmin Incorrectly Writes the BootFileTable in the Registry

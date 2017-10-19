@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168668: SNA 3.0 Service Pack 2 Readme.txt File"
-permalink: kb/168/Q168668/
+permalink: /kb/168/Q168668/
 ---
 
 ## Q168668: SNA 3.0 Service Pack 2 Readme.txt File

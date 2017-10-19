@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280449: XCON: MTA Generates 9318 Events on Multihomed Servers"
-permalink: kb/280/Q280449/
+permalink: /kb/280/Q280449/
 ---
 
 ## Q280449: XCON: MTA Generates 9318 Events on Multihomed Servers

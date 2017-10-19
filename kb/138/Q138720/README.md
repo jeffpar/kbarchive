@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138720: How to Enable Microsoft Word as the Exchange Editor"
-permalink: kb/138/Q138720/
+permalink: /kb/138/Q138720/
 ---
 
 ## Q138720: How to Enable Microsoft Word as the Exchange Editor

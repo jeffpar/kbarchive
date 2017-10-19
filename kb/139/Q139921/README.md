@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139921: Encarta 96 Encyclopedia Annual Subscription Readme Information"
-permalink: kb/139/Q139921/
+permalink: /kb/139/Q139921/
 ---
 
 ## Q139921: Encarta 96 Encyclopedia Annual Subscription Readme Information

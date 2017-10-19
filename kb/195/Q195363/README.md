@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195363: XADM: Admin Error When Viewing Internet Newsgroups Root Folder"
-permalink: kb/195/Q195363/
+permalink: /kb/195/Q195363/
 ---
 
 ## Q195363: XADM: Admin Error When Viewing Internet Newsgroups Root Folder

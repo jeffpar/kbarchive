@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179467: Inappropriate Use of Trailing FILLER with an Array"
-permalink: kb/179/Q179467/
+permalink: /kb/179/Q179467/
 ---
 
 ## Q179467: Inappropriate Use of Trailing FILLER with an Array

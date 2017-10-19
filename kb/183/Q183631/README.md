@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183631: INFO: Add a Text File to a VB6 DHTML Page Dynamically"
-permalink: kb/183/Q183631/
+permalink: /kb/183/Q183631/
 ---
 
 ## Q183631: INFO: Add a Text File to a VB6 DHTML Page Dynamically

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250487: Generic Printer Driver Does Not Print Properly on Large Paper"
-permalink: kb/250/Q250487/
+permalink: /kb/250/Q250487/
 ---
 
 ## Q250487: Generic Printer Driver Does Not Print Properly on Large Paper

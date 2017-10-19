@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240348: All Programs May Not Be Displayed in Add/Remove Programs Tool"
-permalink: kb/240/Q240348/
+permalink: /kb/240/Q240348/
 ---
 
 ## Q240348: All Programs May Not Be Displayed in Add/Remove Programs Tool

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142573: SMS Client Hangs Using USERTSR or USERIPX"
-permalink: kb/142/Q142573/
+permalink: /kb/142/Q142573/
 ---
 
 ## Q142573: SMS Client Hangs Using USERTSR or USERIPX

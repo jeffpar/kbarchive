@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258292: XIMS: How to Disable Support for ETRN"
-permalink: kb/258/Q258292/
+permalink: /kb/258/Q258292/
 ---
 
 ## Q258292: XIMS: How to Disable Support for ETRN

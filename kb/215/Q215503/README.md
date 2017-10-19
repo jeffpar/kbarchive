@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215503: Turkish Windows 95 OSR2 Restarts with Turkish NetMeeting 2.1"
-permalink: kb/215/Q215503/
+permalink: /kb/215/Q215503/
 ---
 
 ## Q215503: Turkish Windows 95 OSR2 Restarts with Turkish NetMeeting 2.1

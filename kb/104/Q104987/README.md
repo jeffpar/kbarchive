@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104987: MakeSys Hangs or Creates Invalid Files, Causing System Hang"
-permalink: kb/104/Q104987/
+permalink: /kb/104/Q104987/
 ---
 
 ## Q104987: MakeSys Hangs or Creates Invalid Files, Causing System Hang

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289877: Create a Query in SMS Server That Returns All Computers"
-permalink: kb/289/Q289877/
+permalink: /kb/289/Q289877/
 ---
 
 ## Q289877: Create a Query in SMS Server That Returns All Computers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148203: BUG: Passing LOC() Intrinsic Result to C Function Fails"
-permalink: kb/148/Q148203/
+permalink: /kb/148/Q148203/
 ---
 
 ## Q148203: BUG: Passing LOC() Intrinsic Result to C Function Fails

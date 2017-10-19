@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256318: DNS Service Does Not Start When Notify Option Is Set"
-permalink: kb/256/Q256318/
+permalink: /kb/256/Q256318/
 ---
 
 ## Q256318: DNS Service Does Not Start When Notify Option Is Set

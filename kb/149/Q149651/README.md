@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149651: Back Button Selected by Default in MS Phone Tutorial"
-permalink: kb/149/Q149651/
+permalink: /kb/149/Q149651/
 ---
 
 ## Q149651: Back Button Selected by Default in MS Phone Tutorial

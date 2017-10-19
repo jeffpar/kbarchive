@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q12401: PRB: Single Stepping IN to 8259A Controller Gives Wrong Result"
-permalink: kb/012/Q12401/
+permalink: /kb/012/Q12401/
 ---
 
 ## Q12401: PRB: Single Stepping IN to 8259A Controller Gives Wrong Result

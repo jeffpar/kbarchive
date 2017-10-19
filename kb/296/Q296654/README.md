@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296654: Heap Corruption Remote Debugging with eVB"
-permalink: kb/296/Q296654/
+permalink: /kb/296/Q296654/
 ---
 
 ## Q296654: Heap Corruption Remote Debugging with eVB

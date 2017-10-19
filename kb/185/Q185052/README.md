@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185052: WD97: How to Use Other Converters with the FileFormat Property"
-permalink: kb/185/Q185052/
+permalink: /kb/185/Q185052/
 ---
 
 ## Q185052: WD97: How to Use Other Converters with the FileFormat Property

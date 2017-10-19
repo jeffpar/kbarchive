@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236390: Spooler Rollup Fix to Address Memory Leaks in Terminal Server"
-permalink: kb/236/Q236390/
+permalink: /kb/236/Q236390/
 ---
 
 ## Q236390: Spooler Rollup Fix to Address Memory Leaks in Terminal Server

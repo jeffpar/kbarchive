@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173107: XCLN: Setup /Q1 in Win3.x Ignores HomeServer, MailboxName"
-permalink: kb/173/Q173107/
+permalink: /kb/173/Q173107/
 ---
 
 ## Q173107: XCLN: Setup /Q1 in Win3.x Ignores HomeServer, MailboxName

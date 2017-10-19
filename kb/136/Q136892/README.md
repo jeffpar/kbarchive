@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136892: First Contact Form for MS Mail Server and Mail Client"
-permalink: kb/136/Q136892/
+permalink: /kb/136/Q136892/
 ---
 
 ## Q136892: First Contact Form for MS Mail Server and Mail Client

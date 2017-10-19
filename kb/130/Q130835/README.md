@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130835: Class Browser: How to Save Data to a File"
-permalink: kb/130/Q130835/
+permalink: /kb/130/Q130835/
 ---
 
 ## Q130835: Class Browser: How to Save Data to a File

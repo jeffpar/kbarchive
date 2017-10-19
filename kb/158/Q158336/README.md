@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158336: XADM: Modifying Version Values for Proxy Address Generator"
-permalink: kb/158/Q158336/
+permalink: /kb/158/Q158336/
 ---
 
 ## Q158336: XADM: Modifying Version Values for Proxy Address Generator

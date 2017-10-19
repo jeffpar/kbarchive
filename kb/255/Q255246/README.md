@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255246: Terminal Server Clients Receive Error Opening New Mail"
-permalink: kb/255/Q255246/
+permalink: /kb/255/Q255246/
 ---
 
 ## Q255246: Terminal Server Clients Receive Error Opening New Mail

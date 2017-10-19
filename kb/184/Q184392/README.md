@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184392: XWEB: Temp Files Accumulate in Webtemp Directory When Using OWA"
-permalink: kb/184/Q184392/
+permalink: /kb/184/Q184392/
 ---
 
 ## Q184392: XWEB: Temp Files Accumulate in Webtemp Directory When Using OWA

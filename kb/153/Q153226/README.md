@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153226: PGC Requires File Extensions in the Configuration Command Line"
-permalink: kb/153/Q153226/
+permalink: /kb/153/Q153226/
 ---
 
 ## Q153226: PGC Requires File Extensions in the Configuration Command Line

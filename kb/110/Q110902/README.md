@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110902: Mac Gen: Summary List of Mail 3.1a Bugs"
-permalink: kb/110/Q110902/
+permalink: /kb/110/Q110902/
 ---
 
 ## Q110902: Mac Gen: Summary List of Mail 3.1a Bugs

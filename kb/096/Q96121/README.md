@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96121: How to Configure MSDLC Transport on WfW 3.1 Client"
-permalink: kb/096/Q96121/
+permalink: /kb/096/Q96121/
 ---
 
 ## Q96121: How to Configure MSDLC Transport on WfW 3.1 Client

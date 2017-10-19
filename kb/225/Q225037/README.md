@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225037: List of Bugs Fixed in Windows NT 4.0 Service Pack 5"
-permalink: kb/225/Q225037/
+permalink: /kb/225/Q225037/
 ---
 
 ## Q225037: List of Bugs Fixed in Windows NT 4.0 Service Pack 5

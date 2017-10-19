@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213196: SMS: Software Metering Client Suspends Metering on Client"
-permalink: kb/213/Q213196/
+permalink: /kb/213/Q213196/
 ---
 
 ## Q213196: SMS: Software Metering Client Suspends Metering on Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137206: Meeting Acceptance Differs in Schedule+ Versions 1.0 and 7.0"
-permalink: kb/137/Q137206/
+permalink: /kb/137/Q137206/
 ---
 
 ## Q137206: Meeting Acceptance Differs in Schedule+ Versions 1.0 and 7.0

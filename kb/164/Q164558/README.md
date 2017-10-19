@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164558: Configuring MSNDS to Log in to a NetWare Bindery Server"
-permalink: kb/164/Q164558/
+permalink: /kb/164/Q164558/
 ---
 
 ## Q164558: Configuring MSNDS to Log in to a NetWare Bindery Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58596: Mac Hyp: EnableNotify Can Disable Notification Alerts"
-permalink: kb/058/Q58596/
+permalink: /kb/058/Q58596/
 ---
 
 ## Q58596: Mac Hyp: EnableNotify Can Disable Notification Alerts

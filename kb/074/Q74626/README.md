@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74626: RAM Drive Write Protected on Acer 1100 with /Machine:6"
-permalink: kb/074/Q74626/
+permalink: /kb/074/Q74626/
 ---
 
 ## Q74626: RAM Drive Write Protected on Acer 1100 with /Machine:6

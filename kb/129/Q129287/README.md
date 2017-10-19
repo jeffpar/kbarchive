@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129287: INFO: Differences Between Exclamation Mark (!) &amp; Dot (.) Syntax"
-permalink: kb/129/Q129287/
+permalink: /kb/129/Q129287/
 ---
 
 ## Q129287: INFO: Differences Between Exclamation Mark (!) &amp; Dot (.) Syntax

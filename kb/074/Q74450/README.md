@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74450: Upgrading to Microsoft Mouse Driver Version 8.1"
-permalink: kb/074/Q74450/
+permalink: /kb/074/Q74450/
 ---
 
 ## Q74450: Upgrading to Microsoft Mouse Driver Version 8.1

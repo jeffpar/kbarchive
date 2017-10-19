@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138142: How to Determine If a String Is UNICODE or ANSI"
-permalink: kb/138/Q138142/
+permalink: /kb/138/Q138142/
 ---
 
 ## Q138142: How to Determine If a String Is UNICODE or ANSI

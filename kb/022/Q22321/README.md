@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q22321: INFO: Common Programming Errors in the C Language"
-permalink: kb/022/Q22321/
+permalink: /kb/022/Q22321/
 ---
 
 ## Q22321: INFO: Common Programming Errors in the C Language

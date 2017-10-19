@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133751: Streets 4.0: Street Address Displayed on Wrong Side of Street"
-permalink: kb/133/Q133751/
+permalink: /kb/133/Q133751/
 ---
 
 ## Q133751: Streets 4.0: Street Address Displayed on Wrong Side of Street

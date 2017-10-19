@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50829: Characters Appear on COM1 with Logitech Driver"
-permalink: kb/050/Q50829/
+permalink: /kb/050/Q50829/
 ---
 
 ## Q50829: Characters Appear on COM1 with Logitech Driver

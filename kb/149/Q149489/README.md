@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149489: FIX: GotFocus Event Not Executed in Sub Main and SetFocus"
-permalink: kb/149/Q149489/
+permalink: /kb/149/Q149489/
 ---
 
 ## Q149489: FIX: GotFocus Event Not Executed in Sub Main and SetFocus

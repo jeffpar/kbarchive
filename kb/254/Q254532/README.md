@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254532: SMS 1.2 Support Fixes for Windows 2000"
-permalink: kb/254/Q254532/
+permalink: /kb/254/Q254532/
 ---
 
 ## Q254532: SMS 1.2 Support Fixes for Windows 2000

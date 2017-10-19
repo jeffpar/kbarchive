@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101170: Promise Technologies IDE Controller Cards and DoubleSpace"
-permalink: kb/101/Q101170/
+permalink: /kb/101/Q101170/
 ---
 
 ## Q101170: Promise Technologies IDE Controller Cards and DoubleSpace

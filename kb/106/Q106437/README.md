@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106437: The F1 Key in Chat and NetWatcher May Not Open Help"
-permalink: kb/106/Q106437/
+permalink: /kb/106/Q106437/
 ---
 
 ## Q106437: The F1 Key in Chat and NetWatcher May Not Open Help

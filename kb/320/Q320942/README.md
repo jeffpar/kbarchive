@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320942: Wildcard Searches Unsuccessful on Indexing Service 3.0"
-permalink: kb/320/Q320942/
+permalink: /kb/320/Q320942/
 ---
 
 ## Q320942: Wildcard Searches Unsuccessful on Indexing Service 3.0

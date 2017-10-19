@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89286: Real and Standard Modes Preclude Switching from Emulator"
-permalink: kb/089/Q89286/
+permalink: /kb/089/Q89286/
 ---
 
 ## Q89286: Real and Standard Modes Preclude Switching from Emulator

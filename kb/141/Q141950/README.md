@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141950: FIX: GP Fault When Change RecordSource of a Column in a Grid"
-permalink: kb/141/Q141950/
+permalink: /kb/141/Q141950/
 ---
 
 ## Q141950: FIX: GP Fault When Change RecordSource of a Column in a Grid

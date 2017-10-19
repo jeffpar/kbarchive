@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195859: SMS: How to Enable Remote Control Logging for WUSER in SMS 2.0"
-permalink: kb/195/Q195859/
+permalink: /kb/195/Q195859/
 ---
 
 ## Q195859: SMS: How to Enable Remote Control Logging for WUSER in SMS 2.0

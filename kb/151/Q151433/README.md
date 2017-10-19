@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151433: MSB Solar: ErrMsg: Video Not Available, Cannot Find vids:msvc"
-permalink: kb/151/Q151433/
+permalink: /kb/151/Q151433/
 ---
 
 ## Q151433: MSB Solar: ErrMsg: Video Not Available, Cannot Find vids:msvc

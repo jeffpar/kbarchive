@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142532: OLE Problems Using Microsoft Service for NDS"
-permalink: kb/142/Q142532/
+permalink: /kb/142/Q142532/
 ---
 
 ## Q142532: OLE Problems Using Microsoft Service for NDS

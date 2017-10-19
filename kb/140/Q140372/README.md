@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140372: Direct Disk Access Disabled to Protect Long File Names"
-permalink: kb/140/Q140372/
+permalink: /kb/140/Q140372/
 ---
 
 ## Q140372: Direct Disk Access Disabled to Protect Long File Names

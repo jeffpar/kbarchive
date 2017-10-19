@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84952: CapsKey May Conflict with Windows Recorder"
-permalink: kb/084/Q84952/
+permalink: /kb/084/Q84952/
 ---
 
 ## Q84952: CapsKey May Conflict with Windows Recorder

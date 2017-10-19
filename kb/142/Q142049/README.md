@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142049: File Manager Displays Incorrect Users with File Open"
-permalink: kb/142/Q142049/
+permalink: /kb/142/Q142049/
 ---
 
 ## Q142049: File Manager Displays Incorrect Users with File Open

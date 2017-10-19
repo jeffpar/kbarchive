@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180117: XADM: Recovering Deleted Items from a Public Folder"
-permalink: kb/180/Q180117/
+permalink: /kb/180/Q180117/
 ---
 
 ## Q180117: XADM: Recovering Deleted Items from a Public Folder

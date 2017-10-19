@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79248: COREtape Light Backup System Incompatible with DOSKEY"
-permalink: kb/079/Q79248/
+permalink: /kb/079/Q79248/
 ---
 
 ## Q79248: COREtape Light Backup System Incompatible with DOSKEY

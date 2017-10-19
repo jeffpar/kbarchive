@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82398: SHIFT+Double-Click Starting AmiPro 2.0 can Cause Error"
-permalink: kb/082/Q82398/
+permalink: /kb/082/Q82398/
 ---
 
 ## Q82398: SHIFT+Double-Click Starting AmiPro 2.0 can Cause Error

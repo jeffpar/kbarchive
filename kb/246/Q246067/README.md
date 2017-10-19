@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246067: Sorting a Scripting Dictionary Populated with String Data"
-permalink: kb/246/Q246067/
+permalink: /kb/246/Q246067/
 ---
 
 ## Q246067: Sorting a Scripting Dictionary Populated with String Data

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131230: NT and WfWG Clients Get Diff. Results Accessing Share w/o Perm."
-permalink: kb/131/Q131230/
+permalink: /kb/131/Q131230/
 ---
 
 ## Q131230: NT and WfWG Clients Get Diff. Results Accessing Share w/o Perm.

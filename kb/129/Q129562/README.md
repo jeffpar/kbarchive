@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129562: Logitech Cyberman Requires MS-DOS Mode"
-permalink: kb/129/Q129562/
+permalink: /kb/129/Q129562/
 ---
 
 ## Q129562: Logitech Cyberman Requires MS-DOS Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163995: FIX: C2989 Declaring Template Class in a Namespace"
-permalink: kb/163/Q163995/
+permalink: /kb/163/Q163995/
 ---
 
 ## Q163995: FIX: C2989 Declaring Template Class in a Namespace

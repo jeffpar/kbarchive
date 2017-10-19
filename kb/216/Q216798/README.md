@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216798: XFOR: Embedded OLE Objects Are Not Converted"
-permalink: kb/216/Q216798/
+permalink: /kb/216/Q216798/
 ---
 
 ## Q216798: XFOR: Embedded OLE Objects Are Not Converted

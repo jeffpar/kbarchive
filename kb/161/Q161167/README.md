@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161167: Application Exception in SETUP.EXE if CleanSweep 3.0 Installed"
-permalink: kb/161/Q161167/
+permalink: /kb/161/Q161167/
 ---
 
 ## Q161167: Application Exception in SETUP.EXE if CleanSweep 3.0 Installed

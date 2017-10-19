@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259814: Streets and Trips 2000: Run Time Library Error When You Print"
-permalink: kb/259/Q259814/
+permalink: /kb/259/Q259814/
 ---
 
 ## Q259814: Streets and Trips 2000: Run Time Library Error When You Print

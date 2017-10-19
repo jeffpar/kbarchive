@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198909: XLN: Error Msg: Can't Open This Item. Can't Complete Operation"
-permalink: kb/198/Q198909/
+permalink: /kb/198/Q198909/
 ---
 
 ## Q198909: XLN: Error Msg: Can't Open This Item. Can't Complete Operation

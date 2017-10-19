@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181682: Project SBS: Cannot Find Installation Directory On CD-ROM"
-permalink: kb/181/Q181682/
+permalink: /kb/181/Q181682/
 ---
 
 ## Q181682: Project SBS: Cannot Find Installation Directory On CD-ROM

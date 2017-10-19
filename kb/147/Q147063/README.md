@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147063: XCLN: Remove All Does Not Remove Forms"
-permalink: kb/147/Q147063/
+permalink: /kb/147/Q147063/
 ---
 
 ## Q147063: XCLN: Remove All Does Not Remove Forms

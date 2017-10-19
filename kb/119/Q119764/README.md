@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119764: Capturing a Palette from an Intel Indeo-Compressed .AVI File"
-permalink: kb/119/Q119764/
+permalink: /kb/119/Q119764/
 ---
 
 ## Q119764: Capturing a Palette from an Intel Indeo-Compressed .AVI File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104523: Backup for MS-DOS Err Msg: CONTROL.FIL Cannot Be Read by DOS"
-permalink: kb/104/Q104523/
+permalink: /kb/104/Q104523/
 ---
 
 ## Q104523: Backup for MS-DOS Err Msg: CONTROL.FIL Cannot Be Read by DOS

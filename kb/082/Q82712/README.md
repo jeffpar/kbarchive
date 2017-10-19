@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82712: HIMEM.SYS /EISA Switch"
-permalink: kb/082/Q82712/
+permalink: /kb/082/Q82712/
 ---
 
 ## Q82712: HIMEM.SYS /EISA Switch

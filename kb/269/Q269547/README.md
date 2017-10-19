@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269547: SMS: Software Metering Licenses Increase Across Server"
-permalink: kb/269/Q269547/
+permalink: /kb/269/Q269547/
 ---
 
 ## Q269547: SMS: Software Metering Licenses Increase Across Server

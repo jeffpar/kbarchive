@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221665: FIX:C0000005 Fatal Error w/Invalid Form Included in File Syntax"
-permalink: kb/221/Q221665/
+permalink: /kb/221/Q221665/
 ---
 
 ## Q221665: FIX:C0000005 Fatal Error w/Invalid Form Included in File Syntax

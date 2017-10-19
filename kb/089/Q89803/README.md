@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89803: Windows Err Msg: FILENAME.BMP Cannot Find This File"
-permalink: kb/089/Q89803/
+permalink: /kb/089/Q89803/
 ---
 
 ## Q89803: Windows Err Msg: FILENAME.BMP Cannot Find This File

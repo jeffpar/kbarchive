@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97853: PC Interface Version 4.1.3 Is Required with MS-DOS 6.0"
-permalink: kb/097/Q97853/
+permalink: /kb/097/Q97853/
 ---
 
 ## Q97853: PC Interface Version 4.1.3 Is Required with MS-DOS 6.0

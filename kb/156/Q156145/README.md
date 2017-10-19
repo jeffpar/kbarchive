@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156145: Full Court Press: Setup Notes"
-permalink: kb/156/Q156145/
+permalink: /kb/156/Q156145/
 ---
 
 ## Q156145: Full Court Press: Setup Notes

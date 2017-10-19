@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152582: INFO: What is an FRX file?"
-permalink: kb/152/Q152582/
+permalink: /kb/152/Q152582/
 ---
 
 ## Q152582: INFO: What is an FRX file?

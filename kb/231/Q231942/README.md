@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231942: Cannot Undock Notebook Computer with LS-120 Removable Drive"
-permalink: kb/231/Q231942/
+permalink: /kb/231/Q231942/
 ---
 
 ## Q231942: Cannot Undock Notebook Computer with LS-120 Removable Drive

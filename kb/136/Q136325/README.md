@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136325: INFO: Three Types of Drag-and-Drop with Visual SourceSafe"
-permalink: kb/136/Q136325/
+permalink: /kb/136/Q136325/
 ---
 
 ## Q136325: INFO: Three Types of Drag-and-Drop with Visual SourceSafe

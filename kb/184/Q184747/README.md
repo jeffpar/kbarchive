@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184747: INFO: Event Logging in Visual Basic"
-permalink: kb/184/Q184747/
+permalink: /kb/184/Q184747/
 ---
 
 ## Q184747: INFO: Event Logging in Visual Basic

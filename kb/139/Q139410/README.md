@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139410: Err Msg: There are Currently No Logon Servers Available..."
-permalink: kb/139/Q139410/
+permalink: /kb/139/Q139410/
 ---
 
 ## Q139410: Err Msg: There are Currently No Logon Servers Available...

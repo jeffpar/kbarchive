@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222130: PRB: Short Filename Autogeneration fails on WIn95 and Win95"
-permalink: kb/222/Q222130/
+permalink: /kb/222/Q222130/
 ---
 
 ## Q222130: PRB: Short Filename Autogeneration fails on WIn95 and Win95

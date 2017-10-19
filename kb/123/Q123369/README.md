@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123369: Adding a Pure LAN Manager Domain to SMS"
-permalink: kb/123/Q123369/
+permalink: /kb/123/Q123369/
 ---
 
 ## Q123369: Adding a Pure LAN Manager Domain to SMS

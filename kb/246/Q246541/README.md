@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246541: Memory Leak in Tcpsvcs.exe When the LPD Service Is Stressed"
-permalink: kb/246/Q246541/
+permalink: /kb/246/Q246541/
 ---
 
 ## Q246541: Memory Leak in Tcpsvcs.exe When the LPD Service Is Stressed

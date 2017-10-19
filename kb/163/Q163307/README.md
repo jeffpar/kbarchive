@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163307: XCON: How to Identify Most MTA Queues by Object Id"
-permalink: kb/163/Q163307/
+permalink: /kb/163/Q163307/
 ---
 
 ## Q163307: XCON: How to Identify Most MTA Queues by Object Id

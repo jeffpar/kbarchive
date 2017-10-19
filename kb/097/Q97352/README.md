@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97352: Palette Utilization Demonstration"
-permalink: kb/097/Q97352/
+permalink: /kb/097/Q97352/
 ---
 
 ## Q97352: Palette Utilization Demonstration

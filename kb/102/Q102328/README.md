@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102328: HOWTO: Center a Dialog Using the Microsoft Foundation Classes"
-permalink: kb/102/Q102328/
+permalink: /kb/102/Q102328/
 ---
 
 ## Q102328: HOWTO: Center a Dialog Using the Microsoft Foundation Classes

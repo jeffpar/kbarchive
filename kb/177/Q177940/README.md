@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177940: Message: Details Are Not Available on This Entry"
-permalink: kb/177/Q177940/
+permalink: /kb/177/Q177940/
 ---
 
 ## Q177940: Message: Details Are Not Available on This Entry

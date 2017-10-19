@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232559: Novell Print Banner Always Printed After Applying Service Pack 5"
-permalink: kb/232/Q232559/
+permalink: /kb/232/Q232559/
 ---
 
 ## Q232559: Novell Print Banner Always Printed After Applying Service Pack 5

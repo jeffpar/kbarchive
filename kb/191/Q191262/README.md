@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191262: XFOR: IMC Accepts SMTP Address with Space While IMS Does Not"
-permalink: kb/191/Q191262/
+permalink: /kb/191/Q191262/
 ---
 
 ## Q191262: XFOR: IMC Accepts SMTP Address with Space While IMS Does Not

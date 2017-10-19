@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83447: Windows Err Msg: Cannot Read Drive I or Drive I Does Not Exist"
-permalink: kb/083/Q83447/
+permalink: /kb/083/Q83447/
 ---
 
 ## Q83447: Windows Err Msg: Cannot Read Drive I or Drive I Does Not Exist

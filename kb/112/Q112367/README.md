@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112367: Deleted MSMAIL.INI Creates Embedded WGPO Directory"
-permalink: kb/112/Q112367/
+permalink: /kb/112/Q112367/
 ---
 
 ## Q112367: Deleted MSMAIL.INI Creates Embedded WGPO Directory

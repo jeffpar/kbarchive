@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87186: PROFS: Using Microsoft Comm Server and the PROFS Gateway"
-permalink: kb/087/Q87186/
+permalink: /kb/087/Q87186/
 ---
 
 ## Q87186: PROFS: Using Microsoft Comm Server and the PROFS Gateway

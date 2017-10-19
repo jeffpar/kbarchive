@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179450: Unable to Modify Logon Hours on a Member Server"
-permalink: kb/179/Q179450/
+permalink: /kb/179/Q179450/
 ---
 
 ## Q179450: Unable to Modify Logon Hours on a Member Server

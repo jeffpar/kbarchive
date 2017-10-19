@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76877: Blue Dots in Hammond Atlas Map of Australia"
-permalink: kb/076/Q76877/
+permalink: /kb/076/Q76877/
 ---
 
 ## Q76877: Blue Dots in Hammond Atlas Map of Australia

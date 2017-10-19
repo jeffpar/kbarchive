@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262976: PRB: Err Msg &quot;Missing or Not Registered VB6tmpl.tlb&quot; in VB6"
-permalink: kb/262/Q262976/
+permalink: /kb/262/Q262976/
 ---
 
 ## Q262976: PRB: Err Msg &quot;Missing or Not Registered VB6tmpl.tlb&quot; in VB6

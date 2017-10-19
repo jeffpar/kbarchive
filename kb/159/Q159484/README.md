@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159484: WD97: Simulating a Macro Pause in Visual Basic for Applications"
-permalink: kb/159/Q159484/
+permalink: /kb/159/Q159484/
 ---
 
 ## Q159484: WD97: Simulating a Macro Pause in Visual Basic for Applications

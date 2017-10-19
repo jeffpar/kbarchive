@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191542: Urban Assault: Squadron Manager Window Returns to Original Size"
-permalink: kb/191/Q191542/
+permalink: /kb/191/Q191542/
 ---
 
 ## Q191542: Urban Assault: Squadron Manager Window Returns to Original Size

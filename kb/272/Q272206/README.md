@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272206: Startup Access Violation and Event ID 100 on PDC That Runs IIS"
-permalink: kb/272/Q272206/
+permalink: /kb/272/Q272206/
 ---
 
 ## Q272206: Startup Access Violation and Event ID 100 on PDC That Runs IIS

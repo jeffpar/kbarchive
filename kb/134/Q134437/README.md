@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134437: FIX: Report Wizard Preview Error If View Given as Child Table"
-permalink: kb/134/Q134437/
+permalink: /kb/134/Q134437/
 ---
 
 ## Q134437: FIX: Report Wizard Preview Error If View Given as Child Table

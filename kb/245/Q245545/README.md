@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245545: XFOR: Notes Connector Error 41220: No Notes Session Open"
-permalink: kb/245/Q245545/
+permalink: /kb/245/Q245545/
 ---
 
 ## Q245545: XFOR: Notes Connector Error 41220: No Notes Session Open

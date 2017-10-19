@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155507: SMS: Remote Reboot Fails on Clients Running Windows NT 4.0"
-permalink: kb/155/Q155507/
+permalink: /kb/155/Q155507/
 ---
 
 ## Q155507: SMS: Remote Reboot Fails on Clients Running Windows NT 4.0

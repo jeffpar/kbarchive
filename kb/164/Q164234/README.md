@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164234: WD97: How to Break Out of an Infinite Macro Loop"
-permalink: kb/164/Q164234/
+permalink: /kb/164/Q164234/
 ---
 
 ## Q164234: WD97: How to Break Out of an Infinite Macro Loop

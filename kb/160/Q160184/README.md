@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160184: XADM: Header.exe Must Run on Exchange Server Computer"
-permalink: kb/160/Q160184/
+permalink: /kb/160/Q160184/
 ---
 
 ## Q160184: XADM: Header.exe Must Run on Exchange Server Computer

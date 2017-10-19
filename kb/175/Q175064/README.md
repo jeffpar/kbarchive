@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175064: Bookshelf 98: Unneeded Excel Integration File Copied to Computer"
-permalink: kb/175/Q175064/
+permalink: /kb/175/Q175064/
 ---
 
 ## Q175064: Bookshelf 98: Unneeded Excel Integration File Copied to Computer

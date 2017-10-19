@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69598: Epson Emulation Modes for ALPS Printers"
-permalink: kb/069/Q69598/
+permalink: /kb/069/Q69598/
 ---
 
 ## Q69598: Epson Emulation Modes for ALPS Printers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158458: Frequent Browsing Causes Explorer Settings to Revert"
-permalink: kb/158/Q158458/
+permalink: /kb/158/Q158458/
 ---
 
 ## Q158458: Frequent Browsing Causes Explorer Settings to Revert

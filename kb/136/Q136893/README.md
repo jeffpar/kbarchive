@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136893: First Contact Form for MS Mail PO2PO"
-permalink: kb/136/Q136893/
+permalink: /kb/136/Q136893/
 ---
 
 ## Q136893: First Contact Form for MS Mail PO2PO

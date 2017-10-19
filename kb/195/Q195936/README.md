@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195936: SMS: Pkg. Distribution Fails If Updating of Master Pkg. Fails"
-permalink: kb/195/Q195936/
+permalink: /kb/195/Q195936/
 ---
 
 ## Q195936: SMS: Pkg. Distribution Fails If Updating of Master Pkg. Fails

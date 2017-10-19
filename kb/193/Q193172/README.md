@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193172: PRB: Runtime Error 430 in Client After Server Type is Changed"
-permalink: kb/193/Q193172/
+permalink: /kb/193/Q193172/
 ---
 
 ## Q193172: PRB: Runtime Error 430 in Client After Server Type is Changed

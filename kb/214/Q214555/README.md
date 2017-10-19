@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214555: RADIUS Server Fails to Authenticate Users in a Remote Domain"
-permalink: kb/214/Q214555/
+permalink: /kb/214/Q214555/
 ---
 
 ## Q214555: RADIUS Server Fails to Authenticate Users in a Remote Domain

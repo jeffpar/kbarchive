@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185999: FS98: Location of the Learjet 45 Spoiler Indicator"
-permalink: kb/185/Q185999/
+permalink: /kb/185/Q185999/
 ---
 
 ## Q185999: FS98: Location of the Learjet 45 Spoiler Indicator

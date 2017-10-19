@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107870: Deluxe Set Option Not Available in WordZap Under VGA"
-permalink: kb/107/Q107870/
+permalink: /kb/107/Q107870/
 ---
 
 ## Q107870: Deluxe Set Option Not Available in WordZap Under VGA

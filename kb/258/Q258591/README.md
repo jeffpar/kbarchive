@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258591: Baseball 2001: How to Troubleshoot Video Problems"
-permalink: kb/258/Q258591/
+permalink: /kb/258/Q258591/
 ---
 
 ## Q258591: Baseball 2001: How to Troubleshoot Video Problems

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138206: Why &quot;A&quot;=&quot;&quot; Is Not the Same as &quot;&quot;=&quot;A&quot;"
-permalink: kb/138/Q138206/
+permalink: /kb/138/Q138206/
 ---
 
 ## Q138206: Why &quot;A&quot;=&quot;&quot; Is Not the Same as &quot;&quot;=&quot;A&quot;

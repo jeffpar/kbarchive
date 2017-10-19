@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109969: WD97: Text or Graphic in Wrong Position with AutoText"
-permalink: kb/109/Q109969/
+permalink: /kb/109/Q109969/
 ---
 
 ## Q109969: WD97: Text or Graphic in Wrong Position with AutoText

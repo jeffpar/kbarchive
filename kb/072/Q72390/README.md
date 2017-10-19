@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72390: FIX: MASM 6.0 Setup May Generate &quot;Bad Full Path&quot; Error Message"
-permalink: kb/072/Q72390/
+permalink: /kb/072/Q72390/
 ---
 
 ## Q72390: FIX: MASM 6.0 Setup May Generate &quot;Bad Full Path&quot; Error Message

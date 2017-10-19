@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50583: PRB: L1092: Cannot Open Module-Definition File"
-permalink: kb/050/Q50583/
+permalink: /kb/050/Q50583/
 ---
 
 ## Q50583: PRB: L1092: Cannot Open Module-Definition File

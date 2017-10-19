@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198716: SMS: Server Side Remote Control Components Maintain SMS Security"
-permalink: kb/198/Q198716/
+permalink: /kb/198/Q198716/
 ---
 
 ## Q198716: SMS: Server Side Remote Control Components Maintain SMS Security

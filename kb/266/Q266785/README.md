@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266785: XADM: ADC Er. Mssg.: Server Specified on the Connection Page..."
-permalink: kb/266/Q266785/
+permalink: /kb/266/Q266785/
 ---
 
 ## Q266785: XADM: ADC Er. Mssg.: Server Specified on the Connection Page...

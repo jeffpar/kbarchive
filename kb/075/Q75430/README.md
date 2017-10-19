@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75430: PRB: Available Memory Decreases When Print Job Terminated"
-permalink: kb/075/Q75430/
+permalink: /kb/075/Q75430/
 ---
 
 ## Q75430: PRB: Available Memory Decreases When Print Job Terminated

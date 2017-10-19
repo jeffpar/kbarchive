@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84165: Novell Error Message for Persistent Connections"
-permalink: kb/084/Q84165/
+permalink: /kb/084/Q84165/
 ---
 
 ## Q84165: Novell Error Message for Persistent Connections

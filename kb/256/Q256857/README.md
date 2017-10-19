@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256857: BUG: Toolbar with Placeholder Button Does Not Wrap Correctly"
-permalink: kb/256/Q256857/
+permalink: /kb/256/Q256857/
 ---
 
 ## Q256857: BUG: Toolbar with Placeholder Button Does Not Wrap Correctly

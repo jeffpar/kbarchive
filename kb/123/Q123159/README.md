@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123159: Windows NT 3.5 Computer with Intel Neptune PCI Chip Hangs"
-permalink: kb/123/Q123159/
+permalink: /kb/123/Q123159/
 ---
 
 ## Q123159: Windows NT 3.5 Computer with Intel Neptune PCI Chip Hangs

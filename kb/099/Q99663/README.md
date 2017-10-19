@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99663: PC Forms: Installing E-Forms Designer on Remote Clients"
-permalink: kb/099/Q99663/
+permalink: /kb/099/Q99663/
 ---
 
 ## Q99663: PC Forms: Installing E-Forms Designer on Remote Clients

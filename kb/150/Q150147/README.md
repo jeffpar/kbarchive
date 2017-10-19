@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150147: BUG: LOADIMAGE() or LOADIMAGE_W() Graphics Functions Can Fail"
-permalink: kb/150/Q150147/
+permalink: /kb/150/Q150147/
 ---
 
 ## Q150147: BUG: LOADIMAGE() or LOADIMAGE_W() Graphics Functions Can Fail

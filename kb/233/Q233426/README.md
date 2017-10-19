@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233426: Running Microsoft FrontPage 2000 Comments and Corrections"
-permalink: kb/233/Q233426/
+permalink: /kb/233/Q233426/
 ---
 
 ## Q233426: Running Microsoft FrontPage 2000 Comments and Corrections

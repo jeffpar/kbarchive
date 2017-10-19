@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191718: BUG: Error 13 Assigning Variable to UserControl in Same Project"
-permalink: kb/191/Q191718/
+permalink: /kb/191/Q191718/
 ---
 
 ## Q191718: BUG: Error 13 Assigning Variable to UserControl in Same Project

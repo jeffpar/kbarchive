@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286818: IIS: Malformed URL Cause Service Failure in IIS 5.0 &amp; Exch 2000"
-permalink: kb/286/Q286818/
+permalink: /kb/286/Q286818/
 ---
 
 ## Q286818: IIS: Malformed URL Cause Service Failure in IIS 5.0 &amp; Exch 2000

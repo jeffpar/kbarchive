@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214830: BUG: Tab Control Initialization Problem with Control Array"
-permalink: kb/214/Q214830/
+permalink: /kb/214/Q214830/
 ---
 
 ## Q214830: BUG: Tab Control Initialization Problem with Control Array

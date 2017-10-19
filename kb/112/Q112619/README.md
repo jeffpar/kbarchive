@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112619: Microsoft At Work PC Fax Does Not Display a Time/Date Stamp"
-permalink: kb/112/Q112619/
+permalink: /kb/112/Q112619/
 ---
 
 ## Q112619: Microsoft At Work PC Fax Does Not Display a Time/Date Stamp

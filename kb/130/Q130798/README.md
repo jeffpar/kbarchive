@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130798: BUG: &quot;File Does Not Exist&quot; Occurs After FoxPro Is Maximized"
-permalink: kb/130/Q130798/
+permalink: /kb/130/Q130798/
 ---
 
 ## Q130798: BUG: &quot;File Does Not Exist&quot; Occurs After FoxPro Is Maximized

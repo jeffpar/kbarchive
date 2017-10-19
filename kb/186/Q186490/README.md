@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186490: Terminal Server's Use of &quot;Access This Computer From Network&quot;"
-permalink: kb/186/Q186490/
+permalink: /kb/186/Q186490/
 ---
 
 ## Q186490: Terminal Server's Use of &quot;Access This Computer From Network&quot;

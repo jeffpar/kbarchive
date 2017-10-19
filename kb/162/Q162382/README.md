@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162382: Video May Distort with Windows NT 4.0 and S3 Video Driver"
-permalink: kb/162/Q162382/
+permalink: /kb/162/Q162382/
 ---
 
 ## Q162382: Video May Distort with Windows NT 4.0 and S3 Video Driver

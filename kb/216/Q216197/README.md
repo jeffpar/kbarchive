@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216197: Windows 95-Based Clients Receive Network Error from Appctl95.exe"
-permalink: kb/216/Q216197/
+permalink: /kb/216/Q216197/
 ---
 
 ## Q216197: Windows 95-Based Clients Receive Network Error from Appctl95.exe

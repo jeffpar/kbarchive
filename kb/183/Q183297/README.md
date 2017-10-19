@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183297: HOWTO: Retrieving Multiple Resultsets with Varying Columns"
-permalink: kb/183/Q183297/
+permalink: /kb/183/Q183297/
 ---
 
 ## Q183297: HOWTO: Retrieving Multiple Resultsets with Varying Columns

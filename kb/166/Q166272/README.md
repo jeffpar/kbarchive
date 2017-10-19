@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166272: WD97: Incorrect Total When Table Has More Than 85 Rows"
-permalink: kb/166/Q166272/
+permalink: /kb/166/Q166272/
 ---
 
 ## Q166272: WD97: Incorrect Total When Table Has More Than 85 Rows

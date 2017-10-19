@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262947: FILE: Event.sys: Sample Driver for Windows 2000"
-permalink: kb/262/Q262947/
+permalink: /kb/262/Q262947/
 ---
 
 ## Q262947: FILE: Event.sys: Sample Driver for Windows 2000

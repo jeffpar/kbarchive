@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66419: Write: Italic Fonts Truncated in Windows"
-permalink: kb/066/Q66419/
+permalink: /kb/066/Q66419/
 ---
 
 ## Q66419: Write: Italic Fonts Truncated in Windows

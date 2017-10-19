@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159579: Slovenian Keyboard Layout Shows Dot Instead of Comma"
-permalink: kb/159/Q159579/
+permalink: /kb/159/Q159579/
 ---
 
 ## Q159579: Slovenian Keyboard Layout Shows Dot Instead of Comma

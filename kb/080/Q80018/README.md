@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80018: Mac Form: Body Field of Message Must Be Set to Print"
-permalink: kb/080/Q80018/
+permalink: /kb/080/Q80018/
 ---
 
 ## Q80018: Mac Form: Body Field of Message Must Be Set to Print

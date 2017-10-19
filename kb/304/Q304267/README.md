@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304267: FIX: Error in VBA6.DLL When Concatenating ADO Recordset Field"
-permalink: kb/304/Q304267/
+permalink: /kb/304/Q304267/
 ---
 
 ## Q304267: FIX: Error in VBA6.DLL When Concatenating ADO Recordset Field

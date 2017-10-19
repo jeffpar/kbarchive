@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132274: Installing MS Plus! Does Not Prevent Windows 95 Uninstall"
-permalink: kb/132/Q132274/
+permalink: /kb/132/Q132274/
 ---
 
 ## Q132274: Installing MS Plus! Does Not Prevent Windows 95 Uninstall

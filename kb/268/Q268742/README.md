@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268742: PPTP Filtering Disables IP Forwarding"
-permalink: kb/268/Q268742/
+permalink: /kb/268/Q268742/
 ---
 
 ## Q268742: PPTP Filtering Disables IP Forwarding

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234220: Cannot Dual Boot Windows 95/98 and Windows NT on HP 6330"
-permalink: kb/234/Q234220/
+permalink: /kb/234/Q234220/
 ---
 
 ## Q234220: Cannot Dual Boot Windows 95/98 and Windows NT on HP 6330

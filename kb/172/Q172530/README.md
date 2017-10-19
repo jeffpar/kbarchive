@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172530: Deleted UNC Connection While In Use Causes an In-Page Error"
-permalink: kb/172/Q172530/
+permalink: /kb/172/Q172530/
 ---
 
 ## Q172530: Deleted UNC Connection While In Use Causes an In-Page Error

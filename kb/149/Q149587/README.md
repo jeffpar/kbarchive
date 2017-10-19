@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149587: PPT7: Creating PowerPoint 95 Viewer Disks from Downloaded File"
-permalink: kb/149/Q149587/
+permalink: /kb/149/Q149587/
 ---
 
 ## Q149587: PPT7: Creating PowerPoint 95 Viewer Disks from Downloaded File

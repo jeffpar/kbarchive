@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191557: Motocross Madness: How to Increase the Level of Difficulty"
-permalink: kb/191/Q191557/
+permalink: /kb/191/Q191557/
 ---
 
 ## Q191557: Motocross Madness: How to Increase the Level of Difficulty

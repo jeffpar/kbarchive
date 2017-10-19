@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163938: Inserting Multifunction PC Card May Hang Computer"
-permalink: kb/163/Q163938/
+permalink: /kb/163/Q163938/
 ---
 
 ## Q163938: Inserting Multifunction PC Card May Hang Computer

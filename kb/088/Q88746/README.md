@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88746: Difference Between Macro Substitution and Named Expression"
-permalink: kb/088/Q88746/
+permalink: /kb/088/Q88746/
 ---
 
 ## Q88746: Difference Between Macro Substitution and Named Expression

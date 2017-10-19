@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139619: Printing From a Service To A Network Printer Fails"
-permalink: kb/139/Q139619/
+permalink: /kb/139/Q139619/
 ---
 
 ## Q139619: Printing From a Service To A Network Printer Fails

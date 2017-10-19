@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97018: Err Msg: &quot;Not Enough Memory&quot; or System Hangs with Clipper"
-permalink: kb/097/Q97018/
+permalink: /kb/097/Q97018/
 ---
 
 ## Q97018: Err Msg: &quot;Not Enough Memory&quot; or System Hangs with Clipper

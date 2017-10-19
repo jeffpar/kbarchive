@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65439: Northgate Elegance 386 Gets Garbled Video in Turbo Mode"
-permalink: kb/065/Q65439/
+permalink: /kb/065/Q65439/
 ---
 
 ## Q65439: Northgate Elegance 386 Gets Garbled Video in Turbo Mode

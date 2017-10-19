@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291569: HOWTO: Associate a Custom Icon with a Formless VB Application"
-permalink: kb/291/Q291569/
+permalink: /kb/291/Q291569/
 ---
 
 ## Q291569: HOWTO: Associate a Custom Icon with a Formless VB Application

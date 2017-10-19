@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153202: Duplex Printing Causes Problems After Applying SP4"
-permalink: kb/153/Q153202/
+permalink: /kb/153/Q153202/
 ---
 
 ## Q153202: Duplex Printing Causes Problems After Applying SP4

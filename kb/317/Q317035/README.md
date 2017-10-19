@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317035: MS02-018: Patch for Cross-Site Scripting in Redirect Response"
-permalink: kb/317/Q317035/
+permalink: /kb/317/Q317035/
 ---
 
 ## Q317035: MS02-018: Patch for Cross-Site Scripting in Redirect Response

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86004: PC Win: Setup Does Not Remove 2.1 Windows Client"
-permalink: kb/086/Q86004/
+permalink: /kb/086/Q86004/
 ---
 
 ## Q86004: PC Win: Setup Does Not Remove 2.1 Windows Client

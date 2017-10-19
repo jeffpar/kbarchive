@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216868: FIX: Crash When Class Variable Declared Before Class Declaration"
-permalink: kb/216/Q216868/
+permalink: /kb/216/Q216868/
 ---
 
 ## Q216868: FIX: Crash When Class Variable Declared Before Class Declaration

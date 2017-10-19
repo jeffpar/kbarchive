@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231217: Registry Key Not Deleted after You Uninstall Software Metering"
-permalink: kb/231/Q231217/
+permalink: /kb/231/Q231217/
 ---
 
 ## Q231217: Registry Key Not Deleted after You Uninstall Software Metering

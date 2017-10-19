@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82328: Copying Files with Artisoft Alone and SMARTDrive 4.0"
-permalink: kb/082/Q82328/
+permalink: /kb/082/Q82328/
 ---
 
 ## Q82328: Copying Files with Artisoft Alone and SMARTDrive 4.0

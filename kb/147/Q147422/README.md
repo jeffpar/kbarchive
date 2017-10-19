@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147422: Multimedia Err Msg: Not Enough Memory to Start Program"
-permalink: kb/147/Q147422/
+permalink: /kb/147/Q147422/
 ---
 
 ## Q147422: Multimedia Err Msg: Not Enough Memory to Start Program

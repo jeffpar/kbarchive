@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156441: NetBIOS Applications Stop Receiving Data Running on TCP/IP 32"
-permalink: kb/156/Q156441/
+permalink: /kb/156/Q156441/
 ---
 
 ## Q156441: NetBIOS Applications Stop Receiving Data Running on TCP/IP 32

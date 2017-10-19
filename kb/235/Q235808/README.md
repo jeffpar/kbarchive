@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235808: SMS: Smsapm32.exe May Report Status Incorrectly"
-permalink: kb/235/Q235808/
+permalink: /kb/235/Q235808/
 ---
 
 ## Q235808: SMS: Smsapm32.exe May Report Status Incorrectly

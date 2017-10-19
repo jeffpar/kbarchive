@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275660: Combat Flight Simulator 2: Cannot Open Dialog Boxes"
-permalink: kb/275/Q275660/
+permalink: /kb/275/Q275660/
 ---
 
 ## Q275660: Combat Flight Simulator 2: Cannot Open Dialog Boxes

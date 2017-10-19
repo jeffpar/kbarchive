@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187535: HOWTO: Change Passwords Programmatically in Windows NT"
-permalink: kb/187/Q187535/
+permalink: /kb/187/Q187535/
 ---
 
 ## Q187535: HOWTO: Change Passwords Programmatically in Windows NT

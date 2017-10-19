@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183118: Special Characters Disallowed in Transaction Program Name"
-permalink: kb/183/Q183118/
+permalink: /kb/183/Q183118/
 ---
 
 ## Q183118: Special Characters Disallowed in Transaction Program Name

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109513: MS-DOS Shell Creates Zero-Byte File When Copying to Full Disk"
-permalink: kb/109/Q109513/
+permalink: /kb/109/Q109513/
 ---
 
 ## Q109513: MS-DOS Shell Creates Zero-Byte File When Copying to Full Disk

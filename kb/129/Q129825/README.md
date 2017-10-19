@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129825: Common Dialog Boxes Used by Visual FoxPro"
-permalink: kb/129/Q129825/
+permalink: /kb/129/Q129825/
 ---
 
 ## Q129825: Common Dialog Boxes Used by Visual FoxPro

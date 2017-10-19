@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182667: Cannot Use Return Value as OCCURS DEPENDING ON Index"
-permalink: kb/182/Q182667/
+permalink: /kb/182/Q182667/
 ---
 
 ## Q182667: Cannot Use Return Value as OCCURS DEPENDING ON Index

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301939: HOWTO: Add MSXML Support to a C++ Application"
-permalink: kb/301/Q301939/
+permalink: /kb/301/Q301939/
 ---
 
 ## Q301939: HOWTO: Add MSXML Support to a C++ Application

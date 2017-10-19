@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156633: PRB: Wizards Echo Commands to the FoxPro Desktop"
-permalink: kb/156/Q156633/
+permalink: /kb/156/Q156633/
 ---
 
 ## Q156633: PRB: Wizards Echo Commands to the FoxPro Desktop

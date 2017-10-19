@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136640: How to Fill a Combo Box with a Unique List of Items"
-permalink: kb/136/Q136640/
+permalink: /kb/136/Q136640/
 ---
 
 ## Q136640: How to Fill a Combo Box with a Unique List of Items

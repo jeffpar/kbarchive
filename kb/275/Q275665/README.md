@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275665: Flight Simulator: Cannot Use Numeric Keypad to Control Aircraft"
-permalink: kb/275/Q275665/
+permalink: /kb/275/Q275665/
 ---
 
 ## Q275665: Flight Simulator: Cannot Use Numeric Keypad to Control Aircraft

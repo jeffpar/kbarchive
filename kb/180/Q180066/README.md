@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180066: Encarta 98: Research Organizer Video Clip Is Loaded Slowly"
-permalink: kb/180/Q180066/
+permalink: /kb/180/Q180066/
 ---
 
 ## Q180066: Encarta 98: Research Organizer Video Clip Is Loaded Slowly

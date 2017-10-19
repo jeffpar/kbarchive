@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251105: PRB: Err Msg: Can Not Run Unicode Version of Atl.dll on Win 95"
-permalink: kb/251/Q251105/
+permalink: /kb/251/Q251105/
 ---
 
 ## Q251105: PRB: Err Msg: Can Not Run Unicode Version of Atl.dll on Win 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128977: RASPHONE Hangs After Making PPP Connection To Server"
-permalink: kb/128/Q128977/
+permalink: /kb/128/Q128977/
 ---
 
 ## Q128977: RASPHONE Hangs After Making PPP Connection To Server

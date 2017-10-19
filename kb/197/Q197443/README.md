@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197443: WD97: Err Message: &quot;Specified Text Is Not a Valid AutoText Name&quot;"
-permalink: kb/197/Q197443/
+permalink: /kb/197/Q197443/
 ---
 
 ## Q197443: WD97: Err Message: &quot;Specified Text Is Not a Valid AutoText Name&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141356: FIX: PageFrame Refresh Fails with Stacked Pages"
-permalink: kb/141/Q141356/
+permalink: /kb/141/Q141356/
 ---
 
 ## Q141356: FIX: PageFrame Refresh Fails with Stacked Pages

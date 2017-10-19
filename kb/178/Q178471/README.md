@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178471: STOP 0XA Caused by Race Condition in VDM and Process Delete"
-permalink: kb/178/Q178471/
+permalink: /kb/178/Q178471/
 ---
 
 ## Q178471: STOP 0XA Caused by Race Condition in VDM and Process Delete

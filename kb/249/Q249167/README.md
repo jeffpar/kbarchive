@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249167: BUG: SNAOLEDB Does Not Support Pessimistic Locking"
-permalink: kb/249/Q249167/
+permalink: /kb/249/Q249167/
 ---
 
 ## Q249167: BUG: SNAOLEDB Does Not Support Pessimistic Locking

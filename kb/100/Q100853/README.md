@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100853: IO.SYS &amp; MSDOS.SYS File Sizes Don't Change After Uninstalling"
-permalink: kb/100/Q100853/
+permalink: /kb/100/Q100853/
 ---
 
 ## Q100853: IO.SYS &amp; MSDOS.SYS File Sizes Don't Change After Uninstalling

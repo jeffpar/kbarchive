@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114445: Windows 3.11 Directory Listing for Disk 5 (3.5 Inch 1.44 MB)"
-permalink: kb/114/Q114445/
+permalink: /kb/114/Q114445/
 ---
 
 ## Q114445: Windows 3.11 Directory Listing for Disk 5 (3.5 Inch 1.44 MB)

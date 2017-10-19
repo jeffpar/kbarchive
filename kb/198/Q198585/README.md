@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198585: Windows 95 DUN Client Authentication Fails"
-permalink: kb/198/Q198585/
+permalink: /kb/198/Q198585/
 ---
 
 ## Q198585: Windows 95 DUN Client Authentication Fails

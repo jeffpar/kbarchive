@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118952: &quot;Cannot Open File&quot; Error Occurs When Trying to Start Falcon 3"
-permalink: kb/118/Q118952/
+permalink: /kb/118/Q118952/
 ---
 
 ## Q118952: &quot;Cannot Open File&quot; Error Occurs When Trying to Start Falcon 3

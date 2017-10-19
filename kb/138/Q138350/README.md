@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138350: PPT7: &quot;Sorry, There Is No Valid Speller&quot; Error"
-permalink: kb/138/Q138350/
+permalink: /kb/138/Q138350/
 ---
 
 ## Q138350: PPT7: &quot;Sorry, There Is No Valid Speller&quot; Error

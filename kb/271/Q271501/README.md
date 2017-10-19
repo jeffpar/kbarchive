@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271501: Golf 2001: Cannot Use Wheel on Pointing Device to Scroll"
-permalink: kb/271/Q271501/
+permalink: /kb/271/Q271501/
 ---
 
 ## Q271501: Golf 2001: Cannot Use Wheel on Pointing Device to Scroll

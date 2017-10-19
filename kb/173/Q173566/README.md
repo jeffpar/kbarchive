@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173566: Multimedia: How to Temporarily Disable Your Sound Card"
-permalink: kb/173/Q173566/
+permalink: /kb/173/Q173566/
 ---
 
 ## Q173566: Multimedia: How to Temporarily Disable Your Sound Card

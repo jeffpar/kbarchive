@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98310: How to Use Intel 16/s Card with Windows for Workgroups"
-permalink: kb/098/Q98310/
+permalink: /kb/098/Q98310/
 ---
 
 ## Q98310: How to Use Intel 16/s Card with Windows for Workgroups

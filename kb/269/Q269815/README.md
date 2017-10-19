@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269815: MSB: Distorted Sound or MMSYSTEM326 Error Message in Program"
-permalink: kb/269/Q269815/
+permalink: /kb/269/Q269815/
 ---
 
 ## Q269815: MSB: Distorted Sound or MMSYSTEM326 Error Message in Program

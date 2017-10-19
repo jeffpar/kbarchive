@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96211: Encarta Hangs with Orchid Farenheit Card in 800 x 800 Mode"
-permalink: kb/096/Q96211/
+permalink: /kb/096/Q96211/
 ---
 
 ## Q96211: Encarta Hangs with Orchid Farenheit Card in 800 x 800 Mode

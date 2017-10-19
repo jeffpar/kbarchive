@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234728: Microsoft FrontPage 2000 Step by Step Comments and Corrections"
-permalink: kb/234/Q234728/
+permalink: /kb/234/Q234728/
 ---
 
 ## Q234728: Microsoft FrontPage 2000 Step by Step Comments and Corrections

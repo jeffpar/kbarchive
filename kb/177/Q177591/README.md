@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177591: Service Pack Version Truncated in About Box"
-permalink: kb/177/Q177591/
+permalink: /kb/177/Q177591/
 ---
 
 ## Q177591: Service Pack Version Truncated in About Box

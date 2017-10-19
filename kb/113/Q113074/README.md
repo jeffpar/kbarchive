@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113074: Golf: Video Clips/Fly By May Cause Driver Error"
-permalink: kb/113/Q113074/
+permalink: /kb/113/Q113074/
 ---
 
 ## Q113074: Golf: Video Clips/Fly By May Cause Driver Error

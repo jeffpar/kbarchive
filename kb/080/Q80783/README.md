@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80783: Determining the Version of MS-DOS from a Windows App"
-permalink: kb/080/Q80783/
+permalink: /kb/080/Q80783/
 ---
 
 ## Q80783: Determining the Version of MS-DOS from a Windows App

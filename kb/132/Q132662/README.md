@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132662: Cannot Copy Mail with Long Title to Desktop"
-permalink: kb/132/Q132662/
+permalink: /kb/132/Q132662/
 ---
 
 ## Q132662: Cannot Copy Mail with Long Title to Desktop

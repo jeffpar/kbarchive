@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92871: File Manager: Can't Redirect Local Drives; Use Net Redirector"
-permalink: kb/092/Q92871/
+permalink: /kb/092/Q92871/
 ---
 
 ## Q92871: File Manager: Can't Redirect Local Drives; Use Net Redirector

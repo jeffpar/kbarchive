@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278322: Zone Error Message: Browser Not Supported"
-permalink: kb/278/Q278322/
+permalink: /kb/278/Q278322/
 ---
 
 ## Q278322: Zone Error Message: Browser Not Supported

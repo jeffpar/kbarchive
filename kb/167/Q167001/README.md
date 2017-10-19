@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167001: Winmsd.exe May Show Invalid Drive Statistics in Reports"
-permalink: kb/167/Q167001/
+permalink: /kb/167/Q167001/
 ---
 
 ## Q167001: Winmsd.exe May Show Invalid Drive Statistics in Reports

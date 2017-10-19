@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130069: SERVICES.EXE Fails With Access Violation and Returns RPC Busy..."
-permalink: kb/130/Q130069/
+permalink: /kb/130/Q130069/
 ---
 
 ## Q130069: SERVICES.EXE Fails With Access Violation and Returns RPC Busy...

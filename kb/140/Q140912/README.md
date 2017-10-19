@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140912: How to Install Printer Drivers for Different Processor Types"
-permalink: kb/140/Q140912/
+permalink: /kb/140/Q140912/
 ---
 
 ## Q140912: How to Install Printer Drivers for Different Processor Types

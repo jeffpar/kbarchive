@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82914: PC OS2: Icons Stack Over Each Other in Mail for OS/2"
-permalink: kb/082/Q82914/
+permalink: /kb/082/Q82914/
 ---
 
 ## Q82914: PC OS2: Icons Stack Over Each Other in Mail for OS/2

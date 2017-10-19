@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134225: PC DirSync: Use of the -TU and -TL Options for DISPATCH.EXE"
-permalink: kb/134/Q134225/
+permalink: /kb/134/Q134225/
 ---
 
 ## Q134225: PC DirSync: Use of the -TU and -TL Options for DISPATCH.EXE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77078: FIX: Whitespace Character Must Precede DUP Operator"
-permalink: kb/077/Q77078/
+permalink: /kb/077/Q77078/
 ---
 
 ## Q77078: FIX: Whitespace Character Must Precede DUP Operator

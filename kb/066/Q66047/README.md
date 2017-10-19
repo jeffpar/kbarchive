@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66047: How to Remove QBasic and EDIT from MS-DOS 5.0 and Later"
-permalink: kb/066/Q66047/
+permalink: /kb/066/Q66047/
 ---
 
 ## Q66047: How to Remove QBasic and EDIT from MS-DOS 5.0 and Later

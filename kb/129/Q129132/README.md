@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129132: BUG: Can't Use Simple Type in an Explicit Call of a Destructor"
-permalink: kb/129/Q129132/
+permalink: /kb/129/Q129132/
 ---
 
 ## Q129132: BUG: Can't Use Simple Type in an Explicit Call of a Destructor

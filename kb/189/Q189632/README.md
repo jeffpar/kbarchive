@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189632: BUG: Error in CoolBar Event Can Cause Hanging or Exception"
-permalink: kb/189/Q189632/
+permalink: /kb/189/Q189632/
 ---
 
 ## Q189632: BUG: Error in CoolBar Event Can Cause Hanging or Exception

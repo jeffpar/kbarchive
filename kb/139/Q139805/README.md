@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139805: Err Msg: DHCP Client Unable to Obtain IP Network Address"
-permalink: kb/139/Q139805/
+permalink: /kb/139/Q139805/
 ---
 
 ## Q139805: Err Msg: DHCP Client Unable to Obtain IP Network Address

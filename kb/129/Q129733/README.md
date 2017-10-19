@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129733: VB 4.0 Calls the FreezeEvents Method to Inform OLE Controls"
-permalink: kb/129/Q129733/
+permalink: /kb/129/Q129733/
 ---
 
 ## Q129733: VB 4.0 Calls the FreezeEvents Method to Inform OLE Controls

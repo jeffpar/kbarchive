@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175200: Cannot Change the Properties of a Document in the Print Queue"
-permalink: kb/175/Q175200/
+permalink: /kb/175/Q175200/
 ---
 
 ## Q175200: Cannot Change the Properties of a Document in the Print Queue

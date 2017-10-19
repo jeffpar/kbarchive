@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80143: BUG: Text Formatting Lost When Edit Text Dialog Box Used"
-permalink: kb/080/Q80143/
+permalink: /kb/080/Q80143/
 ---
 
 ## Q80143: BUG: Text Formatting Lost When Edit Text Dialog Box Used

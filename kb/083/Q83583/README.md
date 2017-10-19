@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83583: Windows 3.1 Does Not Allow Swap File on Stacker Drive"
-permalink: kb/083/Q83583/
+permalink: /kb/083/Q83583/
 ---
 
 ## Q83583: Windows 3.1 Does Not Allow Swap File on Stacker Drive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237840: Soon.exe Schedules Tasks for Next Day Instead of Current Day"
-permalink: kb/237/Q237840/
+permalink: /kb/237/Q237840/
 ---
 
 ## Q237840: Soon.exe Schedules Tasks for Next Day Instead of Current Day

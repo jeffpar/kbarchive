@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169899: XGEN: Event Log Displays Different Error Description"
-permalink: kb/169/Q169899/
+permalink: /kb/169/Q169899/
 ---
 
 ## Q169899: XGEN: Event Log Displays Different Error Description

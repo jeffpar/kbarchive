@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247389: IIS: How to Disable Caching of Specific MIME Types"
-permalink: kb/247/Q247389/
+permalink: /kb/247/Q247389/
 ---
 
 ## Q247389: IIS: How to Disable Caching of Specific MIME Types

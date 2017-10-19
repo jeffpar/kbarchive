@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296787: XADM: Offline Backup and Restore Procedures for Exchange Server"
-permalink: kb/296/Q296787/
+permalink: /kb/296/Q296787/
 ---
 
 ## Q296787: XADM: Offline Backup and Restore Procedures for Exchange Server

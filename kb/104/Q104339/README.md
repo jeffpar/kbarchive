@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104339: PRB: TableDefs Not Updated When SQL Statement Creates Table"
-permalink: kb/104/Q104339/
+permalink: /kb/104/Q104339/
 ---
 
 ## Q104339: PRB: TableDefs Not Updated When SQL Statement Creates Table

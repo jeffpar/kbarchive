@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143038: SAMPLE: VBAPPT7.EXE Integrating a PowerPoint 7.0 Slide Show w/VB"
-permalink: kb/143/Q143038/
+permalink: /kb/143/Q143038/
 ---
 
 ## Q143038: SAMPLE: VBAPPT7.EXE Integrating a PowerPoint 7.0 Slide Show w/VB

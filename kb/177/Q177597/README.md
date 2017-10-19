@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177597: XFOR: Delivery and Read Reports Do Not Appear in Lotus Notes"
-permalink: kb/177/Q177597/
+permalink: /kb/177/Q177597/
 ---
 
 ## Q177597: XFOR: Delivery and Read Reports Do Not Appear in Lotus Notes

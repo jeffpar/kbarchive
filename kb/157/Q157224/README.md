@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157224: WD97: Horizontal Rule and Other Web Elements Limited to 6.5 Inch"
-permalink: kb/157/Q157224/
+permalink: /kb/157/Q157224/
 ---
 
 ## Q157224: WD97: Horizontal Rule and Other Web Elements Limited to 6.5 Inch

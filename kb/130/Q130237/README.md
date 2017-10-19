@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130237: Duplicating READ NOLOCK Functionality in Visual FoxPro"
-permalink: kb/130/Q130237/
+permalink: /kb/130/Q130237/
 ---
 
 ## Q130237: Duplicating READ NOLOCK Functionality in Visual FoxPro

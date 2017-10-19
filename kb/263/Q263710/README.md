@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263710: XADM: Exchange replication fails with 1102 s and 1103 s between"
-permalink: kb/263/Q263710/
+permalink: /kb/263/Q263710/
 ---
 
 ## Q263710: XADM: Exchange replication fails with 1102 s and 1103 s between

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235849: DEC Alpha SNA Server Drops Client LAN Connection, Logs Event 631"
-permalink: kb/235/Q235849/
+permalink: /kb/235/Q235849/
 ---
 
 ## Q235849: DEC Alpha SNA Server Drops Client LAN Connection, Logs Event 631

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154833: Automatic Logoff After Screen Saver Fails"
-permalink: kb/154/Q154833/
+permalink: /kb/154/Q154833/
 ---
 
 ## Q154833: Automatic Logoff After Screen Saver Fails

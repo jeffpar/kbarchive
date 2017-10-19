@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183380: XADM: Full Online Backup Must Be Done After a Defrag or Repair"
-permalink: kb/183/Q183380/
+permalink: /kb/183/Q183380/
 ---
 
 ## Q183380: XADM: Full Online Backup Must Be Done After a Defrag or Repair

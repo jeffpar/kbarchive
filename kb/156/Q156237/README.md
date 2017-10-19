@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156237: PRB: Report Designer/Preview Needs VFP Desktop to Display"
-permalink: kb/156/Q156237/
+permalink: /kb/156/Q156237/
 ---
 
 ## Q156237: PRB: Report Designer/Preview Needs VFP Desktop to Display

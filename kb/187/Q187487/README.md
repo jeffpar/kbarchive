@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187487: Upgrading from WinFrame 1.7 to Terminal Server 4.0"
-permalink: kb/187/Q187487/
+permalink: /kb/187/Q187487/
 ---
 
 ## Q187487: Upgrading from WinFrame 1.7 to Terminal Server 4.0

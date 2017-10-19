@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248074: Err Msg: Access Forbidden: Too Many Users Are Connected 403.9"
-permalink: kb/248/Q248074/
+permalink: /kb/248/Q248074/
 ---
 
 ## Q248074: Err Msg: Access Forbidden: Too Many Users Are Connected 403.9

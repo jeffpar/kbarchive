@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163891: Microsoft Excel 97 Causes a Windows NT Access Violation"
-permalink: kb/163/Q163891/
+permalink: /kb/163/Q163891/
 ---
 
 ## Q163891: Microsoft Excel 97 Causes a Windows NT Access Violation

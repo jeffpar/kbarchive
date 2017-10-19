@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320874: PRB: Page Numbers Not Incremented in a Maximized Preview Window"
-permalink: kb/320/Q320874/
+permalink: /kb/320/Q320874/
 ---
 
 ## Q320874: PRB: Page Numbers Not Incremented in a Maximized Preview Window

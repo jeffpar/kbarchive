@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199387: XADM: Replication Stops with Event ID 1188, 1083, and 1059"
-permalink: kb/199/Q199387/
+permalink: /kb/199/Q199387/
 ---
 
 ## Q199387: XADM: Replication Stops with Event ID 1188, 1083, and 1059

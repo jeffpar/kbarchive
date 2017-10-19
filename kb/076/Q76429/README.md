@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76429: Flight Simulator Not Supported with A/UX Operating System"
-permalink: kb/076/Q76429/
+permalink: /kb/076/Q76429/
 ---
 
 ## Q76429: Flight Simulator Not Supported with A/UX Operating System

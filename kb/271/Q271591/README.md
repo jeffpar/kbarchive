@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271591: XFOR: Virus Scan Software Interferes with Message Delivery"
-permalink: kb/271/Q271591/
+permalink: /kb/271/Q271591/
 ---
 
 ## Q271591: XFOR: Virus Scan Software Interferes with Message Delivery

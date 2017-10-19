@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71531: STAR Color Printers Print in Color from Paintbrush"
-permalink: kb/071/Q71531/
+permalink: /kb/071/Q71531/
 ---
 
 ## Q71531: STAR Color Printers Print in Color from Paintbrush

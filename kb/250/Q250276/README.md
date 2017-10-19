@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250276: HOWTO: Do Right-to-Left and Left-to-Right Mirroring in Win2000"
-permalink: kb/250/Q250276/
+permalink: /kb/250/Q250276/
 ---
 
 ## Q250276: HOWTO: Do Right-to-Left and Left-to-Right Mirroring in Win2000

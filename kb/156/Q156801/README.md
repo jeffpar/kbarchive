@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156801: Stop 0x4,0x1,0,0 on DEC ALPHA 1000 During Setup"
-permalink: kb/156/Q156801/
+permalink: /kb/156/Q156801/
 ---
 
 ## Q156801: Stop 0x4,0x1,0,0 on DEC ALPHA 1000 During Setup

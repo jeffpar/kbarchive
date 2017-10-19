@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187119: Custom Dictionaries in Office97"
-permalink: kb/187/Q187119/
+permalink: /kb/187/Q187119/
 ---
 
 ## Q187119: Custom Dictionaries in Office97

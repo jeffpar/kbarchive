@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181289: HOWTO: Pass Structures to a DLL"
-permalink: kb/181/Q181289/
+permalink: /kb/181/Q181289/
 ---
 
 ## Q181289: HOWTO: Pass Structures to a DLL

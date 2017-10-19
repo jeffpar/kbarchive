@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84791: Associating Files and Passing Command-Line Parameters"
-permalink: kb/084/Q84791/
+permalink: /kb/084/Q84791/
 ---
 
 ## Q84791: Associating Files and Passing Command-Line Parameters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129217: NWCONV Does Not Use Mappings In Specified File"
-permalink: kb/129/Q129217/
+permalink: /kb/129/Q129217/
 ---
 
 ## Q129217: NWCONV Does Not Use Mappings In Specified File

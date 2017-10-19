@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116370: BUG: EE: &quot;CXX0058: Error: Overloaded Operator Not Found&quot;"
-permalink: kb/116/Q116370/
+permalink: /kb/116/Q116370/
 ---
 
 ## Q116370: BUG: EE: &quot;CXX0058: Error: Overloaded Operator Not Found&quot;

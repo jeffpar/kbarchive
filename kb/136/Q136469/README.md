@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136469: Cannot Install WordPerfect Presentations 2.0"
-permalink: kb/136/Q136469/
+permalink: /kb/136/Q136469/
 ---
 
 ## Q136469: Cannot Install WordPerfect Presentations 2.0

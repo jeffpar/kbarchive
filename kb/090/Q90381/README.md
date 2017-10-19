@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90381: WFWG Server, Share, and Mail Naming Conventions"
-permalink: kb/090/Q90381/
+permalink: /kb/090/Q90381/
 ---
 
 ## Q90381: WFWG Server, Share, and Mail Naming Conventions

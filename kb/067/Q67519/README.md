@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67519: UAEs When Cutting and Pasting with Micrografx Designer 3.01"
-permalink: kb/067/Q67519/
+permalink: /kb/067/Q67519/
 ---
 
 ## Q67519: UAEs When Cutting and Pasting with Micrografx Designer 3.01

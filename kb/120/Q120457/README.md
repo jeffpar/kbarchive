@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120457: Undocked Laptop RAS Server Cannot See Connected RAS Client"
-permalink: kb/120/Q120457/
+permalink: /kb/120/Q120457/
 ---
 
 ## Q120457: Undocked Laptop RAS Server Cannot See Connected RAS Client

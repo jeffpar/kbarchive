@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136870: SNA Server Does Not Support 3270 Bisync (BSC) Protocol"
-permalink: kb/136/Q136870/
+permalink: /kb/136/Q136870/
 ---
 
 ## Q136870: SNA Server Does Not Support 3270 Bisync (BSC) Protocol

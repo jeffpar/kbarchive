@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141074: PRB: ErrMsg: &quot;DBC... Previously Opened Non-Exclusively&quot;"
-permalink: kb/141/Q141074/
+permalink: /kb/141/Q141074/
 ---
 
 ## Q141074: PRB: ErrMsg: &quot;DBC... Previously Opened Non-Exclusively&quot;

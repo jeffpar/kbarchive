@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263043: How to remove the MSN 5.x icon from the Windows desktop."
-permalink: kb/263/Q263043/
+permalink: /kb/263/Q263043/
 ---
 
 ## Q263043: How to remove the MSN 5.x icon from the Windows desktop.

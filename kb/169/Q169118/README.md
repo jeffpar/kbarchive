@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169118: Netmon Trace Can Show Why 2004 Warnings Get Logged."
-permalink: kb/169/Q169118/
+permalink: /kb/169/Q169118/
 ---
 
 ## Q169118: Netmon Trace Can Show Why 2004 Warnings Get Logged.

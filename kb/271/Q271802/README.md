@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271802: Passwords in Metadirectory Services Cannot Be Reset to Null"
-permalink: kb/271/Q271802/
+permalink: /kb/271/Q271802/
 ---
 
 ## Q271802: Passwords in Metadirectory Services Cannot Be Reset to Null

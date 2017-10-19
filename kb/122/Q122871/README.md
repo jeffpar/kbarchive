@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122871: Unable to Bind Network Services to Protocols"
-permalink: kb/122/Q122871/
+permalink: /kb/122/Q122871/
 ---
 
 ## Q122871: Unable to Bind Network Services to Protocols

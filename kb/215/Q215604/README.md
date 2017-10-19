@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215604: XWEB: OWA Client Allows You to Delete Special Outlook Folders"
-permalink: kb/215/Q215604/
+permalink: /kb/215/Q215604/
 ---
 
 ## Q215604: XWEB: OWA Client Allows You to Delete Special Outlook Folders

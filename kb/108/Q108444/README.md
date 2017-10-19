@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108444: Art Gallery: Search List Contains Multiple Instances of Titles"
-permalink: kb/108/Q108444/
+permalink: /kb/108/Q108444/
 ---
 
 ## Q108444: Art Gallery: Search List Contains Multiple Instances of Titles

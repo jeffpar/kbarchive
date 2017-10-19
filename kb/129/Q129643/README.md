@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129643: How Transaction Processing Interacts with TableUpdate"
-permalink: kb/129/Q129643/
+permalink: /kb/129/Q129643/
 ---
 
 ## Q129643: How Transaction Processing Interacts with TableUpdate

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173500: Error Message: MSN Failed to Load Folcom.dll"
-permalink: kb/173/Q173500/
+permalink: /kb/173/Q173500/
 ---
 
 ## Q173500: Error Message: MSN Failed to Load Folcom.dll

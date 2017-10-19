@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160571: Telnet Session to IIS Causes Access Violation in Inetinfo.exe"
-permalink: kb/160/Q160571/
+permalink: /kb/160/Q160571/
 ---
 
 ## Q160571: Telnet Session to IIS Causes Access Violation in Inetinfo.exe

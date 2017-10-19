@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241289: How to Change the Amount of Memory Used During an Installation"
-permalink: kb/241/Q241289/
+permalink: /kb/241/Q241289/
 ---
 
 ## Q241289: How to Change the Amount of Memory Used During an Installation

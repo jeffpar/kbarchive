@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69651: Listing of Taipei Winner Messages"
-permalink: kb/069/Q69651/
+permalink: /kb/069/Q69651/
 ---
 
 ## Q69651: Listing of Taipei Winner Messages

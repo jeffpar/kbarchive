@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230683: XFOR: Connection Refused to Notes Server with DBCS in FQDN"
-permalink: kb/230/Q230683/
+permalink: /kb/230/Q230683/
 ---
 
 ## Q230683: XFOR: Connection Refused to Notes Server with DBCS in FQDN

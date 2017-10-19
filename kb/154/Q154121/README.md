@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154121: How to Increase the Lotus Notes Client Timeout Value"
-permalink: kb/154/Q154121/
+permalink: /kb/154/Q154121/
 ---
 
 ## Q154121: How to Increase the Lotus Notes Client Timeout Value

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201904: XFOR: Information Store Archiving a Message If ResolveP2 Enabled"
-permalink: kb/201/Q201904/
+permalink: /kb/201/Q201904/
 ---
 
 ## Q201904: XFOR: Information Store Archiving a Message If ResolveP2 Enabled

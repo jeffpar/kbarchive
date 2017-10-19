@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167375: Err Msg: Error Opening Modem.inf File in the RAS Directory"
-permalink: kb/167/Q167375/
+permalink: /kb/167/Q167375/
 ---
 
 ## Q167375: Err Msg: Error Opening Modem.inf File in the RAS Directory

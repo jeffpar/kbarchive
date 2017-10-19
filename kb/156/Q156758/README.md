@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156758: BUG: Perfmon Terminates While Monitoring SQL Procedure Cache"
-permalink: kb/156/Q156758/
+permalink: /kb/156/Q156758/
 ---
 
 ## Q156758: BUG: Perfmon Terminates While Monitoring SQL Procedure Cache

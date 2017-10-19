@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132397: HOWTO: Retrieve a Counter Field Value Without Requerying"
-permalink: kb/132/Q132397/
+permalink: /kb/132/Q132397/
 ---
 
 ## Q132397: HOWTO: Retrieve a Counter Field Value Without Requerying

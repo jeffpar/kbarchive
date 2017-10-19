@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152786: MSN Mail/Exchange Questions &amp; Answers"
-permalink: kb/152/Q152786/
+permalink: /kb/152/Q152786/
 ---
 
 ## Q152786: MSN Mail/Exchange Questions &amp; Answers

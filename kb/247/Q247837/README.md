@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247837: FS2000: Unexpected Action When You Press SideWinder Button"
-permalink: kb/247/Q247837/
+permalink: /kb/247/Q247837/
 ---
 
 ## Q247837: FS2000: Unexpected Action When You Press SideWinder Button

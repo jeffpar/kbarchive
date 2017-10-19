@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157854: HOWTO: Create a New Form Based on a Template"
-permalink: kb/157/Q157854/
+permalink: /kb/157/Q157854/
 ---
 
 ## Q157854: HOWTO: Create a New Form Based on a Template

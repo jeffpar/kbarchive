@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238962: Configuring SFU to Run on Proxy Server 2.0 and Proxy Clients"
-permalink: kb/238/Q238962/
+permalink: /kb/238/Q238962/
 ---
 
 ## Q238962: Configuring SFU to Run on Proxy Server 2.0 and Proxy Clients

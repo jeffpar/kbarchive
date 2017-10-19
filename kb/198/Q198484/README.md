@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198484: XCLN: Outlook for the Macintosh Cannot Use Outlook Contacts"
-permalink: kb/198/Q198484/
+permalink: /kb/198/Q198484/
 ---
 
 ## Q198484: XCLN: Outlook for the Macintosh Cannot Use Outlook Contacts

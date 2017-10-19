@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156453: DOCERR: Excel Code in Chapter 16 of Online Docs Incorrect"
-permalink: kb/156/Q156453/
+permalink: /kb/156/Q156453/
 ---
 
 ## Q156453: DOCERR: Excel Code in Chapter 16 of Online Docs Incorrect

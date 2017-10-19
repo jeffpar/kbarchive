@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137184: Julia Child: Pressing Return After Find does Not Go to Topic"
-permalink: kb/137/Q137184/
+permalink: /kb/137/Q137184/
 ---
 
 ## Q137184: Julia Child: Pressing Return After Find does Not Go to Topic

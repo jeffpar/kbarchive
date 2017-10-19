@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157740: XCLN: Using ShivaRemote w/ Exchange (MS-DOS/LanMan TCP/IP)"
-permalink: kb/157/Q157740/
+permalink: /kb/157/Q157740/
 ---
 
 ## Q157740: XCLN: Using ShivaRemote w/ Exchange (MS-DOS/LanMan TCP/IP)

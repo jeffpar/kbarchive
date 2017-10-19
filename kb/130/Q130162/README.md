@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130162: How to Assign an Icon to an .EXE File"
-permalink: kb/130/Q130162/
+permalink: /kb/130/Q130162/
 ---
 
 ## Q130162: How to Assign an Icon to an .EXE File

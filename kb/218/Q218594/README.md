@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218594: DirectX Troubleshooter Displays Incorrect Troubleshooting Steps"
-permalink: kb/218/Q218594/
+permalink: /kb/218/Q218594/
 ---
 
 ## Q218594: DirectX Troubleshooter Displays Incorrect Troubleshooting Steps

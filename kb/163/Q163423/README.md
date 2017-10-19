@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163423: SET: Allied Telesyn 1700+ Network Adapter Posts Event Message"
-permalink: kb/163/Q163423/
+permalink: /kb/163/Q163423/
 ---
 
 ## Q163423: SET: Allied Telesyn 1700+ Network Adapter Posts Event Message

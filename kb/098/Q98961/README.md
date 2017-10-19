@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98961: Mac Fax: Compatible Modems"
-permalink: kb/098/Q98961/
+permalink: /kb/098/Q98961/
 ---
 
 ## Q98961: Mac Fax: Compatible Modems

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185503: APPC Security Information Sent Even If Host Doesn't Support It"
-permalink: kb/185/Q185503/
+permalink: /kb/185/Q185503/
 ---
 
 ## Q185503: APPC Security Information Sent Even If Host Doesn't Support It

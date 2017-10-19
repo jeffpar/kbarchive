@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265776: INFO: System Requirements for eMbedded Visual Basic 3.0"
-permalink: kb/265/Q265776/
+permalink: /kb/265/Q265776/
 ---
 
 ## Q265776: INFO: System Requirements for eMbedded Visual Basic 3.0

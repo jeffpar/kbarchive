@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166162: XFOR: MACGATE Access Violation During Generation of Admin Msg"
-permalink: kb/166/Q166162/
+permalink: /kb/166/Q166162/
 ---
 
 ## Q166162: XFOR: MACGATE Access Violation During Generation of Admin Msg

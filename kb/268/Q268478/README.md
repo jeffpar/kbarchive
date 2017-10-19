@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268478: PRB: _CLIPTEXT Loses Line Feeds (ASCII 10)"
-permalink: kb/268/Q268478/
+permalink: /kb/268/Q268478/
 ---
 
 ## Q268478: PRB: _CLIPTEXT Loses Line Feeds (ASCII 10)

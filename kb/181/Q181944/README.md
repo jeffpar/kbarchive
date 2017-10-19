@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181944: HOWTO: Use API Functions to Retrieve System Font Information"
-permalink: kb/181/Q181944/
+permalink: /kb/181/Q181944/
 ---
 
 ## Q181944: HOWTO: Use API Functions to Retrieve System Font Information

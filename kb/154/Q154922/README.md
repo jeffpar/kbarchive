@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154922: DBWEB: DbWeb Administrator Reports the Datasource is Invalid"
-permalink: kb/154/Q154922/
+permalink: /kb/154/Q154922/
 ---
 
 ## Q154922: DBWEB: DbWeb Administrator Reports the Datasource is Invalid

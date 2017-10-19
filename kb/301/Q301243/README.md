@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301243: Edbbcli.dll in Use Error Message During Exchange 5.5 Upgrade"
-permalink: kb/301/Q301243/
+permalink: /kb/301/Q301243/
 ---
 
 ## Q301243: Edbbcli.dll in Use Error Message During Exchange 5.5 Upgrade

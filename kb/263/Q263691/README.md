@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263691: Environment Variables in TrustedDriverPath Are Not Resolved"
-permalink: kb/263/Q263691/
+permalink: /kb/263/Q263691/
 ---
 
 ## Q263691: Environment Variables in TrustedDriverPath Are Not Resolved

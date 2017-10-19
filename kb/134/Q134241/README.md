@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134241: PCI Bus Incorrectly Detected on IBM ValuePoint DX4-100"
-permalink: kb/134/Q134241/
+permalink: /kb/134/Q134241/
 ---
 
 ## Q134241: PCI Bus Incorrectly Detected on IBM ValuePoint DX4-100

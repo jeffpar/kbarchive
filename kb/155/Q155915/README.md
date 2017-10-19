@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155915: Encarta 97: Setup: Cannot Restart With Exchange Running"
-permalink: kb/155/Q155915/
+permalink: /kb/155/Q155915/
 ---
 
 ## Q155915: Encarta 97: Setup: Cannot Restart With Exchange Running

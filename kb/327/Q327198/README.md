@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q327198: INFO: Platform Support for ASP.NET Applications"
-permalink: kb/327/Q327198/
+permalink: /kb/327/Q327198/
 ---
 
 ## Q327198: INFO: Platform Support for ASP.NET Applications

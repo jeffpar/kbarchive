@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244244: XADM: Can't Install Service Packs on Exchange 5.5 SE in Cluster"
-permalink: kb/244/Q244244/
+permalink: /kb/244/Q244244/
 ---
 
 ## Q244244: XADM: Can't Install Service Packs on Exchange 5.5 SE in Cluster

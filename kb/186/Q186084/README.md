@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186084: HOWTO: Use the _arraylib Class from _utility Class Library"
-permalink: kb/186/Q186084/
+permalink: /kb/186/Q186084/
 ---
 
 ## Q186084: HOWTO: Use the _arraylib Class from _utility Class Library

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140317: DOC: Visual SourceSafe Treats Binary Files Differently"
-permalink: kb/140/Q140317/
+permalink: /kb/140/Q140317/
 ---
 
 ## Q140317: DOC: Visual SourceSafe Treats Binary Files Differently

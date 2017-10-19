@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309567: Query Returns Empty Results with IS NULL Test Condition"
-permalink: kb/309/Q309567/
+permalink: /kb/309/Q309567/
 ---
 
 ## Q309567: Query Returns Empty Results with IS NULL Test Condition

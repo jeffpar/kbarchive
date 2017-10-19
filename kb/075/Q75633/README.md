@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75633: How to Delete PCTRACKR.DEL File"
-permalink: kb/075/Q75633/
+permalink: /kb/075/Q75633/
 ---
 
 ## Q75633: How to Delete PCTRACKR.DEL File

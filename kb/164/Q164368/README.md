@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164368: Kids Plus!: How to Disable Login Screen When Starting Windows"
-permalink: kb/164/Q164368/
+permalink: /kb/164/Q164368/
 ---
 
 ## Q164368: Kids Plus!: How to Disable Login Screen When Starting Windows

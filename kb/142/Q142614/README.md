@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142614: Internet Information Server SMTP Gateway Troubleshooting"
-permalink: kb/142/Q142614/
+permalink: /kb/142/Q142614/
 ---
 
 ## Q142614: Internet Information Server SMTP Gateway Troubleshooting

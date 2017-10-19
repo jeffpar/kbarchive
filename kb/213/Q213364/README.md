@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213364: HOWTO: Retrieve an ADOMD Cellset as an ADODB Recordset"
-permalink: kb/213/Q213364/
+permalink: /kb/213/Q213364/
 ---
 
 ## Q213364: HOWTO: Retrieve an ADOMD Cellset as an ADODB Recordset

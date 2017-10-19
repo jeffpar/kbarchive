@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62740: Changing the Palette of Colors on a Nonpalette Device"
-permalink: kb/062/Q62740/
+permalink: /kb/062/Q62740/
 ---
 
 ## Q62740: Changing the Palette of Colors on a Nonpalette Device

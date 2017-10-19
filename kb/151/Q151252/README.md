@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151252: No Helpdesk Template under SMS Security Manager"
-permalink: kb/151/Q151252/
+permalink: /kb/151/Q151252/
 ---
 
 ## Q151252: No Helpdesk Template under SMS Security Manager

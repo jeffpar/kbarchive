@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173760: XADM: User's GAL Displayed Differently Based on Search Control"
-permalink: kb/173/Q173760/
+permalink: /kb/173/Q173760/
 ---
 
 ## Q173760: XADM: User's GAL Displayed Differently Based on Search Control

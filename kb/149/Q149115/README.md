@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149115: MSN Interactive Teen: Installing and Setting Up a Sound Card"
-permalink: kb/149/Q149115/
+permalink: /kb/149/Q149115/
 ---
 
 ## Q149115: MSN Interactive Teen: Installing and Setting Up a Sound Card

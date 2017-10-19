@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186567: Terminal Server Domain Structure Considerations"
-permalink: kb/186/Q186567/
+permalink: /kb/186/Q186567/
 ---
 
 ## Q186567: Terminal Server Domain Structure Considerations

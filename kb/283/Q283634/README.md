@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q283634: Proxy 2.Server Has Two Different Files for the IP Filter Driver"
-permalink: kb/283/Q283634/
+permalink: /kb/283/Q283634/
 ---
 
 ## Q283634: Proxy 2.Server Has Two Different Files for the IP Filter Driver

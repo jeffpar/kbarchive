@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123650: X400: Err Msg: ERROR 1 (RTS): Failed to Decode PAccept"
-permalink: kb/123/Q123650/
+permalink: /kb/123/Q123650/
 ---
 
 ## Q123650: X400: Err Msg: ERROR 1 (RTS): Failed to Decode PAccept

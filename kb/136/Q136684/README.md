@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136684: FURY3: 32Bit Version Of Acmsetup.hlp Contains No Information"
-permalink: kb/136/Q136684/
+permalink: /kb/136/Q136684/
 ---
 
 ## Q136684: FURY3: 32Bit Version Of Acmsetup.hlp Contains No Information

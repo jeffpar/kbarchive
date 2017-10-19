@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153721: XCLN: TCPIP Clarification for Win16 Client in SP2 Readme.wri"
-permalink: kb/153/Q153721/
+permalink: /kb/153/Q153721/
 ---
 
 ## Q153721: XCLN: TCPIP Clarification for Win16 Client in SP2 Readme.wri

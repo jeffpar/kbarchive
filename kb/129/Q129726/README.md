@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129726: TCP/IP Requires Ethernet_II Frame Type for ODI Driver"
-permalink: kb/129/Q129726/
+permalink: /kb/129/Q129726/
 ---
 
 ## Q129726: TCP/IP Requires Ethernet_II Frame Type for ODI Driver

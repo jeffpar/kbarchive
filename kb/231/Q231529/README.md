@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231529: MapPoint 2000: Unable to Link or Import More than 1000 Records"
-permalink: kb/231/Q231529/
+permalink: /kb/231/Q231529/
 ---
 
 ## Q231529: MapPoint 2000: Unable to Link or Import More than 1000 Records

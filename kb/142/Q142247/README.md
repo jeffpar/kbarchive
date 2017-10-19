@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142247: FIX: Application Error Occurs When Printing a Large Project"
-permalink: kb/142/Q142247/
+permalink: /kb/142/Q142247/
 ---
 
 ## Q142247: FIX: Application Error Occurs When Printing a Large Project

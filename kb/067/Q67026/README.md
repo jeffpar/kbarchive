@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67026: Bitstream Fontware 3.0 Installation Kit Requirements"
-permalink: kb/067/Q67026/
+permalink: /kb/067/Q67026/
 ---
 
 ## Q67026: Bitstream Fontware 3.0 Installation Kit Requirements

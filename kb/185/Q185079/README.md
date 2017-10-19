@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185079: Date of File Copied to a Windows NT Server and Back Is Changed"
-permalink: kb/185/Q185079/
+permalink: /kb/185/Q185079/
 ---
 
 ## Q185079: Date of File Copied to a Windows NT Server and Back Is Changed

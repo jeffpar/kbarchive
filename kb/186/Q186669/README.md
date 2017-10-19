@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186669: FPNW Logout.exe Incorrectly Reports Year After Jan. 1, 2000"
-permalink: kb/186/Q186669/
+permalink: /kb/186/Q186669/
 ---
 
 ## Q186669: FPNW Logout.exe Incorrectly Reports Year After Jan. 1, 2000

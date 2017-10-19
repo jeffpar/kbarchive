@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83750: Sharing Violation with Identical OEMSETUP.INF Files"
-permalink: kb/083/Q83750/
+permalink: /kb/083/Q83750/
 ---
 
 ## Q83750: Sharing Violation with Identical OEMSETUP.INF Files

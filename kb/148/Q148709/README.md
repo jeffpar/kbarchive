@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148709: Windows 95 Service Pack 1 Files Not Found After Setup"
-permalink: kb/148/Q148709/
+permalink: /kb/148/Q148709/
 ---
 
 ## Q148709: Windows 95 Service Pack 1 Files Not Found After Setup

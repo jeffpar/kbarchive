@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180638: Radius Server Not Logging When Users Connect from RRAS"
-permalink: kb/180/Q180638/
+permalink: /kb/180/Q180638/
 ---
 
 ## Q180638: Radius Server Not Logging When Users Connect from RRAS

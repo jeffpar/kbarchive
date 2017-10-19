@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168792: FIX: Statusbar Time Panel May Not Update Properly"
-permalink: kb/168/Q168792/
+permalink: /kb/168/Q168792/
 ---
 
 ## Q168792: FIX: Statusbar Time Panel May Not Update Properly

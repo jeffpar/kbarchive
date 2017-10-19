@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79658: Using MS-DOS 5.0 COPY Switches /A /B to Remove ^Z"
-permalink: kb/079/Q79658/
+permalink: /kb/079/Q79658/
 ---
 
 ## Q79658: Using MS-DOS 5.0 COPY Switches /A /B to Remove ^Z

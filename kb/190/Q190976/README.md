@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190976: PRB: IntelliSense Ignores Unicode/ANSI Versions of Win32 API"
-permalink: kb/190/Q190976/
+permalink: /kb/190/Q190976/
 ---
 
 ## Q190976: PRB: IntelliSense Ignores Unicode/ANSI Versions of Win32 API

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142048: WinNT 3.51 SP2 Increases Performance and Resolves SQL Slowdowns"
-permalink: kb/142/Q142048/
+permalink: /kb/142/Q142048/
 ---
 
 ## Q142048: WinNT 3.51 SP2 Increases Performance and Resolves SQL Slowdowns

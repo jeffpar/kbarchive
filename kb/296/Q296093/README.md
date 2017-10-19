@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296093: FILE: PrepWebLog Utility Prepares IIS Logs for SQL Bulk Insert"
-permalink: kb/296/Q296093/
+permalink: /kb/296/Q296093/
 ---
 
 ## Q296093: FILE: PrepWebLog Utility Prepares IIS Logs for SQL Bulk Insert

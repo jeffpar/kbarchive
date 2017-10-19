@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107744: Cannot Access a Joliet Formatted CD Created by Easy-CD Pro 95"
-permalink: kb/107/Q107744/
+permalink: /kb/107/Q107744/
 ---
 
 ## Q107744: Cannot Access a Joliet Formatted CD Created by Easy-CD Pro 95

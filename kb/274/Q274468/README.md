@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274468: MSN Companion setup error: username and password do not match up"
-permalink: kb/274/Q274468/
+permalink: /kb/274/Q274468/
 ---
 
 ## Q274468: MSN Companion setup error: username and password do not match up

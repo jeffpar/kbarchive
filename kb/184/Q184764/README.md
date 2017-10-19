@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184764: XADM: Disk Space Required For Upgrade From Version 4.0 To 5.0"
-permalink: kb/184/Q184764/
+permalink: /kb/184/Q184764/
 ---
 
 ## Q184764: XADM: Disk Space Required For Upgrade From Version 4.0 To 5.0

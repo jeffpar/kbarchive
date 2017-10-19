@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106455: HOWTO: Acquire a List of All CDocument Objects"
-permalink: kb/106/Q106455/
+permalink: /kb/106/Q106455/
 ---
 
 ## Q106455: HOWTO: Acquire a List of All CDocument Objects

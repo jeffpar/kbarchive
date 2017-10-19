@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82081: Cannot Use EMM386.SYS/EMM386.EXE in Standard Mode Windows 3.0"
-permalink: kb/082/Q82081/
+permalink: /kb/082/Q82081/
 ---
 
 ## Q82081: Cannot Use EMM386.SYS/EMM386.EXE in Standard Mode Windows 3.0

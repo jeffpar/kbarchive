@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98813: PROFS: 3.0 Gateway Disk 1 [5.25, 1.2 MB]"
-permalink: kb/098/Q98813/
+title: "Q98813: PROFS: 3.0 Gateway Disk 1 &#91;5.25, 1.2 MB&#93;"
+permalink: /kb/098/Q98813/
 ---
 
-## Q98813: PROFS: 3.0 Gateway Disk 1 [5.25, 1.2 MB]
+## Q98813: PROFS: 3.0 Gateway Disk 1 &#91;5.25, 1.2 MB&#93;
 
 	Article: Q98813
 	Product(s): Microsoft Mail For PC Networks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70753: DELOLDOS Command and OLD_DOS Directory Creation Limit"
-permalink: kb/070/Q70753/
+permalink: /kb/070/Q70753/
 ---
 
 ## Q70753: DELOLDOS Command and OLD_DOS Directory Creation Limit

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66325: Windows Productivity Pack README.DOC"
-permalink: kb/066/Q66325/
+permalink: /kb/066/Q66325/
 ---
 
 ## Q66325: Windows Productivity Pack README.DOC

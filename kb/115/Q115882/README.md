@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115882: MS-DOS 6.2 Upgrade 1.44 MB Files Compressed and Expanded Sizes"
-permalink: kb/115/Q115882/
+permalink: /kb/115/Q115882/
 ---
 
 ## Q115882: MS-DOS 6.2 Upgrade 1.44 MB Files Compressed and Expanded Sizes

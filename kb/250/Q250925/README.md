@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250925: ASP Refresh Problems with IIS and Network Appliance File Server"
-permalink: kb/250/Q250925/
+permalink: /kb/250/Q250925/
 ---
 
 ## Q250925: ASP Refresh Problems with IIS and Network Appliance File Server

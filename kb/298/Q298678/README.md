@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298678: INFO: ODBC 64-Bit API Changes in MDAC 2.7"
-permalink: kb/298/Q298678/
+permalink: /kb/298/Q298678/
 ---
 
 ## Q298678: INFO: ODBC 64-Bit API Changes in MDAC 2.7

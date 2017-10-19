@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179539: PPT: Cannot Password Protect PowerPoint Presentations"
-permalink: kb/179/Q179539/
+permalink: /kb/179/Q179539/
 ---
 
 ## Q179539: PPT: Cannot Password Protect PowerPoint Presentations

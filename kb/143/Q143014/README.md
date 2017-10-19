@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143014: PPT: Objects Disappear from Presentation on Windows NT"
-permalink: kb/143/Q143014/
+permalink: /kb/143/Q143014/
 ---
 
 ## Q143014: PPT: Objects Disappear from Presentation on Windows NT

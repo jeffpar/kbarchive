@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131743: Fatal Exception Selecting to End of Line in Edit"
-permalink: kb/131/Q131743/
+permalink: /kb/131/Q131743/
 ---
 
 ## Q131743: Fatal Exception Selecting to End of Line in Edit

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145703: Windows Socket Error Running Program Using IPX/SPX"
-permalink: kb/145/Q145703/
+permalink: /kb/145/Q145703/
 ---
 
 ## Q145703: Windows Socket Error Running Program Using IPX/SPX

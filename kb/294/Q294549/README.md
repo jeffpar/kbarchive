@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294549: FP: How to Use the Windows Media Player ActiveX Control"
-permalink: kb/294/Q294549/
+permalink: /kb/294/Q294549/
 ---
 
 ## Q294549: FP: How to Use the Windows Media Player ActiveX Control

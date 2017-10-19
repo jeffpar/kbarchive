@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189270: XFOR: 4.0 Server Cannot Process Encapsulated Delivery Receipts"
-permalink: kb/189/Q189270/
+permalink: /kb/189/Q189270/
 ---
 
 ## Q189270: XFOR: 4.0 Server Cannot Process Encapsulated Delivery Receipts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256844: XCON: Routing and RAS Connection Doesn't Work with 9301 Warning"
-permalink: kb/256/Q256844/
+permalink: /kb/256/Q256844/
 ---
 
 ## Q256844: XCON: Routing and RAS Connection Doesn't Work with 9301 Warning

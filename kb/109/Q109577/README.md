@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109577: Writer: Pop Caps or Drop Caps Formatting May Not Appear"
-permalink: kb/109/Q109577/
+permalink: /kb/109/Q109577/
 ---
 
 ## Q109577: Writer: Pop Caps or Drop Caps Formatting May Not Appear

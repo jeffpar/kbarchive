@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174764: Memory Leak in Ntfs.sys"
-permalink: kb/174/Q174764/
+permalink: /kb/174/Q174764/
 ---
 
 ## Q174764: Memory Leak in Ntfs.sys

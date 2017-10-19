@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145718: PC Gen: Err Msg: Error Copying... when Running MMFCLEAN.EXE"
-permalink: kb/145/Q145718/
+permalink: /kb/145/Q145718/
 ---
 
 ## Q145718: PC Gen: Err Msg: Error Copying... when Running MMFCLEAN.EXE

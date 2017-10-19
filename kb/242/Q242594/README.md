@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242594: Multiple-Processor Server Hangs on Connection Request"
-permalink: kb/242/Q242594/
+permalink: /kb/242/Q242594/
 ---
 
 ## Q242594: Multiple-Processor Server Hangs on Connection Request

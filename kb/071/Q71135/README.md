@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71135: DCA Irmatrak Network Card and Windows 3.0"
-permalink: kb/071/Q71135/
+permalink: /kb/071/Q71135/
 ---
 
 ## Q71135: DCA Irmatrak Network Card and Windows 3.0

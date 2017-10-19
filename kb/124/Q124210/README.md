@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124210: Windows Sound System DDK Not Available on MSDN"
-permalink: kb/124/Q124210/
+permalink: /kb/124/Q124210/
 ---
 
 ## Q124210: Windows Sound System DDK Not Available on MSDN

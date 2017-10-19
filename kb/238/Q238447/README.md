@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238447: XADM: Event 6206 after Lotus Notes Directory Synchronization"
-permalink: kb/238/Q238447/
+permalink: /kb/238/Q238447/
 ---
 
 ## Q238447: XADM: Event 6206 after Lotus Notes Directory Synchronization

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184696: HOWTO: Create a DCOM VBR File for a VC++ Server"
-permalink: kb/184/Q184696/
+permalink: /kb/184/Q184696/
 ---
 
 ## Q184696: HOWTO: Create a DCOM VBR File for a VC++ Server

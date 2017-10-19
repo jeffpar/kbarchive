@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155631: PRB: Message &quot;Error Writing to File&quot; When Checking In File"
-permalink: kb/155/Q155631/
+permalink: /kb/155/Q155631/
 ---
 
 ## Q155631: PRB: Message &quot;Error Writing to File&quot; When Checking In File

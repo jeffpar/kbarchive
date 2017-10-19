@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116074: Baseball: Trivia Game Settings Are Not Retained After Exiting"
-permalink: kb/116/Q116074/
+permalink: /kb/116/Q116074/
 ---
 
 ## Q116074: Baseball: Trivia Game Settings Are Not Retained After Exiting

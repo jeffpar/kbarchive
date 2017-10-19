@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149658: TCP/IP Printing Causes File Cache to Grow"
-permalink: kb/149/Q149658/
+permalink: /kb/149/Q149658/
 ---
 
 ## Q149658: TCP/IP Printing Causes File Cache to Grow

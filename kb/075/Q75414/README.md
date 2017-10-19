@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75414: Explanation of SPECIAL=DEFAULT in DOSSHELL.INI"
-permalink: kb/075/Q75414/
+permalink: /kb/075/Q75414/
 ---
 
 ## Q75414: Explanation of SPECIAL=DEFAULT in DOSSHELL.INI

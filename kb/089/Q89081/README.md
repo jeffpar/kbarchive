@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89081: WFWG Err Msg: No Files Found... Using CD-ROM and NetWare"
-permalink: kb/089/Q89081/
+permalink: /kb/089/Q89081/
 ---
 
 ## Q89081: WFWG Err Msg: No Files Found... Using CD-ROM and NetWare

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48744: int86x() and int86() Trap for Interrupts 25h, 26h"
-permalink: kb/048/Q48744/
+permalink: /kb/048/Q48744/
 ---
 
 ## Q48744: int86x() and int86() Trap for Interrupts 25h, 26h

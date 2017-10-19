@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110617: Flight Simulator: Altitude Appears to Drop 200+ Feet"
-permalink: kb/110/Q110617/
+permalink: /kb/110/Q110617/
 ---
 
 ## Q110617: Flight Simulator: Altitude Appears to Drop 200+ Feet

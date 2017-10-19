@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184744: DHCP Server Leaks Registry Quota on Alpha Version of Windows NT"
-permalink: kb/184/Q184744/
+permalink: /kb/184/Q184744/
 ---
 
 ## Q184744: DHCP Server Leaks Registry Quota on Alpha Version of Windows NT

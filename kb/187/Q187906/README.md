@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187906: IIS Does Not Let You Save Changes to Web Page"
-permalink: kb/187/Q187906/
+permalink: /kb/187/Q187906/
 ---
 
 ## Q187906: IIS Does Not Let You Save Changes to Web Page

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122261: Err Msg: The Trust Relationship...Could Not Be Verified..."
-permalink: kb/122/Q122261/
+permalink: /kb/122/Q122261/
 ---
 
 ## Q122261: Err Msg: The Trust Relationship...Could Not Be Verified...

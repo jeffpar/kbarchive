@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156492: GP Fault or Fatal Exception Error on Intel MMX CPU"
-permalink: kb/156/Q156492/
+permalink: /kb/156/Q156492/
 ---
 
 ## Q156492: GP Fault or Fatal Exception Error on Intel MMX CPU

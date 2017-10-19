@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151776: Err Msg: Unable to Find INF Source File during CPS Install"
-permalink: kb/151/Q151776/
+permalink: /kb/151/Q151776/
 ---
 
 ## Q151776: Err Msg: Unable to Find INF Source File during CPS Install

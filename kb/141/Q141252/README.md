@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141252: Corrupted or Symbol Font Used for Text"
-permalink: kb/141/Q141252/
+permalink: /kb/141/Q141252/
 ---
 
 ## Q141252: Corrupted or Symbol Font Used for Text

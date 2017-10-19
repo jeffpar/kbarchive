@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167044: Request From Perfmon Counter Can Cause Excessive Page Faults"
-permalink: kb/167/Q167044/
+permalink: /kb/167/Q167044/
 ---
 
 ## Q167044: Request From Perfmon Counter Can Cause Excessive Page Faults

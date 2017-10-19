@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194495: WD97: Cannot Convert WordPerfect Password-Protected File"
-permalink: kb/194/Q194495/
+permalink: /kb/194/Q194495/
 ---
 
 ## Q194495: WD97: Cannot Convert WordPerfect Password-Protected File

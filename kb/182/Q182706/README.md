@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182706: Application Exception in Snaexp.exe After Deleting LUA Pool"
-permalink: kb/182/Q182706/
+permalink: /kb/182/Q182706/
 ---
 
 ## Q182706: Application Exception in Snaexp.exe After Deleting LUA Pool

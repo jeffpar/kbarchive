@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63641: Configuring IBM PS/2s &amp; 3Com Adapters for Thick Ethernet"
-permalink: kb/063/Q63641/
+permalink: /kb/063/Q63641/
 ---
 
 ## Q63641: Configuring IBM PS/2s &amp; 3Com Adapters for Thick Ethernet

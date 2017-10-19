@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97492: COMNDIS Command Can Keep Workstations from Hanging"
-permalink: kb/097/Q97492/
+permalink: /kb/097/Q97492/
 ---
 
 ## Q97492: COMNDIS Command Can Keep Workstations from Hanging

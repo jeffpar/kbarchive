@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69089: Manifest Crash with EMM386 on COMPAQs"
-permalink: kb/069/Q69089/
+permalink: /kb/069/Q69089/
 ---
 
 ## Q69089: Manifest Crash with EMM386 on COMPAQs

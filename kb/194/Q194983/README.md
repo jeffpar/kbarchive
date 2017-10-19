@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194983: PRB: Round Function Different in VBA 6 and Excel Spreadsheet"
-permalink: kb/194/Q194983/
+permalink: /kb/194/Q194983/
 ---
 
 ## Q194983: PRB: Round Function Different in VBA 6 and Excel Spreadsheet

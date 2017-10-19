@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127798: Automap: Destination Ski Doesn't Install with Automap Pro"
-permalink: kb/127/Q127798/
+permalink: /kb/127/Q127798/
 ---
 
 ## Q127798: Automap: Destination Ski Doesn't Install with Automap Pro

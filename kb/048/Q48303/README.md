@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48303: FltSim: Using the Mouse During a Demo"
-permalink: kb/048/Q48303/
+permalink: /kb/048/Q48303/
 ---
 
 ## Q48303: FltSim: Using the Mouse During a Demo

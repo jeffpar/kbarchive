@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163807: WD97: Illegal Operation Opening Form Field Options Dialog Box"
-permalink: kb/163/Q163807/
+permalink: /kb/163/Q163807/
 ---
 
 ## Q163807: WD97: Illegal Operation Opening Form Field Options Dialog Box

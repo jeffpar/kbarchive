@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72366: Disabling Quattro Pro's Disk Cache"
-permalink: kb/072/Q72366/
+permalink: /kb/072/Q72366/
 ---
 
 ## Q72366: Disabling Quattro Pro's Disk Cache

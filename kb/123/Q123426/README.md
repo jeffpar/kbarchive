@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123426: STOP 0x0000000A During Upgrade to Windows NT 3.5"
-permalink: kb/123/Q123426/
+permalink: /kb/123/Q123426/
 ---
 
 ## Q123426: STOP 0x0000000A During Upgrade to Windows NT 3.5

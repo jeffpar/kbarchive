@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122114: MSB Human: Files Installed"
-permalink: kb/122/Q122114/
+permalink: /kb/122/Q122114/
 ---
 
 ## Q122114: MSB Human: Files Installed

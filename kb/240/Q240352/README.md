@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240352: NBA Inside Drive 2000: Screen Resolutions Supported by the Game"
-permalink: kb/240/Q240352/
+permalink: /kb/240/Q240352/
 ---
 
 ## Q240352: NBA Inside Drive 2000: Screen Resolutions Supported by the Game

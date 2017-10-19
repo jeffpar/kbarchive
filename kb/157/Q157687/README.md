@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157687: XCLN: Switching Views on a Replicated Public Folder Fails"
-permalink: kb/157/Q157687/
+permalink: /kb/157/Q157687/
 ---
 
 ## Q157687: XCLN: Switching Views on a Replicated Public Folder Fails

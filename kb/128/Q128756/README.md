@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128756: Command Line Switches for the XCOPY Command"
-permalink: kb/128/Q128756/
+permalink: /kb/128/Q128756/
 ---
 
 ## Q128756: Command Line Switches for the XCOPY Command

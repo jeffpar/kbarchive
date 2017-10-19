@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151908: SYSDIFF /dump Displays Some Registry Data Types Incorrectly"
-permalink: kb/151/Q151908/
+permalink: /kb/151/Q151908/
 ---
 
 ## Q151908: SYSDIFF /dump Displays Some Registry Data Types Incorrectly

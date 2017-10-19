@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155822: WD97: &quot;Float Over Text&quot; Check Box Checked If Paste Link Selected"
-permalink: kb/155/Q155822/
+permalink: /kb/155/Q155822/
 ---
 
 ## Q155822: WD97: &quot;Float Over Text&quot; Check Box Checked If Paste Link Selected

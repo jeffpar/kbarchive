@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167208: Sound Schemes Do Not Migrate to Other Users"
-permalink: kb/167/Q167208/
+permalink: /kb/167/Q167208/
 ---
 
 ## Q167208: Sound Schemes Do Not Migrate to Other Users

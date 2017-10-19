@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82377: Borland Applications May Appear to Hang When Installing"
-permalink: kb/082/Q82377/
+permalink: /kb/082/Q82377/
 ---
 
 ## Q82377: Borland Applications May Appear to Hang When Installing

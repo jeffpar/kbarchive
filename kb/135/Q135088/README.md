@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135088: Typing Full Path and Filename Causes Inventory Rule to Fail"
-permalink: kb/135/Q135088/
+permalink: /kb/135/Q135088/
 ---
 
 ## Q135088: Typing Full Path and Filename Causes Inventory Rule to Fail

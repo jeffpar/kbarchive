@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168715: XGEN: CD Key Required for Exchange 5.0 Evaluation Software"
-permalink: kb/168/Q168715/
+permalink: /kb/168/Q168715/
 ---
 
 ## Q168715: XGEN: CD Key Required for Exchange 5.0 Evaluation Software

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132145: Dogs: Screen Split into Panels with Radius Video Card"
-permalink: kb/132/Q132145/
+permalink: /kb/132/Q132145/
 ---
 
 ## Q132145: Dogs: Screen Split into Panels with Radius Video Card

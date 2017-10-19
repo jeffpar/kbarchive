@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200362: WD97: Bullet/Number in List Reappears When Opened in Word 6.0/95"
-permalink: kb/200/Q200362/
+permalink: /kb/200/Q200362/
 ---
 
 ## Q200362: WD97: Bullet/Number in List Reappears When Opened in Word 6.0/95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198479: XCLN: Individual AutoArchive Settings not Stored in Registry"
-permalink: kb/198/Q198479/
+permalink: /kb/198/Q198479/
 ---
 
 ## Q198479: XCLN: Individual AutoArchive Settings not Stored in Registry

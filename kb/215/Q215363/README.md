@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215363: BUG: Changing TabIndex at Run Time Has No Effect"
-permalink: kb/215/Q215363/
+permalink: /kb/215/Q215363/
 ---
 
 ## Q215363: BUG: Changing TabIndex at Run Time Has No Effect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182033: HOWTO: Use BeforeNavigate2 in VB to Get an Event from HTML"
-permalink: kb/182/Q182033/
+permalink: /kb/182/Q182033/
 ---
 
 ## Q182033: HOWTO: Use BeforeNavigate2 in VB to Get an Event from HTML

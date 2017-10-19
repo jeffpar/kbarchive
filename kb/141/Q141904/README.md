@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141904: HOWTO: Use SQL Aggregate Functions with the MFC DAO Classes"
-permalink: kb/141/Q141904/
+permalink: /kb/141/Q141904/
 ---
 
 ## Q141904: HOWTO: Use SQL Aggregate Functions with the MFC DAO Classes

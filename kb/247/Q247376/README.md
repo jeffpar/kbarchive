@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247376: WWW and FTP Virtual Directories Are Not Displayed  in Directory"
-permalink: kb/247/Q247376/
+permalink: /kb/247/Q247376/
 ---
 
 ## Q247376: WWW and FTP Virtual Directories Are Not Displayed  in Directory

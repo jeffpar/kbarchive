@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174740: XFOR: Error When Migrating Version 6 cc:Mail Post Office"
-permalink: kb/174/Q174740/
+permalink: /kb/174/Q174740/
 ---
 
 ## Q174740: XFOR: Error When Migrating Version 6 cc:Mail Post Office

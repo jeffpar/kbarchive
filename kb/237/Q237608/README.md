@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237608: Using a Default Terminal Server Profile When User Profile Is Set"
-permalink: kb/237/Q237608/
+permalink: /kb/237/Q237608/
 ---
 
 ## Q237608: Using a Default Terminal Server Profile When User Profile Is Set

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179445: Random Access Violations in Mprouter.exe"
-permalink: kb/179/Q179445/
+permalink: /kb/179/Q179445/
 ---
 
 ## Q179445: Random Access Violations in Mprouter.exe

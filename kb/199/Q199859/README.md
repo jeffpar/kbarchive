@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199859: Combat Flight Simulator: Computer Hangs After EULA Is Displayed"
-permalink: kb/199/Q199859/
+permalink: /kb/199/Q199859/
 ---
 
 ## Q199859: Combat Flight Simulator: Computer Hangs After EULA Is Displayed

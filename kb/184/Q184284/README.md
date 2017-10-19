@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184284: WD97: Cannot Find Grammar DLL During Spell Check"
-permalink: kb/184/Q184284/
+permalink: /kb/184/Q184284/
 ---
 
 ## Q184284: WD97: Cannot Find Grammar DLL During Spell Check

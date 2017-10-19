@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123145: Changing the Keyboard in Arabic, Hebrew, &amp; Greek Windows"
-permalink: kb/123/Q123145/
+permalink: /kb/123/Q123145/
 ---
 
 ## Q123145: Changing the Keyboard in Arabic, Hebrew, &amp; Greek Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253889: Event ID: 5009 - IFS Driver Cannot be Unloaded"
-permalink: kb/253/Q253889/
+permalink: /kb/253/Q253889/
 ---
 
 ## Q253889: Event ID: 5009 - IFS Driver Cannot be Unloaded

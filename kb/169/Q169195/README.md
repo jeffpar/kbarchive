@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169195: Mac Encarta 97: ErrMsg: One or More Files Required for Apple..."
-permalink: kb/169/Q169195/
+permalink: /kb/169/Q169195/
 ---
 
 ## Q169195: Mac Encarta 97: ErrMsg: One or More Files Required for Apple...

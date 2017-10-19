@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154305: Explorapedia Nature: List of Files Installed and Modified"
-permalink: kb/154/Q154305/
+permalink: /kb/154/Q154305/
 ---
 
 ## Q154305: Explorapedia Nature: List of Files Installed and Modified

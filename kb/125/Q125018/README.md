@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125018: PC Win: Details of User or Group Not Available in Read Note"
-permalink: kb/125/Q125018/
+permalink: /kb/125/Q125018/
 ---
 
 ## Q125018: PC Win: Details of User or Group Not Available in Read Note

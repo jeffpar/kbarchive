@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143307: How to Retain the ForeColor in a Grid For a Selected Cell"
-permalink: kb/143/Q143307/
+permalink: /kb/143/Q143307/
 ---
 
 ## Q143307: How to Retain the ForeColor in a Grid For a Selected Cell

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225255: Some Share Names May Not Work Correctly"
-permalink: kb/225/Q225255/
+permalink: /kb/225/Q225255/
 ---
 
 ## Q225255: Some Share Names May Not Work Correctly

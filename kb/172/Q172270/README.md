@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172270: HOWTO: Certify a VB Application with Microsoft Windows Logo"
-permalink: kb/172/Q172270/
+permalink: /kb/172/Q172270/
 ---
 
 ## Q172270: HOWTO: Certify a VB Application with Microsoft Windows Logo

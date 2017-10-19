@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175114: XWEB: Cannot Access Custom Views Created with Outlook in OWA"
-permalink: kb/175/Q175114/
+permalink: /kb/175/Q175114/
 ---
 
 ## Q175114: XWEB: Cannot Access Custom Views Created with Outlook in OWA

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83514: Windows Err Msg: Inadequate DPMI Server"
-permalink: kb/083/Q83514/
+permalink: /kb/083/Q83514/
 ---
 
 ## Q83514: Windows Err Msg: Inadequate DPMI Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238064: SMS: Sender Routing in Multi-Tiered Hierarchies"
-permalink: kb/238/Q238064/
+permalink: /kb/238/Q238064/
 ---
 
 ## Q238064: SMS: Sender Routing in Multi-Tiered Hierarchies

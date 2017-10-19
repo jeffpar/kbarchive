@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73194: H2INC Does Not Initialize Variables During Conversion"
-permalink: kb/073/Q73194/
+permalink: /kb/073/Q73194/
 ---
 
 ## Q73194: H2INC Does Not Initialize Variables During Conversion

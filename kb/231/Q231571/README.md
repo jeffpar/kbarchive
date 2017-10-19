@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231571: Err Msg: STOP 0x00000050 Occurs with HP Color LaserJet 5/5M"
-permalink: kb/231/Q231571/
+permalink: /kb/231/Q231571/
 ---
 
 ## Q231571: Err Msg: STOP 0x00000050 Occurs with HP Color LaserJet 5/5M

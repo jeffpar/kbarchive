@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89910: Error in Quick Recorder Help"
-permalink: kb/089/Q89910/
+permalink: /kb/089/Q89910/
 ---
 
 ## Q89910: Error in Quick Recorder Help

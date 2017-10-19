@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157534: XCLN: Memory Valet Utility to Correct &quot;Out of Memory&quot; Errors"
-permalink: kb/157/Q157534/
+permalink: /kb/157/Q157534/
 ---
 
 ## Q157534: XCLN: Memory Valet Utility to Correct &quot;Out of Memory&quot; Errors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67992: How Microsoft MS-DOS 5 Upgrade Locates DOS Subdirectory"
-permalink: kb/067/Q67992/
+permalink: /kb/067/Q67992/
 ---
 
 ## Q67992: How Microsoft MS-DOS 5 Upgrade Locates DOS Subdirectory

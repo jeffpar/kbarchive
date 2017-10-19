@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150351: FIX: Absolute Pathnames for Source Files Placed in Makefile"
-permalink: kb/150/Q150351/
+permalink: /kb/150/Q150351/
 ---
 
 ## Q150351: FIX: Absolute Pathnames for Source Files Placed in Makefile

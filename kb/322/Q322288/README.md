@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322288: Using MSN Broadband with Mac OS X"
-permalink: kb/322/Q322288/
+permalink: /kb/322/Q322288/
 ---
 
 ## Q322288: Using MSN Broadband with Mac OS X

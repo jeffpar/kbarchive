@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238262: Err Msg: &quot;STOP 0x00000050&quot; in Terminal Server Edition"
-permalink: kb/238/Q238262/
+permalink: /kb/238/Q238262/
 ---
 
 ## Q238262: Err Msg: &quot;STOP 0x00000050&quot; in Terminal Server Edition

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163253: BUG: &quot;Out of Memory&quot; Error When Saving to an Existing File"
-permalink: kb/163/Q163253/
+permalink: /kb/163/Q163253/
 ---
 
 ## Q163253: BUG: &quot;Out of Memory&quot; Error When Saving to an Existing File

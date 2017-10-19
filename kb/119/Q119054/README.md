@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119054: PROFS: The Meaning of the {future date} in VMGATE.LOG"
-permalink: kb/119/Q119054/
+permalink: /kb/119/Q119054/
 ---
 
 ## Q119054: PROFS: The Meaning of the {future date} in VMGATE.LOG

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71875: MS-DOS 5 Upgrade README.TXT: Notes on Windows"
-permalink: kb/071/Q71875/
+permalink: /kb/071/Q71875/
 ---
 
 ## Q71875: MS-DOS 5 Upgrade README.TXT: Notes on Windows

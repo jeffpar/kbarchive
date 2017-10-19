@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98472: Unusual Symptoms Indicate Hardware Conflicts or Problems"
-permalink: kb/098/Q98472/
+permalink: /kb/098/Q98472/
 ---
 
 ## Q98472: Unusual Symptoms Indicate Hardware Conflicts or Problems

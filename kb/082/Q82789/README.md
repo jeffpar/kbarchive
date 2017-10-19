@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82789: Using SYSTEM.INI's COMMDRV30 Switch"
-permalink: kb/082/Q82789/
+permalink: /kb/082/Q82789/
 ---
 
 ## Q82789: Using SYSTEM.INI's COMMDRV30 Switch

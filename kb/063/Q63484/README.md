@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63484: Installing Third-Party Windows 3.0 Drivers"
-permalink: kb/063/Q63484/
+permalink: /kb/063/Q63484/
 ---
 
 ## Q63484: Installing Third-Party Windows 3.0 Drivers

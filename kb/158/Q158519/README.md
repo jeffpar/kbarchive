@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158519: XCLN: Removing and Reinstalling the Macintosh Client"
-permalink: kb/158/Q158519/
+permalink: /kb/158/Q158519/
 ---
 
 ## Q158519: XCLN: Removing and Reinstalling the Macintosh Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183857: WD97: Save As HTML Command Missing from File Menu"
-permalink: kb/183/Q183857/
+permalink: /kb/183/Q183857/
 ---
 
 ## Q183857: WD97: Save As HTML Command Missing from File Menu

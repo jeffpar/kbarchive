@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109876: BUG: In-line Comment in Continued FORMAT Causes Syntax Error"
-permalink: kb/109/Q109876/
+permalink: /kb/109/Q109876/
 ---
 
 ## Q109876: BUG: In-line Comment in Continued FORMAT Causes Syntax Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224610: BUG: C2146/C2501 In the .tlh or .tli files Created by #import"
-permalink: kb/224/Q224610/
+permalink: /kb/224/Q224610/
 ---
 
 ## Q224610: BUG: C2146/C2501 In the .tlh or .tli files Created by #import

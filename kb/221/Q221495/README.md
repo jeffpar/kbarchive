@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221495: HOW TO: Create Scheduled E-mail Messages by Using WSH and CDONTS"
-permalink: kb/221/Q221495/
+permalink: /kb/221/Q221495/
 ---
 
 ## Q221495: HOW TO: Create Scheduled E-mail Messages by Using WSH and CDONTS

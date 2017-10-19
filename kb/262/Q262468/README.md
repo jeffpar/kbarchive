@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262468: SMS: &quot;Insufficient Rights&quot; Msg During Distribute Software Wizard"
-permalink: kb/262/Q262468/
+permalink: /kb/262/Q262468/
 ---
 
 ## Q262468: SMS: &quot;Insufficient Rights&quot; Msg During Distribute Software Wizard

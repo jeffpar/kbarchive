@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241656: SMS: Memory Leak in Pcmsvc32"
-permalink: kb/241/Q241656/
+permalink: /kb/241/Q241656/
 ---
 
 ## Q241656: SMS: Memory Leak in Pcmsvc32

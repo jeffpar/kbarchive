@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180716: SFM Fails to Accept Associations with Two-Character Extensions"
-permalink: kb/180/Q180716/
+permalink: /kb/180/Q180716/
 ---
 
 ## Q180716: SFM Fails to Accept Associations with Two-Character Extensions

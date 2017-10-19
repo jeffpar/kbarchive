@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297491: Error Message: MSN Explorer (MSN Version 6.1)--We Were Not Able"
-permalink: kb/297/Q297491/
+permalink: /kb/297/Q297491/
 ---
 
 ## Q297491: Error Message: MSN Explorer (MSN Version 6.1)--We Were Not Able

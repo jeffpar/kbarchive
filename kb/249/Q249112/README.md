@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249112: XFOR: Filter Rule Ignored by Directory Synchronization Process"
-permalink: kb/249/Q249112/
+permalink: /kb/249/Q249112/
 ---
 
 ## Q249112: XFOR: Filter Rule Ignored by Directory Synchronization Process

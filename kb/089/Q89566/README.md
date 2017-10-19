@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89566: PRB: Common Dialog Box Hook Function Cannot Access Variables"
-permalink: kb/089/Q89566/
+permalink: /kb/089/Q89566/
 ---
 
 ## Q89566: PRB: Common Dialog Box Hook Function Cannot Access Variables

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165543: Bus-Tech Link Service Doesn't Install Driver from SNA Setup"
-permalink: kb/165/Q165543/
+permalink: /kb/165/Q165543/
 ---
 
 ## Q165543: Bus-Tech Link Service Doesn't Install Driver from SNA Setup

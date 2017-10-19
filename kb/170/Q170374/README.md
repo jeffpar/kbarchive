@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170374: MTG: Service Pack 5 Breaks Microsoft Mail Shared Using FPNW"
-permalink: kb/170/Q170374/
+permalink: /kb/170/Q170374/
 ---
 
 ## Q170374: MTG: Service Pack 5 Breaks Microsoft Mail Shared Using FPNW

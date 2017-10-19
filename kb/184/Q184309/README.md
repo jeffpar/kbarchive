@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184309: How to Install IIS Without Rerunning Windows NT Setup"
-permalink: kb/184/Q184309/
+permalink: /kb/184/Q184309/
 ---
 
 ## Q184309: How to Install IIS Without Rerunning Windows NT Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191064: Error Messages When Running TCP/IP-Based Utilities or Programs"
-permalink: kb/191/Q191064/
+permalink: /kb/191/Q191064/
 ---
 
 ## Q191064: Error Messages When Running TCP/IP-Based Utilities or Programs

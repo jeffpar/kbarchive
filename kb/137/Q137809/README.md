@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137809: FIX: Insufficient Memory on a Computer That Has 512 MB of RAM"
-permalink: kb/137/Q137809/
+permalink: /kb/137/Q137809/
 ---
 
 ## Q137809: FIX: Insufficient Memory on a Computer That Has 512 MB of RAM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85594: Application Cannot Clear the Windows Help History List"
-permalink: kb/085/Q85594/
+permalink: /kb/085/Q85594/
 ---
 
 ## Q85594: Application Cannot Clear the Windows Help History List

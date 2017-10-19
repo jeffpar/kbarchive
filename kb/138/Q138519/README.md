@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138519: PRB: Arguments Are Evaluated from Right to Left in Some Cases"
-permalink: kb/138/Q138519/
+permalink: /kb/138/Q138519/
 ---
 
 ## Q138519: PRB: Arguments Are Evaluated from Right to Left in Some Cases

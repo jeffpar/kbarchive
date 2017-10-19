@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172003: Macintosh Change Password Fails on Down Trusted Domain PDC"
-permalink: kb/172/Q172003/
+permalink: /kb/172/Q172003/
 ---
 
 ## Q172003: Macintosh Change Password Fails on Down Trusted Domain PDC

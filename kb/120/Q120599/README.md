@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120599: Detection of Duplicate IP Addresses by Microsoft TCP/IP"
-permalink: kb/120/Q120599/
+permalink: /kb/120/Q120599/
 ---
 
 ## Q120599: Detection of Duplicate IP Addresses by Microsoft TCP/IP

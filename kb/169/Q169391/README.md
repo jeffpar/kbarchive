@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169391: Error Messages After Opening Add/Remove Programs"
-permalink: kb/169/Q169391/
+permalink: /kb/169/Q169391/
 ---
 
 ## Q169391: Error Messages After Opening Add/Remove Programs

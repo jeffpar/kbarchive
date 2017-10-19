@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86979: X400: Address Conversion and Address Mapping Differences"
-permalink: kb/086/Q86979/
+permalink: /kb/086/Q86979/
 ---
 
 ## Q86979: X400: Address Conversion and Address Mapping Differences

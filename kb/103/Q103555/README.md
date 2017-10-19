@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103555: Defrag Treats Lost Clusters as Unmovable Blocks"
-permalink: kb/103/Q103555/
+permalink: /kb/103/Q103555/
 ---
 
 ## Q103555: Defrag Treats Lost Clusters as Unmovable Blocks

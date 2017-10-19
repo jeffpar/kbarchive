@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152016: FIX: Errors C2065/C2064 When Function L is Called with Macro"
-permalink: kb/152/Q152016/
+permalink: /kb/152/Q152016/
 ---
 
 ## Q152016: FIX: Errors C2065/C2064 When Function L is Called with Macro

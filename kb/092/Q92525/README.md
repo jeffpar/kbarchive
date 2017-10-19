@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92525: Using the Setup Toolkit Function StampResource()"
-permalink: kb/092/Q92525/
+permalink: /kb/092/Q92525/
 ---
 
 ## Q92525: Using the Setup Toolkit Function StampResource()

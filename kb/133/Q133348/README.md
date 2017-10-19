@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133348: Windows 95/98: How to Read MS-DOS Mem Command Information"
-permalink: kb/133/Q133348/
+permalink: /kb/133/Q133348/
 ---
 
 ## Q133348: Windows 95/98: How to Read MS-DOS Mem Command Information

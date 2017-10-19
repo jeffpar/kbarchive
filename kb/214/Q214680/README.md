@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214680: Cluster Setup Does Not Recognize Disk with over 3 Logical Drives"
-permalink: kb/214/Q214680/
+permalink: /kb/214/Q214680/
 ---
 
 ## Q214680: Cluster Setup Does Not Recognize Disk with over 3 Logical Drives

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247803: EST2000: Problems Printing Driving Directions with Strip Maps"
-permalink: kb/247/Q247803/
+permalink: /kb/247/Q247803/
 ---
 
 ## Q247803: EST2000: Problems Printing Driving Directions with Strip Maps

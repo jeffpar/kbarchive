@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158146: NetLogon Service fails to start with Event 7003"
-permalink: kb/158/Q158146/
+permalink: /kb/158/Q158146/
 ---
 
 ## Q158146: NetLogon Service fails to start with Event 7003

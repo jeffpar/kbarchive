@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281570: HOWTO: Use ASP Request and Session Collections to Link Forms"
-permalink: kb/281/Q281570/
+permalink: /kb/281/Q281570/
 ---
 
 ## Q281570: HOWTO: Use ASP Request and Session Collections to Link Forms

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300398: IIS:  Cannot Create a 128-bit SSL Session with IIS"
-permalink: kb/300/Q300398/
+permalink: /kb/300/Q300398/
 ---
 
 ## Q300398: IIS:  Cannot Create a 128-bit SSL Session with IIS

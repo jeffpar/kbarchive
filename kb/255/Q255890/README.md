@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255890: PRB: DCOM Client Hangs When You Pass Callback Interface Pointer"
-permalink: kb/255/Q255890/
+permalink: /kb/255/Q255890/
 ---
 
 ## Q255890: PRB: DCOM Client Hangs When You Pass Callback Interface Pointer

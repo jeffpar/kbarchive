@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161597: PPT: Sample Code to Print All Open Presentations"
-permalink: kb/161/Q161597/
+permalink: /kb/161/Q161597/
 ---
 
 ## Q161597: PPT: Sample Code to Print All Open Presentations

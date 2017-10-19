@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252303: IDC Script Sample with Multiple SQL Statements"
-permalink: kb/252/Q252303/
+permalink: /kb/252/Q252303/
 ---
 
 ## Q252303: IDC Script Sample with Multiple SQL Statements

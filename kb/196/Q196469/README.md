@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196469: FIX: MSDN Library Does Not Support CD Server Installation"
-permalink: kb/196/Q196469/
+permalink: /kb/196/Q196469/
 ---
 
 ## Q196469: FIX: MSDN Library Does Not Support CD Server Installation

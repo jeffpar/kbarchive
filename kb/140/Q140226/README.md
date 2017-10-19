@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140226: Encarta 96 World Atlas: Unable to Continue Running..."
-permalink: kb/140/Q140226/
+permalink: /kb/140/Q140226/
 ---
 
 ## Q140226: Encarta 96 World Atlas: Unable to Continue Running...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190713: Key Management Server Backup and Disaster Recovery"
-permalink: kb/190/Q190713/
+permalink: /kb/190/Q190713/
 ---
 
 ## Q190713: Key Management Server Backup and Disaster Recovery

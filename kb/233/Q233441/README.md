@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233441: MSBP: Heading Text Is Cut Off When You Paste Article into Word"
-permalink: kb/233/Q233441/
+permalink: /kb/233/Q233441/
 ---
 
 ## Q233441: MSBP: Heading Text Is Cut Off When You Paste Article into Word

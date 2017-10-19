@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136780: WinFax Pro Software Causes 16-bit Applications To Hang"
-permalink: kb/136/Q136780/
+permalink: /kb/136/Q136780/
 ---
 
 ## Q136780: WinFax Pro Software Causes 16-bit Applications To Hang

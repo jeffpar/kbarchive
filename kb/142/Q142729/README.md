@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142729: Distorted Sound with Media Vision 3D or Pro 3D Sound Card"
-permalink: kb/142/Q142729/
+permalink: /kb/142/Q142729/
 ---
 
 ## Q142729: Distorted Sound with Media Vision 3D or Pro 3D Sound Card

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137959: Bookshelf: Advanced Find Settings Saved Even if Canceled"
-permalink: kb/137/Q137959/
+permalink: /kb/137/Q137959/
 ---
 
 ## Q137959: Bookshelf: Advanced Find Settings Saved Even if Canceled

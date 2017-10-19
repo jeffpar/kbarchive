@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85511: Problems Stopping in Animate Mode"
-permalink: kb/085/Q85511/
+permalink: /kb/085/Q85511/
 ---
 
 ## Q85511: Problems Stopping in Animate Mode

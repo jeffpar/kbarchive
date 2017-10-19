@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87159: Mac Wkst: Folder Tracking"
-permalink: kb/087/Q87159/
+permalink: /kb/087/Q87159/
 ---
 
 ## Q87159: Mac Wkst: Folder Tracking

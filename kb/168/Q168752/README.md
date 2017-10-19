@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168752: SNA Windows 95 3.0 SP1 3270 Applet Print Option Doesn't Print"
-permalink: kb/168/Q168752/
+permalink: /kb/168/Q168752/
 ---
 
 ## Q168752: SNA Windows 95 3.0 SP1 3270 Applet Print Option Doesn't Print

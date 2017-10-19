@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158430: FIX: VSS 4.x Integration with VC 4.x under Windows NT 4.0"
-permalink: kb/158/Q158430/
+permalink: /kb/158/Q158430/
 ---
 
 ## Q158430: FIX: VSS 4.x Integration with VC 4.x under Windows NT 4.0

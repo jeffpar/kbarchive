@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174317: WD97: Incorrect Characters Displayed in Multilingual Web Page"
-permalink: kb/174/Q174317/
+permalink: /kb/174/Q174317/
 ---
 
 ## Q174317: WD97: Incorrect Characters Displayed in Multilingual Web Page

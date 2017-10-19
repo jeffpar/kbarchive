@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104084: PC Win: TrueType Fonts Do Not Work Properly with Mail"
-permalink: kb/104/Q104084/
+permalink: /kb/104/Q104084/
 ---
 
 ## Q104084: PC Win: TrueType Fonts Do Not Work Properly with Mail

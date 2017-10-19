@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181007: HOWTO: Troubleshoot WinCE Application Installations"
-permalink: kb/181/Q181007/
+permalink: /kb/181/Q181007/
 ---
 
 ## Q181007: HOWTO: Troubleshoot WinCE Application Installations

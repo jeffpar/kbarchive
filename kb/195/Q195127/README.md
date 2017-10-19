@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195127: WD97: Converter Not Automatically Installed in Word"
-permalink: kb/195/Q195127/
+permalink: /kb/195/Q195127/
 ---
 
 ## Q195127: WD97: Converter Not Automatically Installed in Word

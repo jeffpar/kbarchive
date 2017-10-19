@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161781: SMS: Error: Unable to Get NetBIOS Lana List"
-permalink: kb/161/Q161781/
+permalink: /kb/161/Q161781/
 ---
 
 ## Q161781: SMS: Error: Unable to Get NetBIOS Lana List

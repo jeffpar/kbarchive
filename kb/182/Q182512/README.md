@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182512: XADM: Information Store Fails With Server Specific Error 4294966"
-permalink: kb/182/Q182512/
+permalink: /kb/182/Q182512/
 ---
 
 ## Q182512: XADM: Information Store Fails With Server Specific Error 4294966

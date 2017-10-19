@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186086: HOWTO: Get a File DSN in the Connection Designer"
-permalink: kb/186/Q186086/
+permalink: /kb/186/Q186086/
 ---
 
 ## Q186086: HOWTO: Get a File DSN in the Connection Designer

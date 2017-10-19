@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189942: System Eventually Slows Down When MMC Left Open"
-permalink: kb/189/Q189942/
+permalink: /kb/189/Q189942/
 ---
 
 ## Q189942: System Eventually Slows Down When MMC Left Open

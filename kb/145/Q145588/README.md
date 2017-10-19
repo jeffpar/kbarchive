@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145588: SMS Client Group and Icons Not Created for RAS Client"
-permalink: kb/145/Q145588/
+permalink: /kb/145/Q145588/
 ---
 
 ## Q145588: SMS Client Group and Icons Not Created for RAS Client

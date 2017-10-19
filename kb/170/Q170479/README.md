@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170479: XCON: GMT Offset Not Calculated By Some Messaging Systems"
-permalink: kb/170/Q170479/
+permalink: /kb/170/Q170479/
 ---
 
 ## Q170479: XCON: GMT Offset Not Calculated By Some Messaging Systems

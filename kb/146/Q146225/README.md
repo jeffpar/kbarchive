@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146225: Pregnancy and Child Care: Content Specific to US Market"
-permalink: kb/146/Q146225/
+permalink: /kb/146/Q146225/
 ---
 
 ## Q146225: Pregnancy and Child Care: Content Specific to US Market

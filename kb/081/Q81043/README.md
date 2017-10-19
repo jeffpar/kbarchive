@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81043: FltSim: Oakland Runways Disappear at Low Altitude"
-permalink: kb/081/Q81043/
+permalink: /kb/081/Q81043/
 ---
 
 ## Q81043: FltSim: Oakland Runways Disappear at Low Altitude

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275868: CFS2: Tips and Suggestions for Training Missions"
-permalink: kb/275/Q275868/
+permalink: /kb/275/Q275868/
 ---
 
 ## Q275868: CFS2: Tips and Suggestions for Training Missions

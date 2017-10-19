@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96079: WFWG: List of NCB Return Codes and Comments"
-permalink: kb/096/Q96079/
+permalink: /kb/096/Q96079/
 ---
 
 ## Q96079: WFWG: List of NCB Return Codes and Comments

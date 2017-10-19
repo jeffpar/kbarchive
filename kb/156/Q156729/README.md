@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156729: XFOR: Malformed Dir-Sync Transactions Cause DXA to Stop"
-permalink: kb/156/Q156729/
+permalink: /kb/156/Q156729/
 ---
 
 ## Q156729: XFOR: Malformed Dir-Sync Transactions Cause DXA to Stop

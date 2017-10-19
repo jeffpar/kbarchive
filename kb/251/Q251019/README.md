@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251019: How to Schedule VIACompact to Run on a Routine Basis"
-permalink: kb/251/Q251019/
+permalink: /kb/251/Q251019/
 ---
 
 ## Q251019: How to Schedule VIACompact to Run on a Routine Basis

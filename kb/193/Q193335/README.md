@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193335: PRB: Error Loading Form With Reference to UserControl1.ctl"
-permalink: kb/193/Q193335/
+permalink: /kb/193/Q193335/
 ---
 
 ## Q193335: PRB: Error Loading Form With Reference to UserControl1.ctl

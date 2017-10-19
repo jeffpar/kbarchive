@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86477: How to Specify a Full Path in the ExecProgram Macro"
-permalink: kb/086/Q86477/
+permalink: /kb/086/Q86477/
 ---
 
 ## Q86477: How to Specify a Full Path in the ExecProgram Macro

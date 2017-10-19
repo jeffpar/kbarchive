@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296198: How to Add EMC Drives w/ Multi-Paths to a WINNT 4 Serv. Cluster"
-permalink: kb/296/Q296198/
+permalink: /kb/296/Q296198/
 ---
 
 ## Q296198: How to Add EMC Drives w/ Multi-Paths to a WINNT 4 Serv. Cluster

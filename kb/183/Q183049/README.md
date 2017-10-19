@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183049: FP98: Save Results Form Handler and Four-Digit Year Format"
-permalink: kb/183/Q183049/
+permalink: /kb/183/Q183049/
 ---
 
 ## Q183049: FP98: Save Results Form Handler and Four-Digit Year Format

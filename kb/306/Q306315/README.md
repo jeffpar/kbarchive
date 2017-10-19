@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306315: Deleted Aged Status Messages Can Leave Orphaned Database Entries"
-permalink: kb/306/Q306315/
+permalink: /kb/306/Q306315/
 ---
 
 ## Q306315: Deleted Aged Status Messages Can Leave Orphaned Database Entries

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160273: LPR 'o' Option Does Not Work After Applying SP5"
-permalink: kb/160/Q160273/
+permalink: /kb/160/Q160273/
 ---
 
 ## Q160273: LPR 'o' Option Does Not Work After Applying SP5

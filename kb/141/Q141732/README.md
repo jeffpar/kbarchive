@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141732: Adaptec AHA154x Driver Fails to Install Second Adapter"
-permalink: kb/141/Q141732/
+permalink: /kb/141/Q141732/
 ---
 
 ## Q141732: Adaptec AHA154x Driver Fails to Install Second Adapter

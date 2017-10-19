@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137724: Replicating Files With Long File Names To LAN Manager Fails"
-permalink: kb/137/Q137724/
+permalink: /kb/137/Q137724/
 ---
 
 ## Q137724: Replicating Files With Long File Names To LAN Manager Fails

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155021: Cannot Cancel Location Information"
-permalink: kb/155/Q155021/
+permalink: /kb/155/Q155021/
 ---
 
 ## Q155021: Cannot Cancel Location Information

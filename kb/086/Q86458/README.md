@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86458: Central Point Anti-Virus Becomes the Active Application"
-permalink: kb/086/Q86458/
+permalink: /kb/086/Q86458/
 ---
 
 ## Q86458: Central Point Anti-Virus Becomes the Active Application

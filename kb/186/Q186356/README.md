@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186356: FIX: Source Code Controlled VFP Project Compiles Slow"
-permalink: kb/186/Q186356/
+permalink: /kb/186/Q186356/
 ---
 
 ## Q186356: FIX: Source Code Controlled VFP Project Compiles Slow

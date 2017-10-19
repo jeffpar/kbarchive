@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248882: HOWTO: Print a Range of Pages with the CommonDialog Control"
-permalink: kb/248/Q248882/
+permalink: /kb/248/Q248882/
 ---
 
 ## Q248882: HOWTO: Print a Range of Pages with the CommonDialog Control

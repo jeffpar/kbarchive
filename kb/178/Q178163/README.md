@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178163: XADM: Colon in Site Name Breaks Intersite Directory Replication"
-permalink: kb/178/Q178163/
+permalink: /kb/178/Q178163/
 ---
 
 ## Q178163: XADM: Colon in Site Name Breaks Intersite Directory Replication

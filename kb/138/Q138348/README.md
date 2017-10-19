@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138348: SMS: How to Manually Copy SMS Logon Script Files"
-permalink: kb/138/Q138348/
+permalink: /kb/138/Q138348/
 ---
 
 ## Q138348: SMS: How to Manually Copy SMS Logon Script Files

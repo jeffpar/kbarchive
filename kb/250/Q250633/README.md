@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250633: Pandora's Box: How to Install and How to Remove the Program"
-permalink: kb/250/Q250633/
+permalink: /kb/250/Q250633/
 ---
 
 ## Q250633: Pandora's Box: How to Install and How to Remove the Program

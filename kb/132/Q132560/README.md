@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132560: PC Win: WGPOMGR.DLL Will Not Work with a Standard Postoffice"
-permalink: kb/132/Q132560/
+permalink: /kb/132/Q132560/
 ---
 
 ## Q132560: PC Win: WGPOMGR.DLL Will Not Work with a Standard Postoffice

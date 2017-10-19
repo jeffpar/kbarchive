@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65452: Windows 3.0 Err Msg : Cannot Open Group File (in Real Mode)"
-permalink: kb/065/Q65452/
+permalink: /kb/065/Q65452/
 ---
 
 ## Q65452: Windows 3.0 Err Msg : Cannot Open Group File (in Real Mode)

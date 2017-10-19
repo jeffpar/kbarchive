@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276501: SAMPLE: How to Set a &quot;Page # of #&quot; Counter in VFP Report"
-permalink: kb/276/Q276501/
+permalink: /kb/276/Q276501/
 ---
 
 ## Q276501: SAMPLE: How to Set a &quot;Page # of #&quot; Counter in VFP Report

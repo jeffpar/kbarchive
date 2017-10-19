@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114820: Sound: GP Fault When Opening Control Panel or Browser"
-permalink: kb/114/Q114820/
+permalink: /kb/114/Q114820/
 ---
 
 ## Q114820: Sound: GP Fault When Opening Control Panel or Browser

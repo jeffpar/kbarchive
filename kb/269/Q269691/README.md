@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269691: XADM: How to Remove Public Folders from the Internet Newsgroups"
-permalink: kb/269/Q269691/
+permalink: /kb/269/Q269691/
 ---
 
 ## Q269691: XADM: How to Remove Public Folders from the Internet Newsgroups

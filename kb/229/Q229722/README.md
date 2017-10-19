@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229722: German Compound Word Not Found if Part Is in Noise Word List"
-permalink: kb/229/Q229722/
+permalink: /kb/229/Q229722/
 ---
 
 ## Q229722: German Compound Word Not Found if Part Is in Noise Word List

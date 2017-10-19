@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148484: Do-It-Yourself Guide: Manual Installation Instructions"
-permalink: kb/148/Q148484/
+permalink: /kb/148/Q148484/
 ---
 
 ## Q148484: Do-It-Yourself Guide: Manual Installation Instructions

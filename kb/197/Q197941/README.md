@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197941: FIX: Setup Wizard Cannot Register Foxhhelpps.dll File"
-permalink: kb/197/Q197941/
+permalink: /kb/197/Q197941/
 ---
 
 ## Q197941: FIX: Setup Wizard Cannot Register Foxhhelpps.dll File

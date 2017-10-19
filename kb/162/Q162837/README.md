@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162837: Replacing TCP/IP After SP2 Causes STOP 0x00000050"
-permalink: kb/162/Q162837/
+permalink: /kb/162/Q162837/
 ---
 
 ## Q162837: Replacing TCP/IP After SP2 Causes STOP 0x00000050

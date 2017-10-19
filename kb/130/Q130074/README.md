@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130074: User Profiles Default to Global SENDTO Directory"
-permalink: kb/130/Q130074/
+permalink: /kb/130/Q130074/
 ---
 
 ## Q130074: User Profiles Default to Global SENDTO Directory

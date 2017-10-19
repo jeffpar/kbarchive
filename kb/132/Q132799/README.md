@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132799: General Protection Fault in Pscript.drv When Printing"
-permalink: kb/132/Q132799/
+permalink: /kb/132/Q132799/
 ---
 
 ## Q132799: General Protection Fault in Pscript.drv When Printing

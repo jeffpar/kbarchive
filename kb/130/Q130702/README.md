@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130702: PC WSPlus: Offline Additions May Be Gone After Working Online"
-permalink: kb/130/Q130702/
+permalink: /kb/130/Q130702/
 ---
 
 ## Q130702: PC WSPlus: Offline Additions May Be Gone After Working Online

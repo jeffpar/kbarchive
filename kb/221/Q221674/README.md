@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221674: FIX: Import Wizard Fails With Excel 97 With Chinese Char"
-permalink: kb/221/Q221674/
+permalink: /kb/221/Q221674/
 ---
 
 ## Q221674: FIX: Import Wizard Fails With Excel 97 With Chinese Char

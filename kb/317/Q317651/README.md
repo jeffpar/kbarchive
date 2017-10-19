@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317651: FIX: TN3287 Print Jobs May Fail to Print with Some Emulators"
-permalink: kb/317/Q317651/
+permalink: /kb/317/Q317651/
 ---
 
 ## Q317651: FIX: TN3287 Print Jobs May Fail to Print with Some Emulators

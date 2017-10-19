@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132202: Audio CD Incorrectly Identified as Program CD-ROM"
-permalink: kb/132/Q132202/
+permalink: /kb/132/Q132202/
 ---
 
 ## Q132202: Audio CD Incorrectly Identified as Program CD-ROM

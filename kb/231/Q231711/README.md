@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231711: Access Violation in Explorer During Session Logon"
-permalink: kb/231/Q231711/
+permalink: /kb/231/Q231711/
 ---
 
 ## Q231711: Access Violation in Explorer During Session Logon

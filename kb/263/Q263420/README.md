@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263420: SMS 2.0 Clients Cannot Change Windows 2000 Keyboard Rates"
-permalink: kb/263/Q263420/
+permalink: /kb/263/Q263420/
 ---
 
 ## Q263420: SMS 2.0 Clients Cannot Change Windows 2000 Keyboard Rates

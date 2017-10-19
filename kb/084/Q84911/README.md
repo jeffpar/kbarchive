@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84911: Paintbrush Err Msg: Only Text Is Available on Clipboard...&quot;"
-permalink: kb/084/Q84911/
+permalink: /kb/084/Q84911/
 ---
 
 ## Q84911: Paintbrush Err Msg: Only Text Is Available on Clipboard...&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262814: IEEE 1394 OHCI Driver Does Not Retry Busy Devices Properly"
-permalink: kb/262/Q262814/
+permalink: /kb/262/Q262814/
 ---
 
 ## Q262814: IEEE 1394 OHCI Driver Does Not Retry Busy Devices Properly

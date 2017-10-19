@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186518: Using Microsoft Exchange Forms with Terminal Server"
-permalink: kb/186/Q186518/
+permalink: /kb/186/Q186518/
 ---
 
 ## Q186518: Using Microsoft Exchange Forms with Terminal Server

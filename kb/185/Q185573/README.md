@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185573: XADM: Setup Fails with 0xc0020424 During Upgrade to Version 5.5"
-permalink: kb/185/Q185573/
+permalink: /kb/185/Q185573/
 ---
 
 ## Q185573: XADM: Setup Fails with 0xc0020424 During Upgrade to Version 5.5

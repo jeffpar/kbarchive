@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185916: SMS: PCMCIA Network Card May Not Be Reported by Win95 Inventory"
-permalink: kb/185/Q185916/
+permalink: /kb/185/Q185916/
 ---
 
 ## Q185916: SMS: PCMCIA Network Card May Not Be Reported by Win95 Inventory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159912: Rotated Text in Excel May Print Incorrectly to PCL5 Printers"
-permalink: kb/159/Q159912/
+permalink: /kb/159/Q159912/
 ---
 
 ## Q159912: Rotated Text in Excel May Print Incorrectly to PCL5 Printers

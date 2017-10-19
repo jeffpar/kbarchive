@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264490: XCLN: Calendar Events in Appear to be 2 Hours Off"
-permalink: kb/264/Q264490/
+permalink: /kb/264/Q264490/
 ---
 
 ## Q264490: XCLN: Calendar Events in Appear to be 2 Hours Off

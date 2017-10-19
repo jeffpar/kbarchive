@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118572: Ancient Lands: Index Always Comes Up On Letter A"
-permalink: kb/118/Q118572/
+permalink: /kb/118/Q118572/
 ---
 
 ## Q118572: Ancient Lands: Index Always Comes Up On Letter A

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89560: Creating Dynamic Code Segments Using PrestoChangoSelector"
-permalink: kb/089/Q89560/
+permalink: /kb/089/Q89560/
 ---
 
 ## Q89560: Creating Dynamic Code Segments Using PrestoChangoSelector

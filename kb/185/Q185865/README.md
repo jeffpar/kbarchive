@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185865: FIX: Printing Reports in Loop Hangs Visual FoxPro"
-permalink: kb/185/Q185865/
+permalink: /kb/185/Q185865/
 ---
 
 ## Q185865: FIX: Printing Reports in Loop Hangs Visual FoxPro

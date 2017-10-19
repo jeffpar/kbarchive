@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299817: Train Simulator: Hisatsu: Bridges on Ground, Roads Unavailable"
-permalink: kb/299/Q299817/
+permalink: /kb/299/Q299817/
 ---
 
 ## Q299817: Train Simulator: Hisatsu: Bridges on Ground, Roads Unavailable

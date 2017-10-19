@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241189: SNMP Memory Leak in Windows NT4.0 Peer-to-Peer Network"
-permalink: kb/241/Q241189/
+permalink: /kb/241/Q241189/
 ---
 
 ## Q241189: SNMP Memory Leak in Windows NT4.0 Peer-to-Peer Network

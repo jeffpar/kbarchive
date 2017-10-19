@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167822: Error 0122 Starting Peer Web Server"
-permalink: kb/167/Q167822/
+permalink: /kb/167/Q167822/
 ---
 
 ## Q167822: Error 0122 Starting Peer Web Server

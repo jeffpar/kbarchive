@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131636: PC WSPlus: Last Update Received/Sent Is Never"
-permalink: kb/131/Q131636/
+permalink: /kb/131/Q131636/
 ---
 
 ## Q131636: PC WSPlus: Last Update Received/Sent Is Never

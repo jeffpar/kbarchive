@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271181: SMS: Interval X Not Found Error in Offersum.log"
-permalink: kb/271/Q271181/
+permalink: /kb/271/Q271181/
 ---
 
 ## Q271181: SMS: Interval X Not Found Error in Offersum.log

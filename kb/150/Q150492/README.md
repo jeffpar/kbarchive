@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150492: Julia Child: Manual Installation Instructions for Windows 3.x"
-permalink: kb/150/Q150492/
+permalink: /kb/150/Q150492/
 ---
 
 ## Q150492: Julia Child: Manual Installation Instructions for Windows 3.x

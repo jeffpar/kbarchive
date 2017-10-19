@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175342: Hellbender Closes at Random Intervals"
-permalink: kb/175/Q175342/
+permalink: /kb/175/Q175342/
 ---
 
 ## Q175342: Hellbender Closes at Random Intervals

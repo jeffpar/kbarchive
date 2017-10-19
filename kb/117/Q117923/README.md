@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117923: HP ScanJet IIcx Runs Slowly Under Windows 95"
-permalink: kb/117/Q117923/
+permalink: /kb/117/Q117923/
 ---
 
 ## Q117923: HP ScanJet IIcx Runs Slowly Under Windows 95

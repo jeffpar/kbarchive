@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154594: PC-NFS Logon Box Missing After Upgrade"
-permalink: kb/154/Q154594/
+permalink: /kb/154/Q154594/
 ---
 
 ## Q154594: PC-NFS Logon Box Missing After Upgrade

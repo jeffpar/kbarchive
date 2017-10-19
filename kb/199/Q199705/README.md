@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199705: XFOR: How to Enable Detailed Logging for the Notes Excalcon Task"
-permalink: kb/199/Q199705/
+permalink: /kb/199/Q199705/
 ---
 
 ## Q199705: XFOR: How to Enable Detailed Logging for the Notes Excalcon Task

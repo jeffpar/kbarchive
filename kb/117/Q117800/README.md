@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117800: Using the MMP16 Sound Card with Windows Sound System"
-permalink: kb/117/Q117800/
+permalink: /kb/117/Q117800/
 ---
 
 ## Q117800: Using the MMP16 Sound Card with Windows Sound System

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122184: FIX: CFormView Does Not Change Child Positions on WM_MDINEXT"
-permalink: kb/122/Q122184/
+permalink: /kb/122/Q122184/
 ---
 
 ## Q122184: FIX: CFormView Does Not Change Child Positions on WM_MDINEXT

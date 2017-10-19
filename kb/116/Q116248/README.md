@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116248: Phoenix BIOS May Cause Wave Files to Continually Play on WSS"
-permalink: kb/116/Q116248/
+permalink: /kb/116/Q116248/
 ---
 
 ## Q116248: Phoenix BIOS May Cause Wave Files to Continually Play on WSS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123075: Artist: Animated Backgrounds Don't Play In Pigture Show"
-permalink: kb/123/Q123075/
+permalink: /kb/123/Q123075/
 ---
 
 ## Q123075: Artist: Animated Backgrounds Don't Play In Pigture Show

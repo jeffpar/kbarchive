@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134371: SMTP: Loss of Available Free Memory During Operation"
-permalink: kb/134/Q134371/
+permalink: /kb/134/Q134371/
 ---
 
 ## Q134371: SMTP: Loss of Available Free Memory During Operation

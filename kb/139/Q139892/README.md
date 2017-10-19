@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139892: SNA Server Banyan Interface Updated to Support Win95 SNA Clients"
-permalink: kb/139/Q139892/
+permalink: /kb/139/Q139892/
 ---
 
 ## Q139892: SNA Server Banyan Interface Updated to Support Win95 SNA Clients

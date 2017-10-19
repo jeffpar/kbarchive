@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186701: XWEB: Time and Date of Delivery Missing from Delivery Receipt"
-permalink: kb/186/Q186701/
+permalink: /kb/186/Q186701/
 ---
 
 ## Q186701: XWEB: Time and Date of Delivery Missing from Delivery Receipt

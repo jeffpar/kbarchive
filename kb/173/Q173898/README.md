@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173898: XWEB: Message Sent w/ Incorrect Priority When You Press ENTER"
-permalink: kb/173/Q173898/
+permalink: /kb/173/Q173898/
 ---
 
 ## Q173898: XWEB: Message Sent w/ Incorrect Priority When You Press ENTER

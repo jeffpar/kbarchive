@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304413: Veritas Storage Replicator 2.1 for Windows NT Causes a Hang"
-permalink: kb/304/Q304413/
+permalink: /kb/304/Q304413/
 ---
 
 ## Q304413: Veritas Storage Replicator 2.1 for Windows NT Causes a Hang

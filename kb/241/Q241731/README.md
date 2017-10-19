@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241731: Denial of Service Generates Error Message When Using Windows Ter"
-permalink: kb/241/Q241731/
+permalink: /kb/241/Q241731/
 ---
 
 ## Q241731: Denial of Service Generates Error Message When Using Windows Ter

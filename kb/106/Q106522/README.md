@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106522: DoubleSpace Drive: Make Directory Results in Zero Bytes Free"
-permalink: kb/106/Q106522/
+permalink: /kb/106/Q106522/
 ---
 
 ## Q106522: DoubleSpace Drive: Make Directory Results in Zero Bytes Free

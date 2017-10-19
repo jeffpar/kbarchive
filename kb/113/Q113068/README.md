@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113068: WFWG File Manager Shows Server in Wrong Workgroup"
-permalink: kb/113/Q113068/
+permalink: /kb/113/Q113068/
 ---
 
 ## Q113068: WFWG File Manager Shows Server in Wrong Workgroup

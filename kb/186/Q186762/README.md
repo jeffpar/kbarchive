@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186762: WD97: Advanced Power Management Causes Data Loss"
-permalink: kb/186/Q186762/
+permalink: /kb/186/Q186762/
 ---
 
 ## Q186762: WD97: Advanced Power Management Causes Data Loss

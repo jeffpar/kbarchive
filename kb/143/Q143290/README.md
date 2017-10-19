@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143290: PRB: Setting Menu Items to Grayed Does Not Disable the Item"
-permalink: kb/143/Q143290/
+permalink: /kb/143/Q143290/
 ---
 
 ## Q143290: PRB: Setting Menu Items to Grayed Does Not Disable the Item

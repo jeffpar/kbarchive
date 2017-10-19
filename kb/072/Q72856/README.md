@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72856: Microlytic Applications Are Not Windows 3.0 Compatible"
-permalink: kb/072/Q72856/
+permalink: /kb/072/Q72856/
 ---
 
 ## Q72856: Microlytic Applications Are Not Windows 3.0 Compatible

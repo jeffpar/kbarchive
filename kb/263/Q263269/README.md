@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263269: XCLN: Error 53 Running Exchange Forms Designer"
-permalink: kb/263/Q263269/
+permalink: /kb/263/Q263269/
 ---
 
 ## Q263269: XCLN: Error 53 Running Exchange Forms Designer

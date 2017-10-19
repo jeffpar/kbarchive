@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161243: MSB Rainforest: Report Closed Caption Window Remains Open"
-permalink: kb/161/Q161243/
+permalink: /kb/161/Q161243/
 ---
 
 ## Q161243: MSB Rainforest: Report Closed Caption Window Remains Open

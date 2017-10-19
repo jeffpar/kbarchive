@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94312: How To: Customizing the WFWG Mail and Schedule+ Chime Sound"
-permalink: kb/094/Q94312/
+permalink: /kb/094/Q94312/
 ---
 
 ## Q94312: How To: Customizing the WFWG Mail and Schedule+ Chime Sound

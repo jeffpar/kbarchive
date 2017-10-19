@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86531: Only One or Two Icons in Control Panel"
-permalink: kb/086/Q86531/
+permalink: /kb/086/Q86531/
 ---
 
 ## Q86531: Only One or Two Icons in Control Panel

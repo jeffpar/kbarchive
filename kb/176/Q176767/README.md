@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176767: SNA Print Service Prints 80 Columns per Line Instead of 132"
-permalink: kb/176/Q176767/
+permalink: /kb/176/Q176767/
 ---
 
 ## Q176767: SNA Print Service Prints 80 Columns per Line Instead of 132

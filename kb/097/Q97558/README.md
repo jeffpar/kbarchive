@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97558: Windows NT Err Msg: Logon Failure"
-permalink: kb/097/Q97558/
+permalink: /kb/097/Q97558/
 ---
 
 ## Q97558: Windows NT Err Msg: Logon Failure

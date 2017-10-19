@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157527: INFO: New Visual SourceSafe Commands and Functionality"
-permalink: kb/157/Q157527/
+permalink: /kb/157/Q157527/
 ---
 
 ## Q157527: INFO: New Visual SourceSafe Commands and Functionality

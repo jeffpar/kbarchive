@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86537: PC Adm: How to Move Mail User from One Postoffice to Another"
-permalink: kb/086/Q86537/
+permalink: /kb/086/Q86537/
 ---
 
 ## Q86537: PC Adm: How to Move Mail User from One Postoffice to Another

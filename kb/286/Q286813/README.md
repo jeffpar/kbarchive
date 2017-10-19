@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286813: Users May Fail to Reconnect to Dynamically Defined Dependent LUs"
-permalink: kb/286/Q286813/
+permalink: /kb/286/Q286813/
 ---
 
 ## Q286813: Users May Fail to Reconnect to Dynamically Defined Dependent LUs

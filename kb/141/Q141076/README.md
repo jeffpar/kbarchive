@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141076: How to Change a Method at Run Time"
-permalink: kb/141/Q141076/
+permalink: /kb/141/Q141076/
 ---
 
 ## Q141076: How to Change a Method at Run Time

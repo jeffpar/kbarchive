@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126299: Erratic Keyboard Behavior with Comptex 386SX-25"
-permalink: kb/126/Q126299/
+permalink: /kb/126/Q126299/
 ---
 
 ## Q126299: Erratic Keyboard Behavior with Comptex 386SX-25

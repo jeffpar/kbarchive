@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260413: Logoff May Not Finish If User Profile Is Stored on AS/400"
-permalink: kb/260/Q260413/
+permalink: /kb/260/Q260413/
 ---
 
 ## Q260413: Logoff May Not Finish If User Profile Is Stored on AS/400

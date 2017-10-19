@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168452: XGEN: MIME Type Tab Not in IMC Property Page"
-permalink: kb/168/Q168452/
+permalink: /kb/168/Q168452/
 ---
 
 ## Q168452: XGEN: MIME Type Tab Not in IMC Property Page

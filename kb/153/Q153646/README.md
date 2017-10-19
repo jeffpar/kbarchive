@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153646: Closing or Canceling a Running Query May Hang the SMS Admin"
-permalink: kb/153/Q153646/
+permalink: /kb/153/Q153646/
 ---
 
 ## Q153646: Closing or Canceling a Running Query May Hang the SMS Admin

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257730: FIX: PrintForm Method of Form Containing UserControl Causes IPF"
-permalink: kb/257/Q257730/
+permalink: /kb/257/Q257730/
 ---
 
 ## Q257730: FIX: PrintForm Method of Form Containing UserControl Causes IPF

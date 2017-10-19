@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135174: Cannot Access CD-ROM Drive from MS-DOS Mode or Command Prompt"
-permalink: kb/135/Q135174/
+permalink: /kb/135/Q135174/
 ---
 
 ## Q135174: Cannot Access CD-ROM Drive from MS-DOS Mode or Command Prompt

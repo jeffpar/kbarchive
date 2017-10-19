@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174298: XADM: Customizing the Moderator Address in Moderated Newsgroup"
-permalink: kb/174/Q174298/
+permalink: /kb/174/Q174298/
 ---
 
 ## Q174298: XADM: Customizing the Moderator Address in Moderated Newsgroup

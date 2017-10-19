@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178329: Generated COBOL Data-Names Not Accessible in COBOL Program"
-permalink: kb/178/Q178329/
+permalink: /kb/178/Q178329/
 ---
 
 ## Q178329: Generated COBOL Data-Names Not Accessible in COBOL Program

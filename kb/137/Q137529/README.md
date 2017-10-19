@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137529: Cannot Use DriveSpace to Compress a Substituted Drive"
-permalink: kb/137/Q137529/
+permalink: /kb/137/Q137529/
 ---
 
 ## Q137529: Cannot Use DriveSpace to Compress a Substituted Drive

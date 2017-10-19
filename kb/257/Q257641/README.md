@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257641: FIX: DataSource Drop-Down Loads Slowly in Large Project"
-permalink: kb/257/Q257641/
+permalink: /kb/257/Q257641/
 ---
 
 ## Q257641: FIX: DataSource Drop-Down Loads Slowly in Large Project

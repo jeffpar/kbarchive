@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182817: CSNW: Unable to Rename File on NetWare Server"
-permalink: kb/182/Q182817/
+permalink: /kb/182/Q182817/
 ---
 
 ## Q182817: CSNW: Unable to Rename File on NetWare Server

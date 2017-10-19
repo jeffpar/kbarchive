@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164909: Backup Host Account Cache May Hang if Out of Sync with Master"
-permalink: kb/164/Q164909/
+permalink: /kb/164/Q164909/
 ---
 
 ## Q164909: Backup Host Account Cache May Hang if Out of Sync with Master

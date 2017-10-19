@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271793: DFS Version 4.1 Causes &quot;Failed to Create Volume&quot; Error Message"
-permalink: kb/271/Q271793/
+permalink: /kb/271/Q271793/
 ---
 
 ## Q271793: DFS Version 4.1 Causes &quot;Failed to Create Volume&quot; Error Message

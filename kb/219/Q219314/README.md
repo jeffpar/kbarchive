@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219314: DHCP Scope Marked &quot;Bad&quot; After Windows NT Service Pack 3 Install"
-permalink: kb/219/Q219314/
+permalink: /kb/219/Q219314/
 ---
 
 ## Q219314: DHCP Scope Marked &quot;Bad&quot; After Windows NT Service Pack 3 Install

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170211: WD97: Bullets in Multilevel Numbering Convert to Boxes"
-permalink: kb/170/Q170211/
+permalink: /kb/170/Q170211/
 ---
 
 ## Q170211: WD97: Bullets in Multilevel Numbering Convert to Boxes

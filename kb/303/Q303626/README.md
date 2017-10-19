@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303626: SMSINST: Version of Windows Not Detected Correctly"
-permalink: kb/303/Q303626/
+permalink: /kb/303/Q303626/
 ---
 
 ## Q303626: SMSINST: Version of Windows Not Detected Correctly

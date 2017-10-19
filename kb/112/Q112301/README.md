@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112301: PC Dirsync: Err Msg: File Error Sorting Queue Usrtrans.glb"
-permalink: kb/112/Q112301/
+permalink: /kb/112/Q112301/
 ---
 
 ## Q112301: PC Dirsync: Err Msg: File Error Sorting Queue Usrtrans.glb

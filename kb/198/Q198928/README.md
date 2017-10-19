@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198928: PRB: MSDN Library g_ccolCollection.Open Error During Setup"
-permalink: kb/198/Q198928/
+permalink: /kb/198/Q198928/
 ---
 
 ## Q198928: PRB: MSDN Library g_ccolCollection.Open Error During Setup

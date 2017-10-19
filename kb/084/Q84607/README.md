@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84607: &quot;Setup Unable to Copy...WIN.SRC,&quot; &quot;Setup Error #5&quot; Messages"
-permalink: kb/084/Q84607/
+permalink: /kb/084/Q84607/
 ---
 
 ## Q84607: &quot;Setup Unable to Copy...WIN.SRC,&quot; &quot;Setup Error #5&quot; Messages

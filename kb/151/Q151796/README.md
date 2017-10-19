@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151796: Using Seiko Smart Label Printer Pro with Windows NT"
-permalink: kb/151/Q151796/
+permalink: /kb/151/Q151796/
 ---
 
 ## Q151796: Using Seiko Smart Label Printer Pro with Windows NT

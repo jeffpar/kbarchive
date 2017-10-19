@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161355: TP_START Stops Responding If SnaBase Fails on Win95 Client"
-permalink: kb/161/Q161355/
+permalink: /kb/161/Q161355/
 ---
 
 ## Q161355: TP_START Stops Responding If SnaBase Fails on Win95 Client

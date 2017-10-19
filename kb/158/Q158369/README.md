@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158369: How to Change the Startup Situation in Flight Simulator 95"
-permalink: kb/158/Q158369/
+permalink: /kb/158/Q158369/
 ---
 
 ## Q158369: How to Change the Startup Situation in Flight Simulator 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80252: PC Gen: Contents of Modem Script File CREDCARD.MDM"
-permalink: kb/080/Q80252/
+permalink: /kb/080/Q80252/
 ---
 
 ## Q80252: PC Gen: Contents of Modem Script File CREDCARD.MDM

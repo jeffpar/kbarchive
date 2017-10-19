@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86296: PRINTERS.WRI: Microsoft Windows &amp; MS-DOS 5 Upgrade"
-permalink: kb/086/Q86296/
+permalink: /kb/086/Q86296/
 ---
 
 ## Q86296: PRINTERS.WRI: Microsoft Windows &amp; MS-DOS 5 Upgrade

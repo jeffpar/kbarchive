@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214810: STOP 0x0000007B INACCESSIBLE_BOOT_DEVICE After Applying SP4"
-permalink: kb/214/Q214810/
+permalink: /kb/214/Q214810/
 ---
 
 ## Q214810: STOP 0x0000007B INACCESSIBLE_BOOT_DEVICE After Applying SP4

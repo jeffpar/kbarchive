@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74977: EMM386 and Early Versions of HIMEM.SYS"
-permalink: kb/074/Q74977/
+permalink: /kb/074/Q74977/
 ---
 
 ## Q74977: EMM386 and Early Versions of HIMEM.SYS

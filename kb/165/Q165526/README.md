@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165526: WD97: Page Numbering Is Different in Online View"
-permalink: kb/165/Q165526/
+permalink: /kb/165/Q165526/
 ---
 
 ## Q165526: WD97: Page Numbering Is Different in Online View

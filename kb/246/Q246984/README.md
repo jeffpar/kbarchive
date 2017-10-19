@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246984: Tuning May Benefit RPC Programs That Use Winsock Over TCP/IP"
-permalink: kb/246/Q246984/
+permalink: /kb/246/Q246984/
 ---
 
 ## Q246984: Tuning May Benefit RPC Programs That Use Winsock Over TCP/IP

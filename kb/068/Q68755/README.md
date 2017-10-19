@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68755: Cannot Print from a DOS Application in Enhanced Mode"
-permalink: kb/068/Q68755/
+permalink: /kb/068/Q68755/
 ---
 
 ## Q68755: Cannot Print from a DOS Application in Enhanced Mode

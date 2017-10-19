@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120591: PRB: Maintenance Setup Runs When Trying to Install FoxPro"
-permalink: kb/120/Q120591/
+permalink: /kb/120/Q120591/
 ---
 
 ## Q120591: PRB: Maintenance Setup Runs When Trying to Install FoxPro

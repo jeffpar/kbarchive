@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166130: HOWTO: Overriding Initial Setting on Print Setup Dialog"
-permalink: kb/166/Q166130/
+permalink: /kb/166/Q166130/
 ---
 
 ## Q166130: HOWTO: Overriding Initial Setting on Print Setup Dialog

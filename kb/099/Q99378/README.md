@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99378: How LAN Manager System Group Limit Numbers Are Set"
-permalink: kb/099/Q99378/
+permalink: /kb/099/Q99378/
 ---
 
 ## Q99378: How LAN Manager System Group Limit Numbers Are Set

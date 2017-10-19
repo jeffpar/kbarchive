@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112158: Configuring SNA Server to Talk to AS/400 Over 802.2"
-permalink: kb/112/Q112158/
+permalink: /kb/112/Q112158/
 ---
 
 ## Q112158: Configuring SNA Server to Talk to AS/400 Over 802.2

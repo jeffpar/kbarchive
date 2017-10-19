@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185157: WD97: ODMA: Word Converts Document When Opening in DOCS Open"
-permalink: kb/185/Q185157/
+permalink: /kb/185/Q185157/
 ---
 
 ## Q185157: WD97: ODMA: Word Converts Document When Opening in DOCS Open

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201301: FP98: Office Binder Documents Are Not Recognized"
-permalink: kb/201/Q201301/
+permalink: /kb/201/Q201301/
 ---
 
 ## Q201301: FP98: Office Binder Documents Are Not Recognized

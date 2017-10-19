@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202256: SMS: Referencing Package, Collection, and Job IDs to Their Names"
-permalink: kb/202/Q202256/
+permalink: /kb/202/Q202256/
 ---
 
 ## Q202256: SMS: Referencing Package, Collection, and Job IDs to Their Names

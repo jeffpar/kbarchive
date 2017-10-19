@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174762: XADM: Servers Without Public Store Require Anonymous Mailbox"
-permalink: kb/174/Q174762/
+permalink: /kb/174/Q174762/
 ---
 
 ## Q174762: XADM: Servers Without Public Store Require Anonymous Mailbox

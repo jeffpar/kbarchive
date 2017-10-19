@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159480: PPT7: Can't Unpack File To Folder With Extended Characters"
-permalink: kb/159/Q159480/
+permalink: /kb/159/Q159480/
 ---
 
 ## Q159480: PPT7: Can't Unpack File To Folder With Extended Characters

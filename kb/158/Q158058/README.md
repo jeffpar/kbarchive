@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158058: MSNDS Client Does Not Prompt to Log On"
-permalink: kb/158/Q158058/
+permalink: /kb/158/Q158058/
 ---
 
 ## Q158058: MSNDS Client Does Not Prompt to Log On

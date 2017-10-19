@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87010: Kyocera F Series Printer Prints One Line of Text per Page"
-permalink: kb/087/Q87010/
+permalink: /kb/087/Q87010/
 ---
 
 ## Q87010: Kyocera F Series Printer Prints One Line of Text per Page

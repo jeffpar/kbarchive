@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96625: MS-DOS: EMM386.EXE and VCPI Services"
-permalink: kb/096/Q96625/
+permalink: /kb/096/Q96625/
 ---
 
 ## Q96625: MS-DOS: EMM386.EXE and VCPI Services

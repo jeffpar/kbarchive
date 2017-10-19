@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130603: How to Use SET PATH to Control Which Table Opens First"
-permalink: kb/130/Q130603/
+permalink: /kb/130/Q130603/
 ---
 
 ## Q130603: How to Use SET PATH to Control Which Table Opens First

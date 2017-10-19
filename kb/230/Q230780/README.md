@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230780: XADM: Cannot Start KM Service After Upgrading to V3 Certificates"
-permalink: kb/230/Q230780/
+permalink: /kb/230/Q230780/
 ---
 
 ## Q230780: XADM: Cannot Start KM Service After Upgrading to V3 Certificates

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185880: BUG: Access Key for Constituent Control is Ignored"
-permalink: kb/185/Q185880/
+permalink: /kb/185/Q185880/
 ---
 
 ## Q185880: BUG: Access Key for Constituent Control is Ignored

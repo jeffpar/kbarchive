@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216925: PRB: Single-User Concurrency Problems With ADO and Jet"
-permalink: kb/216/Q216925/
+permalink: /kb/216/Q216925/
 ---
 
 ## Q216925: PRB: Single-User Concurrency Problems With ADO and Jet

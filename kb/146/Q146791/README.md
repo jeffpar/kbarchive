@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146791: XFOR: IMC Cannot Receive Message with Missing Folder"
-permalink: kb/146/Q146791/
+permalink: /kb/146/Q146791/
 ---
 
 ## Q146791: XFOR: IMC Cannot Receive Message with Missing Folder

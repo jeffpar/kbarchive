@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173150: WD97: Hyperlink to Anchor or Bookmark Goes to Top of Document"
-permalink: kb/173/Q173150/
+permalink: /kb/173/Q173150/
 ---
 
 ## Q173150: WD97: Hyperlink to Anchor or Bookmark Goes to Top of Document

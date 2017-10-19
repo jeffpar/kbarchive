@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128935: LPQ Running Recursively May Hang Windows NT LPD Server"
-permalink: kb/128/Q128935/
+permalink: /kb/128/Q128935/
 ---
 
 ## Q128935: LPQ Running Recursively May Hang Windows NT LPD Server

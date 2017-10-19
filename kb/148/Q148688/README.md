@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148688: FIX: C2243 on Friend Overload o"
-permalink: kb/148/Q148688/
+permalink: /kb/148/Q148688/
 ---
 
 ## Q148688: FIX: C2243 on Friend Overload o

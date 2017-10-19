@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174848: Problems Changing Player Preferences In Golf 3.0"
-permalink: kb/174/Q174848/
+permalink: /kb/174/Q174848/
 ---
 
 ## Q174848: Problems Changing Player Preferences In Golf 3.0

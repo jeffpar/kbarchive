@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104032: Cannot Use SMARTDRV.SYS with MS-DOS 6.x (DoubleSpace)"
-permalink: kb/104/Q104032/
+permalink: /kb/104/Q104032/
 ---
 
 ## Q104032: Cannot Use SMARTDRV.SYS with MS-DOS 6.x (DoubleSpace)

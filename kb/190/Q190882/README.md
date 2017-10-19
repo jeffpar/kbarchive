@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190882: SAMPLE: FSOSAMP.EXE Application Uses the FileSystem Object"
-permalink: kb/190/Q190882/
+permalink: /kb/190/Q190882/
 ---
 
 ## Q190882: SAMPLE: FSOSAMP.EXE Application Uses the FileSystem Object

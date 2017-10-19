@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75130: MS-DOS Shell Colors May Blink on CGA Display"
-permalink: kb/075/Q75130/
+permalink: /kb/075/Q75130/
 ---
 
 ## Q75130: MS-DOS Shell Colors May Blink on CGA Display

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108399: Art Gallery: Animation Appears To Have Already Been Played"
-permalink: kb/108/Q108399/
+permalink: /kb/108/Q108399/
 ---
 
 ## Q108399: Art Gallery: Animation Appears To Have Already Been Played

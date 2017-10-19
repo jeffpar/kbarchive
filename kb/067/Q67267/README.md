@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67267: WIN.INI Run= Command Problem with Windowed MS-DOS Apps"
-permalink: kb/067/Q67267/
+permalink: /kb/067/Q67267/
 ---
 
 ## Q67267: WIN.INI Run= Command Problem with Windowed MS-DOS Apps

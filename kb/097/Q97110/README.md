@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q97110: BUG: SIB MOV EAX,[EAX+EBP] Generates Incorrect Code"
-permalink: kb/097/Q97110/
+title: "Q97110: BUG: SIB MOV EAX,&#91;EAX+EBP&#93; Generates Incorrect Code"
+permalink: /kb/097/Q97110/
 ---
 
-## Q97110: BUG: SIB MOV EAX,[EAX+EBP] Generates Incorrect Code
+## Q97110: BUG: SIB MOV EAX,&#91;EAX+EBP&#93; Generates Incorrect Code
 
 	Article: Q97110
 	Product(s): Microsoft Macro Assembler

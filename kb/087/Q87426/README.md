@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87426: PROFS: Class of Machine Required for Gateway PC"
-permalink: kb/087/Q87426/
+permalink: /kb/087/Q87426/
 ---
 
 ## Q87426: PROFS: Class of Machine Required for Gateway PC

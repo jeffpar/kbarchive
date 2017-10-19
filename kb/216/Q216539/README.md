@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216539: Err Msg: An Error Occurred in the Secure Channel Support"
-permalink: kb/216/Q216539/
+permalink: /kb/216/Q216539/
 ---
 
 ## Q216539: Err Msg: An Error Occurred in the Secure Channel Support

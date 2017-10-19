@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121432: Scenes 2.0: Pictures Do Not Seem to Display Randomly"
-permalink: kb/121/Q121432/
+permalink: /kb/121/Q121432/
 ---
 
 ## Q121432: Scenes 2.0: Pictures Do Not Seem to Display Randomly

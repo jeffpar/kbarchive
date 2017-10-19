@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136408: MSN: BBS May Hang Opening Several Messages Simultaneously"
-permalink: kb/136/Q136408/
+permalink: /kb/136/Q136408/
 ---
 
 ## Q136408: MSN: BBS May Hang Opening Several Messages Simultaneously

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184229: Copying Files to a Macintosh Volume Changes Date and Time Stamp"
-permalink: kb/184/Q184229/
+permalink: /kb/184/Q184229/
 ---
 
 ## Q184229: Copying Files to a Macintosh Volume Changes Date and Time Stamp

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150283: SysKonnect FDDI Cards and Some EISA Computers possible data"
-permalink: kb/150/Q150283/
+permalink: /kb/150/Q150283/
 ---
 
 ## Q150283: SysKonnect FDDI Cards and Some EISA Computers possible data

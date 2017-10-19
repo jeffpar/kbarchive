@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75864: Async VMM Services May Be Called by Interrupt Handlers"
-permalink: kb/075/Q75864/
+permalink: /kb/075/Q75864/
 ---
 
 ## Q75864: Async VMM Services May Be Called by Interrupt Handlers

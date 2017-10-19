@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157678: DEC TLZ07 DAT Drive Not Recognized After Service Pack 5"
-permalink: kb/157/Q157678/
+permalink: /kb/157/Q157678/
 ---
 
 ## Q157678: DEC TLZ07 DAT Drive Not Recognized After Service Pack 5

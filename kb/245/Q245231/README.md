@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245231: SNA Server and Mode Session Limit Errors"
-permalink: kb/245/Q245231/
+permalink: /kb/245/Q245231/
 ---
 
 ## Q245231: SNA Server and Mode Session Limit Errors

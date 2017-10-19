@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148749: Performance Monitor Error after Installing NT 3.51 SP4"
-permalink: kb/148/Q148749/
+permalink: /kb/148/Q148749/
 ---
 
 ## Q148749: Performance Monitor Error after Installing NT 3.51 SP4

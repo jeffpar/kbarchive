@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148916: FIX: Setup Could Not Open &#92;Msdev&#92;Redist&#92;Oracle.hlp File"
-permalink: kb/148/Q148916/
+permalink: /kb/148/Q148916/
 ---
 
 ## Q148916: FIX: Setup Could Not Open &#92;Msdev&#92;Redist&#92;Oracle.hlp File

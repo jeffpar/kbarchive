@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145589: How to Add NetWare 4.x Servers to Windows NT Domain"
-permalink: kb/145/Q145589/
+permalink: /kb/145/Q145589/
 ---
 
 ## Q145589: How to Add NetWare 4.x Servers to Windows NT Domain

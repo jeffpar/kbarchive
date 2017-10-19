@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124849: GTWY: Application Notes and Replacement Files for Mail Gateways"
-permalink: kb/124/Q124849/
+permalink: /kb/124/Q124849/
 ---
 
 ## Q124849: GTWY: Application Notes and Replacement Files for Mail Gateways

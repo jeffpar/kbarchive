@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169501: How to Install Windows 95 from a Hard Disk"
-permalink: kb/169/Q169501/
+permalink: /kb/169/Q169501/
 ---
 
 ## Q169501: How to Install Windows 95 from a Hard Disk

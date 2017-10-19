@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q38113: CHKDSK and File Allocation Adjustments"
-permalink: kb/038/Q38113/
+permalink: /kb/038/Q38113/
 ---
 
 ## Q38113: CHKDSK and File Allocation Adjustments

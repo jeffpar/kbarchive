@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161767: Wnap.exe GP Faults During a Windows NT Password Change"
-permalink: kb/161/Q161767/
+permalink: /kb/161/Q161767/
 ---
 
 ## Q161767: Wnap.exe GP Faults During a Windows NT Password Change

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308101: Update Resolves Error When Running SBSI Training Program on Wind"
-permalink: kb/308/Q308101/
+permalink: /kb/308/Q308101/
 ---
 
 ## Q308101: Update Resolves Error When Running SBSI Training Program on Wind

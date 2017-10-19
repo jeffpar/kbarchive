@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279654: Metal Gear Solid: Character Name Missing from User's Guide"
-permalink: kb/279/Q279654/
+permalink: /kb/279/Q279654/
 ---
 
 ## Q279654: Metal Gear Solid: Character Name Missing from User's Guide

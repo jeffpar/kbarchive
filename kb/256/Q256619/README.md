@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256619: FS: How to Edit a Checkride Certificate in Paint"
-permalink: kb/256/Q256619/
+permalink: /kb/256/Q256619/
 ---
 
 ## Q256619: FS: How to Edit a Checkride Certificate in Paint

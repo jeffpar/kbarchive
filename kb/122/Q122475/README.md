@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122475: Asimov: Manual Installation Instructions"
-permalink: kb/122/Q122475/
+permalink: /kb/122/Q122475/
 ---
 
 ## Q122475: Asimov: Manual Installation Instructions

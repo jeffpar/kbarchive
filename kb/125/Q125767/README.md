@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125767: PRB: Query Too Complex Error After Execution of SQL Query"
-permalink: kb/125/Q125767/
+permalink: /kb/125/Q125767/
 ---
 
 ## Q125767: PRB: Query Too Complex Error After Execution of SQL Query

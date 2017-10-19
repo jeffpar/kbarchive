@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138951: PPT7: Object w/ White Text, Black Background Prints Solid Black"
-permalink: kb/138/Q138951/
+permalink: /kb/138/Q138951/
 ---
 
 ## Q138951: PPT7: Object w/ White Text, Black Background Prints Solid Black

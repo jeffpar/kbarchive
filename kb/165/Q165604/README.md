@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165604: WD97: WordBasic Object Returns Incorrect ASCII Number For Symbol"
-permalink: kb/165/Q165604/
+permalink: /kb/165/Q165604/
 ---
 
 ## Q165604: WD97: WordBasic Object Returns Incorrect ASCII Number For Symbol

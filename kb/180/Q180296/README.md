@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180296: MS Mail Gateway to NGW Dirsync Fails to Provide Complete GAL"
-permalink: kb/180/Q180296/
+permalink: /kb/180/Q180296/
 ---
 
 ## Q180296: MS Mail Gateway to NGW Dirsync Fails to Provide Complete GAL

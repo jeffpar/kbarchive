@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142927: BUG: First of Two Bound Masked Edit Controls Clears on AddNew"
-permalink: kb/142/Q142927/
+permalink: /kb/142/Q142927/
 ---
 
 ## Q142927: BUG: First of Two Bound Masked Edit Controls Clears on AddNew

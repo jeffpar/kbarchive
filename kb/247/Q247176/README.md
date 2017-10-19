@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247176: XCLN: Sent Time Info Incorrect for Delayed Delivery Messages"
-permalink: kb/247/Q247176/
+permalink: /kb/247/Q247176/
 ---
 
 ## Q247176: XCLN: Sent Time Info Incorrect for Delayed Delivery Messages

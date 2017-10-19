@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73763: Sysgen Driver Version 3.41 Required with Windows"
-permalink: kb/073/Q73763/
+permalink: /kb/073/Q73763/
 ---
 
 ## Q73763: Sysgen Driver Version 3.41 Required with Windows

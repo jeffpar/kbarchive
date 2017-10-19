@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137443: Size and Nesting Level Limitations of Classes"
-permalink: kb/137/Q137443/
+permalink: /kb/137/Q137443/
 ---
 
 ## Q137443: Size and Nesting Level Limitations of Classes

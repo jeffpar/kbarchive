@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136185: PRB: _Screen.Hide or _Screen.Visible = .F. Won't Hide Desktop"
-permalink: kb/136/Q136185/
+permalink: /kb/136/Q136185/
 ---
 
 ## Q136185: PRB: _Screen.Hide or _Screen.Visible = .F. Won't Hide Desktop

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158707: DDE Destroy Window Code May Stop 0x0000001e in Windows NT 4.0"
-permalink: kb/158/Q158707/
+permalink: /kb/158/Q158707/
 ---
 
 ## Q158707: DDE Destroy Window Code May Stop 0x0000001e in Windows NT 4.0

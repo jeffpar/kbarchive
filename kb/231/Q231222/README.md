@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231222: SMS: Scripts Not Removed When Logon Point Is Removed"
-permalink: kb/231/Q231222/
+permalink: /kb/231/Q231222/
 ---
 
 ## Q231222: SMS: Scripts Not Removed When Logon Point Is Removed

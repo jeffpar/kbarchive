@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169541: WD97: Multiple Cover Pages Sent When Using Fax Wizard"
-permalink: kb/169/Q169541/
+permalink: /kb/169/Q169541/
 ---
 
 ## Q169541: WD97: Multiple Cover Pages Sent When Using Fax Wizard

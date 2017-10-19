@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259506: XWEB: Error Message Occurs When Outlook Web Access Is Installed"
-permalink: kb/259/Q259506/
+permalink: /kb/259/Q259506/
 ---
 
 ## Q259506: XWEB: Error Message Occurs When Outlook Web Access Is Installed

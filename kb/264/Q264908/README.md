@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264908: Err Msg: HTTP 403.15 Forbidden: Client Access Licenses Exceeded"
-permalink: kb/264/Q264908/
+permalink: /kb/264/Q264908/
 ---
 
 ## Q264908: Err Msg: HTTP 403.15 Forbidden: Client Access Licenses Exceeded

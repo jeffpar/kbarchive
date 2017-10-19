@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172193: INFO: List of VB 4.0 Custom Controls Discontinued in VB 5.0"
-permalink: kb/172/Q172193/
+permalink: /kb/172/Q172193/
 ---
 
 ## Q172193: INFO: List of VB 4.0 Custom Controls Discontinued in VB 5.0

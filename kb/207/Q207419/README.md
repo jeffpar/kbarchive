@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207419: SMS: Accessibility Keys for MMC and Toolbar Buttons Not Working"
-permalink: kb/207/Q207419/
+permalink: /kb/207/Q207419/
 ---
 
 ## Q207419: SMS: Accessibility Keys for MMC and Toolbar Buttons Not Working

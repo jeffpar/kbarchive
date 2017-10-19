@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142696: WinNT 3.51 SP3 GARAM4.TTF Font Not Displayed Properly"
-permalink: kb/142/Q142696/
+permalink: /kb/142/Q142696/
 ---
 
 ## Q142696: WinNT 3.51 SP3 GARAM4.TTF Font Not Displayed Properly

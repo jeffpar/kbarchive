@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165275: TN3270 Server display types are not selected"
-permalink: kb/165/Q165275/
+permalink: /kb/165/Q165275/
 ---
 
 ## Q165275: TN3270 Server display types are not selected

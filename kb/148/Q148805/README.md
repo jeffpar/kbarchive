@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148805: FIX: CDaoTableDef CreateField Cannot Set &quot;Allow Zero Length&quot;"
-permalink: kb/148/Q148805/
+permalink: /kb/148/Q148805/
 ---
 
 ## Q148805: FIX: CDaoTableDef CreateField Cannot Set &quot;Allow Zero Length&quot;

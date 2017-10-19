@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151766: DOCERR: Mastering Access: Wrong Answer in Self Test"
-permalink: kb/151/Q151766/
+permalink: /kb/151/Q151766/
 ---
 
 ## Q151766: DOCERR: Mastering Access: Wrong Answer in Self Test

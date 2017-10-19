@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103961: PC Forms: Icon Not Displayed in Routing Form"
-permalink: kb/103/Q103961/
+permalink: /kb/103/Q103961/
 ---
 
 ## Q103961: PC Forms: Icon Not Displayed in Routing Form

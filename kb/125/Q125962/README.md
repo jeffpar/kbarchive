@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125962: TCP/IP-32 Using DHCP: Can't Override Default Gateway"
-permalink: kb/125/Q125962/
+permalink: /kb/125/Q125962/
 ---
 
 ## Q125962: TCP/IP-32 Using DHCP: Can't Override Default Gateway

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189625: PRB: Error 168 When Installing or Running Visual Basic"
-permalink: kb/189/Q189625/
+permalink: /kb/189/Q189625/
 ---
 
 ## Q189625: PRB: Error 168 When Installing or Running Visual Basic

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95555: Overview of Memory-Management Functionality in MS-DOS"
-permalink: kb/095/Q95555/
+permalink: /kb/095/Q95555/
 ---
 
 ## Q95555: Overview of Memory-Management Functionality in MS-DOS

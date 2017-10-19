@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152905: XCLN: Err Msg: Upload of Offline Changes Could not be..."
-permalink: kb/152/Q152905/
+permalink: /kb/152/Q152905/
 ---
 
 ## Q152905: XCLN: Err Msg: Upload of Offline Changes Could not be...

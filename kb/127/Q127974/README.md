@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127974: ADT/ODE: Error Msg: Could Not Open the File Named &lt;File Name&gt;"
-permalink: kb/127/Q127974/
+permalink: /kb/127/Q127974/
 ---
 
 ## Q127974: ADT/ODE: Error Msg: Could Not Open the File Named &lt;File Name&gt;

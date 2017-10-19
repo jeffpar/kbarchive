@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121782: ADT2: Setup Wizard Cannot Find VSHARE.386 with Windows NT"
-permalink: kb/121/Q121782/
+permalink: /kb/121/Q121782/
 ---
 
 ## Q121782: ADT2: Setup Wizard Cannot Find VSHARE.386 with Windows NT

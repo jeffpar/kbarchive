@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118436: BUG: Code Causes F4999, CK4008, and Run-Time Problems"
-permalink: kb/118/Q118436/
+permalink: /kb/118/Q118436/
 ---
 
 ## Q118436: BUG: Code Causes F4999, CK4008, and Run-Time Problems

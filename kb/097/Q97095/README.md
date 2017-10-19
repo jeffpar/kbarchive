@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97095: WD97: Send Command Missing from File Menu"
-permalink: kb/097/Q97095/
+permalink: /kb/097/Q97095/
 ---
 
 ## Q97095: WD97: Send Command Missing from File Menu

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148135: Bookshelf '96-'97 ErrMsg: OLE Automation Error"
-permalink: kb/148/Q148135/
+permalink: /kb/148/Q148135/
 ---
 
 ## Q148135: Bookshelf '96-'97 ErrMsg: OLE Automation Error

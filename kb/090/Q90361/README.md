@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90361: Using SETUP /N with a Novell NetWare Server"
-permalink: kb/090/Q90361/
+permalink: /kb/090/Q90361/
 ---
 
 ## Q90361: Using SETUP /N with a Novell NetWare Server

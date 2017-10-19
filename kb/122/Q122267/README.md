@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122267: BUG: C2511 Error on Member Function with Unknown Parameter"
-permalink: kb/122/Q122267/
+permalink: /kb/122/Q122267/
 ---
 
 ## Q122267: BUG: C2511 Error on Member Function with Unknown Parameter

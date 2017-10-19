@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141143: How to Determine the Active &amp; Previously Active Forms"
-permalink: kb/141/Q141143/
+permalink: /kb/141/Q141143/
 ---
 
 ## Q141143: How to Determine the Active &amp; Previously Active Forms

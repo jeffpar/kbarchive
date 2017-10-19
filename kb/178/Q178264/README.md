@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178264: Encarta: Stack Fault when Applying Filter in Media Gallery"
-permalink: kb/178/Q178264/
+permalink: /kb/178/Q178264/
 ---
 
 ## Q178264: Encarta: Stack Fault when Applying Filter in Media Gallery

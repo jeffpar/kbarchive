@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188879: RPC Endpoint Mapper Will Not Register All Interfaces"
-permalink: kb/188/Q188879/
+permalink: /kb/188/Q188879/
 ---
 
 ## Q188879: RPC Endpoint Mapper Will Not Register All Interfaces

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262010: Allegiance: Description of the Donation System"
-permalink: kb/262/Q262010/
+permalink: /kb/262/Q262010/
 ---
 
 ## Q262010: Allegiance: Description of the Donation System

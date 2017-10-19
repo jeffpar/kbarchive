@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101070: ADK: How to Make Custom Application Name Appear in Task List"
-permalink: kb/101/Q101070/
+permalink: /kb/101/Q101070/
 ---
 
 ## Q101070: ADK: How to Make Custom Application Name Appear in Task List

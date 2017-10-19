@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167347: FIX: /Og Causes C1001, main.c, line 379 for Recursive Call"
-permalink: kb/167/Q167347/
+permalink: /kb/167/Q167347/
 ---
 
 ## Q167347: FIX: /Og Causes C1001, main.c, line 379 for Recursive Call

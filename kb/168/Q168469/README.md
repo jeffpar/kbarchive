@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168469: RRAS Upgrade for WinNT Server 4.0 Hotfix Pack 2.0 Release Notes"
-permalink: kb/168/Q168469/
+permalink: /kb/168/Q168469/
 ---
 
 ## Q168469: RRAS Upgrade for WinNT Server 4.0 Hotfix Pack 2.0 Release Notes

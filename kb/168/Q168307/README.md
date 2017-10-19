@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168307: MSN Err Msg: Disconnected from the Remote Servers"
-permalink: kb/168/Q168307/
+permalink: /kb/168/Q168307/
 ---
 
 ## Q168307: MSN Err Msg: Disconnected from the Remote Servers

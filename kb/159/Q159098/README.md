@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159098: WinNT 4.0 Resource Kit Utility &quot;Remote Console&quot; Client Fails"
-permalink: kb/159/Q159098/
+permalink: /kb/159/Q159098/
 ---
 
 ## Q159098: WinNT 4.0 Resource Kit Utility &quot;Remote Console&quot; Client Fails

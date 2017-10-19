@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132815: Server-Based Setup Crashes After Setting Up Hardware"
-permalink: kb/132/Q132815/
+permalink: /kb/132/Q132815/
 ---
 
 ## Q132815: Server-Based Setup Crashes After Setting Up Hardware

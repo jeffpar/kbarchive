@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93704: Xircom Adapter Unable to Connect in Enhanced Mode"
-permalink: kb/093/Q93704/
+permalink: /kb/093/Q93704/
 ---
 
 ## Q93704: Xircom Adapter Unable to Connect in Enhanced Mode

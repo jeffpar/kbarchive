@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137286: Printer Cartridge Fonts Not Available to Applications"
-permalink: kb/137/Q137286/
+permalink: /kb/137/Q137286/
 ---
 
 ## Q137286: Printer Cartridge Fonts Not Available to Applications

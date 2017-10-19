@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98841: INFO: Conforming to ANSI C Standards"
-permalink: kb/098/Q98841/
+permalink: /kb/098/Q98841/
 ---
 
 ## Q98841: INFO: Conforming to ANSI C Standards

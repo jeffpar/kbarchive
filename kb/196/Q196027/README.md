@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196027: PRB: Multi-Column Listbox Fails When &gt;15 Chars in Last Column"
-permalink: kb/196/Q196027/
+permalink: /kb/196/Q196027/
 ---
 
 ## Q196027: PRB: Multi-Column Listbox Fails When &gt;15 Chars in Last Column

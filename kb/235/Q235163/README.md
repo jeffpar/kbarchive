@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235163: Distributed Applications with Microsoft Visual Basic 6.0 MCSD Tr"
-permalink: kb/235/Q235163/
+permalink: /kb/235/Q235163/
 ---
 
 ## Q235163: Distributed Applications with Microsoft Visual Basic 6.0 MCSD Tr

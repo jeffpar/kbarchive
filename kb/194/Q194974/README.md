@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194974: BUG: Visual Modeler 2.0 Reverse Engineering Error"
-permalink: kb/194/Q194974/
+permalink: /kb/194/Q194974/
 ---
 
 ## Q194974: BUG: Visual Modeler 2.0 Reverse Engineering Error

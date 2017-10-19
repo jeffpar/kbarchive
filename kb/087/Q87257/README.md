@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87257: Mac Adm: Network Administrator Program Closes at Startup"
-permalink: kb/087/Q87257/
+permalink: /kb/087/Q87257/
 ---
 
 ## Q87257: Mac Adm: Network Administrator Program Closes at Startup

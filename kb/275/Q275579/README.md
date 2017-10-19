@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275579: Combat Flight Simulator 2: Minimum System Requirements"
-permalink: kb/275/Q275579/
+permalink: /kb/275/Q275579/
 ---
 
 ## Q275579: Combat Flight Simulator 2: Minimum System Requirements

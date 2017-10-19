@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149482: BUG: MSDEV Does Not Report Error When It Cannot Find Make File"
-permalink: kb/149/Q149482/
+permalink: /kb/149/Q149482/
 ---
 
 ## Q149482: BUG: MSDEV Does Not Report Error When It Cannot Find Make File

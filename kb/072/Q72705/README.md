@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72705: DOCERR: ENDM Can't Be Used to Return Value from Macro Function"
-permalink: kb/072/Q72705/
+permalink: /kb/072/Q72705/
 ---
 
 ## Q72705: DOCERR: ENDM Can't Be Used to Return Value from Macro Function

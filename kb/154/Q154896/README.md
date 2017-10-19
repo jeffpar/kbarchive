@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154896: Microsoft Access 7.0 Wizard Does Not Work in Windows NT 4.0"
-permalink: kb/154/Q154896/
+permalink: /kb/154/Q154896/
 ---
 
 ## Q154896: Microsoft Access 7.0 Wizard Does Not Work in Windows NT 4.0

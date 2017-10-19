@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90925: Mail Message File Size in Windows for Workgroups"
-permalink: kb/090/Q90925/
+permalink: /kb/090/Q90925/
 ---
 
 ## Q90925: Mail Message File Size in Windows for Workgroups

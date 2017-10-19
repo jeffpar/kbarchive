@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242231: PRB: The Mouse Pointer Cannot Be Changed in a SnapIn Project"
-permalink: kb/242/Q242231/
+permalink: /kb/242/Q242231/
 ---
 
 ## Q242231: PRB: The Mouse Pointer Cannot Be Changed in a SnapIn Project

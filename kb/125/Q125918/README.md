@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125918: PC DirSync: SRVMAIN.EXE Causes Trap 000D Error"
-permalink: kb/125/Q125918/
+permalink: /kb/125/Q125918/
 ---
 
 ## Q125918: PC DirSync: SRVMAIN.EXE Causes Trap 000D Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66462: C Run-time Functions Can Use Far Pointers in Medium Model"
-permalink: kb/066/Q66462/
+permalink: /kb/066/Q66462/
 ---
 
 ## Q66462: C Run-time Functions Can Use Far Pointers in Medium Model

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113114: BUG: App Studio GP Faults in RCDLL.DLL When Opening a .RC file"
-permalink: kb/113/Q113114/
+permalink: /kb/113/Q113114/
 ---
 
 ## Q113114: BUG: App Studio GP Faults in RCDLL.DLL When Opening a .RC file

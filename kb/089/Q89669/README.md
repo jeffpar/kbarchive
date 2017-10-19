@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89669: FoxBASE+ Configuration and Capacity"
-permalink: kb/089/Q89669/
+permalink: /kb/089/Q89669/
 ---
 
 ## Q89669: FoxBASE+ Configuration and Capacity

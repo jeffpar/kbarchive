@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126235: Flight Simulator: Fatal Error on DX/4 and OverDrive Processors"
-permalink: kb/126/Q126235/
+permalink: /kb/126/Q126235/
 ---
 
 ## Q126235: Flight Simulator: Fatal Error on DX/4 and OverDrive Processors

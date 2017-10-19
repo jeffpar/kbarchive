@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236123: Large Com.cfg File May Cause Dynamic Updates to Fail"
-permalink: kb/236/Q236123/
+permalink: /kb/236/Q236123/
 ---
 
 ## Q236123: Large Com.cfg File May Cause Dynamic Updates to Fail

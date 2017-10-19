@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263112: XCON: Message Transfer Agent Generates Event 1016 When Logging P"
-permalink: kb/263/Q263112/
+permalink: /kb/263/Q263112/
 ---
 
 ## Q263112: XCON: Message Transfer Agent Generates Event 1016 When Logging P

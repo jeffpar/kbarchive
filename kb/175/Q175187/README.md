@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175187: Extra Modem Settings I-M for Connecting to MSN"
-permalink: kb/175/Q175187/
+permalink: /kb/175/Q175187/
 ---
 
 ## Q175187: Extra Modem Settings I-M for Connecting to MSN

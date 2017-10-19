@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302974: &quot;Unable To Find Dial-up Credentials&quot; Error (MSN Explorer 6.1)"
-permalink: kb/302/Q302974/
+permalink: /kb/302/Q302974/
 ---
 
 ## Q302974: &quot;Unable To Find Dial-up Credentials&quot; Error (MSN Explorer 6.1)

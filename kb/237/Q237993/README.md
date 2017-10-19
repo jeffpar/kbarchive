@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237993: XFOR:Users Can't Reply to SMTP Messages in PST After Migration"
-permalink: kb/237/Q237993/
+permalink: /kb/237/Q237993/
 ---
 
 ## Q237993: XFOR:Users Can't Reply to SMTP Messages in PST After Migration

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105118: PRB: CodeView Displays &quot;Bad DLL Format in 'Filename'&quot;"
-permalink: kb/105/Q105118/
+permalink: /kb/105/Q105118/
 ---
 
 ## Q105118: PRB: CodeView Displays &quot;Bad DLL Format in 'Filename'&quot;

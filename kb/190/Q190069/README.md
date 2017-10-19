@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190069: HOWTO: Showing Print Preview as MDI Child of Top-Level Form"
-permalink: kb/190/Q190069/
+permalink: /kb/190/Q190069/
 ---
 
 ## Q190069: HOWTO: Showing Print Preview as MDI Child of Top-Level Form

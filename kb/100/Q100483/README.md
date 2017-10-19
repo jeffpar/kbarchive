@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100483: TMP Files Left Behind After Search"
-permalink: kb/100/Q100483/
+permalink: /kb/100/Q100483/
 ---
 
 ## Q100483: TMP Files Left Behind After Search

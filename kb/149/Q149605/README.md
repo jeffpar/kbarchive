@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149605: How to Change the TCP Port for IIS Services"
-permalink: kb/149/Q149605/
+permalink: /kb/149/Q149605/
 ---
 
 ## Q149605: How to Change the TCP Port for IIS Services

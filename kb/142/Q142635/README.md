@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142635: Cannot Change the Drive Letter of Removable Drives"
-permalink: kb/142/Q142635/
+permalink: /kb/142/Q142635/
 ---
 
 ## Q142635: Cannot Change the Drive Letter of Removable Drives

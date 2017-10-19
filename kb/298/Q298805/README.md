@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298805: HOW TO: Enable SSL for Customers Who Interact w/ Your Web Site"
-permalink: kb/298/Q298805/
+permalink: /kb/298/Q298805/
 ---
 
 ## Q298805: HOW TO: Enable SSL for Customers Who Interact w/ Your Web Site

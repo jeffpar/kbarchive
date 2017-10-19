@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162391: WD97: Activewindow.Panes.Count Returns 1"
-permalink: kb/162/Q162391/
+permalink: /kb/162/Q162391/
 ---
 
 ## Q162391: WD97: Activewindow.Panes.Count Returns 1

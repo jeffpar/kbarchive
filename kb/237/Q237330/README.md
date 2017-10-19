@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237330: SMS: Advertisements Are Sent with Wrong Priority"
-permalink: kb/237/Q237330/
+permalink: /kb/237/Q237330/
 ---
 
 ## Q237330: SMS: Advertisements Are Sent with Wrong Priority

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148256: Musical Instruments: Minimum System Requirements"
-permalink: kb/148/Q148256/
+permalink: /kb/148/Q148256/
 ---
 
 ## Q148256: Musical Instruments: Minimum System Requirements

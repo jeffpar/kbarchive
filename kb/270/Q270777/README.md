@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270777: ELL FR &amp; SP: Menu Not Active in Virtual Challenge"
-permalink: kb/270/Q270777/
+permalink: /kb/270/Q270777/
 ---
 
 ## Q270777: ELL FR &amp; SP: Menu Not Active in Virtual Challenge

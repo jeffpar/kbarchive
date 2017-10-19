@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158168: XADM: SA Failed to Start: Logon Error 7013"
-permalink: kb/158/Q158168/
+permalink: /kb/158/Q158168/
 ---
 
 ## Q158168: XADM: SA Failed to Start: Logon Error 7013

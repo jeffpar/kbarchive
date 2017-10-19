@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260961: Cannot Change the Local Port Mapping on TSE with ICA Client"
-permalink: kb/260/Q260961/
+permalink: /kb/260/Q260961/
 ---
 
 ## Q260961: Cannot Change the Local Port Mapping on TSE with ICA Client

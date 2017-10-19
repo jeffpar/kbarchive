@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152471: XFOR: Difference Between SMTP:&#42; and SMTP: Address Space"
-permalink: kb/152/Q152471/
+permalink: /kb/152/Q152471/
 ---
 
 ## Q152471: XFOR: Difference Between SMTP:&#42; and SMTP: Address Space

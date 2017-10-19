@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96227: MS-DOS wrkheuristic 14 (Raw Data) Documented Incorrectly"
-permalink: kb/096/Q96227/
+permalink: /kb/096/Q96227/
 ---
 
 ## Q96227: MS-DOS wrkheuristic 14 (Raw Data) Documented Incorrectly

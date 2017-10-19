@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83889: MicroField Display Driver Information"
-permalink: kb/083/Q83889/
+permalink: /kb/083/Q83889/
 ---
 
 ## Q83889: MicroField Display Driver Information

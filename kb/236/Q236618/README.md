@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236618: Users With Read (View Only) Permissions Can Save Com.cfg"
-permalink: kb/236/Q236618/
+permalink: /kb/236/Q236618/
 ---
 
 ## Q236618: Users With Read (View Only) Permissions Can Save Com.cfg

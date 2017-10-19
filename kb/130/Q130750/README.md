@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130750: PC WRmt: Locked KEY File May Result in Lost Mail"
-permalink: kb/130/Q130750/
+permalink: /kb/130/Q130750/
 ---
 
 ## Q130750: PC WRmt: Locked KEY File May Result in Lost Mail

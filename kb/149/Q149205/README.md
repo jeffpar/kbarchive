@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149205: XADM: Msg: Setup Is Searching for Installed Components"
-permalink: kb/149/Q149205/
+permalink: /kb/149/Q149205/
 ---
 
 ## Q149205: XADM: Msg: Setup Is Searching for Installed Components

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146082: XCLN: Adding Subfolder to Outbox Changes Icon"
-permalink: kb/146/Q146082/
+permalink: /kb/146/Q146082/
 ---
 
 ## Q146082: XCLN: Adding Subfolder to Outbox Changes Icon

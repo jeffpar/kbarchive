@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234805: XWEB: How to Install OWA and IIS on a Stand-Alone Server"
-permalink: kb/234/Q234805/
+permalink: /kb/234/Q234805/
 ---
 
 ## Q234805: XWEB: How to Install OWA and IIS on a Stand-Alone Server

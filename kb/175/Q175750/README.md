@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175750: How to Install the Full Installation of Internet Explorer 4.0"
-permalink: kb/175/Q175750/
+permalink: /kb/175/Q175750/
 ---
 
 ## Q175750: How to Install the Full Installation of Internet Explorer 4.0

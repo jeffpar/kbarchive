@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174699: XFOR: Customizing LinkAge Connector Logged Messages"
-permalink: kb/174/Q174699/
+permalink: /kb/174/Q174699/
 ---
 
 ## Q174699: XFOR: Customizing LinkAge Connector Logged Messages

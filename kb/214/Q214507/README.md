@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214507: Multiple NFS Shares Can Be Mounted as a Single Drive Mapping"
-permalink: kb/214/Q214507/
+permalink: /kb/214/Q214507/
 ---
 
 ## Q214507: Multiple NFS Shares Can Be Mounted as a Single Drive Mapping

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239820: XADM: MTA Queue Message Time Ahead One Hour Following DST Change"
-permalink: kb/239/Q239820/
+permalink: /kb/239/Q239820/
 ---
 
 ## Q239820: XADM: MTA Queue Message Time Ahead One Hour Following DST Change

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289321: FP: Reselecting Reports Shows Previous Report Not Site Summary"
-permalink: kb/289/Q289321/
+permalink: /kb/289/Q289321/
 ---
 
 ## Q289321: FP: Reselecting Reports Shows Previous Report Not Site Summary

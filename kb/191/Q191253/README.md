@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191253: HOWTO: Implement Multi-user Custom Counters in DAO 3.5"
-permalink: kb/191/Q191253/
+permalink: /kb/191/Q191253/
 ---
 
 ## Q191253: HOWTO: Implement Multi-user Custom Counters in DAO 3.5

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85607: FAX: Errors Spooling to Printer"
-permalink: kb/085/Q85607/
+permalink: /kb/085/Q85607/
 ---
 
 ## Q85607: FAX: Errors Spooling to Printer

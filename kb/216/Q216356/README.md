@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216356: Visual C++ Project Settings and .DBG File Creation"
-permalink: kb/216/Q216356/
+permalink: /kb/216/Q216356/
 ---
 
 ## Q216356: Visual C++ Project Settings and .DBG File Creation

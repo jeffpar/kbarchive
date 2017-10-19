@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145613: Access Violation Using MPR and Third-Party Network Provider"
-permalink: kb/145/Q145613/
+permalink: /kb/145/Q145613/
 ---
 
 ## Q145613: Access Violation Using MPR and Third-Party Network Provider

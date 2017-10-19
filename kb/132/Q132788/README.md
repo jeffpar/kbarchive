@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132788: Wordscan Plus 4.0 Does Not Perform OCR"
-permalink: kb/132/Q132788/
+permalink: /kb/132/Q132788/
 ---
 
 ## Q132788: Wordscan Plus 4.0 Does Not Perform OCR

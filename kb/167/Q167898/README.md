@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167898: XCLN: Error Opening .xls from Public Folder"
-permalink: kb/167/Q167898/
+permalink: /kb/167/Q167898/
 ---
 
 ## Q167898: XCLN: Error Opening .xls from Public Folder

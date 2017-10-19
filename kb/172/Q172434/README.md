@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172434: Manager Displays Wrong Values for 802.2 T1 and Ti Timer Ticks"
-permalink: kb/172/Q172434/
+permalink: /kb/172/Q172434/
 ---
 
 ## Q172434: Manager Displays Wrong Values for 802.2 T1 and Ti Timer Ticks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147666: HOWTO: Set the Column Width of Columns in a ListView Control"
-permalink: kb/147/Q147666/
+permalink: /kb/147/Q147666/
 ---
 
 ## Q147666: HOWTO: Set the Column Width of Columns in a ListView Control

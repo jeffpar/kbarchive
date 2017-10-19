@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142096: How to Reinstall Windows 95 to a New Folder"
-permalink: kb/142/Q142096/
+permalink: /kb/142/Q142096/
 ---
 
 ## Q142096: How to Reinstall Windows 95 to a New Folder

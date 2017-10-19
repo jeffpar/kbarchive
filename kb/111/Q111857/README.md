@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111857: SMTP: Missing Attachment Name in Client when Using PMDF Mailer"
-permalink: kb/111/Q111857/
+permalink: /kb/111/Q111857/
 ---
 
 ## Q111857: SMTP: Missing Attachment Name in Client when Using PMDF Mailer

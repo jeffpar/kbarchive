@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181938: XCLN: Assertion Failure When Starting Outlook 8.0"
-permalink: kb/181/Q181938/
+permalink: /kb/181/Q181938/
 ---
 
 ## Q181938: XCLN: Assertion Failure When Starting Outlook 8.0

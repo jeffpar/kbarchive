@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232620: Spooled Print Jobs Are Deleted from Queue Without Being Printed"
-permalink: kb/232/Q232620/
+permalink: /kb/232/Q232620/
 ---
 
 ## Q232620: Spooled Print Jobs Are Deleted from Queue Without Being Printed

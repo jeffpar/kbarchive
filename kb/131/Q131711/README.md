@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131711: HOWTO: Browse a Table While Using Row Buffering in a Form"
-permalink: kb/131/Q131711/
+permalink: /kb/131/Q131711/
 ---
 
 ## Q131711: HOWTO: Browse a Table While Using Row Buffering in a Form

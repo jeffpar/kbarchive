@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195362: DOC: Calendar Control Contains Proprietary Information"
-permalink: kb/195/Q195362/
+permalink: /kb/195/Q195362/
 ---
 
 ## Q195362: DOC: Calendar Control Contains Proprietary Information

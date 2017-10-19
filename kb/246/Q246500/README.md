@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246500: XCLN: Plain Text Message Prints Only in Proportional Font"
-permalink: kb/246/Q246500/
+permalink: /kb/246/Q246500/
 ---
 
 ## Q246500: XCLN: Plain Text Message Prints Only in Proportional Font

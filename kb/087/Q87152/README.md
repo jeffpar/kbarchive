@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87152: Mac Srv Wkst: Handling of Local and Server Wastebaskets"
-permalink: kb/087/Q87152/
+permalink: /kb/087/Q87152/
 ---
 
 ## Q87152: Mac Srv Wkst: Handling of Local and Server Wastebaskets

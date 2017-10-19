@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90123: Artisoft NE3 Network Card Compatibility"
-permalink: kb/090/Q90123/
+permalink: /kb/090/Q90123/
 ---
 
 ## Q90123: Artisoft NE3 Network Card Compatibility

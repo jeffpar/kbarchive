@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233400: XGEN: Using Windows2000 Encrypted File System to Encrypt Mdbdata"
-permalink: kb/233/Q233400/
+permalink: /kb/233/Q233400/
 ---
 
 ## Q233400: XGEN: Using Windows2000 Encrypted File System to Encrypt Mdbdata

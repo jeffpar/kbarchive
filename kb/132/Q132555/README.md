@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132555: TYPE Command Displays Garbage After Displaying File Contents"
-permalink: kb/132/Q132555/
+permalink: /kb/132/Q132555/
 ---
 
 ## Q132555: TYPE Command Displays Garbage After Displaying File Contents

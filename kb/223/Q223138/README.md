@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223138: SMS: Client Service Error 1314: Fails to Start SMSAPM32"
-permalink: kb/223/Q223138/
+permalink: /kb/223/Q223138/
 ---
 
 ## Q223138: SMS: Client Service Error 1314: Fails to Start SMSAPM32

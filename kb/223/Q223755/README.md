@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223755: SMS: SMS Executive Crashes When Enumerating Non-Microsoft Server"
-permalink: kb/223/Q223755/
+permalink: /kb/223/Q223755/
 ---
 
 ## Q223755: SMS: SMS Executive Crashes When Enumerating Non-Microsoft Server

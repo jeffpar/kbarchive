@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229415: INFO: Visual Basic Supports P-Code and Native Code Compilation"
-permalink: kb/229/Q229415/
+permalink: /kb/229/Q229415/
 ---
 
 ## Q229415: INFO: Visual Basic Supports P-Code and Native Code Compilation

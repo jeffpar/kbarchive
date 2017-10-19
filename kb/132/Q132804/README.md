@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132804: WinBackup Does Not Identify Files with Long Filenames"
-permalink: kb/132/Q132804/
+permalink: /kb/132/Q132804/
 ---
 
 ## Q132804: WinBackup Does Not Identify Files with Long Filenames

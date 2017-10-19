@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q208568: HOWTO: Access Pocket Outlook Objects from VBCE"
-permalink: kb/208/Q208568/
+permalink: /kb/208/Q208568/
 ---
 
 ## Q208568: HOWTO: Access Pocket Outlook Objects from VBCE

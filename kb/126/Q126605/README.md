@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126605: Error Using Quick Connect and Password Protected Shares"
-permalink: kb/126/Q126605/
+permalink: /kb/126/Q126605/
 ---
 
 ## Q126605: Error Using Quick Connect and Password Protected Shares

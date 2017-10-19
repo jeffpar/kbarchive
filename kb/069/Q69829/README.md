@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69829: Running Windows in Enhanced Mode with Tandy 4000 with SCSI"
-permalink: kb/069/Q69829/
+permalink: /kb/069/Q69829/
 ---
 
 ## Q69829: Running Windows in Enhanced Mode with Tandy 4000 with SCSI

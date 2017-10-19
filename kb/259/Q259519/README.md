@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259519: PRB: Image Control Invisible When Visible Property Set to True"
-permalink: kb/259/Q259519/
+permalink: /kb/259/Q259519/
 ---
 
 ## Q259519: PRB: Image Control Invisible When Visible Property Set to True

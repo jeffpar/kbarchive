@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58299: System Integrity Violated Pasting with VT52.SYS"
-permalink: kb/058/Q58299/
+permalink: /kb/058/Q58299/
 ---
 
 ## Q58299: System Integrity Violated Pasting with VT52.SYS

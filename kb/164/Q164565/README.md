@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164565: Unsuccessful Appletalk Winsock Connection Using WSARECV()"
-permalink: kb/164/Q164565/
+permalink: /kb/164/Q164565/
 ---
 
 ## Q164565: Unsuccessful Appletalk Winsock Connection Using WSARECV()

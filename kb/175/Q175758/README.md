@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175758: HOWTO: Trap Visual SourceSafe OLE Errors"
-permalink: kb/175/Q175758/
+permalink: /kb/175/Q175758/
 ---
 
 ## Q175758: HOWTO: Trap Visual SourceSafe OLE Errors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110470: INF: Binding SQL Results Using ODBC API From Visual Basic"
-permalink: kb/110/Q110470/
+permalink: /kb/110/Q110470/
 ---
 
 ## Q110470: INF: Binding SQL Results Using ODBC API From Visual Basic

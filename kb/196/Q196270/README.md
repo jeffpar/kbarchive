@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196270: SNMP Agent Leaks Memory When Queried"
-permalink: kb/196/Q196270/
+permalink: /kb/196/Q196270/
 ---
 
 ## Q196270: SNMP Agent Leaks Memory When Queried

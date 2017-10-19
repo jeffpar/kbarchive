@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189283: No More Than About 570 Reservations Visible in a DHCP Scope"
-permalink: kb/189/Q189283/
+permalink: /kb/189/Q189283/
 ---
 
 ## Q189283: No More Than About 570 Reservations Visible in a DHCP Scope

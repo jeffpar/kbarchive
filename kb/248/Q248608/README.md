@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248608: INFO: SQL SELECT Optimization Levels and Performance"
-permalink: kb/248/Q248608/
+permalink: /kb/248/Q248608/
 ---
 
 ## Q248608: INFO: SQL SELECT Optimization Levels and Performance

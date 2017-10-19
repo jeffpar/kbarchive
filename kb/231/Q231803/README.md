@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231803: XADM: CC Recipient Lost in P2 When BCC Used on cc:Mail Message"
-permalink: kb/231/Q231803/
+permalink: /kb/231/Q231803/
 ---
 
 ## Q231803: XADM: CC Recipient Lost in P2 When BCC Used on cc:Mail Message

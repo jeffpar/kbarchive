@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121151: Incorrect Err Msg in DriveSpace Uncompress Help"
-permalink: kb/121/Q121151/
+permalink: /kb/121/Q121151/
 ---
 
 ## Q121151: Incorrect Err Msg in DriveSpace Uncompress Help

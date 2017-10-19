@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169445: PRB: VisData Returns Incorrect Number of Records"
-permalink: kb/169/Q169445/
+permalink: /kb/169/Q169445/
 ---
 
 ## Q169445: PRB: VisData Returns Incorrect Number of Records

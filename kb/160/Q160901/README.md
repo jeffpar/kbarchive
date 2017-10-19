@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160901: SMS: Delete Special Doesn't Remove Entries from Machine Groups"
-permalink: kb/160/Q160901/
+permalink: /kb/160/Q160901/
 ---
 
 ## Q160901: SMS: Delete Special Doesn't Remove Entries from Machine Groups

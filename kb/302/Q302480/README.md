@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302480: Train Simulator: Err Msg: Train World Initialization Failed"
-permalink: kb/302/Q302480/
+permalink: /kb/302/Q302480/
 ---
 
 ## Q302480: Train Simulator: Err Msg: Train World Initialization Failed

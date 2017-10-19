@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166905: XFOR: How to Change Target Address"
-permalink: kb/166/Q166905/
+permalink: /kb/166/Q166905/
 ---
 
 ## Q166905: XFOR: How to Change Target Address

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114579: Word 6.0 for Windows Tutorial Does Not Run on Windows NT"
-permalink: kb/114/Q114579/
+permalink: /kb/114/Q114579/
 ---
 
 ## Q114579: Word 6.0 for Windows Tutorial Does Not Run on Windows NT

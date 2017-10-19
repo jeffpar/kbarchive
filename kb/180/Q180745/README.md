@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180745: BUG: Err 4408 Generates Communication Link Failure, Connection"
-permalink: kb/180/Q180745/
+permalink: /kb/180/Q180745/
 ---
 
 ## Q180745: BUG: Err 4408 Generates Communication Link Failure, Connection

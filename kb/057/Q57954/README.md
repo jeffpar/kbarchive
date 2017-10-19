@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57954: EMS Support in Windows Versions 3.0 and 3.1"
-permalink: kb/057/Q57954/
+permalink: /kb/057/Q57954/
 ---
 
 ## Q57954: EMS Support in Windows Versions 3.0 and 3.1

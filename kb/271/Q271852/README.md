@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271852: BUG: MS Oracle ODBC Driver Truncates Spaces in Column Name"
-permalink: kb/271/Q271852/
+permalink: /kb/271/Q271852/
 ---
 
 ## Q271852: BUG: MS Oracle ODBC Driver Truncates Spaces in Column Name

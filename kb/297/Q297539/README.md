@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297539: XCON: MTA Queue for Exchange Server Computer Not Displayed"
-permalink: kb/297/Q297539/
+permalink: /kb/297/Q297539/
 ---
 
 ## Q297539: XCON: MTA Queue for Exchange Server Computer Not Displayed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151633: Event ID 7000: The Service Is Already Running"
-permalink: kb/151/Q151633/
+permalink: /kb/151/Q151633/
 ---
 
 ## Q151633: Event ID 7000: The Service Is Already Running

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225345: XCON: MTA Mishandles Deferred Delivery Messages After DST"
-permalink: kb/225/Q225345/
+permalink: /kb/225/Q225345/
 ---
 
 ## Q225345: XCON: MTA Mishandles Deferred Delivery Messages After DST

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48445: Emulation Modes for Brother Dot-Matrix Printers"
-permalink: kb/048/Q48445/
+permalink: /kb/048/Q48445/
 ---
 
 ## Q48445: Emulation Modes for Brother Dot-Matrix Printers

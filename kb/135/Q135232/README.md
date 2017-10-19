@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135232: CONN: Running MACGATE.EXE as an Idle Process to Dispatch"
-permalink: kb/135/Q135232/
+permalink: /kb/135/Q135232/
 ---
 
 ## Q135232: CONN: Running MACGATE.EXE as an Idle Process to Dispatch

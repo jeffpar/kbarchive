@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98812: PROFS: 3.0 Gateway Access Disk [5.25, 360K]"
-permalink: kb/098/Q98812/
+title: "Q98812: PROFS: 3.0 Gateway Access Disk &#91;5.25, 360K&#93;"
+permalink: /kb/098/Q98812/
 ---
 
-## Q98812: PROFS: 3.0 Gateway Access Disk [5.25, 360K]
+## Q98812: PROFS: 3.0 Gateway Access Disk &#91;5.25, 360K&#93;
 
 	Article: Q98812
 	Product(s): Microsoft Mail For PC Networks

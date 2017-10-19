@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155804: WD97: Inserted Picture or Drawing Object Moves Down Page"
-permalink: kb/155/Q155804/
+permalink: /kb/155/Q155804/
 ---
 
 ## Q155804: WD97: Inserted Picture or Drawing Object Moves Down Page

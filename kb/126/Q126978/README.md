@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126978: IBM Token Ring /A Adapter Fails To Start in Windows NT 3.5"
-permalink: kb/126/Q126978/
+permalink: /kb/126/Q126978/
 ---
 
 ## Q126978: IBM Token Ring /A Adapter Fails To Start in Windows NT 3.5

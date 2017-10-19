@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108810: PC MAPI: MAPISaveMail Allows Creation of Invalid Date Message"
-permalink: kb/108/Q108810/
+permalink: /kb/108/Q108810/
 ---
 
 ## Q108810: PC MAPI: MAPISaveMail Allows Creation of Invalid Date Message

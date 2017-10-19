@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133453: How to Index an Address Field"
-permalink: kb/133/Q133453/
+permalink: /kb/133/Q133453/
 ---
 
 ## Q133453: How to Index an Address Field

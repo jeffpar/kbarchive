@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154097: How to Change the Default MSN Chat Program"
-permalink: kb/154/Q154097/
+permalink: /kb/154/Q154097/
 ---
 
 ## Q154097: How to Change the Default MSN Chat Program

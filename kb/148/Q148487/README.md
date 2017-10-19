@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148487: MS-DOS &quot;For&quot; Command Fails when Run Against an FPNW Server"
-permalink: kb/148/Q148487/
+permalink: /kb/148/Q148487/
 ---
 
 ## Q148487: MS-DOS &quot;For&quot; Command Fails when Run Against an FPNW Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109692: Adaptec 2742 and HP Jetstor 2000 Require Special Terminator"
-permalink: kb/109/Q109692/
+permalink: /kb/109/Q109692/
 ---
 
 ## Q109692: Adaptec 2742 and HP Jetstor 2000 Require Special Terminator

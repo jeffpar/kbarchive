@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216585: WINS 1C Records are Tombstoned and Are Scavenged out of Database"
-permalink: kb/216/Q216585/
+permalink: /kb/216/Q216585/
 ---
 
 ## Q216585: WINS 1C Records are Tombstoned and Are Scavenged out of Database

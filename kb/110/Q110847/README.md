@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110847: Avg. Disk Sec/IO Not a Physical Disk Counter"
-permalink: kb/110/Q110847/
+permalink: /kb/110/Q110847/
 ---
 
 ## Q110847: Avg. Disk Sec/IO Not a Physical Disk Counter

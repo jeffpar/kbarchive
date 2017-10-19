@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222095: Terminal Server Deletes Novell Search Drives"
-permalink: kb/222/Q222095/
+permalink: /kb/222/Q222095/
 ---
 
 ## Q222095: Terminal Server Deletes Novell Search Drives

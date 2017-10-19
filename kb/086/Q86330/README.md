@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86330: PC Win: Cannot Forward or Reply on Return Receipts"
-permalink: kb/086/Q86330/
+permalink: /kb/086/Q86330/
 ---
 
 ## Q86330: PC Win: Cannot Forward or Reply on Return Receipts

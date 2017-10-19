@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91202: Multiple Configuration Menu Is Not Displayed"
-permalink: kb/091/Q91202/
+permalink: /kb/091/Q91202/
 ---
 
 ## Q91202: Multiple Configuration Menu Is Not Displayed

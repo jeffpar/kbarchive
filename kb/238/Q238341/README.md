@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238341: FIX: Opening a DSP or DSW File in Explorer Crashes Visual C++"
-permalink: kb/238/Q238341/
+permalink: /kb/238/Q238341/
 ---
 
 ## Q238341: FIX: Opening a DSP or DSW File in Explorer Crashes Visual C++

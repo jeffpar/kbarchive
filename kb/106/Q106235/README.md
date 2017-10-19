@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106235: File Manager GP Fault on BW-NFS Network"
-permalink: kb/106/Q106235/
+permalink: /kb/106/Q106235/
 ---
 
 ## Q106235: File Manager GP Fault on BW-NFS Network

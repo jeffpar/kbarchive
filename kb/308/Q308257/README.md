@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308257: OLEDB: Complex SELECT Statements Including FROM Clause Fail"
-permalink: kb/308/Q308257/
+permalink: /kb/308/Q308257/
 ---
 
 ## Q308257: OLEDB: Complex SELECT Statements Including FROM Clause Fail

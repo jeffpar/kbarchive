@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98938: Description of JezzBall"
-permalink: kb/098/Q98938/
+permalink: /kb/098/Q98938/
 ---
 
 ## Q98938: Description of JezzBall

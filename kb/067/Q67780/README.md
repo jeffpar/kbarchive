@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67780: BUG: PWB May Record Incorrect Paths for Dependencies in Makefile"
-permalink: kb/067/Q67780/
+permalink: /kb/067/Q67780/
 ---
 
 ## Q67780: BUG: PWB May Record Incorrect Paths for Dependencies in Makefile

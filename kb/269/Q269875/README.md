@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269875: SVCACLS.EXE Is Not Included With The Windows 2000 Resource Kits"
-permalink: kb/269/Q269875/
+permalink: /kb/269/Q269875/
 ---
 
 ## Q269875: SVCACLS.EXE Is Not Included With The Windows 2000 Resource Kits

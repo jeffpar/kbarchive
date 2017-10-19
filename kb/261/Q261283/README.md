@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261283: XGEN: DAPI Error Codes for Exchange Server 5.5 (Part 1 of 2)"
-permalink: kb/261/Q261283/
+permalink: /kb/261/Q261283/
 ---
 
 ## Q261283: XGEN: DAPI Error Codes for Exchange Server 5.5 (Part 1 of 2)

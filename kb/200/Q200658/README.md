@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200658: XADM: Unrecognizable Chars. Receiving Mail from Japanese IMC"
-permalink: kb/200/Q200658/
+permalink: /kb/200/Q200658/
 ---
 
 ## Q200658: XADM: Unrecognizable Chars. Receiving Mail from Japanese IMC

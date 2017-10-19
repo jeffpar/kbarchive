@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185346: SMS: Logon Script Takes a Long Time over RAS or Slow Connection"
-permalink: kb/185/Q185346/
+permalink: /kb/185/Q185346/
 ---
 
 ## Q185346: SMS: Logon Script Takes a Long Time over RAS or Slow Connection

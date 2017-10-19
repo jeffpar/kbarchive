@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249080: SMS: Problems Processing a Large Number of Tables with CMDCLEAN"
-permalink: kb/249/Q249080/
+permalink: /kb/249/Q249080/
 ---
 
 ## Q249080: SMS: Problems Processing a Large Number of Tables with CMDCLEAN

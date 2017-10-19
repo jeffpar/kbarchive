@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228927: FIX: Integration Slow Update w/Source Code Control Status"
-permalink: kb/228/Q228927/
+permalink: /kb/228/Q228927/
 ---
 
 ## Q228927: FIX: Integration Slow Update w/Source Code Control Status

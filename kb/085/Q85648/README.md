@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85648: Mac DOS: Err Msg: Your Server Doesn't Seem to Be Able to..."
-permalink: kb/085/Q85648/
+permalink: /kb/085/Q85648/
 ---
 
 ## Q85648: Mac DOS: Err Msg: Your Server Doesn't Seem to Be Able to...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91037: PC WFW: Unable to Address External Mail Users"
-permalink: kb/091/Q91037/
+permalink: /kb/091/Q91037/
 ---
 
 ## Q91037: PC WFW: Unable to Address External Mail Users

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258555: Link Service May be Deleted after You Install New Link Service"
-permalink: kb/258/Q258555/
+permalink: /kb/258/Q258555/
 ---
 
 ## Q258555: Link Service May be Deleted after You Install New Link Service

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149190: Err Msg: Access to the Specified Device, Path, or File..."
-permalink: kb/149/Q149190/
+permalink: /kb/149/Q149190/
 ---
 
 ## Q149190: Err Msg: Access to the Specified Device, Path, or File...

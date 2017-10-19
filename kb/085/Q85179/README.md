@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85179: Use Adlib MIDI Map with Sound Blaster Internal Synthesizer"
-permalink: kb/085/Q85179/
+permalink: /kb/085/Q85179/
 ---
 
 ## Q85179: Use Adlib MIDI Map with Sound Blaster Internal Synthesizer

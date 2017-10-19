@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194315: PRB: Query Output to Graph No Longer Saved to a General Field"
-permalink: kb/194/Q194315/
+permalink: /kb/194/Q194315/
 ---
 
 ## Q194315: PRB: Query Output to Graph No Longer Saved to a General Field

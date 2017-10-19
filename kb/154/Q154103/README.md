@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154103: Cannot Access Shared Folders with CA/400"
-permalink: kb/154/Q154103/
+permalink: /kb/154/Q154103/
 ---
 
 ## Q154103: Cannot Access Shared Folders with CA/400

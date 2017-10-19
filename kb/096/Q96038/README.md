@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96038: PROFS: System Abend 0C2-0000 Attempting to IPL MS-RSCS"
-permalink: kb/096/Q96038/
+permalink: /kb/096/Q96038/
 ---
 
 ## Q96038: PROFS: System Abend 0C2-0000 Attempting to IPL MS-RSCS

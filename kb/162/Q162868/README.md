@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162868: WinNT 4.0 DNS Only Binds to a Maximum of 15 IP Addresses"
-permalink: kb/162/Q162868/
+permalink: /kb/162/Q162868/
 ---
 
 ## Q162868: WinNT 4.0 DNS Only Binds to a Maximum of 15 IP Addresses

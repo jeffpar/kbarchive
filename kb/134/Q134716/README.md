@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134716: Secondary Sites Must All be Active Before Any are Upgraded"
-permalink: kb/134/Q134716/
+permalink: /kb/134/Q134716/
 ---
 
 ## Q134716: Secondary Sites Must All be Active Before Any are Upgraded

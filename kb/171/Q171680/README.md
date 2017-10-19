@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171680: NTLM Enabled on IIS 1.0 Creates Problems with Run-Time Bots"
-permalink: kb/171/Q171680/
+permalink: /kb/171/Q171680/
 ---
 
 ## Q171680: NTLM Enabled on IIS 1.0 Creates Problems with Run-Time Bots

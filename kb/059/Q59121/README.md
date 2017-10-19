@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59121: How to Change the Way MS-DOS Allocates Memory"
-permalink: kb/059/Q59121/
+permalink: /kb/059/Q59121/
 ---
 
 ## Q59121: How to Change the Way MS-DOS Allocates Memory

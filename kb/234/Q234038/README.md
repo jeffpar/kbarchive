@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234038: Inodes and Inode Cache File(s) in Services for Unix."
-permalink: kb/234/Q234038/
+permalink: /kb/234/Q234038/
 ---
 
 ## Q234038: Inodes and Inode Cache File(s) in Services for Unix.

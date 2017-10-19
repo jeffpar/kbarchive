@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242887: AoE II: Screen Colors Flicker When Game Screens Change"
-permalink: kb/242/Q242887/
+permalink: /kb/242/Q242887/
 ---
 
 ## Q242887: AoE II: Screen Colors Flicker When Game Screens Change

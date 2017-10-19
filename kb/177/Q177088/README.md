@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177088: BUG: Run-Time Error 380 &quot;Invalid Property Value&quot; with MaskEdBox"
-permalink: kb/177/Q177088/
+permalink: /kb/177/Q177088/
 ---
 
 ## Q177088: BUG: Run-Time Error 380 &quot;Invalid Property Value&quot; with MaskEdBox

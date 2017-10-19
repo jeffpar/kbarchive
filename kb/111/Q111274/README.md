@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111274: NFS Connectivity for Windows NT"
-permalink: kb/111/Q111274/
+permalink: /kb/111/Q111274/
 ---
 
 ## Q111274: NFS Connectivity for Windows NT

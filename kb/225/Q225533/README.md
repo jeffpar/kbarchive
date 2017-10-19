@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225533: SMS: Inventory MIFs Processes Slowly"
-permalink: kb/225/Q225533/
+permalink: /kb/225/Q225533/
 ---
 
 ## Q225533: SMS: Inventory MIFs Processes Slowly

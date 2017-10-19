@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81708: HOWTO: Create Applications that Task Manager Does Not Tile"
-permalink: kb/081/Q81708/
+permalink: /kb/081/Q81708/
 ---
 
 ## Q81708: HOWTO: Create Applications that Task Manager Does Not Tile

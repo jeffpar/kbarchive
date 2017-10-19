@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181021: RRAS ErrMsg: Setup Failed to Copy Oemnsvra.inf to Your..."
-permalink: kb/181/Q181021/
+permalink: /kb/181/Q181021/
 ---
 
 ## Q181021: RRAS ErrMsg: Setup Failed to Copy Oemnsvra.inf to Your...

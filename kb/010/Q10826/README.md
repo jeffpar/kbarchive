@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q10826: Limitations on Writing Device Drivers in C"
-permalink: kb/010/Q10826/
+permalink: /kb/010/Q10826/
 ---
 
 ## Q10826: Limitations on Writing Device Drivers in C

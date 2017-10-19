@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132535: PRB: Releasing Object Variable Does Not Close Microsoft Excel"
-permalink: kb/132/Q132535/
+permalink: /kb/132/Q132535/
 ---
 
 ## Q132535: PRB: Releasing Object Variable Does Not Close Microsoft Excel

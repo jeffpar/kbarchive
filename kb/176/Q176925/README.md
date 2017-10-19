@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176925: Multimedia Err Msg: Cannot Load Msreftl.dll"
-permalink: kb/176/Q176925/
+permalink: /kb/176/Q176925/
 ---
 
 ## Q176925: Multimedia Err Msg: Cannot Load Msreftl.dll

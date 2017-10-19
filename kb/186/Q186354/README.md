@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186354: Scheduled Fax with Attached File Is Not Sent"
-permalink: kb/186/Q186354/
+permalink: /kb/186/Q186354/
 ---
 
 ## Q186354: Scheduled Fax with Attached File Is Not Sent

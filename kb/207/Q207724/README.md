@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207724: Urban Assault: Game Hangs When You Load Last Saved Game"
-permalink: kb/207/Q207724/
+permalink: /kb/207/Q207724/
 ---
 
 ## Q207724: Urban Assault: Game Hangs When You Load Last Saved Game

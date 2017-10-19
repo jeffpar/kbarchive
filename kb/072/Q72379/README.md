@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72379: Tips on Using WDEB386"
-permalink: kb/072/Q72379/
+permalink: /kb/072/Q72379/
 ---
 
 ## Q72379: Tips on Using WDEB386

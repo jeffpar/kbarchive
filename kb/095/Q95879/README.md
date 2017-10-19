@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95879: VINES Err Msg: BAN: Unable to Read 'PCCONFIG.DB' with WFWG"
-permalink: kb/095/Q95879/
+permalink: /kb/095/Q95879/
 ---
 
 ## Q95879: VINES Err Msg: BAN: Unable to Read 'PCCONFIG.DB' with WFWG

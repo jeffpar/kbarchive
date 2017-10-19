@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141704: How to Back Up Exchange Mail Server"
-permalink: kb/141/Q141704/
+permalink: /kb/141/Q141704/
 ---
 
 ## Q141704: How to Back Up Exchange Mail Server

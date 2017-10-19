@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128452: INVDOS Fails to Write &#42;.TMP File to &#92;INVENTRY.BOX"
-permalink: kb/128/Q128452/
+permalink: /kb/128/Q128452/
 ---
 
 ## Q128452: INVDOS Fails to Write &#42;.TMP File to &#92;INVENTRY.BOX

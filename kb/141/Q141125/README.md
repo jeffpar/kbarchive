@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141125: Cannot Insert Package into BBS Message"
-permalink: kb/141/Q141125/
+permalink: /kb/141/Q141125/
 ---
 
 ## Q141125: Cannot Insert Package into BBS Message

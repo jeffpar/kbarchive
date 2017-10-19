@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141238: Remote Network Monitor Agents Information Not Available"
-permalink: kb/141/Q141238/
+permalink: /kb/141/Q141238/
 ---
 
 ## Q141238: Remote Network Monitor Agents Information Not Available

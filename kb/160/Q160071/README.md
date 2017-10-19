@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160071: WD97: VB Code to Select or Clear a Check Box in a Dialog Box"
-permalink: kb/160/Q160071/
+permalink: /kb/160/Q160071/
 ---
 
 ## Q160071: WD97: VB Code to Select or Clear a Check Box in a Dialog Box

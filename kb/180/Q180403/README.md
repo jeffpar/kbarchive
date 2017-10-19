@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180403: XADM: Error Message Trying to Install Exchange 5.5 Upgrade Only"
-permalink: kb/180/Q180403/
+permalink: /kb/180/Q180403/
 ---
 
 ## Q180403: XADM: Error Message Trying to Install Exchange 5.5 Upgrade Only

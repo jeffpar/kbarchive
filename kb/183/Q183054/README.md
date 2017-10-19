@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183054: Taking Ownership Remotely May Set Owner Incorrectly"
-permalink: kb/183/Q183054/
+permalink: /kb/183/Q183054/
 ---
 
 ## Q183054: Taking Ownership Remotely May Set Owner Incorrectly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130648: Explorapedia People: .WAV Files for Testing Included on CD"
-permalink: kb/130/Q130648/
+permalink: /kb/130/Q130648/
 ---
 
 ## Q130648: Explorapedia People: .WAV Files for Testing Included on CD

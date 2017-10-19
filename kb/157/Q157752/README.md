@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157752: Remote Mail Disconnects After Downloading Headers"
-permalink: kb/157/Q157752/
+permalink: /kb/157/Q157752/
 ---
 
 ## Q157752: Remote Mail Disconnects After Downloading Headers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148917: How to Use the DAO Dynaset with Microsoft SQL Server 6.0"
-permalink: kb/148/Q148917/
+permalink: /kb/148/Q148917/
 ---
 
 ## Q148917: How to Use the DAO Dynaset with Microsoft SQL Server 6.0

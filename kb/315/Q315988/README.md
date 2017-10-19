@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315988: HOW TO: Use HTML Help from Visual Basic 6.0"
-permalink: kb/315/Q315988/
+permalink: /kb/315/Q315988/
 ---
 
 ## Q315988: HOW TO: Use HTML Help from Visual Basic 6.0

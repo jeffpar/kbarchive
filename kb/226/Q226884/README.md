@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226884: SMS: 16-Bit Remote Control Agent Stops Responding for IPX"
-permalink: kb/226/Q226884/
+permalink: /kb/226/Q226884/
 ---
 
 ## Q226884: SMS: 16-Bit Remote Control Agent Stops Responding for IPX

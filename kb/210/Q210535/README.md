@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210535: Golf 99: Random Variation Introduced in Perfect Shots"
-permalink: kb/210/Q210535/
+permalink: /kb/210/Q210535/
 ---
 
 ## Q210535: Golf 99: Random Variation Introduced in Perfect Shots

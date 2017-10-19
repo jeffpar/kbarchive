@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164683: Dial-Up Networking Prompts for Number to Dial"
-permalink: kb/164/Q164683/
+permalink: /kb/164/Q164683/
 ---
 
 ## Q164683: Dial-Up Networking Prompts for Number to Dial

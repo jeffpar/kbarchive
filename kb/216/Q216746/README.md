@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216746: FP: Uppercase Links to Files Are Broken Publishing to UNIX"
-permalink: kb/216/Q216746/
+permalink: /kb/216/Q216746/
 ---
 
 ## Q216746: FP: Uppercase Links to Files Are Broken Publishing to UNIX

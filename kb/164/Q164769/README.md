@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164769: UDCONFIG Displays Wrong User Name"
-permalink: kb/164/Q164769/
+permalink: /kb/164/Q164769/
 ---
 
 ## Q164769: UDCONFIG Displays Wrong User Name

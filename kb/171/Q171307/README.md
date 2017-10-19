@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171307: How to Disable SAP Broadcast for RPC Service"
-permalink: kb/171/Q171307/
+permalink: /kb/171/Q171307/
 ---
 
 ## Q171307: How to Disable SAP Broadcast for RPC Service

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173879: HOWTO: Importing an Access Table into FoxPro for the Mac"
-permalink: kb/173/Q173879/
+permalink: /kb/173/Q173879/
 ---
 
 ## Q173879: HOWTO: Importing an Access Table into FoxPro for the Mac

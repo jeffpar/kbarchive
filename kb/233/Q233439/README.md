@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233439: Business Planner: Scroll Box Jumps When You Release Mouse Button"
-permalink: kb/233/Q233439/
+permalink: /kb/233/Q233439/
 ---
 
 ## Q233439: Business Planner: Scroll Box Jumps When You Release Mouse Button

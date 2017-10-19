@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223336: Error in Wowvdm When Installing FrontPage Server Extensions"
-permalink: kb/223/Q223336/
+permalink: /kb/223/Q223336/
 ---
 
 ## Q223336: Error in Wowvdm When Installing FrontPage Server Extensions

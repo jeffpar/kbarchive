@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123010: LAN Manager Login PIF Changes Foreground Settings"
-permalink: kb/123/Q123010/
+permalink: /kb/123/Q123010/
 ---
 
 ## Q123010: LAN Manager Login PIF Changes Foreground Settings

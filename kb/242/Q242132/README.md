@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242132: How to: Implement system policies on Windows 95 Clients."
-permalink: kb/242/Q242132/
+permalink: /kb/242/Q242132/
 ---
 
 ## Q242132: How to: Implement system policies on Windows 95 Clients.

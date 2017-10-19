@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253972: WD97: German Smart Quotes Incorrect in Doc Saved as 6.0/95"
-permalink: kb/253/Q253972/
+permalink: /kb/253/Q253972/
 ---
 
 ## Q253972: WD97: German Smart Quotes Incorrect in Doc Saved as 6.0/95

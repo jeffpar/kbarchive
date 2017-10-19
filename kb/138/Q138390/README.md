@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138390: Cannot Find API getnamebyaddr Referred to in TN3270 Event 203"
-permalink: kb/138/Q138390/
+permalink: /kb/138/Q138390/
 ---
 
 ## Q138390: Cannot Find API getnamebyaddr Referred to in TN3270 Event 203

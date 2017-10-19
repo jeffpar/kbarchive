@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189951: BUG: ScrollBar on WLCombo Does Not Scroll"
-permalink: kb/189/Q189951/
+permalink: /kb/189/Q189951/
 ---
 
 ## Q189951: BUG: ScrollBar on WLCombo Does Not Scroll

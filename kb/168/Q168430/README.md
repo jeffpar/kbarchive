@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168430: FIX: Using Referenced Integer to Access Array Generates CXX0034"
-permalink: kb/168/Q168430/
+permalink: /kb/168/Q168430/
 ---
 
 ## Q168430: FIX: Using Referenced Integer to Access Array Generates CXX0034

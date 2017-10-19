@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171571: PPT: Sample Code to Print Slide Numbers for a Custom Show"
-permalink: kb/171/Q171571/
+permalink: /kb/171/Q171571/
 ---
 
 ## Q171571: PPT: Sample Code to Print Slide Numbers for a Custom Show

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76189: PPT: Cannot Run Workstation Setup from a Floppy Disk"
-permalink: kb/076/Q76189/
+permalink: /kb/076/Q76189/
 ---
 
 ## Q76189: PPT: Cannot Run Workstation Setup from a Floppy Disk

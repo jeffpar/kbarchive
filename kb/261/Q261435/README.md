@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261435: WD97: Compile Error Running Pleading Wizard"
-permalink: kb/261/Q261435/
+permalink: /kb/261/Q261435/
 ---
 
 ## Q261435: WD97: Compile Error Running Pleading Wizard

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156789: Writer 2: Large Metafiles Decrease Program Performance"
-permalink: kb/156/Q156789/
+permalink: /kb/156/Q156789/
 ---
 
 ## Q156789: Writer 2: Large Metafiles Decrease Program Performance

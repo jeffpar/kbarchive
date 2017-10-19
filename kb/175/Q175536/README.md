@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175536: Mac MSB Ocean: Err Msg: The CD Was Ejected While It Was in Used"
-permalink: kb/175/Q175536/
+permalink: /kb/175/Q175536/
 ---
 
 ## Q175536: Mac MSB Ocean: Err Msg: The CD Was Ejected While It Was in Used

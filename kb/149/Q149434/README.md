@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149434: PRB: Control Not Visible or Partially Visible at Design Time"
-permalink: kb/149/Q149434/
+permalink: /kb/149/Q149434/
 ---
 
 ## Q149434: PRB: Control Not Visible or Partially Visible at Design Time

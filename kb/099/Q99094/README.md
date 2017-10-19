@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99094: How to Set a Custom Paper Size for Dot-Matrix Printers"
-permalink: kb/099/Q99094/
+permalink: /kb/099/Q99094/
 ---
 
 ## Q99094: How to Set a Custom Paper Size for Dot-Matrix Printers

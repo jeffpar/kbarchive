@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115874: Distribution Disk File Lists for Windows NT Subsystem for PM"
-permalink: kb/115/Q115874/
+permalink: /kb/115/Q115874/
 ---
 
 ## Q115874: Distribution Disk File Lists for Windows NT Subsystem for PM

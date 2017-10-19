@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86442: Remote Access Service Problems Connecting Mouse Cable"
-permalink: kb/086/Q86442/
+permalink: /kb/086/Q86442/
 ---
 
 ## Q86442: Remote Access Service Problems Connecting Mouse Cable

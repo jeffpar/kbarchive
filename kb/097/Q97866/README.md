@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97866: MS Backup for Windows Backup to PATH Does Not Overwrite Files"
-permalink: kb/097/Q97866/
+permalink: /kb/097/Q97866/
 ---
 
 ## Q97866: MS Backup for Windows Backup to PATH Does Not Overwrite Files

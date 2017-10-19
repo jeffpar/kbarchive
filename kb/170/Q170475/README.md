@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170475: XADM: No Accelerator Key for the Find Dialog's Help"
-permalink: kb/170/Q170475/
+permalink: /kb/170/Q170475/
 ---
 
 ## Q170475: XADM: No Accelerator Key for the Find Dialog's Help

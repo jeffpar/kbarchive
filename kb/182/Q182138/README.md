@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182138: PRB: MVCOUNT May Cause Illegal Operation Error in VFP 5.0x"
-permalink: kb/182/Q182138/
+permalink: /kb/182/Q182138/
 ---
 
 ## Q182138: PRB: MVCOUNT May Cause Illegal Operation Error in VFP 5.0x

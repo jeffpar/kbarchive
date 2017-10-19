@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185337: SMS: Existing UNC Connection to Distribution Server Not Reused"
-permalink: kb/185/Q185337/
+permalink: /kb/185/Q185337/
 ---
 
 ## Q185337: SMS: Existing UNC Connection to Distribution Server Not Reused

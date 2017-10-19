@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274615: CFS2: Other Players Cannot Find Your Multiplayer Session"
-permalink: kb/274/Q274615/
+permalink: /kb/274/Q274615/
 ---
 
 ## Q274615: CFS2: Other Players Cannot Find Your Multiplayer Session

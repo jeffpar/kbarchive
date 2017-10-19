@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318900: OLE DB Data Sources Newsnads.exe Causes Exception in Windows XP"
-permalink: kb/318/Q318900/
+permalink: /kb/318/Q318900/
 ---
 
 ## Q318900: OLE DB Data Sources Newsnads.exe Causes Exception in Windows XP

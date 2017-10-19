@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99808: MsgColor.exe Changes Msg. Box Background &amp; Text Color"
-permalink: kb/099/Q99808/
+permalink: /kb/099/Q99808/
 ---
 
 ## Q99808: MsgColor.exe Changes Msg. Box Background &amp; Text Color

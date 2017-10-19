@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102721: Err Msg: Windows NT Could Not Start Because the Following..."
-permalink: kb/102/Q102721/
+permalink: /kb/102/Q102721/
 ---
 
 ## Q102721: Err Msg: Windows NT Could Not Start Because the Following...

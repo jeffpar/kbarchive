@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275448: Encarta 2001 Err Msg: Invalid Page Fault in Module Swonce.dll"
-permalink: kb/275/Q275448/
+permalink: /kb/275/Q275448/
 ---
 
 ## Q275448: Encarta 2001 Err Msg: Invalid Page Fault in Module Swonce.dll

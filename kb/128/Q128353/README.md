@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128353: Memory Leak on Clients with Remote Procedure Calls"
-permalink: kb/128/Q128353/
+permalink: /kb/128/Q128353/
 ---
 
 ## Q128353: Memory Leak on Clients with Remote Procedure Calls

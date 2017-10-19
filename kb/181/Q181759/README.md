@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181759: SMSINST: Edit INI File Is Limited to 30720 Characters"
-permalink: kb/181/Q181759/
+permalink: /kb/181/Q181759/
 ---
 
 ## Q181759: SMSINST: Edit INI File Is Limited to 30720 Characters

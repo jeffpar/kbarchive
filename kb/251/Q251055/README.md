@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251055: XADM: Error Message: Account Information Is Bad"
-permalink: kb/251/Q251055/
+permalink: /kb/251/Q251055/
 ---
 
 ## Q251055: XADM: Error Message: Account Information Is Bad

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191337: SMS: Forcing Inventory May Cause Overhead for Dataloader"
-permalink: kb/191/Q191337/
+permalink: /kb/191/Q191337/
 ---
 
 ## Q191337: SMS: Forcing Inventory May Cause Overhead for Dataloader

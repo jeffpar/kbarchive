@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q26803: FIX: Incorrect Checksum"
-permalink: kb/026/Q26803/
+permalink: /kb/026/Q26803/
 ---
 
 ## Q26803: FIX: Incorrect Checksum

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273821: HOWTO: Programmatically Set Parameter Values for Command Object"
-permalink: kb/273/Q273821/
+permalink: /kb/273/Q273821/
 ---
 
 ## Q273821: HOWTO: Programmatically Set Parameter Values for Command Object

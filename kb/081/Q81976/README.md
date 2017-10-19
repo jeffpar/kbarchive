@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81976: TrueType Font Pack for Windows v. 1.0 Disks (3.5-Inch 720K)"
-permalink: kb/081/Q81976/
+permalink: /kb/081/Q81976/
 ---
 
 ## Q81976: TrueType Font Pack for Windows v. 1.0 Disks (3.5-Inch 720K)

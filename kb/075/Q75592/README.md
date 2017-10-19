@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75592: EMM386 Not Installed--Unable to Set Page Frame Base Address"
-permalink: kb/075/Q75592/
+permalink: /kb/075/Q75592/
 ---
 
 ## Q75592: EMM386 Not Installed--Unable to Set Page Frame Base Address

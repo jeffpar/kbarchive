@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162700: WD97: &quot;All Active Templates and Documents&quot; Missing Macros"
-permalink: kb/162/Q162700/
+permalink: /kb/162/Q162700/
 ---
 
 ## Q162700: WD97: &quot;All Active Templates and Documents&quot; Missing Macros

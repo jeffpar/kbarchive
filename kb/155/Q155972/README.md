@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155972: Mastering Internet Development: IE3.0 Won't Install on NT 3.51"
-permalink: kb/155/Q155972/
+permalink: /kb/155/Q155972/
 ---
 
 ## Q155972: Mastering Internet Development: IE3.0 Won't Install on NT 3.51

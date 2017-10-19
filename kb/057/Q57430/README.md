@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57430: Print Screen Does Not Issue a Formfeed After Printing"
-permalink: kb/057/Q57430/
+permalink: /kb/057/Q57430/
 ---
 
 ## Q57430: Print Screen Does Not Issue a Formfeed After Printing

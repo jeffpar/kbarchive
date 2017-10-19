@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166061: WV: Cannot Follow Hyperlink to Its Source from Word Viewer"
-permalink: kb/166/Q166061/
+permalink: /kb/166/Q166061/
 ---
 
 ## Q166061: WV: Cannot Follow Hyperlink to Its Source from Word Viewer

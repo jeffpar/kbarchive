@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169530: WD97: Date/Time Field Doesn't Update to International Version"
-permalink: kb/169/Q169530/
+permalink: /kb/169/Q169530/
 ---
 
 ## Q169530: WD97: Date/Time Field Doesn't Update to International Version

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142289: PC Rmt: Troubleshooting Options for the Command Line"
-permalink: kb/142/Q142289/
+permalink: /kb/142/Q142289/
 ---
 
 ## Q142289: PC Rmt: Troubleshooting Options for the Command Line

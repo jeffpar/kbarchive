@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124042: PC Adm: Notice 40 During Config, DirSync, Requestor, Import"
-permalink: kb/124/Q124042/
+permalink: /kb/124/Q124042/
 ---
 
 ## Q124042: PC Adm: Notice 40 During Config, DirSync, Requestor, Import

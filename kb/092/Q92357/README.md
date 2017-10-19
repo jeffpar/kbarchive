@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92357: INFO: Using Independent (Nonstructural) Compound Index Files"
-permalink: kb/092/Q92357/
+permalink: /kb/092/Q92357/
 ---
 
 ## Q92357: INFO: Using Independent (Nonstructural) Compound Index Files

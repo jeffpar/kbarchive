@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180307: FP: &quot;FrontPage 98 Setup Has Updated a Shared System File&quot;"
-permalink: kb/180/Q180307/
+permalink: /kb/180/Q180307/
 ---
 
 ## Q180307: FP: &quot;FrontPage 98 Setup Has Updated a Shared System File&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97605: Running Apex II Sketching Program from a DoubleSpace Volume"
-permalink: kb/097/Q97605/
+permalink: /kb/097/Q97605/
 ---
 
 ## Q97605: Running Apex II Sketching Program from a DoubleSpace Volume

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157780: XADM:  How to Change the Service Account Password"
-permalink: kb/157/Q157780/
+permalink: /kb/157/Q157780/
 ---
 
 ## Q157780: XADM:  How to Change the Service Account Password

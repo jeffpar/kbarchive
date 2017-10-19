@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174904: Information about TCP/IP Port Assignments"
-permalink: kb/174/Q174904/
+permalink: /kb/174/Q174904/
 ---
 
 ## Q174904: Information about TCP/IP Port Assignments

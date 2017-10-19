@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103449: PC Win: Address Book Does Not Limit Extended Characters"
-permalink: kb/103/Q103449/
+permalink: /kb/103/Q103449/
 ---
 
 ## Q103449: PC Win: Address Book Does Not Limit Extended Characters

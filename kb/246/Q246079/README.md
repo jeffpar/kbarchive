@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246079: XADM: ISINTEG -PRI -FIX -TEST FOLDER Incomplete w Orphan Folders"
-permalink: kb/246/Q246079/
+permalink: /kb/246/Q246079/
 ---
 
 ## Q246079: XADM: ISINTEG -PRI -FIX -TEST FOLDER Incomplete w Orphan Folders

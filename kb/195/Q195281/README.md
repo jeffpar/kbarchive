@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195281: Official Internet Explorer 4 Book Comments and Corrections"
-permalink: kb/195/Q195281/
+permalink: /kb/195/Q195281/
 ---
 
 ## Q195281: Official Internet Explorer 4 Book Comments and Corrections

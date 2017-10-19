@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320317: How to Connect to a Visual SourceSafe Database Over the Internet"
-permalink: kb/320/Q320317/
+permalink: /kb/320/Q320317/
 ---
 
 ## Q320317: How to Connect to a Visual SourceSafe Database Over the Internet

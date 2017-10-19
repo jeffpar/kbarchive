@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167959: WD97: &quot;_Underline_&quot; AutoFormat Option Applies Italic"
-permalink: kb/167/Q167959/
+permalink: /kb/167/Q167959/
 ---
 
 ## Q167959: WD97: &quot;_Underline_&quot; AutoFormat Option Applies Italic

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180537: TPs Can't Be Invoked On Windows 95/NT Clients if One TP Ends"
-permalink: kb/180/Q180537/
+permalink: /kb/180/Q180537/
 ---
 
 ## Q180537: TPs Can't Be Invoked On Windows 95/NT Clients if One TP Ends

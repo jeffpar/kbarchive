@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158441: Cannot Connect to Dial-Up Networking Server with Local User List"
-permalink: kb/158/Q158441/
+permalink: /kb/158/Q158441/
 ---
 
 ## Q158441: Cannot Connect to Dial-Up Networking Server with Local User List

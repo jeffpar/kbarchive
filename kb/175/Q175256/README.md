@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175256: XWEB: PFs Not Seen When Logging on Anonymously via OWA"
-permalink: kb/175/Q175256/
+permalink: /kb/175/Q175256/
 ---
 
 ## Q175256: XWEB: PFs Not Seen When Logging on Anonymously via OWA

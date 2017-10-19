@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320692: SMS: Transaction History Files Increase in Size"
-permalink: kb/320/Q320692/
+permalink: /kb/320/Q320692/
 ---
 
 ## Q320692: SMS: Transaction History Files Increase in Size

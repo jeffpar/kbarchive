@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100374: Drive Is No Longer Bootable After Restoring Root Directory"
-permalink: kb/100/Q100374/
+permalink: /kb/100/Q100374/
 ---
 
 ## Q100374: Drive Is No Longer Bootable After Restoring Root Directory

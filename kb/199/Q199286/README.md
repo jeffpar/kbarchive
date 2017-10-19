@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199286: DNS Event IDs 1 Through 1657 for Windows NT 4.0 SP4"
-permalink: kb/199/Q199286/
+permalink: /kb/199/Q199286/
 ---
 
 ## Q199286: DNS Event IDs 1 Through 1657 for Windows NT 4.0 SP4

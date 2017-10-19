@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192102: FIX: Resource/Memory Leaks When Using MFC in a Static Library"
-permalink: kb/192/Q192102/
+permalink: /kb/192/Q192102/
 ---
 
 ## Q192102: FIX: Resource/Memory Leaks When Using MFC in a Static Library

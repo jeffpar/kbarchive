@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136957: PC MAPI: How to Find a Currently Logged on User"
-permalink: kb/136/Q136957/
+permalink: /kb/136/Q136957/
 ---
 
 ## Q136957: PC MAPI: How to Find a Currently Logged on User

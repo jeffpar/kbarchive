@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156262: Matrox Video Drivers Limited to 640 x 480 Resolution"
-permalink: kb/156/Q156262/
+permalink: /kb/156/Q156262/
 ---
 
 ## Q156262: Matrox Video Drivers Limited to 640 x 480 Resolution

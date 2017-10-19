@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99711: MIDI Sounds Do Not Play or Sounds Distorted with Sound Blaster"
-permalink: kb/099/Q99711/
+permalink: /kb/099/Q99711/
 ---
 
 ## Q99711: MIDI Sounds Do Not Play or Sounds Distorted with Sound Blaster

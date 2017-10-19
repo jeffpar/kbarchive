@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111463: Err Msg on TI 4000 with DOS 6 BATTERY.PRO &amp; 32-Bit Disk Access"
-permalink: kb/111/Q111463/
+permalink: /kb/111/Q111463/
 ---
 
 ## Q111463: Err Msg on TI 4000 with DOS 6 BATTERY.PRO &amp; 32-Bit Disk Access

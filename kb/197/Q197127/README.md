@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197127: HOWTO: Add a Custom Font Property to a User Control"
-permalink: kb/197/Q197127/
+permalink: /kb/197/Q197127/
 ---
 
 ## Q197127: HOWTO: Add a Custom Font Property to a User Control

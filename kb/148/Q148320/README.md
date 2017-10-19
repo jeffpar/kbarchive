@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148320: XCLN: Printed Message is Missing Right Side Characters"
-permalink: kb/148/Q148320/
+permalink: /kb/148/Q148320/
 ---
 
 ## Q148320: XCLN: Printed Message is Missing Right Side Characters

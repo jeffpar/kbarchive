@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280323: Encryption Level Is Displayed as &quot;N/A&quot; on RDP Clients"
-permalink: kb/280/Q280323/
+permalink: /kb/280/Q280323/
 ---
 
 ## Q280323: Encryption Level Is Displayed as &quot;N/A&quot; on RDP Clients

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147173: PRB: Visual C++ Seems to Hang - Updating Source Control Status"
-permalink: kb/147/Q147173/
+permalink: /kb/147/Q147173/
 ---
 
 ## Q147173: PRB: Visual C++ Seems to Hang - Updating Source Control Status

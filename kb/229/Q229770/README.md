@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229770: PRB: CoGetClassObject for IClassFactory2 Returns E_NOINTERFACE"
-permalink: kb/229/Q229770/
+permalink: /kb/229/Q229770/
 ---
 
 ## Q229770: PRB: CoGetClassObject for IClassFactory2 Returns E_NOINTERFACE

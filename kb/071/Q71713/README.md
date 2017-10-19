@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71713: Using MS-DOS Shell and Windows Together"
-permalink: kb/071/Q71713/
+permalink: /kb/071/Q71713/
 ---
 
 ## Q71713: Using MS-DOS Shell and Windows Together

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268785: XFOR: The NEWNEWS and XOVER commands in Exchange NNTP"
-permalink: kb/268/Q268785/
+permalink: /kb/268/Q268785/
 ---
 
 ## Q268785: XFOR: The NEWNEWS and XOVER commands in Exchange NNTP

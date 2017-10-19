@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140568: DriveSpace 3 Reports Only Half of Free Space Specified"
-permalink: kb/140/Q140568/
+permalink: /kb/140/Q140568/
 ---
 
 ## Q140568: DriveSpace 3 Reports Only Half of Free Space Specified

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135104: Sign-up Does Not Display the Complete Phone Number Dialed"
-permalink: kb/135/Q135104/
+permalink: /kb/135/Q135104/
 ---
 
 ## Q135104: Sign-up Does Not Display the Complete Phone Number Dialed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185171: HOWTO: How to Send/Receive E-Mail Messages with Visual Basic"
-permalink: kb/185/Q185171/
+permalink: /kb/185/Q185171/
 ---
 
 ## Q185171: HOWTO: How to Send/Receive E-Mail Messages with Visual Basic

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120397: Use atof or atoi Functions to Convert from Char Strings"
-permalink: kb/120/Q120397/
+permalink: /kb/120/Q120397/
 ---
 
 ## Q120397: Use atof or atoi Functions to Convert from Char Strings

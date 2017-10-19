@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236126: HOWTO: Passing Single Quotes in String to SQL Server w/ SQL PT"
-permalink: kb/236/Q236126/
+permalink: /kb/236/Q236126/
 ---
 
 ## Q236126: HOWTO: Passing Single Quotes in String to SQL Server w/ SQL PT

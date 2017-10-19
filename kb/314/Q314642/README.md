@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314642: FIX: VFP Disappears When You Hold Mouse Pointer over Memo Field"
-permalink: kb/314/Q314642/
+permalink: /kb/314/Q314642/
 ---
 
 ## Q314642: FIX: VFP Disappears When You Hold Mouse Pointer over Memo Field

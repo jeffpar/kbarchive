@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148520: XCLN: Creating Roving Users on MS-DOS Client"
-permalink: kb/148/Q148520/
+permalink: /kb/148/Q148520/
 ---
 
 ## Q148520: XCLN: Creating Roving Users on MS-DOS Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242128: Server Running McAfee NetShield Stops Responding"
-permalink: kb/242/Q242128/
+permalink: /kb/242/Q242128/
 ---
 
 ## Q242128: Server Running McAfee NetShield Stops Responding

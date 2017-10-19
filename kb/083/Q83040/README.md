@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83040: Visual Basic Scroll Thumb Alignment Problem in Windows 3.1"
-permalink: kb/083/Q83040/
+permalink: /kb/083/Q83040/
 ---
 
 ## Q83040: Visual Basic Scroll Thumb Alignment Problem in Windows 3.1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190082: The TweakUI Autologon Feature Does Not Work Correctly"
-permalink: kb/190/Q190082/
+permalink: /kb/190/Q190082/
 ---
 
 ## Q190082: The TweakUI Autologon Feature Does Not Work Correctly

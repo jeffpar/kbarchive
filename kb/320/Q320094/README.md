@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320094: Streets and Trips 2002: Highway Exits Do Not Appear on Map"
-permalink: kb/320/Q320094/
+permalink: /kb/320/Q320094/
 ---
 
 ## Q320094: Streets and Trips 2002: Highway Exits Do Not Appear on Map

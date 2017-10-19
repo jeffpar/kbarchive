@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82230: Windows Err Msg: Invalid HIMEM.SYS"
-permalink: kb/082/Q82230/
+permalink: /kb/082/Q82230/
 ---
 
 ## Q82230: Windows Err Msg: Invalid HIMEM.SYS

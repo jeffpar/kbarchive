@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186401: Leak in Services.exe"
-permalink: kb/186/Q186401/
+permalink: /kb/186/Q186401/
 ---
 
 ## Q186401: Leak in Services.exe

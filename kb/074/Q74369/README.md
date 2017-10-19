@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74369: Compuadd Mouse Driver for MS-DOS 5.0 Shell"
-permalink: kb/074/Q74369/
+permalink: /kb/074/Q74369/
 ---
 
 ## Q74369: Compuadd Mouse Driver for MS-DOS 5.0 Shell

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245465: XFOR: Configuring Message Filtering on the Internet Mail Service"
-permalink: kb/245/Q245465/
+permalink: /kb/245/Q245465/
 ---
 
 ## Q245465: XFOR: Configuring Message Filtering on the Internet Mail Service

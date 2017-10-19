@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154587: XCLN: Multiple Move Rules Duplicate Messages in a PST File"
-permalink: kb/154/Q154587/
+permalink: /kb/154/Q154587/
 ---
 
 ## Q154587: XCLN: Multiple Move Rules Duplicate Messages in a PST File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280426: Cannot Put a File with a Name That Ends with &quot;ABOR&quot;"
-permalink: kb/280/Q280426/
+permalink: /kb/280/Q280426/
 ---
 
 ## Q280426: Cannot Put a File with a Name That Ends with &quot;ABOR&quot;

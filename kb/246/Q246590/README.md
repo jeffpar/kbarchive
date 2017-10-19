@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246590: COMTI Cannot Use All Available LU6.2 Sessions"
-permalink: kb/246/Q246590/
+permalink: /kb/246/Q246590/
 ---
 
 ## Q246590: COMTI Cannot Use All Available LU6.2 Sessions

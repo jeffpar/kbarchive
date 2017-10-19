@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184738: XADM: Error -1811 Running Edbutil or Eseutil With /T Option"
-permalink: kb/184/Q184738/
+permalink: /kb/184/Q184738/
 ---
 
 ## Q184738: XADM: Error -1811 Running Edbutil or Eseutil With /T Option

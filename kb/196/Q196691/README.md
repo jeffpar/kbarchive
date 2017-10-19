@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196691: XADM: Exchange 5.5 Standard Does Not Need a Connector Disk"
-permalink: kb/196/Q196691/
+permalink: /kb/196/Q196691/
 ---
 
 ## Q196691: XADM: Exchange 5.5 Standard Does Not Need a Connector Disk

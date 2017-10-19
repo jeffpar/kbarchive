@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183528: PRB: ScrollBar and Custom Controls Do Not Have Events to Handle"
-permalink: kb/183/Q183528/
+permalink: /kb/183/Q183528/
 ---
 
 ## Q183528: PRB: ScrollBar and Custom Controls Do Not Have Events to Handle

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120717: Blue Screen: Init1 - System Processor"
-permalink: kb/120/Q120717/
+permalink: /kb/120/Q120717/
 ---
 
 ## Q120717: Blue Screen: Init1 - System Processor

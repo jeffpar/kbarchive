@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266531: Encarta 2001: Video Unexpectedly Restarts in Full-Screen Mode"
-permalink: kb/266/Q266531/
+permalink: /kb/266/Q266531/
 ---
 
 ## Q266531: Encarta 2001: Video Unexpectedly Restarts in Full-Screen Mode

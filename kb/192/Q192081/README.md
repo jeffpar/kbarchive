@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192081: PRB: Printing Report from Preview Window Causes Nesting Error"
-permalink: kb/192/Q192081/
+permalink: /kb/192/Q192081/
 ---
 
 ## Q192081: PRB: Printing Report from Preview Window Causes Nesting Error

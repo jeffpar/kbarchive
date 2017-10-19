@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139360: INFO: Readme.wri: Section 4, Documentation Notes"
-permalink: kb/139/Q139360/
+permalink: /kb/139/Q139360/
 ---
 
 ## Q139360: INFO: Readme.wri: Section 4, Documentation Notes

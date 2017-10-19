@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174508: ODE: Installing Run-Time Application Breaks Microsoft Internet E"
-permalink: kb/174/Q174508/
+permalink: /kb/174/Q174508/
 ---
 
 ## Q174508: ODE: Installing Run-Time Application Breaks Microsoft Internet E

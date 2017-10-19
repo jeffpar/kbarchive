@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266243: HOWTO: Add CPU Support for Existing eVC Projects"
-permalink: kb/266/Q266243/
+permalink: /kb/266/Q266243/
 ---
 
 ## Q266243: HOWTO: Add CPU Support for Existing eVC Projects

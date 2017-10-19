@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134405: PRB: WaveOutOpen()/WaveInOpen() Returns MMSYSERR_INVALPARAM"
-permalink: kb/134/Q134405/
+permalink: /kb/134/Q134405/
 ---
 
 ## Q134405: PRB: WaveOutOpen()/WaveInOpen() Returns MMSYSERR_INVALPARAM

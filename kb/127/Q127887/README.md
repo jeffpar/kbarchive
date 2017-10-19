@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127887: Cannot Print Legal Documents on TI MicroLaser Printer"
-permalink: kb/127/Q127887/
+permalink: /kb/127/Q127887/
 ---
 
 ## Q127887: Cannot Print Legal Documents on TI MicroLaser Printer

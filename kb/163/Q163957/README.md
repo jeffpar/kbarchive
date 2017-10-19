@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163957: FIX: APPEND FROM TYPE SDF Brings in Older Dates Incorrectly"
-permalink: kb/163/Q163957/
+permalink: /kb/163/Q163957/
 ---
 
 ## Q163957: FIX: APPEND FROM TYPE SDF Brings in Older Dates Incorrectly

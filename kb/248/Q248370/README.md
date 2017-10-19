@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248370: Invoking COMTI Method Results in 1533 Exception Error"
-permalink: kb/248/Q248370/
+permalink: /kb/248/Q248370/
 ---
 
 ## Q248370: Invoking COMTI Method Results in 1533 Exception Error

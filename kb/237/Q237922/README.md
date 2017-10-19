@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237922: BUG: User Defined Type Causes &quot;Class Not Registered&quot; Error Msg"
-permalink: kb/237/Q237922/
+permalink: /kb/237/Q237922/
 ---
 
 ## Q237922: BUG: User Defined Type Causes &quot;Class Not Registered&quot; Error Msg

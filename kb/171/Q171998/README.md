@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171998: &quot;A&quot; Records Automatically Appear and Disappear in DNS Manager"
-permalink: kb/171/Q171998/
+permalink: /kb/171/Q171998/
 ---
 
 ## Q171998: &quot;A&quot; Records Automatically Appear and Disappear in DNS Manager

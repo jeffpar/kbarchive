@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187922: PRB: Passing a UDT To Or From an ActiveX EXE May Fail on NT"
-permalink: kb/187/Q187922/
+permalink: /kb/187/Q187922/
 ---
 
 ## Q187922: PRB: Passing a UDT To Or From an ActiveX EXE May Fail on NT

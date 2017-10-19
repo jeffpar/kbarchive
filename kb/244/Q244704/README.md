@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244704: INFO: Dragging EXE File Doesn't Default to &quot;Create Shortcut&quot;"
-permalink: kb/244/Q244704/
+permalink: /kb/244/Q244704/
 ---
 
 ## Q244704: INFO: Dragging EXE File Doesn't Default to &quot;Create Shortcut&quot;

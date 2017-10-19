@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228534: XFOR: DBCS Attachment Name Disappears When Sending a Mail by Mea"
-permalink: kb/228/Q228534/
+permalink: /kb/228/Q228534/
 ---
 
 ## Q228534: XFOR: DBCS Attachment Name Disappears When Sending a Mail by Mea

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139031: DOC: Title Tips for Project Workspace Window Not Documented"
-permalink: kb/139/Q139031/
+permalink: /kb/139/Q139031/
 ---
 
 ## Q139031: DOC: Title Tips for Project Workspace Window Not Documented

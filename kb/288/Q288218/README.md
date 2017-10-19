@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288218: Windows 95/98 Clients May Remove SMS Client Components"
-permalink: kb/288/Q288218/
+permalink: /kb/288/Q288218/
 ---
 
 ## Q288218: Windows 95/98 Clients May Remove SMS Client Components

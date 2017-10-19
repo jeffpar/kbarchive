@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140325: How to Determine Loss of Client/Server Connection"
-permalink: kb/140/Q140325/
+permalink: /kb/140/Q140325/
 ---
 
 ## Q140325: How to Determine Loss of Client/Server Connection

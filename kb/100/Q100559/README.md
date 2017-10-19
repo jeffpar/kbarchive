@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100559: PRB: File Imported from MS-DOS Doesn't Appear in FoxBASE+/Mac"
-permalink: kb/100/Q100559/
+permalink: /kb/100/Q100559/
 ---
 
 ## Q100559: PRB: File Imported from MS-DOS Doesn't Appear in FoxBASE+/Mac

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312219: MCSE Training Kit: Microsoft Internet Security and Acceleration"
-permalink: kb/312/Q312219/
+permalink: /kb/312/Q312219/
 ---
 
 ## Q312219: MCSE Training Kit: Microsoft Internet Security and Acceleration

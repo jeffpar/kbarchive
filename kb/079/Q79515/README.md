@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79515: Serial Mouse Problems with Magnavox 286"
-permalink: kb/079/Q79515/
+permalink: /kb/079/Q79515/
 ---
 
 ## Q79515: Serial Mouse Problems with Magnavox 286

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92880: WFWG Mail Incorrectly Displays Bad Network Connection Icon"
-permalink: kb/092/Q92880/
+permalink: /kb/092/Q92880/
 ---
 
 ## Q92880: WFWG Mail Incorrectly Displays Bad Network Connection Icon

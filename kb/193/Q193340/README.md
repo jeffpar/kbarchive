@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193340: Err Msg: An Error Occurred During Extraction of Required Files"
-permalink: kb/193/Q193340/
+permalink: /kb/193/Q193340/
 ---
 
 ## Q193340: Err Msg: An Error Occurred During Extraction of Required Files

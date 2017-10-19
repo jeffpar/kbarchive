@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164379: XADM: Run Edbutil Across the Network When Priv.edb Gets Too Big"
-permalink: kb/164/Q164379/
+permalink: /kb/164/Q164379/
 ---
 
 ## Q164379: XADM: Run Edbutil Across the Network When Priv.edb Gets Too Big

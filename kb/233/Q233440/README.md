@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233440: MSBP: Complete Text of Article Not Displayed in Text Only Mode"
-permalink: kb/233/Q233440/
+permalink: /kb/233/Q233440/
 ---
 
 ## Q233440: MSBP: Complete Text of Article Not Displayed in Text Only Mode

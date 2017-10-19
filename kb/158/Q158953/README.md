@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158953: Updated Display Drivers Included with DirectX 1.0, 2.0, and 3.0"
-permalink: kb/158/Q158953/
+permalink: /kb/158/Q158953/
 ---
 
 ## Q158953: Updated Display Drivers Included with DirectX 1.0, 2.0, and 3.0

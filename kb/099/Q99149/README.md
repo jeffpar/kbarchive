@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99149: Updating LAN Manager Redirector After Upgrading from MS-DOS 3"
-permalink: kb/099/Q99149/
+permalink: /kb/099/Q99149/
 ---
 
 ## Q99149: Updating LAN Manager Redirector After Upgrading from MS-DOS 3

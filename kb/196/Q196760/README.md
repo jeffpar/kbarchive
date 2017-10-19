@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196760: WD97: Sub Doc's Heading Numbering Doesn't Appear in Master Doc"
-permalink: kb/196/Q196760/
+permalink: /kb/196/Q196760/
 ---
 
 ## Q196760: WD97: Sub Doc's Heading Numbering Doesn't Appear in Master Doc

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131975: SETUP.TXT Missing Information Regarding Diamond Viper PCI"
-permalink: kb/131/Q131975/
+permalink: /kb/131/Q131975/
 ---
 
 ## Q131975: SETUP.TXT Missing Information Regarding Diamond Viper PCI

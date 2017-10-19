@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230335: Date May Be Displayed Improperly Using Configuration Back-Up"
-permalink: kb/230/Q230335/
+permalink: /kb/230/Q230335/
 ---
 
 ## Q230335: Date May Be Displayed Improperly Using Configuration Back-Up

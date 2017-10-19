@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149549: Signing Out During Phonebook Update Hangs Guide and Moscp"
-permalink: kb/149/Q149549/
+permalink: /kb/149/Q149549/
 ---
 
 ## Q149549: Signing Out During Phonebook Update Hangs Guide and Moscp

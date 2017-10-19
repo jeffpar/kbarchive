@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302917: Log In Error Codes For MSN Companion"
-permalink: kb/302/Q302917/
+permalink: /kb/302/Q302917/
 ---
 
 ## Q302917: Log In Error Codes For MSN Companion

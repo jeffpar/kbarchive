@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253261: XFOR: Large Temporary Proxy Address Tables May Be Corrupted"
-permalink: kb/253/Q253261/
+permalink: /kb/253/Q253261/
 ---
 
 ## Q253261: XFOR: Large Temporary Proxy Address Tables May Be Corrupted

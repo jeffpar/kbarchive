@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157633: BUG: Report Form Fields Appear to Be Selected After Printing"
-permalink: kb/157/Q157633/
+permalink: /kb/157/Q157633/
 ---
 
 ## Q157633: BUG: Report Form Fields Appear to Be Selected After Printing

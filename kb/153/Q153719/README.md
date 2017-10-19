@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153719: How to Re-Sync PDC/BDC Trust After Event IDs 3210 and 7023"
-permalink: kb/153/Q153719/
+permalink: /kb/153/Q153719/
 ---
 
 ## Q153719: How to Re-Sync PDC/BDC Trust After Event IDs 3210 and 7023

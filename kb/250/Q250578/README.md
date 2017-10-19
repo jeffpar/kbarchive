@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250578: XADM: InterOrg Synchronization Tool May Not Import Some Users"
-permalink: kb/250/Q250578/
+permalink: /kb/250/Q250578/
 ---
 
 ## Q250578: XADM: InterOrg Synchronization Tool May Not Import Some Users

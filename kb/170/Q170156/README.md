@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170156: INFO: VB 6.0 Readme Part 12: Transaction Server (MTS) Issues"
-permalink: kb/170/Q170156/
+permalink: /kb/170/Q170156/
 ---
 
 ## Q170156: INFO: VB 6.0 Readme Part 12: Transaction Server (MTS) Issues

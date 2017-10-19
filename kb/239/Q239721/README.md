@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239721: NFL Fever 2000: Minimum System Requirements"
-permalink: kb/239/Q239721/
+permalink: /kb/239/Q239721/
 ---
 
 ## Q239721: NFL Fever 2000: Minimum System Requirements

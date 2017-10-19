@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291953: BUG: Visual C++  6.0 May Stop Responding in Devedit.pkg"
-permalink: kb/291/Q291953/
+permalink: /kb/291/Q291953/
 ---
 
 ## Q291953: BUG: Visual C++  6.0 May Stop Responding in Devedit.pkg

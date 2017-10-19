@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101755: PC Win: Recovering PAB from Exported Folder"
-permalink: kb/101/Q101755/
+permalink: /kb/101/Q101755/
 ---
 
 ## Q101755: PC Win: Recovering PAB from Exported Folder

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q206702: WD97: Characters Change to Box Characters Opening Far East File"
-permalink: kb/206/Q206702/
+permalink: /kb/206/Q206702/
 ---
 
 ## Q206702: WD97: Characters Change to Box Characters Opening Far East File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130190: SNADS: Postoffice to DGN Mapping"
-permalink: kb/130/Q130190/
+permalink: /kb/130/Q130190/
 ---
 
 ## Q130190: SNADS: Postoffice to DGN Mapping

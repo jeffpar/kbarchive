@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62909: How to Disable QEMM.SYS Version 5.0 in Windows"
-permalink: kb/062/Q62909/
+permalink: /kb/062/Q62909/
 ---
 
 ## Q62909: How to Disable QEMM.SYS Version 5.0 in Windows

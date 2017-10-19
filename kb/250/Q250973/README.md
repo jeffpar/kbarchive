@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250973: FS2000 Professional: Stops Responding When You Start Program"
-permalink: kb/250/Q250973/
+permalink: /kb/250/Q250973/
 ---
 
 ## Q250973: FS2000 Professional: Stops Responding When You Start Program

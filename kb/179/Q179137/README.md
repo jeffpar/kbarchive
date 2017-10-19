@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179137: Enable Default Processing in a Subclassed Button Control"
-permalink: kb/179/Q179137/
+permalink: /kb/179/Q179137/
 ---
 
 ## Q179137: Enable Default Processing in a Subclassed Button Control

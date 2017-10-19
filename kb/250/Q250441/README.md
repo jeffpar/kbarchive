@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250441: XFOR: Internet Mail Service Moves Messages to Archive Folder"
-permalink: kb/250/Q250441/
+permalink: /kb/250/Q250441/
 ---
 
 ## Q250441: XFOR: Internet Mail Service Moves Messages to Archive Folder

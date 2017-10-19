@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173776: XADM: Custom Recipients Cannot Be Accessed via IMAP or POP3"
-permalink: kb/173/Q173776/
+permalink: /kb/173/Q173776/
 ---
 
 ## Q173776: XADM: Custom Recipients Cannot Be Accessed via IMAP or POP3

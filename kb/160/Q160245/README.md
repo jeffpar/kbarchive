@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160245: PRB: Apple Guide Help Files Need Type of HELP"
-permalink: kb/160/Q160245/
+permalink: /kb/160/Q160245/
 ---
 
 ## Q160245: PRB: Apple Guide Help Files Need Type of HELP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130394: Kids: Color Palette Problems During PowerPoint Slide Show"
-permalink: kb/130/Q130394/
+permalink: /kb/130/Q130394/
 ---
 
 ## Q130394: Kids: Color Palette Problems During PowerPoint Slide Show

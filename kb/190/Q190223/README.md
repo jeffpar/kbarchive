@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190223: PRB: StdFont Rescales When Shared with Printer Object"
-permalink: kb/190/Q190223/
+permalink: /kb/190/Q190223/
 ---
 
 ## Q190223: PRB: StdFont Rescales When Shared with Printer Object

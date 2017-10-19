@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185677: FIX: ATL Service with Space in Name Is Not Registered Correctly"
-permalink: kb/185/Q185677/
+permalink: /kb/185/Q185677/
 ---
 
 ## Q185677: FIX: ATL Service with Space in Name Is Not Registered Correctly

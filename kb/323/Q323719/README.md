@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323719: Win32 Version of RSH Reports &quot;Option t Not Valid&quot; to Rcp Clients"
-permalink: kb/323/Q323719/
+permalink: /kb/323/Q323719/
 ---
 
 ## Q323719: Win32 Version of RSH Reports &quot;Option t Not Valid&quot; to Rcp Clients

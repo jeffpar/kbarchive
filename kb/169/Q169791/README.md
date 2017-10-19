@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169791: PRB: Query Bases Result Set Field Size On Non-Included Values"
-permalink: kb/169/Q169791/
+permalink: /kb/169/Q169791/
 ---
 
 ## Q169791: PRB: Query Bases Result Set Field Size On Non-Included Values

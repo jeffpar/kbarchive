@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77702: INFO: Processing WM_PALETTECHANGED and WM_QUERYNEWPALETTE"
-permalink: kb/077/Q77702/
+permalink: /kb/077/Q77702/
 ---
 
 ## Q77702: INFO: Processing WM_PALETTECHANGED and WM_QUERYNEWPALETTE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166604: XFOR: IMS Behind Firewall Does Not Use Second MX Record"
-permalink: kb/166/Q166604/
+permalink: /kb/166/Q166604/
 ---
 
 ## Q166604: XFOR: IMS Behind Firewall Does Not Use Second MX Record

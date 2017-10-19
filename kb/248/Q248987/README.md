@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248987: XCLN: Out of Office Rule Does Not Work w/ Prohibit Send Option"
-permalink: kb/248/Q248987/
+permalink: /kb/248/Q248987/
 ---
 
 ## Q248987: XCLN: Out of Office Rule Does Not Work w/ Prohibit Send Option

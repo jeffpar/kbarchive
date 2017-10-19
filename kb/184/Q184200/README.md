@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184200: FIX: Error 405: &quot;Unable to Show Modal Form Within this Context&quot;"
-permalink: kb/184/Q184200/
+permalink: /kb/184/Q184200/
 ---
 
 ## Q184200: FIX: Error 405: &quot;Unable to Show Modal Form Within this Context&quot;

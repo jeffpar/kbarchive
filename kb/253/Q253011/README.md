@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253011: XFOR: Exchange Notes Connector Doesn't Use StartDate Property"
-permalink: kb/253/Q253011/
+permalink: /kb/253/Q253011/
 ---
 
 ## Q253011: XFOR: Exchange Notes Connector Doesn't Use StartDate Property

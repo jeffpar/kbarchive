@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157082: FIX: Rollback of a Shared File Rolls to Unexpected Version"
-permalink: kb/157/Q157082/
+permalink: /kb/157/Q157082/
 ---
 
 ## Q157082: FIX: Rollback of a Shared File Rolls to Unexpected Version

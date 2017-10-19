@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140377: InitiateSystemShutdown API Ignores Timed Delay"
-permalink: kb/140/Q140377/
+permalink: /kb/140/Q140377/
 ---
 
 ## Q140377: InitiateSystemShutdown API Ignores Timed Delay

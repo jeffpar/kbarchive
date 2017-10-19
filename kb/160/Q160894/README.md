@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160894: Incoming Fax Jobs Do Not Appear in Print Queue"
-permalink: kb/160/Q160894/
+permalink: /kb/160/Q160894/
 ---
 
 ## Q160894: Incoming Fax Jobs Do Not Appear in Print Queue

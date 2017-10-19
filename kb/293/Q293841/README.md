@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293841: Non-Paged Pool Is Exhausted by Afd"
-permalink: kb/293/Q293841/
+permalink: /kb/293/Q293841/
 ---
 
 ## Q293841: Non-Paged Pool Is Exhausted by Afd

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193646: Event ID 10005 from DCOM After Installing IIS"
-permalink: kb/193/Q193646/
+permalink: /kb/193/Q193646/
 ---
 
 ## Q193646: Event ID 10005 from DCOM After Installing IIS

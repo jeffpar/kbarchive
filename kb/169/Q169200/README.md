@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169200: XADM: Offline Address Book Does Not Contain all Users"
-permalink: kb/169/Q169200/
+permalink: /kb/169/Q169200/
 ---
 
 ## Q169200: XADM: Offline Address Book Does Not Contain all Users

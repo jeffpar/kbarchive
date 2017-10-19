@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261020: MCM2: Distorted Textures After You Use Minimize the Game"
-permalink: kb/261/Q261020/
+permalink: /kb/261/Q261020/
 ---
 
 ## Q261020: MCM2: Distorted Textures After You Use Minimize the Game

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196516: WD97: Ampersand Displays Incorrectly in Drop-Down Form Field"
-permalink: kb/196/Q196516/
+permalink: /kb/196/Q196516/
 ---
 
 ## Q196516: WD97: Ampersand Displays Incorrectly in Drop-Down Form Field

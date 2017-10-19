@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271568: XCON: MTA Service Does Not Start Due to Event ID 3047"
-permalink: kb/271/Q271568/
+permalink: /kb/271/Q271568/
 ---
 
 ## Q271568: XCON: MTA Service Does Not Start Due to Event ID 3047

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271788: Err Msg: There Is a Problem Opening This File"
-permalink: kb/271/Q271788/
+permalink: /kb/271/Q271788/
 ---
 
 ## Q271788: Err Msg: There Is a Problem Opening This File

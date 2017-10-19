@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85427: WININI.WRI: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2"
-permalink: kb/085/Q85427/
+permalink: /kb/085/Q85427/
 ---
 
 ## Q85427: WININI.WRI: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2

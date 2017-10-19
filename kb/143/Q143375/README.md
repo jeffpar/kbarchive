@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143375: XADM: Multiple Messages Received by Exchange Client"
-permalink: kb/143/Q143375/
+permalink: /kb/143/Q143375/
 ---
 
 ## Q143375: XADM: Multiple Messages Received by Exchange Client

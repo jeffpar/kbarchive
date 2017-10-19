@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130426: Schedule+ Tasks: Duration and Estimated Effort"
-permalink: kb/130/Q130426/
+permalink: /kb/130/Q130426/
 ---
 
 ## Q130426: Schedule+ Tasks: Duration and Estimated Effort

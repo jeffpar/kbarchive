@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74879: ZEOS SCSI Adapter and RLL Controller Requires EMMEXCLUDE"
-permalink: kb/074/Q74879/
+permalink: /kb/074/Q74879/
 ---
 
 ## Q74879: ZEOS SCSI Adapter and RLL Controller Requires EMMEXCLUDE

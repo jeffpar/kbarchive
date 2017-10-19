@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156271: SMS: Installation Scripts for &quot;Run Command on Workstation&quot;"
-permalink: kb/156/Q156271/
+permalink: /kb/156/Q156271/
 ---
 
 ## Q156271: SMS: Installation Scripts for &quot;Run Command on Workstation&quot;

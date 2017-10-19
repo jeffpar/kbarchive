@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235657: Form Feed at End of LU3 Print Job Causes Blank Pages"
-permalink: kb/235/Q235657/
+permalink: /kb/235/Q235657/
 ---
 
 ## Q235657: Form Feed at End of LU3 Print Job Causes Blank Pages

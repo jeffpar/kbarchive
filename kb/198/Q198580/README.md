@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198580: XFOR: Error 80001302 using Microsoft Importer for Lotus Notes"
-permalink: kb/198/Q198580/
+permalink: /kb/198/Q198580/
 ---
 
 ## Q198580: XFOR: Error 80001302 using Microsoft Importer for Lotus Notes

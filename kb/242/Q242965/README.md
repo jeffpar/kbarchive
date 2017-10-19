@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242965: Collection Based on Query May Display Incorrect Results"
-permalink: kb/242/Q242965/
+permalink: /kb/242/Q242965/
 ---
 
 ## Q242965: Collection Based on Query May Display Incorrect Results

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185841: Err Msg: This Program May Not Run Correctly Because of New..."
-permalink: kb/185/Q185841/
+permalink: /kb/185/Q185841/
 ---
 
 ## Q185841: Err Msg: This Program May Not Run Correctly Because of New...

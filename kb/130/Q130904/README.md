@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130904: 32-bit DLL Call From MSMAIL32 to MAPILogon Fails"
-permalink: kb/130/Q130904/
+permalink: /kb/130/Q130904/
 ---
 
 ## Q130904: 32-bit DLL Call From MSMAIL32 to MAPILogon Fails

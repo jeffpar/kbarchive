@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179154: Adding OEM Display Adapters to Windows NT Display Tool"
-permalink: kb/179/Q179154/
+permalink: /kb/179/Q179154/
 ---
 
 ## Q179154: Adding OEM Display Adapters to Windows NT Display Tool

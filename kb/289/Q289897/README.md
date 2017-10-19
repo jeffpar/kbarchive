@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289897: XADM: Mailbox Manager System Cleanup Folder Is Absent on Client"
-permalink: kb/289/Q289897/
+permalink: /kb/289/Q289897/
 ---
 
 ## Q289897: XADM: Mailbox Manager System Cleanup Folder Is Absent on Client

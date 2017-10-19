@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188987: HOWTO: Determine the Operating System Build Number"
-permalink: kb/188/Q188987/
+permalink: /kb/188/Q188987/
 ---
 
 ## Q188987: HOWTO: Determine the Operating System Build Number

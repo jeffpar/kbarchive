@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132732: General Windows 95 Setup Questions and Answers"
-permalink: kb/132/Q132732/
+permalink: /kb/132/Q132732/
 ---
 
 ## Q132732: General Windows 95 Setup Questions and Answers

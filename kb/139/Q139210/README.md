@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139210: LUA App Fails with Secondary_rc = 0x87 (COMMAND_COUNT_ERROR)"
-permalink: kb/139/Q139210/
+permalink: /kb/139/Q139210/
 ---
 
 ## Q139210: LUA App Fails with Secondary_rc = 0x87 (COMMAND_COUNT_ERROR)

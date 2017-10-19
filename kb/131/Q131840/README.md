@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131840: WordPerfect Tutorial Hangs in Windows 95"
-permalink: kb/131/Q131840/
+permalink: /kb/131/Q131840/
 ---
 
 ## Q131840: WordPerfect Tutorial Hangs in Windows 95

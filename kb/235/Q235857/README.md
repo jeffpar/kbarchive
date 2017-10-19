@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235857: The First TN3270 Client on an OnDemand Connection Fails"
-permalink: kb/235/Q235857/
+permalink: /kb/235/Q235857/
 ---
 
 ## Q235857: The First TN3270 Client on an OnDemand Connection Fails

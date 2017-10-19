@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73626: Adaptec RLL Controller and UMA Address Range"
-permalink: kb/073/Q73626/
+permalink: /kb/073/Q73626/
 ---
 
 ## Q73626: Adaptec RLL Controller and UMA Address Range

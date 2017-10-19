@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96757: TSR Causes System to Hang When Running MS-DOS Editor or QBASIC"
-permalink: kb/096/Q96757/
+permalink: /kb/096/Q96757/
 ---
 
 ## Q96757: TSR Causes System to Hang When Running MS-DOS Editor or QBASIC

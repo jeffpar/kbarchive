@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254702: Windows 95/98 Clients Display Workgroup Name Not Domain Name"
-permalink: kb/254/Q254702/
+permalink: /kb/254/Q254702/
 ---
 
 ## Q254702: Windows 95/98 Clients Display Workgroup Name Not Domain Name

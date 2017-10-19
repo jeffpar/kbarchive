@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281541: Error Message: Query Contains Phrase Composed Entirely of Noise"
-permalink: kb/281/Q281541/
+permalink: /kb/281/Q281541/
 ---
 
 ## Q281541: Error Message: Query Contains Phrase Composed Entirely of Noise

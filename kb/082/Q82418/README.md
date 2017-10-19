@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82418: 32-Bit Disk Access and Portable Computers"
-permalink: kb/082/Q82418/
+permalink: /kb/082/Q82418/
 ---
 
 ## Q82418: 32-Bit Disk Access and Portable Computers

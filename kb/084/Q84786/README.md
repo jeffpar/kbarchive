@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84786: MPC MP1010 or MP4002 Error, No P-Code in Application"
-permalink: kb/084/Q84786/
+permalink: /kb/084/Q84786/
 ---
 
 ## Q84786: MPC MP1010 or MP4002 Error, No P-Code in Application

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156253: Bunyan: 16-Bit Setup Creates Unused Directories"
-permalink: kb/156/Q156253/
+permalink: /kb/156/Q156253/
 ---
 
 ## Q156253: Bunyan: 16-Bit Setup Creates Unused Directories

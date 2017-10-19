@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69768: MIRROR Command Returns &quot;Invalid Parameter(s)&quot; Error"
-permalink: kb/069/Q69768/
+permalink: /kb/069/Q69768/
 ---
 
 ## Q69768: MIRROR Command Returns &quot;Invalid Parameter(s)&quot; Error

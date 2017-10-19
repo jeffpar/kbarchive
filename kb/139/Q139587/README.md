@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139587: Novell Setpass and Whoami Failures with CSNW and GSNW"
-permalink: kb/139/Q139587/
+permalink: /kb/139/Q139587/
 ---
 
 ## Q139587: Novell Setpass and Whoami Failures with CSNW and GSNW

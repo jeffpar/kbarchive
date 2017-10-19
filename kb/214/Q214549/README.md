@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214549: CC III: Screen Turns Black and Computer Hangs When Playing Game"
-permalink: kb/214/Q214549/
+permalink: /kb/214/Q214549/
 ---
 
 ## Q214549: CC III: Screen Turns Black and Computer Hangs When Playing Game

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201876: XFOR: GroupWise Router Stops Responding with Errors 6064 and 605"
-permalink: kb/201/Q201876/
+permalink: /kb/201/Q201876/
 ---
 
 ## Q201876: XFOR: GroupWise Router Stops Responding with Errors 6064 and 605

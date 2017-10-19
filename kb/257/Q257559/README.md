@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257559: Windows 2000 Professional Resource Kit Comments and Corrections"
-permalink: kb/257/Q257559/
+permalink: /kb/257/Q257559/
 ---
 
 ## Q257559: Windows 2000 Professional Resource Kit Comments and Corrections

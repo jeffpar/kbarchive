@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230748: XCON: NDR Because Exchange Site Directories Not Fully Replicated"
-permalink: kb/230/Q230748/
+permalink: /kb/230/Q230748/
 ---
 
 ## Q230748: XCON: NDR Because Exchange Site Directories Not Fully Replicated

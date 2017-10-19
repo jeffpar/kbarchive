@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150496: CLI_DOS /R Does Not Remove Extra Space in LOAD Line of WIN.ini"
-permalink: kb/150/Q150496/
+permalink: /kb/150/Q150496/
 ---
 
 ## Q150496: CLI_DOS /R Does Not Remove Extra Space in LOAD Line of WIN.ini

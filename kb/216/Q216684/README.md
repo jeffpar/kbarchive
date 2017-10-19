@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216684: Error Message: The System Is Not Fully Installed"
-permalink: kb/216/Q216684/
+permalink: /kb/216/Q216684/
 ---
 
 ## Q216684: Error Message: The System Is Not Fully Installed

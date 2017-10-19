@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81346: Mac Fax: Fax Gateway Cover Pages and Mail Server Application"
-permalink: kb/081/Q81346/
+permalink: /kb/081/Q81346/
 ---
 
 ## Q81346: Mac Fax: Fax Gateway Cover Pages and Mail Server Application

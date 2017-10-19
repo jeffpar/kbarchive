@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219540: Terminal Server Will Disconnect Users When Connected Remotely"
-permalink: kb/219/Q219540/
+permalink: /kb/219/Q219540/
 ---
 
 ## Q219540: Terminal Server Will Disconnect Users When Connected Remotely

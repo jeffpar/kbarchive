@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90026: FoxView Memo Field Limitations"
-permalink: kb/090/Q90026/
+permalink: /kb/090/Q90026/
 ---
 
 ## Q90026: FoxView Memo Field Limitations

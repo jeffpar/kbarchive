@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153806: MSN Accounts and Billing Questions &amp; Answers"
-permalink: kb/153/Q153806/
+permalink: /kb/153/Q153806/
 ---
 
 ## Q153806: MSN Accounts and Billing Questions &amp; Answers

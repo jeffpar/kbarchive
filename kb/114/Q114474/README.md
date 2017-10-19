@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114474: PRB: Setup Toolkit Error &quot;Parser out of memory&quot;"
-permalink: kb/114/Q114474/
+permalink: /kb/114/Q114474/
 ---
 
 ## Q114474: PRB: Setup Toolkit Error &quot;Parser out of memory&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246023: Cannot Remove Folder Without Being Prompted"
-permalink: kb/246/Q246023/
+permalink: /kb/246/Q246023/
 ---
 
 ## Q246023: Cannot Remove Folder Without Being Prompted

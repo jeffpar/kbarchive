@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138605: Faxes Use Network Fax Server's Dialing Properties"
-permalink: kb/138/Q138605/
+permalink: /kb/138/Q138605/
 ---
 
 ## Q138605: Faxes Use Network Fax Server's Dialing Properties

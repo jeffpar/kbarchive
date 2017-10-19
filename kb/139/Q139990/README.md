@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139990: Sound Problems with ESS ES1688 AudioDrive"
-permalink: kb/139/Q139990/
+permalink: /kb/139/Q139990/
 ---
 
 ## Q139990: Sound Problems with ESS ES1688 AudioDrive

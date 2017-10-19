@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214982: SMS: Unable to View Software Metering Data by the Month"
-permalink: kb/214/Q214982/
+permalink: /kb/214/Q214982/
 ---
 
 ## Q214982: SMS: Unable to View Software Metering Data by the Month

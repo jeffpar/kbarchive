@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279173: Normal and Bold TrueType Fonts Look Alike on Monitor or Printer"
-permalink: kb/279/Q279173/
+permalink: /kb/279/Q279173/
 ---
 
 ## Q279173: Normal and Bold TrueType Fonts Look Alike on Monitor or Printer

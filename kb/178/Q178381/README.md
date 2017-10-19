@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178381: SNMP Leaks Memory If the OID Cannot Be Decoded"
-permalink: kb/178/Q178381/
+permalink: /kb/178/Q178381/
 ---
 
 ## Q178381: SNMP Leaks Memory If the OID Cannot Be Decoded

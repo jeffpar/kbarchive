@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198148: WD97: INSERT (INS) Key Doesn't Switch Between Modes"
-permalink: kb/198/Q198148/
+permalink: /kb/198/Q198148/
 ---
 
 ## Q198148: WD97: INSERT (INS) Key Doesn't Switch Between Modes

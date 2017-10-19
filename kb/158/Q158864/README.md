@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158864: How to Obtain Systems Management Server 1.2 Service Pack 4"
-permalink: kb/158/Q158864/
+permalink: /kb/158/Q158864/
 ---
 
 ## Q158864: How to Obtain Systems Management Server 1.2 Service Pack 4

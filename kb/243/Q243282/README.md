@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243282: Find Tools Locates Files with a Time Stamp of a Future Date"
-permalink: kb/243/Q243282/
+permalink: /kb/243/Q243282/
 ---
 
 ## Q243282: Find Tools Locates Files with a Time Stamp of a Future Date

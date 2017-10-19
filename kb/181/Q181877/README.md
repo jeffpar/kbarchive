@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181877: FIX: UserControl Not Printing Correctly From Access"
-permalink: kb/181/Q181877/
+permalink: /kb/181/Q181877/
 ---
 
 ## Q181877: FIX: UserControl Not Printing Correctly From Access

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130192: Support Options for Microsoft Press Inquiries"
-permalink: kb/130/Q130192/
+permalink: /kb/130/Q130192/
 ---
 
 ## Q130192: Support Options for Microsoft Press Inquiries

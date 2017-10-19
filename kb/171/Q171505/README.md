@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171505: FIX: VB5 IDE Disappears or IPFs When &quot;End&quot; Button Is Pressed"
-permalink: kb/171/Q171505/
+permalink: /kb/171/Q171505/
 ---
 
 ## Q171505: FIX: VB5 IDE Disappears or IPFs When &quot;End&quot; Button Is Pressed

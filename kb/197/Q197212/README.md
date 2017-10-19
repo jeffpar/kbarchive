@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197212: WD97: Envelope Address Positions Don't Stay Between Documents"
-permalink: kb/197/Q197212/
+permalink: /kb/197/Q197212/
 ---
 
 ## Q197212: WD97: Envelope Address Positions Don't Stay Between Documents

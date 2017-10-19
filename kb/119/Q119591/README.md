@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119591: How to Obtain Microsoft Support Files from Online Services"
-permalink: kb/119/Q119591/
+permalink: /kb/119/Q119591/
 ---
 
 ## Q119591: How to Obtain Microsoft Support Files from Online Services

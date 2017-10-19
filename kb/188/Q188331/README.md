@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188331: PRB: Opening Property Page Results in &quot;Class Not Registered&quot;"
-permalink: kb/188/Q188331/
+permalink: /kb/188/Q188331/
 ---
 
 ## Q188331: PRB: Opening Property Page Results in &quot;Class Not Registered&quot;

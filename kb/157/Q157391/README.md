@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157391: Soccer: Setting Up Your Joystick, Game Pad, Mouse, or Keyboard"
-permalink: kb/157/Q157391/
+permalink: /kb/157/Q157391/
 ---
 
 ## Q157391: Soccer: Setting Up Your Joystick, Game Pad, Mouse, or Keyboard

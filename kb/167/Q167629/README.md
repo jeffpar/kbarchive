@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167629: Predictable Query IDs Pose Security Risks for DNS Servers"
-permalink: kb/167/Q167629/
+permalink: /kb/167/Q167629/
 ---
 
 ## Q167629: Predictable Query IDs Pose Security Risks for DNS Servers

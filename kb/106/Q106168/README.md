@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106168: Windows NT Multi-Boot Support Limitations"
-permalink: kb/106/Q106168/
+permalink: /kb/106/Q106168/
 ---
 
 ## Q106168: Windows NT Multi-Boot Support Limitations

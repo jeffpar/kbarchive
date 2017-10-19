@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128229: Using the ADDLABEL.APP Sample App in Visual FoxPro"
-permalink: kb/128/Q128229/
+permalink: /kb/128/Q128229/
 ---
 
 ## Q128229: Using the ADDLABEL.APP Sample App in Visual FoxPro

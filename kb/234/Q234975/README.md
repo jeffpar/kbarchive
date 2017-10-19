@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234975: PRB: Error C0042116: No Write Access to Destination URL"
-permalink: kb/234/Q234975/
+permalink: /kb/234/Q234975/
 ---
 
 ## Q234975: PRB: Error C0042116: No Write Access to Destination URL

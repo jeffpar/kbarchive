@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259525: XFOR: Required .csv Entries for Migration from IMAP to Exchange"
-permalink: kb/259/Q259525/
+permalink: /kb/259/Q259525/
 ---
 
 ## Q259525: XFOR: Required .csv Entries for Migration from IMAP to Exchange

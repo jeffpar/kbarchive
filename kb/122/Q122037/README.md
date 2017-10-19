@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122037: HOWTO: How to Use a Program to Calculate Print Margins"
-permalink: kb/122/Q122037/
+permalink: /kb/122/Q122037/
 ---
 
 ## Q122037: HOWTO: How to Use a Program to Calculate Print Margins

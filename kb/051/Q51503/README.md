@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51503: Requested Contents for Windows Problem Reports"
-permalink: kb/051/Q51503/
+permalink: /kb/051/Q51503/
 ---
 
 ## Q51503: Requested Contents for Windows Problem Reports

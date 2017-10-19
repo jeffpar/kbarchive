@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184031: Proxy/IIS Errors: Web Site IP Addresses Are Misconfigured"
-permalink: kb/184/Q184031/
+permalink: /kb/184/Q184031/
 ---
 
 ## Q184031: Proxy/IIS Errors: Web Site IP Addresses Are Misconfigured

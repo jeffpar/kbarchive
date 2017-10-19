@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73650: Appnote Reference: Corp Support (LAN, SQL, Mail, OS/2, PM)"
-permalink: kb/073/Q73650/
+permalink: /kb/073/Q73650/
 ---
 
 ## Q73650: Appnote Reference: Corp Support (LAN, SQL, Mail, OS/2, PM)

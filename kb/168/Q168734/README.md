@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168734: XADM: Error Synchronizing OST After Upgrading to Exchange"
-permalink: kb/168/Q168734/
+permalink: /kb/168/Q168734/
 ---
 
 ## Q168734: XADM: Error Synchronizing OST After Upgrading to Exchange

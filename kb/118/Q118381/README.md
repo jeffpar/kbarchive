@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118381: Making and Running APING/APINGD Samples"
-permalink: kb/118/Q118381/
+permalink: /kb/118/Q118381/
 ---
 
 ## Q118381: Making and Running APING/APINGD Samples

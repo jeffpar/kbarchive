@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199017: HOW TO: Deploy Visual Basic IIS Applications with the PDW"
-permalink: kb/199/Q199017/
+permalink: /kb/199/Q199017/
 ---
 
 ## Q199017: HOW TO: Deploy Visual Basic IIS Applications with the PDW

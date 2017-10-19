@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116334: README.TXT: Microsoft MS-DOS 6.22 Upgrade (Part 1 of 3)"
-permalink: kb/116/Q116334/
+permalink: /kb/116/Q116334/
 ---
 
 ## Q116334: README.TXT: Microsoft MS-DOS 6.22 Upgrade (Part 1 of 3)

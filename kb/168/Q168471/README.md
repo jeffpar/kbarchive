@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168471: New Synchronization Behavior with Windows NT Server Version 4.0"
-permalink: kb/168/Q168471/
+permalink: /kb/168/Q168471/
 ---
 
 ## Q168471: New Synchronization Behavior with Windows NT Server Version 4.0

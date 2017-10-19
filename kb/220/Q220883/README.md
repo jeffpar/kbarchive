@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220883: GetSecurityInfo Fails on SP4 with 87:ERROR_INVALID_PARAMETER"
-permalink: kb/220/Q220883/
+permalink: /kb/220/Q220883/
 ---
 
 ## Q220883: GetSecurityInfo Fails on SP4 with 87:ERROR_INVALID_PARAMETER

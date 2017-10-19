@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165410: PRB: Private DataSession Loses ASCENDING &#124; DESCENDING Order"
-permalink: kb/165/Q165410/
+permalink: /kb/165/Q165410/
 ---
 
 ## Q165410: PRB: Private DataSession Loses ASCENDING &#124; DESCENDING Order

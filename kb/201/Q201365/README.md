@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201365: WD97: How to Turn Off the Menu Bar Close Window Button"
-permalink: kb/201/Q201365/
+permalink: /kb/201/Q201365/
 ---
 
 ## Q201365: WD97: How to Turn Off the Menu Bar Close Window Button

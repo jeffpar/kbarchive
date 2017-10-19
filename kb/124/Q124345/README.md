@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124345: Updated Calculator Accessory for Windows"
-permalink: kb/124/Q124345/
+permalink: /kb/124/Q124345/
 ---
 
 ## Q124345: Updated Calculator Accessory for Windows

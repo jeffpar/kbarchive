@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301505: XADM: Directory Service Doesn't Start, Event Log Error -510"
-permalink: kb/301/Q301505/
+permalink: /kb/301/Q301505/
 ---
 
 ## Q301505: XADM: Directory Service Doesn't Start, Event Log Error -510

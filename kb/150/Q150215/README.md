@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150215: Disabling Automatic Network Shortcut Resolution"
-permalink: kb/150/Q150215/
+permalink: /kb/150/Q150215/
 ---
 
 ## Q150215: Disabling Automatic Network Shortcut Resolution

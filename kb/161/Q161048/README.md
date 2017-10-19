@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161048: SNA Server Cannot Find the Share COMCFG or file COM.CFG"
-permalink: kb/161/Q161048/
+permalink: /kb/161/Q161048/
 ---
 
 ## Q161048: SNA Server Cannot Find the Share COMCFG or file COM.CFG

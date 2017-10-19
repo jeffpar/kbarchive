@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99018: Clipper Err Msg with MS-DOS: Illegal Format in Loadable File"
-permalink: kb/099/Q99018/
+permalink: /kb/099/Q99018/
 ---
 
 ## Q99018: Clipper Err Msg with MS-DOS: Illegal Format in Loadable File

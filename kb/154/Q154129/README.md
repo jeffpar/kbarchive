@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154129: Changing the Root Directory for Windows NT"
-permalink: kb/154/Q154129/
+permalink: /kb/154/Q154129/
 ---
 
 ## Q154129: Changing the Root Directory for Windows NT

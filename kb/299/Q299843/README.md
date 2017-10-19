@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299843: FIX: Using the Send Menu Changes the Current Folder"
-permalink: kb/299/Q299843/
+permalink: /kb/299/Q299843/
 ---
 
 ## Q299843: FIX: Using the Send Menu Changes the Current Folder

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302791: Windows XP Beta 2 Users May Lose MSN Explorer Favorites When Usi"
-permalink: kb/302/Q302791/
+permalink: /kb/302/Q302791/
 ---
 
 ## Q302791: Windows XP Beta 2 Users May Lose MSN Explorer Favorites When Usi

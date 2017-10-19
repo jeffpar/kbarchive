@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142510: DOCERR: Errors in Visual FoxPro &quot;Step By Step&quot; Book on Page 26"
-permalink: kb/142/Q142510/
+permalink: /kb/142/Q142510/
 ---
 
 ## Q142510: DOCERR: Errors in Visual FoxPro &quot;Step By Step&quot; Book on Page 26

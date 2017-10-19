@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186525: Terminal Server Commands: DOSKBD"
-permalink: kb/186/Q186525/
+permalink: /kb/186/Q186525/
 ---
 
 ## Q186525: Terminal Server Commands: DOSKBD

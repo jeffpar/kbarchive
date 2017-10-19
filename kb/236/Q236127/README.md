@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236127: Event ID 3: IISLOG Unable to Create File"
-permalink: kb/236/Q236127/
+permalink: /kb/236/Q236127/
 ---
 
 ## Q236127: Event ID 3: IISLOG Unable to Create File

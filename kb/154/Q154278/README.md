@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154278: MSN Access Numbers Questions and Answers"
-permalink: kb/154/Q154278/
+permalink: /kb/154/Q154278/
 ---
 
 ## Q154278: MSN Access Numbers Questions and Answers

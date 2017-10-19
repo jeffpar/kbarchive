@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134404: NETSTAT.EXE Does Not Show TCP Listen Sockets"
-permalink: kb/134/Q134404/
+permalink: /kb/134/Q134404/
 ---
 
 ## Q134404: NETSTAT.EXE Does Not Show TCP Listen Sockets

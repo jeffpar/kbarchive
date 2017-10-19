@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84416: GP Fault in Ventura 4.0 After Installing Windows 3.1"
-permalink: kb/084/Q84416/
+permalink: /kb/084/Q84416/
 ---
 
 ## Q84416: GP Fault in Ventura 4.0 After Installing Windows 3.1

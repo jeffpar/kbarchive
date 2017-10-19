@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156143: FIX: Execute SQL Button Does Not Show Change to Stop Execute"
-permalink: kb/156/Q156143/
+permalink: /kb/156/Q156143/
 ---
 
 ## Q156143: FIX: Execute SQL Button Does Not Show Change to Stop Execute

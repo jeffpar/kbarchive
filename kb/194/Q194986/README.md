@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194986: PRB: File Copy Error Messages Using Update.exe with Service Pack"
-permalink: kb/194/Q194986/
+permalink: /kb/194/Q194986/
 ---
 
 ## Q194986: PRB: File Copy Error Messages Using Update.exe with Service Pack

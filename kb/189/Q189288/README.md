@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189288: XADM: Exchange Administrator Generates Dr. Watson Errors"
-permalink: kb/189/Q189288/
+permalink: /kb/189/Q189288/
 ---
 
 ## Q189288: XADM: Exchange Administrator Generates Dr. Watson Errors

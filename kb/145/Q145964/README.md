@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145964: XCLN: Upgrade Fails; Err Msg: Application(s) Are Running"
-permalink: kb/145/Q145964/
+permalink: /kb/145/Q145964/
 ---
 
 ## Q145964: XCLN: Upgrade Fails; Err Msg: Application(s) Are Running

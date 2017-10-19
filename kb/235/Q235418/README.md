@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235418: XADM: Cannot Apply Service Pack on KM Server"
-permalink: kb/235/Q235418/
+permalink: /kb/235/Q235418/
 ---
 
 ## Q235418: XADM: Cannot Apply Service Pack on KM Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157548: WD97: Objects in Converted Document Don't Display in Normal View"
-permalink: kb/157/Q157548/
+permalink: /kb/157/Q157548/
 ---
 
 ## Q157548: WD97: Objects in Converted Document Don't Display in Normal View

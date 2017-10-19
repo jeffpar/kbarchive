@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185212: Cluster Server Does Not Support More than 900 Shares"
-permalink: kb/185/Q185212/
+permalink: /kb/185/Q185212/
 ---
 
 ## Q185212: Cluster Server Does Not Support More than 900 Shares

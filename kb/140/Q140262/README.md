@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140262: XCLN: Err Msg:Error Prevented Processing of Received Mail"
-permalink: kb/140/Q140262/
+permalink: /kb/140/Q140262/
 ---
 
 ## Q140262: XCLN: Err Msg:Error Prevented Processing of Received Mail

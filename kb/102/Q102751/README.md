@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102751: PC DOS: Err Msg: The Folder Is Busy..."
-permalink: kb/102/Q102751/
+permalink: /kb/102/Q102751/
 ---
 
 ## Q102751: PC DOS: Err Msg: The Folder Is Busy...

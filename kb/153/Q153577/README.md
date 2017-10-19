@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153577: Remote Control Causes GPF, II Errors w/ Schedule+, PowerPoint"
-permalink: kb/153/Q153577/
+permalink: /kb/153/Q153577/
 ---
 
 ## Q153577: Remote Control Causes GPF, II Errors w/ Schedule+, PowerPoint

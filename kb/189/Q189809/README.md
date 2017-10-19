@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189809: SMS: Logon Server Default Permissions"
-permalink: kb/189/Q189809/
+permalink: /kb/189/Q189809/
 ---
 
 ## Q189809: SMS: Logon Server Default Permissions

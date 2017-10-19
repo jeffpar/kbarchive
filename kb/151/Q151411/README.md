@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151411: FIX: New Version of Ssscc.dll Available"
-permalink: kb/151/Q151411/
+permalink: /kb/151/Q151411/
 ---
 
 ## Q151411: FIX: New Version of Ssscc.dll Available

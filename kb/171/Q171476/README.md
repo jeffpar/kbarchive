@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171476: FIX: Masked Edit Control Right-Aligned with NT 4.0 SP3"
-permalink: kb/171/Q171476/
+permalink: /kb/171/Q171476/
 ---
 
 ## Q171476: FIX: Masked Edit Control Right-Aligned with NT 4.0 SP3

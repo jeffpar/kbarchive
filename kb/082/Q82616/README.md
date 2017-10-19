@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82616: SoundBlaster Pro Card Emits Noise Upon Windows Exit"
-permalink: kb/082/Q82616/
+permalink: /kb/082/Q82616/
 ---
 
 ## Q82616: SoundBlaster Pro Card Emits Noise Upon Windows Exit

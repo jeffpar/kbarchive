@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156629: SMS: SNMP Site Property Changes Are Not Saved"
-permalink: kb/156/Q156629/
+permalink: /kb/156/Q156629/
 ---
 
 ## Q156629: SMS: SNMP Site Property Changes Are Not Saved

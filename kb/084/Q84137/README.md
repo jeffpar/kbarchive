@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84137: Windows 3.0, 3.0a Resource Kit Directory (3.5-Inch Disks)"
-permalink: kb/084/Q84137/
+permalink: /kb/084/Q84137/
 ---
 
 ## Q84137: Windows 3.0, 3.0a Resource Kit Directory (3.5-Inch Disks)

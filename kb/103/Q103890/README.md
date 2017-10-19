@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103890: Commands, Utilities and Services"
-permalink: kb/103/Q103890/
+permalink: /kb/103/Q103890/
 ---
 
 ## Q103890: Commands, Utilities and Services

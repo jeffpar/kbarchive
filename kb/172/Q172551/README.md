@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172551: PRB: CInternetSession::OpenURL() Fails with File Protocol"
-permalink: kb/172/Q172551/
+permalink: /kb/172/Q172551/
 ---
 
 ## Q172551: PRB: CInternetSession::OpenURL() Fails with File Protocol

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192668: SMS: Network Monitor Error &quot;The NAL Is Not Remotable&quot;"
-permalink: kb/192/Q192668/
+permalink: /kb/192/Q192668/
 ---
 
 ## Q192668: SMS: Network Monitor Error &quot;The NAL Is Not Remotable&quot;

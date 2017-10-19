@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126634: Disable Device Bitmap Support in Windows 3.1 Video Driver"
-permalink: kb/126/Q126634/
+permalink: /kb/126/Q126634/
 ---
 
 ## Q126634: Disable Device Bitmap Support in Windows 3.1 Video Driver

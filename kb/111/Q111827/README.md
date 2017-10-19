@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111827: Using At Work PC Fax with Other Communications Software"
-permalink: kb/111/Q111827/
+permalink: /kb/111/Q111827/
 ---
 
 ## Q111827: Using At Work PC Fax with Other Communications Software

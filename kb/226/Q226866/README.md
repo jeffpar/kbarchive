@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226866: SMS: SMSMAN32 Does Not Find SMSLOGON Point on First Attempt"
-permalink: kb/226/Q226866/
+permalink: /kb/226/Q226866/
 ---
 
 ## Q226866: SMS: SMSMAN32 Does Not Find SMSLOGON Point on First Attempt

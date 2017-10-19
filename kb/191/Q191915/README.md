@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191915: Screen Saver Time-out is Limited to 60 Minutes"
-permalink: kb/191/Q191915/
+permalink: /kb/191/Q191915/
 ---
 
 ## Q191915: Screen Saver Time-out is Limited to 60 Minutes

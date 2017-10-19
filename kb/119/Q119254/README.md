@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119254: PC Win: Converting Local Private Folders Doesn't Delete .FLD"
-permalink: kb/119/Q119254/
+permalink: /kb/119/Q119254/
 ---
 
 ## Q119254: PC Win: Converting Local Private Folders Doesn't Delete .FLD

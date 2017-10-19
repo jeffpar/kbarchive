@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154032: XADM: Error 1105 - EcBadVersion Occurs When Restoring Offline St"
-permalink: kb/154/Q154032/
+permalink: /kb/154/Q154032/
 ---
 
 ## Q154032: XADM: Error 1105 - EcBadVersion Occurs When Restoring Offline St

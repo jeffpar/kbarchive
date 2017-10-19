@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234225: HOWTO: Instantiate Multiple Copies of HTML Help in Visual FoxPro"
-permalink: kb/234/Q234225/
+permalink: /kb/234/Q234225/
 ---
 
 ## Q234225: HOWTO: Instantiate Multiple Copies of HTML Help in Visual FoxPro

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149324: FIX: Modifying Const Temporary Object Doesn't Generate Error"
-permalink: kb/149/Q149324/
+permalink: /kb/149/Q149324/
 ---
 
 ## Q149324: FIX: Modifying Const Temporary Object Doesn't Generate Error

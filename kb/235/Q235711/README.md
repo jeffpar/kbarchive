@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235711: Fatal Exception 0E When Creating Sub-Folder on an HPFS Volume"
-permalink: kb/235/Q235711/
+permalink: /kb/235/Q235711/
 ---
 
 ## Q235711: Fatal Exception 0E When Creating Sub-Folder on an HPFS Volume

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172482: Properties for IPX Directory Services Shown Intermittently"
-permalink: kb/172/Q172482/
+permalink: /kb/172/Q172482/
 ---
 
 ## Q172482: Properties for IPX Directory Services Shown Intermittently

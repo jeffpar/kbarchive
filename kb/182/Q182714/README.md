@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182714: StartDoc and OpenPrinter Fail to Return Correct Error Codes"
-permalink: kb/182/Q182714/
+permalink: /kb/182/Q182714/
 ---
 
 ## Q182714: StartDoc and OpenPrinter Fail to Return Correct Error Codes

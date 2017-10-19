@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q212773: XFOR: CCMC Dirsync Error 14015"
-permalink: kb/212/Q212773/
+permalink: /kb/212/Q212773/
 ---
 
 ## Q212773: XFOR: CCMC Dirsync Error 14015

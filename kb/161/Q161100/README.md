@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161100: File May Be Truncated When Copied to a Full Network Drive"
-permalink: kb/161/Q161100/
+permalink: /kb/161/Q161100/
 ---
 
 ## Q161100: File May Be Truncated When Copied to a Full Network Drive

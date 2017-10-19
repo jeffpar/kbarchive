@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147496: SMS Admin Query Operators Not Available in Windows NT 4.0"
-permalink: kb/147/Q147496/
+permalink: /kb/147/Q147496/
 ---
 
 ## Q147496: SMS Admin Query Operators Not Available in Windows NT 4.0

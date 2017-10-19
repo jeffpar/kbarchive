@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273503: Midtown Madness 2: Known Video Issues in Midtown Madness 2"
-permalink: kb/273/Q273503/
+permalink: /kb/273/Q273503/
 ---
 
 ## Q273503: Midtown Madness 2: Known Video Issues in Midtown Madness 2

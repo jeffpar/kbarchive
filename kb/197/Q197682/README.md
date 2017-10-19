@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197682: WD97: After Install of ATI Driver, Text Looks Blocked or Corrupt"
-permalink: kb/197/Q197682/
+permalink: /kb/197/Q197682/
 ---
 
 ## Q197682: WD97: After Install of ATI Driver, Text Looks Blocked or Corrupt

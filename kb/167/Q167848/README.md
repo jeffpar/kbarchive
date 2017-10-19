@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167848: FIX: Context Sensitive Help Problems in OLE Common Dialogs"
-permalink: kb/167/Q167848/
+permalink: /kb/167/Q167848/
 ---
 
 ## Q167848: FIX: Context Sensitive Help Problems in OLE Common Dialogs

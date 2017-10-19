@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80119: FIX: ALIGN Immediately After INCLUDE Generates L1101"
-permalink: kb/080/Q80119/
+permalink: /kb/080/Q80119/
 ---
 
 ## Q80119: FIX: ALIGN Immediately After INCLUDE Generates L1101

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93238: PC Win: Fault in 8514.DRV After Typing in a Text Box"
-permalink: kb/093/Q93238/
+permalink: /kb/093/Q93238/
 ---
 
 ## Q93238: PC Win: Fault in 8514.DRV After Typing in a Text Box

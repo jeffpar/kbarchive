@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175463: NETDOM 1.2 Fails to Join a Domain"
-permalink: kb/175/Q175463/
+permalink: /kb/175/Q175463/
 ---
 
 ## Q175463: NETDOM 1.2 Fails to Join a Domain

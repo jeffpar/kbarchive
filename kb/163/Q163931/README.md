@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163931: BUG: FxAlert() Function Does Not Appear Centered"
-permalink: kb/163/Q163931/
+permalink: /kb/163/Q163931/
 ---
 
 ## Q163931: BUG: FxAlert() Function Does Not Appear Centered

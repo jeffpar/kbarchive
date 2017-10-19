@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77697: PRB: sndPlaySound with SND_MEMORY and SND_ASYNC Flags Hangs"
-permalink: kb/077/Q77697/
+permalink: /kb/077/Q77697/
 ---
 
 ## Q77697: PRB: sndPlaySound with SND_MEMORY and SND_ASYNC Flags Hangs

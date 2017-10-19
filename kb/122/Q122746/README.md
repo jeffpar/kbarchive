@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122746: BUG: BUILD APP Fails If Program Name Has No Extension"
-permalink: kb/122/Q122746/
+permalink: /kb/122/Q122746/
 ---
 
 ## Q122746: BUG: BUILD APP Fails If Program Name Has No Extension

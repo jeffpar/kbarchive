@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87054: MCI: Software Drivers Present in a Mail Gateway PC"
-permalink: kb/087/Q87054/
+permalink: /kb/087/Q87054/
 ---
 
 ## Q87054: MCI: Software Drivers Present in a Mail Gateway PC

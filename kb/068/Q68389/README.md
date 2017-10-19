@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68389: INFO: sizeof(char Expression) Same as sizeof(int)"
-permalink: kb/068/Q68389/
+permalink: /kb/068/Q68389/
 ---
 
 ## Q68389: INFO: sizeof(char Expression) Same as sizeof(int)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155261: PRB: Protected Property Cannot be Changed by Objects in a Class"
-permalink: kb/155/Q155261/
+permalink: /kb/155/Q155261/
 ---
 
 ## Q155261: PRB: Protected Property Cannot be Changed by Objects in a Class

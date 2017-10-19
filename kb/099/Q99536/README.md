@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99536: Cross-Domain and Guest Access Between Windows NT and OS/2"
-permalink: kb/099/Q99536/
+permalink: /kb/099/Q99536/
 ---
 
 ## Q99536: Cross-Domain and Guest Access Between Windows NT and OS/2

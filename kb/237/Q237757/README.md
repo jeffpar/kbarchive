@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237757: INFO: Leaking Handles When Creating COM Objects"
-permalink: kb/237/Q237757/
+permalink: /kb/237/Q237757/
 ---
 
 ## Q237757: INFO: Leaking Handles When Creating COM Objects

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148139: FIX: Default OLE Container w/ Splitters Faults on View Closure"
-permalink: kb/148/Q148139/
+permalink: /kb/148/Q148139/
 ---
 
 ## Q148139: FIX: Default OLE Container w/ Splitters Faults on View Closure

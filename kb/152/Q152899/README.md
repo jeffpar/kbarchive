@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152899: XCON: MTA Crash in RPC Security Processing"
-permalink: kb/152/Q152899/
+permalink: /kb/152/Q152899/
 ---
 
 ## Q152899: XCON: MTA Crash in RPC Security Processing

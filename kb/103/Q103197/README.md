@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103197: PC Forms: Debugging Forms Opened in Mail"
-permalink: kb/103/Q103197/
+permalink: /kb/103/Q103197/
 ---
 
 ## Q103197: PC Forms: Debugging Forms Opened in Mail

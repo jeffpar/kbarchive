@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103912: PC Win: Return Receipt Won't Print Color on IBM Color Printer"
-permalink: kb/103/Q103912/
+permalink: /kb/103/Q103912/
 ---
 
 ## Q103912: PC Win: Return Receipt Won't Print Color on IBM Color Printer

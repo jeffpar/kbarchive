@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265186: XCON: MTA Fanout Slows on Multiprocessor Servers"
-permalink: kb/265/Q265186/
+permalink: /kb/265/Q265186/
 ---
 
 ## Q265186: XCON: MTA Fanout Slows on Multiprocessor Servers

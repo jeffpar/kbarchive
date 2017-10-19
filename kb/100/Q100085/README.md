@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100085: Using the LINK32 -DUMP Command"
-permalink: kb/100/Q100085/
+permalink: /kb/100/Q100085/
 ---
 
 ## Q100085: Using the LINK32 -DUMP Command

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240249: PRB: Cannot Open or Save Files When Running OS 9"
-permalink: kb/240/Q240249/
+permalink: /kb/240/Q240249/
 ---
 
 ## Q240249: PRB: Cannot Open or Save Files When Running OS 9

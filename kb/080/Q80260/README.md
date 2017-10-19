@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80260: PC Gen: Contents of Modem Script File MULTITEC.MDM"
-permalink: kb/080/Q80260/
+permalink: /kb/080/Q80260/
 ---
 
 ## Q80260: PC Gen: Contents of Modem Script File MULTITEC.MDM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137816: Formatted Disk May Show Incorrect Bad Sector Information"
-permalink: kb/137/Q137816/
+permalink: /kb/137/Q137816/
 ---
 
 ## Q137816: Formatted Disk May Show Incorrect Bad Sector Information

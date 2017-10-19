@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185692: XADM: Synchronization of OST Fails"
-permalink: kb/185/Q185692/
+permalink: /kb/185/Q185692/
 ---
 
 ## Q185692: XADM: Synchronization of OST Fails

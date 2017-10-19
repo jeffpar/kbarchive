@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164366: Encarta 97 Err Msg: Required .dll File Msvcirt.dll is Missing"
-permalink: kb/164/Q164366/
+permalink: /kb/164/Q164366/
 ---
 
 ## Q164366: Encarta 97 Err Msg: Required .dll File Msvcirt.dll is Missing

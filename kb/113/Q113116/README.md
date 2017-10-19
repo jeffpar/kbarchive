@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113116: DOC: Undocumented Fatal Error C1053"
-permalink: kb/113/Q113116/
+permalink: /kb/113/Q113116/
 ---
 
 ## Q113116: DOC: Undocumented Fatal Error C1053

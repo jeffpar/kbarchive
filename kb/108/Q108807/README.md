@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108807: Additional NICs Supported in Windows for Workgroups 3.11"
-permalink: kb/108/Q108807/
+permalink: /kb/108/Q108807/
 ---
 
 ## Q108807: Additional NICs Supported in Windows for Workgroups 3.11

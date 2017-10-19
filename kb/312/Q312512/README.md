@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312512: SMS: Network Discovery Cannot Connect Anonymously to Client"
-permalink: kb/312/Q312512/
+permalink: /kb/312/Q312512/
 ---
 
 ## Q312512: SMS: Network Discovery Cannot Connect Anonymously to Client

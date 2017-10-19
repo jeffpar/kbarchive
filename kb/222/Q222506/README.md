@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222506: XFOR: GroupWise Connector Directory Synchronization Overview"
-permalink: kb/222/Q222506/
+permalink: /kb/222/Q222506/
 ---
 
 ## Q222506: XFOR: GroupWise Connector Directory Synchronization Overview

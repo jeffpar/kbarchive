@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156526: General Error=51 Connecting to an Access Datasource"
-permalink: kb/156/Q156526/
+permalink: /kb/156/Q156526/
 ---
 
 ## Q156526: General Error=51 Connecting to an Access Datasource

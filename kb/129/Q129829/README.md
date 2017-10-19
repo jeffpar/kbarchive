@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129829: Cannot Logon to Domain After Changing Computer Name"
-permalink: kb/129/Q129829/
+permalink: /kb/129/Q129829/
 ---
 
 ## Q129829: Cannot Logon to Domain After Changing Computer Name

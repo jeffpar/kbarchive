@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263037: DirectPlay: How to Remove and Reinstall DirectPlay 6.x or Later"
-permalink: kb/263/Q263037/
+permalink: /kb/263/Q263037/
 ---
 
 ## Q263037: DirectPlay: How to Remove and Reinstall DirectPlay 6.x or Later

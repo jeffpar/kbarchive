@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198133: Multi-Protocol Router Files Not Included in Service Pack 5"
-permalink: kb/198/Q198133/
+permalink: /kb/198/Q198133/
 ---
 
 ## Q198133: Multi-Protocol Router Files Not Included in Service Pack 5

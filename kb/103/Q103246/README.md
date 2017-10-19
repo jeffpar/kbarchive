@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103246: FFAPI: Gateway-Put Executables Version 3.04.7 Update"
-permalink: kb/103/Q103246/
+permalink: /kb/103/Q103246/
 ---
 
 ## Q103246: FFAPI: Gateway-Put Executables Version 3.04.7 Update

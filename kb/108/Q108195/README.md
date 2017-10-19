@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108195: PC DOS: Err Msg: Notice 109 Private Folders on Local Storage.."
-permalink: kb/108/Q108195/
+permalink: /kb/108/Q108195/
 ---
 
 ## Q108195: PC DOS: Err Msg: Notice 109 Private Folders on Local Storage..

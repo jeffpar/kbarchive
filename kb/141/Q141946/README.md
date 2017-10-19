@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141946: Delivery Receipt Not Available For Internet Mail"
-permalink: kb/141/Q141946/
+permalink: /kb/141/Q141946/
 ---
 
 ## Q141946: Delivery Receipt Not Available For Internet Mail

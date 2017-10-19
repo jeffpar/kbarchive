@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130501: Using Encarta and Bookshelf Searches with Multimedia Works"
-permalink: kb/130/Q130501/
+permalink: /kb/130/Q130501/
 ---
 
 ## Q130501: Using Encarta and Bookshelf Searches with Multimedia Works

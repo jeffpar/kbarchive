@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148752: Update Information Tool Does Not Show Some Updated Files"
-permalink: kb/148/Q148752/
+permalink: /kb/148/Q148752/
 ---
 
 ## Q148752: Update Information Tool Does Not Show Some Updated Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98436: How to Create a Default Text Button on an Input Screen"
-permalink: kb/098/Q98436/
+permalink: /kb/098/Q98436/
 ---
 
 ## Q98436: How to Create a Default Text Button on an Input Screen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175123: XCLN: Non-Creator of Public Folder Cannot Remove Self as Owner"
-permalink: kb/175/Q175123/
+permalink: /kb/175/Q175123/
 ---
 
 ## Q175123: XCLN: Non-Creator of Public Folder Cannot Remove Self as Owner

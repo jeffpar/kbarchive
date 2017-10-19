@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167147: FIX: Invalid Page Fault Occurs After Replicate of Enter Key"
-permalink: kb/167/Q167147/
+permalink: /kb/167/Q167147/
 ---
 
 ## Q167147: FIX: Invalid Page Fault Occurs After Replicate of Enter Key

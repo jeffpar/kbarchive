@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145683: BUG: Changing ListItem.Selected Doesn't Change SelectedItem"
-permalink: kb/145/Q145683/
+permalink: /kb/145/Q145683/
 ---
 
 ## Q145683: BUG: Changing ListItem.Selected Doesn't Change SelectedItem

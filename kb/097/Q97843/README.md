@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97843: Addicons Adds Program Groups and Icons to Program Manager"
-permalink: kb/097/Q97843/
+permalink: /kb/097/Q97843/
 ---
 
 ## Q97843: Addicons Adds Program Groups and Icons to Program Manager

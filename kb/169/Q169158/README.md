@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169158: Adding Interface to OSPF Does Not Enable the OSPF Protocol"
-permalink: kb/169/Q169158/
+permalink: /kb/169/Q169158/
 ---
 
 ## Q169158: Adding Interface to OSPF Does Not Enable the OSPF Protocol

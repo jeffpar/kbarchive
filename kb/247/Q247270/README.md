@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247270: Recycle Bin Displays Incorrect Size for Disks Larger Than 4GB"
-permalink: kb/247/Q247270/
+permalink: /kb/247/Q247270/
 ---
 
 ## Q247270: Recycle Bin Displays Incorrect Size for Disks Larger Than 4GB

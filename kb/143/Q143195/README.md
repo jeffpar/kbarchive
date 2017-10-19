@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143195: Error Msg: &quot;Can Not Install File...&quot; During IIS Setup"
-permalink: kb/143/Q143195/
+permalink: /kb/143/Q143195/
 ---
 
 ## Q143195: Error Msg: &quot;Can Not Install File...&quot; During IIS Setup

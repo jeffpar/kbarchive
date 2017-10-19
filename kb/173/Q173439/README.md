@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173439: How to Configure Internet Mail for The Microsoft Network 2.5"
-permalink: kb/173/Q173439/
+permalink: /kb/173/Q173439/
 ---
 
 ## Q173439: How to Configure Internet Mail for The Microsoft Network 2.5

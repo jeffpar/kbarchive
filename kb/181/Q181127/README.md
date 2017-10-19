@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181127: FP: How to Publish Your Web to a Server w/o FrontPage Extensions"
-permalink: kb/181/Q181127/
+permalink: /kb/181/Q181127/
 ---
 
 ## Q181127: FP: How to Publish Your Web to a Server w/o FrontPage Extensions

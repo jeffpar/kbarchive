@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97104: Installing MS-DOS Upgrade on a Quantum Hardcard (Plus Dev.)"
-permalink: kb/097/Q97104/
+permalink: /kb/097/Q97104/
 ---
 
 ## Q97104: Installing MS-DOS Upgrade on a Quantum Hardcard (Plus Dev.)

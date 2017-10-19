@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138426: How to Make a Dynamic Rectangle Expand/Shrink to Fit the Data"
-permalink: kb/138/Q138426/
+permalink: /kb/138/Q138426/
 ---
 
 ## Q138426: How to Make a Dynamic Rectangle Expand/Shrink to Fit the Data

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271824: XADM: After Applying Service Pack Rerun Performance Optimizer"
-permalink: kb/271/Q271824/
+permalink: /kb/271/Q271824/
 ---
 
 ## Q271824: XADM: After Applying Service Pack Rerun Performance Optimizer

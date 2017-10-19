@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83261: Beethoven Err Msg: Cannot Clear or Save Game Setting"
-permalink: kb/083/Q83261/
+permalink: /kb/083/Q83261/
 ---
 
 ## Q83261: Beethoven Err Msg: Cannot Clear or Save Game Setting

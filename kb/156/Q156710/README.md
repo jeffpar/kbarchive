@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156710: XFOR: Incoming SMTP Messages NDR with Invalid Argument"
-permalink: kb/156/Q156710/
+permalink: /kb/156/Q156710/
 ---
 
 ## Q156710: XFOR: Incoming SMTP Messages NDR with Invalid Argument

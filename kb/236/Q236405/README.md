@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236405: Terminal Server License Service May Not Start on 2/29/2000"
-permalink: kb/236/Q236405/
+permalink: /kb/236/Q236405/
 ---
 
 ## Q236405: Terminal Server License Service May Not Start on 2/29/2000

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78803: PC Ext: Estimating Memory Requirements for EXTERNAL.EXE"
-permalink: kb/078/Q78803/
+permalink: /kb/078/Q78803/
 ---
 
 ## Q78803: PC Ext: Estimating Memory Requirements for EXTERNAL.EXE

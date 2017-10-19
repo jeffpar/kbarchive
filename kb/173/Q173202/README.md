@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173202: 1B Record Missing in WINS Manager with View Filtered for Domain"
-permalink: kb/173/Q173202/
+permalink: /kb/173/Q173202/
 ---
 
 ## Q173202: 1B Record Missing in WINS Manager with View Filtered for Domain

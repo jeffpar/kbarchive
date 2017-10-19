@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119390: No Launch Pad at Launch Pad 39A Location"
-permalink: kb/119/Q119390/
+permalink: /kb/119/Q119390/
 ---
 
 ## Q119390: No Launch Pad at Launch Pad 39A Location

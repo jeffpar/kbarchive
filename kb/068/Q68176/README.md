@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68176: Upgrading Pre-4.0 Systems with Logical Drive(s) &gt; 32 MB"
-permalink: kb/068/Q68176/
+permalink: /kb/068/Q68176/
 ---
 
 ## Q68176: Upgrading Pre-4.0 Systems with Logical Drive(s) &gt; 32 MB

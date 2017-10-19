@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162805: Golf 3.0: Unable to Control the Swing of a Computer Player"
-permalink: kb/162/Q162805/
+permalink: /kb/162/Q162805/
 ---
 
 ## Q162805: Golf 3.0: Unable to Control the Swing of a Computer Player

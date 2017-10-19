@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246054: INFO: DCOMCNFG, APPID&#92;.exe Mapping and Implications"
-permalink: kb/246/Q246054/
+permalink: /kb/246/Q246054/
 ---
 
 ## Q246054: INFO: DCOMCNFG, APPID&#92;.exe Mapping and Implications

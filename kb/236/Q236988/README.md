@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236988: Err Msg: &quot;Failed Getting User Configuration...&quot; Using TSPROF"
-permalink: kb/236/Q236988/
+permalink: /kb/236/Q236988/
 ---
 
 ## Q236988: Err Msg: &quot;Failed Getting User Configuration...&quot; Using TSPROF

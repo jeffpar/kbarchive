@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175210: FP: Search Finds No Documents if Title Length &gt; 254 Characters"
-permalink: kb/175/Q175210/
+permalink: /kb/175/Q175210/
 ---
 
 ## Q175210: FP: Search Finds No Documents if Title Length &gt; 254 Characters

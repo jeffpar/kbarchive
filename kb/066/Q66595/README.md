@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66595: INFO: Using SetDIBitsToDevice() with a Memory Device Context"
-permalink: kb/066/Q66595/
+permalink: /kb/066/Q66595/
 ---
 
 ## Q66595: INFO: Using SetDIBitsToDevice() with a Memory Device Context

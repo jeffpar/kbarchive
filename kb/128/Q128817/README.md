@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128817: How to Display Check Boxes in Reports"
-permalink: kb/128/Q128817/
+permalink: /kb/128/Q128817/
 ---
 
 ## Q128817: How to Display Check Boxes in Reports

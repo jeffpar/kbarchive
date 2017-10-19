@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177722: PRB: SQL Server Stores One-Character String with Empty String"
-permalink: kb/177/Q177722/
+permalink: /kb/177/Q177722/
 ---
 
 ## Q177722: PRB: SQL Server Stores One-Character String with Empty String

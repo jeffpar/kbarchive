@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71286: Macro Cannot Substitute String in Another Macro"
-permalink: kb/071/Q71286/
+permalink: /kb/071/Q71286/
 ---
 
 ## Q71286: Macro Cannot Substitute String in Another Macro

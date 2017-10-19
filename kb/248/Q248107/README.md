@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248107: Creating Server Certificates Using Certificate Services Web Form"
-permalink: kb/248/Q248107/
+permalink: /kb/248/Q248107/
 ---
 
 ## Q248107: Creating Server Certificates Using Certificate Services Web Form

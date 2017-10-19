@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170164: INFO: VB 6.0 Readme Part 1: Important Issues - Read First!"
-permalink: kb/170/Q170164/
+permalink: /kb/170/Q170164/
 ---
 
 ## Q170164: INFO: VB 6.0 Readme Part 1: Important Issues - Read First!

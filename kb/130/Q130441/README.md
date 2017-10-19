@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130441: Error Remotely Controlling WFW Computer Using 256 Colors"
-permalink: kb/130/Q130441/
+permalink: /kb/130/Q130441/
 ---
 
 ## Q130441: Error Remotely Controlling WFW Computer Using 256 Colors

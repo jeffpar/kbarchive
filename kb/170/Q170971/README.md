@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170971: WD97: Link to Floating Picture Lost When Document Saved as 6.0/9"
-permalink: kb/170/Q170971/
+permalink: /kb/170/Q170971/
 ---
 
 ## Q170971: WD97: Link to Floating Picture Lost When Document Saved as 6.0/9

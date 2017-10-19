@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177629: HOWTO: Use the OLE_COLOR Property Data Type"
-permalink: kb/177/Q177629/
+permalink: /kb/177/Q177629/
 ---
 
 ## Q177629: HOWTO: Use the OLE_COLOR Property Data Type

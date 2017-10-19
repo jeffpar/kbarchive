@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95664: PRB: APPEND FROM &lt;File&gt; w/FOR Cause Doesn't Behave As Expected"
-permalink: kb/095/Q95664/
+permalink: /kb/095/Q95664/
 ---
 
 ## Q95664: PRB: APPEND FROM &lt;File&gt; w/FOR Cause Doesn't Behave As Expected

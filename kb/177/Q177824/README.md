@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177824: DHCP Client Is Assigned Subnet Broadcast Address"
-permalink: kb/177/Q177824/
+permalink: /kb/177/Q177824/
 ---
 
 ## Q177824: DHCP Client Is Assigned Subnet Broadcast Address

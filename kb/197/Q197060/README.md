@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197060: XADM: JET Retry Hotfix Makes Repair (ESEUTIL /P) Very Slow"
-permalink: kb/197/Q197060/
+permalink: /kb/197/Q197060/
 ---
 
 ## Q197060: XADM: JET Retry Hotfix Makes Repair (ESEUTIL /P) Very Slow

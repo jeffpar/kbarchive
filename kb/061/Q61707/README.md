@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61707: Epson EPL-6000 Laser Prints Incorrect Font"
-permalink: kb/061/Q61707/
+permalink: /kb/061/Q61707/
 ---
 
 ## Q61707: Epson EPL-6000 Laser Prints Incorrect Font

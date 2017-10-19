@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314256: Flight Simulator 2002: Game Performance Is Choppy"
-permalink: kb/314/Q314256/
+permalink: /kb/314/Q314256/
 ---
 
 ## Q314256: Flight Simulator 2002: Game Performance Is Choppy

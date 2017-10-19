@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243762: XFOR: Cannot Set Connection Priority Using App. Converter"
-permalink: kb/243/Q243762/
+permalink: /kb/243/Q243762/
 ---
 
 ## Q243762: XFOR: Cannot Set Connection Priority Using App. Converter

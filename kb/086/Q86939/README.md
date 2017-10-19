@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86939: 3COM: How to Generate and Maintain Address Lists"
-permalink: kb/086/Q86939/
+permalink: /kb/086/Q86939/
 ---
 
 ## Q86939: 3COM: How to Generate and Maintain Address Lists

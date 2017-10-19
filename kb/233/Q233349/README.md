@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233349: Cluster Service Issues Event 1015 Every 4 Hours with SP5"
-permalink: kb/233/Q233349/
+permalink: /kb/233/Q233349/
 ---
 
 ## Q233349: Cluster Service Issues Event 1015 Every 4 Hours with SP5

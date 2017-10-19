@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73414: Requirements to Run SETUP /F from 3.5- to 5.25-Inch Drives"
-permalink: kb/073/Q73414/
+permalink: /kb/073/Q73414/
 ---
 
 ## Q73414: Requirements to Run SETUP /F from 3.5- to 5.25-Inch Drives

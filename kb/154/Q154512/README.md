@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154512: SAMPLE: Winsock.exe Getting HostAddress Using Windows Sockets"
-permalink: kb/154/Q154512/
+permalink: /kb/154/Q154512/
 ---
 
 ## Q154512: SAMPLE: Winsock.exe Getting HostAddress Using Windows Sockets

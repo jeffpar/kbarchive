@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164564: XADM: How to Install Exchange 4.0 in an Exchange 5.0 Site"
-permalink: kb/164/Q164564/
+permalink: /kb/164/Q164564/
 ---
 
 ## Q164564: XADM: How to Install Exchange 4.0 in an Exchange 5.0 Site

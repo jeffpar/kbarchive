@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194197: FIX: Application Setup Fails on Some Computers"
-permalink: kb/194/Q194197/
+permalink: /kb/194/Q194197/
 ---
 
 ## Q194197: FIX: Application Setup Fails on Some Computers

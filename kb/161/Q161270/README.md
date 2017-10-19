@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161270: HOWTO: Extend the Scrolling Capabilities of a TextBox Control"
-permalink: kb/161/Q161270/
+permalink: /kb/161/Q161270/
 ---
 
 ## Q161270: HOWTO: Extend the Scrolling Capabilities of a TextBox Control

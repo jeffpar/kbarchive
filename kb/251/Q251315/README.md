@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251315: XADM: Send Replies to Old Organization After Move Server Wizard"
-permalink: kb/251/Q251315/
+permalink: /kb/251/Q251315/
 ---
 
 ## Q251315: XADM: Send Replies to Old Organization After Move Server Wizard

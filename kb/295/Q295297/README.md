@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295297: PRB: Err Msg: 0x80004005: General Error Unable to Open Reg Key"
-permalink: kb/295/Q295297/
+permalink: /kb/295/Q295297/
 ---
 
 ## Q295297: PRB: Err Msg: 0x80004005: General Error Unable to Open Reg Key

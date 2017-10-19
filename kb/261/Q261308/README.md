@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261308: Error Message: Stop 3B in Rasdd.dll"
-permalink: kb/261/Q261308/
+permalink: /kb/261/Q261308/
 ---
 
 ## Q261308: Error Message: Stop 3B in Rasdd.dll

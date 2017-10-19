@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98516: MS-DOS 6 Upgrade Directory Listing for 3.5-Inch (720K) Disks"
-permalink: kb/098/Q98516/
+permalink: /kb/098/Q98516/
 ---
 
 ## Q98516: MS-DOS 6 Upgrade Directory Listing for 3.5-Inch (720K) Disks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107757: PC MAPI: MapiSaveMail Is Inconsistent When Passed NULL"
-permalink: kb/107/Q107757/
+permalink: /kb/107/Q107757/
 ---
 
 ## Q107757: PC MAPI: MapiSaveMail Is Inconsistent When Passed NULL

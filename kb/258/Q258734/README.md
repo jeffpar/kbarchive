@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258734: FIX: Large Cursor Causes Data Corruption with SQLEXEC"
-permalink: kb/258/Q258734/
+permalink: /kb/258/Q258734/
 ---
 
 ## Q258734: FIX: Large Cursor Causes Data Corruption with SQLEXEC

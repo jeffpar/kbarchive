@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118394: &#36;DEBUG Modifies Behavior of SELECT CASE in PowerStation 1.0"
-permalink: kb/118/Q118394/
+permalink: /kb/118/Q118394/
 ---
 
 ## Q118394: &#36;DEBUG Modifies Behavior of SELECT CASE in PowerStation 1.0

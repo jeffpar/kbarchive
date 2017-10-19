@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117881: Windows 95 Err Msg: This Application's Attempt to Get Access..."
-permalink: kb/117/Q117881/
+permalink: /kb/117/Q117881/
 ---
 
 ## Q117881: Windows 95 Err Msg: This Application's Attempt to Get Access...

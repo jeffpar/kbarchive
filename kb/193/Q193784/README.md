@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193784: PCM &quot;Execute&quot; Button Unavailable or Dimmed"
-permalink: kb/193/Q193784/
+permalink: /kb/193/Q193784/
 ---
 
 ## Q193784: PCM &quot;Execute&quot; Button Unavailable or Dimmed

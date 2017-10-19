@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130272: PRB: SourceSafe Appears to Use the Incorrect Date/Time"
-permalink: kb/130/Q130272/
+permalink: /kb/130/Q130272/
 ---
 
 ## Q130272: PRB: SourceSafe Appears to Use the Incorrect Date/Time

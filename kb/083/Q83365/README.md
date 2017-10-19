@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83365: PvtDlg.exe Demonstrates Using Private Dialog-Box Class"
-permalink: kb/083/Q83365/
+permalink: /kb/083/Q83365/
 ---
 
 ## Q83365: PvtDlg.exe Demonstrates Using Private Dialog-Box Class

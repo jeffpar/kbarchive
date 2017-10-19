@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126291: PC MAPI: How MAPIResolveName Works"
-permalink: kb/126/Q126291/
+permalink: /kb/126/Q126291/
 ---
 
 ## Q126291: PC MAPI: How MAPIResolveName Works

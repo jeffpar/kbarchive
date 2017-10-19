@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107808: Installing Novell NetWare 3.12 and 4.0x Support for Windows"
-permalink: kb/107/Q107808/
+permalink: /kb/107/Q107808/
 ---
 
 ## Q107808: Installing Novell NetWare 3.12 and 4.0x Support for Windows

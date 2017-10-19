@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97484: WD97: Conditional Alphanumeric Merge May Yield Incorrect Results"
-permalink: kb/097/Q97484/
+permalink: /kb/097/Q97484/
 ---
 
 ## Q97484: WD97: Conditional Alphanumeric Merge May Yield Incorrect Results

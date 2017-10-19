@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150886: Unsup.exe Finds Commands Not Supported by ODBC Drivers"
-permalink: kb/150/Q150886/
+permalink: /kb/150/Q150886/
 ---
 
 ## Q150886: Unsup.exe Finds Commands Not Supported by ODBC Drivers

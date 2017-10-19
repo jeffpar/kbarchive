@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75723: AT&amp;T 6300 Needs Driver for Date/Time Stamping"
-permalink: kb/075/Q75723/
+permalink: /kb/075/Q75723/
 ---
 
 ## Q75723: AT&amp;T 6300 Needs Driver for Date/Time Stamping

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78061: Problems with LAN Manager Updates and OS/2 1.3"
-permalink: kb/078/Q78061/
+permalink: /kb/078/Q78061/
 ---
 
 ## Q78061: Problems with LAN Manager Updates and OS/2 1.3

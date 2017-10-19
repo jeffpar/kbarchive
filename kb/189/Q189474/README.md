@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189474: Mngcli Traps When Opening a Subdomain &#92;&#92;XXX&#92;"
-permalink: kb/189/Q189474/
+permalink: /kb/189/Q189474/
 ---
 
 ## Q189474: Mngcli Traps When Opening a Subdomain &#92;&#92;XXX&#92;

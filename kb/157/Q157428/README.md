@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157428: XCLN: Err Msg: Cannot Find the Exchng.hlp File"
-permalink: kb/157/Q157428/
+permalink: /kb/157/Q157428/
 ---
 
 ## Q157428: XCLN: Err Msg: Cannot Find the Exchng.hlp File

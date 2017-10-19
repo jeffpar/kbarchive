@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109880: FIX: Incorrect &#36;DEBUG Reference to Include File"
-permalink: kb/109/Q109880/
+permalink: /kb/109/Q109880/
 ---
 
 ## Q109880: FIX: Incorrect &#36;DEBUG Reference to Include File

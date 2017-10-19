@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271189: Deleting All Users from Container Stops User Deletion from MMS"
-permalink: kb/271/Q271189/
+permalink: /kb/271/Q271189/
 ---
 
 ## Q271189: Deleting All Users from Container Stops User Deletion from MMS

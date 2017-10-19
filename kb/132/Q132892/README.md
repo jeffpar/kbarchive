@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132892: INFO: SourceSafe Might Modify Some Files"
-permalink: kb/132/Q132892/
+permalink: /kb/132/Q132892/
 ---
 
 ## Q132892: INFO: SourceSafe Might Modify Some Files

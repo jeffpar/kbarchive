@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150752: HOWTO: Skip the Validation of a Control and Exit the Form"
-permalink: kb/150/Q150752/
+permalink: /kb/150/Q150752/
 ---
 
 ## Q150752: HOWTO: Skip the Validation of a Control and Exit the Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137616: PC Gen: Mail Version 3.5 Disk 1 Label Clarification"
-permalink: kb/137/Q137616/
+permalink: /kb/137/Q137616/
 ---
 
 ## Q137616: PC Gen: Mail Version 3.5 Disk 1 Label Clarification

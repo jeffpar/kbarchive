@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139101: Sony ATAPI CD-ROM Drive Must Be Master Drive on IDE Adapters"
-permalink: kb/139/Q139101/
+permalink: /kb/139/Q139101/
 ---
 
 ## Q139101: Sony ATAPI CD-ROM Drive Must Be Master Drive on IDE Adapters

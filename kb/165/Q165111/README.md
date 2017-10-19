@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165111: XCON: Configuring X.400 Connector between Two Exchange Servers"
-permalink: kb/165/Q165111/
+permalink: /kb/165/Q165111/
 ---
 
 ## Q165111: XCON: Configuring X.400 Connector between Two Exchange Servers

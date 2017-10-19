@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239655: Event ID 4224 Jet Errors in WINS"
-permalink: kb/239/Q239655/
+permalink: /kb/239/Q239655/
 ---
 
 ## Q239655: Event ID 4224 Jet Errors in WINS

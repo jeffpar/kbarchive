@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147585: INFO: The Mssccprj.scc File and How Is It Used"
-permalink: kb/147/Q147585/
+permalink: /kb/147/Q147585/
 ---
 
 ## Q147585: INFO: The Mssccprj.scc File and How Is It Used

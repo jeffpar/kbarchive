@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160686: WD97: No Macro Warning Opening File in Template Folder"
-permalink: kb/160/Q160686/
+permalink: /kb/160/Q160686/
 ---
 
 ## Q160686: WD97: No Macro Warning Opening File in Template Folder

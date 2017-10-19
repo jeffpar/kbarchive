@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141916: Command Button Properties Differ Between Versions"
-permalink: kb/141/Q141916/
+permalink: /kb/141/Q141916/
 ---
 
 ## Q141916: Command Button Properties Differ Between Versions

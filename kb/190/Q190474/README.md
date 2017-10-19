@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190474: WD97: International, Localized Versions of Word for Windows"
-permalink: kb/190/Q190474/
+permalink: /kb/190/Q190474/
 ---
 
 ## Q190474: WD97: International, Localized Versions of Word for Windows

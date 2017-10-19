@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296821: External Clocking and Sangoma S514/S508 SDLC PCI Adapter Driver"
-permalink: kb/296/Q296821/
+permalink: /kb/296/Q296821/
 ---
 
 ## Q296821: External Clocking and Sangoma S514/S508 SDLC PCI Adapter Driver

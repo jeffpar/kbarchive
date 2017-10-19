@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173621: WD97: Attached Template Changes to Normal After Saving Document"
-permalink: kb/173/Q173621/
+permalink: /kb/173/Q173621/
 ---
 
 ## Q173621: WD97: Attached Template Changes to Normal After Saving Document

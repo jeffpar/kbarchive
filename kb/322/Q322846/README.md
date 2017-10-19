@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322846: Telnet Client Does Not Send CRLF When Expected"
-permalink: kb/322/Q322846/
+permalink: /kb/322/Q322846/
 ---
 
 ## Q322846: Telnet Client Does Not Send CRLF When Expected

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245048: How to: Hide FTP Folders"
-permalink: kb/245/Q245048/
+permalink: /kb/245/Q245048/
 ---
 
 ## Q245048: How to: Hide FTP Folders

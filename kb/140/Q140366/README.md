@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140366: Incomplete Requirements for Sender Installation"
-permalink: kb/140/Q140366/
+permalink: /kb/140/Q140366/
 ---
 
 ## Q140366: Incomplete Requirements for Sender Installation

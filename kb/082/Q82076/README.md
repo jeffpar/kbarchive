@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82076: DataVal.exe Demonstrates Edit Control Validation"
-permalink: kb/082/Q82076/
+permalink: /kb/082/Q82076/
 ---
 
 ## Q82076: DataVal.exe Demonstrates Edit Control Validation

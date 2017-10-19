@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192747: XFOR: Linkage SNADS Connector Does Not Handle NDR Properly"
-permalink: kb/192/Q192747/
+permalink: /kb/192/Q192747/
 ---
 
 ## Q192747: XFOR: Linkage SNADS Connector Does Not Handle NDR Properly

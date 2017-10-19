@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160063: BUG: Printing Unconverted 2.x Report from Preview Causes Fault"
-permalink: kb/160/Q160063/
+permalink: /kb/160/Q160063/
 ---
 
 ## Q160063: BUG: Printing Unconverted 2.x Report from Preview Causes Fault

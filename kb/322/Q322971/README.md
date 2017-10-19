@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322971: XIMS: Internet Mail Service Counters Don't Work in TS Session"
-permalink: kb/322/Q322971/
+permalink: /kb/322/Q322971/
 ---
 
 ## Q322971: XIMS: Internet Mail Service Counters Don't Work in TS Session

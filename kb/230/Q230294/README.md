@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230294: Remote Data Service 1.5 Release Notes"
-permalink: kb/230/Q230294/
+permalink: /kb/230/Q230294/
 ---
 
 ## Q230294: Remote Data Service 1.5 Release Notes

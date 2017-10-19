@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120923: Visual C++ Vers 2.0 README.WRI, Part 7 Run-Time Library Routines"
-permalink: kb/120/Q120923/
+permalink: /kb/120/Q120923/
 ---
 
 ## Q120923: Visual C++ Vers 2.0 README.WRI, Part 7 Run-Time Library Routines

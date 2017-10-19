@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119044: Mac Srv: Objects, Large Mail Data Files, &amp; Server Performance"
-permalink: kb/119/Q119044/
+permalink: /kb/119/Q119044/
 ---
 
 ## Q119044: Mac Srv: Objects, Large Mail Data Files, &amp; Server Performance

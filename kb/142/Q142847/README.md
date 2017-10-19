@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142847: Bugcheck 0x1e Caused by Isotp.sys Driver"
-permalink: kb/142/Q142847/
+permalink: /kb/142/Q142847/
 ---
 
 ## Q142847: Bugcheck 0x1e Caused by Isotp.sys Driver

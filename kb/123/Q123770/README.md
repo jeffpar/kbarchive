@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123770: SETLS32 Fails To Remap Windows NT Clients"
-permalink: kb/123/Q123770/
+permalink: /kb/123/Q123770/
 ---
 
 ## Q123770: SETLS32 Fails To Remap Windows NT Clients

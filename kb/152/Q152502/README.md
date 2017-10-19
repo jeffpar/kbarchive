@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152502: Restoring Schedule File Doesn't Reset Disallow Overlapping"
-permalink: kb/152/Q152502/
+permalink: /kb/152/Q152502/
 ---
 
 ## Q152502: Restoring Schedule File Doesn't Reset Disallow Overlapping

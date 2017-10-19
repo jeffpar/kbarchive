@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77262: Incorrect Date on Vendex Headstart XT Computer"
-permalink: kb/077/Q77262/
+permalink: /kb/077/Q77262/
 ---
 
 ## Q77262: Incorrect Date on Vendex Headstart XT Computer

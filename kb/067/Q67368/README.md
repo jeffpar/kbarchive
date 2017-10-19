@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67368: Err Msg When Deleting File: Access Denied"
-permalink: kb/067/Q67368/
+permalink: /kb/067/Q67368/
 ---
 
 ## Q67368: Err Msg When Deleting File: Access Denied

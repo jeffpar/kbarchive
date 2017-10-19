@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192152: PRB: Server Object Error 'ASP 0178 : 800a0005' From WebClasses"
-permalink: kb/192/Q192152/
+permalink: /kb/192/Q192152/
 ---
 
 ## Q192152: PRB: Server Object Error 'ASP 0178 : 800a0005' From WebClasses

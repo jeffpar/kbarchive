@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150878: SMS Added to NetWare Login Script Twice"
-permalink: kb/150/Q150878/
+permalink: /kb/150/Q150878/
 ---
 
 ## Q150878: SMS Added to NetWare Login Script Twice

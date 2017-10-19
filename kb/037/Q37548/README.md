@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q37548: Using CodeView to Examine FORTRAN Arrays"
-permalink: kb/037/Q37548/
+permalink: /kb/037/Q37548/
 ---
 
 ## Q37548: Using CodeView to Examine FORTRAN Arrays

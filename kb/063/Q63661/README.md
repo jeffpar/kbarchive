@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63661: FIX: Problems Viewing C README.DOC in PWB 1.0 Online Help and QH"
-permalink: kb/063/Q63661/
+permalink: /kb/063/Q63661/
 ---
 
 ## Q63661: FIX: Problems Viewing C README.DOC in PWB 1.0 Online Help and QH

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170036: XCLN:The Mapi Spooler Has Shut Down Unexpectedly"
-permalink: kb/170/Q170036/
+permalink: /kb/170/Q170036/
 ---
 
 ## Q170036: XCLN:The Mapi Spooler Has Shut Down Unexpectedly

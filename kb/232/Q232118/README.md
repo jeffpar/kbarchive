@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232118: XCLN: How to Force the Internet Connection Wizard to Start"
-permalink: kb/232/Q232118/
+permalink: /kb/232/Q232118/
 ---
 
 ## Q232118: XCLN: How to Force the Internet Connection Wizard to Start

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129773: Error Message: LPT&lt;n&gt;: Windows Cannot Write to This File"
-permalink: kb/129/Q129773/
+permalink: /kb/129/Q129773/
 ---
 
 ## Q129773: Error Message: LPT&lt;n&gt;: Windows Cannot Write to This File

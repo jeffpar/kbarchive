@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140457: Writer/Artist: How to Remove Users"
-permalink: kb/140/Q140457/
+permalink: /kb/140/Q140457/
 ---
 
 ## Q140457: Writer/Artist: How to Remove Users

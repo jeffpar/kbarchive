@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186615: Error 1008: Failed to Load/Unload the User Profile"
-permalink: kb/186/Q186615/
+permalink: /kb/186/Q186615/
 ---
 
 ## Q186615: Error 1008: Failed to Load/Unload the User Profile

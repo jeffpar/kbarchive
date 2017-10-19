@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301359: INFO: Cannot Use WebBrowser Control Directly in eVB"
-permalink: kb/301/Q301359/
+permalink: /kb/301/Q301359/
 ---
 
 ## Q301359: INFO: Cannot Use WebBrowser Control Directly in eVB

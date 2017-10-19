@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89436: Changing Computer's Role Causes Workstation to Not Start"
-permalink: kb/089/Q89436/
+permalink: /kb/089/Q89436/
 ---
 
 ## Q89436: Changing Computer's Role Causes Workstation to Not Start

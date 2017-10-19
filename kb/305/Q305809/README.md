@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305809: Performance Monitor Processor Counter Explanation Is Unclear"
-permalink: kb/305/Q305809/
+permalink: /kb/305/Q305809/
 ---
 
 ## Q305809: Performance Monitor Processor Counter Explanation Is Unclear

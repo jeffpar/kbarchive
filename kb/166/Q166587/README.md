@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166587: XCON: High Priority Mail Sent from MS Mail Changes Priority"
-permalink: kb/166/Q166587/
+permalink: /kb/166/Q166587/
 ---
 
 ## Q166587: XCON: High Priority Mail Sent from MS Mail Changes Priority

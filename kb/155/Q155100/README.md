@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155100: Error Message Trying to Run King's Quest 7 in Windows NT"
-permalink: kb/155/Q155100/
+permalink: /kb/155/Q155100/
 ---
 
 ## Q155100: Error Message Trying to Run King's Quest 7 in Windows NT

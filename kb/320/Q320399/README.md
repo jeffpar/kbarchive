@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320399: Programming in Microsoft Visual Studio .NET (Core Reference) Com"
-permalink: kb/320/Q320399/
+permalink: /kb/320/Q320399/
 ---
 
 ## Q320399: Programming in Microsoft Visual Studio .NET (Core Reference) Com

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146070: Eastern Europe System Locale Does Not Change Screen Fonts"
-permalink: kb/146/Q146070/
+permalink: /kb/146/Q146070/
 ---
 
 ## Q146070: Eastern Europe System Locale Does Not Change Screen Fonts

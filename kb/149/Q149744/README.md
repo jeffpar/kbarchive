@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149744: 3D Movie Maker: Copy, Paste Path Varies by Actor or Prop Used"
-permalink: kb/149/Q149744/
+permalink: /kb/149/Q149744/
 ---
 
 ## Q149744: 3D Movie Maker: Copy, Paste Path Varies by Actor or Prop Used

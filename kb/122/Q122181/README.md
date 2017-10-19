@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122181: Systems Management Server Event Log Codes 350 Through 400"
-permalink: kb/122/Q122181/
+permalink: /kb/122/Q122181/
 ---
 
 ## Q122181: Systems Management Server Event Log Codes 350 Through 400

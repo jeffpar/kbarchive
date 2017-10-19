@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137731: Some Mapped NetWare Drives Incorrect in Windows Explorer"
-permalink: kb/137/Q137731/
+permalink: /kb/137/Q137731/
 ---
 
 ## Q137731: Some Mapped NetWare Drives Incorrect in Windows Explorer

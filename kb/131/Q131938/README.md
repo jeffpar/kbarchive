@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131938: ADT2: ADT Setup Errors Caused by Invalid Application Name"
-permalink: kb/131/Q131938/
+permalink: /kb/131/Q131938/
 ---
 
 ## Q131938: ADT2: ADT Setup Errors Caused by Invalid Application Name

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146547: Anniversary Dates on Timex Datalink Not in Chronological Order"
-permalink: kb/146/Q146547/
+permalink: /kb/146/Q146547/
 ---
 
 ## Q146547: Anniversary Dates on Timex Datalink Not in Chronological Order

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167853: PRB: LNK1104 Cannot Find mfc42pd.lib"
-permalink: kb/167/Q167853/
+permalink: /kb/167/Q167853/
 ---
 
 ## Q167853: PRB: LNK1104 Cannot Find mfc42pd.lib

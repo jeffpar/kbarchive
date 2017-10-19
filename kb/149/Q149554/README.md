@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149554: TCP/IP Settings Are Incorrect After Server-Based Setup"
-permalink: kb/149/Q149554/
+permalink: /kb/149/Q149554/
 ---
 
 ## Q149554: TCP/IP Settings Are Incorrect After Server-Based Setup

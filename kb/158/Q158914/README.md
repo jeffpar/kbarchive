@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158914: PRB: Web Root Busy Opening Source-Controlled Web"
-permalink: kb/158/Q158914/
+permalink: /kb/158/Q158914/
 ---
 
 ## Q158914: PRB: Web Root Busy Opening Source-Controlled Web

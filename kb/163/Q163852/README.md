@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163852: Invalid Operand with Locked CMPXCHG8B Instruction"
-permalink: kb/163/Q163852/
+permalink: /kb/163/Q163852/
 ---
 
 ## Q163852: Invalid Operand with Locked CMPXCHG8B Instruction

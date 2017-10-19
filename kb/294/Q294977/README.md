@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294977: XADM: RPC Denial of Service Attack Stops Information Store"
-permalink: kb/294/Q294977/
+permalink: /kb/294/Q294977/
 ---
 
 ## Q294977: XADM: RPC Denial of Service Attack Stops Information Store

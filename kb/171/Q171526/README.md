@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171526: FIX: Setting Enabled=False for TreeView Causes Paint Problems"
-permalink: kb/171/Q171526/
+permalink: /kb/171/Q171526/
 ---
 
 ## Q171526: FIX: Setting Enabled=False for TreeView Causes Paint Problems

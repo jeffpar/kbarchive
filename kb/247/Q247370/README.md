@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247370: HOWTO: Pass Parameters to a SQL Server Stored Procedure"
-permalink: kb/247/Q247370/
+permalink: /kb/247/Q247370/
 ---
 
 ## Q247370: HOWTO: Pass Parameters to a SQL Server Stored Procedure

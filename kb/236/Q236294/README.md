@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236294: Domain Admins Group Has Full Network Access"
-permalink: kb/236/Q236294/
+permalink: /kb/236/Q236294/
 ---
 
 ## Q236294: Domain Admins Group Has Full Network Access

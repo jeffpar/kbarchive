@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158600: Mac Encarta 97: Readme.txt: Troubleshooting and Suggestions"
-permalink: kb/158/Q158600/
+permalink: /kb/158/Q158600/
 ---
 
 ## Q158600: Mac Encarta 97: Readme.txt: Troubleshooting and Suggestions

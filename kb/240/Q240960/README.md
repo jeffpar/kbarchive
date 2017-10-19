@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240960: Pandora's Box: Minimum System Requirements"
-permalink: kb/240/Q240960/
+permalink: /kb/240/Q240960/
 ---
 
 ## Q240960: Pandora's Box: Minimum System Requirements

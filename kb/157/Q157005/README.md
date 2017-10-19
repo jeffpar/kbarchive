@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157005: XCLN: Invalid Page Fault in Mapi32.dll"
-permalink: kb/157/Q157005/
+permalink: /kb/157/Q157005/
 ---
 
 ## Q157005: XCLN: Invalid Page Fault in Mapi32.dll

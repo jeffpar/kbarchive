@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117298: Configuring NWLink Frame Type"
-permalink: kb/117/Q117298/
+permalink: /kb/117/Q117298/
 ---
 
 ## Q117298: Configuring NWLink Frame Type

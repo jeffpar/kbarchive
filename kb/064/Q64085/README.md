@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64085: Changing Portrait and Landscape Orientation in DayBook"
-permalink: kb/064/Q64085/
+permalink: /kb/064/Q64085/
 ---
 
 ## Q64085: Changing Portrait and Landscape Orientation in DayBook

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305307: De-associating Child Accounts In MSN Explorer 6.1"
-permalink: kb/305/Q305307/
+permalink: /kb/305/Q305307/
 ---
 
 ## Q305307: De-associating Child Accounts In MSN Explorer 6.1

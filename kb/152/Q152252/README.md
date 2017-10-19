@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152252: HOWTO: How To Get 32-bit Scroll Position During Scroll Messages"
-permalink: kb/152/Q152252/
+permalink: /kb/152/Q152252/
 ---
 
 ## Q152252: HOWTO: How To Get 32-bit Scroll Position During Scroll Messages

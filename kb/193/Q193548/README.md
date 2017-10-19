@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193548: Stop 0x0000002E Using Qlogic Driver Version 2.29"
-permalink: kb/193/Q193548/
+permalink: /kb/193/Q193548/
 ---
 
 ## Q193548: Stop 0x0000002E Using Qlogic Driver Version 2.29

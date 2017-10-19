@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243045: XIMS: Internet Mail Service Reroutes Message Even Though the"
-permalink: kb/243/Q243045/
+permalink: /kb/243/Q243045/
 ---
 
 ## Q243045: XIMS: Internet Mail Service Reroutes Message Even Though the

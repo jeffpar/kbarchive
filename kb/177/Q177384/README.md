@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177384: Expedia Streets 98: Known Address Parsing Limitations"
-permalink: kb/177/Q177384/
+permalink: /kb/177/Q177384/
 ---
 
 ## Q177384: Expedia Streets 98: Known Address Parsing Limitations

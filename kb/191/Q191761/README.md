@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191761: PRB: Error In VFP When Help File 'Topics Found' Dialog Displays"
-permalink: kb/191/Q191761/
+permalink: /kb/191/Q191761/
 ---
 
 ## Q191761: PRB: Error In VFP When Help File 'Topics Found' Dialog Displays

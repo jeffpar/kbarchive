@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176552: HOWTO: Set Initial Default Size of ActiveX (ATL) Control"
-permalink: kb/176/Q176552/
+permalink: /kb/176/Q176552/
 ---
 
 ## Q176552: HOWTO: Set Initial Default Size of ActiveX (ATL) Control

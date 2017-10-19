@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273005: &quot;Stop 0x0000000a&quot; in Ntoskrnl.exe"
-permalink: kb/273/Q273005/
+permalink: /kb/273/Q273005/
 ---
 
 ## Q273005: &quot;Stop 0x0000000a&quot; in Ntoskrnl.exe

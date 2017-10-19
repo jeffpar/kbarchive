@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157332: Windows NT Hangs with Adaptec 2940 Enable Disconnect Set to No"
-permalink: kb/157/Q157332/
+permalink: /kb/157/Q157332/
 ---
 
 ## Q157332: Windows NT Hangs with Adaptec 2940 Enable Disconnect Set to No

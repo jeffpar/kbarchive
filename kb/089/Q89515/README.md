@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89515: LAN Man 2.1 Test Summary (DigiBoard DigiCHANNEL C/X EISA)"
-permalink: kb/089/Q89515/
+permalink: /kb/089/Q89515/
 ---
 
 ## Q89515: LAN Man 2.1 Test Summary (DigiBoard DigiCHANNEL C/X EISA)

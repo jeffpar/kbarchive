@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84979: SuperMDI.exe Demos Superclassing MDI Client Window"
-permalink: kb/084/Q84979/
+permalink: /kb/084/Q84979/
 ---
 
 ## Q84979: SuperMDI.exe Demos Superclassing MDI Client Window

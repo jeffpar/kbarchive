@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255217: Incorrect Output Printing from Client to Windows NT Server 4.0"
-permalink: kb/255/Q255217/
+permalink: /kb/255/Q255217/
 ---
 
 ## Q255217: Incorrect Output Printing from Client to Windows NT Server 4.0

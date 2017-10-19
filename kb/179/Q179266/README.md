@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179266: FP: No Server on Port &lt;Number&gt; at &lt;Server Name&gt;"
-permalink: kb/179/Q179266/
+permalink: /kb/179/Q179266/
 ---
 
 ## Q179266: FP: No Server on Port &lt;Number&gt; at &lt;Server Name&gt;

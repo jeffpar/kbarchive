@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263735: Incorrect Content Rating PICS Date When Time Zone Is East of GMT"
-permalink: kb/263/Q263735/
+permalink: /kb/263/Q263735/
 ---
 
 ## Q263735: Incorrect Content Rating PICS Date When Time Zone Is East of GMT

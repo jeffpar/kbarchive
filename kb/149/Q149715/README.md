@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149715: Setup Using Msbatch.inf Pauses at Network Dialog Box"
-permalink: kb/149/Q149715/
+permalink: /kb/149/Q149715/
 ---
 
 ## Q149715: Setup Using Msbatch.inf Pauses at Network Dialog Box

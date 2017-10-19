@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183551: Unable to Locate Host Column Description File"
-permalink: kb/183/Q183551/
+permalink: /kb/183/Q183551/
 ---
 
 ## Q183551: Unable to Locate Host Column Description File

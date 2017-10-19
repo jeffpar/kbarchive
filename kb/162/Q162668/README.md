@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162668: Description of Windows&#92;Options and Windows&#92;Options&#92;Cabs Folder"
-permalink: kb/162/Q162668/
+permalink: /kb/162/Q162668/
 ---
 
 ## Q162668: Description of Windows&#92;Options and Windows&#92;Options&#92;Cabs Folder

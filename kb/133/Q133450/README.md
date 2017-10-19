@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133450: Commands Affected by NULL Values"
-permalink: kb/133/Q133450/
+permalink: /kb/133/Q133450/
 ---
 
 ## Q133450: Commands Affected by NULL Values

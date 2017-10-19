@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285780: SMS: Increased Network Traffic When You Run Hardware Inventory"
-permalink: kb/285/Q285780/
+permalink: /kb/285/Q285780/
 ---
 
 ## Q285780: SMS: Increased Network Traffic When You Run Hardware Inventory

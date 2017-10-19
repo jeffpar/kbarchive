@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320126: FIX: Visual FoxPro 7.0 Behaves Like _Screen.AlwaysOnTop is True"
-permalink: kb/320/Q320126/
+permalink: /kb/320/Q320126/
 ---
 
 ## Q320126: FIX: Visual FoxPro 7.0 Behaves Like _Screen.AlwaysOnTop is True

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189069: Black Screen or Game Hangs When Guard Dog Software Is Installed"
-permalink: kb/189/Q189069/
+permalink: /kb/189/Q189069/
 ---
 
 ## Q189069: Black Screen or Game Hangs When Guard Dog Software Is Installed

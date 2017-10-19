@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268771: FIX: DOEVENTS Command Runs Slowly"
-permalink: kb/268/Q268771/
+permalink: /kb/268/Q268771/
 ---
 
 ## Q268771: FIX: DOEVENTS Command Runs Slowly

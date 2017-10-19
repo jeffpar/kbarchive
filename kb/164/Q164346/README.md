@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164346: XCLN: Newprof.Exe Requires a Value for HomeServer"
-permalink: kb/164/Q164346/
+permalink: /kb/164/Q164346/
 ---
 
 ## Q164346: XCLN: Newprof.Exe Requires a Value for HomeServer

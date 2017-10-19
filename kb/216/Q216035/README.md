@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216035: Invalid FPNW Parameters May Cause AV in Lsass.exe and Usrmgr.exe"
-permalink: kb/216/Q216035/
+permalink: /kb/216/Q216035/
 ---
 
 ## Q216035: Invalid FPNW Parameters May Cause AV in Lsass.exe and Usrmgr.exe

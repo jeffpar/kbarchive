@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250038: Print Server Hangs After Restarting Spooler Service"
-permalink: kb/250/Q250038/
+permalink: /kb/250/Q250038/
 ---
 
 ## Q250038: Print Server Hangs After Restarting Spooler Service

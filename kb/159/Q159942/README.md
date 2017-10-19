@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159942: WD97: General Information about Text Boxes and Frames"
-permalink: kb/159/Q159942/
+permalink: /kb/159/Q159942/
 ---
 
 ## Q159942: WD97: General Information about Text Boxes and Frames

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94014: WSS: Internal Error at File XLRDR.C with Proofreader"
-permalink: kb/094/Q94014/
+permalink: /kb/094/Q94014/
 ---
 
 ## Q94014: WSS: Internal Error at File XLRDR.C with Proofreader

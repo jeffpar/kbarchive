@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63746: Print Prints Incorrect Higher-Order Character"
-permalink: kb/063/Q63746/
+permalink: /kb/063/Q63746/
 ---
 
 ## Q63746: Print Prints Incorrect Higher-Order Character

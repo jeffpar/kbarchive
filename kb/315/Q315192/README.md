@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315192: GAMES: Windows Unexpectedly Restarts"
-permalink: kb/315/Q315192/
+permalink: /kb/315/Q315192/
 ---
 
 ## Q315192: GAMES: Windows Unexpectedly Restarts

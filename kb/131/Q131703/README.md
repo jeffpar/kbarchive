@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131703: Read Errors with Texel (Plextor) Single-Speed CD-ROM Drive"
-permalink: kb/131/Q131703/
+permalink: /kb/131/Q131703/
 ---
 
 ## Q131703: Read Errors with Texel (Plextor) Single-Speed CD-ROM Drive

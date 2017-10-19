@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188979: XADM: NDR When Sending to Recipient From Offline Address Book"
-permalink: kb/188/Q188979/
+permalink: /kb/188/Q188979/
 ---
 
 ## Q188979: XADM: NDR When Sending to Recipient From Offline Address Book

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141197: Encarta 1996: How the Dictionary Displays a Definition"
-permalink: kb/141/Q141197/
+permalink: /kb/141/Q141197/
 ---
 
 ## Q141197: Encarta 1996: How the Dictionary Displays a Definition

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141628: FIX: Pageframe.Addobject() to a New Page Disables Mouse"
-permalink: kb/141/Q141628/
+permalink: /kb/141/Q141628/
 ---
 
 ## Q141628: FIX: Pageframe.Addobject() to a New Page Disables Mouse

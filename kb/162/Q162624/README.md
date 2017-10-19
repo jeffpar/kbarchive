@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162624: How to Create Multiple Stripe Sets On the Same Disk Array."
-permalink: kb/162/Q162624/
+permalink: /kb/162/Q162624/
 ---
 
 ## Q162624: How to Create Multiple Stripe Sets On the Same Disk Array.

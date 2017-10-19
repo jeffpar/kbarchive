@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223117: FIX: Customizing Toolbar at Run-time Modifies Buttons"
-permalink: kb/223/Q223117/
+permalink: /kb/223/Q223117/
 ---
 
 ## Q223117: FIX: Customizing Toolbar at Run-time Modifies Buttons

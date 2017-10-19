@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164848: XCLN: Transmitting Over SPX via Dialup Connection"
-permalink: kb/164/Q164848/
+permalink: /kb/164/Q164848/
 ---
 
 ## Q164848: XCLN: Transmitting Over SPX via Dialup Connection

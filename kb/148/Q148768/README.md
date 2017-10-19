@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148768: CONN: Connection Gateway 1.0b Hangs Delivering Message"
-permalink: kb/148/Q148768/
+permalink: /kb/148/Q148768/
 ---
 
 ## Q148768: CONN: Connection Gateway 1.0b Hangs Delivering Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214624: STOP 0xA When Using SPX"
-permalink: kb/214/Q214624/
+permalink: /kb/214/Q214624/
 ---
 
 ## Q214624: STOP 0xA When Using SPX

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130452: Cannot Run Franz Allegro CL"
-permalink: kb/130/Q130452/
+permalink: /kb/130/Q130452/
 ---
 
 ## Q130452: Cannot Run Franz Allegro CL

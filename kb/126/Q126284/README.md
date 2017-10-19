@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126284: Problem Running SMS on CNTFS Partition"
-permalink: kb/126/Q126284/
+permalink: /kb/126/Q126284/
 ---
 
 ## Q126284: Problem Running SMS on CNTFS Partition

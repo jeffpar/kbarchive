@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188544: BUG: Transparent Windowless UserControl Cannot Be Dragged"
-permalink: kb/188/Q188544/
+permalink: /kb/188/Q188544/
 ---
 
 ## Q188544: BUG: Transparent Windowless UserControl Cannot Be Dragged

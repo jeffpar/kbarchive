@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q283001: MS01-009: Patch Available for Malformed PPTP Packet Stream Vulne"
-permalink: kb/283/Q283001/
+permalink: /kb/283/Q283001/
 ---
 
 ## Q283001: MS01-009: Patch Available for Malformed PPTP Packet Stream Vulne

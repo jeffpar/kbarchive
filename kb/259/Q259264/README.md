@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259264: Unsuccessful Logons and Problems Gaining Access to NDS Resources"
-permalink: kb/259/Q259264/
+permalink: /kb/259/Q259264/
 ---
 
 ## Q259264: Unsuccessful Logons and Problems Gaining Access to NDS Resources

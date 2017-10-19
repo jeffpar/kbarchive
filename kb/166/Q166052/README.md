@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166052: WV: Menus in Word Viewer Do Not Respond on First Click"
-permalink: kb/166/Q166052/
+permalink: /kb/166/Q166052/
 ---
 
 ## Q166052: WV: Menus in Word Viewer Do Not Respond on First Click

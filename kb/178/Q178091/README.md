@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178091: XFOR: Message from Client Not Homed on Server Crashes IMC"
-permalink: kb/178/Q178091/
+permalink: /kb/178/Q178091/
 ---
 
 ## Q178091: XFOR: Message from Client Not Homed on Server Crashes IMC

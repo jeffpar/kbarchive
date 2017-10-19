@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99862: NetCon.exe - Connect Net Drive - File Manager Extension"
-permalink: kb/099/Q99862/
+permalink: /kb/099/Q99862/
 ---
 
 ## Q99862: NetCon.exe - Connect Net Drive - File Manager Extension

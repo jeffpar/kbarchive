@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247763: Cluster Administrator May Hang Creating New IIS Server Instance"
-permalink: kb/247/Q247763/
+permalink: /kb/247/Q247763/
 ---
 
 ## Q247763: Cluster Administrator May Hang Creating New IIS Server Instance

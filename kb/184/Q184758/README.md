@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184758: STOP 0x78 When NonPagedPoolSize &gt; 7/8 of Physical Memory"
-permalink: kb/184/Q184758/
+permalink: /kb/184/Q184758/
 ---
 
 ## Q184758: STOP 0x78 When NonPagedPoolSize &gt; 7/8 of Physical Memory

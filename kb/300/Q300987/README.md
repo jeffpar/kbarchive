@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300987: Windows NT 4.0 Winbond Super I/O Floppy Disk Controller Problems"
-permalink: kb/300/Q300987/
+permalink: /kb/300/Q300987/
 ---
 
 ## Q300987: Windows NT 4.0 Winbond Super I/O Floppy Disk Controller Problems

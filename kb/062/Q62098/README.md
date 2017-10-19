@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62098: Windows 3.0 Hardware Compatibility List"
-permalink: kb/062/Q62098/
+permalink: /kb/062/Q62098/
 ---
 
 ## Q62098: Windows 3.0 Hardware Compatibility List

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216716: FIX: Relocations Not Generated For Array of Ptrs To Functions Us"
-permalink: kb/216/Q216716/
+permalink: /kb/216/Q216716/
 ---
 
 ## Q216716: FIX: Relocations Not Generated For Array of Ptrs To Functions Us

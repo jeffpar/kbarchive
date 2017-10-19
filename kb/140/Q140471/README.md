@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140471: Xircom IIps Credit Card Adapter Fails in Windows NT 3.51"
-permalink: kb/140/Q140471/
+permalink: /kb/140/Q140471/
 ---
 
 ## Q140471: Xircom IIps Credit Card Adapter Fails in Windows NT 3.51

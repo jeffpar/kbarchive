@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153374: Microsoft Phone May Not Hang Up Immediately After Dialing"
-permalink: kb/153/Q153374/
+permalink: /kb/153/Q153374/
 ---
 
 ## Q153374: Microsoft Phone May Not Hang Up Immediately After Dialing

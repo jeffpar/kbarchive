@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134494: Drop-Down Menu Not Repainted Properly in WinFax Pro 4.0"
-permalink: kb/134/Q134494/
+permalink: /kb/134/Q134494/
 ---
 
 ## Q134494: Drop-Down Menu Not Repainted Properly in WinFax Pro 4.0

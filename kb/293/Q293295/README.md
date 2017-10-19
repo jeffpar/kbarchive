@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293295: BUG: PDW Package Cannot Be Installed If User Name Is Korean DBCS"
-permalink: kb/293/Q293295/
+permalink: /kb/293/Q293295/
 ---
 
 ## Q293295: BUG: PDW Package Cannot Be Installed If User Name Is Korean DBCS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162806: Golf 3.0: Commentary Options Depend On Type of Installation"
-permalink: kb/162/Q162806/
+permalink: /kb/162/Q162806/
 ---
 
 ## Q162806: Golf 3.0: Commentary Options Depend On Type of Installation

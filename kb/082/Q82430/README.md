@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82430: STAR Micronix Printers Run in Loops Printing to File"
-permalink: kb/082/Q82430/
+permalink: /kb/082/Q82430/
 ---
 
 ## Q82430: STAR Micronix Printers Run in Loops Printing to File

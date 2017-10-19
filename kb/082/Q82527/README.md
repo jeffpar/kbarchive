@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82527: GP Fault While Selecting Font in Zenographics Pixie"
-permalink: kb/082/Q82527/
+permalink: /kb/082/Q82527/
 ---
 
 ## Q82527: GP Fault While Selecting Font in Zenographics Pixie

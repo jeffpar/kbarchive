@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66418: One-Key Macros Can Be Used to Substitute for Two-Key Sequences"
-permalink: kb/066/Q66418/
+permalink: /kb/066/Q66418/
 ---
 
 ## Q66418: One-Key Macros Can Be Used to Substitute for Two-Key Sequences

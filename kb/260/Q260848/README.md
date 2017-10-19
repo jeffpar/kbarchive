@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260848: Allegiance Err Msg: The Server You Are Trying to Play on Has..."
-permalink: kb/260/Q260848/
+permalink: /kb/260/Q260848/
 ---
 
 ## Q260848: Allegiance Err Msg: The Server You Are Trying to Play on Has...

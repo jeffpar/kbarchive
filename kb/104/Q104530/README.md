@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104530: Step-Up or Uninstall Err Msg: Error Reading File DOSSETUP.INI"
-permalink: kb/104/Q104530/
+permalink: /kb/104/Q104530/
 ---
 
 ## Q104530: Step-Up or Uninstall Err Msg: Error Reading File DOSSETUP.INI

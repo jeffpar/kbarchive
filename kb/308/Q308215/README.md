@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308215: PRB: VFP ODBC Driver Causes Various Errors in Microsoft Products"
-permalink: kb/308/Q308215/
+permalink: /kb/308/Q308215/
 ---
 
 ## Q308215: PRB: VFP ODBC Driver Causes Various Errors in Microsoft Products

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277758: WP: What Are the Requirements for Express Purchase (EP) Service?"
-permalink: kb/277/Q277758/
+permalink: /kb/277/Q277758/
 ---
 
 ## Q277758: WP: What Are the Requirements for Express Purchase (EP) Service?

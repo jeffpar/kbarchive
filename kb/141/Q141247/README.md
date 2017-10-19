@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141247: PPT7: PowerPoint Encountered an Error That It Could Not Correct"
-permalink: kb/141/Q141247/
+permalink: /kb/141/Q141247/
 ---
 
 ## Q141247: PPT7: PowerPoint Encountered an Error That It Could Not Correct

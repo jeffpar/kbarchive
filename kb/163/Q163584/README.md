@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163584: FP: Unable to Save to IIS Server if Permissions Incorrect"
-permalink: kb/163/Q163584/
+permalink: /kb/163/Q163584/
 ---
 
 ## Q163584: FP: Unable to Save to IIS Server if Permissions Incorrect

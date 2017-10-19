@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171435: XFOR: POP3 Logon Attempt Fails with Event 11202"
-permalink: kb/171/Q171435/
+permalink: /kb/171/Q171435/
 ---
 
 ## Q171435: XFOR: POP3 Logon Attempt Fails with Event 11202

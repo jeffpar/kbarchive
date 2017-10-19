@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191220: XCLN: Outlook Bar Shortcut Empties Server's Deleted Items"
-permalink: kb/191/Q191220/
+permalink: /kb/191/Q191220/
 ---
 
 ## Q191220: XCLN: Outlook Bar Shortcut Empties Server's Deleted Items

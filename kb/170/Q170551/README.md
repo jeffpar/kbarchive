@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170551: ADT/ODE: Transporter and Synchronizer Can't Share Log File"
-permalink: kb/170/Q170551/
+permalink: /kb/170/Q170551/
 ---
 
 ## Q170551: ADT/ODE: Transporter and Synchronizer Can't Share Log File

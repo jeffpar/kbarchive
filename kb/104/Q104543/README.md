@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104543: MemMaker Truncates Lines Longer than 101 Characters"
-permalink: kb/104/Q104543/
+permalink: /kb/104/Q104543/
 ---
 
 ## Q104543: MemMaker Truncates Lines Longer than 101 Characters

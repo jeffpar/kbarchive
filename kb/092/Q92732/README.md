@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92732: FIX: System Errors or Crash Debugging Large App in CodeView"
-permalink: kb/092/Q92732/
+permalink: /kb/092/Q92732/
 ---
 
 ## Q92732: FIX: System Errors or Crash Debugging Large App in CodeView

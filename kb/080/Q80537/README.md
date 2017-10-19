@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80537: PC Kwik Cache Causes Error in Formatting DD Disk in HD Drive"
-permalink: kb/080/Q80537/
+permalink: /kb/080/Q80537/
 ---
 
 ## Q80537: PC Kwik Cache Causes Error in Formatting DD Disk in HD Drive

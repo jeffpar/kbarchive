@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66874: Description of Golf in Windows Entertainment Pack"
-permalink: kb/066/Q66874/
+permalink: /kb/066/Q66874/
 ---
 
 ## Q66874: Description of Golf in Windows Entertainment Pack

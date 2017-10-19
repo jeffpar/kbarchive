@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108751: Scenes 1.0: Invalid Parameter (Toshiba T4500, T4600, T6600)"
-permalink: kb/108/Q108751/
+permalink: /kb/108/Q108751/
 ---
 
 ## Q108751: Scenes 1.0: Invalid Parameter (Toshiba T4500, T4600, T6600)

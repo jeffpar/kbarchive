@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156753: How to Determine Domestic/International Version of IIS"
-permalink: kb/156/Q156753/
+permalink: /kb/156/Q156753/
 ---
 
 ## Q156753: How to Determine Domestic/International Version of IIS

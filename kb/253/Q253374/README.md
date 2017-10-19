@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253374: DOC: Jan 2000 MSDN Library-No Windows NT 4.0 Resource Kit Docs"
-permalink: kb/253/Q253374/
+permalink: /kb/253/Q253374/
 ---
 
 ## Q253374: DOC: Jan 2000 MSDN Library-No Windows NT 4.0 Resource Kit Docs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157838: SMS: NetWare Client32 for Windows 95 Stops Responding on Logon"
-permalink: kb/157/Q157838/
+permalink: /kb/157/Q157838/
 ---
 
 ## Q157838: SMS: NetWare Client32 for Windows 95 Stops Responding on Logon

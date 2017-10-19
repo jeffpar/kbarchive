@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151731: BUG: Mastering Access: Closing Volume Control Closes Help"
-permalink: kb/151/Q151731/
+permalink: /kb/151/Q151731/
 ---
 
 ## Q151731: BUG: Mastering Access: Closing Volume Control Closes Help

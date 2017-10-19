@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172070: Deleting 3270 Pool May Result in Unnamed Pool in SNA Manager"
-permalink: kb/172/Q172070/
+permalink: /kb/172/Q172070/
 ---
 
 ## Q172070: Deleting 3270 Pool May Result in Unnamed Pool in SNA Manager

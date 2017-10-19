@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115378: PC Tools 9.0 Cannot Recognize DriveSpace Format; Use ScanDisk"
-permalink: kb/115/Q115378/
+permalink: /kb/115/Q115378/
 ---
 
 ## Q115378: PC Tools 9.0 Cannot Recognize DriveSpace Format; Use ScanDisk

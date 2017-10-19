@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131431: How to Troubleshoot Registry Errors in Windows 95"
-permalink: kb/131/Q131431/
+permalink: /kb/131/Q131431/
 ---
 
 ## Q131431: How to Troubleshoot Registry Errors in Windows 95

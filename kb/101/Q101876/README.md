@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101876: Dinosaurs: Manual Installation Instructions"
-permalink: kb/101/Q101876/
+permalink: /kb/101/Q101876/
 ---
 
 ## Q101876: Dinosaurs: Manual Installation Instructions

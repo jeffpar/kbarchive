@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70767: Zeos Machines Hang on Windows 3.0 Disk 2"
-permalink: kb/070/Q70767/
+permalink: /kb/070/Q70767/
 ---
 
 ## Q70767: Zeos Machines Hang on Windows 3.0 Disk 2

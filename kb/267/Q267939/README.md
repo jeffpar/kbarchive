@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267939: HOWTO: Use FindText to Enable Searching in a Text Box"
-permalink: kb/267/Q267939/
+permalink: /kb/267/Q267939/
 ---
 
 ## Q267939: HOWTO: Use FindText to Enable Searching in a Text Box

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108349: BUG: Console I/O Problem; CR/LF Skipped After File Open"
-permalink: kb/108/Q108349/
+permalink: /kb/108/Q108349/
 ---
 
 ## Q108349: BUG: Console I/O Problem; CR/LF Skipped After File Open

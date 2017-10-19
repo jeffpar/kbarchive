@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177690: Microsoft Word 97/Visual Basic Step by Step"
-permalink: kb/177/Q177690/
+permalink: /kb/177/Q177690/
 ---
 
 ## Q177690: Microsoft Word 97/Visual Basic Step by Step

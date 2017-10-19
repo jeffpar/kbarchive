@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158273: WinNT Err: No Drives to Disconnect After RCMD Session"
-permalink: kb/158/Q158273/
+permalink: /kb/158/Q158273/
 ---
 
 ## Q158273: WinNT Err: No Drives to Disconnect After RCMD Session

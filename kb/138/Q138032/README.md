@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138032: FIX: CIRC2 and CIRC3 Samples Don't Handle WM_SIZE Message"
-permalink: kb/138/Q138032/
+permalink: /kb/138/Q138032/
 ---
 
 ## Q138032: FIX: CIRC2 and CIRC3 Samples Don't Handle WM_SIZE Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120345: Menu Bar in Microsoft Bookshelf '94 Does Not Work Properly"
-permalink: kb/120/Q120345/
+permalink: /kb/120/Q120345/
 ---
 
 ## Q120345: Menu Bar in Microsoft Bookshelf '94 Does Not Work Properly

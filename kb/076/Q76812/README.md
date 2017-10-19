@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76812: Fastback Versions 2.11 and Earlier Give Divide Overflow Error"
-permalink: kb/076/Q76812/
+permalink: /kb/076/Q76812/
 ---
 
 ## Q76812: Fastback Versions 2.11 and Earlier Give Divide Overflow Error

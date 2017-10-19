@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87183: PROFS: Using ASCII/EBCDIC Programs to Solve Problems"
-permalink: kb/087/Q87183/
+permalink: /kb/087/Q87183/
 ---
 
 ## Q87183: PROFS: Using ASCII/EBCDIC Programs to Solve Problems

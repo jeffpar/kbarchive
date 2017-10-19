@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163383: Failure to Obtain IP Address Via DHCP on Token Ring w/ SP2"
-permalink: kb/163/Q163383/
+permalink: /kb/163/Q163383/
 ---
 
 ## Q163383: Failure to Obtain IP Address Via DHCP on Token Ring w/ SP2

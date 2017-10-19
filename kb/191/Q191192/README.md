@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191192: Cannot Change Password with DUN 1.2b and 128-Bit Encryption"
-permalink: kb/191/Q191192/
+permalink: /kb/191/Q191192/
 ---
 
 ## Q191192: Cannot Change Password with DUN 1.2b and 128-Bit Encryption

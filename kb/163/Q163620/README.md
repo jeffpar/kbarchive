@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163620: STOP 0x50 in Rdr.sys If Pathname Too Long in SMB"
-permalink: kb/163/Q163620/
+permalink: /kb/163/Q163620/
 ---
 
 ## Q163620: STOP 0x50 in Rdr.sys If Pathname Too Long in SMB

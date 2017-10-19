@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132365: PRB: Phantom Grid Column Displayed After Moving to Last Column"
-permalink: kb/132/Q132365/
+permalink: /kb/132/Q132365/
 ---
 
 ## Q132365: PRB: Phantom Grid Column Displayed After Moving to Last Column

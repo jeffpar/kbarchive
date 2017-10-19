@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192162: Windows Terminal Server Clients Do Not List Server Names"
-permalink: kb/192/Q192162/
+permalink: /kb/192/Q192162/
 ---
 
 ## Q192162: Windows Terminal Server Clients Do Not List Server Names

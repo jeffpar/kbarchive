@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260985: XIMS: Minimum NTFS Permissions Required to Use CDONTS"
-permalink: kb/260/Q260985/
+permalink: /kb/260/Q260985/
 ---
 
 ## Q260985: XIMS: Minimum NTFS Permissions Required to Use CDONTS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q29519: How to Write a Driver for a Custom Hardware Device"
-permalink: kb/029/Q29519/
+permalink: /kb/029/Q29519/
 ---
 
 ## Q29519: How to Write a Driver for a Custom Hardware Device

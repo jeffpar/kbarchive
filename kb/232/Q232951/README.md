@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232951: Err Msg: The Snap-in That Has Been Selected Failed to Initialize"
-permalink: kb/232/Q232951/
+permalink: /kb/232/Q232951/
 ---
 
 ## Q232951: Err Msg: The Snap-in That Has Been Selected Failed to Initialize

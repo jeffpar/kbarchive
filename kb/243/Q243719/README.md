@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243719: SNA Traces Are Only Deleted from %SnaRoot%&#92;Traces"
-permalink: kb/243/Q243719/
+permalink: /kb/243/Q243719/
 ---
 
 ## Q243719: SNA Traces Are Only Deleted from %SnaRoot%&#92;Traces

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164470: XCLN: Scanpst Fails to Detect and Fix File Truncation Corruption"
-permalink: kb/164/Q164470/
+permalink: /kb/164/Q164470/
 ---
 
 ## Q164470: XCLN: Scanpst Fails to Detect and Fix File Truncation Corruption

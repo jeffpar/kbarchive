@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125667: Security Options in File Manager for FAT or HPFS Available"
-permalink: kb/125/Q125667/
+permalink: /kb/125/Q125667/
 ---
 
 ## Q125667: Security Options in File Manager for FAT or HPFS Available

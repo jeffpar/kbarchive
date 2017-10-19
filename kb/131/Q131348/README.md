@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131348: PRB: SET STEP ON Opens the TRACE Window Only"
-permalink: kb/131/Q131348/
+permalink: /kb/131/Q131348/
 ---
 
 ## Q131348: PRB: SET STEP ON Opens the TRACE Window Only

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272305: XADM: Move Mailbox Fails with Event ID 8505 and Error 0x8004030"
-permalink: kb/272/Q272305/
+permalink: /kb/272/Q272305/
 ---
 
 ## Q272305: XADM: Move Mailbox Fails with Event ID 8505 and Error 0x8004030

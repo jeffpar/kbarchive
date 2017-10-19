@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183562: No Help File For Microsoft Management Console Snap-in"
-permalink: kb/183/Q183562/
+permalink: /kb/183/Q183562/
 ---
 
 ## Q183562: No Help File For Microsoft Management Console Snap-in

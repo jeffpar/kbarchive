@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151707: XCLN: Replying With Exchange and MS Mail Services in Profile"
-permalink: kb/151/Q151707/
+permalink: /kb/151/Q151707/
 ---
 
 ## Q151707: XCLN: Replying With Exchange and MS Mail Services in Profile

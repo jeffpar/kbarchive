@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159499: XCLN: Using Microsoft Mail Forms with Exchange"
-permalink: kb/159/Q159499/
+permalink: /kb/159/Q159499/
 ---
 
 ## Q159499: XCLN: Using Microsoft Mail Forms with Exchange

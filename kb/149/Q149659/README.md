@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149659: Printer Driver Files Dated 6/3/80"
-permalink: kb/149/Q149659/
+permalink: /kb/149/Q149659/
 ---
 
 ## Q149659: Printer Driver Files Dated 6/3/80

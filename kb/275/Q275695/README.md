@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275695: SMS: Recovering from Wrong Sender Acct. on Secondary Site Server"
-permalink: kb/275/Q275695/
+permalink: /kb/275/Q275695/
 ---
 
 ## Q275695: SMS: Recovering from Wrong Sender Acct. on Secondary Site Server

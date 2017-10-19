@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174755: XFOR: ResolveP2 Registry Setting Expanded in Exchange 5.5"
-permalink: kb/174/Q174755/
+permalink: /kb/174/Q174755/
 ---
 
 ## Q174755: XFOR: ResolveP2 Registry Setting Expanded in Exchange 5.5

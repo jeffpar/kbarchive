@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167218: WD97: IPF Updating Field w/ Dollartext Switch, Spanish Language"
-permalink: kb/167/Q167218/
+permalink: /kb/167/Q167218/
 ---
 
 ## Q167218: WD97: IPF Updating Field w/ Dollartext Switch, Spanish Language

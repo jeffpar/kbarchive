@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87450: MSD Utility Incorrectly Identifies UART Chip"
-permalink: kb/087/Q87450/
+permalink: /kb/087/Q87450/
 ---
 
 ## Q87450: MSD Utility Incorrectly Identifies UART Chip

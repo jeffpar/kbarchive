@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146582: Clients Reboot During Setup Verification"
-permalink: kb/146/Q146582/
+permalink: /kb/146/Q146582/
 ---
 
 ## Q146582: Clients Reboot During Setup Verification

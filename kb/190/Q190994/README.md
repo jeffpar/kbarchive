@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190994: XADM: How to Save Organizational Forms to a PST File"
-permalink: kb/190/Q190994/
+permalink: /kb/190/Q190994/
 ---
 
 ## Q190994: XADM: How to Save Organizational Forms to a PST File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165655: Size of Config File Does Not Change After Items Are Deleted"
-permalink: kb/165/Q165655/
+permalink: /kb/165/Q165655/
 ---
 
 ## Q165655: Size of Config File Does Not Change After Items Are Deleted

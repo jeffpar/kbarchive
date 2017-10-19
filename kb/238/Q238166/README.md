@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238166: Administrator Is Unable to Delete Local Profile in Windows NT"
-permalink: kb/238/Q238166/
+permalink: /kb/238/Q238166/
 ---
 
 ## Q238166: Administrator Is Unable to Delete Local Profile in Windows NT

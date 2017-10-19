@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166482: DUMPCHK.EXE Incorrectly Reports Some Dump Files as Invalid"
-permalink: kb/166/Q166482/
+permalink: /kb/166/Q166482/
 ---
 
 ## Q166482: DUMPCHK.EXE Incorrectly Reports Some Dump Files as Invalid

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155291: DBWEB: Updates Not Working Using Default dbWeb Documents"
-permalink: kb/155/Q155291/
+permalink: /kb/155/Q155291/
 ---
 
 ## Q155291: DBWEB: Updates Not Working Using Default dbWeb Documents

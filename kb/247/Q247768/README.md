@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247768: No Load Balancing When Connecting to Cluster Virtual IP Address"
-permalink: kb/247/Q247768/
+permalink: /kb/247/Q247768/
 ---
 
 ## Q247768: No Load Balancing When Connecting to Cluster Virtual IP Address

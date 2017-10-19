@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117780: Using .PCH Files Across Projects in Visual Workbench"
-permalink: kb/117/Q117780/
+permalink: /kb/117/Q117780/
 ---
 
 ## Q117780: Using .PCH Files Across Projects in Visual Workbench

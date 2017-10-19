@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124917: How Disk Defragmenter Reports Fragmentation"
-permalink: kb/124/Q124917/
+permalink: /kb/124/Q124917/
 ---
 
 ## Q124917: How Disk Defragmenter Reports Fragmentation

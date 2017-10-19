@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168390: Add/Remove Programs Tool Responds Slowly"
-permalink: kb/168/Q168390/
+permalink: /kb/168/Q168390/
 ---
 
 ## Q168390: Add/Remove Programs Tool Responds Slowly

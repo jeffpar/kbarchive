@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66292: Reading Text Files into MS-DOS Environment Variables"
-permalink: kb/066/Q66292/
+permalink: /kb/066/Q66292/
 ---
 
 ## Q66292: Reading Text Files into MS-DOS Environment Variables

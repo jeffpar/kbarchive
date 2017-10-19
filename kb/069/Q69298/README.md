@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69298: Printing to Hewlett-Packard Plotter with HP-IB Interface"
-permalink: kb/069/Q69298/
+permalink: /kb/069/Q69298/
 ---
 
 ## Q69298: Printing to Hewlett-Packard Plotter with HP-IB Interface

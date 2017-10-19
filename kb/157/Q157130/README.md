@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157130: XCLN: Error Message From MS-DOS Client on Diskless Workstation"
-permalink: kb/157/Q157130/
+permalink: /kb/157/Q157130/
 ---
 
 ## Q157130: XCLN: Error Message From MS-DOS Client on Diskless Workstation

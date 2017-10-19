@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128486: BUG: Btrieve: Drop Table Does Not Remove Entry in SQLTables"
-permalink: kb/128/Q128486/
+permalink: /kb/128/Q128486/
 ---
 
 ## Q128486: BUG: Btrieve: Drop Table Does Not Remove Entry in SQLTables

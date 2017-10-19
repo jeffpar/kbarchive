@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298455: SMS: Collection Evaluator Can't Update Collections on Child Site"
-permalink: kb/298/Q298455/
+permalink: /kb/298/Q298455/
 ---
 
 ## Q298455: SMS: Collection Evaluator Can't Update Collections on Child Site

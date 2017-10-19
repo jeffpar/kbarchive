@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120790: How to Create a Modal Screen Effect Programmatically"
-permalink: kb/120/Q120790/
+permalink: /kb/120/Q120790/
 ---
 
 ## Q120790: How to Create a Modal Screen Effect Programmatically

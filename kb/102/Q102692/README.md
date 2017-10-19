@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102692: FIX: FP Emulator Converts REAL to INTEGER Incorrectly"
-permalink: kb/102/Q102692/
+permalink: /kb/102/Q102692/
 ---
 
 ## Q102692: FIX: FP Emulator Converts REAL to INTEGER Incorrectly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267270: Convlog Stops Processing Log Files"
-permalink: kb/267/Q267270/
+permalink: /kb/267/Q267270/
 ---
 
 ## Q267270: Convlog Stops Processing Log Files

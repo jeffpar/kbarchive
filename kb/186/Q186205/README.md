@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186205: XADM: CPU Utilization for Information Store Is at 100%"
-permalink: kb/186/Q186205/
+permalink: /kb/186/Q186205/
 ---
 
 ## Q186205: XADM: CPU Utilization for Information Store Is at 100%

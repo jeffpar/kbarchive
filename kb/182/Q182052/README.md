@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182052: SMS: Program Group Control Causes Intermittent Dr. Watson Errors"
-permalink: kb/182/Q182052/
+permalink: /kb/182/Q182052/
 ---
 
 ## Q182052: SMS: Program Group Control Causes Intermittent Dr. Watson Errors

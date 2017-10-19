@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133191: Reinstalling System Agent Without Losing Scheduled Tasks"
-permalink: kb/133/Q133191/
+permalink: /kb/133/Q133191/
 ---
 
 ## Q133191: Reinstalling System Agent Without Losing Scheduled Tasks

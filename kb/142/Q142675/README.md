@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142675: CSNW Sends Packets Greater Than Negotiated Maximum Packet Size"
-permalink: kb/142/Q142675/
+permalink: /kb/142/Q142675/
 ---
 
 ## Q142675: CSNW Sends Packets Greater Than Negotiated Maximum Packet Size

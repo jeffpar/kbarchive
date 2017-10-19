@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161116: XCLN: POP3 Supported Command Set for Exchange Server 5.0"
-permalink: kb/161/Q161116/
+permalink: /kb/161/Q161116/
 ---
 
 ## Q161116: XCLN: POP3 Supported Command Set for Exchange Server 5.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141002: Bookshelf: Can't Use Undo with Copy To Excel Command"
-permalink: kb/141/Q141002/
+permalink: /kb/141/Q141002/
 ---
 
 ## Q141002: Bookshelf: Can't Use Undo with Copy To Excel Command

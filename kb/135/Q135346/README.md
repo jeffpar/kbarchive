@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135346: I/O Port or Memory Address Conflicts in Windows NT"
-permalink: kb/135/Q135346/
+permalink: /kb/135/Q135346/
 ---
 
 ## Q135346: I/O Port or Memory Address Conflicts in Windows NT

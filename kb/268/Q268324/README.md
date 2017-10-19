@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268324: XCLN: Corrupted Offline Address Books from Changes to PDN List"
-permalink: kb/268/Q268324/
+permalink: /kb/268/Q268324/
 ---
 
 ## Q268324: XCLN: Corrupted Offline Address Books from Changes to PDN List

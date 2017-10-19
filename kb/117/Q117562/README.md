@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117562: PC Ext: IMPORT.EXE Autocreate Fails if EXTERNAL.EXE Running"
-permalink: kb/117/Q117562/
+permalink: /kb/117/Q117562/
 ---
 
 ## Q117562: PC Ext: IMPORT.EXE Autocreate Fails if EXTERNAL.EXE Running

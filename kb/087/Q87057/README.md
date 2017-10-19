@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87057: MCI: How Mail Gets from Downstream Postoffice to Gateway"
-permalink: kb/087/Q87057/
+permalink: /kb/087/Q87057/
 ---
 
 ## Q87057: MCI: How Mail Gets from Downstream Postoffice to Gateway

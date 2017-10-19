@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190791: STATUS_CANT_WAIT Returned from an NTCreateFile Call"
-permalink: kb/190/Q190791/
+permalink: /kb/190/Q190791/
 ---
 
 ## Q190791: STATUS_CANT_WAIT Returned from an NTCreateFile Call

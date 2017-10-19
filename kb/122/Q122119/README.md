@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122119: Differences Between Schedule+ for Workgroups &amp; Retail Version"
-permalink: kb/122/Q122119/
+permalink: /kb/122/Q122119/
 ---
 
 ## Q122119: Differences Between Schedule+ for Workgroups &amp; Retail Version

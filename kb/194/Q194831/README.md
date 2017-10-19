@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194831: SP4 Cluster Shares Must Be Reset to Recognize Added Subdirectori"
-permalink: kb/194/Q194831/
+permalink: /kb/194/Q194831/
 ---
 
 ## Q194831: SP4 Cluster Shares Must Be Reset to Recognize Added Subdirectori

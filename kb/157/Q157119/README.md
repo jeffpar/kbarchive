@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157119: WD97: Pictures Visible Even When Picture Placeholders Selected"
-permalink: kb/157/Q157119/
+permalink: /kb/157/Q157119/
 ---
 
 ## Q157119: WD97: Pictures Visible Even When Picture Placeholders Selected

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255019: XCON: MIXER Maps SMTP Addr. Even w. Global Address List Entry"
-permalink: kb/255/Q255019/
+permalink: /kb/255/Q255019/
 ---
 
 ## Q255019: XCON: MIXER Maps SMTP Addr. Even w. Global Address List Entry

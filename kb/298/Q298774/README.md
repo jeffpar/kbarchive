@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298774: How to Troubleshoot Modem Problems in Windows Dial-up Networking"
-permalink: kb/298/Q298774/
+permalink: /kb/298/Q298774/
 ---
 
 ## Q298774: How to Troubleshoot Modem Problems in Windows Dial-up Networking

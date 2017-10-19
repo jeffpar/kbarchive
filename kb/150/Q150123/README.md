@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150123: Migrated Schedule+ 1.0 Users Are Prompted for Password"
-permalink: kb/150/Q150123/
+permalink: /kb/150/Q150123/
 ---
 
 ## Q150123: Migrated Schedule+ 1.0 Users Are Prompted for Password

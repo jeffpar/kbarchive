@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233969: SSIEnableCmdDirective Is Set to FALSE by Default"
-permalink: kb/233/Q233969/
+permalink: /kb/233/Q233969/
 ---
 
 ## Q233969: SSIEnableCmdDirective Is Set to FALSE by Default

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304621: Read Access to Hidden Files on NTFS Partition Seems to Be Lost"
-permalink: kb/304/Q304621/
+permalink: /kb/304/Q304621/
 ---
 
 ## Q304621: Read Access to Hidden Files on NTFS Partition Seems to Be Lost

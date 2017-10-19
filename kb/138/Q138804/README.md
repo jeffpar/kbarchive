@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138804: Compatibility with S/36"
-permalink: kb/138/Q138804/
+permalink: /kb/138/Q138804/
 ---
 
 ## Q138804: Compatibility with S/36

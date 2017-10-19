@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91639: Shortcut Key for Startup MS-DOS-Based Application Doesn't Work"
-permalink: kb/091/Q91639/
+permalink: /kb/091/Q91639/
 ---
 
 ## Q91639: Shortcut Key for Startup MS-DOS-Based Application Doesn't Work

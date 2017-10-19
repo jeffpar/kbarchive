@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111063: Install Add-On Runs Setup for Other Programs"
-permalink: kb/111/Q111063/
+permalink: /kb/111/Q111063/
 ---
 
 ## Q111063: Install Add-On Runs Setup for Other Programs

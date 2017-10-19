@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150963: Err Msg: Event ID: 5513 Source: Netlogon"
-permalink: kb/150/Q150963/
+permalink: /kb/150/Q150963/
 ---
 
 ## Q150963: Err Msg: Event ID: 5513 Source: Netlogon

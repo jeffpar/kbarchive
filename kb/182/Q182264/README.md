@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182264: 5250 or 3270 Applet Will Hang When Started"
-permalink: kb/182/Q182264/
+permalink: /kb/182/Q182264/
 ---
 
 ## Q182264: 5250 or 3270 Applet Will Hang When Started

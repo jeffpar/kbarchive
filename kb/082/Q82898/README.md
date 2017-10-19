@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82898: PC OS2: Fragmented Split Bar When Resizing Window"
-permalink: kb/082/Q82898/
+permalink: /kb/082/Q82898/
 ---
 
 ## Q82898: PC OS2: Fragmented Split Bar When Resizing Window

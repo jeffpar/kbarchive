@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162331: Internet Explorer May Not Run with System Policies"
-permalink: kb/162/Q162331/
+permalink: /kb/162/Q162331/
 ---
 
 ## Q162331: Internet Explorer May Not Run with System Policies

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142291: BUG: Error '80080005' with 16-Bit Remote Automation Clients"
-permalink: kb/142/Q142291/
+permalink: /kb/142/Q142291/
 ---
 
 ## Q142291: BUG: Error '80080005' with 16-Bit Remote Automation Clients

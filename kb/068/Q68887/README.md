@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68887: ASD: Crashing into Blue Mountain Causes &quot;Splash&quot; Message"
-permalink: kb/068/Q68887/
+permalink: /kb/068/Q68887/
 ---
 
 ## Q68887: ASD: Crashing into Blue Mountain Causes &quot;Splash&quot; Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129577: Modem Defaults to Auto Answer Mode in Windows 95"
-permalink: kb/129/Q129577/
+permalink: /kb/129/Q129577/
 ---
 
 ## Q129577: Modem Defaults to Auto Answer Mode in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174677: INFO: VB5 CCE System Requirements Different Than Other Editions"
-permalink: kb/174/Q174677/
+permalink: /kb/174/Q174677/
 ---
 
 ## Q174677: INFO: VB5 CCE System Requirements Different Than Other Editions

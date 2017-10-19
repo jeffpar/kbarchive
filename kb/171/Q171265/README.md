@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171265: Unable to Uninstall Cluster Administrator Tool"
-permalink: kb/171/Q171265/
+permalink: /kb/171/Q171265/
 ---
 
 ## Q171265: Unable to Uninstall Cluster Administrator Tool

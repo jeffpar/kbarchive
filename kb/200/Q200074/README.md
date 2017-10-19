@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200074: FIX: Can't Get IBuildProject Interface from Developer Studio"
-permalink: kb/200/Q200074/
+permalink: /kb/200/Q200074/
 ---
 
 ## Q200074: FIX: Can't Get IBuildProject Interface from Developer Studio

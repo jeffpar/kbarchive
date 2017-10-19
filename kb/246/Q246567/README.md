@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246567: XADM: LDAP Searches on Home-MDB Not Returned Properly"
-permalink: kb/246/Q246567/
+permalink: /kb/246/Q246567/
 ---
 
 ## Q246567: XADM: LDAP Searches on Home-MDB Not Returned Properly

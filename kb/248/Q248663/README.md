@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248663: Booting Node may Prevent Running Node from Accessing Quorum Disk"
-permalink: kb/248/Q248663/
+permalink: /kb/248/Q248663/
 ---
 
 ## Q248663: Booting Node may Prevent Running Node from Accessing Quorum Disk

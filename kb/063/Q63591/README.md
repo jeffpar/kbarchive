@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63591: Duplicate Lines When Printing Help Files"
-permalink: kb/063/Q63591/
+permalink: /kb/063/Q63591/
 ---
 
 ## Q63591: Duplicate Lines When Printing Help Files

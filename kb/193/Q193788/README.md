@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193788: Devices with 64-bit Base Address Registers Do Not Function"
-permalink: kb/193/Q193788/
+permalink: /kb/193/Q193788/
 ---
 
 ## Q193788: Devices with 64-bit Base Address Registers Do Not Function

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174811: Authentication and Security for Internet Developers"
-permalink: kb/174/Q174811/
+permalink: /kb/174/Q174811/
 ---
 
 ## Q174811: Authentication and Security for Internet Developers

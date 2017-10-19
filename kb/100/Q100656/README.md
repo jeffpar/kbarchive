@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100656: &quot;Error Writing to LPT1:&quot; with Lexmark 4037/4039 Under WFWG"
-permalink: kb/100/Q100656/
+permalink: /kb/100/Q100656/
 ---
 
 ## Q100656: &quot;Error Writing to LPT1:&quot; with Lexmark 4037/4039 Under WFWG

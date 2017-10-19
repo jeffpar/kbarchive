@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161272: HOWTO: Make a Typelib (.TLB) File for ActiveX Components"
-permalink: kb/161/Q161272/
+permalink: /kb/161/Q161272/
 ---
 
 ## Q161272: HOWTO: Make a Typelib (.TLB) File for ActiveX Components

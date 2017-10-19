@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184103: XCON: MTA Converts General Text BP15 Attachments"
-permalink: kb/184/Q184103/
+permalink: /kb/184/Q184103/
 ---
 
 ## Q184103: XCON: MTA Converts General Text BP15 Attachments

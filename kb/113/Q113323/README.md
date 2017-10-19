@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113323: PPT: Shortcut Keys for Superscript and Subscript Text"
-permalink: kb/113/Q113323/
+permalink: /kb/113/Q113323/
 ---
 
 ## Q113323: PPT: Shortcut Keys for Superscript and Subscript Text

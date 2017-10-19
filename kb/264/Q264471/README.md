@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264471: SAMPLE: PageHeap1.exe Finds Heap Corruption and Memory Errors"
-permalink: kb/264/Q264471/
+permalink: /kb/264/Q264471/
 ---
 
 ## Q264471: SAMPLE: PageHeap1.exe Finds Heap Corruption and Memory Errors

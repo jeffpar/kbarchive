@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121037: MAC Encarta 1994: README Contents"
-permalink: kb/121/Q121037/
+permalink: /kb/121/Q121037/
 ---
 
 ## Q121037: MAC Encarta 1994: README Contents

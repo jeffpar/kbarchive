@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131415: Multimedia Composer Titles May Stop Responding on Exit"
-permalink: kb/131/Q131415/
+permalink: /kb/131/Q131415/
 ---
 
 ## Q131415: Multimedia Composer Titles May Stop Responding on Exit

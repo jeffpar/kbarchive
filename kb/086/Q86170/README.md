@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86170: Previous Connections List in the WRK 3.1 May Be Empty"
-permalink: kb/086/Q86170/
+permalink: /kb/086/Q86170/
 ---
 
 ## Q86170: Previous Connections List in the WRK 3.1 May Be Empty

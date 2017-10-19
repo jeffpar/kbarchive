@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87212: PROFS: How to Check If Mail Is Queued for the Gateway"
-permalink: kb/087/Q87212/
+permalink: /kb/087/Q87212/
 ---
 
 ## Q87212: PROFS: How to Check If Mail Is Queued for the Gateway

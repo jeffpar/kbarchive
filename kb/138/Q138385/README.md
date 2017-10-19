@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138385: INFO: Visual SourceSafe Shortcut Keys"
-permalink: kb/138/Q138385/
+permalink: /kb/138/Q138385/
 ---
 
 ## Q138385: INFO: Visual SourceSafe Shortcut Keys

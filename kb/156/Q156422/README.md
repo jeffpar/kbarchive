@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156422: INFO: Internet Control Pack Is Not Supported by Microsoft"
-permalink: kb/156/Q156422/
+permalink: /kb/156/Q156422/
 ---
 
 ## Q156422: INFO: Internet Control Pack Is Not Supported by Microsoft

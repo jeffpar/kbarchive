@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174165: XADM: Directory Replication Error 1224 After Replacing Server"
-permalink: kb/174/Q174165/
+permalink: /kb/174/Q174165/
 ---
 
 ## Q174165: XADM: Directory Replication Error 1224 After Replacing Server

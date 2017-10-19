@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196448: Print Screen Fails When Pasting into Paint"
-permalink: kb/196/Q196448/
+permalink: /kb/196/Q196448/
 ---
 
 ## Q196448: Print Screen Fails When Pasting into Paint

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86329: PC Win: Header Displayed in Message Body"
-permalink: kb/086/Q86329/
+permalink: /kb/086/Q86329/
 ---
 
 ## Q86329: PC Win: Header Displayed in Message Body

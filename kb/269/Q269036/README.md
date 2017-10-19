@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269036: Windows Services for UNIX 2.0 Beta Version Is Not Uninstalled"
-permalink: kb/269/Q269036/
+permalink: /kb/269/Q269036/
 ---
 
 ## Q269036: Windows Services for UNIX 2.0 Beta Version Is Not Uninstalled

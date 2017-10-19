@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300416: Netscape Navigator Browsers Display a &quot;404 Page Not Found&quot; Error"
-permalink: kb/300/Q300416/
+permalink: /kb/300/Q300416/
 ---
 
 ## Q300416: Netscape Navigator Browsers Display a &quot;404 Page Not Found&quot; Error

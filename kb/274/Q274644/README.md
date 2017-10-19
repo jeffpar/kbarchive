@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274644: Address book is unavailable to Jaws users"
-permalink: kb/274/Q274644/
+permalink: /kb/274/Q274644/
 ---
 
 ## Q274644: Address book is unavailable to Jaws users

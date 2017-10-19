@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122799: Err Msg: Unable to Find Seed Router w/COPS LTI Appletalk NIC"
-permalink: kb/122/Q122799/
+permalink: /kb/122/Q122799/
 ---
 
 ## Q122799: Err Msg: Unable to Find Seed Router w/COPS LTI Appletalk NIC

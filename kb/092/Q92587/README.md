@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92587: Standard Mode Boot Process for Windows for Workgroups"
-permalink: kb/092/Q92587/
+permalink: /kb/092/Q92587/
 ---
 
 ## Q92587: Standard Mode Boot Process for Windows for Workgroups

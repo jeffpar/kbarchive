@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194294: HOWTO: Add Toolbars and Tooltips to ActiveX Controls"
-permalink: kb/194/Q194294/
+permalink: /kb/194/Q194294/
 ---
 
 ## Q194294: HOWTO: Add Toolbars and Tooltips to ActiveX Controls

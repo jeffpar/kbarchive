@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197851: User May Have Two Passwords After Migration from LAN Manager"
-permalink: kb/197/Q197851/
+permalink: /kb/197/Q197851/
 ---
 
 ## Q197851: User May Have Two Passwords After Migration from LAN Manager

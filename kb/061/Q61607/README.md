@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61607: PWB Error U1355: Bad Command or File Name"
-permalink: kb/061/Q61607/
+permalink: /kb/061/Q61607/
 ---
 
 ## Q61607: PWB Error U1355: Bad Command or File Name

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148252: Bookshelf 94: Minimum System Requirements"
-permalink: kb/148/Q148252/
+permalink: /kb/148/Q148252/
 ---
 
 ## Q148252: Bookshelf 94: Minimum System Requirements

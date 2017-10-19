@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100410: Defrag: Error Writing Cluster nnn,nnn in CVF (But CVF Is OK)"
-permalink: kb/100/Q100410/
+permalink: /kb/100/Q100410/
 ---
 
 ## Q100410: Defrag: Error Writing Cluster nnn,nnn in CVF (But CVF Is OK)

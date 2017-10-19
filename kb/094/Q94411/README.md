@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94411: MemMaker Doesn't Optimize Batch Files in AUTOEXEC.BAT"
-permalink: kb/094/Q94411/
+permalink: /kb/094/Q94411/
 ---
 
 ## Q94411: MemMaker Doesn't Optimize Batch Files in AUTOEXEC.BAT

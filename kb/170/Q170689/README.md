@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170689: Help Author Kit Incompatible With Microsoft Word 97"
-permalink: kb/170/Q170689/
+permalink: /kb/170/Q170689/
 ---
 
 ## Q170689: Help Author Kit Incompatible With Microsoft Word 97

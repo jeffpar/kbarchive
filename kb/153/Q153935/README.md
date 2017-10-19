@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153935: Install May Fail for Programs Using REGEDIT4 on Windows NT"
-permalink: kb/153/Q153935/
+permalink: /kb/153/Q153935/
 ---
 
 ## Q153935: Install May Fail for Programs Using REGEDIT4 on Windows NT

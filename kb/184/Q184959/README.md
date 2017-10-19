@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184959: Golf 98/99: Setup Does Not Finish if You Use PC Tools Desktop"
-permalink: kb/184/Q184959/
+permalink: /kb/184/Q184959/
 ---
 
 ## Q184959: Golf 98/99: Setup Does Not Finish if You Use PC Tools Desktop

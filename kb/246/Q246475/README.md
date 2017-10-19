@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246475: XCLN: Storage Limit Warning Is in Mixed Languages"
-permalink: kb/246/Q246475/
+permalink: /kb/246/Q246475/
 ---
 
 ## Q246475: XCLN: Storage Limit Warning Is in Mixed Languages

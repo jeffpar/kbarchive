@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178231: Bookshelf: Web Link Redirection Updates Internet Links"
-permalink: kb/178/Q178231/
+permalink: /kb/178/Q178231/
 ---
 
 ## Q178231: Bookshelf: Web Link Redirection Updates Internet Links

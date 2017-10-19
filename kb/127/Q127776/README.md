@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127776: Path Rules for FoxPro for Macintosh"
-permalink: kb/127/Q127776/
+permalink: /kb/127/Q127776/
 ---
 
 ## Q127776: Path Rules for FoxPro for Macintosh

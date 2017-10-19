@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216089: HOWTO: Back Up the NT Event Log in Visual Basic"
-permalink: kb/216/Q216089/
+permalink: /kb/216/Q216089/
 ---
 
 ## Q216089: HOWTO: Back Up the NT Event Log in Visual Basic

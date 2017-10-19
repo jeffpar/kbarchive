@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136651: Shutdown Hangs After &quot;Please Wait While...&quot; Screen"
-permalink: kb/136/Q136651/
+permalink: /kb/136/Q136651/
 ---
 
 ## Q136651: Shutdown Hangs After &quot;Please Wait While...&quot; Screen

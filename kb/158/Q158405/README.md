@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158405: PRB: Properties of a Class May Be Evaluated at Design Time"
-permalink: kb/158/Q158405/
+permalink: /kb/158/Q158405/
 ---
 
 ## Q158405: PRB: Properties of a Class May Be Evaluated at Design Time

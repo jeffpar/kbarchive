@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107574: Err Msg: Error Loading PROTMAN.DOS After Using SETUP /H"
-permalink: kb/107/Q107574/
+permalink: /kb/107/Q107574/
 ---
 
 ## Q107574: Err Msg: Error Loading PROTMAN.DOS After Using SETUP /H

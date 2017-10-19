@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135560: PPT7: Contents of Disks 1-12 (3.5&quot; disks)"
-permalink: kb/135/Q135560/
+permalink: /kb/135/Q135560/
 ---
 
 ## Q135560: PPT7: Contents of Disks 1-12 (3.5&quot; disks)

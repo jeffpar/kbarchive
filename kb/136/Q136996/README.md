@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136996: Advantages of Manual vs. Automatic DataEnvironment Behavior"
-permalink: kb/136/Q136996/
+permalink: /kb/136/Q136996/
 ---
 
 ## Q136996: Advantages of Manual vs. Automatic DataEnvironment Behavior

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156118: Marbles Trial Version: Overview, Setup, and Game Tips"
-permalink: kb/156/Q156118/
+permalink: /kb/156/Q156118/
 ---
 
 ## Q156118: Marbles Trial Version: Overview, Setup, and Game Tips

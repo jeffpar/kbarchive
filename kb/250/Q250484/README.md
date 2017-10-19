@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250484: How to Use the VIA Compact Utility in MMS"
-permalink: kb/250/Q250484/
+permalink: /kb/250/Q250484/
 ---
 
 ## Q250484: How to Use the VIA Compact Utility in MMS

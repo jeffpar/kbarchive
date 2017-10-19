@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163777: XFOR: How to set up Directory Replication over the IMC or IMS"
-permalink: kb/163/Q163777/
+permalink: /kb/163/Q163777/
 ---
 
 ## Q163777: XFOR: How to set up Directory Replication over the IMC or IMS

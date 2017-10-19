@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87040: SMTP: Configuration for Encapsulation"
-permalink: kb/087/Q87040/
+permalink: /kb/087/Q87040/
 ---
 
 ## Q87040: SMTP: Configuration for Encapsulation

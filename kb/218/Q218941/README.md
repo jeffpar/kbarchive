@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218941: Four-Digit Year Format for Short Date Style Regional Setting"
-permalink: kb/218/Q218941/
+permalink: /kb/218/Q218941/
 ---
 
 ## Q218941: Four-Digit Year Format for Short Date Style Regional Setting

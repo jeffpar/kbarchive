@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128962: PC WSPlus: Synchronizing Calendar Files for Remote Mail Users"
-permalink: kb/128/Q128962/
+permalink: /kb/128/Q128962/
 ---
 
 ## Q128962: PC WSPlus: Synchronizing Calendar Files for Remote Mail Users

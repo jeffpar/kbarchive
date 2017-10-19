@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121556: PRB: Breakpoints Won't Work - 12 Reasons Why"
-permalink: kb/121/Q121556/
+permalink: /kb/121/Q121556/
 ---
 
 ## Q121556: PRB: Breakpoints Won't Work - 12 Reasons Why

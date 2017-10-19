@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298123: Error Message For My Stocks: &quot;Sorry, we are unable to download t"
-permalink: kb/298/Q298123/
+permalink: /kb/298/Q298123/
 ---
 
 ## Q298123: Error Message For My Stocks: &quot;Sorry, we are unable to download t

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164629: Error Message: Default Printer Cannot Be Set"
-permalink: kb/164/Q164629/
+permalink: /kb/164/Q164629/
 ---
 
 ## Q164629: Error Message: Default Printer Cannot Be Set

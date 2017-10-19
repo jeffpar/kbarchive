@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67351: HP LaserJet III and IIID PostScript Cartridge Installation"
-permalink: kb/067/Q67351/
+permalink: /kb/067/Q67351/
 ---
 
 ## Q67351: HP LaserJet III and IIID PostScript Cartridge Installation

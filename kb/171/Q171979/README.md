@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171979: PRB: Accessing Property in Initialize Event Causes Infinite Loop"
-permalink: kb/171/Q171979/
+permalink: /kb/171/Q171979/
 ---
 
 ## Q171979: PRB: Accessing Property in Initialize Event Causes Infinite Loop

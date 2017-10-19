@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297379: Programs Can Revert to the Default Settings on Terminal Server"
-permalink: kb/297/Q297379/
+permalink: /kb/297/Q297379/
 ---
 
 ## Q297379: Programs Can Revert to the Default Settings on Terminal Server

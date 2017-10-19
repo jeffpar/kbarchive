@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151036: Mac Multimedia: Configuring HTTP Helper Application"
-permalink: kb/151/Q151036/
+permalink: /kb/151/Q151036/
 ---
 
 ## Q151036: Mac Multimedia: Configuring HTTP Helper Application

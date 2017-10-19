@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200294: BUG: Cannot Use LoadPicture() with Images Included in Project"
-permalink: kb/200/Q200294/
+permalink: /kb/200/Q200294/
 ---
 
 ## Q200294: BUG: Cannot Use LoadPicture() with Images Included in Project

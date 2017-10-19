@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248629: No WINS Reverse Lookup Using RFC2317 Classless In-Addr.arpa"
-permalink: kb/248/Q248629/
+permalink: /kb/248/Q248629/
 ---
 
 ## Q248629: No WINS Reverse Lookup Using RFC2317 Classless In-Addr.arpa

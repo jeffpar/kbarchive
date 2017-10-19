@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169889: XGEN: Help File for Mailbox Migration Tool Has Wrong Bitmap"
-permalink: kb/169/Q169889/
+permalink: /kb/169/Q169889/
 ---
 
 ## Q169889: XGEN: Help File for Mailbox Migration Tool Has Wrong Bitmap

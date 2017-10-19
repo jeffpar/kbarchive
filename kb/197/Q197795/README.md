@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197795: WD97: Go To &#92;Page Bookmark Selects Whole Document"
-permalink: kb/197/Q197795/
+permalink: /kb/197/Q197795/
 ---
 
 ## Q197795: WD97: Go To &#92;Page Bookmark Selects Whole Document

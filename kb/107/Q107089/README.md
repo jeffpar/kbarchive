@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107089: SMTP: Err Msg"
-permalink: kb/107/Q107089/
+permalink: /kb/107/Q107089/
 ---
 
 ## Q107089: SMTP: Err Msg

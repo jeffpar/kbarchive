@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135753: Implications of Using NULL in Data Validation Rules"
-permalink: kb/135/Q135753/
+permalink: /kb/135/Q135753/
 ---
 
 ## Q135753: Implications of Using NULL in Data Validation Rules

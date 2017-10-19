@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127772: Cannot Run Files Marked as Execute-Only on NetWare Server"
-permalink: kb/127/Q127772/
+permalink: /kb/127/Q127772/
 ---
 
 ## Q127772: Cannot Run Files Marked as Execute-Only on NetWare Server

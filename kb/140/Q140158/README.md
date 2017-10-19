@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140158: HOWTO: How to Place Static Text Labels Over Columns in a List Bo"
-permalink: kb/140/Q140158/
+permalink: /kb/140/Q140158/
 ---
 
 ## Q140158: HOWTO: How to Place Static Text Labels Over Columns in a List Bo

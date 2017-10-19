@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320401: Programming Microsoft Visual Basic .NET (Core Reference) Comment"
-permalink: kb/320/Q320401/
+permalink: /kb/320/Q320401/
 ---
 
 ## Q320401: Programming Microsoft Visual Basic .NET (Core Reference) Comment

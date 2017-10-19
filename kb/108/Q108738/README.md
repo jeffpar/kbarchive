@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108738: Browsing Non-Networked Computers Over RAS"
-permalink: kb/108/Q108738/
+permalink: /kb/108/Q108738/
 ---
 
 ## Q108738: Browsing Non-Networked Computers Over RAS

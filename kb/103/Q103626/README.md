@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103626: PC WSPlus: Libraries Do Not Function When Offline"
-permalink: kb/103/Q103626/
+permalink: /kb/103/Q103626/
 ---
 
 ## Q103626: PC WSPlus: Libraries Do Not Function When Offline

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169470: INFO: Frequently Asked Questions About ODBC Connection Pooling"
-permalink: kb/169/Q169470/
+permalink: /kb/169/Q169470/
 ---
 
 ## Q169470: INFO: Frequently Asked Questions About ODBC Connection Pooling

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88781: SMTP: How to Use the Import Utility"
-permalink: kb/088/Q88781/
+permalink: /kb/088/Q88781/
 ---
 
 ## Q88781: SMTP: How to Use the Import Utility

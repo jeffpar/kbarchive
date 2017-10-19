@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137972: How to Find Which Files Are Referenced as Visual FoxPro Starts"
-permalink: kb/137/Q137972/
+permalink: /kb/137/Q137972/
 ---
 
 ## Q137972: How to Find Which Files Are Referenced as Visual FoxPro Starts

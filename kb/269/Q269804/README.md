@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269804: Magic School Bus: Slow Performance with Network Installation"
-permalink: kb/269/Q269804/
+permalink: /kb/269/Q269804/
 ---
 
 ## Q269804: Magic School Bus: Slow Performance with Network Installation

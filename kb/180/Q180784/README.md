@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180784: Error Message: The File Does Not Exist"
-permalink: kb/180/Q180784/
+permalink: /kb/180/Q180784/
 ---
 
 ## Q180784: Error Message: The File Does Not Exist

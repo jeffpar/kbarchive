@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68677: ASD: Large Mountain Immediately Disappears"
-permalink: kb/068/Q68677/
+permalink: /kb/068/Q68677/
 ---
 
 ## Q68677: ASD: Large Mountain Immediately Disappears

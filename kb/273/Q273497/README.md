@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273497: Designing Secure Web-Based Applications for Windows 2000 Comment"
-permalink: kb/273/Q273497/
+permalink: /kb/273/Q273497/
 ---
 
 ## Q273497: Designing Secure Web-Based Applications for Windows 2000 Comment

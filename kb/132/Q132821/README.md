@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132821: Toshiba T4900 May Not Switch from LCD to External Monitor"
-permalink: kb/132/Q132821/
+permalink: /kb/132/Q132821/
 ---
 
 ## Q132821: Toshiba T4900 May Not Switch from LCD to External Monitor

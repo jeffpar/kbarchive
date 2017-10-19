@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169490: SNA Server Appears to Be Offline After MNGAGENT AV"
-permalink: kb/169/Q169490/
+permalink: /kb/169/Q169490/
 ---
 
 ## Q169490: SNA Server Appears to Be Offline After MNGAGENT AV

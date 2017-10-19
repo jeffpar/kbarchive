@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238838: XCON: No Longer Get Delivery Reports After Upgrade to 5.5 SP2"
-permalink: kb/238/Q238838/
+permalink: /kb/238/Q238838/
 ---
 
 ## Q238838: XCON: No Longer Get Delivery Reports After Upgrade to 5.5 SP2

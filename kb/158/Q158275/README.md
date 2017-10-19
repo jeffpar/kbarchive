@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158275: WFW Err Msg: There Is Not Enough Memory Available"
-permalink: kb/158/Q158275/
+permalink: /kb/158/Q158275/
 ---
 
 ## Q158275: WFW Err Msg: There Is Not Enough Memory Available

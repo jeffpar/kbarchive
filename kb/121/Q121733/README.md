@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q121733: PC Ext: Err: [012] This Corrupt Message Cannot Be Delivered..."
-permalink: kb/121/Q121733/
+title: "Q121733: PC Ext: Err: &#91;012&#93; This Corrupt Message Cannot Be Delivered..."
+permalink: /kb/121/Q121733/
 ---
 
-## Q121733: PC Ext: Err: [012] This Corrupt Message Cannot Be Delivered...
+## Q121733: PC Ext: Err: &#91;012&#93; This Corrupt Message Cannot Be Delivered...
 
 	Article: Q121733
 	Product(s): Microsoft Mail For PC Networks

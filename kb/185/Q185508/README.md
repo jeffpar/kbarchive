@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185508: Error Message: Service Pack Setup Error"
-permalink: kb/185/Q185508/
+permalink: /kb/185/Q185508/
 ---
 
 ## Q185508: Error Message: Service Pack Setup Error

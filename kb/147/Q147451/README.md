@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147451: Limit on Number of Macintosh Shares You Can Create"
-permalink: kb/147/Q147451/
+permalink: /kb/147/Q147451/
 ---
 
 ## Q147451: Limit on Number of Macintosh Shares You Can Create

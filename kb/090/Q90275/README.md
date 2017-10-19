@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90275: Network Printing in Windows for Workgroups"
-permalink: kb/090/Q90275/
+permalink: /kb/090/Q90275/
 ---
 
 ## Q90275: Network Printing in Windows for Workgroups

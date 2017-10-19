@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183236: SMS: Can't Delete Systems Jobs That Are in a Pending State"
-permalink: kb/183/Q183236/
+permalink: /kb/183/Q183236/
 ---
 
 ## Q183236: SMS: Can't Delete Systems Jobs That Are in a Pending State

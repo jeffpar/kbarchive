@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193367: FIX: Access Violation in MSVBVM50 When Passing a Variant Array"
-permalink: kb/193/Q193367/
+permalink: /kb/193/Q193367/
 ---
 
 ## Q193367: FIX: Access Violation in MSVBVM50 When Passing a Variant Array

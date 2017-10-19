@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87924: FIX: CodeView 4.0 Does Not Step Over Embedded Int 3"
-permalink: kb/087/Q87924/
+permalink: /kb/087/Q87924/
 ---
 
 ## Q87924: FIX: CodeView 4.0 Does Not Step Over Embedded Int 3

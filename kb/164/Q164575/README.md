@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164575: Application Exception in SNA Server Using APPC Sync Level 2"
-permalink: kb/164/Q164575/
+permalink: /kb/164/Q164575/
 ---
 
 ## Q164575: Application Exception in SNA Server Using APPC Sync Level 2

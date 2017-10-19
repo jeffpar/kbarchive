@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186258: XFOR: NDR on Message from Outlook via Microsoft Mail Connector"
-permalink: kb/186/Q186258/
+permalink: /kb/186/Q186258/
 ---
 
 ## Q186258: XFOR: NDR on Message from Outlook via Microsoft Mail Connector

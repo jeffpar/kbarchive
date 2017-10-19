@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179796: XWEB: Setup Error Installing Exchange 5.5 OWA Components"
-permalink: kb/179/Q179796/
+permalink: /kb/179/Q179796/
 ---
 
 ## Q179796: XWEB: Setup Error Installing Exchange 5.5 OWA Components

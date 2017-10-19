@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175421: Hellbender: Err Msg: Bad Model"
-permalink: kb/175/Q175421/
+permalink: /kb/175/Q175421/
 ---
 
 ## Q175421: Hellbender: Err Msg: Bad Model

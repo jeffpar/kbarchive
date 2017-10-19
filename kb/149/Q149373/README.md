@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149373: XCLN: New Profile Defaults to Emptying Deleted Items folder"
-permalink: kb/149/Q149373/
+permalink: /kb/149/Q149373/
 ---
 
 ## Q149373: XCLN: New Profile Defaults to Emptying Deleted Items folder

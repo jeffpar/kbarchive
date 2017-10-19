@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120888: FIX: Assertion Fails When Use RFX_Text() w/ SQL_VARCHAR Column"
-permalink: kb/120/Q120888/
+permalink: /kb/120/Q120888/
 ---
 
 ## Q120888: FIX: Assertion Fails When Use RFX_Text() w/ SQL_VARCHAR Column

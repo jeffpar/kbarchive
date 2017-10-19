@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163627: XADM: How to Defrag an EDB File on a Non-Exchange Server"
-permalink: kb/163/Q163627/
+permalink: /kb/163/Q163627/
 ---
 
 ## Q163627: XADM: How to Defrag an EDB File on a Non-Exchange Server

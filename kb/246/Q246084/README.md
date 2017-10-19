@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246084: Interpreting DrWtsn32.log File to Identify Program Crash Data"
-permalink: kb/246/Q246084/
+permalink: /kb/246/Q246084/
 ---
 
 ## Q246084: Interpreting DrWtsn32.log File to Identify Program Crash Data

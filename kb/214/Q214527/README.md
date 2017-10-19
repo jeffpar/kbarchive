@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214527: FP97: Save Results Form Handler and Four-Digit Year Format"
-permalink: kb/214/Q214527/
+permalink: /kb/214/Q214527/
 ---
 
 ## Q214527: FP97: Save Results Form Handler and Four-Digit Year Format

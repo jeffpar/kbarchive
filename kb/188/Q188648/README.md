@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188648: XADM: Enabling Security on a 5.5 Exchange Server or Site"
-permalink: kb/188/Q188648/
+permalink: /kb/188/Q188648/
 ---
 
 ## Q188648: XADM: Enabling Security on a 5.5 Exchange Server or Site

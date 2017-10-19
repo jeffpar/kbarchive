@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175937: Cannot Start More Than 100 Services"
-permalink: kb/175/Q175937/
+permalink: /kb/175/Q175937/
 ---
 
 ## Q175937: Cannot Start More Than 100 Services

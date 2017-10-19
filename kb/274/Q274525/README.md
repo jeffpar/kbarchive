@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274525: MSN Companion sets up automatically to other member ID"
-permalink: kb/274/Q274525/
+permalink: /kb/274/Q274525/
 ---
 
 ## Q274525: MSN Companion sets up automatically to other member ID

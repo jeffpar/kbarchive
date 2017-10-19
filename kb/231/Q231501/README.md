@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231501: MapPoint 2000: Cannot Find Address Located on Numbered Street"
-permalink: kb/231/Q231501/
+permalink: /kb/231/Q231501/
 ---
 
 ## Q231501: MapPoint 2000: Cannot Find Address Located on Numbered Street

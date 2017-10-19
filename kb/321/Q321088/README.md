@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321088: PRB: &quot;Out of Memory&quot; Err Msg When You Archive or Restore 2 GB"
-permalink: kb/321/Q321088/
+permalink: /kb/321/Q321088/
 ---
 
 ## Q321088: PRB: &quot;Out of Memory&quot; Err Msg When You Archive or Restore 2 GB

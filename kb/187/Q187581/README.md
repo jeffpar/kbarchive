@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187581: XFOR: DBCS Attachment File Name Not Encoded If Using UUENCODE"
-permalink: kb/187/Q187581/
+permalink: /kb/187/Q187581/
 ---
 
 ## Q187581: XFOR: DBCS Attachment File Name Not Encoded If Using UUENCODE

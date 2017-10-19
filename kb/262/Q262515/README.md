@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262515: FIX: /GT Compiler Switch May Cause AV During Thread Switch"
-permalink: kb/262/Q262515/
+permalink: /kb/262/Q262515/
 ---
 
 ## Q262515: FIX: /GT Compiler Switch May Cause AV During Thread Switch

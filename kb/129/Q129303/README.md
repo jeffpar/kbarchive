@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129303: ADT/ODE: OLE Controls Appear Blank in Run-Time Applications"
-permalink: kb/129/Q129303/
+permalink: /kb/129/Q129303/
 ---
 
 ## Q129303: ADT/ODE: OLE Controls Appear Blank in Run-Time Applications

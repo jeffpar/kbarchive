@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153103: XCON: MTA Terminates Unexpectedly in Large Nested DL Expansion"
-permalink: kb/153/Q153103/
+permalink: /kb/153/Q153103/
 ---
 
 ## Q153103: XCON: MTA Terminates Unexpectedly in Large Nested DL Expansion

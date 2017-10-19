@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86378: PC WSPlus: Header Information Is Displayed in Message Body"
-permalink: kb/086/Q86378/
+permalink: /kb/086/Q86378/
 ---
 
 ## Q86378: PC WSPlus: Header Information Is Displayed in Message Body

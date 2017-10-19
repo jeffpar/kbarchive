@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271229: Streets &amp; Trips 2001 Err Msg: The IO Operation Has Been Aborted"
-permalink: kb/271/Q271229/
+permalink: /kb/271/Q271229/
 ---
 
 ## Q271229: Streets &amp; Trips 2001 Err Msg: The IO Operation Has Been Aborted

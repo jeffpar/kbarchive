@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275005: CFS2: List of New Features Included in Combat Flight Simulator 2"
-permalink: kb/275/Q275005/
+permalink: /kb/275/Q275005/
 ---
 
 ## Q275005: CFS2: List of New Features Included in Combat Flight Simulator 2

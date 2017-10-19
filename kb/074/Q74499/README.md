@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74499: Future Domain SCSI Controllers Require BIOS Upgrade"
-permalink: kb/074/Q74499/
+permalink: /kb/074/Q74499/
 ---
 
 ## Q74499: Future Domain SCSI Controllers Require BIOS Upgrade

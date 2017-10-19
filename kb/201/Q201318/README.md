@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201318: FIX: Registering ATL Server with Long Name Causes 0x80070002"
-permalink: kb/201/Q201318/
+permalink: /kb/201/Q201318/
 ---
 
 ## Q201318: FIX: Registering ATL Server with Long Name Causes 0x80070002

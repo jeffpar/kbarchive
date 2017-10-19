@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249871: BUG: Errors when Switching to a New MSDN Library Collection"
-permalink: kb/249/Q249871/
+permalink: /kb/249/Q249871/
 ---
 
 ## Q249871: BUG: Errors when Switching to a New MSDN Library Collection

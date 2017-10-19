@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271502: Golf 2001: Game Quits When You Return to the Game from Desktop"
-permalink: kb/271/Q271502/
+permalink: /kb/271/Q271502/
 ---
 
 ## Q271502: Golf 2001: Game Quits When You Return to the Game from Desktop

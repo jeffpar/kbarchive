@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129827: Use ByVal to Pass a Control as an Argument to a DLL or VBX"
-permalink: kb/129/Q129827/
+permalink: /kb/129/Q129827/
 ---
 
 ## Q129827: Use ByVal to Pass a Control as an Argument to a DLL or VBX

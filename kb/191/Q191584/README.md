@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191584: HOWTO: Determine When a 32-bit Process has Completed"
-permalink: kb/191/Q191584/
+permalink: /kb/191/Q191584/
 ---
 
 ## Q191584: HOWTO: Determine When a 32-bit Process has Completed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168326: HOWTO: Define the Display Size of an MFC ActiveX Control"
-permalink: kb/168/Q168326/
+permalink: /kb/168/Q168326/
 ---
 
 ## Q168326: HOWTO: Define the Display Size of an MFC ActiveX Control

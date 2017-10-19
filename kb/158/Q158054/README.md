@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158054: WD97: Page Number Field Not Marked As Deleted, Reinserted"
-permalink: kb/158/Q158054/
+permalink: /kb/158/Q158054/
 ---
 
 ## Q158054: WD97: Page Number Field Not Marked As Deleted, Reinserted

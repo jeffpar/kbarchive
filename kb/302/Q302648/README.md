@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302648: Settings UserName"
-permalink: kb/302/Q302648/
+permalink: /kb/302/Q302648/
 ---
 
 ## Q302648: Settings UserName

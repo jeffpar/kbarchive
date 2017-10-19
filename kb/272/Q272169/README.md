@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272169: Microsoft Reader: Cannot Read Text with ATI Rage Turbo Installed"
-permalink: kb/272/Q272169/
+permalink: /kb/272/Q272169/
 ---
 
 ## Q272169: Microsoft Reader: Cannot Read Text with ATI Rage Turbo Installed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259251: Host Security Unattended Install Sets Wrong Domain"
-permalink: kb/259/Q259251/
+permalink: /kb/259/Q259251/
 ---
 
 ## Q259251: Host Security Unattended Install Sets Wrong Domain

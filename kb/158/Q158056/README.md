@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158056: WD97: Quick View Doesn't Convert Word 97 Documents"
-permalink: kb/158/Q158056/
+permalink: /kb/158/Q158056/
 ---
 
 ## Q158056: WD97: Quick View Doesn't Convert Word 97 Documents

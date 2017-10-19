@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237175: FIX: VB IDE Improperly Changes the Registry of ATL Objects"
-permalink: kb/237/Q237175/
+permalink: /kb/237/Q237175/
 ---
 
 ## Q237175: FIX: VB IDE Improperly Changes the Registry of ATL Objects

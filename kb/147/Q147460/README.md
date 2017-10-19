@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147460: Unable to Change File Attributes From an OS/2 Client"
-permalink: kb/147/Q147460/
+permalink: /kb/147/Q147460/
 ---
 
 ## Q147460: Unable to Change File Attributes From an OS/2 Client

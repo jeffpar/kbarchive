@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131003: PRB: Setting DECIMALS to 15 or More Produces Incorrect Result"
-permalink: kb/131/Q131003/
+permalink: /kb/131/Q131003/
 ---
 
 ## Q131003: PRB: Setting DECIMALS to 15 or More Produces Incorrect Result

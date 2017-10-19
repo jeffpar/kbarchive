@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150982: PPT: Problems Unpacking Presentation on a Windows 3.x Computer"
-permalink: kb/150/Q150982/
+permalink: /kb/150/Q150982/
 ---
 
 ## Q150982: PPT: Problems Unpacking Presentation on a Windows 3.x Computer

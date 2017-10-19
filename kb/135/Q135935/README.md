@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135935: MS Plus! Setup Causes GP Fault When DriveSpace Is Left Running"
-permalink: kb/135/Q135935/
+permalink: /kb/135/Q135935/
 ---
 
 ## Q135935: MS Plus! Setup Causes GP Fault When DriveSpace Is Left Running

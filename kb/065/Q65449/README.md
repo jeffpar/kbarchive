@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65449: EMM386.SYS &quot;d=48&quot; Parameter Not Required"
-permalink: kb/065/Q65449/
+permalink: /kb/065/Q65449/
 ---
 
 ## Q65449: EMM386.SYS &quot;d=48&quot; Parameter Not Required

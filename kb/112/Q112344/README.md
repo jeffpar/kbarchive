@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112344: FIX: F6422 on Unformatted File Opened with ACCESS='APPEND'"
-permalink: kb/112/Q112344/
+permalink: /kb/112/Q112344/
 ---
 
 ## Q112344: FIX: F6422 on Unformatted File Opened with ACCESS='APPEND'

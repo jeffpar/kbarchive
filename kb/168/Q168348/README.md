@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168348: RasDial( ) Leaks Resources on WinNT 4.0"
-permalink: kb/168/Q168348/
+permalink: /kb/168/Q168348/
 ---
 
 ## Q168348: RasDial( ) Leaks Resources on WinNT 4.0

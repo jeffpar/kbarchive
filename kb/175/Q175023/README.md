@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175023: Renaming a Windows NT Domain Member"
-permalink: kb/175/Q175023/
+permalink: /kb/175/Q175023/
 ---
 
 ## Q175023: Renaming a Windows NT Domain Member

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240994: Roaming Profile Permissions Not Inherited on Server"
-permalink: kb/240/Q240994/
+permalink: /kb/240/Q240994/
 ---
 
 ## Q240994: Roaming Profile Permissions Not Inherited on Server

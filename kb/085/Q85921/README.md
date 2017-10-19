@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85921: Numonics 5860 Requires Xon/Xoff Flow Control"
-permalink: kb/085/Q85921/
+permalink: /kb/085/Q85921/
 ---
 
 ## Q85921: Numonics 5860 Requires Xon/Xoff Flow Control

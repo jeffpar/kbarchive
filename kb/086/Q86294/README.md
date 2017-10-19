@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86294: WININI.WRI: Microsoft Windows &amp; MS-DOS 5 Upgrade"
-permalink: kb/086/Q86294/
+permalink: /kb/086/Q86294/
 ---
 
 ## Q86294: WININI.WRI: Microsoft Windows &amp; MS-DOS 5 Upgrade

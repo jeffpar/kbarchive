@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127003: PC Ext: Mailbox Name Truncated in CALLIN.LOG"
-permalink: kb/127/Q127003/
+permalink: /kb/127/Q127003/
 ---
 
 ## Q127003: PC Ext: Mailbox Name Truncated in CALLIN.LOG

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254019: &quot;Unable to Create Symbolic Link&quot; Error When Installing Modem"
-permalink: kb/254/Q254019/
+permalink: /kb/254/Q254019/
 ---
 
 ## Q254019: &quot;Unable to Create Symbolic Link&quot; Error When Installing Modem

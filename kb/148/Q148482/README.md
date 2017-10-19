@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148482: Bookshelf 96-97: Missing Text with High Contrast Color Scheme"
-permalink: kb/148/Q148482/
+permalink: /kb/148/Q148482/
 ---
 
 ## Q148482: Bookshelf 96-97: Missing Text with High Contrast Color Scheme

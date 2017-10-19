@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126823: Writer/Artist: Setup on Novell Personal NetWare"
-permalink: kb/126/Q126823/
+permalink: /kb/126/Q126823/
 ---
 
 ## Q126823: Writer/Artist: Setup on Novell Personal NetWare

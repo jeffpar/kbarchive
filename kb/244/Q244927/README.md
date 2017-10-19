@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244927: Dr. Watson Error in CSRSS on Terminal Server Computer"
-permalink: kb/244/Q244927/
+permalink: /kb/244/Q244927/
 ---
 
 ## Q244927: Dr. Watson Error in CSRSS on Terminal Server Computer

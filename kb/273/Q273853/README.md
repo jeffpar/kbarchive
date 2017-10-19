@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273853: Installing SMS Admin Console on Secondary Site Impacts Hotfix"
-permalink: kb/273/Q273853/
+permalink: /kb/273/Q273853/
 ---
 
 ## Q273853: Installing SMS Admin Console on Secondary Site Impacts Hotfix

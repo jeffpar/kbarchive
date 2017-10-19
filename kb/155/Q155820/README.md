@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155820: HOWTO: Refresh an Offline View in Visual FoxPro"
-permalink: kb/155/Q155820/
+permalink: /kb/155/Q155820/
 ---
 
 ## Q155820: HOWTO: Refresh an Offline View in Visual FoxPro

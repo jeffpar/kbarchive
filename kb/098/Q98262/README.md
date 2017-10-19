@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98262: PC WFW: 3.0b Server Version Disk 3 [3.5, 720K]"
-permalink: kb/098/Q98262/
+title: "Q98262: PC WFW: 3.0b Server Version Disk 3 &#91;3.5, 720K&#93;"
+permalink: /kb/098/Q98262/
 ---
 
-## Q98262: PC WFW: 3.0b Server Version Disk 3 [3.5, 720K]
+## Q98262: PC WFW: 3.0b Server Version Disk 3 &#91;3.5, 720K&#93;
 
 	Article: Q98262
 	Product(s): Microsoft Mail For PC Networks

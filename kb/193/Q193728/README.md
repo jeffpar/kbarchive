@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193728: PRB: SET COLLATE TO Command Causes Inconsistent Comparisons"
-permalink: kb/193/Q193728/
+permalink: /kb/193/Q193728/
 ---
 
 ## Q193728: PRB: SET COLLATE TO Command Causes Inconsistent Comparisons

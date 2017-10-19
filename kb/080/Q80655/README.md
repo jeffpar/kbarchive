@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80655: Mac AL: Troubleshooting the AppleLink Gateway"
-permalink: kb/080/Q80655/
+permalink: /kb/080/Q80655/
 ---
 
 ## Q80655: Mac AL: Troubleshooting the AppleLink Gateway

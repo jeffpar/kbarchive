@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117711: General ODBC/Connectivity Kit Information"
-permalink: kb/117/Q117711/
+permalink: /kb/117/Q117711/
 ---
 
 ## Q117711: General ODBC/Connectivity Kit Information

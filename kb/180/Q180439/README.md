@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180439: Encarta 95 Err Msg: Cannot Open Encart95.stf"
-permalink: kb/180/Q180439/
+permalink: /kb/180/Q180439/
 ---
 
 ## Q180439: Encarta 95 Err Msg: Cannot Open Encart95.stf

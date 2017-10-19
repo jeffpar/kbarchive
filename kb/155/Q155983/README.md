@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155983: WD97: InsertBreak Statement Inserts a Carriage Return"
-permalink: kb/155/Q155983/
+permalink: /kb/155/Q155983/
 ---
 
 ## Q155983: WD97: InsertBreak Statement Inserts a Carriage Return

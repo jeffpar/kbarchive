@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165876: SMS: How to Restart a &quot;Deinstalled&quot; Primary Site"
-permalink: kb/165/Q165876/
+permalink: /kb/165/Q165876/
 ---
 
 ## Q165876: SMS: How to Restart a &quot;Deinstalled&quot; Primary Site

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170363: Mastering: ENTER Key Doesn't Turn On Closed Captioning in Video"
-permalink: kb/170/Q170363/
+permalink: /kb/170/Q170363/
 ---
 
 ## Q170363: Mastering: ENTER Key Doesn't Turn On Closed Captioning in Video

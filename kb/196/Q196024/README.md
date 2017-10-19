@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196024: BUG: Microsoft Date Time Picker Control Causes Exception Error"
-permalink: kb/196/Q196024/
+permalink: /kb/196/Q196024/
 ---
 
 ## Q196024: BUG: Microsoft Date Time Picker Control Causes Exception Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165678: Add Printer Wizard Cannot Find Needed Files on CD-ROM"
-permalink: kb/165/Q165678/
+permalink: /kb/165/Q165678/
 ---
 
 ## Q165678: Add Printer Wizard Cannot Find Needed Files on CD-ROM

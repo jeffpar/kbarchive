@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310703: Security Roll-Up Fix Q299444 May Cause Lexmark Printers to Hang"
-permalink: kb/310/Q310703/
+permalink: /kb/310/Q310703/
 ---
 
 ## Q310703: Security Roll-Up Fix Q299444 May Cause Lexmark Printers to Hang

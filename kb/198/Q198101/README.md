@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198101: Combat Flight Simulator: Textures Disappear or Computer Hangs"
-permalink: kb/198/Q198101/
+permalink: /kb/198/Q198101/
 ---
 
 ## Q198101: Combat Flight Simulator: Textures Disappear or Computer Hangs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127838: Unable to Install Drivers During GUI Portion of Setup"
-permalink: kb/127/Q127838/
+permalink: /kb/127/Q127838/
 ---
 
 ## Q127838: Unable to Install Drivers During GUI Portion of Setup

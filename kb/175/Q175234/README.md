@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175234: Setup USAGE Popup While Installing OEM Device Driver"
-permalink: kb/175/Q175234/
+permalink: /kb/175/Q175234/
 ---
 
 ## Q175234: Setup USAGE Popup While Installing OEM Device Driver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188775: WD97: Table Macro Returns Incorrect Result on Empty Cell"
-permalink: kb/188/Q188775/
+permalink: /kb/188/Q188775/
 ---
 
 ## Q188775: WD97: Table Macro Returns Incorrect Result on Empty Cell

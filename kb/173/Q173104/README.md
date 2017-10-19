@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173104: XCLN: No MAPI or Programmable APIs for Macintosh Client"
-permalink: kb/173/Q173104/
+permalink: /kb/173/Q173104/
 ---
 
 ## Q173104: XCLN: No MAPI or Programmable APIs for Macintosh Client

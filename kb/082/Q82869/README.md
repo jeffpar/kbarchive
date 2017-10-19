@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82869: GP Fault in HPPCL5A.DRV Using ATM and Carbon Copy for Windows"
-permalink: kb/082/Q82869/
+permalink: /kb/082/Q82869/
 ---
 
 ## Q82869: GP Fault in HPPCL5A.DRV Using ATM and Carbon Copy for Windows

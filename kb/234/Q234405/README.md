@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234405: XFOR: GroupWise API Gateway Expands All DLs to the To Box"
-permalink: kb/234/Q234405/
+permalink: /kb/234/Q234405/
 ---
 
 ## Q234405: XFOR: GroupWise API Gateway Expands All DLs to the To Box

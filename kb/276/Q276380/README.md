@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276380: BUG: ADO 2.0 Reference Cannot Be Saved in VB 6.0 With VS SP4"
-permalink: kb/276/Q276380/
+permalink: /kb/276/Q276380/
 ---
 
 ## Q276380: BUG: ADO 2.0 Reference Cannot Be Saved in VB 6.0 With VS SP4

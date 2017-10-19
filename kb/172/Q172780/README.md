@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172780: XWEB: Error Attaching File with Web Client"
-permalink: kb/172/Q172780/
+permalink: /kb/172/Q172780/
 ---
 
 ## Q172780: XWEB: Error Attaching File with Web Client

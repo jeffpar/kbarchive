@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95232: PRB: Video Card Causes GP Faults or Display Problems"
-permalink: kb/095/Q95232/
+permalink: /kb/095/Q95232/
 ---
 
 ## Q95232: PRB: Video Card Causes GP Faults or Display Problems

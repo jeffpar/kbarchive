@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137810: Maximum Number of Volumes a Macintosh Can Mount"
-permalink: kb/137/Q137810/
+permalink: /kb/137/Q137810/
 ---
 
 ## Q137810: Maximum Number of Volumes a Macintosh Can Mount

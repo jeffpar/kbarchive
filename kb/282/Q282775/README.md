@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282775: &quot;Error Writing Encrypted Data&quot; Error During IIS 5.0 Installation"
-permalink: kb/282/Q282775/
+permalink: /kb/282/Q282775/
 ---
 
 ## Q282775: &quot;Error Writing Encrypted Data&quot; Error During IIS 5.0 Installation

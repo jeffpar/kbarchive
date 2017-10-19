@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98768: Troubleshooting MS-DOS 6.x and EMM386.EXE"
-permalink: kb/098/Q98768/
+permalink: /kb/098/Q98768/
 ---
 
 ## Q98768: Troubleshooting MS-DOS 6.x and EMM386.EXE

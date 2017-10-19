@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221436: Combat FS: Point of View Does Not Return to Forward View"
-permalink: kb/221/Q221436/
+permalink: /kb/221/Q221436/
 ---
 
 ## Q221436: Combat FS: Point of View Does Not Return to Forward View

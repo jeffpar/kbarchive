@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169849: XWEB: MAPI Clients Message Status Not Automatically Updating"
-permalink: kb/169/Q169849/
+permalink: /kb/169/Q169849/
 ---
 
 ## Q169849: XWEB: MAPI Clients Message Status Not Automatically Updating

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143033: INFO: Comparing AbsolutePosition to PercentPosition in VB"
-permalink: kb/143/Q143033/
+permalink: /kb/143/Q143033/
 ---
 
 ## Q143033: INFO: Comparing AbsolutePosition to PercentPosition in VB

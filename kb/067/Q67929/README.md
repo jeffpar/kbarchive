@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67929: Rebooting from Within a Batch File"
-permalink: kb/067/Q67929/
+permalink: /kb/067/Q67929/
 ---
 
 ## Q67929: Rebooting from Within a Batch File

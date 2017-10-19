@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156107: Encarta 1996: Unable to Enter Yearbook Builder"
-permalink: kb/156/Q156107/
+permalink: /kb/156/Q156107/
 ---
 
 ## Q156107: Encarta 1996: Unable to Enter Yearbook Builder

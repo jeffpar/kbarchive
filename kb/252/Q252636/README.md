@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252636: Allegiance: Sphere Around Object Is Opaque"
-permalink: kb/252/Q252636/
+permalink: /kb/252/Q252636/
 ---
 
 ## Q252636: Allegiance: Sphere Around Object Is Opaque

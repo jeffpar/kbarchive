@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78906: PRINT SCREEN to Clipboard Appears as Black-and-White Image"
-permalink: kb/078/Q78906/
+permalink: /kb/078/Q78906/
 ---
 
 ## Q78906: PRINT SCREEN to Clipboard Appears as Black-and-White Image

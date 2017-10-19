@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74257: Shortcut Key Incorrectly Displayed in MS-DOS Shell"
-permalink: kb/074/Q74257/
+permalink: /kb/074/Q74257/
 ---
 
 ## Q74257: Shortcut Key Incorrectly Displayed in MS-DOS Shell

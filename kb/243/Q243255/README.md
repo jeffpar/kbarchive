@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243255: PRB: Scroll Box on ActiveX Image Control Causes Image Distortion"
-permalink: kb/243/Q243255/
+permalink: /kb/243/Q243255/
 ---
 
 ## Q243255: PRB: Scroll Box on ActiveX Image Control Causes Image Distortion

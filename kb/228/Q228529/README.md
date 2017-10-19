@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228529: Baseball 2000: Cannot Use Directional Pad to Control Game Action"
-permalink: kb/228/Q228529/
+permalink: /kb/228/Q228529/
 ---
 
 ## Q228529: Baseball 2000: Cannot Use Directional Pad to Control Game Action

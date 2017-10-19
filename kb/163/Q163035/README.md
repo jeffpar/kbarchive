@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163035: FIX: Printer Fonts Won't Stay Selected in VFP Report Designer"
-permalink: kb/163/Q163035/
+permalink: /kb/163/Q163035/
 ---
 
 ## Q163035: FIX: Printer Fonts Won't Stay Selected in VFP Report Designer

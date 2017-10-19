@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150271: Duplicate Name on the Network error message"
-permalink: kb/150/Q150271/
+permalink: /kb/150/Q150271/
 ---
 
 ## Q150271: Duplicate Name on the Network error message

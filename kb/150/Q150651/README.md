@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150651: Microsoft DirectX 1.0 Questions and Answers"
-permalink: kb/150/Q150651/
+permalink: /kb/150/Q150651/
 ---
 
 ## Q150651: Microsoft DirectX 1.0 Questions and Answers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232579: XCON: Wrong Encoding of Extended Characters"
-permalink: kb/232/Q232579/
+permalink: /kb/232/Q232579/
 ---
 
 ## Q232579: XCON: Wrong Encoding of Extended Characters

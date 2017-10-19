@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183160: Outdated Country or Region Names in PbAdmin"
-permalink: kb/183/Q183160/
+permalink: /kb/183/Q183160/
 ---
 
 ## Q183160: Outdated Country or Region Names in PbAdmin

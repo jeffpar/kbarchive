@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142908: Intel SatisFAXtion 400i Driver Support for Windows NT 3.51"
-permalink: kb/142/Q142908/
+permalink: /kb/142/Q142908/
 ---
 
 ## Q142908: Intel SatisFAXtion 400i Driver Support for Windows NT 3.51

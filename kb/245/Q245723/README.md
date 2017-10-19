@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245723: SMS: Simple Schedule Inventory Always Runs at Midnight"
-permalink: kb/245/Q245723/
+permalink: /kb/245/Q245723/
 ---
 
 ## Q245723: SMS: Simple Schedule Inventory Always Runs at Midnight

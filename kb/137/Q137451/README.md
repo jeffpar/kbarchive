@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137451: Sound Distortion with Multimedia Programs"
-permalink: kb/137/Q137451/
+permalink: /kb/137/Q137451/
 ---
 
 ## Q137451: Sound Distortion with Multimedia Programs

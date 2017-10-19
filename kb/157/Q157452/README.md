@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157452: MSB Earth: How to Use the Geotable"
-permalink: kb/157/Q157452/
+permalink: /kb/157/Q157452/
 ---
 
 ## Q157452: MSB Earth: How to Use the Geotable

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194321: XADM: Alt 0216 Character Incorrectly Translated in SMTP &amp; X.400"
-permalink: kb/194/Q194321/
+permalink: /kb/194/Q194321/
 ---
 
 ## Q194321: XADM: Alt 0216 Character Incorrectly Translated in SMTP &amp; X.400

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187654: HOWTO: Create a MAPI-Aware UserControl"
-permalink: kb/187/Q187654/
+permalink: /kb/187/Q187654/
 ---
 
 ## Q187654: HOWTO: Create a MAPI-Aware UserControl

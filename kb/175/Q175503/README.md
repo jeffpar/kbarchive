@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175503: HOWTO: Write a Dialog-based ActiveX Control Using ATL"
-permalink: kb/175/Q175503/
+permalink: /kb/175/Q175503/
 ---
 
 ## Q175503: HOWTO: Write a Dialog-based ActiveX Control Using ATL

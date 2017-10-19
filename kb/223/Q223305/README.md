@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223305: MSB Animals: Character Stops Talking and Program Hangs"
-permalink: kb/223/Q223305/
+permalink: /kb/223/Q223305/
 ---
 
 ## Q223305: MSB Animals: Character Stops Talking and Program Hangs

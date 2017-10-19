@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151231: XFOR: MSExchangeMSMI Session Error EventID 2376"
-permalink: kb/151/Q151231/
+permalink: /kb/151/Q151231/
 ---
 
 ## Q151231: XFOR: MSExchangeMSMI Session Error EventID 2376

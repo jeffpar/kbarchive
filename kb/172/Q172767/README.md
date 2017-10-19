@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172767: Migration Tool for NetWare Cannot Find Domain Controller"
-permalink: kb/172/Q172767/
+permalink: /kb/172/Q172767/
 ---
 
 ## Q172767: Migration Tool for NetWare Cannot Find Domain Controller

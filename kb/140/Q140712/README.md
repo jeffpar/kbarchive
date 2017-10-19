@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140712: How to Enable Promiscuous Mode for Madge Token Ring Adapter"
-permalink: kb/140/Q140712/
+permalink: /kb/140/Q140712/
 ---
 
 ## Q140712: How to Enable Promiscuous Mode for Madge Token Ring Adapter

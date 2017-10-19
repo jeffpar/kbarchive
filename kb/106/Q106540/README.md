@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106540: Scenes 1.0: Cannot Install the After Dark Module"
-permalink: kb/106/Q106540/
+permalink: /kb/106/Q106540/
 ---
 
 ## Q106540: Scenes 1.0: Cannot Install the After Dark Module

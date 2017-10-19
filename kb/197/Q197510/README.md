@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197510: FIX: Poor Performance with Forms Containing Many Objects"
-permalink: kb/197/Q197510/
+permalink: /kb/197/Q197510/
 ---
 
 ## Q197510: FIX: Poor Performance with Forms Containing Many Objects

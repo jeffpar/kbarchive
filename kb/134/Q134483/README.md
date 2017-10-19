@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134483: Briefcase Synchronization Copies Are Deleted By Default"
-permalink: kb/134/Q134483/
+permalink: /kb/134/Q134483/
 ---
 
 ## Q134483: Briefcase Synchronization Copies Are Deleted By Default

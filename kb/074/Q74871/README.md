@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74871: Leading Edge XT Setup Problem with MS-DOS"
-permalink: kb/074/Q74871/
+permalink: /kb/074/Q74871/
 ---
 
 ## Q74871: Leading Edge XT Setup Problem with MS-DOS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296912: XCCC:  Error Message Occurs  When You Access Logon.asp"
-permalink: kb/296/Q296912/
+permalink: /kb/296/Q296912/
 ---
 
 ## Q296912: XCCC:  Error Message Occurs  When You Access Logon.asp

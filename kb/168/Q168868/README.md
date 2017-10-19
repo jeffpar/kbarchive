@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168868: Puzzle Collection: Contents Description and System Requirements"
-permalink: kb/168/Q168868/
+permalink: /kb/168/Q168868/
 ---
 
 ## Q168868: Puzzle Collection: Contents Description and System Requirements

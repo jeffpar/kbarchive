@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242916: DCOM May Not Release All Cached Information from RPCSS"
-permalink: kb/242/Q242916/
+permalink: /kb/242/Q242916/
 ---
 
 ## Q242916: DCOM May Not Release All Cached Information from RPCSS

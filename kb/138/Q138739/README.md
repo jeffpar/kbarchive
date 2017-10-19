@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138739: Service Pack 2 Upgrade Causes Macintosh Volumes Not To Appear"
-permalink: kb/138/Q138739/
+permalink: /kb/138/Q138739/
 ---
 
 ## Q138739: Service Pack 2 Upgrade Causes Macintosh Volumes Not To Appear

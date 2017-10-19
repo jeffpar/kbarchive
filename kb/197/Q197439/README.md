@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197439: WD97: Replace Within Selection Continues to End of Document"
-permalink: kb/197/Q197439/
+permalink: /kb/197/Q197439/
 ---
 
 ## Q197439: WD97: Replace Within Selection Continues to End of Document

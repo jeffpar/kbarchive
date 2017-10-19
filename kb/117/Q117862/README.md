@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117862: MAC Encarta: Can't Copy Graphic in Millions of Colors"
-permalink: kb/117/Q117862/
+permalink: /kb/117/Q117862/
 ---
 
 ## Q117862: MAC Encarta: Can't Copy Graphic in Millions of Colors

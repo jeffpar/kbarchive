@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197849: WD97: How to Open the Last Document Edited When You Start Word"
-permalink: kb/197/Q197849/
+permalink: /kb/197/Q197849/
 ---
 
 ## Q197849: WD97: How to Open the Last Document Edited When You Start Word

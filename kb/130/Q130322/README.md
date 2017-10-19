@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130322: PC Gen: Information on Data Encryption Used in Mail"
-permalink: kb/130/Q130322/
+permalink: /kb/130/Q130322/
 ---
 
 ## Q130322: PC Gen: Information on Data Encryption Used in Mail

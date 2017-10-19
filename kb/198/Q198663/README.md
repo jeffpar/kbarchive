@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198663: BUG: Closesocket() on a Duplicated Socket Fails to Clean Up"
-permalink: kb/198/Q198663/
+permalink: /kb/198/Q198663/
 ---
 
 ## Q198663: BUG: Closesocket() on a Duplicated Socket Fails to Clean Up

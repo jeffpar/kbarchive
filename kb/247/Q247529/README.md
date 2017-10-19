@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247529: HOWTO: Associate a Custom Icon with a File Extension"
-permalink: kb/247/Q247529/
+permalink: /kb/247/Q247529/
 ---
 
 ## Q247529: HOWTO: Associate a Custom Icon with a File Extension

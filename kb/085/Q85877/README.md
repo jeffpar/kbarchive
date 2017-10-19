@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85877: FIX: MASM BELL and SNAP TSR Program Examples Incorrect"
-permalink: kb/085/Q85877/
+permalink: /kb/085/Q85877/
 ---
 
 ## Q85877: FIX: MASM BELL and SNAP TSR Program Examples Incorrect

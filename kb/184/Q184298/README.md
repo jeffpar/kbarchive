@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184298: PRB: Project Containing UserConnection &amp; WithEvents Crashes VB"
-permalink: kb/184/Q184298/
+permalink: /kb/184/Q184298/
 ---
 
 ## Q184298: PRB: Project Containing UserConnection &amp; WithEvents Crashes VB

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160199: XCLN: URLs Do Not Activate Using WordMail As Default Editor"
-permalink: kb/160/Q160199/
+permalink: /kb/160/Q160199/
 ---
 
 ## Q160199: XCLN: URLs Do Not Activate Using WordMail As Default Editor

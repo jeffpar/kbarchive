@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176249: Encarta: Sounds Distorted or Do Not Play Under Windows NT 4.0"
-permalink: kb/176/Q176249/
+permalink: /kb/176/Q176249/
 ---
 
 ## Q176249: Encarta: Sounds Distorted or Do Not Play Under Windows NT 4.0

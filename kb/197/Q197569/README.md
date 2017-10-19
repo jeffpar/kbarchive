@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197569: BUG: CRITICAL_SECTION is Defined Incorrectly in API Text Viewer"
-permalink: kb/197/Q197569/
+permalink: /kb/197/Q197569/
 ---
 
 ## Q197569: BUG: CRITICAL_SECTION is Defined Incorrectly in API Text Viewer

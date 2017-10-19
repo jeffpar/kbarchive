@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181132: Configuring Host Print Transform May Cause an Extra Form Feed"
-permalink: kb/181/Q181132/
+permalink: /kb/181/Q181132/
 ---
 
 ## Q181132: Configuring Host Print Transform May Cause an Extra Form Feed

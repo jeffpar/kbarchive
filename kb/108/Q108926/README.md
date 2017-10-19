@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108926: DdeCreateDataHandle() Memory Allocation Granularity DDEML"
-permalink: kb/108/Q108926/
+permalink: /kb/108/Q108926/
 ---
 
 ## Q108926: DdeCreateDataHandle() Memory Allocation Granularity DDEML

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245780: Access Violation in DNSAdmin.exe When Editing a Subnetted Revers"
-permalink: kb/245/Q245780/
+permalink: /kb/245/Q245780/
 ---
 
 ## Q245780: Access Violation in DNSAdmin.exe When Editing a Subnetted Revers

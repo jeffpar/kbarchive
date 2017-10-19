@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166491: Secure Batch Files Return Access Denied Error Message"
-permalink: kb/166/Q166491/
+permalink: /kb/166/Q166491/
 ---
 
 ## Q166491: Secure Batch Files Return Access Denied Error Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258551: BUG: Incorrect Error Message When You Install VSS 5.0 Y2K"
-permalink: kb/258/Q258551/
+permalink: /kb/258/Q258551/
 ---
 
 ## Q258551: BUG: Incorrect Error Message When You Install VSS 5.0 Y2K

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247444: Err Msg: This User or User Group Could Not Be Added to the SMS.."
-permalink: kb/247/Q247444/
+permalink: /kb/247/Q247444/
 ---
 
 ## Q247444: Err Msg: This User or User Group Could Not Be Added to the SMS..

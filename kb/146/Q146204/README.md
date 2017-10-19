@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146204: Sender Name Not Displayed in Messages in Sent Items Folder"
-permalink: kb/146/Q146204/
+permalink: /kb/146/Q146204/
 ---
 
 ## Q146204: Sender Name Not Displayed in Messages in Sent Items Folder

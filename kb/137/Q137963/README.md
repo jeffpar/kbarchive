@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137963: PRB: Disabled Grid Controls Can Be Selected with Mouse"
-permalink: kb/137/Q137963/
+permalink: /kb/137/Q137963/
 ---
 
 ## Q137963: PRB: Disabled Grid Controls Can Be Selected with Mouse

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67078: Different Warnings Appear Using Different Optimizations"
-permalink: kb/067/Q67078/
+permalink: /kb/067/Q67078/
 ---
 
 ## Q67078: Different Warnings Appear Using Different Optimizations

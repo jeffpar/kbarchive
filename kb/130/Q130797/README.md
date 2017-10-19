@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130797: Cannot Specify Different Default Logon Name for Second Client"
-permalink: kb/130/Q130797/
+permalink: /kb/130/Q130797/
 ---
 
 ## Q130797: Cannot Specify Different Default Logon Name for Second Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89168: Windows Err Msg: Drivers Require an Updated Version..."
-permalink: kb/089/Q89168/
+permalink: /kb/089/Q89168/
 ---
 
 ## Q89168: Windows Err Msg: Drivers Require an Updated Version...

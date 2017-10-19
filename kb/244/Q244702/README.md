@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244702: XFOR: Exchange Server 5.5 Post-SP3 Migration Fixes Available"
-permalink: kb/244/Q244702/
+permalink: /kb/244/Q244702/
 ---
 
 ## Q244702: XFOR: Exchange Server 5.5 Post-SP3 Migration Fixes Available

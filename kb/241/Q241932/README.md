@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241932: PRB: Run-Time Error 13 While Running VB DHTML Applications"
-permalink: kb/241/Q241932/
+permalink: /kb/241/Q241932/
 ---
 
 ## Q241932: PRB: Run-Time Error 13 While Running VB DHTML Applications

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168577: XFOR: Err Msg: All Pipe Instances Are Busy"
-permalink: kb/168/Q168577/
+permalink: /kb/168/Q168577/
 ---
 
 ## Q168577: XFOR: Err Msg: All Pipe Instances Are Busy

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62525: Mac Wkst: Can't Check Spelling of Mail Messages"
-permalink: kb/062/Q62525/
+permalink: /kb/062/Q62525/
 ---
 
 ## Q62525: Mac Wkst: Can't Check Spelling of Mail Messages

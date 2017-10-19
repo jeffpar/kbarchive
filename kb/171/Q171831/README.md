@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171831: FIX: IObjectSafety Implemented in Toolbar and CmDialog Controls"
-permalink: kb/171/Q171831/
+permalink: /kb/171/Q171831/
 ---
 
 ## Q171831: FIX: IObjectSafety Implemented in Toolbar and CmDialog Controls

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266442: XCLN: Mail Stops Flowing from MS Mail Connector to Exchange Ser"
-permalink: kb/266/Q266442/
+permalink: /kb/266/Q266442/
 ---
 
 ## Q266442: XCLN: Mail Stops Flowing from MS Mail Connector to Exchange Ser

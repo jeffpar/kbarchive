@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123172: BUG: INCLUDE File Is Not Scanned Correctly"
-permalink: kb/123/Q123172/
+permalink: /kb/123/Q123172/
 ---
 
 ## Q123172: BUG: INCLUDE File Is Not Scanned Correctly

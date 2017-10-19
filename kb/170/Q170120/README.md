@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170120: FP: Authors Cannot Log on to Virtual Servers on Multihomed IIS"
-permalink: kb/170/Q170120/
+permalink: /kb/170/Q170120/
 ---
 
 ## Q170120: FP: Authors Cannot Log on to Virtual Servers on Multihomed IIS

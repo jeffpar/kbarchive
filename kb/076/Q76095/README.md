@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76095: CONN: -N or /N Allows Use of Different .INI Filename"
-permalink: kb/076/Q76095/
+permalink: /kb/076/Q76095/
 ---
 
 ## Q76095: CONN: -N or /N Allows Use of Different .INI Filename

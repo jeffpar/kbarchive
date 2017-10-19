@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236944: Write Protect Error Occurs After Program Is Run from Floppy Disk"
-permalink: kb/236/Q236944/
+permalink: /kb/236/Q236944/
 ---
 
 ## Q236944: Write Protect Error Occurs After Program Is Run from Floppy Disk

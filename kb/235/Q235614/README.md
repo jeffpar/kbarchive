@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235614: Windows NT 4.0 SP6 Includes Fixes for Stress-Induced Issues"
-permalink: kb/235/Q235614/
+permalink: /kb/235/Q235614/
 ---
 
 ## Q235614: Windows NT 4.0 SP6 Includes Fixes for Stress-Induced Issues

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184956: Problems Deleting Files under Internet Information Server"
-permalink: kb/184/Q184956/
+permalink: /kb/184/Q184956/
 ---
 
 ## Q184956: Problems Deleting Files under Internet Information Server

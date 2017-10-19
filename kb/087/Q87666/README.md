@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87666: PRB: Changing Default Drive in FoxBASE+ Fox Central"
-permalink: kb/087/Q87666/
+permalink: /kb/087/Q87666/
 ---
 
 ## Q87666: PRB: Changing Default Drive in FoxBASE+ Fox Central

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125799: FIX: C2443 Using Structure Member Operand in _asm Block"
-permalink: kb/125/Q125799/
+permalink: /kb/125/Q125799/
 ---
 
 ## Q125799: FIX: C2443 Using Structure Member Operand in _asm Block

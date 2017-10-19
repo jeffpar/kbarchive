@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105888: WD97: How to Merge Conditional Number of Records to Same Page"
-permalink: kb/105/Q105888/
+permalink: /kb/105/Q105888/
 ---
 
 ## Q105888: WD97: How to Merge Conditional Number of Records to Same Page

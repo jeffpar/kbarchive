@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172191: Desktop Themes Crashes When JPEG Filter is Used"
-permalink: kb/172/Q172191/
+permalink: /kb/172/Q172191/
 ---
 
 ## Q172191: Desktop Themes Crashes When JPEG Filter is Used

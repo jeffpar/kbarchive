@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267995: XCLN: Outlook 8.03 Cannot Connect to Exchange Server 5.5"
-permalink: kb/267/Q267995/
+permalink: /kb/267/Q267995/
 ---
 
 ## Q267995: XCLN: Outlook 8.03 Cannot Connect to Exchange Server 5.5

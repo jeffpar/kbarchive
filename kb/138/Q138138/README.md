@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138138: INFO: Late, ID, Early Binding Types Possible in VB for Apps"
-permalink: kb/138/Q138138/
+permalink: /kb/138/Q138138/
 ---
 
 ## Q138138: INFO: Late, ID, Early Binding Types Possible in VB for Apps

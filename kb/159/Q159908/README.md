@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159908: &quot;Net print&quot; Command May Print One Print Job as Two"
-permalink: kb/159/Q159908/
+permalink: /kb/159/Q159908/
 ---
 
 ## Q159908: &quot;Net print&quot; Command May Print One Print Job as Two

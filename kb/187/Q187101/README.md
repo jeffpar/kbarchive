@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187101: Client Can Change System Startup Properties"
-permalink: kb/187/Q187101/
+permalink: /kb/187/Q187101/
 ---
 
 ## Q187101: Client Can Change System Startup Properties

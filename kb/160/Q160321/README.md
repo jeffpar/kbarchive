@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160321: DOC: User Supplied RASAdmin.dll Callbacks Must Use _stdcall"
-permalink: kb/160/Q160321/
+permalink: /kb/160/Q160321/
 ---
 
 ## Q160321: DOC: User Supplied RASAdmin.dll Callbacks Must Use _stdcall

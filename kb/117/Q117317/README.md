@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117317: Client Shutdown Causes Ghosted TCP/IP Connection"
-permalink: kb/117/Q117317/
+permalink: /kb/117/Q117317/
 ---
 
 ## Q117317: Client Shutdown Causes Ghosted TCP/IP Connection

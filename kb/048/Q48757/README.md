@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48757: Cannot See Other Player's Smoke in Multiplayer Mode"
-permalink: kb/048/Q48757/
+permalink: /kb/048/Q48757/
 ---
 
 ## Q48757: Cannot See Other Player's Smoke in Multiplayer Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167368: WD97: &quot;Reset My Tips&quot; Doesn't Work as Expected"
-permalink: kb/167/Q167368/
+permalink: /kb/167/Q167368/
 ---
 
 ## Q167368: WD97: &quot;Reset My Tips&quot; Doesn't Work as Expected

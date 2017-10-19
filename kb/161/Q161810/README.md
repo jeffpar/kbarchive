@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161810: WD97: Font MRU List Not Retained After You Quit Word"
-permalink: kb/161/Q161810/
+permalink: /kb/161/Q161810/
 ---
 
 ## Q161810: WD97: Font MRU List Not Retained After You Quit Word

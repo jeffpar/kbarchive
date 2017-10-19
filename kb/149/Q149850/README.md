@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149850: Platform Field in .SCX and .VCX Contains the String WINDOWS"
-permalink: kb/149/Q149850/
+permalink: /kb/149/Q149850/
 ---
 
 ## Q149850: Platform Field in .SCX and .VCX Contains the String WINDOWS

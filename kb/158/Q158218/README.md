@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158218: INFO: Support Options for Visual SourceSafe"
-permalink: kb/158/Q158218/
+permalink: /kb/158/Q158218/
 ---
 
 ## Q158218: INFO: Support Options for Visual SourceSafe

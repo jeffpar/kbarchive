@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76247: HOWTO: Use TOOLHELP to Determine Free System Resources"
-permalink: kb/076/Q76247/
+permalink: /kb/076/Q76247/
 ---
 
 ## Q76247: HOWTO: Use TOOLHELP to Determine Free System Resources

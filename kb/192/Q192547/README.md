@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192547: WINSADMIN Writes Invalid SP Time to Registry"
-permalink: kb/192/Q192547/
+permalink: /kb/192/Q192547/
 ---
 
 ## Q192547: WINSADMIN Writes Invalid SP Time to Registry

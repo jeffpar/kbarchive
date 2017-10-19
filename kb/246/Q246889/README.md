@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246889: XIMS: Exchange Server 5.5 Post-SP3 Internet Mail Service Fixes"
-permalink: kb/246/Q246889/
+permalink: /kb/246/Q246889/
 ---
 
 ## Q246889: XIMS: Exchange Server 5.5 Post-SP3 Internet Mail Service Fixes

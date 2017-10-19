@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249834: XADM: Mailbox Manager Fails When Installing on Cluster"
-permalink: kb/249/Q249834/
+permalink: /kb/249/Q249834/
 ---
 
 ## Q249834: XADM: Mailbox Manager Fails When Installing on Cluster

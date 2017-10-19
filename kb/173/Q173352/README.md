@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173352: INFO: Controls Shipped with Visual Basic 5.0"
-permalink: kb/173/Q173352/
+permalink: /kb/173/Q173352/
 ---
 
 ## Q173352: INFO: Controls Shipped with Visual Basic 5.0

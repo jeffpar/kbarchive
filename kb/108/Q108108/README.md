@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108108: NDW 2.2 Shows Newly Created Directories on Drives B and C"
-permalink: kb/108/Q108108/
+permalink: /kb/108/Q108108/
 ---
 
 ## Q108108: NDW 2.2 Shows Newly Created Directories on Drives B and C

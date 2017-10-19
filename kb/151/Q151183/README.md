@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151183: WWW Clients Using Basic Authentication May Fail with IIS 1.0"
-permalink: kb/151/Q151183/
+permalink: /kb/151/Q151183/
 ---
 
 ## Q151183: WWW Clients Using Basic Authentication May Fail with IIS 1.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139839: OpCode Values for x86 Based Computers"
-permalink: kb/139/Q139839/
+permalink: /kb/139/Q139839/
 ---
 
 ## Q139839: OpCode Values for x86 Based Computers

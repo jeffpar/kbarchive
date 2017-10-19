@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127160: Err Msg: System Service Database Locked"
-permalink: kb/127/Q127160/
+permalink: /kb/127/Q127160/
 ---
 
 ## Q127160: Err Msg: System Service Database Locked

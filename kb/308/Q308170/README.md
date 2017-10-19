@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308170: IIS Property Sheet Incorrect in IIS 5.1"
-permalink: kb/308/Q308170/
+permalink: /kb/308/Q308170/
 ---
 
 ## Q308170: IIS Property Sheet Incorrect in IIS 5.1

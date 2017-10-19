@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221238: XADM: OST Sync Fails with 80070005-508-00-324"
-permalink: kb/221/Q221238/
+permalink: /kb/221/Q221238/
 ---
 
 ## Q221238: XADM: OST Sync Fails with 80070005-508-00-324

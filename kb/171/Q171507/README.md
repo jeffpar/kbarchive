@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171507: FIX: VB GPFs When Selecting Align/Lefts from the Format Menu"
-permalink: kb/171/Q171507/
+permalink: /kb/171/Q171507/
 ---
 
 ## Q171507: FIX: VB GPFs When Selecting Align/Lefts from the Format Menu

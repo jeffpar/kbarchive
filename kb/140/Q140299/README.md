@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140299: FIX: Pressing ESC Key in Properties Window Causes Error"
-permalink: kb/140/Q140299/
+permalink: /kb/140/Q140299/
 ---
 
 ## Q140299: FIX: Pressing ESC Key in Properties Window Causes Error

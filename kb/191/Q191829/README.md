@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191829: DirectX: List of New Features Included in Microsoft DirectX 6.0"
-permalink: kb/191/Q191829/
+permalink: /kb/191/Q191829/
 ---
 
 ## Q191829: DirectX: List of New Features Included in Microsoft DirectX 6.0

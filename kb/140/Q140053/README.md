@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140053: QuickViewer Does Not Pass Through ALT+Print Screen"
-permalink: kb/140/Q140053/
+permalink: /kb/140/Q140053/
 ---
 
 ## Q140053: QuickViewer Does Not Pass Through ALT+Print Screen

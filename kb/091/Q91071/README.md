@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91071: PC WFW: Users Don't Appear in the GAL After Upgrade"
-permalink: kb/091/Q91071/
+permalink: /kb/091/Q91071/
 ---
 
 ## Q91071: PC WFW: Users Don't Appear in the GAL After Upgrade

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198194: WD97: Page Number Format Doesn't Carry to Other Sections"
-permalink: kb/198/Q198194/
+permalink: /kb/198/Q198194/
 ---
 
 ## Q198194: WD97: Page Number Format Doesn't Carry to Other Sections

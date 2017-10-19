@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214954: Software Metering Server Is Not Installed If LicMtr Share Exists"
-permalink: kb/214/Q214954/
+permalink: /kb/214/Q214954/
 ---
 
 ## Q214954: Software Metering Server Is Not Installed If LicMtr Share Exists

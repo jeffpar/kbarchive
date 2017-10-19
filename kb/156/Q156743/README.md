@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156743: INFO: STL Sample for the replace_if Function"
-permalink: kb/156/Q156743/
+permalink: /kb/156/Q156743/
 ---
 
 ## Q156743: INFO: STL Sample for the replace_if Function

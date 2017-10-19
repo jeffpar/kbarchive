@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168789: How to Play a Sound File at a Specified Time Using System Agent"
-permalink: kb/168/Q168789/
+permalink: /kb/168/Q168789/
 ---
 
 ## Q168789: How to Play a Sound File at a Specified Time Using System Agent

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104861: FORTRAN PowerStation README.TXT: Linker, Library, VWB"
-permalink: kb/104/Q104861/
+permalink: /kb/104/Q104861/
 ---
 
 ## Q104861: FORTRAN PowerStation README.TXT: Linker, Library, VWB

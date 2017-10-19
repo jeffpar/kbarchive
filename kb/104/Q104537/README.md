@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104537: Program Hangs with MS-DOS 6.0 but Not Earlier Versions or 6.2"
-permalink: kb/104/Q104537/
+permalink: /kb/104/Q104537/
 ---
 
 ## Q104537: Program Hangs with MS-DOS 6.0 but Not Earlier Versions or 6.2

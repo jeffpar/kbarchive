@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163399: Matrox Millennium PCI Video Card Causes STOP 0X0000000A"
-permalink: kb/163/Q163399/
+permalink: /kb/163/Q163399/
 ---
 
 ## Q163399: Matrox Millennium PCI Video Card Causes STOP 0X0000000A

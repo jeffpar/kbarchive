@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234591: Access 2000 At a Glance Comments and Corrections"
-permalink: kb/234/Q234591/
+permalink: /kb/234/Q234591/
 ---
 
 ## Q234591: Access 2000 At a Glance Comments and Corrections

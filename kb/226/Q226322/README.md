@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226322: How to Use RRAS DOD w/Third-Party Unnumbered Connections"
-permalink: kb/226/Q226322/
+permalink: /kb/226/Q226322/
 ---
 
 ## Q226322: How to Use RRAS DOD w/Third-Party Unnumbered Connections

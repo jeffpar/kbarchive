@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82808: Designer, Draw, and Charisma Not Found by Setup"
-permalink: kb/082/Q82808/
+permalink: /kb/082/Q82808/
 ---
 
 ## Q82808: Designer, Draw, and Charisma Not Found by Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163008: APPC Application Fails After SP1 Applied to SNA NT Client"
-permalink: kb/163/Q163008/
+permalink: /kb/163/Q163008/
 ---
 
 ## Q163008: APPC Application Fails After SP1 Applied to SNA NT Client

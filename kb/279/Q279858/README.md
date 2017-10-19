@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279858: MM2: Troubleshooting Game Controller Problems (Part 1)"
-permalink: kb/279/Q279858/
+permalink: /kb/279/Q279858/
 ---
 
 ## Q279858: MM2: Troubleshooting Game Controller Problems (Part 1)

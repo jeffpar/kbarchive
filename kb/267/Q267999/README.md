@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267999: FIX: FrontPage 98 and VisID Cannot Open Web Through SSL"
-permalink: kb/267/Q267999/
+permalink: /kb/267/Q267999/
 ---
 
 ## Q267999: FIX: FrontPage 98 and VisID Cannot Open Web Through SSL

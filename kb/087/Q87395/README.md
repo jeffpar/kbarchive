@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87395: PC DB: What the GROUP.GLB File Is Used For"
-permalink: kb/087/Q87395/
+permalink: /kb/087/Q87395/
 ---
 
 ## Q87395: PC DB: What the GROUP.GLB File Is Used For

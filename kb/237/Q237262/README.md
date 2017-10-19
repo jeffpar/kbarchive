@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237262: Encarta 2000: Introductory Audio Is Broken Up or Choppy"
-permalink: kb/237/Q237262/
+permalink: /kb/237/Q237262/
 ---
 
 ## Q237262: Encarta 2000: Introductory Audio Is Broken Up or Choppy

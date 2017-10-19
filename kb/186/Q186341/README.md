@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186341: Superscoping vs. Supernetting"
-permalink: kb/186/Q186341/
+permalink: /kb/186/Q186341/
 ---
 
 ## Q186341: Superscoping vs. Supernetting

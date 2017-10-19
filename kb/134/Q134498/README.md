@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134498: 101-Rom Error Message in Compaq Concerto Docking System"
-permalink: kb/134/Q134498/
+permalink: /kb/134/Q134498/
 ---
 
 ## Q134498: 101-Rom Error Message in Compaq Concerto Docking System

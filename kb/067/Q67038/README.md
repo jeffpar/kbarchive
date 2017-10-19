@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67038: INFO: TYPE Operator Expressions Not Allowed for Inline Assembly"
-permalink: kb/067/Q67038/
+permalink: /kb/067/Q67038/
 ---
 
 ## Q67038: INFO: TYPE Operator Expressions Not Allowed for Inline Assembly

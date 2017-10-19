@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49378: Label Command Does Whole Word Search, Not Text Search"
-permalink: kb/049/Q49378/
+permalink: /kb/049/Q49378/
 ---
 
 ## Q49378: Label Command Does Whole Word Search, Not Text Search

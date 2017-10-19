@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194429: TCPIP Timewaitstate May Not Remain in 2&#42;msl"
-permalink: kb/194/Q194429/
+permalink: /kb/194/Q194429/
 ---
 
 ## Q194429: TCPIP Timewaitstate May Not Remain in 2&#42;msl

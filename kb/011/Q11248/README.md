@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q11248: Windows: Nonpreemptive vs. Preemptive Scheduling"
-permalink: kb/011/Q11248/
+permalink: /kb/011/Q11248/
 ---
 
 ## Q11248: Windows: Nonpreemptive vs. Preemptive Scheduling

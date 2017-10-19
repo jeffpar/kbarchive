@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216340: XFOR: Cannot Install 5.5 SP2 Connectors after GroupWise"
-permalink: kb/216/Q216340/
+permalink: /kb/216/Q216340/
 ---
 
 ## Q216340: XFOR: Cannot Install 5.5 SP2 Connectors after GroupWise

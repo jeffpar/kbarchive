@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108933: Top 10 DDEML Support Issues"
-permalink: kb/108/Q108933/
+permalink: /kb/108/Q108933/
 ---
 
 ## Q108933: Top 10 DDEML Support Issues

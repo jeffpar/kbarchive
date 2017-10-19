@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197206: PRB: Slight Memory Leak Calling VFP COM DLL Repeatedly from VFP"
-permalink: kb/197/Q197206/
+permalink: /kb/197/Q197206/
 ---
 
 ## Q197206: PRB: Slight Memory Leak Calling VFP COM DLL Repeatedly from VFP

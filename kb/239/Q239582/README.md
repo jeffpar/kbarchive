@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239582: Reference Suite 2000: Setup Does Not Remove All Suite 99 Files"
-permalink: kb/239/Q239582/
+permalink: /kb/239/Q239582/
 ---
 
 ## Q239582: Reference Suite 2000: Setup Does Not Remove All Suite 99 Files

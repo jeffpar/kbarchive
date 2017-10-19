@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116039: Results of Double-Clicking FoxPro Files in Finder"
-permalink: kb/116/Q116039/
+permalink: /kb/116/Q116039/
 ---
 
 ## Q116039: Results of Double-Clicking FoxPro Files in Finder

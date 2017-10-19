@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178376: XCON: Local Address Space Replicated to Other Sites"
-permalink: kb/178/Q178376/
+permalink: /kb/178/Q178376/
 ---
 
 ## Q178376: XCON: Local Address Space Replicated to Other Sites

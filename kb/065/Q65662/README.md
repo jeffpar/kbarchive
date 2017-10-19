@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65662: WINDIR Environment Variable Set When Running Windows"
-permalink: kb/065/Q65662/
+permalink: /kb/065/Q65662/
 ---
 
 ## Q65662: WINDIR Environment Variable Set When Running Windows

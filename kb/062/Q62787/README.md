@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62787: PageMaker Versions Compatible with Windows 3.0 and 3.1"
-permalink: kb/062/Q62787/
+permalink: /kb/062/Q62787/
 ---
 
 ## Q62787: PageMaker Versions Compatible with Windows 3.0 and 3.1

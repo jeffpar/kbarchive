@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231315: How to Renew Network Bindings Using Setup.exe"
-permalink: kb/231/Q231315/
+permalink: /kb/231/Q231315/
 ---
 
 ## Q231315: How to Renew Network Bindings Using Setup.exe

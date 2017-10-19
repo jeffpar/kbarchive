@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149403: XADM: Logon failure During Exchange Server Installation"
-permalink: kb/149/Q149403/
+permalink: /kb/149/Q149403/
 ---
 
 ## Q149403: XADM: Logon failure During Exchange Server Installation

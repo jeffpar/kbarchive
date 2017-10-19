@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285642: BUG: Using Add-In to Change Name of UserControl May Cause AV"
-permalink: kb/285/Q285642/
+permalink: /kb/285/Q285642/
 ---
 
 ## Q285642: BUG: Using Add-In to Change Name of UserControl May Cause AV

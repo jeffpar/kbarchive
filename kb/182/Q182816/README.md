@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182816: WINS PriorityClassHigh Parameter Does Not Work After Restarting"
-permalink: kb/182/Q182816/
+permalink: /kb/182/Q182816/
 ---
 
 ## Q182816: WINS PriorityClassHigh Parameter Does Not Work After Restarting

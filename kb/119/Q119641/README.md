@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119641: Mac GW: Solution for Possible Multiple MS Mail GW"
-permalink: kb/119/Q119641/
+permalink: /kb/119/Q119641/
 ---
 
 ## Q119641: Mac GW: Solution for Possible Multiple MS Mail GW

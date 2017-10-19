@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186862: XWEB: OWA Logon Help TOC Label is Always &quot;Welcome&quot;"
-permalink: kb/186/Q186862/
+permalink: /kb/186/Q186862/
 ---
 
 ## Q186862: XWEB: OWA Logon Help TOC Label is Always &quot;Welcome&quot;

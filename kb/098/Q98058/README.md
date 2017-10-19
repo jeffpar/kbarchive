@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98058: BUG: Graphics Operations Consume GDI Memory"
-permalink: kb/098/Q98058/
+permalink: /kb/098/Q98058/
 ---
 
 ## Q98058: BUG: Graphics Operations Consume GDI Memory

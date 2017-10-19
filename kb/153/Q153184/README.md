@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153184: Bunyan and Koi: 32-bit Setup Doesn't Remove 16-bit Version"
-permalink: kb/153/Q153184/
+permalink: /kb/153/Q153184/
 ---
 
 ## Q153184: Bunyan and Koi: 32-bit Setup Doesn't Remove 16-bit Version

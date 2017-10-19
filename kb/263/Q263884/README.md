@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263884: SAMPLE: AdoChng.exe Changes Business Object Via ADO Recordset"
-permalink: kb/263/Q263884/
+permalink: /kb/263/Q263884/
 ---
 
 ## Q263884: SAMPLE: AdoChng.exe Changes Business Object Via ADO Recordset

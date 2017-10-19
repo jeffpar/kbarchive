@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74550: NET&#36;OS.EXE File from Novell Network Needs HIMEM /int15 Switch"
-permalink: kb/074/Q74550/
+permalink: /kb/074/Q74550/
 ---
 
 ## Q74550: NET&#36;OS.EXE File from Novell Network Needs HIMEM /int15 Switch

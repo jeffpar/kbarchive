@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290815: Microsoft Enterprise Learning Library: Step by Step Interactive"
-permalink: kb/290/Q290815/
+permalink: /kb/290/Q290815/
 ---
 
 ## Q290815: Microsoft Enterprise Learning Library: Step by Step Interactive

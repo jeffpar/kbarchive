@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194350: Encarta Virtual Globe 99: Incorrect URL in Bibliography"
-permalink: kb/194/Q194350/
+permalink: /kb/194/Q194350/
 ---
 
 ## Q194350: Encarta Virtual Globe 99: Incorrect URL in Bibliography

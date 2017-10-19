@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184211: NT Option Pack Fails to Install with Turkish Regional Settings"
-permalink: kb/184/Q184211/
+permalink: /kb/184/Q184211/
 ---
 
 ## Q184211: NT Option Pack Fails to Install with Turkish Regional Settings

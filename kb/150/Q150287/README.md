@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150287: FIX: Custom Build Commands Fail When Built from Command Line"
-permalink: kb/150/Q150287/
+permalink: /kb/150/Q150287/
 ---
 
 ## Q150287: FIX: Custom Build Commands Fail When Built from Command Line

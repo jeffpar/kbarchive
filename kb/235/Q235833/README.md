@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235833: SMS: Unable to View Status Messages Because of Message Aging"
-permalink: kb/235/Q235833/
+permalink: /kb/235/Q235833/
 ---
 
 ## Q235833: SMS: Unable to View Status Messages Because of Message Aging

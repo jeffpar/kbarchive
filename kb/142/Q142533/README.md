@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142533: 0x640 SAP Packets Increase Using Remote Registry Service"
-permalink: kb/142/Q142533/
+permalink: /kb/142/Q142533/
 ---
 
 ## Q142533: 0x640 SAP Packets Increase Using Remote Registry Service

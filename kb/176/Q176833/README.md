@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176833: FS98 Is Minimized After You Choose Context-Sensitive Help"
-permalink: kb/176/Q176833/
+permalink: /kb/176/Q176833/
 ---
 
 ## Q176833: FS98 Is Minimized After You Choose Context-Sensitive Help

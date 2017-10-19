@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108200: Requirements to Create External Library (.MLB) Files"
-permalink: kb/108/Q108200/
+permalink: /kb/108/Q108200/
 ---
 
 ## Q108200: Requirements to Create External Library (.MLB) Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273614: Cannot Change Cluster Share Resource Permissions"
-permalink: kb/273/Q273614/
+permalink: /kb/273/Q273614/
 ---
 
 ## Q273614: Cannot Change Cluster Share Resource Permissions

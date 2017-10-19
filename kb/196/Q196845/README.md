@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196845: WD97: Errors in Cross-References in Master Document or Sub Doc"
-permalink: kb/196/Q196845/
+permalink: /kb/196/Q196845/
 ---
 
 ## Q196845: WD97: Errors in Cross-References in Master Document or Sub Doc

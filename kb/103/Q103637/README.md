@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103637: Use EV_RINGTE for Modem Ring Detection"
-permalink: kb/103/Q103637/
+permalink: /kb/103/Q103637/
 ---
 
 ## Q103637: Use EV_RINGTE for Modem Ring Detection

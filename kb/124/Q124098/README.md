@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124098: Browse List Incomplete When Using RAS"
-permalink: kb/124/Q124098/
+permalink: /kb/124/Q124098/
 ---
 
 ## Q124098: Browse List Incomplete When Using RAS

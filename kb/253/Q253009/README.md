@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253009: Using CD-ROM During Ejection Sequence Causes Computer to Hang"
-permalink: kb/253/Q253009/
+permalink: /kb/253/Q253009/
 ---
 
 ## Q253009: Using CD-ROM During Ejection Sequence Causes Computer to Hang

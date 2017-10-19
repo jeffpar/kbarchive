@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132064: REGEDIT May Not Be Able to Import Registry with Large Keys"
-permalink: kb/132/Q132064/
+permalink: /kb/132/Q132064/
 ---
 
 ## Q132064: REGEDIT May Not Be Able to Import Registry with Large Keys

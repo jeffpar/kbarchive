@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70142: INFO: Function Pointers to Functions with Different Parameters"
-permalink: kb/070/Q70142/
+permalink: /kb/070/Q70142/
 ---
 
 ## Q70142: INFO: Function Pointers to Functions with Different Parameters

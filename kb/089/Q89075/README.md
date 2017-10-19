@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89075: Using IRMA Workstation for Windows with Windows 3.1"
-permalink: kb/089/Q89075/
+permalink: /kb/089/Q89075/
 ---
 
 ## Q89075: Using IRMA Workstation for Windows with Windows 3.1

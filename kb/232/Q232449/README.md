@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232449: Sample ASP Code May be Used to View Unsecured Server Files"
-permalink: kb/232/Q232449/
+permalink: /kb/232/Q232449/
 ---
 
 ## Q232449: Sample ASP Code May be Used to View Unsecured Server Files

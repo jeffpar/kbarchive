@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129130: Services for Macintosh and Preexisting Novell Appletalk Zones"
-permalink: kb/129/Q129130/
+permalink: /kb/129/Q129130/
 ---
 
 ## Q129130: Services for Macintosh and Preexisting Novell Appletalk Zones

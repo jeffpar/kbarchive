@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177450: WD97: Cannot Edit Graphic After Choosing Undo Picture"
-permalink: kb/177/Q177450/
+permalink: /kb/177/Q177450/
 ---
 
 ## Q177450: WD97: Cannot Edit Graphic After Choosing Undo Picture

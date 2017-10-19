@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273628: Midtown Madness 2: Cannot Play Multiplayer Games on the Internet"
-permalink: kb/273/Q273628/
+permalink: /kb/273/Q273628/
 ---
 
 ## Q273628: Midtown Madness 2: Cannot Play Multiplayer Games on the Internet

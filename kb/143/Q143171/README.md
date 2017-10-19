@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143171: HOWTO: Unattended Setup Does Not Offer Option for ERD"
-permalink: kb/143/Q143171/
+permalink: /kb/143/Q143171/
 ---
 
 ## Q143171: HOWTO: Unattended Setup Does Not Offer Option for ERD

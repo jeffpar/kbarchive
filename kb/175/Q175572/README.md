@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175572: XWEB: Outlook Web Access Fields Run Off the Browser Window"
-permalink: kb/175/Q175572/
+permalink: /kb/175/Q175572/
 ---
 
 ## Q175572: XWEB: Outlook Web Access Fields Run Off the Browser Window

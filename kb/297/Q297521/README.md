@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297521: DB2OLEDB Provider Overlaps Meta Data After Column 84"
-permalink: kb/297/Q297521/
+permalink: /kb/297/Q297521/
 ---
 
 ## Q297521: DB2OLEDB Provider Overlaps Meta Data After Column 84

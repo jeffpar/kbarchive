@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96960: MS-DOS Shell Clock Does Not Update When POWER Is Running"
-permalink: kb/096/Q96960/
+permalink: /kb/096/Q96960/
 ---
 
 ## Q96960: MS-DOS Shell Clock Does Not Update When POWER Is Running

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263641: XCON: Exchange Connector for Novell GroupWise Incorrectly Transl"
-permalink: kb/263/Q263641/
+permalink: /kb/263/Q263641/
 ---
 
 ## Q263641: XCON: Exchange Connector for Novell GroupWise Incorrectly Transl

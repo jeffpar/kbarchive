@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73008: Printing with Cardfile"
-permalink: kb/073/Q73008/
+permalink: /kb/073/Q73008/
 ---
 
 ## Q73008: Printing with Cardfile

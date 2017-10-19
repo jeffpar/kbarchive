@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162554: BUG: MODIFY COMMAND GETFILE() Creates a New File"
-permalink: kb/162/Q162554/
+permalink: /kb/162/Q162554/
 ---
 
 ## Q162554: BUG: MODIFY COMMAND GETFILE() Creates a New File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165101: HOWTO: Use a Windows 95/98/Me Computer as DCOM Server"
-permalink: kb/165/Q165101/
+permalink: /kb/165/Q165101/
 ---
 
 ## Q165101: HOWTO: Use a Windows 95/98/Me Computer as DCOM Server

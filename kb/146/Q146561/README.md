@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146561: XCLN: Controls Disappear From Forms Designer Window"
-permalink: kb/146/Q146561/
+permalink: /kb/146/Q146561/
 ---
 
 ## Q146561: XCLN: Controls Disappear From Forms Designer Window

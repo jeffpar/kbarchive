@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124858: Windows NT Program Manager Group and Program Item Limits"
-permalink: kb/124/Q124858/
+permalink: /kb/124/Q124858/
 ---
 
 ## Q124858: Windows NT Program Manager Group and Program Item Limits

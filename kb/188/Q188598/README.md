@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188598: Renewing Wins Client Registrations with NBTSTAT -RR"
-permalink: kb/188/Q188598/
+permalink: /kb/188/Q188598/
 ---
 
 ## Q188598: Renewing Wins Client Registrations with NBTSTAT -RR

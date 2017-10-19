@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199007: EVG99: Different Graph Scale Displayed When Statistic Map Opened"
-permalink: kb/199/Q199007/
+permalink: /kb/199/Q199007/
 ---
 
 ## Q199007: EVG99: Different Graph Scale Displayed When Statistic Map Opened

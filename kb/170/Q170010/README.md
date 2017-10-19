@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170010: XADM: After Upgrade User Can't Administer Exchange"
-permalink: kb/170/Q170010/
+permalink: /kb/170/Q170010/
 ---
 
 ## Q170010: XADM: After Upgrade User Can't Administer Exchange

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163267: Delay While Establishing SPX II Connection"
-permalink: kb/163/Q163267/
+permalink: /kb/163/Q163267/
 ---
 
 ## Q163267: Delay While Establishing SPX II Connection

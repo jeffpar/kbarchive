@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241591: HOWTO: Change the Cursor in a VBCE/eVB Application"
-permalink: kb/241/Q241591/
+permalink: /kb/241/Q241591/
 ---
 
 ## Q241591: HOWTO: Change the Cursor in a VBCE/eVB Application

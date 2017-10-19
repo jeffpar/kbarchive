@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135155: Unable to See MDI Window Frames in True Color Modes"
-permalink: kb/135/Q135155/
+permalink: /kb/135/Q135155/
 ---
 
 ## Q135155: Unable to See MDI Window Frames in True Color Modes

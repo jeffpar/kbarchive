@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122930: Kids: Program Icons and Groups Disappear from Program Manager"
-permalink: kb/122/Q122930/
+permalink: /kb/122/Q122930/
 ---
 
 ## Q122930: Kids: Program Icons and Groups Disappear from Program Manager

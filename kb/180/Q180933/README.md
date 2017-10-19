@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180933: Altering Screen Image For 5250 Applet Column Separator"
-permalink: kb/180/Q180933/
+permalink: /kb/180/Q180933/
 ---
 
 ## Q180933: Altering Screen Image For 5250 Applet Column Separator

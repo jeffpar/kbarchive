@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127058: Cannot Use Novell Network After Upgrading Compaq DOS"
-permalink: kb/127/Q127058/
+permalink: /kb/127/Q127058/
 ---
 
 ## Q127058: Cannot Use Novell Network After Upgrading Compaq DOS

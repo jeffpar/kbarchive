@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194896: XFOR: IMS Unexpectedly Ends with a Dr. Watson Error"
-permalink: kb/194/Q194896/
+permalink: /kb/194/Q194896/
 ---
 
 ## Q194896: XFOR: IMS Unexpectedly Ends with a Dr. Watson Error

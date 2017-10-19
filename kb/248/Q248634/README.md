@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248634: IPX Routing Does Not Succeed on a Windows NT 4.0 Network"
-permalink: kb/248/Q248634/
+permalink: /kb/248/Q248634/
 ---
 
 ## Q248634: IPX Routing Does Not Succeed on a Windows NT 4.0 Network

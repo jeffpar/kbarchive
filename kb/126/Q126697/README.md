@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126697: Err Msg: ERROR 3649: The IFSHLP.SYS Driver Is Not Installed"
-permalink: kb/126/Q126697/
+permalink: /kb/126/Q126697/
 ---
 
 ## Q126697: Err Msg: ERROR 3649: The IFSHLP.SYS Driver Is Not Installed

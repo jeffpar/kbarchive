@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185627: FIX:Component Gallery Delete Gives 'Unknown Member oFolder Error"
-permalink: kb/185/Q185627/
+permalink: /kb/185/Q185627/
 ---
 
 ## Q185627: FIX:Component Gallery Delete Gives 'Unknown Member oFolder Error

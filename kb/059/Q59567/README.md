@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59567: FIX: Incorrectly Generated A4100: Impure Memory Reference"
-permalink: kb/059/Q59567/
+permalink: /kb/059/Q59567/
 ---
 
 ## Q59567: FIX: Incorrectly Generated A4100: Impure Memory Reference

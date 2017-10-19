@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269811: MSB Setup Err Msg: There Isn't Enough Free Space on That Drive"
-permalink: kb/269/Q269811/
+permalink: /kb/269/Q269811/
 ---
 
 ## Q269811: MSB Setup Err Msg: There Isn't Enough Free Space on That Drive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273923: Crimson Skies: Cannot Start Game"
-permalink: kb/273/Q273923/
+permalink: /kb/273/Q273923/
 ---
 
 ## Q273923: Crimson Skies: Cannot Start Game

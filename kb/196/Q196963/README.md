@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196963: WD97: Equation Editor 2.0 Runs Instead of Math Type 3.0"
-permalink: kb/196/Q196963/
+permalink: /kb/196/Q196963/
 ---
 
 ## Q196963: WD97: Equation Editor 2.0 Runs Instead of Math Type 3.0

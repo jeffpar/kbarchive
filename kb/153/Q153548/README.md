@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153548: SCSI Drives Using FAT32 Should Be Repartitioned When Moved"
-permalink: kb/153/Q153548/
+permalink: /kb/153/Q153548/
 ---
 
 ## Q153548: SCSI Drives Using FAT32 Should Be Repartitioned When Moved

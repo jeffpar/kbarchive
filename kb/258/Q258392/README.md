@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258392: Baseball 2001: Cannot Select Hardware Mode on Gateway Computer"
-permalink: kb/258/Q258392/
+permalink: /kb/258/Q258392/
 ---
 
 ## Q258392: Baseball 2001: Cannot Select Hardware Mode on Gateway Computer

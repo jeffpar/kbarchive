@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244213: XADM: Configuring the Mailbox Manager to Exclude Message Classes"
-permalink: kb/244/Q244213/
+permalink: /kb/244/Q244213/
 ---
 
 ## Q244213: XADM: Configuring the Mailbox Manager to Exclude Message Classes

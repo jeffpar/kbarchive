@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84419: Multiple PIFs for Same MS-DOS Applications in Windows"
-permalink: kb/084/Q84419/
+permalink: /kb/084/Q84419/
 ---
 
 ## Q84419: Multiple PIFs for Same MS-DOS Applications in Windows

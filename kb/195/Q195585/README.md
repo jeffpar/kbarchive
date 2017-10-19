@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195585: PRB: &quot;SQL: Cannot Locate Table&quot; Message w/ Modify View Command"
-permalink: kb/195/Q195585/
+permalink: /kb/195/Q195585/
 ---
 
 ## Q195585: PRB: &quot;SQL: Cannot Locate Table&quot; Message w/ Modify View Command

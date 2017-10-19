@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165905: FIX: Activate Event of Page Not Triggered with Keyboard in VFP"
-permalink: kb/165/Q165905/
+permalink: /kb/165/Q165905/
 ---
 
 ## Q165905: FIX: Activate Event of Page Not Triggered with Keyboard in VFP

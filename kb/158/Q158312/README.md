@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158312: SMS: Hardware Inventory Stops Responding with Madge Token Ring"
-permalink: kb/158/Q158312/
+permalink: /kb/158/Q158312/
 ---
 
 ## Q158312: SMS: Hardware Inventory Stops Responding with Madge Token Ring

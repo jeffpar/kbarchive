@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200079: XADM: Event ID 2247 Directory Name Object Allocation Failed"
-permalink: kb/200/Q200079/
+permalink: /kb/200/Q200079/
 ---
 
 ## Q200079: XADM: Event ID 2247 Directory Name Object Allocation Failed

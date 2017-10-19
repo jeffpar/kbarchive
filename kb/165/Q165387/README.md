@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165387: Sharing Violation When Deleting a Folder"
-permalink: kb/165/Q165387/
+permalink: /kb/165/Q165387/
 ---
 
 ## Q165387: Sharing Violation When Deleting a Folder

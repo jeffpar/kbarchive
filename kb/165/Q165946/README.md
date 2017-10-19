@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165946: RasEnumEntries Return Incorrect Number of Phonebook Entries"
-permalink: kb/165/Q165946/
+permalink: /kb/165/Q165946/
 ---
 
 ## Q165946: RasEnumEntries Return Incorrect Number of Phonebook Entries

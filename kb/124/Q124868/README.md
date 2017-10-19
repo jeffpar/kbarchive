@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124868: Cinemania 1995: Display Requirements on Box Are Incorrect"
-permalink: kb/124/Q124868/
+permalink: /kb/124/Q124868/
 ---
 
 ## Q124868: Cinemania 1995: Display Requirements on Box Are Incorrect

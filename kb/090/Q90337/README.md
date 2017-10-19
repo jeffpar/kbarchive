@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90337: Where Windows for Workgroups Setup Places Network Files"
-permalink: kb/090/Q90337/
+permalink: /kb/090/Q90337/
 ---
 
 ## Q90337: Where Windows for Workgroups Setup Places Network Files

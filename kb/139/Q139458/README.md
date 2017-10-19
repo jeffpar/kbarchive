@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139458: FIX: Ambiguous C2966 Error with Nested Template Classes"
-permalink: kb/139/Q139458/
+permalink: /kb/139/Q139458/
 ---
 
 ## Q139458: FIX: Ambiguous C2966 Error with Nested Template Classes

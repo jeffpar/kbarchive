@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110128: PRB: &quot;Unrecognized Phrase/Keyword...&quot; with Macro Substitution"
-permalink: kb/110/Q110128/
+permalink: /kb/110/Q110128/
 ---
 
 ## Q110128: PRB: &quot;Unrecognized Phrase/Keyword...&quot; with Macro Substitution

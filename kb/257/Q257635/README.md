@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257635: FIX: DataGrid Loses Focus After You Cancel AddNew"
-permalink: kb/257/Q257635/
+permalink: /kb/257/Q257635/
 ---
 
 ## Q257635: FIX: DataGrid Loses Focus After You Cancel AddNew

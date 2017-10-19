@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119640: PC Adm: Incorrect Mailbags for SNADS and  PROFS"
-permalink: kb/119/Q119640/
+permalink: /kb/119/Q119640/
 ---
 
 ## Q119640: PC Adm: Incorrect Mailbags for SNADS and  PROFS

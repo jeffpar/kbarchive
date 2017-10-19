@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235515: FIX: Calling IDBInfo::GetKeywords() Causes AV w/ OLE DB Provider"
-permalink: kb/235/Q235515/
+permalink: /kb/235/Q235515/
 ---
 
 ## Q235515: FIX: Calling IDBInfo::GetKeywords() Causes AV w/ OLE DB Provider

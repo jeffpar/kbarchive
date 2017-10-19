@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102624: Setup Does Not Support Installing Multiple Mouse Drivers"
-permalink: kb/102/Q102624/
+permalink: /kb/102/Q102624/
 ---
 
 ## Q102624: Setup Does Not Support Installing Multiple Mouse Drivers

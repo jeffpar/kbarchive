@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165398: Profiles for Members of Guests Group Are Deleted"
-permalink: kb/165/Q165398/
+permalink: /kb/165/Q165398/
 ---
 
 ## Q165398: Profiles for Members of Guests Group Are Deleted

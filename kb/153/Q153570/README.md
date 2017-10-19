@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153570: How to Pass One OLE Control to Another"
-permalink: kb/153/Q153570/
+permalink: /kb/153/Q153570/
 ---
 
 ## Q153570: How to Pass One OLE Control to Another

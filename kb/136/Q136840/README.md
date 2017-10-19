@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136840: Clicking the Quickshelf Icon Runs the CTRL+C Macro"
-permalink: kb/136/Q136840/
+permalink: /kb/136/Q136840/
 ---
 
 ## Q136840: Clicking the Quickshelf Icon Runs the CTRL+C Macro

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135729: Kids: Screen Turns White or Computer Hangs When Playing Videos"
-permalink: kb/135/Q135729/
+permalink: /kb/135/Q135729/
 ---
 
 ## Q135729: Kids: Screen Turns White or Computer Hangs When Playing Videos

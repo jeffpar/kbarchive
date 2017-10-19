@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313943: Asheron's Call: You Cannot See the Dungeons or Monsters"
-permalink: kb/313/Q313943/
+permalink: /kb/313/Q313943/
 ---
 
 ## Q313943: Asheron's Call: You Cannot See the Dungeons or Monsters

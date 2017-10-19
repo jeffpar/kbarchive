@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233249: NET SEND &lt;MyComputer&gt; May Not Work with Disabled Network Adapter"
-permalink: kb/233/Q233249/
+permalink: /kb/233/Q233249/
 ---
 
 ## Q233249: NET SEND &lt;MyComputer&gt; May Not Work with Disabled Network Adapter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100954: MS-DOS 5.0 Components Not Included with OmniBook"
-permalink: kb/100/Q100954/
+permalink: /kb/100/Q100954/
 ---
 
 ## Q100954: MS-DOS 5.0 Components Not Included with OmniBook

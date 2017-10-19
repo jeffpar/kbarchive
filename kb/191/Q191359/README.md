@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191359: SMS: Win95 OpenGL Screen Saver May Cause Computer to Stop"
-permalink: kb/191/Q191359/
+permalink: /kb/191/Q191359/
 ---
 
 ## Q191359: SMS: Win95 OpenGL Screen Saver May Cause Computer to Stop

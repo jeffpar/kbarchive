@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137124: HOWTO: Create a PageFrame Parameterized View"
-permalink: kb/137/Q137124/
+permalink: /kb/137/Q137124/
 ---
 
 ## Q137124: HOWTO: Create a PageFrame Parameterized View

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274577: XADM: LDAP Client Stops Responding After Performing Search"
-permalink: kb/274/Q274577/
+permalink: /kb/274/Q274577/
 ---
 
 ## Q274577: XADM: LDAP Client Stops Responding After Performing Search

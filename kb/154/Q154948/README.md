@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154948: S3.sys Driver Does Not Work with Dell Optiplex"
-permalink: kb/154/Q154948/
+permalink: /kb/154/Q154948/
 ---
 
 ## Q154948: S3.sys Driver Does Not Work with Dell Optiplex

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150603: Doc Error: IIS Download Version Readme File Is Incorrect"
-permalink: kb/150/Q150603/
+permalink: /kb/150/Q150603/
 ---
 
 ## Q150603: Doc Error: IIS Download Version Readme File Is Incorrect

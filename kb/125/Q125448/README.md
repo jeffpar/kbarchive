@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125448: Application Setup Fails If No AUTOEXEC.BAT or CONFIG.SYS"
-permalink: kb/125/Q125448/
+permalink: /kb/125/Q125448/
 ---
 
 ## Q125448: Application Setup Fails If No AUTOEXEC.BAT or CONFIG.SYS

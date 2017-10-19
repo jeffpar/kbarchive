@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143007: PPT7: &quot;Not Enough Memory--See User's Guide&quot; Printing to HP 1200c"
-permalink: kb/143/Q143007/
+permalink: /kb/143/Q143007/
 ---
 
 ## Q143007: PPT7: &quot;Not Enough Memory--See User's Guide&quot; Printing to HP 1200c

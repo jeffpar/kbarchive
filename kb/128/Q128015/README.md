@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128015: Presario CDS633 Does Not Support 16- or 24-Bit Color Palette"
-permalink: kb/128/Q128015/
+permalink: /kb/128/Q128015/
 ---
 
 ## Q128015: Presario CDS633 Does Not Support 16- or 24-Bit Color Palette

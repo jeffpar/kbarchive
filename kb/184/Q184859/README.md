@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184859: German CIipbrd.exe Does Not Display Bitmap"
-permalink: kb/184/Q184859/
+permalink: /kb/184/Q184859/
 ---
 
 ## Q184859: German CIipbrd.exe Does Not Display Bitmap

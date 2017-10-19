@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260567: BUG: LNK2019 When Building For Pocket PC Emulation"
-permalink: kb/260/Q260567/
+permalink: /kb/260/Q260567/
 ---
 
 ## Q260567: BUG: LNK2019 When Building For Pocket PC Emulation

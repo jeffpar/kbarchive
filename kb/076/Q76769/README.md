@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76769: README.TXT: What If You Run Out of Memory?"
-permalink: kb/076/Q76769/
+permalink: /kb/076/Q76769/
 ---
 
 ## Q76769: README.TXT: What If You Run Out of Memory?

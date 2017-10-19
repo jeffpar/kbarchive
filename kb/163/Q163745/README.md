@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163745: Explanation of DNS Notify List &quot;Secondary Notification&quot; Behavior"
-permalink: kb/163/Q163745/
+permalink: /kb/163/Q163745/
 ---
 
 ## Q163745: Explanation of DNS Notify List &quot;Secondary Notification&quot; Behavior

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169666: XADM: POP3 Users may not Receive an Attachment if Part of DL"
-permalink: kb/169/Q169666/
+permalink: /kb/169/Q169666/
 ---
 
 ## Q169666: XADM: POP3 Users may not Receive an Attachment if Part of DL

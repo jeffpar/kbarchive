@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95575: How Windows Handles Bad Permanent Swap Files"
-permalink: kb/095/Q95575/
+permalink: /kb/095/Q95575/
 ---
 
 ## Q95575: How Windows Handles Bad Permanent Swap Files

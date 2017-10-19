@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94987: Golf Hangs Using 16-Bit MediaVision Sound Drivers"
-permalink: kb/094/Q94987/
+permalink: /kb/094/Q94987/
 ---
 
 ## Q94987: Golf Hangs Using 16-Bit MediaVision Sound Drivers

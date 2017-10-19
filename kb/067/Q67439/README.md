@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67439: DOCERR: MASM 5.1 Instructions Operand Size Documented Wrong"
-permalink: kb/067/Q67439/
+permalink: /kb/067/Q67439/
 ---
 
 ## Q67439: DOCERR: MASM 5.1 Instructions Operand Size Documented Wrong

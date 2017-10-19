@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171901: SMS: SNMP Filter Event Source Values Cannot Be Removed"
-permalink: kb/171/Q171901/
+permalink: /kb/171/Q171901/
 ---
 
 ## Q171901: SMS: SNMP Filter Event Source Values Cannot Be Removed

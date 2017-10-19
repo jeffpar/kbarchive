@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152255: PRB: Custom AppWizard Doesn't Initialize Custom Step Dialogs"
-permalink: kb/152/Q152255/
+permalink: /kb/152/Q152255/
 ---
 
 ## Q152255: PRB: Custom AppWizard Doesn't Initialize Custom Step Dialogs

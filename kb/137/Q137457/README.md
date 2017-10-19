@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137457: How to Move to the Next Column in a Grid When Using Check Box"
-permalink: kb/137/Q137457/
+permalink: /kb/137/Q137457/
 ---
 
 ## Q137457: How to Move to the Next Column in a Grid When Using Check Box

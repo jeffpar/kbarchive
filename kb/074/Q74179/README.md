@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74179: Disabling Grid Systems Isopoint Mouse on a Grid Laptop 1550SX"
-permalink: kb/074/Q74179/
+permalink: /kb/074/Q74179/
 ---
 
 ## Q74179: Disabling Grid Systems Isopoint Mouse on a Grid Laptop 1550SX

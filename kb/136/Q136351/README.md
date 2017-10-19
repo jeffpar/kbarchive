@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136351: CG: ClipArt Gallery Shows Extensions Even if They Are Hidden"
-permalink: kb/136/Q136351/
+permalink: /kb/136/Q136351/
 ---
 
 ## Q136351: CG: ClipArt Gallery Shows Extensions Even if They Are Hidden

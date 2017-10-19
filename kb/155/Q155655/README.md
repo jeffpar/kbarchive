@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155655: Monster Truck Madness: Game Hangs When CD Is Ejected"
-permalink: kb/155/Q155655/
+permalink: /kb/155/Q155655/
 ---
 
 ## Q155655: Monster Truck Madness: Game Hangs When CD Is Ejected

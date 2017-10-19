@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77935: PRB: Causes of Help Compiler &quot;Table Too Complex&quot; Warning"
-permalink: kb/077/Q77935/
+permalink: /kb/077/Q77935/
 ---
 
 ## Q77935: PRB: Causes of Help Compiler &quot;Table Too Complex&quot; Warning

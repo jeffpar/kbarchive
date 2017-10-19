@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241161: NBA Inside Drive 2000: Reflected Light Appears as White Patches"
-permalink: kb/241/Q241161/
+permalink: /kb/241/Q241161/
 ---
 
 ## Q241161: NBA Inside Drive 2000: Reflected Light Appears as White Patches

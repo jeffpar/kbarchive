@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215043: SMS: Inventory Reports Incorrect Clock Speed on 486 Cyrix Chips"
-permalink: kb/215/Q215043/
+permalink: /kb/215/Q215043/
 ---
 
 ## Q215043: SMS: Inventory Reports Incorrect Clock Speed on 486 Cyrix Chips

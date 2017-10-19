@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87214: PROFS: Why Is the Gateway Program Called HostDisp?"
-permalink: kb/087/Q87214/
+permalink: /kb/087/Q87214/
 ---
 
 ## Q87214: PROFS: Why Is the Gateway Program Called HostDisp?

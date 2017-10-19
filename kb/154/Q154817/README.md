@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154817: PRB: RDC Refresh Method Failure with Bound DBListbox"
-permalink: kb/154/Q154817/
+permalink: /kb/154/Q154817/
 ---
 
 ## Q154817: PRB: RDC Refresh Method Failure with Bound DBListbox

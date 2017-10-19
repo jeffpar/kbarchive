@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235169: Reducing SMS Accounts Required for Installation on Large Domains"
-permalink: kb/235/Q235169/
+permalink: /kb/235/Q235169/
 ---
 
 ## Q235169: Reducing SMS Accounts Required for Installation on Large Domains

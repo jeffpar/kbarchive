@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196628: How to Print a Folder Listing in Windows"
-permalink: kb/196/Q196628/
+permalink: /kb/196/Q196628/
 ---
 
 ## Q196628: How to Print a Folder Listing in Windows

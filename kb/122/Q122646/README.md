@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122646: Windows NT 3.5 Setup on AST Bravo LP466D Fails"
-permalink: kb/122/Q122646/
+permalink: /kb/122/Q122646/
 ---
 
 ## Q122646: Windows NT 3.5 Setup on AST Bravo LP466D Fails

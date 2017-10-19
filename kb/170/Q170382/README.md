@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170382: Files or Folders Not Deleted on Network Drive with DELTREE"
-permalink: kb/170/Q170382/
+permalink: /kb/170/Q170382/
 ---
 
 ## Q170382: Files or Folders Not Deleted on Network Drive with DELTREE

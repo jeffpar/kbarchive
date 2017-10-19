@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133106: FORTRAN PowerStation 32 QUICKWIN.TXT"
-permalink: kb/133/Q133106/
+permalink: /kb/133/Q133106/
 ---
 
 ## Q133106: FORTRAN PowerStation 32 QUICKWIN.TXT

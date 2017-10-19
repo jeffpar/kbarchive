@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266209: Network Time Protocols and the Timeserv.exe Utility File"
-permalink: kb/266/Q266209/
+permalink: /kb/266/Q266209/
 ---
 
 ## Q266209: Network Time Protocols and the Timeserv.exe Utility File

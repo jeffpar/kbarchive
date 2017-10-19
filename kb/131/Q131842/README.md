@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131842: Error Code Not Displayed When MAP Command Fails"
-permalink: kb/131/Q131842/
+permalink: /kb/131/Q131842/
 ---
 
 ## Q131842: Error Code Not Displayed When MAP Command Fails

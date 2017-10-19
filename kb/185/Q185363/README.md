@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185363: Close Combat: A Bridge Too Far Update Available"
-permalink: kb/185/Q185363/
+permalink: /kb/185/Q185363/
 ---
 
 ## Q185363: Close Combat: A Bridge Too Far Update Available

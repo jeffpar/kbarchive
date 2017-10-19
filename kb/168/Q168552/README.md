@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168552: Allowing WinNT Setup to Detect and Configure 3COM 3C589D"
-permalink: kb/168/Q168552/
+permalink: /kb/168/Q168552/
 ---
 
 ## Q168552: Allowing WinNT Setup to Detect and Configure 3COM 3C589D

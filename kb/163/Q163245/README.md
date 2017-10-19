@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163245: BUG: StatusBar Ctrl Does Not Show Size Grip in Top-Level Form"
-permalink: kb/163/Q163245/
+permalink: /kb/163/Q163245/
 ---
 
 ## Q163245: BUG: StatusBar Ctrl Does Not Show Size Grip in Top-Level Form

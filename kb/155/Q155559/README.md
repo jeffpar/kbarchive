@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155559: NWRDR Cannot Perform UNC Operations on NDS Server Objects"
-permalink: kb/155/Q155559/
+permalink: /kb/155/Q155559/
 ---
 
 ## Q155559: NWRDR Cannot Perform UNC Operations on NDS Server Objects

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215469: SMS: Support Options for Crystal Info (Reports)"
-permalink: kb/215/Q215469/
+permalink: /kb/215/Q215469/
 ---
 
 ## Q215469: SMS: Support Options for Crystal Info (Reports)

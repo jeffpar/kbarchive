@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179270: FIX: Warnings with RTTI and Automatic Precompiled Headers"
-permalink: kb/179/Q179270/
+permalink: /kb/179/Q179270/
 ---
 
 ## Q179270: FIX: Warnings with RTTI and Automatic Precompiled Headers

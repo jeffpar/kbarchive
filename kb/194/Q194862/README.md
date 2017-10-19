@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194862: PRB: &quot;QueryInterface:function does not take 1 parameters&quot; Error"
-permalink: kb/194/Q194862/
+permalink: /kb/194/Q194862/
 ---
 
 ## Q194862: PRB: &quot;QueryInterface:function does not take 1 parameters&quot; Error

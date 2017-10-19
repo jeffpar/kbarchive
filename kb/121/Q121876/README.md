@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121876: Reliable, Slow Links over WANs Using RAS"
-permalink: kb/121/Q121876/
+permalink: /kb/121/Q121876/
 ---
 
 ## Q121876: Reliable, Slow Links over WANs Using RAS

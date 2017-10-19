@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120223: Sending Messages from WinPopup to NWPOPUP in Windows 95"
-permalink: kb/120/Q120223/
+permalink: /kb/120/Q120223/
 ---
 
 ## Q120223: Sending Messages from WinPopup to NWPOPUP in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150737: Setting Primary and Secondary WINS Server Options"
-permalink: kb/150/Q150737/
+permalink: /kb/150/Q150737/
 ---
 
 ## Q150737: Setting Primary and Secondary WINS Server Options

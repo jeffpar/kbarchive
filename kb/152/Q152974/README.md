@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152974: How to Restore the Default Fonts in Windows 95"
-permalink: kb/152/Q152974/
+permalink: /kb/152/Q152974/
 ---
 
 ## Q152974: How to Restore the Default Fonts in Windows 95

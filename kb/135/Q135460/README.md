@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135460: PC Mac: Not Able to Print Contents of Inbox"
-permalink: kb/135/Q135460/
+permalink: /kb/135/Q135460/
 ---
 
 ## Q135460: PC Mac: Not Able to Print Contents of Inbox

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152948: XADM: IS Won't Stop and PerfMon Shows No Processing"
-permalink: kb/152/Q152948/
+permalink: /kb/152/Q152948/
 ---
 
 ## Q152948: XADM: IS Won't Stop and PerfMon Shows No Processing

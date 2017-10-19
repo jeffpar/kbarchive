@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121460: Common Object File Format (COFF)"
-permalink: kb/121/Q121460/
+permalink: /kb/121/Q121460/
 ---
 
 ## Q121460: Common Object File Format (COFF)

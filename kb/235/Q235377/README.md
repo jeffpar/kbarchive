@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235377: SMS: APM Cannot Run a Command Line That Contains a Space"
-permalink: kb/235/Q235377/
+permalink: /kb/235/Q235377/
 ---
 
 ## Q235377: SMS: APM Cannot Run a Command Line That Contains a Space

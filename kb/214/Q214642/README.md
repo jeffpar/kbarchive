@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214642: XADM: Savechanges() Fails with MAPI_E_NOT_FOUND Error When Savin"
-permalink: kb/214/Q214642/
+permalink: /kb/214/Q214642/
 ---
 
 ## Q214642: XADM: Savechanges() Fails with MAPI_E_NOT_FOUND Error When Savin

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274641: MSN Explorer Ceases To Function After MSN Messenger Is Reinstall"
-permalink: kb/274/Q274641/
+permalink: /kb/274/Q274641/
 ---
 
 ## Q274641: MSN Explorer Ceases To Function After MSN Messenger Is Reinstall

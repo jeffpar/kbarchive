@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216449: BUG: Example for User Defined Type (UDT) Missing from CedarBank"
-permalink: kb/216/Q216449/
+permalink: /kb/216/Q216449/
 ---
 
 ## Q216449: BUG: Example for User Defined Type (UDT) Missing from CedarBank

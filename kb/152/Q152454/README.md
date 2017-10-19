@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152454: Error Saving Write Document to a Network Drive"
-permalink: kb/152/Q152454/
+permalink: /kb/152/Q152454/
 ---
 
 ## Q152454: Error Saving Write Document to a Network Drive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236913: Err Msg: Couldn't Open ISV MIF: &lt;ISV MIF FileName&gt;"
-permalink: kb/236/Q236913/
+permalink: /kb/236/Q236913/
 ---
 
 ## Q236913: Err Msg: Couldn't Open ISV MIF: &lt;ISV MIF FileName&gt;

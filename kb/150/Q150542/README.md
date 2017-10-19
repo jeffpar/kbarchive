@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150542: Gardening: Pressing F1 in List Maker Causes Unknown Error"
-permalink: kb/150/Q150542/
+permalink: /kb/150/Q150542/
 ---
 
 ## Q150542: Gardening: Pressing F1 in List Maker Causes Unknown Error

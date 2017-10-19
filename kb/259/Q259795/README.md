@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259795: XCLN: ErrMsg When You Synchronize Mailbox with OST File"
-permalink: kb/259/Q259795/
+permalink: /kb/259/Q259795/
 ---
 
 ## Q259795: XCLN: ErrMsg When You Synchronize Mailbox with OST File

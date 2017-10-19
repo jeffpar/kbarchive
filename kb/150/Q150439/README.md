@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150439: Office 95 Shortcut Bar AutoHide Fails with Wuser.exe Loaded"
-permalink: kb/150/Q150439/
+permalink: /kb/150/Q150439/
 ---
 
 ## Q150439: Office 95 Shortcut Bar AutoHide Fails with Wuser.exe Loaded

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159021: NBA Full Court Press: Player Stats Not Displayed"
-permalink: kb/159/Q159021/
+permalink: /kb/159/Q159021/
 ---
 
 ## Q159021: NBA Full Court Press: Player Stats Not Displayed

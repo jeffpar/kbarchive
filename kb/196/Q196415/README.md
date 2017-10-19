@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196415: XADM: Move Server &amp; Move Failure when DN Longer than 256 Chars"
-permalink: kb/196/Q196415/
+permalink: /kb/196/Q196415/
 ---
 
 ## Q196415: XADM: Move Server &amp; Move Failure when DN Longer than 256 Chars

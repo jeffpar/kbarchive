@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166181: WD97: Can't Insert Page Numbers into WordMail Message"
-permalink: kb/166/Q166181/
+permalink: /kb/166/Q166181/
 ---
 
 ## Q166181: WD97: Can't Insert Page Numbers into WordMail Message

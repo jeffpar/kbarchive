@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160614: FP97: AVI Files Are Converted to GIF Files"
-permalink: kb/160/Q160614/
+permalink: /kb/160/Q160614/
 ---
 
 ## Q160614: FP97: AVI Files Are Converted to GIF Files

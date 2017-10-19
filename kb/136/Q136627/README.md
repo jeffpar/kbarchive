@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136627: Layered Drivers Never See WINSOCK IRPs for the TCP/IP Device"
-permalink: kb/136/Q136627/
+permalink: /kb/136/Q136627/
 ---
 
 ## Q136627: Layered Drivers Never See WINSOCK IRPs for the TCP/IP Device

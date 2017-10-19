@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185969: Domain Controller on Slow Link May Be Used for Domain Validation"
-permalink: kb/185/Q185969/
+permalink: /kb/185/Q185969/
 ---
 
 ## Q185969: Domain Controller on Slow Link May Be Used for Domain Validation

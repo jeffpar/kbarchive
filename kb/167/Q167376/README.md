@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167376: Error Message When Starting Add Printer Wizard"
-permalink: kb/167/Q167376/
+permalink: /kb/167/Q167376/
 ---
 
 ## Q167376: Error Message When Starting Add Printer Wizard

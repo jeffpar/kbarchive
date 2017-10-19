@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189988: CMPXCHG8B CPUs in Non-Intel/AMD x86 Compatibles Not Supported"
-permalink: kb/189/Q189988/
+permalink: /kb/189/Q189988/
 ---
 
 ## Q189988: CMPXCHG8B CPUs in Non-Intel/AMD x86 Compatibles Not Supported

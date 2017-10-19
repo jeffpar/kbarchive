@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195200: XADM: Premature MTA Fanout Inside a Site"
-permalink: kb/195/Q195200/
+permalink: /kb/195/Q195200/
 ---
 
 ## Q195200: XADM: Premature MTA Fanout Inside a Site

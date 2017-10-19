@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158548: Sysdiff Changes Dates on Files It Applies to Windows NT"
-permalink: kb/158/Q158548/
+permalink: /kb/158/Q158548/
 ---
 
 ## Q158548: Sysdiff Changes Dates on Files It Applies to Windows NT

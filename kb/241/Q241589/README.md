@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241589: Kernel Access Fault in Windows Terminal Server"
-permalink: kb/241/Q241589/
+permalink: /kb/241/Q241589/
 ---
 
 ## Q241589: Kernel Access Fault in Windows Terminal Server

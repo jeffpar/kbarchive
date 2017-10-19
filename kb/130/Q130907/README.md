@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130907: Entering Japanese Characters Using a U.S. Keyboard and IME"
-permalink: kb/130/Q130907/
+permalink: /kb/130/Q130907/
 ---
 
 ## Q130907: Entering Japanese Characters Using a U.S. Keyboard and IME

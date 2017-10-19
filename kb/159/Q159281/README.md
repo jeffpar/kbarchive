@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159281: PRB: Documenting Wizard Generates Error #10"
-permalink: kb/159/Q159281/
+permalink: /kb/159/Q159281/
 ---
 
 ## Q159281: PRB: Documenting Wizard Generates Error #10

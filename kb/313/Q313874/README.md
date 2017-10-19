@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313874: SMSINST: SMS Installer Does Not Overwrite Identical Files"
-permalink: kb/313/Q313874/
+permalink: /kb/313/Q313874/
 ---
 
 ## Q313874: SMSINST: SMS Installer Does Not Overwrite Identical Files

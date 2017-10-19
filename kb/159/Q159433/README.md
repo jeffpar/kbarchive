@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159433: FP: Error, Broken Image Inserting WordPerfect Graphic File"
-permalink: kb/159/Q159433/
+permalink: /kb/159/Q159433/
 ---
 
 ## Q159433: FP: Error, Broken Image Inserting WordPerfect Graphic File

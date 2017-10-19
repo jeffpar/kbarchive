@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185685: TN5250 Event ID 9 Causes TN5250 Server to Stop Responding"
-permalink: kb/185/Q185685/
+permalink: /kb/185/Q185685/
 ---
 
 ## Q185685: TN5250 Event ID 9 Causes TN5250 Server to Stop Responding

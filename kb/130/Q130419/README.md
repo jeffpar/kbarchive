@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130419: Service for Macintosh Print Monitor Does Not Recognize Printers"
-permalink: kb/130/Q130419/
+permalink: /kb/130/Q130419/
 ---
 
 ## Q130419: Service for Macintosh Print Monitor Does Not Recognize Printers

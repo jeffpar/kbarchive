@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150100: DOC:Technote 64 Incorrect About ThreadingModel Registration"
-permalink: kb/150/Q150100/
+permalink: /kb/150/Q150100/
 ---
 
 ## Q150100: DOC:Technote 64 Incorrect About ThreadingModel Registration

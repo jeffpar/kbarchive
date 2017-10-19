@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177651: AT Command Handles Quotation Marks Differently"
-permalink: kb/177/Q177651/
+permalink: /kb/177/Q177651/
 ---
 
 ## Q177651: AT Command Handles Quotation Marks Differently

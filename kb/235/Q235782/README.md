@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235782: SMSINST: REG_MULTI_SZ Entries Repackaged by Installer Not Same"
-permalink: kb/235/Q235782/
+permalink: /kb/235/Q235782/
 ---
 
 ## Q235782: SMSINST: REG_MULTI_SZ Entries Repackaged by Installer Not Same

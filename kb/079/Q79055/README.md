@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79055: INFO: Overcoming the 64 Kilobyte Limit for List Box Data"
-permalink: kb/079/Q79055/
+permalink: /kb/079/Q79055/
 ---
 
 ## Q79055: INFO: Overcoming the 64 Kilobyte Limit for List Box Data

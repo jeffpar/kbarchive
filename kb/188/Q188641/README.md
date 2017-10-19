@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188641: XADM: Mailbox Cleanup Agent Service Fails to Start with 1069"
-permalink: kb/188/Q188641/
+permalink: /kb/188/Q188641/
 ---
 
 ## Q188641: XADM: Mailbox Cleanup Agent Service Fails to Start with 1069

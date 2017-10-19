@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170198: HOWTO: STL Sample for gslice::(length, start, stride) Functions"
-permalink: kb/170/Q170198/
+permalink: /kb/170/Q170198/
 ---
 
 ## Q170198: HOWTO: STL Sample for gslice::(length, start, stride) Functions

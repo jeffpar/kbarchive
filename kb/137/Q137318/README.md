@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137318: Comparison of Various Bookshelf 95 Editions"
-permalink: kb/137/Q137318/
+permalink: /kb/137/Q137318/
 ---
 
 ## Q137318: Comparison of Various Bookshelf 95 Editions

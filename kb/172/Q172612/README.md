@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172612: SMSINST: SMS Installer Does Not Create Mscreate.dir File"
-permalink: kb/172/Q172612/
+permalink: /kb/172/Q172612/
 ---
 
 ## Q172612: SMSINST: SMS Installer Does Not Create Mscreate.dir File

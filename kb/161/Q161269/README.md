@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161269: Encarta 97: Internet Explorer Doesn't Start in Online Library"
-permalink: kb/161/Q161269/
+permalink: /kb/161/Q161269/
 ---
 
 ## Q161269: Encarta 97: Internet Explorer Doesn't Start in Online Library

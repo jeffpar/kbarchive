@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151773: Flight Simulator: ATI MACH 64 SVGA Option May Not Work"
-permalink: kb/151/Q151773/
+permalink: /kb/151/Q151773/
 ---
 
 ## Q151773: Flight Simulator: ATI MACH 64 SVGA Option May Not Work

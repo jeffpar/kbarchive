@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129084: WRITE.EXE Does Not Save the Current Font Setting"
-permalink: kb/129/Q129084/
+permalink: /kb/129/Q129084/
 ---
 
 ## Q129084: WRITE.EXE Does Not Save the Current Font Setting

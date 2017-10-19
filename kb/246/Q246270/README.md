@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246270: XADM: Error Installing Service Pack 1 on Exchange 5.5 with OWA"
-permalink: kb/246/Q246270/
+permalink: /kb/246/Q246270/
 ---
 
 ## Q246270: XADM: Error Installing Service Pack 1 on Exchange 5.5 with OWA

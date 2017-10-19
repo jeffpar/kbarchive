@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118566: X400: General Information on Checkpoint Size"
-permalink: kb/118/Q118566/
+permalink: /kb/118/Q118566/
 ---
 
 ## Q118566: X400: General Information on Checkpoint Size

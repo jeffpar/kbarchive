@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141195: Encarta 1996: Selected Text Prints Garbled"
-permalink: kb/141/Q141195/
+permalink: /kb/141/Q141195/
 ---
 
 ## Q141195: Encarta 1996: Selected Text Prints Garbled

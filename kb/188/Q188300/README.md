@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188300: Golf 98: Cannot Use Golf Courses from Earlier Versions of Golf"
-permalink: kb/188/Q188300/
+permalink: /kb/188/Q188300/
 ---
 
 ## Q188300: Golf 98: Cannot Use Golf Courses from Earlier Versions of Golf

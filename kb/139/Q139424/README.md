@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139424: Bookshelf 1995: Quickshelf Toolbar Overlaps Office Manager"
-permalink: kb/139/Q139424/
+permalink: /kb/139/Q139424/
 ---
 
 ## Q139424: Bookshelf 1995: Quickshelf Toolbar Overlaps Office Manager

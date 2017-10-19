@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103093: List of Color Pictures in Cinemania"
-permalink: kb/103/Q103093/
+permalink: /kb/103/Q103093/
 ---
 
 ## Q103093: List of Color Pictures in Cinemania

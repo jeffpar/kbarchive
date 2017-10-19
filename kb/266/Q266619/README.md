@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266619: Combat Flight Simulator: Engines Shut Down Unexpectedly"
-permalink: kb/266/Q266619/
+permalink: /kb/266/Q266619/
 ---
 
 ## Q266619: Combat Flight Simulator: Engines Shut Down Unexpectedly

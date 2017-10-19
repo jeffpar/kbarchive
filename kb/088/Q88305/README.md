@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88305: Windows Resource Kit (7/6/92) Disk Directory (3.5 Inch)"
-permalink: kb/088/Q88305/
+permalink: /kb/088/Q88305/
 ---
 
 ## Q88305: Windows Resource Kit (7/6/92) Disk Directory (3.5 Inch)

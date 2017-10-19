@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138925: Requesting an IP Address with NT RAS or Win95 Dial Up Networking"
-permalink: kb/138/Q138925/
+permalink: /kb/138/Q138925/
 ---
 
 ## Q138925: Requesting an IP Address with NT RAS or Win95 Dial Up Networking

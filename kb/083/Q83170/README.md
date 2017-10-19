@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83170: Windows: 3.5-Inch Disks Packaged in Two Separate Bags"
-permalink: kb/083/Q83170/
+permalink: /kb/083/Q83170/
 ---
 
 ## Q83170: Windows: 3.5-Inch Disks Packaged in Two Separate Bags

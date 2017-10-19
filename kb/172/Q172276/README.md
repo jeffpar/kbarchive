@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172276: FIX: CToolTipCtrl Not Displaying Text After VS SP1, SP2 Install"
-permalink: kb/172/Q172276/
+permalink: /kb/172/Q172276/
 ---
 
 ## Q172276: FIX: CToolTipCtrl Not Displaying Text After VS SP1, SP2 Install

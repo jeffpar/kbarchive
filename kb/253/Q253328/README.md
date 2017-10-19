@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253328: Flight Simulator Troubleshooters Available"
-permalink: kb/253/Q253328/
+permalink: /kb/253/Q253328/
 ---
 
 ## Q253328: Flight Simulator Troubleshooters Available

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200092: XIMS: Internet Mail Service Fails to Start on DEC Alpha, 4087"
-permalink: kb/200/Q200092/
+permalink: /kb/200/Q200092/
 ---
 
 ## Q200092: XIMS: Internet Mail Service Fails to Start on DEC Alpha, 4087

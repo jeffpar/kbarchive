@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159752: XFOR: Korean Character Not Displayed Properly in Message"
-permalink: kb/159/Q159752/
+permalink: /kb/159/Q159752/
 ---
 
 ## Q159752: XFOR: Korean Character Not Displayed Properly in Message

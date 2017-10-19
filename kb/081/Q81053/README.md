@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81053: Agfa Compugraphic Genics Printer and Windows 3.0"
-permalink: kb/081/Q81053/
+permalink: /kb/081/Q81053/
 ---
 
 ## Q81053: Agfa Compugraphic Genics Printer and Windows 3.0

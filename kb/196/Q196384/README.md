@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196384: HOWTO: Perform Bulk Inserts Using SQLSetPos"
-permalink: kb/196/Q196384/
+permalink: /kb/196/Q196384/
 ---
 
 ## Q196384: HOWTO: Perform Bulk Inserts Using SQLSetPos

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108843: PC Ext: Err Msg: Invalid Option Specified in .INI"
-permalink: kb/108/Q108843/
+permalink: /kb/108/Q108843/
 ---
 
 ## Q108843: PC Ext: Err Msg: Invalid Option Specified in .INI

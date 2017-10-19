@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276218: Win9x 3270 Client May Not Unload from Memory on Windows 98"
-permalink: kb/276/Q276218/
+permalink: /kb/276/Q276218/
 ---
 
 ## Q276218: Win9x 3270 Client May Not Unload from Memory on Windows 98

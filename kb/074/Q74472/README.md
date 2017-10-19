@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74472: Initializing Virtual Devices and Hooking Interrupts"
-permalink: kb/074/Q74472/
+permalink: /kb/074/Q74472/
 ---
 
 ## Q74472: Initializing Virtual Devices and Hooking Interrupts

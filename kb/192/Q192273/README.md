@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192273: PRB: SendKeys Does Not Work with NumLock or Caplock"
-permalink: kb/192/Q192273/
+permalink: /kb/192/Q192273/
 ---
 
 ## Q192273: PRB: SendKeys Does Not Work with NumLock or Caplock

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153473: Extra Modem Settings for Connection Problems"
-permalink: kb/153/Q153473/
+permalink: /kb/153/Q153473/
 ---
 
 ## Q153473: Extra Modem Settings for Connection Problems

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190733: WD97: Opening Word Document in Text Editor Displays Deleted Text"
-permalink: kb/190/Q190733/
+permalink: /kb/190/Q190733/
 ---
 
 ## Q190733: WD97: Opening Word Document in Text Editor Displays Deleted Text

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120436: Installing Non-Native Printer Drivers on a Print Server Fails"
-permalink: kb/120/Q120436/
+permalink: /kb/120/Q120436/
 ---
 
 ## Q120436: Installing Non-Native Printer Drivers on a Print Server Fails

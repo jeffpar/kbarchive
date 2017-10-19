@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153084: Encarta World Atlas: Invalid Page Fault in Kernel32.dll"
-permalink: kb/153/Q153084/
+permalink: /kb/153/Q153084/
 ---
 
 ## Q153084: Encarta World Atlas: Invalid Page Fault in Kernel32.dll

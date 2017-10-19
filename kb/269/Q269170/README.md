@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269170: PRB: Set of DEFAULT Changed After MAPI.SESSION Logon"
-permalink: kb/269/Q269170/
+permalink: /kb/269/Q269170/
 ---
 
 ## Q269170: PRB: Set of DEFAULT Changed After MAPI.SESSION Logon

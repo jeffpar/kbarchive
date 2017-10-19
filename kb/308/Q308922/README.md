@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308922: Streets and Trips: Browser Hangs During Streets &amp; Trips Install"
-permalink: kb/308/Q308922/
+permalink: /kb/308/Q308922/
 ---
 
 ## Q308922: Streets and Trips: Browser Hangs During Streets &amp; Trips Install

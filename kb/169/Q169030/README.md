@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169030: Uninstalling HP Direct Tape Access Changes System Icons"
-permalink: kb/169/Q169030/
+permalink: /kb/169/Q169030/
 ---
 
 ## Q169030: Uninstalling HP Direct Tape Access Changes System Icons

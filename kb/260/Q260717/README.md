@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260717: StarLancer: Game Hangs When You Start New Mission"
-permalink: kb/260/Q260717/
+permalink: /kb/260/Q260717/
 ---
 
 ## Q260717: StarLancer: Game Hangs When You Start New Mission

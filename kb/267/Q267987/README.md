@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267987: XADM: Directory Service Stops and Cannot Restart with Event IDs"
-permalink: kb/267/Q267987/
+permalink: /kb/267/Q267987/
 ---
 
 ## Q267987: XADM: Directory Service Stops and Cannot Restart with Event IDs

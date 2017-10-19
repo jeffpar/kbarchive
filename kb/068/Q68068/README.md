@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68068: Development Environment Required to Use Windows DDK"
-permalink: kb/068/Q68068/
+permalink: /kb/068/Q68068/
 ---
 
 ## Q68068: Development Environment Required to Use Windows DDK

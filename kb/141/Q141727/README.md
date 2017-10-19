@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141727: Bookshelf Add-In for Excel Does Not Provide Description"
-permalink: kb/141/Q141727/
+permalink: /kb/141/Q141727/
 ---
 
 ## Q141727: Bookshelf Add-In for Excel Does Not Provide Description

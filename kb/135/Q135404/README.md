@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135404: Multihomed Master Browser May Cause Event ID 8021 and 8032"
-permalink: kb/135/Q135404/
+permalink: /kb/135/Q135404/
 ---
 
 ## Q135404: Multihomed Master Browser May Cause Event ID 8021 and 8032

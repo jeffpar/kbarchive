@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185155: XCON: Extracting Connector Information From The Directory"
-permalink: kb/185/Q185155/
+permalink: /kb/185/Q185155/
 ---
 
 ## Q185155: XCON: Extracting Connector Information From The Directory

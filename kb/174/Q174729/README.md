@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174729: XADM: Err Msg: No Mapping Between Account Names and Security IDs"
-permalink: kb/174/Q174729/
+permalink: /kb/174/Q174729/
 ---
 
 ## Q174729: XADM: Err Msg: No Mapping Between Account Names and Security IDs

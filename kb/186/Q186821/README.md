@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186821: Unable to Access CD-ROM with CD-ROM Changer"
-permalink: kb/186/Q186821/
+permalink: /kb/186/Q186821/
 ---
 
 ## Q186821: Unable to Access CD-ROM with CD-ROM Changer

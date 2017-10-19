@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170381: PRB: Table Name Can't Include &quot;Call&quot; in Parameterized SQL"
-permalink: kb/170/Q170381/
+permalink: /kb/170/Q170381/
 ---
 
 ## Q170381: PRB: Table Name Can't Include &quot;Call&quot; in Parameterized SQL

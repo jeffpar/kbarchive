@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112618: How to Prevent Calling Card Numbers from Appearing on Faxes"
-permalink: kb/112/Q112618/
+permalink: /kb/112/Q112618/
 ---
 
 ## Q112618: How to Prevent Calling Card Numbers from Appearing on Faxes

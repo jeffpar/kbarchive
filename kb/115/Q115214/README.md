@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115214: PRB: Project Editor Gives &quot;Invalid File Format&quot; at Startup"
-permalink: kb/115/Q115214/
+permalink: /kb/115/Q115214/
 ---
 
 ## Q115214: PRB: Project Editor Gives &quot;Invalid File Format&quot; at Startup

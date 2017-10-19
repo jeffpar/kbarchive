@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85182: Bridged Novell Idle-Time Disconnect Hangs Windows 3.1"
-permalink: kb/085/Q85182/
+permalink: /kb/085/Q85182/
 ---
 
 ## Q85182: Bridged Novell Idle-Time Disconnect Hangs Windows 3.1

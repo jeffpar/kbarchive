@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172343: FIX: Controls Cannot Be Added to Toolbar Programmatically"
-permalink: kb/172/Q172343/
+permalink: /kb/172/Q172343/
 ---
 
 ## Q172343: FIX: Controls Cannot Be Added to Toolbar Programmatically

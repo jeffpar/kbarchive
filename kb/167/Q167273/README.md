@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167273: FIX: VSS Editor/Viewer Removes and Replaces Characters"
-permalink: kb/167/Q167273/
+permalink: /kb/167/Q167273/
 ---
 
 ## Q167273: FIX: VSS Editor/Viewer Removes and Replaces Characters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198356: WD97: Float Over Text Object Disappears Inserting to a Frame"
-permalink: kb/198/Q198356/
+permalink: /kb/198/Q198356/
 ---
 
 ## Q198356: WD97: Float Over Text Object Disappears Inserting to a Frame

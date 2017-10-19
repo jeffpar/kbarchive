@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165743: Default Domain Administrator Not Correctly Configured"
-permalink: kb/165/Q165743/
+permalink: /kb/165/Q165743/
 ---
 
 ## Q165743: Default Domain Administrator Not Correctly Configured

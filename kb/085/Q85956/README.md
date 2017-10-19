@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85956: DOC: Visual Editors Do Not Use INCLUDE Environment Variable"
-permalink: kb/085/Q85956/
+permalink: /kb/085/Q85956/
 ---
 
 ## Q85956: DOC: Visual Editors Do Not Use INCLUDE Environment Variable

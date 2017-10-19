@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326002: Zoo Tycoon: Game Starts with Very Few Animals and Buildings"
-permalink: kb/326/Q326002/
+permalink: /kb/326/Q326002/
 ---
 
 ## Q326002: Zoo Tycoon: Game Starts with Very Few Animals and Buildings

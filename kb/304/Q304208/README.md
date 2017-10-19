@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304208: Error Message: STOP: 000000de POOL_CORRUPTION_IN_FILE_AREA"
-permalink: kb/304/Q304208/
+permalink: /kb/304/Q304208/
 ---
 
 ## Q304208: Error Message: STOP: 000000de POOL_CORRUPTION_IN_FILE_AREA

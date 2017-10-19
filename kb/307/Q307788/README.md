@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307788: PRB: FTP Logs Show 550 Error Message w/Connection over UNC Share"
-permalink: kb/307/Q307788/
+permalink: /kb/307/Q307788/
 ---
 
 ## Q307788: PRB: FTP Logs Show 550 Error Message w/Connection over UNC Share

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225011: XADM: Error c1037996 Installing  Exchange Server 5.5 on Cluster"
-permalink: kb/225/Q225011/
+permalink: /kb/225/Q225011/
 ---
 
 ## Q225011: XADM: Error c1037996 Installing  Exchange Server 5.5 on Cluster

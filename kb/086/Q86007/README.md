@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86007: DOC: Correction to JournalRecordProc Documentation"
-permalink: kb/086/Q86007/
+permalink: /kb/086/Q86007/
 ---
 
 ## Q86007: DOC: Correction to JournalRecordProc Documentation

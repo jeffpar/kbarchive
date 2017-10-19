@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138126: Event ID: 9 and 7000 if AppleTalk Zone Names Exceed 21 Chars."
-permalink: kb/138/Q138126/
+permalink: /kb/138/Q138126/
 ---
 
 ## Q138126: Event ID: 9 and 7000 if AppleTalk Zone Names Exceed 21 Chars.

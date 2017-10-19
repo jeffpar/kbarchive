@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217002: MSCS: Problems with Spooler Resource"
-permalink: kb/217/Q217002/
+permalink: /kb/217/Q217002/
 ---
 
 ## Q217002: MSCS: Problems with Spooler Resource

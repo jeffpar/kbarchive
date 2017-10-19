@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76644: Fastback Plus 5.14 and Earlier Incompatible with MS-DOS 5.0"
-permalink: kb/076/Q76644/
+permalink: /kb/076/Q76644/
 ---
 
 ## Q76644: Fastback Plus 5.14 and Earlier Incompatible with MS-DOS 5.0

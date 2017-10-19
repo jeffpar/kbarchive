@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179692: INFO: COM Method Call in WM_PAINT Handler Returns 0x80010005"
-permalink: kb/179/Q179692/
+permalink: /kb/179/Q179692/
 ---
 
 ## Q179692: INFO: COM Method Call in WM_PAINT Handler Returns 0x80010005

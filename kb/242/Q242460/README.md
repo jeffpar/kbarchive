@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242460: Performance Issues with FPNW Installed on Terminal Server as PDC"
-permalink: kb/242/Q242460/
+permalink: /kb/242/Q242460/
 ---
 
 ## Q242460: Performance Issues with FPNW Installed on Terminal Server as PDC

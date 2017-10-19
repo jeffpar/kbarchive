@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152138: Limits on Fonts Used in Arabic Windows 3.1 Edit Control"
-permalink: kb/152/Q152138/
+permalink: /kb/152/Q152138/
 ---
 
 ## Q152138: Limits on Fonts Used in Arabic Windows 3.1 Edit Control

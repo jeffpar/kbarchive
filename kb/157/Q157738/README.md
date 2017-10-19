@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157738: DEV INTL SFTWRE WIN 95&amp;WIN NT Corrections and Comments"
-permalink: kb/157/Q157738/
+permalink: /kb/157/Q157738/
 ---
 
 ## Q157738: DEV INTL SFTWRE WIN 95&amp;WIN NT Corrections and Comments

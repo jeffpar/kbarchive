@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138475: HOWTO: Set Up Multiple Check Outs on a Project Basis"
-permalink: kb/138/Q138475/
+permalink: /kb/138/Q138475/
 ---
 
 ## Q138475: HOWTO: Set Up Multiple Check Outs on a Project Basis

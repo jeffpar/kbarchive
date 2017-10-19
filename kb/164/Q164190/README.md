@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164190: Kids Plus!: Network Neighborhood not Restricted by Protect It!"
-permalink: kb/164/Q164190/
+permalink: /kb/164/Q164190/
 ---
 
 ## Q164190: Kids Plus!: Network Neighborhood not Restricted by Protect It!

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103806: PRB: C2642 Error When Adding Message Handler"
-permalink: kb/103/Q103806/
+permalink: /kb/103/Q103806/
 ---
 
 ## Q103806: PRB: C2642 Error When Adding Message Handler

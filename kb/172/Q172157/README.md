@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172157: PRB: Do Not Use SourceSafe When Running SSARC or SSRESTO"
-permalink: kb/172/Q172157/
+permalink: /kb/172/Q172157/
 ---
 
 ## Q172157: PRB: Do Not Use SourceSafe When Running SSARC or SSRESTO

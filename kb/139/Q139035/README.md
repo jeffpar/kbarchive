@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139035: TN3270 Service Is Enhanced to TN3270E in SNA Server"
-permalink: kb/139/Q139035/
+permalink: /kb/139/Q139035/
 ---
 
 ## Q139035: TN3270 Service Is Enhanced to TN3270E in SNA Server

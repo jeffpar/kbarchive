@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217192: PRB: ODBCDirect Cursor Not Valid After Transaction Commits"
-permalink: kb/217/Q217192/
+permalink: /kb/217/Q217192/
 ---
 
 ## Q217192: PRB: ODBCDirect Cursor Not Valid After Transaction Commits

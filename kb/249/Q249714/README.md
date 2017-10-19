@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249714: MapPoint: How to Create a High Contrast Shaded Area Map"
-permalink: kb/249/Q249714/
+permalink: /kb/249/Q249714/
 ---
 
 ## Q249714: MapPoint: How to Create a High Contrast Shaded Area Map

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136015: FIX: Spinner Name Doesn't Move with Spinner in a PageFrame"
-permalink: kb/136/Q136015/
+permalink: /kb/136/Q136015/
 ---
 
 ## Q136015: FIX: Spinner Name Doesn't Move with Spinner in a PageFrame

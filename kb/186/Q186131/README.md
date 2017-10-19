@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186131: MS-DOS Application Using Novell IPX API May Leak Memory in NTVDM"
-permalink: kb/186/Q186131/
+permalink: /kb/186/Q186131/
 ---
 
 ## Q186131: MS-DOS Application Using Novell IPX API May Leak Memory in NTVDM

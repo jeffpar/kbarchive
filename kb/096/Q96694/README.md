@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96694: PC Win: Mail for Windows MSSFS.DLL 3.2.0.4084 Update"
-permalink: kb/096/Q96694/
+permalink: /kb/096/Q96694/
 ---
 
 ## Q96694: PC Win: Mail for Windows MSSFS.DLL 3.2.0.4084 Update

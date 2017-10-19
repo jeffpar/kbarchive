@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196511: WD97: &quot;Bookmark Not Defined&quot; When Merging Document That Has TOC"
-permalink: kb/196/Q196511/
+permalink: /kb/196/Q196511/
 ---
 
 ## Q196511: WD97: &quot;Bookmark Not Defined&quot; When Merging Document That Has TOC

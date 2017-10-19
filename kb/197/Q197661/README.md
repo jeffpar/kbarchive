@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197661: Games Err Msg: Invalid Page Fault in Module Kernel32.dll"
-permalink: kb/197/Q197661/
+permalink: /kb/197/Q197661/
 ---
 
 ## Q197661: Games Err Msg: Invalid Page Fault in Module Kernel32.dll

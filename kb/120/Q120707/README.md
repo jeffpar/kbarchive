@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120707: HOWTO: Debug an Active Process in 32-bit Visual C++"
-permalink: kb/120/Q120707/
+permalink: /kb/120/Q120707/
 ---
 
 ## Q120707: HOWTO: Debug an Active Process in 32-bit Visual C++

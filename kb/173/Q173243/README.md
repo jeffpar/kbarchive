@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173243: How to Install the Windows 95 Resource Kit Utilities"
-permalink: kb/173/Q173243/
+permalink: /kb/173/Q173243/
 ---
 
 ## Q173243: How to Install the Windows 95 Resource Kit Utilities

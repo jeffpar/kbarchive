@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153474: Err Msg: Modem Is Busy or Not Found."
-permalink: kb/153/Q153474/
+permalink: /kb/153/Q153474/
 ---
 
 ## Q153474: Err Msg: Modem Is Busy or Not Found.

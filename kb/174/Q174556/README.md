@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174556: SMS: Remote Control Performance Better on WinNT 3.51 Than 4.0"
-permalink: kb/174/Q174556/
+permalink: /kb/174/Q174556/
 ---
 
 ## Q174556: SMS: Remote Control Performance Better on WinNT 3.51 Than 4.0

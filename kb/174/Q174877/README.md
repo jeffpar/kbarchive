@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174877: FIX: Selecting a File in SourceSafe Explorer Causes Refresh"
-permalink: kb/174/Q174877/
+permalink: /kb/174/Q174877/
 ---
 
 ## Q174877: FIX: Selecting a File in SourceSafe Explorer Causes Refresh

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222173: XADM: Event ID 42, &quot;The database engine found a bad page&quot;"
-permalink: kb/222/Q222173/
+permalink: /kb/222/Q222173/
 ---
 
 ## Q222173: XADM: Event ID 42, &quot;The database engine found a bad page&quot;

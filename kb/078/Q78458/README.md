@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78458: NEC 80286 APC4 Is Not Supported by MS-DOS 5.x &amp; 6.x"
-permalink: kb/078/Q78458/
+permalink: /kb/078/Q78458/
 ---
 
 ## Q78458: NEC 80286 APC4 Is Not Supported by MS-DOS 5.x &amp; 6.x

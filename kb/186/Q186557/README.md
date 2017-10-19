@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186557: Terminal Server Commands: SHUTDOWN"
-permalink: kb/186/Q186557/
+permalink: /kb/186/Q186557/
 ---
 
 ## Q186557: Terminal Server Commands: SHUTDOWN

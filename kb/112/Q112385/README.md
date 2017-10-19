@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112385: Text Output Using CScrollView Derivative"
-permalink: kb/112/Q112385/
+permalink: /kb/112/Q112385/
 ---
 
 ## Q112385: Text Output Using CScrollView Derivative

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98635: Interlnk Client Cannot Access Drives on Server"
-permalink: kb/098/Q98635/
+permalink: /kb/098/Q98635/
 ---
 
 ## Q98635: Interlnk Client Cannot Access Drives on Server

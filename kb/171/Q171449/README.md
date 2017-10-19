@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171449: WD97: Spell Checking HTML File with BGSOUND Changes View"
-permalink: kb/171/Q171449/
+permalink: /kb/171/Q171449/
 ---
 
 ## Q171449: WD97: Spell Checking HTML File with BGSOUND Changes View

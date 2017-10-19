@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241768: How to Do an Unattended Update to the Latest Service Pack"
-permalink: kb/241/Q241768/
+permalink: /kb/241/Q241768/
 ---
 
 ## Q241768: How to Do an Unattended Update to the Latest Service Pack

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318261: FIX: Grid Lines Assume the Windows Font Color"
-permalink: kb/318/Q318261/
+permalink: /kb/318/Q318261/
 ---
 
 ## Q318261: FIX: Grid Lines Assume the Windows Font Color

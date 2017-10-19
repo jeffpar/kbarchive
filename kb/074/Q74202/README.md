@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74202: Contents of the MS-DOS 5.x and 6.x Upgrade Uninstall Disk"
-permalink: kb/074/Q74202/
+permalink: /kb/074/Q74202/
 ---
 
 ## Q74202: Contents of the MS-DOS 5.x and 6.x Upgrade Uninstall Disk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169693: XADM: Private Byte Memory Leak in Store.exe"
-permalink: kb/169/Q169693/
+permalink: /kb/169/Q169693/
 ---
 
 ## Q169693: XADM: Private Byte Memory Leak in Store.exe

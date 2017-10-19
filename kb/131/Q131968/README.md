@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131968: How RAS Supports X.25 Networks"
-permalink: kb/131/Q131968/
+permalink: /kb/131/Q131968/
 ---
 
 ## Q131968: How RAS Supports X.25 Networks

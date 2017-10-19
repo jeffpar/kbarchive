@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177602: NET USE to a NetWare resource with CSNW / GSNW i"
-permalink: kb/177/Q177602/
+permalink: /kb/177/Q177602/
 ---
 
 ## Q177602: NET USE to a NetWare resource with CSNW / GSNW i

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222840: Unnecessary Delay in WINS Query"
-permalink: kb/222/Q222840/
+permalink: /kb/222/Q222840/
 ---
 
 ## Q222840: Unnecessary Delay in WINS Query

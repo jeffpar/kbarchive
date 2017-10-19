@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89672: Importing Dates from a Text File into FoxBASE+/Mac"
-permalink: kb/089/Q89672/
+permalink: /kb/089/Q89672/
 ---
 
 ## Q89672: Importing Dates from a Text File into FoxBASE+/Mac

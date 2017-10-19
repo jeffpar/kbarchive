@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115307: DOC: Extending Device Descriptions Handled by App Studio"
-permalink: kb/115/Q115307/
+permalink: /kb/115/Q115307/
 ---
 
 ## Q115307: DOC: Extending Device Descriptions Handled by App Studio

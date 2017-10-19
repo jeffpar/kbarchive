@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170135: Error Message: WINS Client (TCP/IP) Service Fails to Start"
-permalink: kb/170/Q170135/
+permalink: /kb/170/Q170135/
 ---
 
 ## Q170135: Error Message: WINS Client (TCP/IP) Service Fails to Start

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305286: ENC: You Hear No Audio When You Play Sound Files"
-permalink: kb/305/Q305286/
+permalink: /kb/305/Q305286/
 ---
 
 ## Q305286: ENC: You Hear No Audio When You Play Sound Files

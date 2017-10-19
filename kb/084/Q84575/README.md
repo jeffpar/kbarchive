@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84575: Windows 3.1: Troubleshooting Creating a Permanent Swap File"
-permalink: kb/084/Q84575/
+permalink: /kb/084/Q84575/
 ---
 
 ## Q84575: Windows 3.1: Troubleshooting Creating a Permanent Swap File

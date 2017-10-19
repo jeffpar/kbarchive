@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194465: PPTP May Refuse Connections When VPNs Are Free"
-permalink: kb/194/Q194465/
+permalink: /kb/194/Q194465/
 ---
 
 ## Q194465: PPTP May Refuse Connections When VPNs Are Free

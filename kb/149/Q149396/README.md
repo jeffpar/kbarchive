@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149396: Cannot Change Expired Windows NT Password with DUN"
-permalink: kb/149/Q149396/
+permalink: /kb/149/Q149396/
 ---
 
 ## Q149396: Cannot Change Expired Windows NT Password with DUN

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244613: IIS 4.0 SSL ISAPI Filter Can Leak Single Buffer of Plaintext"
-permalink: kb/244/Q244613/
+permalink: /kb/244/Q244613/
 ---
 
 ## Q244613: IIS 4.0 SSL ISAPI Filter Can Leak Single Buffer of Plaintext

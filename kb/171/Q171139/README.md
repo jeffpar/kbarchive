@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171139: Err. Msg.: Line 41 Object Not Support this Property or Method"
-permalink: kb/171/Q171139/
+permalink: /kb/171/Q171139/
 ---
 
 ## Q171139: Err. Msg.: Line 41 Object Not Support this Property or Method

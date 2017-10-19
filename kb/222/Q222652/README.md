@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222652: Prompted for Floppy Disk When Adding a Printer to SBS Server"
-permalink: kb/222/Q222652/
+permalink: /kb/222/Q222652/
 ---
 
 ## Q222652: Prompted for Floppy Disk When Adding a Printer to SBS Server

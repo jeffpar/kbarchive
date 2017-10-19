@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119568: Kyocera FS-3500A PCL Driver Will Not Print from Lower Paper Tray"
-permalink: kb/119/Q119568/
+permalink: /kb/119/Q119568/
 ---
 
 ## Q119568: Kyocera FS-3500A PCL Driver Will Not Print from Lower Paper Tray

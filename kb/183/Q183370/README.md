@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183370: PRB: System Error &quot;No Such Interface Supported&quot;"
-permalink: kb/183/Q183370/
+permalink: /kb/183/Q183370/
 ---
 
 ## Q183370: PRB: System Error &quot;No Such Interface Supported&quot;

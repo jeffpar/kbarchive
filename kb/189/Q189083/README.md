@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189083: WD97: Automatically Saving Current Work (Open Document)"
-permalink: kb/189/Q189083/
+permalink: /kb/189/Q189083/
 ---
 
 ## Q189083: WD97: Automatically Saving Current Work (Open Document)

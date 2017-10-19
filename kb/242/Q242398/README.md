@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242398: Cluster Loses Track of Custom Resource DLL Registration"
-permalink: kb/242/Q242398/
+permalink: /kb/242/Q242398/
 ---
 
 ## Q242398: Cluster Loses Track of Custom Resource DLL Registration

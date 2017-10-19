@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165822: WD97: Custom Bullet or Number Lost After Save to RTF"
-permalink: kb/165/Q165822/
+permalink: /kb/165/Q165822/
 ---
 
 ## Q165822: WD97: Custom Bullet or Number Lost After Save to RTF

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146651: HOWTO: Call SQL Stored Procedures from Visual Basic"
-permalink: kb/146/Q146651/
+permalink: /kb/146/Q146651/
 ---
 
 ## Q146651: HOWTO: Call SQL Stored Procedures from Visual Basic

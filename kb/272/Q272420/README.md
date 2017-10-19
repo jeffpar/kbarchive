@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272420: BUG: ComboBox Text Is Missing When DoEvents Is in GotFocus Event"
-permalink: kb/272/Q272420/
+permalink: /kb/272/Q272420/
 ---
 
 ## Q272420: BUG: ComboBox Text Is Missing When DoEvents Is in GotFocus Event

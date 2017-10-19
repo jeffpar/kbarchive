@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182169: WD97: Macro to Determine Whether a Form Field Exists"
-permalink: kb/182/Q182169/
+permalink: /kb/182/Q182169/
 ---
 
 ## Q182169: WD97: Macro to Determine Whether a Form Field Exists

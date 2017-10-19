@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141273: FIX: Firing a KeyPress Event from an OLE Control Causes Beep"
-permalink: kb/141/Q141273/
+permalink: /kb/141/Q141273/
 ---
 
 ## Q141273: FIX: Firing a KeyPress Event from an OLE Control Causes Beep

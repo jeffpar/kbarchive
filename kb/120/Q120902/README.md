@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120902: Cannot Specify a Working Directory for a Windows Executable"
-permalink: kb/120/Q120902/
+permalink: /kb/120/Q120902/
 ---
 
 ## Q120902: Cannot Specify a Working Directory for a Windows Executable

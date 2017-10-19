@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162510: Monster Truck Madness: Multiplayer Patch Information"
-permalink: kb/162/Q162510/
+permalink: /kb/162/Q162510/
 ---
 
 ## Q162510: Monster Truck Madness: Multiplayer Patch Information

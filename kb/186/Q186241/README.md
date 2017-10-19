@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186241: Dr. Watson May Cause CPU Usage to Spike"
-permalink: kb/186/Q186241/
+permalink: /kb/186/Q186241/
 ---
 
 ## Q186241: Dr. Watson May Cause CPU Usage to Spike

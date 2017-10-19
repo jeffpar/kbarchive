@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321915: &quot;Incompatible Version of the RPC Stub&quot; Error with InstallShield"
-permalink: kb/321/Q321915/
+permalink: /kb/321/Q321915/
 ---
 
 ## Q321915: &quot;Incompatible Version of the RPC Stub&quot; Error with InstallShield

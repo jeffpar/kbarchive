@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235856: HOWTO: Read IBM 370 Data from a Binary File"
-permalink: kb/235/Q235856/
+permalink: /kb/235/Q235856/
 ---
 
 ## Q235856: HOWTO: Read IBM 370 Data from a Binary File

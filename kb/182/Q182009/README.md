@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182009: XCON: MTA Queue Slow, with Errors 2127, 2155, 2202, 2194"
-permalink: kb/182/Q182009/
+permalink: /kb/182/Q182009/
 ---
 
 ## Q182009: XCON: MTA Queue Slow, with Errors 2127, 2155, 2202, 2194

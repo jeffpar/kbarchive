@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259219: XADM: Incorrect Year 2000 Date In the Sent and Received Logs"
-permalink: kb/259/Q259219/
+permalink: /kb/259/Q259219/
 ---
 
 ## Q259219: XADM: Incorrect Year 2000 Date In the Sent and Received Logs

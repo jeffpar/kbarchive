@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181023: Migration Tool for Netware Err Msg: Unable to locate DLL"
-permalink: kb/181/Q181023/
+permalink: /kb/181/Q181023/
 ---
 
 ## Q181023: Migration Tool for Netware Err Msg: Unable to locate DLL

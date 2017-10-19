@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133314: WINS: Troubleshooting Event ID 4281 Errors"
-permalink: kb/133/Q133314/
+permalink: /kb/133/Q133314/
 ---
 
 ## Q133314: WINS: Troubleshooting Event ID 4281 Errors

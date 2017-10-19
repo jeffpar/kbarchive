@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71841: Divide by Zero Error with Ventura Publisher Version 3.0"
-permalink: kb/071/Q71841/
+permalink: /kb/071/Q71841/
 ---
 
 ## Q71841: Divide by Zero Error with Ventura Publisher Version 3.0

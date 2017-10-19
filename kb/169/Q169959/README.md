@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169959: XCLN: Exchange Client Won't Register for New Mail Notification"
-permalink: kb/169/Q169959/
+permalink: /kb/169/Q169959/
 ---
 
 ## Q169959: XCLN: Exchange Client Won't Register for New Mail Notification

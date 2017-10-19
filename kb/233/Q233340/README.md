@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233340: Event ID 20100 When SecurID Client Is Not Authenticated"
-permalink: kb/233/Q233340/
+permalink: /kb/233/Q233340/
 ---
 
 ## Q233340: Event ID 20100 When SecurID Client Is Not Authenticated

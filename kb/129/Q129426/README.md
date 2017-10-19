@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129426: RAS Error 652 Using MultiTech MT2834 Modem"
-permalink: kb/129/Q129426/
+permalink: /kb/129/Q129426/
 ---
 
 ## Q129426: RAS Error 652 Using MultiTech MT2834 Modem

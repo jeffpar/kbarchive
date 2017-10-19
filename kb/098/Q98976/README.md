@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98976: Mac Hyp: Out of the Office Stack Sends Only One Message"
-permalink: kb/098/Q98976/
+permalink: /kb/098/Q98976/
 ---
 
 ## Q98976: Mac Hyp: Out of the Office Stack Sends Only One Message

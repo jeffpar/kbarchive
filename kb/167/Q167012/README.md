@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167012: INFO: Setting Control Panel Tools to Start After Unattended Setu"
-permalink: kb/167/Q167012/
+permalink: /kb/167/Q167012/
 ---
 
 ## Q167012: INFO: Setting Control Panel Tools to Start After Unattended Setu

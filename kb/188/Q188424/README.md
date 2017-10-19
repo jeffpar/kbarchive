@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188424: Multilayered Display Driver Produces Black Line in Word"
-permalink: kb/188/Q188424/
+permalink: /kb/188/Q188424/
 ---
 
 ## Q188424: Multilayered Display Driver Produces Black Line in Word

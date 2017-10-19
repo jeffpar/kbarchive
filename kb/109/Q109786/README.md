@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109786: Mac Art Gallery/Wine Guide: Sound May Break or Not Play"
-permalink: kb/109/Q109786/
+permalink: /kb/109/Q109786/
 ---
 
 ## Q109786: Mac Art Gallery/Wine Guide: Sound May Break or Not Play

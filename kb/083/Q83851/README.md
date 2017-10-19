@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83851: SLEEP.SYS 3.1 Required for APM on AST Laptops"
-permalink: kb/083/Q83851/
+permalink: /kb/083/Q83851/
 ---
 
 ## Q83851: SLEEP.SYS 3.1 Required for APM on AST Laptops

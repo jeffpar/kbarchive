@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75783: LaserJet IIIsi Support Under Windows"
-permalink: kb/075/Q75783/
+permalink: /kb/075/Q75783/
 ---
 
 ## Q75783: LaserJet IIIsi Support Under Windows

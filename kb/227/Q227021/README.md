@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227021: SMS:Scheduler Creates Zero Byte Instruction Files for Minijobs"
-permalink: kb/227/Q227021/
+permalink: /kb/227/Q227021/
 ---
 
 ## Q227021: SMS:Scheduler Creates Zero Byte Instruction Files for Minijobs

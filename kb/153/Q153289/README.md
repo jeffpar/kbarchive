@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153289: Rul2cfg.bat Does Not Check for Parameters"
-permalink: kb/153/Q153289/
+permalink: /kb/153/Q153289/
 ---
 
 ## Q153289: Rul2cfg.bat Does Not Check for Parameters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69830: Oracle Requires Windows 3.0a to Run in Standard Mode"
-permalink: kb/069/Q69830/
+permalink: /kb/069/Q69830/
 ---
 
 ## Q69830: Oracle Requires Windows 3.0a to Run in Standard Mode

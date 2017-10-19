@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152607: PRB: 16-bit Program Copied from a Server Does Not Run"
-permalink: kb/152/Q152607/
+permalink: /kb/152/Q152607/
 ---
 
 ## Q152607: PRB: 16-bit Program Copied from a Server Does Not Run

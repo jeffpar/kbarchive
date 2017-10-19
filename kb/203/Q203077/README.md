@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203077: BUG: Duplicating Sockets Is Invalid Over IPX/SPX in Windows 9x"
-permalink: kb/203/Q203077/
+permalink: /kb/203/Q203077/
 ---
 
 ## Q203077: BUG: Duplicating Sockets Is Invalid Over IPX/SPX in Windows 9x

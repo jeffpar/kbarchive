@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169550: Windows 95 Clock Loses Time with APM Enabled"
-permalink: kb/169/Q169550/
+permalink: /kb/169/Q169550/
 ---
 
 ## Q169550: Windows 95 Clock Loses Time with APM Enabled

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97612: NCR Laptop Driver FD82365.SYS Causes &quot;Invalid Disk...&quot; Error"
-permalink: kb/097/Q97612/
+permalink: /kb/097/Q97612/
 ---
 
 ## Q97612: NCR Laptop Driver FD82365.SYS Causes &quot;Invalid Disk...&quot; Error

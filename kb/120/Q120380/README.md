@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120380: Missing Information in Security Event Detail Description"
-permalink: kb/120/Q120380/
+permalink: /kb/120/Q120380/
 ---
 
 ## Q120380: Missing Information in Security Event Detail Description

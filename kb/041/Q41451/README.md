@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q41451: PRB: Windows FatalExit 0x0280 Error Caused by FAR WinMain"
-permalink: kb/041/Q41451/
+permalink: /kb/041/Q41451/
 ---
 
 ## Q41451: PRB: Windows FatalExit 0x0280 Error Caused by FAR WinMain

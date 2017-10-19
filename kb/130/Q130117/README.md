@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130117: Running PKZIP Hangs WFW or Windows NT MS-DOS Command Prompt"
-permalink: kb/130/Q130117/
+permalink: /kb/130/Q130117/
 ---
 
 ## Q130117: Running PKZIP Hangs WFW or Windows NT MS-DOS Command Prompt

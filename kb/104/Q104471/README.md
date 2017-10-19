@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104471: ERR: Not Enough Room for Scroll Bars"
-permalink: kb/104/Q104471/
+permalink: /kb/104/Q104471/
 ---
 
 ## Q104471: ERR: Not Enough Room for Scroll Bars

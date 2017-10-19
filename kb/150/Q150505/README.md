@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150505: DOCERR: Commands Not Supported by Visual FoxPro ODBC Driver"
-permalink: kb/150/Q150505/
+permalink: /kb/150/Q150505/
 ---
 
 ## Q150505: DOCERR: Commands Not Supported by Visual FoxPro ODBC Driver

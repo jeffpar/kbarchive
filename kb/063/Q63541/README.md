@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63541: Passing Structures to OS/2 LAN Manager Remote API Calls"
-permalink: kb/063/Q63541/
+permalink: /kb/063/Q63541/
 ---
 
 ## Q63541: Passing Structures to OS/2 LAN Manager Remote API Calls

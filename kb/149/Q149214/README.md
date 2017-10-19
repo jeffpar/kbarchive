@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149214: Windows NT Server Stops Responding To Macintosh Clients"
-permalink: kb/149/Q149214/
+permalink: /kb/149/Q149214/
 ---
 
 ## Q149214: Windows NT Server Stops Responding To Macintosh Clients

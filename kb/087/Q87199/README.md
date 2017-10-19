@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87199: PROFS: What Is the Gateway Name, and Why Is It Required?"
-permalink: kb/087/Q87199/
+permalink: /kb/087/Q87199/
 ---
 
 ## Q87199: PROFS: What Is the Gateway Name, and Why Is It Required?

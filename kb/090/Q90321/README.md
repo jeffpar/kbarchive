@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90321: WFWG Err Msg: No Configuration Servers Found... DCA's Comnap"
-permalink: kb/090/Q90321/
+permalink: /kb/090/Q90321/
 ---
 
 ## Q90321: WFWG Err Msg: No Configuration Servers Found... DCA's Comnap

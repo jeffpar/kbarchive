@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134602: Zenith Zplayer Adapter Not Compatible with 32-Bit Drivers."
-permalink: kb/134/Q134602/
+permalink: /kb/134/Q134602/
 ---
 
 ## Q134602: Zenith Zplayer Adapter Not Compatible with 32-Bit Drivers.

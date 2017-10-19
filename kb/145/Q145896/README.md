@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145896: Cinemania: Unable to Add Custom Items to List Maker"
-permalink: kb/145/Q145896/
+permalink: /kb/145/Q145896/
 ---
 
 ## Q145896: Cinemania: Unable to Add Custom Items to List Maker

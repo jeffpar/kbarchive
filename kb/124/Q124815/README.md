@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124815: INFO: Explanation of the Two Available MS Access Drivers"
-permalink: kb/124/Q124815/
+permalink: /kb/124/Q124815/
 ---
 
 ## Q124815: INFO: Explanation of the Two Available MS Access Drivers

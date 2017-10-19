@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166603: XFOR: Messages Rejected by X400 System"
-permalink: kb/166/Q166603/
+permalink: /kb/166/Q166603/
 ---
 
 ## Q166603: XFOR: Messages Rejected by X400 System

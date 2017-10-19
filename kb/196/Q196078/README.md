@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196078: No Error Message when Remote Link Services is Wrong for DLS"
-permalink: kb/196/Q196078/
+permalink: /kb/196/Q196078/
 ---
 
 ## Q196078: No Error Message when Remote Link Services is Wrong for DLS

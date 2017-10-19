@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129006: Windows NT 3.51: HP-PCL Driver Does Not Send Output Tray Command"
-permalink: kb/129/Q129006/
+permalink: /kb/129/Q129006/
 ---
 
 ## Q129006: Windows NT 3.51: HP-PCL Driver Does Not Send Output Tray Command

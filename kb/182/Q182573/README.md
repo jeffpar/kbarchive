@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182573: BUG: Illegal Operation Err Using Richtext Control with Find"
-permalink: kb/182/Q182573/
+permalink: /kb/182/Q182573/
 ---
 
 ## Q182573: BUG: Illegal Operation Err Using Richtext Control with Find

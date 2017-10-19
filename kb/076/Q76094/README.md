@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76094: CONN: Methods to Toggle the Quit Dialog Box in MSGATE.EXE"
-permalink: kb/076/Q76094/
+permalink: /kb/076/Q76094/
 ---
 
 ## Q76094: CONN: Methods to Toggle the Quit Dialog Box in MSGATE.EXE

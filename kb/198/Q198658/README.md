@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198658: XADM: Folders Deleted at Subscriber May Not Be Replicated Again"
-permalink: kb/198/Q198658/
+permalink: /kb/198/Q198658/
 ---
 
 ## Q198658: XADM: Folders Deleted at Subscriber May Not Be Replicated Again

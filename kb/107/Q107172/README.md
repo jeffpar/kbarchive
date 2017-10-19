@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107172: Determining the Stack Size of an Application"
-permalink: kb/107/Q107172/
+permalink: /kb/107/Q107172/
 ---
 
 ## Q107172: Determining the Stack Size of an Application

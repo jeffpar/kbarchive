@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159259: Spike's World: How Do I Download and Install the Games?"
-permalink: kb/159/Q159259/
+permalink: /kb/159/Q159259/
 ---
 
 ## Q159259: Spike's World: How Do I Download and Install the Games?

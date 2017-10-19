@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156486: WD97: Database Command Missing from the Insert Menu"
-permalink: kb/156/Q156486/
+permalink: /kb/156/Q156486/
 ---
 
 ## Q156486: WD97: Database Command Missing from the Insert Menu

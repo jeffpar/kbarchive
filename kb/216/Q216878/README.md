@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216878: Macintosh Clients Cannot See WinNT Server After Upgrade to SP4"
-permalink: kb/216/Q216878/
+permalink: /kb/216/Q216878/
 ---
 
 ## Q216878: Macintosh Clients Cannot See WinNT Server After Upgrade to SP4

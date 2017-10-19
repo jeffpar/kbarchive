@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138875: DOC: READ EVENTS Command Not Documented in the Language Ref"
-permalink: kb/138/Q138875/
+permalink: /kb/138/Q138875/
 ---
 
 ## Q138875: DOC: READ EVENTS Command Not Documented in the Language Ref

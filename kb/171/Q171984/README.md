@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171984: Using DLC Protocol Instead of JetAdmin Utility"
-permalink: kb/171/Q171984/
+permalink: /kb/171/Q171984/
 ---
 
 ## Q171984: Using DLC Protocol Instead of JetAdmin Utility

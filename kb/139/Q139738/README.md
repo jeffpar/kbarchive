@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139738: ROUTE Command Prints Help Text to STDERR"
-permalink: kb/139/Q139738/
+permalink: /kb/139/Q139738/
 ---
 
 ## Q139738: ROUTE Command Prints Help Text to STDERR

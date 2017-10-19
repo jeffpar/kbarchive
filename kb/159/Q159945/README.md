@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159945: WD97: General Information About E-Mail Support"
-permalink: kb/159/Q159945/
+permalink: /kb/159/Q159945/
 ---
 
 ## Q159945: WD97: General Information About E-Mail Support

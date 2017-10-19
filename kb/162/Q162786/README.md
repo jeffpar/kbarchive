@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162786: Undocumented CACLS: Group Permissions Capabilities"
-permalink: kb/162/Q162786/
+permalink: /kb/162/Q162786/
 ---
 
 ## Q162786: Undocumented CACLS: Group Permissions Capabilities

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64286: Crash Indicator Bar Remaining in Hangar Buzz Mode"
-permalink: kb/064/Q64286/
+permalink: /kb/064/Q64286/
 ---
 
 ## Q64286: Crash Indicator Bar Remaining in Hangar Buzz Mode

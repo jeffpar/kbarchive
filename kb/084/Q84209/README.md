@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84209: Microsolution's Compaticard and SMARTDRV.EXE"
-permalink: kb/084/Q84209/
+permalink: /kb/084/Q84209/
 ---
 
 ## Q84209: Microsolution's Compaticard and SMARTDRV.EXE

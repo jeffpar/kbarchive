@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163190: WD97: Tracked Changes Accept All Button Does Not Accept Revision"
-permalink: kb/163/Q163190/
+permalink: /kb/163/Q163190/
 ---
 
 ## Q163190: WD97: Tracked Changes Accept All Button Does Not Accept Revision

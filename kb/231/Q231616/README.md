@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231616: INFO: Terminal Server Console-Directed Pop-Up Print Error Box"
-permalink: kb/231/Q231616/
+permalink: /kb/231/Q231616/
 ---
 
 ## Q231616: INFO: Terminal Server Console-Directed Pop-Up Print Error Box

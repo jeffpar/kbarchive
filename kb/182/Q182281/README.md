@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182281: Remote Access Service Callback Authentication Does Not Work"
-permalink: kb/182/Q182281/
+permalink: /kb/182/Q182281/
 ---
 
 ## Q182281: Remote Access Service Callback Authentication Does Not Work

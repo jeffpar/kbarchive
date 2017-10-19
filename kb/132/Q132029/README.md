@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132029: ADT2: DOC GetRecordsetClone Method Unsuccessful Win 95/NT 3.5"
-permalink: kb/132/Q132029/
+permalink: /kb/132/Q132029/
 ---
 
 ## Q132029: ADT2: DOC GetRecordsetClone Method Unsuccessful Win 95/NT 3.5

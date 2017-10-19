@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239564: SMS: Client Components Reinstalled During Periodic Verification"
-permalink: kb/239/Q239564/
+permalink: /kb/239/Q239564/
 ---
 
 ## Q239564: SMS: Client Components Reinstalled During Periodic Verification

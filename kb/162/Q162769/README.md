@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162769: Wrong CNAME RR Causes DNS Startup and Zone Transfer Failure"
-permalink: kb/162/Q162769/
+permalink: /kb/162/Q162769/
 ---
 
 ## Q162769: Wrong CNAME RR Causes DNS Startup and Zone Transfer Failure

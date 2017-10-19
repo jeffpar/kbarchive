@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304916: ASP Pages Return a 403.1 Error After Upgrade to Windows 2000"
-permalink: kb/304/Q304916/
+permalink: /kb/304/Q304916/
 ---
 
 ## Q304916: ASP Pages Return a 403.1 Error After Upgrade to Windows 2000

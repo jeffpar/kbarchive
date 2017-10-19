@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174835: FIX: Internet Transfer Control Using Username and Password"
-permalink: kb/174/Q174835/
+permalink: /kb/174/Q174835/
 ---
 
 ## Q174835: FIX: Internet Transfer Control Using Username and Password

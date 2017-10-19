@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138259: Large File Copy Fails Using Thomas-Conrad 3045 Arcnet Adapter"
-permalink: kb/138/Q138259/
+permalink: /kb/138/Q138259/
 ---
 
 ## Q138259: Large File Copy Fails Using Thomas-Conrad 3045 Arcnet Adapter

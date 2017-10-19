@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170491: XADM: How to Complete Edbutil Terminated with Error -1808"
-permalink: kb/170/Q170491/
+permalink: /kb/170/Q170491/
 ---
 
 ## Q170491: XADM: How to Complete Edbutil Terminated with Error -1808

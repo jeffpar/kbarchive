@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160908: Refresh Screen Link Does Not Work in PWS FTP Administration"
-permalink: kb/160/Q160908/
+permalink: /kb/160/Q160908/
 ---
 
 ## Q160908: Refresh Screen Link Does Not Work in PWS FTP Administration

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222833: XADM: Public Information Store Replication Msg. Size Limit"
-permalink: kb/222/Q222833/
+permalink: /kb/222/Q222833/
 ---
 
 ## Q222833: XADM: Public Information Store Replication Msg. Size Limit

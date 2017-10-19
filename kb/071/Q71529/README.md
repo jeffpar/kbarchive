@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71529: Reader and Writer with Copy Protect May Lock System"
-permalink: kb/071/Q71529/
+permalink: /kb/071/Q71529/
 ---
 
 ## Q71529: Reader and Writer with Copy Protect May Lock System

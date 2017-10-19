@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112223: File Available that Updates Flight Simulator 5.0 to 5.0a"
-permalink: kb/112/Q112223/
+permalink: /kb/112/Q112223/
 ---
 
 ## Q112223: File Available that Updates Flight Simulator 5.0 to 5.0a

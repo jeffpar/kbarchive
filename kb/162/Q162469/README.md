@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162469: Windows NT 4.0 SP3 Overwrites HyperTerminal Private Edition"
-permalink: kb/162/Q162469/
+permalink: /kb/162/Q162469/
 ---
 
 ## Q162469: Windows NT 4.0 SP3 Overwrites HyperTerminal Private Edition

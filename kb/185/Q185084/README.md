@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185084: PRB: Visible Property of Container Ignored by ActiveX Controls"
-permalink: kb/185/Q185084/
+permalink: /kb/185/Q185084/
 ---
 
 ## Q185084: PRB: Visible Property of Container Ignored by ActiveX Controls

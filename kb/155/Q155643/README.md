@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155643: Case Studies Available Describing Windows NT 4.0 Deployments"
-permalink: kb/155/Q155643/
+permalink: /kb/155/Q155643/
 ---
 
 ## Q155643: Case Studies Available Describing Windows NT 4.0 Deployments

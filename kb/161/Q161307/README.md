@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161307: HOWTO: Use Visual FoxPro Tables in Visual Basic"
-permalink: kb/161/Q161307/
+permalink: /kb/161/Q161307/
 ---
 
 ## Q161307: HOWTO: Use Visual FoxPro Tables in Visual Basic

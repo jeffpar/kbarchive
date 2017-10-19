@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109489: UNDELETE Err Msg: Cannot Load with Neither Option Selected"
-permalink: kb/109/Q109489/
+permalink: /kb/109/Q109489/
 ---
 
 ## Q109489: UNDELETE Err Msg: Cannot Load with Neither Option Selected

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185984: WD97: Outlook Message Icons Remain Unopened with Routed Document"
-permalink: kb/185/Q185984/
+permalink: /kb/185/Q185984/
 ---
 
 ## Q185984: WD97: Outlook Message Icons Remain Unopened with Routed Document

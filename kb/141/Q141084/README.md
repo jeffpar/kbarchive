@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141084: DOCERR: How to Create a Blank DateTime Documented Incorrectly"
-permalink: kb/141/Q141084/
+permalink: /kb/141/Q141084/
 ---
 
 ## Q141084: DOCERR: How to Create a Blank DateTime Documented Incorrectly

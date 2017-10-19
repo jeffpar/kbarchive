@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194339: WINS Event ID 4183"
-permalink: kb/194/Q194339/
+permalink: /kb/194/Q194339/
 ---
 
 ## Q194339: WINS Event ID 4183

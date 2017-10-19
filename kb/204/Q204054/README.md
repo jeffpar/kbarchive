@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q204054: PRB: ErrMsg 35603 &quot;Invalid Key&quot; w/TreeView or ListView Control"
-permalink: kb/204/Q204054/
+permalink: /kb/204/Q204054/
 ---
 
 ## Q204054: PRB: ErrMsg 35603 &quot;Invalid Key&quot; w/TreeView or ListView Control

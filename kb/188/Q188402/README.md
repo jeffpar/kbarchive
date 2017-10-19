@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188402: INFO: Some Visual FoxPro Files Contained in XSOURCE Folder"
-permalink: kb/188/Q188402/
+permalink: /kb/188/Q188402/
 ---
 
 ## Q188402: INFO: Some Visual FoxPro Files Contained in XSOURCE Folder

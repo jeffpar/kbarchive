@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243761: XFOR: Folder Options for Application Converter for Lotus Notes"
-permalink: kb/243/Q243761/
+permalink: /kb/243/Q243761/
 ---
 
 ## Q243761: XFOR: Folder Options for Application Converter for Lotus Notes

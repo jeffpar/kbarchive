@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299063: FIX: Print Preview Appears Inside Debug Frame"
-permalink: kb/299/Q299063/
+permalink: /kb/299/Q299063/
 ---
 
 ## Q299063: FIX: Print Preview Appears Inside Debug Frame

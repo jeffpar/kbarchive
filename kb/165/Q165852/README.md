@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165852: Windows 3.x App Can't Find SNA Server When Started Second Time"
-permalink: kb/165/Q165852/
+permalink: /kb/165/Q165852/
 ---
 
 ## Q165852: Windows 3.x App Can't Find SNA Server When Started Second Time

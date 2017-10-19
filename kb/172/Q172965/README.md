@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172965: Contents of the Nt4sp3_i.exe File"
-permalink: kb/172/Q172965/
+permalink: /kb/172/Q172965/
 ---
 
 ## Q172965: Contents of the Nt4sp3_i.exe File

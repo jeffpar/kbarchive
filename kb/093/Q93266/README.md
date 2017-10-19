@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93266: Identifying Third-Party Mouse by FCC ID Number"
-permalink: kb/093/Q93266/
+permalink: /kb/093/Q93266/
 ---
 
 ## Q93266: Identifying Third-Party Mouse by FCC ID Number

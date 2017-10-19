@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175108: XWEB: Cannot View Free/Busy For Distribution List Using OWA"
-permalink: kb/175/Q175108/
+permalink: /kb/175/Q175108/
 ---
 
 ## Q175108: XWEB: Cannot View Free/Busy For Distribution List Using OWA

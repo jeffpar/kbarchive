@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265438: XADM: Exmerge Error Message: CMapiSession::CreateEMSPSTProfile"
-permalink: kb/265/Q265438/
+permalink: /kb/265/Q265438/
 ---
 
 ## Q265438: XADM: Exmerge Error Message: CMapiSession::CreateEMSPSTProfile

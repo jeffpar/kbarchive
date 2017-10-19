@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157317: PRB: &quot;Invalid Library File&quot; Loading .fll Created with VC++ 4.2"
-permalink: kb/157/Q157317/
+permalink: /kb/157/Q157317/
 ---
 
 ## Q157317: PRB: &quot;Invalid Library File&quot; Loading .fll Created with VC++ 4.2

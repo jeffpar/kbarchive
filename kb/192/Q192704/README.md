@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192704: PRB: CArchive::Read Might Hang When Using CSocketFile"
-permalink: kb/192/Q192704/
+permalink: /kb/192/Q192704/
 ---
 
 ## Q192704: PRB: CArchive::Read Might Hang When Using CSocketFile

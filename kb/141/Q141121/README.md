@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141121: Converting FAT to NTFS Fails Using BusLogic Controller"
-permalink: kb/141/Q141121/
+permalink: /kb/141/Q141121/
 ---
 
 ## Q141121: Converting FAT to NTFS Fails Using BusLogic Controller

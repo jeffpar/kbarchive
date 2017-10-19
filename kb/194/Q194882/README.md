@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194882: Encarta Virtual Globe 99: Cannot Use IntelliMouse Wheel to Zoom"
-permalink: kb/194/Q194882/
+permalink: /kb/194/Q194882/
 ---
 
 ## Q194882: Encarta Virtual Globe 99: Cannot Use IntelliMouse Wheel to Zoom

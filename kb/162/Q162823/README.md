@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162823: ACC97: SourceSafe Integration Alerts Do Not Use Office Assistant"
-permalink: kb/162/Q162823/
+permalink: /kb/162/Q162823/
 ---
 
 ## Q162823: ACC97: SourceSafe Integration Alerts Do Not Use Office Assistant

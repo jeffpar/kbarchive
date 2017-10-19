@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200586: SMS: RC Being Accessed Icon Appears Inappropriately"
-permalink: kb/200/Q200586/
+permalink: /kb/200/Q200586/
 ---
 
 ## Q200586: SMS: RC Being Accessed Icon Appears Inappropriately

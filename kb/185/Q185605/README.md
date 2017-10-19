@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185605: Stop Error Caused by Invalid Use of Private Video Driver Handle"
-permalink: kb/185/Q185605/
+permalink: /kb/185/Q185605/
 ---
 
 ## Q185605: Stop Error Caused by Invalid Use of Private Video Driver Handle

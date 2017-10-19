@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104562: PC DB: How to Remove Groups After Running ACCTONME.EXE"
-permalink: kb/104/Q104562/
+permalink: /kb/104/Q104562/
 ---
 
 ## Q104562: PC DB: How to Remove Groups After Running ACCTONME.EXE

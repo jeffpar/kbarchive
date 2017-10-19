@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173454: XADM: System Messages Are Not Modifiable"
-permalink: kb/173/Q173454/
+permalink: /kb/173/Q173454/
 ---
 
 ## Q173454: XADM: System Messages Are Not Modifiable

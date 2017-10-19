@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175478: FS98: Flight Simulator Hangs During Setup"
-permalink: kb/175/Q175478/
+permalink: /kb/175/Q175478/
 ---
 
 ## Q175478: FS98: Flight Simulator Hangs During Setup

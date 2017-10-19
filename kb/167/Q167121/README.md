@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167121: FILE: COMCTLZP.EXE: Comctl32.ocx Updated to Version 5.00.3828"
-permalink: kb/167/Q167121/
+permalink: /kb/167/Q167121/
 ---
 
 ## Q167121: FILE: COMCTLZP.EXE: Comctl32.ocx Updated to Version 5.00.3828

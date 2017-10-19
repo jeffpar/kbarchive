@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158579: STL Sample for the set::size Function"
-permalink: kb/158/Q158579/
+permalink: /kb/158/Q158579/
 ---
 
 ## Q158579: STL Sample for the set::size Function

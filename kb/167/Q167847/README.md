@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167847: ACC97: IPF Executing VSS Add and Create Commands at Same Time"
-permalink: kb/167/Q167847/
+permalink: /kb/167/Q167847/
 ---
 
 ## Q167847: ACC97: IPF Executing VSS Add and Create Commands at Same Time

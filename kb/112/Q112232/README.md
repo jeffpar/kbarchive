@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112232: FaxDrv: Installing the Fax Driver for Windows"
-permalink: kb/112/Q112232/
+permalink: /kb/112/Q112232/
 ---
 
 ## Q112232: FaxDrv: Installing the Fax Driver for Windows

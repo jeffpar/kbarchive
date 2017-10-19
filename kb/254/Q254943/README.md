@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254943: XCON: Message Transfer Agent Stops Unexpectedly w. Event ID 9405"
-permalink: kb/254/Q254943/
+permalink: /kb/254/Q254943/
 ---
 
 ## Q254943: XCON: Message Transfer Agent Stops Unexpectedly w. Event ID 9405

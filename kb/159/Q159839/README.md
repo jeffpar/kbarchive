@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159839: PRB: Sysdiff Does Not Add Empty Directories"
-permalink: kb/159/Q159839/
+permalink: /kb/159/Q159839/
 ---
 
 ## Q159839: PRB: Sysdiff Does Not Add Empty Directories

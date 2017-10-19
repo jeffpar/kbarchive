@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196941: WD97: Changing the Source of a Link May Resize the Object"
-permalink: kb/196/Q196941/
+permalink: /kb/196/Q196941/
 ---
 
 ## Q196941: WD97: Changing the Source of a Link May Resize the Object

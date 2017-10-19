@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229148: XADM: (N-)DR and (N-)RR Display in Mixed Languages"
-permalink: kb/229/Q229148/
+permalink: /kb/229/Q229148/
 ---
 
 ## Q229148: XADM: (N-)DR and (N-)RR Display in Mixed Languages

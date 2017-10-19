@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214565: XFOR: MS Mail Connector Is Throwing Away Read Receipts from Mac"
-permalink: kb/214/Q214565/
+permalink: /kb/214/Q214565/
 ---
 
 ## Q214565: XFOR: MS Mail Connector Is Throwing Away Read Receipts from Mac

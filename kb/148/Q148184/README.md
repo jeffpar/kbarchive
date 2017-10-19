@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148184: BUG: Large Fonts Cause SETFONT() to Fail in Scigraph Demo"
-permalink: kb/148/Q148184/
+permalink: /kb/148/Q148184/
 ---
 
 ## Q148184: BUG: Large Fonts Cause SETFONT() to Fail in Scigraph Demo

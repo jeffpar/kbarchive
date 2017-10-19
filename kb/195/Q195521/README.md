@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195521: XGEN: Exchange &quot;How-To&quot; Documents Available on the WWW"
-permalink: kb/195/Q195521/
+permalink: /kb/195/Q195521/
 ---
 
 ## Q195521: XGEN: Exchange &quot;How-To&quot; Documents Available on the WWW

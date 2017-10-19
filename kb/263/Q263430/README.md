@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263430: SMS: Nt Discovery Tab Won't Accept Comp Names Beginning w/ Nmbrs"
-permalink: kb/263/Q263430/
+permalink: /kb/263/Q263430/
 ---
 
 ## Q263430: SMS: Nt Discovery Tab Won't Accept Comp Names Beginning w/ Nmbrs

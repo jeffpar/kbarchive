@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230052: Files or Folders Deleted from Floppy Disk Not in the Recycle Bin"
-permalink: kb/230/Q230052/
+permalink: /kb/230/Q230052/
 ---
 
 ## Q230052: Files or Folders Deleted from Floppy Disk Not in the Recycle Bin

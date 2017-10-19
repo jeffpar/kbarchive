@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235214: Microsoft SQL Server 7.0 System Administration Training Kit Comm"
-permalink: kb/235/Q235214/
+permalink: /kb/235/Q235214/
 ---
 
 ## Q235214: Microsoft SQL Server 7.0 System Administration Training Kit Comm

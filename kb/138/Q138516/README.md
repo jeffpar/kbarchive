@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138516: Problems with the Samp1.adm File"
-permalink: kb/138/Q138516/
+permalink: /kb/138/Q138516/
 ---
 
 ## Q138516: Problems with the Samp1.adm File

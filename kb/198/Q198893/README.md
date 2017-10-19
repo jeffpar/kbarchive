@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198893: Effects of Checking &quot;Use Network Name for Computer Name&quot; in MSCS"
-permalink: kb/198/Q198893/
+permalink: /kb/198/Q198893/
 ---
 
 ## Q198893: Effects of Checking &quot;Use Network Name for Computer Name&quot; in MSCS

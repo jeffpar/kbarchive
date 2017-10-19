@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172872: SMS: Application Group or Icons Not Created in WinNT 3.51 w/PCM"
-permalink: kb/172/Q172872/
+permalink: /kb/172/Q172872/
 ---
 
 ## Q172872: SMS: Application Group or Icons Not Created in WinNT 3.51 w/PCM

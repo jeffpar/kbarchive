@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156507: HOWTO: Bypass Registry Settings on Visual FoxPro Startup"
-permalink: kb/156/Q156507/
+permalink: /kb/156/Q156507/
 ---
 
 ## Q156507: HOWTO: Bypass Registry Settings on Visual FoxPro Startup

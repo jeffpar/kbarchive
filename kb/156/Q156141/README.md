@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156141: PRB: Default Values Not Shown in Input Parameters Dialog Box"
-permalink: kb/156/Q156141/
+permalink: /kb/156/Q156141/
 ---
 
 ## Q156141: PRB: Default Values Not Shown in Input Parameters Dialog Box

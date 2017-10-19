@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169154: PRB: Error &quot;OLE Object is Invalid or Corrupt&quot; on Empty Gen Field"
-permalink: kb/169/Q169154/
+permalink: /kb/169/Q169154/
 ---
 
 ## Q169154: PRB: Error &quot;OLE Object is Invalid or Corrupt&quot; on Empty Gen Field

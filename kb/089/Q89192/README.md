@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89192: Insufficient Memory With DR DOS and LANtastic"
-permalink: kb/089/Q89192/
+permalink: /kb/089/Q89192/
 ---
 
 ## Q89192: Insufficient Memory With DR DOS and LANtastic

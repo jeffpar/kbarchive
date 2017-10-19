@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169542: WD97: Messages When Attempting to Fax from Word"
-permalink: kb/169/Q169542/
+permalink: /kb/169/Q169542/
 ---
 
 ## Q169542: WD97: Messages When Attempting to Fax from Word

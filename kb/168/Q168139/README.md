@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168139: XFOR: IMS Inbound Mail Communication Problem"
-permalink: kb/168/Q168139/
+permalink: /kb/168/Q168139/
 ---
 
 ## Q168139: XFOR: IMS Inbound Mail Communication Problem

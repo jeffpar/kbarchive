@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143398: Problems Running Remote Registry and MSNDS"
-permalink: kb/143/Q143398/
+permalink: /kb/143/Q143398/
 ---
 
 ## Q143398: Problems Running Remote Registry and MSNDS

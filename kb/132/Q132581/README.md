@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132581: No Sound Playing Freddy Pharkas in MS-DOS Session"
-permalink: kb/132/Q132581/
+permalink: /kb/132/Q132581/
 ---
 
 ## Q132581: No Sound Playing Freddy Pharkas in MS-DOS Session

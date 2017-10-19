@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180414: XFOR: Non-Delivery Report: 554 (not a type writer)"
-permalink: kb/180/Q180414/
+permalink: /kb/180/Q180414/
 ---
 
 ## Q180414: XFOR: Non-Delivery Report: 554 (not a type writer)

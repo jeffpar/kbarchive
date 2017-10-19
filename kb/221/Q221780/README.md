@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221780: PRB: Printer Properties Show Incorrect Values"
-permalink: kb/221/Q221780/
+permalink: /kb/221/Q221780/
 ---
 
 ## Q221780: PRB: Printer Properties Show Incorrect Values

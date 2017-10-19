@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105251: DBLSPACE /DELETE Prompt Does Not Show Y/N Prompt"
-permalink: kb/105/Q105251/
+permalink: /kb/105/Q105251/
 ---
 
 ## Q105251: DBLSPACE /DELETE Prompt Does Not Show Y/N Prompt

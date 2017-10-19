@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154463: Clearing DNS Statistics Without Stopping DNS Server"
-permalink: kb/154/Q154463/
+permalink: /kb/154/Q154463/
 ---
 
 ## Q154463: Clearing DNS Statistics Without Stopping DNS Server

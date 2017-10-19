@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113835: MS-DOS Setup Patch Gauge Hangs at 99 Percent"
-permalink: kb/113/Q113835/
+permalink: /kb/113/Q113835/
 ---
 
 ## Q113835: MS-DOS Setup Patch Gauge Hangs at 99 Percent

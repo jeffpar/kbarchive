@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83840: Emulations for Seikosha Printers"
-permalink: kb/083/Q83840/
+permalink: /kb/083/Q83840/
 ---
 
 ## Q83840: Emulations for Seikosha Printers

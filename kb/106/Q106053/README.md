@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106053: Cannot Attach to NetWare Server After Installing WFWG 3.11"
-permalink: kb/106/Q106053/
+permalink: /kb/106/Q106053/
 ---
 
 ## Q106053: Cannot Attach to NetWare Server After Installing WFWG 3.11

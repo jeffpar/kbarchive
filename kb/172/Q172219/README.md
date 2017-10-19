@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172219: Canon LBP-8 III+ Prints Symbol Font for Entire Document"
-permalink: kb/172/Q172219/
+permalink: /kb/172/Q172219/
 ---
 
 ## Q172219: Canon LBP-8 III+ Prints Symbol Font for Entire Document

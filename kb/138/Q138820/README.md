@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138820: BUG: Button Image on the Toolbar Appears Incomplete"
-permalink: kb/138/Q138820/
+permalink: /kb/138/Q138820/
 ---
 
 ## Q138820: BUG: Button Image on the Toolbar Appears Incomplete

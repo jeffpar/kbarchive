@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173997: Drive Letter Not Displayed in Error Message Box"
-permalink: kb/173/Q173997/
+permalink: /kb/173/Q173997/
 ---
 
 ## Q173997: Drive Letter Not Displayed in Error Message Box

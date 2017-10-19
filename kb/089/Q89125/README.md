@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89125: How to Obtain Updated Novell Drivers and VPICDA.386"
-permalink: kb/089/Q89125/
+permalink: /kb/089/Q89125/
 ---
 
 ## Q89125: How to Obtain Updated Novell Drivers and VPICDA.386

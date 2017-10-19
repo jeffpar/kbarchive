@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181031: Callback Verbs Documented Incorrectly in the LUA SNA SDK"
-permalink: kb/181/Q181031/
+permalink: /kb/181/Q181031/
 ---
 
 ## Q181031: Callback Verbs Documented Incorrectly in the LUA SNA SDK

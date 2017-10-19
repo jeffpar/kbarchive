@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63628: Flight Simulator: Saving Startup Modes to Disk"
-permalink: kb/063/Q63628/
+permalink: /kb/063/Q63628/
 ---
 
 ## Q63628: Flight Simulator: Saving Startup Modes to Disk

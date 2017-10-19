@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120098: INFO: Two Ways to Search &amp; Remove Characters from a Text String"
-permalink: kb/120/Q120098/
+permalink: /kb/120/Q120098/
 ---
 
 ## Q120098: INFO: Two Ways to Search &amp; Remove Characters from a Text String

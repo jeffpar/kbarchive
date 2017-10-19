@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141501: How to Add SourceSafe for Unix to SourceSafe for Windows"
-permalink: kb/141/Q141501/
+permalink: /kb/141/Q141501/
 ---
 
 ## Q141501: How to Add SourceSafe for Unix to SourceSafe for Windows

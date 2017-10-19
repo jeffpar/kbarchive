@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248298: PC Adm: Administrator Notice 59: Error Accessing Address File"
-permalink: kb/248/Q248298/
+permalink: /kb/248/Q248298/
 ---
 
 ## Q248298: PC Adm: Administrator Notice 59: Error Accessing Address File

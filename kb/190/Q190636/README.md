@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190636: BUG: Invalid TMP Directory Causes GPF in DataEnvironment"
-permalink: kb/190/Q190636/
+permalink: /kb/190/Q190636/
 ---
 
 ## Q190636: BUG: Invalid TMP Directory Causes GPF in DataEnvironment

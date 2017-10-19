@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230502: HOWTO: Print a Form That Is Too Large for the Screen or Page"
-permalink: kb/230/Q230502/
+permalink: /kb/230/Q230502/
 ---
 
 ## Q230502: HOWTO: Print a Form That Is Too Large for the Screen or Page

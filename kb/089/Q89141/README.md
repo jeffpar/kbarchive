@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89141: Using Swap Files on Networks in Windows"
-permalink: kb/089/Q89141/
+permalink: /kb/089/Q89141/
 ---
 
 ## Q89141: Using Swap Files on Networks in Windows

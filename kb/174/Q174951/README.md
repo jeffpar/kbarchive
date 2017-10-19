@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174951: Err Msg: Error Copying File Cannot Copy Config Access Is Denied"
-permalink: kb/174/Q174951/
+permalink: /kb/174/Q174951/
 ---
 
 ## Q174951: Err Msg: Error Copying File Cannot Copy Config Access Is Denied

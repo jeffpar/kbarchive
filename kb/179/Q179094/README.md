@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179094: Draw98: How to Remove (Uninstall) Microsoft Draw 98"
-permalink: kb/179/Q179094/
+permalink: /kb/179/Q179094/
 ---
 
 ## Q179094: Draw98: How to Remove (Uninstall) Microsoft Draw 98

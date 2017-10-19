@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168328: PPT7: Error Inserting or Clicking Excel Object in PowerPoint"
-permalink: kb/168/Q168328/
+permalink: /kb/168/Q168328/
 ---
 
 ## Q168328: PPT7: Error Inserting or Clicking Excel Object in PowerPoint

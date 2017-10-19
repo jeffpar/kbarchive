@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104612: Arcade: Description of Centipede"
-permalink: kb/104/Q104612/
+permalink: /kb/104/Q104612/
 ---
 
 ## Q104612: Arcade: Description of Centipede

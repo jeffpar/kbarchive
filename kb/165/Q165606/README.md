@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165606: PRB: CRecordset::Move(0) Asserts with skipDeletedRecords Option"
-permalink: kb/165/Q165606/
+permalink: /kb/165/Q165606/
 ---
 
 ## Q165606: PRB: CRecordset::Move(0) Asserts with skipDeletedRecords Option

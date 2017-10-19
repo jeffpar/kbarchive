@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112427: DDE Commands Must Be Bracketed for Non-Windows Platform"
-permalink: kb/112/Q112427/
+permalink: /kb/112/Q112427/
 ---
 
 ## Q112427: DDE Commands Must Be Bracketed for Non-Windows Platform

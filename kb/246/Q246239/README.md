@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246239: XWEB: Unable to Reply to or Forward a Large Message in OWA"
-permalink: kb/246/Q246239/
+permalink: /kb/246/Q246239/
 ---
 
 ## Q246239: XWEB: Unable to Reply to or Forward a Large Message in OWA

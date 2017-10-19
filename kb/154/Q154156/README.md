@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154156: Windows NT Not Compatible With U.S. Robotics WinModem"
-permalink: kb/154/Q154156/
+permalink: /kb/154/Q154156/
 ---
 
 ## Q154156: Windows NT Not Compatible With U.S. Robotics WinModem

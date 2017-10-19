@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199203: XFOR:Problems Rescheduling Meetings Between Exchange and Notes"
-permalink: kb/199/Q199203/
+permalink: /kb/199/Q199203/
 ---
 
 ## Q199203: XFOR:Problems Rescheduling Meetings Between Exchange and Notes

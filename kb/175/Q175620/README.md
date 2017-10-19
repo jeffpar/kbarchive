@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175620: INFO: Limitations on Distribution of Spellchk.app"
-permalink: kb/175/Q175620/
+permalink: /kb/175/Q175620/
 ---
 
 ## Q175620: INFO: Limitations on Distribution of Spellchk.app

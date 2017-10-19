@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289606: XGEN: Exchange Server 5.5 Post-SP4 CDO Fixes"
-permalink: kb/289/Q289606/
+permalink: /kb/289/Q289606/
 ---
 
 ## Q289606: XGEN: Exchange Server 5.5 Post-SP4 CDO Fixes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170719: WD97: Using SendKeys with Dialog Boxes"
-permalink: kb/170/Q170719/
+permalink: /kb/170/Q170719/
 ---
 
 ## Q170719: WD97: Using SendKeys with Dialog Boxes

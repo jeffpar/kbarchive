@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160494: DNS Zone Transfer Fails After WINS Record Added"
-permalink: kb/160/Q160494/
+permalink: /kb/160/Q160494/
 ---
 
 ## Q160494: DNS Zone Transfer Fails After WINS Record Added

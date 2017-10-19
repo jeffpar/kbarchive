@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81296: Toshiba T1600 and Windows 3.0 Setup Issues"
-permalink: kb/081/Q81296/
+permalink: /kb/081/Q81296/
 ---
 
 ## Q81296: Toshiba T1600 and Windows 3.0 Setup Issues

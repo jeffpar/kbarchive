@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135400: FIX: Unallocated Handle When Deleting Zero Value of a Grid"
-permalink: kb/135/Q135400/
+permalink: /kb/135/Q135400/
 ---
 
 ## Q135400: FIX: Unallocated Handle When Deleting Zero Value of a Grid

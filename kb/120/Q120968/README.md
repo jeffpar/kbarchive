@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120968: BUG: Limitation w/ Disabling Warnings Above 4699 w/ #pragma"
-permalink: kb/120/Q120968/
+permalink: /kb/120/Q120968/
 ---
 
 ## Q120968: BUG: Limitation w/ Disabling Warnings Above 4699 w/ #pragma

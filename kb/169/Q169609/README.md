@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169609: INFO: Digitally Sign Your Visual Basic Internet Application"
-permalink: kb/169/Q169609/
+permalink: /kb/169/Q169609/
 ---
 
 ## Q169609: INFO: Digitally Sign Your Visual Basic Internet Application

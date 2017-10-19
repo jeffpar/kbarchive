@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122781: LMHOSTS #INCLUDE of Local Files May Fail on Windows NT 3.5"
-permalink: kb/122/Q122781/
+permalink: /kb/122/Q122781/
 ---
 
 ## Q122781: LMHOSTS #INCLUDE of Local Files May Fail on Windows NT 3.5

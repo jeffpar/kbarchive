@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120453: Unable to Capture Audio and Video Simultaneously with VidCap"
-permalink: kb/120/Q120453/
+permalink: /kb/120/Q120453/
 ---
 
 ## Q120453: Unable to Capture Audio and Video Simultaneously with VidCap

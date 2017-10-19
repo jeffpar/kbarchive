@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154384: INF: Jet 3.0 Dynamic Memory Usage and Access ODBC Driver"
-permalink: kb/154/Q154384/
+permalink: /kb/154/Q154384/
 ---
 
 ## Q154384: INF: Jet 3.0 Dynamic Memory Usage and Access ODBC Driver

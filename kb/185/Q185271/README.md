@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185271: XADM: Orphaned LV Errors Running ESEUTIL Consistency Checker"
-permalink: kb/185/Q185271/
+permalink: /kb/185/Q185271/
 ---
 
 ## Q185271: XADM: Orphaned LV Errors Running ESEUTIL Consistency Checker

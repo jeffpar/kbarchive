@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195034: HOWTO: OfnKing Demonstrates CFileDialog Customization"
-permalink: kb/195/Q195034/
+permalink: /kb/195/Q195034/
 ---
 
 ## Q195034: HOWTO: OfnKing Demonstrates CFileDialog Customization

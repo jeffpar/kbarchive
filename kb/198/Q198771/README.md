@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198771: How to Lock Down Windows NT and Internet Explorer 4.01 Desktop"
-permalink: kb/198/Q198771/
+permalink: /kb/198/Q198771/
 ---
 
 ## Q198771: How to Lock Down Windows NT and Internet Explorer 4.01 Desktop

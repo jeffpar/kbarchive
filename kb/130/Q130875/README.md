@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130875: Troubleshooting MS Network Client 3.0 and DHCP"
-permalink: kb/130/Q130875/
+permalink: /kb/130/Q130875/
 ---
 
 ## Q130875: Troubleshooting MS Network Client 3.0 and DHCP

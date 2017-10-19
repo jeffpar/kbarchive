@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155647: MSN Error Message: Wrong Information Specified"
-permalink: kb/155/Q155647/
+permalink: /kb/155/Q155647/
 ---
 
 ## Q155647: MSN Error Message: Wrong Information Specified

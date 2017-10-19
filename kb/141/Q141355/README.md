@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141355: FIX: Copy/Paste Causes GP Fault w/Worksheet Created by COPY TO"
-permalink: kb/141/Q141355/
+permalink: /kb/141/Q141355/
 ---
 
 ## Q141355: FIX: Copy/Paste Causes GP Fault w/Worksheet Created by COPY TO

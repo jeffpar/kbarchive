@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123751: DriveSpace Utility Creates DoubleSpace CVFs in Windows 95"
-permalink: kb/123/Q123751/
+permalink: /kb/123/Q123751/
 ---
 
 ## Q123751: DriveSpace Utility Creates DoubleSpace CVFs in Windows 95

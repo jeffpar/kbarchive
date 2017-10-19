@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289827: XFOR: Permission Required to Migrate Lotus Notes Mailboxes"
-permalink: kb/289/Q289827/
+permalink: /kb/289/Q289827/
 ---
 
 ## Q289827: XFOR: Permission Required to Migrate Lotus Notes Mailboxes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223140: SMB Size Negotiation When Copying Files with Windows NT Explorer"
-permalink: kb/223/Q223140/
+permalink: /kb/223/Q223140/
 ---
 
 ## Q223140: SMB Size Negotiation When Copying Files with Windows NT Explorer

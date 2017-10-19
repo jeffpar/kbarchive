@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168015: Files Not Replaced When Running Emergency Repair on X86 Intel"
-permalink: kb/168/Q168015/
+permalink: /kb/168/Q168015/
 ---
 
 ## Q168015: Files Not Replaced When Running Emergency Repair on X86 Intel

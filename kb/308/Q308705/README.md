@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308705: SMS: Cannot Install Client Components w/ Terminal Services"
-permalink: kb/308/Q308705/
+permalink: /kb/308/Q308705/
 ---
 
 ## Q308705: SMS: Cannot Install Client Components w/ Terminal Services

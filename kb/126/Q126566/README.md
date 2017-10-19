@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126566: Problems Typing Quotation Mark, Caret, Apostrophe, or Tilde"
-permalink: kb/126/Q126566/
+permalink: /kb/126/Q126566/
 ---
 
 ## Q126566: Problems Typing Quotation Mark, Caret, Apostrophe, or Tilde

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121822: Deadlocks When Using Asynchronous Named Pipes"
-permalink: kb/121/Q121822/
+permalink: /kb/121/Q121822/
 ---
 
 ## Q121822: Deadlocks When Using Asynchronous Named Pipes

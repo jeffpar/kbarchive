@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151290: Top Articles on Windows 95 Hardware"
-permalink: kb/151/Q151290/
+permalink: /kb/151/Q151290/
 ---
 
 ## Q151290: Top Articles on Windows 95 Hardware

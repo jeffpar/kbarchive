@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246836: User Manager for Domains and Server Manager Cannot Find PDC"
-permalink: kb/246/Q246836/
+permalink: /kb/246/Q246836/
 ---
 
 ## Q246836: User Manager for Domains and Server Manager Cannot Find PDC

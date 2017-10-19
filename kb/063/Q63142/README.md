@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63142: Flight Simulator: Zooming the Map Window with the Mouse"
-permalink: kb/063/Q63142/
+permalink: /kb/063/Q63142/
 ---
 
 ## Q63142: Flight Simulator: Zooming the Map Window with the Mouse

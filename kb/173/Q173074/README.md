@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173074: PRB: Multiple Visual Basic Printouts Are Not the Same"
-permalink: kb/173/Q173074/
+permalink: /kb/173/Q173074/
 ---
 
 ## Q173074: PRB: Multiple Visual Basic Printouts Are Not the Same

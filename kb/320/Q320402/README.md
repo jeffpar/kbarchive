@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320402: Microsoft Visual C# .NET (Core Reference) Comments and Correctio"
-permalink: kb/320/Q320402/
+permalink: /kb/320/Q320402/
 ---
 
 ## Q320402: Microsoft Visual C# .NET (Core Reference) Comments and Correctio

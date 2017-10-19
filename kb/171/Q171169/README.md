@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171169: XADM: Address Book Views in Exchange Server 4.0 Servers"
-permalink: kb/171/Q171169/
+permalink: /kb/171/Q171169/
 ---
 
 ## Q171169: XADM: Address Book Views in Exchange Server 4.0 Servers

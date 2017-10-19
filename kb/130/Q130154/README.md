@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130154: PPT: Columns or Rows Missing from Inserted Gantt Chart"
-permalink: kb/130/Q130154/
+permalink: /kb/130/Q130154/
 ---
 
 ## Q130154: PPT: Columns or Rows Missing from Inserted Gantt Chart

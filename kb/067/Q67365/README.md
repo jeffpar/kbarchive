@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67365: Err Msg When Booting System: NO ROM BASIC"
-permalink: kb/067/Q67365/
+permalink: /kb/067/Q67365/
 ---
 
 ## Q67365: Err Msg When Booting System: NO ROM BASIC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172327: WD97: Can't Merge Documents with Tracked Changes"
-permalink: kb/172/Q172327/
+permalink: /kb/172/Q172327/
 ---
 
 ## Q172327: WD97: Can't Merge Documents with Tracked Changes

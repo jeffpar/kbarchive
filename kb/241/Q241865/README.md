@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241865: ILS May Cause SBS Wizards Not to Work"
-permalink: kb/241/Q241865/
+permalink: /kb/241/Q241865/
 ---
 
 ## Q241865: ILS May Cause SBS Wizards Not to Work

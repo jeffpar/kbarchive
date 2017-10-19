@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298141: HOWTO: Send a PCL or PostScript File Directly to a Printer w/ VB"
-permalink: kb/298/Q298141/
+permalink: /kb/298/Q298141/
 ---
 
 ## Q298141: HOWTO: Send a PCL or PostScript File Directly to a Printer w/ VB

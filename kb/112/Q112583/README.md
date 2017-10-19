@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112583: Domain Users are Validated as Guests Only"
-permalink: kb/112/Q112583/
+permalink: /kb/112/Q112583/
 ---
 
 ## Q112583: Domain Users are Validated as Guests Only

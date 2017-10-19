@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160546: Error Message: &quot;No User Profiles Were Found&quot;"
-permalink: kb/160/Q160546/
+permalink: /kb/160/Q160546/
 ---
 
 ## Q160546: Error Message: &quot;No User Profiles Were Found&quot;

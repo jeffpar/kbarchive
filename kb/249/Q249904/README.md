@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249904: XADM: Deleting Damaged IMS Object in Raw Mode"
-permalink: kb/249/Q249904/
+permalink: /kb/249/Q249904/
 ---
 
 ## Q249904: XADM: Deleting Damaged IMS Object in Raw Mode

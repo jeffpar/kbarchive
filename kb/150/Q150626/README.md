@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150626: Mac Bookshelf 1996-97: Items Installed by an Easy Install"
-permalink: kb/150/Q150626/
+permalink: /kb/150/Q150626/
 ---
 
 ## Q150626: Mac Bookshelf 1996-97: Items Installed by an Easy Install

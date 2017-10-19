@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155315: Cannot Log On After User Access to Boot Partition Removed"
-permalink: kb/155/Q155315/
+permalink: /kb/155/Q155315/
 ---
 
 ## Q155315: Cannot Log On After User Access to Boot Partition Removed

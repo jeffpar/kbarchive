@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233482: STOP 0x0000001E in Win32k.sys on Terminal Server"
-permalink: kb/233/Q233482/
+permalink: /kb/233/Q233482/
 ---
 
 ## Q233482: STOP 0x0000001E in Win32k.sys on Terminal Server

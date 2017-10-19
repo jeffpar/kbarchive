@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174474: Installing RRAS Disables 128-bit RAS Encryption"
-permalink: kb/174/Q174474/
+permalink: /kb/174/Q174474/
 ---
 
 ## Q174474: Installing RRAS Disables 128-bit RAS Encryption

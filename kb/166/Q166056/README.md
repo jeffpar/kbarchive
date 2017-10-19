@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166056: WV: Word Viewer Upgrade Doesn't Prompt for Document Open Option"
-permalink: kb/166/Q166056/
+permalink: /kb/166/Q166056/
 ---
 
 ## Q166056: WV: Word Viewer Upgrade Doesn't Prompt for Document Open Option

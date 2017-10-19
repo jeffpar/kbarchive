@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157772: WD97: Bitmap Icon Is Lost After Saving to RTF"
-permalink: kb/157/Q157772/
+permalink: /kb/157/Q157772/
 ---
 
 ## Q157772: WD97: Bitmap Icon Is Lost After Saving to RTF

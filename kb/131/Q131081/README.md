@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131081: How to Set Object's BackColor to Button Face's BackColor"
-permalink: kb/131/Q131081/
+permalink: /kb/131/Q131081/
 ---
 
 ## Q131081: How to Set Object's BackColor to Button Face's BackColor

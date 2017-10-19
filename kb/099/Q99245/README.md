@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99245: OS/2 Version Levels in LEVEL8.XXX File"
-permalink: kb/099/Q99245/
+permalink: /kb/099/Q99245/
 ---
 
 ## Q99245: OS/2 Version Levels in LEVEL8.XXX File

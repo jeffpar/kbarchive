@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119796: PC Adm: TEMPLATE.EXE Err Msg: No Memory; Error Releasing Mem"
-permalink: kb/119/Q119796/
+permalink: /kb/119/Q119796/
 ---
 
 ## Q119796: PC Adm: TEMPLATE.EXE Err Msg: No Memory; Error Releasing Mem

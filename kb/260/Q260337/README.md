@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260337: HOWTO: Use the Sleep API to Pause Program Execution in a DLL"
-permalink: kb/260/Q260337/
+permalink: /kb/260/Q260337/
 ---
 
 ## Q260337: HOWTO: Use the Sleep API to Pause Program Execution in a DLL

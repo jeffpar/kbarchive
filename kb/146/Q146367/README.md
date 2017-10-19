@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146367: Exception Does Not Inherit Properties of Series"
-permalink: kb/146/Q146367/
+permalink: /kb/146/Q146367/
 ---
 
 ## Q146367: Exception Does Not Inherit Properties of Series

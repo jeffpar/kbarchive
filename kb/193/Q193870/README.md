@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193870: FIX: New Version of RDO 2.0 Breaks VB5 UserConnection Designer"
-permalink: kb/193/Q193870/
+permalink: /kb/193/Q193870/
 ---
 
 ## Q193870: FIX: New Version of RDO 2.0 Breaks VB5 UserConnection Designer

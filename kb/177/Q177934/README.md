@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177934: GP Fault When Clicking Properties on Any Local Group"
-permalink: kb/177/Q177934/
+permalink: /kb/177/Q177934/
 ---
 
 ## Q177934: GP Fault When Clicking Properties on Any Local Group

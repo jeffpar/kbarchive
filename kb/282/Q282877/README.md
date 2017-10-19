@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282877: Testing the CPI-C Sample Programs"
-permalink: kb/282/Q282877/
+permalink: /kb/282/Q282877/
 ---
 
 ## Q282877: Testing the CPI-C Sample Programs

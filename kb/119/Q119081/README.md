@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119081: Comprehensive List of MS-DOS 6.22 Documentation Errors"
-permalink: kb/119/Q119081/
+permalink: /kb/119/Q119081/
 ---
 
 ## Q119081: Comprehensive List of MS-DOS 6.22 Documentation Errors

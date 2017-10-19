@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90931: Corrupt CONNECT.DAT May Cause Invalid Errors in WFWG"
-permalink: kb/090/Q90931/
+permalink: /kb/090/Q90931/
 ---
 
 ## Q90931: Corrupt CONNECT.DAT May Cause Invalid Errors in WFWG

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157274: How to Set Up the USR Courier I-Modem for Single-Channel ISDN"
-permalink: kb/157/Q157274/
+permalink: /kb/157/Q157274/
 ---
 
 ## Q157274: How to Set Up the USR Courier I-Modem for Single-Channel ISDN

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77586: PRB: Custom Command-Line Options Disappear"
-permalink: kb/077/Q77586/
+permalink: /kb/077/Q77586/
 ---
 
 ## Q77586: PRB: Custom Command-Line Options Disappear

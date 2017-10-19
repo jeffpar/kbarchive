@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258772: AoE: How to Play Age of Empires"
-permalink: kb/258/Q258772/
+permalink: /kb/258/Q258772/
 ---
 
 ## Q258772: AoE: How to Play Age of Empires

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101460: Mac Srv Wkst: MM0795: General Troubleshooting Flowcharts"
-permalink: kb/101/Q101460/
+permalink: /kb/101/Q101460/
 ---
 
 ## Q101460: Mac Srv Wkst: MM0795: General Troubleshooting Flowcharts

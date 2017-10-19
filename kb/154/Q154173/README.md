@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154173: Unsharing NetFax Folder Not Reflected in Fax Properties"
-permalink: kb/154/Q154173/
+permalink: /kb/154/Q154173/
 ---
 
 ## Q154173: Unsharing NetFax Folder Not Reflected in Fax Properties

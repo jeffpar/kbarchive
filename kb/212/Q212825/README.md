@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q212825: SMS: GPF: &quot;Initialization of CRYPT32.DLL Failed&quot;"
-permalink: kb/212/Q212825/
+permalink: /kb/212/Q212825/
 ---
 
 ## Q212825: SMS: GPF: &quot;Initialization of CRYPT32.DLL Failed&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269290: Error: CAPI2 = 80093005 When Installing a WWW Certificate"
-permalink: kb/269/Q269290/
+permalink: /kb/269/Q269290/
 ---
 
 ## Q269290: Error: CAPI2 = 80093005 When Installing a WWW Certificate

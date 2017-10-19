@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92776: Setup Overwrites _DEFAULT.PIF and DOSPRMPT.PIF"
-permalink: kb/092/Q92776/
+permalink: /kb/092/Q92776/
 ---
 
 ## Q92776: Setup Overwrites _DEFAULT.PIF and DOSPRMPT.PIF

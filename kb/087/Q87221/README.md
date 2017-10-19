@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87221: PROFS: Where Incoming/Outgoing Mail Files Are Stored"
-permalink: kb/087/Q87221/
+permalink: /kb/087/Q87221/
 ---
 
 ## Q87221: PROFS: Where Incoming/Outgoing Mail Files Are Stored

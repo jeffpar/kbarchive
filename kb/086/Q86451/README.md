@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86451: Err Msg: &quot;Abnormal Termination&quot; with Adobe TypeAlign"
-permalink: kb/086/Q86451/
+permalink: /kb/086/Q86451/
 ---
 
 ## Q86451: Err Msg: &quot;Abnormal Termination&quot; with Adobe TypeAlign

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130537: Changes to the RDISK Dialog Box in Windows NT 3.51"
-permalink: kb/130/Q130537/
+permalink: /kb/130/Q130537/
 ---
 
 ## Q130537: Changes to the RDISK Dialog Box in Windows NT 3.51

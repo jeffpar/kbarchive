@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140982: PPT7: PowerPoint Presentation Conferencing: Hidden Slides"
-permalink: kb/140/Q140982/
+permalink: /kb/140/Q140982/
 ---
 
 ## Q140982: PPT7: PowerPoint Presentation Conferencing: Hidden Slides

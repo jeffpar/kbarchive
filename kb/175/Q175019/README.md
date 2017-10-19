@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175019: Err Msg: The User Must Change His Password Before He Logs on..."
-permalink: kb/175/Q175019/
+permalink: /kb/175/Q175019/
 ---
 
 ## Q175019: Err Msg: The User Must Change His Password Before He Logs on...

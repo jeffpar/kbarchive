@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82264: PC Win: Err Msg: The Attached File Is Currently Open..."
-permalink: kb/082/Q82264/
+permalink: /kb/082/Q82264/
 ---
 
 ## Q82264: PC Win: Err Msg: The Attached File Is Currently Open...

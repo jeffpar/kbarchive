@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106099: PC Adm: Invalid or Inaccurate Error Messages"
-permalink: kb/106/Q106099/
+permalink: /kb/106/Q106099/
 ---
 
 ## Q106099: PC Adm: Invalid or Inaccurate Error Messages

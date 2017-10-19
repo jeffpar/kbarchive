@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81520: Using Golden Bow's Vcache with Windows 3.0"
-permalink: kb/081/Q81520/
+permalink: /kb/081/Q81520/
 ---
 
 ## Q81520: Using Golden Bow's Vcache with Windows 3.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135260: Location of the Ppreadme.txt File in PowerPoint 95"
-permalink: kb/135/Q135260/
+permalink: /kb/135/Q135260/
 ---
 
 ## Q135260: Location of the Ppreadme.txt File in PowerPoint 95

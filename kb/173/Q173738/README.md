@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173738: INFO: Object Hungarian Notation Naming Conventions for VB"
-permalink: kb/173/Q173738/
+permalink: /kb/173/Q173738/
 ---
 
 ## Q173738: INFO: Object Hungarian Notation Naming Conventions for VB

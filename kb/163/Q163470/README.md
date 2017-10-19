@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163470: PATCH: Foxtools.hqx Upgrade to Prevent Setup Wizard Errors"
-permalink: kb/163/Q163470/
+permalink: /kb/163/Q163470/
 ---
 
 ## Q163470: PATCH: Foxtools.hqx Upgrade to Prevent Setup Wizard Errors

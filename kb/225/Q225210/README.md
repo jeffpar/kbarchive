@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225210: PRB: Outlook Form Code Not Added When Using HTML Form Converter"
-permalink: kb/225/Q225210/
+permalink: /kb/225/Q225210/
 ---
 
 ## Q225210: PRB: Outlook Form Code Not Added When Using HTML Form Converter

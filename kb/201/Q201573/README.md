@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201573: Two Processes Calling Each Other May Stop Responding"
-permalink: kb/201/Q201573/
+permalink: /kb/201/Q201573/
 ---
 
 ## Q201573: Two Processes Calling Each Other May Stop Responding

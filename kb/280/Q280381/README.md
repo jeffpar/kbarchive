@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280381: MCM: Cannot Assign Accelerate Function to Throttle Control"
-permalink: kb/280/Q280381/
+permalink: /kb/280/Q280381/
 ---
 
 ## Q280381: MCM: Cannot Assign Accelerate Function to Throttle Control

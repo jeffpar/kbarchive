@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94163: Disabling Carbon Copy for Windows"
-permalink: kb/094/Q94163/
+permalink: /kb/094/Q94163/
 ---
 
 ## Q94163: Disabling Carbon Copy for Windows

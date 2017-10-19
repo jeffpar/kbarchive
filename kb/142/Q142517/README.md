@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142517: INFO: VB Doesn't Support Administrator or Network Installation"
-permalink: kb/142/Q142517/
+permalink: /kb/142/Q142517/
 ---
 
 ## Q142517: INFO: VB Doesn't Support Administrator or Network Installation

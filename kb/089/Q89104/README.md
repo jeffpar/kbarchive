@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89104: Using Windows with LAWN Network"
-permalink: kb/089/Q89104/
+permalink: /kb/089/Q89104/
 ---
 
 ## Q89104: Using Windows with LAWN Network

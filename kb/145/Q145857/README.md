@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145857: How to Use Multiple Menus in MFC App That Uses GetDefaultMenu"
-permalink: kb/145/Q145857/
+permalink: /kb/145/Q145857/
 ---
 
 ## Q145857: How to Use Multiple Menus in MFC App That Uses GetDefaultMenu

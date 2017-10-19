@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117320: How to Programatically Terminate an MFC Application"
-permalink: kb/117/Q117320/
+permalink: /kb/117/Q117320/
 ---
 
 ## Q117320: How to Programatically Terminate an MFC Application

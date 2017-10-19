@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316205: XCON:  How to Block Port 25 Access to an Exchange Server 5.5"
-permalink: kb/316/Q316205/
+permalink: /kb/316/Q316205/
 ---
 
 ## Q316205: XCON:  How to Block Port 25 Access to an Exchange Server 5.5

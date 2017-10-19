@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82374: Incorrect Indentation when Pasting Text into Virtual Machine"
-permalink: kb/082/Q82374/
+permalink: /kb/082/Q82374/
 ---
 
 ## Q82374: Incorrect Indentation when Pasting Text into Virtual Machine

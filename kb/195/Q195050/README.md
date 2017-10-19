@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195050: How to Clear Environment Variables Using Setx.exe"
-permalink: kb/195/Q195050/
+permalink: /kb/195/Q195050/
 ---
 
 ## Q195050: How to Clear Environment Variables Using Setx.exe

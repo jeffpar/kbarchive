@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136694: Memory Management in Visual FoxPro"
-permalink: kb/136/Q136694/
+permalink: /kb/136/Q136694/
 ---
 
 ## Q136694: Memory Management in Visual FoxPro

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111507: PRB: Generate Command on Program Menu Is Disabled"
-permalink: kb/111/Q111507/
+permalink: /kb/111/Q111507/
 ---
 
 ## Q111507: PRB: Generate Command on Program Menu Is Disabled

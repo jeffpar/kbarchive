@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172494: Err Msg: Connection Manager Needs More Files to Install."
-permalink: kb/172/Q172494/
+permalink: /kb/172/Q172494/
 ---
 
 ## Q172494: Err Msg: Connection Manager Needs More Files to Install.

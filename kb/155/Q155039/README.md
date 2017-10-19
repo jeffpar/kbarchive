@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155039: Foreground Program Unavailable During Scheduled Connection"
-permalink: kb/155/Q155039/
+permalink: /kb/155/Q155039/
 ---
 
 ## Q155039: Foreground Program Unavailable During Scheduled Connection

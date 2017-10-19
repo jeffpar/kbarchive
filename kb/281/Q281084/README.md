@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281084: Classic Board Games: Cannot Promote Rook in Shogi Game"
-permalink: kb/281/Q281084/
+permalink: /kb/281/Q281084/
 ---
 
 ## Q281084: Classic Board Games: Cannot Promote Rook in Shogi Game

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119382: FILE: Fw1040.exe Basic Concepts of Relational Database Design"
-permalink: kb/119/Q119382/
+permalink: /kb/119/Q119382/
 ---
 
 ## Q119382: FILE: Fw1040.exe Basic Concepts of Relational Database Design

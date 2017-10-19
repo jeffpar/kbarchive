@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130149: WD97: Memory Error When Document Saved in Word 95 Format"
-permalink: kb/130/Q130149/
+permalink: /kb/130/Q130149/
 ---
 
 ## Q130149: WD97: Memory Error When Document Saved in Word 95 Format

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247005: HOWTO: Move Visual C++ IDE Customizations to Another Computer"
-permalink: kb/247/Q247005/
+permalink: /kb/247/Q247005/
 ---
 
 ## Q247005: HOWTO: Move Visual C++ IDE Customizations to Another Computer

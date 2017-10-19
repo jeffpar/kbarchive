@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151701: XADM: How to Manually Add Code Pages for Mixed Languages"
-permalink: kb/151/Q151701/
+permalink: /kb/151/Q151701/
 ---
 
 ## Q151701: XADM: How to Manually Add Code Pages for Mixed Languages

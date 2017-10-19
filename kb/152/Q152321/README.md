@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152321: XADM: Migration Wizard Reports Invalid Home-Server Definition"
-permalink: kb/152/Q152321/
+permalink: /kb/152/Q152321/
 ---
 
 ## Q152321: XADM: Migration Wizard Reports Invalid Home-Server Definition

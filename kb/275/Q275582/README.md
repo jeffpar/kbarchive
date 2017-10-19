@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275582: Pocket Streets 2001: Exported Pushpins Appear in Wrong Location"
-permalink: kb/275/Q275582/
+permalink: /kb/275/Q275582/
 ---
 
 ## Q275582: Pocket Streets 2001: Exported Pushpins Appear in Wrong Location

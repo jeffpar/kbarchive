@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158575: STL Sample for the set::(empty, clear) Functions"
-permalink: kb/158/Q158575/
+permalink: /kb/158/Q158575/
 ---
 
 ## Q158575: STL Sample for the set::(empty, clear) Functions

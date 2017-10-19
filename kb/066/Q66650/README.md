@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66650: INFO: Purpose of &quot;Internal Linkage&quot; &amp; &quot;No Linkage&quot; Information"
-permalink: kb/066/Q66650/
+permalink: /kb/066/Q66650/
 ---
 
 ## Q66650: INFO: Purpose of &quot;Internal Linkage&quot; &amp; &quot;No Linkage&quot; Information

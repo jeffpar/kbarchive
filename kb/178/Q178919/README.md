@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178919: XADM: Exchange Event Service Not Installed During Upgrade"
-permalink: kb/178/Q178919/
+permalink: /kb/178/Q178919/
 ---
 
 ## Q178919: XADM: Exchange Event Service Not Installed During Upgrade

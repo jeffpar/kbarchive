@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221745: FIX: C0000005 Fatal Error Using GETPEM() in Loop with Debugger"
-permalink: kb/221/Q221745/
+permalink: /kb/221/Q221745/
 ---
 
 ## Q221745: FIX: C0000005 Fatal Error Using GETPEM() in Loop with Debugger

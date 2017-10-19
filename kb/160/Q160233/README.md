@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160233: FIX: Can't Set SelStart Property of RichTextBox to &gt; 32K"
-permalink: kb/160/Q160233/
+permalink: /kb/160/Q160233/
 ---
 
 ## Q160233: FIX: Can't Set SelStart Property of RichTextBox to &gt; 32K

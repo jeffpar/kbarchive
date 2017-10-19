@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201586: Reinstalling the SBS Client Computer to an Existing Client"
-permalink: kb/201/Q201586/
+permalink: /kb/201/Q201586/
 ---
 
 ## Q201586: Reinstalling the SBS Client Computer to an Existing Client

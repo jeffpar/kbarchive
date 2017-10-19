@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88153: Sound Master II Drivers Available from Covox Tympanum"
-permalink: kb/088/Q88153/
+permalink: /kb/088/Q88153/
 ---
 
 ## Q88153: Sound Master II Drivers Available from Covox Tympanum

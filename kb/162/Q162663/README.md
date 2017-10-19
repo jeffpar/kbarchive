@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162663: Cabletron T20xx Adapter Does Not Work After Installing SP2"
-permalink: kb/162/Q162663/
+permalink: /kb/162/Q162663/
 ---
 
 ## Q162663: Cabletron T20xx Adapter Does Not Work After Installing SP2

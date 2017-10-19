@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152435: Network Client 3.0 Boot Disk and Error 2: The Specified File"
-permalink: kb/152/Q152435/
+permalink: /kb/152/Q152435/
 ---
 
 ## Q152435: Network Client 3.0 Boot Disk and Error 2: The Specified File

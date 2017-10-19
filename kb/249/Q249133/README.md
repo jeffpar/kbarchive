@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249133: XFOR: Messages from cc:Mail to Exchange Missing Address Info."
-permalink: kb/249/Q249133/
+permalink: /kb/249/Q249133/
 ---
 
 ## Q249133: XFOR: Messages from cc:Mail to Exchange Missing Address Info.

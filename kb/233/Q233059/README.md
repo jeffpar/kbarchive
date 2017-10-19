@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233059: Error Message When Attempting to Create a Folder NTFS Partition"
-permalink: kb/233/Q233059/
+permalink: /kb/233/Q233059/
 ---
 
 ## Q233059: Error Message When Attempting to Create a Folder NTFS Partition

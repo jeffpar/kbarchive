@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150871: Using Dual-Channel ISDN with The Microsoft Network"
-permalink: kb/150/Q150871/
+permalink: /kb/150/Q150871/
 ---
 
 ## Q150871: Using Dual-Channel ISDN with The Microsoft Network

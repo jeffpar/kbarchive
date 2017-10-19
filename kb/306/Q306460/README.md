@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306460: Hfnetchk.exe Returns NOTE Messages for Installed Patches"
-permalink: kb/306/Q306460/
+permalink: /kb/306/Q306460/
 ---
 
 ## Q306460: Hfnetchk.exe Returns NOTE Messages for Installed Patches

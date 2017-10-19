@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196227: SMS: Scandisk Delayed During Windows 9x Client Installation"
-permalink: kb/196/Q196227/
+permalink: /kb/196/Q196227/
 ---
 
 ## Q196227: SMS: Scandisk Delayed During Windows 9x Client Installation

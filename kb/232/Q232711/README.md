@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232711: How Cluster Integrity Is Monitored in WLBS"
-permalink: kb/232/Q232711/
+permalink: /kb/232/Q232711/
 ---
 
 ## Q232711: How Cluster Integrity Is Monitored in WLBS

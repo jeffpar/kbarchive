@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174213: BUG: Blank Window Appears Instead of Help File Contents"
-permalink: kb/174/Q174213/
+permalink: /kb/174/Q174213/
 ---
 
 ## Q174213: BUG: Blank Window Appears Instead of Help File Contents

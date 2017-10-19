@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177525: &quot;Fatal Exception 0D&quot; Error Message After Pressing CAPS LOCK Key"
-permalink: kb/177/Q177525/
+permalink: /kb/177/Q177525/
 ---
 
 ## Q177525: &quot;Fatal Exception 0D&quot; Error Message After Pressing CAPS LOCK Key

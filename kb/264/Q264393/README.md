@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264393: PRB: Type Mismatch and Floating Point Error with CoolBar Control"
-permalink: kb/264/Q264393/
+permalink: /kb/264/Q264393/
 ---
 
 ## Q264393: PRB: Type Mismatch and Floating Point Error with CoolBar Control

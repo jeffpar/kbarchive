@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248401: User May Override Mapping Option Is Not Enforced Centrally"
-permalink: kb/248/Q248401/
+permalink: /kb/248/Q248401/
 ---
 
 ## Q248401: User May Override Mapping Option Is Not Enforced Centrally

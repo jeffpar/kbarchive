@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120694: Anthems or Other MIDI Files Play Quietly or Inaudibly"
-permalink: kb/120/Q120694/
+permalink: /kb/120/Q120694/
 ---
 
 ## Q120694: Anthems or Other MIDI Files Play Quietly or Inaudibly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193321: XCON: Recipient Name Not Recognized"
-permalink: kb/193/Q193321/
+permalink: /kb/193/Q193321/
 ---
 
 ## Q193321: XCON: Recipient Name Not Recognized

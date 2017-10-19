@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107175: Flight Simulator Err Msg: Com Frequencies Are from 118.0000..."
-permalink: kb/107/Q107175/
+permalink: /kb/107/Q107175/
 ---
 
 ## Q107175: Flight Simulator Err Msg: Com Frequencies Are from 118.0000...

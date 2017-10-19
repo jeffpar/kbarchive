@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84191: Proton.exe Uses DPMI Host for MS-DOS Protected Mode Apps"
-permalink: kb/084/Q84191/
+permalink: /kb/084/Q84191/
 ---
 
 ## Q84191: Proton.exe Uses DPMI Host for MS-DOS Protected Mode Apps

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87087: LAN WorkPlace for DOS May Cause GP Fault"
-permalink: kb/087/Q87087/
+permalink: /kb/087/Q87087/
 ---
 
 ## Q87087: LAN WorkPlace for DOS May Cause GP Fault

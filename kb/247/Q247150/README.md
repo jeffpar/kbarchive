@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247150: XADM: Registry Error Message When Performing Soft Recovery"
-permalink: kb/247/Q247150/
+permalink: /kb/247/Q247150/
 ---
 
 ## Q247150: XADM: Registry Error Message When Performing Soft Recovery

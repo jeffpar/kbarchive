@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314652: Flight Simulator 2002: Troubleshooting Video Issues"
-permalink: kb/314/Q314652/
+permalink: /kb/314/Q314652/
 ---
 
 ## Q314652: Flight Simulator 2002: Troubleshooting Video Issues

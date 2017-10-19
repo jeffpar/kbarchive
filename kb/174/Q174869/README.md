@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174869: WINS Client Sends Refresh Requests to Secondary WINS Server"
-permalink: kb/174/Q174869/
+permalink: /kb/174/Q174869/
 ---
 
 ## Q174869: WINS Client Sends Refresh Requests to Secondary WINS Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129912: IBM Thinkpad 720C Large Capacity Hard Disk Support"
-permalink: kb/129/Q129912/
+permalink: /kb/129/Q129912/
 ---
 
 ## Q129912: IBM Thinkpad 720C Large Capacity Hard Disk Support

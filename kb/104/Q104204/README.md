@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104204: Troubleshooting Directory Replicator Problems"
-permalink: kb/104/Q104204/
+permalink: /kb/104/Q104204/
 ---
 
 ## Q104204: Troubleshooting Directory Replicator Problems

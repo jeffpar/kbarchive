@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122158: Configuring Sound in Visual C++ Development Environment"
-permalink: kb/122/Q122158/
+permalink: /kb/122/Q122158/
 ---
 
 ## Q122158: Configuring Sound in Visual C++ Development Environment

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93567: PC Win: Select All Does Not Highlight Any Messages"
-permalink: kb/093/Q93567/
+permalink: /kb/093/Q93567/
 ---
 
 ## Q93567: PC Win: Select All Does Not Highlight Any Messages

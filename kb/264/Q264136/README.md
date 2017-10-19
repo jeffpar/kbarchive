@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264136: MCM2: &quot;Fatal Exception 0D&quot; Error Message When You Start Program"
-permalink: kb/264/Q264136/
+permalink: /kb/264/Q264136/
 ---
 
 ## Q264136: MCM2: &quot;Fatal Exception 0D&quot; Error Message When You Start Program

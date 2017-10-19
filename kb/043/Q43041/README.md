@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43041: Calculating Memory Requirements for MS-DOS-Based Apps"
-permalink: kb/043/Q43041/
+permalink: /kb/043/Q43041/
 ---
 
 ## Q43041: Calculating Memory Requirements for MS-DOS-Based Apps

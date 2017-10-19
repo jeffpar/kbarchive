@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135200: Deleting Recycled Folder Does Not Seem to Work"
-permalink: kb/135/Q135200/
+permalink: /kb/135/Q135200/
 ---
 
 ## Q135200: Deleting Recycled Folder Does Not Seem to Work

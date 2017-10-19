@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77888: Bitstream Facelift 1.0 Hangs with MS-DOS Shell Task Swapper"
-permalink: kb/077/Q77888/
+permalink: /kb/077/Q77888/
 ---
 
 ## Q77888: Bitstream Facelift 1.0 Hangs with MS-DOS Shell Task Swapper

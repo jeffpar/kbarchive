@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187730: Cannot Delete the Testdir.tmp File on a Shared NTFS Volume"
-permalink: kb/187/Q187730/
+permalink: /kb/187/Q187730/
 ---
 
 ## Q187730: Cannot Delete the Testdir.tmp File on a Shared NTFS Volume

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319660: COleVariant Constructor Doesn't Correctly Initialize Its Members"
-permalink: kb/319/Q319660/
+permalink: /kb/319/Q319660/
 ---
 
 ## Q319660: COleVariant Constructor Doesn't Correctly Initialize Its Members

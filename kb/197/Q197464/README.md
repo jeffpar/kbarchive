@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197464: How to Detect the ::&#36;DATA Attack in IIS Log Files"
-permalink: kb/197/Q197464/
+permalink: /kb/197/Q197464/
 ---
 
 ## Q197464: How to Detect the ::&#36;DATA Attack in IIS Log Files

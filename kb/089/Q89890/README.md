@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89890: ERR: &quot;No Fields to Process&quot; in FoxBASE+ for the Macintosh"
-permalink: kb/089/Q89890/
+permalink: /kb/089/Q89890/
 ---
 
 ## Q89890: ERR: &quot;No Fields to Process&quot; in FoxBASE+ for the Macintosh

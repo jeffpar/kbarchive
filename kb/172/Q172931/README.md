@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172931: Cached Logon Information"
-permalink: kb/172/Q172931/
+permalink: /kb/172/Q172931/
 ---
 
 ## Q172931: Cached Logon Information

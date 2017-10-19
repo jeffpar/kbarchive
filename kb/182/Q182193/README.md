@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182193: PRB: Err: Cluster Resource Dependency Can Not Be Found"
-permalink: kb/182/Q182193/
+permalink: /kb/182/Q182193/
 ---
 
 ## Q182193: PRB: Err: Cluster Resource Dependency Can Not Be Found

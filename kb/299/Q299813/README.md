@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299813: Train Simulator: How to Find the Product ID"
-permalink: kb/299/Q299813/
+permalink: /kb/299/Q299813/
 ---
 
 ## Q299813: Train Simulator: How to Find the Product ID

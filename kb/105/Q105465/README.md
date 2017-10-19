@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105465: Windows NT CD Contents &#92;ALPHA (528)"
-permalink: kb/105/Q105465/
+permalink: /kb/105/Q105465/
 ---
 
 ## Q105465: Windows NT CD Contents &#92;ALPHA (528)

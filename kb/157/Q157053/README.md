@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157053: PRB: DisabledBackColor Property of a Label Defaults to Gray"
-permalink: kb/157/Q157053/
+permalink: /kb/157/Q157053/
 ---
 
 ## Q157053: PRB: DisabledBackColor Property of a Label Defaults to Gray

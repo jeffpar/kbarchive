@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65442: ATI-VIP and ATI EGA Wonder Cards Switch Settings for Windows"
-permalink: kb/065/Q65442/
+permalink: /kb/065/Q65442/
 ---
 
 ## Q65442: ATI-VIP and ATI EGA Wonder Cards Switch Settings for Windows

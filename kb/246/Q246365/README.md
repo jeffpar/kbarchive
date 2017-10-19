@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246365: Cannot View the Exit Status of an Interix Process from Win32"
-permalink: kb/246/Q246365/
+permalink: /kb/246/Q246365/
 ---
 
 ## Q246365: Cannot View the Exit Status of an Interix Process from Win32

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185047: XADM: Maximum Age Limit for Public Folders"
-permalink: kb/185/Q185047/
+permalink: /kb/185/Q185047/
 ---
 
 ## Q185047: XADM: Maximum Age Limit for Public Folders

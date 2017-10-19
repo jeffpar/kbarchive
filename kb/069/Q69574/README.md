@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69574: ANSI.SYS Escape Sequence Documentation Typographical Error"
-permalink: kb/069/Q69574/
+permalink: /kb/069/Q69574/
 ---
 
 ## Q69574: ANSI.SYS Escape Sequence Documentation Typographical Error

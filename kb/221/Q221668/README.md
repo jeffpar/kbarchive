@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221668: FIX: Component Gallery Places Focus in Linked Item Folder"
-permalink: kb/221/Q221668/
+permalink: /kb/221/Q221668/
 ---
 
 ## Q221668: FIX: Component Gallery Places Focus in Linked Item Folder

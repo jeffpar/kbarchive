@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114135: How to Print Check Boxes Instead of Y/N in FoxPro Reports"
-permalink: kb/114/Q114135/
+permalink: /kb/114/Q114135/
 ---
 
 ## Q114135: How to Print Check Boxes Instead of Y/N in FoxPro Reports

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135725: PRB: Messages May Not Appear in Status Bar"
-permalink: kb/135/Q135725/
+permalink: /kb/135/Q135725/
 ---
 
 ## Q135725: PRB: Messages May Not Appear in Status Bar

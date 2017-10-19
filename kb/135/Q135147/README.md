@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135147: Incomplete User List with Windows 95 User-Level Security"
-permalink: kb/135/Q135147/
+permalink: /kb/135/Q135147/
 ---
 
 ## Q135147: Incomplete User List with Windows 95 User-Level Security

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59374: FIX: Incorrect Code With TYPE and SI Index Register"
-permalink: kb/059/Q59374/
+permalink: /kb/059/Q59374/
 ---
 
 ## Q59374: FIX: Incorrect Code With TYPE and SI Index Register

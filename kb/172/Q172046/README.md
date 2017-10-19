@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172046: XCLN: Patch for Outlook Deployment Kit on April Select CD"
-permalink: kb/172/Q172046/
+permalink: /kb/172/Q172046/
 ---
 
 ## Q172046: XCLN: Patch for Outlook Deployment Kit on April Select CD

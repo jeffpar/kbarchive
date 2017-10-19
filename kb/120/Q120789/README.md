@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120789: Banyan Vines Utility PCCONFIG.EXE"
-permalink: kb/120/Q120789/
+permalink: /kb/120/Q120789/
 ---
 
 ## Q120789: Banyan Vines Utility PCCONFIG.EXE

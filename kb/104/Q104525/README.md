@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104525: Options Grayed Out in Microsoft Backup for MS-DOS and Windows"
-permalink: kb/104/Q104525/
+permalink: /kb/104/Q104525/
 ---
 
 ## Q104525: Options Grayed Out in Microsoft Backup for MS-DOS and Windows

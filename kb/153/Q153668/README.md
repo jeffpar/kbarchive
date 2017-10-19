@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153668: WD97: Mail Merge Main Document Cannot Find Data Source"
-permalink: kb/153/Q153668/
+permalink: /kb/153/Q153668/
 ---
 
 ## Q153668: WD97: Mail Merge Main Document Cannot Find Data Source

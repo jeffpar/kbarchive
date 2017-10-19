@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147828: Dell OptiPlex XMT BIOS Upgrade Changes Video Refresh Modes"
-permalink: kb/147/Q147828/
+permalink: /kb/147/Q147828/
 ---
 
 ## Q147828: Dell OptiPlex XMT BIOS Upgrade Changes Video Refresh Modes

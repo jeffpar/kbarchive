@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50383: Inference Rule May Fail When Spaces on Blank Command Line"
-permalink: kb/050/Q50383/
+permalink: /kb/050/Q50383/
 ---
 
 ## Q50383: Inference Rule May Fail When Spaces on Blank Command Line

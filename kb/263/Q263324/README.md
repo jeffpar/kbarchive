@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263324: Create Shortcut Command Truncates Source Path Folder Names"
-permalink: kb/263/Q263324/
+permalink: /kb/263/Q263324/
 ---
 
 ## Q263324: Create Shortcut Command Truncates Source Path Folder Names

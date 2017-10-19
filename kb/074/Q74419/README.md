@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74419: Norton's Erase Protect Program Doesn't Work with Windows 3.0"
-permalink: kb/074/Q74419/
+permalink: /kb/074/Q74419/
 ---
 
 ## Q74419: Norton's Erase Protect Program Doesn't Work with Windows 3.0

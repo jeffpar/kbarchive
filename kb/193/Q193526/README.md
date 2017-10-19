@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193526: W3SVC Counters Fail after a Successful Install"
-permalink: kb/193/Q193526/
+permalink: /kb/193/Q193526/
 ---
 
 ## Q193526: W3SVC Counters Fail after a Successful Install

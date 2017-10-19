@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323936: Train Simulator: Error Msg: Error Reading Train Database File"
-permalink: kb/323/Q323936/
+permalink: /kb/323/Q323936/
 ---
 
 ## Q323936: Train Simulator: Error Msg: Error Reading Train Database File

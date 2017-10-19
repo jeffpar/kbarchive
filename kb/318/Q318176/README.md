@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318176: SSI Output Disappears After You Apply Security Patches"
-permalink: kb/318/Q318176/
+permalink: /kb/318/Q318176/
 ---
 
 ## Q318176: SSI Output Disappears After You Apply Security Patches

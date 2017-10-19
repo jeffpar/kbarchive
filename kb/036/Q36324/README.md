@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q36324: HOWTO: Perform Background Processing Without Using Timers"
-permalink: kb/036/Q36324/
+permalink: /kb/036/Q36324/
 ---
 
 ## Q36324: HOWTO: Perform Background Processing Without Using Timers

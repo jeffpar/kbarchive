@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137624: Missing Product Identification Number Needed for Setup"
-permalink: kb/137/Q137624/
+permalink: /kb/137/Q137624/
 ---
 
 ## Q137624: Missing Product Identification Number Needed for Setup

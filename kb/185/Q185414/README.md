@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185414: XCLN: Err Msg: There was a problem opening MSTRE schedule..."
-permalink: kb/185/Q185414/
+permalink: /kb/185/Q185414/
 ---
 
 ## Q185414: XCLN: Err Msg: There was a problem opening MSTRE schedule...

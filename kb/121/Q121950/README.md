@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121950: HOWTO: Detect an Empty CRecordset Object"
-permalink: kb/121/Q121950/
+permalink: /kb/121/Q121950/
 ---
 
 ## Q121950: HOWTO: Detect an Empty CRecordset Object

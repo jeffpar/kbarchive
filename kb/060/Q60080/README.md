@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60080: Codepage Support Setup Information"
-permalink: kb/060/Q60080/
+permalink: /kb/060/Q60080/
 ---
 
 ## Q60080: Codepage Support Setup Information

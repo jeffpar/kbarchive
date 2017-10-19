@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136888: How to Play FreeCell Without a Mouse"
-permalink: kb/136/Q136888/
+permalink: /kb/136/Q136888/
 ---
 
 ## Q136888: How to Play FreeCell Without a Mouse

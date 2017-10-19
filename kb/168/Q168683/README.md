@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168683: Errors Installing Routing and Remote Access Using Have Disk"
-permalink: kb/168/Q168683/
+permalink: /kb/168/Q168683/
 ---
 
 ## Q168683: Errors Installing Routing and Remote Access Using Have Disk

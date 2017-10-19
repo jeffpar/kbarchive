@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225088: Services.exe Problems When You Try to View Log Files"
-permalink: kb/225/Q225088/
+permalink: /kb/225/Q225088/
 ---
 
 ## Q225088: Services.exe Problems When You Try to View Log Files

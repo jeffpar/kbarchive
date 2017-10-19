@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184509: How to Obtain SNA Server 4.0 Printed Documentation"
-permalink: kb/184/Q184509/
+permalink: /kb/184/Q184509/
 ---
 
 ## Q184509: How to Obtain SNA Server 4.0 Printed Documentation

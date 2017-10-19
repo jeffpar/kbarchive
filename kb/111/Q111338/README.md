@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111338: BUG: Vector Font Rotation Skewed with Non-Top-Left Alignment"
-permalink: kb/111/Q111338/
+permalink: /kb/111/Q111338/
 ---
 
 ## Q111338: BUG: Vector Font Rotation Skewed with Non-Top-Left Alignment

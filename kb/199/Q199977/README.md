@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199977: XFOR: Common LinkAge V3.2 Exchange-Notes Connector Problem"
-permalink: kb/199/Q199977/
+permalink: /kb/199/Q199977/
 ---
 
 ## Q199977: XFOR: Common LinkAge V3.2 Exchange-Notes Connector Problem

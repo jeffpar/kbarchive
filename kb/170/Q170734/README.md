@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170734: WD97: Cut or Copy Object in Label Causes IPF"
-permalink: kb/170/Q170734/
+permalink: /kb/170/Q170734/
 ---
 
 ## Q170734: WD97: Cut or Copy Object in Label Causes IPF

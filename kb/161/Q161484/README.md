@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161484: Memory Leak in NET VIEW Command with CSNW"
-permalink: kb/161/Q161484/
+permalink: /kb/161/Q161484/
 ---
 
 ## Q161484: Memory Leak in NET VIEW Command with CSNW

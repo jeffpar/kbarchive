@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220966: FIX: Custom Expression Builder with Query Designer Crashes VFP"
-permalink: kb/220/Q220966/
+permalink: /kb/220/Q220966/
 ---
 
 ## Q220966: FIX: Custom Expression Builder with Query Designer Crashes VFP

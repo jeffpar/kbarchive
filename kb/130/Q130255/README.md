@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130255: HOWTO: Installing or Setting a Default Printer Driver"
-permalink: kb/130/Q130255/
+permalink: /kb/130/Q130255/
 ---
 
 ## Q130255: HOWTO: Installing or Setting a Default Printer Driver

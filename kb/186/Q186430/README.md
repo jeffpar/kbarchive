@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186430: FIX: Intellipoint 'Snap To' Feature and VB5 Applications"
-permalink: kb/186/Q186430/
+permalink: /kb/186/Q186430/
 ---
 
 ## Q186430: FIX: Intellipoint 'Snap To' Feature and VB5 Applications

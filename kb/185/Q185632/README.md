@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185632: WD97: How to Share a Customized Built-in Toolbar"
-permalink: kb/185/Q185632/
+permalink: /kb/185/Q185632/
 ---
 
 ## Q185632: WD97: How to Share a Customized Built-in Toolbar

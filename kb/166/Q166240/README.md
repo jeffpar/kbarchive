@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166240: TEST_RTS_AND_POST Doesn't Return After Host or LAN Failure"
-permalink: kb/166/Q166240/
+permalink: /kb/166/Q166240/
 ---
 
 ## Q166240: TEST_RTS_AND_POST Doesn't Return After Host or LAN Failure

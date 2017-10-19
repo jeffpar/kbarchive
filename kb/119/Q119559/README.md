@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119559: PC Win: Check Names Cannot Resolve Mailbox Names"
-permalink: kb/119/Q119559/
+permalink: /kb/119/Q119559/
 ---
 
 ## Q119559: PC Win: Check Names Cannot Resolve Mailbox Names

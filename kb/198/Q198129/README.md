@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198129: Memory Leak in Performance Monitor Virtual Bytes"
-permalink: kb/198/Q198129/
+permalink: /kb/198/Q198129/
 ---
 
 ## Q198129: Memory Leak in Performance Monitor Virtual Bytes

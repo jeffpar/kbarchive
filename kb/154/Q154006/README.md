@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154006: HOWTO: Drag a Form by a Child Control"
-permalink: kb/154/Q154006/
+permalink: /kb/154/Q154006/
 ---
 
 ## Q154006: HOWTO: Drag a Form by a Child Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268807: PRB: Application Error Running or Closing a Project"
-permalink: kb/268/Q268807/
+permalink: /kb/268/Q268807/
 ---
 
 ## Q268807: PRB: Application Error Running or Closing a Project

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238576: Midtown Madness: Objects Appear Suddenly on Screen"
-permalink: kb/238/Q238576/
+permalink: /kb/238/Q238576/
 ---
 
 ## Q238576: Midtown Madness: Objects Appear Suddenly on Screen

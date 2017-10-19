@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141394: PRB: SearchForm from Wizstyle.vcx Displays Behind Desktop Form"
-permalink: kb/141/Q141394/
+permalink: /kb/141/Q141394/
 ---
 
 ## Q141394: PRB: SearchForm from Wizstyle.vcx Displays Behind Desktop Form

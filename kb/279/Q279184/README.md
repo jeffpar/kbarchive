@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279184: FIX: Multiple Checkout Setting Disables Checkout Option"
-permalink: kb/279/Q279184/
+permalink: /kb/279/Q279184/
 ---
 
 ## Q279184: FIX: Multiple Checkout Setting Disables Checkout Option

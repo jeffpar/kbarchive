@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152779: PRB: ODBC Driver &quot;unrecognized phrase/keyword&quot; Error"
-permalink: kb/152/Q152779/
+permalink: /kb/152/Q152779/
 ---
 
 ## Q152779: PRB: ODBC Driver &quot;unrecognized phrase/keyword&quot; Error

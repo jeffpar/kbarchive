@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315069: FIX: Report Preview Error with Properties Window and DE Open"
-permalink: kb/315/Q315069/
+permalink: /kb/315/Q315069/
 ---
 
 ## Q315069: FIX: Report Preview Error with Properties Window and DE Open

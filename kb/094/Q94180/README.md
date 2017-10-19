@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94180: PC Win: WINMAIL.DAT File Appears in 2.1 Clients"
-permalink: kb/094/Q94180/
+permalink: /kb/094/Q94180/
 ---
 
 ## Q94180: PC Win: WINMAIL.DAT File Appears in 2.1 Clients

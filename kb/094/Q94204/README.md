@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94204: Single Colors Print as Two Colors on Dot-Matrix Printer"
-permalink: kb/094/Q94204/
+permalink: /kb/094/Q94204/
 ---
 
 ## Q94204: Single Colors Print as Two Colors on Dot-Matrix Printer

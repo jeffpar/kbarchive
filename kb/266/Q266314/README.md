@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266314: OS/2 Programs May Not Work When Calling DosCreateCSAlias()"
-permalink: kb/266/Q266314/
+permalink: /kb/266/Q266314/
 ---
 
 ## Q266314: OS/2 Programs May Not Work When Calling DosCreateCSAlias()

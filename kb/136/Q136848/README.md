@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136848: PRB: Class Browser: &quot;Unable to Display Class Hierarchy&quot; Error"
-permalink: kb/136/Q136848/
+permalink: /kb/136/Q136848/
 ---
 
 ## Q136848: PRB: Class Browser: &quot;Unable to Display Class Hierarchy&quot; Error

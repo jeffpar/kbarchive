@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102907: How to Troubleshoot Local Logon Scripts with Windows NT"
-permalink: kb/102/Q102907/
+permalink: /kb/102/Q102907/
 ---
 
 ## Q102907: How to Troubleshoot Local Logon Scripts with Windows NT

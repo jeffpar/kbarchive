@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177252: Flight Simulator: No Instructor or Voices in Lesson or Adventure"
-permalink: kb/177/Q177252/
+permalink: /kb/177/Q177252/
 ---
 
 ## Q177252: Flight Simulator: No Instructor or Voices in Lesson or Adventure

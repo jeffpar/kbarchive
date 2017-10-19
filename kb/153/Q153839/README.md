@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153839: Tape Backup Restore Fails on Extremely Full Volumes"
-permalink: kb/153/Q153839/
+permalink: /kb/153/Q153839/
 ---
 
 ## Q153839: Tape Backup Restore Fails on Extremely Full Volumes

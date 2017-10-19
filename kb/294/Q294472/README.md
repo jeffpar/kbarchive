@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294472: MS99-057: Index Server Search Function Contains Unchecked Buffer"
-permalink: kb/294/Q294472/
+permalink: /kb/294/Q294472/
 ---
 
 ## Q294472: MS99-057: Index Server Search Function Contains Unchecked Buffer

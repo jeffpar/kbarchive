@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157834: WD97: Applying Bullets and Numbers Removes Indents"
-permalink: kb/157/Q157834/
+permalink: /kb/157/Q157834/
 ---
 
 ## Q157834: WD97: Applying Bullets and Numbers Removes Indents

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75380: INFO: Using the DRAWPATTERNRECT Escape in Windows"
-permalink: kb/075/Q75380/
+permalink: /kb/075/Q75380/
 ---
 
 ## Q75380: INFO: Using the DRAWPATTERNRECT Escape in Windows

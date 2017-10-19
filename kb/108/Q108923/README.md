@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108923: PRB: ATSP Returns Error for Validated Parameter"
-permalink: kb/108/Q108923/
+permalink: /kb/108/Q108923/
 ---
 
 ## Q108923: PRB: ATSP Returns Error for Validated Parameter

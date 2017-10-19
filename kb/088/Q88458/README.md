@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88458: INFO: Windows TrueType Fonts Reading List"
-permalink: kb/088/Q88458/
+permalink: /kb/088/Q88458/
 ---
 
 ## Q88458: INFO: Windows TrueType Fonts Reading List

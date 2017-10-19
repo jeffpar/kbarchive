@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290625: HOWTO: Configure SSL in a Windows 2000 IIS 5.0 Test Environment"
-permalink: kb/290/Q290625/
+permalink: /kb/290/Q290625/
 ---
 
 ## Q290625: HOWTO: Configure SSL in a Windows 2000 IIS 5.0 Test Environment

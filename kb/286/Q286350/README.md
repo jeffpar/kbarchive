@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286350: HOWTO: Use Autodump+ to Troubleshoot &quot;Hangs&quot; and &quot;Crashes&quot;"
-permalink: kb/286/Q286350/
+permalink: /kb/286/Q286350/
 ---
 
 ## Q286350: HOWTO: Use Autodump+ to Troubleshoot &quot;Hangs&quot; and &quot;Crashes&quot;

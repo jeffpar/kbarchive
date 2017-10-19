@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139513: DOCERR: DocumentFile Property Returns &quot; &quot; For Embedded Objects"
-permalink: kb/139/Q139513/
+permalink: /kb/139/Q139513/
 ---
 
 ## Q139513: DOCERR: DocumentFile Property Returns &quot; &quot; For Embedded Objects

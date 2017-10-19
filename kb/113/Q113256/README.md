@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113256: Internet Information: Numbers, Addresses, Common Terms, Books"
-permalink: kb/113/Q113256/
+permalink: /kb/113/Q113256/
 ---
 
 ## Q113256: Internet Information: Numbers, Addresses, Common Terms, Books

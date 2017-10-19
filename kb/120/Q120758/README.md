@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120758: DHCP Manager System Errors"
-permalink: kb/120/Q120758/
+permalink: /kb/120/Q120758/
 ---
 
 ## Q120758: DHCP Manager System Errors

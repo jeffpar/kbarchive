@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181357: PRB: Editing the Windows NT 4.0 Unattended Setup Script To Inser"
-permalink: kb/181/Q181357/
+permalink: /kb/181/Q181357/
 ---
 
 ## Q181357: PRB: Editing the Windows NT 4.0 Unattended Setup Script To Inser

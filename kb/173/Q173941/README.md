@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173941: Windows NT DNR Does Not Cache Short Names"
-permalink: kb/173/Q173941/
+permalink: /kb/173/Q173941/
 ---
 
 ## Q173941: Windows NT DNR Does Not Cache Short Names

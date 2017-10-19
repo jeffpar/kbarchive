@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169775: XFOR: Preserving PABs During Upgrade or Re-installation"
-permalink: kb/169/Q169775/
+permalink: /kb/169/Q169775/
 ---
 
 ## Q169775: XFOR: Preserving PABs During Upgrade or Re-installation

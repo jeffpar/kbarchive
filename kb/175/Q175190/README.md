@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175190: HOWTO: Add ATL Support to an MFC EXE"
-permalink: kb/175/Q175190/
+permalink: /kb/175/Q175190/
 ---
 
 ## Q175190: HOWTO: Add ATL Support to an MFC EXE

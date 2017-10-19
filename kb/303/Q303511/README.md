@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303511: STREETS: Err Msg: Setup Cannot Find the MDAC Directory"
-permalink: kb/303/Q303511/
+permalink: /kb/303/Q303511/
 ---
 
 ## Q303511: STREETS: Err Msg: Setup Cannot Find the MDAC Directory

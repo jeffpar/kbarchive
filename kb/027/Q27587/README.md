@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q27587: Two Causes of Interrupt 0 in MASM Program"
-permalink: kb/027/Q27587/
+permalink: /kb/027/Q27587/
 ---
 
 ## Q27587: Two Causes of Interrupt 0 in MASM Program

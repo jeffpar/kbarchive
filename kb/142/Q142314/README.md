@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142314: DOC: SET PRINT TO Command Help File Information Incorrect"
-permalink: kb/142/Q142314/
+permalink: /kb/142/Q142314/
 ---
 
 ## Q142314: DOC: SET PRINT TO Command Help File Information Incorrect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288350: FTP Failed Login and Bye Command Cause Dr. Watson in Inetinfo"
-permalink: kb/288/Q288350/
+permalink: /kb/288/Q288350/
 ---
 
 ## Q288350: FTP Failed Login and Bye Command Cause Dr. Watson in Inetinfo

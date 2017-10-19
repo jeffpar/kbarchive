@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76672: Dexxa Mouse Requires Driver Version 5.0 for MS-DOS Shell"
-permalink: kb/076/Q76672/
+permalink: /kb/076/Q76672/
 ---
 
 ## Q76672: Dexxa Mouse Requires Driver Version 5.0 for MS-DOS Shell

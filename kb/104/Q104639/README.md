@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104639: INFO: Dynamic Memory Allocation for Two-Dimensional Arrays"
-permalink: kb/104/Q104639/
+permalink: /kb/104/Q104639/
 ---
 
 ## Q104639: INFO: Dynamic Memory Allocation for Two-Dimensional Arrays

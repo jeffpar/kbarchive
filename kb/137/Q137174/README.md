@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137174: DOCERR: A2041 Error When Macro Parameter Length &gt; 255 bytes"
-permalink: kb/137/Q137174/
+permalink: /kb/137/Q137174/
 ---
 
 ## Q137174: DOCERR: A2041 Error When Macro Parameter Length &gt; 255 bytes

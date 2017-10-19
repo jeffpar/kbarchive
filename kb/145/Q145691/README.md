@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145691: SMS Incorrectly Reports CPU Processor Speeds"
-permalink: kb/145/Q145691/
+permalink: /kb/145/Q145691/
 ---
 
 ## Q145691: SMS Incorrectly Reports CPU Processor Speeds

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157966: XCON: Microsoft Exchange will not Allow Incoming X.25 Connection"
-permalink: kb/157/Q157966/
+permalink: /kb/157/Q157966/
 ---
 
 ## Q157966: XCON: Microsoft Exchange will not Allow Incoming X.25 Connection

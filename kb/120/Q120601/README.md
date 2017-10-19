@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120601: PPT: PowerPoint OLE Objects Ignore Default Template."
-permalink: kb/120/Q120601/
+permalink: /kb/120/Q120601/
 ---
 
 ## Q120601: PPT: PowerPoint OLE Objects Ignore Default Template.

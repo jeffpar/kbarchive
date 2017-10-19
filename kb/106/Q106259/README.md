@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106259: FAX: Gateway to Fax Version 3.0.1 Update"
-permalink: kb/106/Q106259/
+permalink: /kb/106/Q106259/
 ---
 
 ## Q106259: FAX: Gateway to Fax Version 3.0.1 Update

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86964: X400: Transport Classes Supported for X.400 Gateway"
-permalink: kb/086/Q86964/
+permalink: /kb/086/Q86964/
 ---
 
 ## Q86964: X400: Transport Classes Supported for X.400 Gateway

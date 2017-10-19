@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59951: DosWaitNmPipe() Behavior"
-permalink: kb/059/Q59951/
+permalink: /kb/059/Q59951/
 ---
 
 ## Q59951: DosWaitNmPipe() Behavior

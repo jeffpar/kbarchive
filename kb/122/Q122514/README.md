@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122514: MS-DOS Window Remains on Screen After Application Is Finished"
-permalink: kb/122/Q122514/
+permalink: /kb/122/Q122514/
 ---
 
 ## Q122514: MS-DOS Window Remains on Screen After Application Is Finished

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228447: Baseball 2000: Shredded or Torn Graphics in Game"
-permalink: kb/228/Q228447/
+permalink: /kb/228/Q228447/
 ---
 
 ## Q228447: Baseball 2000: Shredded or Torn Graphics in Game

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157381: WD97: Problems with Letter Wizard Contemporary Page Design"
-permalink: kb/157/Q157381/
+permalink: /kb/157/Q157381/
 ---
 
 ## Q157381: WD97: Problems with Letter Wizard Contemporary Page Design

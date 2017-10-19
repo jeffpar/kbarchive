@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59105: Mac Wkst: Text in Received Mail Message Cannot Be Edited"
-permalink: kb/059/Q59105/
+permalink: /kb/059/Q59105/
 ---
 
 ## Q59105: Mac Wkst: Text in Received Mail Message Cannot Be Edited

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247603: 401.3 Unauthorized Due to ACL on Resource"
-permalink: kb/247/Q247603/
+permalink: /kb/247/Q247603/
 ---
 
 ## Q247603: 401.3 Unauthorized Due to ACL on Resource

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170577: MDG: Private Folders in MMF named Orphan Folder #n"
-permalink: kb/170/Q170577/
+permalink: /kb/170/Q170577/
 ---
 
 ## Q170577: MDG: Private Folders in MMF named Orphan Folder #n

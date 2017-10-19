@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155783: FIX: Share Dialog Box Appears Unexpectedly"
-permalink: kb/155/Q155783/
+permalink: /kb/155/Q155783/
 ---
 
 ## Q155783: FIX: Share Dialog Box Appears Unexpectedly

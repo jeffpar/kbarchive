@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161775: Problem Starting Two Non-Queued TPs Simultaneously on Win3.x"
-permalink: kb/161/Q161775/
+permalink: /kb/161/Q161775/
 ---
 
 ## Q161775: Problem Starting Two Non-Queued TPs Simultaneously on Win3.x

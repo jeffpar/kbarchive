@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166053: WV: Document Menu Unavailable in Word Viewer"
-permalink: kb/166/Q166053/
+permalink: /kb/166/Q166053/
 ---
 
 ## Q166053: WV: Document Menu Unavailable in Word Viewer

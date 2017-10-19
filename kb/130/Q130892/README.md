@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130892: File Auditing Error in Windows NT 3.5"
-permalink: kb/130/Q130892/
+permalink: /kb/130/Q130892/
 ---
 
 ## Q130892: File Auditing Error in Windows NT 3.5

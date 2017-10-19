@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190265: HOWTO: Find the Day that Daylight Savings Time Occurs"
-permalink: kb/190/Q190265/
+permalink: /kb/190/Q190265/
 ---
 
 ## Q190265: HOWTO: Find the Day that Daylight Savings Time Occurs

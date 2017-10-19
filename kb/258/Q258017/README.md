@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258017: FIX: FieldChangeComplete Not Fired When UserControl Loses Focus"
-permalink: kb/258/Q258017/
+permalink: /kb/258/Q258017/
 ---
 
 ## Q258017: FIX: FieldChangeComplete Not Fired When UserControl Loses Focus

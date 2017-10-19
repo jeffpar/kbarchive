@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89002: Using Arrays in FoxBASE+"
-permalink: kb/089/Q89002/
+permalink: /kb/089/Q89002/
 ---
 
 ## Q89002: Using Arrays in FoxBASE+

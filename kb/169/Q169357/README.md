@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169357: WinNT SP3 Says Mtxdm.dll Older Than Currently Installed Version"
-permalink: kb/169/Q169357/
+permalink: /kb/169/Q169357/
 ---
 
 ## Q169357: WinNT SP3 Says Mtxdm.dll Older Than Currently Installed Version

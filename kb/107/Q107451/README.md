@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107451: TN3270 Incorrectly Formats LU-SSCP Data From The Host"
-permalink: kb/107/Q107451/
+permalink: /kb/107/Q107451/
 ---
 
 ## Q107451: TN3270 Incorrectly Formats LU-SSCP Data From The Host

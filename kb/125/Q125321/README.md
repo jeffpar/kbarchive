@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125321: Delayed Screen Repaint After Modifying Color Characteristics"
-permalink: kb/125/Q125321/
+permalink: /kb/125/Q125321/
 ---
 
 ## Q125321: Delayed Screen Repaint After Modifying Color Characteristics

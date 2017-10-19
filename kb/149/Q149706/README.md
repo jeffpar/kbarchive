@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149706: IRQ Conflict Using MicroGate SDLC Adapter"
-permalink: kb/149/Q149706/
+permalink: /kb/149/Q149706/
 ---
 
 ## Q149706: IRQ Conflict Using MicroGate SDLC Adapter

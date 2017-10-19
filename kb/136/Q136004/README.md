@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136004: PC Ext: Inaccurate Non-Delivery Reports or Duplicate Mail"
-permalink: kb/136/Q136004/
+permalink: /kb/136/Q136004/
 ---
 
 ## Q136004: PC Ext: Inaccurate Non-Delivery Reports or Duplicate Mail

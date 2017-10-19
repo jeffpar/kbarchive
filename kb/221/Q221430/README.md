@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221430: XADM: View-Only Admin Can Delete/Create Organization Forms Lib."
-permalink: kb/221/Q221430/
+permalink: /kb/221/Q221430/
 ---
 
 ## Q221430: XADM: View-Only Admin Can Delete/Create Organization Forms Lib.

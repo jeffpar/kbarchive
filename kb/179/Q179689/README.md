@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179689: Hooking into the IUnknown of a COM Object in MFC"
-permalink: kb/179/Q179689/
+permalink: /kb/179/Q179689/
 ---
 
 ## Q179689: Hooking into the IUnknown of a COM Object in MFC

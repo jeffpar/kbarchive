@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134890: FIX: Wizards Can Be Hidden Allowing More Than One to Run"
-permalink: kb/134/Q134890/
+permalink: /kb/134/Q134890/
 ---
 
 ## Q134890: FIX: Wizards Can Be Hidden Allowing More Than One to Run

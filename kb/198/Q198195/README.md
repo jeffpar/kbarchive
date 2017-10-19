@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198195: WD97: Linked Excel Object Shows Empty Cells"
-permalink: kb/198/Q198195/
+permalink: /kb/198/Q198195/
 ---
 
 ## Q198195: WD97: Linked Excel Object Shows Empty Cells

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81454: Creating Inference Rules for Nonstandard File Extensions"
-permalink: kb/081/Q81454/
+permalink: /kb/081/Q81454/
 ---
 
 ## Q81454: Creating Inference Rules for Nonstandard File Extensions

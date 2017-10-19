@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249733: XCLN: .xnk Shortcuts Not Working in Outlook 2000 Folder"
-permalink: kb/249/Q249733/
+permalink: /kb/249/Q249733/
 ---
 
 ## Q249733: XCLN: .xnk Shortcuts Not Working in Outlook 2000 Folder

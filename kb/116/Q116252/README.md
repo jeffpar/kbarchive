@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116252: 3/2 Currency Grouping Not Available in Windows 95"
-permalink: kb/116/Q116252/
+permalink: /kb/116/Q116252/
 ---
 
 ## Q116252: 3/2 Currency Grouping Not Available in Windows 95

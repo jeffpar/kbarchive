@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258597: Err Msg: Certificate Server is Unable to Process Request..."
-permalink: kb/258/Q258597/
+permalink: /kb/258/Q258597/
 ---
 
 ## Q258597: Err Msg: Certificate Server is Unable to Process Request...

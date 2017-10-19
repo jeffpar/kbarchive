@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214755: BUG: VB 6 DLL Settings Cause Access Error During Shutdown"
-permalink: kb/214/Q214755/
+permalink: /kb/214/Q214755/
 ---
 
 ## Q214755: BUG: VB 6 DLL Settings Cause Access Error During Shutdown

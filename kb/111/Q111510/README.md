@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111510: PRB: &lt;ExpC3&gt; of PUTFILE() Is Ignored in FoxPro for Macintosh"
-permalink: kb/111/Q111510/
+permalink: /kb/111/Q111510/
 ---
 
 ## Q111510: PRB: &lt;ExpC3&gt; of PUTFILE() Is Ignored in FoxPro for Macintosh

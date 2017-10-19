@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248662: Internet Information Server Help File Does Not Open"
-permalink: kb/248/Q248662/
+permalink: /kb/248/Q248662/
 ---
 
 ## Q248662: Internet Information Server Help File Does Not Open

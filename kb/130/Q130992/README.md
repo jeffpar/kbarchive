@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130992: PRB: GETFILE() Caption Limited to 9 Characters in Windows 95"
-permalink: kb/130/Q130992/
+permalink: /kb/130/Q130992/
 ---
 
 ## Q130992: PRB: GETFILE() Caption Limited to 9 Characters in Windows 95

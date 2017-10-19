@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146738: XFOR: Forcing a Dirsync Cycle on the Exchange Server"
-permalink: kb/146/Q146738/
+permalink: /kb/146/Q146738/
 ---
 
 ## Q146738: XFOR: Forcing a Dirsync Cycle on the Exchange Server

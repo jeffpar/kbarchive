@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172242: Err Msg: Guide.exe Caused an Invalid Page Fault in Module..."
-permalink: kb/172/Q172242/
+permalink: /kb/172/Q172242/
 ---
 
 ## Q172242: Err Msg: Guide.exe Caused an Invalid Page Fault in Module...

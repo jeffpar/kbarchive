@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184410: How to Use Msinfo32.exe to Optimize CD-ROM Cache Settings"
-permalink: kb/184/Q184410/
+permalink: /kb/184/Q184410/
 ---
 
 ## Q184410: How to Use Msinfo32.exe to Optimize CD-ROM Cache Settings

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73840: Emulation Modes of DataProducts SPG8051 Printer"
-permalink: kb/073/Q73840/
+permalink: /kb/073/Q73840/
 ---
 
 ## Q73840: Emulation Modes of DataProducts SPG8051 Printer

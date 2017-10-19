@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162884: ODE97: Troubleshooting ODE Setup Wizard Problems"
-permalink: kb/162/Q162884/
+permalink: /kb/162/Q162884/
 ---
 
 ## Q162884: ODE97: Troubleshooting ODE Setup Wizard Problems

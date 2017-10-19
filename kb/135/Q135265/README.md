@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135265: How to Use a Combo Box to Filter the Contents of a Grid"
-permalink: kb/135/Q135265/
+permalink: /kb/135/Q135265/
 ---
 
 ## Q135265: How to Use a Combo Box to Filter the Contents of a Grid

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291853: INFO: Avoid Page Skipping When You Print Multiple Data Reports"
-permalink: kb/291/Q291853/
+permalink: /kb/291/Q291853/
 ---
 
 ## Q291853: INFO: Avoid Page Skipping When You Print Multiple Data Reports

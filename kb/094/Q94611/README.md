@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94611: Jumping to a Keyword in the Middle of a Help Topic"
-permalink: kb/094/Q94611/
+permalink: /kb/094/Q94611/
 ---
 
 ## Q94611: Jumping to a Keyword in the Middle of a Help Topic

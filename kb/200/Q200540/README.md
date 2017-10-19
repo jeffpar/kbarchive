@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200540: Quick Viewer Displays Black Screen When You Try Remote Control"
-permalink: kb/200/Q200540/
+permalink: /kb/200/Q200540/
 ---
 
 ## Q200540: Quick Viewer Displays Black Screen When You Try Remote Control

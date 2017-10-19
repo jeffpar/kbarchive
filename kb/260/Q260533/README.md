@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260533: PRB: &quot;Function Name Is Missing )&quot; When Modifying a Remote View"
-permalink: kb/260/Q260533/
+permalink: /kb/260/Q260533/
 ---
 
 ## Q260533: PRB: &quot;Function Name Is Missing )&quot; When Modifying a Remote View

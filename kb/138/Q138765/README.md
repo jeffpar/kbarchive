@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138765: BUG: Ml.exe Hangs If ASSUME DataReg:ERROR Directive Used"
-permalink: kb/138/Q138765/
+permalink: /kb/138/Q138765/
 ---
 
 ## Q138765: BUG: Ml.exe Hangs If ASSUME DataReg:ERROR Directive Used

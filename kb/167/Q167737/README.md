@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167737: FIX: Deploy to a Unix Server Via FTP Fails"
-permalink: kb/167/Q167737/
+permalink: /kb/167/Q167737/
 ---
 
 ## Q167737: FIX: Deploy to a Unix Server Via FTP Fails

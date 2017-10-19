@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150820: RAS Service Broadcasts Name Query Every Two Minutes"
-permalink: kb/150/Q150820/
+permalink: /kb/150/Q150820/
 ---
 
 ## Q150820: RAS Service Broadcasts Name Query Every Two Minutes

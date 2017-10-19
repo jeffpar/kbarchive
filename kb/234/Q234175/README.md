@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234175: XADM: Store Stops Responding When Generating DR to SMIME Message"
-permalink: kb/234/Q234175/
+permalink: /kb/234/Q234175/
 ---
 
 ## Q234175: XADM: Store Stops Responding When Generating DR to SMIME Message

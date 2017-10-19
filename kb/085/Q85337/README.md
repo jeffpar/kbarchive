@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85337: FAX: Hardware Required of the Fax Gateway PC"
-permalink: kb/085/Q85337/
+permalink: /kb/085/Q85337/
 ---
 
 ## Q85337: FAX: Hardware Required of the Fax Gateway PC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174730: XFOR: Lotus Notes Invitations Result in NDR"
-permalink: kb/174/Q174730/
+permalink: /kb/174/Q174730/
 ---
 
 ## Q174730: XFOR: Lotus Notes Invitations Result in NDR

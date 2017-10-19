@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243581: XADM: Information Store Uses Large Amount of Processor Time"
-permalink: kb/243/Q243581/
+permalink: /kb/243/Q243581/
 ---
 
 ## Q243581: XADM: Information Store Uses Large Amount of Processor Time

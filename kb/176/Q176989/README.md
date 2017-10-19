@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176989: Stop: C0000143 Caused by PCAnywhere"
-permalink: kb/176/Q176989/
+permalink: /kb/176/Q176989/
 ---
 
 ## Q176989: Stop: C0000143 Caused by PCAnywhere

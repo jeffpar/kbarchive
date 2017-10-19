@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295016: SMS: Cannot Save .mif Files Created by the MIF Entry Tool in Win"
-permalink: kb/295/Q295016/
+permalink: /kb/295/Q295016/
 ---
 
 ## Q295016: SMS: Cannot Save .mif Files Created by the MIF Entry Tool in Win

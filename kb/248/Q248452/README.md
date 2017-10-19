@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248452: Remote Control Residual Permissions Override Permission Required"
-permalink: kb/248/Q248452/
+permalink: /kb/248/Q248452/
 ---
 
 ## Q248452: Remote Control Residual Permissions Override Permission Required

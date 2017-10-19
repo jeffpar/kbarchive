@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200626: PRB: UserDocuments Can be Orphaned"
-permalink: kb/200/Q200626/
+permalink: /kb/200/Q200626/
 ---
 
 ## Q200626: PRB: UserDocuments Can be Orphaned

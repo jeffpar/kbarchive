@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198323: WD: Cannot Move Indent Marker Without Moving Tab Marker"
-permalink: kb/198/Q198323/
+permalink: /kb/198/Q198323/
 ---
 
 ## Q198323: WD: Cannot Move Indent Marker Without Moving Tab Marker

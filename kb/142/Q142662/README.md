@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142662: CPS Fails to Clone a Server with WINS"
-permalink: kb/142/Q142662/
+permalink: /kb/142/Q142662/
 ---
 
 ## Q142662: CPS Fails to Clone a Server with WINS

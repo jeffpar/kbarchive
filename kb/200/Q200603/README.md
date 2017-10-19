@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200603: BUG: SMS 2.0 Shows No Version for an SMS Version 1.2 Child Site"
-permalink: kb/200/Q200603/
+permalink: /kb/200/Q200603/
 ---
 
 ## Q200603: BUG: SMS 2.0 Shows No Version for an SMS Version 1.2 Child Site

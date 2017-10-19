@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239051: Unable to Browse HTMLA Using Netscape 3.0 for UNIX"
-permalink: kb/239/Q239051/
+permalink: /kb/239/Q239051/
 ---
 
 ## Q239051: Unable to Browse HTMLA Using Netscape 3.0 for UNIX

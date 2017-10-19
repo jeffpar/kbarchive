@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259531: XFOR: How to Configure SMTP Relay for Domains and Subdomains"
-permalink: kb/259/Q259531/
+permalink: /kb/259/Q259531/
 ---
 
 ## Q259531: XFOR: How to Configure SMTP Relay for Domains and Subdomains

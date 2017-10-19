@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106721: FIX: Tab Edit Descriptor Can Give Incorrect Results with READ"
-permalink: kb/106/Q106721/
+permalink: /kb/106/Q106721/
 ---
 
 ## Q106721: FIX: Tab Edit Descriptor Can Give Incorrect Results with READ

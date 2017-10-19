@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190444: Memory Leak when Reading Configuration File"
-permalink: kb/190/Q190444/
+permalink: /kb/190/Q190444/
 ---
 
 ## Q190444: Memory Leak when Reading Configuration File

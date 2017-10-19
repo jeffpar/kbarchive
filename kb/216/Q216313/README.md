@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216313: XADM: Exchange Admin Unable to Map SIDs to Account Names After 5"
-permalink: kb/216/Q216313/
+permalink: /kb/216/Q216313/
 ---
 
 ## Q216313: XADM: Exchange Admin Unable to Map SIDs to Account Names After 5

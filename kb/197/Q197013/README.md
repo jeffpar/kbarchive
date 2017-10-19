@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197013: XADM: RTF Message Appears Incorrectly After Being Forwarded"
-permalink: kb/197/Q197013/
+permalink: /kb/197/Q197013/
 ---
 
 ## Q197013: XADM: RTF Message Appears Incorrectly After Being Forwarded

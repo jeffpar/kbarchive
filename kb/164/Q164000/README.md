@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164000: FIX: C1001 Compiler File MAIN.C Line 413"
-permalink: kb/164/Q164000/
+permalink: /kb/164/Q164000/
 ---
 
 ## Q164000: FIX: C1001 Compiler File MAIN.C Line 413

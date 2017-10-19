@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129045: Date and Time Stamp of Files Change When Copied to Netware"
-permalink: kb/129/Q129045/
+permalink: /kb/129/Q129045/
 ---
 
 ## Q129045: Date and Time Stamp of Files Change When Copied to Netware

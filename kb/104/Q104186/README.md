@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104186: PRB: C2250 Error Generated with Ambiguous Multiple Inheritance"
-permalink: kb/104/Q104186/
+permalink: /kb/104/Q104186/
 ---
 
 ## Q104186: PRB: C2250 Error Generated with Ambiguous Multiple Inheritance

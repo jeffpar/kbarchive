@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106418: Cursor Remains an Hourglass When Loading Schedule+"
-permalink: kb/106/Q106418/
+permalink: /kb/106/Q106418/
 ---
 
 ## Q106418: Cursor Remains an Hourglass When Loading Schedule+

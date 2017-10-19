@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256260: MapPoint 2001: How to Prepare Data for Importing or Linking"
-permalink: kb/256/Q256260/
+permalink: /kb/256/Q256260/
 ---
 
 ## Q256260: MapPoint 2001: How to Prepare Data for Importing or Linking

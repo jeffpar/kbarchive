@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169343: SMS: INVOS2 Fails To Detect Various System Attributes"
-permalink: kb/169/Q169343/
+permalink: /kb/169/Q169343/
 ---
 
 ## Q169343: SMS: INVOS2 Fails To Detect Various System Attributes

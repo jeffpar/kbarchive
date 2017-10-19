@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117743: How to Move Data Between Large Overlapping Buffers"
-permalink: kb/117/Q117743/
+permalink: /kb/117/Q117743/
 ---
 
 ## Q117743: How to Move Data Between Large Overlapping Buffers

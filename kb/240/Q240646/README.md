@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240646: World Atlas: Error Message When You Quit Program and Browser"
-permalink: kb/240/Q240646/
+permalink: /kb/240/Q240646/
 ---
 
 ## Q240646: World Atlas: Error Message When You Quit Program and Browser

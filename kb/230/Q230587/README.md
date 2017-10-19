@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230587: PRB: Focus Not Set in Edit Controls in Inactive Child Window"
-permalink: kb/230/Q230587/
+permalink: /kb/230/Q230587/
 ---
 
 ## Q230587: PRB: Focus Not Set in Edit Controls in Inactive Child Window

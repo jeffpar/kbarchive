@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104367: PC DOS: Err Msg: Notice 33 More Mail at Postoffice..."
-permalink: kb/104/Q104367/
+permalink: /kb/104/Q104367/
 ---
 
 ## Q104367: PC DOS: Err Msg: Notice 33 More Mail at Postoffice...

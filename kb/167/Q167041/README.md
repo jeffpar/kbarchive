@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167041: 8.3 File Names Are Displayed When Viewing an NDS Directory"
-permalink: kb/167/Q167041/
+permalink: /kb/167/Q167041/
 ---
 
 ## Q167041: 8.3 File Names Are Displayed When Viewing an NDS Directory

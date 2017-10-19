@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232689: HOWTO: Get the Window Handle to a WindowsCE Control from VB"
-permalink: kb/232/Q232689/
+permalink: /kb/232/Q232689/
 ---
 
 ## Q232689: HOWTO: Get the Window Handle to a WindowsCE Control from VB

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155084: DOCERR: AppleScript Do Script &quot;Quit&quot; Causes Error"
-permalink: kb/155/Q155084/
+permalink: /kb/155/Q155084/
 ---
 
 ## Q155084: DOCERR: AppleScript Do Script &quot;Quit&quot; Causes Error

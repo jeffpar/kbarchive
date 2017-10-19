@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177660: Access Violation Occurs in Sfmprint.exe on Busy Print Server"
-permalink: kb/177/Q177660/
+permalink: /kb/177/Q177660/
 ---
 
 ## Q177660: Access Violation Occurs in Sfmprint.exe on Busy Print Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190161: TCP/IP Device Driver Doesn't Remember Endpoint Share Flags"
-permalink: kb/190/Q190161/
+permalink: /kb/190/Q190161/
 ---
 
 ## Q190161: TCP/IP Device Driver Doesn't Remember Endpoint Share Flags

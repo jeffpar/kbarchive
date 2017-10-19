@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168140: XCON: NDR &quot;Invalid Parameters&quot;"
-permalink: kb/168/Q168140/
+permalink: /kb/168/Q168140/
 ---
 
 ## Q168140: XCON: NDR &quot;Invalid Parameters&quot;

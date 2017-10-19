@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69087: Information on Windows 3.0 Font Scaling Technology"
-permalink: kb/069/Q69087/
+permalink: /kb/069/Q69087/
 ---
 
 ## Q69087: Information on Windows 3.0 Font Scaling Technology

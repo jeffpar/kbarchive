@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319279: FIX: JustPath() Returns a String when Passed no Path"
-permalink: kb/319/Q319279/
+permalink: /kb/319/Q319279/
 ---
 
 ## Q319279: FIX: JustPath() Returns a String when Passed no Path

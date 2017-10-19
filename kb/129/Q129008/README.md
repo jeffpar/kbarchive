@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129008: Windows NT Displays a Stall or Panic Error When Printing"
-permalink: kb/129/Q129008/
+permalink: /kb/129/Q129008/
 ---
 
 ## Q129008: Windows NT Displays a Stall or Panic Error When Printing

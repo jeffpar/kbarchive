@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159599: WINS Consistency Checking May Not Start at Scheduled Time"
-permalink: kb/159/Q159599/
+permalink: /kb/159/Q159599/
 ---
 
 ## Q159599: WINS Consistency Checking May Not Start at Scheduled Time

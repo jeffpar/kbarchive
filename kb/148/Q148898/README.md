@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148898: How to Make Batch Mode Setup Install Minimum Files"
-permalink: kb/148/Q148898/
+permalink: /kb/148/Q148898/
 ---
 
 ## Q148898: How to Make Batch Mode Setup Install Minimum Files

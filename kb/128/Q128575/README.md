@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128575: PC MAPI: MAPI32.DLL Does Not Support Multi-Threaded Call"
-permalink: kb/128/Q128575/
+permalink: /kb/128/Q128575/
 ---
 
 ## Q128575: PC MAPI: MAPI32.DLL Does Not Support Multi-Threaded Call

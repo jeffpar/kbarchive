@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85053: FFAPI: The FFAPI Postoffice and How It is Used"
-permalink: kb/085/Q85053/
+permalink: /kb/085/Q85053/
 ---
 
 ## Q85053: FFAPI: The FFAPI Postoffice and How It is Used

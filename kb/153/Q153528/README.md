@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153528: SET PRINTER TO Enhancements in Visual FoxPro for Macintosh"
-permalink: kb/153/Q153528/
+permalink: /kb/153/Q153528/
 ---
 
 ## Q153528: SET PRINTER TO Enhancements in Visual FoxPro for Macintosh

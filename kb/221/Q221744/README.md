@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221744: FIX: C0000005 Fatal Error During Build w/ Invalid Preprocessors"
-permalink: kb/221/Q221744/
+permalink: /kb/221/Q221744/
 ---
 
 ## Q221744: FIX: C0000005 Fatal Error During Build w/ Invalid Preprocessors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127026: SMS Error 5000 on Macintosh Client"
-permalink: kb/127/Q127026/
+permalink: /kb/127/Q127026/
 ---
 
 ## Q127026: SMS Error 5000 on Macintosh Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90703: DShare with Dayna DL 2000 ISA Board Does Not Work in Windows"
-permalink: kb/090/Q90703/
+permalink: /kb/090/Q90703/
 ---
 
 ## Q90703: DShare with Dayna DL 2000 ISA Board Does Not Work in Windows

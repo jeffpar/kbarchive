@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245534: How To Locate a COMTI TypeLib After It's Been Registered In MTS"
-permalink: kb/245/Q245534/
+permalink: /kb/245/Q245534/
 ---
 
 ## Q245534: How To Locate a COMTI TypeLib After It's Been Registered In MTS

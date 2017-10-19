@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80130: DOCERR: L1008 Error from Incorrect /SEGMENTS Option Syntax"
-permalink: kb/080/Q80130/
+permalink: /kb/080/Q80130/
 ---
 
 ## Q80130: DOCERR: L1008 Error from Incorrect /SEGMENTS Option Syntax

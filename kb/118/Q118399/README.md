@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118399: UNC-Format Path Affects the DIR Command"
-permalink: kb/118/Q118399/
+permalink: /kb/118/Q118399/
 ---
 
 ## Q118399: UNC-Format Path Affects the DIR Command

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117693: PC Adm: Microsoft Mail MMFCLEAN.EXE Utility"
-permalink: kb/117/Q117693/
+permalink: /kb/117/Q117693/
 ---
 
 ## Q117693: PC Adm: Microsoft Mail MMFCLEAN.EXE Utility

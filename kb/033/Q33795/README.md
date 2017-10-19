@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q33795: INFO: Consecutive Calls to ctime() Overwrite Previous Values"
-permalink: kb/033/Q33795/
+permalink: /kb/033/Q33795/
 ---
 
 ## Q33795: INFO: Consecutive Calls to ctime() Overwrite Previous Values

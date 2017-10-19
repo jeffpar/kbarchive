@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170371: HOWTO: Implement Optional Parameter with UserConnection Designer"
-permalink: kb/170/Q170371/
+permalink: /kb/170/Q170371/
 ---
 
 ## Q170371: HOWTO: Implement Optional Parameter with UserConnection Designer

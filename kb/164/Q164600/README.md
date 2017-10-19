@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164600: 4 mm DAT Driver Reports DEC TZ9L Supports Setmarks"
-permalink: kb/164/Q164600/
+permalink: /kb/164/Q164600/
 ---
 
 ## Q164600: 4 mm DAT Driver Reports DEC TZ9L Supports Setmarks

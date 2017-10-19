@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251149: XIMS: Guest Account Allows Relaying with Routing Restrictions"
-permalink: kb/251/Q251149/
+permalink: /kb/251/Q251149/
 ---
 
 ## Q251149: XIMS: Guest Account Allows Relaying with Routing Restrictions

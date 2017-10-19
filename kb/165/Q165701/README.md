@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165701: Exiting Manager Causes Access Violation If No Servers Running"
-permalink: kb/165/Q165701/
+permalink: /kb/165/Q165701/
 ---
 
 ## Q165701: Exiting Manager Causes Access Violation If No Servers Running

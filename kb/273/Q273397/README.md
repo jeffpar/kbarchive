@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273397: AoE II: Enhancements and Fixes in Age of Empires 2.0a Update"
-permalink: kb/273/Q273397/
+permalink: /kb/273/Q273397/
 ---
 
 ## Q273397: AoE II: Enhancements and Fixes in Age of Empires 2.0a Update

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149389: XADM: Newprof Not Add Exchange Server Service to Profile"
-permalink: kb/149/Q149389/
+permalink: /kb/149/Q149389/
 ---
 
 ## Q149389: XADM: Newprof Not Add Exchange Server Service to Profile

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99267: Bookshelf: QuicKeys Dialog Adds CTRL Key to Invalid Entries"
-permalink: kb/099/Q99267/
+permalink: /kb/099/Q99267/
 ---
 
 ## Q99267: Bookshelf: QuicKeys Dialog Adds CTRL Key to Invalid Entries

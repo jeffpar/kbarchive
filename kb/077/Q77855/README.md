@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77855: Lotus 1-2-3 Versions 3.x and EMM386.EXE"
-permalink: kb/077/Q77855/
+permalink: /kb/077/Q77855/
 ---
 
 ## Q77855: Lotus 1-2-3 Versions 3.x and EMM386.EXE

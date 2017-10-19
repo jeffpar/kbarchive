@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128439: MHS: Err Msg: Cannot Open NETDIR.TAB"
-permalink: kb/128/Q128439/
+permalink: /kb/128/Q128439/
 ---
 
 ## Q128439: MHS: Err Msg: Cannot Open NETDIR.TAB

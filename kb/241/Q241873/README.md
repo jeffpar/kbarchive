@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241873: WD97: Canceling Hyperlink Allows Linked Executable File to Run"
-permalink: kb/241/Q241873/
+permalink: /kb/241/Q241873/
 ---
 
 ## Q241873: WD97: Canceling Hyperlink Allows Linked Executable File to Run

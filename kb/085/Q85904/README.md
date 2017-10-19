@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85904: Bitmaps Pasted into Cardfile Print Incorrectly"
-permalink: kb/085/Q85904/
+permalink: /kb/085/Q85904/
 ---
 
 ## Q85904: Bitmaps Pasted into Cardfile Print Incorrectly

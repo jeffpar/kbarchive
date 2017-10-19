@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149451: XFOR: Failure While Accessing the Process Table"
-permalink: kb/149/Q149451/
+permalink: /kb/149/Q149451/
 ---
 
 ## Q149451: XFOR: Failure While Accessing the Process Table

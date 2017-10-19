@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177260: BUG: Execution of REPORT FORM Command Sets Focus to Application"
-permalink: kb/177/Q177260/
+permalink: /kb/177/Q177260/
 ---
 
 ## Q177260: BUG: Execution of REPORT FORM Command Sets Focus to Application

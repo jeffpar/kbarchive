@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140654: PRB: ODBC Error: Column &lt;xxx&gt; in Table &lt;yyy&gt; May Not Be Null"
-permalink: kb/140/Q140654/
+permalink: /kb/140/Q140654/
 ---
 
 ## Q140654: PRB: ODBC Error: Column &lt;xxx&gt; in Table &lt;yyy&gt; May Not Be Null

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110349: PRB: Color Depth Doesn't Change Display Mode in FoxPro for Mac"
-permalink: kb/110/Q110349/
+permalink: /kb/110/Q110349/
 ---
 
 ## Q110349: PRB: Color Depth Doesn't Change Display Mode in FoxPro for Mac

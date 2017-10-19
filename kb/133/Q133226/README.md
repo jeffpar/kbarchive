@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133226: PPT7: Office Shortcut Bar Not Hidden During Slide Show on NT"
-permalink: kb/133/Q133226/
+permalink: /kb/133/Q133226/
 ---
 
 ## Q133226: PPT7: Office Shortcut Bar Not Hidden During Slide Show on NT

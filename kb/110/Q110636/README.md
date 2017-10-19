@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110636: BUG: Palettes Realized in a Memory DC May Corrupt Screen"
-permalink: kb/110/Q110636/
+permalink: /kb/110/Q110636/
 ---
 
 ## Q110636: BUG: Palettes Realized in a Memory DC May Corrupt Screen

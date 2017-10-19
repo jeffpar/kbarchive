@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138364: Windows NT Partitioning Rules During Setup"
-permalink: kb/138/Q138364/
+permalink: /kb/138/Q138364/
 ---
 
 ## Q138364: Windows NT Partitioning Rules During Setup

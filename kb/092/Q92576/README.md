@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92576: Quickeys Err Msg: Cannot Find Requested Book"
-permalink: kb/092/Q92576/
+permalink: /kb/092/Q92576/
 ---
 
 ## Q92576: Quickeys Err Msg: Cannot Find Requested Book

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121559: WFWSYS.CFG Remote Update from Windows NT 3.5 Fails"
-permalink: kb/121/Q121559/
+permalink: /kb/121/Q121559/
 ---
 
 ## Q121559: WFWSYS.CFG Remote Update from Windows NT 3.5 Fails

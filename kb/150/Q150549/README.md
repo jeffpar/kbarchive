@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150549: PRB: Connecting to Oracle Server Fails with Several Files Open"
-permalink: kb/150/Q150549/
+permalink: /kb/150/Q150549/
 ---
 
 ## Q150549: PRB: Connecting to Oracle Server Fails with Several Files Open

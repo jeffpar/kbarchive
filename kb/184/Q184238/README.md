@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184238: INFO: LNK4108: /ALIGN Specified Without /DRIVER or /VXD;"
-permalink: kb/184/Q184238/
+permalink: /kb/184/Q184238/
 ---
 
 ## Q184238: INFO: LNK4108: /ALIGN Specified Without /DRIVER or /VXD;

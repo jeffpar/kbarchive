@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90025: How to Uninstall Windows Sound System"
-permalink: kb/090/Q90025/
+permalink: /kb/090/Q90025/
 ---
 
 ## Q90025: How to Uninstall Windows Sound System

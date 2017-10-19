@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172743: WD97: Web Preview Edit Browser Path Limited to 50 Characters"
-permalink: kb/172/Q172743/
+permalink: /kb/172/Q172743/
 ---
 
 ## Q172743: WD97: Web Preview Edit Browser Path Limited to 50 Characters

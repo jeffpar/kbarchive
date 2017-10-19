@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68829: Appoint Mouse Pen and Windows Version 3.0"
-permalink: kb/068/Q68829/
+permalink: /kb/068/Q68829/
 ---
 
 ## Q68829: Appoint Mouse Pen and Windows Version 3.0

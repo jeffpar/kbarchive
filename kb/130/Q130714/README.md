@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130714: ScanDisk Marks Numerous Bad Sectors with XtraDrive"
-permalink: kb/130/Q130714/
+permalink: /kb/130/Q130714/
 ---
 
 ## Q130714: ScanDisk Marks Numerous Bad Sectors with XtraDrive

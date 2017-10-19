@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265104: PRB: Document Jumps to Top When You Edit With an OleBoundControl"
-permalink: kb/265/Q265104/
+permalink: /kb/265/Q265104/
 ---
 
 ## Q265104: PRB: Document Jumps to Top When You Edit With an OleBoundControl

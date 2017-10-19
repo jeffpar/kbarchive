@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110125: &quot;Volume&quot; and &quot;Drive&quot; Synonymous in Dialog Boxes &amp; Manuals"
-permalink: kb/110/Q110125/
+permalink: /kb/110/Q110125/
 ---
 
 ## Q110125: &quot;Volume&quot; and &quot;Drive&quot; Synonymous in Dialog Boxes &amp; Manuals

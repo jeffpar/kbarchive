@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254646: XFOR: URL Path Result When Converting Notes Doclink"
-permalink: kb/254/Q254646/
+permalink: /kb/254/Q254646/
 ---
 
 ## Q254646: XFOR: URL Path Result When Converting Notes Doclink

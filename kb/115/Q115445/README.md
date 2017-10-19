@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115445: X400: Network Name Field Refuses to Accept Character Input"
-permalink: kb/115/Q115445/
+permalink: /kb/115/Q115445/
 ---
 
 ## Q115445: X400: Network Name Field Refuses to Accept Character Input

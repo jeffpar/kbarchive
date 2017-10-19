@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295734: XCON: NDR When  SMTP Messages Are Relayed to a Domino Server"
-permalink: kb/295/Q295734/
+permalink: /kb/295/Q295734/
 ---
 
 ## Q295734: XCON: NDR When  SMTP Messages Are Relayed to a Domino Server

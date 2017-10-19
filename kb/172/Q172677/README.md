@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172677: WD97: &quot;Appellant vs. Appellee&quot; Added to Pleading Wizard"
-permalink: kb/172/Q172677/
+permalink: /kb/172/Q172677/
 ---
 
 ## Q172677: WD97: &quot;Appellant vs. Appellee&quot; Added to Pleading Wizard

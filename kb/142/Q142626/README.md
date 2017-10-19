@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142626: LogonUser API Now Has Support for Network Logons"
-permalink: kb/142/Q142626/
+permalink: /kb/142/Q142626/
 ---
 
 ## Q142626: LogonUser API Now Has Support for Network Logons

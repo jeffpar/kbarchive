@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142567: HOWTO: Filter a Child Grid Using a Parent Combo Box"
-permalink: kb/142/Q142567/
+permalink: /kb/142/Q142567/
 ---
 
 ## Q142567: HOWTO: Filter a Child Grid Using a Parent Combo Box

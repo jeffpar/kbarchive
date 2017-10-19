@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114872: Restoring Disk Configuration Information"
-permalink: kb/114/Q114872/
+permalink: /kb/114/Q114872/
 ---
 
 ## Q114872: Restoring Disk Configuration Information

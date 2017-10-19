@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99286: Extract Does Not Save Multiple Files"
-permalink: kb/099/Q99286/
+permalink: /kb/099/Q99286/
 ---
 
 ## Q99286: Extract Does Not Save Multiple Files

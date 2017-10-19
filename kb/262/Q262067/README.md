@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262067: BUG: RStoCursor in Vfpcom.dll Fails with Certain Data Types"
-permalink: kb/262/Q262067/
+permalink: /kb/262/Q262067/
 ---
 
 ## Q262067: BUG: RStoCursor in Vfpcom.dll Fails with Certain Data Types

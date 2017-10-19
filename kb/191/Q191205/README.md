@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191205: BUG: Run-Time Error 458 When Late-Binding Rich TextBox Control"
-permalink: kb/191/Q191205/
+permalink: /kb/191/Q191205/
 ---
 
 ## Q191205: BUG: Run-Time Error 458 When Late-Binding Rich TextBox Control

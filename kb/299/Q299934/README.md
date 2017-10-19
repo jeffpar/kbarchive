@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299934: FIX: Database Opened with NOUPDATE Allows Index Creation"
-permalink: kb/299/Q299934/
+permalink: /kb/299/Q299934/
 ---
 
 ## Q299934: FIX: Database Opened with NOUPDATE Allows Index Creation

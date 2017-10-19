@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81823: ALT+ENTER Switches Between Window and Full Screen"
-permalink: kb/081/Q81823/
+permalink: /kb/081/Q81823/
 ---
 
 ## Q81823: ALT+ENTER Switches Between Window and Full Screen

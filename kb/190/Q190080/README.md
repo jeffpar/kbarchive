@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190080: PRB: VBCE 5.0 on Same Machine as VB6 Causes Application Error"
-permalink: kb/190/Q190080/
+permalink: /kb/190/Q190080/
 ---
 
 ## Q190080: PRB: VBCE 5.0 on Same Machine as VB6 Causes Application Error

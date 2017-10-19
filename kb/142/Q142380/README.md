@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142380: Downloading Encarta Updates From MSN Produces Error Message"
-permalink: kb/142/Q142380/
+permalink: /kb/142/Q142380/
 ---
 
 ## Q142380: Downloading Encarta Updates From MSN Produces Error Message

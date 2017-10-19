@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249224: Querying Physical Dirs in IS Using SQL Returns Empty Recordsets"
-permalink: kb/249/Q249224/
+permalink: /kb/249/Q249224/
 ---
 
 ## Q249224: Querying Physical Dirs in IS Using SQL Returns Empty Recordsets

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186562: Terminal Server Multiprocessor Support"
-permalink: kb/186/Q186562/
+permalink: /kb/186/Q186562/
 ---
 
 ## Q186562: Terminal Server Multiprocessor Support

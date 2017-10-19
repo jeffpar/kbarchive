@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235035: PRB: Visual Basic Causes a Divide Error in Module GDI.EXE"
-permalink: kb/235/Q235035/
+permalink: /kb/235/Q235035/
 ---
 
 ## Q235035: PRB: Visual Basic Causes a Divide Error in Module GDI.EXE

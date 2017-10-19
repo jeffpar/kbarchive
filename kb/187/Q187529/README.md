@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187529: HOWTO: Use ADO to Access Objects Through an ADSI LDAP Provider"
-permalink: kb/187/Q187529/
+permalink: /kb/187/Q187529/
 ---
 
 ## Q187529: HOWTO: Use ADO to Access Objects Through an ADSI LDAP Provider

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190153: INFO: Remove Information About Unused ActiveX Controls"
-permalink: kb/190/Q190153/
+permalink: /kb/190/Q190153/
 ---
 
 ## Q190153: INFO: Remove Information About Unused ActiveX Controls

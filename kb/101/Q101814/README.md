@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101814: PC Win: Network File Locking Problems"
-permalink: kb/101/Q101814/
+permalink: /kb/101/Q101814/
 ---
 
 ## Q101814: PC Win: Network File Locking Problems

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187675: HOWTO: Copy a String to a Byte Array Without Unicode Conversion"
-permalink: kb/187/Q187675/
+permalink: /kb/187/Q187675/
 ---
 
 ## Q187675: HOWTO: Copy a String to a Byte Array Without Unicode Conversion

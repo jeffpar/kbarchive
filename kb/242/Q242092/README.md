@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242092: How to Use System Policies to Hide Drives"
-permalink: kb/242/Q242092/
+permalink: /kb/242/Q242092/
 ---
 
 ## Q242092: How to Use System Policies to Hide Drives

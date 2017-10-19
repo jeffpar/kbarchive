@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q36910: TI 855 Prints Garbage if Switch 4 Is Not Off"
-permalink: kb/036/Q36910/
+permalink: /kb/036/Q36910/
 ---
 
 ## Q36910: TI 855 Prints Garbage if Switch 4 Is Not Off

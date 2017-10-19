@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230068: XFOR: Exchange Migration Does Not Work on Large Notes Mailbox"
-permalink: kb/230/Q230068/
+permalink: /kb/230/Q230068/
 ---
 
 ## Q230068: XFOR: Exchange Migration Does Not Work on Large Notes Mailbox

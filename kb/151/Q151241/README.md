@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151241: XCLN: How to Work with Public Folders Offline"
-permalink: kb/151/Q151241/
+permalink: /kb/151/Q151241/
 ---
 
 ## Q151241: XCLN: How to Work with Public Folders Offline

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231460: XFOR: Migration from Memo Fails with MIGMIGU0207E LINEFEED Field"
-permalink: kb/231/Q231460/
+permalink: /kb/231/Q231460/
 ---
 
 ## Q231460: XFOR: Migration from Memo Fails with MIGMIGU0207E LINEFEED Field

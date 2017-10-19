@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176359: FP: Video Controls Do Not Appear in the Browser"
-permalink: kb/176/Q176359/
+permalink: /kb/176/Q176359/
 ---
 
 ## Q176359: FP: Video Controls Do Not Appear in the Browser

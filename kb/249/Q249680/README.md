@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249680: XADM: Deleted Item Retention and Message Delete Process"
-permalink: kb/249/Q249680/
+permalink: /kb/249/Q249680/
 ---
 
 ## Q249680: XADM: Deleted Item Retention and Message Delete Process

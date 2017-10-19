@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189130: BUG: VERSION(1) Function Returns Different Format in VFP 6"
-permalink: kb/189/Q189130/
+permalink: /kb/189/Q189130/
 ---
 
 ## Q189130: BUG: VERSION(1) Function Returns Different Format in VFP 6

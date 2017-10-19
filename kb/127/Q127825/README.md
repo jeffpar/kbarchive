@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127825: Event Viewer Filter Events On Time Values Change"
-permalink: kb/127/Q127825/
+permalink: /kb/127/Q127825/
 ---
 
 ## Q127825: Event Viewer Filter Events On Time Values Change

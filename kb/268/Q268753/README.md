@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268753: PRB: CDO Cannot Access Secure Properties"
-permalink: kb/268/Q268753/
+permalink: /kb/268/Q268753/
 ---
 
 ## Q268753: PRB: CDO Cannot Access Secure Properties

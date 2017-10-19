@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254608: Configuring Phonebook Entry for Callback Causes Extra Devices"
-permalink: kb/254/Q254608/
+permalink: /kb/254/Q254608/
 ---
 
 ## Q254608: Configuring Phonebook Entry for Callback Causes Extra Devices

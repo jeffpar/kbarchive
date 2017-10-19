@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64267: Adobe Soft Fonts, Word for Windows, and Windows 3.0"
-permalink: kb/064/Q64267/
+permalink: /kb/064/Q64267/
 ---
 
 ## Q64267: Adobe Soft Fonts, Word for Windows, and Windows 3.0

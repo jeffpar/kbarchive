@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167951: FIX: Autmgr32.exe Fails After Component Download"
-permalink: kb/167/Q167951/
+permalink: /kb/167/Q167951/
 ---
 
 ## Q167951: FIX: Autmgr32.exe Fails After Component Download

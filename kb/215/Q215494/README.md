@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215494: XFOR: Message Flow Through the IBM OV/VM-PROFS Connector"
-permalink: kb/215/Q215494/
+permalink: /kb/215/Q215494/
 ---
 
 ## Q215494: XFOR: Message Flow Through the IBM OV/VM-PROFS Connector

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q33067: Anonymous Labels for Jump Instructions"
-permalink: kb/033/Q33067/
+permalink: /kb/033/Q33067/
 ---
 
 ## Q33067: Anonymous Labels for Jump Instructions

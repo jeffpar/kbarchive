@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314938: Internet Information Services Does Not Log Requests Properly"
-permalink: kb/314/Q314938/
+permalink: /kb/314/Q314938/
 ---
 
 ## Q314938: Internet Information Services Does Not Log Requests Properly

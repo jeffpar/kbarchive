@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195911: XADM: Directory Replication Conflicts and Event ID 1074"
-permalink: kb/195/Q195911/
+permalink: /kb/195/Q195911/
 ---
 
 ## Q195911: XADM: Directory Replication Conflicts and Event ID 1074

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150226: BUG: Sheridan Panel Receives Focus &amp; Active Control Loses Focus"
-permalink: kb/150/Q150226/
+permalink: /kb/150/Q150226/
 ---
 
 ## Q150226: BUG: Sheridan Panel Receives Focus &amp; Active Control Loses Focus

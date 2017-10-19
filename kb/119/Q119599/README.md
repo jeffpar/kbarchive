@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119599: Differences Between Using APM 1.0 and APM 1.1"
-permalink: kb/119/Q119599/
+permalink: /kb/119/Q119599/
 ---
 
 ## Q119599: Differences Between Using APM 1.0 and APM 1.1

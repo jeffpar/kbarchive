@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173880: BUG: Page Down/Page Up Keys Do Not Clear READ MODAL in VFP5"
-permalink: kb/173/Q173880/
+permalink: /kb/173/Q173880/
 ---
 
 ## Q173880: BUG: Page Down/Page Up Keys Do Not Clear READ MODAL in VFP5

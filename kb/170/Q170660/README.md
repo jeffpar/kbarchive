@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170660: TN3270 Server Access Violation in SetBestGroups()"
-permalink: kb/170/Q170660/
+permalink: /kb/170/Q170660/
 ---
 
 ## Q170660: TN3270 Server Access Violation in SetBestGroups()

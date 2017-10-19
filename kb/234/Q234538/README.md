@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234538: New Cryptographic APIs Need Backwards Compatibility"
-permalink: kb/234/Q234538/
+permalink: /kb/234/Q234538/
 ---
 
 ## Q234538: New Cryptographic APIs Need Backwards Compatibility

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163553: Error Message: Error Initializing the Cache"
-permalink: kb/163/Q163553/
+permalink: /kb/163/Q163553/
 ---
 
 ## Q163553: Error Message: Error Initializing the Cache

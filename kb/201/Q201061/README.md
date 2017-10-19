@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201061: FIX: MDAC 2.0 SQL Server ODBC Driver Hangs On SQLDescribeCol()"
-permalink: kb/201/Q201061/
+permalink: /kb/201/Q201061/
 ---
 
 ## Q201061: FIX: MDAC 2.0 SQL Server ODBC Driver Hangs On SQLDescribeCol()

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148596: Event ID 951 Should Not Be Logged As A Significant System"
-permalink: kb/148/Q148596/
+permalink: /kb/148/Q148596/
 ---
 
 ## Q148596: Event ID 951 Should Not Be Logged As A Significant System

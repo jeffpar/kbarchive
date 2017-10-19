@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107660: Writer: Drop Caps Not Aligned with Indented Paragraph"
-permalink: kb/107/Q107660/
+permalink: /kb/107/Q107660/
 ---
 
 ## Q107660: Writer: Drop Caps Not Aligned with Indented Paragraph

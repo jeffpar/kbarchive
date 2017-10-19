@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128996: HOWTO: Assign Database Location Generically in Data Env"
-permalink: kb/128/Q128996/
+permalink: /kb/128/Q128996/
 ---
 
 ## Q128996: HOWTO: Assign Database Location Generically in Data Env

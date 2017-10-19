@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162491: SNA Server Performance Degrades with Event 631 Errors"
-permalink: kb/162/Q162491/
+permalink: /kb/162/Q162491/
 ---
 
 ## Q162491: SNA Server Performance Degrades with Event 631 Errors

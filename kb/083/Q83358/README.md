@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83358: Video Seven Modes and Drivers in Windows 3.0"
-permalink: kb/083/Q83358/
+permalink: /kb/083/Q83358/
 ---
 
 ## Q83358: Video Seven Modes and Drivers in Windows 3.0

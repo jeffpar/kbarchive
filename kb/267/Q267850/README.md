@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267850: Anonymous User Has Access Even When File Permissions Are Denied"
-permalink: kb/267/Q267850/
+permalink: /kb/267/Q267850/
 ---
 
 ## Q267850: Anonymous User Has Access Even When File Permissions Are Denied

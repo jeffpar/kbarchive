@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106121: Sleeping Server Stops Responding to Requests"
-permalink: kb/106/Q106121/
+permalink: /kb/106/Q106121/
 ---
 
 ## Q106121: Sleeping Server Stops Responding to Requests

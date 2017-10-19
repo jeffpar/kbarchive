@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134485: After Dynamic Load/Unload of NDIS3, Server Service Stops"
-permalink: kb/134/Q134485/
+permalink: /kb/134/Q134485/
 ---
 
 ## Q134485: After Dynamic Load/Unload of NDIS3, Server Service Stops

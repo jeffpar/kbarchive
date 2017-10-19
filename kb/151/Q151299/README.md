@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151299: Attachmate SDLC Card Not Respond to Connection Activation"
-permalink: kb/151/Q151299/
+permalink: /kb/151/Q151299/
 ---
 
 ## Q151299: Attachmate SDLC Card Not Respond to Connection Activation

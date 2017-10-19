@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151768: BUG: Tooltips on Primary Monitor when Toolbar on 2nd Monitor"
-permalink: kb/151/Q151768/
+permalink: /kb/151/Q151768/
 ---
 
 ## Q151768: BUG: Tooltips on Primary Monitor when Toolbar on 2nd Monitor

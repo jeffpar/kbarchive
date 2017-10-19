@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134566: Adobe Photoshop Version 2.5 Does Not Run in Windows 95"
-permalink: kb/134/Q134566/
+permalink: /kb/134/Q134566/
 ---
 
 ## Q134566: Adobe Photoshop Version 2.5 Does Not Run in Windows 95

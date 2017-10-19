@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196945: Host Account Manager May Display User Password In Clear Text"
-permalink: kb/196/Q196945/
+permalink: /kb/196/Q196945/
 ---
 
 ## Q196945: Host Account Manager May Display User Password In Clear Text

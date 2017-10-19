@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92785: Err Msg: &quot;Incorrect DOS Version&quot; Caused by Mismatched Files"
-permalink: kb/092/Q92785/
+permalink: /kb/092/Q92785/
 ---
 
 ## Q92785: Err Msg: &quot;Incorrect DOS Version&quot; Caused by Mismatched Files

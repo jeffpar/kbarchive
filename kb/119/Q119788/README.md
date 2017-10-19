@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119788: Running 16-bit Applications with Long Directory Structure"
-permalink: kb/119/Q119788/
+permalink: /kb/119/Q119788/
 ---
 
 ## Q119788: Running 16-bit Applications with Long Directory Structure

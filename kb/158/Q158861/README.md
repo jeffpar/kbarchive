@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158861: Changes in PWS Administrator Options Are Not Saved Correctly"
-permalink: kb/158/Q158861/
+permalink: /kb/158/Q158861/
 ---
 
 ## Q158861: Changes in PWS Administrator Options Are Not Saved Correctly

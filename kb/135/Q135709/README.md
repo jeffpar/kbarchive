@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135709: PRB: Visual C++ Link Error LNK2001: unresolved external symbol"
-permalink: kb/135/Q135709/
+permalink: /kb/135/Q135709/
 ---
 
 ## Q135709: PRB: Visual C++ Link Error LNK2001: unresolved external symbol

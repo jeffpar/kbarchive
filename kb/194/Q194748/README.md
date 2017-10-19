@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194748: Modem Call Cancellation Timeout Value Defaults to 55 Seconds"
-permalink: kb/194/Q194748/
+permalink: /kb/194/Q194748/
 ---
 
 ## Q194748: Modem Call Cancellation Timeout Value Defaults to 55 Seconds

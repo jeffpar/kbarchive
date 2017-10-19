@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181845: HOWTO: Create a Sink Interface in MFC-Based COM Client"
-permalink: kb/181/Q181845/
+permalink: /kb/181/Q181845/
 ---
 
 ## Q181845: HOWTO: Create a Sink Interface in MFC-Based COM Client

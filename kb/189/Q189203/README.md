@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189203: Arcadia.exe Missing From BackOffice Resource Kit 2nd Ed."
-permalink: kb/189/Q189203/
+permalink: /kb/189/Q189203/
 ---
 
 ## Q189203: Arcadia.exe Missing From BackOffice Resource Kit 2nd Ed.

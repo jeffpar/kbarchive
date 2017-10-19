@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69475: Increasing the Size of the PWB Build Status Box on MS-DOS"
-permalink: kb/069/Q69475/
+permalink: /kb/069/Q69475/
 ---
 
 ## Q69475: Increasing the Size of the PWB Build Status Box on MS-DOS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75078: Installing MS-DOS 5.0 on a Tandy 1000HX"
-permalink: kb/075/Q75078/
+permalink: /kb/075/Q75078/
 ---
 
 ## Q75078: Installing MS-DOS 5.0 on a Tandy 1000HX

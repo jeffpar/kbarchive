@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87158: Mac Wkst: Special Folders"
-permalink: kb/087/Q87158/
+permalink: /kb/087/Q87158/
 ---
 
 ## Q87158: Mac Wkst: Special Folders

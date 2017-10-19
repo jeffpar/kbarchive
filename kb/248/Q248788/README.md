@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248788: Files to Patch FoxPro 2.6 to FoxPro 2.6a"
-permalink: kb/248/Q248788/
+permalink: /kb/248/Q248788/
 ---
 
 ## Q248788: Files to Patch FoxPro 2.6 to FoxPro 2.6a

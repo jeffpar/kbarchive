@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64018: DOCERR: Environment Variables in STARTUP.CMD in FORTRAN"
-permalink: kb/064/Q64018/
+permalink: /kb/064/Q64018/
 ---
 
 ## Q64018: DOCERR: Environment Variables in STARTUP.CMD in FORTRAN

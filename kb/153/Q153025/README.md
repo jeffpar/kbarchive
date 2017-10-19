@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153025: FIX: Microsoft Excel 95 Doesn't Respond Correctly to GetObject"
-permalink: kb/153/Q153025/
+permalink: /kb/153/Q153025/
 ---
 
 ## Q153025: FIX: Microsoft Excel 95 Doesn't Respond Correctly to GetObject

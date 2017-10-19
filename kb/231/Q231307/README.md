@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231307: XADM: Server Issues V1 Certificate When Configured for V3 Only"
-permalink: kb/231/Q231307/
+permalink: /kb/231/Q231307/
 ---
 
 ## Q231307: XADM: Server Issues V1 Certificate When Configured for V3 Only

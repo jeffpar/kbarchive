@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148276: Asimov: Minimum System Requirements"
-permalink: kb/148/Q148276/
+permalink: /kb/148/Q148276/
 ---
 
 ## Q148276: Asimov: Minimum System Requirements

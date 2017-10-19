@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260293: SMS: Advertised Programs Monitor Settings Do Not Take Affect for"
-permalink: kb/260/Q260293/
+permalink: /kb/260/Q260293/
 ---
 
 ## Q260293: SMS: Advertised Programs Monitor Settings Do Not Take Affect for

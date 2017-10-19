@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170791: Windows 95 TCP Clients Run Out of Ports"
-permalink: kb/170/Q170791/
+permalink: /kb/170/Q170791/
 ---
 
 ## Q170791: Windows 95 TCP Clients Run Out of Ports

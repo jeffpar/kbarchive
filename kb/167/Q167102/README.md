@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167102: Cannot Open Devices or Modem Tool in Control Panel"
-permalink: kb/167/Q167102/
+permalink: /kb/167/Q167102/
 ---
 
 ## Q167102: Cannot Open Devices or Modem Tool in Control Panel

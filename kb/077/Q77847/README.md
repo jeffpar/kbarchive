@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77847: MS-DOS 5.0 Setup Fails with Lightning Disk Cache 5.52"
-permalink: kb/077/Q77847/
+permalink: /kb/077/Q77847/
 ---
 
 ## Q77847: MS-DOS 5.0 Setup Fails with Lightning Disk Cache 5.52

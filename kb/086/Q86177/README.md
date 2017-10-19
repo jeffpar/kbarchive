@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86177: Citizen GSX-130 Tractor Paper Misfeeds"
-permalink: kb/086/Q86177/
+permalink: /kb/086/Q86177/
 ---
 
 ## Q86177: Citizen GSX-130 Tractor Paper Misfeeds

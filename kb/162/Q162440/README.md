@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162440: WD97: BuiltInDocumentProperties Returns Incorrect Page Count"
-permalink: kb/162/Q162440/
+permalink: /kb/162/Q162440/
 ---
 
 ## Q162440: WD97: BuiltInDocumentProperties Returns Incorrect Page Count

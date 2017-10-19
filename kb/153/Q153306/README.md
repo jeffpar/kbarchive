@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153306: HOWTO: Speed up Alignment of Controls with Triple-Click"
-permalink: kb/153/Q153306/
+permalink: /kb/153/Q153306/
 ---
 
 ## Q153306: HOWTO: Speed up Alignment of Controls with Triple-Click

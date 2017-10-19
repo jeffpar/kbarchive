@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86159: PROFS: How to De-Install the Gateway"
-permalink: kb/086/Q86159/
+permalink: /kb/086/Q86159/
 ---
 
 ## Q86159: PROFS: How to De-Install the Gateway

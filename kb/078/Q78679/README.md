@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78679: WordPerfect Office TSRs Don't Function Correctly"
-permalink: kb/078/Q78679/
+permalink: /kb/078/Q78679/
 ---
 
 ## Q78679: WordPerfect Office TSRs Don't Function Correctly

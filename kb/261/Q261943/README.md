@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261943: HOWTO: Use Basic Visio Operations from Visual FoxPro"
-permalink: kb/261/Q261943/
+permalink: /kb/261/Q261943/
 ---
 
 ## Q261943: HOWTO: Use Basic Visio Operations from Visual FoxPro

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285862: Games Error Message: Problem Getting DP2 Interface"
-permalink: kb/285/Q285862/
+permalink: /kb/285/Q285862/
 ---
 
 ## Q285862: Games Error Message: Problem Getting DP2 Interface

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238659: PRB: Modifying Class Library Causes Error Message in VFP 6.0"
-permalink: kb/238/Q238659/
+permalink: /kb/238/Q238659/
 ---
 
 ## Q238659: PRB: Modifying Class Library Causes Error Message in VFP 6.0

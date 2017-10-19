@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150989: XCLN: Using the Equal Sign (=) to Resolve Alias Names"
-permalink: kb/150/Q150989/
+permalink: /kb/150/Q150989/
 ---
 
 ## Q150989: XCLN: Using the Equal Sign (=) to Resolve Alias Names

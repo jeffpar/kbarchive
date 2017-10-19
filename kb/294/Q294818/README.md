@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294818: Frequently Asked Questions About Network Monitor"
-permalink: kb/294/Q294818/
+permalink: /kb/294/Q294818/
 ---
 
 ## Q294818: Frequently Asked Questions About Network Monitor

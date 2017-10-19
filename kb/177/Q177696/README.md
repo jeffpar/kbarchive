@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177696: HOWTO: Use Named Pipes in a Visual Basic 32-bit Program"
-permalink: kb/177/Q177696/
+permalink: /kb/177/Q177696/
 ---
 
 ## Q177696: HOWTO: Use Named Pipes in a Visual Basic 32-bit Program

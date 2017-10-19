@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149792: Writer: Solution for GhostWriter Case of Blue Makva Mystery"
-permalink: kb/149/Q149792/
+permalink: /kb/149/Q149792/
 ---
 
 ## Q149792: Writer: Solution for GhostWriter Case of Blue Makva Mystery

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320318: PRB: VB Projects Cannot Connect to Relocated VSS Database"
-permalink: kb/320/Q320318/
+permalink: /kb/320/Q320318/
 ---
 
 ## Q320318: PRB: VB Projects Cannot Connect to Relocated VSS Database

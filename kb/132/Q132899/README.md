@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132899: STOP 0xA Err Msg When Installing Future Domain TMC-3260 PCI SCSI"
-permalink: kb/132/Q132899/
+permalink: /kb/132/Q132899/
 ---
 
 ## Q132899: STOP 0xA Err Msg When Installing Future Domain TMC-3260 PCI SCSI

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183705: RPC Mishandles Changes in the Number of IP Addresses"
-permalink: kb/183/Q183705/
+permalink: /kb/183/Q183705/
 ---
 
 ## Q183705: RPC Mishandles Changes in the Number of IP Addresses

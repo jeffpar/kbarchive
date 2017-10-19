@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85867: Novell NWPOPUP Truncates Messages at 40 Characters"
-permalink: kb/085/Q85867/
+permalink: /kb/085/Q85867/
 ---
 
 ## Q85867: Novell NWPOPUP Truncates Messages at 40 Characters

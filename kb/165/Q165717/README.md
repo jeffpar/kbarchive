@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165717: WD97: Errors Installing Avery Wizard"
-permalink: kb/165/Q165717/
+permalink: /kb/165/Q165717/
 ---
 
 ## Q165717: WD97: Errors Installing Avery Wizard

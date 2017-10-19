@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260907: Err Msg: Exchange MAPI Management Agent DAPIWrite Failed with..."
-permalink: kb/260/Q260907/
+permalink: /kb/260/Q260907/
 ---
 
 ## Q260907: Err Msg: Exchange MAPI Management Agent DAPIWrite Failed with...

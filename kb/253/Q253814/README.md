@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253814: PRB: SetParent Does Not Change Standard Forms into Child Windows"
-permalink: kb/253/Q253814/
+permalink: /kb/253/Q253814/
 ---
 
 ## Q253814: PRB: SetParent Does Not Change Standard Forms into Child Windows

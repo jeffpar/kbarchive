@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76804: MS-DOS Application Unable to Use Audio in 386 Enhanced Mode"
-permalink: kb/076/Q76804/
+permalink: /kb/076/Q76804/
 ---
 
 ## Q76804: MS-DOS Application Unable to Use Audio in 386 Enhanced Mode

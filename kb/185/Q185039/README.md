@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185039: XWEB: Deleting Email Address in OWA Contacts Generates Error"
-permalink: kb/185/Q185039/
+permalink: /kb/185/Q185039/
 ---
 
 ## Q185039: XWEB: Deleting Email Address in OWA Contacts Generates Error

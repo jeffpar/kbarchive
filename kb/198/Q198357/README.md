@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198357: WD97: Box Border Incorrect When Applied to Multiple Paragraphs"
-permalink: kb/198/Q198357/
+permalink: /kb/198/Q198357/
 ---
 
 ## Q198357: WD97: Box Border Incorrect When Applied to Multiple Paragraphs

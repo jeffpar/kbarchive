@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123473: HOWTO: Increase Performance in SourceSafe"
-permalink: kb/123/Q123473/
+permalink: /kb/123/Q123473/
 ---
 
 ## Q123473: HOWTO: Increase Performance in SourceSafe

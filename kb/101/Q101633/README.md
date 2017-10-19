@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101633: Mac Needs TrueType Font Pack for Non-PostScript Printer"
-permalink: kb/101/Q101633/
+permalink: /kb/101/Q101633/
 ---
 
 ## Q101633: Mac Needs TrueType Font Pack for Non-PostScript Printer

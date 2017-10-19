@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278319: INFO: Wscript.Shell Runs Commands as System in IIS"
-permalink: kb/278/Q278319/
+permalink: /kb/278/Q278319/
 ---
 
 ## Q278319: INFO: Wscript.Shell Runs Commands as System in IIS

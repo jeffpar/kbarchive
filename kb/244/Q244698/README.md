@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244698: INFO: After Upgrade Migdb.inf Apps Started Will Query User"
-permalink: kb/244/Q244698/
+permalink: /kb/244/Q244698/
 ---
 
 ## Q244698: INFO: After Upgrade Migdb.inf Apps Started Will Query User

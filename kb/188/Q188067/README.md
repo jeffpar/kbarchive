@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188067: SNA Server 4.0 Service Pack 1 Readme.txt File"
-permalink: kb/188/Q188067/
+permalink: /kb/188/Q188067/
 ---
 
 ## Q188067: SNA Server 4.0 Service Pack 1 Readme.txt File

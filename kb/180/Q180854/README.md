@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180854: Access Violation in Winlogon with Third-Party Gina.dll"
-permalink: kb/180/Q180854/
+permalink: /kb/180/Q180854/
 ---
 
 ## Q180854: Access Violation in Winlogon with Third-Party Gina.dll

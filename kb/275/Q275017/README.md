@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275017: Misspelled &quot;Microsoft Corporatoin&quot; Is Listed as Manufactucturer"
-permalink: kb/275/Q275017/
+permalink: /kb/275/Q275017/
 ---
 
 ## Q275017: Misspelled &quot;Microsoft Corporatoin&quot; Is Listed as Manufactucturer

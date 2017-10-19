@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310499: SMS: Cannot Install the SMS Client on Windows XP Home Edition"
-permalink: kb/310/Q310499/
+permalink: /kb/310/Q310499/
 ---
 
 ## Q310499: SMS: Cannot Install the SMS Client on Windows XP Home Edition

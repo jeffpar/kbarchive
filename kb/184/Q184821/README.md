@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184821: Copydbg.cmd Fails to Copy All of the Symbols from SP3 CD."
-permalink: kb/184/Q184821/
+permalink: /kb/184/Q184821/
 ---
 
 ## Q184821: Copydbg.cmd Fails to Copy All of the Symbols from SP3 CD.

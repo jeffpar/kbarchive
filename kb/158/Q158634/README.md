@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158634: XCLN: Using Exchange Client With Windows NT Mandatory Profile"
-permalink: kb/158/Q158634/
+permalink: /kb/158/Q158634/
 ---
 
 ## Q158634: XCLN: Using Exchange Client With Windows NT Mandatory Profile

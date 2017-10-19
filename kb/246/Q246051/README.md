@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246051: XIMS: No NDR If SMTP Msg Exceeds &quot;Max Recipients on Submit&quot;"
-permalink: kb/246/Q246051/
+permalink: /kb/246/Q246051/
 ---
 
 ## Q246051: XIMS: No NDR If SMTP Msg Exceeds &quot;Max Recipients on Submit&quot;

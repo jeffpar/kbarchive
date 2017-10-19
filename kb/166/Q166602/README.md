@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166602: XCON: MTA Only Allows 64 TCP/IP or TP4 Connections"
-permalink: kb/166/Q166602/
+permalink: /kb/166/Q166602/
 ---
 
 ## Q166602: XCON: MTA Only Allows 64 TCP/IP or TP4 Connections

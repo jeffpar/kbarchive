@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231636: HOWTO: Controlling the Visual C++ IDE Source Code Editor Window"
-permalink: kb/231/Q231636/
+permalink: /kb/231/Q231636/
 ---
 
 ## Q231636: HOWTO: Controlling the Visual C++ IDE Source Code Editor Window

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132425: Extra Page Printed with Each Print Job"
-permalink: kb/132/Q132425/
+permalink: /kb/132/Q132425/
 ---
 
 ## Q132425: Extra Page Printed with Each Print Job

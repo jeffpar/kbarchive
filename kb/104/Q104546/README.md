@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104546: MakeSys Fails to Find DBLSPACE.BIN If APPEND Is Loaded"
-permalink: kb/104/Q104546/
+permalink: /kb/104/Q104546/
 ---
 
 ## Q104546: MakeSys Fails to Find DBLSPACE.BIN If APPEND Is Loaded

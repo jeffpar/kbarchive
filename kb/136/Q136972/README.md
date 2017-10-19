@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136972: Cannot Access NEC CDR-82 CD-ROM Drive"
-permalink: kb/136/Q136972/
+permalink: /kb/136/Q136972/
 ---
 
 ## Q136972: Cannot Access NEC CDR-82 CD-ROM Drive

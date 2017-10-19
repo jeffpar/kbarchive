@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168410: FIX: Dependency Information Is Lost After Workspace Is Closed"
-permalink: kb/168/Q168410/
+permalink: /kb/168/Q168410/
 ---
 
 ## Q168410: FIX: Dependency Information Is Lost After Workspace Is Closed

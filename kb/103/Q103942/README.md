@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103942: SNA Server Identifies Netflex Adapter as Ethernet"
-permalink: kb/103/Q103942/
+permalink: /kb/103/Q103942/
 ---
 
 ## Q103942: SNA Server Identifies Netflex Adapter as Ethernet

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179777: Encarta 98: Lookup Reference Feature Not Available in Word"
-permalink: kb/179/Q179777/
+permalink: /kb/179/Q179777/
 ---
 
 ## Q179777: Encarta 98: Lookup Reference Feature Not Available in Word

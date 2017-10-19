@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93679: Setup Is Unable to Read Uninstall Disk on a COMPAQ"
-permalink: kb/093/Q93679/
+permalink: /kb/093/Q93679/
 ---
 
 ## Q93679: Setup Is Unable to Read Uninstall Disk on a COMPAQ

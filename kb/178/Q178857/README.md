@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178857: XADM: Setup.exe Not Found On Premier Select CD-ROM"
-permalink: kb/178/Q178857/
+permalink: /kb/178/Q178857/
 ---
 
 ## Q178857: XADM: Setup.exe Not Found On Premier Select CD-ROM

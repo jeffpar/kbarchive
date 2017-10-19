@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238186: Simultaneous Terminal Server Client Logons May Not Connect"
-permalink: kb/238/Q238186/
+permalink: /kb/238/Q238186/
 ---
 
 ## Q238186: Simultaneous Terminal Server Client Logons May Not Connect

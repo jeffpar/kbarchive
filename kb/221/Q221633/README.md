@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221633: FIX: Visual FoxPro Hangs After Rebuilding an Application"
-permalink: kb/221/Q221633/
+permalink: /kb/221/Q221633/
 ---
 
 ## Q221633: FIX: Visual FoxPro Hangs After Rebuilding an Application

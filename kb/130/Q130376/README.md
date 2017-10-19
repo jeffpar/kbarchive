@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130376: Installing Windows NT On a Caching SCSI Controller"
-permalink: kb/130/Q130376/
+permalink: /kb/130/Q130376/
 ---
 
 ## Q130376: Installing Windows NT On a Caching SCSI Controller

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197295: WinNT Does Not Boot to Partition That Starts More Than 4 GB"
-permalink: kb/197/Q197295/
+permalink: /kb/197/Q197295/
 ---
 
 ## Q197295: WinNT Does Not Boot to Partition That Starts More Than 4 GB

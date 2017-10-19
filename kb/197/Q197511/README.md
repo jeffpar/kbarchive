@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197511: UDP Broadcast Issues with Service Pack 4"
-permalink: kb/197/Q197511/
+permalink: /kb/197/Q197511/
 ---
 
 ## Q197511: UDP Broadcast Issues with Service Pack 4

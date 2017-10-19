@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97805: General Protection Fault in UNIDRV.DLL on an HP III Printer"
-permalink: kb/097/Q97805/
+permalink: /kb/097/Q97805/
 ---
 
 ## Q97805: General Protection Fault in UNIDRV.DLL on an HP III Printer

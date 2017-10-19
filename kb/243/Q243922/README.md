@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243922: AoE II: Patch Available for &quot;You Are Victorious&quot; Messages"
-permalink: kb/243/Q243922/
+permalink: /kb/243/Q243922/
 ---
 
 ## Q243922: AoE II: Patch Available for &quot;You Are Victorious&quot; Messages

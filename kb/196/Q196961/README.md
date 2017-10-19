@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196961: WD97: AutoRecover Not Available Using Word as Your E-mail Editor"
-permalink: kb/196/Q196961/
+permalink: /kb/196/Q196961/
 ---
 
 ## Q196961: WD97: AutoRecover Not Available Using Word as Your E-mail Editor

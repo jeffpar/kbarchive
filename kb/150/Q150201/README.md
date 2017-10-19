@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150201: BUG: Application Does Not Restore Window from Minimized Icon"
-permalink: kb/150/Q150201/
+permalink: /kb/150/Q150201/
 ---
 
 ## Q150201: BUG: Application Does Not Restore Window from Minimized Icon

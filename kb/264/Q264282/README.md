@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264282: XFOR: Exchange Connector for Novell GroupWise Setup Instructions"
-permalink: kb/264/Q264282/
+permalink: /kb/264/Q264282/
 ---
 
 ## Q264282: XFOR: Exchange Connector for Novell GroupWise Setup Instructions

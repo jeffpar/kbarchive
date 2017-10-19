@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174961: SMS: Client Services Do Not Upgrade Automatically"
-permalink: kb/174/Q174961/
+permalink: /kb/174/Q174961/
 ---
 
 ## Q174961: SMS: Client Services Do Not Upgrade Automatically

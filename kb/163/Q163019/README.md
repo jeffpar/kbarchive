@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163019: RUI Library Terminates RUI Session When PIU Has Not Been Sent"
-permalink: kb/163/Q163019/
+permalink: /kb/163/Q163019/
 ---
 
 ## Q163019: RUI Library Terminates RUI Session When PIU Has Not Been Sent

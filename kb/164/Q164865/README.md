@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164865: XCON: Msg Text Word Wrap Not Working on X.400"
-permalink: kb/164/Q164865/
+permalink: /kb/164/Q164865/
 ---
 
 ## Q164865: XCON: Msg Text Word Wrap Not Working on X.400

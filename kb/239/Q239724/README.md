@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239724: NFL Fever 2000: How to Update Team Rosters and Player Ratings"
-permalink: kb/239/Q239724/
+permalink: /kb/239/Q239724/
 ---
 
 ## Q239724: NFL Fever 2000: How to Update Team Rosters and Player Ratings

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164821: DHCP Server Service May Stop Responding"
-permalink: kb/164/Q164821/
+permalink: /kb/164/Q164821/
 ---
 
 ## Q164821: DHCP Server Service May Stop Responding

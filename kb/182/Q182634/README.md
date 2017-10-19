@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182634: JCL Present in COBOL Import File Causes Error"
-permalink: kb/182/Q182634/
+permalink: /kb/182/Q182634/
 ---
 
 ## Q182634: JCL Present in COBOL Import File Causes Error

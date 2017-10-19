@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229752: BUG: IDE Uses All Resources When Breakpoint is Hit in Debug Mode"
-permalink: kb/229/Q229752/
+permalink: /kb/229/Q229752/
 ---
 
 ## Q229752: BUG: IDE Uses All Resources When Breakpoint is Hit in Debug Mode

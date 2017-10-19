@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155482: PowerPoint Pattern Fills and Word's Picture Editor"
-permalink: kb/155/Q155482/
+permalink: /kb/155/Q155482/
 ---
 
 ## Q155482: PowerPoint Pattern Fills and Word's Picture Editor

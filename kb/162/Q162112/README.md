@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162112: &quot;Unable to Load the Unicode Font&quot; Opening a File with Notepad"
-permalink: kb/162/Q162112/
+permalink: /kb/162/Q162112/
 ---
 
 ## Q162112: &quot;Unable to Load the Unicode Font&quot; Opening a File with Notepad

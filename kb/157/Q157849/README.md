@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157849: WD97: Text Color in Text Box Not Changed to White with Dark Fill"
-permalink: kb/157/Q157849/
+permalink: /kb/157/Q157849/
 ---
 
 ## Q157849: WD97: Text Color in Text Box Not Changed to White with Dark Fill

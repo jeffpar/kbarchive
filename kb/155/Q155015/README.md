@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155015: Cannot Connect to MSN Using AOL as Internet Service Provider"
-permalink: kb/155/Q155015/
+permalink: /kb/155/Q155015/
 ---
 
 ## Q155015: Cannot Connect to MSN Using AOL as Internet Service Provider

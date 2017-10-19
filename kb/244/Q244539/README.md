@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244539: Host Route Can Be Deleted if ICMP Fragmentation Is Needed"
-permalink: kb/244/Q244539/
+permalink: /kb/244/Q244539/
 ---
 
 ## Q244539: Host Route Can Be Deleted if ICMP Fragmentation Is Needed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161490: Power Users, Print Operators May Get Errors Installing Drivers"
-permalink: kb/161/Q161490/
+permalink: /kb/161/Q161490/
 ---
 
 ## Q161490: Power Users, Print Operators May Get Errors Installing Drivers

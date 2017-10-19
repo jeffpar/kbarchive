@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119504: PRB: Result Differs Between 16-bit and 32-bit _gcvt()"
-permalink: kb/119/Q119504/
+permalink: /kb/119/Q119504/
 ---
 
 ## Q119504: PRB: Result Differs Between 16-bit and 32-bit _gcvt()

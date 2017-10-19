@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274012: FIX: std::wofstream Can't Output After DBCS Character Is Output"
-permalink: kb/274/Q274012/
+permalink: /kb/274/Q274012/
 ---
 
 ## Q274012: FIX: std::wofstream Can't Output After DBCS Character Is Output

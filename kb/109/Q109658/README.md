@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109658: Asimov: No Sound Included with QuickTime Movies"
-permalink: kb/109/Q109658/
+permalink: /kb/109/Q109658/
 ---
 
 ## Q109658: Asimov: No Sound Included with QuickTime Movies

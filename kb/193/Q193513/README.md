@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193513: BUG: Breakpoints Not Hit in ATL MMC Snap-In"
-permalink: kb/193/Q193513/
+permalink: /kb/193/Q193513/
 ---
 
 ## Q193513: BUG: Breakpoints Not Hit in ATL MMC Snap-In

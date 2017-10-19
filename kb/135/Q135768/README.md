@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135768: SMS: ResultSharePoint Entry Incorrectly Documented"
-permalink: kb/135/Q135768/
+permalink: /kb/135/Q135768/
 ---
 
 ## Q135768: SMS: ResultSharePoint Entry Incorrectly Documented

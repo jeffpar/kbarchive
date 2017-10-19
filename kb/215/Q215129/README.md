@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215129: SMS: Remote Control Agent Fails to Upgrade from Beta to RTM"
-permalink: kb/215/Q215129/
+permalink: /kb/215/Q215129/
 ---
 
 ## Q215129: SMS: Remote Control Agent Fails to Upgrade from Beta to RTM

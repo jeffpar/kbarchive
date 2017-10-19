@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188069: How to Obtain SNA Server Version 4.0 U.S. Service Pack 1"
-permalink: kb/188/Q188069/
+permalink: /kb/188/Q188069/
 ---
 
 ## Q188069: How to Obtain SNA Server Version 4.0 U.S. Service Pack 1

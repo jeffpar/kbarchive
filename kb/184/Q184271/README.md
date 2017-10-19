@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184271: INFO: Updated AutoAccept Event Script"
-permalink: kb/184/Q184271/
+permalink: /kb/184/Q184271/
 ---
 
 ## Q184271: INFO: Updated AutoAccept Event Script

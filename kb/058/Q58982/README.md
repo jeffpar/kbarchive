@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58982: Mac AL: AppleLink Out Basket Folder Created by AppleLink Comm"
-permalink: kb/058/Q58982/
+permalink: /kb/058/Q58982/
 ---
 
 ## Q58982: Mac AL: AppleLink Out Basket Folder Created by AppleLink Comm

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198678: Content Expiration Shows Incorrect Date in HTMLA Web Admin"
-permalink: kb/198/Q198678/
+permalink: /kb/198/Q198678/
 ---
 
 ## Q198678: Content Expiration Shows Incorrect Date in HTMLA Web Admin

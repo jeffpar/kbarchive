@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160043: Err Msg: Error Defragmenting Drive &lt;X&gt;. Windows Could Not..."
-permalink: kb/160/Q160043/
+permalink: /kb/160/Q160043/
 ---
 
 ## Q160043: Err Msg: Error Defragmenting Drive &lt;X&gt;. Windows Could Not...

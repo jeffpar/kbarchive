@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252830: XFOR: Exchange Server Connectivity Controller Cannot Be Started"
-permalink: kb/252/Q252830/
+permalink: /kb/252/Q252830/
 ---
 
 ## Q252830: XFOR: Exchange Server Connectivity Controller Cannot Be Started

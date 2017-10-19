@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193253: BUG: HalfHeightCaption Form Causes Small Empty Control Menu"
-permalink: kb/193/Q193253/
+permalink: /kb/193/Q193253/
 ---
 
 ## Q193253: BUG: HalfHeightCaption Form Causes Small Empty Control Menu

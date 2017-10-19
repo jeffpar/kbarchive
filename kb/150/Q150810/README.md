@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150810: Cannot print to Cyclone Print Station"
-permalink: kb/150/Q150810/
+permalink: /kb/150/Q150810/
 ---
 
 ## Q150810: Cannot print to Cyclone Print Station

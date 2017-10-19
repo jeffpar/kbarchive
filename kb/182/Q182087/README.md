@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182087: XCLN: NDR Sending to Internet Recipient When Offline"
-permalink: kb/182/Q182087/
+permalink: /kb/182/Q182087/
 ---
 
 ## Q182087: XCLN: NDR Sending to Internet Recipient When Offline

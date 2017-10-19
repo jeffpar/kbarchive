@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260258: PC NTMMTA: Path Restrictions for NTMMTA Setup Folder"
-permalink: kb/260/Q260258/
+permalink: /kb/260/Q260258/
 ---
 
 ## Q260258: PC NTMMTA: Path Restrictions for NTMMTA Setup Folder

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249641: XADM: Exchange Admin Cannot Display Over 65535 Public Folders"
-permalink: kb/249/Q249641/
+permalink: /kb/249/Q249641/
 ---
 
 ## Q249641: XADM: Exchange Admin Cannot Display Over 65535 Public Folders

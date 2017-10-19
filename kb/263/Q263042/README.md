@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263042: How to remove the MSN 5.x icon from the Internet Explorer window"
-permalink: kb/263/Q263042/
+permalink: /kb/263/Q263042/
 ---
 
 ## Q263042: How to remove the MSN 5.x icon from the Internet Explorer window

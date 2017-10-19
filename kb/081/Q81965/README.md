@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81965: Loading SMARTDrive Low May Improve Speed w/ Double Buffering"
-permalink: kb/081/Q81965/
+permalink: /kb/081/Q81965/
 ---
 
 ## Q81965: Loading SMARTDrive Low May Improve Speed w/ Double Buffering

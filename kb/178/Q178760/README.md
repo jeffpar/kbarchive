@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178760: HOWTO: Alter the Properties of a View at Run Time"
-permalink: kb/178/Q178760/
+permalink: /kb/178/Q178760/
 ---
 
 ## Q178760: HOWTO: Alter the Properties of a View at Run Time

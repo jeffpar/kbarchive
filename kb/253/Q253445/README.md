@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253445: System Process Hangs Windows NT with Novell Client 4.6"
-permalink: kb/253/Q253445/
+permalink: /kb/253/Q253445/
 ---
 
 ## Q253445: System Process Hangs Windows NT with Novell Client 4.6

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168082: FIX: Crash During Project Conversion If Project Has MAC Targets"
-permalink: kb/168/Q168082/
+permalink: /kb/168/Q168082/
 ---
 
 ## Q168082: FIX: Crash During Project Conversion If Project Has MAC Targets

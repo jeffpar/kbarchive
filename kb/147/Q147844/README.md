@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147844: Dial-Up Networking Server Not Supported with ISDN Adapter"
-permalink: kb/147/Q147844/
+permalink: /kb/147/Q147844/
 ---
 
 ## Q147844: Dial-Up Networking Server Not Supported with ISDN Adapter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170044: ASP Fails w/ Requested Header Not Found Err. Msg."
-permalink: kb/170/Q170044/
+permalink: /kb/170/Q170044/
 ---
 
 ## Q170044: ASP Fails w/ Requested Header Not Found Err. Msg.

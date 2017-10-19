@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183685: WD97: Format Painter Cancelled When Using Next Page Scroll Bar"
-permalink: kb/183/Q183685/
+permalink: /kb/183/Q183685/
 ---
 
 ## Q183685: WD97: Format Painter Cancelled When Using Next Page Scroll Bar

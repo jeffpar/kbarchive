@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73623: LANtastic LANcache Requires HIMEM.SYS /int15=&lt;xxxx&gt; Switch"
-permalink: kb/073/Q73623/
+permalink: /kb/073/Q73623/
 ---
 
 ## Q73623: LANtastic LANcache Requires HIMEM.SYS /int15=&lt;xxxx&gt; Switch

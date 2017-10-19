@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153194: WD97: Extended Characters Corrupt After Editing MacWord Document"
-permalink: kb/153/Q153194/
+permalink: /kb/153/Q153194/
 ---
 
 ## Q153194: WD97: Extended Characters Corrupt After Editing MacWord Document

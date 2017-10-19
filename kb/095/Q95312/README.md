@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95312: Default Selection of Radio Button with @ ... GET Command"
-permalink: kb/095/Q95312/
+permalink: /kb/095/Q95312/
 ---
 
 ## Q95312: Default Selection of Radio Button with @ ... GET Command

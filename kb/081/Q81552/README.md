@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81552: PC Win: Selected Order of Messages Open Out of Order"
-permalink: kb/081/Q81552/
+permalink: /kb/081/Q81552/
 ---
 
 ## Q81552: PC Win: Selected Order of Messages Open Out of Order

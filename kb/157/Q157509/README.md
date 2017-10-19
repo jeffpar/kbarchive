@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157509: Basketball: How to View Player Statistics During Play"
-permalink: kb/157/Q157509/
+permalink: /kb/157/Q157509/
 ---
 
 ## Q157509: Basketball: How to View Player Statistics During Play

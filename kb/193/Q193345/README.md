@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193345: XCON: No MTA Support for ISO 8859-7 (Greek) Character Set"
-permalink: kb/193/Q193345/
+permalink: /kb/193/Q193345/
 ---
 
 ## Q193345: XCON: No MTA Support for ISO 8859-7 (Greek) Character Set

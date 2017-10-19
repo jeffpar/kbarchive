@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168075: XCLN: Personal DLs vs. Exchange Server DL"
-permalink: kb/168/Q168075/
+permalink: /kb/168/Q168075/
 ---
 
 ## Q168075: XCLN: Personal DLs vs. Exchange Server DL

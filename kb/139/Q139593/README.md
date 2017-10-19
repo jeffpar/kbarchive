@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139593: BUG: DDX Problem with Combo Box in Win32s"
-permalink: kb/139/Q139593/
+permalink: /kb/139/Q139593/
 ---
 
 ## Q139593: BUG: DDX Problem with Combo Box in Win32s

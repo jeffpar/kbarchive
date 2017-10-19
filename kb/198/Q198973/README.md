@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198973: Bookshelf 99: Cannot Search for Content from the Start Menu"
-permalink: kb/198/Q198973/
+permalink: /kb/198/Q198973/
 ---
 
 ## Q198973: Bookshelf 99: Cannot Search for Content from the Start Menu

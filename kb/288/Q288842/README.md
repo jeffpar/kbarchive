@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288842: New 802.2 Connections Always Appear as Ethernet in SNA Manager"
-permalink: kb/288/Q288842/
+permalink: /kb/288/Q288842/
 ---
 
 ## Q288842: New 802.2 Connections Always Appear as Ethernet in SNA Manager

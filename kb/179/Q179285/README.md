@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179285: PRB: Disabled Developer Studio Add-Ins Not Unloaded From Memory"
-permalink: kb/179/Q179285/
+permalink: /kb/179/Q179285/
 ---
 
 ## Q179285: PRB: Disabled Developer Studio Add-Ins Not Unloaded From Memory

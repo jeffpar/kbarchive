@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186935: XWEB: Saving Attachment in OWA Causes File Size to Increase"
-permalink: kb/186/Q186935/
+permalink: /kb/186/Q186935/
 ---
 
 ## Q186935: XWEB: Saving Attachment in OWA Causes File Size to Increase

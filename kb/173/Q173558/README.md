@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173558: XADM: Client Fails to Connect to Alternate PF Server"
-permalink: kb/173/Q173558/
+permalink: /kb/173/Q173558/
 ---
 
 ## Q173558: XADM: Client Fails to Connect to Alternate PF Server

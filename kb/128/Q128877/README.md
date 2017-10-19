@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128877: UT1x: Upsizing Wizard Does Not Allow Nulls in Foreign Key"
-permalink: kb/128/Q128877/
+permalink: /kb/128/Q128877/
 ---
 
 ## Q128877: UT1x: Upsizing Wizard Does Not Allow Nulls in Foreign Key

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135015: Explorapedia: Clearing/Removing List of User Names"
-permalink: kb/135/Q135015/
+permalink: /kb/135/Q135015/
 ---
 
 ## Q135015: Explorapedia: Clearing/Removing List of User Names

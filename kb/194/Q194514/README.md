@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194514: PRB: Cannot Pass Array Property of Form by Reference to OLE DLL"
-permalink: kb/194/Q194514/
+permalink: /kb/194/Q194514/
 ---
 
 ## Q194514: PRB: Cannot Pass Array Property of Form by Reference to OLE DLL

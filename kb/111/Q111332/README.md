@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111332: WFWG Error Msg: This Postoffice Cannot Be Updated"
-permalink: kb/111/Q111332/
+permalink: /kb/111/Q111332/
 ---
 
 ## Q111332: WFWG Error Msg: This Postoffice Cannot Be Updated

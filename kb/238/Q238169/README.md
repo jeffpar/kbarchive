@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238169: SMS: Queries using SMS_R_SYSTEM Return Inaccurate Results"
-permalink: kb/238/Q238169/
+permalink: /kb/238/Q238169/
 ---
 
 ## Q238169: SMS: Queries using SMS_R_SYSTEM Return Inaccurate Results

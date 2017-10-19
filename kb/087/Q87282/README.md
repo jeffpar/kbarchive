@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87282: VESA Local Bus Diamond Stealth May Cause Hardware Conflict"
-permalink: kb/087/Q87282/
+permalink: /kb/087/Q87282/
 ---
 
 ## Q87282: VESA Local Bus Diamond Stealth May Cause Hardware Conflict

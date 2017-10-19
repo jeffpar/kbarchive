@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238493: Memory Leak in Programs That Load/Unload Security.dll"
-permalink: kb/238/Q238493/
+permalink: /kb/238/Q238493/
 ---
 
 ## Q238493: Memory Leak in Programs That Load/Unload Security.dll

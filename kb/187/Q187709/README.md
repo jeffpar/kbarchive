@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187709: Domain Name Resolver Caches Responses"
-permalink: kb/187/Q187709/
+permalink: /kb/187/Q187709/
 ---
 
 ## Q187709: Domain Name Resolver Caches Responses

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255653: Error Message: MDAC Install Was Unsuccessful"
-permalink: kb/255/Q255653/
+permalink: /kb/255/Q255653/
 ---
 
 ## Q255653: Error Message: MDAC Install Was Unsuccessful

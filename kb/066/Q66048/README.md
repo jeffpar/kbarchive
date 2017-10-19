@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66048: Removing MS-DOS Shell from MS-DOS 5.x or 6.0"
-permalink: kb/066/Q66048/
+permalink: /kb/066/Q66048/
 ---
 
 ## Q66048: Removing MS-DOS Shell from MS-DOS 5.x or 6.0

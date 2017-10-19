@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186091: Streets 98 Err Msg: The Main Application Could Not Be Launched"
-permalink: kb/186/Q186091/
+permalink: /kb/186/Q186091/
 ---
 
 ## Q186091: Streets 98 Err Msg: The Main Application Could Not Be Launched

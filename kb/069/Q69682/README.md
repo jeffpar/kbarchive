@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69682: Dell Keyboard Controller Version B50 in Standard and Enhanced"
-permalink: kb/069/Q69682/
+permalink: /kb/069/Q69682/
 ---
 
 ## Q69682: Dell Keyboard Controller Version B50 in Standard and Enhanced

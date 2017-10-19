@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271186: WD97: Word Hangs When Started on Compaq Armada M300 or M700"
-permalink: kb/271/Q271186/
+permalink: /kb/271/Q271186/
 ---
 
 ## Q271186: WD97: Word Hangs When Started on Compaq Armada M300 or M700

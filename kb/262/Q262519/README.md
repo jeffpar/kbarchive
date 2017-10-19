@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262519: FIX: SQLSetCursorName Fails Without ANSI Quoted Identifiers"
-permalink: kb/262/Q262519/
+permalink: /kb/262/Q262519/
 ---
 
 ## Q262519: FIX: SQLSetCursorName Fails Without ANSI Quoted Identifiers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151800: Err Msg: Windows Disk Compression Is Incompatible..."
-permalink: kb/151/Q151800/
+permalink: /kb/151/Q151800/
 ---
 
 ## Q151800: Err Msg: Windows Disk Compression Is Incompatible...

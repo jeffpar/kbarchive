@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155502: Manual Default Gateway Does Not Override DHCP Lease"
-permalink: kb/155/Q155502/
+permalink: /kb/155/Q155502/
 ---
 
 ## Q155502: Manual Default Gateway Does Not Override DHCP Lease

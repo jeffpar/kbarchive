@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185728: MFCSocs.exe Avoids Two Common MFC Socket Mistakes"
-permalink: kb/185/Q185728/
+permalink: /kb/185/Q185728/
 ---
 
 ## Q185728: MFCSocs.exe Avoids Two Common MFC Socket Mistakes

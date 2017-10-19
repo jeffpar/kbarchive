@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141386: Using Send Command in 16-Bit Program Starts Microsoft Exchange"
-permalink: kb/141/Q141386/
+permalink: /kb/141/Q141386/
 ---
 
 ## Q141386: Using Send Command in 16-Bit Program Starts Microsoft Exchange

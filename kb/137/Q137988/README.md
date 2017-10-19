@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137988: &quot;Final SQL Operations Failure&quot; Error when Upgrading to SMS 1.1"
-permalink: kb/137/Q137988/
+permalink: /kb/137/Q137988/
 ---
 
 ## Q137988: &quot;Final SQL Operations Failure&quot; Error when Upgrading to SMS 1.1

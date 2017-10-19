@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124621: Scheduled Jobs Cannot Access User Environment Variables"
-permalink: kb/124/Q124621/
+permalink: /kb/124/Q124621/
 ---
 
 ## Q124621: Scheduled Jobs Cannot Access User Environment Variables

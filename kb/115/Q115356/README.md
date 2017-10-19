@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115356: X400: V3.2 Handles 25 Percent More in Recipient Lists than V3.0"
-permalink: kb/115/Q115356/
+permalink: /kb/115/Q115356/
 ---
 
 ## Q115356: X400: V3.2 Handles 25 Percent More in Recipient Lists than V3.0

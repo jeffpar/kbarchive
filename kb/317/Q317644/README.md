@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317644: Pandora's Box: Err Msg: Application Is Not Compatible with..."
-permalink: kb/317/Q317644/
+permalink: /kb/317/Q317644/
 ---
 
 ## Q317644: Pandora's Box: Err Msg: Application Is Not Compatible with...

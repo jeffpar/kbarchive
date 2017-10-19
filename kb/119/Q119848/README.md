@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119848: No Space Vehicles Available as Target Object"
-permalink: kb/119/Q119848/
+permalink: /kb/119/Q119848/
 ---
 
 ## Q119848: No Space Vehicles Available as Target Object

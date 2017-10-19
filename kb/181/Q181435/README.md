@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181435: WD97: Programs Missing from Default Picture Editor List"
-permalink: kb/181/Q181435/
+permalink: /kb/181/Q181435/
 ---
 
 ## Q181435: WD97: Programs Missing from Default Picture Editor List

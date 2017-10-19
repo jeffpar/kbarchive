@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143317: Unconf: Jazz Sound Card And Haunted House"
-permalink: kb/143/Q143317/
+permalink: /kb/143/Q143317/
 ---
 
 ## Q143317: Unconf: Jazz Sound Card And Haunted House

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193436: DHCP Client Shuts Down After Two Declines"
-permalink: kb/193/Q193436/
+permalink: /kb/193/Q193436/
 ---
 
 ## Q193436: DHCP Client Shuts Down After Two Declines

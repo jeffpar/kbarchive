@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300204: XFOR: Messages Sent Through cc:Mail Connector Are White and Blue"
-permalink: kb/300/Q300204/
+permalink: /kb/300/Q300204/
 ---
 
 ## Q300204: XFOR: Messages Sent Through cc:Mail Connector Are White and Blue

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154409: Setting WINS Clients Refresh Intervals to Occur Infrequently"
-permalink: kb/154/Q154409/
+permalink: /kb/154/Q154409/
 ---
 
 ## Q154409: Setting WINS Clients Refresh Intervals to Occur Infrequently

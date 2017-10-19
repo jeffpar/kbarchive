@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80319: BUG: Cannot Bind Programs that Increase the Number of Files"
-permalink: kb/080/Q80319/
+permalink: /kb/080/Q80319/
 ---
 
 ## Q80319: BUG: Cannot Bind Programs that Increase the Number of Files

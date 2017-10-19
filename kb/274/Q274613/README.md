@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274613: Passflt.dll Does Not Enforce 6-Character Minimum Password Length"
-permalink: kb/274/Q274613/
+permalink: /kb/274/Q274613/
 ---
 
 ## Q274613: Passflt.dll Does Not Enforce 6-Character Minimum Password Length

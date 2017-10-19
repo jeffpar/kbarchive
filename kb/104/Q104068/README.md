@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104068: DOC: Determining Message Removal from WH_GETMESSAGE Hook"
-permalink: kb/104/Q104068/
+permalink: /kb/104/Q104068/
 ---
 
 ## Q104068: DOC: Determining Message Removal from WH_GETMESSAGE Hook

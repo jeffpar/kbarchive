@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107119: Local and Remote Control Point Names Can't be the Same"
-permalink: kb/107/Q107119/
+permalink: /kb/107/Q107119/
 ---
 
 ## Q107119: Local and Remote Control Point Names Can't be the Same

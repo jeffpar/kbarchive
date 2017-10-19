@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143081: PRB: Ambiguous Msg If Function Template Return Type Omitted"
-permalink: kb/143/Q143081/
+permalink: /kb/143/Q143081/
 ---
 
 ## Q143081: PRB: Ambiguous Msg If Function Template Return Type Omitted

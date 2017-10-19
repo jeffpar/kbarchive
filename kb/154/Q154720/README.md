@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154720: Using FDOS on the PowerPC"
-permalink: kb/154/Q154720/
+permalink: /kb/154/Q154720/
 ---
 
 ## Q154720: Using FDOS on the PowerPC

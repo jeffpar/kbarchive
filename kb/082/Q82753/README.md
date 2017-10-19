@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82753: Printers with Limited TrueType Font Support"
-permalink: kb/082/Q82753/
+permalink: /kb/082/Q82753/
 ---
 
 ## Q82753: Printers with Limited TrueType Font Support

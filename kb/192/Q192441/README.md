@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192441: Expedia Err Msg: Internet Explorer Cannot Open the Internet Site"
-permalink: kb/192/Q192441/
+permalink: /kb/192/Q192441/
 ---
 
 ## Q192441: Expedia Err Msg: Internet Explorer Cannot Open the Internet Site

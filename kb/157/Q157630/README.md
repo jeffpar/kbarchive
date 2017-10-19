@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157630: XCON: Adjustment of Connection Retry Values on Override Tab"
-permalink: kb/157/Q157630/
+permalink: /kb/157/Q157630/
 ---
 
 ## Q157630: XCON: Adjustment of Connection Retry Values on Override Tab

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94213: Vegas Games Causes Error Message"
-permalink: kb/094/Q94213/
+permalink: /kb/094/Q94213/
 ---
 
 ## Q94213: Vegas Games Causes Error Message

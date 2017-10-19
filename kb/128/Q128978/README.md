@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128978: Dead Gateway Detection in TCP/IP for Windows NT"
-permalink: kb/128/Q128978/
+permalink: /kb/128/Q128978/
 ---
 
 ## Q128978: Dead Gateway Detection in TCP/IP for Windows NT

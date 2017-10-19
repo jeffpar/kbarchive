@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68991: Windows File Manager Hangs Reading Floppies on ALR 386 220"
-permalink: kb/068/Q68991/
+permalink: /kb/068/Q68991/
 ---
 
 ## Q68991: Windows File Manager Hangs Reading Floppies on ALR 386 220

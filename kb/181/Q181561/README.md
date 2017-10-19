@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181561: Windows NT Logon Takes Very Long with SMS and intraNetware"
-permalink: kb/181/Q181561/
+permalink: /kb/181/Q181561/
 ---
 
 ## Q181561: Windows NT Logon Takes Very Long with SMS and intraNetware

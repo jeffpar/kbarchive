@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158904: CD-ROM Benchmark Program May Not Disable Read Ahead or Caching"
-permalink: kb/158/Q158904/
+permalink: /kb/158/Q158904/
 ---
 
 ## Q158904: CD-ROM Benchmark Program May Not Disable Read Ahead or Caching

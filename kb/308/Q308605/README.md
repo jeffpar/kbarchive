@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308605: Stop 0x00000048/Stop 0x0000000A Caused By Named Pipe File System"
-permalink: kb/308/Q308605/
+permalink: /kb/308/Q308605/
 ---
 
 ## Q308605: Stop 0x00000048/Stop 0x0000000A Caused By Named Pipe File System

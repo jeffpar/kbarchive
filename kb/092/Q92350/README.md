@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92350: INFO: Use the FoxPro ON KEY Command"
-permalink: kb/092/Q92350/
+permalink: /kb/092/Q92350/
 ---
 
 ## Q92350: INFO: Use the FoxPro ON KEY Command

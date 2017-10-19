@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182352: PRB: Windows Common Control Keys are Case-Sensitive"
-permalink: kb/182/Q182352/
+permalink: /kb/182/Q182352/
 ---
 
 ## Q182352: PRB: Windows Common Control Keys are Case-Sensitive

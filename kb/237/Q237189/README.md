@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237189: XFOR: Subject Prefix &quot;Re:&quot; Changes in CCMC"
-permalink: kb/237/Q237189/
+permalink: /kb/237/Q237189/
 ---
 
 ## Q237189: XFOR: Subject Prefix &quot;Re:&quot; Changes in CCMC

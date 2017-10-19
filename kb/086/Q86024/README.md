@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86024: Ocean Isle Software ReachOut May Fail Under Windows 3.1"
-permalink: kb/086/Q86024/
+permalink: /kb/086/Q86024/
 ---
 
 ## Q86024: Ocean Isle Software ReachOut May Fail Under Windows 3.1

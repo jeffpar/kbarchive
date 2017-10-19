@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153199: HOWTO: Use BCP to Move Large Amounts of Data to SQL Server"
-permalink: kb/153/Q153199/
+permalink: /kb/153/Q153199/
 ---
 
 ## Q153199: HOWTO: Use BCP to Move Large Amounts of Data to SQL Server

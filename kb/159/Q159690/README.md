@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159690: PRB: Problem Adding Objects Created in VBA to SourceSafe"
-permalink: kb/159/Q159690/
+permalink: /kb/159/Q159690/
 ---
 
 ## Q159690: PRB: Problem Adding Objects Created in VBA to SourceSafe

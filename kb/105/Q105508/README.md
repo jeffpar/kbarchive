@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105508: INFO: List of Windows SDK Version 3.1 Bugs"
-permalink: kb/105/Q105508/
+permalink: /kb/105/Q105508/
 ---
 
 ## Q105508: INFO: List of Windows SDK Version 3.1 Bugs

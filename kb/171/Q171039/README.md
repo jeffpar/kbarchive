@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171039: SMS: File Transfer Window Freezes"
-permalink: kb/171/Q171039/
+permalink: /kb/171/Q171039/
 ---
 
 ## Q171039: SMS: File Transfer Window Freezes

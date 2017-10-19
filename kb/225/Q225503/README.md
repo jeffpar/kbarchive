@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225503: MD-5 CHAP Authentication Does Not Work with Windows NT 4.0 SP4"
-permalink: kb/225/Q225503/
+permalink: /kb/225/Q225503/
 ---
 
 ## Q225503: MD-5 CHAP Authentication Does Not Work with Windows NT 4.0 SP4

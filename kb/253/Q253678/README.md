@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253678: HOWTO: Detect 16-Bit CD-ROM Drives in Windows 95 and Windows 98"
-permalink: kb/253/Q253678/
+permalink: /kb/253/Q253678/
 ---
 
 ## Q253678: HOWTO: Detect 16-Bit CD-ROM Drives in Windows 95 and Windows 98

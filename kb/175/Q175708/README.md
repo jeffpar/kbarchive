@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175708: XCON: Gateway Address Routing Table Not Recalculated Correctly"
-permalink: kb/175/Q175708/
+permalink: /kb/175/Q175708/
 ---
 
 ## Q175708: XCON: Gateway Address Routing Table Not Recalculated Correctly

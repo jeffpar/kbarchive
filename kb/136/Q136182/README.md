@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136182: Multimedia AutoStart: Setup Continuously Restarts Windows"
-permalink: kb/136/Q136182/
+permalink: /kb/136/Q136182/
 ---
 
 ## Q136182: Multimedia AutoStart: Setup Continuously Restarts Windows

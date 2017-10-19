@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71447: Swapfile Err Msg: Incompatible Driver in CONFIG.SYS"
-permalink: kb/071/Q71447/
+permalink: /kb/071/Q71447/
 ---
 
 ## Q71447: Swapfile Err Msg: Incompatible Driver in CONFIG.SYS

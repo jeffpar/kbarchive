@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171402: Help/About Does Not Report More Than 2 GB of RAM"
-permalink: kb/171/Q171402/
+permalink: /kb/171/Q171402/
 ---
 
 ## Q171402: Help/About Does Not Report More Than 2 GB of RAM

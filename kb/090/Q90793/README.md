@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90793: PRB: _MSSETUP.EXE Disappears"
-permalink: kb/090/Q90793/
+permalink: /kb/090/Q90793/
 ---
 
 ## Q90793: PRB: _MSSETUP.EXE Disappears

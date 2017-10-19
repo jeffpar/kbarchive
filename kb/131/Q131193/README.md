@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131193: Carrier Tone Heard But Modem Loses Connection"
-permalink: kb/131/Q131193/
+permalink: /kb/131/Q131193/
 ---
 
 ## Q131193: Carrier Tone Heard But Modem Loses Connection

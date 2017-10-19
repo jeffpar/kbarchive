@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156751: PRB: Executing Quit Method on OLE Object Quits VFP"
-permalink: kb/156/Q156751/
+permalink: /kb/156/Q156751/
 ---
 
 ## Q156751: PRB: Executing Quit Method on OLE Object Quits VFP

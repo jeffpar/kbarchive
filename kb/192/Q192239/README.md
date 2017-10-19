@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192239: Postmaster Messages Display Incorrect Date After 2000"
-permalink: kb/192/Q192239/
+permalink: /kb/192/Q192239/
 ---
 
 ## Q192239: Postmaster Messages Display Incorrect Date After 2000

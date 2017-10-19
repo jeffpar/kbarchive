@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289493: PRB: Component Not Registered Error When Attempt to Run VB App"
-permalink: kb/289/Q289493/
+permalink: /kb/289/Q289493/
 ---
 
 ## Q289493: PRB: Component Not Registered Error When Attempt to Run VB App

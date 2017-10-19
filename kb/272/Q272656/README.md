@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272656: How to Create a File Viewer By Using ASP"
-permalink: kb/272/Q272656/
+permalink: /kb/272/Q272656/
 ---
 
 ## Q272656: How to Create a File Viewer By Using ASP

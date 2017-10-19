@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146632: Vsndsys.386 Error with Reveal SC400 Revision R Sound Card"
-permalink: kb/146/Q146632/
+permalink: /kb/146/Q146632/
 ---
 
 ## Q146632: Vsndsys.386 Error with Reveal SC400 Revision R Sound Card

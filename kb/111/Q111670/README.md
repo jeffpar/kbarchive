@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111670: ArpCacheSize Defaults to 62 Entries"
-permalink: kb/111/Q111670/
+permalink: /kb/111/Q111670/
 ---
 
 ## Q111670: ArpCacheSize Defaults to 62 Entries

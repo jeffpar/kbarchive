@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173069: WD97: Error Message or IPF Saving to Nearly Full Disk"
-permalink: kb/173/Q173069/
+permalink: /kb/173/Q173069/
 ---
 
 ## Q173069: WD97: Error Message or IPF Saving to Nearly Full Disk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132492: FIX:Hard-coded breakpoints and RtlGetUserInfoHeap error"
-permalink: kb/132/Q132492/
+permalink: /kb/132/Q132492/
 ---
 
 ## Q132492: FIX:Hard-coded breakpoints and RtlGetUserInfoHeap error

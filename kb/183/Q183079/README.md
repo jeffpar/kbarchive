@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183079: WD97: Graphics Not Displayed in Binder"
-permalink: kb/183/Q183079/
+permalink: /kb/183/Q183079/
 ---
 
 ## Q183079: WD97: Graphics Not Displayed in Binder

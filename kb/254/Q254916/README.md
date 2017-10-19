@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254916: XFOR: Line Overwritten Sending Files to an Exchange Server"
-permalink: kb/254/Q254916/
+permalink: /kb/254/Q254916/
 ---
 
 ## Q254916: XFOR: Line Overwritten Sending Files to an Exchange Server

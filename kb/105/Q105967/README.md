@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105967: PC Adm: Removed User Still Has Access to Group Folder"
-permalink: kb/105/Q105967/
+permalink: /kb/105/Q105967/
 ---
 
 ## Q105967: PC Adm: Removed User Still Has Access to Group Folder

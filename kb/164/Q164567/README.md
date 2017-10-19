@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164567: SMS: Installation of Keyboard Driver Does Not Prompt for Restart"
-permalink: kb/164/Q164567/
+permalink: /kb/164/Q164567/
 ---
 
 ## Q164567: SMS: Installation of Keyboard Driver Does Not Prompt for Restart

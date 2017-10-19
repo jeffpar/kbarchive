@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237877: XADM: How to Create a Windows NT User Account in Mixed Site"
-permalink: kb/237/Q237877/
+permalink: /kb/237/Q237877/
 ---
 
 ## Q237877: XADM: How to Create a Windows NT User Account in Mixed Site

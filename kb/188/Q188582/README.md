@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188582: HOWTO: Deploy an ActiveX Control with License Information"
-permalink: kb/188/Q188582/
+permalink: /kb/188/Q188582/
 ---
 
 ## Q188582: HOWTO: Deploy an ActiveX Control with License Information

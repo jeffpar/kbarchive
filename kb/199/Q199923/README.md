@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199923: XFOR: You Must Double-click on Events in Connectivity Log Browse"
-permalink: kb/199/Q199923/
+permalink: /kb/199/Q199923/
 ---
 
 ## Q199923: XFOR: You Must Double-click on Events in Connectivity Log Browse

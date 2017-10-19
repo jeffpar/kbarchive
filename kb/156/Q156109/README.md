@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156109: Encarta 97 Err Msg: Lookup Reference Cannot Execute"
-permalink: kb/156/Q156109/
+permalink: /kb/156/Q156109/
 ---
 
 ## Q156109: Encarta 97 Err Msg: Lookup Reference Cannot Execute

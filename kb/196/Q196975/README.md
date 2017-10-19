@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196975: CRC Error Messages on Multiple-Processor Computers"
-permalink: kb/196/Q196975/
+permalink: /kb/196/Q196975/
 ---
 
 ## Q196975: CRC Error Messages on Multiple-Processor Computers

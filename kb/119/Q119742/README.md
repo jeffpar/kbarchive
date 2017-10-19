@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119742: Using 32-Bit Disk Access with Quantum LPS540 IDE Disk Drives"
-permalink: kb/119/Q119742/
+permalink: /kb/119/Q119742/
 ---
 
 ## Q119742: Using 32-Bit Disk Access with Quantum LPS540 IDE Disk Drives

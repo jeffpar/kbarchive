@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141722: How to Prevent a Grid Header from Being Resized Interactively"
-permalink: kb/141/Q141722/
+permalink: /kb/141/Q141722/
 ---
 
 ## Q141722: How to Prevent a Grid Header from Being Resized Interactively

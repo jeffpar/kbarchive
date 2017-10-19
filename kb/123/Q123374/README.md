@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123374: Mac Form: Adding Functionality to Custom Forms"
-permalink: kb/123/Q123374/
+permalink: /kb/123/Q123374/
 ---
 
 ## Q123374: Mac Form: Adding Functionality to Custom Forms

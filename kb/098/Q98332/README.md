@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98332: PC Gen: Supplementary Modem Scripts [3.5, 720K; 5.25, 1.2 MB]"
-permalink: kb/098/Q98332/
+title: "Q98332: PC Gen: Supplementary Modem Scripts &#91;3.5, 720K; 5.25, 1.2 MB&#93;"
+permalink: /kb/098/Q98332/
 ---
 
-## Q98332: PC Gen: Supplementary Modem Scripts [3.5, 720K; 5.25, 1.2 MB]
+## Q98332: PC Gen: Supplementary Modem Scripts &#91;3.5, 720K; 5.25, 1.2 MB&#93;
 
 	Article: Q98332
 	Product(s): Microsoft Mail For PC Networks

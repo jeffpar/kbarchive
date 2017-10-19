@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320152: INFO: Resources for InstallShield Express for VFP"
-permalink: kb/320/Q320152/
+permalink: /kb/320/Q320152/
 ---
 
 ## Q320152: INFO: Resources for InstallShield Express for VFP

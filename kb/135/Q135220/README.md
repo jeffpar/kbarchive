@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135220: Bold Text on PostScript Printer Has Downward Slant"
-permalink: kb/135/Q135220/
+permalink: /kb/135/Q135220/
 ---
 
 ## Q135220: Bold Text on PostScript Printer Has Downward Slant

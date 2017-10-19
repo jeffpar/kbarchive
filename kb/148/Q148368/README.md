@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148368: Explorapedia People: Alphabetical List of Topics"
-permalink: kb/148/Q148368/
+permalink: /kb/148/Q148368/
 ---
 
 ## Q148368: Explorapedia People: Alphabetical List of Topics

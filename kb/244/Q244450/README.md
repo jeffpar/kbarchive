@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244450: XCLN: Outlook 97, 98, and 2000 Issues w. Remote Mail Filter"
-permalink: kb/244/Q244450/
+permalink: /kb/244/Q244450/
 ---
 
 ## Q244450: XCLN: Outlook 97, 98, and 2000 Issues w. Remote Mail Filter

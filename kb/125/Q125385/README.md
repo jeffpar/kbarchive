@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125385: File Size and Date Reported Incorrectly On NTFS Drive"
-permalink: kb/125/Q125385/
+permalink: /kb/125/Q125385/
 ---
 
 ## Q125385: File Size and Date Reported Incorrectly On NTFS Drive

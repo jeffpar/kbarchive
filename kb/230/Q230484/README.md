@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230484: HOWTO: Label Pie Slices as Percentages in MSChart Pie Chart"
-permalink: kb/230/Q230484/
+permalink: /kb/230/Q230484/
 ---
 
 ## Q230484: HOWTO: Label Pie Slices as Percentages in MSChart Pie Chart

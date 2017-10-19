@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130610: How to Call a Wizard in a Program"
-permalink: kb/130/Q130610/
+permalink: /kb/130/Q130610/
 ---
 
 ## Q130610: How to Call a Wizard in a Program

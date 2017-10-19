@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195858: SMS: Changes to the SMS Installer Parse String Function"
-permalink: kb/195/Q195858/
+permalink: /kb/195/Q195858/
 ---
 
 ## Q195858: SMS: Changes to the SMS Installer Parse String Function

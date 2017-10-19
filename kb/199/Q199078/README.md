@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199078: SMS: How to Remove a Systems Management Server 2.0 Client"
-permalink: kb/199/Q199078/
+permalink: /kb/199/Q199078/
 ---
 
 ## Q199078: SMS: How to Remove a Systems Management Server 2.0 Client

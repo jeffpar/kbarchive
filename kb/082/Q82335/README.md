@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82335: DEC Pathworks Has DDE Problems with Wall Data Rumba"
-permalink: kb/082/Q82335/
+permalink: /kb/082/Q82335/
 ---
 
 ## Q82335: DEC Pathworks Has DDE Problems with Wall Data Rumba

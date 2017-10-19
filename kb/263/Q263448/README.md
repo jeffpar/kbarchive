@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263448: XADM: System Requirements for Mailbox Manager"
-permalink: kb/263/Q263448/
+permalink: /kb/263/Q263448/
 ---
 
 ## Q263448: XADM: System Requirements for Mailbox Manager

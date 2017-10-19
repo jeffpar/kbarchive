@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125318: Default Data Type RAW (FF Auto) Does Not Work Properly"
-permalink: kb/125/Q125318/
+permalink: /kb/125/Q125318/
 ---
 
 ## Q125318: Default Data Type RAW (FF Auto) Does Not Work Properly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320151: HOW TO: Determine Dependencies with InstallShield Express"
-permalink: kb/320/Q320151/
+permalink: /kb/320/Q320151/
 ---
 
 ## Q320151: HOW TO: Determine Dependencies with InstallShield Express

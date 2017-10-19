@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158675: How to Cancel CHKDSK After It Has Been Scheduled"
-permalink: kb/158/Q158675/
+permalink: /kb/158/Q158675/
 ---
 
 ## Q158675: How to Cancel CHKDSK After It Has Been Scheduled

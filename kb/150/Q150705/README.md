@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150705: Using VB4DLL.TXT File to Develop DLLs for Visual Basic"
-permalink: kb/150/Q150705/
+permalink: /kb/150/Q150705/
 ---
 
 ## Q150705: Using VB4DLL.TXT File to Develop DLLs for Visual Basic

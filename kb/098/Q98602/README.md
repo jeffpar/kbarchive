@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98602: INFO: Adding a CObList Object to Another CObList"
-permalink: kb/098/Q98602/
+permalink: /kb/098/Q98602/
 ---
 
 ## Q98602: INFO: Adding a CObList Object to Another CObList

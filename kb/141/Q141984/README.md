@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141984: XCLN: Location of User Profiles"
-permalink: kb/141/Q141984/
+permalink: /kb/141/Q141984/
 ---
 
 ## Q141984: XCLN: Location of User Profiles

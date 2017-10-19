@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136550: Using the Xerox 4700II Printer with Windows 95"
-permalink: kb/136/Q136550/
+permalink: /kb/136/Q136550/
 ---
 
 ## Q136550: Using the Xerox 4700II Printer with Windows 95

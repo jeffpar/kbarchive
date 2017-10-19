@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189811: FP: Cannot Import File After Parse Error"
-permalink: kb/189/Q189811/
+permalink: /kb/189/Q189811/
 ---
 
 ## Q189811: FP: Cannot Import File After Parse Error

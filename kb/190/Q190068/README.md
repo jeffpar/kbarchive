@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190068: BUG: Control Interface Wizard May Not Expose BackColor Property"
-permalink: kb/190/Q190068/
+permalink: /kb/190/Q190068/
 ---
 
 ## Q190068: BUG: Control Interface Wizard May Not Expose BackColor Property

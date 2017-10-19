@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218180: Internet Information Server Returns IP Address in HTTP Header"
-permalink: kb/218/Q218180/
+permalink: /kb/218/Q218180/
 ---
 
 ## Q218180: Internet Information Server Returns IP Address in HTTP Header

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163110: WinNT Support for Compaq Smartdesk 2855 cnt75MB21 Docking Statio"
-permalink: kb/163/Q163110/
+permalink: /kb/163/Q163110/
 ---
 
 ## Q163110: WinNT Support for Compaq Smartdesk 2855 cnt75MB21 Docking Statio

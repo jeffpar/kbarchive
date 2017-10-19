@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157992: How to Triple Boot to Windows NT, Windows 95/98, and MS-DOS"
-permalink: kb/157/Q157992/
+permalink: /kb/157/Q157992/
 ---
 
 ## Q157992: How to Triple Boot to Windows NT, Windows 95/98, and MS-DOS

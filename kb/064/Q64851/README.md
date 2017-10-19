@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64851: Calendar Err Msg: Cannot Find Calendar Change File..."
-permalink: kb/064/Q64851/
+permalink: /kb/064/Q64851/
 ---
 
 ## Q64851: Calendar Err Msg: Cannot Find Calendar Change File...

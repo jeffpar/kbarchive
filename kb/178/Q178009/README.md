@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178009: Renaming a Domain: Process and Side Effects"
-permalink: kb/178/Q178009/
+permalink: /kb/178/Q178009/
 ---
 
 ## Q178009: Renaming a Domain: Process and Side Effects

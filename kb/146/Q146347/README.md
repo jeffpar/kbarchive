@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146347: XCLN: Digitally Signed Msgs. Marked as Read When Open Fail"
-permalink: kb/146/Q146347/
+permalink: /kb/146/Q146347/
 ---
 
 ## Q146347: XCLN: Digitally Signed Msgs. Marked as Read When Open Fail

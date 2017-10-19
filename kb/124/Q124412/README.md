@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124412: Complete Basketball: Low Memory Issues"
-permalink: kb/124/Q124412/
+permalink: /kb/124/Q124412/
 ---
 
 ## Q124412: Complete Basketball: Low Memory Issues

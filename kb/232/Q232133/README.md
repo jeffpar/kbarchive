@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232133: STOP 0x1E or STOP 0xA with More Than 200 Ports in RRAS"
-permalink: kb/232/Q232133/
+permalink: /kb/232/Q232133/
 ---
 
 ## Q232133: STOP 0x1E or STOP 0xA with More Than 200 Ports in RRAS

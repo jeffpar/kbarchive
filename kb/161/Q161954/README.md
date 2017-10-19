@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161954: When Field Not Printed"
-permalink: kb/161/Q161954/
+permalink: /kb/161/Q161954/
 ---
 
 ## Q161954: When Field Not Printed

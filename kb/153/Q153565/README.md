@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153565: Sender Manager Only Accepts UPPERCASE Site Server Names"
-permalink: kb/153/Q153565/
+permalink: /kb/153/Q153565/
 ---
 
 ## Q153565: Sender Manager Only Accepts UPPERCASE Site Server Names

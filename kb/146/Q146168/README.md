@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146168: Cannot Restore From Archive When Exchange Server is Shut Down"
-permalink: kb/146/Q146168/
+permalink: /kb/146/Q146168/
 ---
 
 ## Q146168: Cannot Restore From Archive When Exchange Server is Shut Down

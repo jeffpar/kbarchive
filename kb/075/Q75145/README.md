@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75145: Using Serial Microsoft Mouse with Bus Mouse Card Installed"
-permalink: kb/075/Q75145/
+permalink: /kb/075/Q75145/
 ---
 
 ## Q75145: Using Serial Microsoft Mouse with Bus Mouse Card Installed

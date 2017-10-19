@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139765: Julia Child: Animated Buttons Become Inactive"
-permalink: kb/139/Q139765/
+permalink: /kb/139/Q139765/
 ---
 
 ## Q139765: Julia Child: Animated Buttons Become Inactive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192982: XFOR: Internet Mail Service Does Not Allow Auto Forwarded Msgs"
-permalink: kb/192/Q192982/
+permalink: /kb/192/Q192982/
 ---
 
 ## Q192982: XFOR: Internet Mail Service Does Not Allow Auto Forwarded Msgs

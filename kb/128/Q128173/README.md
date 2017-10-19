@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128173: Contents of the Microsoft Windows Sound System DEINSTAL.TXT"
-permalink: kb/128/Q128173/
+permalink: /kb/128/Q128173/
 ---
 
 ## Q128173: Contents of the Microsoft Windows Sound System DEINSTAL.TXT

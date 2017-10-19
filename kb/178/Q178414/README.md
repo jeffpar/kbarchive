@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178414: Archive Bit Is Not Reset When a File Is Renamed"
-permalink: kb/178/Q178414/
+permalink: /kb/178/Q178414/
 ---
 
 ## Q178414: Archive Bit Is Not Reset When a File Is Renamed

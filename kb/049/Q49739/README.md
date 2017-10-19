@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49739: How ASSIGN Determines True Name of Disk Drive"
-permalink: kb/049/Q49739/
+permalink: /kb/049/Q49739/
 ---
 
 ## Q49739: How ASSIGN Determines True Name of Disk Drive

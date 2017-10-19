@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175132: MGET Command Returns Unintelligible Characters from IBM Host"
-permalink: kb/175/Q175132/
+permalink: /kb/175/Q175132/
 ---
 
 ## Q175132: MGET Command Returns Unintelligible Characters from IBM Host

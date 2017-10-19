@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94310: WFWG File Manager Shows Multiple WIN.INI Files"
-permalink: kb/094/Q94310/
+permalink: /kb/094/Q94310/
 ---
 
 ## Q94310: WFWG File Manager Shows Multiple WIN.INI Files

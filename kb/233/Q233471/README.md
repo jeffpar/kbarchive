@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233471: Business Planner: Excel Template Always Prompts to Save Changes"
-permalink: kb/233/Q233471/
+permalink: /kb/233/Q233471/
 ---
 
 ## Q233471: Business Planner: Excel Template Always Prompts to Save Changes

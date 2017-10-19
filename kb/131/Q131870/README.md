@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131870: Scenes 2.0: More Memory Is Needed To Run Transition Effects"
-permalink: kb/131/Q131870/
+permalink: /kb/131/Q131870/
 ---
 
 ## Q131870: Scenes 2.0: More Memory Is Needed To Run Transition Effects

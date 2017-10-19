@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247084: XADM: Information Store Stops with Access Violation"
-permalink: kb/247/Q247084/
+permalink: /kb/247/Q247084/
 ---
 
 ## Q247084: XADM: Information Store Stops with Access Violation

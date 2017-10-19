@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84061: Windows SDK Not Designed for Server Installation"
-permalink: kb/084/Q84061/
+permalink: /kb/084/Q84061/
 ---
 
 ## Q84061: Windows SDK Not Designed for Server Installation

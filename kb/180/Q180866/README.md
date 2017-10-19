@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180866: Persistent Verification Support for APPC Sessions"
-permalink: kb/180/Q180866/
+permalink: /kb/180/Q180866/
 ---
 
 ## Q180866: Persistent Verification Support for APPC Sessions

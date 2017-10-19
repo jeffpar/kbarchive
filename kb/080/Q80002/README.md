@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80002: Quicken Should Not Be Task Swapped from MS-DOS Shell"
-permalink: kb/080/Q80002/
+permalink: /kb/080/Q80002/
 ---
 
 ## Q80002: Quicken Should Not Be Task Swapped from MS-DOS Shell

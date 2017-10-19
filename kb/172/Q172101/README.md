@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172101: PRB: &quot;Data Type Conversion Error&quot; When Using a Data Control"
-permalink: kb/172/Q172101/
+permalink: /kb/172/Q172101/
 ---
 
 ## Q172101: PRB: &quot;Data Type Conversion Error&quot; When Using a Data Control

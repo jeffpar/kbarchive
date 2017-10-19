@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176184: XFOR: Message Format Differs Between POP and MAPI Clients"
-permalink: kb/176/Q176184/
+permalink: /kb/176/Q176184/
 ---
 
 ## Q176184: XFOR: Message Format Differs Between POP and MAPI Clients

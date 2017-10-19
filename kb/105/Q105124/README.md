@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105124: PC Adm: Error Message: Template File Does Not Match Data File"
-permalink: kb/105/Q105124/
+permalink: /kb/105/Q105124/
 ---
 
 ## Q105124: PC Adm: Error Message: Template File Does Not Match Data File

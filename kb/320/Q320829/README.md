@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320829: HOW TO: Modify the Default SizReqBuf Value in Windows 2000"
-permalink: kb/320/Q320829/
+permalink: /kb/320/Q320829/
 ---
 
 ## Q320829: HOW TO: Modify the Default SizReqBuf Value in Windows 2000

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249019: XCLN: Opening Attach. in Public Folders in Exchange Client 5.0"
-permalink: kb/249/Q249019/
+permalink: /kb/249/Q249019/
 ---
 
 ## Q249019: XCLN: Opening Attach. in Public Folders in Exchange Client 5.0

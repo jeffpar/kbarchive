@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185720: HOWTO: Provide Type Information From an MFC Automation Server"
-permalink: kb/185/Q185720/
+permalink: /kb/185/Q185720/
 ---
 
 ## Q185720: HOWTO: Provide Type Information From an MFC Automation Server

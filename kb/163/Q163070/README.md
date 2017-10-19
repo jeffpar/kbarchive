@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163070: Print Server Stops Printing from an AS400"
-permalink: kb/163/Q163070/
+permalink: /kb/163/Q163070/
 ---
 
 ## Q163070: Print Server Stops Printing from an AS400

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135906: FIX: Can't Restore Default Foxhead Icon After Set Icon Prop"
-permalink: kb/135/Q135906/
+permalink: /kb/135/Q135906/
 ---
 
 ## Q135906: FIX: Can't Restore Default Foxhead Icon After Set Icon Prop

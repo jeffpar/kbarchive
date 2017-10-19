@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132903: Err Msg Using NetBIOS over TCP/IP (NETBT.SYS): STOP 0x0000000A"
-permalink: kb/132/Q132903/
+permalink: /kb/132/Q132903/
 ---
 
 ## Q132903: Err Msg Using NetBIOS over TCP/IP (NETBT.SYS): STOP 0x0000000A

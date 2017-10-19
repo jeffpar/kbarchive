@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140297: DOC: SendUpdates also Applies to Cursors from Local Views"
-permalink: kb/140/Q140297/
+permalink: /kb/140/Q140297/
 ---
 
 ## Q140297: DOC: SendUpdates also Applies to Cursors from Local Views

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246875: HOWTO: Visual SourceSafe 6.0 Installation From Visual Basic 6.0"
-permalink: kb/246/Q246875/
+permalink: /kb/246/Q246875/
 ---
 
 ## Q246875: HOWTO: Visual SourceSafe 6.0 Installation From Visual Basic 6.0

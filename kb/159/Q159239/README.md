@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159239: FP: How to Remove a Web from the List of Webs"
-permalink: kb/159/Q159239/
+permalink: /kb/159/Q159239/
 ---
 
 ## Q159239: FP: How to Remove a Web from the List of Webs

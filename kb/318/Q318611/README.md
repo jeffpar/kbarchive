@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318611: How to Associate 3270 Display LUs with 3270 Printer LUs"
-permalink: kb/318/Q318611/
+permalink: /kb/318/Q318611/
 ---
 
 ## Q318611: How to Associate 3270 Display LUs with 3270 Printer LUs

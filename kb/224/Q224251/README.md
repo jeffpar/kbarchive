@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224251: Streets and Trips 2000: Route Passes Through Avoided Area"
-permalink: kb/224/Q224251/
+permalink: /kb/224/Q224251/
 ---
 
 ## Q224251: Streets and Trips 2000: Route Passes Through Avoided Area

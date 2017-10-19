@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316452: MCSE Readiness Review Exam 70-270: Microsoft Windows XP Professi"
-permalink: kb/316/Q316452/
+permalink: /kb/316/Q316452/
 ---
 
 ## Q316452: MCSE Readiness Review Exam 70-270: Microsoft Windows XP Professi

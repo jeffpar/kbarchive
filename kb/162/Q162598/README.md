@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162598: WD97: ActiveX Controls Lose Sizing After Previewing in Browser"
-permalink: kb/162/Q162598/
+permalink: /kb/162/Q162598/
 ---
 
 ## Q162598: WD97: ActiveX Controls Lose Sizing After Previewing in Browser

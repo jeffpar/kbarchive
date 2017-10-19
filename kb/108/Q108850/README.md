@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108850: Soft Fonts Do Not Appear on Font List with Panasonic"
-permalink: kb/108/Q108850/
+permalink: /kb/108/Q108850/
 ---
 
 ## Q108850: Soft Fonts Do Not Appear on Font List with Panasonic

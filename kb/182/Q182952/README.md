@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182952: XCON: X.400 Backbone Must Route SMTP Messages By DDA Type"
-permalink: kb/182/Q182952/
+permalink: /kb/182/Q182952/
 ---
 
 ## Q182952: XCON: X.400 Backbone Must Route SMTP Messages By DDA Type

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128481: Encarta '95: MindMaze Hangs with Ensoniq Sound Card"
-permalink: kb/128/Q128481/
+permalink: /kb/128/Q128481/
 ---
 
 ## Q128481: Encarta '95: MindMaze Hangs with Ensoniq Sound Card

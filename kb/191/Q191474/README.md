@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191474: HOWTO: Create a Generic Error Handler for your Application"
-permalink: kb/191/Q191474/
+permalink: /kb/191/Q191474/
 ---
 
 ## Q191474: HOWTO: Create a Generic Error Handler for your Application

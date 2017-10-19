@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95087: WFWG Err Msg: Windows 3.x Could Not Be Located..."
-permalink: kb/095/Q95087/
+permalink: /kb/095/Q95087/
 ---
 
 ## Q95087: WFWG Err Msg: Windows 3.x Could Not Be Located...

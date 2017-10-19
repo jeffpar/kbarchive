@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242794: AoE II: List of Enhancement (Cheat) Codes"
-permalink: kb/242/Q242794/
+permalink: /kb/242/Q242794/
 ---
 
 ## Q242794: AoE II: List of Enhancement (Cheat) Codes

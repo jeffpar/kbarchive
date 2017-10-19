@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149329: BUG: PictureBox Loses Graphics Printing from Win95 with 16-Bit"
-permalink: kb/149/Q149329/
+permalink: /kb/149/Q149329/
 ---
 
 ## Q149329: BUG: PictureBox Loses Graphics Printing from Win95 with 16-Bit

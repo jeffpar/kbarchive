@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181144: FIX: &quot;Too Many Names Used&quot; Error With Requeries or USE AGAIN"
-permalink: kb/181/Q181144/
+permalink: /kb/181/Q181144/
 ---
 
 ## Q181144: FIX: &quot;Too Many Names Used&quot; Error With Requeries or USE AGAIN

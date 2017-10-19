@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119454: PRB: Creating Many Fonts Causes a GPF in Windows 3.1"
-permalink: kb/119/Q119454/
+permalink: /kb/119/Q119454/
 ---
 
 ## Q119454: PRB: Creating Many Fonts Causes a GPF in Windows 3.1

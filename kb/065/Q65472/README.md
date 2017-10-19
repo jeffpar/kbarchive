@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65472: INFO: Predefined Identifiers in Microsoft C and C++"
-permalink: kb/065/Q65472/
+permalink: /kb/065/Q65472/
 ---
 
 ## Q65472: INFO: Predefined Identifiers in Microsoft C and C++

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297814: BUG: Constant Double Variables in a Type Library Do Not Display"
-permalink: kb/297/Q297814/
+permalink: /kb/297/Q297814/
 ---
 
 ## Q297814: BUG: Constant Double Variables in a Type Library Do Not Display

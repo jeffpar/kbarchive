@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q26760: PPT: Creating a Labeled Drawing Object"
-permalink: kb/026/Q26760/
+permalink: /kb/026/Q26760/
 ---
 
 ## Q26760: PPT: Creating a Labeled Drawing Object

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137297: NetWare Clients Not Receiving Shared Network Distribution"
-permalink: kb/137/Q137297/
+permalink: /kb/137/Q137297/
 ---
 
 ## Q137297: NetWare Clients Not Receiving Shared Network Distribution

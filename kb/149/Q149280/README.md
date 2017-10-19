@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149280: XCLN: Win16 Client Fails on Real Mode TCP/IP Protocol"
-permalink: kb/149/Q149280/
+permalink: /kb/149/Q149280/
 ---
 
 ## Q149280: XCLN: Win16 Client Fails on Real Mode TCP/IP Protocol

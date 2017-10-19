@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98141: Replacing a Corrupted NET.ACC with Its Backup"
-permalink: kb/098/Q98141/
+permalink: /kb/098/Q98141/
 ---
 
 ## Q98141: Replacing a Corrupted NET.ACC with Its Backup

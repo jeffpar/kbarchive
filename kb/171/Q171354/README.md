@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171354: Extinction Interval and Extinction Timeout Values Change"
-permalink: kb/171/Q171354/
+permalink: /kb/171/Q171354/
 ---
 
 ## Q171354: Extinction Interval and Extinction Timeout Values Change

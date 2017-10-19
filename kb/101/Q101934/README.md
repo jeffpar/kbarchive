@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101934: PC Ext: Attachments Not Returned When Useful Life Is Exceeded"
-permalink: kb/101/Q101934/
+permalink: /kb/101/Q101934/
 ---
 
 ## Q101934: PC Ext: Attachments Not Returned When Useful Life Is Exceeded

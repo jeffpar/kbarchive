@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141986: XCLN: Status Bar Indicator Does Not Update in Filter View"
-permalink: kb/141/Q141986/
+permalink: /kb/141/Q141986/
 ---
 
 ## Q141986: XCLN: Status Bar Indicator Does Not Update in Filter View

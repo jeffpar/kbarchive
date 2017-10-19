@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80256: PC Gen: Contents of Modem Script File HAYES12.MDM"
-permalink: kb/080/Q80256/
+permalink: /kb/080/Q80256/
 ---
 
 ## Q80256: PC Gen: Contents of Modem Script File HAYES12.MDM

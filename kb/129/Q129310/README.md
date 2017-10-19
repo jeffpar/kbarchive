@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129310: PRB: OLE Error Messages Contain Both English &amp; German Text"
-permalink: kb/129/Q129310/
+permalink: /kb/129/Q129310/
 ---
 
 ## Q129310: PRB: OLE Error Messages Contain Both English &amp; German Text

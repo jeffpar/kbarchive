@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128788: BUG: C2143 When Initializing Static Member in Class Template"
-permalink: kb/128/Q128788/
+permalink: /kb/128/Q128788/
 ---
 
 ## Q128788: BUG: C2143 When Initializing Static Member in Class Template

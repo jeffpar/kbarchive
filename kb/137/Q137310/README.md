@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137310: Audio CD Not Recognized in IDE CD-ROM Drive"
-permalink: kb/137/Q137310/
+permalink: /kb/137/Q137310/
 ---
 
 ## Q137310: Audio CD Not Recognized in IDE CD-ROM Drive

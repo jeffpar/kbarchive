@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157255: DOCERR: About _Coverage Wrong in Documentation and Help"
-permalink: kb/157/Q157255/
+permalink: /kb/157/Q157255/
 ---
 
 ## Q157255: DOCERR: About _Coverage Wrong in Documentation and Help

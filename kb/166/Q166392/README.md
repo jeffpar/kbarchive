@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166392: HOWTO: Use &quot;DSN-Less&quot; ODBC Connections with RDO"
-permalink: kb/166/Q166392/
+permalink: /kb/166/Q166392/
 ---
 
 ## Q166392: HOWTO: Use &quot;DSN-Less&quot; ODBC Connections with RDO

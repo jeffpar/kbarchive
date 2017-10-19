@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238917: Delay If No Response for DHCP Renew/Discover"
-permalink: kb/238/Q238917/
+permalink: /kb/238/Q238917/
 ---
 
 ## Q238917: Delay If No Response for DHCP Renew/Discover

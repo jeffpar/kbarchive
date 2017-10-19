@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119874: Lost Colors with Cirrus Logic Based VLB Video Adapter"
-permalink: kb/119/Q119874/
+permalink: /kb/119/Q119874/
 ---
 
 ## Q119874: Lost Colors with Cirrus Logic Based VLB Video Adapter

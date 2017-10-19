@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162712: Cannot Resolve Hostname with DNS"
-permalink: kb/162/Q162712/
+permalink: /kb/162/Q162712/
 ---
 
 ## Q162712: Cannot Resolve Hostname with DNS

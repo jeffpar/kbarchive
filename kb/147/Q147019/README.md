@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147019: Bypassing the Schedule+ Login Dialog Box"
-permalink: kb/147/Q147019/
+permalink: /kb/147/Q147019/
 ---
 
 ## Q147019: Bypassing the Schedule+ Login Dialog Box

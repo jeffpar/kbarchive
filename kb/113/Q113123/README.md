@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113123: Bookshelf: Button Turned Back on Appears at End of Bar"
-permalink: kb/113/Q113123/
+permalink: /kb/113/Q113123/
 ---
 
 ## Q113123: Bookshelf: Button Turned Back on Appears at End of Bar

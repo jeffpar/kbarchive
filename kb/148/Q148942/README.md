@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148942: How to Capture Network Traffic with Network Monitor"
-permalink: kb/148/Q148942/
+permalink: /kb/148/Q148942/
 ---
 
 ## Q148942: How to Capture Network Traffic with Network Monitor

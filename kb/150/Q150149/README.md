@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150149: Contents of Visual FoxPro 1.0 ODBC Vfpodbc.txt File"
-permalink: kb/150/Q150149/
+permalink: /kb/150/Q150149/
 ---
 
 ## Q150149: Contents of Visual FoxPro 1.0 ODBC Vfpodbc.txt File

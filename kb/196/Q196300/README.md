@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196300: Failure Accessing PerfMon Counters from ActiveX Component"
-permalink: kb/196/Q196300/
+permalink: /kb/196/Q196300/
 ---
 
 ## Q196300: Failure Accessing PerfMon Counters from ActiveX Component

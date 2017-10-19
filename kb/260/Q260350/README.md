@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260350: INFO: What Does &quot;Wait 0 0&quot; Mean in the Routing Process?"
-permalink: kb/260/Q260350/
+permalink: /kb/260/Q260350/
 ---
 
 ## Q260350: INFO: What Does &quot;Wait 0 0&quot; Mean in the Routing Process?

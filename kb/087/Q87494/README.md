@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87494: BUG: BitBlt() Bitmap on VGA Display Causes GP Fault"
-permalink: kb/087/Q87494/
+permalink: /kb/087/Q87494/
 ---
 
 ## Q87494: BUG: BitBlt() Bitmap on VGA Display Causes GP Fault

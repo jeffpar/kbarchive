@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258624: Baseball 2001: Textures Are Displayed in the Wrong Location"
-permalink: kb/258/Q258624/
+permalink: /kb/258/Q258624/
 ---
 
 ## Q258624: Baseball 2001: Textures Are Displayed in the Wrong Location

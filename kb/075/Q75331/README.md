@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75331: HP LaserJet III Driver Version 3.77 Does Not Save Changes"
-permalink: kb/075/Q75331/
+permalink: /kb/075/Q75331/
 ---
 
 ## Q75331: HP LaserJet III Driver Version 3.77 Does Not Save Changes

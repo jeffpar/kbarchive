@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110193: Writer: Sound Defaults to Off with Sound Galaxy Card"
-permalink: kb/110/Q110193/
+permalink: /kb/110/Q110193/
 ---
 
 ## Q110193: Writer: Sound Defaults to Off with Sound Galaxy Card

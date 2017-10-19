@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192252: BUG: Menu Accelerators Still Work When Form is Disabled"
-permalink: kb/192/Q192252/
+permalink: /kb/192/Q192252/
 ---
 
 ## Q192252: BUG: Menu Accelerators Still Work When Form is Disabled

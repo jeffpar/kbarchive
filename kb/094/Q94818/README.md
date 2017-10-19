@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94818: The 44 TrueType Fonts Offered in TrueType Font Pack 2"
-permalink: kb/094/Q94818/
+permalink: /kb/094/Q94818/
 ---
 
 ## Q94818: The 44 TrueType Fonts Offered in TrueType Font Pack 2

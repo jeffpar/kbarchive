@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140809: FAQ.HLP Help File: Error in Steps to Deploy Windows 95"
-permalink: kb/140/Q140809/
+permalink: /kb/140/Q140809/
 ---
 
 ## Q140809: FAQ.HLP Help File: Error in Steps to Deploy Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134298: Older Disk Controllers Incompatible with Protected-Mode Driver"
-permalink: kb/134/Q134298/
+permalink: /kb/134/Q134298/
 ---
 
 ## Q134298: Older Disk Controllers Incompatible with Protected-Mode Driver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106517: Setup Hangs with NEC Ultralight Versalinear Display"
-permalink: kb/106/Q106517/
+permalink: /kb/106/Q106517/
 ---
 
 ## Q106517: Setup Hangs with NEC Ultralight Versalinear Display

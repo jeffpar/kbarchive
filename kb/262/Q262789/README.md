@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262789: INFO: New SYS(2800) Function Improves Magnifier Accessibility"
-permalink: kb/262/Q262789/
+permalink: /kb/262/Q262789/
 ---
 
 ## Q262789: INFO: New SYS(2800) Function Improves Magnifier Accessibility

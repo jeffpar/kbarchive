@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128768: How to Use the SETALL() Method in Visual FoxPro"
-permalink: kb/128/Q128768/
+permalink: /kb/128/Q128768/
 ---
 
 ## Q128768: How to Use the SETALL() Method in Visual FoxPro

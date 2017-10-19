@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177444: Windows NT Explorer May Not Indicate Status of Shared Folders"
-permalink: kb/177/Q177444/
+permalink: /kb/177/Q177444/
 ---
 
 ## Q177444: Windows NT Explorer May Not Indicate Status of Shared Folders

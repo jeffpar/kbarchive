@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176634: BUG:Line/Circle Methods Don't Print as Transparent onWin95/98/Me"
-permalink: kb/176/Q176634/
+permalink: /kb/176/Q176634/
 ---
 
 ## Q176634: BUG:Line/Circle Methods Don't Print as Transparent onWin95/98/Me

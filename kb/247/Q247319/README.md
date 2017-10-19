@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247319: PRB: PUBLIC Variables Not Released from InProcess Servers in ASP"
-permalink: kb/247/Q247319/
+permalink: /kb/247/Q247319/
 ---
 
 ## Q247319: PRB: PUBLIC Variables Not Released from InProcess Servers in ASP

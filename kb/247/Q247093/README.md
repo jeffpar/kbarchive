@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247093: Backup and Recovery Guidelines for Index Server Catalog"
-permalink: kb/247/Q247093/
+permalink: /kb/247/Q247093/
 ---
 
 ## Q247093: Backup and Recovery Guidelines for Index Server Catalog

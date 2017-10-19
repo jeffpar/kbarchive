@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69683: Packard-Bell PB1000 286 Requires PadCodeSegments=1"
-permalink: kb/069/Q69683/
+permalink: /kb/069/Q69683/
 ---
 
 ## Q69683: Packard-Bell PB1000 286 Requires PadCodeSegments=1

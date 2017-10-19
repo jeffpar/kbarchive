@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178075: CPI-C Version 1.2 Is Not Supported On SNA Server"
-permalink: kb/178/Q178075/
+permalink: /kb/178/Q178075/
 ---
 
 ## Q178075: CPI-C Version 1.2 Is Not Supported On SNA Server

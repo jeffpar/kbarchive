@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79749: Windows 3.1 Runs in Standard and Enhanced Modes Only"
-permalink: kb/079/Q79749/
+permalink: /kb/079/Q79749/
 ---
 
 ## Q79749: Windows 3.1 Runs in Standard and Enhanced Modes Only

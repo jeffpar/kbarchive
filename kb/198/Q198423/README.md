@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198423: Combat Flight Simulator: How to Change the Simulation Rate"
-permalink: kb/198/Q198423/
+permalink: /kb/198/Q198423/
 ---
 
 ## Q198423: Combat Flight Simulator: How to Change the Simulation Rate

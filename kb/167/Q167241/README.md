@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167241: BUG: API Fails Passing Very Small Double Datatypes to VFP"
-permalink: kb/167/Q167241/
+permalink: /kb/167/Q167241/
 ---
 
 ## Q167241: BUG: API Fails Passing Very Small Double Datatypes to VFP

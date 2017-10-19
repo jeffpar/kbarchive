@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134430: Mac Bkup: Mail Backup Notification Message Can Be Disabled"
-permalink: kb/134/Q134430/
+permalink: /kb/134/Q134430/
 ---
 
 ## Q134430: Mac Bkup: Mail Backup Notification Message Can Be Disabled

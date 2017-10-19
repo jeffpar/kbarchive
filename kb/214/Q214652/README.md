@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214652: WD97: No Macro Warning Opening File Attached to Template"
-permalink: kb/214/Q214652/
+permalink: /kb/214/Q214652/
 ---
 
 ## Q214652: WD97: No Macro Warning Opening File Attached to Template

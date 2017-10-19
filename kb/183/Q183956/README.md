@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183956: Decreasing Directory Start Time During Off-network Recovery"
-permalink: kb/183/Q183956/
+permalink: /kb/183/Q183956/
 ---
 
 ## Q183956: Decreasing Directory Start Time During Off-network Recovery

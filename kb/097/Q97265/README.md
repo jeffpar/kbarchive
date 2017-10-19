@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97265: SAMPLE: Floating-Point Samples for Windows"
-permalink: kb/097/Q97265/
+permalink: /kb/097/Q97265/
 ---
 
 ## Q97265: SAMPLE: Floating-Point Samples for Windows

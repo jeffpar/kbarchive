@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168862: How to Install ISO and TP4 Parser for Network Monitor"
-permalink: kb/168/Q168862/
+permalink: /kb/168/Q168862/
 ---
 
 ## Q168862: How to Install ISO and TP4 Parser for Network Monitor

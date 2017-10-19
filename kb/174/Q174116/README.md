@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174116: The Microsoft Network Does Not Run in Windows NT"
-permalink: kb/174/Q174116/
+permalink: /kb/174/Q174116/
 ---
 
 ## Q174116: The Microsoft Network Does Not Run in Windows NT

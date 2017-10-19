@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281572: AoE II: Cannot Record a Multiplayer Game on Zone.com"
-permalink: kb/281/Q281572/
+permalink: /kb/281/Q281572/
 ---
 
 ## Q281572: AoE II: Cannot Record a Multiplayer Game on Zone.com

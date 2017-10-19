@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231462: IIS 3.0 Remote Computer May Fail after Applying Service Pack 4"
-permalink: kb/231/Q231462/
+permalink: /kb/231/Q231462/
 ---
 
 ## Q231462: IIS 3.0 Remote Computer May Fail after Applying Service Pack 4

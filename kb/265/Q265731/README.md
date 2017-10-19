@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265731: HOWTO: Automate Excel 2000 Subtotals Function in Visual FoxPro"
-permalink: kb/265/Q265731/
+permalink: /kb/265/Q265731/
 ---
 
 ## Q265731: HOWTO: Automate Excel 2000 Subtotals Function in Visual FoxPro

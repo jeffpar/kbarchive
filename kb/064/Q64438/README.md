@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64438: PRB: CV2206 WARNING: Corrupt Debug OMF Detected in Object..."
-permalink: kb/064/Q64438/
+permalink: /kb/064/Q64438/
 ---
 
 ## Q64438: PRB: CV2206 WARNING: Corrupt Debug OMF Detected in Object...

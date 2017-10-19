@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194341: Simple TCP/IP Services Can Be Driven to 100% CPU"
-permalink: kb/194/Q194341/
+permalink: /kb/194/Q194341/
 ---
 
 ## Q194341: Simple TCP/IP Services Can Be Driven to 100% CPU

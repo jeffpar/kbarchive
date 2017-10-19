@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234981: Access Violation in Win32k.sys Leading to STOP 0x0000001e"
-permalink: kb/234/Q234981/
+permalink: /kb/234/Q234981/
 ---
 
 ## Q234981: Access Violation in Win32k.sys Leading to STOP 0x0000001e

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278982: Server Discovery Doesn't Keep History of All Discovered Servers"
-permalink: kb/278/Q278982/
+permalink: /kb/278/Q278982/
 ---
 
 ## Q278982: Server Discovery Doesn't Keep History of All Discovered Servers

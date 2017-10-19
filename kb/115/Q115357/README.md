@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115357: X400: Gateway Crashes on Receipt of a DEC VAX Delivery Report"
-permalink: kb/115/Q115357/
+permalink: /kb/115/Q115357/
 ---
 
 ## Q115357: X400: Gateway Crashes on Receipt of a DEC VAX Delivery Report

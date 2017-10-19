@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240383: XCON: MTA Queues Back up with Event ID 1192 w. X.400 Connectors"
-permalink: kb/240/Q240383/
+permalink: /kb/240/Q240383/
 ---
 
 ## Q240383: XCON: MTA Queues Back up with Event ID 1192 w. X.400 Connectors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197394: XADM: Euro Symbol Displays &quot;?&quot; Sending Plain Text"
-permalink: kb/197/Q197394/
+permalink: /kb/197/Q197394/
 ---
 
 ## Q197394: XADM: Euro Symbol Displays &quot;?&quot; Sending Plain Text

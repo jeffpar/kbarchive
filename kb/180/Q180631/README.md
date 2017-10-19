@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180631: WD97: Example Macro to Send E-mail Using MAPI Commands"
-permalink: kb/180/Q180631/
+permalink: /kb/180/Q180631/
 ---
 
 ## Q180631: WD97: Example Macro to Send E-mail Using MAPI Commands

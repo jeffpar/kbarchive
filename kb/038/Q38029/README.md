@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q38029: Windows and Early Intel 80386 CPU 32-Bit Operations"
-permalink: kb/038/Q38029/
+permalink: /kb/038/Q38029/
 ---
 
 ## Q38029: Windows and Early Intel 80386 CPU 32-Bit Operations

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139878: BUG:16-bit App's Menu Destroyed Under Chinese NT 3.5"
-permalink: kb/139/Q139878/
+permalink: /kb/139/Q139878/
 ---
 
 ## Q139878: BUG:16-bit App's Menu Destroyed Under Chinese NT 3.5

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148824: Cannot Configure Dial-Up Networking with MSN"
-permalink: kb/148/Q148824/
+permalink: /kb/148/Q148824/
 ---
 
 ## Q148824: Cannot Configure Dial-Up Networking with MSN

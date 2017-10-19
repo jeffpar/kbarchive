@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73293: When MS-DOS Fails to Load in the HMA"
-permalink: kb/073/Q73293/
+permalink: /kb/073/Q73293/
 ---
 
 ## Q73293: When MS-DOS Fails to Load in the HMA

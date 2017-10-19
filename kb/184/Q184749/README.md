@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184749: HOWTO: Call Stored Procedures Using Data Access Objects"
-permalink: kb/184/Q184749/
+permalink: /kb/184/Q184749/
 ---
 
 ## Q184749: HOWTO: Call Stored Procedures Using Data Access Objects

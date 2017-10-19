@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216172: XIMS: NNTP Event ID 11106 with MODE STREAM"
-permalink: kb/216/Q216172/
+permalink: /kb/216/Q216172/
 ---
 
 ## Q216172: XIMS: NNTP Event ID 11106 with MODE STREAM

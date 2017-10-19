@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94406: DCA's IRMA Board Requires Updated Drivers"
-permalink: kb/094/Q94406/
+permalink: /kb/094/Q94406/
 ---
 
 ## Q94406: DCA's IRMA Board Requires Updated Drivers

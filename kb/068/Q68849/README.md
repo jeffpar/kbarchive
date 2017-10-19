@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68849: Windows Err Msg: Not Ready Reading Drive... (Plus Hardcard XL)"
-permalink: kb/068/Q68849/
+permalink: /kb/068/Q68849/
 ---
 
 ## Q68849: Windows Err Msg: Not Ready Reading Drive... (Plus Hardcard XL)

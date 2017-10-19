@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247724: Fighter Ace: Matrox Millennium G-400 Video Adapter Not Available"
-permalink: kb/247/Q247724/
+permalink: /kb/247/Q247724/
 ---
 
 ## Q247724: Fighter Ace: Matrox Millennium G-400 Video Adapter Not Available

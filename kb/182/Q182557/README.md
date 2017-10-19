@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182557: XADM: NDR Occurs When Sending To A Mailbox With Receive Limits"
-permalink: kb/182/Q182557/
+permalink: /kb/182/Q182557/
 ---
 
 ## Q182557: XADM: NDR Occurs When Sending To A Mailbox With Receive Limits

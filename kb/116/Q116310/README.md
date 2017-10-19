@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116310: FIX: Open Listing File in IDE Is Not Reloaded After Compile"
-permalink: kb/116/Q116310/
+permalink: /kb/116/Q116310/
 ---
 
 ## Q116310: FIX: Open Listing File in IDE Is Not Reloaded After Compile

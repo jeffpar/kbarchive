@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131094: Gray State Check Boxes in SourceSafe"
-permalink: kb/131/Q131094/
+permalink: /kb/131/Q131094/
 ---
 
 ## Q131094: Gray State Check Boxes in SourceSafe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234971: Running Microsoft Access 2000 Comments and Corrections"
-permalink: kb/234/Q234971/
+permalink: /kb/234/Q234971/
 ---
 
 ## Q234971: Running Microsoft Access 2000 Comments and Corrections

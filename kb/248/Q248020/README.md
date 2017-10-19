@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248020: IIS 5.0: Err Msg &quot;HTTP/1.1 407 Proxy Authentication Required&quot;"
-permalink: kb/248/Q248020/
+permalink: /kb/248/Q248020/
 ---
 
 ## Q248020: IIS 5.0: Err Msg &quot;HTTP/1.1 407 Proxy Authentication Required&quot;

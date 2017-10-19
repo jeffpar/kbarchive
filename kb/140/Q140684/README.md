@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140684: Connectoid's Associated Script File Does Not Run"
-permalink: kb/140/Q140684/
+permalink: /kb/140/Q140684/
 ---
 
 ## Q140684: Connectoid's Associated Script File Does Not Run

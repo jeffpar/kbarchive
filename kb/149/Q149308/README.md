@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149308: XCLN: The Form You Selected Could Not Be Displayed"
-permalink: kb/149/Q149308/
+permalink: /kb/149/Q149308/
 ---
 
 ## Q149308: XCLN: The Form You Selected Could Not Be Displayed

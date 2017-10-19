@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241200: Zone Error Message: Failed to Start ZProxy or ZoneClient"
-permalink: kb/241/Q241200/
+permalink: /kb/241/Q241200/
 ---
 
 ## Q241200: Zone Error Message: Failed to Start ZProxy or ZoneClient

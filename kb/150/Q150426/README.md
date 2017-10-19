@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150426: Ethernet Packet Size Incorrectly Determined w/ Packet Burst Off"
-permalink: kb/150/Q150426/
+permalink: /kb/150/Q150426/
 ---
 
 ## Q150426: Ethernet Packet Size Incorrectly Determined w/ Packet Burst Off

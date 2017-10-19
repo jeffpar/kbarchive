@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168856: WD97: Background Texture Tab Doesn't Display Correct Path"
-permalink: kb/168/Q168856/
+permalink: /kb/168/Q168856/
 ---
 
 ## Q168856: WD97: Background Texture Tab Doesn't Display Correct Path

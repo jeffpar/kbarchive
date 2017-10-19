@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83819: Express Setup Does Not Update MSNET.DRV"
-permalink: kb/083/Q83819/
+permalink: /kb/083/Q83819/
 ---
 
 ## Q83819: Express Setup Does Not Update MSNET.DRV

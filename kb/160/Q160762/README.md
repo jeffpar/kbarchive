@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160762: PRB: ODBC Call Failed or Error 3146"
-permalink: kb/160/Q160762/
+permalink: /kb/160/Q160762/
 ---
 
 ## Q160762: PRB: ODBC Call Failed or Error 3146

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189356: SAMR Pipes Cause Problems with Domain Controllers"
-permalink: kb/189/Q189356/
+permalink: /kb/189/Q189356/
 ---
 
 ## Q189356: SAMR Pipes Cause Problems with Domain Controllers

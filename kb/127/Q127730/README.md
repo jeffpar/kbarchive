@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127730: PROFS: SoftSwitch Gateway Hangs on Large Attachments"
-permalink: kb/127/Q127730/
+permalink: /kb/127/Q127730/
 ---
 
 ## Q127730: PROFS: SoftSwitch Gateway Hangs on Large Attachments

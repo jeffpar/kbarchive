@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62469: WD97: Index Field &#92;E or &#92;L Switch Limited to Five Characters"
-permalink: kb/062/Q62469/
+permalink: /kb/062/Q62469/
 ---
 
 ## Q62469: WD97: Index Field &#92;E or &#92;L Switch Limited to Five Characters

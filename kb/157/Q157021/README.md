@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157021: How Can I Access the Internet Through German T-Online"
-permalink: kb/157/Q157021/
+permalink: /kb/157/Q157021/
 ---
 
 ## Q157021: How Can I Access the Internet Through German T-Online

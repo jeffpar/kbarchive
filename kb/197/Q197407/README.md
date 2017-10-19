@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197407: PC Adm: Dirsync Events Not Scheduled Properly in Year 2000"
-permalink: kb/197/Q197407/
+permalink: /kb/197/Q197407/
 ---
 
 ## Q197407: PC Adm: Dirsync Events Not Scheduled Properly in Year 2000

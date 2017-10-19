@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198958: XCON: Messages Remain in Queue and Are Resent at MTA Startup"
-permalink: kb/198/Q198958/
+permalink: /kb/198/Q198958/
 ---
 
 ## Q198958: XCON: Messages Remain in Queue and Are Resent at MTA Startup

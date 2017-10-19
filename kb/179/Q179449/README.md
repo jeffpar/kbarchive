@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179449: Dial-Up Networking Err Msg &quot;An Exception OE Has Occurred at...&quot;"
-permalink: kb/179/Q179449/
+permalink: /kb/179/Q179449/
 ---
 
 ## Q179449: Dial-Up Networking Err Msg &quot;An Exception OE Has Occurred at...&quot;

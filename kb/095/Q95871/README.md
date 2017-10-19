@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95871: Display Dims on Leading Edge Laptops with Phoenix BIOS"
-permalink: kb/095/Q95871/
+permalink: /kb/095/Q95871/
 ---
 
 ## Q95871: Display Dims on Leading Edge Laptops with Phoenix BIOS

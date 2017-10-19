@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108588: FIX: ID_APP_EXIT Used for a Button Will Exit App Studio"
-permalink: kb/108/Q108588/
+permalink: /kb/108/Q108588/
 ---
 
 ## Q108588: FIX: ID_APP_EXIT Used for a Button Will Exit App Studio

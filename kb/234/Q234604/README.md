@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234604: Files Not Found Using SCM with Terminal Server"
-permalink: kb/234/Q234604/
+permalink: /kb/234/Q234604/
 ---
 
 ## Q234604: Files Not Found Using SCM with Terminal Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131578: FIX: Math Problem with INT() Function"
-permalink: kb/131/Q131578/
+permalink: /kb/131/Q131578/
 ---
 
 ## Q131578: FIX: Math Problem with INT() Function

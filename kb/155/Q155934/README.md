@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155934: INFO: OLE Automation Manager &amp; RacMan"
-permalink: kb/155/Q155934/
+permalink: /kb/155/Q155934/
 ---
 
 ## Q155934: INFO: OLE Automation Manager &amp; RacMan

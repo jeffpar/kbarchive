@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269447: XCLN: How to Disable the &quot;Reconfigure Mail Support&quot; Button"
-permalink: kb/269/Q269447/
+permalink: /kb/269/Q269447/
 ---
 
 ## Q269447: XCLN: How to Disable the &quot;Reconfigure Mail Support&quot; Button

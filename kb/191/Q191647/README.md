@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191647: Motocross Madness: Minimum System Requirements"
-permalink: kb/191/Q191647/
+permalink: /kb/191/Q191647/
 ---
 
 ## Q191647: Motocross Madness: Minimum System Requirements

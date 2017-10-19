@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137317: Bookshelf/Encarta: Wrong Fonts Are Displayed"
-permalink: kb/137/Q137317/
+permalink: /kb/137/Q137317/
 ---
 
 ## Q137317: Bookshelf/Encarta: Wrong Fonts Are Displayed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98293: Err Msg: This Version of the Help File Not Supported"
-permalink: kb/098/Q98293/
+permalink: /kb/098/Q98293/
 ---
 
 ## Q98293: Err Msg: This Version of the Help File Not Supported

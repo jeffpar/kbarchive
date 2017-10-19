@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192697: XFOR: cc:Mail Connector Ignores Export Custom Recipients Flag"
-permalink: kb/192/Q192697/
+permalink: /kb/192/Q192697/
 ---
 
 ## Q192697: XFOR: cc:Mail Connector Ignores Export Custom Recipients Flag

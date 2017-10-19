@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77400: Incompatible XENIX Partition Detected with SMARTDrive"
-permalink: kb/077/Q77400/
+permalink: /kb/077/Q77400/
 ---
 
 ## Q77400: Incompatible XENIX Partition Detected with SMARTDrive

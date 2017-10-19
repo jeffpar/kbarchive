@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118567: X400: Leave TPDU At Optimal (Default) Size of 2048 Bytes"
-permalink: kb/118/Q118567/
+permalink: /kb/118/Q118567/
 ---
 
 ## Q118567: X400: Leave TPDU At Optimal (Default) Size of 2048 Bytes

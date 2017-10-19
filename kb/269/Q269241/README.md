@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269241: Anonymous FTP Fails with Password Synchronization Enabled"
-permalink: kb/269/Q269241/
+permalink: /kb/269/Q269241/
 ---
 
 ## Q269241: Anonymous FTP Fails with Password Synchronization Enabled

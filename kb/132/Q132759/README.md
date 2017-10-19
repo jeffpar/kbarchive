@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132759: XCOPY from LFN-Only Drive to SFN-Only Drive Generates Errors"
-permalink: kb/132/Q132759/
+permalink: /kb/132/Q132759/
 ---
 
 ## Q132759: XCOPY from LFN-Only Drive to SFN-Only Drive Generates Errors

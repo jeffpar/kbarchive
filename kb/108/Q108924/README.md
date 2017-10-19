@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108924: DOC: DEVMODE dmPaperSize Member Documentation Error"
-permalink: kb/108/Q108924/
+permalink: /kb/108/Q108924/
 ---
 
 ## Q108924: DOC: DEVMODE dmPaperSize Member Documentation Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141456: FIX: Pressing F1 for Help on Error Message Doesn't Work"
-permalink: kb/141/Q141456/
+permalink: /kb/141/Q141456/
 ---
 
 ## Q141456: FIX: Pressing F1 for Help on Error Message Doesn't Work

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155253: Improper NTFS Permissions May Result in IIS Failure"
-permalink: kb/155/Q155253/
+permalink: /kb/155/Q155253/
 ---
 
 ## Q155253: Improper NTFS Permissions May Result in IIS Failure

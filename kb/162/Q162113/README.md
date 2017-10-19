@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162113: PRB: Project Modification Not Reflected in Shadow Directory"
-permalink: kb/162/Q162113/
+permalink: /kb/162/Q162113/
 ---
 
 ## Q162113: PRB: Project Modification Not Reflected in Shadow Directory

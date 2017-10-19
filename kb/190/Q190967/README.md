@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190967: BUG: Changing Implemented Class Does Not Give Compatibility Erro"
-permalink: kb/190/Q190967/
+permalink: /kb/190/Q190967/
 ---
 
 ## Q190967: BUG: Changing Implemented Class Does Not Give Compatibility Erro

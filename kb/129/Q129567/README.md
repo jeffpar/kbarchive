@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129567: WSPlus: Err Msg: Your Login Credentials Do Not Match"
-permalink: kb/129/Q129567/
+permalink: /kb/129/Q129567/
 ---
 
 ## Q129567: WSPlus: Err Msg: Your Login Credentials Do Not Match

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244042: XADM: Propagating Permissions to All Public Folder Subfolders"
-permalink: kb/244/Q244042/
+permalink: /kb/244/Q244042/
 ---
 
 ## Q244042: XADM: Propagating Permissions to All Public Folder Subfolders

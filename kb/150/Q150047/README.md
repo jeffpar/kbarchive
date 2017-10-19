@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150047: NetWare Drives Inaccessible to CIM and MMTA"
-permalink: kb/150/Q150047/
+permalink: /kb/150/Q150047/
 ---
 
 ## Q150047: NetWare Drives Inaccessible to CIM and MMTA

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234725: PRB: Microsoft Pocket Guide to Microsoft Outlook 2000 Comments a"
-permalink: kb/234/Q234725/
+permalink: /kb/234/Q234725/
 ---
 
 ## Q234725: PRB: Microsoft Pocket Guide to Microsoft Outlook 2000 Comments a

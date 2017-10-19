@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142398: How the Paint Event of a Form Works"
-permalink: kb/142/Q142398/
+permalink: /kb/142/Q142398/
 ---
 
 ## Q142398: How the Paint Event of a Form Works

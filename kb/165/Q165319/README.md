@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165319: XADM: Can't Import Nested Container Recipients into DL"
-permalink: kb/165/Q165319/
+permalink: /kb/165/Q165319/
 ---
 
 ## Q165319: XADM: Can't Import Nested Container Recipients into DL

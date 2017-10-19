@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89572: The Microsoft Setup Toolkit for Windows -- A Tutorial"
-permalink: kb/089/Q89572/
+permalink: /kb/089/Q89572/
 ---
 
 ## Q89572: The Microsoft Setup Toolkit for Windows -- A Tutorial

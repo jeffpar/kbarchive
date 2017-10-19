@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260247: XFOR: Message Looping with Exchange Server on a Windows 2000 DC"
-permalink: kb/260/Q260247/
+permalink: /kb/260/Q260247/
 ---
 
 ## Q260247: XFOR: Message Looping with Exchange Server on a Windows 2000 DC

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q87007: BUG: Help Compiler Hangs When .HPJ File [MAP] Section Too Big"
-permalink: kb/087/Q87007/
+title: "Q87007: BUG: Help Compiler Hangs When .HPJ File &#91;MAP&#93; Section Too Big"
+permalink: /kb/087/Q87007/
 ---
 
-## Q87007: BUG: Help Compiler Hangs When .HPJ File [MAP] Section Too Big
+## Q87007: BUG: Help Compiler Hangs When .HPJ File &#91;MAP&#93; Section Too Big
 
 	Article: Q87007
 	Product(s): Microsoft Windows Software Development Kit

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139994: PRB: Specifying Table Name with Column Name in MFC DAO"
-permalink: kb/139/Q139994/
+permalink: /kb/139/Q139994/
 ---
 
 ## Q139994: PRB: Specifying Table Name with Column Name in MFC DAO

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128631: No Sharing Options in Clipboard Viewer in Windows 95"
-permalink: kb/128/Q128631/
+permalink: /kb/128/Q128631/
 ---
 
 ## Q128631: No Sharing Options in Clipboard Viewer in Windows 95

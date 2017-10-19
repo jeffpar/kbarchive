@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219062: DHCPCMD Converts OptionID Parameter to Octal Value"
-permalink: kb/219/Q219062/
+permalink: /kb/219/Q219062/
 ---
 
 ## Q219062: DHCPCMD Converts OptionID Parameter to Octal Value

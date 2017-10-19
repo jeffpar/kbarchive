@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105936: FIX: Debugger displays Floating Point Notation for REALs"
-permalink: kb/105/Q105936/
+permalink: /kb/105/Q105936/
 ---
 
 ## Q105936: FIX: Debugger displays Floating Point Notation for REALs

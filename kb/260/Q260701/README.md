@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260701: XADM: Reducing the Large Number of Public Folder Status Messages"
-permalink: kb/260/Q260701/
+permalink: /kb/260/Q260701/
 ---
 
 ## Q260701: XADM: Reducing the Large Number of Public Folder Status Messages

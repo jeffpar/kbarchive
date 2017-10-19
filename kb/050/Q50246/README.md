@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50246: Mac Form: Notifier Window Does Not Appear with Custom Form"
-permalink: kb/050/Q50246/
+permalink: /kb/050/Q50246/
 ---
 
 ## Q50246: Mac Form: Notifier Window Does Not Appear with Custom Form

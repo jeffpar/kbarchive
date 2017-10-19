@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114253: Sample Code for Summing a Field in a Database"
-permalink: kb/114/Q114253/
+permalink: /kb/114/Q114253/
 ---
 
 ## Q114253: Sample Code for Summing a Field in a Database

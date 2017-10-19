@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84363: Explanation of Omit Picture Format Command in Paintbrush"
-permalink: kb/084/Q84363/
+permalink: /kb/084/Q84363/
 ---
 
 ## Q84363: Explanation of Omit Picture Format Command in Paintbrush

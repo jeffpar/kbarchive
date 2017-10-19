@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140772: Some Desktop Themes Interfere with Online Viewer Text"
-permalink: kb/140/Q140772/
+permalink: /kb/140/Q140772/
 ---
 
 ## Q140772: Some Desktop Themes Interfere with Online Viewer Text

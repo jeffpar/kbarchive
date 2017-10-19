@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74536: RBase 3.1, Windows Enhanced Mode, and EMM386 NOEMS"
-permalink: kb/074/Q74536/
+permalink: /kb/074/Q74536/
 ---
 
 ## Q74536: RBase 3.1, Windows Enhanced Mode, and EMM386 NOEMS

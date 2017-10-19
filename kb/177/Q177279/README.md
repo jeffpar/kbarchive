@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177279: Encarta 98: How to Turn Off Sounds and Visual Effects"
-permalink: kb/177/Q177279/
+permalink: /kb/177/Q177279/
 ---
 
 ## Q177279: Encarta 98: How to Turn Off Sounds and Visual Effects

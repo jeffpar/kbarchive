@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185654: HOWTO: Starting OLE Drag and Drop In Manual Mode"
-permalink: kb/185/Q185654/
+permalink: /kb/185/Q185654/
 ---
 
 ## Q185654: HOWTO: Starting OLE Drag and Drop In Manual Mode

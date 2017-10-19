@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122472: Encarta 95-96: Summary of Video Issues and Resolutions"
-permalink: kb/122/Q122472/
+permalink: /kb/122/Q122472/
 ---
 
 ## Q122472: Encarta 95-96: Summary of Video Issues and Resolutions

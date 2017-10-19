@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85197: Setup Runs in Black and White on 8514/a Video Systems"
-permalink: kb/085/Q85197/
+permalink: /kb/085/Q85197/
 ---
 
 ## Q85197: Setup Runs in Black and White on 8514/a Video Systems

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82455: EMS=0 Parameter Hangs 386MAXs ASQ Program in Standard Mode"
-permalink: kb/082/Q82455/
+permalink: /kb/082/Q82455/
 ---
 
 ## Q82455: EMS=0 Parameter Hangs 386MAXs ASQ Program in Standard Mode

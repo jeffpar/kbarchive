@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201197: HOWTO: Use a ComboBox to Enter Data into a FlexGrid Control"
-permalink: kb/201/Q201197/
+permalink: /kb/201/Q201197/
 ---
 
 ## Q201197: HOWTO: Use a ComboBox to Enter Data into a FlexGrid Control

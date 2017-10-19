@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73357: Dithered Text in Windows"
-permalink: kb/073/Q73357/
+permalink: /kb/073/Q73357/
 ---
 
 ## Q73357: Dithered Text in Windows

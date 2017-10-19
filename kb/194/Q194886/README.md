@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194886: BUG: Repeatedly Calling Genxtab Can Cause Memory Leak"
-permalink: kb/194/Q194886/
+permalink: /kb/194/Q194886/
 ---
 
 ## Q194886: BUG: Repeatedly Calling Genxtab Can Cause Memory Leak

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152728: Logon Scripts Not Processing With Space In Computer Name"
-permalink: kb/152/Q152728/
+permalink: /kb/152/Q152728/
 ---
 
 ## Q152728: Logon Scripts Not Processing With Space In Computer Name

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102748: X400: Err Msg: ERROR 3 (Layer): Open Failed"
-permalink: kb/102/Q102748/
+permalink: /kb/102/Q102748/
 ---
 
 ## Q102748: X400: Err Msg: ERROR 3 (Layer): Open Failed

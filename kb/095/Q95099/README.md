@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95099: Changing Colors in MS-DOS Shell"
-permalink: kb/095/Q95099/
+permalink: /kb/095/Q95099/
 ---
 
 ## Q95099: Changing Colors in MS-DOS Shell

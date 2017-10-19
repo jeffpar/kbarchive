@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131447: HOWTO: Use PHYSICAL Command to Find SourceSafe Database File"
-permalink: kb/131/Q131447/
+permalink: /kb/131/Q131447/
 ---
 
 ## Q131447: HOWTO: Use PHYSICAL Command to Find SourceSafe Database File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188049: SMS: Acctchg.exe Syntax and Description"
-permalink: kb/188/Q188049/
+permalink: /kb/188/Q188049/
 ---
 
 ## Q188049: SMS: Acctchg.exe Syntax and Description

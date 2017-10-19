@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150454: INFO: Assigning Different LUs to Common Groups in SNA Server"
-permalink: kb/150/Q150454/
+permalink: /kb/150/Q150454/
 ---
 
 ## Q150454: INFO: Assigning Different LUs to Common Groups in SNA Server

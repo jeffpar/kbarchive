@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236024: Cannot Use Connection Manager to Log On to Domain with RAS"
-permalink: kb/236/Q236024/
+permalink: /kb/236/Q236024/
 ---
 
 ## Q236024: Cannot Use Connection Manager to Log On to Domain with RAS

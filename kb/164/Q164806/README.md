@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164806: CHKNTFS Does Not Exclude FAT Partitions from AUTOCHK on Boot"
-permalink: kb/164/Q164806/
+permalink: /kb/164/Q164806/
 ---
 
 ## Q164806: CHKNTFS Does Not Exclude FAT Partitions from AUTOCHK on Boot

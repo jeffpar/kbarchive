@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176131: XCON: Recipient Added from PAB Does Not Convert MSXCX500 DDA"
-permalink: kb/176/Q176131/
+permalink: /kb/176/Q176131/
 ---
 
 ## Q176131: XCON: Recipient Added from PAB Does Not Convert MSXCX500 DDA

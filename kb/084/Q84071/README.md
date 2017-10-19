@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84071: SAMPLE: WNBDemo.exe Uses NetBIOS Under Microsoft Windows"
-permalink: kb/084/Q84071/
+permalink: /kb/084/Q84071/
 ---
 
 ## Q84071: SAMPLE: WNBDemo.exe Uses NetBIOS Under Microsoft Windows

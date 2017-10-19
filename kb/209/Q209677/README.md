@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q209677: WD97: Shading Changes Opening a Word 2000 Document"
-permalink: kb/209/Q209677/
+permalink: /kb/209/Q209677/
 ---
 
 ## Q209677: WD97: Shading Changes Opening a Word 2000 Document

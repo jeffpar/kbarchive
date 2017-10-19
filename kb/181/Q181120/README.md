@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181120: Manual Dial Dialog Fails to Appear when Logging On"
-permalink: kb/181/Q181120/
+permalink: /kb/181/Q181120/
 ---
 
 ## Q181120: Manual Dial Dialog Fails to Appear when Logging On

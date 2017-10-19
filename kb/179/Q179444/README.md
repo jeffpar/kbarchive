@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179444: Error Message: NetWare Authentication Failure"
-permalink: kb/179/Q179444/
+permalink: /kb/179/Q179444/
 ---
 
 ## Q179444: Error Message: NetWare Authentication Failure

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313820: HOW TO: Enable UPN Logon for FTP in IIS 5.0"
-permalink: kb/313/Q313820/
+permalink: /kb/313/Q313820/
 ---
 
 ## Q313820: HOW TO: Enable UPN Logon for FTP in IIS 5.0

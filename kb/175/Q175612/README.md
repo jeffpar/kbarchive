@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175612: BUG: Bitmap Appears Differently in General Field"
-permalink: kb/175/Q175612/
+permalink: /kb/175/Q175612/
 ---
 
 ## Q175612: BUG: Bitmap Appears Differently in General Field

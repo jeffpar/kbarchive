@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104539: SideKick Casues Help and Editor to Stop Responding (Hang)"
-permalink: kb/104/Q104539/
+permalink: /kb/104/Q104539/
 ---
 
 ## Q104539: SideKick Casues Help and Editor to Stop Responding (Hang)

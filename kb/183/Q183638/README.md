@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183638: HOWTO: Create a Custom Text File Import Routine"
-permalink: kb/183/Q183638/
+permalink: /kb/183/Q183638/
 ---
 
 ## Q183638: HOWTO: Create a Custom Text File Import Routine

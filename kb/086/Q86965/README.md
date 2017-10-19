@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86965: X400: X.25 Line Requirements for X.400 Gateway Operation"
-permalink: kb/086/Q86965/
+permalink: /kb/086/Q86965/
 ---
 
 ## Q86965: X400: X.25 Line Requirements for X.400 Gateway Operation

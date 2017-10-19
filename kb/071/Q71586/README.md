@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71586: MS-DOS: Running CHKDSK As A Child Process"
-permalink: kb/071/Q71586/
+permalink: /kb/071/Q71586/
 ---
 
 ## Q71586: MS-DOS: Running CHKDSK As A Child Process

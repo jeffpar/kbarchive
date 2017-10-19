@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58315: Summary of New Features in Windows 3.0"
-permalink: kb/058/Q58315/
+permalink: /kb/058/Q58315/
 ---
 
 ## Q58315: Summary of New Features in Windows 3.0

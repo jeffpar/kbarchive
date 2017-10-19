@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225410: Browse Button in Scheduled Task Properties Does Not Work"
-permalink: kb/225/Q225410/
+permalink: /kb/225/Q225410/
 ---
 
 ## Q225410: Browse Button in Scheduled Task Properties Does Not Work

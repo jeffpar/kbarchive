@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134556: Computer Hangs with S3 Video Adapter and QEMM"
-permalink: kb/134/Q134556/
+permalink: /kb/134/Q134556/
 ---
 
 ## Q134556: Computer Hangs with S3 Video Adapter and QEMM

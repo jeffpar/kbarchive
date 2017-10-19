@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195285: MS SNA Server Training Kit Comments &amp; Corrections"
-permalink: kb/195/Q195285/
+permalink: /kb/195/Q195285/
 ---
 
 ## Q195285: MS SNA Server Training Kit Comments &amp; Corrections

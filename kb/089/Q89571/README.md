@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89571: PRB: Colors Lost Printing Color Metafile on Color Printer"
-permalink: kb/089/Q89571/
+permalink: /kb/089/Q89571/
 ---
 
 ## Q89571: PRB: Colors Lost Printing Color Metafile on Color Printer

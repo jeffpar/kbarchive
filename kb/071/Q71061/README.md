@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71061: MenuBmp.exe Contains Owner-Draw Menus with Bitmaps"
-permalink: kb/071/Q71061/
+permalink: /kb/071/Q71061/
 ---
 
 ## Q71061: MenuBmp.exe Contains Owner-Draw Menus with Bitmaps

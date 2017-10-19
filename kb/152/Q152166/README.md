@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152166: XFOR: Attachment Name Truncated When Name Contains a Period"
-permalink: kb/152/Q152166/
+permalink: /kb/152/Q152166/
 ---
 
 ## Q152166: XFOR: Attachment Name Truncated When Name Contains a Period

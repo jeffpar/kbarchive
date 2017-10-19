@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221911: FIX: Memory Leak in Visual C++ Integrated Debugger"
-permalink: kb/221/Q221911/
+permalink: /kb/221/Q221911/
 ---
 
 ## Q221911: FIX: Memory Leak in Visual C++ Integrated Debugger

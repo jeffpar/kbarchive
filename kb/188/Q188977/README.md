@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188977: HOWTO: Use the Win32 API to Access File Dates and Times"
-permalink: kb/188/Q188977/
+permalink: /kb/188/Q188977/
 ---
 
 ## Q188977: HOWTO: Use the Win32 API to Access File Dates and Times

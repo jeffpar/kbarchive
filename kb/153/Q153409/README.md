@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153409: Single Quotation Mark in NetWare Domain Name Fails"
-permalink: kb/153/Q153409/
+permalink: /kb/153/Q153409/
 ---
 
 ## Q153409: Single Quotation Mark in NetWare Domain Name Fails

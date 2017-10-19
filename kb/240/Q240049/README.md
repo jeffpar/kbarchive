@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240049: How to Obtain Diagnostic i386 Processsor Integrity Tests"
-permalink: kb/240/Q240049/
+permalink: /kb/240/Q240049/
 ---
 
 ## Q240049: How to Obtain Diagnostic i386 Processsor Integrity Tests

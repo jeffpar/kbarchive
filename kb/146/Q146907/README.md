@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146907: HOWTO: Create a Screen Saver in Visual Basic"
-permalink: kb/146/Q146907/
+permalink: /kb/146/Q146907/
 ---
 
 ## Q146907: HOWTO: Create a Screen Saver in Visual Basic

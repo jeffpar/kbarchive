@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q283805: Err Msg: You Do Not Have Appropriate Permission to Perform..."
-permalink: kb/283/Q283805/
+permalink: /kb/283/Q283805/
 ---
 
 ## Q283805: Err Msg: You Do Not Have Appropriate Permission to Perform...

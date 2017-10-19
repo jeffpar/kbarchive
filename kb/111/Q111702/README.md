@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111702: PC WRmt: Mail Remote MAILDRV.EXE 3.2.0.4002 Update"
-permalink: kb/111/Q111702/
+permalink: /kb/111/Q111702/
 ---
 
 ## Q111702: PC WRmt: Mail Remote MAILDRV.EXE 3.2.0.4002 Update

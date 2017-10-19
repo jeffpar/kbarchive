@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135612: BUG: Form Does Not Release After Being Changed to Modal"
-permalink: kb/135/Q135612/
+permalink: /kb/135/Q135612/
 ---
 
 ## Q135612: BUG: Form Does Not Release After Being Changed to Modal

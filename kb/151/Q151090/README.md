@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151090: HOWTO: Return an Error Message from Microsoft SQL Server"
-permalink: kb/151/Q151090/
+permalink: /kb/151/Q151090/
 ---
 
 ## Q151090: HOWTO: Return an Error Message from Microsoft SQL Server

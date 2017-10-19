@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233451: MSBP: Version Tab Missing from File Properties Dialog Box"
-permalink: kb/233/Q233451/
+permalink: /kb/233/Q233451/
 ---
 
 ## Q233451: MSBP: Version Tab Missing from File Properties Dialog Box

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148716: XADM: Unable to Configure Windows NT Natural Language"
-permalink: kb/148/Q148716/
+permalink: /kb/148/Q148716/
 ---
 
 ## Q148716: XADM: Unable to Configure Windows NT Natural Language

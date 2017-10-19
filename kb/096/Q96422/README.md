@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96422: Detecting Idle Time in Windows"
-permalink: kb/096/Q96422/
+permalink: /kb/096/Q96422/
 ---
 
 ## Q96422: Detecting Idle Time in Windows

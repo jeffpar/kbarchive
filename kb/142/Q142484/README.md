@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142484: Oceans: Manual Installation Instructions"
-permalink: kb/142/Q142484/
+permalink: /kb/142/Q142484/
 ---
 
 ## Q142484: Oceans: Manual Installation Instructions

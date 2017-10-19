@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82074: DCA IRMA Workstation for Windows 3270"
-permalink: kb/082/Q82074/
+permalink: /kb/082/Q82074/
 ---
 
 ## Q82074: DCA IRMA Workstation for Windows 3270

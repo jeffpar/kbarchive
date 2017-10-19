@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62131: Mac Hyp: Forwarding a Message and Its Enclosures"
-permalink: kb/062/Q62131/
+permalink: /kb/062/Q62131/
 ---
 
 ## Q62131: Mac Hyp: Forwarding a Message and Its Enclosures

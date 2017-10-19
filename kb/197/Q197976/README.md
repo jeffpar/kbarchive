@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197976: XFOR: Inbound Mail Failure Error with MS Mail and IMC"
-permalink: kb/197/Q197976/
+permalink: /kb/197/Q197976/
 ---
 
 ## Q197976: XFOR: Inbound Mail Failure Error with MS Mail and IMC

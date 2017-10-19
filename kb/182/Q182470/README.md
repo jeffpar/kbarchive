@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182470: HOWTO: Use Setup Wizard Command Line Arguments for Silent Mode"
-permalink: kb/182/Q182470/
+permalink: /kb/182/Q182470/
 ---
 
 ## Q182470: HOWTO: Use Setup Wizard Command Line Arguments for Silent Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198408: Microsoft DNS Server Registry Parameters, Part 1 of 3"
-permalink: kb/198/Q198408/
+permalink: /kb/198/Q198408/
 ---
 
 ## Q198408: Microsoft DNS Server Registry Parameters, Part 1 of 3

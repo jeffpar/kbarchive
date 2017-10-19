@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106619: Multimedia Works Cannot Run Help While Encarta Help Runs"
-permalink: kb/106/Q106619/
+permalink: /kb/106/Q106619/
 ---
 
 ## Q106619: Multimedia Works Cannot Run Help While Encarta Help Runs

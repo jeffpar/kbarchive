@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156969: Description of DeviceOld Value Under HKEY_CURRENT_USER&#92;Printers"
-permalink: kb/156/Q156969/
+permalink: /kb/156/Q156969/
 ---
 
 ## Q156969: Description of DeviceOld Value Under HKEY_CURRENT_USER&#92;Printers

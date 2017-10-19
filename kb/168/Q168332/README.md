@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168332: XADM: Unable To Create or Modify a Windows NT Account"
-permalink: kb/168/Q168332/
+permalink: /kb/168/Q168332/
 ---
 
 ## Q168332: XADM: Unable To Create or Modify a Windows NT Account

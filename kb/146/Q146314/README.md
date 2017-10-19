@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146314: Recur Task Continues if No End Date and No Auto-done Selected"
-permalink: kb/146/Q146314/
+permalink: /kb/146/Q146314/
 ---
 
 ## Q146314: Recur Task Continues if No End Date and No Auto-done Selected

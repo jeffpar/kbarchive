@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147618: XGEN: Cannot Get Free/Busy for Server Group on Another PO"
-permalink: kb/147/Q147618/
+permalink: /kb/147/Q147618/
 ---
 
 ## Q147618: XGEN: Cannot Get Free/Busy for Server Group on Another PO

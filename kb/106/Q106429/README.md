@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106429: WFWG Upgrade 3.11 Disk Directories (5.25 Inch, 1.2 MB)"
-permalink: kb/106/Q106429/
+permalink: /kb/106/Q106429/
 ---
 
 ## Q106429: WFWG Upgrade 3.11 Disk Directories (5.25 Inch, 1.2 MB)

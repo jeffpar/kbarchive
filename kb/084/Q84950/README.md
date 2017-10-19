@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84950: File Manager Cannot Connect to Share with Long Name"
-permalink: kb/084/Q84950/
+permalink: /kb/084/Q84950/
 ---
 
 ## Q84950: File Manager Cannot Connect to Share with Long Name

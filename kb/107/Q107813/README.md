@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107813: SETUP /E Message: Cannot Identify Your Version of DOS"
-permalink: kb/107/Q107813/
+permalink: /kb/107/Q107813/
 ---
 
 ## Q107813: SETUP /E Message: Cannot Identify Your Version of DOS

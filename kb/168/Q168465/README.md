@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168465: XFOR: Event ID 68 Running cc:Mail DirSync"
-permalink: kb/168/Q168465/
+permalink: /kb/168/Q168465/
 ---
 
 ## Q168465: XFOR: Event ID 68 Running cc:Mail DirSync

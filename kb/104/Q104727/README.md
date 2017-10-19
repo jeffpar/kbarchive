@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104727: EMM386.EXE 4.48 Doesn't Enable HIGHSCAN on Some AMI BIOSs"
-permalink: kb/104/Q104727/
+permalink: /kb/104/Q104727/
 ---
 
 ## Q104727: EMM386.EXE 4.48 Doesn't Enable HIGHSCAN on Some AMI BIOSs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266093: XADM: Information Store Stops From Invalid QueryRows Request"
-permalink: kb/266/Q266093/
+permalink: /kb/266/Q266093/
 ---
 
 ## Q266093: XADM: Information Store Stops From Invalid QueryRows Request

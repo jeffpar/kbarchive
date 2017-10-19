@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68070: Not Enough Core Message in PWB Caused By Lack of Memory"
-permalink: kb/068/Q68070/
+permalink: /kb/068/Q68070/
 ---
 
 ## Q68070: Not Enough Core Message in PWB Caused By Lack of Memory

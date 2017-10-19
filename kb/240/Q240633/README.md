@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240633: World Atlas 2000: BACKSPACE Key Opens Previously Opened Web Page"
-permalink: kb/240/Q240633/
+permalink: /kb/240/Q240633/
 ---
 
 ## Q240633: World Atlas 2000: BACKSPACE Key Opens Previously Opened Web Page

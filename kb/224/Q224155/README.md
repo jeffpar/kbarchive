@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224155: Err Msg: &quot;Unable to Create RNA Phonebook Entry&quot;"
-permalink: kb/224/Q224155/
+permalink: /kb/224/Q224155/
 ---
 
 ## Q224155: Err Msg: &quot;Unable to Create RNA Phonebook Entry&quot;

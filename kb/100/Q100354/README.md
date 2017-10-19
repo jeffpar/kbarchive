@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100354: BUG: StretchDIBits() Prints Wrong Part of DIB with PSCRIPT.DRV"
-permalink: kb/100/Q100354/
+permalink: /kb/100/Q100354/
 ---
 
 ## Q100354: BUG: StretchDIBits() Prints Wrong Part of DIB with PSCRIPT.DRV

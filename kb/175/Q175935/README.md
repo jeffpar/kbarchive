@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175935: NBTSTAT -A May Return Host not Found Error Message"
-permalink: kb/175/Q175935/
+permalink: /kb/175/Q175935/
 ---
 
 ## Q175935: NBTSTAT -A May Return Host not Found Error Message

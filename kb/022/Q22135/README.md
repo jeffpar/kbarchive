@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q22135: INFO: Windows DEVICEDATA Escape Usage"
-permalink: kb/022/Q22135/
+permalink: /kb/022/Q22135/
 ---
 
 ## Q22135: INFO: Windows DEVICEDATA Escape Usage

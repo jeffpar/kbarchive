@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126584: Windows NT PCL Driver Cannot Print Grayscaled Fonts"
-permalink: kb/126/Q126584/
+permalink: /kb/126/Q126584/
 ---
 
 ## Q126584: Windows NT PCL Driver Cannot Print Grayscaled Fonts

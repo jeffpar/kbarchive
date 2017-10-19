@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105083: Unable to Log in on Windows NT Advanced Server"
-permalink: kb/105/Q105083/
+permalink: /kb/105/Q105083/
 ---
 
 ## Q105083: Unable to Log in on Windows NT Advanced Server

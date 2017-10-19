@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239899: SMS: Administrator Console Cannot Connect After Reinstallation"
-permalink: kb/239/Q239899/
+permalink: /kb/239/Q239899/
 ---
 
 ## Q239899: SMS: Administrator Console Cannot Connect After Reinstallation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196357: MS Manual of Style Second Edition Comments and Corrections"
-permalink: kb/196/Q196357/
+permalink: /kb/196/Q196357/
 ---
 
 ## Q196357: MS Manual of Style Second Edition Comments and Corrections

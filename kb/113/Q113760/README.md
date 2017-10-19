@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113760: 150 DPI printing with the Windows Printing System"
-permalink: kb/113/Q113760/
+permalink: /kb/113/Q113760/
 ---
 
 ## Q113760: 150 DPI printing with the Windows Printing System

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221696: FIX: C00000FD Fatal Error Docking Toolbar in Rare Circumstance"
-permalink: kb/221/Q221696/
+permalink: /kb/221/Q221696/
 ---
 
 ## Q221696: FIX: C00000FD Fatal Error Docking Toolbar in Rare Circumstance

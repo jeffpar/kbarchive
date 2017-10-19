@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246143: FS2000: Black Boxes Are Displayed Around Lights in Game"
-permalink: kb/246/Q246143/
+permalink: /kb/246/Q246143/
 ---
 
 ## Q246143: FS2000: Black Boxes Are Displayed Around Lights in Game

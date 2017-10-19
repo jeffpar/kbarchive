@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172079: HOWTO: Closing a Running Application from Visual FoxPro for Mac"
-permalink: kb/172/Q172079/
+permalink: /kb/172/Q172079/
 ---
 
 ## Q172079: HOWTO: Closing a Running Application from Visual FoxPro for Mac

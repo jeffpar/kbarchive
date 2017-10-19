@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83726: INT 12h and Windows Enhanced Mode"
-permalink: kb/083/Q83726/
+permalink: /kb/083/Q83726/
 ---
 
 ## Q83726: INT 12h and Windows Enhanced Mode

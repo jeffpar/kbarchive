@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157684: XFOR: IMC Might Lose Inbound and Outbound Messages"
-permalink: kb/157/Q157684/
+permalink: /kb/157/Q157684/
 ---
 
 ## Q157684: XFOR: IMC Might Lose Inbound and Outbound Messages

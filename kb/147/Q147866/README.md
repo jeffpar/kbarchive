@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147866: Dial-Up Networking Refers to ISDN Adapter as a Modem"
-permalink: kb/147/Q147866/
+permalink: /kb/147/Q147866/
 ---
 
 ## Q147866: Dial-Up Networking Refers to ISDN Adapter as a Modem

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139484: ADT95: MS ADT Licensing Q &amp; A Available"
-permalink: kb/139/Q139484/
+permalink: /kb/139/Q139484/
 ---
 
 ## Q139484: ADT95: MS ADT Licensing Q &amp; A Available

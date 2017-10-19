@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113824: SMTP: Return Receipts Sent If &quot;Return-Receipt-To&quot; Is Blank"
-permalink: kb/113/Q113824/
+permalink: /kb/113/Q113824/
 ---
 
 ## Q113824: SMTP: Return Receipts Sent If &quot;Return-Receipt-To&quot; Is Blank

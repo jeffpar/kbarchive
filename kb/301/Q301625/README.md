@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301625: MS01-044: Patch for SSI Privilege Elevation Vulnerability"
-permalink: kb/301/Q301625/
+permalink: /kb/301/Q301625/
 ---
 
 ## Q301625: MS01-044: Patch for SSI Privilege Elevation Vulnerability

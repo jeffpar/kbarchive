@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104850: Flight Simulator for Mac: Quits with Type 4 Error"
-permalink: kb/104/Q104850/
+permalink: /kb/104/Q104850/
 ---
 
 ## Q104850: Flight Simulator for Mac: Quits with Type 4 Error

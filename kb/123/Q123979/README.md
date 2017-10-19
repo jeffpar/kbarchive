@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123979: 3C770 FDDI (FLNK.SYS) Problems Under Windows NT 3.5"
-permalink: kb/123/Q123979/
+permalink: /kb/123/Q123979/
 ---
 
 ## Q123979: 3C770 FDDI (FLNK.SYS) Problems Under Windows NT 3.5

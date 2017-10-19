@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157474: PPT7: Can't Change Linked File in Folder With &quot;!&quot; in Name"
-permalink: kb/157/Q157474/
+permalink: /kb/157/Q157474/
 ---
 
 ## Q157474: PPT7: Can't Change Linked File in Folder With &quot;!&quot; in Name

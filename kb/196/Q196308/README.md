@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196308: Name and Password Are Not Accepted When Opening Web"
-permalink: kb/196/Q196308/
+permalink: /kb/196/Q196308/
 ---
 
 ## Q196308: Name and Password Are Not Accepted When Opening Web

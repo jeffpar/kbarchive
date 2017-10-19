@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140361: FIX: Comment_Template Setting Does Not Work in Srcsafe.ini File"
-permalink: kb/140/Q140361/
+permalink: /kb/140/Q140361/
 ---
 
 ## Q140361: FIX: Comment_Template Setting Does Not Work in Srcsafe.ini File

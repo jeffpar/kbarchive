@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235770: SMS: Win95 Client Software Causes Login Failure: Status 8890"
-permalink: kb/235/Q235770/
+permalink: /kb/235/Q235770/
 ---
 
 ## Q235770: SMS: Win95 Client Software Causes Login Failure: Status 8890

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137185: Julia Child: Tip Popup Text Prints Small"
-permalink: kb/137/Q137185/
+permalink: /kb/137/Q137185/
 ---
 
 ## Q137185: Julia Child: Tip Popup Text Prints Small

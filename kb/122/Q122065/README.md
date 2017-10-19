@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122065: WFWG Mail Causes Unexpected Hard Disk Activity"
-permalink: kb/122/Q122065/
+permalink: /kb/122/Q122065/
 ---
 
 ## Q122065: WFWG Mail Causes Unexpected Hard Disk Activity

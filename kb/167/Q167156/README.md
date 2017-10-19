@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167156: BUG: OLEISAPI2 Missing from Visual Basic 5.0 CD-ROM"
-permalink: kb/167/Q167156/
+permalink: /kb/167/Q167156/
 ---
 
 ## Q167156: BUG: OLEISAPI2 Missing from Visual Basic 5.0 CD-ROM

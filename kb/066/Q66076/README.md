@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66076: Turning Off Autoswitching on Paradise Plus Card"
-permalink: kb/066/Q66076/
+permalink: /kb/066/Q66076/
 ---
 
 ## Q66076: Turning Off Autoswitching on Paradise Plus Card

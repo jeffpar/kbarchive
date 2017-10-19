@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142556: Testing a Default Installation of Microsoft IIS WWW"
-permalink: kb/142/Q142556/
+permalink: /kb/142/Q142556/
 ---
 
 ## Q142556: Testing a Default Installation of Microsoft IIS WWW

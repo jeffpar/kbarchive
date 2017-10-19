@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72242: Cannot Format Fonts in Write"
-permalink: kb/072/Q72242/
+permalink: /kb/072/Q72242/
 ---
 
 ## Q72242: Cannot Format Fonts in Write

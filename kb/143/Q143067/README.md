@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143067: Mac Multimedia: Movies Freeze or Quit with QuickTime 1.6.x"
-permalink: kb/143/Q143067/
+permalink: /kb/143/Q143067/
 ---
 
 ## Q143067: Mac Multimedia: Movies Freeze or Quit with QuickTime 1.6.x

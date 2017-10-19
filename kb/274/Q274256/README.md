@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274256: MSN Companion Troubleshooting Tool FAILSAFE"
-permalink: kb/274/Q274256/
+permalink: /kb/274/Q274256/
 ---
 
 ## Q274256: MSN Companion Troubleshooting Tool FAILSAFE

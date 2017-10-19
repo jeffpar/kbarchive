@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263384: SMS: PCBIOS Date Reported Incorrectly in Hardware Inventory"
-permalink: kb/263/Q263384/
+permalink: /kb/263/Q263384/
 ---
 
 ## Q263384: SMS: PCBIOS Date Reported Incorrectly in Hardware Inventory

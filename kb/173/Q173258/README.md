@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173258: Can't Open Setup.exe on Learn VB Now CD-ROM"
-permalink: kb/173/Q173258/
+permalink: /kb/173/Q173258/
 ---
 
 ## Q173258: Can't Open Setup.exe on Learn VB Now CD-ROM

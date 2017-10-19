@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197792: XFOR: General Troubleshooting Stuck Msg in Internet Mail Service"
-permalink: kb/197/Q197792/
+permalink: /kb/197/Q197792/
 ---
 
 ## Q197792: XFOR: General Troubleshooting Stuck Msg in Internet Mail Service

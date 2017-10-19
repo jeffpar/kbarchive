@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83917: PRB: Binding Resources to Executable Increases File Size"
-permalink: kb/083/Q83917/
+permalink: /kb/083/Q83917/
 ---
 
 ## Q83917: PRB: Binding Resources to Executable Increases File Size

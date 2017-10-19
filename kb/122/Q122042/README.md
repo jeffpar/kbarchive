@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122042: BUG: Fatal Error C1001 Using /Zg with Large C++ Header Files"
-permalink: kb/122/Q122042/
+permalink: /kb/122/Q122042/
 ---
 
 ## Q122042: BUG: Fatal Error C1001 Using /Zg with Large C++ Header Files

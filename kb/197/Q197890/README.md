@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197890: Cannot Overwrite ISAPI Extensions in Stopped Web Site"
-permalink: kb/197/Q197890/
+permalink: /kb/197/Q197890/
 ---
 
 ## Q197890: Cannot Overwrite ISAPI Extensions in Stopped Web Site

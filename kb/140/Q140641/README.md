@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140641: Updated Samsrv.dll Supports AppleTalk and Banyan Vines Clients"
-permalink: kb/140/Q140641/
+permalink: /kb/140/Q140641/
 ---
 
 ## Q140641: Updated Samsrv.dll Supports AppleTalk and Banyan Vines Clients

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145605: HOWTO: Modify the Results of the MDY() Function"
-permalink: kb/145/Q145605/
+permalink: /kb/145/Q145605/
 ---
 
 ## Q145605: HOWTO: Modify the Results of the MDY() Function

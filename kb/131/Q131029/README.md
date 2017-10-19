@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131029: HOWTO: Manipulate Embedded Objects in General Fields"
-permalink: kb/131/Q131029/
+permalink: /kb/131/Q131029/
 ---
 
 ## Q131029: HOWTO: Manipulate Embedded Objects in General Fields

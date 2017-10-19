@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95941: Err Msg: &quot;Cannot Find File LMRSETUP.EXE&quot; with RAS Setup"
-permalink: kb/095/Q95941/
+permalink: /kb/095/Q95941/
 ---
 
 ## Q95941: Err Msg: &quot;Cannot Find File LMRSETUP.EXE&quot; with RAS Setup

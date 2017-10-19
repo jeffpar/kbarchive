@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128891: Project Info Dialog"
-permalink: kb/128/Q128891/
+permalink: /kb/128/Q128891/
 ---
 
 ## Q128891: Project Info Dialog

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48023: Developing Common Code for Both Windows and Macintosh"
-permalink: kb/048/Q48023/
+permalink: /kb/048/Q48023/
 ---
 
 ## Q48023: Developing Common Code for Both Windows and Macintosh

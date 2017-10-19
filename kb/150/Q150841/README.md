@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150841: INFO: Troubleshooting Common APPC Error Codes"
-permalink: kb/150/Q150841/
+permalink: /kb/150/Q150841/
 ---
 
 ## Q150841: INFO: Troubleshooting Common APPC Error Codes

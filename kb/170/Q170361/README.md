@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170361: XADM: Troubleshooting a Rapidly Growing Information Store"
-permalink: kb/170/Q170361/
+permalink: /kb/170/Q170361/
 ---
 
 ## Q170361: XADM: Troubleshooting a Rapidly Growing Information Store

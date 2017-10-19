@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261947: XADM: How to Determine if Eseutil /p Has Been Run on a Database"
-permalink: kb/261/Q261947/
+permalink: /kb/261/Q261947/
 ---
 
 ## Q261947: XADM: How to Determine if Eseutil /p Has Been Run on a Database

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153993: Windows NT May Cache Data Even if Write-through Flag is Set"
-permalink: kb/153/Q153993/
+permalink: /kb/153/Q153993/
 ---
 
 ## Q153993: Windows NT May Cache Data Even if Write-through Flag is Set

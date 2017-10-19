@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171569: FP: How to Create Custom Web Templates"
-permalink: kb/171/Q171569/
+permalink: /kb/171/Q171569/
 ---
 
 ## Q171569: FP: How to Create Custom Web Templates

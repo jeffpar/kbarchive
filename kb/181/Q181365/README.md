@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181365: WD97: Pleading Wizard Font Point Size Is Too Small or Too Large"
-permalink: kb/181/Q181365/
+permalink: /kb/181/Q181365/
 ---
 
 ## Q181365: WD97: Pleading Wizard Font Point Size Is Too Small or Too Large

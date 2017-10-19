@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191943: Y2K: Seconds in Time Field Incorrect after 1999"
-permalink: kb/191/Q191943/
+permalink: /kb/191/Q191943/
 ---
 
 ## Q191943: Y2K: Seconds in Time Field Incorrect after 1999

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200620: SMSINST: Office 4.3 Uninstall Leaves Files and Folders Behind"
-permalink: kb/200/Q200620/
+permalink: /kb/200/Q200620/
 ---
 
 ## Q200620: SMSINST: Office 4.3 Uninstall Leaves Files and Folders Behind

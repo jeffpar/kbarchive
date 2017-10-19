@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136430: Total Disk Space on Banyan Vines Server Incorrectly Reported"
-permalink: kb/136/Q136430/
+permalink: /kb/136/Q136430/
 ---
 
 ## Q136430: Total Disk Space on Banyan Vines Server Incorrectly Reported

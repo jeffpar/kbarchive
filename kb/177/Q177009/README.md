@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177009: WD97: VerticalPercentScrolled Fails to Set the Correct Value"
-permalink: kb/177/Q177009/
+permalink: /kb/177/Q177009/
 ---
 
 ## Q177009: WD97: VerticalPercentScrolled Fails to Set the Correct Value

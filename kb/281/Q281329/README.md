@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281329: MechWarrior 4: Auto Torso Centering Feature May Not Engage"
-permalink: kb/281/Q281329/
+permalink: /kb/281/Q281329/
 ---
 
 ## Q281329: MechWarrior 4: Auto Torso Centering Feature May Not Engage

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221650: FIX: Error 11 (Function argument invalid) w/ SQL SELECT 'LIKE'"
-permalink: kb/221/Q221650/
+permalink: /kb/221/Q221650/
 ---
 
 ## Q221650: FIX: Error 11 (Function argument invalid) w/ SQL SELECT 'LIKE'

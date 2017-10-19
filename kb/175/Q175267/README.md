@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175267: How to Install an OEM Modem .INF File In Unattended Setup"
-permalink: kb/175/Q175267/
+permalink: /kb/175/Q175267/
 ---
 
 ## Q175267: How to Install an OEM Modem .INF File In Unattended Setup

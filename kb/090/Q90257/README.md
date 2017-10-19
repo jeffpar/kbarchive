@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90257: How Does WFWG Upgrade from LAN Manager 2.1?"
-permalink: kb/090/Q90257/
+permalink: /kb/090/Q90257/
 ---
 
 ## Q90257: How Does WFWG Upgrade from LAN Manager 2.1?

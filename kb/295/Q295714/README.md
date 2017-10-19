@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295714: How to Break Down the System Process"
-permalink: kb/295/Q295714/
+permalink: /kb/295/Q295714/
 ---
 
 ## Q295714: How to Break Down the System Process

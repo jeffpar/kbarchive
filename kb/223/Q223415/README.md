@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223415: Stop 0x0a in Ibmsync.sys at ibmsync!SyncPutDPCQueueTail+0x58"
-permalink: kb/223/Q223415/
+permalink: /kb/223/Q223415/
 ---
 
 ## Q223415: Stop 0x0a in Ibmsync.sys at ibmsync!SyncPutDPCQueueTail+0x58

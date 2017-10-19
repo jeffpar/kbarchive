@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132809: Clicking Suspend on Compaq Desktop Does Not Suspend Computer"
-permalink: kb/132/Q132809/
+permalink: /kb/132/Q132809/
 ---
 
 ## Q132809: Clicking Suspend on Compaq Desktop Does Not Suspend Computer

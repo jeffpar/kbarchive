@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195469: STOP 0xEFFFFFFF Exception in OLE Servers with Multiple Clients"
-permalink: kb/195/Q195469/
+permalink: /kb/195/Q195469/
 ---
 
 ## Q195469: STOP 0xEFFFFFFF Exception in OLE Servers with Multiple Clients

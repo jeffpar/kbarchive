@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126573: No Support for &quot;Connect As&quot; Option Like in Windows NT"
-permalink: kb/126/Q126573/
+permalink: /kb/126/Q126573/
 ---
 
 ## Q126573: No Support for &quot;Connect As&quot; Option Like in Windows NT

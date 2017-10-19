@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173383: XCLN: New Mail Notification To &quot;Play a Sound&quot; Does Not Work"
-permalink: kb/173/Q173383/
+permalink: /kb/173/Q173383/
 ---
 
 ## Q173383: XCLN: New Mail Notification To &quot;Play a Sound&quot; Does Not Work

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149258: Windows 95 Uninstall Does Not Restore Dual-Boot Manager"
-permalink: kb/149/Q149258/
+permalink: /kb/149/Q149258/
 ---
 
 ## Q149258: Windows 95 Uninstall Does Not Restore Dual-Boot Manager

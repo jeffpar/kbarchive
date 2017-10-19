@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161960: STOP 0x0000007B On Windows NT 4.0 After SP2 Applied"
-permalink: kb/161/Q161960/
+permalink: /kb/161/Q161960/
 ---
 
 ## Q161960: STOP 0x0000007B On Windows NT 4.0 After SP2 Applied

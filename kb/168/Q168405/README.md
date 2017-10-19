@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168405: PRB: ResourceView Fails to Open Already Loaded .rc File"
-permalink: kb/168/Q168405/
+permalink: /kb/168/Q168405/
 ---
 
 ## Q168405: PRB: ResourceView Fails to Open Already Loaded .rc File

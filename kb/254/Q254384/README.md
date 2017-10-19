@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254384: Performance Monitor Shows Incorrect Data When You Use .pmc File"
-permalink: kb/254/Q254384/
+permalink: /kb/254/Q254384/
 ---
 
 ## Q254384: Performance Monitor Shows Incorrect Data When You Use .pmc File

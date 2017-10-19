@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262038: PRB: COMRETURNERROR Fails if Error Occurs During Server Creation"
-permalink: kb/262/Q262038/
+permalink: /kb/262/Q262038/
 ---
 
 ## Q262038: PRB: COMRETURNERROR Fails if Error Occurs During Server Creation

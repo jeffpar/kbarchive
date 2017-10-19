@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124778: PRB: Unable to Find Array Name Error When Compiling"
-permalink: kb/124/Q124778/
+permalink: /kb/124/Q124778/
 ---
 
 ## Q124778: PRB: Unable to Find Array Name Error When Compiling

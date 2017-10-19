@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151033: FIX: Using CMultiLock Class Can Cause a Memory Leak"
-permalink: kb/151/Q151033/
+permalink: /kb/151/Q151033/
 ---
 
 ## Q151033: FIX: Using CMultiLock Class Can Cause a Memory Leak

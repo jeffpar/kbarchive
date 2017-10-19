@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123964: Server Service Hangs When Using GSNW"
-permalink: kb/123/Q123964/
+permalink: /kb/123/Q123964/
 ---
 
 ## Q123964: Server Service Hangs When Using GSNW

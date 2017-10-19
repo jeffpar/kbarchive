@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85320: Windows 3.1: FAXit for Windows Version 2.15e Required"
-permalink: kb/085/Q85320/
+permalink: /kb/085/Q85320/
 ---
 
 ## Q85320: Windows 3.1: FAXit for Windows Version 2.15e Required

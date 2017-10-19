@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246785: SMS: SMSExec Components Report SQL Error Messages"
-permalink: kb/246/Q246785/
+permalink: /kb/246/Q246785/
 ---
 
 ## Q246785: SMS: SMSExec Components Report SQL Error Messages

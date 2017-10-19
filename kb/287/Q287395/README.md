@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287395: Err Msg: TCP/IP Reported Error 2 : Could Not Find File Specified"
-permalink: kb/287/Q287395/
+permalink: /kb/287/Q287395/
 ---
 
 ## Q287395: Err Msg: TCP/IP Reported Error 2 : Could Not Find File Specified

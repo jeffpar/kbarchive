@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126119: MS FOXPRO FOR DOS SBS: Corrections and Comments"
-permalink: kb/126/Q126119/
+permalink: /kb/126/Q126119/
 ---
 
 ## Q126119: MS FOXPRO FOR DOS SBS: Corrections and Comments

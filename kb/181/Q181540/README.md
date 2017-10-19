@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181540: WD97: Statistics Button Unavailable in File Summary Info Dialog"
-permalink: kb/181/Q181540/
+permalink: /kb/181/Q181540/
 ---
 
 ## Q181540: WD97: Statistics Button Unavailable in File Summary Info Dialog

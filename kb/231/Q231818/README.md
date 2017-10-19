@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231818: XCON: P1 Headers with Very Long Object IDs Cause MTA to Crash"
-permalink: kb/231/Q231818/
+permalink: /kb/231/Q231818/
 ---
 
 ## Q231818: XCON: P1 Headers with Very Long Object IDs Cause MTA to Crash

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196555: WD97: Cannot Drag from Word to Another Program"
-permalink: kb/196/Q196555/
+permalink: /kb/196/Q196555/
 ---
 
 ## Q196555: WD97: Cannot Drag from Word to Another Program

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92759: Video Err Msg: Undefined Dynalink"
-permalink: kb/092/Q92759/
+permalink: /kb/092/Q92759/
 ---
 
 ## Q92759: Video Err Msg: Undefined Dynalink

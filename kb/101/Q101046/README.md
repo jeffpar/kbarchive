@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101046: How to Create a Dynamic SELECT Statement in an .EXE File"
-permalink: kb/101/Q101046/
+permalink: /kb/101/Q101046/
 ---
 
 ## Q101046: How to Create a Dynamic SELECT Statement in an .EXE File

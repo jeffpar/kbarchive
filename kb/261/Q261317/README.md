@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261317: Deadlock in Ntdll.dll Causes Program to Hang"
-permalink: kb/261/Q261317/
+permalink: /kb/261/Q261317/
 ---
 
 ## Q261317: Deadlock in Ntdll.dll Causes Program to Hang

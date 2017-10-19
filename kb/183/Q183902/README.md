@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183902: Dead Gateway Detection Is Not Triggered During Logon"
-permalink: kb/183/Q183902/
+permalink: /kb/183/Q183902/
 ---
 
 ## Q183902: Dead Gateway Detection Is Not Triggered During Logon

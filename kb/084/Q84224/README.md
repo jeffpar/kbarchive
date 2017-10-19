@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84224: Public Information About TrueType Fonts for Developers"
-permalink: kb/084/Q84224/
+permalink: /kb/084/Q84224/
 ---
 
 ## Q84224: Public Information About TrueType Fonts for Developers

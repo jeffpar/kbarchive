@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262773: XADM: Permissions Tab Should Not Display Inherited Permissions"
-permalink: kb/262/Q262773/
+permalink: /kb/262/Q262773/
 ---
 
 ## Q262773: XADM: Permissions Tab Should Not Display Inherited Permissions

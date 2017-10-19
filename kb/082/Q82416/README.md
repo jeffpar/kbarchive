@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82416: Characters Stretched on UPC/EAN Cartridge"
-permalink: kb/082/Q82416/
+permalink: /kb/082/Q82416/
 ---
 
 ## Q82416: Characters Stretched on UPC/EAN Cartridge

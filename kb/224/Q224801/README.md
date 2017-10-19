@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224801: Deciphering IISSYNC Status Codes"
-permalink: kb/224/Q224801/
+permalink: /kb/224/Q224801/
 ---
 
 ## Q224801: Deciphering IISSYNC Status Codes

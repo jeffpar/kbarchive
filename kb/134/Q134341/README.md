@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134341: Err Msg: An Illegal Date Format Has Been Supplied Using NET USER"
-permalink: kb/134/Q134341/
+permalink: /kb/134/Q134341/
 ---
 
 ## Q134341: Err Msg: An Illegal Date Format Has Been Supplied Using NET USER

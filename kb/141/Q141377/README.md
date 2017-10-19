@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141377: Differences Between Regedit.exe and Regedt32.exe"
-permalink: kb/141/Q141377/
+permalink: /kb/141/Q141377/
 ---
 
 ## Q141377: Differences Between Regedit.exe and Regedt32.exe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258468: XCLN: Unable to Import .pst File into Outlook Profile"
-permalink: kb/258/Q258468/
+permalink: /kb/258/Q258468/
 ---
 
 ## Q258468: XCLN: Unable to Import .pst File into Outlook Profile

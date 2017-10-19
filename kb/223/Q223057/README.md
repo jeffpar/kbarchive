@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223057: XCON: PROFS Connector Fails to Remove .att Files from Objects"
-permalink: kb/223/Q223057/
+permalink: /kb/223/Q223057/
 ---
 
 ## Q223057: XCON: PROFS Connector Fails to Remove .att Files from Objects

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142300: Creative Labs Sound Blaster Plug and Play Does Not Work"
-permalink: kb/142/Q142300/
+permalink: /kb/142/Q142300/
 ---
 
 ## Q142300: Creative Labs Sound Blaster Plug and Play Does Not Work

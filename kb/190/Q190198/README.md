@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190198: BUG: VB Fails When Editing Modules That Are Interdependent"
-permalink: kb/190/Q190198/
+permalink: /kb/190/Q190198/
 ---
 
 ## Q190198: BUG: VB Fails When Editing Modules That Are Interdependent

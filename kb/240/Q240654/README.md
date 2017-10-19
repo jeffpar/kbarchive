@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240654: HOW TO: Configure the IISADMPWD Pages for Different Ports"
-permalink: kb/240/Q240654/
+permalink: /kb/240/Q240654/
 ---
 
 ## Q240654: HOW TO: Configure the IISADMPWD Pages for Different Ports

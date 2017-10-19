@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100541: Transferring a LAN Manager Server to a High-end Machine"
-permalink: kb/100/Q100541/
+permalink: /kb/100/Q100541/
 ---
 
 ## Q100541: Transferring a LAN Manager Server to a High-end Machine

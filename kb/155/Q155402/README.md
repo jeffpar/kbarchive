@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155402: PRB: OLE Errors with the CREATEOBJECT() Function"
-permalink: kb/155/Q155402/
+permalink: /kb/155/Q155402/
 ---
 
 ## Q155402: PRB: OLE Errors with the CREATEOBJECT() Function

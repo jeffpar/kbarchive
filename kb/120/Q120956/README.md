@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120956: PPT: Presentation Using Template Ignores Default Setting"
-permalink: kb/120/Q120956/
+permalink: /kb/120/Q120956/
 ---
 
 ## Q120956: PPT: Presentation Using Template Ignores Default Setting

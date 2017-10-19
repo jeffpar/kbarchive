@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191704: PRB: Unable to Load File to Register It During Setup"
-permalink: kb/191/Q191704/
+permalink: /kb/191/Q191704/
 ---
 
 ## Q191704: PRB: Unable to Load File to Register It During Setup

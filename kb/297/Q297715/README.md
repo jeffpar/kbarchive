@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297715: DirectPC Inquiries"
-permalink: kb/297/Q297715/
+permalink: /kb/297/Q297715/
 ---
 
 ## Q297715: DirectPC Inquiries

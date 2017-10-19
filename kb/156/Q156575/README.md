@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156575: PRB: Word Wrap is Disabled when Syntax Coloring Is Enabled"
-permalink: kb/156/Q156575/
+permalink: /kb/156/Q156575/
 ---
 
 ## Q156575: PRB: Word Wrap is Disabled when Syntax Coloring Is Enabled

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145742: File Structure and Contents of .VCX and .SCX Files"
-permalink: kb/145/Q145742/
+permalink: /kb/145/Q145742/
 ---
 
 ## Q145742: File Structure and Contents of .VCX and .SCX Files

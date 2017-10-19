@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321165: XADM: 0xc00206fc Error When Viewing Permissions in Admin Program"
-permalink: kb/321/Q321165/
+permalink: /kb/321/Q321165/
 ---
 
 ## Q321165: XADM: 0xc00206fc Error When Viewing Permissions in Admin Program

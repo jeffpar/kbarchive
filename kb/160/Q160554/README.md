@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160554: Updated DAO Redistributable Components"
-permalink: kb/160/Q160554/
+permalink: /kb/160/Q160554/
 ---
 
 ## Q160554: Updated DAO Redistributable Components

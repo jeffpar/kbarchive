@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156344: Plug and Play Devices Not Detected or Installed"
-permalink: kb/156/Q156344/
+permalink: /kb/156/Q156344/
 ---
 
 ## Q156344: Plug and Play Devices Not Detected or Installed

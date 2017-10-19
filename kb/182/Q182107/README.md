@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182107: XADM: Store Shuts Down When Replicating Public Folders"
-permalink: kb/182/Q182107/
+permalink: /kb/182/Q182107/
 ---
 
 ## Q182107: XADM: Store Shuts Down When Replicating Public Folders

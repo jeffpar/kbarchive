@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191389: XCLN: How to Customize or Disable the Offer and Welcome Messages"
-permalink: kb/191/Q191389/
+permalink: /kb/191/Q191389/
 ---
 
 ## Q191389: XCLN: How to Customize or Disable the Offer and Welcome Messages

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132609: &quot;Error 58&quot; with Server-Based Windows 95 Setup"
-permalink: kb/132/Q132609/
+permalink: /kb/132/Q132609/
 ---
 
 ## Q132609: &quot;Error 58&quot; with Server-Based Windows 95 Setup

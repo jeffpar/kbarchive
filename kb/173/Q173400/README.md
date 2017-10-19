@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173400: Msndc.exe Caused an Invalid Page Fault in Module..."
-permalink: kb/173/Q173400/
+permalink: /kb/173/Q173400/
 ---
 
 ## Q173400: Msndc.exe Caused an Invalid Page Fault in Module...

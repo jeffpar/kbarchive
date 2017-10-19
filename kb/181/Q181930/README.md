@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181930: XCLN: Form Required to View This Message Cannot Be Displayed"
-permalink: kb/181/Q181930/
+permalink: /kb/181/Q181930/
 ---
 
 ## Q181930: XCLN: Form Required to View This Message Cannot Be Displayed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132946: How to Install Windows 3.1 Drivers in Windows 95"
-permalink: kb/132/Q132946/
+permalink: /kb/132/Q132946/
 ---
 
 ## Q132946: How to Install Windows 3.1 Drivers in Windows 95

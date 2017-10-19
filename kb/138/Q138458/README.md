@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138458: US &amp; Canadian FoxPro User Groups &amp; Authorized MS Trainers"
-permalink: kb/138/Q138458/
+permalink: /kb/138/Q138458/
 ---
 
 ## Q138458: US &amp; Canadian FoxPro User Groups &amp; Authorized MS Trainers

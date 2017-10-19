@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108651: Flight Simulator: &quot;Disk Error&quot; or &quot;Fatal Error Has Occurred&quot;"
-permalink: kb/108/Q108651/
+permalink: /kb/108/Q108651/
 ---
 
 ## Q108651: Flight Simulator: &quot;Disk Error&quot; or &quot;Fatal Error Has Occurred&quot;

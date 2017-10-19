@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234916: SMS: Internal Err. in Admin. Console When Refreshing Pkg. Status"
-permalink: kb/234/Q234916/
+permalink: /kb/234/Q234916/
 ---
 
 ## Q234916: SMS: Internal Err. in Admin. Console When Refreshing Pkg. Status

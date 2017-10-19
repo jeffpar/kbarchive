@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171356: Octopus 3.0 Beta May Cause WinNT to Boot In a Continuous Loop"
-permalink: kb/171/Q171356/
+permalink: /kb/171/Q171356/
 ---
 
 ## Q171356: Octopus 3.0 Beta May Cause WinNT to Boot In a Continuous Loop

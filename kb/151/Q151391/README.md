@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151391: New Password May Not Take Effect Immediately"
-permalink: kb/151/Q151391/
+permalink: /kb/151/Q151391/
 ---
 
 ## Q151391: New Password May Not Take Effect Immediately

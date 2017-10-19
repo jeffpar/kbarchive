@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142825: BUG: Can't Change Dir or Run EXE Files on FPNW-shared CD-ROM"
-permalink: kb/142/Q142825/
+permalink: /kb/142/Q142825/
 ---
 
 ## Q142825: BUG: Can't Change Dir or Run EXE Files on FPNW-shared CD-ROM

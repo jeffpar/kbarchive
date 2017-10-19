@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83129: WordPerfect Office SHELL.EXE Cannot Be Loaded High"
-permalink: kb/083/Q83129/
+permalink: /kb/083/Q83129/
 ---
 
 ## Q83129: WordPerfect Office SHELL.EXE Cannot Be Loaded High

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166620: XGEN: Credentials Caching for Internet Protocols"
-permalink: kb/166/Q166620/
+permalink: /kb/166/Q166620/
 ---
 
 ## Q166620: XGEN: Credentials Caching for Internet Protocols

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72353: Problem Printing with Windows on IBM ProPrinter X24e/XL24e"
-permalink: kb/072/Q72353/
+permalink: /kb/072/Q72353/
 ---
 
 ## Q72353: Problem Printing with Windows on IBM ProPrinter X24e/XL24e

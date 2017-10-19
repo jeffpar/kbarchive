@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170257: FIX: CRecordset::AddNew Inserts 32484 Into int Fields (RFX_INT)"
-permalink: kb/170/Q170257/
+permalink: /kb/170/Q170257/
 ---
 
 ## Q170257: FIX: CRecordset::AddNew Inserts 32484 Into int Fields (RFX_INT)

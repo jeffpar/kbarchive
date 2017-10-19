@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112715: Sound Boards and Compressed Audio Support"
-permalink: kb/112/Q112715/
+permalink: /kb/112/Q112715/
 ---
 
 ## Q112715: Sound Boards and Compressed Audio Support

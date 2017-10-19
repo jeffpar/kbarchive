@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260732: StarLancer: Textures in the Cockpit Flash or Flicker"
-permalink: kb/260/Q260732/
+permalink: /kb/260/Q260732/
 ---
 
 ## Q260732: StarLancer: Textures in the Cockpit Flash or Flicker

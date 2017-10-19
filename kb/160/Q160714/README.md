@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160714: HOWTO: Do BIND Checking in an SLI_OPEN()."
-permalink: kb/160/Q160714/
+permalink: /kb/160/Q160714/
 ---
 
 ## Q160714: HOWTO: Do BIND Checking in an SLI_OPEN().

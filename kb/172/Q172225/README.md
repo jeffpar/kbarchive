@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172225: SMS: Delete Special Still Available with View-Only Access"
-permalink: kb/172/Q172225/
+permalink: /kb/172/Q172225/
 ---
 
 ## Q172225: SMS: Delete Special Still Available with View-Only Access

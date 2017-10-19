@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282240: Critical update message repeats when trying to sign in to MSN Ex"
-permalink: kb/282/Q282240/
+permalink: /kb/282/Q282240/
 ---
 
 ## Q282240: Critical update message repeats when trying to sign in to MSN Ex

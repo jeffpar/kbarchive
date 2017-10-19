@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171554: INFO: Visual Basic 5.0 Fixes in Visual Studio 97 Service Pack 2"
-permalink: kb/171/Q171554/
+permalink: /kb/171/Q171554/
 ---
 
 ## Q171554: INFO: Visual Basic 5.0 Fixes in Visual Studio 97 Service Pack 2

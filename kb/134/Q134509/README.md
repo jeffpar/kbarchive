@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134509: Incorrect Colors in MS-DOS-Based Graphics Programs in a Window"
-permalink: kb/134/Q134509/
+permalink: /kb/134/Q134509/
 ---
 
 ## Q134509: Incorrect Colors in MS-DOS-Based Graphics Programs in a Window

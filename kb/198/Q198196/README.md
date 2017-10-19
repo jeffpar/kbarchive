@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198196: WD97: Excel Object Pasted As Hyperlink Is a Single Link"
-permalink: kb/198/Q198196/
+permalink: /kb/198/Q198196/
 ---
 
 ## Q198196: WD97: Excel Object Pasted As Hyperlink Is a Single Link

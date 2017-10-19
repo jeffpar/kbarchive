@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107670: Writer/Artist: Directory Name Disappears on Network Install"
-permalink: kb/107/Q107670/
+permalink: /kb/107/Q107670/
 ---
 
 ## Q107670: Writer/Artist: Directory Name Disappears on Network Install

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171032: XFOR: Configuring Internet Mail Service for POP3 Clients"
-permalink: kb/171/Q171032/
+permalink: /kb/171/Q171032/
 ---
 
 ## Q171032: XFOR: Configuring Internet Mail Service for POP3 Clients

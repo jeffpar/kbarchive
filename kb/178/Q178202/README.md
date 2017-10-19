@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178202: Fix for Loss of Data Records or Partial Records Written to Disk"
-permalink: kb/178/Q178202/
+permalink: /kb/178/Q178202/
 ---
 
 ## Q178202: Fix for Loss of Data Records or Partial Records Written to Disk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192799: Other Gateways Not Used if Default Gateway Is Not Available"
-permalink: kb/192/Q192799/
+permalink: /kb/192/Q192799/
 ---
 
 ## Q192799: Other Gateways Not Used if Default Gateway Is Not Available

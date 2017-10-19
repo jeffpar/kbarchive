@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167040: PPTP Performance Update for Windows NT 4.0 Release Notes"
-permalink: kb/167/Q167040/
+permalink: /kb/167/Q167040/
 ---
 
 ## Q167040: PPTP Performance Update for Windows NT 4.0 Release Notes

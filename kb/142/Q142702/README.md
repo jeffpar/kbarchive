@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142702: IIS Err Msg: Authentication Is Required For This Document"
-permalink: kb/142/Q142702/
+permalink: /kb/142/Q142702/
 ---
 
 ## Q142702: IIS Err Msg: Authentication Is Required For This Document

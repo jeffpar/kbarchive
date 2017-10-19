@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148735: Return of Arcade: Minimum System Requirements"
-permalink: kb/148/Q148735/
+permalink: /kb/148/Q148735/
 ---
 
 ## Q148735: Return of Arcade: Minimum System Requirements

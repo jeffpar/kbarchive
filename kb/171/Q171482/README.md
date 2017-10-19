@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171482: FIX: Crash When Enum Name Referenced Incorrectly"
-permalink: kb/171/Q171482/
+permalink: /kb/171/Q171482/
 ---
 
 ## Q171482: FIX: Crash When Enum Name Referenced Incorrectly

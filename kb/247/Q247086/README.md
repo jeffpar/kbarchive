@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247086: XWEB: Outlook Web Access Error Message: Failed to Get Inbox"
-permalink: kb/247/Q247086/
+permalink: /kb/247/Q247086/
 ---
 
 ## Q247086: XWEB: Outlook Web Access Error Message: Failed to Get Inbox

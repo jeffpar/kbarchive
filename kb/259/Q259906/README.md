@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259906: XADM: Event ID 5389 When KM Server Is Moved to a New Server"
-permalink: kb/259/Q259906/
+permalink: /kb/259/Q259906/
 ---
 
 ## Q259906: XADM: Event ID 5389 When KM Server Is Moved to a New Server

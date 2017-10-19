@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138456: HOWTO: Use Visual FoxPro Builders"
-permalink: kb/138/Q138456/
+permalink: /kb/138/Q138456/
 ---
 
 ## Q138456: HOWTO: Use Visual FoxPro Builders

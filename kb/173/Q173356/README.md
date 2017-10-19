@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173356: XCLN: Protecting an OST File"
-permalink: kb/173/Q173356/
+permalink: /kb/173/Q173356/
 ---
 
 ## Q173356: XCLN: Protecting an OST File

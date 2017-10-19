@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156967: SNA Server Performance Degrades Running LUA Application"
-permalink: kb/156/Q156967/
+permalink: /kb/156/Q156967/
 ---
 
 ## Q156967: SNA Server Performance Degrades Running LUA Application

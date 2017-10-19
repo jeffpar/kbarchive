@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297519: Server App Err Msg: &quot;The server failed to load application...&quot;"
-permalink: kb/297/Q297519/
+permalink: /kb/297/Q297519/
 ---
 
 ## Q297519: Server App Err Msg: &quot;The server failed to load application...&quot;

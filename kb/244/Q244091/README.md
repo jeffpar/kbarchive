@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244091: WLBS Does Not Respond to ARP Requests"
-permalink: kb/244/Q244091/
+permalink: /kb/244/Q244091/
 ---
 
 ## Q244091: WLBS Does Not Respond to ARP Requests

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163410: ODE97: Creating Run-Time Apps for MS Excel, Word, or PowerPoint"
-permalink: kb/163/Q163410/
+permalink: /kb/163/Q163410/
 ---
 
 ## Q163410: ODE97: Creating Run-Time Apps for MS Excel, Word, or PowerPoint

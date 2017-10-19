@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240017: FIX: Selecting Multiple ResourceView Controls Causes VC to Fail"
-permalink: kb/240/Q240017/
+permalink: /kb/240/Q240017/
 ---
 
 ## Q240017: FIX: Selecting Multiple ResourceView Controls Causes VC to Fail

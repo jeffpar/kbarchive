@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120755: WINS Manager Sorts Database and Static Mappings Incorrectly"
-permalink: kb/120/Q120755/
+permalink: /kb/120/Q120755/
 ---
 
 ## Q120755: WINS Manager Sorts Database and Static Mappings Incorrectly

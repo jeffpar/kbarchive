@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126633: Network Card IRQ Conflicts with Another Device"
-permalink: kb/126/Q126633/
+permalink: /kb/126/Q126633/
 ---
 
 ## Q126633: Network Card IRQ Conflicts with Another Device

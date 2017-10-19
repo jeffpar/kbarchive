@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82473: HyperKey Does Not Function Properly in an MS-DOS VM"
-permalink: kb/082/Q82473/
+permalink: /kb/082/Q82473/
 ---
 
 ## Q82473: HyperKey Does Not Function Properly in an MS-DOS VM

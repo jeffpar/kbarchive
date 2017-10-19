@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85756: ALR Computers Do Not Show Valid BIOS Dates"
-permalink: kb/085/Q85756/
+permalink: /kb/085/Q85756/
 ---
 
 ## Q85756: ALR Computers Do Not Show Valid BIOS Dates

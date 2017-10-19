@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249298: Rapid Development Comments and Corrections"
-permalink: kb/249/Q249298/
+permalink: /kb/249/Q249298/
 ---
 
 ## Q249298: Rapid Development Comments and Corrections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181263: XCON: Exchange Sends Message Without Valid O/R Address"
-permalink: kb/181/Q181263/
+permalink: /kb/181/Q181263/
 ---
 
 ## Q181263: XCON: Exchange Sends Message Without Valid O/R Address

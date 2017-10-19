@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196880: WD97: How to Change the Agenda Wizard Document Formatting"
-permalink: kb/196/Q196880/
+permalink: /kb/196/Q196880/
 ---
 
 ## Q196880: WD97: How to Change the Agenda Wizard Document Formatting

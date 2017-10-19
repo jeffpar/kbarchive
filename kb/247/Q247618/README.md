@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247618: XCON: No Mail Flow from Exchange to MSMail, Events 2556 and 2369"
-permalink: kb/247/Q247618/
+permalink: /kb/247/Q247618/
 ---
 
 ## Q247618: XCON: No Mail Flow from Exchange to MSMail, Events 2556 and 2369

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190212: BUG: Add-Ins Only Visible to the User Who Installs VB"
-permalink: kb/190/Q190212/
+permalink: /kb/190/Q190212/
 ---
 
 ## Q190212: BUG: Add-Ins Only Visible to the User Who Installs VB

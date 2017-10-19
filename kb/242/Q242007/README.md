@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242007: BUG: RasDial() Function Fails to Dial Multilink Entries"
-permalink: kb/242/Q242007/
+permalink: /kb/242/Q242007/
 ---
 
 ## Q242007: BUG: RasDial() Function Fails to Dial Multilink Entries

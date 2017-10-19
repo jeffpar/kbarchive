@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134288: Cannot Connect to Internet and MSN with Static DNS"
-permalink: kb/134/Q134288/
+permalink: /kb/134/Q134288/
 ---
 
 ## Q134288: Cannot Connect to Internet and MSN with Static DNS

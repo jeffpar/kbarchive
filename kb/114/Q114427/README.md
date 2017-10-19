@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114427: How AWFAX Initializes a Class 1 or Class 2 Fax Modem"
-permalink: kb/114/Q114427/
+permalink: /kb/114/Q114427/
 ---
 
 ## Q114427: How AWFAX Initializes a Class 1 or Class 2 Fax Modem

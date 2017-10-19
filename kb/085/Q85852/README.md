@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85852: Resizing Calendar May Not Repaint Up/Down Scroll Bar"
-permalink: kb/085/Q85852/
+permalink: /kb/085/Q85852/
 ---
 
 ## Q85852: Resizing Calendar May Not Repaint Up/Down Scroll Bar

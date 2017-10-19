@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164086: Err Msg: http/1.0 500 server error (-2146893048) with Proxy"
-permalink: kb/164/Q164086/
+permalink: /kb/164/Q164086/
 ---
 
 ## Q164086: Err Msg: http/1.0 500 server error (-2146893048) with Proxy

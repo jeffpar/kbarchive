@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82068: PC Win: Err Msg: A Message Could Not Be Opened"
-permalink: kb/082/Q82068/
+permalink: /kb/082/Q82068/
 ---
 
 ## Q82068: PC Win: Err Msg: A Message Could Not Be Opened

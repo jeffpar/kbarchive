@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73627: Running MS-DOS 5.0 EMM386.EXE with VCPI Applications"
-permalink: kb/073/Q73627/
+permalink: /kb/073/Q73627/
 ---
 
 ## Q73627: Running MS-DOS 5.0 EMM386.EXE with VCPI Applications

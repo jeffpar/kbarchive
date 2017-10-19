@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82270: ATTRIB Command May Inadvertently Remove File Attributes"
-permalink: kb/082/Q82270/
+permalink: /kb/082/Q82270/
 ---
 
 ## Q82270: ATTRIB Command May Inadvertently Remove File Attributes

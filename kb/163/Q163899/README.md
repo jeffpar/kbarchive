@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163899: Client/Server Applications May Fail Using Windows NT3.51 SP5"
-permalink: kb/163/Q163899/
+permalink: /kb/163/Q163899/
 ---
 
 ## Q163899: Client/Server Applications May Fail Using Windows NT3.51 SP5

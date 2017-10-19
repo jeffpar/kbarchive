@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237750: SMS: Windows 2000 Beta 3 Upgrade Scripts Are Incorrect"
-permalink: kb/237/Q237750/
+permalink: /kb/237/Q237750/
 ---
 
 ## Q237750: SMS: Windows 2000 Beta 3 Upgrade Scripts Are Incorrect

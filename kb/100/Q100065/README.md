@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100065: Setting the Unprintable Region for Windows Printer Drivers"
-permalink: kb/100/Q100065/
+permalink: /kb/100/Q100065/
 ---
 
 ## Q100065: Setting the Unprintable Region for Windows Printer Drivers

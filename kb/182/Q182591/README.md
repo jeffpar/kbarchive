@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182591: CardBus Cards Not Enumerated on Some PC Card Controllers"
-permalink: kb/182/Q182591/
+permalink: /kb/182/Q182591/
 ---
 
 ## Q182591: CardBus Cards Not Enumerated on Some PC Card Controllers

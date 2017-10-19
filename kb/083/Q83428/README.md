@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83428: Doc Err: Location of EXPAND.EXE for Windows 3.1"
-permalink: kb/083/Q83428/
+permalink: /kb/083/Q83428/
 ---
 
 ## Q83428: Doc Err: Location of EXPAND.EXE for Windows 3.1

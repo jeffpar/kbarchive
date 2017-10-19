@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184358: WD97: Text Becomes Wider Using Generic/Text Only Printer"
-permalink: kb/184/Q184358/
+permalink: /kb/184/Q184358/
 ---
 
 ## Q184358: WD97: Text Becomes Wider Using Generic/Text Only Printer

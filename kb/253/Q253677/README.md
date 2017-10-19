@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253677: BUG: VBCE Application Terminates When Replacing ImageList Image"
-permalink: kb/253/Q253677/
+permalink: /kb/253/Q253677/
 ---
 
 ## Q253677: BUG: VBCE Application Terminates When Replacing ImageList Image

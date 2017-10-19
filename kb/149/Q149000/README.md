@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149000: PRB: REQUERY Function Reopens a View's Table Exclusively"
-permalink: kb/149/Q149000/
+permalink: /kb/149/Q149000/
 ---
 
 ## Q149000: PRB: REQUERY Function Reopens a View's Table Exclusively

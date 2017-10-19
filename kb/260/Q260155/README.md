@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260155: Visual FoxPro 6.0 Sample: How To Use Animation Control"
-permalink: kb/260/Q260155/
+permalink: /kb/260/Q260155/
 ---
 
 ## Q260155: Visual FoxPro 6.0 Sample: How To Use Animation Control

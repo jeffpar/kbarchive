@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179070: Year 2000 Reverts to Year 1900 with Hal.dll File"
-permalink: kb/179/Q179070/
+permalink: /kb/179/Q179070/
 ---
 
 ## Q179070: Year 2000 Reverts to Year 1900 with Hal.dll File

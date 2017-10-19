@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222545: X.25 Connection Appears Active After Cable Disconnected"
-permalink: kb/222/Q222545/
+permalink: /kb/222/Q222545/
 ---
 
 ## Q222545: X.25 Connection Appears Active After Cable Disconnected

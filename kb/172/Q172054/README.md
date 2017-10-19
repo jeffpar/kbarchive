@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172054: 3270 Script File Won't Work With Japanese Host Code Page"
-permalink: kb/172/Q172054/
+permalink: /kb/172/Q172054/
 ---
 
 ## Q172054: 3270 Script File Won't Work With Japanese Host Code Page

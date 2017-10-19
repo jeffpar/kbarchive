@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286366: SMS: RC White Screen When Trying to Control Client w/ Intel 815"
-permalink: kb/286/Q286366/
+permalink: /kb/286/Q286366/
 ---
 
 ## Q286366: SMS: RC White Screen When Trying to Control Client w/ Intel 815

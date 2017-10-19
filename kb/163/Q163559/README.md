@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163559: SLI Verbs Return w/ Cancelled Error Before SLI_CLOSE Completes"
-permalink: kb/163/Q163559/
+permalink: /kb/163/Q163559/
 ---
 
 ## Q163559: SLI Verbs Return w/ Cancelled Error Before SLI_CLOSE Completes

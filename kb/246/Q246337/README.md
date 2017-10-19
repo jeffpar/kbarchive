@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246337: XADM: Exchange Directory Can't Start After Application of SP"
-permalink: kb/246/Q246337/
+permalink: /kb/246/Q246337/
 ---
 
 ## Q246337: XADM: Exchange Directory Can't Start After Application of SP

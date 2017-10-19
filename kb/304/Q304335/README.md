@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304335: FP: Hex Values for the 216 Color Safe Palette Used in HTML Pages"
-permalink: kb/304/Q304335/
+permalink: /kb/304/Q304335/
 ---
 
 ## Q304335: FP: Hex Values for the 216 Color Safe Palette Used in HTML Pages

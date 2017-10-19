@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157117: RegSaveKey Returns Error 112"
-permalink: kb/157/Q157117/
+permalink: /kb/157/Q157117/
 ---
 
 ## Q157117: RegSaveKey Returns Error 112

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184624: XFOR: cc:Mail Connector Does Not Return Attachments On NDRs"
-permalink: kb/184/Q184624/
+permalink: /kb/184/Q184624/
 ---
 
 ## Q184624: XFOR: cc:Mail Connector Does Not Return Attachments On NDRs

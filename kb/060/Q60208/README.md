@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60208: PRINT.COM Does Not Print Binary Files"
-permalink: kb/060/Q60208/
+permalink: /kb/060/Q60208/
 ---
 
 ## Q60208: PRINT.COM Does Not Print Binary Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141582: CONN: Not Select MACGATE Directory with Gateway, Configuration"
-permalink: kb/141/Q141582/
+permalink: /kb/141/Q141582/
 ---
 
 ## Q141582: CONN: Not Select MACGATE Directory with Gateway, Configuration

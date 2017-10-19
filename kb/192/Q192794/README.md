@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192794: How to Apply System Policies to Terminal Server"
-permalink: kb/192/Q192794/
+permalink: /kb/192/Q192794/
 ---
 
 ## Q192794: How to Apply System Policies to Terminal Server

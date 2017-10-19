@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194889: Sgcinst.exe is Available for Download"
-permalink: kb/194/Q194889/
+permalink: /kb/194/Q194889/
 ---
 
 ## Q194889: Sgcinst.exe is Available for Download

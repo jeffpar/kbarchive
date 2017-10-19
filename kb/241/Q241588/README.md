@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241588: Connect Command Unavailable in Terminal Services Sessions"
-permalink: kb/241/Q241588/
+permalink: /kb/241/Q241588/
 ---
 
 ## Q241588: Connect Command Unavailable in Terminal Services Sessions

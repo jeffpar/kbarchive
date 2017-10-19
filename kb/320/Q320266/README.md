@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320266: HOWTO: Convert a Visual FoxPro 7.0 Menu to a Visual FoxPro 6.0 F"
-permalink: kb/320/Q320266/
+permalink: /kb/320/Q320266/
 ---
 
 ## Q320266: HOWTO: Convert a Visual FoxPro 7.0 Menu to a Visual FoxPro 6.0 F

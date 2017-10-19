@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184820: FIX: Apply Button on an ATL Control's Property Page Is Disabled"
-permalink: kb/184/Q184820/
+permalink: /kb/184/Q184820/
 ---
 
 ## Q184820: FIX: Apply Button on an ATL Control's Property Page Is Disabled

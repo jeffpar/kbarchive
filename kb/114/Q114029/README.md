@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114029: PC WSPlus: Set Access Privileges Option Unavailable/Disabled"
-permalink: kb/114/Q114029/
+permalink: /kb/114/Q114029/
 ---
 
 ## Q114029: PC WSPlus: Set Access Privileges Option Unavailable/Disabled

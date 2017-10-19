@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128245: CPIC/APPC Program May Hang Opening a Dependent APPC Session"
-permalink: kb/128/Q128245/
+permalink: /kb/128/Q128245/
 ---
 
 ## Q128245: CPIC/APPC Program May Hang Opening a Dependent APPC Session

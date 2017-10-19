@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108649: Flight Simulator: Yoke for Flight Simulator"
-permalink: kb/108/Q108649/
+permalink: /kb/108/Q108649/
 ---
 
 ## Q108649: Flight Simulator: Yoke for Flight Simulator

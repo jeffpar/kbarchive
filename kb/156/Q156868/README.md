@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156868: FIX: Click Event Triggered If &quot;S&quot; Is Used as Hot Key"
-permalink: kb/156/Q156868/
+permalink: /kb/156/Q156868/
 ---
 
 ## Q156868: FIX: Click Event Triggered If &quot;S&quot; Is Used as Hot Key

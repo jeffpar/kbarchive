@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143275: BUG: GP Fault with DBCombo and Sheridan 3D Control"
-permalink: kb/143/Q143275/
+permalink: /kb/143/Q143275/
 ---
 
 ## Q143275: BUG: GP Fault with DBCombo and Sheridan 3D Control

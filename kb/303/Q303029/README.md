@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303029: Combat Flight Simulator 2: Cannot Control Rudder or Throttle"
-permalink: kb/303/Q303029/
+permalink: /kb/303/Q303029/
 ---
 
 ## Q303029: Combat Flight Simulator 2: Cannot Control Rudder or Throttle

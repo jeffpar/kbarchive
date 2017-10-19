@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131687: PPT: CompuServe GIF89a Doesn't Import Transparent Background"
-permalink: kb/131/Q131687/
+permalink: /kb/131/Q131687/
 ---
 
 ## Q131687: PPT: CompuServe GIF89a Doesn't Import Transparent Background

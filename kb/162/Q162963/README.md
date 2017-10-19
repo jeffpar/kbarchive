@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162963: ADT/ODE: Custom Run-Time Setup Does Not Install Msaexp30.dll"
-permalink: kb/162/Q162963/
+permalink: /kb/162/Q162963/
 ---
 
 ## Q162963: ADT/ODE: Custom Run-Time Setup Does Not Install Msaexp30.dll

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93582: DoubleSpace Err Msg: &quot;There Are No More Drive Letters&quot;"
-permalink: kb/093/Q93582/
+permalink: /kb/093/Q93582/
 ---
 
 ## Q93582: DoubleSpace Err Msg: &quot;There Are No More Drive Letters&quot;

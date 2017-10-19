@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281406: Multiplayer Pinochle Game Becomes Unsynchronized"
-permalink: kb/281/Q281406/
+permalink: /kb/281/Q281406/
 ---
 
 ## Q281406: Multiplayer Pinochle Game Becomes Unsynchronized

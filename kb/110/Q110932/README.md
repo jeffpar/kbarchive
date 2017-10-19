@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110932: Mail Fails with Memory or Network Errors"
-permalink: kb/110/Q110932/
+permalink: /kb/110/Q110932/
 ---
 
 ## Q110932: Mail Fails with Memory or Network Errors

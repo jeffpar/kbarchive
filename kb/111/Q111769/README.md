@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111769: BUG: NMAKE May Incorrectly Think Targets are up to Date"
-permalink: kb/111/Q111769/
+permalink: /kb/111/Q111769/
 ---
 
 ## Q111769: BUG: NMAKE May Incorrectly Think Targets are up to Date

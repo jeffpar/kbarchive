@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172174: MSN Sign In Screen Continues to Appear"
-permalink: kb/172/Q172174/
+permalink: /kb/172/Q172174/
 ---
 
 ## Q172174: MSN Sign In Screen Continues to Appear

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108793: Video for Windows 1.1 Drivers Disk (3.5 Inch, 1.44 MB)"
-permalink: kb/108/Q108793/
+permalink: /kb/108/Q108793/
 ---
 
 ## Q108793: Video for Windows 1.1 Drivers Disk (3.5 Inch, 1.44 MB)

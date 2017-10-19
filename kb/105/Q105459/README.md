@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105459: Windows NT Advanced Server CD Setup Disk Contents (511)"
-permalink: kb/105/Q105459/
+permalink: /kb/105/Q105459/
 ---
 
 ## Q105459: Windows NT Advanced Server CD Setup Disk Contents (511)

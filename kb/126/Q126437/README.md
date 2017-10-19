@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126437: Using Communications Applications When RAS Server is Running"
-permalink: kb/126/Q126437/
+permalink: /kb/126/Q126437/
 ---
 
 ## Q126437: Using Communications Applications When RAS Server is Running

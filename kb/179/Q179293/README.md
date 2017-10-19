@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179293: INFO: MFC Versions That Ship with Microsoft Visual C++"
-permalink: kb/179/Q179293/
+permalink: /kb/179/Q179293/
 ---
 
 ## Q179293: INFO: MFC Versions That Ship with Microsoft Visual C++

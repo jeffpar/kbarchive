@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164544: SMS: Processor Name Is Not Consistent for All Platforms"
-permalink: kb/164/Q164544/
+permalink: /kb/164/Q164544/
 ---
 
 ## Q164544: SMS: Processor Name Is Not Consistent for All Platforms

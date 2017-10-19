@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240996: Troubleshooting Distinctive Ring"
-permalink: kb/240/Q240996/
+permalink: /kb/240/Q240996/
 ---
 
 ## Q240996: Troubleshooting Distinctive Ring

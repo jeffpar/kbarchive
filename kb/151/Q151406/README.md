@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151406: Service Pack 4 Replaces Western Digital ThinkPad Driver"
-permalink: kb/151/Q151406/
+permalink: /kb/151/Q151406/
 ---
 
 ## Q151406: Service Pack 4 Replaces Western Digital ThinkPad Driver

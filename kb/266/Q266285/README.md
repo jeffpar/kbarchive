@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266285: Cannot Use SQL Server with Certificate Server 1.0"
-permalink: kb/266/Q266285/
+permalink: /kb/266/Q266285/
 ---
 
 ## Q266285: Cannot Use SQL Server with Certificate Server 1.0

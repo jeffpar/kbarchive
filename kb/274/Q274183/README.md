@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274183: XADM: How to Rename a Public Folder"
-permalink: kb/274/Q274183/
+permalink: /kb/274/Q274183/
 ---
 
 ## Q274183: XADM: How to Rename a Public Folder

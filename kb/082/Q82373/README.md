@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82373: Permanent Swap Files and the Disk Partition Table"
-permalink: kb/082/Q82373/
+permalink: /kb/082/Q82373/
 ---
 
 ## Q82373: Permanent Swap Files and the Disk Partition Table

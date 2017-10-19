@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96657: 3COM: UPLOAD.EXE -D Parameter Does Not Require Backslash (&#92;)"
-permalink: kb/096/Q96657/
+permalink: /kb/096/Q96657/
 ---
 
 ## Q96657: 3COM: UPLOAD.EXE -D Parameter Does Not Require Backslash (&#92;)

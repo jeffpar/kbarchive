@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139298: HOWTO: Include Specific File Revisions in a Project Label"
-permalink: kb/139/Q139298/
+permalink: /kb/139/Q139298/
 ---
 
 ## Q139298: HOWTO: Include Specific File Revisions in a Project Label

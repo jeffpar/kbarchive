@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184954: Computer Hangs While Booting with HP 6L Printer out of Paper"
-permalink: kb/184/Q184954/
+permalink: /kb/184/Q184954/
 ---
 
 ## Q184954: Computer Hangs While Booting with HP 6L Printer out of Paper

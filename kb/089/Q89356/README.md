@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89356: Functionality of NET STOP /Y Command in WFWG"
-permalink: kb/089/Q89356/
+permalink: /kb/089/Q89356/
 ---
 
 ## Q89356: Functionality of NET STOP /Y Command in WFWG

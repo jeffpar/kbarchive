@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149414: After RPLCMD Is Used, &quot;Required&quot; Is Misspelled"
-permalink: kb/149/Q149414/
+permalink: /kb/149/Q149414/
 ---
 
 ## Q149414: After RPLCMD Is Used, &quot;Required&quot; Is Misspelled

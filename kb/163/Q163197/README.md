@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163197: Some Western Digital Chipsets Do Not Support 65,000 Colors"
-permalink: kb/163/Q163197/
+permalink: /kb/163/Q163197/
 ---
 
 ## Q163197: Some Western Digital Chipsets Do Not Support 65,000 Colors

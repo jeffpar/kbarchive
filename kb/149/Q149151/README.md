@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149151: BUG: Internal READ of Character&#42;1 String Fails"
-permalink: kb/149/Q149151/
+permalink: /kb/149/Q149151/
 ---
 
 ## Q149151: BUG: Internal READ of Character&#42;1 String Fails

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101197: Using the Hercules Graphics Station Card in Standard Mode"
-permalink: kb/101/Q101197/
+permalink: /kb/101/Q101197/
 ---
 
 ## Q101197: Using the Hercules Graphics Station Card in Standard Mode

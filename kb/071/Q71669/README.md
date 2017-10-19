@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71669: HOWTO: Preventing an MDI Child Window from Changing Size"
-permalink: kb/071/Q71669/
+permalink: /kb/071/Q71669/
 ---
 
 ## Q71669: HOWTO: Preventing an MDI Child Window from Changing Size

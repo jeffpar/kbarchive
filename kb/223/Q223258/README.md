@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223258: How to Install the NTOP on MSCS 1.0 with SQL Server 6.5 or 7.0"
-permalink: kb/223/Q223258/
+permalink: /kb/223/Q223258/
 ---
 
 ## Q223258: How to Install the NTOP on MSCS 1.0 with SQL Server 6.5 or 7.0

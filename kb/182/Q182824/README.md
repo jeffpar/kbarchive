@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182824: Server-side Script Debugging Causes TypeLibrary Call To Fail"
-permalink: kb/182/Q182824/
+permalink: /kb/182/Q182824/
 ---
 
 ## Q182824: Server-side Script Debugging Causes TypeLibrary Call To Fail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160152: PPT: PowerPoint Does Not Collate Using NT 3.51 Postscript Driver"
-permalink: kb/160/Q160152/
+permalink: /kb/160/Q160152/
 ---
 
 ## Q160152: PPT: PowerPoint Does Not Collate Using NT 3.51 Postscript Driver

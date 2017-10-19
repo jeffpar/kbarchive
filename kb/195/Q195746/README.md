@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195746: Print Server Sends a Continuous Stream of Formfeeds to Printer"
-permalink: kb/195/Q195746/
+permalink: /kb/195/Q195746/
 ---
 
 ## Q195746: Print Server Sends a Continuous Stream of Formfeeds to Printer

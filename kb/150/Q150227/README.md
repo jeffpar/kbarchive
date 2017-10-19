@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150227: BUG: Control Loses Focus When Another Window is Activated"
-permalink: kb/150/Q150227/
+permalink: /kb/150/Q150227/
 ---
 
 ## Q150227: BUG: Control Loses Focus When Another Window is Activated

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235464: XADM: Server Indicates Certificate Was Imported After You Cancel"
-permalink: kb/235/Q235464/
+permalink: /kb/235/Q235464/
 ---
 
 ## Q235464: XADM: Server Indicates Certificate Was Imported After You Cancel

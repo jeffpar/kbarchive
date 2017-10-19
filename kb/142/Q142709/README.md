@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142709: Big Files Copy Slowly from Mac to SFM Over AppleTalk Router"
-permalink: kb/142/Q142709/
+permalink: /kb/142/Q142709/
 ---
 
 ## Q142709: Big Files Copy Slowly from Mac to SFM Over AppleTalk Router

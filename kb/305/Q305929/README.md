@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305929: Err Msg: This Certificate Has an Invalid Digital Signature"
-permalink: kb/305/Q305929/
+permalink: /kb/305/Q305929/
 ---
 
 ## Q305929: Err Msg: This Certificate Has an Invalid Digital Signature

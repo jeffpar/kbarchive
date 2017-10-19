@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234212: HOWTO: Insert Line into Text File Using Low-level File Functions"
-permalink: kb/234/Q234212/
+permalink: /kb/234/Q234212/
 ---
 
 ## Q234212: HOWTO: Insert Line into Text File Using Low-level File Functions

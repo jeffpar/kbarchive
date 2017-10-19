@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128250: Correct Wallpaper Not Displayed on Remote Workstation"
-permalink: kb/128/Q128250/
+permalink: /kb/128/Q128250/
 ---
 
 ## Q128250: Correct Wallpaper Not Displayed on Remote Workstation

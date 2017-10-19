@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123338: SFM Performance Degrades Due to Memory Problem"
-permalink: kb/123/Q123338/
+permalink: /kb/123/Q123338/
 ---
 
 ## Q123338: SFM Performance Degrades Due to Memory Problem

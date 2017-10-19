@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32777: Language Names Used as PUBLIC Symbols Are Not Allowed"
-permalink: kb/032/Q32777/
+permalink: /kb/032/Q32777/
 ---
 
 ## Q32777: Language Names Used as PUBLIC Symbols Are Not Allowed

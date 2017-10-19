@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136620: Benefit of Storing Printer Info in a Report Table (.FRX File)"
-permalink: kb/136/Q136620/
+permalink: /kb/136/Q136620/
 ---
 
 ## Q136620: Benefit of Storing Printer Info in a Report Table (.FRX File)

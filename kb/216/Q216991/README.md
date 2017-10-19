@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216991: Err Msg: The Service Configuration DLL 'W3pcfg.dll' Failed..."
-permalink: kb/216/Q216991/
+permalink: /kb/216/Q216991/
 ---
 
 ## Q216991: Err Msg: The Service Configuration DLL 'W3pcfg.dll' Failed...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191311: BUG: Class Not Released After Being Deleted From Form"
-permalink: kb/191/Q191311/
+permalink: /kb/191/Q191311/
 ---
 
 ## Q191311: BUG: Class Not Released After Being Deleted From Form

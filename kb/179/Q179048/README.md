@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179048: XADM: Mailbox Cleanup Deletes Calendar, Contacts, and Notes"
-permalink: kb/179/Q179048/
+permalink: /kb/179/Q179048/
 ---
 
 ## Q179048: XADM: Mailbox Cleanup Deletes Calendar, Contacts, and Notes

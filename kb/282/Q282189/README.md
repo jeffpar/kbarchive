@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282189: ASP Error When Calling OOP Component with Delegation Security"
-permalink: kb/282/Q282189/
+permalink: /kb/282/Q282189/
 ---
 
 ## Q282189: ASP Error When Calling OOP Component with Delegation Security

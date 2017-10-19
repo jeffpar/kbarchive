@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161150: FP97: Microsoft Personal Web Server vs. FP Personal Web Server"
-permalink: kb/161/Q161150/
+permalink: /kb/161/Q161150/
 ---
 
 ## Q161150: FP97: Microsoft Personal Web Server vs. FP Personal Web Server

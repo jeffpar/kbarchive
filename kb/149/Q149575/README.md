@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149575: Initial SMS Client Setup Generates &quot;Error: 259&quot;"
-permalink: kb/149/Q149575/
+permalink: /kb/149/Q149575/
 ---
 
 ## Q149575: Initial SMS Client Setup Generates &quot;Error: 259&quot;

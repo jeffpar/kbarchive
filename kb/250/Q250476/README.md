@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250476: PRB: VBCE: Process Won't End When MsgBox is in Terminate Event"
-permalink: kb/250/Q250476/
+permalink: /kb/250/Q250476/
 ---
 
 ## Q250476: PRB: VBCE: Process Won't End When MsgBox is in Terminate Event

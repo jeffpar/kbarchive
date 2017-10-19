@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120201: RAS Err Msg: Error 717: Serial Overrun Errors Were Detected..."
-permalink: kb/120/Q120201/
+permalink: /kb/120/Q120201/
 ---
 
 ## Q120201: RAS Err Msg: Error 717: Serial Overrun Errors Were Detected...

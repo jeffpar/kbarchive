@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311733: BUG: DBCombo on Modal Form Fails to Respond to Mouse Events"
-permalink: kb/311/Q311733/
+permalink: /kb/311/Q311733/
 ---
 
 ## Q311733: BUG: DBCombo on Modal Form Fails to Respond to Mouse Events

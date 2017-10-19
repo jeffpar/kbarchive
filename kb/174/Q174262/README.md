@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174262: Frequently Visited Web Sites Appear Incorrectly"
-permalink: kb/174/Q174262/
+permalink: /kb/174/Q174262/
 ---
 
 ## Q174262: Frequently Visited Web Sites Appear Incorrectly

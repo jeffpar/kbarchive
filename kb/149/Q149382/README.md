@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149382: INFO: Setting Options You Can Modify in the Srcsafe.ini File"
-permalink: kb/149/Q149382/
+permalink: /kb/149/Q149382/
 ---
 
 ## Q149382: INFO: Setting Options You Can Modify in the Srcsafe.ini File

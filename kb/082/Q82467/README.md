@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82467: Windows: DEC Pathworks Use Command Hangs Machine"
-permalink: kb/082/Q82467/
+permalink: /kb/082/Q82467/
 ---
 
 ## Q82467: Windows: DEC Pathworks Use Command Hangs Machine

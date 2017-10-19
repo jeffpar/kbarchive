@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168527: HOWTO: Simulate a Detail Band Longer Than One Page"
-permalink: kb/168/Q168527/
+permalink: /kb/168/Q168527/
 ---
 
 ## Q168527: HOWTO: Simulate a Detail Band Longer Than One Page

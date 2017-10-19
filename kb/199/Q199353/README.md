@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199353: XFOR: Behavior of an Updated Invitation to Notes from Outlook"
-permalink: kb/199/Q199353/
+permalink: /kb/199/Q199353/
 ---
 
 ## Q199353: XFOR: Behavior of an Updated Invitation to Notes from Outlook

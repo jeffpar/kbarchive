@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193963: Conversion Errors Result when Return Value is Repositioned"
-permalink: kb/193/Q193963/
+permalink: /kb/193/Q193963/
 ---
 
 ## Q193963: Conversion Errors Result when Return Value is Repositioned

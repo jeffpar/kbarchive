@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148864: File Conflict Installing IrDA with OEM Service Release 1"
-permalink: kb/148/Q148864/
+permalink: /kb/148/Q148864/
 ---
 
 ## Q148864: File Conflict Installing IrDA with OEM Service Release 1

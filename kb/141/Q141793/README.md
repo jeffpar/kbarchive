@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141793: PRB: Disk Size Reported By Compaq Differs from Windows NT"
-permalink: kb/141/Q141793/
+permalink: /kb/141/Q141793/
 ---
 
 ## Q141793: PRB: Disk Size Reported By Compaq Differs from Windows NT

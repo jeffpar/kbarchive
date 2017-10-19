@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177971: WD97: Type Mismatch Error Running Converted WordBasic Macro"
-permalink: kb/177/Q177971/
+permalink: /kb/177/Q177971/
 ---
 
 ## Q177971: WD97: Type Mismatch Error Running Converted WordBasic Macro

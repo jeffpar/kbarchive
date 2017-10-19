@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176335: Flight Simulator 95: Sound Is Intermittent with Sound III Card"
-permalink: kb/176/Q176335/
+permalink: /kb/176/Q176335/
 ---
 
 ## Q176335: Flight Simulator 95: Sound Is Intermittent with Sound III Card

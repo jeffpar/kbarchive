@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83848: Error Upgrading Full Windows 3.0 with Setup /N"
-permalink: kb/083/Q83848/
+permalink: /kb/083/Q83848/
 ---
 
 ## Q83848: Error Upgrading Full Windows 3.0 with Setup /N

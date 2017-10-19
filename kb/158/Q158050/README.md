@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158050: Windows NT Does Not Load AHA-3940W SCSI Driver"
-permalink: kb/158/Q158050/
+permalink: /kb/158/Q158050/
 ---
 
 ## Q158050: Windows NT Does Not Load AHA-3940W SCSI Driver

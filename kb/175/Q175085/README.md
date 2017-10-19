@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175085: Programs That Use RPC Cannot Connect to the RPC Server"
-permalink: kb/175/Q175085/
+permalink: /kb/175/Q175085/
 ---
 
 ## Q175085: Programs That Use RPC Cannot Connect to the RPC Server

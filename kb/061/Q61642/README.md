@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61642: DOCERR: Programmer's Workbench Edit Switch Is Not Implemented"
-permalink: kb/061/Q61642/
+permalink: /kb/061/Q61642/
 ---
 
 ## Q61642: DOCERR: Programmer's Workbench Edit Switch Is Not Implemented

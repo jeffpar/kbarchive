@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171892: Err Msg: The File System Does Not Support Compression"
-permalink: kb/171/Q171892/
+permalink: /kb/171/Q171892/
 ---
 
 ## Q171892: Err Msg: The File System Does Not Support Compression

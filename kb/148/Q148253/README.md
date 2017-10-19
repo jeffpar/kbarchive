@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148253: Ancient Lands: Minimum System Requirements"
-permalink: kb/148/Q148253/
+permalink: /kb/148/Q148253/
 ---
 
 ## Q148253: Ancient Lands: Minimum System Requirements

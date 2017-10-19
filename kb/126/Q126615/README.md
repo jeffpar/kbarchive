@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126615: BUG: MSDN CD#4: MSJETINT.DLL Missed in ODBC16.INF"
-permalink: kb/126/Q126615/
+permalink: /kb/126/Q126615/
 ---
 
 ## Q126615: BUG: MSDN CD#4: MSJETINT.DLL Missed in ODBC16.INF

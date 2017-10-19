@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155850: PRB: &quot;Error Retrieving Record&quot; with SQL Statement in Open()"
-permalink: kb/155/Q155850/
+permalink: /kb/155/Q155850/
 ---
 
 ## Q155850: PRB: &quot;Error Retrieving Record&quot; with SQL Statement in Open()

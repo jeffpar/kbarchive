@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200854: HOWTO: Trapping Server's Menu Commands in Composite Menu Bar"
-permalink: kb/200/Q200854/
+permalink: /kb/200/Q200854/
 ---
 
 ## Q200854: HOWTO: Trapping Server's Menu Commands in Composite Menu Bar

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120011: Err Msg with WinLAN Card: The Device Does Not Exist on the..."
-permalink: kb/120/Q120011/
+permalink: /kb/120/Q120011/
 ---
 
 ## Q120011: Err Msg with WinLAN Card: The Device Does Not Exist on the...

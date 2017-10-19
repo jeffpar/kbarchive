@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164622: WD97: Inserting Linked Picture Results in Absolute Path"
-permalink: kb/164/Q164622/
+permalink: /kb/164/Q164622/
 ---
 
 ## Q164622: WD97: Inserting Linked Picture Results in Absolute Path

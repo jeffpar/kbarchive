@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319846: XCON: MTA Logs Event ID 2050 or 2051 Err Messages on DMS Server"
-permalink: kb/319/Q319846/
+permalink: /kb/319/Q319846/
 ---
 
 ## Q319846: XCON: MTA Logs Event ID 2050 or 2051 Err Messages on DMS Server

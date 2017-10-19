@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148370: Explorapedia Nature: Alphabetical List of Topics"
-permalink: kb/148/Q148370/
+permalink: /kb/148/Q148370/
 ---
 
 ## Q148370: Explorapedia Nature: Alphabetical List of Topics

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156615: Writer 2: Performance Decreases When Working with OLE Objects"
-permalink: kb/156/Q156615/
+permalink: /kb/156/Q156615/
 ---
 
 ## Q156615: Writer 2: Performance Decreases When Working with OLE Objects

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102449: NetWkstaGetInfo Documented Incorrectly in Programmer's Ref"
-permalink: kb/102/Q102449/
+permalink: /kb/102/Q102449/
 ---
 
 ## Q102449: NetWkstaGetInfo Documented Incorrectly in Programmer's Ref

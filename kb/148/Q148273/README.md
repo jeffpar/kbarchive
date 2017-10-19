@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148273: Do It Yourself Guide: No sound with Windows NT"
-permalink: kb/148/Q148273/
+permalink: /kb/148/Q148273/
 ---
 
 ## Q148273: Do It Yourself Guide: No sound with Windows NT

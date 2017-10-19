@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167777: SMS: Site/Domain Changes Are Processed Automatically"
-permalink: kb/167/Q167777/
+permalink: /kb/167/Q167777/
 ---
 
 ## Q167777: SMS: Site/Domain Changes Are Processed Automatically

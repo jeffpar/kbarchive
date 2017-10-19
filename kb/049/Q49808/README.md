@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49808: MS-DOS FORMAT &quot;/1&quot; Switch Should Not Be Used on 1.2 MB Drive"
-permalink: kb/049/Q49808/
+permalink: /kb/049/Q49808/
 ---
 
 ## Q49808: MS-DOS FORMAT &quot;/1&quot; Switch Should Not Be Used on 1.2 MB Drive

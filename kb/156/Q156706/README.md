@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156706: XCON: Messages Forwarded from DEC ALL IN ONE User Missing Date"
-permalink: kb/156/Q156706/
+permalink: /kb/156/Q156706/
 ---
 
 ## Q156706: XCON: Messages Forwarded from DEC ALL IN ONE User Missing Date

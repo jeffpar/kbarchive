@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147684: FIX: Sending WM_xSCROLL Message Causes Invalid ASSERT"
-permalink: kb/147/Q147684/
+permalink: /kb/147/Q147684/
 ---
 
 ## Q147684: FIX: Sending WM_xSCROLL Message Causes Invalid ASSERT

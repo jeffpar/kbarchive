@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128113: FIX: Assertion Failed Line 178 or Line 527 in ARCCORE.CPP"
-permalink: kb/128/Q128113/
+permalink: /kb/128/Q128113/
 ---
 
 ## Q128113: FIX: Assertion Failed Line 178 or Line 527 in ARCCORE.CPP

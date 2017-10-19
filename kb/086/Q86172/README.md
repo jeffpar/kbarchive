@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86172: Hercules VGA May Cause Yellow Screen in Windows"
-permalink: kb/086/Q86172/
+permalink: /kb/086/Q86172/
 ---
 
 ## Q86172: Hercules VGA May Cause Yellow Screen in Windows

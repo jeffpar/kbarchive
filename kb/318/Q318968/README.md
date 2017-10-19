@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318968: How To Add A MSN News Server To Outlook Express"
-permalink: kb/318/Q318968/
+permalink: /kb/318/Q318968/
 ---
 
 ## Q318968: How To Add A MSN News Server To Outlook Express

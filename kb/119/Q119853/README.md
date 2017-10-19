@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119853: INFO: PC Hangs While Running a Communications Application"
-permalink: kb/119/Q119853/
+permalink: /kb/119/Q119853/
 ---
 
 ## Q119853: INFO: PC Hangs While Running a Communications Application

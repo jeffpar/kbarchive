@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99334: DOCERR: Metafile Terminator Record Not Documented"
-permalink: kb/099/Q99334/
+permalink: /kb/099/Q99334/
 ---
 
 ## Q99334: DOCERR: Metafile Terminator Record Not Documented

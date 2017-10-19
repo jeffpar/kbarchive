@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170471: XCON: 290/4284 Errors Indicate Misconfigured MTA or Connector"
-permalink: kb/170/Q170471/
+permalink: /kb/170/Q170471/
 ---
 
 ## Q170471: XCON: 290/4284 Errors Indicate Misconfigured MTA or Connector

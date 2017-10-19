@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q85312: GP Fault with SETUP.SHH if [Windir] Path Exceeds 29 Characters"
-permalink: kb/085/Q85312/
+title: "Q85312: GP Fault with SETUP.SHH if &#91;Windir&#93; Path Exceeds 29 Characters"
+permalink: /kb/085/Q85312/
 ---
 
-## Q85312: GP Fault with SETUP.SHH if [Windir] Path Exceeds 29 Characters
+## Q85312: GP Fault with SETUP.SHH if &#91;Windir&#93; Path Exceeds 29 Characters
 
 	Article: Q85312
 	Product(s): Microsoft Windows 95.x Retail Product

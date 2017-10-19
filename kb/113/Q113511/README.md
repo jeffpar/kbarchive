@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113511: MSBACKUP Err Msg: Internal Error - Open Failure"
-permalink: kb/113/Q113511/
+permalink: /kb/113/Q113511/
 ---
 
 ## Q113511: MSBACKUP Err Msg: Internal Error - Open Failure

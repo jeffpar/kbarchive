@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164038: Using Netmeeting with Microsoft Proxy Server"
-permalink: kb/164/Q164038/
+permalink: /kb/164/Q164038/
 ---
 
 ## Q164038: Using Netmeeting with Microsoft Proxy Server

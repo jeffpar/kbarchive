@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117927: PC DB: General Information About Mail Templates"
-permalink: kb/117/Q117927/
+permalink: /kb/117/Q117927/
 ---
 
 ## Q117927: PC DB: General Information About Mail Templates

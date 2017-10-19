@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138040: Full Text Search Help Files Not Removed During Uninstall"
-permalink: kb/138/Q138040/
+permalink: /kb/138/Q138040/
 ---
 
 ## Q138040: Full Text Search Help Files Not Removed During Uninstall

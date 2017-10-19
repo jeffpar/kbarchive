@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196833: EditGrid.exe: Edit Cells in MSFlexGrid ActiveX Control"
-permalink: kb/196/Q196833/
+permalink: /kb/196/Q196833/
 ---
 
 ## Q196833: EditGrid.exe: Edit Cells in MSFlexGrid ActiveX Control

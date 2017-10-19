@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108593: Flight Simulator 5.0: Fatal Error: Error Code: 0000"
-permalink: kb/108/Q108593/
+permalink: /kb/108/Q108593/
 ---
 
 ## Q108593: Flight Simulator 5.0: Fatal Error: Error Code: 0000

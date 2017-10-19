@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139332: Interactive Switch Fails With Schedule Service"
-permalink: kb/139/Q139332/
+permalink: /kb/139/Q139332/
 ---
 
 ## Q139332: Interactive Switch Fails With Schedule Service

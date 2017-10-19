@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309810: MS Reader: Err Msg When Highlighting Text, Moving Mouse Over It"
-permalink: kb/309/Q309810/
+permalink: /kb/309/Q309810/
 ---
 
 ## Q309810: MS Reader: Err Msg When Highlighting Text, Moving Mouse Over It

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q292732: Small Business Server 2000 Resource Kit Comments And Corrections"
-permalink: kb/292/Q292732/
+permalink: /kb/292/Q292732/
 ---
 
 ## Q292732: Small Business Server 2000 Resource Kit Comments And Corrections

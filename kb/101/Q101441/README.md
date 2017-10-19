@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101441: PRB: Importing MS Excel Spreadsheet Gives Field Names A, B, C"
-permalink: kb/101/Q101441/
+permalink: /kb/101/Q101441/
 ---
 
 ## Q101441: PRB: Importing MS Excel Spreadsheet Gives Field Names A, B, C

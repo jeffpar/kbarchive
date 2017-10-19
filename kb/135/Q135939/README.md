@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135939: DriveSpace Does Not Mount Two CVFs with the Same Extension"
-permalink: kb/135/Q135939/
+permalink: /kb/135/Q135939/
 ---
 
 ## Q135939: DriveSpace Does Not Mount Two CVFs with the Same Extension

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86855: System Hangs When Running MS-DOS Prompt with IBM LAN Server"
-permalink: kb/086/Q86855/
+permalink: /kb/086/Q86855/
 ---
 
 ## Q86855: System Hangs When Running MS-DOS Prompt with IBM LAN Server

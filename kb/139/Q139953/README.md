@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139953: BUG: DATETIME Datatype Rounds Fractions of a Second"
-permalink: kb/139/Q139953/
+permalink: /kb/139/Q139953/
 ---
 
 ## Q139953: BUG: DATETIME Datatype Rounds Fractions of a Second

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278856: SMS: Issues That Occur if a Site Contains Slow Links"
-permalink: kb/278/Q278856/
+permalink: /kb/278/Q278856/
 ---
 
 ## Q278856: SMS: Issues That Occur if a Site Contains Slow Links

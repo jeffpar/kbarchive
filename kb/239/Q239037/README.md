@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239037: Bandwidth Throttling May Not Appear to Function in Some Cases"
-permalink: kb/239/Q239037/
+permalink: /kb/239/Q239037/
 ---
 
 ## Q239037: Bandwidth Throttling May Not Appear to Function in Some Cases

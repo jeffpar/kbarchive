@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130028: Windows NT Server Tools on WFW Fails With RPC Error"
-permalink: kb/130/Q130028/
+permalink: /kb/130/Q130028/
 ---
 
 ## Q130028: Windows NT Server Tools on WFW Fails With RPC Error

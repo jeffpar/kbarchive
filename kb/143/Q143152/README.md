@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143152: List of Microsoft and Other HTML Editors"
-permalink: kb/143/Q143152/
+permalink: /kb/143/Q143152/
 ---
 
 ## Q143152: List of Microsoft and Other HTML Editors

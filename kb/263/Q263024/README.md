@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263024: XADM: RoleAdmin Installation and Script Errors on Windows 2000"
-permalink: kb/263/Q263024/
+permalink: /kb/263/Q263024/
 ---
 
 ## Q263024: XADM: RoleAdmin Installation and Script Errors on Windows 2000

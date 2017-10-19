@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167196: SNA Server 3.0 SP1 Update May Break Named Pipe Clients"
-permalink: kb/167/Q167196/
+permalink: /kb/167/Q167196/
 ---
 
 ## Q167196: SNA Server 3.0 SP1 Update May Break Named Pipe Clients

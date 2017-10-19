@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164812: Computer Name Truncated When Name Resolution Attempted"
-permalink: kb/164/Q164812/
+permalink: /kb/164/Q164812/
 ---
 
 ## Q164812: Computer Name Truncated When Name Resolution Attempted

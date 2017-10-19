@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194480: Encarta 98: Unable to Play Video Clips in Full Screen Mode"
-permalink: kb/194/Q194480/
+permalink: /kb/194/Q194480/
 ---
 
 ## Q194480: Encarta 98: Unable to Play Video Clips in Full Screen Mode

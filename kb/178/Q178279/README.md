@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178279: Service Pack Update Prompts for Windows NT Workstation CD"
-permalink: kb/178/Q178279/
+permalink: /kb/178/Q178279/
 ---
 
 ## Q178279: Service Pack Update Prompts for Windows NT Workstation CD

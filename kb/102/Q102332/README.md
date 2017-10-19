@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102332: How to Show a Custom Common Dialog using CFileDialog"
-permalink: kb/102/Q102332/
+permalink: /kb/102/Q102332/
 ---
 
 ## Q102332: How to Show a Custom Common Dialog using CFileDialog

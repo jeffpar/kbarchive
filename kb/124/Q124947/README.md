@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124947: INFO: Retrieving Palette Information from a Bitmap Resource"
-permalink: kb/124/Q124947/
+permalink: /kb/124/Q124947/
 ---
 
 ## Q124947: INFO: Retrieving Palette Information from a Bitmap Resource

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197312: WD97: Thesaurus Suggests Incorrect Synonym"
-permalink: kb/197/Q197312/
+permalink: /kb/197/Q197312/
 ---
 
 ## Q197312: WD97: Thesaurus Suggests Incorrect Synonym

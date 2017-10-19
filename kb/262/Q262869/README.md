@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262869: MapPoint 2001: Space Requirements for System Hard Disk"
-permalink: kb/262/Q262869/
+permalink: /kb/262/Q262869/
 ---
 
 ## Q262869: MapPoint 2001: Space Requirements for System Hard Disk

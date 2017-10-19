@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165831: PRB: Anonymous User in NT Admin Group Breaks Source Control"
-permalink: kb/165/Q165831/
+permalink: /kb/165/Q165831/
 ---
 
 ## Q165831: PRB: Anonymous User in NT Admin Group Breaks Source Control

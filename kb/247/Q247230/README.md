@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247230: SMS: Multiple Advertisements to the Same Program/Package Do Not"
-permalink: kb/247/Q247230/
+permalink: /kb/247/Q247230/
 ---
 
 ## Q247230: SMS: Multiple Advertisements to the Same Program/Package Do Not

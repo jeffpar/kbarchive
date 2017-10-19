@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112882: Mac SMI: Can Not Create Gateway Address with MAPI"
-permalink: kb/112/Q112882/
+permalink: /kb/112/Q112882/
 ---
 
 ## Q112882: Mac SMI: Can Not Create Gateway Address with MAPI

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268844: How to Use LINKCFG to Remove SNA Server Link Services"
-permalink: kb/268/Q268844/
+permalink: /kb/268/Q268844/
 ---
 
 ## Q268844: How to Use LINKCFG to Remove SNA Server Link Services

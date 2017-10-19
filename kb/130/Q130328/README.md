@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130328: Text After Carriage Return Not Pasted in MS Exchange Subject"
-permalink: kb/130/Q130328/
+permalink: /kb/130/Q130328/
 ---
 
 ## Q130328: Text After Carriage Return Not Pasted in MS Exchange Subject

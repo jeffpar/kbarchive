@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146148: Running the Seven Habits Wizard Doesntt add a Seven Habits Tab"
-permalink: kb/146/Q146148/
+permalink: /kb/146/Q146148/
 ---
 
 ## Q146148: Running the Seven Habits Wizard Doesntt add a Seven Habits Tab

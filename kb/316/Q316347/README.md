@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316347: IIS 5: HiSecWeb Potential Risks and the IIS Lockdown Tool"
-permalink: kb/316/Q316347/
+permalink: /kb/316/Q316347/
 ---
 
 ## Q316347: IIS 5: HiSecWeb Potential Risks and the IIS Lockdown Tool

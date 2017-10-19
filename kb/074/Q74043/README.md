@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74043: HOWTO: Change the Color of an Edit Control"
-permalink: kb/074/Q74043/
+permalink: /kb/074/Q74043/
 ---
 
 ## Q74043: HOWTO: Change the Color of an Edit Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138312: PRB: Image Editor Not Saving .Cur Files as Mono Color"
-permalink: kb/138/Q138312/
+permalink: /kb/138/Q138312/
 ---
 
 ## Q138312: PRB: Image Editor Not Saving .Cur Files as Mono Color

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258749: Terminal Server May Hang with &quot;STOP 0X0000001E in Cdm.sys&quot;"
-permalink: kb/258/Q258749/
+permalink: /kb/258/Q258749/
 ---
 
 ## Q258749: Terminal Server May Hang with &quot;STOP 0X0000001E in Cdm.sys&quot;

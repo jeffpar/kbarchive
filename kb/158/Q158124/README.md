@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158124: XCLN: ShivaRemote with Exchange - RAS Considerations"
-permalink: kb/158/Q158124/
+permalink: /kb/158/Q158124/
 ---
 
 ## Q158124: XCLN: ShivaRemote with Exchange - RAS Considerations

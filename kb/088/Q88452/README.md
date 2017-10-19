@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88452: Printing Score Card on LaserJet Printer with 512K"
-permalink: kb/088/Q88452/
+permalink: /kb/088/Q88452/
 ---
 
 ## Q88452: Printing Score Card on LaserJet Printer with 512K

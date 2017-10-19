@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247073: CustWBC.exe: ATL HTML Control Customizes the WebBrowser Control"
-permalink: kb/247/Q247073/
+permalink: /kb/247/Q247073/
 ---
 
 ## Q247073: CustWBC.exe: ATL HTML Control Customizes the WebBrowser Control

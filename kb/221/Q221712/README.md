@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221712: FIX: FFCs- _XMLTag/_StyleTag in _html.vcx Use Wrong Extension"
-permalink: kb/221/Q221712/
+permalink: /kb/221/Q221712/
 ---
 
 ## Q221712: FIX: FFCs- _XMLTag/_StyleTag in _html.vcx Use Wrong Extension

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86083: PC Win: Embedded Objects from Excel 3.0 Sized Larger"
-permalink: kb/086/Q86083/
+permalink: /kb/086/Q86083/
 ---
 
 ## Q86083: PC Win: Embedded Objects from Excel 3.0 Sized Larger

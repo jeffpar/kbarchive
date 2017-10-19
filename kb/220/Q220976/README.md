@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220976: XCON: Improve Network Performance in Poor Network Conditions"
-permalink: kb/220/Q220976/
+permalink: /kb/220/Q220976/
 ---
 
 ## Q220976: XCON: Improve Network Performance in Poor Network Conditions

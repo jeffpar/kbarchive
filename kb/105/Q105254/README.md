@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105254: DoubleSpace Automount Fails After You Free a Drive Letter"
-permalink: kb/105/Q105254/
+permalink: /kb/105/Q105254/
 ---
 
 ## Q105254: DoubleSpace Automount Fails After You Free a Drive Letter

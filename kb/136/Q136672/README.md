@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136672: PRB: Cannot Disable the System Menu While Running a Form"
-permalink: kb/136/Q136672/
+permalink: /kb/136/Q136672/
 ---
 
 ## Q136672: PRB: Cannot Disable the System Menu While Running a Form

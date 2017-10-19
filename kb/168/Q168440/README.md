@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168440: FIX: Stream Operator &lt;&lt; Cannot Handle &#95;&#95;int64 Type"
-permalink: kb/168/Q168440/
+permalink: /kb/168/Q168440/
 ---
 
 ## Q168440: FIX: Stream Operator &lt;&lt; Cannot Handle &#95;&#95;int64 Type

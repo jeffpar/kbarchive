@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258652: Baseball 2001: Game Graphics Are Not Displayed Properly"
-permalink: kb/258/Q258652/
+permalink: /kb/258/Q258652/
 ---
 
 ## Q258652: Baseball 2001: Game Graphics Are Not Displayed Properly

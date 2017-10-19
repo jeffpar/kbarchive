@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99868: Installer Reinstalls QuickTime over Same Version"
-permalink: kb/099/Q99868/
+permalink: /kb/099/Q99868/
 ---
 
 ## Q99868: Installer Reinstalls QuickTime over Same Version

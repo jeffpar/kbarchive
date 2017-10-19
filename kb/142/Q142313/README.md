@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142313: FIX: Using RI Builder &amp; Long Table Names Makes Triggers Fail"
-permalink: kb/142/Q142313/
+permalink: /kb/142/Q142313/
 ---
 
 ## Q142313: FIX: Using RI Builder &amp; Long Table Names Makes Triggers Fail

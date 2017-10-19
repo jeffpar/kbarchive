@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220818: XADM: Removed Mailbox Cleanup Agent Remains in Mailbox Resources"
-permalink: kb/220/Q220818/
+permalink: /kb/220/Q220818/
 ---
 
 ## Q220818: XADM: Removed Mailbox Cleanup Agent Remains in Mailbox Resources

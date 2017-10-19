@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135495: Dynamically Adding LUA LUs is Supported"
-permalink: kb/135/Q135495/
+permalink: /kb/135/Q135495/
 ---
 
 ## Q135495: Dynamically Adding LUA LUs is Supported

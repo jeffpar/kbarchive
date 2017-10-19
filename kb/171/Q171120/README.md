@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171120: Useful Links to HCL Storage Device Configuration Information"
-permalink: kb/171/Q171120/
+permalink: /kb/171/Q171120/
 ---
 
 ## Q171120: Useful Links to HCL Storage Device Configuration Information

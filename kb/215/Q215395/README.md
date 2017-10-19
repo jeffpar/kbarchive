@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215395: BUG: SelChange Event in a Grid Executes on a Selected Cell"
-permalink: kb/215/Q215395/
+permalink: /kb/215/Q215395/
 ---
 
 ## Q215395: BUG: SelChange Event in a Grid Executes on a Selected Cell

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148168: XCLN: Err Msg: Sorry, a System Error Occurred... Error Type 11"
-permalink: kb/148/Q148168/
+permalink: /kb/148/Q148168/
 ---
 
 ## Q148168: XCLN: Err Msg: Sorry, a System Error Occurred... Error Type 11

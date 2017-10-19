@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94657: Upgrading WFWG Over Windows with Novell NetWare Lite"
-permalink: kb/094/Q94657/
+permalink: /kb/094/Q94657/
 ---
 
 ## Q94657: Upgrading WFWG Over Windows with Novell NetWare Lite

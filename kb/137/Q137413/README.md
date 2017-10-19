@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137413: BUG: Report Writer Creates Child Records in One-to-Many Report"
-permalink: kb/137/Q137413/
+permalink: /kb/137/Q137413/
 ---
 
 ## Q137413: BUG: Report Writer Creates Child Records in One-to-Many Report

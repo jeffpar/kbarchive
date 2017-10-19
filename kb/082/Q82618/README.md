@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82618: No Sound When Playing MIDI Files in Midisoft Studio"
-permalink: kb/082/Q82618/
+permalink: /kb/082/Q82618/
 ---
 
 ## Q82618: No Sound When Playing MIDI Files in Midisoft Studio

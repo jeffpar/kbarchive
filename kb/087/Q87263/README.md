@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87263: Mac Srv: Server Name Not Visible Offline"
-permalink: kb/087/Q87263/
+permalink: /kb/087/Q87263/
 ---
 
 ## Q87263: Mac Srv: Server Name Not Visible Offline

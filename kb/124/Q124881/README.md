@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124881: WFWG Frame Type Default Depends On Installation Source"
-permalink: kb/124/Q124881/
+permalink: /kb/124/Q124881/
 ---
 
 ## Q124881: WFWG Frame Type Default Depends On Installation Source

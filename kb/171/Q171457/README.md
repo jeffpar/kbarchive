@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171457: FIX: SENDTIME Sample Does Not Work"
-permalink: kb/171/Q171457/
+permalink: /kb/171/Q171457/
 ---
 
 ## Q171457: FIX: SENDTIME Sample Does Not Work

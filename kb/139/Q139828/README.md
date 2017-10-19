@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139828: PRB: MFC Does Not Reopen an Open Document"
-permalink: kb/139/Q139828/
+permalink: /kb/139/Q139828/
 ---
 
 ## Q139828: PRB: MFC Does Not Reopen an Open Document

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102909: Importing an LMHOSTS File May Leave the File Empty"
-permalink: kb/102/Q102909/
+permalink: /kb/102/Q102909/
 ---
 
 ## Q102909: Importing an LMHOSTS File May Leave the File Empty

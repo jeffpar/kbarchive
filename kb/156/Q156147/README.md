@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156147: Full Court Press: Troubleshooting Display Problems"
-permalink: kb/156/Q156147/
+permalink: /kb/156/Q156147/
 ---
 
 ## Q156147: Full Court Press: Troubleshooting Display Problems

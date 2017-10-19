@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128324: PC DOS: Err Msg: Notice 109 Accessing Folders"
-permalink: kb/128/Q128324/
+permalink: /kb/128/Q128324/
 ---
 
 ## Q128324: PC DOS: Err Msg: Notice 109 Accessing Folders

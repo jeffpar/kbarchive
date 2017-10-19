@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129484: Renaming User Account Does Not Keep Permissions in LAN Manager"
-permalink: kb/129/Q129484/
+permalink: /kb/129/Q129484/
 ---
 
 ## Q129484: Renaming User Account Does Not Keep Permissions in LAN Manager

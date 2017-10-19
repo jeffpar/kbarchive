@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172831: TimeServ Uses 100% of System Resources"
-permalink: kb/172/Q172831/
+permalink: /kb/172/Q172831/
 ---
 
 ## Q172831: TimeServ Uses 100% of System Resources

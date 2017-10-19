@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303000: IIS5: FTP Logon Fails for Passwords w/ Beginning Space or Spaces"
-permalink: kb/303/Q303000/
+permalink: /kb/303/Q303000/
 ---
 
 ## Q303000: IIS5: FTP Logon Fails for Passwords w/ Beginning Space or Spaces

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85041: FFAPI: The Format of a FFAPI File"
-permalink: kb/085/Q85041/
+permalink: /kb/085/Q85041/
 ---
 
 ## Q85041: FFAPI: The Format of a FFAPI File

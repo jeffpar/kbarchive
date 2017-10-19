@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138856: Error 4119 when Selecting SNA Server Admin Security Options"
-permalink: kb/138/Q138856/
+permalink: /kb/138/Q138856/
 ---
 
 ## Q138856: Error 4119 when Selecting SNA Server Admin Security Options

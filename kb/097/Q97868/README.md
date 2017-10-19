@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97868: Uninstall Doesn't Run If It Finds DoubleSpace Files"
-permalink: kb/097/Q97868/
+permalink: /kb/097/Q97868/
 ---
 
 ## Q97868: Uninstall Doesn't Run If It Finds DoubleSpace Files

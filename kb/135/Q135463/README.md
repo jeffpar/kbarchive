@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135463: IPINFO.INF Values Ignored During Setup"
-permalink: kb/135/Q135463/
+permalink: /kb/135/Q135463/
 ---
 
 ## Q135463: IPINFO.INF Values Ignored During Setup

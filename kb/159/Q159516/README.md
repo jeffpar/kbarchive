@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159516: Encarta 97: Unable to Print to HP DeskJet Drivers 4.x and 5.x"
-permalink: kb/159/Q159516/
+permalink: /kb/159/Q159516/
 ---
 
 ## Q159516: Encarta 97: Unable to Print to HP DeskJet Drivers 4.x and 5.x

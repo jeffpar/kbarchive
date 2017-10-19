@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302439: Sending E-mail To Offline Contact In MSN Messenger While Running"
-permalink: kb/302/Q302439/
+permalink: /kb/302/Q302439/
 ---
 
 ## Q302439: Sending E-mail To Offline Contact In MSN Messenger While Running

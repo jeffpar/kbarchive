@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100183: BUG: UngetCommChar() Causes Character Loss or GP Faults"
-permalink: kb/100/Q100183/
+permalink: /kb/100/Q100183/
 ---
 
 ## Q100183: BUG: UngetCommChar() Causes Character Loss or GP Faults

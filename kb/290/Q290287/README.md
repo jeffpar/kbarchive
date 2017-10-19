@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290287: XCCC: How to Completely Remove and Re-Install OWA"
-permalink: kb/290/Q290287/
+permalink: /kb/290/Q290287/
 ---
 
 ## Q290287: XCCC: How to Completely Remove and Re-Install OWA

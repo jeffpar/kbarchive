@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116053: RAS ErrMsg: Error 692: Hardware Failure in Port or Attached..."
-permalink: kb/116/Q116053/
+permalink: /kb/116/Q116053/
 ---
 
 ## Q116053: RAS ErrMsg: Error 692: Hardware Failure in Port or Attached...

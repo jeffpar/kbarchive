@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267937: BUG: Pipes Screen Saver Draws Outside Preview Window-Win2000"
-permalink: kb/267/Q267937/
+permalink: /kb/267/Q267937/
 ---
 
 ## Q267937: BUG: Pipes Screen Saver Draws Outside Preview Window-Win2000

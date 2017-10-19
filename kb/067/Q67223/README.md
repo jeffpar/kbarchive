@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67223: What Does RECOVER Do?"
-permalink: kb/067/Q67223/
+permalink: /kb/067/Q67223/
 ---
 
 ## Q67223: What Does RECOVER Do?

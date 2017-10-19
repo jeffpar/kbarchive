@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142643: Windows NT 4.0 Driver Library"
-permalink: kb/142/Q142643/
+permalink: /kb/142/Q142643/
 ---
 
 ## Q142643: Windows NT 4.0 Driver Library

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111565: How to Create a Trust Relationship from One Computer"
-permalink: kb/111/Q111565/
+permalink: /kb/111/Q111565/
 ---
 
 ## Q111565: How to Create a Trust Relationship from One Computer

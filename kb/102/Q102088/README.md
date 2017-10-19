@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102088: Mac Wkst: Read Button Does Not Appear"
-permalink: kb/102/Q102088/
+permalink: /kb/102/Q102088/
 ---
 
 ## Q102088: Mac Wkst: Read Button Does Not Appear

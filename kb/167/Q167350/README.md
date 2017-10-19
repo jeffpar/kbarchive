@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167350: FIX: Default Constructor Argument Can Not Use Namespace Scope"
-permalink: kb/167/Q167350/
+permalink: /kb/167/Q167350/
 ---
 
 ## Q167350: FIX: Default Constructor Argument Can Not Use Namespace Scope

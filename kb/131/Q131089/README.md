@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131089: Resizing Planner Alters Selected Dates/Times"
-permalink: kb/131/Q131089/
+permalink: /kb/131/Q131089/
 ---
 
 ## Q131089: Resizing Planner Alters Selected Dates/Times

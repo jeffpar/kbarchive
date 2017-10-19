@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96889: Mac Form: Replying with a Custom Form"
-permalink: kb/096/Q96889/
+permalink: /kb/096/Q96889/
 ---
 
 ## Q96889: Mac Form: Replying with a Custom Form

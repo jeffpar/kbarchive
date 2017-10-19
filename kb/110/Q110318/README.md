@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110318: WFWG 3.11 Err Msg: General Protection Fault in WFWSETUP.DLL"
-permalink: kb/110/Q110318/
+permalink: /kb/110/Q110318/
 ---
 
 ## Q110318: WFWG 3.11 Err Msg: General Protection Fault in WFWSETUP.DLL

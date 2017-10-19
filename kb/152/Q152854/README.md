@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152854: XADM: Using Bulk Import to Remove Data"
-permalink: kb/152/Q152854/
+permalink: /kb/152/Q152854/
 ---
 
 ## Q152854: XADM: Using Bulk Import to Remove Data

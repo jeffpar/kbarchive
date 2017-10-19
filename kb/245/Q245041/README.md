@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245041: XFOR: Postmaster Incorrectly Receives SMTP Messages"
-permalink: kb/245/Q245041/
+permalink: /kb/245/Q245041/
 ---
 
 ## Q245041: XFOR: Postmaster Incorrectly Receives SMTP Messages

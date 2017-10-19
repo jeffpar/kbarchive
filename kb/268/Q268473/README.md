@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268473: Cannot Issue the IISRESET Command with the /timeout:0 Switch"
-permalink: kb/268/Q268473/
+permalink: /kb/268/Q268473/
 ---
 
 ## Q268473: Cannot Issue the IISRESET Command with the /timeout:0 Switch

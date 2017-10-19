@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131357: How to Reference Objects in the Container Hierarchy"
-permalink: kb/131/Q131357/
+permalink: /kb/131/Q131357/
 ---
 
 ## Q131357: How to Reference Objects in the Container Hierarchy

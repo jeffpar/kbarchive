@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198900: SMS: Access Violation Opening Script from Newer Version"
-permalink: kb/198/Q198900/
+permalink: /kb/198/Q198900/
 ---
 
 ## Q198900: SMS: Access Violation Opening Script from Newer Version

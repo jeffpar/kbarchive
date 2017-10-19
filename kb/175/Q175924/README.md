@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175924: WD97: Code to Determine Whether Open Document Is a Template"
-permalink: kb/175/Q175924/
+permalink: /kb/175/Q175924/
 ---
 
 ## Q175924: WD97: Code to Determine Whether Open Document Is a Template

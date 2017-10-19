@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108153: WFWG Err Msg: No Domain Server Was Available to Validate..."
-permalink: kb/108/Q108153/
+permalink: /kb/108/Q108153/
 ---
 
 ## Q108153: WFWG Err Msg: No Domain Server Was Available to Validate...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152340: How To Configure the Command Window in Visual FoxPro Screen"
-permalink: kb/152/Q152340/
+permalink: /kb/152/Q152340/
 ---
 
 ## Q152340: How To Configure the Command Window in Visual FoxPro Screen

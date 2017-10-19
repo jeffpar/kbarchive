@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224084: How to Remove the Internet Explorer Icon from the Desktop"
-permalink: kb/224/Q224084/
+permalink: /kb/224/Q224084/
 ---
 
 ## Q224084: How to Remove the Internet Explorer Icon from the Desktop

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243472: Oleaut32.dll Can Cause Incorrect Results in OLE Objects"
-permalink: kb/243/Q243472/
+permalink: /kb/243/Q243472/
 ---
 
 ## Q243472: Oleaut32.dll Can Cause Incorrect Results in OLE Objects

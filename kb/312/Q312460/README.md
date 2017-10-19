@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312460: FS2002: How to Change Autopilot to FS2000 Functionality"
-permalink: kb/312/Q312460/
+permalink: /kb/312/Q312460/
 ---
 
 ## Q312460: FS2002: How to Change Autopilot to FS2000 Functionality

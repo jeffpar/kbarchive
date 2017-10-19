@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190259: Wd97vba.exe Contains Header File w/ Word VBA Constants"
-permalink: kb/190/Q190259/
+permalink: /kb/190/Q190259/
 ---
 
 ## Q190259: Wd97vba.exe Contains Header File w/ Word VBA Constants

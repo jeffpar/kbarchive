@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90404: PC Win: How to Mail Enable/Disable Windows File Manager"
-permalink: kb/090/Q90404/
+permalink: /kb/090/Q90404/
 ---
 
 ## Q90404: PC Win: How to Mail Enable/Disable Windows File Manager

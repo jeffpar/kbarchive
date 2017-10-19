@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128919: Resources for Disabled Devices Not Freed Up"
-permalink: kb/128/Q128919/
+permalink: /kb/128/Q128919/
 ---
 
 ## Q128919: Resources for Disabled Devices Not Freed Up

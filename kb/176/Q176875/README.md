@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176875: INFO: The Primary Functions of Ssarc.exe and Ssrestor.exe"
-permalink: kb/176/Q176875/
+permalink: /kb/176/Q176875/
 ---
 
 ## Q176875: INFO: The Primary Functions of Ssarc.exe and Ssrestor.exe

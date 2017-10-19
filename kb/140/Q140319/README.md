@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140319: FIX: Can't Save 'Assume Project Based on Working Dir' Setting"
-permalink: kb/140/Q140319/
+permalink: /kb/140/Q140319/
 ---
 
 ## Q140319: FIX: Can't Save 'Assume Project Based on Working Dir' Setting

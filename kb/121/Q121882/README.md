@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121882: Golf Setup Err Msg: Golf 2.0 Requires Minimum Configuration"
-permalink: kb/121/Q121882/
+permalink: /kb/121/Q121882/
 ---
 
 ## Q121882: Golf Setup Err Msg: Golf 2.0 Requires Minimum Configuration

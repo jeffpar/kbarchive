@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q283056: Error Message &quot;Unable to Load Your Profile&quot; When You Install SMS"
-permalink: kb/283/Q283056/
+permalink: /kb/283/Q283056/
 ---
 
 ## Q283056: Error Message &quot;Unable to Load Your Profile&quot; When You Install SMS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207768: Invalid Date Accepted in Find Files or Folders Parameters"
-permalink: kb/207/Q207768/
+permalink: /kb/207/Q207768/
 ---
 
 ## Q207768: Invalid Date Accepted in Find Files or Folders Parameters

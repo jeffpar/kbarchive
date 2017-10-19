@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159576: FIX: Cannot Open Stored Procedure from Call Stack Context"
-permalink: kb/159/Q159576/
+permalink: /kb/159/Q159576/
 ---
 
 ## Q159576: FIX: Cannot Open Stored Procedure from Call Stack Context

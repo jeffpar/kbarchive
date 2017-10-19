@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130033: XFOR: README: Host Migration"
-permalink: kb/130/Q130033/
+permalink: /kb/130/Q130033/
 ---
 
 ## Q130033: XFOR: README: Host Migration

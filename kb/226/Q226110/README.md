@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226110: FIX: Internal Compiler Error Creating Copy of Temporary Object"
-permalink: kb/226/Q226110/
+permalink: /kb/226/Q226110/
 ---
 
 ## Q226110: FIX: Internal Compiler Error Creating Copy of Temporary Object

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201357: ODE97: Can't Write to Wininet.dll or Urlmon.dll During Install"
-permalink: kb/201/Q201357/
+permalink: /kb/201/Q201357/
 ---
 
 ## Q201357: ODE97: Can't Write to Wininet.dll or Urlmon.dll During Install

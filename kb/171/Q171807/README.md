@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171807: FIX: Selected Tab Changes After Removing Tab in Tabstrip"
-permalink: kb/171/Q171807/
+permalink: /kb/171/Q171807/
 ---
 
 ## Q171807: FIX: Selected Tab Changes After Removing Tab in Tabstrip

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182422: Services on SNA Server Are Incorrectly Enumerated"
-permalink: kb/182/Q182422/
+permalink: /kb/182/Q182422/
 ---
 
 ## Q182422: Services on SNA Server Are Incorrectly Enumerated

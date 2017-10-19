@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174825: FIX: Accessing Image Property of PictureBox Diminishes Resources"
-permalink: kb/174/Q174825/
+permalink: /kb/174/Q174825/
 ---
 
 ## Q174825: FIX: Accessing Image Property of PictureBox Diminishes Resources

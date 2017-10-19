@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68659: Patches for Running Utilities Under Novell NetWare"
-permalink: kb/068/Q68659/
+permalink: /kb/068/Q68659/
 ---
 
 ## Q68659: Patches for Running Utilities Under Novell NetWare

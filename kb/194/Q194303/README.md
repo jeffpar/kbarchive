@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194303: New Features Available in Windows NT 4.0 Service Pack 4"
-permalink: kb/194/Q194303/
+permalink: /kb/194/Q194303/
 ---
 
 ## Q194303: New Features Available in Windows NT 4.0 Service Pack 4

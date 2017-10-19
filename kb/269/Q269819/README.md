@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269819: Deadlock Deleting Attribute Stream During File Creation"
-permalink: kb/269/Q269819/
+permalink: /kb/269/Q269819/
 ---
 
 ## Q269819: Deadlock Deleting Attribute Stream During File Creation

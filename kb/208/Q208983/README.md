@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q208983: HOWTO: Using MFC LOC DLLs"
-permalink: kb/208/Q208983/
+permalink: /kb/208/Q208983/
 ---
 
 ## Q208983: HOWTO: Using MFC LOC DLLs

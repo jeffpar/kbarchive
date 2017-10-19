@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160133: Golf 3.0: Description of the Internet Multiplayer Patch"
-permalink: kb/160/Q160133/
+permalink: /kb/160/Q160133/
 ---
 
 ## Q160133: Golf 3.0: Description of the Internet Multiplayer Patch

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214425: SMS: NetMon Fails to Recognize HTTP Packets on Alternate Ports"
-permalink: kb/214/Q214425/
+permalink: /kb/214/Q214425/
 ---
 
 ## Q214425: SMS: NetMon Fails to Recognize HTTP Packets on Alternate Ports

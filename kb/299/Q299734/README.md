@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299734: Component Configuration Document Does Not Refresh"
-permalink: kb/299/Q299734/
+permalink: /kb/299/Q299734/
 ---
 
 ## Q299734: Component Configuration Document Does Not Refresh

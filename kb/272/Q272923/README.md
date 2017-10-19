@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272923: SMS: Documentation Incorrectly States NTFS Permissions"
-permalink: kb/272/Q272923/
+permalink: /kb/272/Q272923/
 ---
 
 ## Q272923: SMS: Documentation Incorrectly States NTFS Permissions

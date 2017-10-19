@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92609: PRB: SEGMENT AT Does Not Initialize Data at Absolute Address"
-permalink: kb/092/Q92609/
+permalink: /kb/092/Q92609/
 ---
 
 ## Q92609: PRB: SEGMENT AT Does Not Initialize Data at Absolute Address

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97738: Using US-Int'l Keyboard Layout to Type Accented Characters"
-permalink: kb/097/Q97738/
+permalink: /kb/097/Q97738/
 ---
 
 ## Q97738: Using US-Int'l Keyboard Layout to Type Accented Characters

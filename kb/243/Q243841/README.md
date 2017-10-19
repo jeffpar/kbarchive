@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243841: XCLN: How to Change Organization, Site, Exchange Server for OWA"
-permalink: kb/243/Q243841/
+permalink: /kb/243/Q243841/
 ---
 
 ## Q243841: XCLN: How to Change Organization, Site, Exchange Server for OWA

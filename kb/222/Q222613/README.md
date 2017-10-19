@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222613: FIX: &quot;m_mov' : undeclared identifier&quot; Error With Alpha Project"
-permalink: kb/222/Q222613/
+permalink: /kb/222/Q222613/
 ---
 
 ## Q222613: FIX: &quot;m_mov' : undeclared identifier&quot; Error With Alpha Project

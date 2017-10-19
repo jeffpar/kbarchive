@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249816: APPC App Fails with Primary RC = F004, Secondary RC = 00000000"
-permalink: kb/249/Q249816/
+permalink: /kb/249/Q249816/
 ---
 
 ## Q249816: APPC App Fails with Primary RC = F004, Secondary RC = 00000000

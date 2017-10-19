@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82432: Secondary VGA Monitor Loses Synchronization with 8514 Driver"
-permalink: kb/082/Q82432/
+permalink: /kb/082/Q82432/
 ---
 
 ## Q82432: Secondary VGA Monitor Loses Synchronization with 8514 Driver

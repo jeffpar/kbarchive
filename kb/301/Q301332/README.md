@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301332: Print Jobs Continue Spooling if Host Ends Print Job w/ CHASE RU"
-permalink: kb/301/Q301332/
+permalink: /kb/301/Q301332/
 ---
 
 ## Q301332: Print Jobs Continue Spooling if Host Ends Print Job w/ CHASE RU

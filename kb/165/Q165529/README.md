@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165529: WD97: Style Changes When Numbering Applied to Based On Style"
-permalink: kb/165/Q165529/
+permalink: /kb/165/Q165529/
 ---
 
 ## Q165529: WD97: Style Changes When Numbering Applied to Based On Style

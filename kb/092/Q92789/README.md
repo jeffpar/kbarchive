@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92789: WFWG Fails with 3Com Etherlink Plus (3C505)"
-permalink: kb/092/Q92789/
+permalink: /kb/092/Q92789/
 ---
 
 ## Q92789: WFWG Fails with 3Com Etherlink Plus (3C505)

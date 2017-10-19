@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194279: FP: Cannot Open Pages or Webs After Installing FrontPage"
-permalink: kb/194/Q194279/
+permalink: /kb/194/Q194279/
 ---
 
 ## Q194279: FP: Cannot Open Pages or Webs After Installing FrontPage

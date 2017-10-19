@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155758: IP Received Header Error Count May Be High"
-permalink: kb/155/Q155758/
+permalink: /kb/155/Q155758/
 ---
 
 ## Q155758: IP Received Header Error Count May Be High

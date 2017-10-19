@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171993: GET_LU_STATUS May Return PARAMETER_CHECK/BAD_REMOTE_LU_ALIAS"
-permalink: kb/171/Q171993/
+permalink: /kb/171/Q171993/
 ---
 
 ## Q171993: GET_LU_STATUS May Return PARAMETER_CHECK/BAD_REMOTE_LU_ALIAS

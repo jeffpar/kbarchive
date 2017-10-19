@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132616: International Character Creates Invalid Server Folder Name"
-permalink: kb/132/Q132616/
+permalink: /kb/132/Q132616/
 ---
 
 ## Q132616: International Character Creates Invalid Server Folder Name

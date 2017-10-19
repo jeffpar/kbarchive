@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221640: FIX: C0000005 Fatal Error Importing Chinese Excel 97 Worksheet"
-permalink: kb/221/Q221640/
+permalink: /kb/221/Q221640/
 ---
 
 ## Q221640: FIX: C0000005 Fatal Error Importing Chinese Excel 97 Worksheet

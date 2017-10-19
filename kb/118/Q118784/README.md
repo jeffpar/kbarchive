@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118784: SMTP: Time on Gateway Screen and Log File"
-permalink: kb/118/Q118784/
+permalink: /kb/118/Q118784/
 ---
 
 ## Q118784: SMTP: Time on Gateway Screen and Log File

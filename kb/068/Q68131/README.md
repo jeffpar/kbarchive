@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68131: Windows Err Msg: You Cannot Format the Current Drive"
-permalink: kb/068/Q68131/
+permalink: /kb/068/Q68131/
 ---
 
 ## Q68131: Windows Err Msg: You Cannot Format the Current Drive

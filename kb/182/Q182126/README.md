@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182126: FP: How to Rename a FrontPage Web"
-permalink: kb/182/Q182126/
+permalink: /kb/182/Q182126/
 ---
 
 ## Q182126: FP: How to Rename a FrontPage Web

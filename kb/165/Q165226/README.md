@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165226: Application Exception in SNA Manager"
-permalink: kb/165/Q165226/
+permalink: /kb/165/Q165226/
 ---
 
 ## Q165226: Application Exception in SNA Manager

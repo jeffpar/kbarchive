@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190972: NotesDem.exe Reads and Writes the Contacts NOTES Field"
-permalink: kb/190/Q190972/
+permalink: /kb/190/Q190972/
 ---
 
 ## Q190972: NotesDem.exe Reads and Writes the Contacts NOTES Field

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84580: Wingz Version 1.0 Prints Fonts at Reduced Size"
-permalink: kb/084/Q84580/
+permalink: /kb/084/Q84580/
 ---
 
 ## Q84580: Wingz Version 1.0 Prints Fonts at Reduced Size

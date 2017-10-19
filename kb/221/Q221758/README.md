@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221758: XADM: Exchange 4.0/5.0 Administrator Help File Is Incorrect"
-permalink: kb/221/Q221758/
+permalink: /kb/221/Q221758/
 ---
 
 ## Q221758: XADM: Exchange 4.0/5.0 Administrator Help File Is Incorrect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104591: Executing REXX CMD Files with the LAN Manager AT Utility"
-permalink: kb/104/Q104591/
+permalink: /kb/104/Q104591/
 ---
 
 ## Q104591: Executing REXX CMD Files with the LAN Manager AT Utility

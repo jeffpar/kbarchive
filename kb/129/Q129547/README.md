@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129547: Company Name Preset to MICROSOFT When Installing WFW"
-permalink: kb/129/Q129547/
+permalink: /kb/129/Q129547/
 ---
 
 ## Q129547: Company Name Preset to MICROSOFT When Installing WFW

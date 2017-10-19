@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111502: BUG: SUBSTR Index Past End of String Incorrectly Assembles"
-permalink: kb/111/Q111502/
+permalink: /kb/111/Q111502/
 ---
 
 ## Q111502: BUG: SUBSTR Index Past End of String Incorrectly Assembles

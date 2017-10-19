@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247714: Using PUT Command for a Long File Name Causes &quot;HTTP 404&quot; Error"
-permalink: kb/247/Q247714/
+permalink: /kb/247/Q247714/
 ---
 
 ## Q247714: Using PUT Command for a Long File Name Causes &quot;HTTP 404&quot; Error

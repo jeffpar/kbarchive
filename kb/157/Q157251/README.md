@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157251: Changing Video Card Produces Error Message"
-permalink: kb/157/Q157251/
+permalink: /kb/157/Q157251/
 ---
 
 ## Q157251: Changing Video Card Produces Error Message

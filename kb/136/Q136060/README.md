@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136060: Green Caching VLB IDE Controller Incompatible with Windows 95"
-permalink: kb/136/Q136060/
+permalink: /kb/136/Q136060/
 ---
 
 ## Q136060: Green Caching VLB IDE Controller Incompatible with Windows 95

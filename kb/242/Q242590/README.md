@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242590: Microsoft Outlook 2000 Step by Step Comments and Corrections"
-permalink: kb/242/Q242590/
+permalink: /kb/242/Q242590/
 ---
 
 ## Q242590: Microsoft Outlook 2000 Step by Step Comments and Corrections

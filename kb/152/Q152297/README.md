@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152297: PRB: Calling APRINTERS Function Causes Feature Not Available"
-permalink: kb/152/Q152297/
+permalink: /kb/152/Q152297/
 ---
 
 ## Q152297: PRB: Calling APRINTERS Function Causes Feature Not Available

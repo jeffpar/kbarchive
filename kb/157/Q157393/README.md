@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157393: INFO: STL Sample for the partial_sum Function"
-permalink: kb/157/Q157393/
+permalink: /kb/157/Q157393/
 ---
 
 ## Q157393: INFO: STL Sample for the partial_sum Function

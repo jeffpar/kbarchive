@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106730: BUG: F6103 Reading &quot;0.&quot; into COMPLEX Number"
-permalink: kb/106/Q106730/
+permalink: /kb/106/Q106730/
 ---
 
 ## Q106730: BUG: F6103 Reading &quot;0.&quot; into COMPLEX Number

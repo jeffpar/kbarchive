@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108594: Flight Simulator 5.0: Maximums for Weather Areas"
-permalink: kb/108/Q108594/
+permalink: /kb/108/Q108594/
 ---
 
 ## Q108594: Flight Simulator 5.0: Maximums for Weather Areas

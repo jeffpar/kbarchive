@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260860: StarLancer: Computer Hangs When You Click Startup Screen Command"
-permalink: kb/260/Q260860/
+permalink: /kb/260/Q260860/
 ---
 
 ## Q260860: StarLancer: Computer Hangs When You Click Startup Screen Command

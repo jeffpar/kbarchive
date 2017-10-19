@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247327: Cannot Start Cluster Administrator After Adding Resources"
-permalink: kb/247/Q247327/
+permalink: /kb/247/Q247327/
 ---
 
 ## Q247327: Cannot Start Cluster Administrator After Adding Resources

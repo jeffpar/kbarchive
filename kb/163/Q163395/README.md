@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163395: BUG: SaveAs Method Fails to Create SCX File from Runtime Form"
-permalink: kb/163/Q163395/
+permalink: /kb/163/Q163395/
 ---
 
 ## Q163395: BUG: SaveAs Method Fails to Create SCX File from Runtime Form

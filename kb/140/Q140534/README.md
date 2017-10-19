@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140534: FIX: &quot;Data Truncated Column&quot; Erroneously Reported"
-permalink: kb/140/Q140534/
+permalink: /kb/140/Q140534/
 ---
 
 ## Q140534: FIX: &quot;Data Truncated Column&quot; Erroneously Reported

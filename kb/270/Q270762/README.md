@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270762: ELL FR &amp; SP: Setup Takes Longer Than You Expect"
-permalink: kb/270/Q270762/
+permalink: /kb/270/Q270762/
 ---
 
 ## Q270762: ELL FR &amp; SP: Setup Takes Longer Than You Expect

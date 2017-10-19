@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193017: BUG: Incorrect File Extension Using ActiveX Document Wizard"
-permalink: kb/193/Q193017/
+permalink: /kb/193/Q193017/
 ---
 
 ## Q193017: BUG: Incorrect File Extension Using ActiveX Document Wizard

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247538: Microsoft Win32 Developer's Reference Library Comments and Corre"
-permalink: kb/247/Q247538/
+permalink: /kb/247/Q247538/
 ---
 
 ## Q247538: Microsoft Win32 Developer's Reference Library Comments and Corre

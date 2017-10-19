@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106272: WFWG Err Msg: Network Busy"
-permalink: kb/106/Q106272/
+permalink: /kb/106/Q106272/
 ---
 
 ## Q106272: WFWG Err Msg: Network Busy

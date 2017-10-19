@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169528: FP97: NTLM Authentication Error Opening/Publishing FrontPage Web"
-permalink: kb/169/Q169528/
+permalink: /kb/169/Q169528/
 ---
 
 ## Q169528: FP97: NTLM Authentication Error Opening/Publishing FrontPage Web

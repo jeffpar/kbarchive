@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148211: Seven Habits Tools Goals Not Appear When Recurring"
-permalink: kb/148/Q148211/
+permalink: /kb/148/Q148211/
 ---
 
 ## Q148211: Seven Habits Tools Goals Not Appear When Recurring

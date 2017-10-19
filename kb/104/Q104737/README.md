@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104737: Uninstall Does Not Remove EGA2.CPI and KEYBRD2.SYS"
-permalink: kb/104/Q104737/
+permalink: /kb/104/Q104737/
 ---
 
 ## Q104737: Uninstall Does Not Remove EGA2.CPI and KEYBRD2.SYS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184701: Distributed Password Authentication Checkbox Is Unavailable"
-permalink: kb/184/Q184701/
+permalink: /kb/184/Q184701/
 ---
 
 ## Q184701: Distributed Password Authentication Checkbox Is Unavailable

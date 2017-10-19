@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74254: Norton's NCACHE.EXE Version 6.0 Disk Cache and Windows 3.0"
-permalink: kb/074/Q74254/
+permalink: /kb/074/Q74254/
 ---
 
 ## Q74254: Norton's NCACHE.EXE Version 6.0 Disk Cache and Windows 3.0

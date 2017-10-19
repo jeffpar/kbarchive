@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135313: Writer/Artist: Macintosh Network Server Installation"
-permalink: kb/135/Q135313/
+permalink: /kb/135/Q135313/
 ---
 
 ## Q135313: Writer/Artist: Macintosh Network Server Installation

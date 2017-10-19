@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169133: SMSINST: Bitmap Missing in Edit Dialog Window"
-permalink: kb/169/Q169133/
+permalink: /kb/169/Q169133/
 ---
 
 ## Q169133: SMSINST: Bitmap Missing in Edit Dialog Window

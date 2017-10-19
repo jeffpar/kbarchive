@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246630: INFO: &quot;COM+ Services Type Library&quot; Replaces MTS References in VB"
-permalink: kb/246/Q246630/
+permalink: /kb/246/Q246630/
 ---
 
 ## Q246630: INFO: &quot;COM+ Services Type Library&quot; Replaces MTS References in VB

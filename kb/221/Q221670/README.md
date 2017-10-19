@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221670: FIX:Multiselect Fails in Class Designer for Objects on PageFrame"
-permalink: kb/221/Q221670/
+permalink: /kb/221/Q221670/
 ---
 
 ## Q221670: FIX:Multiselect Fails in Class Designer for Objects on PageFrame

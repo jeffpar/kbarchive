@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96454: PC WFW: Installing Extensions for Workgroups"
-permalink: kb/096/Q96454/
+permalink: /kb/096/Q96454/
 ---
 
 ## Q96454: PC WFW: Installing Extensions for Workgroups

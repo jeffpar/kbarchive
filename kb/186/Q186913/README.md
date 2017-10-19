@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186913: HOWTO: Assign FoxPro Foundation Classes via Field Mapping"
-permalink: kb/186/Q186913/
+permalink: /kb/186/Q186913/
 ---
 
 ## Q186913: HOWTO: Assign FoxPro Foundation Classes via Field Mapping

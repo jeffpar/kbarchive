@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q26529: PPT: Restoring the Aspect Ratio of an Imported Graphic"
-permalink: kb/026/Q26529/
+permalink: /kb/026/Q26529/
 ---
 
 ## Q26529: PPT: Restoring the Aspect Ratio of an Imported Graphic

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250335: FILE: VCSPInfo.exe Provides Visual C++ Service Pack Information"
-permalink: kb/250/Q250335/
+permalink: /kb/250/Q250335/
 ---
 
 ## Q250335: FILE: VCSPInfo.exe Provides Visual C++ Service Pack Information

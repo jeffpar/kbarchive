@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153354: BUG: OLE Controls Limited to 20 Property Pages in Visual C++"
-permalink: kb/153/Q153354/
+permalink: /kb/153/Q153354/
 ---
 
 ## Q153354: BUG: OLE Controls Limited to 20 Property Pages in Visual C++

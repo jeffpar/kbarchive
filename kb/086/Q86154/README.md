@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86154: PROFS: Maximum Message Size That Can Be Processed"
-permalink: kb/086/Q86154/
+permalink: /kb/086/Q86154/
 ---
 
 ## Q86154: PROFS: Maximum Message Size That Can Be Processed

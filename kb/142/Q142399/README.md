@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142399: PRB: Line Drawn with Line Method Is Behind Form's Objects"
-permalink: kb/142/Q142399/
+permalink: /kb/142/Q142399/
 ---
 
 ## Q142399: PRB: Line Drawn with Line Method Is Behind Form's Objects

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169861: MDG: Offline Symbol Caused by Corrupted Mailbag"
-permalink: kb/169/Q169861/
+permalink: /kb/169/Q169861/
 ---
 
 ## Q169861: MDG: Offline Symbol Caused by Corrupted Mailbag

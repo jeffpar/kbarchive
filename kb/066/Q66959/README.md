@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66959: PRINTERS.INI Needed to Add PostScript Printers from SDL"
-permalink: kb/066/Q66959/
+permalink: /kb/066/Q66959/
 ---
 
 ## Q66959: PRINTERS.INI Needed to Add PostScript Printers from SDL

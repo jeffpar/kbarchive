@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180151: How to Select the PCM Distribution Server Selection Logic"
-permalink: kb/180/Q180151/
+permalink: /kb/180/Q180151/
 ---
 
 ## Q180151: How to Select the PCM Distribution Server Selection Logic

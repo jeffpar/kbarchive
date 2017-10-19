@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129616: Error Message: Cannot Find CANON.DRV"
-permalink: kb/129/Q129616/
+permalink: /kb/129/Q129616/
 ---
 
 ## Q129616: Error Message: Cannot Find CANON.DRV

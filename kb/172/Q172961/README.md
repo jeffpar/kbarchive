@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172961: WD97: Items Missing from Recently Used File List"
-permalink: kb/172/Q172961/
+permalink: /kb/172/Q172961/
 ---
 
 ## Q172961: WD97: Items Missing from Recently Used File List

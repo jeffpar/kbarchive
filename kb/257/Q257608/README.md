@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257608: BUG: Record Inserted Even Though the Field Does Not Accept NULL"
-permalink: kb/257/Q257608/
+permalink: /kb/257/Q257608/
 ---
 
 ## Q257608: BUG: Record Inserted Even Though the Field Does Not Accept NULL

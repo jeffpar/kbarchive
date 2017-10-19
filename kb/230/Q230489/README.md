@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230489: HOWTO: Annotate Image with Text Using ImageEdit Control"
-permalink: kb/230/Q230489/
+permalink: /kb/230/Q230489/
 ---
 
 ## Q230489: HOWTO: Annotate Image with Text Using ImageEdit Control

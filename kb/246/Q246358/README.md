@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246358: System Administration with Interix"
-permalink: kb/246/Q246358/
+permalink: /kb/246/Q246358/
 ---
 
 ## Q246358: System Administration with Interix

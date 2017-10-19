@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141633: PRB: Form with Subclassed Combo Looks for RowSource from Class"
-permalink: kb/141/Q141633/
+permalink: /kb/141/Q141633/
 ---
 
 ## Q141633: PRB: Form with Subclassed Combo Looks for RowSource from Class

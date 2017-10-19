@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127847: PRB: Cannot Set a One-to-Many Relationship in Data Designer"
-permalink: kb/127/Q127847/
+permalink: /kb/127/Q127847/
 ---
 
 ## Q127847: PRB: Cannot Set a One-to-Many Relationship in Data Designer

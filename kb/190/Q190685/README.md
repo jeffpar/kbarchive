@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190685: BUG: TabStrip Control's TabStyle Has No Effect at Run-Time"
-permalink: kb/190/Q190685/
+permalink: /kb/190/Q190685/
 ---
 
 ## Q190685: BUG: TabStrip Control's TabStyle Has No Effect at Run-Time

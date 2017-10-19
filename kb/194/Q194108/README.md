@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194108: Research Organizer 99: Program Hangs When You Paste Text"
-permalink: kb/194/Q194108/
+permalink: /kb/194/Q194108/
 ---
 
 ## Q194108: Research Organizer 99: Program Hangs When You Paste Text

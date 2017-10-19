@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242857: &quot;Operation Could Not Be Completed&quot; Error When Adding Printer"
-permalink: kb/242/Q242857/
+permalink: /kb/242/Q242857/
 ---
 
 ## Q242857: &quot;Operation Could Not Be Completed&quot; Error When Adding Printer

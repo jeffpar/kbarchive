@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162939: WD97: Cancel Action Doesn't Function in Converted Macro"
-permalink: kb/162/Q162939/
+permalink: /kb/162/Q162939/
 ---
 
 ## Q162939: WD97: Cancel Action Doesn't Function in Converted Macro

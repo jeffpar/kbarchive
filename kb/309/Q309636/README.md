@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309636: Bicycle Games: Known Video Issues"
-permalink: kb/309/Q309636/
+permalink: /kb/309/Q309636/
 ---
 
 ## Q309636: Bicycle Games: Known Video Issues

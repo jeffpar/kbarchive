@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236520: MOD2000: Save Project Prompt w/ Close, Add to VSS, or P&amp;D Wizard"
-permalink: kb/236/Q236520/
+permalink: /kb/236/Q236520/
 ---
 
 ## Q236520: MOD2000: Save Project Prompt w/ Close, Add to VSS, or P&amp;D Wizard

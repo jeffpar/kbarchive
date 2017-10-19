@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129572: How to Find Out Which FoxPro Version Created an .SCX File"
-permalink: kb/129/Q129572/
+permalink: /kb/129/Q129572/
 ---
 
 ## Q129572: How to Find Out Which FoxPro Version Created an .SCX File

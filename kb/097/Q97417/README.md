@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97417: CHKDSK Err Msg Without Option to Correct: X Lost Cluster(s)"
-permalink: kb/097/Q97417/
+permalink: /kb/097/Q97417/
 ---
 
 ## Q97417: CHKDSK Err Msg Without Option to Correct: X Lost Cluster(s)

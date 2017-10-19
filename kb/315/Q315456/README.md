@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315456: FP: Error: Unable to Open Jet Temporary Key Connecting to DB"
-permalink: kb/315/Q315456/
+permalink: /kb/315/Q315456/
 ---
 
 ## Q315456: FP: Error: Unable to Open Jet Temporary Key Connecting to DB

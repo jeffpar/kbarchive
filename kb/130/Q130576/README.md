@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130576: PRB: MODIFY GENERAL Fires the FORM DEACTIVATE Clause"
-permalink: kb/130/Q130576/
+permalink: /kb/130/Q130576/
 ---
 
 ## Q130576: PRB: MODIFY GENERAL Fires the FORM DEACTIVATE Clause

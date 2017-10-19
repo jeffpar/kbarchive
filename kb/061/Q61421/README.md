@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61421: Determining a Computer's BIOS Manufacturer, Version, and Date"
-permalink: kb/061/Q61421/
+permalink: /kb/061/Q61421/
 ---
 
 ## Q61421: Determining a Computer's BIOS Manufacturer, Version, and Date

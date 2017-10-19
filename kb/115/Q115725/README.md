@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115725: FORTRAN PowerStation 1.0a README.TXT: Executing and Debugging"
-permalink: kb/115/Q115725/
+permalink: /kb/115/Q115725/
 ---
 
 ## Q115725: FORTRAN PowerStation 1.0a README.TXT: Executing and Debugging

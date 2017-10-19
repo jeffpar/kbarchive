@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150778: Mastering Visual C++, Mastering Access: Runtime Error 13"
-permalink: kb/150/Q150778/
+permalink: /kb/150/Q150778/
 ---
 
 ## Q150778: Mastering Visual C++, Mastering Access: Runtime Error 13

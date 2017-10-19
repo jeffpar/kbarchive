@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147130: FIX: Building an .OCX Always Runs Regsvr32"
-permalink: kb/147/Q147130/
+permalink: /kb/147/Q147130/
 ---
 
 ## Q147130: FIX: Building an .OCX Always Runs Regsvr32

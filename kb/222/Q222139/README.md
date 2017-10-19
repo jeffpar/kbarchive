@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222139: Flight Sim 95 Err Msg: Setup Has Detected a Newer Version..."
-permalink: kb/222/Q222139/
+permalink: /kb/222/Q222139/
 ---
 
 ## Q222139: Flight Sim 95 Err Msg: Setup Has Detected a Newer Version...

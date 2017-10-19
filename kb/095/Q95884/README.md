@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95884: How To: Modifying WFWG for Use with Artisoft's LANtastic"
-permalink: kb/095/Q95884/
+permalink: /kb/095/Q95884/
 ---
 
 ## Q95884: How To: Modifying WFWG for Use with Artisoft's LANtastic

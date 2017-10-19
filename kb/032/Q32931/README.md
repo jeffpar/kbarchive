@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32931: Maze.exe Demonstrates DDE"
-permalink: kb/032/Q32931/
+permalink: /kb/032/Q32931/
 ---
 
 ## Q32931: Maze.exe Demonstrates DDE

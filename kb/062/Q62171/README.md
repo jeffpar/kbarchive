@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62171: Mac Hyp: Saving a Message to Disk"
-permalink: kb/062/Q62171/
+permalink: /kb/062/Q62171/
 ---
 
 ## Q62171: Mac Hyp: Saving a Message to Disk

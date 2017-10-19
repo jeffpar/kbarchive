@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235652: XADM: Constrain Violation Adding Accounts to Permissions Tab"
-permalink: kb/235/Q235652/
+permalink: /kb/235/Q235652/
 ---
 
 ## Q235652: XADM: Constrain Violation Adding Accounts to Permissions Tab

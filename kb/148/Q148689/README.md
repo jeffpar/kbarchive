@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148689: How to Parse Config.fpw Programmatically"
-permalink: kb/148/Q148689/
+permalink: /kb/148/Q148689/
 ---
 
 ## Q148689: How to Parse Config.fpw Programmatically

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160326: WD97: Macro to Find Tables in Word Documents"
-permalink: kb/160/Q160326/
+permalink: /kb/160/Q160326/
 ---
 
 ## Q160326: WD97: Macro to Find Tables in Word Documents

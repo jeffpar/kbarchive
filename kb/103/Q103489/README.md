@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103489: Logon Hours Rights Are Checked Only During Actual Logon Time"
-permalink: kb/103/Q103489/
+permalink: /kb/103/Q103489/
 ---
 
 ## Q103489: Logon Hours Rights Are Checked Only During Actual Logon Time

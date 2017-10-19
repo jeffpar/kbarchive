@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317543: How To Connect To MSN Using Macintosh Remote Access"
-permalink: kb/317/Q317543/
+permalink: /kb/317/Q317543/
 ---
 
 ## Q317543: How To Connect To MSN Using Macintosh Remote Access

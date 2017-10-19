@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177749: How IIS 3.0 Handles Client Language"
-permalink: kb/177/Q177749/
+permalink: /kb/177/Q177749/
 ---
 
 ## Q177749: How IIS 3.0 Handles Client Language

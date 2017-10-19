@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195905: XCON: Address Space Not Updated When You Recalculate GWART"
-permalink: kb/195/Q195905/
+permalink: /kb/195/Q195905/
 ---
 
 ## Q195905: XCON: Address Space Not Updated When You Recalculate GWART

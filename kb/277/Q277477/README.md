@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277477: FP: Sample DHTML to Compare Two Passwords"
-permalink: kb/277/Q277477/
+permalink: /kb/277/Q277477/
 ---
 
 ## Q277477: FP: Sample DHTML to Compare Two Passwords

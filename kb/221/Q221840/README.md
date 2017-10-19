@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221840: XFOR: Notes Connector Can't Handle Schedule+ 1.0 Meeting Request"
-permalink: kb/221/Q221840/
+permalink: /kb/221/Q221840/
 ---
 
 ## Q221840: XFOR: Notes Connector Can't Handle Schedule+ 1.0 Meeting Request

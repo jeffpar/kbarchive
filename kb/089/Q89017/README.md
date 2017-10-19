@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89017: ROM BIOS Upgrade for Hewlett-Packard Vectra"
-permalink: kb/089/Q89017/
+permalink: /kb/089/Q89017/
 ---
 
 ## Q89017: ROM BIOS Upgrade for Hewlett-Packard Vectra

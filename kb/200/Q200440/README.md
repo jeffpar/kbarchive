@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200440: PRB: MFC SAVER Sample Does Not Run Correctly"
-permalink: kb/200/Q200440/
+permalink: /kb/200/Q200440/
 ---
 
 ## Q200440: PRB: MFC SAVER Sample Does Not Run Correctly

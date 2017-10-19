@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86373: PC DOS: New Features in 3.0 Client Utilities"
-permalink: kb/086/Q86373/
+permalink: /kb/086/Q86373/
 ---
 
 ## Q86373: PC DOS: New Features in 3.0 Client Utilities

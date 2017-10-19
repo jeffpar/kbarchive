@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89849: PC Ext: Slow Modem Communications with 9600 Baud Modems"
-permalink: kb/089/Q89849/
+permalink: /kb/089/Q89849/
 ---
 
 ## Q89849: PC Ext: Slow Modem Communications with 9600 Baud Modems

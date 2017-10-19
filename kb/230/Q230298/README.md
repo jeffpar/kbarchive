@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230298: Posting Acceptor Release Notes"
-permalink: kb/230/Q230298/
+permalink: /kb/230/Q230298/
 ---
 
 ## Q230298: Posting Acceptor Release Notes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142195: CONN: Menu Options Grayed Out in the CNU"
-permalink: kb/142/Q142195/
+permalink: /kb/142/Q142195/
 ---
 
 ## Q142195: CONN: Menu Options Grayed Out in the CNU

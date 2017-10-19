@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171905: Err Msg: Cannot Establish Modem Connection."
-permalink: kb/171/Q171905/
+permalink: /kb/171/Q171905/
 ---
 
 ## Q171905: Err Msg: Cannot Establish Modem Connection.

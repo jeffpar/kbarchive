@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173362: FIX: RichTextBox SelPrint Method Does Not Print Entire Selection"
-permalink: kb/173/Q173362/
+permalink: /kb/173/Q173362/
 ---
 
 ## Q173362: FIX: RichTextBox SelPrint Method Does Not Print Entire Selection

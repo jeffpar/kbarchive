@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166588: XCON: MTA Work Queue Backlog When Restrictions Used with DL"
-permalink: kb/166/Q166588/
+permalink: /kb/166/Q166588/
 ---
 
 ## Q166588: XCON: MTA Work Queue Backlog When Restrictions Used with DL

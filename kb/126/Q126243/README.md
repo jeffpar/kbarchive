@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126243: PGC Creates Duplicate Items on Windows 95 Taskbar"
-permalink: kb/126/Q126243/
+permalink: /kb/126/Q126243/
 ---
 
 ## Q126243: PGC Creates Duplicate Items on Windows 95 Taskbar

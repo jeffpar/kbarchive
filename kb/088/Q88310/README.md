@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88310: Configure Qumax's Mighty KT30S Keyboard as Genius Mouse"
-permalink: kb/088/Q88310/
+permalink: /kb/088/Q88310/
 ---
 
 ## Q88310: Configure Qumax's Mighty KT30S Keyboard as Genius Mouse

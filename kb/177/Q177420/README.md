@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177420: Rcmd.exe Err Msg: Failed to Connect"
-permalink: kb/177/Q177420/
+permalink: /kb/177/Q177420/
 ---
 
 ## Q177420: Rcmd.exe Err Msg: Failed to Connect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247440: HOWTO: Rename Jet 3.51 ODBC Drivers in Windows 2000"
-permalink: kb/247/Q247440/
+permalink: /kb/247/Q247440/
 ---
 
 ## Q247440: HOWTO: Rename Jet 3.51 ODBC Drivers in Windows 2000

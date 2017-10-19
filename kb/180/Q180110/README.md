@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180110: XADM: Directory Export Does Not Append to Existing File"
-permalink: kb/180/Q180110/
+permalink: /kb/180/Q180110/
 ---
 
 ## Q180110: XADM: Directory Export Does Not Append to Existing File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189424: BUG: No Warning, Recordset Row Count Not Equal Length-specifier"
-permalink: kb/189/Q189424/
+permalink: /kb/189/Q189424/
 ---
 
 ## Q189424: BUG: No Warning, Recordset Row Count Not Equal Length-specifier

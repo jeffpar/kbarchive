@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185579: XADM: Duplicating a Mailbox That Belongs to DL in Another Site"
-permalink: kb/185/Q185579/
+permalink: /kb/185/Q185579/
 ---
 
 ## Q185579: XADM: Duplicating a Mailbox That Belongs to DL in Another Site

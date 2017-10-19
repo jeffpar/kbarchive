@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129709: PRB: Run-Time Overflow Error w/Byte-Type Counter in For Loop"
-permalink: kb/129/Q129709/
+permalink: /kb/129/Q129709/
 ---
 
 ## Q129709: PRB: Run-Time Overflow Error w/Byte-Type Counter in For Loop

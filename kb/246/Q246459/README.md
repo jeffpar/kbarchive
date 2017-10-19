@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246459: Err Msg: Unable to Enumerate Web Sites because the Following..."
-permalink: kb/246/Q246459/
+permalink: /kb/246/Q246459/
 ---
 
 ## Q246459: Err Msg: Unable to Enumerate Web Sites because the Following...

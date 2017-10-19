@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67268: AST 3G Plus II EGA Video Adapter and Windows 3.0"
-permalink: kb/067/Q67268/
+permalink: /kb/067/Q67268/
 ---
 
 ## Q67268: AST 3G Plus II EGA Video Adapter and Windows 3.0

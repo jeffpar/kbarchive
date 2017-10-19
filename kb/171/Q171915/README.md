@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171915: Active User Sessions Always Display Total Users Sessions"
-permalink: kb/171/Q171915/
+permalink: /kb/171/Q171915/
 ---
 
 ## Q171915: Active User Sessions Always Display Total Users Sessions

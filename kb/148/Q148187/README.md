@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148187: BUG: Debugger Cannot Display Renamed Module Variables"
-permalink: kb/148/Q148187/
+permalink: /kb/148/Q148187/
 ---
 
 ## Q148187: BUG: Debugger Cannot Display Renamed Module Variables

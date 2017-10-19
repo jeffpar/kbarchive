@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179117: ACC: ActiveX Controls Installed by MS Access, ODE, and Others"
-permalink: kb/179/Q179117/
+permalink: /kb/179/Q179117/
 ---
 
 ## Q179117: ACC: ActiveX Controls Installed by MS Access, ODE, and Others

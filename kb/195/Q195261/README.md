@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195261: BUG: Operating System Regional Settings Affect VFP COM Objects"
-permalink: kb/195/Q195261/
+permalink: /kb/195/Q195261/
 ---
 
 ## Q195261: BUG: Operating System Regional Settings Affect VFP COM Objects

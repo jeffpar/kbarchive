@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183778: XCLN: ALT+TAB Shows Two ODK Icons"
-permalink: kb/183/Q183778/
+permalink: /kb/183/Q183778/
 ---
 
 ## Q183778: XCLN: ALT+TAB Shows Two ODK Icons

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150135: PRB: Error in ICHAR() Using Multi-Character Input Argument"
-permalink: kb/150/Q150135/
+permalink: /kb/150/Q150135/
 ---
 
 ## Q150135: PRB: Error in ICHAR() Using Multi-Character Input Argument

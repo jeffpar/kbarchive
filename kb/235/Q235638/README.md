@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235638: INFO: DCOM95 and DCOM98 Version Information"
-permalink: kb/235/Q235638/
+permalink: /kb/235/Q235638/
 ---
 
 ## Q235638: INFO: DCOM95 and DCOM98 Version Information

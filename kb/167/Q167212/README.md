@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167212: Supported PCMCIA Mode on Toshiba Tecra 700 Series"
-permalink: kb/167/Q167212/
+permalink: /kb/167/Q167212/
 ---
 
 ## Q167212: Supported PCMCIA Mode on Toshiba Tecra 700 Series

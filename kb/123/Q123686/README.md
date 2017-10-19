@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123686: Controlling Segment Ordering"
-permalink: kb/123/Q123686/
+permalink: /kb/123/Q123686/
 ---
 
 ## Q123686: Controlling Segment Ordering

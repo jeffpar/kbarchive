@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168796: HOWTO: Programmatically Restart or Log Off a Computer"
-permalink: kb/168/Q168796/
+permalink: /kb/168/Q168796/
 ---
 
 ## Q168796: HOWTO: Programmatically Restart or Log Off a Computer

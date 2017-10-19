@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182374: TN5250 Event ID 16 Error Causing APPC Session To Fail"
-permalink: kb/182/Q182374/
+permalink: /kb/182/Q182374/
 ---
 
 ## Q182374: TN5250 Event ID 16 Error Causing APPC Session To Fail

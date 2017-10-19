@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76260: HOWTO: How to Create Device-Independent Printing Code"
-permalink: kb/076/Q76260/
+permalink: /kb/076/Q76260/
 ---
 
 ## Q76260: HOWTO: How to Create Device-Independent Printing Code

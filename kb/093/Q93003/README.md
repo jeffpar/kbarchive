@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93003: FIX: CVW3.EXE Displays No Text Cursor on Some Mono Video Cards"
-permalink: kb/093/Q93003/
+permalink: /kb/093/Q93003/
 ---
 
 ## Q93003: FIX: CVW3.EXE Displays No Text Cursor on Some Mono Video Cards

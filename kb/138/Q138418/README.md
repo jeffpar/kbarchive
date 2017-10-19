@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138418: WD97: Can't Use UNC Drive for Document Path on Some Networks"
-permalink: kb/138/Q138418/
+permalink: /kb/138/Q138418/
 ---
 
 ## Q138418: WD97: Can't Use UNC Drive for Document Path on Some Networks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127738: PC DOS: Default Text Color Changed in Message Body"
-permalink: kb/127/Q127738/
+permalink: /kb/127/Q127738/
 ---
 
 ## Q127738: PC DOS: Default Text Color Changed in Message Body

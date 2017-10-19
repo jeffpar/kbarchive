@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161626: XCLN: Troubleshooting IPX/SPX Connections"
-permalink: kb/161/Q161626/
+permalink: /kb/161/Q161626/
 ---
 
 ## Q161626: XCLN: Troubleshooting IPX/SPX Connections

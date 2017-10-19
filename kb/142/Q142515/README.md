@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142515: Magic School Bus: No Printout on Canon BubbleJet"
-permalink: kb/142/Q142515/
+permalink: /kb/142/Q142515/
 ---
 
 ## Q142515: Magic School Bus: No Printout on Canon BubbleJet

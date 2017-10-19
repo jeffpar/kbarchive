@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316211: IStorage::CopyTo() Calls Do Not Work with the Post-SP6a SRP"
-permalink: kb/316/Q316211/
+permalink: /kb/316/Q316211/
 ---
 
 ## Q316211: IStorage::CopyTo() Calls Do Not Work with the Post-SP6a SRP

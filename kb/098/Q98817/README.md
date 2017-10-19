@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98817: MHS: 3.0 Gateway Disk [3.5, 720K]"
-permalink: kb/098/Q98817/
+title: "Q98817: MHS: 3.0 Gateway Disk &#91;3.5, 720K&#93;"
+permalink: /kb/098/Q98817/
 ---
 
-## Q98817: MHS: 3.0 Gateway Disk [3.5, 720K]
+## Q98817: MHS: 3.0 Gateway Disk &#91;3.5, 720K&#93;
 
 	Article: Q98817
 	Product(s): Microsoft Mail For PC Networks

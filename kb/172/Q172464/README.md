@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172464: SMS: PowerPoint Loses Cursor When PCMWIN16 Is Loaded"
-permalink: kb/172/Q172464/
+permalink: /kb/172/Q172464/
 ---
 
 ## Q172464: SMS: PowerPoint Loses Cursor When PCMWIN16 Is Loaded

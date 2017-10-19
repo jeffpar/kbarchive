@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132805: Tabworks Replaces Windows 95 Shell with Program Manager"
-permalink: kb/132/Q132805/
+permalink: /kb/132/Q132805/
 ---
 
 ## Q132805: Tabworks Replaces Windows 95 Shell with Program Manager

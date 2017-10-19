@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124485: Pathworks 5.0 Prevents Domain Name Registration on TCP/IP"
-permalink: kb/124/Q124485/
+permalink: /kb/124/Q124485/
 ---
 
 ## Q124485: Pathworks 5.0 Prevents Domain Name Registration on TCP/IP

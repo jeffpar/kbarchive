@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163632: Windows NT User Account Database Search Order"
-permalink: kb/163/Q163632/
+permalink: /kb/163/Q163632/
 ---
 
 ## Q163632: Windows NT User Account Database Search Order

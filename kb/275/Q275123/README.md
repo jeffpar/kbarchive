@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275123: FP: Prompts for User Name/Password w/Digest Authentication"
-permalink: kb/275/Q275123/
+permalink: /kb/275/Q275123/
 ---
 
 ## Q275123: FP: Prompts for User Name/Password w/Digest Authentication

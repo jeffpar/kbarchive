@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177093: FPNW Service Fails to Start"
-permalink: kb/177/Q177093/
+permalink: /kb/177/Q177093/
 ---
 
 ## Q177093: FPNW Service Fails to Start

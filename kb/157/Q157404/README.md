@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157404: PRB: Changing Field Settings of a Table Deletes Relationships"
-permalink: kb/157/Q157404/
+permalink: /kb/157/Q157404/
 ---
 
 ## Q157404: PRB: Changing Field Settings of a Table Deletes Relationships

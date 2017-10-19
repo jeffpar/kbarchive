@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194202: PRB: Datatype Error Accessing Property With _Access Method"
-permalink: kb/194/Q194202/
+permalink: /kb/194/Q194202/
 ---
 
 ## Q194202: PRB: Datatype Error Accessing Property With _Access Method

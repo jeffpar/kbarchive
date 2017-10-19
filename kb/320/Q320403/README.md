@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320403: Building Enterprise Active Directory Services: Notes from the Fi"
-permalink: kb/320/Q320403/
+permalink: /kb/320/Q320403/
 ---
 
 ## Q320403: Building Enterprise Active Directory Services: Notes from the Fi

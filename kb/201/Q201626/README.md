@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201626: WD97: SuperDocStatistics Macro: Purpose, Features, Issues"
-permalink: kb/201/Q201626/
+permalink: /kb/201/Q201626/
 ---
 
 ## Q201626: WD97: SuperDocStatistics Macro: Purpose, Features, Issues

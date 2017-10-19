@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140590: FIX: Error in COleDispatchException Constructor"
-permalink: kb/140/Q140590/
+permalink: /kb/140/Q140590/
 ---
 
 ## Q140590: FIX: Error in COleDispatchException Constructor

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103697: PC Win: Messages Not Imported from Backup MMF If Already Exist"
-permalink: kb/103/Q103697/
+permalink: /kb/103/Q103697/
 ---
 
 ## Q103697: PC Win: Messages Not Imported from Backup MMF If Already Exist

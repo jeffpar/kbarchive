@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257791: FIX: VB Crashes While Trying to Compile/Link the Program"
-permalink: kb/257/Q257791/
+permalink: /kb/257/Q257791/
 ---
 
 ## Q257791: FIX: VB Crashes While Trying to Compile/Link the Program

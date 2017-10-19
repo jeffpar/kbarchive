@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166225: XWEB: Err Msg: Requested Header Not Found"
-permalink: kb/166/Q166225/
+permalink: /kb/166/Q166225/
 ---
 
 ## Q166225: XWEB: Err Msg: Requested Header Not Found

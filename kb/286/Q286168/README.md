@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286168: Application Exception in Snalink!UpdateDLSData"
-permalink: kb/286/Q286168/
+permalink: /kb/286/Q286168/
 ---
 
 ## Q286168: Application Exception in Snalink!UpdateDLSData

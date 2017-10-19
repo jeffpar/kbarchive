@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94034: Cannot Print to File Using PCPanel Version 2.2"
-permalink: kb/094/Q94034/
+permalink: /kb/094/Q94034/
 ---
 
 ## Q94034: Cannot Print to File Using PCPanel Version 2.2

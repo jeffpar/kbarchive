@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152654: XADM: Welcome Message to New Users Not Available"
-permalink: kb/152/Q152654/
+permalink: /kb/152/Q152654/
 ---
 
 ## Q152654: XADM: Welcome Message to New Users Not Available

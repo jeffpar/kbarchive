@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82694: Novell's NETBIOS May Require TimerCriticalSection Line"
-permalink: kb/082/Q82694/
+permalink: /kb/082/Q82694/
 ---
 
 ## Q82694: Novell's NETBIOS May Require TimerCriticalSection Line

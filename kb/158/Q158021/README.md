@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158021: GEX: System Requirements"
-permalink: kb/158/Q158021/
+permalink: /kb/158/Q158021/
 ---
 
 ## Q158021: GEX: System Requirements

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190820: BUG: SYS(2014) Allows Wrong Data Type for Second Parameter"
-permalink: kb/190/Q190820/
+permalink: /kb/190/Q190820/
 ---
 
 ## Q190820: BUG: SYS(2014) Allows Wrong Data Type for Second Parameter

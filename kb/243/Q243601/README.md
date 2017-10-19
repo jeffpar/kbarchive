@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243601: XADM: Backups Time Out on Large DBs when DB Scrubbing Is Enabled"
-permalink: kb/243/Q243601/
+permalink: /kb/243/Q243601/
 ---
 
 ## Q243601: XADM: Backups Time Out on Large DBs when DB Scrubbing Is Enabled

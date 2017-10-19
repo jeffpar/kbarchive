@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82465: STACKS=9,256 with PCKSCRN 1.3 Can Cause System Hangs"
-permalink: kb/082/Q82465/
+permalink: /kb/082/Q82465/
 ---
 
 ## Q82465: STACKS=9,256 with PCKSCRN 1.3 Can Cause System Hangs

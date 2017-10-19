@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234845: Input Box over First Binding in HTMLA Advanced Properties"
-permalink: kb/234/Q234845/
+permalink: /kb/234/Q234845/
 ---
 
 ## Q234845: Input Box over First Binding in HTMLA Advanced Properties

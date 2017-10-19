@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194832: FIX: Memo Has Characters Added to Value in Locals/Watch Window"
-permalink: kb/194/Q194832/
+permalink: /kb/194/Q194832/
 ---
 
 ## Q194832: FIX: Memo Has Characters Added to Value in Locals/Watch Window

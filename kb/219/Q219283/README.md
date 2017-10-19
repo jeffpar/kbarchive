@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219283: Using MS-CHAP with RADIUS Authentication"
-permalink: kb/219/Q219283/
+permalink: /kb/219/Q219283/
 ---
 
 ## Q219283: Using MS-CHAP with RADIUS Authentication

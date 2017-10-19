@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147148: XCLN: Missing Inbox, Outbox, and Sent Items Folder in Exchange"
-permalink: kb/147/Q147148/
+permalink: /kb/147/Q147148/
 ---
 
 ## Q147148: XCLN: Missing Inbox, Outbox, and Sent Items Folder in Exchange

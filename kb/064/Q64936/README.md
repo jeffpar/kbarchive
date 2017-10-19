@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64936: Update of WordPerfect 5.1 for Expanded Memory Problems"
-permalink: kb/064/Q64936/
+permalink: /kb/064/Q64936/
 ---
 
 ## Q64936: Update of WordPerfect 5.1 for Expanded Memory Problems

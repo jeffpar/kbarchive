@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268835: FIX: ClusterResourceControl May Leak Memory"
-permalink: kb/268/Q268835/
+permalink: /kb/268/Q268835/
 ---
 
 ## Q268835: FIX: ClusterResourceControl May Leak Memory

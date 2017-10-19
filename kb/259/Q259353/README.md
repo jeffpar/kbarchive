@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259353: Must Enter Password Manually After You Toggle Password Sync"
-permalink: kb/259/Q259353/
+permalink: /kb/259/Q259353/
 ---
 
 ## Q259353: Must Enter Password Manually After You Toggle Password Sync

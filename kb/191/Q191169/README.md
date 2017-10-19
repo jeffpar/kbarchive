@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191169: SNA Windows NT Client Does Not Detect The SNA Web Client"
-permalink: kb/191/Q191169/
+permalink: /kb/191/Q191169/
 ---
 
 ## Q191169: SNA Windows NT Client Does Not Detect The SNA Web Client

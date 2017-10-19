@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149378: PRB: File Not Found Error When You Add New Users"
-permalink: kb/149/Q149378/
+permalink: /kb/149/Q149378/
 ---
 
 ## Q149378: PRB: File Not Found Error When You Add New Users

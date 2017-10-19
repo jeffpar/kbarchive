@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132079: HOWTO: How to Access CMemFile Directly When Using It with CArchi"
-permalink: kb/132/Q132079/
+permalink: /kb/132/Q132079/
 ---
 
 ## Q132079: HOWTO: How to Access CMemFile Directly When Using It with CArchi

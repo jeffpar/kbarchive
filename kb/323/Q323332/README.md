@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323332: ASP Generates a New ASP SessionID Cookie for Every User Access"
-permalink: kb/323/Q323332/
+permalink: /kb/323/Q323332/
 ---
 
 ## Q323332: ASP Generates a New ASP SessionID Cookie for Every User Access

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245062: PRB: OptionButtons Do Not Hold Logical Values"
-permalink: kb/245/Q245062/
+permalink: /kb/245/Q245062/
 ---
 
 ## Q245062: PRB: OptionButtons Do Not Hold Logical Values

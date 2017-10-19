@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168446: WD97: Word 2.0 Templates Such as Letblock, Memo2, Not Supported"
-permalink: kb/168/Q168446/
+permalink: /kb/168/Q168446/
 ---
 
 ## Q168446: WD97: Word 2.0 Templates Such as Letblock, Memo2, Not Supported

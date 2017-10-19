@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195950: How and Why ROOTDRIVE Is Used on Windows Terminal Server"
-permalink: kb/195/Q195950/
+permalink: /kb/195/Q195950/
 ---
 
 ## Q195950: How and Why ROOTDRIVE Is Used on Windows Terminal Server

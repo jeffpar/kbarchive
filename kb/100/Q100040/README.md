@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100040: PC Forms: Updates to MAPI Visual Basic API"
-permalink: kb/100/Q100040/
+permalink: /kb/100/Q100040/
 ---
 
 ## Q100040: PC Forms: Updates to MAPI Visual Basic API

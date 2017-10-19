@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191967: PRB: Visual FoxPro In-Process Servers Do Not Run Concurrently"
-permalink: kb/191/Q191967/
+permalink: /kb/191/Q191967/
 ---
 
 ## Q191967: PRB: Visual FoxPro In-Process Servers Do Not Run Concurrently

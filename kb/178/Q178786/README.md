@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178786: PCMAIL: GFEXTEND 1 2 Required for Extended Characters Using GCAS"
-permalink: kb/178/Q178786/
+permalink: /kb/178/Q178786/
 ---
 
 ## Q178786: PCMAIL: GFEXTEND 1 2 Required for Extended Characters Using GCAS

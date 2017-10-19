@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154686: XADM: Options in Admin or User Manager May Be Overwritten"
-permalink: kb/154/Q154686/
+permalink: /kb/154/Q154686/
 ---
 
 ## Q154686: XADM: Options in Admin or User Manager May Be Overwritten

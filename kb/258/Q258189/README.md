@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258189: IIS Log Contains Wrong Data When ISAPI Uses Default File Size"
-permalink: kb/258/Q258189/
+permalink: /kb/258/Q258189/
 ---
 
 ## Q258189: IIS Log Contains Wrong Data When ISAPI Uses Default File Size

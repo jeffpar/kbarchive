@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82747: How Windows Prints to a Network"
-permalink: kb/082/Q82747/
+permalink: /kb/082/Q82747/
 ---
 
 ## Q82747: How Windows Prints to a Network

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161283: INFO: Default Filename for Text File Error Log: VBEVENTS.LOG"
-permalink: kb/161/Q161283/
+permalink: /kb/161/Q161283/
 ---
 
 ## Q161283: INFO: Default Filename for Text File Error Log: VBEVENTS.LOG

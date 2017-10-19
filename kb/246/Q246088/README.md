@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246088: HOWTO: Apply RichText Effect in VFP Reports"
-permalink: kb/246/Q246088/
+permalink: /kb/246/Q246088/
 ---
 
 ## Q246088: HOWTO: Apply RichText Effect in VFP Reports

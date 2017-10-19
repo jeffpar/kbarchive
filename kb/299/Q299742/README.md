@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299742: Train Simulator: Map Goes Black When You Change Resolution"
-permalink: kb/299/Q299742/
+permalink: /kb/299/Q299742/
 ---
 
 ## Q299742: Train Simulator: Map Goes Black When You Change Resolution

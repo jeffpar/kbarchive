@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190712: XWEB: Able to Open Original Meeting After Cancellation Is Sent"
-permalink: kb/190/Q190712/
+permalink: /kb/190/Q190712/
 ---
 
 ## Q190712: XWEB: Able to Open Original Meeting After Cancellation Is Sent

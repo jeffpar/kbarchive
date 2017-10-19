@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322729: XADM: -1018 and -1022 Errors on Dell PowerEdge Servers"
-permalink: kb/322/Q322729/
+permalink: /kb/322/Q322729/
 ---
 
 ## Q322729: XADM: -1018 and -1022 Errors on Dell PowerEdge Servers

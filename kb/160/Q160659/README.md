@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160659: Access Violation in Infocomm.dll w/ Incorrectly Formatted URLs"
-permalink: kb/160/Q160659/
+permalink: /kb/160/Q160659/
 ---
 
 ## Q160659: Access Violation in Infocomm.dll w/ Incorrectly Formatted URLs

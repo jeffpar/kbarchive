@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104732: Running MSD 2.01 under Windows Causes DoubleGuard Error"
-permalink: kb/104/Q104732/
+permalink: /kb/104/Q104732/
 ---
 
 ## Q104732: Running MSD 2.01 under Windows Causes DoubleGuard Error

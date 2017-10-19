@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199296: XCLN: Outlook 97 Error: &quot;Failed to Perform Client Side Action&quot;"
-permalink: kb/199/Q199296/
+permalink: /kb/199/Q199296/
 ---
 
 ## Q199296: XCLN: Outlook 97 Error: &quot;Failed to Perform Client Side Action&quot;

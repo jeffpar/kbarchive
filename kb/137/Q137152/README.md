@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137152: Canon BubbleJet on ECP Port Prints Partial Page"
-permalink: kb/137/Q137152/
+permalink: /kb/137/Q137152/
 ---
 
 ## Q137152: Canon BubbleJet on ECP Port Prints Partial Page

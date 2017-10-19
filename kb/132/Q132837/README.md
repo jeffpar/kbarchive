@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132837: Toshiba 4500 May Not Resume Correctly if Suspended from Start"
-permalink: kb/132/Q132837/
+permalink: /kb/132/Q132837/
 ---
 
 ## Q132837: Toshiba 4500 May Not Resume Correctly if Suspended from Start

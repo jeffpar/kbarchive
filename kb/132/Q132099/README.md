@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132099: PC NTMMTA: Cannot Use NT System Account with NT MMTA"
-permalink: kb/132/Q132099/
+permalink: /kb/132/Q132099/
 ---
 
 ## Q132099: PC NTMMTA: Cannot Use NT System Account with NT MMTA

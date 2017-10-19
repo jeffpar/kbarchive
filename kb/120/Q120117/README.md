@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120117: DBLSPACE /LIST &amp; DRVSPACE /LIST Report 4096-MB Hard Disk"
-permalink: kb/120/Q120117/
+permalink: /kb/120/Q120117/
 ---
 
 ## Q120117: DBLSPACE /LIST &amp; DRVSPACE /LIST Report 4096-MB Hard Disk

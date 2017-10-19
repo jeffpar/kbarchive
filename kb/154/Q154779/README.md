@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154779: Close Combat Err Msg: Video Not Available, Cannot Find..."
-permalink: kb/154/Q154779/
+permalink: /kb/154/Q154779/
 ---
 
 ## Q154779: Close Combat Err Msg: Video Not Available, Cannot Find...

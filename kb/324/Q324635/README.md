@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q324635: COMTI May Log Events 103, 300, and 301 When Under Load"
-permalink: kb/324/Q324635/
+permalink: /kb/324/Q324635/
 ---
 
 ## Q324635: COMTI May Log Events 103, 300, and 301 When Under Load

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238762: Software Inventory Creation Date Is Incorrect in SMS Database"
-permalink: kb/238/Q238762/
+permalink: /kb/238/Q238762/
 ---
 
 ## Q238762: Software Inventory Creation Date Is Incorrect in SMS Database

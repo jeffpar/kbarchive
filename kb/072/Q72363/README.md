@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72363: Paintbrush: MSP to BMP Conversion Reduces Size"
-permalink: kb/072/Q72363/
+permalink: /kb/072/Q72363/
 ---
 
 ## Q72363: Paintbrush: MSP to BMP Conversion Reduces Size

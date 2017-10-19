@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250837: AOE: Age Of Empires Update Is Available"
-permalink: kb/250/Q250837/
+permalink: /kb/250/Q250837/
 ---
 
 ## Q250837: AOE: Age Of Empires Update Is Available

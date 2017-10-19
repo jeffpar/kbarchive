@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235609: Recovering a WINS Database From Other Backup Sources"
-permalink: kb/235/Q235609/
+permalink: /kb/235/Q235609/
 ---
 
 ## Q235609: Recovering a WINS Database From Other Backup Sources

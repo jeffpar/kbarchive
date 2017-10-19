@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86742: Using the Microsoft Mouse as a Pen Input Device"
-permalink: kb/086/Q86742/
+permalink: /kb/086/Q86742/
 ---
 
 ## Q86742: Using the Microsoft Mouse as a Pen Input Device

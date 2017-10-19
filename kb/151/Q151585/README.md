@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151585: HOWTO: Use _crtBreakAlloc to Debug a Memory Allocation"
-permalink: kb/151/Q151585/
+permalink: /kb/151/Q151585/
 ---
 
 ## Q151585: HOWTO: Use _crtBreakAlloc to Debug a Memory Allocation

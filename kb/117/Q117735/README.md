@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117735: Technical Support for the Chinon CD-ROM Drive"
-permalink: kb/117/Q117735/
+permalink: /kb/117/Q117735/
 ---
 
 ## Q117735: Technical Support for the Chinon CD-ROM Drive

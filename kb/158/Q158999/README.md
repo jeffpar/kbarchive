@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158999: XCLN: ShivaRemote/Exchange Client Not Supported Under OS/2 4.00"
-permalink: kb/158/Q158999/
+permalink: /kb/158/Q158999/
 ---
 
 ## Q158999: XCLN: ShivaRemote/Exchange Client Not Supported Under OS/2 4.00

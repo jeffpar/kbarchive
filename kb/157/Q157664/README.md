@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157664: WD97: Picture Deleted When Typing Text into Text Box"
-permalink: kb/157/Q157664/
+permalink: /kb/157/Q157664/
 ---
 
 ## Q157664: WD97: Picture Deleted When Typing Text into Text Box

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136172: System Stops Responding (Hangs) with Certain Backgrounds"
-permalink: kb/136/Q136172/
+permalink: /kb/136/Q136172/
 ---
 
 ## Q136172: System Stops Responding (Hangs) with Certain Backgrounds

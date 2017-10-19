@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244410: SMS: Smsapm32 Uses SMSCliToknAcct&amp; to Search Mapped Drives"
-permalink: kb/244/Q244410/
+permalink: /kb/244/Q244410/
 ---
 
 ## Q244410: SMS: Smsapm32 Uses SMSCliToknAcct&amp; to Search Mapped Drives

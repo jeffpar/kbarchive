@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270663: HOWTO: Open a Secured Access Database from Visual C++"
-permalink: kb/270/Q270663/
+permalink: /kb/270/Q270663/
 ---
 
 ## Q270663: HOWTO: Open a Secured Access Database from Visual C++

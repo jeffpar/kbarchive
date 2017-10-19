@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84994: Highlight Order of Movement Not Preserved in Program Manager"
-permalink: kb/084/Q84994/
+permalink: /kb/084/Q84994/
 ---
 
 ## Q84994: Highlight Order of Movement Not Preserved in Program Manager

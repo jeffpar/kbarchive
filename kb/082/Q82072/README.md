@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82072: Third-Party Applications May Need to Be Reinstalled"
-permalink: kb/082/Q82072/
+permalink: /kb/082/Q82072/
 ---
 
 ## Q82072: Third-Party Applications May Need to Be Reinstalled

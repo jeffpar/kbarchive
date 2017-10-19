@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121723: How to Display Any Column of an Array in a List or Popup"
-permalink: kb/121/Q121723/
+permalink: /kb/121/Q121723/
 ---
 
 ## Q121723: How to Display Any Column of an Array in a List or Popup

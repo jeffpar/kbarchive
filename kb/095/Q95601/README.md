@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95601: Windows Err Msg: Corrupt Swap File or Unsupported DOS Version"
-permalink: kb/095/Q95601/
+permalink: /kb/095/Q95601/
 ---
 
 ## Q95601: Windows Err Msg: Corrupt Swap File or Unsupported DOS Version

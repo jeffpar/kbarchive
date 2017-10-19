@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102370: Windows NT PIF Editor Can't Save Long Filenames"
-permalink: kb/102/Q102370/
+permalink: /kb/102/Q102370/
 ---
 
 ## Q102370: Windows NT PIF Editor Can't Save Long Filenames

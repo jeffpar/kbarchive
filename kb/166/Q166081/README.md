@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166081: ASP Page Not Update Even if ASP File on UNC Virtual Dir. Changed"
-permalink: kb/166/Q166081/
+permalink: /kb/166/Q166081/
 ---
 
 ## Q166081: ASP Page Not Update Even if ASP File on UNC Virtual Dir. Changed

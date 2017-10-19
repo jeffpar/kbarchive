@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222121: Enhanced Security When Using Persistent Verification"
-permalink: kb/222/Q222121/
+permalink: /kb/222/Q222121/
 ---
 
 ## Q222121: Enhanced Security When Using Persistent Verification

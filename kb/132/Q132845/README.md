@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132845: DynaComm Elite 3.51 GP Faults Connecting to Novell SAA Gateway"
-permalink: kb/132/Q132845/
+permalink: /kb/132/Q132845/
 ---
 
 ## Q132845: DynaComm Elite 3.51 GP Faults Connecting to Novell SAA Gateway

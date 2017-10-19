@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187523: XADM: How to Remove Duplicate EventConfig Folders"
-permalink: kb/187/Q187523/
+permalink: /kb/187/Q187523/
 ---
 
 ## Q187523: XADM: How to Remove Duplicate EventConfig Folders

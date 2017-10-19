@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271603: XADM: How to Use the Inbox Rules Manager Program"
-permalink: kb/271/Q271603/
+permalink: /kb/271/Q271603/
 ---
 
 ## Q271603: XADM: How to Use the Inbox Rules Manager Program

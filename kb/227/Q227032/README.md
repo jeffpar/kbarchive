@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227032: SMS: Clients Are Using Wrong Instruction After Site Rebuild"
-permalink: kb/227/Q227032/
+permalink: /kb/227/Q227032/
 ---
 
 ## Q227032: SMS: Clients Are Using Wrong Instruction After Site Rebuild

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120744: Pro-Audio Spectrum SCSI on DELL Omniplex -&gt; STOP Message"
-permalink: kb/120/Q120744/
+permalink: /kb/120/Q120744/
 ---
 
 ## Q120744: Pro-Audio Spectrum SCSI on DELL Omniplex -&gt; STOP Message

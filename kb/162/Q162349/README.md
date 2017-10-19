@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162349: WD97: Picture Displayed as Red &quot;X&quot; in Document"
-permalink: kb/162/Q162349/
+permalink: /kb/162/Q162349/
 ---
 
 ## Q162349: WD97: Picture Displayed as Red &quot;X&quot; in Document

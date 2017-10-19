@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135237: Windows 95 Hangs at Hourglass Starting SNA Server Win 3.x App"
-permalink: kb/135/Q135237/
+permalink: /kb/135/Q135237/
 ---
 
 ## Q135237: Windows 95 Hangs at Hourglass Starting SNA Server Win 3.x App

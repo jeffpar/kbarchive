@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80552: Windows 3.0 Enhanced Mode Problems with Site Lock 3.1"
-permalink: kb/080/Q80552/
+permalink: /kb/080/Q80552/
 ---
 
 ## Q80552: Windows 3.0 Enhanced Mode Problems with Site Lock 3.1

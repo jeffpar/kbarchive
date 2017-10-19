@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117257: Mac Cinemania: Sounds Play in Some Applications But Not Others"
-permalink: kb/117/Q117257/
+permalink: /kb/117/Q117257/
 ---
 
 ## Q117257: Mac Cinemania: Sounds Play in Some Applications But Not Others

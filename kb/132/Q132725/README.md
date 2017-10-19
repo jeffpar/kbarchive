@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132725: FIX: The Breakpoint &quot;{,&lt;filename&gt;,} .&lt;line&gt;&quot; cannot be set"
-permalink: kb/132/Q132725/
+permalink: /kb/132/Q132725/
 ---
 
 ## Q132725: FIX: The Breakpoint &quot;{,&lt;filename&gt;,} .&lt;line&gt;&quot; cannot be set

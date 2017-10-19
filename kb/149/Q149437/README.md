@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149437: Unconnected Token Ring Adapter Won't Initialize"
-permalink: kb/149/Q149437/
+permalink: /kb/149/Q149437/
 ---
 
 ## Q149437: Unconnected Token Ring Adapter Won't Initialize

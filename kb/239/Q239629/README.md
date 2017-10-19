@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239629: World Atlas: Setup Quits Unexpectedly During CD-ROM Verification"
-permalink: kb/239/Q239629/
+permalink: /kb/239/Q239629/
 ---
 
 ## Q239629: World Atlas: Setup Quits Unexpectedly During CD-ROM Verification

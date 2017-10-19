@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172757: Several NT 4.0 Resource Kit Utilities Missing"
-permalink: kb/172/Q172757/
+permalink: /kb/172/Q172757/
 ---
 
 ## Q172757: Several NT 4.0 Resource Kit Utilities Missing

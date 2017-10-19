@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156505: PRB: Syntax Error with ActiveX Control Terminates VFP"
-permalink: kb/156/Q156505/
+permalink: /kb/156/Q156505/
 ---
 
 ## Q156505: PRB: Syntax Error with ActiveX Control Terminates VFP

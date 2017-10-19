@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123465: PRB: Cannot View Unicode Strings in the Watch Window"
-permalink: kb/123/Q123465/
+permalink: /kb/123/Q123465/
 ---
 
 ## Q123465: PRB: Cannot View Unicode Strings in the Watch Window

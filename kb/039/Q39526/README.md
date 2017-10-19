@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39526: How to Share a Structure Between C and Assembler Modules"
-permalink: kb/039/Q39526/
+permalink: /kb/039/Q39526/
 ---
 
 ## Q39526: How to Share a Structure Between C and Assembler Modules

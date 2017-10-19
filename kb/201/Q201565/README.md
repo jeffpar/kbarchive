@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201565: PRB: Visual Basic Read-only .exp/.lib Files Cause Compile Error"
-permalink: kb/201/Q201565/
+permalink: /kb/201/Q201565/
 ---
 
 ## Q201565: PRB: Visual Basic Read-only .exp/.lib Files Cause Compile Error

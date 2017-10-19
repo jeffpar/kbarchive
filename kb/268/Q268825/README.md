@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268825: 'Unable to Initialize KRNL32.EXE' Error Message"
-permalink: kb/268/Q268825/
+permalink: /kb/268/Q268825/
 ---
 
 ## Q268825: 'Unable to Initialize KRNL32.EXE' Error Message

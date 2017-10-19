@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141676: PRB: &quot;No PARAMETER statement is found&quot; When Running Own Wizard"
-permalink: kb/141/Q141676/
+permalink: /kb/141/Q141676/
 ---
 
 ## Q141676: PRB: &quot;No PARAMETER statement is found&quot; When Running Own Wizard

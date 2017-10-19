@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175080: PRB: RDORESULTSET's SOURCETABLE Property Won't Return a Value"
-permalink: kb/175/Q175080/
+permalink: /kb/175/Q175080/
 ---
 
 ## Q175080: PRB: RDORESULTSET's SOURCETABLE Property Won't Return a Value

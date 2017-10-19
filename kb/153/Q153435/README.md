@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153435: MSB Earth and Dinosaurs: Mouse Freezes at Corner of Screen"
-permalink: kb/153/Q153435/
+permalink: /kb/153/Q153435/
 ---
 
 ## Q153435: MSB Earth and Dinosaurs: Mouse Freezes at Corner of Screen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136594: FIX: Error Using Inline Assembly in a Template Class"
-permalink: kb/136/Q136594/
+permalink: /kb/136/Q136594/
 ---
 
 ## Q136594: FIX: Error Using Inline Assembly in a Template Class

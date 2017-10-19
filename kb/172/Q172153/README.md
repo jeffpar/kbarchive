@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172153: Moving a WINS Database from Windows NT 3.51 to Windows NT 4.0"
-permalink: kb/172/Q172153/
+permalink: /kb/172/Q172153/
 ---
 
 ## Q172153: Moving a WINS Database from Windows NT 3.51 to Windows NT 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203488: WD97: File Corruption Error Starting Multiple Instances of Word"
-permalink: kb/203/Q203488/
+permalink: /kb/203/Q203488/
 ---
 
 ## Q203488: WD97: File Corruption Error Starting Multiple Instances of Word

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86370: Paintbrush Err Msg: Unable to Print, Not Enough Memory or ..."
-permalink: kb/086/Q86370/
+permalink: /kb/086/Q86370/
 ---
 
 ## Q86370: Paintbrush Err Msg: Unable to Print, Not Enough Memory or ...

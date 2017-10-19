@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78719: Default Device Drivers in SETVER Table"
-permalink: kb/078/Q78719/
+permalink: /kb/078/Q78719/
 ---
 
 ## Q78719: Default Device Drivers in SETVER Table

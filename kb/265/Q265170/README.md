@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265170: NetGroupEnum() Generates Internal Error"
-permalink: kb/265/Q265170/
+permalink: /kb/265/Q265170/
 ---
 
 ## Q265170: NetGroupEnum() Generates Internal Error

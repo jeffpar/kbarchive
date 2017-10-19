@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163669: FIX: Setup Wizard Does Not Use Default Directory Specified"
-permalink: kb/163/Q163669/
+permalink: /kb/163/Q163669/
 ---
 
 ## Q163669: FIX: Setup Wizard Does Not Use Default Directory Specified

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124245: Closing LAN Manager Logon Script Dialog Box Automatically"
-permalink: kb/124/Q124245/
+permalink: /kb/124/Q124245/
 ---
 
 ## Q124245: Closing LAN Manager Logon Script Dialog Box Automatically

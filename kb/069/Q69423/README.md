@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69423: Printing from Windows Notepad Using the Word Wrap Option"
-permalink: kb/069/Q69423/
+permalink: /kb/069/Q69423/
 ---
 
 ## Q69423: Printing from Windows Notepad Using the Word Wrap Option

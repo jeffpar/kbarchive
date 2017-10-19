@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114334: PRB: Cannot Open Compiler Intermediate File"
-permalink: kb/114/Q114334/
+permalink: /kb/114/Q114334/
 ---
 
 ## Q114334: PRB: Cannot Open Compiler Intermediate File

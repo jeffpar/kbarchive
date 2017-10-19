@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182932: XFOR: Directory Replication Fails over Internet Mail Service"
-permalink: kb/182/Q182932/
+permalink: /kb/182/Q182932/
 ---
 
 ## Q182932: XFOR: Directory Replication Fails over Internet Mail Service

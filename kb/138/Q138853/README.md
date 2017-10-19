@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138853: PerfMon, Run Remotely, Fails to Show all Logical Drive Instances"
-permalink: kb/138/Q138853/
+permalink: /kb/138/Q138853/
 ---
 
 ## Q138853: PerfMon, Run Remotely, Fails to Show all Logical Drive Instances

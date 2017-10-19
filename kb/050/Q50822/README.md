@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50822: Second Print Job Fails after Deleting a Printer Driver"
-permalink: kb/050/Q50822/
+permalink: /kb/050/Q50822/
 ---
 
 ## Q50822: Second Print Job Fails after Deleting a Printer Driver

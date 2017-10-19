@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229694: HOW TO: Install and Use the IIS Security &quot;What If&quot; Tool"
-permalink: kb/229/Q229694/
+permalink: /kb/229/Q229694/
 ---
 
 ## Q229694: HOW TO: Install and Use the IIS Security &quot;What If&quot; Tool

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173411: CG3: Error Trying to Delete Image, Category in ClipArt Gallery"
-permalink: kb/173/Q173411/
+permalink: /kb/173/Q173411/
 ---
 
 ## Q173411: CG3: Error Trying to Delete Image, Category in ClipArt Gallery

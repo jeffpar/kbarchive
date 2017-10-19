@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290766: &quot;Page Cannot be Displayed&quot; Error When You Browse to Http://Local"
-permalink: kb/290/Q290766/
+permalink: /kb/290/Q290766/
 ---
 
 ## Q290766: &quot;Page Cannot be Displayed&quot; Error When You Browse to Http://Local

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84999: How to Print TrueType Fonts in Reverse Video"
-permalink: kb/084/Q84999/
+permalink: /kb/084/Q84999/
 ---
 
 ## Q84999: How to Print TrueType Fonts in Reverse Video

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162466: NTFS and DISK Synchronous Request Never Completes"
-permalink: kb/162/Q162466/
+permalink: /kb/162/Q162466/
 ---
 
 ## Q162466: NTFS and DISK Synchronous Request Never Completes

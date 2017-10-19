@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66356: Description of Tetris in the Windows Entertainment Pack"
-permalink: kb/066/Q66356/
+permalink: /kb/066/Q66356/
 ---
 
 ## Q66356: Description of Tetris in the Windows Entertainment Pack

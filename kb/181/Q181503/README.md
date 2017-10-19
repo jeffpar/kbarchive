@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181503: PRB: Custom AppWizards Can't Make Per-File Settings/Build Steps"
-permalink: kb/181/Q181503/
+permalink: /kb/181/Q181503/
 ---
 
 ## Q181503: PRB: Custom AppWizards Can't Make Per-File Settings/Build Steps

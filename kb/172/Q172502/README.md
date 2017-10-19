@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172502: WD97: How to Troubleshoot Setup for the Web AutoUpdate Feature"
-permalink: kb/172/Q172502/
+permalink: /kb/172/Q172502/
 ---
 
 ## Q172502: WD97: How to Troubleshoot Setup for the Web AutoUpdate Feature

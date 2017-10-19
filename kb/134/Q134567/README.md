@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134567: HP2577A 10/100VG EISA PC LAN Card Not Detected Correctly"
-permalink: kb/134/Q134567/
+permalink: /kb/134/Q134567/
 ---
 
 ## Q134567: HP2577A 10/100VG EISA PC LAN Card Not Detected Correctly

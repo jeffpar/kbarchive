@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166696: NT 4 Err Msg: &quot;The INF OEMNADDI is missing the referenced file&quot;"
-permalink: kb/166/Q166696/
+permalink: /kb/166/Q166696/
 ---
 
 ## Q166696: NT 4 Err Msg: &quot;The INF OEMNADDI is missing the referenced file&quot;

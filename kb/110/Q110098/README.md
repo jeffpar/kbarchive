@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110098: PC Forms: Masked Edit Control Not Automatically Packaged"
-permalink: kb/110/Q110098/
+permalink: /kb/110/Q110098/
 ---
 
 ## Q110098: PC Forms: Masked Edit Control Not Automatically Packaged

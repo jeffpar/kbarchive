@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129094: FIX: GP Fault in Visual C++ When Separators in Top Level Menu"
-permalink: kb/129/Q129094/
+permalink: /kb/129/Q129094/
 ---
 
 ## Q129094: FIX: GP Fault in Visual C++ When Separators in Top Level Menu

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197616: Running Windows 98 Corrections and Comments"
-permalink: kb/197/Q197616/
+permalink: /kb/197/Q197616/
 ---
 
 ## Q197616: Running Windows 98 Corrections and Comments

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157912: &quot;STOP: 0x00000093&quot; with Security Dongle Adapter"
-permalink: kb/157/Q157912/
+permalink: /kb/157/Q157912/
 ---
 
 ## Q157912: &quot;STOP: 0x00000093&quot; with Security Dongle Adapter

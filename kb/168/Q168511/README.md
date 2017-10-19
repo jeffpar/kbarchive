@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168511: Have Disk Default Behavior Changed for Win95 Client Install"
-permalink: kb/168/Q168511/
+permalink: /kb/168/Q168511/
 ---
 
 ## Q168511: Have Disk Default Behavior Changed for Win95 Client Install

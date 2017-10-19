@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172047: Sharing Violation with Server-side Includes"
-permalink: kb/172/Q172047/
+permalink: /kb/172/Q172047/
 ---
 
 ## Q172047: Sharing Violation with Server-side Includes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112909: PC Gen: Err Msg: Password Invalid"
-permalink: kb/112/Q112909/
+permalink: /kb/112/Q112909/
 ---
 
 ## Q112909: PC Gen: Err Msg: Password Invalid

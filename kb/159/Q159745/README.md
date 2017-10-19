@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159745: CWBSY1000 Communication Error w/ Client Access for Windows 95/NT"
-permalink: kb/159/Q159745/
+permalink: /kb/159/Q159745/
 ---
 
 ## Q159745: CWBSY1000 Communication Error w/ Client Access for Windows 95/NT

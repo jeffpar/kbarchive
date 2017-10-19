@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166109: FIX: Template Friend Function Causes Compiler Error C2248"
-permalink: kb/166/Q166109/
+permalink: /kb/166/Q166109/
 ---
 
 ## Q166109: FIX: Template Friend Function Causes Compiler Error C2248

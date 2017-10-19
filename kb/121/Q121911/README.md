@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121911: The Close Button Does Not Appear or Is Disabled"
-permalink: kb/121/Q121911/
+permalink: /kb/121/Q121911/
 ---
 
 ## Q121911: The Close Button Does Not Appear or Is Disabled

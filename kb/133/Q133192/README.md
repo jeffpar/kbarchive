@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133192: XCLN: Received Message Time Stamp Is Time Zone Impaired"
-permalink: kb/133/Q133192/
+permalink: /kb/133/Q133192/
 ---
 
 ## Q133192: XCLN: Received Message Time Stamp Is Time Zone Impaired

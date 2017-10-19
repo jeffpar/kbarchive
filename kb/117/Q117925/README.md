@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117925: MAC Encarta: No Sound After Pausing and Restarting Animation"
-permalink: kb/117/Q117925/
+permalink: /kb/117/Q117925/
 ---
 
 ## Q117925: MAC Encarta: No Sound After Pausing and Restarting Animation

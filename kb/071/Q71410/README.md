@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71410: Mac Hyp: Setting Automatic Addition of Names to Address Book"
-permalink: kb/071/Q71410/
+permalink: /kb/071/Q71410/
 ---
 
 ## Q71410: Mac Hyp: Setting Automatic Addition of Names to Address Book

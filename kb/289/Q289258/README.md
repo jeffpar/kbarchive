@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289258: XGEN: Exchange Server 5.5 Post-SP4 Internet Mail Service Fixes"
-permalink: kb/289/Q289258/
+permalink: /kb/289/Q289258/
 ---
 
 ## Q289258: XGEN: Exchange Server 5.5 Post-SP4 Internet Mail Service Fixes

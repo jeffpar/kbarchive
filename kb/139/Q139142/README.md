@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139142: Client Setup of Systems Management Server Alters AUTOEXEC.BAT"
-permalink: kb/139/Q139142/
+permalink: /kb/139/Q139142/
 ---
 
 ## Q139142: Client Setup of Systems Management Server Alters AUTOEXEC.BAT

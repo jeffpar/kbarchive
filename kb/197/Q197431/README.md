@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197431: PRB: Year Returned by DateSerial may be Unanticipated"
-permalink: kb/197/Q197431/
+permalink: /kb/197/Q197431/
 ---
 
 ## Q197431: PRB: Year Returned by DateSerial may be Unanticipated

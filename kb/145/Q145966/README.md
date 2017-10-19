@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145966: XCLN: Personal Views Lost When Changing Stores"
-permalink: kb/145/Q145966/
+permalink: /kb/145/Q145966/
 ---
 
 ## Q145966: XCLN: Personal Views Lost When Changing Stores

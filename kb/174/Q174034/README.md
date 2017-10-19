@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174034: XWEB: Cannot Cancel Deletion of Meeting Request in OWA"
-permalink: kb/174/Q174034/
+permalink: /kb/174/Q174034/
 ---
 
 ## Q174034: XWEB: Cannot Cancel Deletion of Meeting Request in OWA

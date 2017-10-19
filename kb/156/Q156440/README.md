@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156440: XCON: Message Stuck in MTA When Using RAS Connector"
-permalink: kb/156/Q156440/
+permalink: /kb/156/Q156440/
 ---
 
 ## Q156440: XCON: Message Stuck in MTA When Using RAS Connector

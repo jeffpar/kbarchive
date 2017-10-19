@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286347: PRB: Can't Connect to VCM Database from Client with Older VCM"
-permalink: kb/286/Q286347/
+permalink: /kb/286/Q286347/
 ---
 
 ## Q286347: PRB: Can't Connect to VCM Database from Client with Older VCM

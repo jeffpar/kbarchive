@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96541: Setup Leaves Windows .INI Files in Root of the Novell Server"
-permalink: kb/096/Q96541/
+permalink: /kb/096/Q96541/
 ---
 
 ## Q96541: Setup Leaves Windows .INI Files in Root of the Novell Server

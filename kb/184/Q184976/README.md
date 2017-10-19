@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184976: PRB: Windows 95 OSR 2.5 Starts IE 4.x During Installation"
-permalink: kb/184/Q184976/
+permalink: /kb/184/Q184976/
 ---
 
 ## Q184976: PRB: Windows 95 OSR 2.5 Starts IE 4.x During Installation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234756: HOWTO: Pack a Table Through the Visual FoxPro ODBC Driver"
-permalink: kb/234/Q234756/
+permalink: /kb/234/Q234756/
 ---
 
 ## Q234756: HOWTO: Pack a Table Through the Visual FoxPro ODBC Driver

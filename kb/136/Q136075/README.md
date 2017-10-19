@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136075: HOWTO: Disabling Menu Titles and Bars"
-permalink: kb/136/Q136075/
+permalink: /kb/136/Q136075/
 ---
 
 ## Q136075: HOWTO: Disabling Menu Titles and Bars

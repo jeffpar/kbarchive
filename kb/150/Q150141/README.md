@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150141: XADM: Auto Prefixing of Messages Sent Out the IMC"
-permalink: kb/150/Q150141/
+permalink: /kb/150/Q150141/
 ---
 
 ## Q150141: XADM: Auto Prefixing of Messages Sent Out the IMC

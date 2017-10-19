@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68284: Distorted Mouse Pointer with 8515 Monitor and 8514/A"
-permalink: kb/068/Q68284/
+permalink: /kb/068/Q68284/
 ---
 
 ## Q68284: Distorted Mouse Pointer with 8515 Monitor and 8514/A

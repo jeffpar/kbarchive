@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147206: FIX: Border of Modeless CPropertySheet Is Not 3D in Windows NT"
-permalink: kb/147/Q147206/
+permalink: /kb/147/Q147206/
 ---
 
 ## Q147206: FIX: Border of Modeless CPropertySheet Is Not 3D in Windows NT

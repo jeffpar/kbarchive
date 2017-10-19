@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167225: HOWTO: Access an Oracle Database Using RDO"
-permalink: kb/167/Q167225/
+permalink: /kb/167/Q167225/
 ---
 
 ## Q167225: HOWTO: Access an Oracle Database Using RDO

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279247: Access Violation Appears During Shutdown After You Use IIS 5.0"
-permalink: kb/279/Q279247/
+permalink: /kb/279/Q279247/
 ---
 
 ## Q279247: Access Violation Appears During Shutdown After You Use IIS 5.0

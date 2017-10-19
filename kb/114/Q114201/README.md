@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114201: PRB: CString::ReleaseBuffer() Does Not Release Extra Memory"
-permalink: kb/114/Q114201/
+permalink: /kb/114/Q114201/
 ---
 
 ## Q114201: PRB: CString::ReleaseBuffer() Does Not Release Extra Memory

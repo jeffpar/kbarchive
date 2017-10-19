@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118303: Encarta 1994 Err Msg: Graphics Server EXE Wrong Version (2.20)"
-permalink: kb/118/Q118303/
+permalink: /kb/118/Q118303/
 ---
 
 ## Q118303: Encarta 1994 Err Msg: Graphics Server EXE Wrong Version (2.20)

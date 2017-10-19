@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297034: Age of Empires II: Setup Stops, Program Is Uninstalled"
-permalink: kb/297/Q297034/
+permalink: /kb/297/Q297034/
 ---
 
 ## Q297034: Age of Empires II: Setup Stops, Program Is Uninstalled

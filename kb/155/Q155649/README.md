@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155649: Monster Truck: Playing Music from a Music CD While Racing"
-permalink: kb/155/Q155649/
+permalink: /kb/155/Q155649/
 ---
 
 ## Q155649: Monster Truck: Playing Music from a Music CD While Racing

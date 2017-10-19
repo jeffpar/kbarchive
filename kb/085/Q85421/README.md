@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85421: NETWORKS.WRI: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2"
-permalink: kb/085/Q85421/
+permalink: /kb/085/Q85421/
 ---
 
 ## Q85421: NETWORKS.WRI: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2

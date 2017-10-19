@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263589: BUG: Pointer to Member Allows Non-const Method Call on const Obj"
-permalink: kb/263/Q263589/
+permalink: /kb/263/Q263589/
 ---
 
 ## Q263589: BUG: Pointer to Member Allows Non-const Method Call on const Obj

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158064: PRB: &quot;VFP500.dll Is Invalid or Damaged&quot; Error in VFP 5.0"
-permalink: kb/158/Q158064/
+permalink: /kb/158/Q158064/
 ---
 
 ## Q158064: PRB: &quot;VFP500.dll Is Invalid or Damaged&quot; Error in VFP 5.0

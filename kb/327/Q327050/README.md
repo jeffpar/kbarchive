@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q327050: Microsoft ADO.NET (Core Reference) Comments And Corrections"
-permalink: kb/327/Q327050/
+permalink: /kb/327/Q327050/
 ---
 
 ## Q327050: Microsoft ADO.NET (Core Reference) Comments And Corrections

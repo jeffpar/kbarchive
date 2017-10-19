@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176013: Err Msg: An Unknown Error Has Occurred. Account: 'MSN Mail'..."
-permalink: kb/176/Q176013/
+permalink: /kb/176/Q176013/
 ---
 
 ## Q176013: Err Msg: An Unknown Error Has Occurred. Account: 'MSN Mail'...

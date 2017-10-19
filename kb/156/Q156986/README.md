@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156986: Error Message: The Computer You're Dialing in to Cannot..."
-permalink: kb/156/Q156986/
+permalink: /kb/156/Q156986/
 ---
 
 ## Q156986: Error Message: The Computer You're Dialing in to Cannot...

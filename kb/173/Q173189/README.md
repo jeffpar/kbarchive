@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173189: Personal Web Server Setup Cannot Copy Files"
-permalink: kb/173/Q173189/
+permalink: /kb/173/Q173189/
 ---
 
 ## Q173189: Personal Web Server Setup Cannot Copy Files

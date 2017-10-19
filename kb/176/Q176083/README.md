@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176083: System Is Running Low on Registry Quota"
-permalink: kb/176/Q176083/
+permalink: /kb/176/Q176083/
 ---
 
 ## Q176083: System Is Running Low on Registry Quota

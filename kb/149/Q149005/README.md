@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149005: Unable to Swing With Mouse In Microsoft Golf"
-permalink: kb/149/Q149005/
+permalink: /kb/149/Q149005/
 ---
 
 ## Q149005: Unable to Swing With Mouse In Microsoft Golf

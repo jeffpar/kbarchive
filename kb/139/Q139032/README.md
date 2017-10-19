@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139032: PC NTMMTA: Dispatch Instance Name Is Not Displayed"
-permalink: kb/139/Q139032/
+permalink: /kb/139/Q139032/
 ---
 
 ## Q139032: PC NTMMTA: Dispatch Instance Name Is Not Displayed

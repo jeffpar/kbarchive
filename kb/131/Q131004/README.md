@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131004: How to Enable Print Notification with NetWare Print Servers"
-permalink: kb/131/Q131004/
+permalink: /kb/131/Q131004/
 ---
 
 ## Q131004: How to Enable Print Notification with NetWare Print Servers

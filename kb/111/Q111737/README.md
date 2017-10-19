@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111737: Recovering Windows 3.1 After Installing WFWG 3.11"
-permalink: kb/111/Q111737/
+permalink: /kb/111/Q111737/
 ---
 
 ## Q111737: Recovering Windows 3.1 After Installing WFWG 3.11

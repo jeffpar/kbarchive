@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165409: WD97: How to Find Help for Creating Non-Breaking Spaces"
-permalink: kb/165/Q165409/
+permalink: /kb/165/Q165409/
 ---
 
 ## Q165409: WD97: How to Find Help for Creating Non-Breaking Spaces

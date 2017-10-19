@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179107: STOP 0x0000000A in Raspptpe.sys on a Windows NT PPTP Server"
-permalink: kb/179/Q179107/
+permalink: /kb/179/Q179107/
 ---
 
 ## Q179107: STOP 0x0000000A in Raspptpe.sys on a Windows NT PPTP Server

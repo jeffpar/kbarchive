@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226844: SMS: Can't Enforce Security by Group with Sofware Metering"
-permalink: kb/226/Q226844/
+permalink: /kb/226/Q226844/
 ---
 
 ## Q226844: SMS: Can't Enforce Security by Group with Sofware Metering

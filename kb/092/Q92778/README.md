@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92778: Setup Hangs, Reboots, or Generates Errors with Racal NI6510"
-permalink: kb/092/Q92778/
+permalink: /kb/092/Q92778/
 ---
 
 ## Q92778: Setup Hangs, Reboots, or Generates Errors with Racal NI6510

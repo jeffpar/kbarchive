@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230180: Rasmon.exe Does Not Work When Monitoring Multiple VPN Connection"
-permalink: kb/230/Q230180/
+permalink: /kb/230/Q230180/
 ---
 
 ## Q230180: Rasmon.exe Does Not Work When Monitoring Multiple VPN Connection

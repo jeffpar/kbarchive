@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259323: Allegiance: Game Appears Too Dark"
-permalink: kb/259/Q259323/
+permalink: /kb/259/Q259323/
 ---
 
 ## Q259323: Allegiance: Game Appears Too Dark

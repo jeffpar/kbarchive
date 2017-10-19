@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177773: XADM: Log Files Not Deleted After Full Backup"
-permalink: kb/177/Q177773/
+permalink: /kb/177/Q177773/
 ---
 
 ## Q177773: XADM: Log Files Not Deleted After Full Backup

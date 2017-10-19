@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140238: PRB: Can't Run Mastering Visual FoxPro with ATI Video Drivers"
-permalink: kb/140/Q140238/
+permalink: /kb/140/Q140238/
 ---
 
 ## Q140238: PRB: Can't Run Mastering Visual FoxPro with ATI Video Drivers

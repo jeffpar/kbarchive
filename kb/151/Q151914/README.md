@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151914: SMS: Remote Control with 16 Colors Generates More Traffic"
-permalink: kb/151/Q151914/
+permalink: /kb/151/Q151914/
 ---
 
 ## Q151914: SMS: Remote Control with 16 Colors Generates More Traffic

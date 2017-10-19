@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167386: WD97: Can't View Embedded Control Event Code"
-permalink: kb/167/Q167386/
+permalink: /kb/167/Q167386/
 ---
 
 ## Q167386: WD97: Can't View Embedded Control Event Code

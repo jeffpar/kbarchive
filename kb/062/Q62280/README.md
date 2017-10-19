@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62280: Mac Hyp: Removing or Clearing a Message Field"
-permalink: kb/062/Q62280/
+permalink: /kb/062/Q62280/
 ---
 
 ## Q62280: Mac Hyp: Removing or Clearing a Message Field

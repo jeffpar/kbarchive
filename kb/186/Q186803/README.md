@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186803: Browsing Folders with Script-Mapped Extensions Returns Errors"
-permalink: kb/186/Q186803/
+permalink: /kb/186/Q186803/
 ---
 
 ## Q186803: Browsing Folders with Script-Mapped Extensions Returns Errors

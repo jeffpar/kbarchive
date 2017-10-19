@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190350: HOWTO: Create Top-Level Splash Screen with No TaskBar Icon"
-permalink: kb/190/Q190350/
+permalink: /kb/190/Q190350/
 ---
 
 ## Q190350: HOWTO: Create Top-Level Splash Screen with No TaskBar Icon

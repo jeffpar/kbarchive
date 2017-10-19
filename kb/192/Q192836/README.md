@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192836: XADM: Admin.exe Stops When Viewing Properties of Remote Server"
-permalink: kb/192/Q192836/
+permalink: /kb/192/Q192836/
 ---
 
 ## Q192836: XADM: Admin.exe Stops When Viewing Properties of Remote Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121914: WINNT Setup Fails Due to LASTDRIVE=F in CONFIG.SYS"
-permalink: kb/121/Q121914/
+permalink: /kb/121/Q121914/
 ---
 
 ## Q121914: WINNT Setup Fails Due to LASTDRIVE=F in CONFIG.SYS

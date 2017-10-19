@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86246: Setup Documentation Error Bookshelf 1991"
-permalink: kb/086/Q86246/
+permalink: /kb/086/Q86246/
 ---
 
 ## Q86246: Setup Documentation Error Bookshelf 1991

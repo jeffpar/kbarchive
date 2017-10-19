@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247967: Setup Hangs After First Restart with S3 Savage/MX or Savage/IX"
-permalink: kb/247/Q247967/
+permalink: /kb/247/Q247967/
 ---
 
 ## Q247967: Setup Hangs After First Restart with S3 Savage/MX or Savage/IX

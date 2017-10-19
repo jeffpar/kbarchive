@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89246: Windows Err Msg: Unable to Connect to a Network Drive"
-permalink: kb/089/Q89246/
+permalink: /kb/089/Q89246/
 ---
 
 ## Q89246: Windows Err Msg: Unable to Connect to a Network Drive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153282: FIX: ClassWizard Overrides CDaoRecordset::Open Incorrectly"
-permalink: kb/153/Q153282/
+permalink: /kb/153/Q153282/
 ---
 
 ## Q153282: FIX: ClassWizard Overrides CDaoRecordset::Open Incorrectly

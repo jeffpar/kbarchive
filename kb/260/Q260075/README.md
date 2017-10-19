@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260075: PRB: Server Stops Responding When You Call MTS Under ASP"
-permalink: kb/260/Q260075/
+permalink: /kb/260/Q260075/
 ---
 
 ## Q260075: PRB: Server Stops Responding When You Call MTS Under ASP

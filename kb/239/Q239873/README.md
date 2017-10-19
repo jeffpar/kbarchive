@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239873: Application Security May Not Work After Improper Shutdown"
-permalink: kb/239/Q239873/
+permalink: /kb/239/Q239873/
 ---
 
 ## Q239873: Application Security May Not Work After Improper Shutdown

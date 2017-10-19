@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201502: PRB: Duplicate Control Boxes in MDIForm When Using Status Bar"
-permalink: kb/201/Q201502/
+permalink: /kb/201/Q201502/
 ---
 
 ## Q201502: PRB: Duplicate Control Boxes in MDIForm When Using Status Bar

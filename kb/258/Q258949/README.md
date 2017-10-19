@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258949: MMS Compass Compatibility with WinSock 2.0"
-permalink: kb/258/Q258949/
+permalink: /kb/258/Q258949/
 ---
 
 ## Q258949: MMS Compass Compatibility with WinSock 2.0

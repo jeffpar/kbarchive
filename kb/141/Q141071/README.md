@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141071: PRB: Can't Receive Data When Using MSCOMM.OCX Control"
-permalink: kb/141/Q141071/
+permalink: /kb/141/Q141071/
 ---
 
 ## Q141071: PRB: Can't Receive Data When Using MSCOMM.OCX Control

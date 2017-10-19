@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164157: SMS: Kbstuff.sys May Cause a STOP 1E Blue Screen Error"
-permalink: kb/164/Q164157/
+permalink: /kb/164/Q164157/
 ---
 
 ## Q164157: SMS: Kbstuff.sys May Cause a STOP 1E Blue Screen Error

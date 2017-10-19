@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191527: HOWTO: Implement GenHTML Functionality in VFP Run-Time App"
-permalink: kb/191/Q191527/
+permalink: /kb/191/Q191527/
 ---
 
 ## Q191527: HOWTO: Implement GenHTML Functionality in VFP Run-Time App

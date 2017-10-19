@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151742: BUG: Mastering Exchange: Setup Dialog Box Appears Too Short"
-permalink: kb/151/Q151742/
+permalink: /kb/151/Q151742/
 ---
 
 ## Q151742: BUG: Mastering Exchange: Setup Dialog Box Appears Too Short

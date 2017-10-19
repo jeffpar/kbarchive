@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130288: PC NTMMTA: Using Performance Monitor with MMTA"
-permalink: kb/130/Q130288/
+permalink: /kb/130/Q130288/
 ---
 
 ## Q130288: PC NTMMTA: Using Performance Monitor with MMTA

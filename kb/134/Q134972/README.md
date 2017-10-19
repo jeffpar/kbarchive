@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134972: Restore Local Database Option in WINS is Unavailable"
-permalink: kb/134/Q134972/
+permalink: /kb/134/Q134972/
 ---
 
 ## Q134972: Restore Local Database Option in WINS is Unavailable

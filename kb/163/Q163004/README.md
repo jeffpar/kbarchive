@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163004: &quot;Pack and Go Setup Was Unable to Install...&quot; Trying to Unpack"
-permalink: kb/163/Q163004/
+permalink: /kb/163/Q163004/
 ---
 
 ## Q163004: &quot;Pack and Go Setup Was Unable to Install...&quot; Trying to Unpack

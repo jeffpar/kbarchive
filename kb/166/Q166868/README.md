@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166868: WD97: Properties (Summary Info) Comments in Wrong Format/Missing"
-permalink: kb/166/Q166868/
+permalink: /kb/166/Q166868/
 ---
 
 ## Q166868: WD97: Properties (Summary Info) Comments in Wrong Format/Missing

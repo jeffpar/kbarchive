@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68726: Windows Setup with EtherLink MC"
-permalink: kb/068/Q68726/
+permalink: /kb/068/Q68726/
 ---
 
 ## Q68726: Windows Setup with EtherLink MC

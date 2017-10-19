@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87093: Adding Windows 3.0 Support for Unlisted HP Printer Cartridges"
-permalink: kb/087/Q87093/
+permalink: /kb/087/Q87093/
 ---
 
 ## Q87093: Adding Windows 3.0 Support for Unlisted HP Printer Cartridges

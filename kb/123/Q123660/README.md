@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123660: Maintenance Release for FORTRAN PowerStation"
-permalink: kb/123/Q123660/
+permalink: /kb/123/Q123660/
 ---
 
 ## Q123660: Maintenance Release for FORTRAN PowerStation

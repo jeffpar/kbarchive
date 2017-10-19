@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177701: Macintosh Version of Internet Explorer Not Included on Disc"
-permalink: kb/177/Q177701/
+permalink: /kb/177/Q177701/
 ---
 
 ## Q177701: Macintosh Version of Internet Explorer Not Included on Disc

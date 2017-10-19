@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192579: MCM: &quot;No 3D Accelerator&quot; Error Message, or Game Hangs or Quits"
-permalink: kb/192/Q192579/
+permalink: /kb/192/Q192579/
 ---
 
 ## Q192579: MCM: &quot;No 3D Accelerator&quot; Error Message, or Game Hangs or Quits

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198098: PRB: CSng/CDbl Not Using Regional Settings for Decimal Symbol"
-permalink: kb/198/Q198098/
+permalink: /kb/198/Q198098/
 ---
 
 ## Q198098: PRB: CSng/CDbl Not Using Regional Settings for Decimal Symbol

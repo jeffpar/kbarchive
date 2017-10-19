@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191792: INFO: VB 6.0 Readme Part 13: Dictionary Object"
-permalink: kb/191/Q191792/
+permalink: /kb/191/Q191792/
 ---
 
 ## Q191792: INFO: VB 6.0 Readme Part 13: Dictionary Object

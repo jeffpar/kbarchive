@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285859: XADM: Mailbox Manager Hangs When You Click the Policy Tab"
-permalink: kb/285/Q285859/
+permalink: /kb/285/Q285859/
 ---
 
 ## Q285859: XADM: Mailbox Manager Hangs When You Click the Policy Tab

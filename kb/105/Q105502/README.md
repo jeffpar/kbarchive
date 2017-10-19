@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105502: CAS Modem Fails to Receive Faxes with WFWG 3.11"
-permalink: kb/105/Q105502/
+permalink: /kb/105/Q105502/
 ---
 
 ## Q105502: CAS Modem Fails to Receive Faxes with WFWG 3.11

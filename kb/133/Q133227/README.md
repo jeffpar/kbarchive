@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133227: PPT7: Presentation Conference Doesn't End for Audience Member"
-permalink: kb/133/Q133227/
+permalink: /kb/133/Q133227/
 ---
 
 ## Q133227: PPT7: Presentation Conference Doesn't End for Audience Member

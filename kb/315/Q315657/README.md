@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315657: HOW TO: Print the Contents of a WebBrowser Control"
-permalink: kb/315/Q315657/
+permalink: /kb/315/Q315657/
 ---
 
 ## Q315657: HOW TO: Print the Contents of a WebBrowser Control

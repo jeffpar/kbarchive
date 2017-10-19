@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178383: Scenery, Airport, Adventures, VOR, Sound Problems W/O Correct CD"
-permalink: kb/178/Q178383/
+permalink: /kb/178/Q178383/
 ---
 
 ## Q178383: Scenery, Airport, Adventures, VOR, Sound Problems W/O Correct CD

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103530: Criteria for ActivateDrive Entry for Removable Media"
-permalink: kb/103/Q103530/
+permalink: /kb/103/Q103530/
 ---
 
 ## Q103530: Criteria for ActivateDrive Entry for Removable Media

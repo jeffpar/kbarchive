@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225099: FIX: Memory Access Violation Caused by Repeated Reallocs"
-permalink: kb/225/Q225099/
+permalink: /kb/225/Q225099/
 ---
 
 ## Q225099: FIX: Memory Access Violation Caused by Repeated Reallocs

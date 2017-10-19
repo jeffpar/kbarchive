@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173409: PRB: RDOErrors Collection Always Empty When Using EXE Server"
-permalink: kb/173/Q173409/
+permalink: /kb/173/Q173409/
 ---
 
 ## Q173409: PRB: RDOErrors Collection Always Empty When Using EXE Server

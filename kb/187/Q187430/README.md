@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187430: Client Setup Requires License That Is Already Installed"
-permalink: kb/187/Q187430/
+permalink: /kb/187/Q187430/
 ---
 
 ## Q187430: Client Setup Requires License That Is Already Installed

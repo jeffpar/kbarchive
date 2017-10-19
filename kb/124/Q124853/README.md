@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124853: STOP Message with SFMATALK.SYS"
-permalink: kb/124/Q124853/
+permalink: /kb/124/Q124853/
 ---
 
 ## Q124853: STOP Message with SFMATALK.SYS

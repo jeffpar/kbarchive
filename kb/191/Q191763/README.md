@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191763: INFO: Abbreviating NOSHOW Clause May Result in an Error"
-permalink: kb/191/Q191763/
+permalink: /kb/191/Q191763/
 ---
 
 ## Q191763: INFO: Abbreviating NOSHOW Clause May Result in an Error

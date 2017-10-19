@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158492: WD97: &quot;Word Cannot Obtain...&quot; Inserting Object on Banyan Vines"
-permalink: kb/158/Q158492/
+permalink: /kb/158/Q158492/
 ---
 
 ## Q158492: WD97: &quot;Word Cannot Obtain...&quot; Inserting Object on Banyan Vines

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63281: Unsupported MS-DOS Version on Hewlett-Packard Machines"
-permalink: kb/063/Q63281/
+permalink: /kb/063/Q63281/
 ---
 
 ## Q63281: Unsupported MS-DOS Version on Hewlett-Packard Machines

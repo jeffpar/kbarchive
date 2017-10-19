@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195657: PRB: Type Conversion Functions Can Return Unexpected Results"
-permalink: kb/195/Q195657/
+permalink: /kb/195/Q195657/
 ---
 
 ## Q195657: PRB: Type Conversion Functions Can Return Unexpected Results

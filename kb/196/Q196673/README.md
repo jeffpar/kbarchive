@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196673: WD97: Window Stays on Screen Using Shell to Start MS-DOS Program"
-permalink: kb/196/Q196673/
+permalink: /kb/196/Q196673/
 ---
 
 ## Q196673: WD97: Window Stays on Screen Using Shell to Start MS-DOS Program

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240786: SMS: Hierarchy Manager Develops Backlog of .ct2 Files"
-permalink: kb/240/Q240786/
+permalink: /kb/240/Q240786/
 ---
 
 ## Q240786: SMS: Hierarchy Manager Develops Backlog of .ct2 Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118787: FFAPI: Command Line Options for Application FFAPI"
-permalink: kb/118/Q118787/
+permalink: /kb/118/Q118787/
 ---
 
 ## Q118787: FFAPI: Command Line Options for Application FFAPI

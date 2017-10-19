@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311718: Unable to Suppress SNA/HIS Client SnaBase Pop-up Error Dialogs"
-permalink: kb/311/Q311718/
+permalink: /kb/311/Q311718/
 ---
 
 ## Q311718: Unable to Suppress SNA/HIS Client SnaBase Pop-up Error Dialogs

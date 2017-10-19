@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106690: Function for Returning a Julian Date in FoxPro"
-permalink: kb/106/Q106690/
+permalink: /kb/106/Q106690/
 ---
 
 ## Q106690: Function for Returning a Julian Date in FoxPro

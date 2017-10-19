@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156078: RegMaid.exe Helps Clean Up the Registry"
-permalink: kb/156/Q156078/
+permalink: /kb/156/Q156078/
 ---
 
 ## Q156078: RegMaid.exe Helps Clean Up the Registry

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32829: PRB: L1089 Error, TMP Environment Variable Missing, Incorrect"
-permalink: kb/032/Q32829/
+permalink: /kb/032/Q32829/
 ---
 
 ## Q32829: PRB: L1089 Error, TMP Environment Variable Missing, Incorrect

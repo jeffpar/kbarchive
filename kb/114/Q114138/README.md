@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114138: PRB: FoxPro Icon in .EXE Won't Install with Norton Desktop 3.0"
-permalink: kb/114/Q114138/
+permalink: /kb/114/Q114138/
 ---
 
 ## Q114138: PRB: FoxPro Icon in .EXE Won't Install with Norton Desktop 3.0

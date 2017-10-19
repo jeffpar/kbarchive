@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160991: SNA Server Sends Sense Code 400D to Host after CD Received"
-permalink: kb/160/Q160991/
+permalink: /kb/160/Q160991/
 ---
 
 ## Q160991: SNA Server Sends Sense Code 400D to Host after CD Received

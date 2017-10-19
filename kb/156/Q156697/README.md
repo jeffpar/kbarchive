@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156697: How to Update Permissions for User Profiles"
-permalink: kb/156/Q156697/
+permalink: /kb/156/Q156697/
 ---
 
 ## Q156697: How to Update Permissions for User Profiles

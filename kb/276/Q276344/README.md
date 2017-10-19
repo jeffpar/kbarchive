@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276344: Classic Board Games: Game Selection Screen Distorted"
-permalink: kb/276/Q276344/
+permalink: /kb/276/Q276344/
 ---
 
 ## Q276344: Classic Board Games: Game Selection Screen Distorted

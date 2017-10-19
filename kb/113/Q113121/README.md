@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113121: Bookshelf: Only Left Side of Wide Almanac Table Is Printed"
-permalink: kb/113/Q113121/
+permalink: /kb/113/Q113121/
 ---
 
 ## Q113121: Bookshelf: Only Left Side of Wide Almanac Table Is Printed

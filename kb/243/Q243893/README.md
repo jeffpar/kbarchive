@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243893: XFOR: Can't Log On to MAPI Running Notes Application Converter"
-permalink: kb/243/Q243893/
+permalink: /kb/243/Q243893/
 ---
 
 ## Q243893: XFOR: Can't Log On to MAPI Running Notes Application Converter

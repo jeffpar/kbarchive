@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152248: Fury3 Errors with Trial Version Downloaded from the Web"
-permalink: kb/152/Q152248/
+permalink: /kb/152/Q152248/
 ---
 
 ## Q152248: Fury3 Errors with Trial Version Downloaded from the Web

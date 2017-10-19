@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264985: BUG: C4305 &amp; C4800, When VARIANT&#42; Used as a Parameter to Event"
-permalink: kb/264/Q264985/
+permalink: /kb/264/Q264985/
 ---
 
 ## Q264985: BUG: C4305 &amp; C4800, When VARIANT&#42; Used as a Parameter to Event

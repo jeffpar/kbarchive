@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95559: MemMaker Does Not Preserve Redirection or Trailing Spaces"
-permalink: kb/095/Q95559/
+permalink: /kb/095/Q95559/
 ---
 
 ## Q95559: MemMaker Does Not Preserve Redirection or Trailing Spaces

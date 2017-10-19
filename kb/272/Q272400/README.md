@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272400: BUG: Application Error Returns Resized Array to Event Procedure"
-permalink: kb/272/Q272400/
+permalink: /kb/272/Q272400/
 ---
 
 ## Q272400: BUG: Application Error Returns Resized Array to Event Procedure

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122276: FIX: Library Version of atan2(0,0) Does Not Return 0"
-permalink: kb/122/Q122276/
+permalink: /kb/122/Q122276/
 ---
 
 ## Q122276: FIX: Library Version of atan2(0,0) Does Not Return 0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147583: BUG: Adding Multiple Files w/16-Bit SetupWiz Fails on Win95/98"
-permalink: kb/147/Q147583/
+permalink: /kb/147/Q147583/
 ---
 
 ## Q147583: BUG: Adding Multiple Files w/16-Bit SetupWiz Fails on Win95/98

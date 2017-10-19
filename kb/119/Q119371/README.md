@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119371: DEC 205 EtherNet Card and TCP/IP-32"
-permalink: kb/119/Q119371/
+permalink: /kb/119/Q119371/
 ---
 
 ## Q119371: DEC 205 EtherNet Card and TCP/IP-32

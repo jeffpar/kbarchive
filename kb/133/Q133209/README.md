@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133209: Writer/Artist: Cannot Access Control Room on Macintosh"
-permalink: kb/133/Q133209/
+permalink: /kb/133/Q133209/
 ---
 
 ## Q133209: Writer/Artist: Cannot Access Control Room on Macintosh

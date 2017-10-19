@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179018: OPEN SSCP RSP ERROR Returns Err1:000F and Err2:0003"
-permalink: kb/179/Q179018/
+permalink: /kb/179/Q179018/
 ---
 
 ## Q179018: OPEN SSCP RSP ERROR Returns Err1:000F and Err2:0003

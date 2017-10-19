@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32685: INFO: Using the WM_CTLCOLOR Message"
-permalink: kb/032/Q32685/
+permalink: /kb/032/Q32685/
 ---
 
 ## Q32685: INFO: Using the WM_CTLCOLOR Message

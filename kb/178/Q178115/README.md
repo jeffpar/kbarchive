@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178115: Encarta 98: Conversion of Miles to Feet Is Incorrect"
-permalink: kb/178/Q178115/
+permalink: /kb/178/Q178115/
 ---
 
 ## Q178115: Encarta 98: Conversion of Miles to Feet Is Incorrect

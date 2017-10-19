@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295402: Error Message: Error 2 Loading Registry Information"
-permalink: kb/295/Q295402/
+permalink: /kb/295/Q295402/
 ---
 
 ## Q295402: Error Message: Error 2 Loading Registry Information

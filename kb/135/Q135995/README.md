@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135995: Visual SourceSafe Integration with Visual Basic 4.0 and 5.0"
-permalink: kb/135/Q135995/
+permalink: /kb/135/Q135995/
 ---
 
 ## Q135995: Visual SourceSafe Integration with Visual Basic 4.0 and 5.0

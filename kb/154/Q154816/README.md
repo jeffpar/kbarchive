@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154816: HOWTO: Determine if DBCombo MatchEntry Property is Read-only"
-permalink: kb/154/Q154816/
+permalink: /kb/154/Q154816/
 ---
 
 ## Q154816: HOWTO: Determine if DBCombo MatchEntry Property is Read-only

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186788: XWEB: Cannot View Attachments in OWA on IIS 4.0 Computer"
-permalink: kb/186/Q186788/
+permalink: /kb/186/Q186788/
 ---
 
 ## Q186788: XWEB: Cannot View Attachments in OWA on IIS 4.0 Computer

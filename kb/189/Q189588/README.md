@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189588: SMS: SQL Transfer Manager Errors When Moving SMS Database"
-permalink: kb/189/Q189588/
+permalink: /kb/189/Q189588/
 ---
 
 ## Q189588: SMS: SQL Transfer Manager Errors When Moving SMS Database

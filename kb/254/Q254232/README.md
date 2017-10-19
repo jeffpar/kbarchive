@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254232: WD97: Part 1: How to Troubleshoot Printing Problems from Word"
-permalink: kb/254/Q254232/
+permalink: /kb/254/Q254232/
 ---
 
 ## Q254232: WD97: Part 1: How to Troubleshoot Printing Problems from Word

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230602: XCON: Site Connectors: Permissions, Trusts, and the Override Tab"
-permalink: kb/230/Q230602/
+permalink: /kb/230/Q230602/
 ---
 
 ## Q230602: XCON: Site Connectors: Permissions, Trusts, and the Override Tab

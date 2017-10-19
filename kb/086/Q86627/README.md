@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86627: Cannot Print in Draft Mode with Okidata Printers"
-permalink: kb/086/Q86627/
+permalink: /kb/086/Q86627/
 ---
 
 ## Q86627: Cannot Print in Draft Mode with Okidata Printers

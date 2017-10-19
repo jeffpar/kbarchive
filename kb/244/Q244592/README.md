@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244592: Unavailable Language Error Message After Reinstall of Windows 95"
-permalink: kb/244/Q244592/
+permalink: /kb/244/Q244592/
 ---
 
 ## Q244592: Unavailable Language Error Message After Reinstall of Windows 95

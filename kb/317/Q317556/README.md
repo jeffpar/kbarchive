@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317556: Coding Techniques for Microsoft Visual Basic .NET Comments And C"
-permalink: kb/317/Q317556/
+permalink: /kb/317/Q317556/
 ---
 
 ## Q317556: Coding Techniques for Microsoft Visual Basic .NET Comments And C

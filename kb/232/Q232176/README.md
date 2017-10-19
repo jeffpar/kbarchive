@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232176: Adding Multilingual Support Removes the Euro Fonts"
-permalink: kb/232/Q232176/
+permalink: /kb/232/Q232176/
 ---
 
 ## Q232176: Adding Multilingual Support Removes the Euro Fonts

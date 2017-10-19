@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199425: XADM: Exchange 5.5 Setup Does Not Work During Address Generation"
-permalink: kb/199/Q199425/
+permalink: /kb/199/Q199425/
 ---
 
 ## Q199425: XADM: Exchange 5.5 Setup Does Not Work During Address Generation

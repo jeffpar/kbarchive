@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180383: FP: Modified By Attribute Displays as a Question Mark"
-permalink: kb/180/Q180383/
+permalink: /kb/180/Q180383/
 ---
 
 ## Q180383: FP: Modified By Attribute Displays as a Question Mark

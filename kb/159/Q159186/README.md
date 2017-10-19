@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159186: XCON: Mail Sent Outside Site via X.400 Takes Illogical Route"
-permalink: kb/159/Q159186/
+permalink: /kb/159/Q159186/
 ---
 
 ## Q159186: XCON: Mail Sent Outside Site via X.400 Takes Illogical Route

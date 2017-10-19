@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166242: PRB: Statusbar Pane Text Disappears When MDI Child Window Open"
-permalink: kb/166/Q166242/
+permalink: /kb/166/Q166242/
 ---
 
 ## Q166242: PRB: Statusbar Pane Text Disappears When MDI Child Window Open

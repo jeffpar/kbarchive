@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69885: DOC: SetBkColor() Does Not Support Dithered Colors"
-permalink: kb/069/Q69885/
+permalink: /kb/069/Q69885/
 ---
 
 ## Q69885: DOC: SetBkColor() Does Not Support Dithered Colors

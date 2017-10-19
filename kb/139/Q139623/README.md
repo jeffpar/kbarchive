@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139623: System Hangs When You Quit Windows with Heavy Network Traffic"
-permalink: kb/139/Q139623/
+permalink: /kb/139/Q139623/
 ---
 
 ## Q139623: System Hangs When You Quit Windows with Heavy Network Traffic

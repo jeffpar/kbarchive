@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294853: Making A Connection File Or &quot;Connectoid&quot; For MSN Explorer"
-permalink: kb/294/Q294853/
+permalink: /kb/294/Q294853/
 ---
 
 ## Q294853: Making A Connection File Or &quot;Connectoid&quot; For MSN Explorer

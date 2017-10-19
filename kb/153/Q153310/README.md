@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153310: How to Select All Text in a Field When It Gets the Focus"
-permalink: kb/153/Q153310/
+permalink: /kb/153/Q153310/
 ---
 
 ## Q153310: How to Select All Text in a Field When It Gets the Focus

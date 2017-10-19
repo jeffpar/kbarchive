@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76998: Running Lansmart with MS-DOS 5.0"
-permalink: kb/076/Q76998/
+permalink: /kb/076/Q76998/
 ---
 
 ## Q76998: Running Lansmart with MS-DOS 5.0

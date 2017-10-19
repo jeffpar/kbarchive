@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136740: Mustek Scanning Program Does Not Print in Windows 95"
-permalink: kb/136/Q136740/
+permalink: /kb/136/Q136740/
 ---
 
 ## Q136740: Mustek Scanning Program Does Not Print in Windows 95

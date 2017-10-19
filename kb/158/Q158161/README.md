@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158161: XFOR: IMC NDR Resends Do Not Preserve Original Message Options"
-permalink: kb/158/Q158161/
+permalink: /kb/158/Q158161/
 ---
 
 ## Q158161: XFOR: IMC NDR Resends Do Not Preserve Original Message Options

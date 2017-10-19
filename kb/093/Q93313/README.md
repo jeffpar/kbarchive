@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93313: Windows Components Not Installed by Default SETUP.SHH File"
-permalink: kb/093/Q93313/
+permalink: /kb/093/Q93313/
 ---
 
 ## Q93313: Windows Components Not Installed by Default SETUP.SHH File

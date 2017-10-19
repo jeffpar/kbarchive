@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130037: PC Win: Err Msg: Personal Address List Groups Cannot Be Added"
-permalink: kb/130/Q130037/
+permalink: /kb/130/Q130037/
 ---
 
 ## Q130037: PC Win: Err Msg: Personal Address List Groups Cannot Be Added

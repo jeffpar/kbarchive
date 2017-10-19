@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163571: Dumpexam Fails To Create Stack Trace on DEC Alpha"
-permalink: kb/163/Q163571/
+permalink: /kb/163/Q163571/
 ---
 
 ## Q163571: Dumpexam Fails To Create Stack Trace on DEC Alpha

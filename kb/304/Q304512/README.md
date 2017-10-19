@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304512: Err Msg: The Procedure Entry Point UnMapLS Could Not Be..."
-permalink: kb/304/Q304512/
+permalink: /kb/304/Q304512/
 ---
 
 ## Q304512: Err Msg: The Procedure Entry Point UnMapLS Could Not Be...

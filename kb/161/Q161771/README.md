@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161771: TN3287 Print Emulator Fails Through TN3270 Service"
-permalink: kb/161/Q161771/
+permalink: /kb/161/Q161771/
 ---
 
 ## Q161771: TN3287 Print Emulator Fails Through TN3270 Service

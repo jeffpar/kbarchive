@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167698: HOWTO: Help95.exe Implements Windows 95 Style Help"
-permalink: kb/167/Q167698/
+permalink: /kb/167/Q167698/
 ---
 
 ## Q167698: HOWTO: Help95.exe Implements Windows 95 Style Help

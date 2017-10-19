@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134802: Beyond Planet Earth Generates General Protection Fault"
-permalink: kb/134/Q134802/
+permalink: /kb/134/Q134802/
 ---
 
 ## Q134802: Beyond Planet Earth Generates General Protection Fault

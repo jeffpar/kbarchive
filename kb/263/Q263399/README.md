@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263399: SMS: Repackager Stops Responding During Visio 2000 Compilation"
-permalink: kb/263/Q263399/
+permalink: /kb/263/Q263399/
 ---
 
 ## Q263399: SMS: Repackager Stops Responding During Visio 2000 Compilation

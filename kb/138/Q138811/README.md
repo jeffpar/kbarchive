@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138811: Cannot Add RAS ISDN Ports in Control Panel"
-permalink: kb/138/Q138811/
+permalink: /kb/138/Q138811/
 ---
 
 ## Q138811: Cannot Add RAS ISDN Ports in Control Panel

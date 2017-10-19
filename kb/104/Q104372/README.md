@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104372: PC DOS: Err Msg: Notice 132 Folder Busy, Try Again Later"
-permalink: kb/104/Q104372/
+permalink: /kb/104/Q104372/
 ---
 
 ## Q104372: PC DOS: Err Msg: Notice 132 Folder Busy, Try Again Later

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125453: Windows NT Account Requirements for SMS Site to Site Com."
-permalink: kb/125/Q125453/
+permalink: /kb/125/Q125453/
 ---
 
 ## Q125453: Windows NT Account Requirements for SMS Site to Site Com.

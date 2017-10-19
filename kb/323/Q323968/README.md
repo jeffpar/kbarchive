@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323968: HOW TO: Configure a GPS Device for Use with Pocket Streets"
-permalink: kb/323/Q323968/
+permalink: /kb/323/Q323968/
 ---
 
 ## Q323968: HOW TO: Configure a GPS Device for Use with Pocket Streets

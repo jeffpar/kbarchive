@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138764: FIX: Custom Build Commands Not Assigned Values"
-permalink: kb/138/Q138764/
+permalink: /kb/138/Q138764/
 ---
 
 ## Q138764: FIX: Custom Build Commands Not Assigned Values

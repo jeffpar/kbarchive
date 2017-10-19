@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214841: Err Msg: The Parameter Is Incorrect"
-permalink: kb/214/Q214841/
+permalink: /kb/214/Q214841/
 ---
 
 ## Q214841: Err Msg: The Parameter Is Incorrect

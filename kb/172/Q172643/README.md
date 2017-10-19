@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172643: Port Values for TN5250 Don't Work If One Is Set to Use Default"
-permalink: kb/172/Q172643/
+permalink: /kb/172/Q172643/
 ---
 
 ## Q172643: Port Values for TN5250 Don't Work If One Is Set to Use Default

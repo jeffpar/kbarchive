@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130997: How to Use the Caption Fields of a Table in a Form"
-permalink: kb/130/Q130997/
+permalink: /kb/130/Q130997/
 ---
 
 ## Q130997: How to Use the Caption Fields of a Table in a Form

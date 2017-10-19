@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190720: XWEB: Keyboard Shortcuts are Not Supported in OWA Client"
-permalink: kb/190/Q190720/
+permalink: /kb/190/Q190720/
 ---
 
 ## Q190720: XWEB: Keyboard Shortcuts are Not Supported in OWA Client

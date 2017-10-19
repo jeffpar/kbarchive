@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232603: Stop 0x1e Error Message Using Network Undelete"
-permalink: kb/232/Q232603/
+permalink: /kb/232/Q232603/
 ---
 
 ## Q232603: Stop 0x1e Error Message Using Network Undelete

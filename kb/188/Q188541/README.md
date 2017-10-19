@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188541: INFO: Visual Basic Requirements for Using Exported DLLs"
-permalink: kb/188/Q188541/
+permalink: /kb/188/Q188541/
 ---
 
 ## Q188541: INFO: Visual Basic Requirements for Using Exported DLLs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143075: FIX: Error When Attempting to Rename Class in Class Browser"
-permalink: kb/143/Q143075/
+permalink: /kb/143/Q143075/
 ---
 
 ## Q143075: FIX: Error When Attempting to Rename Class in Class Browser

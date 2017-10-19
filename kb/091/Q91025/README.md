@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91025: Creating Help Files Compatible with Windows 3.0 and 3.1"
-permalink: kb/091/Q91025/
+permalink: /kb/091/Q91025/
 ---
 
 ## Q91025: Creating Help Files Compatible with Windows 3.0 and 3.1

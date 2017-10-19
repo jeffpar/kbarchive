@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258838: Dial-Up Networking Automatic Redial May Stop After 15 Attempts"
-permalink: kb/258/Q258838/
+permalink: /kb/258/Q258838/
 ---
 
 ## Q258838: Dial-Up Networking Automatic Redial May Stop After 15 Attempts

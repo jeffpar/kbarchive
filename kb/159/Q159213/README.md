@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159213: MSINFO: A Tool to Investigate DLL and Executable Modules"
-permalink: kb/159/Q159213/
+permalink: /kb/159/Q159213/
 ---
 
 ## Q159213: MSINFO: A Tool to Investigate DLL and Executable Modules

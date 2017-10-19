@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162697: Remote Access Client Forgets Saved Password"
-permalink: kb/162/Q162697/
+permalink: /kb/162/Q162697/
 ---
 
 ## Q162697: Remote Access Client Forgets Saved Password

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235179: Licsvcfg.log Exposes the SQL SA Account Password"
-permalink: kb/235/Q235179/
+permalink: /kb/235/Q235179/
 ---
 
 ## Q235179: Licsvcfg.log Exposes the SQL SA Account Password

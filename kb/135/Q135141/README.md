@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135141: Installing Media Vision Windows 3.1 Drivers Causes GP Fault"
-permalink: kb/135/Q135141/
+permalink: /kb/135/Q135141/
 ---
 
 ## Q135141: Installing Media Vision Windows 3.1 Drivers Causes GP Fault

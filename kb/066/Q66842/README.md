@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66842: ASD: 747 Panel Displays Wrong Checklist"
-permalink: kb/066/Q66842/
+permalink: /kb/066/Q66842/
 ---
 
 ## Q66842: ASD: 747 Panel Displays Wrong Checklist

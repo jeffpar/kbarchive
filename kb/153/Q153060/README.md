@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153060: XCLN: Undeliverable Msg, Illegally Formatted to: Header Text"
-permalink: kb/153/Q153060/
+permalink: /kb/153/Q153060/
 ---
 
 ## Q153060: XCLN: Undeliverable Msg, Illegally Formatted to: Header Text

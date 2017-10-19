@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103381: PC Forms: Installing Forms Designer with Non-English Mail"
-permalink: kb/103/Q103381/
+permalink: /kb/103/Q103381/
 ---
 
 ## Q103381: PC Forms: Installing Forms Designer with Non-English Mail

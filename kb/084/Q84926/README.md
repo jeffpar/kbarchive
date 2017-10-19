@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84926: PRB: Loading Metafile Causes &quot;Cannot Convert Picture&quot; Error"
-permalink: kb/084/Q84926/
+permalink: /kb/084/Q84926/
 ---
 
 ## Q84926: PRB: Loading Metafile Causes &quot;Cannot Convert Picture&quot; Error

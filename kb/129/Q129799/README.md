@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129799: BUG: Data Control Errors Do Not Populate Error Object"
-permalink: kb/129/Q129799/
+permalink: /kb/129/Q129799/
 ---
 
 ## Q129799: BUG: Data Control Errors Do Not Populate Error Object

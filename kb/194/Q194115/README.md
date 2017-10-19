@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194115: HOWTO: Use ADSI in VB to Enumerate the Computers in an NT Domain"
-permalink: kb/194/Q194115/
+permalink: /kb/194/Q194115/
 ---
 
 ## Q194115: HOWTO: Use ADSI in VB to Enumerate the Computers in an NT Domain

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314259: XADM: MAPI Client Hangs Deleting Multiple Messages"
-permalink: kb/314/Q314259/
+permalink: /kb/314/Q314259/
 ---
 
 ## Q314259: XADM: MAPI Client Hangs Deleting Multiple Messages

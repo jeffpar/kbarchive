@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251402: PRB: Windows Hook Stops Responding in a 16-Bit Application"
-permalink: kb/251/Q251402/
+permalink: /kb/251/Q251402/
 ---
 
 ## Q251402: PRB: Windows Hook Stops Responding in a 16-Bit Application

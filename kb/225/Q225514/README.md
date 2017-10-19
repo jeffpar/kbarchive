@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225514: SMS: NT Logon Server Manager Replicates Files When It Should Not"
-permalink: kb/225/Q225514/
+permalink: /kb/225/Q225514/
 ---
 
 ## Q225514: SMS: NT Logon Server Manager Replicates Files When It Should Not

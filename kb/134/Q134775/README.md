@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134775: Cannot Set Up from Network with Smc8000.dos Real-Mode Driver"
-permalink: kb/134/Q134775/
+permalink: /kb/134/Q134775/
 ---
 
 ## Q134775: Cannot Set Up from Network with Smc8000.dos Real-Mode Driver

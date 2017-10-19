@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223101: FIX: WriteProperties Event Executes at Wrong Time"
-permalink: kb/223/Q223101/
+permalink: /kb/223/Q223101/
 ---
 
 ## Q223101: FIX: WriteProperties Event Executes at Wrong Time

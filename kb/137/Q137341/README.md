@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137341: Appointments Print on a Weekly Basis Only"
-permalink: kb/137/Q137341/
+permalink: /kb/137/Q137341/
 ---
 
 ## Q137341: Appointments Print on a Weekly Basis Only

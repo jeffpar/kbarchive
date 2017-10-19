@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198984: SMSINST: Command Line Switches Are Not Designed to Work Together"
-permalink: kb/198/Q198984/
+permalink: /kb/198/Q198984/
 ---
 
 ## Q198984: SMSINST: Command Line Switches Are Not Designed to Work Together

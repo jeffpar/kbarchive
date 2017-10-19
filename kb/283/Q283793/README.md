@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q283793: WD97: Which Address Books Can Be Used with Word?"
-permalink: kb/283/Q283793/
+permalink: /kb/283/Q283793/
 ---
 
 ## Q283793: WD97: Which Address Books Can Be Used with Word?

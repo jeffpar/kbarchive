@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135173: Cannot See MDI Window Frame When Dragging Window"
-permalink: kb/135/Q135173/
+permalink: /kb/135/Q135173/
 ---
 
 ## Q135173: Cannot See MDI Window Frame When Dragging Window

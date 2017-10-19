@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226846: SMS: Domain Account for Software Metering Is Converted to Local"
-permalink: kb/226/Q226846/
+permalink: /kb/226/Q226846/
 ---
 
 ## Q226846: SMS: Domain Account for Software Metering Is Converted to Local

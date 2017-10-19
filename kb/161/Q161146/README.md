@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161146: PRB: _Tally System Variable Reports Incorrect Record Count"
-permalink: kb/161/Q161146/
+permalink: /kb/161/Q161146/
 ---
 
 ## Q161146: PRB: _Tally System Variable Reports Incorrect Record Count

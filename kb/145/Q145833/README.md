@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145833: No Network Access with 3Com EtherLink 16 and NetBEUI Only"
-permalink: kb/145/Q145833/
+permalink: /kb/145/Q145833/
 ---
 
 ## Q145833: No Network Access with 3Com EtherLink 16 and NetBEUI Only

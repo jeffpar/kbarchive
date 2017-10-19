@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139280: Running NWCONV.EXE Looks for Compact Disc After Installing FPNW"
-permalink: kb/139/Q139280/
+permalink: /kb/139/Q139280/
 ---
 
 ## Q139280: Running NWCONV.EXE Looks for Compact Disc After Installing FPNW

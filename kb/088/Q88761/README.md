@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88761: HP Mouse Stops in Windows"
-permalink: kb/088/Q88761/
+permalink: /kb/088/Q88761/
 ---
 
 ## Q88761: HP Mouse Stops in Windows

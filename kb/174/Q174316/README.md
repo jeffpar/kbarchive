@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174316: WV: Word Viewer /p Command Parameter Doesn't Print Document"
-permalink: kb/174/Q174316/
+permalink: /kb/174/Q174316/
 ---
 
 ## Q174316: WV: Word Viewer /p Command Parameter Doesn't Print Document

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99555: PRB: Personal LaserWriter LS Cuts Off Parts of Letters"
-permalink: kb/099/Q99555/
+permalink: /kb/099/Q99555/
 ---
 
 ## Q99555: PRB: Personal LaserWriter LS Cuts Off Parts of Letters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152127: Netsetup of Win95 to WinNT Server Changes Dates of All Files"
-permalink: kb/152/Q152127/
+permalink: /kb/152/Q152127/
 ---
 
 ## Q152127: Netsetup of Win95 to WinNT Server Changes Dates of All Files

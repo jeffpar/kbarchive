@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191395: SNA Client APPC and RUI/SLI Applications May Seem Slow"
-permalink: kb/191/Q191395/
+permalink: /kb/191/Q191395/
 ---
 
 ## Q191395: SNA Client APPC and RUI/SLI Applications May Seem Slow

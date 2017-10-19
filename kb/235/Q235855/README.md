@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235855: WD97: Invalid Page Fault in Module Mso97.dll When You Cut Text"
-permalink: kb/235/Q235855/
+permalink: /kb/235/Q235855/
 ---
 
 ## Q235855: WD97: Invalid Page Fault in Module Mso97.dll When You Cut Text

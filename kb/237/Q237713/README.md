@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237713: NFL Fever 2000: Graphics Displayed Using Green Color Palette"
-permalink: kb/237/Q237713/
+permalink: /kb/237/Q237713/
 ---
 
 ## Q237713: NFL Fever 2000: Graphics Displayed Using Green Color Palette

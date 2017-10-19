@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299848: HOWTO: Insert Code at Cursor/Selection Position from an Add-In"
-permalink: kb/299/Q299848/
+permalink: /kb/299/Q299848/
 ---
 
 ## Q299848: HOWTO: Insert Code at Cursor/Selection Position from an Add-In

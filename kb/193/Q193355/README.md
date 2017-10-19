@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193355: SMS: Status MIF Creator - Ismif16.exe"
-permalink: kb/193/Q193355/
+permalink: /kb/193/Q193355/
 ---
 
 ## Q193355: SMS: Status MIF Creator - Ismif16.exe

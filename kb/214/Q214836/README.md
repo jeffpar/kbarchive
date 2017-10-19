@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214836: XFOR: One-Step Migration for Lotus cc:Mail fails with Errors 809"
-permalink: kb/214/Q214836/
+permalink: /kb/214/Q214836/
 ---
 
 ## Q214836: XFOR: One-Step Migration for Lotus cc:Mail fails with Errors 809

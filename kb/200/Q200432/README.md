@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200432: XFOR: Notes Sent Time Migrates Improperly, Shifts Backward"
-permalink: kb/200/Q200432/
+permalink: /kb/200/Q200432/
 ---
 
 ## Q200432: XFOR: Notes Sent Time Migrates Improperly, Shifts Backward

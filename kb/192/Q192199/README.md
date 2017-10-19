@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192199: DOS Remote Client Displays Year 100 on or after Year 2000"
-permalink: kb/192/Q192199/
+permalink: /kb/192/Q192199/
 ---
 
 ## Q192199: DOS Remote Client Displays Year 100 on or after Year 2000

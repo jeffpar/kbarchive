@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130390: How to Size Controls Using the Visual Class Designer"
-permalink: kb/130/Q130390/
+permalink: /kb/130/Q130390/
 ---
 
 ## Q130390: How to Size Controls Using the Visual Class Designer

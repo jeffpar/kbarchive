@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121853: Downlevel Print Jobs Not Redirected Correctly"
-permalink: kb/121/Q121853/
+permalink: /kb/121/Q121853/
 ---
 
 ## Q121853: Downlevel Print Jobs Not Redirected Correctly

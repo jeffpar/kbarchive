@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172118: Failure to Open Domain Error Displayed Too Soon By Manager"
-permalink: kb/172/Q172118/
+permalink: /kb/172/Q172118/
 ---
 
 ## Q172118: Failure to Open Domain Error Displayed Too Soon By Manager

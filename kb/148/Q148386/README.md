@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148386: Problems Formatting Text in WordPad"
-permalink: kb/148/Q148386/
+permalink: /kb/148/Q148386/
 ---
 
 ## Q148386: Problems Formatting Text in WordPad

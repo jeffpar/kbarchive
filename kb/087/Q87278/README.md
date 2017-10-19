@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87278: MS-DOS Internal Commands and DOSKEY Macros in Program Manager"
-permalink: kb/087/Q87278/
+permalink: /kb/087/Q87278/
 ---
 
 ## Q87278: MS-DOS Internal Commands and DOSKEY Macros in Program Manager

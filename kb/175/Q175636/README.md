@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175636: XCLN: Thank You Mood Stamp is not Displayed in Exchange Clients"
-permalink: kb/175/Q175636/
+permalink: /kb/175/Q175636/
 ---
 
 ## Q175636: XCLN: Thank You Mood Stamp is not Displayed in Exchange Clients

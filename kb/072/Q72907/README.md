@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72907: Manipulating Program Manager Groups Using DDE Interface"
-permalink: kb/072/Q72907/
+permalink: /kb/072/Q72907/
 ---
 
 ## Q72907: Manipulating Program Manager Groups Using DDE Interface

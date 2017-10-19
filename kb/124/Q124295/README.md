@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124295: Unable to Install Windows NT 3.5 on IBM PS/2 56 8556"
-permalink: kb/124/Q124295/
+permalink: /kb/124/Q124295/
 ---
 
 ## Q124295: Unable to Install Windows NT 3.5 on IBM PS/2 56 8556

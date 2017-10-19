@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132372: Writer: Patterns Created Using Word Shape Tool Do Not Print"
-permalink: kb/132/Q132372/
+permalink: /kb/132/Q132372/
 ---
 
 ## Q132372: Writer: Patterns Created Using Word Shape Tool Do Not Print

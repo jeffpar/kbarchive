@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168739: XADM: Error 2182 Attempting to Start Information Store"
-permalink: kb/168/Q168739/
+permalink: /kb/168/Q168739/
 ---
 
 ## Q168739: XADM: Error 2182 Attempting to Start Information Store

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62152: Gates Learjet 25G Performance Specifications"
-permalink: kb/062/Q62152/
+permalink: /kb/062/Q62152/
 ---
 
 ## Q62152: Gates Learjet 25G Performance Specifications

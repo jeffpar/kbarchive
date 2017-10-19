@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159257: Spike's World: Why Doesn't Chat Work?"
-permalink: kb/159/Q159257/
+permalink: /kb/159/Q159257/
 ---
 
 ## Q159257: Spike's World: Why Doesn't Chat Work?

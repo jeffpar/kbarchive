@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176353: FIX: SourceSafe OLE Automation Does Not Support Label Comments"
-permalink: kb/176/Q176353/
+permalink: /kb/176/Q176353/
 ---
 
 ## Q176353: FIX: SourceSafe OLE Automation Does Not Support Label Comments

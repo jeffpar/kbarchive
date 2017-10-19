@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140665: Macintosh Cinemania 96: Manual Installation Instructions"
-permalink: kb/140/Q140665/
+permalink: /kb/140/Q140665/
 ---
 
 ## Q140665: Macintosh Cinemania 96: Manual Installation Instructions

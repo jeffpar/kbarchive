@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237278: WD97: AV When Programmatically Applying ListTemplate"
-permalink: kb/237/Q237278/
+permalink: /kb/237/Q237278/
 ---
 
 ## Q237278: WD97: AV When Programmatically Applying ListTemplate

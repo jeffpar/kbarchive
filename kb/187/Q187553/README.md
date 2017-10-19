@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187553: BUG: Error 10 Attempting to ReDim or Erase an Array"
-permalink: kb/187/Q187553/
+permalink: /kb/187/Q187553/
 ---
 
 ## Q187553: BUG: Error 10 Attempting to ReDim or Erase an Array

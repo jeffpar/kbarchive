@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228543: Policy Editor Does Not Read SNMP Communities Correctly"
-permalink: kb/228/Q228543/
+permalink: /kb/228/Q228543/
 ---
 
 ## Q228543: Policy Editor Does Not Read SNMP Communities Correctly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293786: BUG: GPF in DAO After You Install SQL Server Client"
-permalink: kb/293/Q293786/
+permalink: /kb/293/Q293786/
 ---
 
 ## Q293786: BUG: GPF in DAO After You Install SQL Server Client

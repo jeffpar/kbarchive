@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84293: Summa Graphics Tablet May Require Upgrade for Windows"
-permalink: kb/084/Q84293/
+permalink: /kb/084/Q84293/
 ---
 
 ## Q84293: Summa Graphics Tablet May Require Upgrade for Windows

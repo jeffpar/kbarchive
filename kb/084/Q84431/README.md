@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84431: Sounds Option Unavailable in Alarm Clock"
-permalink: kb/084/Q84431/
+permalink: /kb/084/Q84431/
 ---
 
 ## Q84431: Sounds Option Unavailable in Alarm Clock

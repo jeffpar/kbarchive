@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153376: Redial on Link Failure Problems After Upgrade"
-permalink: kb/153/Q153376/
+permalink: /kb/153/Q153376/
 ---
 
 ## Q153376: Redial on Link Failure Problems After Upgrade

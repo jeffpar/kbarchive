@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131782: &quot;Code 10&quot; Reported with PCMCIA Network Card on TravelMate 5000"
-permalink: kb/131/Q131782/
+permalink: /kb/131/Q131782/
 ---
 
 ## Q131782: &quot;Code 10&quot; Reported with PCMCIA Network Card on TravelMate 5000

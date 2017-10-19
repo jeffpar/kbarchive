@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170004: XCON: Message from PMDF MTA May Be Rejected"
-permalink: kb/170/Q170004/
+permalink: /kb/170/Q170004/
 ---
 
 ## Q170004: XCON: Message from PMDF MTA May Be Rejected

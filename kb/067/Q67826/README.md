@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67826: ASD: Relationship Between Runway Numbers and Heading"
-permalink: kb/067/Q67826/
+permalink: /kb/067/Q67826/
 ---
 
 ## Q67826: ASD: Relationship Between Runway Numbers and Heading

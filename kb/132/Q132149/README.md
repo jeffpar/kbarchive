@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132149: Logon Scripts Run From Wrong Server"
-permalink: kb/132/Q132149/
+permalink: /kb/132/Q132149/
 ---
 
 ## Q132149: Logon Scripts Run From Wrong Server

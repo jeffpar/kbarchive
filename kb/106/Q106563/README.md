@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106563: FIX: Unary Minus and Mixed Complex&#42;16 with Complex&#42;8"
-permalink: kb/106/Q106563/
+permalink: /kb/106/Q106563/
 ---
 
 ## Q106563: FIX: Unary Minus and Mixed Complex&#42;16 with Complex&#42;8

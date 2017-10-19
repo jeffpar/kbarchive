@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95119: WindowMagic May Not Operate Correctly with WFWG"
-permalink: kb/095/Q95119/
+permalink: /kb/095/Q95119/
 ---
 
 ## Q95119: WindowMagic May Not Operate Correctly with WFWG

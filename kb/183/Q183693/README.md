@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183693: Cannot Choose Custom Forms on HP III and HP 4 Family Printers"
-permalink: kb/183/Q183693/
+permalink: /kb/183/Q183693/
 ---
 
 ## Q183693: Cannot Choose Custom Forms on HP III and HP 4 Family Printers

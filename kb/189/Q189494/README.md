@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189494: XCON: MTA 9277 RPC Cancel Call for Thread"
-permalink: kb/189/Q189494/
+permalink: /kb/189/Q189494/
 ---
 
 ## Q189494: XCON: MTA 9277 RPC Cancel Call for Thread

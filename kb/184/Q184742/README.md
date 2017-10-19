@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184742: HOWTO: Use the Script Control Error Object"
-permalink: kb/184/Q184742/
+permalink: /kb/184/Q184742/
 ---
 
 ## Q184742: HOWTO: Use the Script Control Error Object

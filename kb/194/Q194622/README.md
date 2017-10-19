@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194622: No SNA Manager Status Changes When TN3270 Session Load Under 30K"
-permalink: kb/194/Q194622/
+permalink: /kb/194/Q194622/
 ---
 
 ## Q194622: No SNA Manager Status Changes When TN3270 Session Load Under 30K

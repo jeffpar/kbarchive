@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113781: Sound: GP Faults or System Hangs with Third-Party Shells"
-permalink: kb/113/Q113781/
+permalink: /kb/113/Q113781/
 ---
 
 ## Q113781: Sound: GP Faults or System Hangs with Third-Party Shells

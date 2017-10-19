@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161290: SMS: Network Adapter Card Information Not Correct"
-permalink: kb/161/Q161290/
+permalink: /kb/161/Q161290/
 ---
 
 ## Q161290: SMS: Network Adapter Card Information Not Correct

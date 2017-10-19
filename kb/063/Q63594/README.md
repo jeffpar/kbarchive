@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63594: Incorrect Fonts Displayed with Canon LBP-8II Driver"
-permalink: kb/063/Q63594/
+permalink: /kb/063/Q63594/
 ---
 
 ## Q63594: Incorrect Fonts Displayed with Canon LBP-8II Driver

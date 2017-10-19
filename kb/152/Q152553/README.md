@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152553: Print Jobs from MAC OTI Clients May Hang in WinNT Print Queue"
-permalink: kb/152/Q152553/
+permalink: /kb/152/Q152553/
 ---
 
 ## Q152553: Print Jobs from MAC OTI Clients May Hang in WinNT Print Queue

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197619: Runtime Error '800a0046' Using the Send Method of CDONTS.NewMail"
-permalink: kb/197/Q197619/
+permalink: /kb/197/Q197619/
 ---
 
 ## Q197619: Runtime Error '800a0046' Using the Send Method of CDONTS.NewMail

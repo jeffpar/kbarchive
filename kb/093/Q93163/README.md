@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93163: File Manager Title Bar: &quot;Too Many Files. Unable to Read...&quot;"
-permalink: kb/093/Q93163/
+permalink: /kb/093/Q93163/
 ---
 
 ## Q93163: File Manager Title Bar: &quot;Too Many Files. Unable to Read...&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273623: Midtown Madness 2: Sky and Checkpoint Textures Are Distorted"
-permalink: kb/273/Q273623/
+permalink: /kb/273/Q273623/
 ---
 
 ## Q273623: Midtown Madness 2: Sky and Checkpoint Textures Are Distorted

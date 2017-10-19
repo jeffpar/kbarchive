@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146322: XADM: Modified Address Template Only Displays on Client"
-permalink: kb/146/Q146322/
+permalink: /kb/146/Q146322/
 ---
 
 ## Q146322: XADM: Modified Address Template Only Displays on Client

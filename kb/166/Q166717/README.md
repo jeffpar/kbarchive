@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166717: DOC: Instructions for Statically Linking to Registrar Code"
-permalink: kb/166/Q166717/
+permalink: /kb/166/Q166717/
 ---
 
 ## Q166717: DOC: Instructions for Statically Linking to Registrar Code

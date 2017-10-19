@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223132: FIX: Error Loading Repository Add-In in Non-English VB6 Versions"
-permalink: kb/223/Q223132/
+permalink: /kb/223/Q223132/
 ---
 
 ## Q223132: FIX: Error Loading Repository Add-In in Non-English VB6 Versions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249820: TP May Start Slowly When Using Dynamic Remote APPC LU Definition"
-permalink: kb/249/Q249820/
+permalink: /kb/249/Q249820/
 ---
 
 ## Q249820: TP May Start Slowly When Using Dynamic Remote APPC LU Definition

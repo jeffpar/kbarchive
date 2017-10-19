@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104334: BUG: SetDIBitsToDevice Faults on 24-BPP PM-Style DIBs"
-permalink: kb/104/Q104334/
+permalink: /kb/104/Q104334/
 ---
 
 ## Q104334: BUG: SetDIBitsToDevice Faults on 24-BPP PM-Style DIBs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149098: MSN Interactive Teen: How Much Does It Cost to Use?"
-permalink: kb/149/Q149098/
+permalink: /kb/149/Q149098/
 ---
 
 ## Q149098: MSN Interactive Teen: How Much Does It Cost to Use?

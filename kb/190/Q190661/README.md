@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190661: XADM: Cannot Install Exchange 5.5 After Installing CDO 1.21"
-permalink: kb/190/Q190661/
+permalink: /kb/190/Q190661/
 ---
 
 ## Q190661: XADM: Cannot Install Exchange 5.5 After Installing CDO 1.21

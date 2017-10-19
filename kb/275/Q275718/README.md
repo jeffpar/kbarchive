@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275718: SNA Server Manager May Stop Responding When You Quit the Program"
-permalink: kb/275/Q275718/
+permalink: /kb/275/Q275718/
 ---
 
 ## Q275718: SNA Server Manager May Stop Responding When You Quit the Program

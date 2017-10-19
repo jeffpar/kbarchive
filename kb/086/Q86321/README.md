@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86321: PC Win: Cannot Minimize Message Finder Using Keyboard"
-permalink: kb/086/Q86321/
+permalink: /kb/086/Q86321/
 ---
 
 ## Q86321: PC Win: Cannot Minimize Message Finder Using Keyboard

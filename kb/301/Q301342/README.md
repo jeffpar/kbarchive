@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301342: XFOR: How to Enable Archiving for the GroupWise Connector in Exc"
-permalink: kb/301/Q301342/
+permalink: /kb/301/Q301342/
 ---
 
 ## Q301342: XFOR: How to Enable Archiving for the GroupWise Connector in Exc

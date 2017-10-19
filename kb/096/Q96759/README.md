@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96759: No Expanded Memory Available After Installing EMM386.EXE"
-permalink: kb/096/Q96759/
+permalink: /kb/096/Q96759/
 ---
 
 ## Q96759: No Expanded Memory Available After Installing EMM386.EXE

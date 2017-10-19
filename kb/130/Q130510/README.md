@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130510: Command-Line Switches for Windows Explorer"
-permalink: kb/130/Q130510/
+permalink: /kb/130/Q130510/
 ---
 
 ## Q130510: Command-Line Switches for Windows Explorer

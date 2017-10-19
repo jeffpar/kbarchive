@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87150: Mac Wkst: Creation of Local Information"
-permalink: kb/087/Q87150/
+permalink: /kb/087/Q87150/
 ---
 
 ## Q87150: Mac Wkst: Creation of Local Information

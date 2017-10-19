@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q40426: PRB: L1083 Error From Incorrect CONFIG.SYS FILES Statement"
-permalink: kb/040/Q40426/
+permalink: /kb/040/Q40426/
 ---
 
 ## Q40426: PRB: L1083 Error From Incorrect CONFIG.SYS FILES Statement

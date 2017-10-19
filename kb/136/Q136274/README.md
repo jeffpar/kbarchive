@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136274: Stacker 4.0 or Earlier May Damage Long Filenames"
-permalink: kb/136/Q136274/
+permalink: /kb/136/Q136274/
 ---
 
 ## Q136274: Stacker 4.0 or Earlier May Damage Long Filenames

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196859: WD97: Cannot Rename Normal.dot If Word Mail Is Running"
-permalink: kb/196/Q196859/
+permalink: /kb/196/Q196859/
 ---
 
 ## Q196859: WD97: Cannot Rename Normal.dot If Word Mail Is Running

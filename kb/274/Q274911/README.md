@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274911: Combat Flight Simulator 2 Quits Unexpectedly"
-permalink: kb/274/Q274911/
+permalink: /kb/274/Q274911/
 ---
 
 ## Q274911: Combat Flight Simulator 2 Quits Unexpectedly

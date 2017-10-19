@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191828: Account Lockouts and 5711 Events on the PDC"
-permalink: kb/191/Q191828/
+permalink: /kb/191/Q191828/
 ---
 
 ## Q191828: Account Lockouts and 5711 Events on the PDC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177205: How to Add an OEM SCSI Controller During SBS Installation"
-permalink: kb/177/Q177205/
+permalink: /kb/177/Q177205/
 ---
 
 ## Q177205: How to Add an OEM SCSI Controller During SBS Installation

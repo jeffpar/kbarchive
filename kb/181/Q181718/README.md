@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181718: PRB: &quot;Error Updating the SourceSafe Database via DDCONVW.EXE&quot;"
-permalink: kb/181/Q181718/
+permalink: /kb/181/Q181718/
 ---
 
 ## Q181718: PRB: &quot;Error Updating the SourceSafe Database via DDCONVW.EXE&quot;

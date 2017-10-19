@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253453: Microsoft Games: Game Controller Does Not Function in the Game"
-permalink: kb/253/Q253453/
+permalink: /kb/253/Q253453/
 ---
 
 ## Q253453: Microsoft Games: Game Controller Does Not Function in the Game

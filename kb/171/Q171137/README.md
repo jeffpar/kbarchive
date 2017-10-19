@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171137: Need to Remove MS Transaction Server After Remove IIS 4.0"
-permalink: kb/171/Q171137/
+permalink: /kb/171/Q171137/
 ---
 
 ## Q171137: Need to Remove MS Transaction Server After Remove IIS 4.0

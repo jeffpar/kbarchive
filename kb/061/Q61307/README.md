@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61307: Do Not Start Programmer's WorkBench by Typing PWBED"
-permalink: kb/061/Q61307/
+permalink: /kb/061/Q61307/
 ---
 
 ## Q61307: Do Not Start Programmer's WorkBench by Typing PWBED

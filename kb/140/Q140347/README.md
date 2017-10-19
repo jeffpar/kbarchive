@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140347: How to Manage Differences in Stacked Pages Between Platforms"
-permalink: kb/140/Q140347/
+permalink: /kb/140/Q140347/
 ---
 
 ## Q140347: How to Manage Differences in Stacked Pages Between Platforms

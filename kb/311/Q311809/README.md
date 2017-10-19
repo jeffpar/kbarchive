@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311809: Initial APPC Print Job May Have Incorrect Font Size"
-permalink: kb/311/Q311809/
+permalink: /kb/311/Q311809/
 ---
 
 ## Q311809: Initial APPC Print Job May Have Incorrect Font Size

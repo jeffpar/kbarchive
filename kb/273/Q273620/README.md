@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273620: How to Optimize Performance in Flight Simulator 98/2000 Games"
-permalink: kb/273/Q273620/
+permalink: /kb/273/Q273620/
 ---
 
 ## Q273620: How to Optimize Performance in Flight Simulator 98/2000 Games

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177726: XADM: Authrest.exe Err Msg: Dynamic Link Library Not Found"
-permalink: kb/177/Q177726/
+permalink: /kb/177/Q177726/
 ---
 
 ## Q177726: XADM: Authrest.exe Err Msg: Dynamic Link Library Not Found

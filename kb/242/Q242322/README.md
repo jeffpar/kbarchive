@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242322: PRB: ToolTipText Property On MMCToolbar Button Does Not Update"
-permalink: kb/242/Q242322/
+permalink: /kb/242/Q242322/
 ---
 
 ## Q242322: PRB: ToolTipText Property On MMCToolbar Button Does Not Update

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193437: XFOR: Error Msg: The Domain or User Name You Have Specified..."
-permalink: kb/193/Q193437/
+permalink: /kb/193/Q193437/
 ---
 
 ## Q193437: XFOR: Error Msg: The Domain or User Name You Have Specified...

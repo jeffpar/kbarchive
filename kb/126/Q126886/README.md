@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126886: PC MAPI: IPC Messages Not Supported w/ Common Mail Calls (CMC)"
-permalink: kb/126/Q126886/
+permalink: /kb/126/Q126886/
 ---
 
 ## Q126886: PC MAPI: IPC Messages Not Supported w/ Common Mail Calls (CMC)

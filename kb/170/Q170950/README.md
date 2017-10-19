@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170950: Intermittent Loss of Connectivity While Using Compaq NetFlex-3"
-permalink: kb/170/Q170950/
+permalink: /kb/170/Q170950/
 ---
 
 ## Q170950: Intermittent Loss of Connectivity While Using Compaq NetFlex-3

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142468: FIX: Adding Subitems To Hidden ListView Causes APP Error"
-permalink: kb/142/Q142468/
+permalink: /kb/142/Q142468/
 ---
 
 ## Q142468: FIX: Adding Subitems To Hidden ListView Causes APP Error

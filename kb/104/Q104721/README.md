@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104721: Oak VGA Prostar Excelerator May Cause Distortion in Shell"
-permalink: kb/104/Q104721/
+permalink: /kb/104/Q104721/
 ---
 
 ## Q104721: Oak VGA Prostar Excelerator May Cause Distortion in Shell

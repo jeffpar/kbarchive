@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259616: XFOR: Outlook Rules May Not Start on Internet Mail"
-permalink: kb/259/Q259616/
+permalink: /kb/259/Q259616/
 ---
 
 ## Q259616: XFOR: Outlook Rules May Not Start on Internet Mail

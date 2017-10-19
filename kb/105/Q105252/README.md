@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105252: MemMaker Does Not Preserve Indentation in Configuration Files"
-permalink: kb/105/Q105252/
+permalink: /kb/105/Q105252/
 ---
 
 ## Q105252: MemMaker Does Not Preserve Indentation in Configuration Files

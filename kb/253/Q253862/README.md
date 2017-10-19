@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253862: Error Messages When MMS Database Directory Size Reaches Limit"
-permalink: kb/253/Q253862/
+permalink: /kb/253/Q253862/
 ---
 
 ## Q253862: Error Messages When MMS Database Directory Size Reaches Limit

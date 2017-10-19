@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148504: FIX: C2371: Cast to Struct Ptr in Default Arg of Class Member"
-permalink: kb/148/Q148504/
+permalink: /kb/148/Q148504/
 ---
 
 ## Q148504: FIX: C2371: Cast to Struct Ptr in Default Arg of Class Member

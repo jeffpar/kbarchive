@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141987: PRB: Values Are Not Updated in Each Column When Changing Rows"
-permalink: kb/141/Q141987/
+permalink: /kb/141/Q141987/
 ---
 
 ## Q141987: PRB: Values Are Not Updated in Each Column When Changing Rows

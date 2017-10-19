@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140781: How Systems Management Server Detects a Windows Client"
-permalink: kb/140/Q140781/
+permalink: /kb/140/Q140781/
 ---
 
 ## Q140781: How Systems Management Server Detects a Windows Client

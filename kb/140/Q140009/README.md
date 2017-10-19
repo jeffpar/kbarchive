@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140009: Microsoft Exchange Printout Is Titled &quot;Unknown&quot;"
-permalink: kb/140/Q140009/
+permalink: /kb/140/Q140009/
 ---
 
 ## Q140009: Microsoft Exchange Printout Is Titled &quot;Unknown&quot;

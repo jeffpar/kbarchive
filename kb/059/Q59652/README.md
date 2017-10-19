@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59652: Calendar Not Displaying Message with Alarm"
-permalink: kb/059/Q59652/
+permalink: /kb/059/Q59652/
 ---
 
 ## Q59652: Calendar Not Displaying Message with Alarm

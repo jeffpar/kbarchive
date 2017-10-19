@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180599: WD97: How to Use Query to Merge Two Excel Files for Data Source"
-permalink: kb/180/Q180599/
+permalink: /kb/180/Q180599/
 ---
 
 ## Q180599: WD97: How to Use Query to Merge Two Excel Files for Data Source

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245027: STOP 0xC0000143 Damaged or Missing Display_driver.dll."
-permalink: kb/245/Q245027/
+permalink: /kb/245/Q245027/
 ---
 
 ## Q245027: STOP 0xC0000143 Damaged or Missing Display_driver.dll.

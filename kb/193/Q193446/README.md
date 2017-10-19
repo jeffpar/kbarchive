@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193446: Virtual Globe: Administrator Rights Needed on NT-Based Computer"
-permalink: kb/193/Q193446/
+permalink: /kb/193/Q193446/
 ---
 
 ## Q193446: Virtual Globe: Administrator Rights Needed on NT-Based Computer

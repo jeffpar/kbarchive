@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196583: PRB: An Unknown Error Occurred While Building the Cabinet File"
-permalink: kb/196/Q196583/
+permalink: /kb/196/Q196583/
 ---
 
 ## Q196583: PRB: An Unknown Error Occurred While Building the Cabinet File

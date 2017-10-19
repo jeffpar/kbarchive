@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163484: XCLN: Schedule+ Import from Other Systems Gives Error"
-permalink: kb/163/Q163484/
+permalink: /kb/163/Q163484/
 ---
 
 ## Q163484: XCLN: Schedule+ Import from Other Systems Gives Error

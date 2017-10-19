@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93619: PRB: Blank Box Where Graph Should Be in RQBE Output"
-permalink: kb/093/Q93619/
+permalink: /kb/093/Q93619/
 ---
 
 ## Q93619: PRB: Blank Box Where Graph Should Be in RQBE Output

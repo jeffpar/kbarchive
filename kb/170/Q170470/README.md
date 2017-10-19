@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170470: XWEB: Time on Status Bar of OWA Logon Page Is In 24-Hour Format"
-permalink: kb/170/Q170470/
+permalink: /kb/170/Q170470/
 ---
 
 ## Q170470: XWEB: Time on Status Bar of OWA Logon Page Is In 24-Hour Format

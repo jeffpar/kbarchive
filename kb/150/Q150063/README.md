@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150063: ADT/ODE: How to Use the Setup Wizard to Join Workgroup"
-permalink: kb/150/Q150063/
+permalink: /kb/150/Q150063/
 ---
 
 ## Q150063: ADT/ODE: How to Use the Setup Wizard to Join Workgroup

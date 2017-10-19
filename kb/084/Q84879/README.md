@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84879: NEC Silentwriter 95 Shows Apple LaserWriter in Print Setup"
-permalink: kb/084/Q84879/
+permalink: /kb/084/Q84879/
 ---
 
 ## Q84879: NEC Silentwriter 95 Shows Apple LaserWriter in Print Setup

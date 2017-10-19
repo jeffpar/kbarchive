@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178252: Control Unit Image Number Not Available to ESCON Link Service"
-permalink: kb/178/Q178252/
+permalink: /kb/178/Q178252/
 ---
 
 ## Q178252: Control Unit Image Number Not Available to ESCON Link Service

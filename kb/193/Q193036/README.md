@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193036: BUG: &quot;On Error Resume Next&quot; Enters Infinite Loop in Native Code"
-permalink: kb/193/Q193036/
+permalink: /kb/193/Q193036/
 ---
 
 ## Q193036: BUG: &quot;On Error Resume Next&quot; Enters Infinite Loop in Native Code

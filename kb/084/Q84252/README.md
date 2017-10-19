@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84252: Kyocera Q8010 Prints Blank Page When Using TrueType Fonts"
-permalink: kb/084/Q84252/
+permalink: /kb/084/Q84252/
 ---
 
 ## Q84252: Kyocera Q8010 Prints Blank Page When Using TrueType Fonts

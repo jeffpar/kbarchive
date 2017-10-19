@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158047: XFOR: Microsoft Mail Connector Error: Service Specific Error 3"
-permalink: kb/158/Q158047/
+permalink: /kb/158/Q158047/
 ---
 
 ## Q158047: XFOR: Microsoft Mail Connector Error: Service Specific Error 3

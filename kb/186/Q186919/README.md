@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186919: HOWTO: Manual Mode OLE Drag and Drop Mouse Pointer Changes"
-permalink: kb/186/Q186919/
+permalink: /kb/186/Q186919/
 ---
 
 ## Q186919: HOWTO: Manual Mode OLE Drag and Drop Mouse Pointer Changes

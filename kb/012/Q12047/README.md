@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q12047: Explorapedia: Where Is the Help File?"
-permalink: kb/012/Q12047/
+permalink: /kb/012/Q12047/
 ---
 
 ## Q12047: Explorapedia: Where Is the Help File?

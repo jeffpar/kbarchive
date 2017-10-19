@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220965: XWEB: OWA NT Challenge Response Not Working as Expected"
-permalink: kb/220/Q220965/
+permalink: /kb/220/Q220965/
 ---
 
 ## Q220965: XWEB: OWA NT Challenge Response Not Working as Expected

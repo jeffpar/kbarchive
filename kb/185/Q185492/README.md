@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185492: Golf 98/99: &quot;Invalid Page Fault&quot; Err Msg or Hang Starting Game"
-permalink: kb/185/Q185492/
+permalink: /kb/185/Q185492/
 ---
 
 ## Q185492: Golf 98/99: &quot;Invalid Page Fault&quot; Err Msg or Hang Starting Game

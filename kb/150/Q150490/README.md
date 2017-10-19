@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150490: 3D Movie Maker: Features and Limitations"
-permalink: kb/150/Q150490/
+permalink: /kb/150/Q150490/
 ---
 
 ## Q150490: 3D Movie Maker: Features and Limitations

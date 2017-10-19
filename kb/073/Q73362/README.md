@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73362: Two Epson Printers Cannot Be Setup Concurrently in Windows"
-permalink: kb/073/Q73362/
+permalink: /kb/073/Q73362/
 ---
 
 ## Q73362: Two Epson Printers Cannot Be Setup Concurrently in Windows

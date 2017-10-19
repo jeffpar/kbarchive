@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151721: PRB: Mastering/Windows NT Err Msg: Cannot Find File"
-permalink: kb/151/Q151721/
+permalink: /kb/151/Q151721/
 ---
 
 ## Q151721: PRB: Mastering/Windows NT Err Msg: Cannot Find File

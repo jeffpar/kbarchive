@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186475: Icons Mapped to NetWare Drives Appear/Disappear from Start Menu"
-permalink: kb/186/Q186475/
+permalink: /kb/186/Q186475/
 ---
 
 ## Q186475: Icons Mapped to NetWare Drives Appear/Disappear from Start Menu

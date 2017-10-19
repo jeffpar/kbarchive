@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147452: Macintosh Volumes Not Accessible After Reinstalling SFM"
-permalink: kb/147/Q147452/
+permalink: /kb/147/Q147452/
 ---
 
 ## Q147452: Macintosh Volumes Not Accessible After Reinstalling SFM

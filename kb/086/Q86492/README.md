@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86492: Terminal Translates Letters into Numbers When Auto Dialing"
-permalink: kb/086/Q86492/
+permalink: /kb/086/Q86492/
 ---
 
 ## Q86492: Terminal Translates Letters into Numbers When Auto Dialing

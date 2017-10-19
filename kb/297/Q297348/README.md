@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297348: HOWTO: Display A Particular Radius with MapPoint"
-permalink: kb/297/Q297348/
+permalink: /kb/297/Q297348/
 ---
 
 ## Q297348: HOWTO: Display A Particular Radius with MapPoint

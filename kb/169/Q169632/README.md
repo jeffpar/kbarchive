@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169632: Unattended Err Msg: Setup Was Unable to Create the Following..."
-permalink: kb/169/Q169632/
+permalink: /kb/169/Q169632/
 ---
 
 ## Q169632: Unattended Err Msg: Setup Was Unable to Create the Following...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166348: Maximum Number of ACEs in an ACL"
-permalink: kb/166/Q166348/
+permalink: /kb/166/Q166348/
 ---
 
 ## Q166348: Maximum Number of ACEs in an ACL

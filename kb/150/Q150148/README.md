@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150148: BUG: FOR2715 Error Generated for Pointer Assignment"
-permalink: kb/150/Q150148/
+permalink: /kb/150/Q150148/
 ---
 
 ## Q150148: BUG: FOR2715 Error Generated for Pointer Assignment

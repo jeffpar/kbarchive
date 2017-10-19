@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141403: Bookshelf: Can't Use Spell Check During QuickShelf Search"
-permalink: kb/141/Q141403/
+permalink: /kb/141/Q141403/
 ---
 
 ## Q141403: Bookshelf: Can't Use Spell Check During QuickShelf Search

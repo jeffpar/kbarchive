@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317466: HOWTO: Remove Buttons from the Print Preview Toolbar"
-permalink: kb/317/Q317466/
+permalink: /kb/317/Q317466/
 ---
 
 ## Q317466: HOWTO: Remove Buttons from the Print Preview Toolbar

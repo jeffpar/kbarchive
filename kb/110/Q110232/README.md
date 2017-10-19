@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110232: Error If Font Pack 2 Is Installed over Word Assistant"
-permalink: kb/110/Q110232/
+permalink: /kb/110/Q110232/
 ---
 
 ## Q110232: Error If Font Pack 2 Is Installed over Word Assistant

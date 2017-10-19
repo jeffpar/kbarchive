@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190510: BUG: ClassWizard Is Disabled When Any Workspace Project Unloaded"
-permalink: kb/190/Q190510/
+permalink: /kb/190/Q190510/
 ---
 
 ## Q190510: BUG: ClassWizard Is Disabled When Any Workspace Project Unloaded

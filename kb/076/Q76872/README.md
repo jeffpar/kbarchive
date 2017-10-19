@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76872: Multimedia Installable Driver SYSTEM.INI Entries"
-permalink: kb/076/Q76872/
+permalink: /kb/076/Q76872/
 ---
 
 ## Q76872: Multimedia Installable Driver SYSTEM.INI Entries

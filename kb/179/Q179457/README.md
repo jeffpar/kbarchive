@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179457: Bookshelf 98: Footnote Number Is Displayed Beneath Pasted Text"
-permalink: kb/179/Q179457/
+permalink: /kb/179/Q179457/
 ---
 
 ## Q179457: Bookshelf 98: Footnote Number Is Displayed Beneath Pasted Text

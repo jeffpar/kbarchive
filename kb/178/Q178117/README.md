@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178117: PRB: Application Loses Focus or Opens Minimized on Startup"
-permalink: kb/178/Q178117/
+permalink: /kb/178/Q178117/
 ---
 
 ## Q178117: PRB: Application Loses Focus or Opens Minimized on Startup

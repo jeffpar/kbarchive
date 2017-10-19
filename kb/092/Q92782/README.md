@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92782: WFWG Setup Prompts for Disk with Nonexistent Drive Letter"
-permalink: kb/092/Q92782/
+permalink: /kb/092/Q92782/
 ---
 
 ## Q92782: WFWG Setup Prompts for Disk with Nonexistent Drive Letter

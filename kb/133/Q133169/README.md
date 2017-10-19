@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133169: Encarta: Copying .Wav Sound Files from Encarta"
-permalink: kb/133/Q133169/
+permalink: /kb/133/Q133169/
 ---
 
 ## Q133169: Encarta: Copying .Wav Sound Files from Encarta

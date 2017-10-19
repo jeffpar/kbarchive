@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294278: Security Settings in the Source Code in SDK Need Adjustment"
-permalink: kb/294/Q294278/
+permalink: /kb/294/Q294278/
 ---
 
 ## Q294278: Security Settings in the Source Code in SDK Need Adjustment

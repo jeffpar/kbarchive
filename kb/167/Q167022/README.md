@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167022: Forms Missing for Epson EPL-9000 Printer"
-permalink: kb/167/Q167022/
+permalink: /kb/167/Q167022/
 ---
 
 ## Q167022: Forms Missing for Epson EPL-9000 Printer

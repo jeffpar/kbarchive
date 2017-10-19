@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155975: SMS: File Transfer Does Not Display NTFS Compressed Files"
-permalink: kb/155/Q155975/
+permalink: /kb/155/Q155975/
 ---
 
 ## Q155975: SMS: File Transfer Does Not Display NTFS Compressed Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183818: XCON: MTA Unable to Send Message to Large Number of Recipients"
-permalink: kb/183/Q183818/
+permalink: /kb/183/Q183818/
 ---
 
 ## Q183818: XCON: MTA Unable to Send Message to Large Number of Recipients

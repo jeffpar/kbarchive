@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145693: PRB: _ED Functions in Toolbar Causes Fatal Error"
-permalink: kb/145/Q145693/
+permalink: /kb/145/Q145693/
 ---
 
 ## Q145693: PRB: _ED Functions in Toolbar Causes Fatal Error

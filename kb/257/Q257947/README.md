@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257947: PRB: Runtime Error 7 : Out of Memory Error Message"
-permalink: kb/257/Q257947/
+permalink: /kb/257/Q257947/
 ---
 
 ## Q257947: PRB: Runtime Error 7 : Out of Memory Error Message

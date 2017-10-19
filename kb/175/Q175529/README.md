@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175529: Server Service Fails with System Error 8 or System Error 234"
-permalink: kb/175/Q175529/
+permalink: /kb/175/Q175529/
 ---
 
 ## Q175529: Server Service Fails with System Error 8 or System Error 234

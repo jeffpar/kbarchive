@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142315: Printout Incomplete When Using Canon Printers on ECP Port"
-permalink: kb/142/Q142315/
+permalink: /kb/142/Q142315/
 ---
 
 ## Q142315: Printout Incomplete When Using Canon Printers on ECP Port

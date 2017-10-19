@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183405: XADM: Authrest.exe Fails with -1003"
-permalink: kb/183/Q183405/
+permalink: /kb/183/Q183405/
 ---
 
 ## Q183405: XADM: Authrest.exe Fails with -1003

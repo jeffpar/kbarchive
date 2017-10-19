@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72285: Non-MS-DOS Format Conversion Utility: Xeno Copy PC"
-permalink: kb/072/Q72285/
+permalink: /kb/072/Q72285/
 ---
 
 ## Q72285: Non-MS-DOS Format Conversion Utility: Xeno Copy PC

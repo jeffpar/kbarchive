@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137894: Setup Reports Success when it Fails to Add Invalid Components"
-permalink: kb/137/Q137894/
+permalink: /kb/137/Q137894/
 ---
 
 ## Q137894: Setup Reports Success when it Fails to Add Invalid Components

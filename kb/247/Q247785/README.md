@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247785: XCON: Getting IMC, X.400, Site Conns. in Exchange 4.0, 5.0, 5.5"
-permalink: kb/247/Q247785/
+permalink: /kb/247/Q247785/
 ---
 
 ## Q247785: XCON: Getting IMC, X.400, Site Conns. in Exchange 4.0, 5.0, 5.5

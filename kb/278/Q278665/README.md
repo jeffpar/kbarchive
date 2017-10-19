@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278665: How to change text size in MSN Companion"
-permalink: kb/278/Q278665/
+permalink: /kb/278/Q278665/
 ---
 
 ## Q278665: How to change text size in MSN Companion

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240647: World Atlas 2000: Unable to Copy or Print an Article or Image"
-permalink: kb/240/Q240647/
+permalink: /kb/240/Q240647/
 ---
 
 ## Q240647: World Atlas 2000: Unable to Copy or Print an Article or Image

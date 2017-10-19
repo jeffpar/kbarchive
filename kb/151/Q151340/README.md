@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151340: Cannot Use &quot;@msn.com&quot; in Personal Address Book"
-permalink: kb/151/Q151340/
+permalink: /kb/151/Q151340/
 ---
 
 ## Q151340: Cannot Use &quot;@msn.com&quot; in Personal Address Book

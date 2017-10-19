@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117241: Windows 3.11 Directory Listing for Disk 6 (5.25 Inch 1.2 MB)"
-permalink: kb/117/Q117241/
+permalink: /kb/117/Q117241/
 ---
 
 ## Q117241: Windows 3.11 Directory Listing for Disk 6 (5.25 Inch 1.2 MB)

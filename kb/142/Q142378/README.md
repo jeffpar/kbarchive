@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142378: Access Number Problem If Cancel Selected During Signup"
-permalink: kb/142/Q142378/
+permalink: /kb/142/Q142378/
 ---
 
 ## Q142378: Access Number Problem If Cancel Selected During Signup

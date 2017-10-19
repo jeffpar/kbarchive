@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138658: PRB:Screen Turns Black &amp; Returns as Start Visual FoxPro or Exe"
-permalink: kb/138/Q138658/
+permalink: /kb/138/Q138658/
 ---
 
 ## Q138658: PRB:Screen Turns Black &amp; Returns as Start Visual FoxPro or Exe

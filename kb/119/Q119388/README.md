@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119388: Autopilot: Landing Gear Deployed at High Altitudes"
-permalink: kb/119/Q119388/
+permalink: /kb/119/Q119388/
 ---
 
 ## Q119388: Autopilot: Landing Gear Deployed at High Altitudes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180710: Browser Returns Error 270 (0x0000010e)"
-permalink: kb/180/Q180710/
+permalink: /kb/180/Q180710/
 ---
 
 ## Q180710: Browser Returns Error 270 (0x0000010e)

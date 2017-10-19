@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288740: Event 39 Logged if SnaServer Service Configured to AutoStart"
-permalink: kb/288/Q288740/
+permalink: /kb/288/Q288740/
 ---
 
 ## Q288740: Event 39 Logged if SnaServer Service Configured to AutoStart

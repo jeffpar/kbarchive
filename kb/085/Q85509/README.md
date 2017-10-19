@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85509: FIX: ORG Calculated from Label May Fail in 6.0a/6.0b"
-permalink: kb/085/Q85509/
+permalink: /kb/085/Q85509/
 ---
 
 ## Q85509: FIX: ORG Calculated from Label May Fail in 6.0a/6.0b

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183604: XCON: MTA Stops Unexpectedly Shortly After You Restart It"
-permalink: kb/183/Q183604/
+permalink: /kb/183/Q183604/
 ---
 
 ## Q183604: XCON: MTA Stops Unexpectedly Shortly After You Restart It

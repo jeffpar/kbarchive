@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177399: Event ID 20139 When Using Routing and Remote Access Service"
-permalink: kb/177/Q177399/
+permalink: /kb/177/Q177399/
 ---
 
 ## Q177399: Event ID 20139 When Using Routing and Remote Access Service

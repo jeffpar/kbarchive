@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253928: Err Msg: Error Was Encountered in Function : HrDoImport..."
-permalink: kb/253/Q253928/
+permalink: /kb/253/Q253928/
 ---
 
 ## Q253928: Err Msg: Error Was Encountered in Function : HrDoImport...

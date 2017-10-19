@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182330: XCON: Perfmon Work Queue and MTA Queues Tab Conflict"
-permalink: kb/182/Q182330/
+permalink: /kb/182/Q182330/
 ---
 
 ## Q182330: XCON: Perfmon Work Queue and MTA Queues Tab Conflict

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136153: Using an Answer File for an Unattended Installation"
-permalink: kb/136/Q136153/
+permalink: /kb/136/Q136153/
 ---
 
 ## Q136153: Using an Answer File for an Unattended Installation

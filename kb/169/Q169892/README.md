@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169892: Host Print Transform Can Now Be Configured by SNA Server"
-permalink: kb/169/Q169892/
+permalink: /kb/169/Q169892/
 ---
 
 ## Q169892: Host Print Transform Can Now Be Configured by SNA Server

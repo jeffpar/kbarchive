@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160461: SMS: Inventory Does Not Report the CPU Speed on Windows NT"
-permalink: kb/160/Q160461/
+permalink: /kb/160/Q160461/
 ---
 
 ## Q160461: SMS: Inventory Does Not Report the CPU Speed on Windows NT

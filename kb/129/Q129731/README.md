@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129731: BUG: ODBC OrdinalPosition Differs with dbSQLPassThrough"
-permalink: kb/129/Q129731/
+permalink: /kb/129/Q129731/
 ---
 
 ## Q129731: BUG: ODBC OrdinalPosition Differs with dbSQLPassThrough

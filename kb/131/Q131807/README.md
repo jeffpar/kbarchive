@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131807: COM2 Not Started with EtherExpress 16 and Plug and Play BIOS"
-permalink: kb/131/Q131807/
+permalink: /kb/131/Q131807/
 ---
 
 ## Q131807: COM2 Not Started with EtherExpress 16 and Plug and Play BIOS

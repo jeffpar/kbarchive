@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166286: BUG: Books Online Index Search Field Finds Incorrect Topic"
-permalink: kb/166/Q166286/
+permalink: /kb/166/Q166286/
 ---
 
 ## Q166286: BUG: Books Online Index Search Field Finds Incorrect Topic

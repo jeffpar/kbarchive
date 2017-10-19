@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138311: PRB: Mapi Session Control and Exchange May Cause Errors"
-permalink: kb/138/Q138311/
+permalink: /kb/138/Q138311/
 ---
 
 ## Q138311: PRB: Mapi Session Control and Exchange May Cause Errors

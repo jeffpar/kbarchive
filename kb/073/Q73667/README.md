@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73667: INFO: Considerations for CreateCursor() and CreateIcon()"
-permalink: kb/073/Q73667/
+permalink: /kb/073/Q73667/
 ---
 
 ## Q73667: INFO: Considerations for CreateCursor() and CreateIcon()

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199992: SMS: Comment Entered in Secondary Site Creation Does Not Appear"
-permalink: kb/199/Q199992/
+permalink: /kb/199/Q199992/
 ---
 
 ## Q199992: SMS: Comment Entered in Secondary Site Creation Does Not Appear

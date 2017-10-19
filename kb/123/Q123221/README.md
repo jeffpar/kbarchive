@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123221: DumpSend: Send Request File Formats"
-permalink: kb/123/Q123221/
+permalink: /kb/123/Q123221/
 ---
 
 ## Q123221: DumpSend: Send Request File Formats

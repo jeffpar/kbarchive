@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76091: CONN: Default .INI File for MS Mail Connection 1.0"
-permalink: kb/076/Q76091/
+permalink: /kb/076/Q76091/
 ---
 
 ## Q76091: CONN: Default .INI File for MS Mail Connection 1.0

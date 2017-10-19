@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61808: FIX: Using &quot;!&quot; &amp; &quot;&#36;?&quot; Do Not Work as Expected w/ NMAKE 1.11"
-permalink: kb/061/Q61808/
+permalink: /kb/061/Q61808/
 ---
 
 ## Q61808: FIX: Using &quot;!&quot; &amp; &quot;&#36;?&quot; Do Not Work as Expected w/ NMAKE 1.11

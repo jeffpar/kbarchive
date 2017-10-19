@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104219: XTree Gold Slow Screen Redraw Under Windows NT"
-permalink: kb/104/Q104219/
+permalink: /kb/104/Q104219/
 ---
 
 ## Q104219: XTree Gold Slow Screen Redraw Under Windows NT

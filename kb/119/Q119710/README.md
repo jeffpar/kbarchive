@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119710: ADT2: Local Microsoft Access Installation Required by ADT"
-permalink: kb/119/Q119710/
+permalink: /kb/119/Q119710/
 ---
 
 ## Q119710: ADT2: Local Microsoft Access Installation Required by ADT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151986: Unable to Remote Control a Client on a Token-Ring Network"
-permalink: kb/151/Q151986/
+permalink: /kb/151/Q151986/
 ---
 
 ## Q151986: Unable to Remote Control a Client on a Token-Ring Network

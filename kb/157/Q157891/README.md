@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157891: No Name Resolution with SLIP Account in Windows NT 4.0"
-permalink: kb/157/Q157891/
+permalink: /kb/157/Q157891/
 ---
 
 ## Q157891: No Name Resolution with SLIP Account in Windows NT 4.0

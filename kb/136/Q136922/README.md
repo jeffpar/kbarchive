@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136922: PRB: Cannot Print Grid Lines"
-permalink: kb/136/Q136922/
+permalink: /kb/136/Q136922/
 ---
 
 ## Q136922: PRB: Cannot Print Grid Lines

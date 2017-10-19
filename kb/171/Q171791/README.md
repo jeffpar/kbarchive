@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171791: Creating Dependencies in Microsoft Cluster Server"
-permalink: kb/171/Q171791/
+permalink: /kb/171/Q171791/
 ---
 
 ## Q171791: Creating Dependencies in Microsoft Cluster Server

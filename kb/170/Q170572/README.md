@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170572: Unable to Format a 1.44-MB Disk on an LS-120 After SP3"
-permalink: kb/170/Q170572/
+permalink: /kb/170/Q170572/
 ---
 
 ## Q170572: Unable to Format a 1.44-MB Disk on an LS-120 After SP3

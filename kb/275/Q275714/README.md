@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275714: XADM: Information Store Stops with Multipart or Mixed Message"
-permalink: kb/275/Q275714/
+permalink: /kb/275/Q275714/
 ---
 
 ## Q275714: XADM: Information Store Stops with Multipart or Mixed Message

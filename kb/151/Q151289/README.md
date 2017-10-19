@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151289: Top Articles on Windows 95 Multimedia"
-permalink: kb/151/Q151289/
+permalink: /kb/151/Q151289/
 ---
 
 ## Q151289: Top Articles on Windows 95 Multimedia

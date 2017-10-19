@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289793: HOWTO: Dynamically Populate a Group Data Report in Visual Basic"
-permalink: kb/289/Q289793/
+permalink: /kb/289/Q289793/
 ---
 
 ## Q289793: HOWTO: Dynamically Populate a Group Data Report in Visual Basic

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137945: How to Change the Font in All Controls Without Using a Builder"
-permalink: kb/137/Q137945/
+permalink: /kb/137/Q137945/
 ---
 
 ## Q137945: How to Change the Font in All Controls Without Using a Builder

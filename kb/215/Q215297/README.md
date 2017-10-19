@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215297: XADM: Windows NT Version Change Rebuilds Exchange DB Indexes"
-permalink: kb/215/Q215297/
+permalink: /kb/215/Q215297/
 ---
 
 ## Q215297: XADM: Windows NT Version Change Rebuilds Exchange DB Indexes

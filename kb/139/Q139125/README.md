@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139125: Windows 95 SnaBase Uses Taskbar Even When Not Shown"
-permalink: kb/139/Q139125/
+permalink: /kb/139/Q139125/
 ---
 
 ## Q139125: Windows 95 SnaBase Uses Taskbar Even When Not Shown

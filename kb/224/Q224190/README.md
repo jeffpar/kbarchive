@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224190: ASP May Leak Memory in Response.CacheControl Method"
-permalink: kb/224/Q224190/
+permalink: /kb/224/Q224190/
 ---
 
 ## Q224190: ASP May Leak Memory in Response.CacheControl Method

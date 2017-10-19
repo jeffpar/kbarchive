@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165603: WD97: Borders.Count Returns Five on a Selected Paragraph"
-permalink: kb/165/Q165603/
+permalink: /kb/165/Q165603/
 ---
 
 ## Q165603: WD97: Borders.Count Returns Five on a Selected Paragraph

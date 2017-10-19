@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199968: XFOR: Remote Admin of Internet Mail Service Loses RAS Connection"
-permalink: kb/199/Q199968/
+permalink: /kb/199/Q199968/
 ---
 
 ## Q199968: XFOR: Remote Admin of Internet Mail Service Loses RAS Connection

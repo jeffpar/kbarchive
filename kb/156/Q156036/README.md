@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156036: HOWTO: Use the Visual FoxPro Solutions Application"
-permalink: kb/156/Q156036/
+permalink: /kb/156/Q156036/
 ---
 
 ## Q156036: HOWTO: Use the Visual FoxPro Solutions Application

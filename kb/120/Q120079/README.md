@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120079: PRB: INT 2Fh 1684h May Return ES == 0 and DI != 0"
-permalink: kb/120/Q120079/
+permalink: /kb/120/Q120079/
 ---
 
 ## Q120079: PRB: INT 2Fh 1684h May Return ES == 0 and DI != 0

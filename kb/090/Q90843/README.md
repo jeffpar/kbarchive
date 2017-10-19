@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90843: Packing List: Windows 3.1 SDK-Part 2 (3.5-Inch Disks)"
-permalink: kb/090/Q90843/
+permalink: /kb/090/Q90843/
 ---
 
 ## Q90843: Packing List: Windows 3.1 SDK-Part 2 (3.5-Inch Disks)

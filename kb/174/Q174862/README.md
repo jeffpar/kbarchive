@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174862: XCLN: Duplicate Message Created with Clean Mailbox Utility"
-permalink: kb/174/Q174862/
+permalink: /kb/174/Q174862/
 ---
 
 ## Q174862: XCLN: Duplicate Message Created with Clean Mailbox Utility

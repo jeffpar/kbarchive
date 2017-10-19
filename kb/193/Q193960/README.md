@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193960: DOC: Visual Basic 6.0 Applications Cannot Be Run on NT 3.51"
-permalink: kb/193/Q193960/
+permalink: /kb/193/Q193960/
 ---
 
 ## Q193960: DOC: Visual Basic 6.0 Applications Cannot Be Run on NT 3.51

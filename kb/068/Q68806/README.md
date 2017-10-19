@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68806: Windows Err Msg: Problem With Disk Drive C (with Bus Mouse)"
-permalink: kb/068/Q68806/
+permalink: /kb/068/Q68806/
 ---
 
 ## Q68806: Windows Err Msg: Problem With Disk Drive C (with Bus Mouse)

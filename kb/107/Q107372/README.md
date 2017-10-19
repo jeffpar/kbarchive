@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107372: Windows for Workgroups: 32-Bit File Access Is Slow with MSIPX"
-permalink: kb/107/Q107372/
+permalink: /kb/107/Q107372/
 ---
 
 ## Q107372: Windows for Workgroups: 32-Bit File Access Is Slow with MSIPX

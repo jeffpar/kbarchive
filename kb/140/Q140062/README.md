@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140062: FindFirstFile Returns Error: The Network Name Was Deleted"
-permalink: kb/140/Q140062/
+permalink: /kb/140/Q140062/
 ---
 
 ## Q140062: FindFirstFile Returns Error: The Network Name Was Deleted

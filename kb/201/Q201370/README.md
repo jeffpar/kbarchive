@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201370: XFOR: Notes Advanced Rich Text Not Supported by App Connector"
-permalink: kb/201/Q201370/
+permalink: /kb/201/Q201370/
 ---
 
 ## Q201370: XFOR: Notes Advanced Rich Text Not Supported by App Connector

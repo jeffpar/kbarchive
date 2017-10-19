@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q206775: XADM: Network Monitor Hangs When Installing on Exchange Server"
-permalink: kb/206/Q206775/
+permalink: /kb/206/Q206775/
 ---
 
 ## Q206775: XADM: Network Monitor Hangs When Installing on Exchange Server

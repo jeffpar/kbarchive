@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172353: Setting the NIC Driver Startup Value to SYSTEM Causes STOP 0X1E"
-permalink: kb/172/Q172353/
+permalink: /kb/172/Q172353/
 ---
 
 ## Q172353: Setting the NIC Driver Startup Value to SYSTEM Causes STOP 0X1E

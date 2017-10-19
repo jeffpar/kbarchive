@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167194: XADM: Could Not Modify the DL Membership of Object"
-permalink: kb/167/Q167194/
+permalink: /kb/167/Q167194/
 ---
 
 ## Q167194: XADM: Could Not Modify the DL Membership of Object

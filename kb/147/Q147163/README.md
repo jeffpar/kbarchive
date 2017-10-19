@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147163: Err Msg: Launching Regedit Failed: Error Code 00000002"
-permalink: kb/147/Q147163/
+permalink: /kb/147/Q147163/
 ---
 
 ## Q147163: Err Msg: Launching Regedit Failed: Error Code 00000002

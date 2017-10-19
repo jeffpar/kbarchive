@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246648: XCLN: How to Install the Routing Wizard Sample Application"
-permalink: kb/246/Q246648/
+permalink: /kb/246/Q246648/
 ---
 
 ## Q246648: XCLN: How to Install the Routing Wizard Sample Application

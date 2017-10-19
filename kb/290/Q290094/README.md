@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290094: How To Migrate To The Newest Version of MSN Explorer"
-permalink: kb/290/Q290094/
+permalink: /kb/290/Q290094/
 ---
 
 ## Q290094: How To Migrate To The Newest Version of MSN Explorer

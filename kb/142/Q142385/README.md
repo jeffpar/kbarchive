@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142385: FIX: Using CString::operator+= May Cause an Access Violation"
-permalink: kb/142/Q142385/
+permalink: /kb/142/Q142385/
 ---
 
 ## Q142385: FIX: Using CString::operator+= May Cause an Access Violation

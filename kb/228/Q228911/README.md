@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228911: Err Msg: STOP 0x00000035 When Using TDITrace from Resource Kit"
-permalink: kb/228/Q228911/
+permalink: /kb/228/Q228911/
 ---
 
 ## Q228911: Err Msg: STOP 0x00000035 When Using TDITrace from Resource Kit

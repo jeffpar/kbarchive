@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65084: PRB: Spaces in Inference Rules Corrupt NMAKE Macro Expansion"
-permalink: kb/065/Q65084/
+permalink: /kb/065/Q65084/
 ---
 
 ## Q65084: PRB: Spaces in Inference Rules Corrupt NMAKE Macro Expansion

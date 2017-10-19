@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139782: WINS Logs Event Error 4204"
-permalink: kb/139/Q139782/
+permalink: /kb/139/Q139782/
 ---
 
 ## Q139782: WINS Logs Event Error 4204

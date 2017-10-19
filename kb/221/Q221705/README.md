@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221705: FIX: FFCs - _URLComboBox in _internet.vcx Large Drop-Down Issue"
-permalink: kb/221/Q221705/
+permalink: /kb/221/Q221705/
 ---
 
 ## Q221705: FIX: FFCs - _URLComboBox in _internet.vcx Large Drop-Down Issue

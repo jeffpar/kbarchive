@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86949: 3COM: Information Needed to Troubleshoot the Gateway"
-permalink: kb/086/Q86949/
+permalink: /kb/086/Q86949/
 ---
 
 ## Q86949: 3COM: Information Needed to Troubleshoot the Gateway

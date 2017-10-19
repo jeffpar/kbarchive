@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171994: IBM CICS For Windows NT Stops Working On SNA Server 3.0"
-permalink: kb/171/Q171994/
+permalink: /kb/171/Q171994/
 ---
 
 ## Q171994: IBM CICS For Windows NT Stops Working On SNA Server 3.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172379: WD97: Unexpected Results When Printing in Master Document View"
-permalink: kb/172/Q172379/
+permalink: /kb/172/Q172379/
 ---
 
 ## Q172379: WD97: Unexpected Results When Printing in Master Document View

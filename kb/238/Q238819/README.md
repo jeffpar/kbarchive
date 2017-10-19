@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238819: Windows NT Remote Troubleshooting/Diagnostics Paper Available"
-permalink: kb/238/Q238819/
+permalink: /kb/238/Q238819/
 ---
 
 ## Q238819: Windows NT Remote Troubleshooting/Diagnostics Paper Available

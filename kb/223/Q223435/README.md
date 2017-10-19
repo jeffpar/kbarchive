@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223435: Err Msg: Error Code -2146893811 0x8009000D &quot;Key Does Not Exist&quot;"
-permalink: kb/223/Q223435/
+permalink: /kb/223/Q223435/
 ---
 
 ## Q223435: Err Msg: Error Code -2146893811 0x8009000D &quot;Key Does Not Exist&quot;

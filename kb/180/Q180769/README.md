@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180769: INFO: Text and Label Size Limitations in VBCE"
-permalink: kb/180/Q180769/
+permalink: /kb/180/Q180769/
 ---
 
 ## Q180769: INFO: Text and Label Size Limitations in VBCE

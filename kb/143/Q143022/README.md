@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143022: Setting the Default Fill Color for All New Drawn Objects"
-permalink: kb/143/Q143022/
+permalink: /kb/143/Q143022/
 ---
 
 ## Q143022: Setting the Default Fill Color for All New Drawn Objects

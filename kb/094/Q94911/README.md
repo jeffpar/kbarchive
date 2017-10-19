@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94911: BUG: ALIGN Directive Placement Changes EXE File Size"
-permalink: kb/094/Q94911/
+permalink: /kb/094/Q94911/
 ---
 
 ## Q94911: BUG: ALIGN Directive Placement Changes EXE File Size

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247758: INFO: No Padding of Parameters Done by SQL Driver Prior Ver 3.7x"
-permalink: kb/247/Q247758/
+permalink: /kb/247/Q247758/
 ---
 
 ## Q247758: INFO: No Padding of Parameters Done by SQL Driver Prior Ver 3.7x

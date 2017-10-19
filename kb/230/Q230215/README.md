@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230215: XADM: Backup Checksum Not Performed on Single Processor Computer"
-permalink: kb/230/Q230215/
+permalink: /kb/230/Q230215/
 ---
 
 ## Q230215: XADM: Backup Checksum Not Performed on Single Processor Computer

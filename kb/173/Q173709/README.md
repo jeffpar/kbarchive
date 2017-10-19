@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173709: Header.exe Lists Microsoft Outlook 97 Constants"
-permalink: kb/173/Q173709/
+permalink: /kb/173/Q173709/
 ---
 
 ## Q173709: Header.exe Lists Microsoft Outlook 97 Constants

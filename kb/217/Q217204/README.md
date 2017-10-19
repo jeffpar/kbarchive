@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217204: XADM: Age Limit Deletes Reoccurring Appts. in Shared Calendar"
-permalink: kb/217/Q217204/
+permalink: /kb/217/Q217204/
 ---
 
 ## Q217204: XADM: Age Limit Deletes Reoccurring Appts. in Shared Calendar

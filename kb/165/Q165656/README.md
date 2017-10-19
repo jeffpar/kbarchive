@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165656: Connection for Downstream PU Fails to Reactivate After Outage"
-permalink: kb/165/Q165656/
+permalink: /kb/165/Q165656/
 ---
 
 ## Q165656: Connection for Downstream PU Fails to Reactivate After Outage

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201470: XFOR: SMTP Address Incorrect If At Sign @ Is In Site Name"
-permalink: kb/201/Q201470/
+permalink: /kb/201/Q201470/
 ---
 
 ## Q201470: XFOR: SMTP Address Incorrect If At Sign @ Is In Site Name

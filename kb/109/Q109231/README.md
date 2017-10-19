@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109231: How to Record Macros with FoxPro for Macintosh"
-permalink: kb/109/Q109231/
+permalink: /kb/109/Q109231/
 ---
 
 ## Q109231: How to Record Macros with FoxPro for Macintosh

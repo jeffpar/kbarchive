@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136924: Visual FoxPro 3.0 Undocumented Properties"
-permalink: kb/136/Q136924/
+permalink: /kb/136/Q136924/
 ---
 
 ## Q136924: Visual FoxPro 3.0 Undocumented Properties

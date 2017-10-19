@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139070: PRB: Stack Violation Calling 16-Bit DLL with FoxTools"
-permalink: kb/139/Q139070/
+permalink: /kb/139/Q139070/
 ---
 
 ## Q139070: PRB: Stack Violation Calling 16-Bit DLL with FoxTools

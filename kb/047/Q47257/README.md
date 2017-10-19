@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47257: FltSim: Using the Weather Generator"
-permalink: kb/047/Q47257/
+permalink: /kb/047/Q47257/
 ---
 
 ## Q47257: FltSim: Using the Weather Generator

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163674: LapLink Does Not Recognize Infrared COM Port"
-permalink: kb/163/Q163674/
+permalink: /kb/163/Q163674/
 ---
 
 ## Q163674: LapLink Does Not Recognize Infrared COM Port

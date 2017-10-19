@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141593: PRB: STOP 0x0000001e Using HP NetServer Assist"
-permalink: kb/141/Q141593/
+permalink: /kb/141/Q141593/
 ---
 
 ## Q141593: PRB: STOP 0x0000001e Using HP NetServer Assist

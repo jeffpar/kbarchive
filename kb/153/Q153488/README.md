@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153488: XADM: Mail Limits on CR Fail to Stop Delivery of Large Message"
-permalink: kb/153/Q153488/
+permalink: /kb/153/Q153488/
 ---
 
 ## Q153488: XADM: Mail Limits on CR Fail to Stop Delivery of Large Message

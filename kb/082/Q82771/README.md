@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82771: Windows 3.1 Setup Error Codes (S208 through S214)"
-permalink: kb/082/Q82771/
+permalink: /kb/082/Q82771/
 ---
 
 ## Q82771: Windows 3.1 Setup Error Codes (S208 through S214)

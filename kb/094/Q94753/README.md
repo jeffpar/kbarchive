@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94753: WinLogin: /U:USERNAME Does Not Recognize Spaces"
-permalink: kb/094/Q94753/
+permalink: /kb/094/Q94753/
 ---
 
 ## Q94753: WinLogin: /U:USERNAME Does Not Recognize Spaces

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249606: Explorer Displays Folder Dates Incorrectly on Netware Servers"
-permalink: kb/249/Q249606/
+permalink: /kb/249/Q249606/
 ---
 
 ## Q249606: Explorer Displays Folder Dates Incorrectly on Netware Servers

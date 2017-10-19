@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168513: Windows NT Installable File System Kit (IFS) Description"
-permalink: kb/168/Q168513/
+permalink: /kb/168/Q168513/
 ---
 
 ## Q168513: Windows NT Installable File System Kit (IFS) Description

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125264: PC WSPlus: Forced to Work Off Line"
-permalink: kb/125/Q125264/
+permalink: /kb/125/Q125264/
 ---
 
 ## Q125264: PC WSPlus: Forced to Work Off Line

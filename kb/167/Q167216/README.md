@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167216: WD97: REF Field Becomes Text Converting from Word 97 to MacWord"
-permalink: kb/167/Q167216/
+permalink: /kb/167/Q167216/
 ---
 
 ## Q167216: WD97: REF Field Becomes Text Converting from Word 97 to MacWord

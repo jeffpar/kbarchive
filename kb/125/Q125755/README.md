@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125755: Using START to Run Program Information Files (PIFs)"
-permalink: kb/125/Q125755/
+permalink: /kb/125/Q125755/
 ---
 
 ## Q125755: Using START to Run Program Information Files (PIFs)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237424: Error Message on a Blue Screen When Using Bookman Old Style Font"
-permalink: kb/237/Q237424/
+permalink: /kb/237/Q237424/
 ---
 
 ## Q237424: Error Message on a Blue Screen When Using Bookman Old Style Font

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125919: PC MMTA: Err Msg: Unable To Find File: DYNSCOS2"
-permalink: kb/125/Q125919/
+permalink: /kb/125/Q125919/
 ---
 
 ## Q125919: PC MMTA: Err Msg: Unable To Find File: DYNSCOS2

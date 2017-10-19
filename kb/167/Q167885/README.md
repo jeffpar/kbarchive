@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167885: WD97: ODMA: File Open Dialog May Display Behind Application"
-permalink: kb/167/Q167885/
+permalink: /kb/167/Q167885/
 ---
 
 ## Q167885: WD97: ODMA: File Open Dialog May Display Behind Application

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196396: XADM: How to Import International Characters to Exchange Server"
-permalink: kb/196/Q196396/
+permalink: /kb/196/Q196396/
 ---
 
 ## Q196396: XADM: How to Import International Characters to Exchange Server

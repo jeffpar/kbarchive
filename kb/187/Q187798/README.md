@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187798: XWEB: Appointment Shows End Date In Different Month Than Start"
-permalink: kb/187/Q187798/
+permalink: /kb/187/Q187798/
 ---
 
 ## Q187798: XWEB: Appointment Shows End Date In Different Month Than Start

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75010: Rich Text Format Subset Supported by Windows Help"
-permalink: kb/075/Q75010/
+permalink: /kb/075/Q75010/
 ---
 
 ## Q75010: Rich Text Format Subset Supported by Windows Help

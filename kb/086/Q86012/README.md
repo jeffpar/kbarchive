@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86012: ALT+Q Doesn't Function in Write's Print Dialog Box"
-permalink: kb/086/Q86012/
+permalink: /kb/086/Q86012/
 ---
 
 ## Q86012: ALT+Q Doesn't Function in Write's Print Dialog Box

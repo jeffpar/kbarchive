@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235774: SMS: Hierarchy Is Unsynchronized After Package Deletion"
-permalink: kb/235/Q235774/
+permalink: /kb/235/Q235774/
 ---
 
 ## Q235774: SMS: Hierarchy Is Unsynchronized After Package Deletion

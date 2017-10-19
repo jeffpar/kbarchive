@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75593: SysEdit Search Causes UAE with Country Set to United Kingdom"
-permalink: kb/075/Q75593/
+permalink: /kb/075/Q75593/
 ---
 
 ## Q75593: SysEdit Search Causes UAE with Country Set to United Kingdom

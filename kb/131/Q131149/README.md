@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131149: PC Gen: Err Msg: Unknown User with MOVEFOLD.EXE"
-permalink: kb/131/Q131149/
+permalink: /kb/131/Q131149/
 ---
 
 ## Q131149: PC Gen: Err Msg: Unknown User with MOVEFOLD.EXE

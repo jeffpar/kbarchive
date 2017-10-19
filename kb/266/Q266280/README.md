@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266280: Changing User Rights from a Batch File or Command Line"
-permalink: kb/266/Q266280/
+permalink: /kb/266/Q266280/
 ---
 
 ## Q266280: Changing User Rights from a Batch File or Command Line

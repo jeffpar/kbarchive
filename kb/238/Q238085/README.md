@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238085: INFO: Windows 2000 Does Not Install MAPI 1.0 Subsystem"
-permalink: kb/238/Q238085/
+permalink: /kb/238/Q238085/
 ---
 
 ## Q238085: INFO: Windows 2000 Does Not Install MAPI 1.0 Subsystem

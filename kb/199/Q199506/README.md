@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199506: Active Visual Basic 5.0 Comments and Corrections"
-permalink: kb/199/Q199506/
+permalink: /kb/199/Q199506/
 ---
 
 ## Q199506: Active Visual Basic 5.0 Comments and Corrections

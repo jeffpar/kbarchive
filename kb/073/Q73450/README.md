@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73450: SETVER.EXE Immunized with Central Point Anti-Virus Causes Hang"
-permalink: kb/073/Q73450/
+permalink: /kb/073/Q73450/
 ---
 
 ## Q73450: SETVER.EXE Immunized with Central Point Anti-Virus Causes Hang

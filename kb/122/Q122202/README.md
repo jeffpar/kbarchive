@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122202: PCM and Archiving Unexecuted Mandatory Jobs"
-permalink: kb/122/Q122202/
+permalink: /kb/122/Q122202/
 ---
 
 ## Q122202: PCM and Archiving Unexecuted Mandatory Jobs

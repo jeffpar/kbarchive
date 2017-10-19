@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94064: Installing IBM OS/2 1.3 on an ALR M.P.S System"
-permalink: kb/094/Q94064/
+permalink: /kb/094/Q94064/
 ---
 
 ## Q94064: Installing IBM OS/2 1.3 on an ALR M.P.S System

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254313: Err Msg: Active Server Pages Error 'ASP 0203' Invalid Code"
-permalink: kb/254/Q254313/
+permalink: /kb/254/Q254313/
 ---
 
 ## Q254313: Err Msg: Active Server Pages Error 'ASP 0203' Invalid Code

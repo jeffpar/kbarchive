@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175784: INFO: Replacing #import's Exception Raising Mechanism"
-permalink: kb/175/Q175784/
+permalink: /kb/175/Q175784/
 ---
 
 ## Q175784: INFO: Replacing #import's Exception Raising Mechanism

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118309: CONN: Mail Conn 3.2 Installer Incompatible with PowerTalk"
-permalink: kb/118/Q118309/
+permalink: /kb/118/Q118309/
 ---
 
 ## Q118309: CONN: Mail Conn 3.2 Installer Incompatible with PowerTalk

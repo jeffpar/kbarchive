@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201807: SMS: How to Distribute Event to Trap Configuration Data"
-permalink: kb/201/Q201807/
+permalink: /kb/201/Q201807/
 ---
 
 ## Q201807: SMS: How to Distribute Event to Trap Configuration Data

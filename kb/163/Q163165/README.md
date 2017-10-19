@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163165: DNS Name Resolution May Not Work On Diskless Workstation"
-permalink: kb/163/Q163165/
+permalink: /kb/163/Q163165/
 ---
 
 ## Q163165: DNS Name Resolution May Not Work On Diskless Workstation

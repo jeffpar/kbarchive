@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232141: Load Balancing Telnet with WLBS"
-permalink: kb/232/Q232141/
+permalink: /kb/232/Q232141/
 ---
 
 ## Q232141: Load Balancing Telnet with WLBS

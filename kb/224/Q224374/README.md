@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224374: Program Starts Slowly and Media Clips Are Played Slowly"
-permalink: kb/224/Q224374/
+permalink: /kb/224/Q224374/
 ---
 
 ## Q224374: Program Starts Slowly and Media Clips Are Played Slowly

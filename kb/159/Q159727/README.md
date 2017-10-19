@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159727: The File Drive Letter:&#92;&lt;winnt&gt;&#92;. Was Not Copied Correctly"
-permalink: kb/159/Q159727/
+permalink: /kb/159/Q159727/
 ---
 
 ## Q159727: The File Drive Letter:&#92;&lt;winnt&gt;&#92;. Was Not Copied Correctly

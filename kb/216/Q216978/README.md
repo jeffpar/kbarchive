@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216978: BUG: &quot;Invalid number&quot; When Inserting Decimals into UNIX Oracle"
-permalink: kb/216/Q216978/
+permalink: /kb/216/Q216978/
 ---
 
 ## Q216978: BUG: &quot;Invalid number&quot; When Inserting Decimals into UNIX Oracle

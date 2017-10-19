@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134493: Cannot Synchronize Files with Briefcase After Moving"
-permalink: kb/134/Q134493/
+permalink: /kb/134/Q134493/
 ---
 
 ## Q134493: Cannot Synchronize Files with Briefcase After Moving

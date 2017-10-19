@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73344: Troubleshooting the Logitech Cordless Mouseman"
-permalink: kb/073/Q73344/
+permalink: /kb/073/Q73344/
 ---
 
 ## Q73344: Troubleshooting the Logitech Cordless Mouseman

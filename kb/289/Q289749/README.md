@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289749: Certificate Revocation Lists (CRL) and IIS 5.0: Common Questions"
-permalink: kb/289/Q289749/
+permalink: /kb/289/Q289749/
 ---
 
 ## Q289749: Certificate Revocation Lists (CRL) and IIS 5.0: Common Questions

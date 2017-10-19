@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166501: XADM: NDR from Postmaster Incorrectly Formatted by IS"
-permalink: kb/166/Q166501/
+permalink: /kb/166/Q166501/
 ---
 
 ## Q166501: XADM: NDR from Postmaster Incorrectly Formatted by IS

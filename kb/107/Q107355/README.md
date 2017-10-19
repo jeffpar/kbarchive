@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107355: PC Win: Custom Message Class Not Maintained Through Gateway"
-permalink: kb/107/Q107355/
+permalink: /kb/107/Q107355/
 ---
 
 ## Q107355: PC Win: Custom Message Class Not Maintained Through Gateway

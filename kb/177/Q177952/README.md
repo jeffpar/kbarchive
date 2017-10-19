@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177952: Age of Empires: Turtle, or Yellow or Red Dot Next to Player Name"
-permalink: kb/177/Q177952/
+permalink: /kb/177/Q177952/
 ---
 
 ## Q177952: Age of Empires: Turtle, or Yellow or Red Dot Next to Player Name

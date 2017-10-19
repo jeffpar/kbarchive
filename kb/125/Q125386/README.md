@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125386: SFM Files Lose Long Filenames When Backed Up &amp; Restored"
-permalink: kb/125/Q125386/
+permalink: /kb/125/Q125386/
 ---
 
 ## Q125386: SFM Files Lose Long Filenames When Backed Up &amp; Restored

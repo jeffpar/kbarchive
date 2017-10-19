@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150680: FP: FrontPage Times Out While Trying to Connect to Server"
-permalink: kb/150/Q150680/
+permalink: /kb/150/Q150680/
 ---
 
 ## Q150680: FP: FrontPage Times Out While Trying to Connect to Server

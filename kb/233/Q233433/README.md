@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233433: MSBP: Text Only Mode Unavailable When You View Wizard Interview"
-permalink: kb/233/Q233433/
+permalink: /kb/233/Q233433/
 ---
 
 ## Q233433: MSBP: Text Only Mode Unavailable When You View Wizard Interview

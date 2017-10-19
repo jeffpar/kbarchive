@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197335: XFOR: NOTES Textured Calendar MSG. do not have EndDateTime"
-permalink: kb/197/Q197335/
+permalink: /kb/197/Q197335/
 ---
 
 ## Q197335: XFOR: NOTES Textured Calendar MSG. do not have EndDateTime

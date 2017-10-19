@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168594: HOWTO: Use a Date Filter in an Oracle Remote View"
-permalink: kb/168/Q168594/
+permalink: /kb/168/Q168594/
 ---
 
 ## Q168594: HOWTO: Use a Date Filter in an Oracle Remote View

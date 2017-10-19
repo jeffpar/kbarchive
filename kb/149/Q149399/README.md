@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149399: Multiple IP Addresses on a Single NIC"
-permalink: kb/149/Q149399/
+permalink: /kb/149/Q149399/
 ---
 
 ## Q149399: Multiple IP Addresses on a Single NIC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186973: XCLN: Outlook Forms Page Names Change To Numbers By Forms Conver"
-permalink: kb/186/Q186973/
+permalink: /kb/186/Q186973/
 ---
 
 ## Q186973: XCLN: Outlook Forms Page Names Change To Numbers By Forms Conver

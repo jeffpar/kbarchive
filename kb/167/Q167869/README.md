@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167869: List of Doc Errors in Services for NetWare Administrator's Guide"
-permalink: kb/167/Q167869/
+permalink: /kb/167/Q167869/
 ---
 
 ## Q167869: List of Doc Errors in Services for NetWare Administrator's Guide

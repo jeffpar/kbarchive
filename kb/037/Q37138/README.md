@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q37138: Journal.exe Contains Windows Journal Hooks Source Code"
-permalink: kb/037/Q37138/
+permalink: /kb/037/Q37138/
 ---
 
 ## Q37138: Journal.exe Contains Windows Journal Hooks Source Code

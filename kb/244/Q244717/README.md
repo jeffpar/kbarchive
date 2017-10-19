@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244717: RAS Port Becomes Unavailable in Windows NT 4.0 Terminal Server"
-permalink: kb/244/Q244717/
+permalink: /kb/244/Q244717/
 ---
 
 ## Q244717: RAS Port Becomes Unavailable in Windows NT 4.0 Terminal Server

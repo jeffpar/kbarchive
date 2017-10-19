@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274151: Computer Hangs When You Dismount an NTFS Volume"
-permalink: kb/274/Q274151/
+permalink: /kb/274/Q274151/
 ---
 
 ## Q274151: Computer Hangs When You Dismount an NTFS Volume

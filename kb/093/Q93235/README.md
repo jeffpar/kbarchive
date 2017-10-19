@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93235: Kodak Ekta Plus 7008 TrueType Problems in Landscape Mode"
-permalink: kb/093/Q93235/
+permalink: /kb/093/Q93235/
 ---
 
 ## Q93235: Kodak Ekta Plus 7008 TrueType Problems in Landscape Mode

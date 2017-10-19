@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167816: Novell Client 32 Requestor Cannot Connect to FPNW"
-permalink: kb/167/Q167816/
+permalink: /kb/167/Q167816/
 ---
 
 ## Q167816: Novell Client 32 Requestor Cannot Connect to FPNW

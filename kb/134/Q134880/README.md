@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134880: How to Determine the Database to Which a Table Belongs"
-permalink: kb/134/Q134880/
+permalink: /kb/134/Q134880/
 ---
 
 ## Q134880: How to Determine the Database to Which a Table Belongs

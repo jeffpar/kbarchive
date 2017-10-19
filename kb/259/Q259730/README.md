@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259730: XFOR: Use Imsext.dll If Internet Mail Service Used as Relay Host"
-permalink: kb/259/Q259730/
+permalink: /kb/259/Q259730/
 ---
 
 ## Q259730: XFOR: Use Imsext.dll If Internet Mail Service Used as Relay Host

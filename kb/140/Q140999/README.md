@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140999: Bookshelf 95: Copy To: Copies to First Instance of Word, Excel"
-permalink: kb/140/Q140999/
+permalink: /kb/140/Q140999/
 ---
 
 ## Q140999: Bookshelf 95: Copy To: Copies to First Instance of Word, Excel

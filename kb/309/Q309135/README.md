@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309135: Games: Using GOS Switches for Troubleshooting"
-permalink: kb/309/Q309135/
+permalink: /kb/309/Q309135/
 ---
 
 ## Q309135: Games: Using GOS Switches for Troubleshooting

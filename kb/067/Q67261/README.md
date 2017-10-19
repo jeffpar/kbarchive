@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67261: Installing Windows 3.0 on a Head Start LX-CD Computer"
-permalink: kb/067/Q67261/
+permalink: /kb/067/Q67261/
 ---
 
 ## Q67261: Installing Windows 3.0 on a Head Start LX-CD Computer

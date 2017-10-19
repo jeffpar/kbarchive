@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159925: Error 1057: The Account Name is Invalid or Does Not Exist"
-permalink: kb/159/Q159925/
+permalink: /kb/159/Q159925/
 ---
 
 ## Q159925: Error 1057: The Account Name is Invalid or Does Not Exist

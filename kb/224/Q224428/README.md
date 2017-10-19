@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224428: STOP 0x0A in Redirector with Invalid Server Responses"
-permalink: kb/224/Q224428/
+permalink: /kb/224/Q224428/
 ---
 
 ## Q224428: STOP 0x0A in Redirector with Invalid Server Responses

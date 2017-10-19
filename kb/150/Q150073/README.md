@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150073: How to Query FoxPro Data on the Web Using ODBC"
-permalink: kb/150/Q150073/
+permalink: /kb/150/Q150073/
 ---
 
 ## Q150073: How to Query FoxPro Data on the Web Using ODBC

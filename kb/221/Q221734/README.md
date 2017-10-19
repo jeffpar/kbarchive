@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221734: FIX: C0000005 Fatal Error With Invalid Property Name"
-permalink: kb/221/Q221734/
+permalink: /kb/221/Q221734/
 ---
 
 ## Q221734: FIX: C0000005 Fatal Error With Invalid Property Name

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135593: Bottom Portion of CD Player Is Inaccessible"
-permalink: kb/135/Q135593/
+permalink: /kb/135/Q135593/
 ---
 
 ## Q135593: Bottom Portion of CD Player Is Inaccessible

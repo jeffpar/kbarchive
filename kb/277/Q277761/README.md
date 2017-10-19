@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277761: Browser Must Reauthenticate When Browsing Between Partner Sites"
-permalink: kb/277/Q277761/
+permalink: /kb/277/Q277761/
 ---
 
 ## Q277761: Browser Must Reauthenticate When Browsing Between Partner Sites

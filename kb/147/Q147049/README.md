@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147049: XCLN: Err Msg: The Print Operation Could not be Completed"
-permalink: kb/147/Q147049/
+permalink: /kb/147/Q147049/
 ---
 
 ## Q147049: XCLN: Err Msg: The Print Operation Could not be Completed

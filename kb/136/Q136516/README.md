@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136516: XCLN: Improving Windows Client Startup Times"
-permalink: kb/136/Q136516/
+permalink: /kb/136/Q136516/
 ---
 
 ## Q136516: XCLN: Improving Windows Client Startup Times

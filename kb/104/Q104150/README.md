@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104150: Screen Paging Doesn't Keep Up with Music"
-permalink: kb/104/Q104150/
+permalink: /kb/104/Q104150/
 ---
 
 ## Q104150: Screen Paging Doesn't Keep Up with Music

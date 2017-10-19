@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166026: XADM: Malformed Message Causes AV in Information Store"
-permalink: kb/166/Q166026/
+permalink: /kb/166/Q166026/
 ---
 
 ## Q166026: XADM: Malformed Message Causes AV in Information Store

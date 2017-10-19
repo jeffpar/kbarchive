@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72850: Installation Notes for the Source Profiler Version 1.0"
-permalink: kb/072/Q72850/
+permalink: /kb/072/Q72850/
 ---
 
 ## Q72850: Installation Notes for the Source Profiler Version 1.0

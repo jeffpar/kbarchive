@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71148: PRB: GetModuleHandle() and Long Path Causes UAE"
-permalink: kb/071/Q71148/
+permalink: /kb/071/Q71148/
 ---
 
 ## Q71148: PRB: GetModuleHandle() and Long Path Causes UAE

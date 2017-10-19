@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325646: Services.exe Heap Corruption If Messenger Service Does Not Start"
-permalink: kb/325/Q325646/
+permalink: /kb/325/Q325646/
 ---
 
 ## Q325646: Services.exe Heap Corruption If Messenger Service Does Not Start

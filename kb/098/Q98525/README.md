@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98525: Com 4 Not Available on AST Premium Exec Notebook Computer"
-permalink: kb/098/Q98525/
+permalink: /kb/098/Q98525/
 ---
 
 ## Q98525: Com 4 Not Available on AST Premium Exec Notebook Computer

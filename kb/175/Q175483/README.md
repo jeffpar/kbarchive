@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175483: XCON: Configuration Sample - Exchange X.400 Connector &amp; Infonet"
-permalink: kb/175/Q175483/
+permalink: /kb/175/Q175483/
 ---
 
 ## Q175483: XCON: Configuration Sample - Exchange X.400 Connector &amp; Infonet

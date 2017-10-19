@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113431: Lear Engine Sounds Are Choppy with SoundBlaster 16"
-permalink: kb/113/Q113431/
+permalink: /kb/113/Q113431/
 ---
 
 ## Q113431: Lear Engine Sounds Are Choppy with SoundBlaster 16

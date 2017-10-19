@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274629: Games Hangs or Slow Performance on AMD System w/ VIA Chipset"
-permalink: kb/274/Q274629/
+permalink: /kb/274/Q274629/
 ---
 
 ## Q274629: Games Hangs or Slow Performance on AMD System w/ VIA Chipset

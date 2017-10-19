@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234387: XCON: Hole in Web 3 Connector w. GroupWise 5.5 Internet Agent"
-permalink: kb/234/Q234387/
+permalink: /kb/234/Q234387/
 ---
 
 ## Q234387: XCON: Hole in Web 3 Connector w. GroupWise 5.5 Internet Agent

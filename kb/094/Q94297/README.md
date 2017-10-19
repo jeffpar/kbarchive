@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94297: Hardware Handshake for 3Server COM Ports"
-permalink: kb/094/Q94297/
+permalink: /kb/094/Q94297/
 ---
 
 ## Q94297: Hardware Handshake for 3Server COM Ports

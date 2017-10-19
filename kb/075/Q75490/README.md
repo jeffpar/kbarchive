@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75490: Troubleshooting &quot;Unrecoverable Application Error&quot; in DrWatson"
-permalink: kb/075/Q75490/
+permalink: /kb/075/Q75490/
 ---
 
 ## Q75490: Troubleshooting &quot;Unrecoverable Application Error&quot; in DrWatson

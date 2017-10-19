@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138726: PC Mac: Err Msg: Before You Can Use Private Folders,..."
-permalink: kb/138/Q138726/
+permalink: /kb/138/Q138726/
 ---
 
 ## Q138726: PC Mac: Err Msg: Before You Can Use Private Folders,...

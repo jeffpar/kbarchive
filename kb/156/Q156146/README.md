@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156146: Full Court Press: Sound Problems"
-permalink: kb/156/Q156146/
+permalink: /kb/156/Q156146/
 ---
 
 ## Q156146: Full Court Press: Sound Problems

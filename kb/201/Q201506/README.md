@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201506: XFOR: Alarm Time Wrong After French Notes Migration"
-permalink: kb/201/Q201506/
+permalink: /kb/201/Q201506/
 ---
 
 ## Q201506: XFOR: Alarm Time Wrong After French Notes Migration

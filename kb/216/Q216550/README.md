@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216550: XFOR: Meetings Can't Be Used Between French Exchange &amp; PROFS"
-permalink: kb/216/Q216550/
+permalink: /kb/216/Q216550/
 ---
 
 ## Q216550: XFOR: Meetings Can't Be Used Between French Exchange &amp; PROFS

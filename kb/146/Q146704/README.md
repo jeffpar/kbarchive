@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146704: XCLN: Fields Pasted onto a Tab Field in EFD Might Disappear"
-permalink: kb/146/Q146704/
+permalink: /kb/146/Q146704/
 ---
 
 ## Q146704: XCLN: Fields Pasted onto a Tab Field in EFD Might Disappear

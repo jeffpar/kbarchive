@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168502: Windows NT Reboots Continuously During Installation"
-permalink: kb/168/Q168502/
+permalink: /kb/168/Q168502/
 ---
 
 ## Q168502: Windows NT Reboots Continuously During Installation

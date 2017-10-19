@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171515: FIX: Crash on Customization of Design Environment Menus"
-permalink: kb/171/Q171515/
+permalink: /kb/171/Q171515/
 ---
 
 ## Q171515: FIX: Crash on Customization of Design Environment Menus

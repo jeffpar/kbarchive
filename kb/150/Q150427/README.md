@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150427: Mac Bookshelf '96-'97: Can't Select Menu Items in Apple Guide"
-permalink: kb/150/Q150427/
+permalink: /kb/150/Q150427/
 ---
 
 ## Q150427: Mac Bookshelf '96-'97: Can't Select Menu Items in Apple Guide

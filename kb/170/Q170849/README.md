@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170849: Restore of WINS Database to a Different Server Fails"
-permalink: kb/170/Q170849/
+permalink: /kb/170/Q170849/
 ---
 
 ## Q170849: Restore of WINS Database to a Different Server Fails

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131766: Description of ViSCA in Windows 95"
-permalink: kb/131/Q131766/
+permalink: /kb/131/Q131766/
 ---
 
 ## Q131766: Description of ViSCA in Windows 95

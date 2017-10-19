@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174624: Improper Display Name for OEM Driver after Unattend Setup."
-permalink: kb/174/Q174624/
+permalink: /kb/174/Q174624/
 ---
 
 ## Q174624: Improper Display Name for OEM Driver after Unattend Setup.

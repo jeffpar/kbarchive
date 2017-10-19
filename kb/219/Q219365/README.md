@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219365: Free Disk Space Error When Attempting to Install SP4"
-permalink: kb/219/Q219365/
+permalink: /kb/219/Q219365/
 ---
 
 ## Q219365: Free Disk Space Error When Attempting to Install SP4

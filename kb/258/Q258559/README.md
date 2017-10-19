@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258559: HOWTO: Write a REG_SZ Value to the Registry"
-permalink: kb/258/Q258559/
+permalink: /kb/258/Q258559/
 ---
 
 ## Q258559: HOWTO: Write a REG_SZ Value to the Registry

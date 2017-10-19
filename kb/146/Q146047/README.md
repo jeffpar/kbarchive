@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146047: How to Display a '&amp;' Character in a Schedule+ Tab Title"
-permalink: kb/146/Q146047/
+permalink: /kb/146/Q146047/
 ---
 
 ## Q146047: How to Display a '&amp;' Character in a Schedule+ Tab Title

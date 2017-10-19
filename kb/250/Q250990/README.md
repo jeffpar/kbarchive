@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250990: Zone Err Msg: Game Failed to Launch"
-permalink: kb/250/Q250990/
+permalink: /kb/250/Q250990/
 ---
 
 ## Q250990: Zone Err Msg: Game Failed to Launch

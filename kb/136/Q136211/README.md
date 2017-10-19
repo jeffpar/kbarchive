@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136211: PRB: SETUP.APP Creates Disk Image too Large for a Floppy Disk"
-permalink: kb/136/Q136211/
+permalink: /kb/136/Q136211/
 ---
 
 ## Q136211: PRB: SETUP.APP Creates Disk Image too Large for a Floppy Disk

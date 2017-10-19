@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122318: Using Null Modem for RAS with Third-Party PPP Clients"
-permalink: kb/122/Q122318/
+permalink: /kb/122/Q122318/
 ---
 
 ## Q122318: Using Null Modem for RAS with Third-Party PPP Clients

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164489: XADM: MAPI Error While Generating Offline Address Book"
-permalink: kb/164/Q164489/
+permalink: /kb/164/Q164489/
 ---
 
 ## Q164489: XADM: MAPI Error While Generating Offline Address Book

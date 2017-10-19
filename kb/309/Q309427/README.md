@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309427: Err Msg Installing Reference Library: Internal Error 2894.1157"
-permalink: kb/309/Q309427/
+permalink: /kb/309/Q309427/
 ---
 
 ## Q309427: Err Msg Installing Reference Library: Internal Error 2894.1157

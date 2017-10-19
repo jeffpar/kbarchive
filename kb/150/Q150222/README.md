@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150222: BUG: Graph Control Does Not Print When DrawMode Is Set to 5"
-permalink: kb/150/Q150222/
+permalink: /kb/150/Q150222/
 ---
 
 ## Q150222: BUG: Graph Control Does Not Print When DrawMode Is Set to 5

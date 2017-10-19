@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154068: Mastering Exchange Development: Windows 95 Registry Entries"
-permalink: kb/154/Q154068/
+permalink: /kb/154/Q154068/
 ---
 
 ## Q154068: Mastering Exchange Development: Windows 95 Registry Entries

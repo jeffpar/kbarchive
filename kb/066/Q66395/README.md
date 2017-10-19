@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66395: Windows-Based Application Installation Sample Code"
-permalink: kb/066/Q66395/
+permalink: /kb/066/Q66395/
 ---
 
 ## Q66395: Windows-Based Application Installation Sample Code

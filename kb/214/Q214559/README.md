@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214559: XADM: Clients Hang Using the Offline Address Book"
-permalink: kb/214/Q214559/
+permalink: /kb/214/Q214559/
 ---
 
 ## Q214559: XADM: Clients Hang Using the Offline Address Book

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130737: Missing Characters Printing From Access 2.0 in Windows NT"
-permalink: kb/130/Q130737/
+permalink: /kb/130/Q130737/
 ---
 
 ## Q130737: Missing Characters Printing From Access 2.0 in Windows NT

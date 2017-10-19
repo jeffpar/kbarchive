@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185833: Memory Leak in Rasman.exe on Compaq Systems"
-permalink: kb/185/Q185833/
+permalink: /kb/185/Q185833/
 ---
 
 ## Q185833: Memory Leak in Rasman.exe on Compaq Systems

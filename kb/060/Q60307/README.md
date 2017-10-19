@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60307: MASM 5.1 Setup Shows Blank Display on LCD/Mono Monitor"
-permalink: kb/060/Q60307/
+permalink: /kb/060/Q60307/
 ---
 
 ## Q60307: MASM 5.1 Setup Shows Blank Display on LCD/Mono Monitor

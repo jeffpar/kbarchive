@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186223: OL97: Formatting Toolbar on the View Menu is Unavailable"
-permalink: kb/186/Q186223/
+permalink: /kb/186/Q186223/
 ---
 
 ## Q186223: OL97: Formatting Toolbar on the View Menu is Unavailable

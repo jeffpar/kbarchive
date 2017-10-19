@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119241: PC DirSync: Cross-Postoffice Groups Showing in the GAL"
-permalink: kb/119/Q119241/
+permalink: /kb/119/Q119241/
 ---
 
 ## Q119241: PC DirSync: Cross-Postoffice Groups Showing in the GAL

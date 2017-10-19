@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193261: BUG: Error 458 Using For Each with Variant Array of UDTs"
-permalink: kb/193/Q193261/
+permalink: /kb/193/Q193261/
 ---
 
 ## Q193261: BUG: Error 458 Using For Each with Variant Array of UDTs

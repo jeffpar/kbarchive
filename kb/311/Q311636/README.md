@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311636: VDIR that Points to Non-English Dir on English OS Does Not Work"
-permalink: kb/311/Q311636/
+permalink: /kb/311/Q311636/
 ---
 
 ## Q311636: VDIR that Points to Non-English Dir on English OS Does Not Work

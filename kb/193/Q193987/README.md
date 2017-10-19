@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193987: Win95 Client May Trap When Client/Server Encryption is Enabled."
-permalink: kb/193/Q193987/
+permalink: /kb/193/Q193987/
 ---
 
 ## Q193987: Win95 Client May Trap When Client/Server Encryption is Enabled.

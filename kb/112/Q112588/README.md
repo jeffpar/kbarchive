@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112588: Setting Smart Modems to Auto-Answer in Terminal"
-permalink: kb/112/Q112588/
+permalink: /kb/112/Q112588/
 ---
 
 ## Q112588: Setting Smart Modems to Auto-Answer in Terminal

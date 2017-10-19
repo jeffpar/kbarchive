@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112181: Changing the Style of Secondary Viewer Windows"
-permalink: kb/112/Q112181/
+permalink: /kb/112/Q112181/
 ---
 
 ## Q112181: Changing the Style of Secondary Viewer Windows

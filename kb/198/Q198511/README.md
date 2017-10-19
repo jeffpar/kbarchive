@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198511: Error 629 with ISDN Multilink"
-permalink: kb/198/Q198511/
+permalink: /kb/198/Q198511/
 ---
 
 ## Q198511: Error 629 with ISDN Multilink

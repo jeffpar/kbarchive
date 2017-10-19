@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154476: XCLN: System 11 Error w/Cleared &quot;Show Rules for All Profiles&quot;"
-permalink: kb/154/Q154476/
+permalink: /kb/154/Q154476/
 ---
 
 ## Q154476: XCLN: System 11 Error w/Cleared &quot;Show Rules for All Profiles&quot;

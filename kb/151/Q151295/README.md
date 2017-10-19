@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151295: Top Articles on Microsoft Exchange Client"
-permalink: kb/151/Q151295/
+permalink: /kb/151/Q151295/
 ---
 
 ## Q151295: Top Articles on Microsoft Exchange Client

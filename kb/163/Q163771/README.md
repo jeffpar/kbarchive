@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163771: Text Printed with White Background with Matrox Video Drivers"
-permalink: kb/163/Q163771/
+permalink: /kb/163/Q163771/
 ---
 
 ## Q163771: Text Printed with White Background with Matrox Video Drivers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148940: Admin &quot;Select Domain&quot; SNA Server in Subdomain Fails"
-permalink: kb/148/Q148940/
+permalink: /kb/148/Q148940/
 ---
 
 ## Q148940: Admin &quot;Select Domain&quot; SNA Server in Subdomain Fails

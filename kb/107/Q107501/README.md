@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107501: INFO: &#95;&#95;declspec(dllexport) Replaces &#95;&#95;export in 32-Bit VC++"
-permalink: kb/107/Q107501/
+permalink: /kb/107/Q107501/
 ---
 
 ## Q107501: INFO: &#95;&#95;declspec(dllexport) Replaces &#95;&#95;export in 32-Bit VC++

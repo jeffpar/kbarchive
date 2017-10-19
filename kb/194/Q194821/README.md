@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194821: Combat Flight Simulator: Computer Hangs When Aircraft Crashes"
-permalink: kb/194/Q194821/
+permalink: /kb/194/Q194821/
 ---
 
 ## Q194821: Combat Flight Simulator: Computer Hangs When Aircraft Crashes

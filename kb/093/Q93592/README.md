@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93592: Correcting Illegal Directory Names With DELTREE and MOVE"
-permalink: kb/093/Q93592/
+permalink: /kb/093/Q93592/
 ---
 
 ## Q93592: Correcting Illegal Directory Names With DELTREE and MOVE

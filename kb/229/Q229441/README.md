@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229441: Denial of Service Attack with Duplicate Objects Between Sessions"
-permalink: kb/229/Q229441/
+permalink: /kb/229/Q229441/
 ---
 
 ## Q229441: Denial of Service Attack with Duplicate Objects Between Sessions

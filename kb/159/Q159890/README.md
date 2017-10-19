@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159890: Mac Encarta Setup: QuickTime Musical Instrument Error"
-permalink: kb/159/Q159890/
+permalink: /kb/159/Q159890/
 ---
 
 ## Q159890: Mac Encarta Setup: QuickTime Musical Instrument Error

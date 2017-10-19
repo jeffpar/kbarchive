@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246970: INFO: Customizing the Visual C++ IDE Programmatically"
-permalink: kb/246/Q246970/
+permalink: /kb/246/Q246970/
 ---
 
 ## Q246970: INFO: Customizing the Visual C++ IDE Programmatically

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140792: FIX: CheckBox Control in Grid Cannot Be Set to Read Only"
-permalink: kb/140/Q140792/
+permalink: /kb/140/Q140792/
 ---
 
 ## Q140792: FIX: CheckBox Control in Grid Cannot Be Set to Read Only

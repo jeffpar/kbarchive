@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247322: &quot;Error Reading Configuration File&quot; When Using the 3270 Applet"
-permalink: kb/247/Q247322/
+permalink: /kb/247/Q247322/
 ---
 
 ## Q247322: &quot;Error Reading Configuration File&quot; When Using the 3270 Applet

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166437: Cannot Install Internet Mail Service for Microsoft Exchange"
-permalink: kb/166/Q166437/
+permalink: /kb/166/Q166437/
 ---
 
 ## Q166437: Cannot Install Internet Mail Service for Microsoft Exchange

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166243: Access Violation in Office 97 ODBC Apps with StarSQL Driver"
-permalink: kb/166/Q166243/
+permalink: /kb/166/Q166243/
 ---
 
 ## Q166243: Access Violation in Office 97 ODBC Apps with StarSQL Driver

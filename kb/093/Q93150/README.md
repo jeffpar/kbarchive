@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93150: HP Draftmaster Prints to Left Side of Page Only"
-permalink: kb/093/Q93150/
+permalink: /kb/093/Q93150/
 ---
 
 ## Q93150: HP Draftmaster Prints to Left Side of Page Only

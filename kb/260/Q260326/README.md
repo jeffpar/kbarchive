@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260326: Unable to View Scheduled Reports in Remote Admin UI on Win2000"
-permalink: kb/260/Q260326/
+permalink: /kb/260/Q260326/
 ---
 
 ## Q260326: Unable to View Scheduled Reports in Remote Admin UI on Win2000

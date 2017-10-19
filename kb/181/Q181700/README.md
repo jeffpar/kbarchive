@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181700: XCLN: EFD Error: Insufficient Memory To Run This Application"
-permalink: kb/181/Q181700/
+permalink: /kb/181/Q181700/
 ---
 
 ## Q181700: XCLN: EFD Error: Insufficient Memory To Run This Application

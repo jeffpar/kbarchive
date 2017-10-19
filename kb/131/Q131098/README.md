@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131098: Mac PC Mail Client Err Msg: Cannot open key file"
-permalink: kb/131/Q131098/
+permalink: /kb/131/Q131098/
 ---
 
 ## Q131098: Mac PC Mail Client Err Msg: Cannot open key file

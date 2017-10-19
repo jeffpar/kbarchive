@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150835: Troubleshooting CGI Error"
-permalink: kb/150/Q150835/
+permalink: /kb/150/Q150835/
 ---
 
 ## Q150835: Troubleshooting CGI Error

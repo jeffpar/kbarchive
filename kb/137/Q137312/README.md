@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137312: Cannot Run The Microsoft Network After Installing HiJaak95"
-permalink: kb/137/Q137312/
+permalink: /kb/137/Q137312/
 ---
 
 ## Q137312: Cannot Run The Microsoft Network After Installing HiJaak95

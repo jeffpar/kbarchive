@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194726: FPNW Client Does Not Get Correct Time or Date After Y2K"
-permalink: kb/194/Q194726/
+permalink: /kb/194/Q194726/
 ---
 
 ## Q194726: FPNW Client Does Not Get Correct Time or Date After Y2K

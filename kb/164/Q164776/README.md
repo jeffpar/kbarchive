@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164776: BUG: Credit Letter.Doc not on Access 97 Step By Step disk"
-permalink: kb/164/Q164776/
+permalink: /kb/164/Q164776/
 ---
 
 ## Q164776: BUG: Credit Letter.Doc not on Access 97 Step By Step disk

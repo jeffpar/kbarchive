@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156105: XCLN: Viewing Other Attendees after Accepting Meeting Request"
-permalink: kb/156/Q156105/
+permalink: /kb/156/Q156105/
 ---
 
 ## Q156105: XCLN: Viewing Other Attendees after Accepting Meeting Request

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158045: Windows Explorer Reports 4 GB of Files as 0 Bytes"
-permalink: kb/158/Q158045/
+permalink: /kb/158/Q158045/
 ---
 
 ## Q158045: Windows Explorer Reports 4 GB of Files as 0 Bytes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68990: MS-DOS Shell Spawns Two COMMAND.COMs"
-permalink: kb/068/Q68990/
+permalink: /kb/068/Q68990/
 ---
 
 ## Q68990: MS-DOS Shell Spawns Two COMMAND.COMs

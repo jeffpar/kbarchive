@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95731: PC Win: Name Finder Fails If Space Before Name"
-permalink: kb/095/Q95731/
+permalink: /kb/095/Q95731/
 ---
 
 ## Q95731: PC Win: Name Finder Fails If Space Before Name

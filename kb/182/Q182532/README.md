@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182532: HOWTO: DMA-Capable ATAPI Device Driver for Windows NT"
-permalink: kb/182/Q182532/
+permalink: /kb/182/Q182532/
 ---
 
 ## Q182532: HOWTO: DMA-Capable ATAPI Device Driver for Windows NT

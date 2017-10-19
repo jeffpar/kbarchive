@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103055: Network DDE Fails with Floating Profile from Other Computer"
-permalink: kb/103/Q103055/
+permalink: /kb/103/Q103055/
 ---
 
 ## Q103055: Network DDE Fails with Floating Profile from Other Computer

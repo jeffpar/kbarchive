@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169402: FIX: Breakpoints Not Allowed on Certain Valid SQL Statements"
-permalink: kb/169/Q169402/
+permalink: /kb/169/Q169402/
 ---
 
 ## Q169402: FIX: Breakpoints Not Allowed on Certain Valid SQL Statements

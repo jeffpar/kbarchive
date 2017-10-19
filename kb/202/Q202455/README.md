@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202455: HOWTO: Get Disk Free Space Using the GetDiskFreeSpaceEx() API"
-permalink: kb/202/Q202455/
+permalink: /kb/202/Q202455/
 ---
 
 ## Q202455: HOWTO: Get Disk Free Space Using the GetDiskFreeSpaceEx() API

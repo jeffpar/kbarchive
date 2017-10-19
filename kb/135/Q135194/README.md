@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135194: MS Cinemania 1995 About Dialog Box Does Not Appear"
-permalink: kb/135/Q135194/
+permalink: /kb/135/Q135194/
 ---
 
 ## Q135194: MS Cinemania 1995 About Dialog Box Does Not Appear

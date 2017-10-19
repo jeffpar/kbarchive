@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237186: LU6.2 BIND Rejected When Connecting through 3174 NN"
-permalink: kb/237/Q237186/
+permalink: /kb/237/Q237186/
 ---
 
 ## Q237186: LU6.2 BIND Rejected When Connecting through 3174 NN

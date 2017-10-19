@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305746: BUG: &quot;Access Denied&quot; Err Msg w/DCOM Activation for ATL Servers"
-permalink: kb/305/Q305746/
+permalink: /kb/305/Q305746/
 ---
 
 ## Q305746: BUG: &quot;Access Denied&quot; Err Msg w/DCOM Activation for ATL Servers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88575: Using the COMPAQ 286N with Windows 3.0"
-permalink: kb/088/Q88575/
+permalink: /kb/088/Q88575/
 ---
 
 ## Q88575: Using the COMPAQ 286N with Windows 3.0

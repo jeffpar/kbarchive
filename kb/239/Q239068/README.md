@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239068: XADM: Mailbox Manager Setup Requires Service Account Password"
-permalink: kb/239/Q239068/
+permalink: /kb/239/Q239068/
 ---
 
 ## Q239068: XADM: Mailbox Manager Setup Requires Service Account Password

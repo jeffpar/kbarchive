@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126451: Windows NT Client Loses Session To Server"
-permalink: kb/126/Q126451/
+permalink: /kb/126/Q126451/
 ---
 
 ## Q126451: Windows NT Client Loses Session To Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239536: How to Load Printer Drivers from Trusted Source Only"
-permalink: kb/239/Q239536/
+permalink: /kb/239/Q239536/
 ---
 
 ## Q239536: How to Load Printer Drivers from Trusted Source Only

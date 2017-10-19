@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117504: Prompted to Do Full Installation in Maintenance-Mode Setup"
-permalink: kb/117/Q117504/
+permalink: /kb/117/Q117504/
 ---
 
 ## Q117504: Prompted to Do Full Installation in Maintenance-Mode Setup

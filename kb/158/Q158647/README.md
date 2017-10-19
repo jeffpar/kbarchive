@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158647: SMS: Autostarting Remote Control Option Behavior"
-permalink: kb/158/Q158647/
+permalink: /kb/158/Q158647/
 ---
 
 ## Q158647: SMS: Autostarting Remote Control Option Behavior

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158017: Complete Gardening: Unable to Install to a Different Directory"
-permalink: kb/158/Q158017/
+permalink: /kb/158/Q158017/
 ---
 
 ## Q158017: Complete Gardening: Unable to Install to a Different Directory

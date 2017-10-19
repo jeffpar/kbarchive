@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145752: How to Eliminate RI Rule Code from a .DBC File"
-permalink: kb/145/Q145752/
+permalink: /kb/145/Q145752/
 ---
 
 ## Q145752: How to Eliminate RI Rule Code from a .DBC File

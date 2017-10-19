@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101753: PC DirSync: When to Use the Time Zone Option with Dir-Sync"
-permalink: kb/101/Q101753/
+permalink: /kb/101/Q101753/
 ---
 
 ## Q101753: PC DirSync: When to Use the Time Zone Option with Dir-Sync

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169161: Registry Parameters for RIP for IP Version 1"
-permalink: kb/169/Q169161/
+permalink: /kb/169/Q169161/
 ---
 
 ## Q169161: Registry Parameters for RIP for IP Version 1

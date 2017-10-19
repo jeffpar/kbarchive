@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59639: Must Select Font in List Box to Install"
-permalink: kb/059/Q59639/
+permalink: /kb/059/Q59639/
 ---
 
 ## Q59639: Must Select Font in List Box to Install

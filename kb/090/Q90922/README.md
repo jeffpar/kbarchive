@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90922: Net Watcher Requires Enhanced Mode in Windows for Workgroups"
-permalink: kb/090/Q90922/
+permalink: /kb/090/Q90922/
 ---
 
 ## Q90922: Net Watcher Requires Enhanced Mode in Windows for Workgroups

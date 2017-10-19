@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159441: FP97: Dialog Boxes Show Incorrect Desktop If Running NT 4.0"
-permalink: kb/159/Q159441/
+permalink: /kb/159/Q159441/
 ---
 
 ## Q159441: FP97: Dialog Boxes Show Incorrect Desktop If Running NT 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82424: Seaview 1.0 GP Faults When Using a Cabinet"
-permalink: kb/082/Q82424/
+permalink: /kb/082/Q82424/
 ---
 
 ## Q82424: Seaview 1.0 GP Faults When Using a Cabinet

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167050: CPU Usage Limited to 100% on Multiprocessor Computer"
-permalink: kb/167/Q167050/
+permalink: /kb/167/Q167050/
 ---
 
 ## Q167050: CPU Usage Limited to 100% on Multiprocessor Computer

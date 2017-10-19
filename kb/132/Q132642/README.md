@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132642: Saving Clipboard Files May Lose Some Formats"
-permalink: kb/132/Q132642/
+permalink: /kb/132/Q132642/
 ---
 
 ## Q132642: Saving Clipboard Files May Lose Some Formats

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177764: XADM: Server Monitor Cannot Restart Services On Cluster Server"
-permalink: kb/177/Q177764/
+permalink: /kb/177/Q177764/
 ---
 
 ## Q177764: XADM: Server Monitor Cannot Restart Services On Cluster Server

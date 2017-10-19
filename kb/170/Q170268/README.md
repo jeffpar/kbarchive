@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170268: WD97: Invalid Page Fault Pasting Object from PowerPoint 97"
-permalink: kb/170/Q170268/
+permalink: /kb/170/Q170268/
 ---
 
 ## Q170268: WD97: Invalid Page Fault Pasting Object from PowerPoint 97

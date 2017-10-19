@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120962: MS-DOS 6.22 Files with Incorrect Version Numbers and Copyright"
-permalink: kb/120/Q120962/
+permalink: /kb/120/Q120962/
 ---
 
 ## Q120962: MS-DOS 6.22 Files with Incorrect Version Numbers and Copyright

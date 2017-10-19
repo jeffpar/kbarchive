@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86379: PC WSPlus: Auto-Pick Picks 1-Hour Slot for Appointment"
-permalink: kb/086/Q86379/
+permalink: /kb/086/Q86379/
 ---
 
 ## Q86379: PC WSPlus: Auto-Pick Picks 1-Hour Slot for Appointment

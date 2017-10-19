@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115283: Installing Sound Producer Pro Alters ANSI Escape Sequences"
-permalink: kb/115/Q115283/
+permalink: /kb/115/Q115283/
 ---
 
 ## Q115283: Installing Sound Producer Pro Alters ANSI Escape Sequences

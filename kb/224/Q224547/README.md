@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224547: Memory Leak in Routing and Remote Access Service"
-permalink: kb/224/Q224547/
+permalink: /kb/224/Q224547/
 ---
 
 ## Q224547: Memory Leak in Routing and Remote Access Service

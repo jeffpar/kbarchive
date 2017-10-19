@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117817: Mac Cinemania 94: Cast Lists Look Misaligned on Small Monitor"
-permalink: kb/117/Q117817/
+permalink: /kb/117/Q117817/
 ---
 
 ## Q117817: Mac Cinemania 94: Cast Lists Look Misaligned on Small Monitor

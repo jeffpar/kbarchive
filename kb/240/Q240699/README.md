@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240699: PC WSPlus: Error Message &quot;Schedule Plus Caused a GPF in Dem..."
-permalink: kb/240/Q240699/
+permalink: /kb/240/Q240699/
 ---
 
 ## Q240699: PC WSPlus: Error Message &quot;Schedule Plus Caused a GPF in Dem...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122133: Err Msg: Unable to Locate Mass Storage Device"
-permalink: kb/122/Q122133/
+permalink: /kb/122/Q122133/
 ---
 
 ## Q122133: Err Msg: Unable to Locate Mass Storage Device

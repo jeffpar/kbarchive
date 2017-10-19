@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140476: How to Install a BDC in a Routed TCP/IP Environment"
-permalink: kb/140/Q140476/
+permalink: /kb/140/Q140476/
 ---
 
 ## Q140476: How to Install a BDC in a Routed TCP/IP Environment

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271549: XWEB: OWA and CDO Daylight Savings Change for Year 2000"
-permalink: kb/271/Q271549/
+permalink: /kb/271/Q271549/
 ---
 
 ## Q271549: XWEB: OWA and CDO Daylight Savings Change for Year 2000

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50237: Mac Form: Hiding a Field on a Custom Form"
-permalink: kb/050/Q50237/
+permalink: /kb/050/Q50237/
 ---
 
 ## Q50237: Mac Form: Hiding a Field on a Custom Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146677: Host Names Beginning With Digits Not Accepted in IMC"
-permalink: kb/146/Q146677/
+permalink: /kb/146/Q146677/
 ---
 
 ## Q146677: Host Names Beginning With Digits Not Accepted in IMC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163186: Setver.exe Is Not Loaded at Startup"
-permalink: kb/163/Q163186/
+permalink: /kb/163/Q163186/
 ---
 
 ## Q163186: Setver.exe Is Not Loaded at Startup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87204: PROFS: How the Different Software Layers Communicate on the PC"
-permalink: kb/087/Q87204/
+permalink: /kb/087/Q87204/
 ---
 
 ## Q87204: PROFS: How the Different Software Layers Communicate on the PC

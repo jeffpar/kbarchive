@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141113: How to Synchronize Netware Passwords with FPNW"
-permalink: kb/141/Q141113/
+permalink: /kb/141/Q141113/
 ---
 
 ## Q141113: How to Synchronize Netware Passwords with FPNW

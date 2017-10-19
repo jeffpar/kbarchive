@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107645: How to Disable Write Caching for the 32-Bit File System"
-permalink: kb/107/Q107645/
+permalink: /kb/107/Q107645/
 ---
 
 ## Q107645: How to Disable Write Caching for the 32-Bit File System

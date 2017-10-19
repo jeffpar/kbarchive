@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107409: HP DeskJet 500c/550c Non-Printing Area (Margin)"
-permalink: kb/107/Q107409/
+permalink: /kb/107/Q107409/
 ---
 
 ## Q107409: HP DeskJet 500c/550c Non-Printing Area (Margin)

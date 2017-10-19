@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126702: Registry Editor &quot;Save Subtree As&quot; Does Not Complete"
-permalink: kb/126/Q126702/
+permalink: /kb/126/Q126702/
 ---
 
 ## Q126702: Registry Editor &quot;Save Subtree As&quot; Does Not Complete

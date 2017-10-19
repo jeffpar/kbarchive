@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88416: ROM BIOS Needed for Tandon Laptops"
-permalink: kb/088/Q88416/
+permalink: /kb/088/Q88416/
 ---
 
 ## Q88416: ROM BIOS Needed for Tandon Laptops

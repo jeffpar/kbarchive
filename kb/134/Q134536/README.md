@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134536: APM 1.0 Systems May Not Save and Restore All Hardware States"
-permalink: kb/134/Q134536/
+permalink: /kb/134/Q134536/
 ---
 
 ## Q134536: APM 1.0 Systems May Not Save and Restore All Hardware States

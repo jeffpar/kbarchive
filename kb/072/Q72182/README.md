@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72182: APPNOTES.TXT: Using Applications with MS-DOS Version 5.0"
-permalink: kb/072/Q72182/
+permalink: /kb/072/Q72182/
 ---
 
 ## Q72182: APPNOTES.TXT: Using Applications with MS-DOS Version 5.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195734: WinNT 4.0 Post-Service Pack 4 Hotfixes Combined into One Package"
-permalink: kb/195/Q195734/
+permalink: /kb/195/Q195734/
 ---
 
 ## Q195734: WinNT 4.0 Post-Service Pack 4 Hotfixes Combined into One Package

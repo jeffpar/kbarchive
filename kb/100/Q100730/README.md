@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100730: Creating a Custom Separator Page for PCL5 Printers"
-permalink: kb/100/Q100730/
+permalink: /kb/100/Q100730/
 ---
 
 ## Q100730: Creating a Custom Separator Page for PCL5 Printers

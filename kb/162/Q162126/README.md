@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162126: Error: The Picture File Hud004g.shg or Hud004f.shg Is Missing"
-permalink: kb/162/Q162126/
+permalink: /kb/162/Q162126/
 ---
 
 ## Q162126: Error: The Picture File Hud004g.shg or Hud004f.shg Is Missing

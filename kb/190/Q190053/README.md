@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190053: XCLN: Adding Custom Applications to Active Setup with the ODK"
-permalink: kb/190/Q190053/
+permalink: /kb/190/Q190053/
 ---
 
 ## Q190053: XCLN: Adding Custom Applications to Active Setup with the ODK

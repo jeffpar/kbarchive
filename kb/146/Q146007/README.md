@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146007: Ndis 3.1 Driver Appears for Windows 95 Netcard Manufacturer"
-permalink: kb/146/Q146007/
+permalink: /kb/146/Q146007/
 ---
 
 ## Q146007: Ndis 3.1 Driver Appears for Windows 95 Netcard Manufacturer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246259: FP98: Uppercase in Short file's Name Becomes Lowercase"
-permalink: kb/246/Q246259/
+permalink: /kb/246/Q246259/
 ---
 
 ## Q246259: FP98: Uppercase in Short file's Name Becomes Lowercase

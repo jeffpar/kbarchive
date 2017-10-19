@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58287: AutoCAD Plotter Communication Under Windows 3.0"
-permalink: kb/058/Q58287/
+permalink: /kb/058/Q58287/
 ---
 
 ## Q58287: AutoCAD Plotter Communication Under Windows 3.0

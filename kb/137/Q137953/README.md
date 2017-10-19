@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137953: DOCERR: Visual FoxPro Help File Gives Wrong Index Key Limit"
-permalink: kb/137/Q137953/
+permalink: /kb/137/Q137953/
 ---
 
 ## Q137953: DOCERR: Visual FoxPro Help File Gives Wrong Index Key Limit

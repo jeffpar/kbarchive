@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163256: WD97: Updated WBODBC Files Available"
-permalink: kb/163/Q163256/
+permalink: /kb/163/Q163256/
 ---
 
 ## Q163256: WD97: Updated WBODBC Files Available

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138222: DHCP Server Delays Release of Client-Rejected IP Addresses"
-permalink: kb/138/Q138222/
+permalink: /kb/138/Q138222/
 ---
 
 ## Q138222: DHCP Server Delays Release of Client-Rejected IP Addresses

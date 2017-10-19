@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139212: Memory Leak in TN3270 Server if RU Sizes Exceed TN3270 Defaults"
-permalink: kb/139/Q139212/
+permalink: /kb/139/Q139212/
 ---
 
 ## Q139212: Memory Leak in TN3270 Server if RU Sizes Exceed TN3270 Defaults

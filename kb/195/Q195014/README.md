@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195014: Outlook 98 May Install Incorrectly on Windows NT Terminal Server"
-permalink: kb/195/Q195014/
+permalink: /kb/195/Q195014/
 ---
 
 ## Q195014: Outlook 98 May Install Incorrectly on Windows NT Terminal Server

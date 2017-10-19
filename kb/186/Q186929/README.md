@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186929: LowercaseFiles Registry Key Has Added Functionality"
-permalink: kb/186/Q186929/
+permalink: /kb/186/Q186929/
 ---
 
 ## Q186929: LowercaseFiles Registry Key Has Added Functionality

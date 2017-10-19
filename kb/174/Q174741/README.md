@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174741: XFOR: Exchange Dirsync Server Allows Empty Admin Mailbox"
-permalink: kb/174/Q174741/
+permalink: /kb/174/Q174741/
 ---
 
 ## Q174741: XFOR: Exchange Dirsync Server Allows Empty Admin Mailbox

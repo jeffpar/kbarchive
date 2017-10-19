@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136283: PRB: Installing Visual FoxPro Disables LAN Manager"
-permalink: kb/136/Q136283/
+permalink: /kb/136/Q136283/
 ---
 
 ## Q136283: PRB: Installing Visual FoxPro Disables LAN Manager

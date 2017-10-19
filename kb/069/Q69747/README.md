@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69747: COMTOKR.SYS and LAN Manager NDDK"
-permalink: kb/069/Q69747/
+permalink: /kb/069/Q69747/
 ---
 
 ## Q69747: COMTOKR.SYS and LAN Manager NDDK

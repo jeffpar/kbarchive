@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141478: FIX: Floating Toolbars Disappear in Developer Studio"
-permalink: kb/141/Q141478/
+permalink: /kb/141/Q141478/
 ---
 
 ## Q141478: FIX: Floating Toolbars Disappear in Developer Studio

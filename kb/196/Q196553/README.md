@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196553: WD97: Suppress Endnotes Option Unavailable"
-permalink: kb/196/Q196553/
+permalink: /kb/196/Q196553/
 ---
 
 ## Q196553: WD97: Suppress Endnotes Option Unavailable

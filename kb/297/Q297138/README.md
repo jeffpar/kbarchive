@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297138: Cannot Open The Phone Book File In MSN Explorer"
-permalink: kb/297/Q297138/
+permalink: /kb/297/Q297138/
 ---
 
 ## Q297138: Cannot Open The Phone Book File In MSN Explorer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177663: Problems with LAN Manager for Unix and Anti-virus Programs"
-permalink: kb/177/Q177663/
+permalink: /kb/177/Q177663/
 ---
 
 ## Q177663: Problems with LAN Manager for Unix and Anti-virus Programs

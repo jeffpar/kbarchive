@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236807: XFOR: AS/400 SND Commands Connector for SNADS Doesn't Handle"
-permalink: kb/236/Q236807/
+permalink: /kb/236/Q236807/
 ---
 
 ## Q236807: XFOR: AS/400 SND Commands Connector for SNADS Doesn't Handle

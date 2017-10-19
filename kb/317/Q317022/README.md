@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317022: DNS Resolution Fails with System Log Event ID 453 and 7053"
-permalink: kb/317/Q317022/
+permalink: /kb/317/Q317022/
 ---
 
 ## Q317022: DNS Resolution Fails with System Log Event ID 453 and 7053

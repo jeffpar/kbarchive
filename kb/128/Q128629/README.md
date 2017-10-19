@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128629: Cannot Boot Windows NT on a Diskless Workstation"
-permalink: kb/128/Q128629/
+permalink: /kb/128/Q128629/
 ---
 
 ## Q128629: Cannot Boot Windows NT on a Diskless Workstation

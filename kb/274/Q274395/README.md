@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274395: XWEB: Warn: &quot;This Page Contains Both Secure and Nonsecure Items&quot;"
-permalink: kb/274/Q274395/
+permalink: /kb/274/Q274395/
 ---
 
 ## Q274395: XWEB: Warn: &quot;This Page Contains Both Secure and Nonsecure Items&quot;

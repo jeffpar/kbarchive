@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118619: PC Ext: Err Msg: Drive in Error: &lt;Drive Letter&gt;"
-permalink: kb/118/Q118619/
+permalink: /kb/118/Q118619/
 ---
 
 ## Q118619: PC Ext: Err Msg: Drive in Error: &lt;Drive Letter&gt;

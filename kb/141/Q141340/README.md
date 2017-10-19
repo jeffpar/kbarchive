@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141340: XCLN: MAPILogon Requires Profile Name"
-permalink: kb/141/Q141340/
+permalink: /kb/141/Q141340/
 ---
 
 ## Q141340: XCLN: MAPILogon Requires Profile Name

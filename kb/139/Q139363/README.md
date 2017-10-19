@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139363: FIX: Setup Wizard Creates Disk Images That Are Too Big"
-permalink: kb/139/Q139363/
+permalink: /kb/139/Q139363/
 ---
 
 ## Q139363: FIX: Setup Wizard Creates Disk Images That Are Too Big

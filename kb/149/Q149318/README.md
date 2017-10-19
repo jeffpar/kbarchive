@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149318: WINS Might Not Scavenge All Local Records"
-permalink: kb/149/Q149318/
+permalink: /kb/149/Q149318/
 ---
 
 ## Q149318: WINS Might Not Scavenge All Local Records

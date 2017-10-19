@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269794: PRB: MAPI: Advise() Call Returns 0x8007000E (E_OUTOFMEMORY)"
-permalink: kb/269/Q269794/
+permalink: /kb/269/Q269794/
 ---
 
 ## Q269794: PRB: MAPI: Advise() Call Returns 0x8007000E (E_OUTOFMEMORY)

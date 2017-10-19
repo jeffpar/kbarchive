@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186242: BUG: ALTER TABLE Cannot Create a Descending Primary Key"
-permalink: kb/186/Q186242/
+permalink: /kb/186/Q186242/
 ---
 
 ## Q186242: BUG: ALTER TABLE Cannot Create a Descending Primary Key

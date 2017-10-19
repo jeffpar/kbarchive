@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q46131: DOC: tmpnam() Operation Does Not Change If P_tmpdir Modified"
-permalink: kb/046/Q46131/
+permalink: /kb/046/Q46131/
 ---
 
 ## Q46131: DOC: tmpnam() Operation Does Not Change If P_tmpdir Modified

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119517: New Keywords Near16, Near32, Far16 and Far32 in MASM"
-permalink: kb/119/Q119517/
+permalink: /kb/119/Q119517/
 ---
 
 ## Q119517: New Keywords Near16, Near32, Far16 and Far32 in MASM

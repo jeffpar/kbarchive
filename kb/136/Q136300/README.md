@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136300: Event ID 12053 or 12054 Caused by Macintosh Client Disconnect"
-permalink: kb/136/Q136300/
+permalink: /kb/136/Q136300/
 ---
 
 ## Q136300: Event ID 12053 or 12054 Caused by Macintosh Client Disconnect

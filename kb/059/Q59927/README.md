@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59927: Mac Hyp: Accessing Resources or Data in Nonstandard Fields"
-permalink: kb/059/Q59927/
+permalink: /kb/059/Q59927/
 ---
 
 ## Q59927: Mac Hyp: Accessing Resources or Data in Nonstandard Fields

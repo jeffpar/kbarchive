@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197819: How to Add Tools to the Internet Service Manager Menu"
-permalink: kb/197/Q197819/
+permalink: /kb/197/Q197819/
 ---
 
 ## Q197819: How to Add Tools to the Internet Service Manager Menu

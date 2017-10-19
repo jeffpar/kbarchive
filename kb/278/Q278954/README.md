@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278954: XADM: Recurring Appts Made by CDO Not Added to Local F/B Map"
-permalink: kb/278/Q278954/
+permalink: /kb/278/Q278954/
 ---
 
 ## Q278954: XADM: Recurring Appts Made by CDO Not Added to Local F/B Map

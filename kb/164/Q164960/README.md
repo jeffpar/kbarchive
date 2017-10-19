@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164960: XFOR: Exchange Store Stops While Converting SMTP Message"
-permalink: kb/164/Q164960/
+permalink: /kb/164/Q164960/
 ---
 
 ## Q164960: XFOR: Exchange Store Stops While Converting SMTP Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138492: How to Run Quick Preview"
-permalink: kb/138/Q138492/
+permalink: /kb/138/Q138492/
 ---
 
 ## Q138492: How to Run Quick Preview

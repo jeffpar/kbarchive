@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117212: How to Use the FoxPro Spelling Checker (SPELLCHK.APP)"
-permalink: kb/117/Q117212/
+permalink: /kb/117/Q117212/
 ---
 
 ## Q117212: How to Use the FoxPro Spelling Checker (SPELLCHK.APP)

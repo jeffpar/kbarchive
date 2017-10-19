@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316298: HOW TO: Choose a Volume Type for Your Windows NT Environment"
-permalink: kb/316/Q316298/
+permalink: /kb/316/Q316298/
 ---
 
 ## Q316298: HOW TO: Choose a Volume Type for Your Windows NT Environment

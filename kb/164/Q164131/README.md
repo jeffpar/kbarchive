@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164131: Policy &quot;Path for Manual Update&quot; Support for %LogonServer%"
-permalink: kb/164/Q164131/
+permalink: /kb/164/Q164131/
 ---
 
 ## Q164131: Policy &quot;Path for Manual Update&quot; Support for %LogonServer%

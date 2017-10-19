@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159055: NTBACKUP Always Reports Time as PM in Backup.log"
-permalink: kb/159/Q159055/
+permalink: /kb/159/Q159055/
 ---
 
 ## Q159055: NTBACKUP Always Reports Time as PM in Backup.log

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162428: MSB Dinosaurs: Err Msg: PCM Audio Codec is Not Installed"
-permalink: kb/162/Q162428/
+permalink: /kb/162/Q162428/
 ---
 
 ## Q162428: MSB Dinosaurs: Err Msg: PCM Audio Codec is Not Installed

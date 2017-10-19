@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234530: Unable to Change the Specified Driver for a Network Printer"
-permalink: kb/234/Q234530/
+permalink: /kb/234/Q234530/
 ---
 
 ## Q234530: Unable to Change the Specified Driver for a Network Printer

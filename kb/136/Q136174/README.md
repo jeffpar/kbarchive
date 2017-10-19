@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136174: PPT7: CABfile Contents, Disks 1-6"
-permalink: kb/136/Q136174/
+permalink: /kb/136/Q136174/
 ---
 
 ## Q136174: PPT7: CABfile Contents, Disks 1-6

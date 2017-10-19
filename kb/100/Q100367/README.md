@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100367: FIX: Referencing Data Object Gives Error: Object not an Array"
-permalink: kb/100/Q100367/
+permalink: /kb/100/Q100367/
 ---
 
 ## Q100367: FIX: Referencing Data Object Gives Error: Object not an Array

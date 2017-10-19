@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245058: XADM: Information Store Service Specific Error 4294966264"
-permalink: kb/245/Q245058/
+permalink: /kb/245/Q245058/
 ---
 
 ## Q245058: XADM: Information Store Service Specific Error 4294966264

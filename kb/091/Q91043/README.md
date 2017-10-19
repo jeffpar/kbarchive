@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91043: PC WFW: Notes Field Text Gets Cut Off"
-permalink: kb/091/Q91043/
+permalink: /kb/091/Q91043/
 ---
 
 ## Q91043: PC WFW: Notes Field Text Gets Cut Off

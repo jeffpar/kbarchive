@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210354: SMS: When Changing Package Access Accounts Must Update Package"
-permalink: kb/210/Q210354/
+permalink: /kb/210/Q210354/
 ---
 
 ## Q210354: SMS: When Changing Package Access Accounts Must Update Package

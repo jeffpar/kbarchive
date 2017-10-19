@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142056: Slow Performance with FPNW and More than 60 Printers"
-permalink: kb/142/Q142056/
+permalink: /kb/142/Q142056/
 ---
 
 ## Q142056: Slow Performance with FPNW and More than 60 Printers

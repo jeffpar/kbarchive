@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111746: Contents of the &quot;FoxPro Settings&quot; file"
-permalink: kb/111/Q111746/
+permalink: /kb/111/Q111746/
 ---
 
 ## Q111746: Contents of the &quot;FoxPro Settings&quot; file

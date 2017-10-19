@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210489: Golf 99 Err Msg: ...Exception 10h in Module Msvbvm50.dll"
-permalink: kb/210/Q210489/
+permalink: /kb/210/Q210489/
 ---
 
 ## Q210489: Golf 99 Err Msg: ...Exception 10h in Module Msvbvm50.dll

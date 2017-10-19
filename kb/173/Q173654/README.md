@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173654: Windows 95 Hangs When Running Server Tools"
-permalink: kb/173/Q173654/
+permalink: /kb/173/Q173654/
 ---
 
 ## Q173654: Windows 95 Hangs When Running Server Tools

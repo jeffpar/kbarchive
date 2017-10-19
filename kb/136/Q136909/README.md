@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136909: World of Flight 1.0: OPTHELP.TXT Contents"
-permalink: kb/136/Q136909/
+permalink: /kb/136/Q136909/
 ---
 
 ## Q136909: World of Flight 1.0: OPTHELP.TXT Contents

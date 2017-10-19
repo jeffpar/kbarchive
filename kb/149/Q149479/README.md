@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149479: BUG: Cannot Scroll to End of Last Field in Format Editor"
-permalink: kb/149/Q149479/
+permalink: /kb/149/Q149479/
 ---
 
 ## Q149479: BUG: Cannot Scroll to End of Last Field in Format Editor

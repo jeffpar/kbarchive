@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281269: XADM: Moving Mailboxes with Events Scripts Installed on Inbox"
-permalink: kb/281/Q281269/
+permalink: /kb/281/Q281269/
 ---
 
 ## Q281269: XADM: Moving Mailboxes with Events Scripts Installed on Inbox

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264956: 'STOP 0x50' Error Message with Terminal Server and HP LaserJet 1"
-permalink: kb/264/Q264956/
+permalink: /kb/264/Q264956/
 ---
 
 ## Q264956: 'STOP 0x50' Error Message with Terminal Server and HP LaserJet 1

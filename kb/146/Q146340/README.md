@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146340: Alt+Shift+tab Causes Schedule+ to Behave As If Shift Held Down"
-permalink: kb/146/Q146340/
+permalink: /kb/146/Q146340/
 ---
 
 ## Q146340: Alt+Shift+tab Causes Schedule+ to Behave As If Shift Held Down

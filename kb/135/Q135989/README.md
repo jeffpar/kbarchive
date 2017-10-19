@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135989: BUG: SQLNumResultCols Returns Zero for the pcCol Argument"
-permalink: kb/135/Q135989/
+permalink: /kb/135/Q135989/
 ---
 
 ## Q135989: BUG: SQLNumResultCols Returns Zero for the pcCol Argument

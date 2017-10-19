@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240944: BUG: ListView's Left/Top Properties Return Unexpected Values"
-permalink: kb/240/Q240944/
+permalink: /kb/240/Q240944/
 ---
 
 ## Q240944: BUG: ListView's Left/Top Properties Return Unexpected Values

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219327: Windows NT Err Msg: Corrupt and Unreadable File"
-permalink: kb/219/Q219327/
+permalink: /kb/219/Q219327/
 ---
 
 ## Q219327: Windows NT Err Msg: Corrupt and Unreadable File

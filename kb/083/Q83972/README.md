@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83972: File Manager Cannot Format Drive the System Was Started From"
-permalink: kb/083/Q83972/
+permalink: /kb/083/Q83972/
 ---
 
 ## Q83972: File Manager Cannot Format Drive the System Was Started From

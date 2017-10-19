@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172651: SNA Workstation Traps When an APPC Application Calls DISPLAY()"
-permalink: kb/172/Q172651/
+permalink: /kb/172/Q172651/
 ---
 
 ## Q172651: SNA Workstation Traps When an APPC Application Calls DISPLAY()

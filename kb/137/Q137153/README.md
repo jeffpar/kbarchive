@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137153: Problem Using Mach32 ISA Display Adapter on PCI Bus"
-permalink: kb/137/Q137153/
+permalink: /kb/137/Q137153/
 ---
 
 ## Q137153: Problem Using Mach32 ISA Display Adapter on PCI Bus

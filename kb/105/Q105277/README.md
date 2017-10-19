@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105277: Net Watcher Audit Log Shows Two Entries for Failed Password"
-permalink: kb/105/Q105277/
+permalink: /kb/105/Q105277/
 ---
 
 ## Q105277: Net Watcher Audit Log Shows Two Entries for Failed Password

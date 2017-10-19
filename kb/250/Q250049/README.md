@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250049: Domain Users Denied Access When Running Logon Script from PDC"
-permalink: kb/250/Q250049/
+permalink: /kb/250/Q250049/
 ---
 
 ## Q250049: Domain Users Denied Access When Running Logon Script from PDC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106095: ScanDisk Repeatedly Tells You to Exit and Run ScanDisk Again"
-permalink: kb/106/Q106095/
+permalink: /kb/106/Q106095/
 ---
 
 ## Q106095: ScanDisk Repeatedly Tells You to Exit and Run ScanDisk Again

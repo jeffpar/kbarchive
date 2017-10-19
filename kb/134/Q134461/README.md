@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134461: PPT7: Embedded OLE Object Won't Update in Branched Presentation"
-permalink: kb/134/Q134461/
+permalink: /kb/134/Q134461/
 ---
 
 ## Q134461: PPT7: Embedded OLE Object Won't Update in Branched Presentation

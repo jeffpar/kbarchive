@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199744: XFOR: Meeting Request Behavior on Delegation between Systems"
-permalink: kb/199/Q199744/
+permalink: /kb/199/Q199744/
 ---
 
 ## Q199744: XFOR: Meeting Request Behavior on Delegation between Systems

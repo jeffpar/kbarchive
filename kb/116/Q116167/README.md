@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116167: FIX: Visual Workbench Cannot Find WndProc in Windows 3.1 Apps"
-permalink: kb/116/Q116167/
+permalink: /kb/116/Q116167/
 ---
 
 ## Q116167: FIX: Visual Workbench Cannot Find WndProc in Windows 3.1 Apps

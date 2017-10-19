@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210527: Golf 99: &quot;Removing Game Files&quot; Displayed When You Add Courses"
-permalink: kb/210/Q210527/
+permalink: /kb/210/Q210527/
 ---
 
 ## Q210527: Golf 99: &quot;Removing Game Files&quot; Displayed When You Add Courses

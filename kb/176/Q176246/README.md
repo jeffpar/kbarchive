@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176246: XWEB: Unexpected Behavior when Accessing Outlook Web Access"
-permalink: kb/176/Q176246/
+permalink: /kb/176/Q176246/
 ---
 
 ## Q176246: XWEB: Unexpected Behavior when Accessing Outlook Web Access

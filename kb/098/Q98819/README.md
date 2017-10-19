@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98819: PROFS: 3.3 Distribution Manager Disk [5.25, 360K]"
-permalink: kb/098/Q98819/
+title: "Q98819: PROFS: 3.3 Distribution Manager Disk &#91;5.25, 360K&#93;"
+permalink: /kb/098/Q98819/
 ---
 
-## Q98819: PROFS: 3.3 Distribution Manager Disk [5.25, 360K]
+## Q98819: PROFS: 3.3 Distribution Manager Disk &#91;5.25, 360K&#93;
 
 	Article: Q98819
 	Product(s): Microsoft Mail For PC Networks

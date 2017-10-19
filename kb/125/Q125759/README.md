@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125759: Windows NT3.5 Improves Performance with Intel Neptune PCI Chip"
-permalink: kb/125/Q125759/
+permalink: /kb/125/Q125759/
 ---
 
 ## Q125759: Windows NT3.5 Improves Performance with Intel Neptune PCI Chip

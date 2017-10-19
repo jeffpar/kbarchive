@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98268: PRB: Metafiles and Palettes"
-permalink: kb/098/Q98268/
+permalink: /kb/098/Q98268/
 ---
 
 ## Q98268: PRB: Metafiles and Palettes

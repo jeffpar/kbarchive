@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129228: PRB: &quot;Syntax Error&quot; When Using the GETDIR() Function"
-permalink: kb/129/Q129228/
+permalink: /kb/129/Q129228/
 ---
 
 ## Q129228: PRB: &quot;Syntax Error&quot; When Using the GETDIR() Function

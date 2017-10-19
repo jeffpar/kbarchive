@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200555: HOWTO: Localize Stock ActiveX Property Pages With MFC Resources"
-permalink: kb/200/Q200555/
+permalink: /kb/200/Q200555/
 ---
 
 ## Q200555: HOWTO: Localize Stock ActiveX Property Pages With MFC Resources

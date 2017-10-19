@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76816: SYSTEM.INI Settings for Multimedia Windows"
-permalink: kb/076/Q76816/
+permalink: /kb/076/Q76816/
 ---
 
 ## Q76816: SYSTEM.INI Settings for Multimedia Windows

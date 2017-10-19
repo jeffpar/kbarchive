@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122313: Err Msg: Error 7361: IPX or NetBIOS Must Be Running..."
-permalink: kb/122/Q122313/
+permalink: /kb/122/Q122313/
 ---
 
 ## Q122313: Err Msg: Error 7361: IPX or NetBIOS Must Be Running...

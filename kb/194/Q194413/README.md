@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194413: XWEB: OWA: Can't Save or Resend Message After &quot;failed to send&quot;"
-permalink: kb/194/Q194413/
+permalink: /kb/194/Q194413/
 ---
 
 ## Q194413: XWEB: OWA: Can't Save or Resend Message After &quot;failed to send&quot;

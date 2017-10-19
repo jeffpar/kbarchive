@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192065: XADM: High CPU Usage by STORE Displaying a Folder View"
-permalink: kb/192/Q192065/
+permalink: /kb/192/Q192065/
 ---
 
 ## Q192065: XADM: High CPU Usage by STORE Displaying a Folder View

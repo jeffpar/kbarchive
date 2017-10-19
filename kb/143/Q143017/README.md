@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143017: PPT7: New Window Opened When Inserted Object Activated"
-permalink: kb/143/Q143017/
+permalink: /kb/143/Q143017/
 ---
 
 ## Q143017: PPT7: New Window Opened When Inserted Object Activated

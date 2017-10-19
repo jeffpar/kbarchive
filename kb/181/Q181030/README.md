@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181030: SNAPRINT Ignores SCS Codes, Print Job Ignores SCS Formatting"
-permalink: kb/181/Q181030/
+permalink: /kb/181/Q181030/
 ---
 
 ## Q181030: SNAPRINT Ignores SCS Codes, Print Job Ignores SCS Formatting

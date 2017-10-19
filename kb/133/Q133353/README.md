@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133353: FAQs about E-mail on The Microsoft Network"
-permalink: kb/133/Q133353/
+permalink: /kb/133/Q133353/
 ---
 
 ## Q133353: FAQs about E-mail on The Microsoft Network

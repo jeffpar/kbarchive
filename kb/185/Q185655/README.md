@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185655: FIX: TMP File Errors If ALTER TABLE Runs Same Time As ODBC DLL"
-permalink: kb/185/Q185655/
+permalink: /kb/185/Q185655/
 ---
 
 ## Q185655: FIX: TMP File Errors If ALTER TABLE Runs Same Time As ODBC DLL

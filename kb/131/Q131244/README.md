@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131244: How the Component Manager for The Microsoft Network Works"
-permalink: kb/131/Q131244/
+permalink: /kb/131/Q131244/
 ---
 
 ## Q131244: How the Component Manager for The Microsoft Network Works

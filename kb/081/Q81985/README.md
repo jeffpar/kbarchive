@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81985: Sound Recorder Does Not Save As with a Default Extension"
-permalink: kb/081/Q81985/
+permalink: /kb/081/Q81985/
 ---
 
 ## Q81985: Sound Recorder Does Not Save As with a Default Extension

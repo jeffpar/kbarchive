@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109250: Supplemental Disk GRAFTABL.COM ErrMsg: Incorrect DOS Version"
-permalink: kb/109/Q109250/
+permalink: /kb/109/Q109250/
 ---
 
 ## Q109250: Supplemental Disk GRAFTABL.COM ErrMsg: Incorrect DOS Version

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117833: FIX: C2662: &quot;'&#95;&#95;vbaseDtor' cannot convert 'this' pointer&quot;"
-permalink: kb/117/Q117833/
+permalink: /kb/117/Q117833/
 ---
 
 ## Q117833: FIX: C2662: &quot;'&#95;&#95;vbaseDtor' cannot convert 'this' pointer&quot;

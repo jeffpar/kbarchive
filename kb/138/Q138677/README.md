@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138677: BUG: CREATE SQL VIEW Scrambles the Parentheses in SQL Command"
-permalink: kb/138/Q138677/
+permalink: /kb/138/Q138677/
 ---
 
 ## Q138677: BUG: CREATE SQL VIEW Scrambles the Parentheses in SQL Command

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107178: Flight Simulator: Cannot Maximize Forward View"
-permalink: kb/107/Q107178/
+permalink: /kb/107/Q107178/
 ---
 
 ## Q107178: Flight Simulator: Cannot Maximize Forward View

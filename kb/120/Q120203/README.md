@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120203: Bookshelf 1994: Numbers in Tables Overlap"
-permalink: kb/120/Q120203/
+permalink: /kb/120/Q120203/
 ---
 
 ## Q120203: Bookshelf 1994: Numbers in Tables Overlap

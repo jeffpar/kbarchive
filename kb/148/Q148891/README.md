@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148891: PRB: Printer Setup Not Remembered When Using Visual C++ 4.x App"
-permalink: kb/148/Q148891/
+permalink: /kb/148/Q148891/
 ---
 
 ## Q148891: PRB: Printer Setup Not Remembered When Using Visual C++ 4.x App

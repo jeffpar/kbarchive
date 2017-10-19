@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239424: Winsock Error: Can't Assign Requested Address"
-permalink: kb/239/Q239424/
+permalink: /kb/239/Q239424/
 ---
 
 ## Q239424: Winsock Error: Can't Assign Requested Address

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200759: SMS: IBM Thinkpad Video Driver Causes GPF in Sms.exe"
-permalink: kb/200/Q200759/
+permalink: /kb/200/Q200759/
 ---
 
 ## Q200759: SMS: IBM Thinkpad Video Driver Causes GPF in Sms.exe

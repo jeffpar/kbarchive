@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103473: SFM: MacFile Menu Not Displayed if NTAS Drive Letter Changes"
-permalink: kb/103/Q103473/
+permalink: /kb/103/Q103473/
 ---
 
 ## Q103473: SFM: MacFile Menu Not Displayed if NTAS Drive Letter Changes

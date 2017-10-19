@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108808: Remote Access Service - Error 714: Configuration Error"
-permalink: kb/108/Q108808/
+permalink: /kb/108/Q108808/
 ---
 
 ## Q108808: Remote Access Service - Error 714: Configuration Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111292: Windows for Workgroups 3.11 Point-to-Point Server Update"
-permalink: kb/111/Q111292/
+permalink: /kb/111/Q111292/
 ---
 
 ## Q111292: Windows for Workgroups 3.11 Point-to-Point Server Update

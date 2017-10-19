@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155216: XADM: How to Move Exchange Server to a New Computer w/ Same Name"
-permalink: kb/155/Q155216/
+permalink: /kb/155/Q155216/
 ---
 
 ## Q155216: XADM: How to Move Exchange Server to a New Computer w/ Same Name

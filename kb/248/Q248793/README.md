@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248793: XCLN: Renaming Mailbox That Is Displayed in Outlook"
-permalink: kb/248/Q248793/
+permalink: /kb/248/Q248793/
 ---
 
 ## Q248793: XCLN: Renaming Mailbox That Is Displayed in Outlook

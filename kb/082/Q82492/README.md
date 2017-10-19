@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82492: Canon LBP III: Time-Out Printing Mixed Orientations"
-permalink: kb/082/Q82492/
+permalink: /kb/082/Q82492/
 ---
 
 ## Q82492: Canon LBP III: Time-Out Printing Mixed Orientations

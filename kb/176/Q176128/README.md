@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176128: XCON: Message to SMTP Address Fails with Reason 0"
-permalink: kb/176/Q176128/
+permalink: /kb/176/Q176128/
 ---
 
 ## Q176128: XCON: Message to SMTP Address Fails with Reason 0

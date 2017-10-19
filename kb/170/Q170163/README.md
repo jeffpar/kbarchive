@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170163: INFO: VB 6.0 Readme Part 2: Data Access/Databinding Issues"
-permalink: kb/170/Q170163/
+permalink: /kb/170/Q170163/
 ---
 
 ## Q170163: INFO: VB 6.0 Readme Part 2: Data Access/Databinding Issues

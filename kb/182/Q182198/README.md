@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182198: XADM: Server Invocation ID Identical to Other Server's UUID"
-permalink: kb/182/Q182198/
+permalink: /kb/182/Q182198/
 ---
 
 ## Q182198: XADM: Server Invocation ID Identical to Other Server's UUID

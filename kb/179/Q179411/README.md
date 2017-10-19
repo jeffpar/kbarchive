@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179411: Description of the DirectX Tool in Control Panel"
-permalink: kb/179/Q179411/
+permalink: /kb/179/Q179411/
 ---
 
 ## Q179411: Description of the DirectX Tool in Control Panel

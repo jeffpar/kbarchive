@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297815: Microsoft Word 97/Excel 97 In Depth Training Starts Here Comment"
-permalink: kb/297/Q297815/
+permalink: /kb/297/Q297815/
 ---
 
 ## Q297815: Microsoft Word 97/Excel 97 In Depth Training Starts Here Comment

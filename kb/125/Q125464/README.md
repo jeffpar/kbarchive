@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125464: How to Call SetCursorPos() API to Move Mouse Pointer in FoxPro"
-permalink: kb/125/Q125464/
+permalink: /kb/125/Q125464/
 ---
 
 ## Q125464: How to Call SetCursorPos() API to Move Mouse Pointer in FoxPro

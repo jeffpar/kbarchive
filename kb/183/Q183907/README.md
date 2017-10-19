@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183907: Australian Daylight Saving Transition Dates Incorrect"
-permalink: kb/183/Q183907/
+permalink: /kb/183/Q183907/
 ---
 
 ## Q183907: Australian Daylight Saving Transition Dates Incorrect

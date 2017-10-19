@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97145: PC WRmt: System Selector Does Not Validate Its Results"
-permalink: kb/097/Q97145/
+permalink: /kb/097/Q97145/
 ---
 
 ## Q97145: PC WRmt: System Selector Does Not Validate Its Results

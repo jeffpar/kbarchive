@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195756: Err Msg: Your System Is Missing the Required Setup Engine"
-permalink: kb/195/Q195756/
+permalink: /kb/195/Q195756/
 ---
 
 ## Q195756: Err Msg: Your System Is Missing the Required Setup Engine

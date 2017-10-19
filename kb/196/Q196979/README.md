@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196979: WD97: Save As Text Converts Table to Paragraph-Delimited Text"
-permalink: kb/196/Q196979/
+permalink: /kb/196/Q196979/
 ---
 
 ## Q196979: WD97: Save As Text Converts Table to Paragraph-Delimited Text

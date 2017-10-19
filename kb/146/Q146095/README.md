@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146095: STOP: 0x0000000A or STOP: 0x0000001E in Tcpip.sys"
-permalink: kb/146/Q146095/
+permalink: /kb/146/Q146095/
 ---
 
 ## Q146095: STOP: 0x0000000A or STOP: 0x0000001E in Tcpip.sys

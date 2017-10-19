@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196408: XADM: Move Server Logs Failure if MailBox has no WinNT Account"
-permalink: kb/196/Q196408/
+permalink: /kb/196/Q196408/
 ---
 
 ## Q196408: XADM: Move Server Logs Failure if MailBox has no WinNT Account

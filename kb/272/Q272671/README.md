@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272671: Golf 2001: Unable to Adjust the Master Volume in the Game"
-permalink: kb/272/Q272671/
+permalink: /kb/272/Q272671/
 ---
 
 ## Q272671: Golf 2001: Unable to Adjust the Master Volume in the Game

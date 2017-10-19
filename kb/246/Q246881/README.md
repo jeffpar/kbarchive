@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246881: XIMS: NDR Includes DL Name Rather Than Individual Recipient"
-permalink: kb/246/Q246881/
+permalink: /kb/246/Q246881/
 ---
 
 ## Q246881: XIMS: NDR Includes DL Name Rather Than Individual Recipient

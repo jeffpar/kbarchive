@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260167: XCON: MTA Stops Communicating with Other MTAs in the Same Site"
-permalink: kb/260/Q260167/
+permalink: /kb/260/Q260167/
 ---
 
 ## Q260167: XCON: MTA Stops Communicating with Other MTAs in the Same Site

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246313: BUG: Certain Icons May Cause Error with FoxPro"
-permalink: kb/246/Q246313/
+permalink: /kb/246/Q246313/
 ---
 
 ## Q246313: BUG: Certain Icons May Cause Error with FoxPro

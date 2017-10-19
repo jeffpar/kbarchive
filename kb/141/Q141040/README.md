@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141040: BUG: Step Out in Debugger Ignores Try/Catch Scope"
-permalink: kb/141/Q141040/
+permalink: /kb/141/Q141040/
 ---
 
 ## Q141040: BUG: Step Out in Debugger Ignores Try/Catch Scope

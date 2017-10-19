@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176751: WD97: How to Print a List of AutoCorrect Entries"
-permalink: kb/176/Q176751/
+permalink: /kb/176/Q176751/
 ---
 
 ## Q176751: WD97: How to Print a List of AutoCorrect Entries

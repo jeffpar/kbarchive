@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140507: Golf 2.0 CD: How to Perform a Minimum Installation"
-permalink: kb/140/Q140507/
+permalink: /kb/140/Q140507/
 ---
 
 ## Q140507: Golf 2.0 CD: How to Perform a Minimum Installation

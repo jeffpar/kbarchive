@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194711: X400: Characters with Diacritical Marks Aren't Encoded Properly"
-permalink: kb/194/Q194711/
+permalink: /kb/194/Q194711/
 ---
 
 ## Q194711: X400: Characters with Diacritical Marks Aren't Encoded Properly

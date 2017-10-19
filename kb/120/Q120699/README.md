@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120699: Space: Manual Setup Does Not Install a Planetary System"
-permalink: kb/120/Q120699/
+permalink: /kb/120/Q120699/
 ---
 
 ## Q120699: Space: Manual Setup Does Not Install a Planetary System

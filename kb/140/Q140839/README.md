@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140839: Disk and Setup Problems with Win16 to Win32 Thunking DLL Files"
-permalink: kb/140/Q140839/
+permalink: /kb/140/Q140839/
 ---
 
 ## Q140839: Disk and Setup Problems with Win16 to Win32 Thunking DLL Files

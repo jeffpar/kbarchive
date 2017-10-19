@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195135: WD97: Error Message: &quot;The subdocument ...is missing&quot;"
-permalink: kb/195/Q195135/
+permalink: /kb/195/Q195135/
 ---
 
 ## Q195135: WD97: Error Message: &quot;The subdocument ...is missing&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175288: Extra Modem Settings D-H for Connecting to MSN"
-permalink: kb/175/Q175288/
+permalink: /kb/175/Q175288/
 ---
 
 ## Q175288: Extra Modem Settings D-H for Connecting to MSN

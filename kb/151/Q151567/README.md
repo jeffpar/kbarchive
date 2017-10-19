@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151567: FP: Using NCSA or CERN Image Maps with PWS Upgrade"
-permalink: kb/151/Q151567/
+permalink: /kb/151/Q151567/
 ---
 
 ## Q151567: FP: Using NCSA or CERN Image Maps with PWS Upgrade

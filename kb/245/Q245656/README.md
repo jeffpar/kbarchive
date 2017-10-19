@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245656: INFO: Where to Obtain Cluster Automation Server"
-permalink: kb/245/Q245656/
+permalink: /kb/245/Q245656/
 ---
 
 ## Q245656: INFO: Where to Obtain Cluster Automation Server

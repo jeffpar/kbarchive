@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197674: WD97: How to Automatically Scroll While Reading Document"
-permalink: kb/197/Q197674/
+permalink: /kb/197/Q197674/
 ---
 
 ## Q197674: WD97: How to Automatically Scroll While Reading Document

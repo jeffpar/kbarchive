@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149401: Event 560, 562 When No Objects Have Been Selected for Auditing"
-permalink: kb/149/Q149401/
+permalink: /kb/149/Q149401/
 ---
 
 ## Q149401: Event 560, 562 When No Objects Have Been Selected for Auditing

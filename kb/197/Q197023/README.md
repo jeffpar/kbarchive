@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197023: WD97: Rotated or Flipped Text in Macpict Graphic Seems Distorted"
-permalink: kb/197/Q197023/
+permalink: /kb/197/Q197023/
 ---
 
 ## Q197023: WD97: Rotated or Flipped Text in Macpict Graphic Seems Distorted

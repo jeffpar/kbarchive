@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131253: PRB: Right Mouse Functions Incorrectly w/ IntelliPoint Driver"
-permalink: kb/131/Q131253/
+permalink: /kb/131/Q131253/
 ---
 
 ## Q131253: PRB: Right Mouse Functions Incorrectly w/ IntelliPoint Driver

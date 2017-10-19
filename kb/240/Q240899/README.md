@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240899: Error Message: You Must Select at Least One Network Protocol"
-permalink: kb/240/Q240899/
+permalink: /kb/240/Q240899/
 ---
 
 ## Q240899: Error Message: You Must Select at Least One Network Protocol

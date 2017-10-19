@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196947: SNA Server Sessions Lost Over 802.2 DLC Connection."
-permalink: kb/196/Q196947/
+permalink: /kb/196/Q196947/
 ---
 
 ## Q196947: SNA Server Sessions Lost Over 802.2 DLC Connection.

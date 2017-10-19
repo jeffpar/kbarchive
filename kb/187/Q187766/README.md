@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187766: Slow Performance Saving Documents to FPNW Server"
-permalink: kb/187/Q187766/
+permalink: /kb/187/Q187766/
 ---
 
 ## Q187766: Slow Performance Saving Documents to FPNW Server

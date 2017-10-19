@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184813: BUG: Windows 95 Clients Cannot View Server Using Net View"
-permalink: kb/184/Q184813/
+permalink: /kb/184/Q184813/
 ---
 
 ## Q184813: BUG: Windows 95 Clients Cannot View Server Using Net View

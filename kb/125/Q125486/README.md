@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125486: TCP/IP Ioctlsocket Function Returns Incorrect Data"
-permalink: kb/125/Q125486/
+permalink: /kb/125/Q125486/
 ---
 
 ## Q125486: TCP/IP Ioctlsocket Function Returns Incorrect Data

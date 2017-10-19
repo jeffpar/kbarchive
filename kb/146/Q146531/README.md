@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146531: XCLN: Modified OLE Object Changes Back to Original State"
-permalink: kb/146/Q146531/
+permalink: /kb/146/Q146531/
 ---
 
 ## Q146531: XCLN: Modified OLE Object Changes Back to Original State

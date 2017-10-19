@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197151: WD97: Can't Print More Than One Page of Embedded Objects"
-permalink: kb/197/Q197151/
+permalink: /kb/197/Q197151/
 ---
 
 ## Q197151: WD97: Can't Print More Than One Page of Embedded Objects

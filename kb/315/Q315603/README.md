@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315603: HOW TO: Create a Class Derived from CControlBar and Its SubClass"
-permalink: kb/315/Q315603/
+permalink: /kb/315/Q315603/
 ---
 
 ## Q315603: HOW TO: Create a Class Derived from CControlBar and Its SubClass

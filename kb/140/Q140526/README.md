@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140526: WinRUICleanup Sets Incorrect Return Code"
-permalink: kb/140/Q140526/
+permalink: /kb/140/Q140526/
 ---
 
 ## Q140526: WinRUICleanup Sets Incorrect Return Code

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108077: WFWG Err Msg: Error 59: An Unexpected Network Error..."
-permalink: kb/108/Q108077/
+permalink: /kb/108/Q108077/
 ---
 
 ## Q108077: WFWG Err Msg: Error 59: An Unexpected Network Error...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99332: Missing Font Selections in a Windowed MS-DOS-Based Application"
-permalink: kb/099/Q99332/
+permalink: /kb/099/Q99332/
 ---
 
 ## Q99332: Missing Font Selections in a Windowed MS-DOS-Based Application

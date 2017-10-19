@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150925: How to Uninstall Novell's 32-Bit Network Client"
-permalink: kb/150/Q150925/
+permalink: /kb/150/Q150925/
 ---
 
 ## Q150925: How to Uninstall Novell's 32-Bit Network Client

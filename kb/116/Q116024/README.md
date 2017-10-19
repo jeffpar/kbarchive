@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116024: PRB: Errors Occur when Using Database Classes with Access 2.0"
-permalink: kb/116/Q116024/
+permalink: /kb/116/Q116024/
 ---
 
 ## Q116024: PRB: Errors Occur when Using Database Classes with Access 2.0

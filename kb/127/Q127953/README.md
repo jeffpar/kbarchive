@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127953: PC WRmt: Remote Mail to Group with New User Not Delivered"
-permalink: kb/127/Q127953/
+permalink: /kb/127/Q127953/
 ---
 
 ## Q127953: PC WRmt: Remote Mail to Group with New User Not Delivered

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163086: IBM MWave 28800 Modem Does Not Function Properly with RAS"
-permalink: kb/163/Q163086/
+permalink: /kb/163/Q163086/
 ---
 
 ## Q163086: IBM MWave 28800 Modem Does Not Function Properly with RAS

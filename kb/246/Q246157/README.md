@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246157: FS2000: Kneeboard Is Not Displayed"
-permalink: kb/246/Q246157/
+permalink: /kb/246/Q246157/
 ---
 
 ## Q246157: FS2000: Kneeboard Is Not Displayed

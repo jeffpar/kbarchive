@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145583: Err Msg: Insufficient System Resources Exist to Complete..."
-permalink: kb/145/Q145583/
+permalink: /kb/145/Q145583/
 ---
 
 ## Q145583: Err Msg: Insufficient System Resources Exist to Complete...

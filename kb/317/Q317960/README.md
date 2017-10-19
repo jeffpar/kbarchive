@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317960: SNMP Management Programs Stop Responding on Invalid Trap Frames"
-permalink: kb/317/Q317960/
+permalink: /kb/317/Q317960/
 ---
 
 ## Q317960: SNMP Management Programs Stop Responding on Invalid Trap Frames

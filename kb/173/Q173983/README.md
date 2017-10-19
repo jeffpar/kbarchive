@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173983: ESS ES1888 Does not Play Sounds in Flight Simulator 95"
-permalink: kb/173/Q173983/
+permalink: /kb/173/Q173983/
 ---
 
 ## Q173983: ESS ES1888 Does not Play Sounds in Flight Simulator 95

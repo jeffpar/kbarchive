@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162251: PRB: Closing a Top-Level Form Hangs Visual FoxPro"
-permalink: kb/162/Q162251/
+permalink: /kb/162/Q162251/
 ---
 
 ## Q162251: PRB: Closing a Top-Level Form Hangs Visual FoxPro

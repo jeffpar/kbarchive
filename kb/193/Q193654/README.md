@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193654: Services Continue to Run After Shutdown Initiated"
-permalink: kb/193/Q193654/
+permalink: /kb/193/Q193654/
 ---
 
 ## Q193654: Services Continue to Run After Shutdown Initiated

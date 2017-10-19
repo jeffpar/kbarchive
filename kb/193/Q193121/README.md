@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193121: Cannot Connect to DFS Leaf a Second Time If Server Is NetWare"
-permalink: kb/193/Q193121/
+permalink: /kb/193/Q193121/
 ---
 
 ## Q193121: Cannot Connect to DFS Leaf a Second Time If Server Is NetWare

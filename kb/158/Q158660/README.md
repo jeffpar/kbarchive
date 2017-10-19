@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158660: LEARN JAVA NOW Corrections and Comments"
-permalink: kb/158/Q158660/
+permalink: /kb/158/Q158660/
 ---
 
 ## Q158660: LEARN JAVA NOW Corrections and Comments

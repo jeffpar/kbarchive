@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88822: PRINTER.WRI Incorrectly States TTFavor Switch"
-permalink: kb/088/Q88822/
+permalink: /kb/088/Q88822/
 ---
 
 ## Q88822: PRINTER.WRI Incorrectly States TTFavor Switch

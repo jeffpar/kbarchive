@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93230: Windows APPC for 16 and 32-Bit Windows"
-permalink: kb/093/Q93230/
+permalink: /kb/093/Q93230/
 ---
 
 ## Q93230: Windows APPC for 16 and 32-Bit Windows

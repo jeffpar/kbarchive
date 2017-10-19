@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196403: XADM: Newly Replicated Folders Appear Not to Have Content"
-permalink: kb/196/Q196403/
+permalink: /kb/196/Q196403/
 ---
 
 ## Q196403: XADM: Newly Replicated Folders Appear Not to Have Content

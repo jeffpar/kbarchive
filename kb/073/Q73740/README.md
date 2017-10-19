@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73740: ATI Wondercard Comes with Mouse Port"
-permalink: kb/073/Q73740/
+permalink: /kb/073/Q73740/
 ---
 
 ## Q73740: ATI Wondercard Comes with Mouse Port

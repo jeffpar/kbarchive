@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150719: Mac Bookshelf 96-97 Error: Bookshelf Requires AppleScriptLib"
-permalink: kb/150/Q150719/
+permalink: /kb/150/Q150719/
 ---
 
 ## Q150719: Mac Bookshelf 96-97 Error: Bookshelf Requires AppleScriptLib

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139971: BUG:DBGrid with Visible Property Set to False Becomes Visible"
-permalink: kb/139/Q139971/
+permalink: /kb/139/Q139971/
 ---
 
 ## Q139971: BUG:DBGrid with Visible Property Set to False Becomes Visible

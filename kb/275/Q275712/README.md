@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275712: BUG: Custom Build Step Is Not Applied to New Configuration"
-permalink: kb/275/Q275712/
+permalink: /kb/275/Q275712/
 ---
 
 ## Q275712: BUG: Custom Build Step Is Not Applied to New Configuration

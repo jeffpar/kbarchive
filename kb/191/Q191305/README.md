@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191305: SMS: Hierarchy Manager Can Ignore the Site Attachment Dump"
-permalink: kb/191/Q191305/
+permalink: /kb/191/Q191305/
 ---
 
 ## Q191305: SMS: Hierarchy Manager Can Ignore the Site Attachment Dump

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69987: MASM Optimizations Not Recognized by Some Processors"
-permalink: kb/069/Q69987/
+permalink: /kb/069/Q69987/
 ---
 
 ## Q69987: MASM Optimizations Not Recognized by Some Processors

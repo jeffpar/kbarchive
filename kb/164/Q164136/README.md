@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164136: XCON: MSMail Read Receipts Missing Subject: and To: Information"
-permalink: kb/164/Q164136/
+permalink: /kb/164/Q164136/
 ---
 
 ## Q164136: XCON: MSMail Read Receipts Missing Subject: and To: Information

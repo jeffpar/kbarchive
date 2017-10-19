@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223361: DOC: Return Values Incorrectly Described for Time.getDayofWeek"
-permalink: kb/223/Q223361/
+permalink: /kb/223/Q223361/
 ---
 
 ## Q223361: DOC: Return Values Incorrectly Described for Time.getDayofWeek

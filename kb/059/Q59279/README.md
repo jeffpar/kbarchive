@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59279: PRB: L4013 or L4014 Performing /INCREMENTAL Link with Overlays"
-permalink: kb/059/Q59279/
+permalink: /kb/059/Q59279/
 ---
 
 ## Q59279: PRB: L4013 or L4014 Performing /INCREMENTAL Link with Overlays

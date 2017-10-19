@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216852: Device Settings in Printer Properties Will Reset to Default"
-permalink: kb/216/Q216852/
+permalink: /kb/216/Q216852/
 ---
 
 ## Q216852: Device Settings in Printer Properties Will Reset to Default

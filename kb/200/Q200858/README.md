@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200858: SMS: WinNT 3.51 Clients Fail w/Wbemsdk.exe Err. After WBEM Inst."
-permalink: kb/200/Q200858/
+permalink: /kb/200/Q200858/
 ---
 
 ## Q200858: SMS: WinNT 3.51 Clients Fail w/Wbemsdk.exe Err. After WBEM Inst.

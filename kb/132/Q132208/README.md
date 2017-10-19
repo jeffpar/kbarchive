@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132208: PC Win: Certain Tab and Hyphen Characters Are Modified"
-permalink: kb/132/Q132208/
+permalink: /kb/132/Q132208/
 ---
 
 ## Q132208: PC Win: Certain Tab and Hyphen Characters Are Modified

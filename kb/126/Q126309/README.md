@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126309: WinNT 3.5 Does Not Automatically Share CD-ROM and Floppy Drives"
-permalink: kb/126/Q126309/
+permalink: /kb/126/Q126309/
 ---
 
 ## Q126309: WinNT 3.5 Does Not Automatically Share CD-ROM and Floppy Drives

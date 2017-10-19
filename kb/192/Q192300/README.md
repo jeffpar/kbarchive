@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192300: HOWTO: Use ADSI for Printer Information and Control"
-permalink: kb/192/Q192300/
+permalink: /kb/192/Q192300/
 ---
 
 ## Q192300: HOWTO: Use ADSI for Printer Information and Control

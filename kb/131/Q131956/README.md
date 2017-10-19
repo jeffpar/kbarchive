@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131956: HOWTO: Run the Macintosh SourceSafe SSADMIN Tool"
-permalink: kb/131/Q131956/
+permalink: /kb/131/Q131956/
 ---
 
 ## Q131956: HOWTO: Run the Macintosh SourceSafe SSADMIN Tool

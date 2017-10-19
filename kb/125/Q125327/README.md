@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125327: Mac ARA: PowerBook Model 540c Hangs When Downloading Resources"
-permalink: kb/125/Q125327/
+permalink: /kb/125/Q125327/
 ---
 
 ## Q125327: Mac ARA: PowerBook Model 540c Hangs When Downloading Resources

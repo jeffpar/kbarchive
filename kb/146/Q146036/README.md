@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146036: XCLN: Deliver/Read Receipts Continue Though Turned Off"
-permalink: kb/146/Q146036/
+permalink: /kb/146/Q146036/
 ---
 
 ## Q146036: XCLN: Deliver/Read Receipts Continue Though Turned Off

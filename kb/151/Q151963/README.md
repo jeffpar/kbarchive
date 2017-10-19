@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151963: CGI Scripts Must Use Full Directory Path"
-permalink: kb/151/Q151963/
+permalink: /kb/151/Q151963/
 ---
 
 ## Q151963: CGI Scripts Must Use Full Directory Path

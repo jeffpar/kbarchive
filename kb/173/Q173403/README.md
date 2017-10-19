@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173403: Deleting Non-Existent File Causes Event ID 2000"
-permalink: kb/173/Q173403/
+permalink: /kb/173/Q173403/
 ---
 
 ## Q173403: Deleting Non-Existent File Causes Event ID 2000

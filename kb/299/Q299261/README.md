@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299261: SMS: &quot;The Software Metering Server Is Not Running&quot; Message"
-permalink: kb/299/Q299261/
+permalink: /kb/299/Q299261/
 ---
 
 ## Q299261: SMS: &quot;The Software Metering Server Is Not Running&quot; Message

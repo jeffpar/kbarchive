@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149277: BUG: SSCommand Click Fired with Double-Click in Common Dialog"
-permalink: kb/149/Q149277/
+permalink: /kb/149/Q149277/
 ---
 
 ## Q149277: BUG: SSCommand Click Fired with Double-Click in Common Dialog

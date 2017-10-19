@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240882: PRB: SP Calls May Result in Attentions Being Seen on SQL Server"
-permalink: kb/240/Q240882/
+permalink: /kb/240/Q240882/
 ---
 
 ## Q240882: PRB: SP Calls May Result in Attentions Being Seen on SQL Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133734: PPT7: Font Smoothing in Slide Show Built Text Looks Bad"
-permalink: kb/133/Q133734/
+permalink: /kb/133/Q133734/
 ---
 
 ## Q133734: PPT7: Font Smoothing in Slide Show Built Text Looks Bad

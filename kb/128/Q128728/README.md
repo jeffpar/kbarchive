@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128728: How Visual FoxPro Organizes and Accesses Wizards"
-permalink: kb/128/Q128728/
+permalink: /kb/128/Q128728/
 ---
 
 ## Q128728: How Visual FoxPro Organizes and Accesses Wizards

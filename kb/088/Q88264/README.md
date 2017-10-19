@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88264: Dell 433DE Requires 1.00 A07 BIOS for More than 16 MB"
-permalink: kb/088/Q88264/
+permalink: /kb/088/Q88264/
 ---
 
 ## Q88264: Dell 433DE Requires 1.00 A07 BIOS for More than 16 MB

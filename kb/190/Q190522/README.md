@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190522: PRB: Error Setting Field Format Property of Access Tables"
-permalink: kb/190/Q190522/
+permalink: /kb/190/Q190522/
 ---
 
 ## Q190522: PRB: Error Setting Field Format Property of Access Tables

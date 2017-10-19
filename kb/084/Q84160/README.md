@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84160: Help Screen Replaced When QuicKeys Is Activated"
-permalink: kb/084/Q84160/
+permalink: /kb/084/Q84160/
 ---
 
 ## Q84160: Help Screen Replaced When QuicKeys Is Activated

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107815: NET START FULL Invokes Intel SatisFAXtion Fax Popup"
-permalink: kb/107/Q107815/
+permalink: /kb/107/Q107815/
 ---
 
 ## Q107815: NET START FULL Invokes Intel SatisFAXtion Fax Popup

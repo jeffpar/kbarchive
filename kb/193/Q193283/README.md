@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193283: XADM: Meeting Update Generates NDR After Moving Server"
-permalink: kb/193/Q193283/
+permalink: /kb/193/Q193283/
 ---
 
 ## Q193283: XADM: Meeting Update Generates NDR After Moving Server

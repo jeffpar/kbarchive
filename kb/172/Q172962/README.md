@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172962: WD97: Parentheses Do Not Appear in Result of Form Field Number"
-permalink: kb/172/Q172962/
+permalink: /kb/172/Q172962/
 ---
 
 ## Q172962: WD97: Parentheses Do Not Appear in Result of Form Field Number

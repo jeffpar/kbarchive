@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134952: FFAPI: COURPUT 201: Failure Submitting Message..."
-permalink: kb/134/Q134952/
+permalink: /kb/134/Q134952/
 ---
 
 ## Q134952: FFAPI: COURPUT 201: Failure Submitting Message...

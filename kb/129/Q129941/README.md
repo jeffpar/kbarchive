@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129941: PRB:Unexpected Results When Raise Method Propogates OLE Errors"
-permalink: kb/129/Q129941/
+permalink: /kb/129/Q129941/
 ---
 
 ## Q129941: PRB:Unexpected Results When Raise Method Propogates OLE Errors

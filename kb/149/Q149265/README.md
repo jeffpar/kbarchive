@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149265: BUG: SSCommand Button Loses Focus Rectangle"
-permalink: kb/149/Q149265/
+permalink: /kb/149/Q149265/
 ---
 
 ## Q149265: BUG: SSCommand Button Loses Focus Rectangle

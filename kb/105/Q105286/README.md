@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105286: HOWTO: Clean Up Temporary MFC Object in _USRDLL DLLs"
-permalink: kb/105/Q105286/
+permalink: /kb/105/Q105286/
 ---
 
 ## Q105286: HOWTO: Clean Up Temporary MFC Object in _USRDLL DLLs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279064: MSN Companion Troubleshooting Tools Secret Codes"
-permalink: kb/279/Q279064/
+permalink: /kb/279/Q279064/
 ---
 
 ## Q279064: MSN Companion Troubleshooting Tools Secret Codes

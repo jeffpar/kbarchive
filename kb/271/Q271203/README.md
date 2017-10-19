@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271203: XADM: Accounts  Moved with Clone Principal Not Resolved"
-permalink: kb/271/Q271203/
+permalink: /kb/271/Q271203/
 ---
 
 ## Q271203: XADM: Accounts  Moved with Clone Principal Not Resolved

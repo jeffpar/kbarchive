@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98455: VSAFE Memory Usage"
-permalink: kb/098/Q98455/
+permalink: /kb/098/Q98455/
 ---
 
 ## Q98455: VSAFE Memory Usage

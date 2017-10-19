@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137366: FILE: Fw-win95.exe Running FoxPro 2.6 Apps in Windows 95"
-permalink: kb/137/Q137366/
+permalink: /kb/137/Q137366/
 ---
 
 ## Q137366: FILE: Fw-win95.exe Running FoxPro 2.6 Apps in Windows 95

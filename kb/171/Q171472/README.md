@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171472: FIX: Toggling PortOpen w/MSCOMM32.OCX Leaks Memory on Win95/98"
-permalink: kb/171/Q171472/
+permalink: /kb/171/Q171472/
 ---
 
 ## Q171472: FIX: Toggling PortOpen w/MSCOMM32.OCX Leaks Memory on Win95/98

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186434: Slow Network Default Profile Operation"
-permalink: kb/186/Q186434/
+permalink: /kb/186/Q186434/
 ---
 
 ## Q186434: Slow Network Default Profile Operation

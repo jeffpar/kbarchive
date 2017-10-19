@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303463: Memory Leak in SMS Performance Monitor Counters"
-permalink: kb/303/Q303463/
+permalink: /kb/303/Q303463/
 ---
 
 ## Q303463: Memory Leak in SMS Performance Monitor Counters

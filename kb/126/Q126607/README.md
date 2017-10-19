@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126607: PRB: Cannot Load MFCCLSWZ.DLL with ODBC SDK Version 2.1"
-permalink: kb/126/Q126607/
+permalink: /kb/126/Q126607/
 ---
 
 ## Q126607: PRB: Cannot Load MFCCLSWZ.DLL with ODBC SDK Version 2.1

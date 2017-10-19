@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223073: FIX: MSHFlexGrid Dashes/Dots Invalid for GridLinesHeader/In"
-permalink: kb/223/Q223073/
+permalink: /kb/223/Q223073/
 ---
 
 ## Q223073: FIX: MSHFlexGrid Dashes/Dots Invalid for GridLinesHeader/In

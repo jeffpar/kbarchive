@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269153: Kodak Imaging for Windows Does Not Invert TIFF Images"
-permalink: kb/269/Q269153/
+permalink: /kb/269/Q269153/
 ---
 
 ## Q269153: Kodak Imaging for Windows Does Not Invert TIFF Images

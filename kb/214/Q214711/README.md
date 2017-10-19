@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214711: XADM: Properties Incorrectly Indicate Read Receipt Not Requested"
-permalink: kb/214/Q214711/
+permalink: /kb/214/Q214711/
 ---
 
 ## Q214711: XADM: Properties Incorrectly Indicate Read Receipt Not Requested

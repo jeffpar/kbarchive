@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228974: MidMad: Unable to Start Multiplayer Cruise Game"
-permalink: kb/228/Q228974/
+permalink: /kb/228/Q228974/
 ---
 
 ## Q228974: MidMad: Unable to Start Multiplayer Cruise Game

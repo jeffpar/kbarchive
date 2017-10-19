@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260852: StarLancer: Error Message When You Quit Game in Windows 2000"
-permalink: kb/260/Q260852/
+permalink: /kb/260/Q260852/
 ---
 
 ## Q260852: StarLancer: Error Message When You Quit Game in Windows 2000

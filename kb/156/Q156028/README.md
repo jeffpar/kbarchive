@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156028: XCLN: List of Files Installed and Used"
-permalink: kb/156/Q156028/
+permalink: /kb/156/Q156028/
 ---
 
 ## Q156028: XCLN: List of Files Installed and Used

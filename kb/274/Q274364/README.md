@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274364: MSN Companion Troubleshooting Tool HAMMER"
-permalink: kb/274/Q274364/
+permalink: /kb/274/Q274364/
 ---
 
 ## Q274364: MSN Companion Troubleshooting Tool HAMMER

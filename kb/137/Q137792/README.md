@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137792: SMS: Expand All Only Expands Left Side Of Site Window"
-permalink: kb/137/Q137792/
+permalink: /kb/137/Q137792/
 ---
 
 ## Q137792: SMS: Expand All Only Expands Left Side Of Site Window

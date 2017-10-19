@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149395: Stop Msg: 0x0000001E in RDR.SYS Caused by Corrupted SMBs"
-permalink: kb/149/Q149395/
+permalink: /kb/149/Q149395/
 ---
 
 ## Q149395: Stop Msg: 0x0000001E in RDR.SYS Caused by Corrupted SMBs

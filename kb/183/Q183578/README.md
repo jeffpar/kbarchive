@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183578: SNA DDM Service Fails to Release Handles"
-permalink: kb/183/Q183578/
+permalink: /kb/183/Q183578/
 ---
 
 ## Q183578: SNA DDM Service Fails to Release Handles

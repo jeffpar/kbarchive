@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129876: Error Trapping Options in the Advanced Options Dialog"
-permalink: kb/129/Q129876/
+permalink: /kb/129/Q129876/
 ---
 
 ## Q129876: Error Trapping Options in the Advanced Options Dialog

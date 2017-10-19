@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50405: Specifying the Size of a CALL or JMP Instruction in MASM"
-permalink: kb/050/Q50405/
+permalink: /kb/050/Q50405/
 ---
 
 ## Q50405: Specifying the Size of a CALL or JMP Instruction in MASM

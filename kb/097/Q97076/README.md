@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97076: PC WRmt: Interrupt Conflicts with LAN Card Installation"
-permalink: kb/097/Q97076/
+permalink: /kb/097/Q97076/
 ---
 
 ## Q97076: PC WRmt: Interrupt Conflicts with LAN Card Installation

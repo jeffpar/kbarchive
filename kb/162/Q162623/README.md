@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162623: Error 87 and Dr. Watson"
-permalink: kb/162/Q162623/
+permalink: /kb/162/Q162623/
 ---
 
 ## Q162623: Error 87 and Dr. Watson

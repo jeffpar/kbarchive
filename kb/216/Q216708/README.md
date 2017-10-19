@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216708: Error Message: Setup Cannot Find Oemsetup.inf"
-permalink: kb/216/Q216708/
+permalink: /kb/216/Q216708/
 ---
 
 ## Q216708: Error Message: Setup Cannot Find Oemsetup.inf

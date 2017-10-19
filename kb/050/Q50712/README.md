@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50712: DOC: Run-Time Routines Assume Direction Flag Is Clear in C"
-permalink: kb/050/Q50712/
+permalink: /kb/050/Q50712/
 ---
 
 ## Q50712: DOC: Run-Time Routines Assume Direction Flag Is Clear in C

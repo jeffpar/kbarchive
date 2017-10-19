@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106548: Encarta: GP Fault with Diamond Speedstar Pro Video Card"
-permalink: kb/106/Q106548/
+permalink: /kb/106/Q106548/
 ---
 
 ## Q106548: Encarta: GP Fault with Diamond Speedstar Pro Video Card

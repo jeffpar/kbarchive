@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248421: Fighter Ace II: Textures Are Translucent and Appear Blue"
-permalink: kb/248/Q248421/
+permalink: /kb/248/Q248421/
 ---
 
 ## Q248421: Fighter Ace II: Textures Are Translucent and Appear Blue

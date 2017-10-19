@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87821: Using Gestures in Windows for Pen Computing"
-permalink: kb/087/Q87821/
+permalink: /kb/087/Q87821/
 ---
 
 ## Q87821: Using Gestures in Windows for Pen Computing

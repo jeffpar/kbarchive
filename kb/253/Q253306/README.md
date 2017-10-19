@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253306: XCLN: cc:Mail Mailbox Receives Mail after Migration to Exchange"
-permalink: kb/253/Q253306/
+permalink: /kb/253/Q253306/
 ---
 
 ## Q253306: XCLN: cc:Mail Mailbox Receives Mail after Migration to Exchange

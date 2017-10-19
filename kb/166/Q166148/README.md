@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166148: RasSetEntryProperties() Fails to Set Options in Service Pack 2"
-permalink: kb/166/Q166148/
+permalink: /kb/166/Q166148/
 ---
 
 ## Q166148: RasSetEntryProperties() Fails to Set Options in Service Pack 2

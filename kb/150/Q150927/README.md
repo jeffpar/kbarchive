@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150927: XCON: MTA Continuously Dialing RAS Connection"
-permalink: kb/150/Q150927/
+permalink: /kb/150/Q150927/
 ---
 
 ## Q150927: XCON: MTA Continuously Dialing RAS Connection

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179843: OFF97: Compile Error Using the Visible Property of UserForms"
-permalink: kb/179/Q179843/
+permalink: /kb/179/Q179843/
 ---
 
 ## Q179843: OFF97: Compile Error Using the Visible Property of UserForms

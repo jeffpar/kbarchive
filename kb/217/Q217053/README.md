@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217053: XADM: Memory Leak When Information Store Is Stopped"
-permalink: kb/217/Q217053/
+permalink: /kb/217/Q217053/
 ---
 
 ## Q217053: XADM: Memory Leak When Information Store Is Stopped

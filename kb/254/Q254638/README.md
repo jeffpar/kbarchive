@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254638: XADM: How to Add Permissions to Orphaned Public Folders"
-permalink: kb/254/Q254638/
+permalink: /kb/254/Q254638/
 ---
 
 ## Q254638: XADM: How to Add Permissions to Orphaned Public Folders

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158524: Gateway Services for NetWare States that &quot;Subkey Already Exist&quot;"
-permalink: kb/158/Q158524/
+permalink: /kb/158/Q158524/
 ---
 
 ## Q158524: Gateway Services for NetWare States that &quot;Subkey Already Exist&quot;

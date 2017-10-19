@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107160: Using MemMaker to Replace Qemm Version 7.02 and DOS-Up"
-permalink: kb/107/Q107160/
+permalink: /kb/107/Q107160/
 ---
 
 ## Q107160: Using MemMaker to Replace Qemm Version 7.02 and DOS-Up

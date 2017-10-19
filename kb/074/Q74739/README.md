@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74739: Implicit Casting by C Compiler Can Cause Problems"
-permalink: kb/074/Q74739/
+permalink: /kb/074/Q74739/
 ---
 
 ## Q74739: Implicit Casting by C Compiler Can Cause Problems

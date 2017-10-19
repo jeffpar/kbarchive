@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197512: Error Message: Windows NT Was Unable to Complete Format"
-permalink: kb/197/Q197512/
+permalink: /kb/197/Q197512/
 ---
 
 ## Q197512: Error Message: Windows NT Was Unable to Complete Format

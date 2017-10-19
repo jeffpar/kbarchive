@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90571: Applications That Require SETVER.EXE for MS-DOS 6.0 or 6.2"
-permalink: kb/090/Q90571/
+permalink: /kb/090/Q90571/
 ---
 
 ## Q90571: Applications That Require SETVER.EXE for MS-DOS 6.0 or 6.2

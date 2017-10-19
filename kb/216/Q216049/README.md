@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216049: XCLN: MAPIResolveName Doesn't Properly Handle DBCS Strings"
-permalink: kb/216/Q216049/
+permalink: /kb/216/Q216049/
 ---
 
 ## Q216049: XCLN: MAPIResolveName Doesn't Properly Handle DBCS Strings

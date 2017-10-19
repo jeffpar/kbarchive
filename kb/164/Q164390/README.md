@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164390: WinNT Appears Not to Send DTR Signal to a UPS on Shutdown"
-permalink: kb/164/Q164390/
+permalink: /kb/164/Q164390/
 ---
 
 ## Q164390: WinNT Appears Not to Send DTR Signal to a UPS on Shutdown

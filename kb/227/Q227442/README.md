@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227442: FP98: Smudges on Images Pasted from Office Application"
-permalink: kb/227/Q227442/
+permalink: /kb/227/Q227442/
 ---
 
 ## Q227442: FP98: Smudges on Images Pasted from Office Application

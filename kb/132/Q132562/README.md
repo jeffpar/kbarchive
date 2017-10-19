@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132562: PC WRmt: Server with Net Name MSG Won't Download Address List"
-permalink: kb/132/Q132562/
+permalink: /kb/132/Q132562/
 ---
 
 ## Q132562: PC WRmt: Server with Net Name MSG Won't Download Address List

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84117: Windows 3.1: Incorrect TrueType Output with HP DeskJet"
-permalink: kb/084/Q84117/
+permalink: /kb/084/Q84117/
 ---
 
 ## Q84117: Windows 3.1: Incorrect TrueType Output with HP DeskJet

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61590: Passing a long&#42; from a C Module to an Assembly Module"
-permalink: kb/061/Q61590/
+permalink: /kb/061/Q61590/
 ---
 
 ## Q61590: Passing a long&#42; from a C Module to an Assembly Module

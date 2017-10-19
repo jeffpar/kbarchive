@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101177: Running PC-NFS 5.0 with Windows for Workgroups"
-permalink: kb/101/Q101177/
+permalink: /kb/101/Q101177/
 ---
 
 ## Q101177: Running PC-NFS 5.0 with Windows for Workgroups

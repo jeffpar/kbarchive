@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85591: Colorado Tape Backup Does Not Work from Windows"
-permalink: kb/085/Q85591/
+permalink: /kb/085/Q85591/
 ---
 
 ## Q85591: Colorado Tape Backup Does Not Work from Windows

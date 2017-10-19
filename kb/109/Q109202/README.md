@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109202: Problems with Calcomp 907 Plotter Driver"
-permalink: kb/109/Q109202/
+permalink: /kb/109/Q109202/
 ---
 
 ## Q109202: Problems with Calcomp 907 Plotter Driver

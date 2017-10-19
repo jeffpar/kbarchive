@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111648: BUG: EM_CANUNDO Returns Zero After EM_REPLACESEL"
-permalink: kb/111/Q111648/
+permalink: /kb/111/Q111648/
 ---
 
 ## Q111648: BUG: EM_CANUNDO Returns Zero After EM_REPLACESEL

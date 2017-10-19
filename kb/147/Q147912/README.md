@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147912: Server Operator Unable to Synchronize Domain Controller"
-permalink: kb/147/Q147912/
+permalink: /kb/147/Q147912/
 ---
 
 ## Q147912: Server Operator Unable to Synchronize Domain Controller

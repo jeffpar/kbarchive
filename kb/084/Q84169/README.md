@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84169: Changing the Icon Title Size/Font for Windows 3.1"
-permalink: kb/084/Q84169/
+permalink: /kb/084/Q84169/
 ---
 
 ## Q84169: Changing the Icon Title Size/Font for Windows 3.1

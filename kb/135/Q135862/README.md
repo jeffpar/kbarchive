@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135862: HOWTO: How to Use OLE2UI Functionality in 32-bit Applications"
-permalink: kb/135/Q135862/
+permalink: /kb/135/Q135862/
 ---
 
 ## Q135862: HOWTO: How to Use OLE2UI Functionality in 32-bit Applications

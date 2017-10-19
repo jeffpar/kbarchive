@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192986: SAMPLE: MODLIST.EXE Shows How to Enumerate Processes and Modules"
-permalink: kb/192/Q192986/
+permalink: /kb/192/Q192986/
 ---
 
 ## Q192986: SAMPLE: MODLIST.EXE Shows How to Enumerate Processes and Modules

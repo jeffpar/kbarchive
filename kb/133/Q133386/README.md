@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133386: Event ID 19 Appears in Event Log When You Create a Printer"
-permalink: kb/133/Q133386/
+permalink: /kb/133/Q133386/
 ---
 
 ## Q133386: Event ID 19 Appears in Event Log When You Create a Printer

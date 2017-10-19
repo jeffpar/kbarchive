@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240748: PRB: Opening a DBase IV File with Long File Name Returns Error"
-permalink: kb/240/Q240748/
+permalink: /kb/240/Q240748/
 ---
 
 ## Q240748: PRB: Opening a DBase IV File with Long File Name Returns Error

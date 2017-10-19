@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110324: Writer: Spelling Checker Does Not Recognize All Caps"
-permalink: kb/110/Q110324/
+permalink: /kb/110/Q110324/
 ---
 
 ## Q110324: Writer: Spelling Checker Does Not Recognize All Caps

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135215: Cannot Run Beyond Earth: CVID Video Drivers Not Installed"
-permalink: kb/135/Q135215/
+permalink: /kb/135/Q135215/
 ---
 
 ## Q135215: Cannot Run Beyond Earth: CVID Video Drivers Not Installed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71505: WIN.INI Settings for the NEC Graphics Engine"
-permalink: kb/071/Q71505/
+permalink: /kb/071/Q71505/
 ---
 
 ## Q71505: WIN.INI Settings for the NEC Graphics Engine

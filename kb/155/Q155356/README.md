@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155356: Cannot Save Changes to Bootsector using Dskprobe"
-permalink: kb/155/Q155356/
+permalink: /kb/155/Q155356/
 ---
 
 ## Q155356: Cannot Save Changes to Bootsector using Dskprobe

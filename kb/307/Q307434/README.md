@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307434: SMS: SMSCliToknAcct&amp; Lockout with Software Installation Account"
-permalink: kb/307/Q307434/
+permalink: /kb/307/Q307434/
 ---
 
 ## Q307434: SMS: SMSCliToknAcct&amp; Lockout with Software Installation Account

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156617: MSB Earth: Location of Rocks"
-permalink: kb/156/Q156617/
+permalink: /kb/156/Q156617/
 ---
 
 ## Q156617: MSB Earth: Location of Rocks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159520: Encarta 97 Fails to Start or Quits with Encarta 96 Running"
-permalink: kb/159/Q159520/
+permalink: /kb/159/Q159520/
 ---
 
 ## Q159520: Encarta 97 Fails to Start or Quits with Encarta 96 Running

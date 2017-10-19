@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155060: XCLN: MAPIAddress Function Does Not Allocate Memory"
-permalink: kb/155/Q155060/
+permalink: /kb/155/Q155060/
 ---
 
 ## Q155060: XCLN: MAPIAddress Function Does Not Allocate Memory

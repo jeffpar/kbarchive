@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228528: Baseball 2000: Game Controller Commands Are Not Recognized Corre"
-permalink: kb/228/Q228528/
+permalink: /kb/228/Q228528/
 ---
 
 ## Q228528: Baseball 2000: Game Controller Commands Are Not Recognized Corre

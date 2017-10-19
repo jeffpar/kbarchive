@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139387: FIX: Data Type Is Invalid for This Property Error Message"
-permalink: kb/139/Q139387/
+permalink: /kb/139/Q139387/
 ---
 
 ## Q139387: FIX: Data Type Is Invalid for This Property Error Message

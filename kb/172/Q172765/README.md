@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172765: WD97: ErrMsg: The Wrong Wwintl32.dll Has Been Loaded"
-permalink: kb/172/Q172765/
+permalink: /kb/172/Q172765/
 ---
 
 ## Q172765: WD97: ErrMsg: The Wrong Wwintl32.dll Has Been Loaded

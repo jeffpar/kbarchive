@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258258: XADM: Exchange 5.5 SP3 Mailbox Manager conflicts with Site Serve"
-permalink: kb/258/Q258258/
+permalink: /kb/258/Q258258/
 ---
 
 ## Q258258: XADM: Exchange 5.5 SP3 Mailbox Manager conflicts with Site Serve

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132697: PRB: Application Appears Then Exits to Operating System"
-permalink: kb/132/Q132697/
+permalink: /kb/132/Q132697/
 ---
 
 ## Q132697: PRB: Application Appears Then Exits to Operating System

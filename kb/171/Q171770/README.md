@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171770: Dr. Watson Error in Spoolss.dbg"
-permalink: kb/171/Q171770/
+permalink: /kb/171/Q171770/
 ---
 
 ## Q171770: Dr. Watson Error in Spoolss.dbg

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242023: ICA Clients Over Dial-Up Link Unexpectedly Disconnect"
-permalink: kb/242/Q242023/
+permalink: /kb/242/Q242023/
 ---
 
 ## Q242023: ICA Clients Over Dial-Up Link Unexpectedly Disconnect

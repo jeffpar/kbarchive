@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128637: HOWTO: How to Draw a Gradient Background"
-permalink: kb/128/Q128637/
+permalink: /kb/128/Q128637/
 ---
 
 ## Q128637: HOWTO: How to Draw a Gradient Background

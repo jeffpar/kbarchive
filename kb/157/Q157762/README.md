@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157762: FIX: Invalid Page Fault After Summing Currency Field of Cursor"
-permalink: kb/157/Q157762/
+permalink: /kb/157/Q157762/
 ---
 
 ## Q157762: FIX: Invalid Page Fault After Summing Currency Field of Cursor

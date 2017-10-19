@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163434: PPT: Sample VB Code to Get Selected Text"
-permalink: kb/163/Q163434/
+permalink: /kb/163/Q163434/
 ---
 
 ## Q163434: PPT: Sample VB Code to Get Selected Text

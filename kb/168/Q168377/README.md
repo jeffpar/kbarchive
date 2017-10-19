@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168377: PRB: STL string Class replace Function Does Not Work as Expected"
-permalink: kb/168/Q168377/
+permalink: /kb/168/Q168377/
 ---
 
 ## Q168377: PRB: STL string Class replace Function Does Not Work as Expected

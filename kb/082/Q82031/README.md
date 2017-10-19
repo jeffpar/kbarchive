@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82031: Use of Undocumented MS-DOS Commands And Options"
-permalink: kb/082/Q82031/
+permalink: /kb/082/Q82031/
 ---
 
 ## Q82031: Use of Undocumented MS-DOS Commands And Options

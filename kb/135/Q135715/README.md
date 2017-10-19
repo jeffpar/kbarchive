@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135715: BUG: SQLParamData Returns Incorrect Values Under Win32s"
-permalink: kb/135/Q135715/
+permalink: /kb/135/Q135715/
 ---
 
 ## Q135715: BUG: SQLParamData Returns Incorrect Values Under Win32s

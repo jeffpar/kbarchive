@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290789: SMS: Dr. Watson Error in Wbemsdk.exe"
-permalink: kb/290/Q290789/
+permalink: /kb/290/Q290789/
 ---
 
 ## Q290789: SMS: Dr. Watson Error in Wbemsdk.exe

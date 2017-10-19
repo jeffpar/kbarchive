@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118380: Windows NT 3.5 and Windows 95 on the Same Computer"
-permalink: kb/118/Q118380/
+permalink: /kb/118/Q118380/
 ---
 
 ## Q118380: Windows NT 3.5 and Windows 95 on the Same Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191260: Dr. Watson Error When Adding New Printer on Spanish Windows NT"
-permalink: kb/191/Q191260/
+permalink: /kb/191/Q191260/
 ---
 
 ## Q191260: Dr. Watson Error When Adding New Printer on Spanish Windows NT

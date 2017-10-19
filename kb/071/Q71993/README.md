@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71993: PCL Driver 3.3 and 3.4 Does Not Set Default Paper Source"
-permalink: kb/071/Q71993/
+permalink: /kb/071/Q71993/
 ---
 
 ## Q71993: PCL Driver 3.3 and 3.4 Does Not Set Default Paper Source

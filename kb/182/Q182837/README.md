@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182837: WD97: Unsaved Information Lost Printing from OS Shell"
-permalink: kb/182/Q182837/
+permalink: /kb/182/Q182837/
 ---
 
 ## Q182837: WD97: Unsaved Information Lost Printing from OS Shell

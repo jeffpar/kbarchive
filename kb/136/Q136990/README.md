@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136990: ATDISK Driver Fails to Start After Upgrade"
-permalink: kb/136/Q136990/
+permalink: /kb/136/Q136990/
 ---
 
 ## Q136990: ATDISK Driver Fails to Start After Upgrade

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258537: FIX: CONFIG.FPW Setting for Terminal Server Environment"
-permalink: kb/258/Q258537/
+permalink: /kb/258/Q258537/
 ---
 
 ## Q258537: FIX: CONFIG.FPW Setting for Terminal Server Environment

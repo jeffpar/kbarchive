@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147201: PRB: Header Files Ignored by Recompile All &amp; Build Process"
-permalink: kb/147/Q147201/
+permalink: /kb/147/Q147201/
 ---
 
 ## Q147201: PRB: Header Files Ignored by Recompile All &amp; Build Process

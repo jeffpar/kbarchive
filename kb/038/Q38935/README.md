@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q38935: Expressions in Definitions Changed for MASM 5.10"
-permalink: kb/038/Q38935/
+permalink: /kb/038/Q38935/
 ---
 
 ## Q38935: Expressions in Definitions Changed for MASM 5.10

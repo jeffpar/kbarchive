@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295812: XFOR: Messages from Exchange to CC:Mail Remain Queued"
-permalink: kb/295/Q295812/
+permalink: /kb/295/Q295812/
 ---
 
 ## Q295812: XFOR: Messages from Exchange to CC:Mail Remain Queued

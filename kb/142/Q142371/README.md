@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142371: Perfmon Counter DISK QUEUE LENGTH Gives Incorrect Report"
-permalink: kb/142/Q142371/
+permalink: /kb/142/Q142371/
 ---
 
 ## Q142371: Perfmon Counter DISK QUEUE LENGTH Gives Incorrect Report

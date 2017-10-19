@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177497: Server Service Fails to Start at Startup w/ Event ID 2505"
-permalink: kb/177/Q177497/
+permalink: /kb/177/Q177497/
 ---
 
 ## Q177497: Server Service Fails to Start at Startup w/ Event ID 2505

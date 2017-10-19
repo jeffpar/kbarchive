@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257220: XCON: Newsfeeds Unavailable in Internet Information Services 5.0"
-permalink: kb/257/Q257220/
+permalink: /kb/257/Q257220/
 ---
 
 ## Q257220: XCON: Newsfeeds Unavailable in Internet Information Services 5.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130801: Common Causes of STOP Messages 0x00000077 and 0x0000007A"
-permalink: kb/130/Q130801/
+permalink: /kb/130/Q130801/
 ---
 
 ## Q130801: Common Causes of STOP Messages 0x00000077 and 0x0000007A

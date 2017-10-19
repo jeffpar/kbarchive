@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164851: XFOR: Embedded Message Wrapping Incorrect with DEC All-In-One"
-permalink: kb/164/Q164851/
+permalink: /kb/164/Q164851/
 ---
 
 ## Q164851: XFOR: Embedded Message Wrapping Incorrect with DEC All-In-One

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141681: FIX: Error if Listview Cleared Using the AfterLabeledit Event"
-permalink: kb/141/Q141681/
+permalink: /kb/141/Q141681/
 ---
 
 ## Q141681: FIX: Error if Listview Cleared Using the AfterLabeledit Event

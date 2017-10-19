@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198308: WD97: New Word Is Not Added to Custom Dictionary"
-permalink: kb/198/Q198308/
+permalink: /kb/198/Q198308/
 ---
 
 ## Q198308: WD97: New Word Is Not Added to Custom Dictionary

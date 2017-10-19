@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153476: Windows NT 3.51 DHCP Server Stops Assigning IP Addresses to Clie"
-permalink: kb/153/Q153476/
+permalink: /kb/153/Q153476/
 ---
 
 ## Q153476: Windows NT 3.51 DHCP Server Stops Assigning IP Addresses to Clie

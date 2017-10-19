@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246580: XFOR: Event ID 2003 Displays the Wrong Destination Domain"
-permalink: kb/246/Q246580/
+permalink: /kb/246/Q246580/
 ---
 
 ## Q246580: XFOR: Event ID 2003 Displays the Wrong Destination Domain

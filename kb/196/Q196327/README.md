@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196327: Access Violation When 2 LUs have Same Name &amp; Same Connection"
-permalink: kb/196/Q196327/
+permalink: /kb/196/Q196327/
 ---
 
 ## Q196327: Access Violation When 2 LUs have Same Name &amp; Same Connection

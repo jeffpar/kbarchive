@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246614: SMS: Corrupted .ofr file Causes Offer Manager Not to Work"
-permalink: kb/246/Q246614/
+permalink: /kb/246/Q246614/
 ---
 
 ## Q246614: SMS: Corrupted .ofr file Causes Offer Manager Not to Work

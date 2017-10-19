@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60203: PRN Is Always Associated with LPT1"
-permalink: kb/060/Q60203/
+permalink: /kb/060/Q60203/
 ---
 
 ## Q60203: PRN Is Always Associated with LPT1

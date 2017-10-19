@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138882: SNA Server Windows 95 Client 5250 Applet Print Screen Fails"
-permalink: kb/138/Q138882/
+permalink: /kb/138/Q138882/
 ---
 
 ## Q138882: SNA Server Windows 95 Client 5250 Applet Print Screen Fails

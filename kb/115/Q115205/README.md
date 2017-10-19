@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115205: PC Tools Disk Formatter Err Msg: Can't Format Strange Disk"
-permalink: kb/115/Q115205/
+permalink: /kb/115/Q115205/
 ---
 
 ## Q115205: PC Tools Disk Formatter Err Msg: Can't Format Strange Disk

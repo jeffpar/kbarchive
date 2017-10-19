@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225782: Err Msg: Not Enough Server Storage Is Available to Process..."
-permalink: kb/225/Q225782/
+permalink: /kb/225/Q225782/
 ---
 
 ## Q225782: Err Msg: Not Enough Server Storage Is Available to Process...

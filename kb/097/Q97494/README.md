@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97494: Parameter Adjustments that Improve TCP/IP on LAN Man"
-permalink: kb/097/Q97494/
+permalink: /kb/097/Q97494/
 ---
 
 ## Q97494: Parameter Adjustments that Improve TCP/IP on LAN Man

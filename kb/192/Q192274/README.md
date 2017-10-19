@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192274: XADM: IIS Crashes with ActiveX Component Using MAPI"
-permalink: kb/192/Q192274/
+permalink: /kb/192/Q192274/
 ---
 
 ## Q192274: XADM: IIS Crashes with ActiveX Component Using MAPI

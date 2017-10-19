@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320514: XCCC: Troubleshooting &quot;ASP 0115&quot; Error Messages in OWA 5.x"
-permalink: kb/320/Q320514/
+permalink: /kb/320/Q320514/
 ---
 
 ## Q320514: XCCC: Troubleshooting &quot;ASP 0115&quot; Error Messages in OWA 5.x

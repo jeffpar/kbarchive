@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200776: OS/2 DHCP Clients Fail to Get Name Resolution or Communicate"
-permalink: kb/200/Q200776/
+permalink: /kb/200/Q200776/
 ---
 
 ## Q200776: OS/2 DHCP Clients Fail to Get Name Resolution or Communicate

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199359: SMS: How to Fix the WMI Repository of a Site Server"
-permalink: kb/199/Q199359/
+permalink: /kb/199/Q199359/
 ---
 
 ## Q199359: SMS: How to Fix the WMI Repository of a Site Server

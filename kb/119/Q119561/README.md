@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119561: PC Forms: Cross-Platform E-Forms Not Supported"
-permalink: kb/119/Q119561/
+permalink: /kb/119/Q119561/
 ---
 
 ## Q119561: PC Forms: Cross-Platform E-Forms Not Supported

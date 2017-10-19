@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245694: XADM: Mailbox Manager Crashes When Excluded Mailbox Has No Proxy"
-permalink: kb/245/Q245694/
+permalink: /kb/245/Q245694/
 ---
 
 ## Q245694: XADM: Mailbox Manager Crashes When Excluded Mailbox Has No Proxy

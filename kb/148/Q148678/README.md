@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148678: How To Synchronize A NetWare Server Using DSMN"
-permalink: kb/148/Q148678/
+permalink: /kb/148/Q148678/
 ---
 
 ## Q148678: How To Synchronize A NetWare Server Using DSMN

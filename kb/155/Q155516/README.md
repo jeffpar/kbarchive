@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155516: How to Remove the Lexmark MarkVision Monitor"
-permalink: kb/155/Q155516/
+permalink: /kb/155/Q155516/
 ---
 
 ## Q155516: How to Remove the Lexmark MarkVision Monitor

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137295: How to Convert Memo Fields into Embedded Word Documents"
-permalink: kb/137/Q137295/
+permalink: /kb/137/Q137295/
 ---
 
 ## Q137295: How to Convert Memo Fields into Embedded Word Documents

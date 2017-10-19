@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177775: XADM: System Folders Are Not Secured To The Site By Default"
-permalink: kb/177/Q177775/
+permalink: /kb/177/Q177775/
 ---
 
 ## Q177775: XADM: System Folders Are Not Secured To The Site By Default

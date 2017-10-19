@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302571: Printer Only Prints One Page"
-permalink: kb/302/Q302571/
+permalink: /kb/302/Q302571/
 ---
 
 ## Q302571: Printer Only Prints One Page

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122236: PRB: Add() Member Function Consuming Large Amount of Memory"
-permalink: kb/122/Q122236/
+permalink: /kb/122/Q122236/
 ---
 
 ## Q122236: PRB: Add() Member Function Consuming Large Amount of Memory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80384: PRB: Span-Dependent Value Behavior Changes in N-Pass Assembly"
-permalink: kb/080/Q80384/
+permalink: /kb/080/Q80384/
 ---
 
 ## Q80384: PRB: Span-Dependent Value Behavior Changes in N-Pass Assembly

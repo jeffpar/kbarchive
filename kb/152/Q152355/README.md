@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152355: PRB: Error Installing EXE With &quot;&#92;&quot; in Icon File Description"
-permalink: kb/152/Q152355/
+permalink: /kb/152/Q152355/
 ---
 
 ## Q152355: PRB: Error Installing EXE With &quot;&#92;&quot; in Icon File Description

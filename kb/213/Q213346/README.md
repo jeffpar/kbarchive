@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213346: SMS:  Some Buttons Disabled in Collections Resource Dialog Box"
-permalink: kb/213/Q213346/
+permalink: /kb/213/Q213346/
 ---
 
 ## Q213346: SMS:  Some Buttons Disabled in Collections Resource Dialog Box

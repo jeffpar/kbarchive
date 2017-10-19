@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150831: Stop 0x0000000A in NBF.SYS When Running Under Stress"
-permalink: kb/150/Q150831/
+permalink: /kb/150/Q150831/
 ---
 
 ## Q150831: Stop 0x0000000A in NBF.SYS When Running Under Stress

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119093: Criteria for Determining When the Task Bar Is Hidden"
-permalink: kb/119/Q119093/
+permalink: /kb/119/Q119093/
 ---
 
 ## Q119093: Criteria for Determining When the Task Bar Is Hidden

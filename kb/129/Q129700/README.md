@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129700: PRB: Compile Out of Memory If too Many Public Members in Class"
-permalink: kb/129/Q129700/
+permalink: /kb/129/Q129700/
 ---
 
 ## Q129700: PRB: Compile Out of Memory If too Many Public Members in Class

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184327: How to Install Sound Blaster Drivers in Windows NT 4.0"
-permalink: kb/184/Q184327/
+permalink: /kb/184/Q184327/
 ---
 
 ## Q184327: How to Install Sound Blaster Drivers in Windows NT 4.0

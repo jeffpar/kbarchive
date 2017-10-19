@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195063: Common User ID Problem when Using Associated Printer Feature"
-permalink: kb/195/Q195063/
+permalink: /kb/195/Q195063/
 ---
 
 ## Q195063: Common User ID Problem when Using Associated Printer Feature

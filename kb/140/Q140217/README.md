@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140217: Oceans Error Message: Not Enough Memory To Print"
-permalink: kb/140/Q140217/
+permalink: /kb/140/Q140217/
 ---
 
 ## Q140217: Oceans Error Message: Not Enough Memory To Print

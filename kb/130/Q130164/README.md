@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130164: PRB: Table Wizard Fields Not Customizable"
-permalink: kb/130/Q130164/
+permalink: /kb/130/Q130164/
 ---
 
 ## Q130164: PRB: Table Wizard Fields Not Customizable

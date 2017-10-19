@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95120: Using the Intel EtherExpress 16 MCA with WFWG 3.1"
-permalink: kb/095/Q95120/
+permalink: /kb/095/Q95120/
 ---
 
 ## Q95120: Using the Intel EtherExpress 16 MCA with WFWG 3.1

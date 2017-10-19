@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190311: PRB: No Task List Icon with Top-Level Form in Modal State"
-permalink: kb/190/Q190311/
+permalink: /kb/190/Q190311/
 ---
 
 ## Q190311: PRB: No Task List Icon with Top-Level Form in Modal State

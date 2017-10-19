@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246656: PRB: SQL SELECT Cursor Resultset Changes when Variable Changes"
-permalink: kb/246/Q246656/
+permalink: /kb/246/Q246656/
 ---
 
 ## Q246656: PRB: SQL SELECT Cursor Resultset Changes when Variable Changes

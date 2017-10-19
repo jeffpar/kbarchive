@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162616: Extra Form Feed with Passthrough Functions to Text Only Driver"
-permalink: kb/162/Q162616/
+permalink: /kb/162/Q162616/
 ---
 
 ## Q162616: Extra Form Feed with Passthrough Functions to Text Only Driver

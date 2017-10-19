@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231177: BUG: Permission Denied Error by Building From PWB"
-permalink: kb/231/Q231177/
+permalink: /kb/231/Q231177/
 ---
 
 ## Q231177: BUG: Permission Denied Error by Building From PWB

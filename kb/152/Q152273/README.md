@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152273: DHCP Server May Give Out Duplicate IP Addresses"
-permalink: kb/152/Q152273/
+permalink: /kb/152/Q152273/
 ---
 
 ## Q152273: DHCP Server May Give Out Duplicate IP Addresses

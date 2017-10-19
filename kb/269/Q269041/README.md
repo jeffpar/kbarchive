@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269041: Baseball 2001 Error Message: One or More of the Parameters..."
-permalink: kb/269/Q269041/
+permalink: /kb/269/Q269041/
 ---
 
 ## Q269041: Baseball 2001 Error Message: One or More of the Parameters...

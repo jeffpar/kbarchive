@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168602: NetWatch May Not Show User Logged On After Applying SP2"
-permalink: kb/168/Q168602/
+permalink: /kb/168/Q168602/
 ---
 
 ## Q168602: NetWatch May Not Show User Logged On After Applying SP2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164627: SGC-Enabled Clients Have Trouble Connecting to SGC-Enabled IIS"
-permalink: kb/164/Q164627/
+permalink: /kb/164/Q164627/
 ---
 
 ## Q164627: SGC-Enabled Clients Have Trouble Connecting to SGC-Enabled IIS

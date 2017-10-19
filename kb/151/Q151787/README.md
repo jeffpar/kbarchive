@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151787: XCLN: Error Deleting Schedule+ Meeting Response"
-permalink: kb/151/Q151787/
+permalink: /kb/151/Q151787/
 ---
 
 ## Q151787: XCLN: Error Deleting Schedule+ Meeting Response

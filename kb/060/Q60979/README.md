@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60979: Flight Simulator: Two or More Players in Multiplayer Mode"
-permalink: kb/060/Q60979/
+permalink: /kb/060/Q60979/
 ---
 
 ## Q60979: Flight Simulator: Two or More Players in Multiplayer Mode

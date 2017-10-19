@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83584: Madison Avenue Requires DMABufferSize=64 Setting"
-permalink: kb/083/Q83584/
+permalink: /kb/083/Q83584/
 ---
 
 ## Q83584: Madison Avenue Requires DMABufferSize=64 Setting

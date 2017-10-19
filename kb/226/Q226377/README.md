@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226377: XWEB:This Page Cannot be Displayed When Connected w/ OWA to WLBS"
-permalink: kb/226/Q226377/
+permalink: /kb/226/Q226377/
 ---
 
 ## Q226377: XWEB:This Page Cannot be Displayed When Connected w/ OWA to WLBS

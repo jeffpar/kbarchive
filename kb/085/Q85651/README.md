@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85651: PC MAPI: MAPI_SUPPRESS_ATTACH Incorrectly Defined"
-permalink: kb/085/Q85651/
+permalink: /kb/085/Q85651/
 ---
 
 ## Q85651: PC MAPI: MAPI_SUPPRESS_ATTACH Incorrectly Defined

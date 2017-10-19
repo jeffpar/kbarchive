@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174194: MDG: All Remote Users on Postoffice Get Error"
-permalink: kb/174/Q174194/
+permalink: /kb/174/Q174194/
 ---
 
 ## Q174194: MDG: All Remote Users on Postoffice Get Error

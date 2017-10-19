@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86387: PC Win: How the Converter Determines Percent Complete"
-permalink: kb/086/Q86387/
+permalink: /kb/086/Q86387/
 ---
 
 ## Q86387: PC Win: How the Converter Determines Percent Complete

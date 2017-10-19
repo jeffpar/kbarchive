@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101347: WFWG Err Msg: The Postoffice Is Already Being Managed By..."
-permalink: kb/101/Q101347/
+permalink: /kb/101/Q101347/
 ---
 
 ## Q101347: WFWG Err Msg: The Postoffice Is Already Being Managed By...

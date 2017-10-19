@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156127: MSB Dinosaurs: Canceling Setup Leaves Microsoft Kids Folder"
-permalink: kb/156/Q156127/
+permalink: /kb/156/Q156127/
 ---
 
 ## Q156127: MSB Dinosaurs: Canceling Setup Leaves Microsoft Kids Folder

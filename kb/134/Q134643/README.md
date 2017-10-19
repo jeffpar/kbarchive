@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134643: FIX: Alter Table Add Primary Key Error Not Trappable"
-permalink: kb/134/Q134643/
+permalink: /kb/134/Q134643/
 ---
 
 ## Q134643: FIX: Alter Table Add Primary Key Error Not Trappable

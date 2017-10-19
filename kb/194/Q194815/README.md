@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194815: Combat Flight Simulator: How to Start Your Aircraft Engines"
-permalink: kb/194/Q194815/
+permalink: /kb/194/Q194815/
 ---
 
 ## Q194815: Combat Flight Simulator: How to Start Your Aircraft Engines

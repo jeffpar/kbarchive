@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281523: Device Off for Extended Period"
-permalink: kb/281/Q281523/
+permalink: /kb/281/Q281523/
 ---
 
 ## Q281523: Device Off for Extended Period

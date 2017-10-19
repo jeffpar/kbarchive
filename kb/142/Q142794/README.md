@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142794: Availability of Microsoft Windows 95 Service Pack 1"
-permalink: kb/142/Q142794/
+permalink: /kb/142/Q142794/
 ---
 
 ## Q142794: Availability of Microsoft Windows 95 Service Pack 1

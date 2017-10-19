@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172057: FIX: CreateDragImage Method in ListView Uses Wrong Icon"
-permalink: kb/172/Q172057/
+permalink: /kb/172/Q172057/
 ---
 
 ## Q172057: FIX: CreateDragImage Method in ListView Uses Wrong Icon

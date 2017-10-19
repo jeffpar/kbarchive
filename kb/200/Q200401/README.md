@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200401: SMS: Remote Control Uses TCP Instead of UDP"
-permalink: kb/200/Q200401/
+permalink: /kb/200/Q200401/
 ---
 
 ## Q200401: SMS: Remote Control Uses TCP Instead of UDP

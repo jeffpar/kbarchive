@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149680: Infrared Devices Not Listed in Add New Hardware Tool"
-permalink: kb/149/Q149680/
+permalink: /kb/149/Q149680/
 ---
 
 ## Q149680: Infrared Devices Not Listed in Add New Hardware Tool

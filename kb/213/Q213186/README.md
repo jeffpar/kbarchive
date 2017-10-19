@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213186: SMS: Cannot Change Site Server Domain Name or Computer Name"
-permalink: kb/213/Q213186/
+permalink: /kb/213/Q213186/
 ---
 
 ## Q213186: SMS: Cannot Change Site Server Domain Name or Computer Name

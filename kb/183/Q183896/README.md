@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183896: XADM: Error Message When Installing Key Management Server"
-permalink: kb/183/Q183896/
+permalink: /kb/183/Q183896/
 ---
 
 ## Q183896: XADM: Error Message When Installing Key Management Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167674: BUG: DEFINE WINDOW Command Loses Single Border in VFP 5.0"
-permalink: kb/167/Q167674/
+permalink: /kb/167/Q167674/
 ---
 
 ## Q167674: BUG: DEFINE WINDOW Command Loses Single Border in VFP 5.0

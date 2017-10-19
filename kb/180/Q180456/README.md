@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180456: PRB: Passing Variant Array to WriteFields Method Generates Error"
-permalink: kb/180/Q180456/
+permalink: /kb/180/Q180456/
 ---
 
 ## Q180456: PRB: Passing Variant Array to WriteFields Method Generates Error

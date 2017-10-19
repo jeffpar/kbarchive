@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186115: WD97: Macro to Check for Multiple Instances of Word"
-permalink: kb/186/Q186115/
+permalink: /kb/186/Q186115/
 ---
 
 ## Q186115: WD97: Macro to Check for Multiple Instances of Word

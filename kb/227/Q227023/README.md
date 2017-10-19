@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227023: SMS: DBCS Server Names Are Not Supported"
-permalink: kb/227/Q227023/
+permalink: /kb/227/Q227023/
 ---
 
 ## Q227023: SMS: DBCS Server Names Are Not Supported

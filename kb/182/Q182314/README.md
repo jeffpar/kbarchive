@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182314: XADM: DBCS Becomes &quot;?&quot; When You Click &quot;Save Window Contents&quot;"
-permalink: kb/182/Q182314/
+permalink: /kb/182/Q182314/
 ---
 
 ## Q182314: XADM: DBCS Becomes &quot;?&quot; When You Click &quot;Save Window Contents&quot;

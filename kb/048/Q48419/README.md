@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48419: Zenith Computer Running DOS 3.3 Hangs in Flight Instruction"
-permalink: kb/048/Q48419/
+permalink: /kb/048/Q48419/
 ---
 
 ## Q48419: Zenith Computer Running DOS 3.3 Hangs in Flight Instruction

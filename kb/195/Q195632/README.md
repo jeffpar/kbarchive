@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195632: Err Msg: Encarta Virtual Globe Requires a Pentium 66..."
-permalink: kb/195/Q195632/
+permalink: /kb/195/Q195632/
 ---
 
 ## Q195632: Err Msg: Encarta Virtual Globe Requires a Pentium 66...

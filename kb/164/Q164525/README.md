@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164525: PRB: Visual C++ Setup Message From MSDN Universal CD is Wrong"
-permalink: kb/164/Q164525/
+permalink: /kb/164/Q164525/
 ---
 
 ## Q164525: PRB: Visual C++ Setup Message From MSDN Universal CD is Wrong

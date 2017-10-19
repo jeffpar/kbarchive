@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157121: WD97: Can't Remove Background Sound Object in HTML Document"
-permalink: kb/157/Q157121/
+permalink: /kb/157/Q157121/
 ---
 
 ## Q157121: WD97: Can't Remove Background Sound Object in HTML Document

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247228: Attachmate Advanced ISCA PCI Adapter Stays Pending"
-permalink: kb/247/Q247228/
+permalink: /kb/247/Q247228/
 ---
 
 ## Q247228: Attachmate Advanced ISCA PCI Adapter Stays Pending

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86922: Using LINK 5.3 to Create Applications for Real Mode"
-permalink: kb/086/Q86922/
+permalink: /kb/086/Q86922/
 ---
 
 ## Q86922: Using LINK 5.3 to Create Applications for Real Mode

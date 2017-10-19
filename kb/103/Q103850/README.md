@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103850: PC Adm: Compress Storage Results in Negative Bytes Recovered"
-permalink: kb/103/Q103850/
+permalink: /kb/103/Q103850/
 ---
 
 ## Q103850: PC Adm: Compress Storage Results in Negative Bytes Recovered

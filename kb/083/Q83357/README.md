@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83357: Windows PSCRIPT.DRV Does Not Support Lower Resolutions"
-permalink: kb/083/Q83357/
+permalink: /kb/083/Q83357/
 ---
 
 ## Q83357: Windows PSCRIPT.DRV Does Not Support Lower Resolutions

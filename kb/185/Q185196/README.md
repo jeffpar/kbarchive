@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185196: WD97: Sample Macro to Print All Open Documents"
-permalink: kb/185/Q185196/
+permalink: /kb/185/Q185196/
 ---
 
 ## Q185196: WD97: Sample Macro to Print All Open Documents

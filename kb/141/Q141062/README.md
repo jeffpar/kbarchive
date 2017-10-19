@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141062: PC MAPI WRmt: ErrMsg: MS Mail32 Notification: MAPISRV.EXE..."
-permalink: kb/141/Q141062/
+permalink: /kb/141/Q141062/
 ---
 
 ## Q141062: PC MAPI WRmt: ErrMsg: MS Mail32 Notification: MAPISRV.EXE...

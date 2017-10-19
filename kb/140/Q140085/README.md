@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140085: Golf 2.0: Accessing Tips Included on CD-ROM Version"
-permalink: kb/140/Q140085/
+permalink: /kb/140/Q140085/
 ---
 
 ## Q140085: Golf 2.0: Accessing Tips Included on CD-ROM Version

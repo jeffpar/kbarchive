@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73314: CTRL+PRINT SCREEN Causes ANSI Escape Sequences to Print"
-permalink: kb/073/Q73314/
+permalink: /kb/073/Q73314/
 ---
 
 ## Q73314: CTRL+PRINT SCREEN Causes ANSI Escape Sequences to Print

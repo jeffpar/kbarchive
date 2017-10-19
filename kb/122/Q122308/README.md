@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122308: BUG: Some RC Warnings and Errors Go to stderr, Not stdout"
-permalink: kb/122/Q122308/
+permalink: /kb/122/Q122308/
 ---
 
 ## Q122308: BUG: Some RC Warnings and Errors Go to stderr, Not stdout

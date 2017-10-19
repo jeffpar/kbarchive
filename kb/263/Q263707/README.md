@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263707: MapPoint: GPS Device Not Recognized When Connected to a USB Port"
-permalink: kb/263/Q263707/
+permalink: /kb/263/Q263707/
 ---
 
 ## Q263707: MapPoint: GPS Device Not Recognized When Connected to a USB Port

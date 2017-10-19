@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101791: Musical Instruments: Manual Installation Instructions"
-permalink: kb/101/Q101791/
+permalink: /kb/101/Q101791/
 ---
 
 ## Q101791: Musical Instruments: Manual Installation Instructions

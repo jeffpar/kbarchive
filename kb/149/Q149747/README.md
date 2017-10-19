@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149747: PRB: Debugger Cannot Evaluate Out of Scope Named Constants"
-permalink: kb/149/Q149747/
+permalink: /kb/149/Q149747/
 ---
 
 ## Q149747: PRB: Debugger Cannot Evaluate Out of Scope Named Constants

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104532: Norton Speed Disk May Not Recognize DoubleSpace Floppy Disk"
-permalink: kb/104/Q104532/
+permalink: /kb/104/Q104532/
 ---
 
 ## Q104532: Norton Speed Disk May Not Recognize DoubleSpace Floppy Disk

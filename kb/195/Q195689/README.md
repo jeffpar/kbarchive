@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195689: WD97: &quot;Converter Is an Old Version&quot; Error Trying to Convert"
-permalink: kb/195/Q195689/
+permalink: /kb/195/Q195689/
 ---
 
 ## Q195689: WD97: &quot;Converter Is an Old Version&quot; Error Trying to Convert

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68835: PRB: Compiler Prints Filename But Does Not Compile the Program"
-permalink: kb/068/Q68835/
+permalink: /kb/068/Q68835/
 ---
 
 ## Q68835: PRB: Compiler Prints Filename But Does Not Compile the Program

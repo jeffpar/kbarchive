@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67486: International Versions of MS-DOS for End Users"
-permalink: kb/067/Q67486/
+permalink: /kb/067/Q67486/
 ---
 
 ## Q67486: International Versions of MS-DOS for End Users

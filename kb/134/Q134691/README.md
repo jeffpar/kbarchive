@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134691: AFTP -F Script Fails if Password is Eight Characters Long"
-permalink: kb/134/Q134691/
+permalink: /kb/134/Q134691/
 ---
 
 ## Q134691: AFTP -F Script Fails if Password is Eight Characters Long

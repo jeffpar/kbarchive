@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158365: Scenery Compatibility with Flight Simulator for Windows 95"
-permalink: kb/158/Q158365/
+permalink: /kb/158/Q158365/
 ---
 
 ## Q158365: Scenery Compatibility with Flight Simulator for Windows 95

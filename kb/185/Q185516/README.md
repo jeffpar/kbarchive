@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185516: WD97: Crash IPF Reading an RTF File Converted from Mac Word 5.1"
-permalink: kb/185/Q185516/
+permalink: /kb/185/Q185516/
 ---
 
 ## Q185516: WD97: Crash IPF Reading an RTF File Converted from Mac Word 5.1

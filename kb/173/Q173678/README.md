@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173678: WD97: Incorrect Results When Undo Dragging of Objects"
-permalink: kb/173/Q173678/
+permalink: /kb/173/Q173678/
 ---
 
 ## Q173678: WD97: Incorrect Results When Undo Dragging of Objects

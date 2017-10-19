@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193399: BUG: TabStrip Loses Selection When Placement Property is Changed"
-permalink: kb/193/Q193399/
+permalink: /kb/193/Q193399/
 ---
 
 ## Q193399: BUG: TabStrip Loses Selection When Placement Property is Changed

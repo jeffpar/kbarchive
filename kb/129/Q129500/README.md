@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129500: PC Adm: Automating the Resetting of Group Files with GIMPORT"
-permalink: kb/129/Q129500/
+permalink: /kb/129/Q129500/
 ---
 
 ## Q129500: PC Adm: Automating the Resetting of Group Files with GIMPORT

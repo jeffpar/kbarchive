@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171527: FIX: Causing a ListView Control to Paint Causes an IPF"
-permalink: kb/171/Q171527/
+permalink: /kb/171/Q171527/
 ---
 
 ## Q171527: FIX: Causing a ListView Control to Paint Causes an IPF

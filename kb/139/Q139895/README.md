@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139895: How To Convert Personal or Common Groups"
-permalink: kb/139/Q139895/
+permalink: /kb/139/Q139895/
 ---
 
 ## Q139895: How To Convert Personal or Common Groups

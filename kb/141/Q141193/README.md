@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141193: Training and Source Materials for Windows 95"
-permalink: kb/141/Q141193/
+permalink: /kb/141/Q141193/
 ---
 
 ## Q141193: Training and Source Materials for Windows 95

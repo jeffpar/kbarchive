@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148231: Shutdown Problems with Older HP Vectra BIOS Chip Sets"
-permalink: kb/148/Q148231/
+permalink: /kb/148/Q148231/
 ---
 
 ## Q148231: Shutdown Problems with Older HP Vectra BIOS Chip Sets

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196201: INFO: Visual Basic Is Not Supported on Terminal Server 4.0"
-permalink: kb/196/Q196201/
+permalink: /kb/196/Q196201/
 ---
 
 ## Q196201: INFO: Visual Basic Is Not Supported on Terminal Server 4.0

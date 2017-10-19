@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162515: &quot;-B&quot; Is Printed at End of TN3270 Print Job"
-permalink: kb/162/Q162515/
+permalink: /kb/162/Q162515/
 ---
 
 ## Q162515: &quot;-B&quot; Is Printed at End of TN3270 Print Job

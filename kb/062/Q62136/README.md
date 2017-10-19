@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62136: DOCERR: EXE2BIN.EXE Doesn't Come w/ PC-DOS 3.3, 4.0, &amp; 4.01"
-permalink: kb/062/Q62136/
+permalink: /kb/062/Q62136/
 ---
 
 ## Q62136: DOCERR: EXE2BIN.EXE Doesn't Come w/ PC-DOS 3.3, 4.0, &amp; 4.01

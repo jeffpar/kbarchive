@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225041: Zone: How to Remove the Heartbeat ActiveX Control"
-permalink: kb/225/Q225041/
+permalink: /kb/225/Q225041/
 ---
 
 ## Q225041: Zone: How to Remove the Heartbeat ActiveX Control

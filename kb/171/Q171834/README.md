@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171834: FIX: Crash When UserControl Accesses Members of ParentControls"
-permalink: kb/171/Q171834/
+permalink: /kb/171/Q171834/
 ---
 
 ## Q171834: FIX: Crash When UserControl Accesses Members of ParentControls

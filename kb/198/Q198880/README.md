@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198880: FIX: Cannot Simultaneously Set DTPicker's MinDate And MaxDate"
-permalink: kb/198/Q198880/
+permalink: /kb/198/Q198880/
 ---
 
 ## Q198880: FIX: Cannot Simultaneously Set DTPicker's MinDate And MaxDate

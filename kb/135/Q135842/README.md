@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135842: DOC: SQL Statement Disagrees with Text Description"
-permalink: kb/135/Q135842/
+permalink: /kb/135/Q135842/
 ---
 
 ## Q135842: DOC: SQL Statement Disagrees with Text Description

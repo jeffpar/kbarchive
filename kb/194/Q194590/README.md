@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194590: XFOR: Lotus Notes Connector Diagnostic Logging Registry Settings"
-permalink: kb/194/Q194590/
+permalink: /kb/194/Q194590/
 ---
 
 ## Q194590: XFOR: Lotus Notes Connector Diagnostic Logging Registry Settings

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111355: Repair /S Prompts for Old Emergency Repair Disk"
-permalink: kb/111/Q111355/
+permalink: /kb/111/Q111355/
 ---
 
 ## Q111355: Repair /S Prompts for Old Emergency Repair Disk

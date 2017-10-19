@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99537: PRB: Cannot Change Properties of FOXPROW.EXE File"
-permalink: kb/099/Q99537/
+permalink: /kb/099/Q99537/
 ---
 
 ## Q99537: PRB: Cannot Change Properties of FOXPROW.EXE File

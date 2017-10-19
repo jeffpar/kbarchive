@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246976: Windows Media Player May Start When You Click a NetShow Link"
-permalink: kb/246/Q246976/
+permalink: /kb/246/Q246976/
 ---
 
 ## Q246976: Windows Media Player May Start When You Click a NetShow Link

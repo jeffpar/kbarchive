@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242094: ErrMsg: Unable to Find Primary Domain Controller for This Domain"
-permalink: kb/242/Q242094/
+permalink: /kb/242/Q242094/
 ---
 
 ## Q242094: ErrMsg: Unable to Find Primary Domain Controller for This Domain

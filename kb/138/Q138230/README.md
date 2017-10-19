@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138230: Sony CDU 6251a Cannot Access Second CD-ROM Drive"
-permalink: kb/138/Q138230/
+permalink: /kb/138/Q138230/
 ---
 
 ## Q138230: Sony CDU 6251a Cannot Access Second CD-ROM Drive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195243: ASP May Misinterpret Extra or Missing Delimiters as HTML"
-permalink: kb/195/Q195243/
+permalink: /kb/195/Q195243/
 ---
 
 ## Q195243: ASP May Misinterpret Extra or Missing Delimiters as HTML

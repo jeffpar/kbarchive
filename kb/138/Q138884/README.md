@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138884: Artist: How to Print Without a Border on Your Painting"
-permalink: kb/138/Q138884/
+permalink: /kb/138/Q138884/
 ---
 
 ## Q138884: Artist: How to Print Without a Border on Your Painting

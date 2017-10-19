@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126422: DEC ALPHA AXP Firmware Revisions Needed for Windows NT 3.5"
-permalink: kb/126/Q126422/
+permalink: /kb/126/Q126422/
 ---
 
 ## Q126422: DEC ALPHA AXP Firmware Revisions Needed for Windows NT 3.5

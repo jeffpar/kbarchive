@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194506: XADM: Deadlock While Purging Unused Indices"
-permalink: kb/194/Q194506/
+permalink: /kb/194/Q194506/
 ---
 
 ## Q194506: XADM: Deadlock While Purging Unused Indices

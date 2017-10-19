@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125875: SHARE Functionality Different in Windows NT and WfW"
-permalink: kb/125/Q125875/
+permalink: /kb/125/Q125875/
 ---
 
 ## Q125875: SHARE Functionality Different in Windows NT and WfW

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194750: XCON: Message Sticks in MTA Queue While Other Messages Flow By"
-permalink: kb/194/Q194750/
+permalink: /kb/194/Q194750/
 ---
 
 ## Q194750: XCON: Message Sticks in MTA Queue While Other Messages Flow By

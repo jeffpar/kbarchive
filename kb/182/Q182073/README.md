@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182073: WD97: Picture Becomes Red &quot;X&quot; When Mac Word 98 File Saved in 97"
-permalink: kb/182/Q182073/
+permalink: /kb/182/Q182073/
 ---
 
 ## Q182073: WD97: Picture Becomes Red &quot;X&quot; When Mac Word 98 File Saved in 97

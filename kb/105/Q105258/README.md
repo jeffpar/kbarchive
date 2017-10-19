@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105258: DoubleSpace Automount May Hang System with NCache or Speedisk"
-permalink: kb/105/Q105258/
+permalink: /kb/105/Q105258/
 ---
 
 ## Q105258: DoubleSpace Automount May Hang System with NCache or Speedisk

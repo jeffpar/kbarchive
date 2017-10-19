@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182082: XADM: Event Service Won't Start If Alternate PF Server Selected"
-permalink: kb/182/Q182082/
+permalink: /kb/182/Q182082/
 ---
 
 ## Q182082: XADM: Event Service Won't Start If Alternate PF Server Selected

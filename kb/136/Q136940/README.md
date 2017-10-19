@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136940: Valid Uses for the View Parameters"
-permalink: kb/136/Q136940/
+permalink: /kb/136/Q136940/
 ---
 
 ## Q136940: Valid Uses for the View Parameters

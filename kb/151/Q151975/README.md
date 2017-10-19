@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151975: INFO: List of SourceSafe Error Messages Documented on the Web"
-permalink: kb/151/Q151975/
+permalink: /kb/151/Q151975/
 ---
 
 ## Q151975: INFO: List of SourceSafe Error Messages Documented on the Web

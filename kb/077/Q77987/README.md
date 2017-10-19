@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77987: Debugging GP Faults with WDEB386"
-permalink: kb/077/Q77987/
+permalink: /kb/077/Q77987/
 ---
 
 ## Q77987: Debugging GP Faults with WDEB386

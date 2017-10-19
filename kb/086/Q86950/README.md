@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86950: 3COM: Receiving Multiple Messages from the Gateway"
-permalink: kb/086/Q86950/
+permalink: /kb/086/Q86950/
 ---
 
 ## Q86950: 3COM: Receiving Multiple Messages from the Gateway

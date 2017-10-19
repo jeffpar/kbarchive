@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163129: RAS Client Fails to Connect to Service Pack 2 Using NetBEUI"
-permalink: kb/163/Q163129/
+permalink: /kb/163/Q163129/
 ---
 
 ## Q163129: RAS Client Fails to Connect to Service Pack 2 Using NetBEUI

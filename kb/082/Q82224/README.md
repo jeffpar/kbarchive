@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82224: DRIVER.SYS Incompatible with Windows File Manager"
-permalink: kb/082/Q82224/
+permalink: /kb/082/Q82224/
 ---
 
 ## Q82224: DRIVER.SYS Incompatible with Windows File Manager

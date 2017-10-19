@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137952: How to Set Up Relationship in Data Env for Concatenated Fields"
-permalink: kb/137/Q137952/
+permalink: /kb/137/Q137952/
 ---
 
 ## Q137952: How to Set Up Relationship in Data Env for Concatenated Fields

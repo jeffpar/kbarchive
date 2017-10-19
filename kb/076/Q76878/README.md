@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76878: Setup Detects an Installed Copy of Windows on Hard Drive"
-permalink: kb/076/Q76878/
+permalink: /kb/076/Q76878/
 ---
 
 ## Q76878: Setup Detects an Installed Copy of Windows on Hard Drive

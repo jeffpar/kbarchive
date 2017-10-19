@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62505: Common Mistakes Made when Modifying PROTOCOL.INI"
-permalink: kb/062/Q62505/
+permalink: /kb/062/Q62505/
 ---
 
 ## Q62505: Common Mistakes Made when Modifying PROTOCOL.INI

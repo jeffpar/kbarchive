@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154903: Error Message: This Printer Could Not Be Upgraded"
-permalink: kb/154/Q154903/
+permalink: /kb/154/Q154903/
 ---
 
 ## Q154903: Error Message: This Printer Could Not Be Upgraded

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104896: FIX: F6100 Reading Maximal Negative Integers"
-permalink: kb/104/Q104896/
+permalink: /kb/104/Q104896/
 ---
 
 ## Q104896: FIX: F6100 Reading Maximal Negative Integers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173834: NT 4.0 Resource Kit Setup Hangs"
-permalink: kb/173/Q173834/
+permalink: /kb/173/Q173834/
 ---
 
 ## Q173834: NT 4.0 Resource Kit Setup Hangs

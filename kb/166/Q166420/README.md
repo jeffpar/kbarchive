@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166420: DNS Manager Shows Identical Entries In-addr.arpa zone"
-permalink: kb/166/Q166420/
+permalink: /kb/166/Q166420/
 ---
 
 ## Q166420: DNS Manager Shows Identical Entries In-addr.arpa zone

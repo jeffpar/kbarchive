@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104418: Direct Memory Access (DMA) Channels and Descriptions"
-permalink: kb/104/Q104418/
+permalink: /kb/104/Q104418/
 ---
 
 ## Q104418: Direct Memory Access (DMA) Channels and Descriptions

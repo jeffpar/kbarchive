@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82732: Meaning of the SETUP.INF's &quot;noclobber&quot; Entries"
-permalink: kb/082/Q82732/
+permalink: /kb/082/Q82732/
 ---
 
 ## Q82732: Meaning of the SETUP.INF's &quot;noclobber&quot; Entries

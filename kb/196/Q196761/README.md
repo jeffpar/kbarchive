@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196761: WD97: AutoRecover Turned Off for Master Documents"
-permalink: kb/196/Q196761/
+permalink: /kb/196/Q196761/
 ---
 
 ## Q196761: WD97: AutoRecover Turned Off for Master Documents

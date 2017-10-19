@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201830: BUG: Error C2011 When Reusing Nested Structure Tag Names"
-permalink: kb/201/Q201830/
+permalink: /kb/201/Q201830/
 ---
 
 ## Q201830: BUG: Error C2011 When Reusing Nested Structure Tag Names

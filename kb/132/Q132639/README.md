@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132639: Windows 95 Setup Error Message: Warning SU-0019"
-permalink: kb/132/Q132639/
+permalink: /kb/132/Q132639/
 ---
 
 ## Q132639: Windows 95 Setup Error Message: Warning SU-0019

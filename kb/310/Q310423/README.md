@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310423: PRB: SET FOXPROSWX= in Autoexec.bat File Causes Errors in VFP 6."
-permalink: kb/310/Q310423/
+permalink: /kb/310/Q310423/
 ---
 
 ## Q310423: PRB: SET FOXPROSWX= in Autoexec.bat File Causes Errors in VFP 6.

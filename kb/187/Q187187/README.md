@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187187: Extra ClipArt Preview Files Unavailable for Multiple Users"
-permalink: kb/187/Q187187/
+permalink: /kb/187/Q187187/
 ---
 
 ## Q187187: Extra ClipArt Preview Files Unavailable for Multiple Users

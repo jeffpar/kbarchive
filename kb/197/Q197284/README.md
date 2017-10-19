@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197284: DirectX 6.1: Text in DirectPlay Dialog Boxes Changes to English"
-permalink: kb/197/Q197284/
+permalink: /kb/197/Q197284/
 ---
 
 ## Q197284: DirectX 6.1: Text in DirectPlay Dialog Boxes Changes to English

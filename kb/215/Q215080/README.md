@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215080: SMS: Setup Packages Requiring Mapped Drives May Not Work"
-permalink: kb/215/Q215080/
+permalink: /kb/215/Q215080/
 ---
 
 ## Q215080: SMS: Setup Packages Requiring Mapped Drives May Not Work

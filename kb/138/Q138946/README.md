@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138946: PPT7: Errors Saving PowerPoint 95 File in PowerPoint 4.0 Format"
-permalink: kb/138/Q138946/
+permalink: /kb/138/Q138946/
 ---
 
 ## Q138946: PPT7: Errors Saving PowerPoint 95 File in PowerPoint 4.0 Format

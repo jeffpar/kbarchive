@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213412: CFS: Map Orientation Is Fixed to the North at High Altitudes"
-permalink: kb/213/Q213412/
+permalink: /kb/213/Q213412/
 ---
 
 ## Q213412: CFS: Map Orientation Is Fixed to the North at High Altitudes

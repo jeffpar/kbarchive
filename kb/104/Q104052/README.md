@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104052: FIX: FoxPro Sends Only Two Decimals to MS Graph"
-permalink: kb/104/Q104052/
+permalink: /kb/104/Q104052/
 ---
 
 ## Q104052: FIX: FoxPro Sends Only Two Decimals to MS Graph

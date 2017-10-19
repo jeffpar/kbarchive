@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175450: INFO: Visual Basic 5.0 Fixes in Visual Studio 97 Service Pack 3"
-permalink: kb/175/Q175450/
+permalink: /kb/175/Q175450/
 ---
 
 ## Q175450: INFO: Visual Basic 5.0 Fixes in Visual Studio 97 Service Pack 3

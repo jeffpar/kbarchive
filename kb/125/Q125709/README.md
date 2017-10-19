@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125709: /RATIO Switch Not Valid with DRVSPACE /CREATE Command"
-permalink: kb/125/Q125709/
+permalink: /kb/125/Q125709/
 ---
 
 ## Q125709: /RATIO Switch Not Valid with DRVSPACE /CREATE Command

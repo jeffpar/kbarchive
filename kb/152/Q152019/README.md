@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152019: Encarta 96 Encyclopedia: Minimum System Requirements"
-permalink: kb/152/Q152019/
+permalink: /kb/152/Q152019/
 ---
 
 ## Q152019: Encarta 96 Encyclopedia: Minimum System Requirements

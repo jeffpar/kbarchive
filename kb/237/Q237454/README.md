@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237454: HOWTO: Associate File Extensions with a Custom Fox App"
-permalink: kb/237/Q237454/
+permalink: /kb/237/Q237454/
 ---
 
 ## Q237454: HOWTO: Associate File Extensions with a Custom Fox App

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277831: XFOR: The Microsoft Mail Connector (PC) MTA Does Not Send NDRs"
-permalink: kb/277/Q277831/
+permalink: /kb/277/Q277831/
 ---
 
 ## Q277831: XFOR: The Microsoft Mail Connector (PC) MTA Does Not Send NDRs

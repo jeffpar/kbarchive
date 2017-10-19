@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150398: Bookshelf '96-'97: Minimum System Requirements"
-permalink: kb/150/Q150398/
+permalink: /kb/150/Q150398/
 ---
 
 ## Q150398: Bookshelf '96-'97: Minimum System Requirements

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106510: PC Adm: Err Msg: Postoffice Address List Already Has an Alias..."
-permalink: kb/106/Q106510/
+permalink: /kb/106/Q106510/
 ---
 
 ## Q106510: PC Adm: Err Msg: Postoffice Address List Already Has an Alias...

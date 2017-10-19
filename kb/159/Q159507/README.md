@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159507: PC Ext: Supported WAN Environments with MS Mail for PC Networks"
-permalink: kb/159/Q159507/
+permalink: /kb/159/Q159507/
 ---
 
 ## Q159507: PC Ext: Supported WAN Environments with MS Mail for PC Networks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159303: XCON: Message Sent Without Message Body Text is not Delivered"
-permalink: kb/159/Q159303/
+permalink: /kb/159/Q159303/
 ---
 
 ## Q159303: XCON: Message Sent Without Message Body Text is not Delivered

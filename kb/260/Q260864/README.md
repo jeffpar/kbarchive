@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260864: StarLancer: No Lighting Effects for Engines or Weapons Fire"
-permalink: kb/260/Q260864/
+permalink: /kb/260/Q260864/
 ---
 
 ## Q260864: StarLancer: No Lighting Effects for Engines or Weapons Fire

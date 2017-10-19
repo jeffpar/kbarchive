@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238131: How to Disable Socket Pooling"
-permalink: kb/238/Q238131/
+permalink: /kb/238/Q238131/
 ---
 
 ## Q238131: How to Disable Socket Pooling

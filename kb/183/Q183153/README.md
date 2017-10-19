@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183153: XCLN: No Close Option Available After Reading Last OWA Message"
-permalink: kb/183/Q183153/
+permalink: /kb/183/Q183153/
 ---
 
 ## Q183153: XCLN: No Close Option Available After Reading Last OWA Message

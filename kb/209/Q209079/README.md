@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q209079: BUG: TreeView Properties Set in Design do not Work at Run-Time"
-permalink: kb/209/Q209079/
+permalink: /kb/209/Q209079/
 ---
 
 ## Q209079: BUG: TreeView Properties Set in Design do not Work at Run-Time

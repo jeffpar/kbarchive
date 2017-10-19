@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150306: Bookshelf 96-97: Poor Performance Even After Reinstalling"
-permalink: kb/150/Q150306/
+permalink: /kb/150/Q150306/
 ---
 
 ## Q150306: Bookshelf 96-97: Poor Performance Even After Reinstalling

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149349: Using UMAX Scanners with Windows NT"
-permalink: kb/149/Q149349/
+permalink: /kb/149/Q149349/
 ---
 
 ## Q149349: Using UMAX Scanners with Windows NT

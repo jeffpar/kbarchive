@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74851: Different Default Modes for EMM386.EXE and EMM386.SYS"
-permalink: kb/074/Q74851/
+permalink: /kb/074/Q74851/
 ---
 
 ## Q74851: Different Default Modes for EMM386.EXE and EMM386.SYS

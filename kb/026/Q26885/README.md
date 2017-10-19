@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q26885: PPT7: Clipart Gallery 2.0a Update for Windows NT Users"
-permalink: kb/026/Q26885/
+permalink: /kb/026/Q26885/
 ---
 
 ## Q26885: PPT7: Clipart Gallery 2.0a Update for Windows NT Users

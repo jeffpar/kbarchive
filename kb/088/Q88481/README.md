@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88481: Customizing Sounds in Golf for Windows"
-permalink: kb/088/Q88481/
+permalink: /kb/088/Q88481/
 ---
 
 ## Q88481: Customizing Sounds in Golf for Windows

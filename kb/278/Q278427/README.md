@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278427: XCLN: Inbox Rule Causes Mailbox to Exceed the Send Limit"
-permalink: kb/278/Q278427/
+permalink: /kb/278/Q278427/
 ---
 
 ## Q278427: XCLN: Inbox Rule Causes Mailbox to Exceed the Send Limit

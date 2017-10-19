@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162207: WD97: &quot;Replace With&quot; Format Incorrect with Recorded Macro"
-permalink: kb/162/Q162207/
+permalink: /kb/162/Q162207/
 ---
 
 ## Q162207: WD97: &quot;Replace With&quot; Format Incorrect with Recorded Macro

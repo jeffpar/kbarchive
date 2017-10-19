@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260698: XADM: Demotion of Domain Controller Disables Exchange Server"
-permalink: kb/260/Q260698/
+permalink: /kb/260/Q260698/
 ---
 
 ## Q260698: XADM: Demotion of Domain Controller Disables Exchange Server

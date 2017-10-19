@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83446: Windows: Using Identity Module on Epson LQ-1000 Printer"
-permalink: kb/083/Q83446/
+permalink: /kb/083/Q83446/
 ---
 
 ## Q83446: Windows: Using Identity Module on Epson LQ-1000 Printer

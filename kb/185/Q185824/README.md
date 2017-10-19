@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185824: WD97: Selected Paragraph Marks Not Removed When Deleted"
-permalink: kb/185/Q185824/
+permalink: /kb/185/Q185824/
 ---
 
 ## Q185824: WD97: Selected Paragraph Marks Not Removed When Deleted

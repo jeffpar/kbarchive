@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139641: Backup of Schedule File Smaller Than Original"
-permalink: kb/139/Q139641/
+permalink: /kb/139/Q139641/
 ---
 
 ## Q139641: Backup of Schedule File Smaller Than Original

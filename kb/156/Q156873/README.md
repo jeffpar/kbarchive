@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156873: PRB: Calling Paint Method Can Cause Recursion in VFP 5.0"
-permalink: kb/156/Q156873/
+permalink: /kb/156/Q156873/
 ---
 
 ## Q156873: PRB: Calling Paint Method Can Cause Recursion in VFP 5.0

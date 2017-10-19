@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89461: LAN Man 2.1 Test Summary (American Power Back-UPS 900)"
-permalink: kb/089/Q89461/
+permalink: /kb/089/Q89461/
 ---
 
 ## Q89461: LAN Man 2.1 Test Summary (American Power Back-UPS 900)

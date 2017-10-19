@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137750: Modem Properties Override The MS Network Speaker Volume"
-permalink: kb/137/Q137750/
+permalink: /kb/137/Q137750/
 ---
 
 ## Q137750: Modem Properties Override The MS Network Speaker Volume

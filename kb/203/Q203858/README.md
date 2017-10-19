@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203858: HOWTO: Use the HrMailboxLogon Function"
-permalink: kb/203/Q203858/
+permalink: /kb/203/Q203858/
 ---
 
 ## Q203858: HOWTO: Use the HrMailboxLogon Function

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139156: PRB: DO WHILE Loop Does Not See Changes Made to Macro Variable"
-permalink: kb/139/Q139156/
+permalink: /kb/139/Q139156/
 ---
 
 ## Q139156: PRB: DO WHILE Loop Does Not See Changes Made to Macro Variable

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198046: Change in Time Zone Behavior for Israel with Service Pack 4"
-permalink: kb/198/Q198046/
+permalink: /kb/198/Q198046/
 ---
 
 ## Q198046: Change in Time Zone Behavior for Israel with Service Pack 4

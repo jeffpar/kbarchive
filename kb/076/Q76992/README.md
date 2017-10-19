@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76992: International and National Standard Paper Sizes"
-permalink: kb/076/Q76992/
+permalink: /kb/076/Q76992/
 ---
 
 ## Q76992: International and National Standard Paper Sizes

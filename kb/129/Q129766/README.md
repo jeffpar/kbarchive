@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129766: Err Msg: Cannot Send an Embedded Message in Editable Format"
-permalink: kb/129/Q129766/
+permalink: /kb/129/Q129766/
 ---
 
 ## Q129766: Err Msg: Cannot Send an Embedded Message in Editable Format

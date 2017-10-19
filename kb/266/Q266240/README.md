@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266240: PRB: Custom SDK Not Available for Existing eVC Projects"
-permalink: kb/266/Q266240/
+permalink: /kb/266/Q266240/
 ---
 
 ## Q266240: PRB: Custom SDK Not Available for Existing eVC Projects

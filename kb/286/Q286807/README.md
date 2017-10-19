@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286807: Combat Flight Simulator 2: No Forces in Multiplayer Game"
-permalink: kb/286/Q286807/
+permalink: /kb/286/Q286807/
 ---
 
 ## Q286807: Combat Flight Simulator 2: No Forces in Multiplayer Game

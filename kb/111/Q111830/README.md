@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111830: Problems Sending Faxes to European Numbers"
-permalink: kb/111/Q111830/
+permalink: /kb/111/Q111830/
 ---
 
 ## Q111830: Problems Sending Faxes to European Numbers

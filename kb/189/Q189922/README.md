@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189922: PRB: Copying Folder in Component Gallery Copies Folder Only"
-permalink: kb/189/Q189922/
+permalink: /kb/189/Q189922/
 ---
 
 ## Q189922: PRB: Copying Folder in Component Gallery Copies Folder Only

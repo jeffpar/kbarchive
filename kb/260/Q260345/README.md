@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260345: BUG: Channel Screen Saver in Brazillian Windows 2000 OPK Fails"
-permalink: kb/260/Q260345/
+permalink: /kb/260/Q260345/
 ---
 
 ## Q260345: BUG: Channel Screen Saver in Brazillian Windows 2000 OPK Fails

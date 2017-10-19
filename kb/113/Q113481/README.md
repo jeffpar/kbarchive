@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113481: ISDN Support for Windows for Workgroups RAS"
-permalink: kb/113/Q113481/
+permalink: /kb/113/Q113481/
 ---
 
 ## Q113481: ISDN Support for Windows for Workgroups RAS

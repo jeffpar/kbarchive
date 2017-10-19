@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167026: Windows NT 4.0 DNS Server Stops Responding to Queries"
-permalink: kb/167/Q167026/
+permalink: /kb/167/Q167026/
 ---
 
 ## Q167026: Windows NT 4.0 DNS Server Stops Responding to Queries

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169405: XFOR: Novell GroupWise Shared Code Directory Was Not Found"
-permalink: kb/169/Q169405/
+permalink: /kb/169/Q169405/
 ---
 
 ## Q169405: XFOR: Novell GroupWise Shared Code Directory Was Not Found

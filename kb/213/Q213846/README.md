@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213846: INFO: Deploy Database Applications with the PDW"
-permalink: kb/213/Q213846/
+permalink: /kb/213/Q213846/
 ---
 
 ## Q213846: INFO: Deploy Database Applications with the PDW

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189844: SMS: PGC Should Ignore Configuration Command Line"
-permalink: kb/189/Q189844/
+permalink: /kb/189/Q189844/
 ---
 
 ## Q189844: SMS: PGC Should Ignore Configuration Command Line

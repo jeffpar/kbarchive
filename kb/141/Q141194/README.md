@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141194: Cannot Reply By E-mail To Messages With Brackets In Address"
-permalink: kb/141/Q141194/
+permalink: /kb/141/Q141194/
 ---
 
 ## Q141194: Cannot Reply By E-mail To Messages With Brackets In Address

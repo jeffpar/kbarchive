@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302658: Trouble Shooting Code - &quot;Mail&quot;"
-permalink: kb/302/Q302658/
+permalink: /kb/302/Q302658/
 ---
 
 ## Q302658: Trouble Shooting Code - &quot;Mail&quot;

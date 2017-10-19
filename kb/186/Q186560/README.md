@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186560: Using DOSKBD to Modify MS-DOS Keyboard Polling Detection"
-permalink: kb/186/Q186560/
+permalink: /kb/186/Q186560/
 ---
 
 ## Q186560: Using DOSKBD to Modify MS-DOS Keyboard Polling Detection

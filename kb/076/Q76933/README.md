@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76933: DOC: Button Styles May Not Be OR'd with Other Button Styles"
-permalink: kb/076/Q76933/
+permalink: /kb/076/Q76933/
 ---
 
 ## Q76933: DOC: Button Styles May Not Be OR'd with Other Button Styles

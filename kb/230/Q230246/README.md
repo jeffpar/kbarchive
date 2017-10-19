@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230246: 16-Bit MS-DOS-Based Programs Not Supported for Software Metering"
-permalink: kb/230/Q230246/
+permalink: /kb/230/Q230246/
 ---
 
 ## Q230246: 16-Bit MS-DOS-Based Programs Not Supported for Software Metering

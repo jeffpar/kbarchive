@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68736: Methods of Printing on Novell Networks in Windows 3.0"
-permalink: kb/068/Q68736/
+permalink: /kb/068/Q68736/
 ---
 
 ## Q68736: Methods of Printing on Novell Networks in Windows 3.0

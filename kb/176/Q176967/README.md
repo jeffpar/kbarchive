@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176967: WinNT Error Message: TCP/IP CP Reported Error 1214"
-permalink: kb/176/Q176967/
+permalink: /kb/176/Q176967/
 ---
 
 ## Q176967: WinNT Error Message: TCP/IP CP Reported Error 1214

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96507: Installing OS/2 on a Compaq Prosignia"
-permalink: kb/096/Q96507/
+permalink: /kb/096/Q96507/
 ---
 
 ## Q96507: Installing OS/2 on a Compaq Prosignia

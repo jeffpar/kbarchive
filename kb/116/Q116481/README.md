@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116481: HOWTO: Use Bar Codes in FoxPro"
-permalink: kb/116/Q116481/
+permalink: /kb/116/Q116481/
 ---
 
 ## Q116481: HOWTO: Use Bar Codes in FoxPro

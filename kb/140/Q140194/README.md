@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140194: PC WSPlus: Tuning a Schedule+ 1.0 Installation"
-permalink: kb/140/Q140194/
+permalink: /kb/140/Q140194/
 ---
 
 ## Q140194: PC WSPlus: Tuning a Schedule+ 1.0 Installation

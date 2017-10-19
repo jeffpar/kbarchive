@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139499: TN3270 Server Doesn't Dynamically Recognize LUA LU Config Change"
-permalink: kb/139/Q139499/
+permalink: /kb/139/Q139499/
 ---
 
 ## Q139499: TN3270 Server Doesn't Dynamically Recognize LUA LU Config Change

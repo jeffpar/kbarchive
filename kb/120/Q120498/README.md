@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120498: 6.22 Setup Err Msg with SCSI Device: Hard Disk Write Error"
-permalink: kb/120/Q120498/
+permalink: /kb/120/Q120498/
 ---
 
 ## Q120498: 6.22 Setup Err Msg with SCSI Device: Hard Disk Write Error

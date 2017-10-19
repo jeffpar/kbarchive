@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156834: Cannot Print Multiple Envelopes to HP LaserJet 5L Printer"
-permalink: kb/156/Q156834/
+permalink: /kb/156/Q156834/
 ---
 
 ## Q156834: Cannot Print Multiple Envelopes to HP LaserJet 5L Printer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118963: WFWG Err Msg: Shell-332-21: Network Server Could Not Be Found"
-permalink: kb/118/Q118963/
+permalink: /kb/118/Q118963/
 ---
 
 ## Q118963: WFWG Err Msg: Shell-332-21: Network Server Could Not Be Found

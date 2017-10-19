@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241408: WIN5250 Applet Incorrectly Displays Error Messages on Line 24"
-permalink: kb/241/Q241408/
+permalink: /kb/241/Q241408/
 ---
 
 ## Q241408: WIN5250 Applet Incorrectly Displays Error Messages on Line 24

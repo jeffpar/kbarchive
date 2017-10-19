@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191697: BUG: ALTER TABLE Command With Multiple Drop Statements Fails"
-permalink: kb/191/Q191697/
+permalink: /kb/191/Q191697/
 ---
 
 ## Q191697: BUG: ALTER TABLE Command With Multiple Drop Statements Fails

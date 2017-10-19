@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216881: Line Added to Autoexec.bat on Client Cannot Be Truncated"
-permalink: kb/216/Q216881/
+permalink: /kb/216/Q216881/
 ---
 
 ## Q216881: Line Added to Autoexec.bat on Client Cannot Be Truncated

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286754: PRB: Three-Tiered Service Model Is Not Visible in Visual Modeler"
-permalink: kb/286/Q286754/
+permalink: /kb/286/Q286754/
 ---
 
 ## Q286754: PRB: Three-Tiered Service Model Is Not Visible in Visual Modeler

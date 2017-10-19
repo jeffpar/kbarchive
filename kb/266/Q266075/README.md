@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266075: Modifying Files with Name &quot;Neu&quot; Does Not Display Content"
-permalink: kb/266/Q266075/
+permalink: /kb/266/Q266075/
 ---
 
 ## Q266075: Modifying Files with Name &quot;Neu&quot; Does Not Display Content

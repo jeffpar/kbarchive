@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241102: BUG: Node Item Tips Hidden whenTreeView Is Sited on UserControl"
-permalink: kb/241/Q241102/
+permalink: /kb/241/Q241102/
 ---
 
 ## Q241102: BUG: Node Item Tips Hidden whenTreeView Is Sited on UserControl

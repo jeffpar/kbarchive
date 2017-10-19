@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103375: MultiDlg.exe Demonstrates Dynamic Child Dialog Boxes"
-permalink: kb/103/Q103375/
+permalink: /kb/103/Q103375/
 ---
 
 ## Q103375: MultiDlg.exe Demonstrates Dynamic Child Dialog Boxes

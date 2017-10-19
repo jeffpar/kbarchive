@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166428: How to Use the Chinese Code Converter"
-permalink: kb/166/Q166428/
+permalink: /kb/166/Q166428/
 ---
 
 ## Q166428: How to Use the Chinese Code Converter

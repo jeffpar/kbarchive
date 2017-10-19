@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181027: Closing Subdomain Causes Dr. Watson in CSnaItem::Terminate"
-permalink: kb/181/Q181027/
+permalink: /kb/181/Q181027/
 ---
 
 ## Q181027: Closing Subdomain Causes Dr. Watson in CSnaItem::Terminate

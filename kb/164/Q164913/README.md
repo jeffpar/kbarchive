@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164913: Access Violations or Memory Leak May Occur with Tracing Enabled"
-permalink: kb/164/Q164913/
+permalink: /kb/164/Q164913/
 ---
 
 ## Q164913: Access Violations or Memory Leak May Occur with Tracing Enabled

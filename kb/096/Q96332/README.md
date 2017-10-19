@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96332: F5 and F8 Keys Do Not Seem to Affect Startup Files"
-permalink: kb/096/Q96332/
+permalink: /kb/096/Q96332/
 ---
 
 ## Q96332: F5 and F8 Keys Do Not Seem to Affect Startup Files

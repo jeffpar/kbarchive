@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160519: DNS Queries for Root Name Servers Every Hour"
-permalink: kb/160/Q160519/
+permalink: /kb/160/Q160519/
 ---
 
 ## Q160519: DNS Queries for Root Name Servers Every Hour

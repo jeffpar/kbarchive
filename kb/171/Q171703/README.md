@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171703: Kids Plus!: Resetting Protect It! and Internet Ratings Passwords"
-permalink: kb/171/Q171703/
+permalink: /kb/171/Q171703/
 ---
 
 ## Q171703: Kids Plus!: Resetting Protect It! and Internet Ratings Passwords

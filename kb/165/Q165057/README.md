@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165057: XCON: Can't Connect Exchange Server Sites w/ Proxy Server"
-permalink: kb/165/Q165057/
+permalink: /kb/165/Q165057/
 ---
 
 ## Q165057: XCON: Can't Connect Exchange Server Sites w/ Proxy Server

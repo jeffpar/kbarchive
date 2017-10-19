@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167708: BootP Client Names Disappear in DHCP Manager"
-permalink: kb/167/Q167708/
+permalink: /kb/167/Q167708/
 ---
 
 ## Q167708: BootP Client Names Disappear in DHCP Manager

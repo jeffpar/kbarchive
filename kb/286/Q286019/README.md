@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286019: Installing Internet Explorer on Windows NT 4.0 Terminal Server"
-permalink: kb/286/Q286019/
+permalink: /kb/286/Q286019/
 ---
 
 ## Q286019: Installing Internet Explorer on Windows NT 4.0 Terminal Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180150: LU3 Print Job Fails If Data Includes X'27' Control Codes"
-permalink: kb/180/Q180150/
+permalink: /kb/180/Q180150/
 ---
 
 ## Q180150: LU3 Print Job Fails If Data Includes X'27' Control Codes

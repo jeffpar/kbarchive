@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228717: Document Footers Do Not Work with ASP Pages"
-permalink: kb/228/Q228717/
+permalink: /kb/228/Q228717/
 ---
 
 ## Q228717: Document Footers Do Not Work with ASP Pages

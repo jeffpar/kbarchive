@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196082: XWEB: When publishing All Public Folders Nothing is Published"
-permalink: kb/196/Q196082/
+permalink: /kb/196/Q196082/
 ---
 
 ## Q196082: XWEB: When publishing All Public Folders Nothing is Published

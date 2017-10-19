@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196857: WD97: First Page Prints on Back of Last Page with Duplex"
-permalink: kb/196/Q196857/
+permalink: /kb/196/Q196857/
 ---
 
 ## Q196857: WD97: First Page Prints on Back of Last Page with Duplex

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154528: How to Change or Disable the Screen Saver Used at Logon"
-permalink: kb/154/Q154528/
+permalink: /kb/154/Q154528/
 ---
 
 ## Q154528: How to Change or Disable the Screen Saver Used at Logon

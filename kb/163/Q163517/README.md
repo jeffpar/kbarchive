@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163517: Sense Code 080E0000 Trying to Connect to an AS/400"
-permalink: kb/163/Q163517/
+permalink: /kb/163/Q163517/
 ---
 
 ## Q163517: Sense Code 080E0000 Trying to Connect to an AS/400

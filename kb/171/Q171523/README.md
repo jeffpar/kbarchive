@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171523: FIX: Reference to Missing Member in Enum Definition Causes Crash"
-permalink: kb/171/Q171523/
+permalink: /kb/171/Q171523/
 ---
 
 ## Q171523: FIX: Reference to Missing Member in Enum Definition Causes Crash

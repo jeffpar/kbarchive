@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59596: Mac AL: AppleLink Gateway Makes One Phone Call to AppleLink"
-permalink: kb/059/Q59596/
+permalink: /kb/059/Q59596/
 ---
 
 ## Q59596: Mac AL: AppleLink Gateway Makes One Phone Call to AppleLink

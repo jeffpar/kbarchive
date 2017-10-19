@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194814: XADM: Server Missing Public IS after Move Server Wizard"
-permalink: kb/194/Q194814/
+permalink: /kb/194/Q194814/
 ---
 
 ## Q194814: XADM: Server Missing Public IS after Move Server Wizard

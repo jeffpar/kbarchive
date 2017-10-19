@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163630: Output on a Tektronix 300i Printer is Less Clear In WinNT 4.0"
-permalink: kb/163/Q163630/
+permalink: /kb/163/Q163630/
 ---
 
 ## Q163630: Output on a Tektronix 300i Printer is Less Clear In WinNT 4.0

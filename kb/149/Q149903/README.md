@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149903: File Manager Performs a Move Instead of a Copy"
-permalink: kb/149/Q149903/
+permalink: /kb/149/Q149903/
 ---
 
 ## Q149903: File Manager Performs a Move Instead of a Copy

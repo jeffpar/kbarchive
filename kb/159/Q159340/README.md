@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159340: Err Msg: This File Is Not a Windows Help File"
-permalink: kb/159/Q159340/
+permalink: /kb/159/Q159340/
 ---
 
 ## Q159340: Err Msg: This File Is Not a Windows Help File

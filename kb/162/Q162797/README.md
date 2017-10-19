@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162797: Trust Relationship Between Workstation and Domain Fails"
-permalink: kb/162/Q162797/
+permalink: /kb/162/Q162797/
 ---
 
 ## Q162797: Trust Relationship Between Workstation and Domain Fails

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84166: Incorrectly Detected Coprocessor May Cause Improper Display"
-permalink: kb/084/Q84166/
+permalink: /kb/084/Q84166/
 ---
 
 ## Q84166: Incorrectly Detected Coprocessor May Cause Improper Display

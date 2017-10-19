@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186448: FP: Image Disappears Changing Alignment of Formatted Style Text"
-permalink: kb/186/Q186448/
+permalink: /kb/186/Q186448/
 ---
 
 ## Q186448: FP: Image Disappears Changing Alignment of Formatted Style Text

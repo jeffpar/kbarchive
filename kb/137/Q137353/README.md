@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137353: PRB: Stock Font and Color Property Pages Fail"
-permalink: kb/137/Q137353/
+permalink: /kb/137/Q137353/
 ---
 
 ## Q137353: PRB: Stock Font and Color Property Pages Fail

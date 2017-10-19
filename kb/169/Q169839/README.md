@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169839: XFOR: Cannot Enable (Appletalk) MTA Service NT SP3"
-permalink: kb/169/Q169839/
+permalink: /kb/169/Q169839/
 ---
 
 ## Q169839: XFOR: Cannot Enable (Appletalk) MTA Service NT SP3

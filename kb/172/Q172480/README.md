@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172480: GET_LU_STATUS_VERB Stops Responding on Call from 2nd Thread"
-permalink: kb/172/Q172480/
+permalink: /kb/172/Q172480/
 ---
 
 ## Q172480: GET_LU_STATUS_VERB Stops Responding on Call from 2nd Thread

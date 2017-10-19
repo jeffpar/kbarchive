@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238099: Flight Simulator 98: GPF in Module User.exe"
-permalink: kb/238/Q238099/
+permalink: /kb/238/Q238099/
 ---
 
 ## Q238099: Flight Simulator 98: GPF in Module User.exe

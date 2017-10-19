@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150000: FIX: Minimal Rebuild Fails on Access Specifier Change for Enum"
-permalink: kb/150/Q150000/
+permalink: /kb/150/Q150000/
 ---
 
 ## Q150000: FIX: Minimal Rebuild Fails on Access Specifier Change for Enum

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103550: MS-DOS 6.2 Upgrade Setup Replaces MEMMAKER.INF File"
-permalink: kb/103/Q103550/
+permalink: /kb/103/Q103550/
 ---
 
 ## Q103550: MS-DOS 6.2 Upgrade Setup Replaces MEMMAKER.INF File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183636: Errors using Personal Web Manager"
-permalink: kb/183/Q183636/
+permalink: /kb/183/Q183636/
 ---
 
 ## Q183636: Errors using Personal Web Manager

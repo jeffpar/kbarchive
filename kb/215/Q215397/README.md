@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215397: BUG: Menu Cannot be Disabled By CommandBar Controls Collection"
-permalink: kb/215/Q215397/
+permalink: /kb/215/Q215397/
 ---
 
 ## Q215397: BUG: Menu Cannot be Disabled By CommandBar Controls Collection

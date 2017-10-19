@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137298: &quot;NetWare Compatible Password Expired&quot; Disappears for New User"
-permalink: kb/137/Q137298/
+permalink: /kb/137/Q137298/
 ---
 
 ## Q137298: &quot;NetWare Compatible Password Expired&quot; Disappears for New User

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q33252: INFO: Expanded BANDINFO Documentation"
-permalink: kb/033/Q33252/
+permalink: /kb/033/Q33252/
 ---
 
 ## Q33252: INFO: Expanded BANDINFO Documentation

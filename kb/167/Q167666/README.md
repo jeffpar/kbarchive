@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167666: SNA TN3270 Access Violation, Event ID 5"
-permalink: kb/167/Q167666/
+permalink: /kb/167/Q167666/
 ---
 
 ## Q167666: SNA TN3270 Access Violation, Event ID 5

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314739: XADM: Recipients Exmerged to New IS in New Org or Site Get NDRs"
-permalink: kb/314/Q314739/
+permalink: /kb/314/Q314739/
 ---
 
 ## Q314739: XADM: Recipients Exmerged to New IS in New Org or Site Get NDRs

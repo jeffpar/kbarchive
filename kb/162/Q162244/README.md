@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162244: FP: Error 10053 After Quick, Repeated Operations on WebSite"
-permalink: kb/162/Q162244/
+permalink: /kb/162/Q162244/
 ---
 
 ## Q162244: FP: Error 10053 After Quick, Repeated Operations on WebSite

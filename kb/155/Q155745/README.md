@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155745: Cannot Read Media.ini"
-permalink: kb/155/Q155745/
+permalink: /kb/155/Q155745/
 ---
 
 ## Q155745: Cannot Read Media.ini

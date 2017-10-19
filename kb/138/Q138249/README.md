@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138249: Updated Vredir.vxd Corrects Errors Running Files on LMX"
-permalink: kb/138/Q138249/
+permalink: /kb/138/Q138249/
 ---
 
 ## Q138249: Updated Vredir.vxd Corrects Errors Running Files on LMX

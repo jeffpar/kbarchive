@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126020: Setup Err Msg on Intel Xpress Deskside: Inaccessible Boot..."
-permalink: kb/126/Q126020/
+permalink: /kb/126/Q126020/
 ---
 
 ## Q126020: Setup Err Msg on Intel Xpress Deskside: Inaccessible Boot...

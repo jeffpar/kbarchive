@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317403: ENC: &quot;Offset: 000023ab&quot; Error Message Starting Encarta"
-permalink: kb/317/Q317403/
+permalink: /kb/317/Q317403/
 ---
 
 ## Q317403: ENC: &quot;Offset: 000023ab&quot; Error Message Starting Encarta

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115482: SET VOLUME Provides Support for MS-DOS-Style Paths"
-permalink: kb/115/Q115482/
+permalink: /kb/115/Q115482/
 ---
 
 ## Q115482: SET VOLUME Provides Support for MS-DOS-Style Paths

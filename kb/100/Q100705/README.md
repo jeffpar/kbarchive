@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100705: SMTP: Err Msg: 550 Addressee Unknown"
-permalink: kb/100/Q100705/
+permalink: /kb/100/Q100705/
 ---
 
 ## Q100705: SMTP: Err Msg: 550 Addressee Unknown

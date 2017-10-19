@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113808: How to Determine Number of Records Returned by SQL-SELECT"
-permalink: kb/113/Q113808/
+permalink: /kb/113/Q113808/
 ---
 
 ## Q113808: How to Determine Number of Records Returned by SQL-SELECT

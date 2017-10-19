@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150814: Creating Audited Software Report with Crystal Reports"
-permalink: kb/150/Q150814/
+permalink: /kb/150/Q150814/
 ---
 
 ## Q150814: Creating Audited Software Report with Crystal Reports

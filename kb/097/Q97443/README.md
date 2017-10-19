@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97443: Error Message &quot;Fdisk Unsuccessful&quot; Means .BID Is Missing"
-permalink: kb/097/Q97443/
+permalink: /kb/097/Q97443/
 ---
 
 ## Q97443: Error Message &quot;Fdisk Unsuccessful&quot; Means .BID Is Missing

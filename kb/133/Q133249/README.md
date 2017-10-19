@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133249: FIX: Fatal Error U1052: File 'win32.mak' Not Found"
-permalink: kb/133/Q133249/
+permalink: /kb/133/Q133249/
 ---
 
 ## Q133249: FIX: Fatal Error U1052: File 'win32.mak' Not Found

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176872: Streets 98 Err Msg: Unable to Register File Abico11.dll..."
-permalink: kb/176/Q176872/
+permalink: /kb/176/Q176872/
 ---
 
 ## Q176872: Streets 98 Err Msg: Unable to Register File Abico11.dll...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186634: Periods Appear as Commas Using Belgian Dutch Keyboard"
-permalink: kb/186/Q186634/
+permalink: /kb/186/Q186634/
 ---
 
 ## Q186634: Periods Appear as Commas Using Belgian Dutch Keyboard

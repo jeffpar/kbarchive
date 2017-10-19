@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177429: INFO: Examples of DUMPBIN Output"
-permalink: kb/177/Q177429/
+permalink: /kb/177/Q177429/
 ---
 
 ## Q177429: INFO: Examples of DUMPBIN Output

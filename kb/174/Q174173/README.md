@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174173: XADM: F1 Opens Incorrect Help Topic"
-permalink: kb/174/Q174173/
+permalink: /kb/174/Q174173/
 ---
 
 ## Q174173: XADM: F1 Opens Incorrect Help Topic

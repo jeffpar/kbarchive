@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153853: XADM: MSDN July CD has Hidden Setup.exe Files"
-permalink: kb/153/Q153853/
+permalink: /kb/153/Q153853/
 ---
 
 ## Q153853: XADM: MSDN July CD has Hidden Setup.exe Files

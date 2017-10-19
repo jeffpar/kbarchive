@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231453: Internet Explorer 5.0 Fails to Pass Session Variables to IIS"
-permalink: kb/231/Q231453/
+permalink: /kb/231/Q231453/
 ---
 
 ## Q231453: Internet Explorer 5.0 Fails to Pass Session Variables to IIS

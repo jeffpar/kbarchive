@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137798: SMS: Re-draw Problem with Package Command Manager"
-permalink: kb/137/Q137798/
+permalink: /kb/137/Q137798/
 ---
 
 ## Q137798: SMS: Re-draw Problem with Package Command Manager

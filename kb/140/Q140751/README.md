@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140751: PRB: Problems Occur When Defining _AFX_NO_XXX"
-permalink: kb/140/Q140751/
+permalink: /kb/140/Q140751/
 ---
 
 ## Q140751: PRB: Problems Occur When Defining _AFX_NO_XXX

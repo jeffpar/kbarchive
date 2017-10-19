@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83074: During Setup, Windows 3.1 Fails to Start Standard-Mode Windows"
-permalink: kb/083/Q83074/
+permalink: /kb/083/Q83074/
 ---
 
 ## Q83074: During Setup, Windows 3.1 Fails to Start Standard-Mode Windows

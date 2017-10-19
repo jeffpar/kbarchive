@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131867: RAS Auto Answer Fails with GVC FM144v Modem"
-permalink: kb/131/Q131867/
+permalink: /kb/131/Q131867/
 ---
 
 ## Q131867: RAS Auto Answer Fails with GVC FM144v Modem

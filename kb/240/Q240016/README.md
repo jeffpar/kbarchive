@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240016: NBA2K: Minimum System Requirements"
-permalink: kb/240/Q240016/
+permalink: /kb/240/Q240016/
 ---
 
 ## Q240016: NBA2K: Minimum System Requirements

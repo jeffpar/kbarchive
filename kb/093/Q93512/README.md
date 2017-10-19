@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93512: Reading LOGSHOW Information"
-permalink: kb/093/Q93512/
+permalink: /kb/093/Q93512/
 ---
 
 ## Q93512: Reading LOGSHOW Information

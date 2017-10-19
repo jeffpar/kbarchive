@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218187: XADM: Error 8004010f-0501-8004010f When Moving Mailbox"
-permalink: kb/218/Q218187/
+permalink: /kb/218/Q218187/
 ---
 
 ## Q218187: XADM: Error 8004010f-0501-8004010f When Moving Mailbox

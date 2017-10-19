@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120366: How to Create a Bootable Floppy Disk for the Macintosh"
-permalink: kb/120/Q120366/
+permalink: /kb/120/Q120366/
 ---
 
 ## Q120366: How to Create a Bootable Floppy Disk for the Macintosh

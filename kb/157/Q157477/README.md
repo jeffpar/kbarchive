@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157477: WD97: Features Not Available During Web Authoring"
-permalink: kb/157/Q157477/
+permalink: /kb/157/Q157477/
 ---
 
 ## Q157477: WD97: Features Not Available During Web Authoring

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308117: Games: Error Message: Ddraw.dll Cannot Start"
-permalink: kb/308/Q308117/
+permalink: /kb/308/Q308117/
 ---
 
 ## Q308117: Games: Error Message: Ddraw.dll Cannot Start

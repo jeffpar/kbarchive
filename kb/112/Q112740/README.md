@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112740: Encarta Err Msg: Could Not Write to File Named CTL3D.DLL"
-permalink: kb/112/Q112740/
+permalink: /kb/112/Q112740/
 ---
 
 ## Q112740: Encarta Err Msg: Could Not Write to File Named CTL3D.DLL

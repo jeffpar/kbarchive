@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69253: Windows Err Msg: Incorrect Version of FINSTALL"
-permalink: kb/069/Q69253/
+permalink: /kb/069/Q69253/
 ---
 
 ## Q69253: Windows Err Msg: Incorrect Version of FINSTALL

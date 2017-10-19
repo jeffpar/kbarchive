@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139822: How to Restore a Backup to Computer with Different Hardware"
-permalink: kb/139/Q139822/
+permalink: /kb/139/Q139822/
 ---
 
 ## Q139822: How to Restore a Backup to Computer with Different Hardware

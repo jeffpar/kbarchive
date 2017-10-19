@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91666: File Manager: Format Cannot Make Disk Label 11 Characters"
-permalink: kb/091/Q91666/
+permalink: /kb/091/Q91666/
 ---
 
 ## Q91666: File Manager: Format Cannot Make Disk Label 11 Characters

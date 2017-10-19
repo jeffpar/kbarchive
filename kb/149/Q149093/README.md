@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149093: BUG: Property Page of Remote Data Control Causes an Error"
-permalink: kb/149/Q149093/
+permalink: /kb/149/Q149093/
 ---
 
 ## Q149093: BUG: Property Page of Remote Data Control Causes an Error

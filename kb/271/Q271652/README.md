@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271652: Patch for Malformed URL Vulnerability That Disables Web Server"
-permalink: kb/271/Q271652/
+permalink: /kb/271/Q271652/
 ---
 
 ## Q271652: Patch for Malformed URL Vulnerability That Disables Web Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76688: PRB: Resource Compiler Cannot Find Include Files"
-permalink: kb/076/Q76688/
+permalink: /kb/076/Q76688/
 ---
 
 ## Q76688: PRB: Resource Compiler Cannot Find Include Files

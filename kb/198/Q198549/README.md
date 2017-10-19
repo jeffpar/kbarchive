@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198549: WD97: How to Add Rows to Invoice and Purchase Order Templates"
-permalink: kb/198/Q198549/
+permalink: /kb/198/Q198549/
 ---
 
 ## Q198549: WD97: How to Add Rows to Invoice and Purchase Order Templates

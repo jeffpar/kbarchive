@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170007: XCON: 9224 Sockets Error 10053 Connecting to a Retix 1.41 MTA"
-permalink: kb/170/Q170007/
+permalink: /kb/170/Q170007/
 ---
 
 ## Q170007: XCON: 9224 Sockets Error 10053 Connecting to a Retix 1.41 MTA

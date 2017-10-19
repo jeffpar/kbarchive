@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137400: Changing Default Permissions Causes STOP 0xC000021A"
-permalink: kb/137/Q137400/
+permalink: /kb/137/Q137400/
 ---
 
 ## Q137400: Changing Default Permissions Causes STOP 0xC000021A

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166700: XCLN: IE Mail Button Prompts You to Choose Profile"
-permalink: kb/166/Q166700/
+permalink: /kb/166/Q166700/
 ---
 
 ## Q166700: XCLN: IE Mail Button Prompts You to Choose Profile

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174051: DHCP Server Fails to Lease Addresses for New Scope"
-permalink: kb/174/Q174051/
+permalink: /kb/174/Q174051/
 ---
 
 ## Q174051: DHCP Server Fails to Lease Addresses for New Scope

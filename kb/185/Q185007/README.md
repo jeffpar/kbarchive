@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185007: XADM: Event Scan Tool Only Reports Application Log Events"
-permalink: kb/185/Q185007/
+permalink: /kb/185/Q185007/
 ---
 
 ## Q185007: XADM: Event Scan Tool Only Reports Application Log Events

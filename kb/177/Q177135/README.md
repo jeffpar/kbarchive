@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177135: PRB: Do not Call ODBC Within DLL_PROCESS_DETACH Case"
-permalink: kb/177/Q177135/
+permalink: /kb/177/Q177135/
 ---
 
 ## Q177135: PRB: Do not Call ODBC Within DLL_PROCESS_DETACH Case

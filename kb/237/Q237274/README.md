@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237274: WD97: Err Msg: &quot;This Document May Be Corrupt&quot;"
-permalink: kb/237/Q237274/
+permalink: /kb/237/Q237274/
 ---
 
 ## Q237274: WD97: Err Msg: &quot;This Document May Be Corrupt&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216205: PRB: &quot;Error 481: Invalid Picture&quot; Error Viewing BMP File"
-permalink: kb/216/Q216205/
+permalink: /kb/216/Q216205/
 ---
 
 ## Q216205: PRB: &quot;Error 481: Invalid Picture&quot; Error Viewing BMP File

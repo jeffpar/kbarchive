@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199168: System Cannot Log You On - c0000017"
-permalink: kb/199/Q199168/
+permalink: /kb/199/Q199168/
 ---
 
 ## Q199168: System Cannot Log You On - c0000017

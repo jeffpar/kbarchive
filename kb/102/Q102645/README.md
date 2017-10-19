@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102645: PRB: Min/Max Boxes Do Not Work with DS_MODALFRAME"
-permalink: kb/102/Q102645/
+permalink: /kb/102/Q102645/
 ---
 
 ## Q102645: PRB: Min/Max Boxes Do Not Work with DS_MODALFRAME

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86266: DOC: Overview Manual Documents PostAppMessage Incorrectly"
-permalink: kb/086/Q86266/
+permalink: /kb/086/Q86266/
 ---
 
 ## Q86266: DOC: Overview Manual Documents PostAppMessage Incorrectly

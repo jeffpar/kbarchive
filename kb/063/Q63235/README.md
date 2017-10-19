@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63235: FIX: L4050 Incorrectly Documented in Online Help"
-permalink: kb/063/Q63235/
+permalink: /kb/063/Q63235/
 ---
 
 ## Q63235: FIX: L4050 Incorrectly Documented in Online Help

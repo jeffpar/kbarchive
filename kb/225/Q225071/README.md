@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225071: Mac QuickShelf 98: Long Delay Defining a Word on the Desktop"
-permalink: kb/225/Q225071/
+permalink: /kb/225/Q225071/
 ---
 
 ## Q225071: Mac QuickShelf 98: Long Delay Defining a Word on the Desktop

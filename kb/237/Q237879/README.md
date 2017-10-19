@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237879: Custom Forms Not Available for Selection with HP LaserJet 5Si MX"
-permalink: kb/237/Q237879/
+permalink: /kb/237/Q237879/
 ---
 
 ## Q237879: Custom Forms Not Available for Selection with HP LaserJet 5Si MX

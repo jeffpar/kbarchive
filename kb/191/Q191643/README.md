@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191643: BUG: Insert Field Into Table In Designer Doesn't Highlight Name"
-permalink: kb/191/Q191643/
+permalink: /kb/191/Q191643/
 ---
 
 ## Q191643: BUG: Insert Field Into Table In Designer Doesn't Highlight Name

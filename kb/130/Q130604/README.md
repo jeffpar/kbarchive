@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130604: How to Retrieve Table Properties in a Program"
-permalink: kb/130/Q130604/
+permalink: /kb/130/Q130604/
 ---
 
 ## Q130604: How to Retrieve Table Properties in a Program

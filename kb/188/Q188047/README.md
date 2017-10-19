@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188047: SMS: Smsaddin.exe Description and Usage"
-permalink: kb/188/Q188047/
+permalink: /kb/188/Q188047/
 ---
 
 ## Q188047: SMS: Smsaddin.exe Description and Usage

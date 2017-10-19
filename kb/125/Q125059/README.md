@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125059: Network Monitor Displays Expiration Notice"
-permalink: kb/125/Q125059/
+permalink: /kb/125/Q125059/
 ---
 
 ## Q125059: Network Monitor Displays Expiration Notice

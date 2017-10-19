@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162255: Flight Simulator 95: Err Msg: Invalid Page Fault in G3d.dll"
-permalink: kb/162/Q162255/
+permalink: /kb/162/Q162255/
 ---
 
 ## Q162255: Flight Simulator 95: Err Msg: Invalid Page Fault in G3d.dll

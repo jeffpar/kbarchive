@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187034: Netscape Navigator Errors: &quot;HTTP Error 400&quot;; &quot;400 Bad Request&quot;"
-permalink: kb/187/Q187034/
+permalink: /kb/187/Q187034/
 ---
 
 ## Q187034: Netscape Navigator Errors: &quot;HTTP Error 400&quot;; &quot;400 Bad Request&quot;

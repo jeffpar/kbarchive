@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168121: How Windows 95 Determines Which Policies to Enforce"
-permalink: kb/168/Q168121/
+permalink: /kb/168/Q168121/
 ---
 
 ## Q168121: How Windows 95 Determines Which Policies to Enforce

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201597: PRB: PrivateProfile Problems, in 4.0b Macintosh Cross-Compiler"
-permalink: kb/201/Q201597/
+permalink: /kb/201/Q201597/
 ---
 
 ## Q201597: PRB: PrivateProfile Problems, in 4.0b Macintosh Cross-Compiler

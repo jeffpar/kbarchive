@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126722: Using Floptical Disk Drives with Windows 95"
-permalink: kb/126/Q126722/
+permalink: /kb/126/Q126722/
 ---
 
 ## Q126722: Using Floptical Disk Drives with Windows 95

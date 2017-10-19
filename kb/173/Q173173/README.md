@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173173: SNA Manage Agent Traps After Saving Configuration Change"
-permalink: kb/173/Q173173/
+permalink: /kb/173/Q173173/
 ---
 
 ## Q173173: SNA Manage Agent Traps After Saving Configuration Change

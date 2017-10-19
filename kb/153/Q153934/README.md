@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153934: IIS Converts %0D%0A to Hex 0DH and 20H When Submit to ODBC"
-permalink: kb/153/Q153934/
+permalink: /kb/153/Q153934/
 ---
 
 ## Q153934: IIS Converts %0D%0A to Hex 0DH and 20H When Submit to ODBC

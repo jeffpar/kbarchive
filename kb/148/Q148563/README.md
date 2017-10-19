@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148563: INFO: List of Problems in Visual FoxPro 3.0b for Windows"
-permalink: kb/148/Q148563/
+permalink: /kb/148/Q148563/
 ---
 
 ## Q148563: INFO: List of Problems in Visual FoxPro 3.0b for Windows

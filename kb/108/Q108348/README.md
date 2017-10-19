@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108348: FIX: Error F1001 in schedp5u.c Compiling with -Ox and -G5"
-permalink: kb/108/Q108348/
+permalink: /kb/108/Q108348/
 ---
 
 ## Q108348: FIX: Error F1001 in schedp5u.c Compiling with -Ox and -G5

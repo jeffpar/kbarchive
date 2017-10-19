@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85545: Norton Disk Monitor May Cause Fragmented Conventional Memory"
-permalink: kb/085/Q85545/
+permalink: /kb/085/Q85545/
 ---
 
 ## Q85545: Norton Disk Monitor May Cause Fragmented Conventional Memory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245172: Err Msg: Could Not Find Domain Controller for This Domain"
-permalink: kb/245/Q245172/
+permalink: /kb/245/Q245172/
 ---
 
 ## Q245172: Err Msg: Could Not Find Domain Controller for This Domain

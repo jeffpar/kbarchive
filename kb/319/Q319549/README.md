@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319549: PRB: ASP Class_Terminate Code Errors Can Cause IIS 4.0 to Fail"
-permalink: kb/319/Q319549/
+permalink: /kb/319/Q319549/
 ---
 
 ## Q319549: PRB: ASP Class_Terminate Code Errors Can Cause IIS 4.0 to Fail

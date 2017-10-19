@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124035: ATI Graphics Pro Turbo Video DAC Incorrectly Detected"
-permalink: kb/124/Q124035/
+permalink: /kb/124/Q124035/
 ---
 
 ## Q124035: ATI Graphics Pro Turbo Video DAC Incorrectly Detected

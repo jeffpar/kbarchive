@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196708: INFO: Files Remaining in NT&#92;SYSTEM32 Folder After VFP6 Removal"
-permalink: kb/196/Q196708/
+permalink: /kb/196/Q196708/
 ---
 
 ## Q196708: INFO: Files Remaining in NT&#92;SYSTEM32 Folder After VFP6 Removal

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130489: XCLN: Err Msg: Recipient Options Could Not Be Set..."
-permalink: kb/130/Q130489/
+permalink: /kb/130/Q130489/
 ---
 
 ## Q130489: XCLN: Err Msg: Recipient Options Could Not Be Set...

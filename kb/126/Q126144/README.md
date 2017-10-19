@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126144: Cannot Print to PostScript Printer on Novell Network"
-permalink: kb/126/Q126144/
+permalink: /kb/126/Q126144/
 ---
 
 ## Q126144: Cannot Print to PostScript Printer on Novell Network

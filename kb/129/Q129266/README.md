@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129266: DUMPEL.EXE Can Interpret Event Log Hex Data"
-permalink: kb/129/Q129266/
+permalink: /kb/129/Q129266/
 ---
 
 ## Q129266: DUMPEL.EXE Can Interpret Event Log Hex Data

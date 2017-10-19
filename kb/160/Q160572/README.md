@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160572: XADM: Start and Stop Exchange Services from a Command Line"
-permalink: kb/160/Q160572/
+permalink: /kb/160/Q160572/
 ---
 
 ## Q160572: XADM: Start and Stop Exchange Services from a Command Line

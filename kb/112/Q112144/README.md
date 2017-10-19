@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112144: Installing Synoptics EZ View Net Manager on WFW 3.11"
-permalink: kb/112/Q112144/
+permalink: /kb/112/Q112144/
 ---
 
 ## Q112144: Installing Synoptics EZ View Net Manager on WFW 3.11

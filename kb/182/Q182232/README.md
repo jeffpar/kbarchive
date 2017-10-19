@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182232: XFOR: SMTP Messages with TNEF May Lose Formatting and Attachment"
-permalink: kb/182/Q182232/
+permalink: /kb/182/Q182232/
 ---
 
 ## Q182232: XFOR: SMTP Messages with TNEF May Lose Formatting and Attachment

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101564: Stacked Floppy Disk Drives Interfere with Stacker Conversion"
-permalink: kb/101/Q101564/
+permalink: /kb/101/Q101564/
 ---
 
 ## Q101564: Stacked Floppy Disk Drives Interfere with Stacker Conversion

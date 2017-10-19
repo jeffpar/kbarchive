@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135110: How to Test for Entry in a Field in Visual FoxPro &amp; FoxPro 2.x"
-permalink: kb/135/Q135110/
+permalink: /kb/135/Q135110/
 ---
 
 ## Q135110: How to Test for Entry in a Field in Visual FoxPro &amp; FoxPro 2.x

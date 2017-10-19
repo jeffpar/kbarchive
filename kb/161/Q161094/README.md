@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161094: HOWTO: Use the Procedure Attributes Dialog Box"
-permalink: kb/161/Q161094/
+permalink: /kb/161/Q161094/
 ---
 
 ## Q161094: HOWTO: Use the Procedure Attributes Dialog Box

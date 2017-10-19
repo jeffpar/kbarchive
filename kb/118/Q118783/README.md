@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118783: X400: Windows Client Return Receipt Info Stripped"
-permalink: kb/118/Q118783/
+permalink: /kb/118/Q118783/
 ---
 
 ## Q118783: X400: Windows Client Return Receipt Info Stripped

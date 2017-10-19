@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166643: XFOR: Inbody addressing"
-permalink: kb/166/Q166643/
+permalink: /kb/166/Q166643/
 ---
 
 ## Q166643: XFOR: Inbody addressing

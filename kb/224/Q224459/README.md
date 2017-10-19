@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224459: BackOffice Web Administrator Links Are Unavailable"
-permalink: kb/224/Q224459/
+permalink: /kb/224/Q224459/
 ---
 
 ## Q224459: BackOffice Web Administrator Links Are Unavailable

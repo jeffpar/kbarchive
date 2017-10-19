@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248373: XADM: Primary Windows NT Account Cannot Log On to Mailbox"
-permalink: kb/248/Q248373/
+permalink: /kb/248/Q248373/
 ---
 
 ## Q248373: XADM: Primary Windows NT Account Cannot Log On to Mailbox

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242009: Stop 0x0000000A Error in Tcpip.sys Caused by Damaged Packets"
-permalink: kb/242/Q242009/
+permalink: /kb/242/Q242009/
 ---
 
 ## Q242009: Stop 0x0000000A Error in Tcpip.sys Caused by Damaged Packets

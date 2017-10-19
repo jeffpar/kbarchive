@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156189: SMS: Shared Installation of Microsoft Exchange on Windows NT"
-permalink: kb/156/Q156189/
+permalink: /kb/156/Q156189/
 ---
 
 ## Q156189: SMS: Shared Installation of Microsoft Exchange on Windows NT

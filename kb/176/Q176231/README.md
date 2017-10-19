@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176231: XADM: TEXT/PLAIN Bodyparts Discarded in Embedded Messages"
-permalink: kb/176/Q176231/
+permalink: /kb/176/Q176231/
 ---
 
 ## Q176231: XADM: TEXT/PLAIN Bodyparts Discarded in Embedded Messages

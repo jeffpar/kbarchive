@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122780: Mac OOF: Out of Office Server Update"
-permalink: kb/122/Q122780/
+permalink: /kb/122/Q122780/
 ---
 
 ## Q122780: Mac OOF: Out of Office Server Update

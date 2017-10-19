@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141239: Stop 0xA Errors May Occur After Installing Service Pack 2"
-permalink: kb/141/Q141239/
+permalink: /kb/141/Q141239/
 ---
 
 ## Q141239: Stop 0xA Errors May Occur After Installing Service Pack 2

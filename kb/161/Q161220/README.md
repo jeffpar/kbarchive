@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161220: Removing Unknown Device in Device Manager Hangs Computer"
-permalink: kb/161/Q161220/
+permalink: /kb/161/Q161220/
 ---
 
 ## Q161220: Removing Unknown Device in Device Manager Hangs Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130874: Troubleshooting LAN Manager for MS-DOS 2.2c and DHCP"
-permalink: kb/130/Q130874/
+permalink: /kb/130/Q130874/
 ---
 
 ## Q130874: Troubleshooting LAN Manager for MS-DOS 2.2c and DHCP

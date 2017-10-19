@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256158: FIX: Text May Be Truncated in Apps for Japanese Windows 2000"
-permalink: kb/256/Q256158/
+permalink: /kb/256/Q256158/
 ---
 
 ## Q256158: FIX: Text May Be Truncated in Apps for Japanese Windows 2000

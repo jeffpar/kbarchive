@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176163: XADM: Restart Services Disabled After Performance Optimizer Use"
-permalink: kb/176/Q176163/
+permalink: /kb/176/Q176163/
 ---
 
 ## Q176163: XADM: Restart Services Disabled After Performance Optimizer Use

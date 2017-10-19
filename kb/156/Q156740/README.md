@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156740: Window Frame Blinks When Dragged"
-permalink: kb/156/Q156740/
+permalink: /kb/156/Q156740/
 ---
 
 ## Q156740: Window Frame Blinks When Dragged

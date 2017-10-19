@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213063: SMS: NW_Logon_Server_Manager Is Unable to Connect"
-permalink: kb/213/Q213063/
+permalink: /kb/213/Q213063/
 ---
 
 ## Q213063: SMS: NW_Logon_Server_Manager Is Unable to Connect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105312: PC Forms: Incorrect Data Displayed in Subform"
-permalink: kb/105/Q105312/
+permalink: /kb/105/Q105312/
 ---
 
 ## Q105312: PC Forms: Incorrect Data Displayed in Subform

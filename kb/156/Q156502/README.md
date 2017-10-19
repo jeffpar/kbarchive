@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156502: Cinemania/Music Central 96: Availability of Monthly Updates"
-permalink: kb/156/Q156502/
+permalink: /kb/156/Q156502/
 ---
 
 ## Q156502: Cinemania/Music Central 96: Availability of Monthly Updates

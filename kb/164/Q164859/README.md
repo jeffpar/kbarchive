@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164859: XFOR: Macintosh Attachments Over IMC Are Named Message.txt"
-permalink: kb/164/Q164859/
+permalink: /kb/164/Q164859/
 ---
 
 ## Q164859: XFOR: Macintosh Attachments Over IMC Are Named Message.txt

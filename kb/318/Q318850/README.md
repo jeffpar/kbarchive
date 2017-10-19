@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318850: FS2002: Error Message When You Try to Read a Library/Help File"
-permalink: kb/318/Q318850/
+permalink: /kb/318/Q318850/
 ---
 
 ## Q318850: FS2002: Error Message When You Try to Read a Library/Help File

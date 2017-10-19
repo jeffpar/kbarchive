@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243885: XFOR: Overview of the Exchange Application Converter for Notes"
-permalink: kb/243/Q243885/
+permalink: /kb/243/Q243885/
 ---
 
 ## Q243885: XFOR: Overview of the Exchange Application Converter for Notes

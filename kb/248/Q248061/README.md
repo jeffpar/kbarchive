@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248061: Err Msg: HTTP 414 - Request - URI Too Long"
-permalink: kb/248/Q248061/
+permalink: /kb/248/Q248061/
 ---
 
 ## Q248061: Err Msg: HTTP 414 - Request - URI Too Long

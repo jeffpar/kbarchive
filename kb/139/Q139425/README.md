@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139425: Windows Printing System Prints Incorrect Characters"
-permalink: kb/139/Q139425/
+permalink: /kb/139/Q139425/
 ---
 
 ## Q139425: Windows Printing System Prints Incorrect Characters

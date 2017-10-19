@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76977: Plus Passport Hard Drive Appears As Two Drives to FDISK"
-permalink: kb/076/Q76977/
+permalink: /kb/076/Q76977/
 ---
 
 ## Q76977: Plus Passport Hard Drive Appears As Two Drives to FDISK

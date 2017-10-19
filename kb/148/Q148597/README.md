@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148597: Incoming Call Support With Distributed Link Services"
-permalink: kb/148/Q148597/
+permalink: /kb/148/Q148597/
 ---
 
 ## Q148597: Incoming Call Support With Distributed Link Services

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181011: Appearance of CICS Abend Information in SNA Server Traces"
-permalink: kb/181/Q181011/
+permalink: /kb/181/Q181011/
 ---
 
 ## Q181011: Appearance of CICS Abend Information in SNA Server Traces

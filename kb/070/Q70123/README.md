@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70123: PWB 1.1 Reads Environment Variables From .STS Files"
-permalink: kb/070/Q70123/
+permalink: /kb/070/Q70123/
 ---
 
 ## Q70123: PWB 1.1 Reads Environment Variables From .STS Files

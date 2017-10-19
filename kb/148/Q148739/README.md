@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148739: RUI_PURGE &amp; SLI_PURGE Verbs Fail When Using the Thunking DLLs"
-permalink: kb/148/Q148739/
+permalink: /kb/148/Q148739/
 ---
 
 ## Q148739: RUI_PURGE &amp; SLI_PURGE Verbs Fail When Using the Thunking DLLs

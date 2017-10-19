@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192266: Sockets-based Child Processes Are Not Stopped"
-permalink: kb/192/Q192266/
+permalink: /kb/192/Q192266/
 ---
 
 ## Q192266: Sockets-based Child Processes Are Not Stopped

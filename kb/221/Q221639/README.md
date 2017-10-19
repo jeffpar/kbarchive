@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221639: FIX: Empty Memo Shows Trash Data With Trace Window Mouse Over"
-permalink: kb/221/Q221639/
+permalink: /kb/221/Q221639/
 ---
 
 ## Q221639: FIX: Empty Memo Shows Trash Data With Trace Window Mouse Over

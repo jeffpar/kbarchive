@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260525: &quot;License Violation&quot; Error When You Enable Registry Auditing"
-permalink: kb/260/Q260525/
+permalink: /kb/260/Q260525/
 ---
 
 ## Q260525: &quot;License Violation&quot; Error When You Enable Registry Auditing

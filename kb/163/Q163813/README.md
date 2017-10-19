@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163813: WD97: Boxes in Central European, Russian, or Greek Document"
-permalink: kb/163/Q163813/
+permalink: /kb/163/Q163813/
 ---
 
 ## Q163813: WD97: Boxes in Central European, Russian, or Greek Document

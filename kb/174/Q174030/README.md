@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174030: XWEB: Outlook Web Access Client Fails if JavaScript Disabled"
-permalink: kb/174/Q174030/
+permalink: /kb/174/Q174030/
 ---
 
 ## Q174030: XWEB: Outlook Web Access Client Fails if JavaScript Disabled

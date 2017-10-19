@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156074: XCON: &quot;Ordinal 136&quot; Error Occurs When Starting the MTA"
-permalink: kb/156/Q156074/
+permalink: /kb/156/Q156074/
 ---
 
 ## Q156074: XCON: &quot;Ordinal 136&quot; Error Occurs When Starting the MTA

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182324: FIX: Component Gallery Errors with Read-Only Project Files"
-permalink: kb/182/Q182324/
+permalink: /kb/182/Q182324/
 ---
 
 ## Q182324: FIX: Component Gallery Errors with Read-Only Project Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158617: WD97: Cannot Link Text Boxes in Different Subdocuments"
-permalink: kb/158/Q158617/
+permalink: /kb/158/Q158617/
 ---
 
 ## Q158617: WD97: Cannot Link Text Boxes in Different Subdocuments

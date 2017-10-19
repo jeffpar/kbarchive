@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153631: FP: &quot;Error Code 1722&quot; When You Install IIS Extensions"
-permalink: kb/153/Q153631/
+permalink: /kb/153/Q153631/
 ---
 
 ## Q153631: FP: &quot;Error Code 1722&quot; When You Install IIS Extensions

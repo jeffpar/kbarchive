@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89725: Using 3COM 3+Share NB.COM and MSREDIR.EXE"
-permalink: kb/089/Q89725/
+permalink: /kb/089/Q89725/
 ---
 
 ## Q89725: Using 3COM 3+Share NB.COM and MSREDIR.EXE

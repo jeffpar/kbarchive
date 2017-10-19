@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86156: PROFS: How to Update the Gateway"
-permalink: kb/086/Q86156/
+permalink: /kb/086/Q86156/
 ---
 
 ## Q86156: PROFS: How to Update the Gateway

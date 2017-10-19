@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96540: Display Window Title with GetFocus() and GetWindowText()"
-permalink: kb/096/Q96540/
+permalink: /kb/096/Q96540/
 ---
 
 ## Q96540: Display Window Title with GetFocus() and GetWindowText()

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91692: FIX: H2INC Version 1.0 Ignores /G3 and /G4 Option Switches"
-permalink: kb/091/Q91692/
+permalink: /kb/091/Q91692/
 ---
 
 ## Q91692: FIX: H2INC Version 1.0 Ignores /G3 and /G4 Option Switches

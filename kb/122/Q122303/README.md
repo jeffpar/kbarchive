@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122303: FIX: &#95;&#95;declspec(dllimport) Classes Are Not Caught Correctly"
-permalink: kb/122/Q122303/
+permalink: /kb/122/Q122303/
 ---
 
 ## Q122303: FIX: &#95;&#95;declspec(dllimport) Classes Are Not Caught Correctly

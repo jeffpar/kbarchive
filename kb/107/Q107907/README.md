@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107907: Enhancements to Video for Windows, Version 1.1"
-permalink: kb/107/Q107907/
+permalink: /kb/107/Q107907/
 ---
 
 ## Q107907: Enhancements to Video for Windows, Version 1.1

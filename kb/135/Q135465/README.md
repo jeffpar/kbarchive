@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135465: README.TXT: Microsoft Network Client version 3.0"
-permalink: kb/135/Q135465/
+permalink: /kb/135/Q135465/
 ---
 
 ## Q135465: README.TXT: Microsoft Network Client version 3.0

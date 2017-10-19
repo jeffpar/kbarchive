@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171487: FIX: Crash When Assigning Uninitialized Object to Tag"
-permalink: kb/171/Q171487/
+permalink: /kb/171/Q171487/
 ---
 
 ## Q171487: FIX: Crash When Assigning Uninitialized Object to Tag

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220605: Stop 0x0000000A Caused by Malformed File Write Request"
-permalink: kb/220/Q220605/
+permalink: /kb/220/Q220605/
 ---
 
 ## Q220605: Stop 0x0000000A Caused by Malformed File Write Request

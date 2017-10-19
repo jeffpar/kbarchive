@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170626: DDEML: Memory Leak in Global Shared Memory"
-permalink: kb/170/Q170626/
+permalink: /kb/170/Q170626/
 ---
 
 ## Q170626: DDEML: Memory Leak in Global Shared Memory

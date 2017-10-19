@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191183: HOWTO: Navigate Between DHTML Designer Pages"
-permalink: kb/191/Q191183/
+permalink: /kb/191/Q191183/
 ---
 
 ## Q191183: HOWTO: Navigate Between DHTML Designer Pages

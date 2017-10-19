@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164602: SMS: Ending a Remote Control Session Leaves Open Handles"
-permalink: kb/164/Q164602/
+permalink: /kb/164/Q164602/
 ---
 
 ## Q164602: SMS: Ending a Remote Control Session Leaves Open Handles

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150961: FIX: Error Accessing Source Code Control System"
-permalink: kb/150/Q150961/
+permalink: /kb/150/Q150961/
 ---
 
 ## Q150961: FIX: Error Accessing Source Code Control System

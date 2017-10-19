@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163192: WD97: &quot;String Too Long&quot; Using Over 255 Characters"
-permalink: kb/163/Q163192/
+permalink: /kb/163/Q163192/
 ---
 
 ## Q163192: WD97: &quot;String Too Long&quot; Using Over 255 Characters

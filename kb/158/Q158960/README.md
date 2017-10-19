@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158960: Files Installed by DirectX 2.0a"
-permalink: kb/158/Q158960/
+permalink: /kb/158/Q158960/
 ---
 
 ## Q158960: Files Installed by DirectX 2.0a

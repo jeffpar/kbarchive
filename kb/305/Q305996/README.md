@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305996: MSN Broadband DSL:  How To Determine The Version Of Windows"
-permalink: kb/305/Q305996/
+permalink: /kb/305/Q305996/
 ---
 
 ## Q305996: MSN Broadband DSL:  How To Determine The Version Of Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285323: Crimson Skies Err Msg: Fatal Exception OE Has Occurred at  0028"
-permalink: kb/285/Q285323/
+permalink: /kb/285/Q285323/
 ---
 
 ## Q285323: Crimson Skies Err Msg: Fatal Exception OE Has Occurred at  0028

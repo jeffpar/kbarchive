@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127768: PC Gen:Creating&#92;Copying Users for Test Postoffice w/ Real Data"
-permalink: kb/127/Q127768/
+permalink: /kb/127/Q127768/
 ---
 
 ## Q127768: PC Gen:Creating&#92;Copying Users for Test Postoffice w/ Real Data

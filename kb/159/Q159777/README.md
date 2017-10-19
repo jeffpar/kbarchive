@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159777: BUG: Invalid Syntax Error When Logging On to Visual SourceSafe"
-permalink: kb/159/Q159777/
+permalink: /kb/159/Q159777/
 ---
 
 ## Q159777: BUG: Invalid Syntax Error When Logging On to Visual SourceSafe

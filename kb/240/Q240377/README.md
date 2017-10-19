@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240377: HOWTO: Ensure Jet 3.5 Is Installed Correctly (Part I)"
-permalink: kb/240/Q240377/
+permalink: /kb/240/Q240377/
 ---
 
 ## Q240377: HOWTO: Ensure Jet 3.5 Is Installed Correctly (Part I)

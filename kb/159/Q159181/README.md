@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159181: XCON: Duplicate Messages Received by MS Mail Recipients"
-permalink: kb/159/Q159181/
+permalink: /kb/159/Q159181/
 ---
 
 ## Q159181: XCON: Duplicate Messages Received by MS Mail Recipients

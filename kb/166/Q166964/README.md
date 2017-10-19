@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166964: Incorrect File Listing on NetWare Server with DIR /TC Command"
-permalink: kb/166/Q166964/
+permalink: /kb/166/Q166964/
 ---
 
 ## Q166964: Incorrect File Listing on NetWare Server with DIR /TC Command

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151869: PRB: Incorrect Usage of CSingleLock May Lock Up Mutex Object"
-permalink: kb/151/Q151869/
+permalink: /kb/151/Q151869/
 ---
 
 ## Q151869: PRB: Incorrect Usage of CSingleLock May Lock Up Mutex Object

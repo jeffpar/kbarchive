@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169931: WD97: Word 97 for Windows 3.5&quot; Disk Contents (Disks 7-12)"
-permalink: kb/169/Q169931/
+permalink: /kb/169/Q169931/
 ---
 
 ## Q169931: WD97: Word 97 for Windows 3.5&quot; Disk Contents (Disks 7-12)

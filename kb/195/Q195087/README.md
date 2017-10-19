@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195087: HOWTO: Enable Communications Between UserDocuments/UserControls"
-permalink: kb/195/Q195087/
+permalink: /kb/195/Q195087/
 ---
 
 ## Q195087: HOWTO: Enable Communications Between UserDocuments/UserControls

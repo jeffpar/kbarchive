@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101833: PC DB: How to Remove Stranded .ATT and .MAI Files"
-permalink: kb/101/Q101833/
+permalink: /kb/101/Q101833/
 ---
 
 ## Q101833: PC DB: How to Remove Stranded .ATT and .MAI Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309539: MechWarrior 4: Err Msg: 0036: Unable to Complete Patch"
-permalink: kb/309/Q309539/
+permalink: /kb/309/Q309539/
 ---
 
 ## Q309539: MechWarrior 4: Err Msg: 0036: Unable to Complete Patch

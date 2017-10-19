@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319167: SMS: Custom Hardware Inventory .mif Files Are Placed in Badmifs"
-permalink: kb/319/Q319167/
+permalink: /kb/319/Q319167/
 ---
 
 ## Q319167: SMS: Custom Hardware Inventory .mif Files Are Placed in Badmifs

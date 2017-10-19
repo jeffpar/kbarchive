@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163153: WD97: &quot;Suggest&quot; Button Missing from Spelling Checker"
-permalink: kb/163/Q163153/
+permalink: /kb/163/Q163153/
 ---
 
 ## Q163153: WD97: &quot;Suggest&quot; Button Missing from Spelling Checker

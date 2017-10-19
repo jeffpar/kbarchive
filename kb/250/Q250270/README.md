@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250270: Windows NT Unavailable on PartitionMagic Dual Boot After Upgrade"
-permalink: kb/250/Q250270/
+permalink: /kb/250/Q250270/
 ---
 
 ## Q250270: Windows NT Unavailable on PartitionMagic Dual Boot After Upgrade

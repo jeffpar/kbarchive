@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92872: After Failed WFWG Setup, Not Enough Space to Setup Again"
-permalink: kb/092/Q92872/
+permalink: /kb/092/Q92872/
 ---
 
 ## Q92872: After Failed WFWG Setup, Not Enough Space to Setup Again

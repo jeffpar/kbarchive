@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239531: Streets 98 Err Msg: General Protection Fault in Module &lt;Unknown&gt;"
-permalink: kb/239/Q239531/
+permalink: /kb/239/Q239531/
 ---
 
 ## Q239531: Streets 98 Err Msg: General Protection Fault in Module &lt;Unknown&gt;

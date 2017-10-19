@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96702: Bookshelf 1992: Manual Installation Instructions"
-permalink: kb/096/Q96702/
+permalink: /kb/096/Q96702/
 ---
 
 ## Q96702: Bookshelf 1992: Manual Installation Instructions

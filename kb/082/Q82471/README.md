@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82471: YourWay 2.0 Pushpin Window Not Visible"
-permalink: kb/082/Q82471/
+permalink: /kb/082/Q82471/
 ---
 
 ## Q82471: YourWay 2.0 Pushpin Window Not Visible

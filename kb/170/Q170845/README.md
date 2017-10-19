@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170845: SerialKey Accessibility Option Does Not Work in OSR2"
-permalink: kb/170/Q170845/
+permalink: /kb/170/Q170845/
 ---
 
 ## Q170845: SerialKey Accessibility Option Does Not Work in OSR2

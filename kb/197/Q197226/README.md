@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197226: WD97: How to Close an InputBox&#36;() Dialog Box Using Keystrokes"
-permalink: kb/197/Q197226/
+permalink: /kb/197/Q197226/
 ---
 
 ## Q197226: WD97: How to Close an InputBox&#36;() Dialog Box Using Keystrokes

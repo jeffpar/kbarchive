@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149857: MoveFileEx API Does Not Work After Applying SP4"
-permalink: kb/149/Q149857/
+permalink: /kb/149/Q149857/
 ---
 
 ## Q149857: MoveFileEx API Does Not Work After Applying SP4

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269021: PRB: Synergex Driver Displays Fields Wrong in View Designer"
-permalink: kb/269/Q269021/
+permalink: /kb/269/Q269021/
 ---
 
 ## Q269021: PRB: Synergex Driver Displays Fields Wrong in View Designer

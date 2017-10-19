@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88075: WinLogin Err Msg: Could Not Connect to a Remote Resource..."
-permalink: kb/088/Q88075/
+permalink: /kb/088/Q88075/
 ---
 
 ## Q88075: WinLogin Err Msg: Could Not Connect to a Remote Resource...

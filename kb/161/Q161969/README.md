@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161969: LPR Printing Device Reports an Error If Printer Not Available"
-permalink: kb/161/Q161969/
+permalink: /kb/161/Q161969/
 ---
 
 ## Q161969: LPR Printing Device Reports an Error If Printer Not Available

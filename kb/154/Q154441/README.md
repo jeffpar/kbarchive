@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154441: Err Msg: Internet Explorer Unable to Access the Network"
-permalink: kb/154/Q154441/
+permalink: /kb/154/Q154441/
 ---
 
 ## Q154441: Err Msg: Internet Explorer Unable to Access the Network

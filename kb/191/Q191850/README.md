@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191850: Convert Reports Cannot Create Elementary File System Structures"
-permalink: kb/191/Q191850/
+permalink: /kb/191/Q191850/
 ---
 
 ## Q191850: Convert Reports Cannot Create Elementary File System Structures

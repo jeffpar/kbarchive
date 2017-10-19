@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119595: Function Not Supported on This Computer"
-permalink: kb/119/Q119595/
+permalink: /kb/119/Q119595/
 ---
 
 ## Q119595: Function Not Supported on This Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q35549: Getting More Enemy Fighter Planes to Appear in WWI Ace Mode"
-permalink: kb/035/Q35549/
+permalink: /kb/035/Q35549/
 ---
 
 ## Q35549: Getting More Enemy Fighter Planes to Appear in WWI Ace Mode

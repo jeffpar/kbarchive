@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176253: Plus! For Kids: &quot;Restrictions&quot; Err Msg When You Start Windows"
-permalink: kb/176/Q176253/
+permalink: /kb/176/Q176253/
 ---
 
 ## Q176253: Plus! For Kids: &quot;Restrictions&quot; Err Msg When You Start Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247682: Lmhosts File Incorrectly Parsed with Alternate Block Inclusion"
-permalink: kb/247/Q247682/
+permalink: /kb/247/Q247682/
 ---
 
 ## Q247682: Lmhosts File Incorrectly Parsed with Alternate Block Inclusion

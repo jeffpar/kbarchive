@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119674: Windows Err Msg: WDCTRL Validation Failed at Phase &lt;x, x&gt;"
-permalink: kb/119/Q119674/
+permalink: /kb/119/Q119674/
 ---
 
 ## Q119674: Windows Err Msg: WDCTRL Validation Failed at Phase &lt;x, x&gt;

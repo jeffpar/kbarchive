@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163817: How To Create a Printer Using GSNW"
-permalink: kb/163/Q163817/
+permalink: /kb/163/Q163817/
 ---
 
 ## Q163817: How To Create a Printer Using GSNW

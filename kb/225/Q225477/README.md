@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225477: How to Install BackOffice Server 4.5 as an Administration Server"
-permalink: kb/225/Q225477/
+permalink: /kb/225/Q225477/
 ---
 
 ## Q225477: How to Install BackOffice Server 4.5 as an Administration Server

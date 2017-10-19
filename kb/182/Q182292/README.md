@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182292: WD97: Document Margins Not Retained When Inserted as File"
-permalink: kb/182/Q182292/
+permalink: /kb/182/Q182292/
 ---
 
 ## Q182292: WD97: Document Margins Not Retained When Inserted as File

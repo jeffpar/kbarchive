@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146467: Recurring Meetings w/ Same Patterns May Fall on Different Days"
-permalink: kb/146/Q146467/
+permalink: /kb/146/Q146467/
 ---
 
 ## Q146467: Recurring Meetings w/ Same Patterns May Fall on Different Days

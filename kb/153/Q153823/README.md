@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153823: Windows NT Administrator Cannot Delete Win95 User.dat"
-permalink: kb/153/Q153823/
+permalink: /kb/153/Q153823/
 ---
 
 ## Q153823: Windows NT Administrator Cannot Delete Win95 User.dat

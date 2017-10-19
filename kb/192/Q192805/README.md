@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192805: FIX: Hierarchical Child Recordset and ADO Data Control"
-permalink: kb/192/Q192805/
+permalink: /kb/192/Q192805/
 ---
 
 ## Q192805: FIX: Hierarchical Child Recordset and ADO Data Control

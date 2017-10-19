@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230279: Corrupted User Profiles Can Cause New Local Default to Be Lost"
-permalink: kb/230/Q230279/
+permalink: /kb/230/Q230279/
 ---
 
 ## Q230279: Corrupted User Profiles Can Cause New Local Default to Be Lost

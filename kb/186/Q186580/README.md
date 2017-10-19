@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186580: XFOR: OV/VM Connector Fails to Return NDR for Message Addressed"
-permalink: kb/186/Q186580/
+permalink: /kb/186/Q186580/
 ---
 
 ## Q186580: XFOR: OV/VM Connector Fails to Return NDR for Message Addressed

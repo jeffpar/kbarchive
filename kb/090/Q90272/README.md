@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90272: Print Manager Error Indications in Windows for Workgroups"
-permalink: kb/090/Q90272/
+permalink: /kb/090/Q90272/
 ---
 
 ## Q90272: Print Manager Error Indications in Windows for Workgroups

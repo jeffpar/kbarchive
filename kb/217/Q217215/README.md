@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217215: XADM: SP2 Update Fails: Procedure Entry Point Error w/Netif.dll"
-permalink: kb/217/Q217215/
+permalink: /kb/217/Q217215/
 ---
 
 ## Q217215: XADM: SP2 Update Fails: Procedure Entry Point Error w/Netif.dll

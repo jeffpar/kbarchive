@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87350: BUG: GetGlyphOutline() Returns Partial Glyph"
-permalink: kb/087/Q87350/
+permalink: /kb/087/Q87350/
 ---
 
 ## Q87350: BUG: GetGlyphOutline() Returns Partial Glyph

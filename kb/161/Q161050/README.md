@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161050: Encarta 97: Error When Starting Online Features Yearbook"
-permalink: kb/161/Q161050/
+permalink: /kb/161/Q161050/
 ---
 
 ## Q161050: Encarta 97: Error When Starting Online Features Yearbook

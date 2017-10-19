@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141083: PRB: No Error Message When Creating a Cyclic Relation"
-permalink: kb/141/Q141083/
+permalink: /kb/141/Q141083/
 ---
 
 ## Q141083: PRB: No Error Message When Creating a Cyclic Relation

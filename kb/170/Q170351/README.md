@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170351: WD97: Style List Shows Styles Out of Order"
-permalink: kb/170/Q170351/
+permalink: /kb/170/Q170351/
 ---
 
 ## Q170351: WD97: Style List Shows Styles Out of Order

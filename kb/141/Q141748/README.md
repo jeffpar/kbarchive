@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141748: Mac Encarta: Older Version of QuickTime Fails to Start"
-permalink: kb/141/Q141748/
+permalink: /kb/141/Q141748/
 ---
 
 ## Q141748: Mac Encarta: Older Version of QuickTime Fails to Start

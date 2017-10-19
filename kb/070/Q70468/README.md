@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70468: Incorrect Installation of Novell VPICDA.386 Patch"
-permalink: kb/070/Q70468/
+permalink: /kb/070/Q70468/
 ---
 
 ## Q70468: Incorrect Installation of Novell VPICDA.386 Patch

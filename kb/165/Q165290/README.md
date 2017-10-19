@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165290: WD97: Cannot Reference HeadingStyle Index with String Value"
-permalink: kb/165/Q165290/
+permalink: /kb/165/Q165290/
 ---
 
 ## Q165290: WD97: Cannot Reference HeadingStyle Index with String Value

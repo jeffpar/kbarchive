@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153020: BUG: Setup Wizard Doesn't Register VB OLE DLLs w/ DLL Install"
-permalink: kb/153/Q153020/
+permalink: /kb/153/Q153020/
 ---
 
 ## Q153020: BUG: Setup Wizard Doesn't Register VB OLE DLLs w/ DLL Install

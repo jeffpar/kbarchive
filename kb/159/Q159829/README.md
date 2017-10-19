@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159829: NDS Printer Comments Not Available with MS Service for NDS"
-permalink: kb/159/Q159829/
+permalink: /kb/159/Q159829/
 ---
 
 ## Q159829: NDS Printer Comments Not Available with MS Service for NDS

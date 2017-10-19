@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300112: Using the Error Property of the Passport Manager Object"
-permalink: kb/300/Q300112/
+permalink: /kb/300/Q300112/
 ---
 
 ## Q300112: Using the Error Property of the Passport Manager Object

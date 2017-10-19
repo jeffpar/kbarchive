@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100408: DOC: Incorrect Documentation for LineDDA Function"
-permalink: kb/100/Q100408/
+permalink: /kb/100/Q100408/
 ---
 
 ## Q100408: DOC: Incorrect Documentation for LineDDA Function

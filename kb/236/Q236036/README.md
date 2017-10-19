@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236036: SMS: NetDisc Fails to Discover Static IP Addresses Reserved and"
-permalink: kb/236/Q236036/
+permalink: /kb/236/Q236036/
 ---
 
 ## Q236036: SMS: NetDisc Fails to Discover Static IP Addresses Reserved and

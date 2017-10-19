@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141543: Selected Screen Saver Is Never Displayed"
-permalink: kb/141/Q141543/
+permalink: /kb/141/Q141543/
 ---
 
 ## Q141543: Selected Screen Saver Is Never Displayed

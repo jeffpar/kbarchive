@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172748: WD97: Tab Character Appears as Space in Web Browser"
-permalink: kb/172/Q172748/
+permalink: /kb/172/Q172748/
 ---
 
 ## Q172748: WD97: Tab Character Appears as Space in Web Browser

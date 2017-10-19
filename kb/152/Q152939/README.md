@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152939: XADM: Meeting Requests Written to Assistant's Calendar"
-permalink: kb/152/Q152939/
+permalink: /kb/152/Q152939/
 ---
 
 ## Q152939: XADM: Meeting Requests Written to Assistant's Calendar

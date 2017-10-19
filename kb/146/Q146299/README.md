@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146299: XFOR: SMTP Address Space Appears as a Semicolon"
-permalink: kb/146/Q146299/
+permalink: /kb/146/Q146299/
 ---
 
 ## Q146299: XFOR: SMTP Address Space Appears as a Semicolon

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183312: XFOR: SFS Mail Not Migrated When Custom Recipient Is Converted"
-permalink: kb/183/Q183312/
+permalink: /kb/183/Q183312/
 ---
 
 ## Q183312: XFOR: SFS Mail Not Migrated When Custom Recipient Is Converted

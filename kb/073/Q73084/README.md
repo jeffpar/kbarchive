@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73084: Differences Between GW-BASIC and QBasic"
-permalink: kb/073/Q73084/
+permalink: /kb/073/Q73084/
 ---
 
 ## Q73084: Differences Between GW-BASIC and QBasic

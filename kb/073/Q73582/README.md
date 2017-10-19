@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73582: Sysgen External Drives and MS-DOS 5.0 Upgrade"
-permalink: kb/073/Q73582/
+permalink: /kb/073/Q73582/
 ---
 
 ## Q73582: Sysgen External Drives and MS-DOS 5.0 Upgrade

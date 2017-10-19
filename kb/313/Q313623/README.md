@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313623: FIX: Menus Display in English on Spanish-Language OS"
-permalink: kb/313/Q313623/
+permalink: /kb/313/Q313623/
 ---
 
 ## Q313623: FIX: Menus Display in English on Spanish-Language OS

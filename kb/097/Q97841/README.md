@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97841: IF EXISTS Command Exhibits Different Behavior on HPFS"
-permalink: kb/097/Q97841/
+permalink: /kb/097/Q97841/
 ---
 
 ## Q97841: IF EXISTS Command Exhibits Different Behavior on HPFS

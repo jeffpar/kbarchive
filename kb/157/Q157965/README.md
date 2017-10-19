@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157965: Inventory Taken at Every Login When Scan Interval Is One Day"
-permalink: kb/157/Q157965/
+permalink: /kb/157/Q157965/
 ---
 
 ## Q157965: Inventory Taken at Every Login When Scan Interval Is One Day

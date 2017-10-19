@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231172: HTMLA &quot;Everyone&quot; Is Always Listed in Operators after Installing"
-permalink: kb/231/Q231172/
+permalink: /kb/231/Q231172/
 ---
 
 ## Q231172: HTMLA &quot;Everyone&quot; Is Always Listed in Operators after Installing

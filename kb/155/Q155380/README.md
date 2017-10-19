@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155380: XCLN: Unable to Load Top Level Information"
-permalink: kb/155/Q155380/
+permalink: /kb/155/Q155380/
 ---
 
 ## Q155380: XCLN: Unable to Load Top Level Information

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235571: Enumerating Files with Shared Folders Gateway May Be Very Slow"
-permalink: kb/235/Q235571/
+permalink: /kb/235/Q235571/
 ---
 
 ## Q235571: Enumerating Files with Shared Folders Gateway May Be Very Slow

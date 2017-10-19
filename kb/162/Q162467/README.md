@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162467: AppleTalkClientSupport and VinesClientSupport May Not Work"
-permalink: kb/162/Q162467/
+permalink: /kb/162/Q162467/
 ---
 
 ## Q162467: AppleTalkClientSupport and VinesClientSupport May Not Work

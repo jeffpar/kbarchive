@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248748: Fighter Ace II: Error Messages When You Attempt to Start Game"
-permalink: kb/248/Q248748/
+permalink: /kb/248/Q248748/
 ---
 
 ## Q248748: Fighter Ace II: Error Messages When You Attempt to Start Game

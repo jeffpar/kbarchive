@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117767: ADT2: &quot;Error Occurred in WriteSTF&quot; Error Msg in Setup Wizard"
-permalink: kb/117/Q117767/
+permalink: /kb/117/Q117767/
 ---
 
 ## Q117767: ADT2: &quot;Error Occurred in WriteSTF&quot; Error Msg in Setup Wizard

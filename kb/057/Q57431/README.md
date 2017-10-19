@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57431: DISKCOPY May Require Multiple Disk Swaps"
-permalink: kb/057/Q57431/
+permalink: /kb/057/Q57431/
 ---
 
 ## Q57431: DISKCOPY May Require Multiple Disk Swaps

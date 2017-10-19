@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86031: DOC: Pen Documentation in Windows Resource Kit Incorrect"
-permalink: kb/086/Q86031/
+permalink: /kb/086/Q86031/
 ---
 
 ## Q86031: DOC: Pen Documentation in Windows Resource Kit Incorrect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232388: XCON: MTA Content Conversion Error"
-permalink: kb/232/Q232388/
+permalink: /kb/232/Q232388/
 ---
 
 ## Q232388: XCON: MTA Content Conversion Error

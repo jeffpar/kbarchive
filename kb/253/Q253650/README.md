@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253650: HOWTO: Use the SysInfo ActiveX Control in Visual FoxPro"
-permalink: kb/253/Q253650/
+permalink: /kb/253/Q253650/
 ---
 
 ## Q253650: HOWTO: Use the SysInfo ActiveX Control in Visual FoxPro

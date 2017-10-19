@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252350: PRB: Err Message: &quot;Runtime Error -2147217885 (80040e23) : A ...&quot;"
-permalink: kb/252/Q252350/
+permalink: /kb/252/Q252350/
 ---
 
 ## Q252350: PRB: Err Message: &quot;Runtime Error -2147217885 (80040e23) : A ...&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88530: Early AST RAMpage Boards May Require Upgrade for Windows"
-permalink: kb/088/Q88530/
+permalink: /kb/088/Q88530/
 ---
 
 ## Q88530: Early AST RAMpage Boards May Require Upgrade for Windows

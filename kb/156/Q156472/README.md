@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156472: Incorrect Error on Dial-In Only Server"
-permalink: kb/156/Q156472/
+permalink: /kb/156/Q156472/
 ---
 
 ## Q156472: Incorrect Error on Dial-In Only Server

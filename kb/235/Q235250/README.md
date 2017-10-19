@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235250: I/O May Be Performed at the Wrong Offset with Large Files"
-permalink: kb/235/Q235250/
+permalink: /kb/235/Q235250/
 ---
 
 ## Q235250: I/O May Be Performed at the Wrong Offset with Large Files

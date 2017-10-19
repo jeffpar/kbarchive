@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253564: XFOR: GroupWise Migration Creates Duplicate Folders in Outlook"
-permalink: kb/253/Q253564/
+permalink: /kb/253/Q253564/
 ---
 
 ## Q253564: XFOR: GroupWise Migration Creates Duplicate Folders in Outlook

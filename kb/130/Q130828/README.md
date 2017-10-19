@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130828: Program Manager Window Moves Upward on Screen"
-permalink: kb/130/Q130828/
+permalink: /kb/130/Q130828/
 ---
 
 ## Q130828: Program Manager Window Moves Upward on Screen

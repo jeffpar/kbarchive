@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43237: Mac Wkst: Difference Between Closing and Signing Out"
-permalink: kb/043/Q43237/
+permalink: /kb/043/Q43237/
 ---
 
 ## Q43237: Mac Wkst: Difference Between Closing and Signing Out

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195304: XFOR: Lsdiavm.exe Process Terminates with a Dr. Watson"
-permalink: kb/195/Q195304/
+permalink: /kb/195/Q195304/
 ---
 
 ## Q195304: XFOR: Lsdiavm.exe Process Terminates with a Dr. Watson

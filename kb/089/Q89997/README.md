@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89997: Changes to Wrong File when Switching Tasks in Quick Recorder"
-permalink: kb/089/Q89997/
+permalink: /kb/089/Q89997/
 ---
 
 ## Q89997: Changes to Wrong File when Switching Tasks in Quick Recorder

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200806: SMS: Column widths in SMSMON16 cannot be resized."
-permalink: kb/200/Q200806/
+permalink: /kb/200/Q200806/
 ---
 
 ## Q200806: SMS: Column widths in SMSMON16 cannot be resized.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245450: Displaying a Specific AS/400 Message"
-permalink: kb/245/Q245450/
+permalink: /kb/245/Q245450/
 ---
 
 ## Q245450: Displaying a Specific AS/400 Message

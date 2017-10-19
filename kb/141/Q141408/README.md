@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141408: Mac Bookshelf 94: Pop-up Menu Does Not Find Atlas Articles"
-permalink: kb/141/Q141408/
+permalink: /kb/141/Q141408/
 ---
 
 ## Q141408: Mac Bookshelf 94: Pop-up Menu Does Not Find Atlas Articles

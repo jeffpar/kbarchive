@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194686: X400: Error 58 Message Displayed and Connection Ends"
-permalink: kb/194/Q194686/
+permalink: /kb/194/Q194686/
 ---
 
 ## Q194686: X400: Error 58 Message Displayed and Connection Ends

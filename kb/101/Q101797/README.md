@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101797: PRB: &quot;Missing Operand&quot; Error Using a Database in FoxCentral"
-permalink: kb/101/Q101797/
+permalink: /kb/101/Q101797/
 ---
 
 ## Q101797: PRB: &quot;Missing Operand&quot; Error Using a Database in FoxCentral

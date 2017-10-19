@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159539: SMS: File Transfer Fails with Client Running NetWare Client32"
-permalink: kb/159/Q159539/
+permalink: /kb/159/Q159539/
 ---
 
 ## Q159539: SMS: File Transfer Fails with Client Running NetWare Client32

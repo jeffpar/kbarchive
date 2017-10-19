@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158292: SMS: Using Policies May Cause SMS Setup to Fail"
-permalink: kb/158/Q158292/
+permalink: /kb/158/Q158292/
 ---
 
 ## Q158292: SMS: Using Policies May Cause SMS Setup to Fail

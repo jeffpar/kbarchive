@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224437: Problems Installing Exchange Server to Long Folder Name"
-permalink: kb/224/Q224437/
+permalink: /kb/224/Q224437/
 ---
 
 ## Q224437: Problems Installing Exchange Server to Long Folder Name

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129855: WinNT Cannot See Shares of Workgroup Add-On for MS-DOS Computer"
-permalink: kb/129/Q129855/
+permalink: /kb/129/Q129855/
 ---
 
 ## Q129855: WinNT Cannot See Shares of Workgroup Add-On for MS-DOS Computer

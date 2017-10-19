@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150493: How To Join a Domain From the Command Line"
-permalink: kb/150/Q150493/
+permalink: /kb/150/Q150493/
 ---
 
 ## Q150493: How To Join a Domain From the Command Line

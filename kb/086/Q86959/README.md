@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86959: X400: X.400 Gateway Compliant Profile"
-permalink: kb/086/Q86959/
+permalink: /kb/086/Q86959/
 ---
 
 ## Q86959: X400: X.400 Gateway Compliant Profile

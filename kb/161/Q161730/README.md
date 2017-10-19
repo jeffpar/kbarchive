@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161730: BUG: Cannot Set the Selected Item for a List box in Form Init"
-permalink: kb/161/Q161730/
+permalink: /kb/161/Q161730/
 ---
 
 ## Q161730: BUG: Cannot Set the Selected Item for a List box in Form Init

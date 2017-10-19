@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125881: Maximizing IND&#36;FILE 3270 Host File Transfer Throughput"
-permalink: kb/125/Q125881/
+permalink: /kb/125/Q125881/
 ---
 
 ## Q125881: Maximizing IND&#36;FILE 3270 Host File Transfer Throughput

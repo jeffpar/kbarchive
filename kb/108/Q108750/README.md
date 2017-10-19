@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108750: You Must Use &quot;DBLSPACE /FORMAT A:&quot; to Format That Drive"
-permalink: kb/108/Q108750/
+permalink: /kb/108/Q108750/
 ---
 
 ## Q108750: You Must Use &quot;DBLSPACE /FORMAT A:&quot; to Format That Drive

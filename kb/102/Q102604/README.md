@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102604: Windows NT Does Not Support Power Management"
-permalink: kb/102/Q102604/
+permalink: /kb/102/Q102604/
 ---
 
 ## Q102604: Windows NT Does Not Support Power Management

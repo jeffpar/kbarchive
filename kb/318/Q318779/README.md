@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318779: SMS: Programs Run After Applying Software Distribribution Hotfix"
-permalink: kb/318/Q318779/
+permalink: /kb/318/Q318779/
 ---
 
 ## Q318779: SMS: Programs Run After Applying Software Distribribution Hotfix

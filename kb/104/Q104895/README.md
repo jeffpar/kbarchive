@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104895: FIX: No Hexidecimal Display in Watch and Locals"
-permalink: kb/104/Q104895/
+permalink: /kb/104/Q104895/
 ---
 
 ## Q104895: FIX: No Hexidecimal Display in Watch and Locals

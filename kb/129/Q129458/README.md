@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129458: Printers are not Displayed in Connect To Printer Dialog Box"
-permalink: kb/129/Q129458/
+permalink: /kb/129/Q129458/
 ---
 
 ## Q129458: Printers are not Displayed in Connect To Printer Dialog Box

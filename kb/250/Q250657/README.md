@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250657: XWEB: OWA Prompts Three Times for Credentials Connecting w Proxy"
-permalink: kb/250/Q250657/
+permalink: /kb/250/Q250657/
 ---
 
 ## Q250657: XWEB: OWA Prompts Three Times for Credentials Connecting w Proxy

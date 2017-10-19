@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193818: SNA Server 3.0 Logs Repeated BIND Errors (Event 18)"
-permalink: kb/193/Q193818/
+permalink: /kb/193/Q193818/
 ---
 
 ## Q193818: SNA Server 3.0 Logs Repeated BIND Errors (Event 18)

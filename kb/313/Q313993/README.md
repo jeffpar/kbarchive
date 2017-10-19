@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313993: BUG: VSS Database Truncates Stored Procedures Larger Than 4 KB"
-permalink: kb/313/Q313993/
+permalink: /kb/313/Q313993/
 ---
 
 ## Q313993: BUG: VSS Database Truncates Stored Procedures Larger Than 4 KB

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218165: WAPPC32 Ignores User ID Provided By APPC App On Consecutive Allo"
-permalink: kb/218/Q218165/
+permalink: /kb/218/Q218165/
 ---
 
 ## Q218165: WAPPC32 Ignores User ID Provided By APPC App On Consecutive Allo

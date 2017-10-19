@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322896: HOWTO: Prevent Scanning Specific File Types in Index Server"
-permalink: kb/322/Q322896/
+permalink: /kb/322/Q322896/
 ---
 
 ## Q322896: HOWTO: Prevent Scanning Specific File Types in Index Server

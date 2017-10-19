@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176229: XCLN: Recovered Items May not Appear in Deleted Items Folder"
-permalink: kb/176/Q176229/
+permalink: /kb/176/Q176229/
 ---
 
 ## Q176229: XCLN: Recovered Items May not Appear in Deleted Items Folder

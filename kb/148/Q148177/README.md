@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148177: PRB: Mismatched Jet DLL Files with Excel and Visual Basic"
-permalink: kb/148/Q148177/
+permalink: /kb/148/Q148177/
 ---
 
 ## Q148177: PRB: Mismatched Jet DLL Files with Excel and Visual Basic

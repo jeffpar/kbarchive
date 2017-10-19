@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154175: Users May Lose Designated Default Printer After Multiple Logins"
-permalink: kb/154/Q154175/
+permalink: /kb/154/Q154175/
 ---
 
 ## Q154175: Users May Lose Designated Default Printer After Multiple Logins

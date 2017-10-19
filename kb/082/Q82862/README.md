@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82862: Poor Print Quality in Taxview 1991"
-permalink: kb/082/Q82862/
+permalink: /kb/082/Q82862/
 ---
 
 ## Q82862: Poor Print Quality in Taxview 1991

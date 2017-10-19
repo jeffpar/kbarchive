@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138501: PRB: Modifying a Remote View Results in a Syntax Error"
-permalink: kb/138/Q138501/
+permalink: /kb/138/Q138501/
 ---
 
 ## Q138501: PRB: Modifying a Remote View Results in a Syntax Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146413: Japanese Characters Not Displayed Correctly in BBS Author List"
-permalink: kb/146/Q146413/
+permalink: /kb/146/Q146413/
 ---
 
 ## Q146413: Japanese Characters Not Displayed Correctly in BBS Author List

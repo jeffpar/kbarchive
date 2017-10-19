@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177094: PRB: ActiveX Control Cannot Assign Run-Time Read-Only Property"
-permalink: kb/177/Q177094/
+permalink: /kb/177/Q177094/
 ---
 
 ## Q177094: PRB: ActiveX Control Cannot Assign Run-Time Read-Only Property

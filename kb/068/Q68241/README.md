@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68241: Updated Display Driver Required for Hyundai LT-5 Laptop"
-permalink: kb/068/Q68241/
+permalink: /kb/068/Q68241/
 ---
 
 ## Q68241: Updated Display Driver Required for Hyundai LT-5 Laptop

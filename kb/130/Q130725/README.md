@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130725: How to Use the CloneObject Method"
-permalink: kb/130/Q130725/
+permalink: /kb/130/Q130725/
 ---
 
 ## Q130725: How to Use the CloneObject Method

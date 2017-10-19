@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173806: XCLN: MS Fax and Exchange Run Slowly in Same Profile"
-permalink: kb/173/Q173806/
+permalink: /kb/173/Q173806/
 ---
 
 ## Q173806: XCLN: MS Fax and Exchange Run Slowly in Same Profile

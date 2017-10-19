@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90482: Password Cache Not Used with UNC File Access"
-permalink: kb/090/Q90482/
+permalink: /kb/090/Q90482/
 ---
 
 ## Q90482: Password Cache Not Used with UNC File Access

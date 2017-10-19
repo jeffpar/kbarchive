@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94246: TCP Connections Require Extra Time to Close"
-permalink: kb/094/Q94246/
+permalink: /kb/094/Q94246/
 ---
 
 ## Q94246: TCP Connections Require Extra Time to Close

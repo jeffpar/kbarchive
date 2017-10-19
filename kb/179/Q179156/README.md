@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179156: Updated TCP/IP Printing Options for Windows NT 4.0 SP3 and Later"
-permalink: kb/179/Q179156/
+permalink: /kb/179/Q179156/
 ---
 
 ## Q179156: Updated TCP/IP Printing Options for Windows NT 4.0 SP3 and Later

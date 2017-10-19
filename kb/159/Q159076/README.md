@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159076: Windows NT 4.0 May Hang or Crash in Win32k.sys During Setup."
-permalink: kb/159/Q159076/
+permalink: /kb/159/Q159076/
 ---
 
 ## Q159076: Windows NT 4.0 May Hang or Crash in Win32k.sys During Setup.

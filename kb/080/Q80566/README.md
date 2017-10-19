@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80566: MS-DOS Shell Flashes with Metheus Display Card"
-permalink: kb/080/Q80566/
+permalink: /kb/080/Q80566/
 ---
 
 ## Q80566: MS-DOS Shell Flashes with Metheus Display Card

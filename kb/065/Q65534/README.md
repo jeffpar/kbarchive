@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65534: Maximum Number of Mirrored Drives Allowed in OS/2 LAN Man 2.x"
-permalink: kb/065/Q65534/
+permalink: /kb/065/Q65534/
 ---
 
 ## Q65534: Maximum Number of Mirrored Drives Allowed in OS/2 LAN Man 2.x

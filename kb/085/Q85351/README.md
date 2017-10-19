@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85351: FAX: MS-DOS Version Requirement for the Fax Gateway"
-permalink: kb/085/Q85351/
+permalink: /kb/085/Q85351/
 ---
 
 ## Q85351: FAX: MS-DOS Version Requirement for the Fax Gateway

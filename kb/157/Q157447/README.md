@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157447: Cannot Display Korean Windows NT 3.5 Programs Under Windows 3.51"
-permalink: kb/157/Q157447/
+permalink: /kb/157/Q157447/
 ---
 
 ## Q157447: Cannot Display Korean Windows NT 3.5 Programs Under Windows 3.51

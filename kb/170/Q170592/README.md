@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170592: XCLN: Client Appears to Hang When Using Check Names Command"
-permalink: kb/170/Q170592/
+permalink: /kb/170/Q170592/
 ---
 
 ## Q170592: XCLN: Client Appears to Hang When Using Check Names Command

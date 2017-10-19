@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119635: PRB: APPEND FROM ARRAY Creates Only One Record"
-permalink: kb/119/Q119635/
+permalink: /kb/119/Q119635/
 ---
 
 ## Q119635: PRB: APPEND FROM ARRAY Creates Only One Record

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140191: PC WSPlus: SCHDIST.EXE Ignores CAL File Security"
-permalink: kb/140/Q140191/
+permalink: /kb/140/Q140191/
 ---
 
 ## Q140191: PC WSPlus: SCHDIST.EXE Ignores CAL File Security

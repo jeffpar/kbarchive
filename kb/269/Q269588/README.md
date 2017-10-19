@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269588: XADM: Heap Corruption in MAPI Causes MTA to Stop Responding"
-permalink: kb/269/Q269588/
+permalink: /kb/269/Q269588/
 ---
 
 ## Q269588: XADM: Heap Corruption in MAPI Causes MTA to Stop Responding

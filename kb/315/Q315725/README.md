@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315725: HOW TO: Determine If Screen Saver Is Running by Using VB 6.0"
-permalink: kb/315/Q315725/
+permalink: /kb/315/Q315725/
 ---
 
 ## Q315725: HOW TO: Determine If Screen Saver Is Running by Using VB 6.0

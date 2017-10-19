@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171511: FIX: Controls in Frame/PictureBox Do Not Repaint in Design Mode"
-permalink: kb/171/Q171511/
+permalink: /kb/171/Q171511/
 ---
 
 ## Q171511: FIX: Controls in Frame/PictureBox Do Not Repaint in Design Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233236: XFOR: Chinese Outlook MSMail Users Get NDRs Sending to Exchange"
-permalink: kb/233/Q233236/
+permalink: /kb/233/Q233236/
 ---
 
 ## Q233236: XFOR: Chinese Outlook MSMail Users Get NDRs Sending to Exchange

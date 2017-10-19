@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173952: How to Configure Outlook Express for The Microsoft Network"
-permalink: kb/173/Q173952/
+permalink: /kb/173/Q173952/
 ---
 
 ## Q173952: How to Configure Outlook Express for The Microsoft Network

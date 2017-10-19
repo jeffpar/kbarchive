@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185588: Guide To Windows NT 4.0 Profiles and Policies (Part 3 of 6)"
-permalink: kb/185/Q185588/
+permalink: /kb/185/Q185588/
 ---
 
 ## Q185588: Guide To Windows NT 4.0 Profiles and Policies (Part 3 of 6)

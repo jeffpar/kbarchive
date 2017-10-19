@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243187: XFOR: Dirsync Errors Between Exchange Server and Lotus Notes"
-permalink: kb/243/Q243187/
+permalink: /kb/243/Q243187/
 ---
 
 ## Q243187: XFOR: Dirsync Errors Between Exchange Server and Lotus Notes

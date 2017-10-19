@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83239: Epson Action Laser II Printer and Windows"
-permalink: kb/083/Q83239/
+permalink: /kb/083/Q83239/
 ---
 
 ## Q83239: Epson Action Laser II Printer and Windows

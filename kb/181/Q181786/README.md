@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181786: WD97: Using the INFO Field to Obtain Summary Info Data"
-permalink: kb/181/Q181786/
+permalink: /kb/181/Q181786/
 ---
 
 ## Q181786: WD97: Using the INFO Field to Obtain Summary Info Data

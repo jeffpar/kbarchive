@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157271: How to Set Up the 3Com Impact for Single-Channel ISDN"
-permalink: kb/157/Q157271/
+permalink: /kb/157/Q157271/
 ---
 
 ## Q157271: How to Set Up the 3Com Impact for Single-Channel ISDN

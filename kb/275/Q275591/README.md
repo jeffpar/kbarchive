@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275591: SMSINST: Logon Server Manager Deletes Smslogon Language Folders"
-permalink: kb/275/Q275591/
+permalink: /kb/275/Q275591/
 ---
 
 ## Q275591: SMSINST: Logon Server Manager Deletes Smslogon Language Folders

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142201: FIX: Running a Query from View Designer Causes Error Message"
-permalink: kb/142/Q142201/
+permalink: /kb/142/Q142201/
 ---
 
 ## Q142201: FIX: Running a Query from View Designer Causes Error Message

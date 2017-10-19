@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164132: SideWinder Pro 3D Joystick Not Recognized with PAS 16 Sound Card"
-permalink: kb/164/Q164132/
+permalink: /kb/164/Q164132/
 ---
 
 ## Q164132: SideWinder Pro 3D Joystick Not Recognized with PAS 16 Sound Card

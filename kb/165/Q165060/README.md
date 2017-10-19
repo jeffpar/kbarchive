@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165060: Printing a Fax May Produce a Solid Black Page"
-permalink: kb/165/Q165060/
+permalink: /kb/165/Q165060/
 ---
 
 ## Q165060: Printing a Fax May Produce a Solid Black Page

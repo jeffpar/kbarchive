@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306642: SMS: Permissions Assigned to Default Domain Local or Local Group"
-permalink: kb/306/Q306642/
+permalink: /kb/306/Q306642/
 ---
 
 ## Q306642: SMS: Permissions Assigned to Default Domain Local or Local Group

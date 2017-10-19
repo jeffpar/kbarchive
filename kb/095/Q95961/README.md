@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95961: PC Win: Corrupted Address List Caused by Corrupted NETWORK.GLB"
-permalink: kb/095/Q95961/
+permalink: /kb/095/Q95961/
 ---
 
 ## Q95961: PC Win: Corrupted Address List Caused by Corrupted NETWORK.GLB

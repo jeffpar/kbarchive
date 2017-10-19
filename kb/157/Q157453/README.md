@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157453: PRB: Errors Encountered When Creating Oracle ODBC Datasource"
-permalink: kb/157/Q157453/
+permalink: /kb/157/Q157453/
 ---
 
 ## Q157453: PRB: Errors Encountered When Creating Oracle ODBC Datasource

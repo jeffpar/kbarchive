@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q28216: PRB: Cannot Backup Distribution Disks"
-permalink: kb/028/Q28216/
+permalink: /kb/028/Q28216/
 ---
 
 ## Q28216: PRB: Cannot Backup Distribution Disks

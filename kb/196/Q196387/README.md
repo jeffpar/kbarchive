@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196387: XCLN: Microsoft Importer for cc:Mail Archive Fails During Setup"
-permalink: kb/196/Q196387/
+permalink: /kb/196/Q196387/
 ---
 
 ## Q196387: XCLN: Microsoft Importer for cc:Mail Archive Fails During Setup

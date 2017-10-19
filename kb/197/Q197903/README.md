@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197903: Snaservr.exe Access Violation In Snpugeti() or Snpuputi()"
-permalink: kb/197/Q197903/
+permalink: /kb/197/Q197903/
 ---
 
 ## Q197903: Snaservr.exe Access Violation In Snpugeti() or Snpuputi()

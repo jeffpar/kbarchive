@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247524: XFOR: Determining Which Files to Modify for Dirsync with Notes"
-permalink: kb/247/Q247524/
+permalink: /kb/247/Q247524/
 ---
 
 ## Q247524: XFOR: Determining Which Files to Modify for Dirsync with Notes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92793: WFWG: Exiting from Shell Does Not Exit Windows for Workgroups"
-permalink: kb/092/Q92793/
+permalink: /kb/092/Q92793/
 ---
 
 ## Q92793: WFWG: Exiting from Shell Does Not Exit Windows for Workgroups

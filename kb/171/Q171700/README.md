@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171700: Error Message: Billadd.dll Is Linked to Missing Export Mcm.dll"
-permalink: kb/171/Q171700/
+permalink: /kb/171/Q171700/
 ---
 
 ## Q171700: Error Message: Billadd.dll Is Linked to Missing Export Mcm.dll

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59918: Mac Hyp: Add Multiple Recipients with One msmail Function Call"
-permalink: kb/059/Q59918/
+permalink: /kb/059/Q59918/
 ---
 
 ## Q59918: Mac Hyp: Add Multiple Recipients with One msmail Function Call

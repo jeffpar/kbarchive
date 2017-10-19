@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146461: Required Rights for Novell when Using Schedule+ 7.0"
-permalink: kb/146/Q146461/
+permalink: /kb/146/Q146461/
 ---
 
 ## Q146461: Required Rights for Novell when Using Schedule+ 7.0

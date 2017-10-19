@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124742: Unable to Start 16-bit Applications in Separate Memory Space"
-permalink: kb/124/Q124742/
+permalink: /kb/124/Q124742/
 ---
 
 ## Q124742: Unable to Start 16-bit Applications in Separate Memory Space

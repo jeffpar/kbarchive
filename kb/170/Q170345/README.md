@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170345: Open Database Connectivity (ODBC) 3.0 Service Pack 1 Fixlist"
-permalink: kb/170/Q170345/
+permalink: /kb/170/Q170345/
 ---
 
 ## Q170345: Open Database Connectivity (ODBC) 3.0 Service Pack 1 Fixlist

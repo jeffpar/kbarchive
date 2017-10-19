@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178259: XADM: Chat Fails w/ Invalid Number of Reply/Request Arguments"
-permalink: kb/178/Q178259/
+permalink: /kb/178/Q178259/
 ---
 
 ## Q178259: XADM: Chat Fails w/ Invalid Number of Reply/Request Arguments

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319000: How To Import Bookmarks From Netscape To Internet Explorer 5.x"
-permalink: kb/319/Q319000/
+permalink: /kb/319/Q319000/
 ---
 
 ## Q319000: How To Import Bookmarks From Netscape To Internet Explorer 5.x

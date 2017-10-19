@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107711: ScanDisk Reports Compressed Floppy Too Full for Undo"
-permalink: kb/107/Q107711/
+permalink: /kb/107/Q107711/
 ---
 
 ## Q107711: ScanDisk Reports Compressed Floppy Too Full for Undo

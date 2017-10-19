@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230134: BUG: MprConfigServerBackup &amp; MprConfigServerRestore Exceptions"
-permalink: kb/230/Q230134/
+permalink: /kb/230/Q230134/
 ---
 
 ## Q230134: BUG: MprConfigServerBackup &amp; MprConfigServerRestore Exceptions

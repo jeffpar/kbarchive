@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137974: How to Set Up User Profiles with the Microsoft Service for NDS"
-permalink: kb/137/Q137974/
+permalink: /kb/137/Q137974/
 ---
 
 ## Q137974: How to Set Up User Profiles with the Microsoft Service for NDS

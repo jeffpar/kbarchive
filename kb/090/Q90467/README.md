@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90467: Windows for Workgroups Stops Responding (Hangs) During Login"
-permalink: kb/090/Q90467/
+permalink: /kb/090/Q90467/
 ---
 
 ## Q90467: Windows for Workgroups Stops Responding (Hangs) During Login

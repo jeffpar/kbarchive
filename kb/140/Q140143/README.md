@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140143: Windows 95 Computer Inventoried MouseInfo is Incorrect"
-permalink: kb/140/Q140143/
+permalink: /kb/140/Q140143/
 ---
 
 ## Q140143: Windows 95 Computer Inventoried MouseInfo is Incorrect

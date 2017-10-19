@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169274: TCP/IP Causes Time Wait States to Exceed Four Minutes"
-permalink: kb/169/Q169274/
+permalink: /kb/169/Q169274/
 ---
 
 ## Q169274: TCP/IP Causes Time Wait States to Exceed Four Minutes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164160: Text Background Not Computed Correctly for Text Reflection"
-permalink: kb/164/Q164160/
+permalink: /kb/164/Q164160/
 ---
 
 ## Q164160: Text Background Not Computed Correctly for Text Reflection

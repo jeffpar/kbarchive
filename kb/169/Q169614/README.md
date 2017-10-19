@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169614: HP DeskJet 500-Series Driver May Not Return All System Resources"
-permalink: kb/169/Q169614/
+permalink: /kb/169/Q169614/
 ---
 
 ## Q169614: HP DeskJet 500-Series Driver May Not Return All System Resources

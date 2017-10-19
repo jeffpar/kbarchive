@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325571: Buffer Overrun in IIS When No Script Maps Exist"
-permalink: kb/325/Q325571/
+permalink: /kb/325/Q325571/
 ---
 
 ## Q325571: Buffer Overrun in IIS When No Script Maps Exist

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140808: German PDF File for Office 4.2a Detects Office 4.2c"
-permalink: kb/140/Q140808/
+permalink: /kb/140/Q140808/
 ---
 
 ## Q140808: German PDF File for Office 4.2a Detects Office 4.2c

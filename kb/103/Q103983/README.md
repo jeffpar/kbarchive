@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103983: PRB: Serializing an Abstract Base Class"
-permalink: kb/103/Q103983/
+permalink: /kb/103/Q103983/
 ---
 
 ## Q103983: PRB: Serializing an Abstract Base Class

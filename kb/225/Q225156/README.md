@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225156: Print Server Shows Incorrect Status Starting Large # of Printers"
-permalink: kb/225/Q225156/
+permalink: /kb/225/Q225156/
 ---
 
 ## Q225156: Print Server Shows Incorrect Status Starting Large # of Printers

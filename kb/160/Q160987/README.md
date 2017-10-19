@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160987: XADM: Registry Security Is Not Set Up Properly"
-permalink: kb/160/Q160987/
+permalink: /kb/160/Q160987/
 ---
 
 ## Q160987: XADM: Registry Security Is Not Set Up Properly

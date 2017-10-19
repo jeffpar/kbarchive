@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118876: PRB: USER Resource Leak when Improperly Using CFormView"
-permalink: kb/118/Q118876/
+permalink: /kb/118/Q118876/
 ---
 
 ## Q118876: PRB: USER Resource Leak when Improperly Using CFormView

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120222: Plus Sign Appears in Windows Explorer but Not in File Manager"
-permalink: kb/120/Q120222/
+permalink: /kb/120/Q120222/
 ---
 
 ## Q120222: Plus Sign Appears in Windows Explorer but Not in File Manager

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242478: PRB: DAO Recordset RecordCount Incorrect When Based on Text File"
-permalink: kb/242/Q242478/
+permalink: /kb/242/Q242478/
 ---
 
 ## Q242478: PRB: DAO Recordset RecordCount Incorrect When Based on Text File

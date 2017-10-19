@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188680: XADM: How to Change cc:Mail Proxy Address for New Mailboxes"
-permalink: kb/188/Q188680/
+permalink: /kb/188/Q188680/
 ---
 
 ## Q188680: XADM: How to Change cc:Mail Proxy Address for New Mailboxes

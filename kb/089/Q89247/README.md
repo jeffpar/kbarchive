@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89247: WD97: How Word for Windows Uses Temporary Files"
-permalink: kb/089/Q89247/
+permalink: /kb/089/Q89247/
 ---
 
 ## Q89247: WD97: How Word for Windows Uses Temporary Files

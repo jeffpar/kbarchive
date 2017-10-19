@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254493: SHORTCUT.EXE Does Not Accept Pathnames In Command Line"
-permalink: kb/254/Q254493/
+permalink: /kb/254/Q254493/
 ---
 
 ## Q254493: SHORTCUT.EXE Does Not Accept Pathnames In Command Line

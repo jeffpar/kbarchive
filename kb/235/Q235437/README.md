@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235437: How to Change Process Throttling Options for IIS 5.0"
-permalink: kb/235/Q235437/
+permalink: /kb/235/Q235437/
 ---
 
 ## Q235437: How to Change Process Throttling Options for IIS 5.0

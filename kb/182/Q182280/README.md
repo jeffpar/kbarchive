@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182280: XADM: Store Crashes After Upgrade to 5.0 SP2 on Windows NT 3.51"
-permalink: kb/182/Q182280/
+permalink: /kb/182/Q182280/
 ---
 
 ## Q182280: XADM: Store Crashes After Upgrade to 5.0 SP2 on Windows NT 3.51

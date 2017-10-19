@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165454: Error Message: Cannot Find Enable.vxd"
-permalink: kb/165/Q165454/
+permalink: /kb/165/Q165454/
 ---
 
 ## Q165454: Error Message: Cannot Find Enable.vxd

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169570: PPT7: Mouse Pointer Disappears After Editing Graph"
-permalink: kb/169/Q169570/
+permalink: /kb/169/Q169570/
 ---
 
 ## Q169570: PPT7: Mouse Pointer Disappears After Editing Graph

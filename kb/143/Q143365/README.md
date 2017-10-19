@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143365: 3D Movie Maker: How to Move Sounds Between Movies"
-permalink: kb/143/Q143365/
+permalink: /kb/143/Q143365/
 ---
 
 ## Q143365: 3D Movie Maker: How to Move Sounds Between Movies

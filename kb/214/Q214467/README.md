@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214467: Windows NT 4.0 DNR Only &quot;Devolves&quot; Two Domain Suffixes"
-permalink: kb/214/Q214467/
+permalink: /kb/214/Q214467/
 ---
 
 ## Q214467: Windows NT 4.0 DNR Only &quot;Devolves&quot; Two Domain Suffixes

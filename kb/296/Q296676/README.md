@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296676: FIX: Unreadable Characters Displayed in Reindexing Information"
-permalink: kb/296/Q296676/
+permalink: /kb/296/Q296676/
 ---
 
 ## Q296676: FIX: Unreadable Characters Displayed in Reindexing Information

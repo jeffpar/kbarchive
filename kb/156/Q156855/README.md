@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156855: Incorrect User Profile Loaded When Logging On to Workstation"
-permalink: kb/156/Q156855/
+permalink: /kb/156/Q156855/
 ---
 
 ## Q156855: Incorrect User Profile Loaded When Logging On to Workstation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130516: How to Modify the Autoexec.bat in Windows 95"
-permalink: kb/130/Q130516/
+permalink: /kb/130/Q130516/
 ---
 
 ## Q130516: How to Modify the Autoexec.bat in Windows 95

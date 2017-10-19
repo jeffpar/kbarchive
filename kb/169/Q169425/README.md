@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169425: XADM: Missing X.400 Organization Field"
-permalink: kb/169/Q169425/
+permalink: /kb/169/Q169425/
 ---
 
 ## Q169425: XADM: Missing X.400 Organization Field

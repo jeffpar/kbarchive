@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198968: Err Msg: SSL Required"
-permalink: kb/198/Q198968/
+permalink: /kb/198/Q198968/
 ---
 
 ## Q198968: Err Msg: SSL Required

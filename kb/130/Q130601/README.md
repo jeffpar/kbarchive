@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130601: How to Create a Primary Index in a Visual FoxPro Program"
-permalink: kb/130/Q130601/
+permalink: /kb/130/Q130601/
 ---
 
 ## Q130601: How to Create a Primary Index in a Visual FoxPro Program

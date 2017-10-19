@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168835: HOWTO: Add Copy and Paste Functionality to Grid Control"
-permalink: kb/168/Q168835/
+permalink: /kb/168/Q168835/
 ---
 
 ## Q168835: HOWTO: Add Copy and Paste Functionality to Grid Control

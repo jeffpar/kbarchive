@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87411: PC DB: Err Msg: Error in Transmitting Mail or Server Disk Full"
-permalink: kb/087/Q87411/
+permalink: /kb/087/Q87411/
 ---
 
 ## Q87411: PC DB: Err Msg: Error in Transmitting Mail or Server Disk Full

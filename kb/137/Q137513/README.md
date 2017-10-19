@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137513: User Manager Cannot Rename a Group"
-permalink: kb/137/Q137513/
+permalink: /kb/137/Q137513/
 ---
 
 ## Q137513: User Manager Cannot Rename a Group

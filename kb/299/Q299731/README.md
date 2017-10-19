@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299731: Train Simulator: Clock in Cab Always Displays Time as 1:10"
-permalink: kb/299/Q299731/
+permalink: /kb/299/Q299731/
 ---
 
 ## Q299731: Train Simulator: Clock in Cab Always Displays Time as 1:10

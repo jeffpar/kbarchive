@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90336: Real-Mode NDIS Drivers Included with Windows for Workgroups"
-permalink: kb/090/Q90336/
+permalink: /kb/090/Q90336/
 ---
 
 ## Q90336: Real-Mode NDIS Drivers Included with Windows for Workgroups

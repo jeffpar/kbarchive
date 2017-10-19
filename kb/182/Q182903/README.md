@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182903: XADM: ESEUTIL Command Line Parameters"
-permalink: kb/182/Q182903/
+permalink: /kb/182/Q182903/
 ---
 
 ## Q182903: XADM: ESEUTIL Command Line Parameters

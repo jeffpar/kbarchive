@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257409: PRB: &quot;Could Not Start Internet Explorer&quot; Debugging WebClasses"
-permalink: kb/257/Q257409/
+permalink: /kb/257/Q257409/
 ---
 
 ## Q257409: PRB: &quot;Could Not Start Internet Explorer&quot; Debugging WebClasses

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195415: XADM: Key Management (KM) Server in Performance Monitor"
-permalink: kb/195/Q195415/
+permalink: /kb/195/Q195415/
 ---
 
 ## Q195415: XADM: Key Management (KM) Server in Performance Monitor

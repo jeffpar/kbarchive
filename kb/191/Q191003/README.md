@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191003: How to Use an Emergency Repair Disk with an Alpha-Based Computer"
-permalink: kb/191/Q191003/
+permalink: /kb/191/Q191003/
 ---
 
 ## Q191003: How to Use an Emergency Repair Disk with an Alpha-Based Computer

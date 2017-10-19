@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99533: DIRECTORY Command Returns Incorrect 0 Bytes Free Message"
-permalink: kb/099/Q99533/
+permalink: /kb/099/Q99533/
 ---
 
 ## Q99533: DIRECTORY Command Returns Incorrect 0 Bytes Free Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164879: SMS: Server Name Not Displayed in Permissions Box"
-permalink: kb/164/Q164879/
+permalink: /kb/164/Q164879/
 ---
 
 ## Q164879: SMS: Server Name Not Displayed in Permissions Box

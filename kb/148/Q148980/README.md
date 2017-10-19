@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148980: ROUTER.EXE Does Not Support API Tracing"
-permalink: kb/148/Q148980/
+permalink: /kb/148/Q148980/
 ---
 
 ## Q148980: ROUTER.EXE Does Not Support API Tracing

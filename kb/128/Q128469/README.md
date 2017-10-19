@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128469: PROFS: Err Msg: PWAMROUT Novalue Error in Line 222"
-permalink: kb/128/Q128469/
+permalink: /kb/128/Q128469/
 ---
 
 ## Q128469: PROFS: Err Msg: PWAMROUT Novalue Error in Line 222

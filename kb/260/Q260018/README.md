@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260018: BUG: Winsock Control Run-Time Error 10054 in DataArrival for UDP"
-permalink: kb/260/Q260018/
+permalink: /kb/260/Q260018/
 ---
 
 ## Q260018: BUG: Winsock Control Run-Time Error 10054 in DataArrival for UDP

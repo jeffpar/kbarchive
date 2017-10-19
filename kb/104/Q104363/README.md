@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104363: PC Forms: MAPI_FAILURE Forwarding from Shared Folder"
-permalink: kb/104/Q104363/
+permalink: /kb/104/Q104363/
 ---
 
 ## Q104363: PC Forms: MAPI_FAILURE Forwarding from Shared Folder

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156032: PRB: Position of @...SAYs Incorrect When Printing in Raw Mode"
-permalink: kb/156/Q156032/
+permalink: /kb/156/Q156032/
 ---
 
 ## Q156032: PRB: Position of @...SAYs Incorrect When Printing in Raw Mode

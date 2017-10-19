@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197852: Troubleshooting Directory Service Manager for NetWare"
-permalink: kb/197/Q197852/
+permalink: /kb/197/Q197852/
 ---
 
 ## Q197852: Troubleshooting Directory Service Manager for NetWare

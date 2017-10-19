@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187913: HOWTO: List Running Processes"
-permalink: kb/187/Q187913/
+permalink: /kb/187/Q187913/
 ---
 
 ## Q187913: HOWTO: List Running Processes

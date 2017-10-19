@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q35499: Expand.exe Expands the Size of a Dialog Box"
-permalink: kb/035/Q35499/
+permalink: /kb/035/Q35499/
 ---
 
 ## Q35499: Expand.exe Expands the Size of a Dialog Box

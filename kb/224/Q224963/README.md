@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224963: Using Enhanced &lt;SCRIPT&gt; Tags for Includes"
-permalink: kb/224/Q224963/
+permalink: /kb/224/Q224963/
 ---
 
 ## Q224963: Using Enhanced &lt;SCRIPT&gt; Tags for Includes

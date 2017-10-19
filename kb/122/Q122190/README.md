@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122190: Steps To Remove Golf 2.0 From Your Computer"
-permalink: kb/122/Q122190/
+permalink: /kb/122/Q122190/
 ---
 
 ## Q122190: Steps To Remove Golf 2.0 From Your Computer

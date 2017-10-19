@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96198: TCP/IP PROTOCOL.INI Documentation Updates and Corrections"
-permalink: kb/096/Q96198/
+permalink: /kb/096/Q96198/
 ---
 
 ## Q96198: TCP/IP PROTOCOL.INI Documentation Updates and Corrections

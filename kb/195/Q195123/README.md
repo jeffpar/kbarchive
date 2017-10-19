@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195123: AV in DNS Server When Enumerating a Zone w/ WK Resource Records"
-permalink: kb/195/Q195123/
+permalink: /kb/195/Q195123/
 ---
 
 ## Q195123: AV in DNS Server When Enumerating a Zone w/ WK Resource Records

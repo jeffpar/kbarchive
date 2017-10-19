@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163490: WD97: How to Rename, Copy, or Delete a Macro"
-permalink: kb/163/Q163490/
+permalink: /kb/163/Q163490/
 ---
 
 ## Q163490: WD97: How to Rename, Copy, or Delete a Macro

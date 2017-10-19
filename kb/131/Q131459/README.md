@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131459: INFO: MS-DOS-Based RPC Application Cannot Use TCP/IP"
-permalink: kb/131/Q131459/
+permalink: /kb/131/Q131459/
 ---
 
 ## Q131459: INFO: MS-DOS-Based RPC Application Cannot Use TCP/IP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58545: Mac DOS: Phase 2 Drivers Required for LocalTalk PC Card"
-permalink: kb/058/Q58545/
+permalink: /kb/058/Q58545/
 ---
 
 ## Q58545: Mac DOS: Phase 2 Drivers Required for LocalTalk PC Card

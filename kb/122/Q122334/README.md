@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122334: FIX: Dependencies Not Generated for Files w/Lines Ending in LF"
-permalink: kb/122/Q122334/
+permalink: /kb/122/Q122334/
 ---
 
 ## Q122334: FIX: Dependencies Not Generated for Files w/Lines Ending in LF

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80751: MS-DOS EXPAND.EXE Functionality"
-permalink: kb/080/Q80751/
+permalink: /kb/080/Q80751/
 ---
 
 ## Q80751: MS-DOS EXPAND.EXE Functionality

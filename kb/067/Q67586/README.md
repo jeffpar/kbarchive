@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67586: Action Taken on Abort, Retry, Ignore, Fail"
-permalink: kb/067/Q67586/
+permalink: /kb/067/Q67586/
 ---
 
 ## Q67586: Action Taken on Abort, Retry, Ignore, Fail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82721: Problems Running Windows 3.1 After Installing Desktop 1.0"
-permalink: kb/082/Q82721/
+permalink: /kb/082/Q82721/
 ---
 
 ## Q82721: Problems Running Windows 3.1 After Installing Desktop 1.0

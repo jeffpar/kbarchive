@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317519: PRB: Incorrect Time and Date in .resx File Added from VS .NET"
-permalink: kb/317/Q317519/
+permalink: /kb/317/Q317519/
 ---
 
 ## Q317519: PRB: Incorrect Time and Date in .resx File Added from VS .NET

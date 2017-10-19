@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104860: FORTRAN PowerStation README.TXT: Installing and Using FL32"
-permalink: kb/104/Q104860/
+permalink: /kb/104/Q104860/
 ---
 
 ## Q104860: FORTRAN PowerStation README.TXT: Installing and Using FL32

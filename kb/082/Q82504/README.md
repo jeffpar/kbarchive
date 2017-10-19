@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82504: Epson 7500: Second Page Printed Incorrectly"
-permalink: kb/082/Q82504/
+permalink: /kb/082/Q82504/
 ---
 
 ## Q82504: Epson 7500: Second Page Printed Incorrectly

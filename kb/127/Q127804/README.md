@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127804: Network Driver Error 7200 Changing a WFW Network Password"
-permalink: kb/127/Q127804/
+permalink: /kb/127/Q127804/
 ---
 
 ## Q127804: Network Driver Error 7200 Changing a WFW Network Password

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134235: Mac Srv: Group Messages w/ Gateway Users May Go to Wrong User"
-permalink: kb/134/Q134235/
+permalink: /kb/134/Q134235/
 ---
 
 ## Q134235: Mac Srv: Group Messages w/ Gateway Users May Go to Wrong User

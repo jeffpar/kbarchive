@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69393: Margins Omitted When Printing to HP with Adobe Cartridge"
-permalink: kb/069/Q69393/
+permalink: /kb/069/Q69393/
 ---
 
 ## Q69393: Margins Omitted When Printing to HP with Adobe Cartridge

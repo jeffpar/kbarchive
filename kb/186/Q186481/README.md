@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186481: Terminal Server Commands: NDSPSVR"
-permalink: kb/186/Q186481/
+permalink: /kb/186/Q186481/
 ---
 
 ## Q186481: Terminal Server Commands: NDSPSVR

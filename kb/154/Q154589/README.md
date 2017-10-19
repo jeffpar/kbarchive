@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154589: XFOR: Error 2140 Starting the Internet Mail Connector Service"
-permalink: kb/154/Q154589/
+permalink: /kb/154/Q154589/
 ---
 
 ## Q154589: XFOR: Error 2140 Starting the Internet Mail Connector Service

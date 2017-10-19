@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83679: Manual and Network Install of the TrueType Font Pack"
-permalink: kb/083/Q83679/
+permalink: /kb/083/Q83679/
 ---
 
 ## Q83679: Manual and Network Install of the TrueType Font Pack

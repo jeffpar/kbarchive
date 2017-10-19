@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236584: 128-Bit RAS Client Is Authenticated but Cannot Use Resources"
-permalink: kb/236/Q236584/
+permalink: /kb/236/Q236584/
 ---
 
 ## Q236584: 128-Bit RAS Client Is Authenticated but Cannot Use Resources

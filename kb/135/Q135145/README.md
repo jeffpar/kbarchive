@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135145: Problem Viewing Many Files At Once with Quick View"
-permalink: kb/135/Q135145/
+permalink: /kb/135/Q135145/
 ---
 
 ## Q135145: Problem Viewing Many Files At Once with Quick View

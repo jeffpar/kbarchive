@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32667: INFO: Font Metrics and the Use of Negative lfHeight"
-permalink: kb/032/Q32667/
+permalink: /kb/032/Q32667/
 ---
 
 ## Q32667: INFO: Font Metrics and the Use of Negative lfHeight

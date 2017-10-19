@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151237: Error Message When Installing TCP/IP or Adding TCP/IP Service"
-permalink: kb/151/Q151237/
+permalink: /kb/151/Q151237/
 ---
 
 ## Q151237: Error Message When Installing TCP/IP or Adding TCP/IP Service

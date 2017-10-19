@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317919: Event ID 2009 May Be Logged on Windows NT 4.0-Based Print Server"
-permalink: kb/317/Q317919/
+permalink: /kb/317/Q317919/
 ---
 
 ## Q317919: Event ID 2009 May Be Logged on Windows NT 4.0-Based Print Server

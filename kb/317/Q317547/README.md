@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317547: How To Configure TCP/IP Settings In A Macintosh OS For A Broadba"
-permalink: kb/317/Q317547/
+permalink: /kb/317/Q317547/
 ---
 
 ## Q317547: How To Configure TCP/IP Settings In A Macintosh OS For A Broadba

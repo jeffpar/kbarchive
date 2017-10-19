@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231995: FIX: Error C2664 and C2582 While Using CArray Class"
-permalink: kb/231/Q231995/
+permalink: /kb/231/Q231995/
 ---
 
 ## Q231995: FIX: Error C2664 and C2582 While Using CArray Class

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251147: PRB: Unable to Display Help or No Help Available for ADO in VB"
-permalink: kb/251/Q251147/
+permalink: /kb/251/Q251147/
 ---
 
 ## Q251147: PRB: Unable to Display Help or No Help Available for ADO in VB

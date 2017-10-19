@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246391: PaswordChangeFlags Set to 4 or Higher Causes Access Violation"
-permalink: kb/246/Q246391/
+permalink: /kb/246/Q246391/
 ---
 
 ## Q246391: PaswordChangeFlags Set to 4 or Higher Causes Access Violation

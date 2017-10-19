@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73726: Sperry 286 BIOS Versions Earlier Than 1.57 Need an Upgrade"
-permalink: kb/073/Q73726/
+permalink: /kb/073/Q73726/
 ---
 
 ## Q73726: Sperry 286 BIOS Versions Earlier Than 1.57 Need an Upgrade

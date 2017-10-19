@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87032: SMTP: Admin Options to Be Configured"
-permalink: kb/087/Q87032/
+permalink: /kb/087/Q87032/
 ---
 
 ## Q87032: SMTP: Admin Options to Be Configured

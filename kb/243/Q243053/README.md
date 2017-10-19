@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243053: HOWTO: Create an Application Role on Microsoft SQL Server 7.0"
-permalink: kb/243/Q243053/
+permalink: /kb/243/Q243053/
 ---
 
 ## Q243053: HOWTO: Create an Application Role on Microsoft SQL Server 7.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309418: Description of the Loadqm.exe File"
-permalink: kb/309/Q309418/
+permalink: /kb/309/Q309418/
 ---
 
 ## Q309418: Description of the Loadqm.exe File

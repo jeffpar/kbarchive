@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162422: WD97: GetSpellingSuggestions Method Misses Repeated Words"
-permalink: kb/162/Q162422/
+permalink: /kb/162/Q162422/
 ---
 
 ## Q162422: WD97: GetSpellingSuggestions Method Misses Repeated Words

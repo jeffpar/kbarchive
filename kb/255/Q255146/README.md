@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255146: MapPoint 2001: How to Layer Objects By Using the Draw Menu"
-permalink: kb/255/Q255146/
+permalink: /kb/255/Q255146/
 ---
 
 ## Q255146: MapPoint 2001: How to Layer Objects By Using the Draw Menu

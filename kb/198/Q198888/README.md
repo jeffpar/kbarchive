@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198888: Telnet and Browsing to Systems Outside the WLBS Cluster Fail"
-permalink: kb/198/Q198888/
+permalink: /kb/198/Q198888/
 ---
 
 ## Q198888: Telnet and Browsing to Systems Outside the WLBS Cluster Fail

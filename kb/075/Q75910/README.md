@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75910: TimeSmp.exe - High-Resolution Timing Services"
-permalink: kb/075/Q75910/
+permalink: /kb/075/Q75910/
 ---
 
 ## Q75910: TimeSmp.exe - High-Resolution Timing Services

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107488: Encarta: Animations Fail with ATI Mach 32 and Mach 8 Cards"
-permalink: kb/107/Q107488/
+permalink: /kb/107/Q107488/
 ---
 
 ## Q107488: Encarta: Animations Fail with ATI Mach 32 and Mach 8 Cards

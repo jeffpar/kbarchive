@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179398: HOWTO: Subclass a UserControl"
-permalink: kb/179/Q179398/
+permalink: /kb/179/Q179398/
 ---
 
 ## Q179398: HOWTO: Subclass a UserControl

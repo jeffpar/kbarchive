@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251399: Visual FoxPro FoxRun.pif Fails with Long File Names in NT/W2K"
-permalink: kb/251/Q251399/
+permalink: /kb/251/Q251399/
 ---
 
 ## Q251399: Visual FoxPro FoxRun.pif Fails with Long File Names in NT/W2K

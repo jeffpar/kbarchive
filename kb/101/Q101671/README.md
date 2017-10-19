@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101671: PC WRmt: Inbox Shadowing Not Recommended"
-permalink: kb/101/Q101671/
+permalink: /kb/101/Q101671/
 ---
 
 ## Q101671: PC WRmt: Inbox Shadowing Not Recommended

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85228: BUG: Causes of A2042 During Data Initialization"
-permalink: kb/085/Q85228/
+permalink: /kb/085/Q85228/
 ---
 
 ## Q85228: BUG: Causes of A2042 During Data Initialization

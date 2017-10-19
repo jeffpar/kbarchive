@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268332: Err Msg: Setup of Certificate Server Certificate Authority Fa"
-permalink: kb/268/Q268332/
+permalink: /kb/268/Q268332/
 ---
 
 ## Q268332: Err Msg: Setup of Certificate Server Certificate Authority Fa

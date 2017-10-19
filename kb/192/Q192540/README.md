@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192540: XFOR: How to Clean MTS-IN/OUT Using Gwclient and Profinst"
-permalink: kb/192/Q192540/
+permalink: /kb/192/Q192540/
 ---
 
 ## Q192540: XFOR: How to Clean MTS-IN/OUT Using Gwclient and Profinst

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103853: ATT: DocErr: AT&amp;T Support Number Incorrect in Admin Guide"
-permalink: kb/103/Q103853/
+permalink: /kb/103/Q103853/
 ---
 
 ## Q103853: ATT: DocErr: AT&amp;T Support Number Incorrect in Admin Guide

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295070: SSL Connection Slow with One Certificate but Faster w/ Others"
-permalink: kb/295/Q295070/
+permalink: /kb/295/Q295070/
 ---
 
 ## Q295070: SSL Connection Slow with One Certificate but Faster w/ Others

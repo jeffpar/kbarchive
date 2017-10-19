@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135406: Steps to Manually Remove and Reinstall a Printer Driver"
-permalink: kb/135/Q135406/
+permalink: /kb/135/Q135406/
 ---
 
 ## Q135406: Steps to Manually Remove and Reinstall a Printer Driver

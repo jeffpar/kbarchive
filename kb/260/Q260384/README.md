@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260384: Site Server Express Fails on WHOIS Resolution"
-permalink: kb/260/Q260384/
+permalink: /kb/260/Q260384/
 ---
 
 ## Q260384: Site Server Express Fails on WHOIS Resolution

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169166: WD97: Print To File on Windows May Produce Incorrect Output"
-permalink: kb/169/Q169166/
+permalink: /kb/169/Q169166/
 ---
 
 ## Q169166: WD97: Print To File on Windows May Produce Incorrect Output

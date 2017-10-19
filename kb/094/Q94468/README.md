@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94468: MHS: Microsoft Mail &amp; Netware Global Messaging (NGM)"
-permalink: kb/094/Q94468/
+permalink: /kb/094/Q94468/
 ---
 
 ## Q94468: MHS: Microsoft Mail &amp; Netware Global Messaging (NGM)

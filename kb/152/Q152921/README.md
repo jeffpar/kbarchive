@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152921: XFOR: IMC May Cause WorldTalk SMTP/MIME Gateway to Stop"
-permalink: kb/152/Q152921/
+permalink: /kb/152/Q152921/
 ---
 
 ## Q152921: XFOR: IMC May Cause WorldTalk SMTP/MIME Gateway to Stop

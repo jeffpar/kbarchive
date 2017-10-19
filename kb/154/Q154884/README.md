@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154884: HOWTO: Find and Highlight Text in the RichTextBox Control"
-permalink: kb/154/Q154884/
+permalink: /kb/154/Q154884/
 ---
 
 ## Q154884: HOWTO: Find and Highlight Text in the RichTextBox Control

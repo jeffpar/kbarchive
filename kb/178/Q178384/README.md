@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178384: PRB: Report Preview in Top-Level Form Disables VFP Menu"
-permalink: kb/178/Q178384/
+permalink: /kb/178/Q178384/
 ---
 
 ## Q178384: PRB: Report Preview in Top-Level Form Disables VFP Menu

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146188: XCLN: Use Network Security Option Not Working as Expected"
-permalink: kb/146/Q146188/
+permalink: /kb/146/Q146188/
 ---
 
 ## Q146188: XCLN: Use Network Security Option Not Working as Expected

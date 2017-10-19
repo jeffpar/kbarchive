@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277894: Consecutive Inserts to DB2 from SQL Server by way of Linked Serv"
-permalink: kb/277/Q277894/
+permalink: /kb/277/Q277894/
 ---
 
 ## Q277894: Consecutive Inserts to DB2 from SQL Server by way of Linked Serv

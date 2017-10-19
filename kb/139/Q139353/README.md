@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139353: PC WSPlus: Err Msg: Problem Occurred Initializing MSSCHED.DLL"
-permalink: kb/139/Q139353/
+permalink: /kb/139/Q139353/
 ---
 
 ## Q139353: PC WSPlus: Err Msg: Problem Occurred Initializing MSSCHED.DLL

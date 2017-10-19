@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219303: Oracle Fail Safe Does Not Function After Service Pack 4 Install"
-permalink: kb/219/Q219303/
+permalink: /kb/219/Q219303/
 ---
 
 ## Q219303: Oracle Fail Safe Does Not Function After Service Pack 4 Install

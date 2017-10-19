@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q35767: HOWTO: Obtain an Application's Instance Handle"
-permalink: kb/035/Q35767/
+permalink: /kb/035/Q35767/
 ---
 
 ## Q35767: HOWTO: Obtain an Application's Instance Handle

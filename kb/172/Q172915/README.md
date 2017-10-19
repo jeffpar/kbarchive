@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172915: Host Security Fails to Enumerate Memberships of Local Groups"
-permalink: kb/172/Q172915/
+permalink: /kb/172/Q172915/
 ---
 
 ## Q172915: Host Security Fails to Enumerate Memberships of Local Groups

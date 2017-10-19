@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138164: Encarta 1996: Yearbook Builder FAQ"
-permalink: kb/138/Q138164/
+permalink: /kb/138/Q138164/
 ---
 
 ## Q138164: Encarta 1996: Yearbook Builder FAQ

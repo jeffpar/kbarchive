@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164338: WD97: Invalid Page Fault Printing Current Page"
-permalink: kb/164/Q164338/
+permalink: /kb/164/Q164338/
 ---
 
 ## Q164338: WD97: Invalid Page Fault Printing Current Page

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300449: FP: Form Fields Aren't Reset When You Go Back to the Form"
-permalink: kb/300/Q300449/
+permalink: /kb/300/Q300449/
 ---
 
 ## Q300449: FP: Form Fields Aren't Reset When You Go Back to the Form

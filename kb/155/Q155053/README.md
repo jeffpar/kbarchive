@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155053: Black Screen on Boot"
-permalink: kb/155/Q155053/
+permalink: /kb/155/Q155053/
 ---
 
 ## Q155053: Black Screen on Boot

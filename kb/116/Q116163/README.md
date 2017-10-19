@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116163: Baseball: Contents of TBLSHOOT.TXT File"
-permalink: kb/116/Q116163/
+permalink: /kb/116/Q116163/
 ---
 
 ## Q116163: Baseball: Contents of TBLSHOOT.TXT File

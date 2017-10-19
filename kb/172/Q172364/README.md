@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172364: XCON: Move User Operation may Cause Mail to Stall or NDR"
-permalink: kb/172/Q172364/
+permalink: /kb/172/Q172364/
 ---
 
 ## Q172364: XCON: Move User Operation may Cause Mail to Stall or NDR

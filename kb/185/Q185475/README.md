@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185475: XADM: LDAP Search Returns No Entries For Hidden/Deleted Objects"
-permalink: kb/185/Q185475/
+permalink: /kb/185/Q185475/
 ---
 
 ## Q185475: XADM: LDAP Search Returns No Entries For Hidden/Deleted Objects

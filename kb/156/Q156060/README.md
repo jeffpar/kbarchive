@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156060: How To Determine Where Options Dialog Default Settings Stored"
-permalink: kb/156/Q156060/
+permalink: /kb/156/Q156060/
 ---
 
 ## Q156060: How To Determine Where Options Dialog Default Settings Stored

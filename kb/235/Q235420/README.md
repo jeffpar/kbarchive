@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235420: FILE: VBRun60sp4.exe Installs Visual Basic 6 SP4 Run-Time Files"
-permalink: kb/235/Q235420/
+permalink: /kb/235/Q235420/
 ---
 
 ## Q235420: FILE: VBRun60sp4.exe Installs Visual Basic 6 SP4 Run-Time Files

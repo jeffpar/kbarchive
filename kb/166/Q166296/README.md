@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166296: XCON: MTA Stops Responding; Access Violation"
-permalink: kb/166/Q166296/
+permalink: /kb/166/Q166296/
 ---
 
 ## Q166296: XCON: MTA Stops Responding; Access Violation

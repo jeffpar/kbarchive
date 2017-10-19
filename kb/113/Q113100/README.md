@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113100: Multimedia Titles: Cannot Print Selected Areas of Text"
-permalink: kb/113/Q113100/
+permalink: /kb/113/Q113100/
 ---
 
 ## Q113100: Multimedia Titles: Cannot Print Selected Areas of Text

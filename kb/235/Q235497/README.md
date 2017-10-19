@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235497: XFOR: False GroupWise CR Created Manually Causes Errors in GW"
-permalink: kb/235/Q235497/
+permalink: /kb/235/Q235497/
 ---
 
 ## Q235497: XFOR: False GroupWise CR Created Manually Causes Errors in GW

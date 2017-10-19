@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251285: Err Msg: Setup Step Failed. Unable to Add C:&#92;Program Files..."
-permalink: kb/251/Q251285/
+permalink: /kb/251/Q251285/
 ---
 
 ## Q251285: Err Msg: Setup Step Failed. Unable to Add C:&#92;Program Files...

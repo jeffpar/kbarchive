@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261246: SMS: Sms20info Tool Added to Support.exe in SMS 2.0 Service Pack"
-permalink: kb/261/Q261246/
+permalink: /kb/261/Q261246/
 ---
 
 ## Q261246: SMS: Sms20info Tool Added to Support.exe in SMS 2.0 Service Pack

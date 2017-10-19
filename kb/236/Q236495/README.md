@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236495: MOD2000: VSS Login Allows Access with a Blank UserName from VBE"
-permalink: kb/236/Q236495/
+permalink: /kb/236/Q236495/
 ---
 
 ## Q236495: MOD2000: VSS Login Allows Access with a Blank UserName from VBE

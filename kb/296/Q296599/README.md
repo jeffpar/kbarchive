@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296599: Daylight Saving Time Bug in Resource Kit Utilities NOW.EXE and S"
-permalink: kb/296/Q296599/
+permalink: /kb/296/Q296599/
 ---
 
 ## Q296599: Daylight Saving Time Bug in Resource Kit Utilities NOW.EXE and S

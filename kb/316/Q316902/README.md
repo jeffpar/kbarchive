@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316902: BUG: Machine Account Added to HAC DB in Multi-Domain Environment"
-permalink: kb/316/Q316902/
+permalink: /kb/316/Q316902/
 ---
 
 ## Q316902: BUG: Machine Account Added to HAC DB in Multi-Domain Environment

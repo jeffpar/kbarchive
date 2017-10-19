@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166705: Kids Plus!: Internet Settings Remain After Protect It! Removed"
-permalink: kb/166/Q166705/
+permalink: /kb/166/Q166705/
 ---
 
 ## Q166705: Kids Plus!: Internet Settings Remain After Protect It! Removed

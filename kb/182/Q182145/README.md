@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182145: SMS: Error in Prodspec.ini in WinNT 4.0 (KOR and CHT Versions)"
-permalink: kb/182/Q182145/
+permalink: /kb/182/Q182145/
 ---
 
 ## Q182145: SMS: Error in Prodspec.ini in WinNT 4.0 (KOR and CHT Versions)

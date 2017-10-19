@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117414: Communication Through FDDI to MAC Address Fails"
-permalink: kb/117/Q117414/
+permalink: /kb/117/Q117414/
 ---
 
 ## Q117414: Communication Through FDDI to MAC Address Fails

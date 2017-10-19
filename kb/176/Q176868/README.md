@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176868: WD97: How to Programmatically Insert an Excel Chart into Word"
-permalink: kb/176/Q176868/
+permalink: /kb/176/Q176868/
 ---
 
 ## Q176868: WD97: How to Programmatically Insert an Excel Chart into Word

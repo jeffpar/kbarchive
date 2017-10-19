@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247949: SMS: How to Create a Simple Test Advertisement"
-permalink: kb/247/Q247949/
+permalink: /kb/247/Q247949/
 ---
 
 ## Q247949: SMS: How to Create a Simple Test Advertisement

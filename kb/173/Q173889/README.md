@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173889: XADM: Determining if Exchange Server Enterprise or Standard Edit"
-permalink: kb/173/Q173889/
+permalink: /kb/173/Q173889/
 ---
 
 ## Q173889: XADM: Determining if Exchange Server Enterprise or Standard Edit

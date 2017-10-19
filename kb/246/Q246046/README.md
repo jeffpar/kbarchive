@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246046: XCLN: Error in People Directory in Intranet Collaboration Server"
-permalink: kb/246/Q246046/
+permalink: /kb/246/Q246046/
 ---
 
 ## Q246046: XCLN: Error in People Directory in Intranet Collaboration Server

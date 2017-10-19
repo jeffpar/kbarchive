@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162235: WD97: How to Add a Portrait Page Number to a Landscape Page"
-permalink: kb/162/Q162235/
+permalink: /kb/162/Q162235/
 ---
 
 ## Q162235: WD97: How to Add a Portrait Page Number to a Landscape Page

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200072: HOWTO: Initializing lpstrFilter for All Files on the Macintosh"
-permalink: kb/200/Q200072/
+permalink: /kb/200/Q200072/
 ---
 
 ## Q200072: HOWTO: Initializing lpstrFilter for All Files on the Macintosh

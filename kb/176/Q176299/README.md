@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176299: Bridge Too Far: Location of Product Identification Number (PID)"
-permalink: kb/176/Q176299/
+permalink: /kb/176/Q176299/
 ---
 
 ## Q176299: Bridge Too Far: Location of Product Identification Number (PID)

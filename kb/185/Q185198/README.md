@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185198: Error 1000 and User Profiles"
-permalink: kb/185/Q185198/
+permalink: /kb/185/Q185198/
 ---
 
 ## Q185198: Error 1000 and User Profiles

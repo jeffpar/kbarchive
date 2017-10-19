@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137460: Bookshelf 1995 and '95: Odd Animation or .avi File Behavior"
-permalink: kb/137/Q137460/
+permalink: /kb/137/Q137460/
 ---
 
 ## Q137460: Bookshelf 1995 and '95: Odd Animation or .avi File Behavior

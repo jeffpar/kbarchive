@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141827: How to Install Chat in Windows 95"
-permalink: kb/141/Q141827/
+permalink: /kb/141/Q141827/
 ---
 
 ## Q141827: How to Install Chat in Windows 95

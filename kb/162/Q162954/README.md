@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162954: WD97: Formatting Not Retained for Blank Table Cells in HTML"
-permalink: kb/162/Q162954/
+permalink: /kb/162/Q162954/
 ---
 
 ## Q162954: WD97: Formatting Not Retained for Blank Table Cells in HTML

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175353: XADM: System Attendant Says Started and Cannot be Stopped"
-permalink: kb/175/Q175353/
+permalink: /kb/175/Q175353/
 ---
 
 ## Q175353: XADM: System Attendant Says Started and Cannot be Stopped

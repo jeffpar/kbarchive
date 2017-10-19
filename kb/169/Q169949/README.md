@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169949: Mastering: Website Added to Notebook Instead of Content Page"
-permalink: kb/169/Q169949/
+permalink: /kb/169/Q169949/
 ---
 
 ## Q169949: Mastering: Website Added to Notebook Instead of Content Page

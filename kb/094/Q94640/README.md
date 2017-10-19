@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94640: NetDDE Passwords Must Be Uppercase when Using NDDEShareAdd"
-permalink: kb/094/Q94640/
+permalink: /kb/094/Q94640/
 ---
 
 ## Q94640: NetDDE Passwords Must Be Uppercase when Using NDDEShareAdd

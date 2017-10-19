@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272948: Asheron's Call Error Message: Invalid Argument Count"
-permalink: kb/272/Q272948/
+permalink: /kb/272/Q272948/
 ---
 
 ## Q272948: Asheron's Call Error Message: Invalid Argument Count

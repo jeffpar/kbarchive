@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192788: SMS: Wuser32 Leaks Memory After UDP Port 1762 Attack"
-permalink: kb/192/Q192788/
+permalink: /kb/192/Q192788/
 ---
 
 ## Q192788: SMS: Wuser32 Leaks Memory After UDP Port 1762 Attack

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132709: Sybase SQLServer May Fail With NWLink and Window NT 3.5 SP2"
-permalink: kb/132/Q132709/
+permalink: /kb/132/Q132709/
 ---
 
 ## Q132709: Sybase SQLServer May Fail With NWLink and Window NT 3.5 SP2

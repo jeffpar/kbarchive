@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178275: PRB: Unattended Installation Using AGP Video Cards"
-permalink: kb/178/Q178275/
+permalink: /kb/178/Q178275/
 ---
 
 ## Q178275: PRB: Unattended Installation Using AGP Video Cards

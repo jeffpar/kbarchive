@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220942: TN5250 Clients May Fail with a STATE_CHECK Error"
-permalink: kb/220/Q220942/
+permalink: /kb/220/Q220942/
 ---
 
 ## Q220942: TN5250 Clients May Fail with a STATE_CHECK Error

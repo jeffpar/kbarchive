@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261931: SMS: Required Hotfixes Before Installing SMS 2.0 SP2"
-permalink: kb/261/Q261931/
+permalink: /kb/261/Q261931/
 ---
 
 ## Q261931: SMS: Required Hotfixes Before Installing SMS 2.0 SP2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226888: SMS: Component Status Times Listed Ahead Of Local Time in GMT"
-permalink: kb/226/Q226888/
+permalink: /kb/226/Q226888/
 ---
 
 ## Q226888: SMS: Component Status Times Listed Ahead Of Local Time in GMT

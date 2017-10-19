@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169317: Close Combat Patch Is Available for Better Performance"
-permalink: kb/169/Q169317/
+permalink: /kb/169/Q169317/
 ---
 
 ## Q169317: Close Combat Patch Is Available for Better Performance

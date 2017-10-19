@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85398: IBM Quietwriter III Shows Incorrect Fonts"
-permalink: kb/085/Q85398/
+permalink: /kb/085/Q85398/
 ---
 
 ## Q85398: IBM Quietwriter III Shows Incorrect Fonts

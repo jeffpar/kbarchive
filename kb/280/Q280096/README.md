@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280096: XCCC: Unable to Connect to Exchange Server By Using POP3"
-permalink: kb/280/Q280096/
+permalink: /kb/280/Q280096/
 ---
 
 ## Q280096: XCCC: Unable to Connect to Exchange Server By Using POP3

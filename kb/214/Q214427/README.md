@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214427: FIX: &quot;Prompt To Save Changes&quot; Setting Crashes VB IDE Upon Saving"
-permalink: kb/214/Q214427/
+permalink: /kb/214/Q214427/
 ---
 
 ## Q214427: FIX: &quot;Prompt To Save Changes&quot; Setting Crashes VB IDE Upon Saving

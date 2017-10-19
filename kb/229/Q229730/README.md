@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229730: Synchronous Remote Scripting Causes Browser to Stop Responding"
-permalink: kb/229/Q229730/
+permalink: /kb/229/Q229730/
 ---
 
 ## Q229730: Synchronous Remote Scripting Causes Browser to Stop Responding

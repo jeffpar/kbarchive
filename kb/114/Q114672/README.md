@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114672: PRB: Using SELECT SQL INTO CURSOR with Same Filename"
-permalink: kb/114/Q114672/
+permalink: /kb/114/Q114672/
 ---
 
 ## Q114672: PRB: Using SELECT SQL INTO CURSOR with Same Filename

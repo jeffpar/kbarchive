@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187067: Multitasking Hotkeys Do Not Work in Terminal Server Session"
-permalink: kb/187/Q187067/
+permalink: /kb/187/Q187067/
 ---
 
 ## Q187067: Multitasking Hotkeys Do Not Work in Terminal Server Session

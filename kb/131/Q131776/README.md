@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131776: How To Compile MIB.BIN With DHCP and WINS MIB Files Using MIBCC"
-permalink: kb/131/Q131776/
+permalink: /kb/131/Q131776/
 ---
 
 ## Q131776: How To Compile MIB.BIN With DHCP and WINS MIB Files Using MIBCC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295716: Host Integration Server May Hinder SNA 4.0 Administration"
-permalink: kb/295/Q295716/
+permalink: /kb/295/Q295716/
 ---
 
 ## Q295716: Host Integration Server May Hinder SNA 4.0 Administration

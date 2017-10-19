@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137393: PC Gen: Useful Novell Utilities For Administrators"
-permalink: kb/137/Q137393/
+permalink: /kb/137/Q137393/
 ---
 
 ## Q137393: PC Gen: Useful Novell Utilities For Administrators

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109306: REPORT FORM ... PLAIN Command Is Not Functioning Properly"
-permalink: kb/109/Q109306/
+permalink: /kb/109/Q109306/
 ---
 
 ## Q109306: REPORT FORM ... PLAIN Command Is Not Functioning Properly

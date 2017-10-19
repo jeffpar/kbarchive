@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79541: Filesafe Software Versions Required with MS-DOS"
-permalink: kb/079/Q79541/
+permalink: /kb/079/Q79541/
 ---
 
 ## Q79541: Filesafe Software Versions Required with MS-DOS

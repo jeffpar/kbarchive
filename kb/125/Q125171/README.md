@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125171: PROFS: How to Print a PROFS Address List"
-permalink: kb/125/Q125171/
+permalink: /kb/125/Q125171/
 ---
 
 ## Q125171: PROFS: How to Print a PROFS Address List

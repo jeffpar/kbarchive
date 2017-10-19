@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103457: PC Win: File Manager Send Mail Option Hangs Computer"
-permalink: kb/103/Q103457/
+permalink: /kb/103/Q103457/
 ---
 
 ## Q103457: PC Win: File Manager Send Mail Option Hangs Computer

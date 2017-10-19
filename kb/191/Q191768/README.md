@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191768: Date of Print Job May Be Displayed Incorrectly in Print Queue"
-permalink: kb/191/Q191768/
+permalink: /kb/191/Q191768/
 ---
 
 ## Q191768: Date of Print Job May Be Displayed Incorrectly in Print Queue

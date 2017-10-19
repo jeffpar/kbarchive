@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112495: PRB: Macro Substitution Doesn't Work with M Prefix"
-permalink: kb/112/Q112495/
+permalink: /kb/112/Q112495/
 ---
 
 ## Q112495: PRB: Macro Substitution Doesn't Work with M Prefix

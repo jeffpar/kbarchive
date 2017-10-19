@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308102: PRB: End of Line Errors Can Occur If UTF8 Files are Interpreted"
-permalink: kb/308/Q308102/
+permalink: /kb/308/Q308102/
 ---
 
 ## Q308102: PRB: End of Line Errors Can Occur If UTF8 Files are Interpreted

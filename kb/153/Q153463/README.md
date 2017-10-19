@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153463: HOWTO: Close Applications from Visual Basic"
-permalink: kb/153/Q153463/
+permalink: /kb/153/Q153463/
 ---
 
 ## Q153463: HOWTO: Close Applications from Visual Basic

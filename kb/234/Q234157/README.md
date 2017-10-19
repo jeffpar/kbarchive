@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234157: XCON: Explanation of Fields on X.400 Connector Override Tab"
-permalink: kb/234/Q234157/
+permalink: /kb/234/Q234157/
 ---
 
 ## Q234157: XCON: Explanation of Fields on X.400 Connector Override Tab

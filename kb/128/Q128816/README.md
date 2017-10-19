@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128816: PRB: Cannot Access MAPI Under Win32s"
-permalink: kb/128/Q128816/
+permalink: /kb/128/Q128816/
 ---
 
 ## Q128816: PRB: Cannot Access MAPI Under Win32s

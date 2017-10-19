@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246568: Changing System Dates In Production Environments"
-permalink: kb/246/Q246568/
+permalink: /kb/246/Q246568/
 ---
 
 ## Q246568: Changing System Dates In Production Environments

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261251: XCON: Check DNS When Receiving Event ID 9318 with Error 1722"
-permalink: kb/261/Q261251/
+permalink: /kb/261/Q261251/
 ---
 
 ## Q261251: XCON: Check DNS When Receiving Event ID 9318 with Error 1722

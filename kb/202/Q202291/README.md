@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202291: SMS: Remote Control Agent Takes Heavy CPU Use If Logging Enabled"
-permalink: kb/202/Q202291/
+permalink: /kb/202/Q202291/
 ---
 
 ## Q202291: SMS: Remote Control Agent Takes Heavy CPU Use If Logging Enabled

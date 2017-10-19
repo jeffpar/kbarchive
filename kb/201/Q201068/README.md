@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201068: How to Set Up Disaster Recovery for a Critical WINS Server"
-permalink: kb/201/Q201068/
+permalink: /kb/201/Q201068/
 ---
 
 ## Q201068: How to Set Up Disaster Recovery for a Critical WINS Server

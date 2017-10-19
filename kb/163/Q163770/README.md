@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163770: Cannot Log On to Windows NT Domain w/ DNS Name Resolution Only"
-permalink: kb/163/Q163770/
+permalink: /kb/163/Q163770/
 ---
 
 ## Q163770: Cannot Log On to Windows NT Domain w/ DNS Name Resolution Only

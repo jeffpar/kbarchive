@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190545: BUG: RUN Command Hangs Form with WindowType=1 and Desktop=.T."
-permalink: kb/190/Q190545/
+permalink: /kb/190/Q190545/
 ---
 
 ## Q190545: BUG: RUN Command Hangs Form with WindowType=1 and Desktop=.T.

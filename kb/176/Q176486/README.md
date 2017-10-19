@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176486: BUG: Bookmark for Unbound DBGrid is Incorrect for the Last Row"
-permalink: kb/176/Q176486/
+permalink: /kb/176/Q176486/
 ---
 
 ## Q176486: BUG: Bookmark for Unbound DBGrid is Incorrect for the Last Row

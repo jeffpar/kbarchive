@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111928: Cannot Use Reply All Button with Received DCX Faxes"
-permalink: kb/111/Q111928/
+permalink: /kb/111/Q111928/
 ---
 
 ## Q111928: Cannot Use Reply All Button with Received DCX Faxes

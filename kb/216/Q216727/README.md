@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216727: FIX: Initializing const int With float Literal Gets Bad Value"
-permalink: kb/216/Q216727/
+permalink: /kb/216/Q216727/
 ---
 
 ## Q216727: FIX: Initializing const int With float Literal Gets Bad Value

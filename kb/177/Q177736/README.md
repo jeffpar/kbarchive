@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177736: HOWTO: Retrieve Identity Column After Insert Using ODBCDirect"
-permalink: kb/177/Q177736/
+permalink: /kb/177/Q177736/
 ---
 
 ## Q177736: HOWTO: Retrieve Identity Column After Insert Using ODBCDirect

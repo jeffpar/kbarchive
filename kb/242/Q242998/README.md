@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242998: PRB: Beautify Changes the Case of Multi-Line Strings"
-permalink: kb/242/Q242998/
+permalink: /kb/242/Q242998/
 ---
 
 ## Q242998: PRB: Beautify Changes the Case of Multi-Line Strings

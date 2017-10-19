@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318371: Locked-Down Users Can View Folders"
-permalink: kb/318/Q318371/
+permalink: /kb/318/Q318371/
 ---
 
 ## Q318371: Locked-Down Users Can View Folders

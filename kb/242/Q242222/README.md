@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242222: XGEN: List of Bugs Fixed in Exchange Server 5.5 Service Pack 2"
-permalink: kb/242/Q242222/
+permalink: /kb/242/Q242222/
 ---
 
 ## Q242222: XGEN: List of Bugs Fixed in Exchange Server 5.5 Service Pack 2

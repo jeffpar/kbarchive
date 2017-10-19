@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135355: Event 11 (1178) Causes SNA Server to Fail Abnormally"
-permalink: kb/135/Q135355/
+permalink: /kb/135/Q135355/
 ---
 
 ## Q135355: Event 11 (1178) Causes SNA Server to Fail Abnormally

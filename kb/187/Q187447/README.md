@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187447: Unlocking a Computer with an Admin Account Shuts Down Computer"
-permalink: kb/187/Q187447/
+permalink: /kb/187/Q187447/
 ---
 
 ## Q187447: Unlocking a Computer with an Admin Account Shuts Down Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71842: File Icons in File Manager Do Not Match File Type"
-permalink: kb/071/Q71842/
+permalink: /kb/071/Q71842/
 ---
 
 ## Q71842: File Icons in File Manager Do Not Match File Type

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196062: HOWTO: Set and Get Cookies for a URL Using WinInet APIs"
-permalink: kb/196/Q196062/
+permalink: /kb/196/Q196062/
 ---
 
 ## Q196062: HOWTO: Set and Get Cookies for a URL Using WinInet APIs

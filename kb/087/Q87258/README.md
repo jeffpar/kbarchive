@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87258: Mac Wkst: Can Print and Read in Outbox"
-permalink: kb/087/Q87258/
+permalink: /kb/087/Q87258/
 ---
 
 ## Q87258: Mac Wkst: Can Print and Read in Outbox

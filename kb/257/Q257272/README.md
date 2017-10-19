@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257272: &quot;Auto Select&quot; Property Set to Letter Instead of A4"
-permalink: kb/257/Q257272/
+permalink: /kb/257/Q257272/
 ---
 
 ## Q257272: &quot;Auto Select&quot; Property Set to Letter Instead of A4

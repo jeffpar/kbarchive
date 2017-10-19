@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141410: World of Flight: Color Palette Problem Occurs with QuicRes"
-permalink: kb/141/Q141410/
+permalink: /kb/141/Q141410/
 ---
 
 ## Q141410: World of Flight: Color Palette Problem Occurs with QuicRes

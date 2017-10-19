@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248294: Invalid Font File Can Cause Error Message on Blue Screen"
-permalink: kb/248/Q248294/
+permalink: /kb/248/Q248294/
 ---
 
 ## Q248294: Invalid Font File Can Cause Error Message on Blue Screen

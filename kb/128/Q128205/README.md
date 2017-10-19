@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128205: HOWTO: Set Buffering Mode in Visual FoxPro"
-permalink: kb/128/Q128205/
+permalink: /kb/128/Q128205/
 ---
 
 ## Q128205: HOWTO: Set Buffering Mode in Visual FoxPro

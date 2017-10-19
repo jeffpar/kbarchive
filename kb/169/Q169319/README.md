@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169319: XFOR: Performance Tuning the PCMTA"
-permalink: kb/169/Q169319/
+permalink: /kb/169/Q169319/
 ---
 
 ## Q169319: XFOR: Performance Tuning the PCMTA

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173254: VB5 Step By Step: Page 24, Step 6 Causes Illegal Operation"
-permalink: kb/173/Q173254/
+permalink: /kb/173/Q173254/
 ---
 
 ## Q173254: VB5 Step By Step: Page 24, Step 6 Causes Illegal Operation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244701: XADM: How to Install Internet Mail Service Connector on Cluster"
-permalink: kb/244/Q244701/
+permalink: /kb/244/Q244701/
 ---
 
 ## Q244701: XADM: How to Install Internet Mail Service Connector on Cluster

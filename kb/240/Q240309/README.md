@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240309: How to Fully Disable Antivirus Software from Filtering Files"
-permalink: kb/240/Q240309/
+permalink: /kb/240/Q240309/
 ---
 
 ## Q240309: How to Fully Disable Antivirus Software from Filtering Files

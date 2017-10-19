@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181743: Error Message 426 Trying to Retrieve File from FTP Server"
-permalink: kb/181/Q181743/
+permalink: /kb/181/Q181743/
 ---
 
 ## Q181743: Error Message 426 Trying to Retrieve File from FTP Server

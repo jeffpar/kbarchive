@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130743: Setup Does Not Detect IBM Token Ring 16/4 on IBM Aptiva"
-permalink: kb/130/Q130743/
+permalink: /kb/130/Q130743/
 ---
 
 ## Q130743: Setup Does Not Detect IBM Token Ring 16/4 on IBM Aptiva

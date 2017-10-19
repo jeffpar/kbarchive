@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275703: PRB: Shared SQL Server Repository Option Unavailable in VB Pro 6"
-permalink: kb/275/Q275703/
+permalink: /kb/275/Q275703/
 ---
 
 ## Q275703: PRB: Shared SQL Server Repository Option Unavailable in VB Pro 6

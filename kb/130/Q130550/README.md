@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130550: XCLN: Unable to Sort on Grouped Field"
-permalink: kb/130/Q130550/
+permalink: /kb/130/Q130550/
 ---
 
 ## Q130550: XCLN: Unable to Sort on Grouped Field

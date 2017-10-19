@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160398: Cannot Read Files Greater than 4 GB"
-permalink: kb/160/Q160398/
+permalink: /kb/160/Q160398/
 ---
 
 ## Q160398: Cannot Read Files Greater than 4 GB

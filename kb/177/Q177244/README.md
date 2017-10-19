@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177244: HOWTO: AsyncDown Demonstrates Asynchronous Data Download"
-permalink: kb/177/Q177244/
+permalink: /kb/177/Q177244/
 ---
 
 ## Q177244: HOWTO: AsyncDown Demonstrates Asynchronous Data Download

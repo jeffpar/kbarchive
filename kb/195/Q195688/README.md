@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195688: WD97: Accented or Extended Characters Lost in Mail Merge"
-permalink: kb/195/Q195688/
+permalink: /kb/195/Q195688/
 ---
 
 ## Q195688: WD97: Accented or Extended Characters Lost in Mail Merge

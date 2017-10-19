@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142941: Clients Using Novell ODI IPX/SPX Protocol Are Disconnected"
-permalink: kb/142/Q142941/
+permalink: /kb/142/Q142941/
 ---
 
 ## Q142941: Clients Using Novell ODI IPX/SPX Protocol Are Disconnected

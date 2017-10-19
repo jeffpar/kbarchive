@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137887: Fury Err Msg: The Fury3 CD Is Not Correctly Inserted"
-permalink: kb/137/Q137887/
+permalink: /kb/137/Q137887/
 ---
 
 ## Q137887: Fury Err Msg: The Fury3 CD Is Not Correctly Inserted

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320688: Adding Additional MSN Internet Access Accounts With Microsoft Wi"
-permalink: kb/320/Q320688/
+permalink: /kb/320/Q320688/
 ---
 
 ## Q320688: Adding Additional MSN Internet Access Accounts With Microsoft Wi

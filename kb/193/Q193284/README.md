@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193284: XADM: Searching Folders on Server Never Finishes"
-permalink: kb/193/Q193284/
+permalink: /kb/193/Q193284/
 ---
 
 ## Q193284: XADM: Searching Folders on Server Never Finishes

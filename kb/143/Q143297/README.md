@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143297: How to Use OLE Automation with Microsoft Project 4.1"
-permalink: kb/143/Q143297/
+permalink: /kb/143/Q143297/
 ---
 
 ## Q143297: How to Use OLE Automation with Microsoft Project 4.1

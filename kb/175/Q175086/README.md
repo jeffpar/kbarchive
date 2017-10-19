@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175086: Regional Settings Specified in User Profile Are Not Applied"
-permalink: kb/175/Q175086/
+permalink: /kb/175/Q175086/
 ---
 
 ## Q175086: Regional Settings Specified in User Profile Are Not Applied

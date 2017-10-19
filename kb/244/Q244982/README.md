@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244982: Radius Authentication Provider Name Limited to 14 Characters"
-permalink: kb/244/Q244982/
+permalink: /kb/244/Q244982/
 ---
 
 ## Q244982: Radius Authentication Provider Name Limited to 14 Characters

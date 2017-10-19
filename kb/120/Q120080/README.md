@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120080: BUG: CTRL+Q Doesn't Exit from a READ"
-permalink: kb/120/Q120080/
+permalink: /kb/120/Q120080/
 ---
 
 ## Q120080: BUG: CTRL+Q Doesn't Exit from a READ

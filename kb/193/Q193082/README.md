@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193082: HOWTO: Build a Setup Program Creating Multiple Groups and Icons"
-permalink: kb/193/Q193082/
+permalink: /kb/193/Q193082/
 ---
 
 ## Q193082: HOWTO: Build a Setup Program Creating Multiple Groups and Icons

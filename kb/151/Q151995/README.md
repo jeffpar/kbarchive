@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151995: Configure Win95 &amp; WinNT Logon to NetWare Server w/ NT RAS Server"
-permalink: kb/151/Q151995/
+permalink: /kb/151/Q151995/
 ---
 
 ## Q151995: Configure Win95 &amp; WinNT Logon to NetWare Server w/ NT RAS Server

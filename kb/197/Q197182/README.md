@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197182: XFOR: PCMTA Tries to Dial Async Connection for Downstream POs"
-permalink: kb/197/Q197182/
+permalink: /kb/197/Q197182/
 ---
 
 ## Q197182: XFOR: PCMTA Tries to Dial Async Connection for Downstream POs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66639: ASD: Scenery on the Box Is Not Included"
-permalink: kb/066/Q66639/
+permalink: /kb/066/Q66639/
 ---
 
 ## Q66639: ASD: Scenery on the Box Is Not Included

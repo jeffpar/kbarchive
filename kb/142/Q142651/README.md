@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142651: Third-Party Cursor Hangs Cirrus Driver"
-permalink: kb/142/Q142651/
+permalink: /kb/142/Q142651/
 ---
 
 ## Q142651: Third-Party Cursor Hangs Cirrus Driver

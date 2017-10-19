@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105164: Proper Rights for the CAL Subdirectory"
-permalink: kb/105/Q105164/
+permalink: /kb/105/Q105164/
 ---
 
 ## Q105164: Proper Rights for the CAL Subdirectory

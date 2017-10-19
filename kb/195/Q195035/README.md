@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195035: False Virus Report in Hitchhiker's Guide to VB &amp; SQL Server"
-permalink: kb/195/Q195035/
+permalink: /kb/195/Q195035/
 ---
 
 ## Q195035: False Virus Report in Hitchhiker's Guide to VB &amp; SQL Server

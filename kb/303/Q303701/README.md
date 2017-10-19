@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303701: Configuring Incoming/Outgoing Connections for IIS SMTP Server"
-permalink: kb/303/Q303701/
+permalink: /kb/303/Q303701/
 ---
 
 ## Q303701: Configuring Incoming/Outgoing Connections for IIS SMTP Server

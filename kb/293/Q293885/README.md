@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293885: How to Search a WebDAV Directory with XML"
-permalink: kb/293/Q293885/
+permalink: /kb/293/Q293885/
 ---
 
 ## Q293885: How to Search a WebDAV Directory with XML

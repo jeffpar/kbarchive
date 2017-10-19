@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149795: Explorapedia People: Installs Visual FoxPro"
-permalink: kb/149/Q149795/
+permalink: /kb/149/Q149795/
 ---
 
 ## Q149795: Explorapedia People: Installs Visual FoxPro

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137785: How to Use a Number Other Than 1 When Dialing Long Distance"
-permalink: kb/137/Q137785/
+permalink: /kb/137/Q137785/
 ---
 
 ## Q137785: How to Use a Number Other Than 1 When Dialing Long Distance

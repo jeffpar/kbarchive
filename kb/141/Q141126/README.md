@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141126: BBS Attachment Properties Show Compressed File Size"
-permalink: kb/141/Q141126/
+permalink: /kb/141/Q141126/
 ---
 
 ## Q141126: BBS Attachment Properties Show Compressed File Size

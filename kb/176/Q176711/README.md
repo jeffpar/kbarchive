@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176711: Disconnecting from MSN Does Not Reset Your Modem to Answer Mode"
-permalink: kb/176/Q176711/
+permalink: /kb/176/Q176711/
 ---
 
 ## Q176711: Disconnecting from MSN Does Not Reset Your Modem to Answer Mode

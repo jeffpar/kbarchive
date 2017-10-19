@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79091: Windows May Not Load on AEG Olympia LT 386sx Laptop"
-permalink: kb/079/Q79091/
+permalink: /kb/079/Q79091/
 ---
 
 ## Q79091: Windows May Not Load on AEG Olympia LT 386sx Laptop

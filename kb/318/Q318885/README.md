@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318885: BUG: Cannot Check In Files After You Change Web Access Method"
-permalink: kb/318/Q318885/
+permalink: /kb/318/Q318885/
 ---
 
 ## Q318885: BUG: Cannot Check In Files After You Change Web Access Method

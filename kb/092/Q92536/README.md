@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92536: Upgrade Installation Fails, Then Setup Doesn't Work"
-permalink: kb/092/Q92536/
+permalink: /kb/092/Q92536/
 ---
 
 ## Q92536: Upgrade Installation Fails, Then Setup Doesn't Work

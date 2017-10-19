@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177058: PRB: Wizard Generated Form Not Showing Complete Text Box Value"
-permalink: kb/177/Q177058/
+permalink: /kb/177/Q177058/
 ---
 
 ## Q177058: PRB: Wizard Generated Form Not Showing Complete Text Box Value

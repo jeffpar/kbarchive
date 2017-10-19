@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243228: Asheron's Call: Action Does Not Occur When Using Key Combination"
-permalink: kb/243/Q243228/
+permalink: /kb/243/Q243228/
 ---
 
 ## Q243228: Asheron's Call: Action Does Not Occur When Using Key Combination

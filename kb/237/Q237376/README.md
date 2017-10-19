@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237376: Extra Restart Required after Installing SNA 4.0 SP2 with HSI"
-permalink: kb/237/Q237376/
+permalink: /kb/237/Q237376/
 ---
 
 ## Q237376: Extra Restart Required after Installing SNA 4.0 SP2 with HSI

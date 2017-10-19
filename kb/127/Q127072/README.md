@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127072: Installing SMS Client to Drive Other Than Most Free Disk Space"
-permalink: kb/127/Q127072/
+permalink: /kb/127/Q127072/
 ---
 
 ## Q127072: Installing SMS Client to Drive Other Than Most Free Disk Space

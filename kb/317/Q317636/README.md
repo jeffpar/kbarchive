@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317636: Windows NT Server 4.0, Terminal Server Edition, SRP"
-permalink: kb/317/Q317636/
+permalink: /kb/317/Q317636/
 ---
 
 ## Q317636: Windows NT Server 4.0, Terminal Server Edition, SRP

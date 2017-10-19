@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159571: PRB: SQLCancel Instead of SQLFreeStmt Causes a Memory Leak"
-permalink: kb/159/Q159571/
+permalink: /kb/159/Q159571/
 ---
 
 ## Q159571: PRB: SQLCancel Instead of SQLFreeStmt Causes a Memory Leak

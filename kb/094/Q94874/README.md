@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94874: Maximum Number of Characters on WIN.INI Load Line Is 127"
-permalink: kb/094/Q94874/
+permalink: /kb/094/Q94874/
 ---
 
 ## Q94874: Maximum Number of Characters on WIN.INI Load Line Is 127

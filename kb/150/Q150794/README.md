@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150794: MaintainServerList Value Location in Windows 95 Resource Kit"
-permalink: kb/150/Q150794/
+permalink: /kb/150/Q150794/
 ---
 
 ## Q150794: MaintainServerList Value Location in Windows 95 Resource Kit

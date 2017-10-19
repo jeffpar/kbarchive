@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246363: Interix and Telnetd"
-permalink: kb/246/Q246363/
+permalink: /kb/246/Q246363/
 ---
 
 ## Q246363: Interix and Telnetd

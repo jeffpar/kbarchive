@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191289: HOWTO: Enable Event Error Logging for FrontPage 98 &amp; SourceSafe"
-permalink: kb/191/Q191289/
+permalink: /kb/191/Q191289/
 ---
 
 ## Q191289: HOWTO: Enable Event Error Logging for FrontPage 98 &amp; SourceSafe

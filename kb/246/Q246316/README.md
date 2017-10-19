@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246316: Information About Interix and Filenames"
-permalink: kb/246/Q246316/
+permalink: /kb/246/Q246316/
 ---
 
 ## Q246316: Information About Interix and Filenames

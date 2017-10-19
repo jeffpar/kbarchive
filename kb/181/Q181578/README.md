@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181578: HOWTO: Callback Visual Basic Functions From a C DLL"
-permalink: kb/181/Q181578/
+permalink: /kb/181/Q181578/
 ---
 
 ## Q181578: HOWTO: Callback Visual Basic Functions From a C DLL

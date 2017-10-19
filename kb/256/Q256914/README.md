@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256914: XIMS: Error Message: Your Configuration May Not Be Complete"
-permalink: kb/256/Q256914/
+permalink: /kb/256/Q256914/
 ---
 
 ## Q256914: XIMS: Error Message: Your Configuration May Not Be Complete

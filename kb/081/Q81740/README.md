@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81740: CON, Switches=/K, ANSI.SYS /K, and Reading Keyboard Input"
-permalink: kb/081/Q81740/
+permalink: /kb/081/Q81740/
 ---
 
 ## Q81740: CON, Switches=/K, ANSI.SYS /K, and Reading Keyboard Input

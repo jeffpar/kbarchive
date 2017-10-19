@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188880: SMS: OSR2 and Internet Explorer 4.0 Inventoried as Windows 98"
-permalink: kb/188/Q188880/
+permalink: /kb/188/Q188880/
 ---
 
 ## Q188880: SMS: OSR2 and Internet Explorer 4.0 Inventoried as Windows 98

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318396: Password Length Limitations for SMS Service Accounts"
-permalink: kb/318/Q318396/
+permalink: /kb/318/Q318396/
 ---
 
 ## Q318396: Password Length Limitations for SMS Service Accounts

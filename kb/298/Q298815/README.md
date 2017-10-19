@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298815: Using COMTI Over TCP/IP with IMS Connect"
-permalink: kb/298/Q298815/
+permalink: /kb/298/Q298815/
 ---
 
 ## Q298815: Using COMTI Over TCP/IP with IMS Connect

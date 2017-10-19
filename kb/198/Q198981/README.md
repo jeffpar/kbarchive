@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198981: XIMS: SMTP Messages Not Being Delivered to Certain Domains"
-permalink: kb/198/Q198981/
+permalink: /kb/198/Q198981/
 ---
 
 ## Q198981: XIMS: SMTP Messages Not Being Delivered to Certain Domains

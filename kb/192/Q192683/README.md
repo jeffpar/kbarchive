@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192683: XCLN: HTML Form Converter Todo.txt May Not Completely Display"
-permalink: kb/192/Q192683/
+permalink: /kb/192/Q192683/
 ---
 
 ## Q192683: XCLN: HTML Form Converter Todo.txt May Not Completely Display

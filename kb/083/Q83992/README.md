@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83992: Copying Individual Components from the Win SDK 3.1 Disks"
-permalink: kb/083/Q83992/
+permalink: /kb/083/Q83992/
 ---
 
 ## Q83992: Copying Individual Components from the Win SDK 3.1 Disks

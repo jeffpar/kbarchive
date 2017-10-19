@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98582: Changes Made to Windows .INI Files by MS-DOS 6 Applications"
-permalink: kb/098/Q98582/
+permalink: /kb/098/Q98582/
 ---
 
 ## Q98582: Changes Made to Windows .INI Files by MS-DOS 6 Applications

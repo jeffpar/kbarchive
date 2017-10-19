@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163407: HOWTO: Use OLE Automation with Visual SourceSafe"
-permalink: kb/163/Q163407/
+permalink: /kb/163/Q163407/
 ---
 
 ## Q163407: HOWTO: Use OLE Automation with Visual SourceSafe

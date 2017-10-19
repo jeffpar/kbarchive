@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239626: World Atlas 2000: Quits When You Click a Media Viewer Thumbnail"
-permalink: kb/239/Q239626/
+permalink: /kb/239/Q239626/
 ---
 
 ## Q239626: World Atlas 2000: Quits When You Click a Media Viewer Thumbnail

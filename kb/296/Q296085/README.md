@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296085: HOWTO: Use SQL Server to Analyze Web Logs"
-permalink: kb/296/Q296085/
+permalink: /kb/296/Q296085/
 ---
 
 ## Q296085: HOWTO: Use SQL Server to Analyze Web Logs

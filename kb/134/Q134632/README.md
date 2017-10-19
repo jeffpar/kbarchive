@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134632: Microsoft Exchange in Windows 95 Questions and Answers"
-permalink: kb/134/Q134632/
+permalink: /kb/134/Q134632/
 ---
 
 ## Q134632: Microsoft Exchange in Windows 95 Questions and Answers

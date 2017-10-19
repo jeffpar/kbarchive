@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129741: PRB: Call List Takes Longer to Display"
-permalink: kb/129/Q129741/
+permalink: /kb/129/Q129741/
 ---
 
 ## Q129741: PRB: Call List Takes Longer to Display

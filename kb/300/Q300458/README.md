@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300458: XFOR: Full Reload Modifying Trust Value on Exported Containers"
-permalink: kb/300/Q300458/
+permalink: /kb/300/Q300458/
 ---
 
 ## Q300458: XFOR: Full Reload Modifying Trust Value on Exported Containers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134527: Screen Flashing on Green PCs with Some AMI BIOS Versions"
-permalink: kb/134/Q134527/
+permalink: /kb/134/Q134527/
 ---
 
 ## Q134527: Screen Flashing on Green PCs with Some AMI BIOS Versions

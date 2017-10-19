@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165509: CSNW Clients May Get Access Denied Using WHOAMI"
-permalink: kb/165/Q165509/
+permalink: /kb/165/Q165509/
 ---
 
 ## Q165509: CSNW Clients May Get Access Denied Using WHOAMI

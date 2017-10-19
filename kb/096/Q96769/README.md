@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96769: Problems Formatting or Reading a Floppy Disk"
-permalink: kb/096/Q96769/
+permalink: /kb/096/Q96769/
 ---
 
 ## Q96769: Problems Formatting or Reading a Floppy Disk

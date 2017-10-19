@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222515: GetFreeSpace API Returns Zero on Computer w/ more than 2 GB RAM"
-permalink: kb/222/Q222515/
+permalink: /kb/222/Q222515/
 ---
 
 ## Q222515: GetFreeSpace API Returns Zero on Computer w/ more than 2 GB RAM

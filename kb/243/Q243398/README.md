@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243398: XADM: Two Sites With the Same Org and Site Name May Join"
-permalink: kb/243/Q243398/
+permalink: /kb/243/Q243398/
 ---
 
 ## Q243398: XADM: Two Sites With the Same Org and Site Name May Join

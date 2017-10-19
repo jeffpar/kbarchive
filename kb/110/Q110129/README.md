@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110129: INF: Microsoft ODBC Desktop Database Drivers 1.0 README.TXT"
-permalink: kb/110/Q110129/
+permalink: /kb/110/Q110129/
 ---
 
 ## Q110129: INF: Microsoft ODBC Desktop Database Drivers 1.0 README.TXT

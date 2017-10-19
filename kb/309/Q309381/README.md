@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309381: A Distribution Point Does Not Appear on the Parent"
-permalink: kb/309/Q309381/
+permalink: /kb/309/Q309381/
 ---
 
 ## Q309381: A Distribution Point Does Not Appear on the Parent

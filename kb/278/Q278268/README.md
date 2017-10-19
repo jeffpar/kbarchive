@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278268: Lowercase Characters Appear with CAPS LOCK on Bulgarian Keyboard"
-permalink: kb/278/Q278268/
+permalink: /kb/278/Q278268/
 ---
 
 ## Q278268: Lowercase Characters Appear with CAPS LOCK on Bulgarian Keyboard

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171444: Removing Windows NT from a Windows 95/98 Dual-Boot Installation"
-permalink: kb/171/Q171444/
+permalink: /kb/171/Q171444/
 ---
 
 ## Q171444: Removing Windows NT from a Windows 95/98 Dual-Boot Installation

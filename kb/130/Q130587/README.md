@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130587: Setup Incorrectly Detects Network Card Transceiver Type"
-permalink: kb/130/Q130587/
+permalink: /kb/130/Q130587/
 ---
 
 ## Q130587: Setup Incorrectly Detects Network Card Transceiver Type

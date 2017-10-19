@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312463: FS: &quot;Scenery Read Error&quot; Err Msg When Starting Flight"
-permalink: kb/312/Q312463/
+permalink: /kb/312/Q312463/
 ---
 
 ## Q312463: FS: &quot;Scenery Read Error&quot; Err Msg When Starting Flight

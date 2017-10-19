@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245453: TN3270 Server Access Violation in Mngext!MngDeleteObject()"
-permalink: kb/245/Q245453/
+permalink: /kb/245/Q245453/
 ---
 
 ## Q245453: TN3270 Server Access Violation in Mngext!MngDeleteObject()

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150032: Shared Application Still Running Error After Logoff"
-permalink: kb/150/Q150032/
+permalink: /kb/150/Q150032/
 ---
 
 ## Q150032: Shared Application Still Running Error After Logoff

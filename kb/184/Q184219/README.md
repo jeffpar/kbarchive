@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184219: Access Violation in Microsoft TAPI Browser 2.0"
-permalink: kb/184/Q184219/
+permalink: /kb/184/Q184219/
 ---
 
 ## Q184219: Access Violation in Microsoft TAPI Browser 2.0

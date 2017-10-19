@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118954: System Hangs When Accessing Sound Card Controlled CD-ROM Drive"
-permalink: kb/118/Q118954/
+permalink: /kb/118/Q118954/
 ---
 
 ## Q118954: System Hangs When Accessing Sound Card Controlled CD-ROM Drive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217208: FIX: CMenu::GetMenuString Truncates Strings Longer Than 256 Char"
-permalink: kb/217/Q217208/
+permalink: /kb/217/Q217208/
 ---
 
 ## Q217208: FIX: CMenu::GetMenuString Truncates Strings Longer Than 256 Char

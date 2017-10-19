@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113776: Remote Access Monitor Disappears From Desktop"
-permalink: kb/113/Q113776/
+permalink: /kb/113/Q113776/
 ---
 
 ## Q113776: Remote Access Monitor Disappears From Desktop

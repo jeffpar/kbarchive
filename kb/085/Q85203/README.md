@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85203: SAMPLE: StatBar.exe Demonstrates Window Status Bar"
-permalink: kb/085/Q85203/
+permalink: /kb/085/Q85203/
 ---
 
 ## Q85203: SAMPLE: StatBar.exe Demonstrates Window Status Bar

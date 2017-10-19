@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199152: Desktop Icons Do Not Display Correctly in Windows NT 4.0"
-permalink: kb/199/Q199152/
+permalink: /kb/199/Q199152/
 ---
 
 ## Q199152: Desktop Icons Do Not Display Correctly in Windows NT 4.0

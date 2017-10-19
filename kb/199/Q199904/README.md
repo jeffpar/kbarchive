@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199904: EVG99: Search Results in Pinpointer Contain Illegible Characters"
-permalink: kb/199/Q199904/
+permalink: /kb/199/Q199904/
 ---
 
 ## Q199904: EVG99: Search Results in Pinpointer Contain Illegible Characters

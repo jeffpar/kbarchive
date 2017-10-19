@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173637: XWEB: Can't View Free/Busy Info on a DL"
-permalink: kb/173/Q173637/
+permalink: /kb/173/Q173637/
 ---
 
 ## Q173637: XWEB: Can't View Free/Busy Info on a DL

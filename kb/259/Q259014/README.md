@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259014: Golf 99 Err Msg: No Service Provider Detected"
-permalink: kb/259/Q259014/
+permalink: /kb/259/Q259014/
 ---
 
 ## Q259014: Golf 99 Err Msg: No Service Provider Detected

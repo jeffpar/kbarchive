@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235446: XGEN: Exchange 5.5 SP3 Mailbox Manager Release Notes Updates"
-permalink: kb/235/Q235446/
+permalink: /kb/235/Q235446/
 ---
 
 ## Q235446: XGEN: Exchange 5.5 SP3 Mailbox Manager Release Notes Updates

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50104: Comparison between DRIVPARM and DRIVER.SYS"
-permalink: kb/050/Q50104/
+permalink: /kb/050/Q50104/
 ---
 
 ## Q50104: Comparison between DRIVPARM and DRIVER.SYS

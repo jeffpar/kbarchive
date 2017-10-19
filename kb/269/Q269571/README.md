@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269571: Unsigned CRL File Causes Access Violation in Inetinfo"
-permalink: kb/269/Q269571/
+permalink: /kb/269/Q269571/
 ---
 
 ## Q269571: Unsigned CRL File Causes Access Violation in Inetinfo

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135488: PC NTMMTA: DrivesWAN Fails to Work"
-permalink: kb/135/Q135488/
+permalink: /kb/135/Q135488/
 ---
 
 ## Q135488: PC NTMMTA: DrivesWAN Fails to Work

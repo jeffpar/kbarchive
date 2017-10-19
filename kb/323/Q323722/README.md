@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323722: User Name Mapping Does Not Seem to Work and Event ID 1003 Occurs"
-permalink: kb/323/Q323722/
+permalink: /kb/323/Q323722/
 ---
 
 ## Q323722: User Name Mapping Does Not Seem to Work and Event ID 1003 Occurs

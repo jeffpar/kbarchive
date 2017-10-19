@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73200: Using the Uninstall Disk to Create a Dual-Boot Configuration"
-permalink: kb/073/Q73200/
+permalink: /kb/073/Q73200/
 ---
 
 ## Q73200: Using the Uninstall Disk to Create a Dual-Boot Configuration

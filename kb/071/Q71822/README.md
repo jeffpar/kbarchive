@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71822: MS-DOS 5 Upgrade PACKING.LST (5.25-Inch Disk Set)"
-permalink: kb/071/Q71822/
+permalink: /kb/071/Q71822/
 ---
 
 ## Q71822: MS-DOS 5 Upgrade PACKING.LST (5.25-Inch Disk Set)

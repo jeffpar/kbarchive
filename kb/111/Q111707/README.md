@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111707: Workgroup Add-On for MS-DOS 3.11 Disk Directories"
-permalink: kb/111/Q111707/
+permalink: /kb/111/Q111707/
 ---
 
 ## Q111707: Workgroup Add-On for MS-DOS 3.11 Disk Directories

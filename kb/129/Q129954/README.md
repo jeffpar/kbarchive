@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129954: DOCERR: ICM_DECOMPRESSEX_QUERY dwParam1 and dwParam2 Incorrect"
-permalink: kb/129/Q129954/
+permalink: /kb/129/Q129954/
 ---
 
 ## Q129954: DOCERR: ICM_DECOMPRESSEX_QUERY dwParam1 and dwParam2 Incorrect

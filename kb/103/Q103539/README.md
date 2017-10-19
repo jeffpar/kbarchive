@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103539: Running FASTOPEN and CHKDSK Removes File Attributes on CVF"
-permalink: kb/103/Q103539/
+permalink: /kb/103/Q103539/
 ---
 
 ## Q103539: Running FASTOPEN and CHKDSK Removes File Attributes on CVF

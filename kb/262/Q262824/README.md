@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262824: SMS: A Program May Run Twice Because It Appears in Bold"
-permalink: kb/262/Q262824/
+permalink: /kb/262/Q262824/
 ---
 
 ## Q262824: SMS: A Program May Run Twice Because It Appears in Bold

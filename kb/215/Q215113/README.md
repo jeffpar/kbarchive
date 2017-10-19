@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215113: SMS: Windows 9x Clients Can't Connect to Bindery Emulation CAPs"
-permalink: kb/215/Q215113/
+permalink: /kb/215/Q215113/
 ---
 
 ## Q215113: SMS: Windows 9x Clients Can't Connect to Bindery Emulation CAPs

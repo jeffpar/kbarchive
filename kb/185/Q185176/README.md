@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185176: XADM: Setup Fails Creating A New Site With Error c1030b0d"
-permalink: kb/185/Q185176/
+permalink: /kb/185/Q185176/
 ---
 
 ## Q185176: XADM: Setup Fails Creating A New Site With Error c1030b0d

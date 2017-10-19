@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178640: Could Not Find Domain Controller When Establishing a Trust"
-permalink: kb/178/Q178640/
+permalink: /kb/178/Q178640/
 ---
 
 ## Q178640: Could Not Find Domain Controller When Establishing a Trust

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84181: Windows: Working Directory in Program Item Properties"
-permalink: kb/084/Q84181/
+permalink: /kb/084/Q84181/
 ---
 
 ## Q84181: Windows: Working Directory in Program Item Properties

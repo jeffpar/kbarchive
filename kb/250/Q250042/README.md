@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250042: Performance Issue and Delay in Keyboard Input"
-permalink: kb/250/Q250042/
+permalink: /kb/250/Q250042/
 ---
 
 ## Q250042: Performance Issue and Delay in Keyboard Input

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135629: HOWTO: Use the Find &amp; Search Options on a Form Wizard Form"
-permalink: kb/135/Q135629/
+permalink: /kb/135/Q135629/
 ---
 
 ## Q135629: HOWTO: Use the Find &amp; Search Options on a Form Wizard Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174793: SMS: SETLS Domain Enumeration Using Smsls.ini and Win.ini"
-permalink: kb/174/Q174793/
+permalink: /kb/174/Q174793/
 ---
 
 ## Q174793: SMS: SETLS Domain Enumeration Using Smsls.ini and Win.ini

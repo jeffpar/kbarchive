@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150753: How to Create a &quot;Windows-type&quot; Incremental Search Box in VFP"
-permalink: kb/150/Q150753/
+permalink: /kb/150/Q150753/
 ---
 
 ## Q150753: How to Create a &quot;Windows-type&quot; Incremental Search Box in VFP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130832: Properties and Methods Used by Converted Forms"
-permalink: kb/130/Q130832/
+permalink: /kb/130/Q130832/
 ---
 
 ## Q130832: Properties and Methods Used by Converted Forms

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88457: Choosing Golf Help in Post Shot Selection with DTK BIOS Hangs"
-permalink: kb/088/Q88457/
+permalink: /kb/088/Q88457/
 ---
 
 ## Q88457: Choosing Golf Help in Post Shot Selection with DTK BIOS Hangs

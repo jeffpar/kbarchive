@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75435: INFO: Windows, Code Pages, and Character Sets"
-permalink: kb/075/Q75435/
+permalink: /kb/075/Q75435/
 ---
 
 ## Q75435: INFO: Windows, Code Pages, and Character Sets

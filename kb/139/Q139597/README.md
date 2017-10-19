@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139597: HOWTO: Use the Wizard txtbtns Class in a Non-Wizard Form"
-permalink: kb/139/Q139597/
+permalink: /kb/139/Q139597/
 ---
 
 ## Q139597: HOWTO: Use the Wizard txtbtns Class in a Non-Wizard Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176951: HOWTO: Use Events to Generate Asynchronous Callbacks"
-permalink: kb/176/Q176951/
+permalink: /kb/176/Q176951/
 ---
 
 ## Q176951: HOWTO: Use Events to Generate Asynchronous Callbacks

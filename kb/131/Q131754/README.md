@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131754: Mac Encarta 1995: Slide Show Stops After 100 Slides"
-permalink: kb/131/Q131754/
+permalink: /kb/131/Q131754/
 ---
 
 ## Q131754: Mac Encarta 1995: Slide Show Stops After 100 Slides

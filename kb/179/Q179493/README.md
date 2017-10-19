@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179493: WD97: Line Pattern Printed Solid If Pasted as Picture or Bitmap"
-permalink: kb/179/Q179493/
+permalink: /kb/179/Q179493/
 ---
 
 ## Q179493: WD97: Line Pattern Printed Solid If Pasted as Picture or Bitmap

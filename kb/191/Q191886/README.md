@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191886: Y2K: Reqmain.exe Displays the Incorrect Date after 1999"
-permalink: kb/191/Q191886/
+permalink: /kb/191/Q191886/
 ---
 
 ## Q191886: Y2K: Reqmain.exe Displays the Incorrect Date after 1999

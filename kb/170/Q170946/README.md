@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170946: HOWTO: Create and Use a Minimal ActiveX Component in VB"
-permalink: kb/170/Q170946/
+permalink: /kb/170/Q170946/
 ---
 
 ## Q170946: HOWTO: Create and Use a Minimal ActiveX Component in VB

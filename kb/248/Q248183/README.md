@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248183: Syskey Tool Reuses Keystream"
-permalink: kb/248/Q248183/
+permalink: /kb/248/Q248183/
 ---
 
 ## Q248183: Syskey Tool Reuses Keystream

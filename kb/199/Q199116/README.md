@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199116: SMS: Software Inventory Will Not Scan for an Individual File"
-permalink: kb/199/Q199116/
+permalink: /kb/199/Q199116/
 ---
 
 ## Q199116: SMS: Software Inventory Will Not Scan for an Individual File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143039: Calling Visual Basic 4.0 OLE Server from Microsoft Access 2.0"
-permalink: kb/143/Q143039/
+permalink: /kb/143/Q143039/
 ---
 
 ## Q143039: Calling Visual Basic 4.0 OLE Server from Microsoft Access 2.0

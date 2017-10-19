@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110955: Invalid EISA CFG File for Olicom Token Ring 16/4 Adapter"
-permalink: kb/110/Q110955/
+permalink: /kb/110/Q110955/
 ---
 
 ## Q110955: Invalid EISA CFG File for Olicom Token Ring 16/4 Adapter

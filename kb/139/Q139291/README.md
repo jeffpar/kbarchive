@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139291: HOWTO: Change the BackColor of a ToolBar When it is Docked"
-permalink: kb/139/Q139291/
+permalink: /kb/139/Q139291/
 ---
 
 ## Q139291: HOWTO: Change the BackColor of a ToolBar When it is Docked

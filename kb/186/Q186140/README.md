@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186140: WD97: Clicking Hyperlink to View Web Page Closes Document"
-permalink: kb/186/Q186140/
+permalink: /kb/186/Q186140/
 ---
 
 ## Q186140: WD97: Clicking Hyperlink to View Web Page Closes Document

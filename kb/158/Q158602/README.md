@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158602: WD97: Cannot Extend Selection Across Linked Text Boxes"
-permalink: kb/158/Q158602/
+permalink: /kb/158/Q158602/
 ---
 
 ## Q158602: WD97: Cannot Extend Selection Across Linked Text Boxes

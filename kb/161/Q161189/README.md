@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161189: Error 7008 when Using StarSQL ODBC Driver"
-permalink: kb/161/Q161189/
+permalink: /kb/161/Q161189/
 ---
 
 ## Q161189: Error 7008 when Using StarSQL ODBC Driver

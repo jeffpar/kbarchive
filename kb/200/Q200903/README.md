@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200903: FP98: Allow Scripts or Programs to be run is Unavailable"
-permalink: kb/200/Q200903/
+permalink: /kb/200/Q200903/
 ---
 
 ## Q200903: FP98: Allow Scripts or Programs to be run is Unavailable

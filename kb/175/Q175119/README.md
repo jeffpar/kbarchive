@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175119: XADM: Isinteg Ignores Lack of Space and Creates Empty Log"
-permalink: kb/175/Q175119/
+permalink: /kb/175/Q175119/
 ---
 
 ## Q175119: XADM: Isinteg Ignores Lack of Space and Creates Empty Log

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163179: DOC: Problem with &quot;Applies To&quot; on DblClick Event Help Topic"
-permalink: kb/163/Q163179/
+permalink: /kb/163/Q163179/
 ---
 
 ## Q163179: DOC: Problem with &quot;Applies To&quot; on DblClick Event Help Topic

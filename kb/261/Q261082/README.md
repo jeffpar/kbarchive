@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261082: MCM2: &quot;Ready&quot; Unavailable on Multiplayer Game Settings Screen"
-permalink: kb/261/Q261082/
+permalink: /kb/261/Q261082/
 ---
 
 ## Q261082: MCM2: &quot;Ready&quot; Unavailable on Multiplayer Game Settings Screen

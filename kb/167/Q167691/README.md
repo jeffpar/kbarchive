@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167691: Display Repainted Incorrectly After Palette Change"
-permalink: kb/167/Q167691/
+permalink: /kb/167/Q167691/
 ---
 
 ## Q167691: Display Repainted Incorrectly After Palette Change

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148724: How to Fill Second List with Values from Multiselect List Box"
-permalink: kb/148/Q148724/
+permalink: /kb/148/Q148724/
 ---
 
 ## Q148724: How to Fill Second List with Values from Multiselect List Box

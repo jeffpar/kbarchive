@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137647: Microsoft Plus! DMF Floppy Disk Directory Listing (2 of 2)"
-permalink: kb/137/Q137647/
+permalink: /kb/137/Q137647/
 ---
 
 ## Q137647: Microsoft Plus! DMF Floppy Disk Directory Listing (2 of 2)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104527: PC DB: Shared Folder Rights Not Available to Admin by Default"
-permalink: kb/104/Q104527/
+permalink: /kb/104/Q104527/
 ---
 
 ## Q104527: PC DB: Shared Folder Rights Not Available to Admin by Default

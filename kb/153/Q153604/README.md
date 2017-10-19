@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153604: PGC Gives User Group Error If Out of Memory"
-permalink: kb/153/Q153604/
+permalink: /kb/153/Q153604/
 ---
 
 ## Q153604: PGC Gives User Group Error If Out of Memory

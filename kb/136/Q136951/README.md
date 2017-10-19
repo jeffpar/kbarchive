@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136951: Released Client IP Address Shows As Active in DHCP Server"
-permalink: kb/136/Q136951/
+permalink: /kb/136/Q136951/
 ---
 
 ## Q136951: Released Client IP Address Shows As Active in DHCP Server

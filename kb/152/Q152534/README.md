@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152534: Dbctl.exe Using ODBC in an ActiveX Control"
-permalink: kb/152/Q152534/
+permalink: /kb/152/Q152534/
 ---
 
 ## Q152534: Dbctl.exe Using ODBC in an ActiveX Control

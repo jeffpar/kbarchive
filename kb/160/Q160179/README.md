@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160179: XADM: How to Move a User to a Different Recipient Container"
-permalink: kb/160/Q160179/
+permalink: /kb/160/Q160179/
 ---
 
 ## Q160179: XADM: How to Move a User to a Different Recipient Container

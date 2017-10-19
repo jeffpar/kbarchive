@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97842: Terminal Emulators to Run 3270-Based Graphics"
-permalink: kb/097/Q97842/
+permalink: /kb/097/Q97842/
 ---
 
 ## Q97842: Terminal Emulators to Run 3270-Based Graphics

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287990: SMS: Large .tmp File Created When You Install SMS Client"
-permalink: kb/287/Q287990/
+permalink: /kb/287/Q287990/
 ---
 
 ## Q287990: SMS: Large .tmp File Created When You Install SMS Client

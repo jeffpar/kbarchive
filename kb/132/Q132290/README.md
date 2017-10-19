@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132290: PRB: Problems Using CFile::m_hFile When Porting MFC Apps"
-permalink: kb/132/Q132290/
+permalink: /kb/132/Q132290/
 ---
 
 ## Q132290: PRB: Problems Using CFile::m_hFile When Porting MFC Apps

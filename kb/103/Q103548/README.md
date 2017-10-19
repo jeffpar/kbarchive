@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103548: MS-DOS FORMAT Does Not Preserve Clusters Marked Bad"
-permalink: kb/103/Q103548/
+permalink: /kb/103/Q103548/
 ---
 
 ## Q103548: MS-DOS FORMAT Does Not Preserve Clusters Marked Bad

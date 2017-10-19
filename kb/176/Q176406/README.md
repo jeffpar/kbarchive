@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176406: SmartLabs Workshop Not Compatible With Internet Explorer 4.0"
-permalink: kb/176/Q176406/
+permalink: /kb/176/Q176406/
 ---
 
 ## Q176406: SmartLabs Workshop Not Compatible With Internet Explorer 4.0

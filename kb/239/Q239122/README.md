@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239122: XFOR: SNADS Documentation Chap03.doc on Exchange CD Is Corrupted"
-permalink: kb/239/Q239122/
+permalink: /kb/239/Q239122/
 ---
 
 ## Q239122: XFOR: SNADS Documentation Chap03.doc on Exchange CD Is Corrupted

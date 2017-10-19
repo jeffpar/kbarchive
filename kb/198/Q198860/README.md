@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198860: HOWTO: Open the Printer Properties Dialog"
-permalink: kb/198/Q198860/
+permalink: /kb/198/Q198860/
 ---
 
 ## Q198860: HOWTO: Open the Printer Properties Dialog

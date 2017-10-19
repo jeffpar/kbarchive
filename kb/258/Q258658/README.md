@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258658: Baseball 2001: Program Does Not Start"
-permalink: kb/258/Q258658/
+permalink: /kb/258/Q258658/
 ---
 
 ## Q258658: Baseball 2001: Program Does Not Start

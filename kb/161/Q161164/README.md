@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161164: Duplex Setting May Not Change When Target Printer Changes"
-permalink: kb/161/Q161164/
+permalink: /kb/161/Q161164/
 ---
 
 ## Q161164: Duplex Setting May Not Change When Target Printer Changes

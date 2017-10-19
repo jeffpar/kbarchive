@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123878: Orphan Machine Inventory, Ghost Sites, and Domains"
-permalink: kb/123/Q123878/
+permalink: /kb/123/Q123878/
 ---
 
 ## Q123878: Orphan Machine Inventory, Ghost Sites, and Domains

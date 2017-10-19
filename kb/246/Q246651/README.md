@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246651: SMS: Package Resent Continuously If Distribution Set to None"
-permalink: kb/246/Q246651/
+permalink: /kb/246/Q246651/
 ---
 
 ## Q246651: SMS: Package Resent Continuously If Distribution Set to None

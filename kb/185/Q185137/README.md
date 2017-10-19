@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185137: Log Logical Record Request May Be Sent to Wrong Server"
-permalink: kb/185/Q185137/
+permalink: /kb/185/Q185137/
 ---
 
 ## Q185137: Log Logical Record Request May Be Sent to Wrong Server

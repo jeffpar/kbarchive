@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157327: Windows NT May Hang Using SNA Server 2.11 SP1 w/Digi Sync SDLC"
-permalink: kb/157/Q157327/
+permalink: /kb/157/Q157327/
 ---
 
 ## Q157327: Windows NT May Hang Using SNA Server 2.11 SP1 w/Digi Sync SDLC

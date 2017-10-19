@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150767: HOWTO: Redirect Standard I/O of a Console App Using Batch File"
-permalink: kb/150/Q150767/
+permalink: /kb/150/Q150767/
 ---
 
 ## Q150767: HOWTO: Redirect Standard I/O of a Console App Using Batch File

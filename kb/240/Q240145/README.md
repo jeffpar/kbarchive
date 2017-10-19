@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240145: XADM: Determining Which Transaction Logs Can Be Safely Removed"
-permalink: kb/240/Q240145/
+permalink: /kb/240/Q240145/
 ---
 
 ## Q240145: XADM: Determining Which Transaction Logs Can Be Safely Removed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128607: Macintosh Chooser Cannot See SFM Servers Using Compaq PCI NIC"
-permalink: kb/128/Q128607/
+permalink: /kb/128/Q128607/
 ---
 
 ## Q128607: Macintosh Chooser Cannot See SFM Servers Using Compaq PCI NIC

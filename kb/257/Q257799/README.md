@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257799: SMS: How to Use Heartbeat Discovery"
-permalink: kb/257/Q257799/
+permalink: /kb/257/Q257799/
 ---
 
 ## Q257799: SMS: How to Use Heartbeat Discovery

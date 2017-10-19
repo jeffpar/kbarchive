@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192154: INFO: ASP Pages Cannot Be Imported into an IIS Application"
-permalink: kb/192/Q192154/
+permalink: /kb/192/Q192154/
 ---
 
 ## Q192154: INFO: ASP Pages Cannot Be Imported into an IIS Application

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223997: Logon Attempt Does Not Work on New Installation of Windows NT"
-permalink: kb/223/Q223997/
+permalink: /kb/223/Q223997/
 ---
 
 ## Q223997: Logon Attempt Does Not Work on New Installation of Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83752: Advanced Button Not Available in Ports Option in Control Panel"
-permalink: kb/083/Q83752/
+permalink: /kb/083/Q83752/
 ---
 
 ## Q83752: Advanced Button Not Available in Ports Option in Control Panel

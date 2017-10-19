@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229921: XFOR: LinkAge 3.2 Connectors Are Not Year 2000 Compliant"
-permalink: kb/229/Q229921/
+permalink: /kb/229/Q229921/
 ---
 
 ## Q229921: XFOR: LinkAge 3.2 Connectors Are Not Year 2000 Compliant

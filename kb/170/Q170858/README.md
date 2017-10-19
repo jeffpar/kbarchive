@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170858: Err. Msg.: The Referenced Account is Currently Locked Out"
-permalink: kb/170/Q170858/
+permalink: /kb/170/Q170858/
 ---
 
 ## Q170858: Err. Msg.: The Referenced Account is Currently Locked Out

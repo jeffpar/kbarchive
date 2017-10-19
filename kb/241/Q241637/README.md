@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241637: PRB: Adding New Method to VB Component Breaks Existing Client"
-permalink: kb/241/Q241637/
+permalink: /kb/241/Q241637/
 ---
 
 ## Q241637: PRB: Adding New Method to VB Component Breaks Existing Client

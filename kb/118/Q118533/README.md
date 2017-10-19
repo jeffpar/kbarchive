@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118533: FFAPI: Understanding FFAPI Error Message Format"
-permalink: kb/118/Q118533/
+permalink: /kb/118/Q118533/
 ---
 
 ## Q118533: FFAPI: Understanding FFAPI Error Message Format

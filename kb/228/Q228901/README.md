@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228901: XCON: Account Validation Problems with Dynamic RAS Installation"
-permalink: kb/228/Q228901/
+permalink: /kb/228/Q228901/
 ---
 
 ## Q228901: XCON: Account Validation Problems with Dynamic RAS Installation

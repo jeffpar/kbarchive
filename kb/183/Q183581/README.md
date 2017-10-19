@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183581: Out of Virtual Memory Messages During Windows NT Installation"
-permalink: kb/183/Q183581/
+permalink: /kb/183/Q183581/
 ---
 
 ## Q183581: Out of Virtual Memory Messages During Windows NT Installation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114013: BUG: General Protection Fault When Accessing an HFONT"
-permalink: kb/114/Q114013/
+permalink: /kb/114/Q114013/
 ---
 
 ## Q114013: BUG: General Protection Fault When Accessing an HFONT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168776: SMSINST: Using the Repackager Successfully"
-permalink: kb/168/Q168776/
+permalink: /kb/168/Q168776/
 ---
 
 ## Q168776: SMSINST: Using the Repackager Successfully

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104533: ScanDisk Sees Hard Drive as Network Drive"
-permalink: kb/104/Q104533/
+permalink: /kb/104/Q104533/
 ---
 
 ## Q104533: ScanDisk Sees Hard Drive as Network Drive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227205: Baseball 2000: Pointer Flickers When You View Player's Guide"
-permalink: kb/227/Q227205/
+permalink: /kb/227/Q227205/
 ---
 
 ## Q227205: Baseball 2000: Pointer Flickers When You View Player's Guide

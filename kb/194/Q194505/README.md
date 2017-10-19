@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194505: XADM: NDR When Message Contains 8-Bit Subject"
-permalink: kb/194/Q194505/
+permalink: /kb/194/Q194505/
 ---
 
 ## Q194505: XADM: NDR When Message Contains 8-Bit Subject

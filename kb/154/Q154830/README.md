@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154830: XCLN: Setting Send Options for Individual Messages"
-permalink: kb/154/Q154830/
+permalink: /kb/154/Q154830/
 ---
 
 ## Q154830: XCLN: Setting Send Options for Individual Messages

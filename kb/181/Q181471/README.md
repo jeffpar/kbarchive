@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181471: WD97: How to Reset User Options and Registry Settings"
-permalink: kb/181/Q181471/
+permalink: /kb/181/Q181471/
 ---
 
 ## Q181471: WD97: How to Reset User Options and Registry Settings

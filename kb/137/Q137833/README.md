@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137833: Error Occurs When Attempting to Remove an Autorun Program"
-permalink: kb/137/Q137833/
+permalink: /kb/137/Q137833/
 ---
 
 ## Q137833: Error Occurs When Attempting to Remove an Autorun Program

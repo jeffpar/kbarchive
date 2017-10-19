@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146382: XCLN: Deliver New Mail Moves All Messages (Old and New)"
-permalink: kb/146/Q146382/
+permalink: /kb/146/Q146382/
 ---
 
 ## Q146382: XCLN: Deliver New Mail Moves All Messages (Old and New)

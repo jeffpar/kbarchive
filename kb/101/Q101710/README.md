@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101710: Ability to View Any User Account"
-permalink: kb/101/Q101710/
+permalink: /kb/101/Q101710/
 ---
 
 ## Q101710: Ability to View Any User Account

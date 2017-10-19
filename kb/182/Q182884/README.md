@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182884: SNA NT 4.0 Client Gets 1003 Error Connecting to SNA Server 3.0"
-permalink: kb/182/Q182884/
+permalink: /kb/182/Q182884/
 ---
 
 ## Q182884: SNA NT 4.0 Client Gets 1003 Error Connecting to SNA Server 3.0

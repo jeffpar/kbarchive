@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164374: FIX: Cannot Use Printer Fonts with ? Printing in VFP 5.0"
-permalink: kb/164/Q164374/
+permalink: /kb/164/Q164374/
 ---
 
 ## Q164374: FIX: Cannot Use Printer Fonts with ? Printing in VFP 5.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274369: Internet Explorer No Longer Prompts To Accept Cookies"
-permalink: kb/274/Q274369/
+permalink: /kb/274/Q274369/
 ---
 
 ## Q274369: Internet Explorer No Longer Prompts To Accept Cookies

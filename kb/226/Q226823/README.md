@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226823: SMS: Product Callback Messages May Result in Further Product Den"
-permalink: kb/226/Q226823/
+permalink: /kb/226/Q226823/
 ---
 
 ## Q226823: SMS: Product Callback Messages May Result in Further Product Den

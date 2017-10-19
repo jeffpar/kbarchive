@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103544: DIR /C Fails to Report File Compression Ratio"
-permalink: kb/103/Q103544/
+permalink: /kb/103/Q103544/
 ---
 
 ## Q103544: DIR /C Fails to Report File Compression Ratio

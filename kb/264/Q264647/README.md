@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264647: Cannot Install Applications, Error Message States That the Unins"
-permalink: kb/264/Q264647/
+permalink: /kb/264/Q264647/
 ---
 
 ## Q264647: Cannot Install Applications, Error Message States That the Unins

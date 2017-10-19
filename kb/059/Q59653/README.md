@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59653: Inappropriate File Save Error Message in Windows 3.0"
-permalink: kb/059/Q59653/
+permalink: /kb/059/Q59653/
 ---
 
 ## Q59653: Inappropriate File Save Error Message in Windows 3.0

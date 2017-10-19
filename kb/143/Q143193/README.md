@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143193: Internet Explorer Name Resolution"
-permalink: kb/143/Q143193/
+permalink: /kb/143/Q143193/
 ---
 
 ## Q143193: Internet Explorer Name Resolution

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85894: Program Icon Disappears from Group on a Read-Only Share"
-permalink: kb/085/Q85894/
+permalink: /kb/085/Q85894/
 ---
 
 ## Q85894: Program Icon Disappears from Group on a Read-Only Share

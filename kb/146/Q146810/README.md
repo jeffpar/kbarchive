@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146810: XADM: Dialog Box Appears When Configuring Free/Busy Connector"
-permalink: kb/146/Q146810/
+permalink: /kb/146/Q146810/
 ---
 
 ## Q146810: XADM: Dialog Box Appears When Configuring Free/Busy Connector

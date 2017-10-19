@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139284: Microsoft Backup Menus Disappear with Unsupported Tape"
-permalink: kb/139/Q139284/
+permalink: /kb/139/Q139284/
 ---
 
 ## Q139284: Microsoft Backup Menus Disappear with Unsupported Tape

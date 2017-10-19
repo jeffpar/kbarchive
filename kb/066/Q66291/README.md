@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66291: Flight Simulator: Aircraft &amp; Scenery Designer Features"
-permalink: kb/066/Q66291/
+permalink: /kb/066/Q66291/
 ---
 
 ## Q66291: Flight Simulator: Aircraft &amp; Scenery Designer Features

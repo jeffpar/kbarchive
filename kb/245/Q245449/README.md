@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245449: Err Msg: The Server Has Found an Unexplained Error..."
-permalink: kb/245/Q245449/
+permalink: /kb/245/Q245449/
 ---
 
 ## Q245449: Err Msg: The Server Has Found an Unexplained Error...

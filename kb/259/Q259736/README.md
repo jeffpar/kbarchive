@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259736: Partial RPC Entries May Cause Netlogon Error Messages"
-permalink: kb/259/Q259736/
+permalink: /kb/259/Q259736/
 ---
 
 ## Q259736: Partial RPC Entries May Cause Netlogon Error Messages

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159450: Second Recursive Query Sent from DNS Server Is Broken"
-permalink: kb/159/Q159450/
+permalink: /kb/159/Q159450/
 ---
 
 ## Q159450: Second Recursive Query Sent from DNS Server Is Broken

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246164: intraNetWare Login Dialog Box Appears During Hardware Inventory"
-permalink: kb/246/Q246164/
+permalink: /kb/246/Q246164/
 ---
 
 ## Q246164: intraNetWare Login Dialog Box Appears During Hardware Inventory

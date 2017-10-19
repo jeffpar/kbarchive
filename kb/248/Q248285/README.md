@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248285: FIX: Cannot Edit UserControl When You Host Another UserControl"
-permalink: kb/248/Q248285/
+permalink: /kb/248/Q248285/
 ---
 
 ## Q248285: FIX: Cannot Edit UserControl When You Host Another UserControl

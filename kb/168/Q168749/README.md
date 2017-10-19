@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168749: HOWTO: Print the Contents of the MS Chart Control"
-permalink: kb/168/Q168749/
+permalink: /kb/168/Q168749/
 ---
 
 ## Q168749: HOWTO: Print the Contents of the MS Chart Control

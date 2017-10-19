@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237519: Encarta 2000: Prompted to Insert CD-ROM When Using CD Changer"
-permalink: kb/237/Q237519/
+permalink: /kb/237/Q237519/
 ---
 
 ## Q237519: Encarta 2000: Prompted to Insert CD-ROM When Using CD Changer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257421: FIX: Compiling ActiveX Project Does Not Release Reference Right"
-permalink: kb/257/Q257421/
+permalink: /kb/257/Q257421/
 ---
 
 ## Q257421: FIX: Compiling ActiveX Project Does Not Release Reference Right

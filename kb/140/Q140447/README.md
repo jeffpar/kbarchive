@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140447: PC MAPI: Sample VB Code to Send a Message"
-permalink: kb/140/Q140447/
+permalink: /kb/140/Q140447/
 ---
 
 ## Q140447: PC MAPI: Sample VB Code to Send a Message

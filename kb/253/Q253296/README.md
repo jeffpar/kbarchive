@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253296: How to Disable the &quot;Test&quot; Video Option Upon Reboot"
-permalink: kb/253/Q253296/
+permalink: /kb/253/Q253296/
 ---
 
 ## Q253296: How to Disable the &quot;Test&quot; Video Option Upon Reboot

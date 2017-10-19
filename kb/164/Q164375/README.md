@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164375: Cinemania/Music Central 97: Connections Link Fails To Download"
-permalink: kb/164/Q164375/
+permalink: /kb/164/Q164375/
 ---
 
 ## Q164375: Cinemania/Music Central 97: Connections Link Fails To Download

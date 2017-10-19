@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164162: Adding a Full Screen Feature to an MFC Application"
-permalink: kb/164/Q164162/
+permalink: /kb/164/Q164162/
 ---
 
 ## Q164162: Adding a Full Screen Feature to an MFC Application

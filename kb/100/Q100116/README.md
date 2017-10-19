@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100116: MS-DOS Applications That Use MSDOSDATA Environment Variable"
-permalink: kb/100/Q100116/
+permalink: /kb/100/Q100116/
 ---
 
 ## Q100116: MS-DOS Applications That Use MSDOSDATA Environment Variable

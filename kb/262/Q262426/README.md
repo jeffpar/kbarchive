@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262426: XCLN: Obtaining a Copy of Exchange Client 4.0"
-permalink: kb/262/Q262426/
+permalink: /kb/262/Q262426/
 ---
 
 ## Q262426: XCLN: Obtaining a Copy of Exchange Client 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114038: Using ShellExecute as an Alternative to ExecProgram"
-permalink: kb/114/Q114038/
+permalink: /kb/114/Q114038/
 ---
 
 ## Q114038: Using ShellExecute as an Alternative to ExecProgram

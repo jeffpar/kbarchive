@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184997: PRB: Connection Problem with Global Temp Tables and RdoQueries"
-permalink: kb/184/Q184997/
+permalink: /kb/184/Q184997/
 ---
 
 ## Q184997: PRB: Connection Problem with Global Temp Tables and RdoQueries

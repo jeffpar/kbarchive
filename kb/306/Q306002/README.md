@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306002: Flexible Registration-Regional Data Functionality"
-permalink: kb/306/Q306002/
+permalink: /kb/306/Q306002/
 ---
 
 ## Q306002: Flexible Registration-Regional Data Functionality

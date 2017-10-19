@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129019: 500 Nations: TROUBLE.TXT Contents"
-permalink: kb/129/Q129019/
+permalink: /kb/129/Q129019/
 ---
 
 ## Q129019: 500 Nations: TROUBLE.TXT Contents

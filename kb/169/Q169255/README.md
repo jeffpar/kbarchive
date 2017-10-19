@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169255: Spooler Fails to Notify When Disk is Full"
-permalink: kb/169/Q169255/
+permalink: /kb/169/Q169255/
 ---
 
 ## Q169255: Spooler Fails to Notify When Disk is Full

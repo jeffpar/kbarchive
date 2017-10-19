@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196695: Cannot Log On to NetWare 5 Directory Services Tree Using CSNW"
-permalink: kb/196/Q196695/
+permalink: /kb/196/Q196695/
 ---
 
 ## Q196695: Cannot Log On to NetWare 5 Directory Services Tree Using CSNW

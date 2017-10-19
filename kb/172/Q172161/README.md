@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172161: HOWTO: Determining the Number of Colors Available on a Mac"
-permalink: kb/172/Q172161/
+permalink: /kb/172/Q172161/
 ---
 
 ## Q172161: HOWTO: Determining the Number of Colors Available on a Mac

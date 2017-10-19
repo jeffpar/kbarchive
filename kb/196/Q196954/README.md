@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196954: WD97: Cannot Merge a Barcode Field Based on a Condition"
-permalink: kb/196/Q196954/
+permalink: /kb/196/Q196954/
 ---
 
 ## Q196954: WD97: Cannot Merge a Barcode Field Based on a Condition

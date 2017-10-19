@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118531: FFAPI: GTWGET Extracts All FFAPI Messages, Specifies PO"
-permalink: kb/118/Q118531/
+permalink: /kb/118/Q118531/
 ---
 
 ## Q118531: FFAPI: GTWGET Extracts All FFAPI Messages, Specifies PO

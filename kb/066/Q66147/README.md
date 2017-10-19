@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66147: Error Copying Files with Windows Entertainment Pack"
-permalink: kb/066/Q66147/
+permalink: /kb/066/Q66147/
 ---
 
 ## Q66147: Error Copying Files with Windows Entertainment Pack

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183875: DHCP Server Leases Excluded Addresses if the Scope Is Expanded"
-permalink: kb/183/Q183875/
+permalink: /kb/183/Q183875/
 ---
 
 ## Q183875: DHCP Server Leases Excluded Addresses if the Scope Is Expanded

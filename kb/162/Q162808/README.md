@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162808: WD97: Commands on Web Toolbar Cannot be Recorded in a Macro"
-permalink: kb/162/Q162808/
+permalink: /kb/162/Q162808/
 ---
 
 ## Q162808: WD97: Commands on Web Toolbar Cannot be Recorded in a Macro

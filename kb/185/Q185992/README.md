@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185992: PRB: &quot;Wrong Version Of Run-Time DLL&quot; When Starting Application"
-permalink: kb/185/Q185992/
+permalink: /kb/185/Q185992/
 ---
 
 ## Q185992: PRB: &quot;Wrong Version Of Run-Time DLL&quot; When Starting Application

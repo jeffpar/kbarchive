@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252186: Stop 0x0000000A in RDR.SYS Removing Dormant Server Connections"
-permalink: kb/252/Q252186/
+permalink: /kb/252/Q252186/
 ---
 
 ## Q252186: Stop 0x0000000A in RDR.SYS Removing Dormant Server Connections

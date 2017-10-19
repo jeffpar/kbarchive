@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145949: Share Names Greater Than 12 Characters Cause Errors on Clients"
-permalink: kb/145/Q145949/
+permalink: /kb/145/Q145949/
 ---
 
 ## Q145949: Share Names Greater Than 12 Characters Cause Errors on Clients

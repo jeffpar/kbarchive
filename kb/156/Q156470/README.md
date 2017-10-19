@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156470: Kids: Summary of Audio Used in Kids Titles"
-permalink: kb/156/Q156470/
+permalink: /kb/156/Q156470/
 ---
 
 ## Q156470: Kids: Summary of Audio Used in Kids Titles

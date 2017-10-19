@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162114: HOWTO: How To Issue a Recursive GET Based on a Project Label"
-permalink: kb/162/Q162114/
+permalink: /kb/162/Q162114/
 ---
 
 ## Q162114: HOWTO: How To Issue a Recursive GET Based on a Project Label

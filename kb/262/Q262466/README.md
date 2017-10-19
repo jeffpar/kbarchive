@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262466: Windows 95 RAS Clients Cannot Connect to Windows NT Server"
-permalink: kb/262/Q262466/
+permalink: /kb/262/Q262466/
 ---
 
 ## Q262466: Windows 95 RAS Clients Cannot Connect to Windows NT Server

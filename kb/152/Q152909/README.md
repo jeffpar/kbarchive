@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152909: XCLN: Profiles Not Migrated in Upgrade from Win16 to Win95"
-permalink: kb/152/Q152909/
+permalink: /kb/152/Q152909/
 ---
 
 ## Q152909: XCLN: Profiles Not Migrated in Upgrade from Win16 to Win95

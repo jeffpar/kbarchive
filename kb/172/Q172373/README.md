@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172373: Change Made to Enable 3270 SSO Does Not Set Out-Of-Date Flag"
-permalink: kb/172/Q172373/
+permalink: /kb/172/Q172373/
 ---
 
 ## Q172373: Change Made to Enable 3270 SSO Does Not Set Out-Of-Date Flag

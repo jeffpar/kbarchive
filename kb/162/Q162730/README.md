@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162730: Microsoft Visual C++ Alpha Edition 4.2B Linker 4.20.619"
-permalink: kb/162/Q162730/
+permalink: /kb/162/Q162730/
 ---
 
 ## Q162730: Microsoft Visual C++ Alpha Edition 4.2B Linker 4.20.619

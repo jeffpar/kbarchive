@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170609: FIX: PUTFILE Command to Drive &quot;A&quot; Without a Floppy Causes Fault"
-permalink: kb/170/Q170609/
+permalink: /kb/170/Q170609/
 ---
 
 ## Q170609: FIX: PUTFILE Command to Drive &quot;A&quot; Without a Floppy Causes Fault

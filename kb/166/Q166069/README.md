@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166069: WV: Document Properties Blank When Printed from Word Viewer"
-permalink: kb/166/Q166069/
+permalink: /kb/166/Q166069/
 ---
 
 ## Q166069: WV: Document Properties Blank When Printed from Word Viewer

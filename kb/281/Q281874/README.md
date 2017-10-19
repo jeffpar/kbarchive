@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281874: Encarta 2001: En2001.exe Unable to Locate Dll the Dynamic Link"
-permalink: kb/281/Q281874/
+permalink: /kb/281/Q281874/
 ---
 
 ## Q281874: Encarta 2001: En2001.exe Unable to Locate Dll the Dynamic Link

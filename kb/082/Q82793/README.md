@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82793: The SYSTEM.INI TrapTimerPorts= Parameter"
-permalink: kb/082/Q82793/
+permalink: /kb/082/Q82793/
 ---
 
 ## Q82793: The SYSTEM.INI TrapTimerPorts= Parameter

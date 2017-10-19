@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178755: HOWTO: Enumerate the Values of a Registry Key"
-permalink: kb/178/Q178755/
+permalink: /kb/178/Q178755/
 ---
 
 ## Q178755: HOWTO: Enumerate the Values of a Registry Key

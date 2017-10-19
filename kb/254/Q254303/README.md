@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254303: XADM: New CDONTS Fixes Available"
-permalink: kb/254/Q254303/
+permalink: /kb/254/Q254303/
 ---
 
 ## Q254303: XADM: New CDONTS Fixes Available

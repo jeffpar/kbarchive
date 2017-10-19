@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138063: Effect of DoEvents in Visual Basic OLE Server DLLs"
-permalink: kb/138/Q138063/
+permalink: /kb/138/Q138063/
 ---
 
 ## Q138063: Effect of DoEvents in Visual Basic OLE Server DLLs

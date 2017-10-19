@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175534: Error Message: Missing Entry: News_RunDLL"
-permalink: kb/175/Q175534/
+permalink: /kb/175/Q175534/
 ---
 
 ## Q175534: Error Message: Missing Entry: News_RunDLL

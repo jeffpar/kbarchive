@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196910: HOWTO: Avoid Extra Threads with Depersisted Embedded Objects"
-permalink: kb/196/Q196910/
+permalink: /kb/196/Q196910/
 ---
 
 ## Q196910: HOWTO: Avoid Extra Threads with Depersisted Embedded Objects

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233504: MP2000 Err Msg: Acmsetup.exe Caused an Invalid Page Fault..."
-permalink: kb/233/Q233504/
+permalink: /kb/233/Q233504/
 ---
 
 ## Q233504: MP2000 Err Msg: Acmsetup.exe Caused an Invalid Page Fault...

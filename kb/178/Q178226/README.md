@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178226: FS98: Error Message: Invalid Page Fault In Module Fltsim98.exe"
-permalink: kb/178/Q178226/
+permalink: /kb/178/Q178226/
 ---
 
 ## Q178226: FS98: Error Message: Invalid Page Fault In Module Fltsim98.exe

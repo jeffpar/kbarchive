@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160120: ADT95: Error Installing ADT Application with OLE Controls"
-permalink: kb/160/Q160120/
+permalink: /kb/160/Q160120/
 ---
 
 ## Q160120: ADT95: Error Installing ADT Application with OLE Controls

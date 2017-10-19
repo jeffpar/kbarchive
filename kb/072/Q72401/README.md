@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72401: No Enhanced Mode or System Hangs (Austin Computer)"
-permalink: kb/072/Q72401/
+permalink: /kb/072/Q72401/
 ---
 
 ## Q72401: No Enhanced Mode or System Hangs (Austin Computer)

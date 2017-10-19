@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q327235: Host Account Cache Does Not Start and Posts Events 5, 1281 and 7"
-permalink: kb/327/Q327235/
+permalink: /kb/327/Q327235/
 ---
 
 ## Q327235: Host Account Cache Does Not Start and Posts Events 5, 1281 and 7

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99007: Undelete for Windows Hangs When Checking Root Directory"
-permalink: kb/099/Q99007/
+permalink: /kb/099/Q99007/
 ---
 
 ## Q99007: Undelete for Windows Hangs When Checking Root Directory

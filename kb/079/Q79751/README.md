@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79751: Quitting Windows While an MS-DOS-Based Application is Running"
-permalink: kb/079/Q79751/
+permalink: /kb/079/Q79751/
 ---
 
 ## Q79751: Quitting Windows While an MS-DOS-Based Application is Running

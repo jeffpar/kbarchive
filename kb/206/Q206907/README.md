@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q206907: BUG: Reposition/Resize Control Can Causes Incorrect Results"
-permalink: kb/206/Q206907/
+permalink: /kb/206/Q206907/
 ---
 
 ## Q206907: BUG: Reposition/Resize Control Can Causes Incorrect Results

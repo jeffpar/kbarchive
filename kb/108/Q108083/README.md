@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108083: Custom Forms Not Available in Print Manager"
-permalink: kb/108/Q108083/
+permalink: /kb/108/Q108083/
 ---
 
 ## Q108083: Custom Forms Not Available in Print Manager

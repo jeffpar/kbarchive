@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63686: Disk Space Required for Windows 3.0 Installation"
-permalink: kb/063/Q63686/
+permalink: /kb/063/Q63686/
 ---
 
 ## Q63686: Disk Space Required for Windows 3.0 Installation

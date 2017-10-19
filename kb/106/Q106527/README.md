@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106527: FIX: Error in /FILE&#36;INFO/ in FLIB.FI and FLIB.FD"
-permalink: kb/106/Q106527/
+permalink: /kb/106/Q106527/
 ---
 
 ## Q106527: FIX: Error in /FILE&#36;INFO/ in FLIB.FI and FLIB.FD

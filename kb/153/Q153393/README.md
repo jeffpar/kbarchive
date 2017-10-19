@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153393: Browser Toolkits for Microsoft Visual C++"
-permalink: kb/153/Q153393/
+permalink: /kb/153/Q153393/
 ---
 
 ## Q153393: Browser Toolkits for Microsoft Visual C++

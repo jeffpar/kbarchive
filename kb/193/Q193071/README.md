@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193071: Encarta 98: How to Update Yearbook with No Internet Connection"
-permalink: kb/193/Q193071/
+permalink: /kb/193/Q193071/
 ---
 
 ## Q193071: Encarta 98: How to Update Yearbook with No Internet Connection

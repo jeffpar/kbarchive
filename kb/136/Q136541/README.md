@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136541: PRB: Visual SourceSafe Books Online Help Viewer Crashes"
-permalink: kb/136/Q136541/
+permalink: /kb/136/Q136541/
 ---
 
 ## Q136541: PRB: Visual SourceSafe Books Online Help Viewer Crashes

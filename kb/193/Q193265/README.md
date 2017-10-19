@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193265: PRB: VB Doesn't Generate Compile Error for Misspelled Methods"
-permalink: kb/193/Q193265/
+permalink: /kb/193/Q193265/
 ---
 
 ## Q193265: PRB: VB Doesn't Generate Compile Error for Misspelled Methods

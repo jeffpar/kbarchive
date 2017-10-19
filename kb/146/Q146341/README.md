@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146341: Account Information Boxes Are Gray Adding Virtual Directories"
-permalink: kb/146/Q146341/
+permalink: /kb/146/Q146341/
 ---
 
 ## Q146341: Account Information Boxes Are Gray Adding Virtual Directories

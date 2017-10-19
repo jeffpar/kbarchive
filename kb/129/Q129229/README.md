@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129229: BUG: READ DEACTIVATE Runs When BROWSE Called From VALID of GET"
-permalink: kb/129/Q129229/
+permalink: /kb/129/Q129229/
 ---
 
 ## Q129229: BUG: READ DEACTIVATE Runs When BROWSE Called From VALID of GET

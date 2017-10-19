@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148943: Removing Banyan Vines Client for NT Leaves Vines Protocol"
-permalink: kb/148/Q148943/
+permalink: /kb/148/Q148943/
 ---
 
 ## Q148943: Removing Banyan Vines Client for NT Leaves Vines Protocol

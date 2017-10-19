@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267928: SMS: Remote Control Temporarily Disabled With IP Address Change"
-permalink: kb/267/Q267928/
+permalink: /kb/267/Q267928/
 ---
 
 ## Q267928: SMS: Remote Control Temporarily Disabled With IP Address Change

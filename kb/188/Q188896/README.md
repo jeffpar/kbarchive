@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188896: Access Violation in Explorer.exe Changing Share Permissions"
-permalink: kb/188/Q188896/
+permalink: /kb/188/Q188896/
 ---
 
 ## Q188896: Access Violation in Explorer.exe Changing Share Permissions

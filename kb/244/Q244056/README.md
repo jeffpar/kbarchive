@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244056: Netdde.exe Stops Responding When Used from a Service"
-permalink: kb/244/Q244056/
+permalink: /kb/244/Q244056/
 ---
 
 ## Q244056: Netdde.exe Stops Responding When Used from a Service

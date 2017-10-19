@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71422: Maintaining a Library with NMAKE"
-permalink: kb/071/Q71422/
+permalink: /kb/071/Q71422/
 ---
 
 ## Q71422: Maintaining a Library with NMAKE

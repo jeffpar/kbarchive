@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317248: XADM: Information Store Process Unexpectedly Stops in HrDecode"
-permalink: kb/317/Q317248/
+permalink: /kb/317/Q317248/
 ---
 
 ## Q317248: XADM: Information Store Process Unexpectedly Stops in HrDecode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303279: SMS: Software Inventory Processor Has a Critical Status"
-permalink: kb/303/Q303279/
+permalink: /kb/303/Q303279/
 ---
 
 ## Q303279: SMS: Software Inventory Processor Has a Critical Status

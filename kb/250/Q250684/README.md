@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250684: Err Msg: &lt;Program&gt; Executed Invalid Instruction in &lt;Program&gt;.icd"
-permalink: kb/250/Q250684/
+permalink: /kb/250/Q250684/
 ---
 
 ## Q250684: Err Msg: &lt;Program&gt; Executed Invalid Instruction in &lt;Program&gt;.icd

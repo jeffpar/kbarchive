@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183419: Memory Leak in Spoolss.exe Causes Performance Degradation"
-permalink: kb/183/Q183419/
+permalink: /kb/183/Q183419/
 ---
 
 ## Q183419: Memory Leak in Spoolss.exe Causes Performance Degradation

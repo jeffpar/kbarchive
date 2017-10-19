@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120393: Mac DOS: Err Msg: System Has Closed... Application Unknown..."
-permalink: kb/120/Q120393/
+permalink: /kb/120/Q120393/
 ---
 
 ## Q120393: Mac DOS: Err Msg: System Has Closed... Application Unknown...

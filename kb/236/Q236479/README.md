@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236479: ACC2000: New Tables &amp; Pages Deleted When You Undo VSS Checkout"
-permalink: kb/236/Q236479/
+permalink: /kb/236/Q236479/
 ---
 
 ## Q236479: ACC2000: New Tables &amp; Pages Deleted When You Undo VSS Checkout

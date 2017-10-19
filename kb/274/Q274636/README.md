@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274636: CFS2: SideWinder Game Voice Host Cannot Start a Multiplayer Game"
-permalink: kb/274/Q274636/
+permalink: /kb/274/Q274636/
 ---
 
 ## Q274636: CFS2: SideWinder Game Voice Host Cannot Start a Multiplayer Game

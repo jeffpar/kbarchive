@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162569: Monster Truck Madness: Patch is for the English Version Only"
-permalink: kb/162/Q162569/
+permalink: /kb/162/Q162569/
 ---
 
 ## Q162569: Monster Truck Madness: Patch is for the English Version Only

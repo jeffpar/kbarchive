@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q205129: Mac Encarta 98: Flashlight Pointer Not Displayed in Virtual Tour"
-permalink: kb/205/Q205129/
+permalink: /kb/205/Q205129/
 ---
 
 ## Q205129: Mac Encarta 98: Flashlight Pointer Not Displayed in Virtual Tour

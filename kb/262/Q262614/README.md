@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262614: BUG: SetTextCharacterExtra() Sometimes Ignored When Printing"
-permalink: kb/262/Q262614/
+permalink: /kb/262/Q262614/
 ---
 
 ## Q262614: BUG: SetTextCharacterExtra() Sometimes Ignored When Printing

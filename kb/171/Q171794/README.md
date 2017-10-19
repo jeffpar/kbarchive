@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171794: Migrate On/Off Does Not Allow Overwriting Static &lt;1Ch&gt; Mappings"
-permalink: kb/171/Q171794/
+permalink: /kb/171/Q171794/
 ---
 
 ## Q171794: Migrate On/Off Does Not Allow Overwriting Static &lt;1Ch&gt; Mappings

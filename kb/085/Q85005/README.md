@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85005: Wrap Title for Icons Appears to Fail in Windows 3.1"
-permalink: kb/085/Q85005/
+permalink: /kb/085/Q85005/
 ---
 
 ## Q85005: Wrap Title for Icons Appears to Fail in Windows 3.1

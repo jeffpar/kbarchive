@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158729: Characters Converted by Httpodbc.dll"
-permalink: kb/158/Q158729/
+permalink: /kb/158/Q158729/
 ---
 
 ## Q158729: Characters Converted by Httpodbc.dll

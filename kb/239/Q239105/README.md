@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239105: Jet 3.5 Text ISAM Allows User to Append Lines to System File"
-permalink: kb/239/Q239105/
+permalink: /kb/239/Q239105/
 ---
 
 ## Q239105: Jet 3.5 Text ISAM Allows User to Append Lines to System File

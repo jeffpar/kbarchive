@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221788: HOWTO: Get Localized Microsoft Components for Your Applications"
-permalink: kb/221/Q221788/
+permalink: /kb/221/Q221788/
 ---
 
 ## Q221788: HOWTO: Get Localized Microsoft Components for Your Applications

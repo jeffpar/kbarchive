@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180013: XADM: Determining Which Windows NT Account Is the Service Accoun"
-permalink: kb/180/Q180013/
+permalink: /kb/180/Q180013/
 ---
 
 ## Q180013: XADM: Determining Which Windows NT Account Is the Service Accoun

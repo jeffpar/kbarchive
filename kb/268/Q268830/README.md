@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268830: BUG: Floppy Drive Inaccessible on Computer with 512 MB of Memory"
-permalink: kb/268/Q268830/
+permalink: /kb/268/Q268830/
 ---
 
 ## Q268830: BUG: Floppy Drive Inaccessible on Computer with 512 MB of Memory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252624: XIMS: Internet Mail w. Illegal X-Mac-Creator Attribute Archived"
-permalink: kb/252/Q252624/
+permalink: /kb/252/Q252624/
 ---
 
 ## Q252624: XIMS: Internet Mail w. Illegal X-Mac-Creator Attribute Archived

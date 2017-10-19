@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122580: PC Win: Excel 5.0 Attachments Fail to Open"
-permalink: kb/122/Q122580/
+permalink: /kb/122/Q122580/
 ---
 
 ## Q122580: PC Win: Excel 5.0 Attachments Fail to Open

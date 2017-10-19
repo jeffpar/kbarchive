@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217336: TCP/IP Source Routing Feature Cannot Be Disabled"
-permalink: kb/217/Q217336/
+permalink: /kb/217/Q217336/
 ---
 
 ## Q217336: TCP/IP Source Routing Feature Cannot Be Disabled

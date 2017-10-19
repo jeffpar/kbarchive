@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117502: WFWG 3.11 RAS Error 652: Unrecognized Text Response..."
-permalink: kb/117/Q117502/
+permalink: /kb/117/Q117502/
 ---
 
 ## Q117502: WFWG 3.11 RAS Error 652: Unrecognized Text Response...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110467: PC Win: Description of 3.2 Setup Process"
-permalink: kb/110/Q110467/
+permalink: /kb/110/Q110467/
 ---
 
 ## Q110467: PC Win: Description of 3.2 Setup Process

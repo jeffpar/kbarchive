@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150053: Erratic Domain Logon from Windows 95 Dial-Up Networking"
-permalink: kb/150/Q150053/
+permalink: /kb/150/Q150053/
 ---
 
 ## Q150053: Erratic Domain Logon from Windows 95 Dial-Up Networking

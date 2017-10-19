@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170828: Unable to Update MSN Phone Book"
-permalink: kb/170/Q170828/
+permalink: /kb/170/Q170828/
 ---
 
 ## Q170828: Unable to Update MSN Phone Book

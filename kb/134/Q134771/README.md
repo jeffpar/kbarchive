@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134771: File Contents Changed After Running Compression Agent"
-permalink: kb/134/Q134771/
+permalink: /kb/134/Q134771/
 ---
 
 ## Q134771: File Contents Changed After Running Compression Agent

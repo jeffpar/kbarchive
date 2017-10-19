@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141912: PRB: AutoOpenTables/AutoCloseTables Ignored in Program"
-permalink: kb/141/Q141912/
+permalink: /kb/141/Q141912/
 ---
 
 ## Q141912: PRB: AutoOpenTables/AutoCloseTables Ignored in Program

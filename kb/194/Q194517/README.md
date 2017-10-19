@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194517: HOWTO: Use Creatable ADO Recordsets in Visual FoxPro"
-permalink: kb/194/Q194517/
+permalink: /kb/194/Q194517/
 ---
 
 ## Q194517: HOWTO: Use Creatable ADO Recordsets in Visual FoxPro

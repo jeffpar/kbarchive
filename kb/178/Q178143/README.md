@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178143: SMSINST: Installer Script Is Limited to 8,192 Lines"
-permalink: kb/178/Q178143/
+permalink: /kb/178/Q178143/
 ---
 
 ## Q178143: SMSINST: Installer Script Is Limited to 8,192 Lines

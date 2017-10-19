@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76759: Sound Blaster: 1 Digitized Voice Channel Feature"
-permalink: kb/076/Q76759/
+permalink: /kb/076/Q76759/
 ---
 
 ## Q76759: Sound Blaster: 1 Digitized Voice Channel Feature

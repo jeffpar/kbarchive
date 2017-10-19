@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118621: PC DirSync: Commonly Asked Questions"
-permalink: kb/118/Q118621/
+permalink: /kb/118/Q118621/
 ---
 
 ## Q118621: PC DirSync: Commonly Asked Questions

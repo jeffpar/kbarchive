@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137368: How to Disable NetBIOS Name Resolution on DNS"
-permalink: kb/137/Q137368/
+permalink: /kb/137/Q137368/
 ---
 
 ## Q137368: How to Disable NetBIOS Name Resolution on DNS

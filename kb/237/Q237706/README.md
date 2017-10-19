@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237706: Memory Leak May Lead to Loss of User Profile"
-permalink: kb/237/Q237706/
+permalink: /kb/237/Q237706/
 ---
 
 ## Q237706: Memory Leak May Lead to Loss of User Profile

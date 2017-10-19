@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123257: TCP/IP Socket Numbers Used by SNA Server 2.1"
-permalink: kb/123/Q123257/
+permalink: /kb/123/Q123257/
 ---
 
 ## Q123257: TCP/IP Socket Numbers Used by SNA Server 2.1

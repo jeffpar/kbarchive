@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101680: MHS: Documentation Error for Da Vinci Addressing"
-permalink: kb/101/Q101680/
+permalink: /kb/101/Q101680/
 ---
 
 ## Q101680: MHS: Documentation Error for Da Vinci Addressing

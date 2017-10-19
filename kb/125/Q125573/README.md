@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125573: Event Viewer Does Not Report System Log Errors Correctly"
-permalink: kb/125/Q125573/
+permalink: /kb/125/Q125573/
 ---
 
 ## Q125573: Event Viewer Does Not Report System Log Errors Correctly

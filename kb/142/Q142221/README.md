@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142221: Mac Encarta: Error Msg Starting Word Processor"
-permalink: kb/142/Q142221/
+permalink: /kb/142/Q142221/
 ---
 
 ## Q142221: Mac Encarta: Error Msg Starting Word Processor

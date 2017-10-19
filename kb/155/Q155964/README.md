@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155964: WD97: Column Paragraph Bordering May Print Unevenly"
-permalink: kb/155/Q155964/
+permalink: /kb/155/Q155964/
 ---
 
 ## Q155964: WD97: Column Paragraph Bordering May Print Unevenly

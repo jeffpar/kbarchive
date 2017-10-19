@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130645: How to Use DAO to Assign or View Permissions"
-permalink: kb/130/Q130645/
+permalink: /kb/130/Q130645/
 ---
 
 ## Q130645: How to Use DAO to Assign or View Permissions

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q127919: PC Ext: Err Msg: [002] Mail Was Received...Unknown Addresses"
-permalink: kb/127/Q127919/
+title: "Q127919: PC Ext: Err Msg: &#91;002&#93; Mail Was Received...Unknown Addresses"
+permalink: /kb/127/Q127919/
 ---
 
-## Q127919: PC Ext: Err Msg: [002] Mail Was Received...Unknown Addresses
+## Q127919: PC Ext: Err Msg: &#91;002&#93; Mail Was Received...Unknown Addresses
 
 	Article: Q127919
 	Product(s): Microsoft Mail For PC Networks

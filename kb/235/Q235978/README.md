@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235978: XGEN: Helpful Tips and Suggestions for Applying Exchange SPs"
-permalink: kb/235/Q235978/
+permalink: /kb/235/Q235978/
 ---
 
 ## Q235978: XGEN: Helpful Tips and Suggestions for Applying Exchange SPs

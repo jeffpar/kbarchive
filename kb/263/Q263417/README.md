@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263417: Unable to Make Access Changes for Custom Share Points Packages"
-permalink: kb/263/Q263417/
+permalink: /kb/263/Q263417/
 ---
 
 ## Q263417: Unable to Make Access Changes for Custom Share Points Packages

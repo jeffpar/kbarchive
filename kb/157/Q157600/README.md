@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157600: Golf: Installation Troubleshooting"
-permalink: kb/157/Q157600/
+permalink: /kb/157/Q157600/
 ---
 
 ## Q157600: Golf: Installation Troubleshooting

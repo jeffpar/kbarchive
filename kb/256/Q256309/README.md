@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256309: Site Reset May Lock Out SMSSERVER_&lt;xxx&gt; Account"
-permalink: kb/256/Q256309/
+permalink: /kb/256/Q256309/
 ---
 
 ## Q256309: Site Reset May Lock Out SMSSERVER_&lt;xxx&gt; Account

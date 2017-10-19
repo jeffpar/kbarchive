@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236818: VSE Support for OLE DB to DB2/ODBC"
-permalink: kb/236/Q236818/
+permalink: /kb/236/Q236818/
 ---
 
 ## Q236818: VSE Support for OLE DB to DB2/ODBC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103054: Spelling of Administrator Account Changes"
-permalink: kb/103/Q103054/
+permalink: /kb/103/Q103054/
 ---
 
 ## Q103054: Spelling of Administrator Account Changes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255837: SMS: Uninstalling Software Inventory Agent Leaves Registry Key"
-permalink: kb/255/Q255837/
+permalink: /kb/255/Q255837/
 ---
 
 ## Q255837: SMS: Uninstalling Software Inventory Agent Leaves Registry Key

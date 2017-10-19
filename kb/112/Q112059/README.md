@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112059: DOCERR: Cannot Break on Condition in PowerStation Debugger"
-permalink: kb/112/Q112059/
+permalink: /kb/112/Q112059/
 ---
 
 ## Q112059: DOCERR: Cannot Break on Condition in PowerStation Debugger

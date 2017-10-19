@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171404: INFO: ODBC Files Shipped with Visual C++ 5.0"
-permalink: kb/171/Q171404/
+permalink: /kb/171/Q171404/
 ---
 
 ## Q171404: INFO: ODBC Files Shipped with Visual C++ 5.0

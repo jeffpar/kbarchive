@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140882: HOWTO: Disable the ENTER Key BEEP in a VB Text Box"
-permalink: kb/140/Q140882/
+permalink: /kb/140/Q140882/
 ---
 
 ## Q140882: HOWTO: Disable the ENTER Key BEEP in a VB Text Box

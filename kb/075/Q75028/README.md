@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75028: Novell RPRINTER 1.21 Is Windows 3.0 Compatible"
-permalink: kb/075/Q75028/
+permalink: /kb/075/Q75028/
 ---
 
 ## Q75028: Novell RPRINTER 1.21 Is Windows 3.0 Compatible

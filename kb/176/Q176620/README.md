@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176620: WD97: Incorrect Result with Quotation Marks in Conditional Merge"
-permalink: kb/176/Q176620/
+permalink: /kb/176/Q176620/
 ---
 
 ## Q176620: WD97: Incorrect Result with Quotation Marks in Conditional Merge

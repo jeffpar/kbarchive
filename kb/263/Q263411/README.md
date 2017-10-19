@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263411: SMS: Can't Upgrade Client to SP2 w/ SMSMan from Logon Point"
-permalink: kb/263/Q263411/
+permalink: /kb/263/Q263411/
 ---
 
 ## Q263411: SMS: Can't Upgrade Client to SP2 w/ SMSMan from Logon Point

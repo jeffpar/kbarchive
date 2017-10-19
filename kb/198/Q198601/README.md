@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198601: WLBS Convergence Event Log Appears As Comma-Delimited or Binary"
-permalink: kb/198/Q198601/
+permalink: /kb/198/Q198601/
 ---
 
 ## Q198601: WLBS Convergence Event Log Appears As Comma-Delimited or Binary

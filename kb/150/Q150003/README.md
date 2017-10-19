@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150003: FIX: &#95;&#95;vfptr Elements Are Not Properly Displayed in Debugger"
-permalink: kb/150/Q150003/
+permalink: /kb/150/Q150003/
 ---
 
 ## Q150003: FIX: &#95;&#95;vfptr Elements Are Not Properly Displayed in Debugger

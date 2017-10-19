@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180494: BUG: Private Variables in a Module Are Public"
-permalink: kb/180/Q180494/
+permalink: /kb/180/Q180494/
 ---
 
 ## Q180494: BUG: Private Variables in a Module Are Public

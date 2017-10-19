@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195407: INFO: FoxTools Functions That Have Been Incorporated Into VFP 6"
-permalink: kb/195/Q195407/
+permalink: /kb/195/Q195407/
 ---
 
 ## Q195407: INFO: FoxTools Functions That Have Been Incorporated Into VFP 6

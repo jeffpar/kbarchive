@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239575: Err Msg: STOP: 0X00002B PANIC_STACK_SWITCH"
-permalink: kb/239/Q239575/
+permalink: /kb/239/Q239575/
 ---
 
 ## Q239575: Err Msg: STOP: 0X00002B PANIC_STACK_SWITCH

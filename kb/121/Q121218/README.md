@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121218: FIX: pvarResult Should Be NULL When vtRet==VT_EMPTY"
-permalink: kb/121/Q121218/
+permalink: /kb/121/Q121218/
 ---
 
 ## Q121218: FIX: pvarResult Should Be NULL When vtRet==VT_EMPTY

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119705: Windows Sound System and ASPI4DOS Causes Windows to Hang"
-permalink: kb/119/Q119705/
+permalink: /kb/119/Q119705/
 ---
 
 ## Q119705: Windows Sound System and ASPI4DOS Causes Windows to Hang

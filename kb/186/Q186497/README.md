@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186497: Do Not Install Active Desktop on Terminal Server"
-permalink: kb/186/Q186497/
+permalink: /kb/186/Q186497/
 ---
 
 ## Q186497: Do Not Install Active Desktop on Terminal Server

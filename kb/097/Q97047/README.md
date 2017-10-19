@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97047: PC WRmt: Network List Shows Blank Line for Current Postoffice"
-permalink: kb/097/Q97047/
+permalink: /kb/097/Q97047/
 ---
 
 ## Q97047: PC WRmt: Network List Shows Blank Line for Current Postoffice

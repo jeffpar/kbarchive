@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93314: OK, Browse Buttons Disabled in File Manager Associate Option"
-permalink: kb/093/Q93314/
+permalink: /kb/093/Q93314/
 ---
 
 ## Q93314: OK, Browse Buttons Disabled in File Manager Associate Option

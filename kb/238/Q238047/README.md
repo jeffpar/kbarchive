@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238047: &quot;Insufficient Hard Disk Space to Install Natural Language Query&quot;"
-permalink: kb/238/Q238047/
+permalink: /kb/238/Q238047/
 ---
 
 ## Q238047: &quot;Insufficient Hard Disk Space to Install Natural Language Query&quot;

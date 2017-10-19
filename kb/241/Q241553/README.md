@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241553: XFOR: Migrated Msg Not Delivered for Migrated cc:Mail User"
-permalink: kb/241/Q241553/
+permalink: /kb/241/Q241553/
 ---
 
 ## Q241553: XFOR: Migrated Msg Not Delivered for Migrated cc:Mail User

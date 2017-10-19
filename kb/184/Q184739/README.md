@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184739: INFO: Where to Obtain the Script Control"
-permalink: kb/184/Q184739/
+permalink: /kb/184/Q184739/
 ---
 
 ## Q184739: INFO: Where to Obtain the Script Control

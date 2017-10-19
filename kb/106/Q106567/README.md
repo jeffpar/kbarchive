@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106567: BUG: RUNQQ Generates DX1420 for MS-DOS Extended Tools"
-permalink: kb/106/Q106567/
+permalink: /kb/106/Q106567/
 ---
 
 ## Q106567: BUG: RUNQQ Generates DX1420 for MS-DOS Extended Tools

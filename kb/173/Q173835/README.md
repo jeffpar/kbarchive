@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173835: Learn C Now Includes 5.25&quot; Disks Only"
-permalink: kb/173/Q173835/
+permalink: /kb/173/Q173835/
 ---
 
 ## Q173835: Learn C Now Includes 5.25&quot; Disks Only

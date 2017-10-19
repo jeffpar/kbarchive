@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242200: TPU: Setup Continues Even with Insufficient Disk Space"
-permalink: kb/242/Q242200/
+permalink: /kb/242/Q242200/
 ---
 
 ## Q242200: TPU: Setup Continues Even with Insufficient Disk Space

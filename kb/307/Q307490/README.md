@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307490: Authoring MOM Reports With Access 2002 Is Not Recommended"
-permalink: kb/307/Q307490/
+permalink: /kb/307/Q307490/
 ---
 
 ## Q307490: Authoring MOM Reports With Access 2002 Is Not Recommended

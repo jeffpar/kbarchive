@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198858: BUG: Cannot Do Inserts to Oracle Tables With Mixed Case Column N"
-permalink: kb/198/Q198858/
+permalink: /kb/198/Q198858/
 ---
 
 ## Q198858: BUG: Cannot Do Inserts to Oracle Tables With Mixed Case Column N

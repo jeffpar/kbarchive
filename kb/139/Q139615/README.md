@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139615: Blank Screen May Be Caused By Corrupt Video Driver"
-permalink: kb/139/Q139615/
+permalink: /kb/139/Q139615/
 ---
 
 ## Q139615: Blank Screen May Be Caused By Corrupt Video Driver

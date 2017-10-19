@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145767: Problems Accessing Shared CD-ROM"
-permalink: kb/145/Q145767/
+permalink: /kb/145/Q145767/
 ---
 
 ## Q145767: Problems Accessing Shared CD-ROM

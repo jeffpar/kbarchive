@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107417: PRB: &quot;Error Creating OLE Object&quot; with APPEND GENERAL"
-permalink: kb/107/Q107417/
+permalink: /kb/107/Q107417/
 ---
 
 ## Q107417: PRB: &quot;Error Creating OLE Object&quot; with APPEND GENERAL

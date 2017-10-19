@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81984: Simply Accounting Needs Update to Work with Windows 3.1"
-permalink: kb/081/Q81984/
+permalink: /kb/081/Q81984/
 ---
 
 ## Q81984: Simply Accounting Needs Update to Work with Windows 3.1

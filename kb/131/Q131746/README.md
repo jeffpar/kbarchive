@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131746: Cannot Start TAPI-Aware Programs"
-permalink: kb/131/Q131746/
+permalink: /kb/131/Q131746/
 ---
 
 ## Q131746: Cannot Start TAPI-Aware Programs

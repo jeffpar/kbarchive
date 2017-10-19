@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192051: LDAP Does Not Authenticate on French WinNT Due to Encryption"
-permalink: kb/192/Q192051/
+permalink: /kb/192/Q192051/
 ---
 
 ## Q192051: LDAP Does Not Authenticate on French WinNT Due to Encryption

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73405: DOSKEY Macros Supersede Internal Commands"
-permalink: kb/073/Q73405/
+permalink: /kb/073/Q73405/
 ---
 
 ## Q73405: DOSKEY Macros Supersede Internal Commands

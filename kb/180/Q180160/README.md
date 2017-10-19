@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180160: XCLN: Inbox, Properties Does Not Work After WinNT 4.0 Upgrade"
-permalink: kb/180/Q180160/
+permalink: /kb/180/Q180160/
 ---
 
 ## Q180160: XCLN: Inbox, Properties Does Not Work After WinNT 4.0 Upgrade

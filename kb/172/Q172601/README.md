@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172601: Known Issues and Alternatives to Mailsrv Utility"
-permalink: kb/172/Q172601/
+permalink: /kb/172/Q172601/
 ---
 
 ## Q172601: Known Issues and Alternatives to Mailsrv Utility

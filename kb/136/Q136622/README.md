@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136622: RPC Applications Hang: Computer Name Greater Than 15 Characters"
-permalink: kb/136/Q136622/
+permalink: /kb/136/Q136622/
 ---
 
 ## Q136622: RPC Applications Hang: Computer Name Greater Than 15 Characters

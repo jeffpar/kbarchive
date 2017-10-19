@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228994: Smss.exe Does Not Resolve Forward References in Environment"
-permalink: kb/228/Q228994/
+permalink: /kb/228/Q228994/
 ---
 
 ## Q228994: Smss.exe Does Not Resolve Forward References in Environment

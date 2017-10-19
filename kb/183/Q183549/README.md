@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183549: DBCS Parameters Not Allowed When Importing COBOL"
-permalink: kb/183/Q183549/
+permalink: /kb/183/Q183549/
 ---
 
 ## Q183549: DBCS Parameters Not Allowed When Importing COBOL

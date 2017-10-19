@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182726: WD97: Save Preview Picture Setting Is Document Specific"
-permalink: kb/182/Q182726/
+permalink: /kb/182/Q182726/
 ---
 
 ## Q182726: WD97: Save Preview Picture Setting Is Document Specific

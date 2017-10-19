@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242776: INFO: Redistribute Files with a Windows 2000 Migration DLL"
-permalink: kb/242/Q242776/
+permalink: /kb/242/Q242776/
 ---
 
 ## Q242776: INFO: Redistribute Files with a Windows 2000 Migration DLL

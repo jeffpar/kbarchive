@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152942: XADM: Slow Intra-site Directory Replication Between Servers"
-permalink: kb/152/Q152942/
+permalink: /kb/152/Q152942/
 ---
 
 ## Q152942: XADM: Slow Intra-site Directory Replication Between Servers

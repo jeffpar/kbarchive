@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q212905: SMS: Configuring and Suppressing SMS 2.0 Client Agent Messages"
-permalink: kb/212/Q212905/
+permalink: /kb/212/Q212905/
 ---
 
 ## Q212905: SMS: Configuring and Suppressing SMS 2.0 Client Agent Messages

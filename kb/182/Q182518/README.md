@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182518: XADM: Exchange Server Setup.log File Is Unreadable In Wordpad"
-permalink: kb/182/Q182518/
+permalink: /kb/182/Q182518/
 ---
 
 ## Q182518: XADM: Exchange Server Setup.log File Is Unreadable In Wordpad

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186411: SMS: Secondary Sites Do Not Get WinNT 4.0 Video Drivers"
-permalink: kb/186/Q186411/
+permalink: /kb/186/Q186411/
 ---
 
 ## Q186411: SMS: Secondary Sites Do Not Get WinNT 4.0 Video Drivers

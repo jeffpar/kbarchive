@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185190: WD97: Find/Replace Macros Cannot Find Wingdings Characters"
-permalink: kb/185/Q185190/
+permalink: /kb/185/Q185190/
 ---
 
 ## Q185190: WD97: Find/Replace Macros Cannot Find Wingdings Characters

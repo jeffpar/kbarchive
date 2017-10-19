@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217042: Dump Discovery Data Tool Views Discovery Data from the Client"
-permalink: kb/217/Q217042/
+permalink: /kb/217/Q217042/
 ---
 
 ## Q217042: Dump Discovery Data Tool Views Discovery Data from the Client

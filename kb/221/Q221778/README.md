@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221778: XADM: Explanation of Various Types Used in Exchange PF Replicati"
-permalink: kb/221/Q221778/
+permalink: /kb/221/Q221778/
 ---
 
 ## Q221778: XADM: Explanation of Various Types Used in Exchange PF Replicati

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224824: Error Messsage: STOP 0xA in SYMC810.SYS"
-permalink: kb/224/Q224824/
+permalink: /kb/224/Q224824/
 ---
 
 ## Q224824: Error Messsage: STOP 0xA in SYMC810.SYS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171524: FIX: Ambiguous Names Generate Incorrect Error Message"
-permalink: kb/171/Q171524/
+permalink: /kb/171/Q171524/
 ---
 
 ## Q171524: FIX: Ambiguous Names Generate Incorrect Error Message

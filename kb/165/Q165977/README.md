@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165977: WD97: StoryRanges Does Not Return Text Box Text in Header/Footer"
-permalink: kb/165/Q165977/
+permalink: /kb/165/Q165977/
 ---
 
 ## Q165977: WD97: StoryRanges Does Not Return Text Box Text in Header/Footer

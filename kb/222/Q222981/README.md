@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222981: SMS: Setup Cannot Remove SMS 2.0 Components"
-permalink: kb/222/Q222981/
+permalink: /kb/222/Q222981/
 ---
 
 ## Q222981: SMS: Setup Cannot Remove SMS 2.0 Components

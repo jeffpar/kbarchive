@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221637: FIX: Form Wizard Error with Maximum Design Area Set to (None)"
-permalink: kb/221/Q221637/
+permalink: /kb/221/Q221637/
 ---
 
 ## Q221637: FIX: Form Wizard Error with Maximum Design Area Set to (None)

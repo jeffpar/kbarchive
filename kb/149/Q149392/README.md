@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149392: HOWTO: Using the DAO SDK dbDao Classes with Visual C++ 4.x"
-permalink: kb/149/Q149392/
+permalink: /kb/149/Q149392/
 ---
 
 ## Q149392: HOWTO: Using the DAO SDK dbDao Classes with Visual C++ 4.x

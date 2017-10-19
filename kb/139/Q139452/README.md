@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139452: Computer BIOS and Windows NT Daylight Savings Time Settings"
-permalink: kb/139/Q139452/
+permalink: /kb/139/Q139452/
 ---
 
 ## Q139452: Computer BIOS and Windows NT Daylight Savings Time Settings

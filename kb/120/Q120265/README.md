@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120265: Using the Diamond Viper Video Card with Space Simulator"
-permalink: kb/120/Q120265/
+permalink: /kb/120/Q120265/
 ---
 
 ## Q120265: Using the Diamond Viper Video Card with Space Simulator

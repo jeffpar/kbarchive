@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256978: Bandwidth Leak with IEEE 1394 Video Capture"
-permalink: kb/256/Q256978/
+permalink: /kb/256/Q256978/
 ---
 
 ## Q256978: Bandwidth Leak with IEEE 1394 Video Capture

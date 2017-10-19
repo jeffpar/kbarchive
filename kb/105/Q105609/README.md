@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105609: MS-DOS 6.2 Step-Up (BBS) SETUP.BAT File"
-permalink: kb/105/Q105609/
+permalink: /kb/105/Q105609/
 ---
 
 ## Q105609: MS-DOS 6.2 Step-Up (BBS) SETUP.BAT File

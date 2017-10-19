@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96502: PC WSPlus: Resynchronizing Schedule+ After Network Name Change"
-permalink: kb/096/Q96502/
+permalink: /kb/096/Q96502/
 ---
 
 ## Q96502: PC WSPlus: Resynchronizing Schedule+ After Network Name Change

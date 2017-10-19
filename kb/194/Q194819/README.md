@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194819: PC DirSync: Import Hangs when Processing Srvtrans.glb"
-permalink: kb/194/Q194819/
+permalink: /kb/194/Q194819/
 ---
 
 ## Q194819: PC DirSync: Import Hangs when Processing Srvtrans.glb

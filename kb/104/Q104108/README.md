@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104108: PC Win: Messages with Same Time Stamp Are Sorted Incorrectly"
-permalink: kb/104/Q104108/
+permalink: /kb/104/Q104108/
 ---
 
 ## Q104108: PC Win: Messages with Same Time Stamp Are Sorted Incorrectly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180053: SNA Server Access Violation in Function S1pimcrc"
-permalink: kb/180/Q180053/
+permalink: /kb/180/Q180053/
 ---
 
 ## Q180053: SNA Server Access Violation in Function S1pimcrc

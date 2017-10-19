@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110544: Crop Duster Summary Appears in Other Situations"
-permalink: kb/110/Q110544/
+permalink: /kb/110/Q110544/
 ---
 
 ## Q110544: Crop Duster Summary Appears in Other Situations

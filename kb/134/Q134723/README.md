@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134723: PRB: Datasource Name Too Long Error as Establishing Connection"
-permalink: kb/134/Q134723/
+permalink: /kb/134/Q134723/
 ---
 
 ## Q134723: PRB: Datasource Name Too Long Error as Establishing Connection

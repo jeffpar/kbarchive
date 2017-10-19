@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171078: SnaBase Fails to Start Using Novell NetWare Client"
-permalink: kb/171/Q171078/
+permalink: /kb/171/Q171078/
 ---
 
 ## Q171078: SnaBase Fails to Start Using Novell NetWare Client

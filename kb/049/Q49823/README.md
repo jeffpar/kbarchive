@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49823: PRB: Inconsistent Use of fscanf %x.xf Formatting"
-permalink: kb/049/Q49823/
+permalink: /kb/049/Q49823/
 ---
 
 ## Q49823: PRB: Inconsistent Use of fscanf %x.xf Formatting

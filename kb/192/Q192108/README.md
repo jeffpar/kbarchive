@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192108: FIX: CUSTOMWZ Sample Partially Overwrites Custom AppWizard Code"
-permalink: kb/192/Q192108/
+permalink: /kb/192/Q192108/
 ---
 
 ## Q192108: FIX: CUSTOMWZ Sample Partially Overwrites Custom AppWizard Code

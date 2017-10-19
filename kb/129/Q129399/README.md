@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129399: HOWTO: How to Convert FoxPro 3.0 Tables to FoxPro 2.x Format"
-permalink: kb/129/Q129399/
+permalink: /kb/129/Q129399/
 ---
 
 ## Q129399: HOWTO: How to Convert FoxPro 3.0 Tables to FoxPro 2.x Format

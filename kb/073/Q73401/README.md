@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73401: FIX: Value of @FileName Truncated If File Has Short Extension"
-permalink: kb/073/Q73401/
+permalink: /kb/073/Q73401/
 ---
 
 ## Q73401: FIX: Value of @FileName Truncated If File Has Short Extension

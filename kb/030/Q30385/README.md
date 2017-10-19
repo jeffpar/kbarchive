@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q30385: FIX: MOV with Type Operator Generates Incorrect Opcodes"
-permalink: kb/030/Q30385/
+permalink: /kb/030/Q30385/
 ---
 
 ## Q30385: FIX: MOV with Type Operator Generates Incorrect Opcodes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178488: How to Configure CH Products Gaming Devices in Windows 95"
-permalink: kb/178/Q178488/
+permalink: /kb/178/Q178488/
 ---
 
 ## Q178488: How to Configure CH Products Gaming Devices in Windows 95

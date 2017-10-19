@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139140: Older Supra Modems May Not Work on Unitel Phone Lines"
-permalink: kb/139/Q139140/
+permalink: /kb/139/Q139140/
 ---
 
 ## Q139140: Older Supra Modems May Not Work on Unitel Phone Lines

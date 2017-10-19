@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195672: SP4 and SP5 Winlogon Problems with Old Entries in LMHosts"
-permalink: kb/195/Q195672/
+permalink: /kb/195/Q195672/
 ---
 
 ## Q195672: SP4 and SP5 Winlogon Problems with Old Entries in LMHosts

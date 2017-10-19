@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173960: Create Renewal Request Option Grayed Out in Key Manager"
-permalink: kb/173/Q173960/
+permalink: /kb/173/Q173960/
 ---
 
 ## Q173960: Create Renewal Request Option Grayed Out in Key Manager

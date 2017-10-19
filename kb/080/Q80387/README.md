@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80387: Deleting Partitions Can Reduce Usable Hard Disk Space"
-permalink: kb/080/Q80387/
+permalink: /kb/080/Q80387/
 ---
 
 ## Q80387: Deleting Partitions Can Reduce Usable Hard Disk Space

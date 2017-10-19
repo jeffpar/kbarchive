@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246037: XADM: Public Folders &amp; Deleted Item Recovery in Exchange Server"
-permalink: kb/246/Q246037/
+permalink: /kb/246/Q246037/
 ---
 
 ## Q246037: XADM: Public Folders &amp; Deleted Item Recovery in Exchange Server

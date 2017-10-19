@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326491: Microsoft Windows XP Power ToolKit Comments and Corrections"
-permalink: kb/326/Q326491/
+permalink: /kb/326/Q326491/
 ---
 
 ## Q326491: Microsoft Windows XP Power ToolKit Comments and Corrections

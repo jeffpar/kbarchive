@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148999: BUG: ON ERROR Not Called When Update Conflict Occurs in Grid"
-permalink: kb/148/Q148999/
+permalink: /kb/148/Q148999/
 ---
 
 ## Q148999: BUG: ON ERROR Not Called When Update Conflict Occurs in Grid

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184337: WD97: Cell Text Deleted After Converting File to HTML"
-permalink: kb/184/Q184337/
+permalink: /kb/184/Q184337/
 ---
 
 ## Q184337: WD97: Cell Text Deleted After Converting File to HTML

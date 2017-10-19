@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238947: FILE: Msadoce2.exe Installs ADO for Windows CE SDK"
-permalink: kb/238/Q238947/
+permalink: /kb/238/Q238947/
 ---
 
 ## Q238947: FILE: Msadoce2.exe Installs ADO for Windows CE SDK

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135841: PRB: List Box Does Not Respect NumberOfElements"
-permalink: kb/135/Q135841/
+permalink: /kb/135/Q135841/
 ---
 
 ## Q135841: PRB: List Box Does Not Respect NumberOfElements

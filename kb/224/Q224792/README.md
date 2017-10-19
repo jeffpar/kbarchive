@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224792: List of Bugs Fixed in Windows NT 4.0 Service Pack 1, 2, and 3"
-permalink: kb/224/Q224792/
+permalink: /kb/224/Q224792/
 ---
 
 ## Q224792: List of Bugs Fixed in Windows NT 4.0 Service Pack 1, 2, and 3

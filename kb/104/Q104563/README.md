@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104563: PC Win: Running Mail on PC-NFS 5.0"
-permalink: kb/104/Q104563/
+permalink: /kb/104/Q104563/
 ---
 
 ## Q104563: PC Win: Running Mail on PC-NFS 5.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99154: Ideas for Troubleshooting and Fine-tuning Throughput"
-permalink: kb/099/Q99154/
+permalink: /kb/099/Q99154/
 ---
 
 ## Q99154: Ideas for Troubleshooting and Fine-tuning Throughput

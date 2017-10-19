@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247943: XCLN: Err Mssg: Outlook Could Not Update Your Local Calendar"
-permalink: kb/247/Q247943/
+permalink: /kb/247/Q247943/
 ---
 
 ## Q247943: XCLN: Err Mssg: Outlook Could Not Update Your Local Calendar

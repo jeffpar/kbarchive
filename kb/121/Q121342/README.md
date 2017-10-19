@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121342: Z Order Problems in Space Simulator"
-permalink: kb/121/Q121342/
+permalink: /kb/121/Q121342/
 ---
 
 ## Q121342: Z Order Problems in Space Simulator

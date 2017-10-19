@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173831: MS Word 97 Advanced Topics Step by Step Comments and Corrections"
-permalink: kb/173/Q173831/
+permalink: /kb/173/Q173831/
 ---
 
 ## Q173831: MS Word 97 Advanced Topics Step by Step Comments and Corrections

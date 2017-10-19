@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150007: Failed FPNW Logon Attempt Maps to F:&#92;"
-permalink: kb/150/Q150007/
+permalink: /kb/150/Q150007/
 ---
 
 ## Q150007: Failed FPNW Logon Attempt Maps to F:&#92;

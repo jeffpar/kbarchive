@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171877: LU Creation Wizard Does Not Accept HEX Data When in HEX Mode"
-permalink: kb/171/Q171877/
+permalink: /kb/171/Q171877/
 ---
 
 ## Q171877: LU Creation Wizard Does Not Accept HEX Data When in HEX Mode

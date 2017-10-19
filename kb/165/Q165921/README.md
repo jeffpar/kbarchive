@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165921: Err Msg: The File 'S3.drv' on the Windows 95 CD-ROM Could Not..."
-permalink: kb/165/Q165921/
+permalink: /kb/165/Q165921/
 ---
 
 ## Q165921: Err Msg: The File 'S3.drv' on the Windows 95 CD-ROM Could Not...

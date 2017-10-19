@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173524: WINS Pull Partner Start Time Cannot Be Cleared"
-permalink: kb/173/Q173524/
+permalink: /kb/173/Q173524/
 ---
 
 ## Q173524: WINS Pull Partner Start Time Cannot Be Cleared

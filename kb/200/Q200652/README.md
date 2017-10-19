@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200652: SMS:Can't Install SMS 1.2 Administrator w/SMS 2.0 Administrator"
-permalink: kb/200/Q200652/
+permalink: /kb/200/Q200652/
 ---
 
 ## Q200652: SMS:Can't Install SMS 1.2 Administrator w/SMS 2.0 Administrator

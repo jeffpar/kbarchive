@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73412: MS-DOS Shell Shortcut Key and the Help Menu"
-permalink: kb/073/Q73412/
+permalink: /kb/073/Q73412/
 ---
 
 ## Q73412: MS-DOS Shell Shortcut Key and the Help Menu

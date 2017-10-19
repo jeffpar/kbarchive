@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135815: Cannot Connect to The Microsoft Network Using Calling Card"
-permalink: kb/135/Q135815/
+permalink: /kb/135/Q135815/
 ---
 
 ## Q135815: Cannot Connect to The Microsoft Network Using Calling Card

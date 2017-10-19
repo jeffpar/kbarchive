@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180794: How to Restore DNS Zones When Deleted from DNS Manager"
-permalink: kb/180/Q180794/
+permalink: /kb/180/Q180794/
 ---
 
 ## Q180794: How to Restore DNS Zones When Deleted from DNS Manager

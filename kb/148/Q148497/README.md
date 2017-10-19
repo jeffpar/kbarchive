@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148497: Computer Is Not Suspended When an MS-DOS Session Is Active"
-permalink: kb/148/Q148497/
+permalink: /kb/148/Q148497/
 ---
 
 ## Q148497: Computer Is Not Suspended When an MS-DOS Session Is Active

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72267: Determining the Mode Windows Is Running In"
-permalink: kb/072/Q72267/
+permalink: /kb/072/Q72267/
 ---
 
 ## Q72267: Determining the Mode Windows Is Running In

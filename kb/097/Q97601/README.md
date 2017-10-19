@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97601: Windows Fails to Run in 386 Enhanced Mode After Using MemMaker"
-permalink: kb/097/Q97601/
+permalink: /kb/097/Q97601/
 ---
 
 ## Q97601: Windows Fails to Run in 386 Enhanced Mode After Using MemMaker

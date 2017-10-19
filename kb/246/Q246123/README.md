@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246123: HOWTO: Add Web Projects to Multiple SourceSafe Databases"
-permalink: kb/246/Q246123/
+permalink: /kb/246/Q246123/
 ---
 
 ## Q246123: HOWTO: Add Web Projects to Multiple SourceSafe Databases

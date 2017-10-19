@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172554: WinNT Err: Stop 0xA in Netbt.sys on Windows NT 3.51"
-permalink: kb/172/Q172554/
+permalink: /kb/172/Q172554/
 ---
 
 ## Q172554: WinNT Err: Stop 0xA in Netbt.sys on Windows NT 3.51

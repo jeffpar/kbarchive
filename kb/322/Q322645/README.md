@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322645: Microsoft SQL Server 2000 Programming Step by Step Comments and"
-permalink: kb/322/Q322645/
+permalink: /kb/322/Q322645/
 ---
 
 ## Q322645: Microsoft SQL Server 2000 Programming Step by Step Comments and

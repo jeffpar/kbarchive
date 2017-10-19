@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110543: Flight Simulator: Floating Dynamic Scenery Objects"
-permalink: kb/110/Q110543/
+permalink: /kb/110/Q110543/
 ---
 
 ## Q110543: Flight Simulator: Floating Dynamic Scenery Objects

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145621: Banner Settings Not Saved for Captured NDS Printer with MSNDS"
-permalink: kb/145/Q145621/
+permalink: /kb/145/Q145621/
 ---
 
 ## Q145621: Banner Settings Not Saved for Captured NDS Printer with MSNDS

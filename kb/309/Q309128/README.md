@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309128: MechWarrior 4: Err Msg Connecting to Multiplayer Game"
-permalink: kb/309/Q309128/
+permalink: /kb/309/Q309128/
 ---
 
 ## Q309128: MechWarrior 4: Err Msg Connecting to Multiplayer Game

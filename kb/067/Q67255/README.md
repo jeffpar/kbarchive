@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67255: Gateway 2000 Problems Running Standard or 386 Enhanced Mode"
-permalink: kb/067/Q67255/
+permalink: /kb/067/Q67255/
 ---
 
 ## Q67255: Gateway 2000 Problems Running Standard or 386 Enhanced Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166555: XADM: Address Book Views Fail If Referenced Object Is Deleted"
-permalink: kb/166/Q166555/
+permalink: /kb/166/Q166555/
 ---
 
 ## Q166555: XADM: Address Book Views Fail If Referenced Object Is Deleted

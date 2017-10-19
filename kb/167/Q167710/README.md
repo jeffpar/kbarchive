@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167710: XCLN: POP and IMAP Security Issues"
-permalink: kb/167/Q167710/
+permalink: /kb/167/Q167710/
 ---
 
 ## Q167710: XCLN: POP and IMAP Security Issues

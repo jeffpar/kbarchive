@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127815: NWLink IPX Frame Corruption in Token Ring Network"
-permalink: kb/127/Q127815/
+permalink: /kb/127/Q127815/
 ---
 
 ## Q127815: NWLink IPX Frame Corruption in Token Ring Network

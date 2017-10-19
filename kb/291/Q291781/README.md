@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291781: &quot;Stop 0x50&quot; in IopReportResourceUsage"
-permalink: kb/291/Q291781/
+permalink: /kb/291/Q291781/
 ---
 
 ## Q291781: &quot;Stop 0x50&quot; in IopReportResourceUsage

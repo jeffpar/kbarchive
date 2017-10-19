@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147147: XCLN: Cannot Select Multiple Files to Attach to a New Message"
-permalink: kb/147/Q147147/
+permalink: /kb/147/Q147147/
 ---
 
 ## Q147147: XCLN: Cannot Select Multiple Files to Attach to a New Message

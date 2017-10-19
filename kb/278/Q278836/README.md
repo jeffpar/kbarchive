@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278836: ADSI GetObject Queries May Fail from ASP but Work from VBScript"
-permalink: kb/278/Q278836/
+permalink: /kb/278/Q278836/
 ---
 
 ## Q278836: ADSI GetObject Queries May Fail from ASP but Work from VBScript

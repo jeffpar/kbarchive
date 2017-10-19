@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155817: XIMS: Chinese MIME-encoded Attachments Corrupted by IMC"
-permalink: kb/155/Q155817/
+permalink: /kb/155/Q155817/
 ---
 
 ## Q155817: XIMS: Chinese MIME-encoded Attachments Corrupted by IMC

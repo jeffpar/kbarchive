@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140333: HOWTO: Add an Object to the New Object List"
-permalink: kb/140/Q140333/
+permalink: /kb/140/Q140333/
 ---
 
 ## Q140333: HOWTO: Add an Object to the New Object List

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171519: FIX: Removing Function Causes Binary Compatibility Error"
-permalink: kb/171/Q171519/
+permalink: /kb/171/Q171519/
 ---
 
 ## Q171519: FIX: Removing Function Causes Binary Compatibility Error

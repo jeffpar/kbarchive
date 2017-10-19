@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179131: Files Saved in the Temporary Folder on a ZAK Client Workstation"
-permalink: kb/179/Q179131/
+permalink: /kb/179/Q179131/
 ---
 
 ## Q179131: Files Saved in the Temporary Folder on a ZAK Client Workstation

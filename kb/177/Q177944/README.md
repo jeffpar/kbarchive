@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177944: XFOR: Incorrect Spacing in RTFHTML Messages w/ Outlook Express"
-permalink: kb/177/Q177944/
+permalink: /kb/177/Q177944/
 ---
 
 ## Q177944: XFOR: Incorrect Spacing in RTFHTML Messages w/ Outlook Express

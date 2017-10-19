@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165386: SNA Server Now Supports 15,000 3270 LUs and 1,250 APPC LUs"
-permalink: kb/165/Q165386/
+permalink: /kb/165/Q165386/
 ---
 
 ## Q165386: SNA Server Now Supports 15,000 3270 LUs and 1,250 APPC LUs

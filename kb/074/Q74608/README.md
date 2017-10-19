@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74608: INFO: When to Use WIN.INI or a Private INI File"
-permalink: kb/074/Q74608/
+permalink: /kb/074/Q74608/
 ---
 
 ## Q74608: INFO: When to Use WIN.INI or a Private INI File

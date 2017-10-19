@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153564: SMS: Admin UI Fails on Exit With an Application Error"
-permalink: kb/153/Q153564/
+permalink: /kb/153/Q153564/
 ---
 
 ## Q153564: SMS: Admin UI Fails on Exit With an Application Error

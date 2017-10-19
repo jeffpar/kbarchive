@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142818: Visual Basic Companion Products and Services Available"
-permalink: kb/142/Q142818/
+permalink: /kb/142/Q142818/
 ---
 
 ## Q142818: Visual Basic Companion Products and Services Available

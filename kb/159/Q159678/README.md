@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159678: WD97: Incorrect SectionPages or NumPages When Printed"
-permalink: kb/159/Q159678/
+permalink: /kb/159/Q159678/
 ---
 
 ## Q159678: WD97: Incorrect SectionPages or NumPages When Printed

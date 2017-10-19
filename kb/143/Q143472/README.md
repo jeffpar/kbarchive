@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143472: FPNW Blue Screens Accessing or Creating Folders with Long Paths"
-permalink: kb/143/Q143472/
+permalink: /kb/143/Q143472/
 ---
 
 ## Q143472: FPNW Blue Screens Accessing or Creating Folders with Long Paths

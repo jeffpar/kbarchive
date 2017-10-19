@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246792: ReleaseDC API Fails with Laststatus and Lasterror Error Messages"
-permalink: kb/246/Q246792/
+permalink: /kb/246/Q246792/
 ---
 
 ## Q246792: ReleaseDC API Fails with Laststatus and Lasterror Error Messages

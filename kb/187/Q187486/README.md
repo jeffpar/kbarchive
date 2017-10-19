@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187486: Cannot Close Window with Upper-Right X Button"
-permalink: kb/187/Q187486/
+permalink: /kb/187/Q187486/
 ---
 
 ## Q187486: Cannot Close Window with Upper-Right X Button

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214906: SMSINST: Colons Invalid in Path in Default Directory Text Box"
-permalink: kb/214/Q214906/
+permalink: /kb/214/Q214906/
 ---
 
 ## Q214906: SMSINST: Colons Invalid in Path in Default Directory Text Box

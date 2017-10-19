@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137575: Cannot Toggle NUMLOCK Key After Installing IntelliPoint v. 1.1"
-permalink: kb/137/Q137575/
+permalink: /kb/137/Q137575/
 ---
 
 ## Q137575: Cannot Toggle NUMLOCK Key After Installing IntelliPoint v. 1.1

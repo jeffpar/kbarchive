@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277560: Queries on the Contents Property Do Not return Hits for MSG File"
-permalink: kb/277/Q277560/
+permalink: /kb/277/Q277560/
 ---
 
 ## Q277560: Queries on the Contents Property Do Not return Hits for MSG File

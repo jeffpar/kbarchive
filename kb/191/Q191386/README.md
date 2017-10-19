@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191386: Considerations When Installing Link Services in SNA 4.0"
-permalink: kb/191/Q191386/
+permalink: /kb/191/Q191386/
 ---
 
 ## Q191386: Considerations When Installing Link Services in SNA 4.0

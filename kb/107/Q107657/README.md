@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107657: Writer: &quot;All Gone&quot; Tool Leaves Only One Page of Card"
-permalink: kb/107/Q107657/
+permalink: /kb/107/Q107657/
 ---
 
 ## Q107657: Writer: &quot;All Gone&quot; Tool Leaves Only One Page of Card

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135233: CONN: Connection Downstream Component Can Be Created Manually"
-permalink: kb/135/Q135233/
+permalink: /kb/135/Q135233/
 ---
 
 ## Q135233: CONN: Connection Downstream Component Can Be Created Manually

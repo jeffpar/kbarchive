@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141269: Windows 3.0 Shortcut Keys Work"
-permalink: kb/141/Q141269/
+permalink: /kb/141/Q141269/
 ---
 
 ## Q141269: Windows 3.0 Shortcut Keys Work

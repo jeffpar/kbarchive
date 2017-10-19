@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196226: SMS: Site Component Manager May Fail When Polling"
-permalink: kb/196/Q196226/
+permalink: /kb/196/Q196226/
 ---
 
 ## Q196226: SMS: Site Component Manager May Fail When Polling

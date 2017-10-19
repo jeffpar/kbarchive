@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172744: WD97: Custom Outline Numbered Preview Changes Location"
-permalink: kb/172/Q172744/
+permalink: /kb/172/Q172744/
 ---
 
 ## Q172744: WD97: Custom Outline Numbered Preview Changes Location

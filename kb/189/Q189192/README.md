@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189192: Accessibility Options Do Not Work Properly on Compaq Computers"
-permalink: kb/189/Q189192/
+permalink: /kb/189/Q189192/
 ---
 
 ## Q189192: Accessibility Options Do Not Work Properly on Compaq Computers

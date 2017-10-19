@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158862: Microsoft Mail PostOffice Icon Is Missing in Control Panel"
-permalink: kb/158/Q158862/
+permalink: /kb/158/Q158862/
 ---
 
 ## Q158862: Microsoft Mail PostOffice Icon Is Missing in Control Panel

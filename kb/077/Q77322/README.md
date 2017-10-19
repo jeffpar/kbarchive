@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77322: Err Msg: Cannot Load COMMAND, System Halted (with Novell)"
-permalink: kb/077/Q77322/
+permalink: /kb/077/Q77322/
 ---
 
 ## Q77322: Err Msg: Cannot Load COMMAND, System Halted (with Novell)

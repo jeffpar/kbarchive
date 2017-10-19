@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192003: BUG: Phantom MouseMove Events with a Transparent UserControl"
-permalink: kb/192/Q192003/
+permalink: /kb/192/Q192003/
 ---
 
 ## Q192003: BUG: Phantom MouseMove Events with a Transparent UserControl

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179563: SMS: WinNT UDP Remote Control Fails with Security Context Lost"
-permalink: kb/179/Q179563/
+permalink: /kb/179/Q179563/
 ---
 
 ## Q179563: SMS: WinNT UDP Remote Control Fails with Security Context Lost

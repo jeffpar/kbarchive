@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244773: 500-100.asp Returns &quot;Variable is Undefined&quot; Error When Session S"
-permalink: kb/244/Q244773/
+permalink: /kb/244/Q244773/
 ---
 
 ## Q244773: 500-100.asp Returns &quot;Variable is Undefined&quot; Error When Session S

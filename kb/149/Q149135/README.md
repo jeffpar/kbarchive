@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149135: BUG: Incorrect Custom/Complete Setup Size in Standard Edition"
-permalink: kb/149/Q149135/
+permalink: /kb/149/Q149135/
 ---
 
 ## Q149135: BUG: Incorrect Custom/Complete Setup Size in Standard Edition

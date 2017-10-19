@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99557: PRB: FoxPro Corruption Problems Fixed by Novell 3.11 Patches"
-permalink: kb/099/Q99557/
+permalink: /kb/099/Q99557/
 ---
 
 ## Q99557: PRB: FoxPro Corruption Problems Fixed by Novell 3.11 Patches

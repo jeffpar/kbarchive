@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300256: PRB: 3270 Display Through Terminal Server Shows Only Dots"
-permalink: kb/300/Q300256/
+permalink: /kb/300/Q300256/
 ---
 
 ## Q300256: PRB: 3270 Display Through Terminal Server Shows Only Dots

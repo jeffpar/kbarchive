@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318473: Verify Settings in Internet Protocol Properties"
-permalink: kb/318/Q318473/
+permalink: /kb/318/Q318473/
 ---
 
 ## Q318473: Verify Settings in Internet Protocol Properties

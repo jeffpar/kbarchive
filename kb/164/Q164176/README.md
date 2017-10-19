@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164176: Interoperability of WINS and Microsoft DNS"
-permalink: kb/164/Q164176/
+permalink: /kb/164/Q164176/
 ---
 
 ## Q164176: Interoperability of WINS and Microsoft DNS

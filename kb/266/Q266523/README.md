@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266523: Encarta 2001: Cannot Move Away from Web Center Screen"
-permalink: kb/266/Q266523/
+permalink: /kb/266/Q266523/
 ---
 
 ## Q266523: Encarta 2001: Cannot Move Away from Web Center Screen

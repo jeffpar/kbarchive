@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135937: DriveSpace 3 Compression May Change Filenames"
-permalink: kb/135/Q135937/
+permalink: /kb/135/Q135937/
 ---
 
 ## Q135937: DriveSpace 3 Compression May Change Filenames

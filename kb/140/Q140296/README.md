@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140296: How to Use a KeyPress Event in Lieu of ON KEY LABEL"
-permalink: kb/140/Q140296/
+permalink: /kb/140/Q140296/
 ---
 
 ## Q140296: How to Use a KeyPress Event in Lieu of ON KEY LABEL

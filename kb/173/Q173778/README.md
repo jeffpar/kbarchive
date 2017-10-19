@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173778: XWEB: HTTP/1.0 500 Server Error-The Account Is Currently Locked"
-permalink: kb/173/Q173778/
+permalink: /kb/173/Q173778/
 ---
 
 ## Q173778: XWEB: HTTP/1.0 500 Server Error-The Account Is Currently Locked

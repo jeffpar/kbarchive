@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161850: Userinit.exe Entry Point Not Found"
-permalink: kb/161/Q161850/
+permalink: /kb/161/Q161850/
 ---
 
 ## Q161850: Userinit.exe Entry Point Not Found

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201348: WINSOCK Accept() Returns Error 10022"
-permalink: kb/201/Q201348/
+permalink: /kb/201/Q201348/
 ---
 
 ## Q201348: WINSOCK Accept() Returns Error 10022

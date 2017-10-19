@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106708: How to Generate Unique Key Field Values"
-permalink: kb/106/Q106708/
+permalink: /kb/106/Q106708/
 ---
 
 ## Q106708: How to Generate Unique Key Field Values

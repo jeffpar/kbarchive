@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259158: XADM: How to Manually Remove Exchange Server 5.5 Completely"
-permalink: kb/259/Q259158/
+permalink: /kb/259/Q259158/
 ---
 
 ## Q259158: XADM: How to Manually Remove Exchange Server 5.5 Completely

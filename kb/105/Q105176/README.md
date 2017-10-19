@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105176: PC Win: Lotus 1-2-3 WYSIWYG Attachments"
-permalink: kb/105/Q105176/
+permalink: /kb/105/Q105176/
 ---
 
 ## Q105176: PC Win: Lotus 1-2-3 WYSIWYG Attachments

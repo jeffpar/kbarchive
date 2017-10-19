@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47519: Mac Wkst: Send Window Keyboard Shortcuts"
-permalink: kb/047/Q47519/
+permalink: /kb/047/Q47519/
 ---
 
 ## Q47519: Mac Wkst: Send Window Keyboard Shortcuts

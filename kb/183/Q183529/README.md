@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183529: XCLN: Schedule+ Free and Busy Connector Errors 1034 and 1047"
-permalink: kb/183/Q183529/
+permalink: /kb/183/Q183529/
 ---
 
 ## Q183529: XCLN: Schedule+ Free and Busy Connector Errors 1034 and 1047

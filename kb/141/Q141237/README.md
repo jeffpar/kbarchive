@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141237: Site Configuration Manager Does Not Start After System Reboot"
-permalink: kb/141/Q141237/
+permalink: /kb/141/Q141237/
 ---
 
 ## Q141237: Site Configuration Manager Does Not Start After System Reboot

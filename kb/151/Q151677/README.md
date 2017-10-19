@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151677: NWLink SPX Ignores Allocation Number Sent By Peer"
-permalink: kb/151/Q151677/
+permalink: /kb/151/Q151677/
 ---
 
 ## Q151677: NWLink SPX Ignores Allocation Number Sent By Peer

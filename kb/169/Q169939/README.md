@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169939: WD97: JPN: Word 95 Document May Not Convert Correctly"
-permalink: kb/169/Q169939/
+permalink: /kb/169/Q169939/
 ---
 
 ## Q169939: WD97: JPN: Word 95 Document May Not Convert Correctly

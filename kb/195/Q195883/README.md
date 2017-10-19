@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195883: 3270 EIS/FMI Applications Fail if RU size in BIND Set To 32 KB"
-permalink: kb/195/Q195883/
+permalink: /kb/195/Q195883/
 ---
 
 ## Q195883: 3270 EIS/FMI Applications Fail if RU size in BIND Set To 32 KB

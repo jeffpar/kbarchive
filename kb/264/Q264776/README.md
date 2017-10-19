@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264776: User Manager Returns &quot;Access Is Denied&quot; Message Concerning User"
-permalink: kb/264/Q264776/
+permalink: /kb/264/Q264776/
 ---
 
 ## Q264776: User Manager Returns &quot;Access Is Denied&quot; Message Concerning User

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192657: XADM: Missing Transaction Log Yields &quot;Unable to Find the File&quot;"
-permalink: kb/192/Q192657/
+permalink: /kb/192/Q192657/
 ---
 
 ## Q192657: XADM: Missing Transaction Log Yields &quot;Unable to Find the File&quot;

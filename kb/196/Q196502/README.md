@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196502: WD97: Sort Order Appears to Be Incorrect"
-permalink: kb/196/Q196502/
+permalink: /kb/196/Q196502/
 ---
 
 ## Q196502: WD97: Sort Order Appears to Be Incorrect

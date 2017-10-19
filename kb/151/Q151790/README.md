@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151790: XFOR: NDR with Diagnostic: 12 Erroneous Content Syntax"
-permalink: kb/151/Q151790/
+permalink: /kb/151/Q151790/
 ---
 
 ## Q151790: XFOR: NDR with Diagnostic: 12 Erroneous Content Syntax

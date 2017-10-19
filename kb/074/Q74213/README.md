@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74213: MS-DOS Shell: Select Across Directories Option"
-permalink: kb/074/Q74213/
+permalink: /kb/074/Q74213/
 ---
 
 ## Q74213: MS-DOS Shell: Select Across Directories Option

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94000: TrueType Font Pack 2 for Windows v.1 Disks (3.5 Inch, 1.44 MB)"
-permalink: kb/094/Q94000/
+permalink: /kb/094/Q94000/
 ---
 
 ## Q94000: TrueType Font Pack 2 for Windows v.1 Disks (3.5 Inch, 1.44 MB)

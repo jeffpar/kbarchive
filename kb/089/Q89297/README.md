@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89297: WFWG Err Msg: &quot;Error Occurred While Loading VNETSUP...&quot;"
-permalink: kb/089/Q89297/
+permalink: /kb/089/Q89297/
 ---
 
 ## Q89297: WFWG Err Msg: &quot;Error Occurred While Loading VNETSUP...&quot;

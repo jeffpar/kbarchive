@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243911: WD97: Error or Word Quits When Trying to Split Table Cells"
-permalink: kb/243/Q243911/
+permalink: /kb/243/Q243911/
 ---
 
 ## Q243911: WD97: Error or Word Quits When Trying to Split Table Cells

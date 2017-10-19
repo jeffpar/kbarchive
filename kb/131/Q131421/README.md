@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131421: INF: List of Windows International Code Pages for Windows 3.1"
-permalink: kb/131/Q131421/
+permalink: /kb/131/Q131421/
 ---
 
 ## Q131421: INF: List of Windows International Code Pages for Windows 3.1

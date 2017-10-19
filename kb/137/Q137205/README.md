@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137205: Recurring Meetings Booked Incorrectly in Schedule+ 1.0"
-permalink: kb/137/Q137205/
+permalink: /kb/137/Q137205/
 ---
 
 ## Q137205: Recurring Meetings Booked Incorrectly in Schedule+ 1.0

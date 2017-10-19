@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257423: XFOR: Meeting Request NDR When Sent to Multiple Recipients"
-permalink: kb/257/Q257423/
+permalink: /kb/257/Q257423/
 ---
 
 ## Q257423: XFOR: Meeting Request NDR When Sent to Multiple Recipients

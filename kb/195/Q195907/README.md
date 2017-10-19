@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195907: PRB: Cannot Update VFP Free Table Using FoxPro ODBC ISAM Drive"
-permalink: kb/195/Q195907/
+permalink: /kb/195/Q195907/
 ---
 
 ## Q195907: PRB: Cannot Update VFP Free Table Using FoxPro ODBC ISAM Drive

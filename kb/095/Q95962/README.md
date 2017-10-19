@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95962: PC Win: GP Fault in Module AB.EXE Using Mail w/ Above &amp; Beyond"
-permalink: kb/095/Q95962/
+permalink: /kb/095/Q95962/
 ---
 
 ## Q95962: PC Win: GP Fault in Module AB.EXE Using Mail w/ Above &amp; Beyond

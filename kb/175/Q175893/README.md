@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175893: LexMark Monitor Hangs Spoolss and Creates 100 Percent CPU Usage"
-permalink: kb/175/Q175893/
+permalink: /kb/175/Q175893/
 ---
 
 ## Q175893: LexMark Monitor Hangs Spoolss and Creates 100 Percent CPU Usage

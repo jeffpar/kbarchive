@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165773: WD97: Protected Document Stuck in Normal View After You Edit It"
-permalink: kb/165/Q165773/
+permalink: /kb/165/Q165773/
 ---
 
 ## Q165773: WD97: Protected Document Stuck in Normal View After You Edit It

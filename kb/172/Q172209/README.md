@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172209: Bookshelf: IntelliMouse Features Supported in Some Versions"
-permalink: kb/172/Q172209/
+permalink: /kb/172/Q172209/
 ---
 
 ## Q172209: Bookshelf: IntelliMouse Features Supported in Some Versions

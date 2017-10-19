@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194597: WD97: IF Fields Not Visible in Mail Merge Documents"
-permalink: kb/194/Q194597/
+permalink: /kb/194/Q194597/
 ---
 
 ## Q194597: WD97: IF Fields Not Visible in Mail Merge Documents

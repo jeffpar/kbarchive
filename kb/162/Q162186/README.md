@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162186: SCSISCAN Does Not Detect Multiple Scanners"
-permalink: kb/162/Q162186/
+permalink: /kb/162/Q162186/
 ---
 
 ## Q162186: SCSISCAN Does Not Detect Multiple Scanners

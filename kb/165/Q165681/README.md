@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165681: INFO: Visual C++ 5.0 Readme, Build Issues"
-permalink: kb/165/Q165681/
+permalink: /kb/165/Q165681/
 ---
 
 ## Q165681: INFO: Visual C++ 5.0 Readme, Build Issues

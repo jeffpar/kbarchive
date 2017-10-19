@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170884: HOWTO: Sort a ListView Control by Date"
-permalink: kb/170/Q170884/
+permalink: /kb/170/Q170884/
 ---
 
 ## Q170884: HOWTO: Sort a ListView Control by Date

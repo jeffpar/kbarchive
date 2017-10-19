@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173376: &quot;Stop 0x00000050&quot; Starting Windows NT 4.0"
-permalink: kb/173/Q173376/
+permalink: /kb/173/Q173376/
 ---
 
 ## Q173376: &quot;Stop 0x00000050&quot; Starting Windows NT 4.0

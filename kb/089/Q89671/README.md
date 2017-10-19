@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89671: Converting a FoxBASE File to FoxBASE+ Format"
-permalink: kb/089/Q89671/
+permalink: /kb/089/Q89671/
 ---
 
 ## Q89671: Converting a FoxBASE File to FoxBASE+ Format

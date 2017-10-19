@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271967: Select Active Directory Containers to Discover Box Unavailable"
-permalink: kb/271/Q271967/
+permalink: /kb/271/Q271967/
 ---
 
 ## Q271967: Select Active Directory Containers to Discover Box Unavailable

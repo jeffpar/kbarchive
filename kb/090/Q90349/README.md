@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90349: The Difference Between Read Only and Full Access in Clipbook"
-permalink: kb/090/Q90349/
+permalink: /kb/090/Q90349/
 ---
 
 ## Q90349: The Difference Between Read Only and Full Access in Clipbook

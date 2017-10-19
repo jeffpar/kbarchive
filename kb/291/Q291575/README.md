@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291575: HOWTO: Use Visual Basic to Locate CD-ROM Drives"
-permalink: kb/291/Q291575/
+permalink: /kb/291/Q291575/
 ---
 
 ## Q291575: HOWTO: Use Visual Basic to Locate CD-ROM Drives

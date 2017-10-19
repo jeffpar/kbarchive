@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259877: &quot;Stop 0x1E&quot; on Terminal Server During Session Shutdown"
-permalink: kb/259/Q259877/
+permalink: /kb/259/Q259877/
 ---
 
 ## Q259877: &quot;Stop 0x1E&quot; on Terminal Server During Session Shutdown

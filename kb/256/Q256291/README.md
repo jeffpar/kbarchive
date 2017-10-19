@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256291: SMS: Mandatory Advertisement Requiring Logged-On UserMay Not Run"
-permalink: kb/256/Q256291/
+permalink: /kb/256/Q256291/
 ---
 
 ## Q256291: SMS: Mandatory Advertisement Requiring Logged-On UserMay Not Run

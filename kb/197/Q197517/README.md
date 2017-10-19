@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197517: Handle Leak Occurs When Using RasDial API"
-permalink: kb/197/Q197517/
+permalink: /kb/197/Q197517/
 ---
 
 ## Q197517: Handle Leak Occurs When Using RasDial API

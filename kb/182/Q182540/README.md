@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182540: WinNT x86 MPS HAL Can Fail To Map System Relative IRQs"
-permalink: kb/182/Q182540/
+permalink: /kb/182/Q182540/
 ---
 
 ## Q182540: WinNT x86 MPS HAL Can Fail To Map System Relative IRQs

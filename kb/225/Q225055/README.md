@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225055: Event 15 Logged When Attempting to Print With SNA Print Server"
-permalink: kb/225/Q225055/
+permalink: /kb/225/Q225055/
 ---
 
 ## Q225055: Event 15 Logged When Attempting to Print With SNA Print Server

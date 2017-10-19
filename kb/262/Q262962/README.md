@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262962: Cluster Service Does Not Start with Event ID 7000"
-permalink: kb/262/Q262962/
+permalink: /kb/262/Q262962/
 ---
 
 ## Q262962: Cluster Service Does Not Start with Event ID 7000

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179920: AOE: Error Message: Could Not Initialize Graphics System"
-permalink: kb/179/Q179920/
+permalink: /kb/179/Q179920/
 ---
 
 ## Q179920: AOE: Error Message: Could Not Initialize Graphics System

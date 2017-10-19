@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151759: DOCERR: Find/Load FoxTools API Library Wrong in FoxTools.hlp"
-permalink: kb/151/Q151759/
+permalink: /kb/151/Q151759/
 ---
 
 ## Q151759: DOCERR: Find/Load FoxTools API Library Wrong in FoxTools.hlp

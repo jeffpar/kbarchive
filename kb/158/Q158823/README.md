@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158823: FIX: Operator/Operand Type Mismatch Executing SQL with IIF"
-permalink: kb/158/Q158823/
+permalink: /kb/158/Q158823/
 ---
 
 ## Q158823: FIX: Operator/Operand Type Mismatch Executing SQL with IIF

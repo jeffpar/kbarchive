@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185383: How to Remove IIS 4.0 and Reinstall IIS 3.0"
-permalink: kb/185/Q185383/
+permalink: /kb/185/Q185383/
 ---
 
 ## Q185383: How to Remove IIS 4.0 and Reinstall IIS 3.0

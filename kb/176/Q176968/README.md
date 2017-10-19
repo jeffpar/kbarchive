@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176968: Error Message: A Kernel File Is Missing from the Disk"
-permalink: kb/176/Q176968/
+permalink: /kb/176/Q176968/
 ---
 
 ## Q176968: Error Message: A Kernel File Is Missing from the Disk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279428: XADM: Can't Modify Meeting Request Originating from Deleted User"
-permalink: kb/279/Q279428/
+permalink: /kb/279/Q279428/
 ---
 
 ## Q279428: XADM: Can't Modify Meeting Request Originating from Deleted User

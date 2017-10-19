@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59447: Mac Wkst: Sending Mail, Communication Error on Mac Portable"
-permalink: kb/059/Q59447/
+permalink: /kb/059/Q59447/
 ---
 
 ## Q59447: Mac Wkst: Sending Mail, Communication Error on Mac Portable

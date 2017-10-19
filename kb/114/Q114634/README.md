@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114634: Bookshelf 1994: Video Problems with Cirrus Logic Cards/Drivers"
-permalink: kb/114/Q114634/
+permalink: /kb/114/Q114634/
 ---
 
 ## Q114634: Bookshelf 1994: Video Problems with Cirrus Logic Cards/Drivers

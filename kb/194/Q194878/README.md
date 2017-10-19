@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194878: Error: &quot;No Transport Provider&quot; Trying to Send Mail"
-permalink: kb/194/Q194878/
+permalink: /kb/194/Q194878/
 ---
 
 ## Q194878: Error: &quot;No Transport Provider&quot; Trying to Send Mail

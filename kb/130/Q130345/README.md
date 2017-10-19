@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130345: How to Retreive Database Properties in a Program"
-permalink: kb/130/Q130345/
+permalink: /kb/130/Q130345/
 ---
 
 ## Q130345: How to Retreive Database Properties in a Program

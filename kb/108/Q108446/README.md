@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108446: Writer 1: After Saving in Adult Mode, Can't Save Again"
-permalink: kb/108/Q108446/
+permalink: /kb/108/Q108446/
 ---
 
 ## Q108446: Writer 1: After Saving in Adult Mode, Can't Save Again

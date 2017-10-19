@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270783: ELL: Cannot Switch Between Menus By Using the Arrow Keys"
-permalink: kb/270/Q270783/
+permalink: /kb/270/Q270783/
 ---
 
 ## Q270783: ELL: Cannot Switch Between Menus By Using the Arrow Keys

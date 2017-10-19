@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128543: Windows Won't Restart or Restarts With Distorted Video"
-permalink: kb/128/Q128543/
+permalink: /kb/128/Q128543/
 ---
 
 ## Q128543: Windows Won't Restart or Restarts With Distorted Video

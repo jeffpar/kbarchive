@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164197: Writer 2: How to Remove Clip Art from My Clipart"
-permalink: kb/164/Q164197/
+permalink: /kb/164/Q164197/
 ---
 
 ## Q164197: Writer 2: How to Remove Clip Art from My Clipart

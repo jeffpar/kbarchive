@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175754: FPNW Event ID 2025 and Packet Spoofing Information"
-permalink: kb/175/Q175754/
+permalink: /kb/175/Q175754/
 ---
 
 ## Q175754: FPNW Event ID 2025 and Packet Spoofing Information

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173669: NetWare Users or Groups Not Migrated"
-permalink: kb/173/Q173669/
+permalink: /kb/173/Q173669/
 ---
 
 ## Q173669: NetWare Users or Groups Not Migrated

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89226: General Protection Fault with Winfax Pro 2.0"
-permalink: kb/089/Q89226/
+permalink: /kb/089/Q89226/
 ---
 
 ## Q89226: General Protection Fault with Winfax Pro 2.0

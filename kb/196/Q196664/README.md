@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196664: XCON: MAD Consumes 100% CPU While Recalculating Routing"
-permalink: kb/196/Q196664/
+permalink: /kb/196/Q196664/
 ---
 
 ## Q196664: XCON: MAD Consumes 100% CPU While Recalculating Routing

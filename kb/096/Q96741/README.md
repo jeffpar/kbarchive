@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96741: How Fault Tolerance Is Implemented"
-permalink: kb/096/Q96741/
+permalink: /kb/096/Q96741/
 ---
 
 ## Q96741: How Fault Tolerance Is Implemented

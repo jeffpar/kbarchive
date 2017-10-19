@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218442: HOWTO: Dynamically Add ActiveX Controls to ATL Composite Control"
-permalink: kb/218/Q218442/
+permalink: /kb/218/Q218442/
 ---
 
 ## Q218442: HOWTO: Dynamically Add ActiveX Controls to ATL Composite Control

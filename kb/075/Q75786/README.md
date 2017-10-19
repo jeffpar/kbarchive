@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75786: RESTORE Command Requires Path and Filename of Files to Restore"
-permalink: kb/075/Q75786/
+permalink: /kb/075/Q75786/
 ---
 
 ## Q75786: RESTORE Command Requires Path and Filename of Files to Restore

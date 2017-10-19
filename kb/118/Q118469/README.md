@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118469: GSNW Gateway Requires NTGATEWAY group"
-permalink: kb/118/Q118469/
+permalink: /kb/118/Q118469/
 ---
 
 ## Q118469: GSNW Gateway Requires NTGATEWAY group

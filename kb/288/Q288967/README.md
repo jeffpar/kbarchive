@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288967: XFOR: DocLinks That Point to Lotus Notes (Domino) R5 UNIX Hosts"
-permalink: kb/288/Q288967/
+permalink: /kb/288/Q288967/
 ---
 
 ## Q288967: XFOR: DocLinks That Point to Lotus Notes (Domino) R5 UNIX Hosts

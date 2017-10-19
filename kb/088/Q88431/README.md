@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88431: Using the Orange 386 and Windows on a Macintosh"
-permalink: kb/088/Q88431/
+permalink: /kb/088/Q88431/
 ---
 
 ## Q88431: Using the Orange 386 and Windows on a Macintosh

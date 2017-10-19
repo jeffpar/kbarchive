@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242097: GSNW Shares Deleted with NT Server Connected to Cisco Catalyst 5"
-permalink: kb/242/Q242097/
+permalink: /kb/242/Q242097/
 ---
 
 ## Q242097: GSNW Shares Deleted with NT Server Connected to Cisco Catalyst 5

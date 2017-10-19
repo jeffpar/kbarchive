@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170140: XCLN: Error After Update.exe on Japanese Win16 Exchange Client"
-permalink: kb/170/Q170140/
+permalink: /kb/170/Q170140/
 ---
 
 ## Q170140: XCLN: Error After Update.exe on Japanese Win16 Exchange Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89967: MCI CD Audio Drivers Must Be Installed for Music Box to Work"
-permalink: kb/089/Q89967/
+permalink: /kb/089/Q89967/
 ---
 
 ## Q89967: MCI CD Audio Drivers Must Be Installed for Music Box to Work

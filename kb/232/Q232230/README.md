@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232230: Jobs Not Printed When Print Server Is Busy"
-permalink: kb/232/Q232230/
+permalink: /kb/232/Q232230/
 ---
 
 ## Q232230: Jobs Not Printed When Print Server Is Busy

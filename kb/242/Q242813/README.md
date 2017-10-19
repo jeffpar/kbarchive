@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242813: FS2000: Plane of Another Player May Disappear Unexpectedly"
-permalink: kb/242/Q242813/
+permalink: /kb/242/Q242813/
 ---
 
 ## Q242813: FS2000: Plane of Another Player May Disappear Unexpectedly

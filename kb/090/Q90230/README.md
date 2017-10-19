@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90230: Load High Issues with WFWG &amp; EMM386, 386MAX, QEMM, or Stealth"
-permalink: kb/090/Q90230/
+permalink: /kb/090/Q90230/
 ---
 
 ## Q90230: Load High Issues with WFWG &amp; EMM386, 386MAX, QEMM, or Stealth

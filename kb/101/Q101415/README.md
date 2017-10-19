@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101415: DOCERR: How CN_RECEIVE Events Are Generated"
-permalink: kb/101/Q101415/
+permalink: /kb/101/Q101415/
 ---
 
 ## Q101415: DOCERR: How CN_RECEIVE Events Are Generated

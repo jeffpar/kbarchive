@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75710: &quot;SYS2090&quot; Error with Novell Btrieve Utility"
-permalink: kb/075/Q75710/
+permalink: /kb/075/Q75710/
 ---
 
 ## Q75710: &quot;SYS2090&quot; Error with Novell Btrieve Utility

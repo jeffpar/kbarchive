@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150584: Service Pack 1 for SMS 1.1 Does Not Update Clients"
-permalink: kb/150/Q150584/
+permalink: /kb/150/Q150584/
 ---
 
 ## Q150584: Service Pack 1 for SMS 1.1 Does Not Update Clients

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226507: BUG: Windows Closing an Application at Shutdown Orphans TMP File"
-permalink: kb/226/Q226507/
+permalink: /kb/226/Q226507/
 ---
 
 ## Q226507: BUG: Windows Closing an Application at Shutdown Orphans TMP File

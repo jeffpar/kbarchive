@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141342: XADM: Public Folders Automatically Get New Home Site/Server"
-permalink: kb/141/Q141342/
+permalink: /kb/141/Q141342/
 ---
 
 ## Q141342: XADM: Public Folders Automatically Get New Home Site/Server

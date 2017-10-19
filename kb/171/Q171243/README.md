@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171243: PPT: Creating 35 mm Slides for Slide Imaging"
-permalink: kb/171/Q171243/
+permalink: /kb/171/Q171243/
 ---
 
 ## Q171243: PPT: Creating 35 mm Slides for Slide Imaging

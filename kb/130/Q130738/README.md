@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130738: Persistent NetWare Connections Unavailable After Upgrading"
-permalink: kb/130/Q130738/
+permalink: /kb/130/Q130738/
 ---
 
 ## Q130738: Persistent NetWare Connections Unavailable After Upgrading

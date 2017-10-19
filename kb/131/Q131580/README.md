@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131580: PRB: ODBC Converts Microsoft Excel Character Data to Memos"
-permalink: kb/131/Q131580/
+permalink: /kb/131/Q131580/
 ---
 
 ## Q131580: PRB: ODBC Converts Microsoft Excel Character Data to Memos

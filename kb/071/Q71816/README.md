@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71816: AT&amp;T 6286 Prints Corrupted Output in Standard Mode"
-permalink: kb/071/Q71816/
+permalink: /kb/071/Q71816/
 ---
 
 ## Q71816: AT&amp;T 6286 Prints Corrupted Output in Standard Mode

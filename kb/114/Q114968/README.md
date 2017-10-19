@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114968: HOWTO: Making Visual C++ 32-bit Edition Books Online Run Faster"
-permalink: kb/114/Q114968/
+permalink: /kb/114/Q114968/
 ---
 
 ## Q114968: HOWTO: Making Visual C++ 32-bit Edition Books Online Run Faster

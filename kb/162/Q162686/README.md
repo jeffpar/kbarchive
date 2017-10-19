@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162686: Problems with Incorrect #9FX Reality 332 Video Card"
-permalink: kb/162/Q162686/
+permalink: /kb/162/Q162686/
 ---
 
 ## Q162686: Problems with Incorrect #9FX Reality 332 Video Card

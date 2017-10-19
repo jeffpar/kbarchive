@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q99268: FDirSync: Err Msg: Error [158] Requestor Not Registered"
-permalink: kb/099/Q99268/
+title: "Q99268: FDirSync: Err Msg: Error &#91;158&#93; Requestor Not Registered"
+permalink: /kb/099/Q99268/
 ---
 
-## Q99268: FDirSync: Err Msg: Error [158] Requestor Not Registered
+## Q99268: FDirSync: Err Msg: Error &#91;158&#93; Requestor Not Registered
 
 	Article: Q99268
 	Product(s): Microsoft Mail For PC Networks

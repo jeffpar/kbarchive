@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253930: Expedia Streets and Trips 2000: How to Clear the Find List"
-permalink: kb/253/Q253930/
+permalink: /kb/253/Q253930/
 ---
 
 ## Q253930: Expedia Streets and Trips 2000: How to Clear the Find List

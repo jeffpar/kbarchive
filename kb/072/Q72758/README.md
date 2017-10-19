@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72758: EMM386.EXE with IBM PCS 3270 Causes Lockup"
-permalink: kb/072/Q72758/
+permalink: /kb/072/Q72758/
 ---
 
 ## Q72758: EMM386.EXE with IBM PCS 3270 Causes Lockup

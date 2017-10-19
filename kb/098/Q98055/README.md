@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98055: 3COM: Mail Is Not Sent Through Gateway"
-permalink: kb/098/Q98055/
+permalink: /kb/098/Q98055/
 ---
 
 ## Q98055: 3COM: Mail Is Not Sent Through Gateway

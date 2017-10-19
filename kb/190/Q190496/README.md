@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190496: PRB: SEEK Finds Old and New Data With Optimistic Buffering"
-permalink: kb/190/Q190496/
+permalink: /kb/190/Q190496/
 ---
 
 ## Q190496: PRB: SEEK Finds Old and New Data With Optimistic Buffering

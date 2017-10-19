@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100450: PRB: SYS(18) Does Not Return Name of GET Objects"
-permalink: kb/100/Q100450/
+permalink: /kb/100/Q100450/
 ---
 
 ## Q100450: PRB: SYS(18) Does Not Return Name of GET Objects

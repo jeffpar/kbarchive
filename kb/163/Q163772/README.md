@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163772: Nested FOR Loops Using &quot;~&quot; Operators Do Not Work"
-permalink: kb/163/Q163772/
+permalink: /kb/163/Q163772/
 ---
 
 ## Q163772: Nested FOR Loops Using &quot;~&quot; Operators Do Not Work

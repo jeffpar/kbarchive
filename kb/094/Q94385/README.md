@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94385: Microsoft Systems Journal: February 1993"
-permalink: kb/094/Q94385/
+permalink: /kb/094/Q94385/
 ---
 
 ## Q94385: Microsoft Systems Journal: February 1993

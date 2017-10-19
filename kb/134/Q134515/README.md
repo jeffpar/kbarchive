@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134515: Cannot Invoke Cancel Button in Scandisk Using Keyboard"
-permalink: kb/134/Q134515/
+permalink: /kb/134/Q134515/
 ---
 
 ## Q134515: Cannot Invoke Cancel Button in Scandisk Using Keyboard

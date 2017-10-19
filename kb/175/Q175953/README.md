@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175953: XADM: Disabling Proxy Address Generation Does Not Work"
-permalink: kb/175/Q175953/
+permalink: /kb/175/Q175953/
 ---
 
 ## Q175953: XADM: Disabling Proxy Address Generation Does Not Work

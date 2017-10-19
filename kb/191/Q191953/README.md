@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191953: HOWTO: Use Coverage Profiler to Optimize App Performance"
-permalink: kb/191/Q191953/
+permalink: /kb/191/Q191953/
 ---
 
 ## Q191953: HOWTO: Use Coverage Profiler to Optimize App Performance

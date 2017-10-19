@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86080: Porting Windows Help Source Files from Version 3.0 to 3.1"
-permalink: kb/086/Q86080/
+permalink: /kb/086/Q86080/
 ---
 
 ## Q86080: Porting Windows Help Source Files from Version 3.0 to 3.1

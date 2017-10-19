@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129531: Windows NT Print Manager and Custom Form Limitations"
-permalink: kb/129/Q129531/
+permalink: /kb/129/Q129531/
 ---
 
 ## Q129531: Windows NT Print Manager and Custom Form Limitations

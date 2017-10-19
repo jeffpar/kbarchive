@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112211: PC Win: Convert Changes Folder Sort Order To Be By Date"
-permalink: kb/112/Q112211/
+permalink: /kb/112/Q112211/
 ---
 
 ## Q112211: PC Win: Convert Changes Folder Sort Order To Be By Date

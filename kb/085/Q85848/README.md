@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85848: Windows 3.1 VGA Driver and GRID 1550SX Laptops"
-permalink: kb/085/Q85848/
+permalink: /kb/085/Q85848/
 ---
 
 ## Q85848: Windows 3.1 VGA Driver and GRID 1550SX Laptops

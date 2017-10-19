@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143232: 3D Movie Maker: MIDI Does Not Work Properly with SB AWE 32"
-permalink: kb/143/Q143232/
+permalink: /kb/143/Q143232/
 ---
 
 ## Q143232: 3D Movie Maker: MIDI Does Not Work Properly with SB AWE 32

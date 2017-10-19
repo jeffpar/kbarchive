@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188637: XADM: How to Determine the Size of Recoverable Items in the Info"
-permalink: kb/188/Q188637/
+permalink: /kb/188/Q188637/
 ---
 
 ## Q188637: XADM: How to Determine the Size of Recoverable Items in the Info

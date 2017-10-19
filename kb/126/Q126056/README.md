@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126056: UNCONF: Microsoft Setup: Stack Fault Error in USER.EXE"
-permalink: kb/126/Q126056/
+permalink: /kb/126/Q126056/
 ---
 
 ## Q126056: UNCONF: Microsoft Setup: Stack Fault Error in USER.EXE

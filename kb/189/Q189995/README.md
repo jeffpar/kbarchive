@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189995: XADM: Unable to Delete Mailbox"
-permalink: kb/189/Q189995/
+permalink: /kb/189/Q189995/
 ---
 
 ## Q189995: XADM: Unable to Delete Mailbox

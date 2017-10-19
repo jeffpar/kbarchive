@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236168: XADM: Administrator Able to Change Mailbox Permissions"
-permalink: kb/236/Q236168/
+permalink: /kb/236/Q236168/
 ---
 
 ## Q236168: XADM: Administrator Able to Change Mailbox Permissions

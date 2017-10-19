@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132591: ALT+ENTER Does Not Switch MS-DOS Session to Full-Screen"
-permalink: kb/132/Q132591/
+permalink: /kb/132/Q132591/
 ---
 
 ## Q132591: ALT+ENTER Does Not Switch MS-DOS Session to Full-Screen

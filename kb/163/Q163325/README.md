@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163325: XCON: MTA: Text Event Log (Evo.log)"
-permalink: kb/163/Q163325/
+permalink: /kb/163/Q163325/
 ---
 
 ## Q163325: XCON: MTA: Text Event Log (Evo.log)

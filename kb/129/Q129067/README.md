@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129067: Using Windows NT RAS to Connect to CompuServe PPP"
-permalink: kb/129/Q129067/
+permalink: /kb/129/Q129067/
 ---
 
 ## Q129067: Using Windows NT RAS to Connect to CompuServe PPP

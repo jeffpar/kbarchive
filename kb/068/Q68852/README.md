@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68852: Installing Windows 3.0 on NEC ProSpeed with Docking Station"
-permalink: kb/068/Q68852/
+permalink: /kb/068/Q68852/
 ---
 
 ## Q68852: Installing Windows 3.0 on NEC ProSpeed with Docking Station

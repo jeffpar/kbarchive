@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140056: SMS: Wrongly Allowed to Set Up Secondary Site On Primary Site"
-permalink: kb/140/Q140056/
+permalink: /kb/140/Q140056/
 ---
 
 ## Q140056: SMS: Wrongly Allowed to Set Up Secondary Site On Primary Site

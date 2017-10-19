@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99899: Takeoff, Landing, and Taxing on Water"
-permalink: kb/099/Q99899/
+permalink: /kb/099/Q99899/
 ---
 
 ## Q99899: Takeoff, Landing, and Taxing on Water

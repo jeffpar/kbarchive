@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141635: FIX: ToolTipText Message Blank If Longer Than 50 Characters"
-permalink: kb/141/Q141635/
+permalink: /kb/141/Q141635/
 ---
 
 ## Q141635: FIX: ToolTipText Message Blank If Longer Than 50 Characters

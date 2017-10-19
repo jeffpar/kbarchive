@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156384: Control of Source Routing on Token Ring IP Broadcasts"
-permalink: kb/156/Q156384/
+permalink: /kb/156/Q156384/
 ---
 
 ## Q156384: Control of Source Routing on Token Ring IP Broadcasts

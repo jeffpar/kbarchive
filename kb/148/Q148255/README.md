@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148255: FIX: C1001 on Cast to Base from Derived Friend Class"
-permalink: kb/148/Q148255/
+permalink: /kb/148/Q148255/
 ---
 
 ## Q148255: FIX: C1001 on Cast to Base from Derived Friend Class

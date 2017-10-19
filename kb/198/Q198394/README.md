@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198394: Combat Flight Simulator: Aircraft Lighting Is Not Available"
-permalink: kb/198/Q198394/
+permalink: /kb/198/Q198394/
 ---
 
 ## Q198394: Combat Flight Simulator: Aircraft Lighting Is Not Available

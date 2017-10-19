@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143384: XCLN: PST Compaction Settings in the MSPST.INI"
-permalink: kb/143/Q143384/
+permalink: /kb/143/Q143384/
 ---
 
 ## Q143384: XCLN: PST Compaction Settings in the MSPST.INI

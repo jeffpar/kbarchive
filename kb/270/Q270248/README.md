@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270248: RoR: How to Import First Punic War Campaign into Retail Version"
-permalink: kb/270/Q270248/
+permalink: /kb/270/Q270248/
 ---
 
 ## Q270248: RoR: How to Import First Punic War Campaign into Retail Version

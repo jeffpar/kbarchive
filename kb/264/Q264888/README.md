@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264888: WD97: &quot;A Program Is Trying to Access ...&quot; Sending Mail Merge"
-permalink: kb/264/Q264888/
+permalink: /kb/264/Q264888/
 ---
 
 ## Q264888: WD97: &quot;A Program Is Trying to Access ...&quot; Sending Mail Merge

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130323: PC MAPI: Sample VB Code to Determine Mail Session User"
-permalink: kb/130/Q130323/
+permalink: /kb/130/Q130323/
 ---
 
 ## Q130323: PC MAPI: Sample VB Code to Determine Mail Session User

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114883: Art Gallery, Wine Guide 1.0: Distorted Video Images"
-permalink: kb/114/Q114883/
+permalink: /kb/114/Q114883/
 ---
 
 ## Q114883: Art Gallery, Wine Guide 1.0: Distorted Video Images

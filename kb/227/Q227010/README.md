@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227010: SMS: Site Comp Mgr Fails to Install/Uninstall a Component; Sitec"
-permalink: kb/227/Q227010/
+permalink: /kb/227/Q227010/
 ---
 
 ## Q227010: SMS: Site Comp Mgr Fails to Install/Uninstall a Component; Sitec

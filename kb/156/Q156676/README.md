@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156676: Windows NT 4.0 Won't Install on Computers with 386 Processors"
-permalink: kb/156/Q156676/
+permalink: /kb/156/Q156676/
 ---
 
 ## Q156676: Windows NT 4.0 Won't Install on Computers with 386 Processors

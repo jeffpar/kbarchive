@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59685: CTRL+ESC Not Working with Hotkeys in Windows 3.0"
-permalink: kb/059/Q59685/
+permalink: /kb/059/Q59685/
 ---
 
 ## Q59685: CTRL+ESC Not Working with Hotkeys in Windows 3.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129897: PRB: Procedure too Large Error When Compiling in VB 4.0"
-permalink: kb/129/Q129897/
+permalink: /kb/129/Q129897/
 ---
 
 ## Q129897: PRB: Procedure too Large Error When Compiling in VB 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165456: STOP 0x0000000A in Ntoskrnl.exe"
-permalink: kb/165/Q165456/
+permalink: /kb/165/Q165456/
 ---
 
 ## Q165456: STOP 0x0000000A in Ntoskrnl.exe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198584: Combat Flight Simulator: Pressing ALT+TAB Does Not Switch Tasks"
-permalink: kb/198/Q198584/
+permalink: /kb/198/Q198584/
 ---
 
 ## Q198584: Combat Flight Simulator: Pressing ALT+TAB Does Not Switch Tasks

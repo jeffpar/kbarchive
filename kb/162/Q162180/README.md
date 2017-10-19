@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162180: PPT: Sample Code to Assign a Random Animation to all Objects"
-permalink: kb/162/Q162180/
+permalink: /kb/162/Q162180/
 ---
 
 ## Q162180: PPT: Sample Code to Assign a Random Animation to all Objects

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195998: SNA Server Fails With Access Violation in Routine s1pxsnd()"
-permalink: kb/195/Q195998/
+permalink: /kb/195/Q195998/
 ---
 
 ## Q195998: SNA Server Fails With Access Violation in Routine s1pxsnd()

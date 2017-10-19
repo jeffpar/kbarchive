@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189733: BUG: Setting Windowless ListBox ListIndex Fires Click Event"
-permalink: kb/189/Q189733/
+permalink: /kb/189/Q189733/
 ---
 
 ## Q189733: BUG: Setting Windowless ListBox ListIndex Fires Click Event

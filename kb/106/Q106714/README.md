@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106714: NET Command Returns Error in VM While Network Setup Is Active"
-permalink: kb/106/Q106714/
+permalink: /kb/106/Q106714/
 ---
 
 ## Q106714: NET Command Returns Error in VM While Network Setup Is Active

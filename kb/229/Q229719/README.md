@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229719: NvRunCmd Passes Wrong Data When Certain Programs Are Started"
-permalink: kb/229/Q229719/
+permalink: /kb/229/Q229719/
 ---
 
 ## Q229719: NvRunCmd Passes Wrong Data When Certain Programs Are Started

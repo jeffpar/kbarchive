@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222974: Windows NT 4.0 Enterprise Edition Does Not Use More Than 256 MB"
-permalink: kb/222/Q222974/
+permalink: /kb/222/Q222974/
 ---
 
 ## Q222974: Windows NT 4.0 Enterprise Edition Does Not Use More Than 256 MB

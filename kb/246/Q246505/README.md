@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246505: PRB: Error Granting Permissions to a Domain Account on a Cluster"
-permalink: kb/246/Q246505/
+permalink: /kb/246/Q246505/
 ---
 
 ## Q246505: PRB: Error Granting Permissions to a Domain Account on a Cluster

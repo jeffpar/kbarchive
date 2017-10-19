@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214623: PRB: Some SET CENTURY Options May Not Prevent Four Digit Dates"
-permalink: kb/214/Q214623/
+permalink: /kb/214/Q214623/
 ---
 
 ## Q214623: PRB: Some SET CENTURY Options May Not Prevent Four Digit Dates

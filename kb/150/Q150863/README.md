@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150863: XADM: Mail Box Cleanup Agent has no Permissions"
-permalink: kb/150/Q150863/
+permalink: /kb/150/Q150863/
 ---
 
 ## Q150863: XADM: Mail Box Cleanup Agent has no Permissions

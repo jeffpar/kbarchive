@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139113: SNA Server Event 38, Qualifier 0004 and 0005 Not Documented"
-permalink: kb/139/Q139113/
+permalink: /kb/139/Q139113/
 ---
 
 ## Q139113: SNA Server Event 38, Qualifier 0004 and 0005 Not Documented

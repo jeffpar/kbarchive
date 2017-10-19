@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235677: FTP Client Hangs with Temporary Network or FTP Server Problem"
-permalink: kb/235/Q235677/
+permalink: /kb/235/Q235677/
 ---
 
 ## Q235677: FTP Client Hangs with Temporary Network or FTP Server Problem

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171751: FS95: No Air Traffic Control in Flight Simulator for Windows 95"
-permalink: kb/171/Q171751/
+permalink: /kb/171/Q171751/
 ---
 
 ## Q171751: FS95: No Air Traffic Control in Flight Simulator for Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192095: FIX: Problems Running Wizard From Report or Label Query"
-permalink: kb/192/Q192095/
+permalink: /kb/192/Q192095/
 ---
 
 ## Q192095: FIX: Problems Running Wizard From Report or Label Query

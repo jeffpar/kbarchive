@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262331: Allegiance: Ship Rolls Out of Control"
-permalink: kb/262/Q262331/
+permalink: /kb/262/Q262331/
 ---
 
 ## Q262331: Allegiance: Ship Rolls Out of Control

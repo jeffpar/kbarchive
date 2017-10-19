@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76473: PRB: No Output from VxD Debug_Out and Trace_Out Macros"
-permalink: kb/076/Q76473/
+permalink: /kb/076/Q76473/
 ---
 
 ## Q76473: PRB: No Output from VxD Debug_Out and Trace_Out Macros

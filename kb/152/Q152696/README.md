@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152696: HOWTO: Using the MFC Database Classes in Console Applications"
-permalink: kb/152/Q152696/
+permalink: /kb/152/Q152696/
 ---
 
 ## Q152696: HOWTO: Using the MFC Database Classes in Console Applications

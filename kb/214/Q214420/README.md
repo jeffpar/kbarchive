@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214420: Task Scheduler Displays Scheduled Task Incorrectly"
-permalink: kb/214/Q214420/
+permalink: /kb/214/Q214420/
 ---
 
 ## Q214420: Task Scheduler Displays Scheduled Task Incorrectly

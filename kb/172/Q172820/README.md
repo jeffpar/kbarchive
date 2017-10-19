@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172820: WD97: E-mail Client Is Unable to Use WordMail as Editor"
-permalink: kb/172/Q172820/
+permalink: /kb/172/Q172820/
 ---
 
 ## Q172820: WD97: E-mail Client Is Unable to Use WordMail as Editor

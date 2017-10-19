@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161958: WD97: Run-Time Error '424' Attempting to Ungroup Shape Objects"
-permalink: kb/161/Q161958/
+permalink: /kb/161/Q161958/
 ---
 
 ## Q161958: WD97: Run-Time Error '424' Attempting to Ungroup Shape Objects

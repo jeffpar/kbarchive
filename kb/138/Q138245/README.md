@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138245: SMS: Err Msg: Incorrect System Version Upgrading to WFW"
-permalink: kb/138/Q138245/
+permalink: /kb/138/Q138245/
 ---
 
 ## Q138245: SMS: Err Msg: Incorrect System Version Upgrading to WFW

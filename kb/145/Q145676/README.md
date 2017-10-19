@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145676: PRB: Registry Overwritten with Same ProgID/Different Bitness Ser"
-permalink: kb/145/Q145676/
+permalink: /kb/145/Q145676/
 ---
 
 ## Q145676: PRB: Registry Overwritten with Same ProgID/Different Bitness Ser

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193090: Inetmib1.dll Causes Memory Leak in Winlogon.exe Process"
-permalink: kb/193/Q193090/
+permalink: /kb/193/Q193090/
 ---
 
 ## Q193090: Inetmib1.dll Causes Memory Leak in Winlogon.exe Process

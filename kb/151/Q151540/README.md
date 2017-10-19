@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151540: Cannot Change Host Drive Letter in Windows 95"
-permalink: kb/151/Q151540/
+permalink: /kb/151/Q151540/
 ---
 
 ## Q151540: Cannot Change Host Drive Letter in Windows 95

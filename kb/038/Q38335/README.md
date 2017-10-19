@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q38335: HOWTO: sscanf() Example Using a Comma (,) as Delimiter"
-permalink: kb/038/Q38335/
+permalink: /kb/038/Q38335/
 ---
 
 ## Q38335: HOWTO: sscanf() Example Using a Comma (,) as Delimiter

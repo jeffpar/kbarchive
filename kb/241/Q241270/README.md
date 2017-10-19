@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241270: PRB: Foreign Connected Network Not Available with MQSeries Bridg"
-permalink: kb/241/Q241270/
+permalink: /kb/241/Q241270/
 ---
 
 ## Q241270: PRB: Foreign Connected Network Not Available with MQSeries Bridg

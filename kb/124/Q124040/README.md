@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124040: PC Win: Converting Dates Changes Message Update"
-permalink: kb/124/Q124040/
+permalink: /kb/124/Q124040/
 ---
 
 ## Q124040: PC Win: Converting Dates Changes Message Update

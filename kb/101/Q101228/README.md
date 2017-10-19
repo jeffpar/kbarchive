@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101228: Backup: /MISSINGTAPE Command Line Switch"
-permalink: kb/101/Q101228/
+permalink: /kb/101/Q101228/
 ---
 
 ## Q101228: Backup: /MISSINGTAPE Command Line Switch

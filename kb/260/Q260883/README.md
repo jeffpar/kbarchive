@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260883: Word 2000 Step by Step Courseware Instructor Guide Comments and"
-permalink: kb/260/Q260883/
+permalink: /kb/260/Q260883/
 ---
 
 ## Q260883: Word 2000 Step by Step Courseware Instructor Guide Comments and

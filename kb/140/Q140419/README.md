@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140419: Name Release Notifications Not Sent to WINS on Shut Down"
-permalink: kb/140/Q140419/
+permalink: /kb/140/Q140419/
 ---
 
 ## Q140419: Name Release Notifications Not Sent to WINS on Shut Down

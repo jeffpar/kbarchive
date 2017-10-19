@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140783: Access Violation on RAS Client Dialing Into Windows 95"
-permalink: kb/140/Q140783/
+permalink: /kb/140/Q140783/
 ---
 
 ## Q140783: Access Violation on RAS Client Dialing Into Windows 95

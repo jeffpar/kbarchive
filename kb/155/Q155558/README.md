@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155558: Deleting Clipbook Page Causes Overwrite of Clipboard Contents"
-permalink: kb/155/Q155558/
+permalink: /kb/155/Q155558/
 ---
 
 ## Q155558: Deleting Clipbook Page Causes Overwrite of Clipboard Contents

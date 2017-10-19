@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115787: Configuring PC/TCP for Windows for Workgroups 3.11"
-permalink: kb/115/Q115787/
+permalink: /kb/115/Q115787/
 ---
 
 ## Q115787: Configuring PC/TCP for Windows for Workgroups 3.11

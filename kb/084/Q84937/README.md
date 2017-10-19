@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84937: Err Msg: The Microsoft Windows 32-Bit Disk Driver (WDCTRL)..."
-permalink: kb/084/Q84937/
+permalink: /kb/084/Q84937/
 ---
 
 ## Q84937: Err Msg: The Microsoft Windows 32-Bit Disk Driver (WDCTRL)...

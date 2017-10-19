@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163180: Flight Simulator 95: Installing Scenery"
-permalink: kb/163/Q163180/
+permalink: /kb/163/Q163180/
 ---
 
 ## Q163180: Flight Simulator 95: Installing Scenery

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172297: SNA Client Upgrade Forces Re-Entry of Configuration Information"
-permalink: kb/172/Q172297/
+permalink: /kb/172/Q172297/
 ---
 
 ## Q172297: SNA Client Upgrade Forces Re-Entry of Configuration Information

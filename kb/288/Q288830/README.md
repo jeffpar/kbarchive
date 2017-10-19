@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288830: WD97: Item Appears Without Heading Number in Document Map"
-permalink: kb/288/Q288830/
+permalink: /kb/288/Q288830/
 ---
 
 ## Q288830: WD97: Item Appears Without Heading Number in Document Map

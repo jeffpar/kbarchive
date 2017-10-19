@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166138: INFO: Detailed Description of FTCODE Table in ATS"
-permalink: kb/166/Q166138/
+permalink: /kb/166/Q166138/
 ---
 
 ## Q166138: INFO: Detailed Description of FTCODE Table in ATS

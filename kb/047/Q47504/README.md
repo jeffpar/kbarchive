@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47504: Some Instructions May Require Enabling of Instruction Set"
-permalink: kb/047/Q47504/
+permalink: /kb/047/Q47504/
 ---
 
 ## Q47504: Some Instructions May Require Enabling of Instruction Set

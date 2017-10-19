@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264111: XCON: Internet Mail Service Requires Domain Name System Name"
-permalink: kb/264/Q264111/
+permalink: /kb/264/Q264111/
 ---
 
 ## Q264111: XCON: Internet Mail Service Requires Domain Name System Name

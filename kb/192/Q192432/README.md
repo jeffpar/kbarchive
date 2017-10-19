@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192432: Err Msg: Msimn Caused an Invalid Page Fault in Module Msimnui.dl"
-permalink: kb/192/Q192432/
+permalink: /kb/192/Q192432/
 ---
 
 ## Q192432: Err Msg: Msimn Caused an Invalid Page Fault in Module Msimnui.dl

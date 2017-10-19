@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111882: TI MicroLaser w/EXP16ODI.COM Driver May Cause 15-Second Delay"
-permalink: kb/111/Q111882/
+permalink: /kb/111/Q111882/
 ---
 
 ## Q111882: TI MicroLaser w/EXP16ODI.COM Driver May Cause 15-Second Delay

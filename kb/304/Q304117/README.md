@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304117: Academic Learning Series Microsoft Windows 2000 Professional wit"
-permalink: kb/304/Q304117/
+permalink: /kb/304/Q304117/
 ---
 
 ## Q304117: Academic Learning Series Microsoft Windows 2000 Professional wit

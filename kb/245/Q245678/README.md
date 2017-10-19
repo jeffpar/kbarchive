@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245678: Winsock Call Fails When You Have No Local Administrator Rights"
-permalink: kb/245/Q245678/
+permalink: /kb/245/Q245678/
 ---
 
 ## Q245678: Winsock Call Fails When You Have No Local Administrator Rights

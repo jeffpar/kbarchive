@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183399: XADM: How to Read Perfmon.exe Logs from a Different Computer"
-permalink: kb/183/Q183399/
+permalink: /kb/183/Q183399/
 ---
 
 ## Q183399: XADM: How to Read Perfmon.exe Logs from a Different Computer

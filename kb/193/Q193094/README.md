@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193094: PRB: DataGrid or DbGrid May Not Display Data"
-permalink: kb/193/Q193094/
+permalink: /kb/193/Q193094/
 ---
 
 ## Q193094: PRB: DataGrid or DbGrid May Not Display Data

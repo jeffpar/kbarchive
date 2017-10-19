@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71271: Setup Does Not Find Previous Version of Windows"
-permalink: kb/071/Q71271/
+permalink: /kb/071/Q71271/
 ---
 
 ## Q71271: Setup Does Not Find Previous Version of Windows

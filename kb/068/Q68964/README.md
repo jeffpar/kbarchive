@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68964: Control Panel Can List Same Printer Twice"
-permalink: kb/068/Q68964/
+permalink: /kb/068/Q68964/
 ---
 
 ## Q68964: Control Panel Can List Same Printer Twice

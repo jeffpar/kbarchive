@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105148: Golf: Display Driver Causes GOLFMOD3.EXE Error"
-permalink: kb/105/Q105148/
+permalink: /kb/105/Q105148/
 ---
 
 ## Q105148: Golf: Display Driver Causes GOLFMOD3.EXE Error

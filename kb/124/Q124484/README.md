@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124484: Error 33: DOSRead and DOSWrite APIs from OS/2 Application"
-permalink: kb/124/Q124484/
+permalink: /kb/124/Q124484/
 ---
 
 ## Q124484: Error 33: DOSRead and DOSWrite APIs from OS/2 Application

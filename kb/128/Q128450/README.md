@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128450: File Transfer Slave Dialog Box Only Displays Bottom of Chars."
-permalink: kb/128/Q128450/
+permalink: /kb/128/Q128450/
 ---
 
 ## Q128450: File Transfer Slave Dialog Box Only Displays Bottom of Chars.

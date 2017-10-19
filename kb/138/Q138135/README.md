@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138135: Restoring Backups Created with Earlier Versions of MS-DOS"
-permalink: kb/138/Q138135/
+permalink: /kb/138/Q138135/
 ---
 
 ## Q138135: Restoring Backups Created with Earlier Versions of MS-DOS

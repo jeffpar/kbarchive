@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89719: WFWG Server Cannot Share Virtual Drives"
-permalink: kb/089/Q89719/
+permalink: /kb/089/Q89719/
 ---
 
 ## Q89719: WFWG Server Cannot Share Virtual Drives

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81980: TrueType Font Pack for Windows v1.0 Disks (5.25-Inch 1.2 MB)"
-permalink: kb/081/Q81980/
+permalink: /kb/081/Q81980/
 ---
 
 ## Q81980: TrueType Font Pack for Windows v1.0 Disks (5.25-Inch 1.2 MB)

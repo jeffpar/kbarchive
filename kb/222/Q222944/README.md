@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222944: Allow COMTI LU6.2 Send Size to be Configurable."
-permalink: kb/222/Q222944/
+permalink: /kb/222/Q222944/
 ---
 
 ## Q222944: Allow COMTI LU6.2 Send Size to be Configurable.

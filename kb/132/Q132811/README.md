@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132811: Unable to Run Kurzweil Voice Version 1.0"
-permalink: kb/132/Q132811/
+permalink: /kb/132/Q132811/
 ---
 
 ## Q132811: Unable to Run Kurzweil Voice Version 1.0

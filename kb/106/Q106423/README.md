@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106423: Repartitioning Your Hard Disk to Upgrade to 6.0 or 6.2"
-permalink: kb/106/Q106423/
+permalink: /kb/106/Q106423/
 ---
 
 ## Q106423: Repartitioning Your Hard Disk to Upgrade to 6.0 or 6.2

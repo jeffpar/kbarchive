@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159779: WD97: Invalid Page Fault Opening File with Long Path, File Name"
-permalink: kb/159/Q159779/
+permalink: /kb/159/Q159779/
 ---
 
 ## Q159779: WD97: Invalid Page Fault Opening File with Long Path, File Name

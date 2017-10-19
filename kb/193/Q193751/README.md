@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193751: FIX: Do Not Use Commas in Step 4 of Setup Wizard Dialog Box"
-permalink: kb/193/Q193751/
+permalink: /kb/193/Q193751/
 ---
 
 ## Q193751: FIX: Do Not Use Commas in Step 4 of Setup Wizard Dialog Box

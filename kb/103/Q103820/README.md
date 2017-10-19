@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103820: PC Adm: Generating RNETWORK.GLB, Writing Records to .XTN Files"
-permalink: kb/103/Q103820/
+permalink: /kb/103/Q103820/
 ---
 
 ## Q103820: PC Adm: Generating RNETWORK.GLB, Writing Records to .XTN Files

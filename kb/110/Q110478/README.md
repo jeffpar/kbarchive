@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110478: Auto-Start .AVI on Viewer Start Up"
-permalink: kb/110/Q110478/
+permalink: /kb/110/Q110478/
 ---
 
 ## Q110478: Auto-Start .AVI on Viewer Start Up

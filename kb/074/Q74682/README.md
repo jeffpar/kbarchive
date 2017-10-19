@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74682: MS-DOS Shell Will Not Save Temporary Files to Floppy Disk"
-permalink: kb/074/Q74682/
+permalink: /kb/074/Q74682/
 ---
 
 ## Q74682: MS-DOS Shell Will Not Save Temporary Files to Floppy Disk

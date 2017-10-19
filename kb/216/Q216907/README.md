@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216907: HOW TO: Obtain a Test or Test Client Authentication Certificate"
-permalink: kb/216/Q216907/
+permalink: /kb/216/Q216907/
 ---
 
 ## Q216907: HOW TO: Obtain a Test or Test Client Authentication Certificate

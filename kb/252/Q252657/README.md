@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252657: IIS 5.0: HTTP 403.16 Forbidden: Client certificate Untrusted"
-permalink: kb/252/Q252657/
+permalink: /kb/252/Q252657/
 ---
 
 ## Q252657: IIS 5.0: HTTP 403.16 Forbidden: Client certificate Untrusted

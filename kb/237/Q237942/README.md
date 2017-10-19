@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237942: Resolution of Unqualified Host Name May Not Succeed with SP5"
-permalink: kb/237/Q237942/
+permalink: /kb/237/Q237942/
 ---
 
 ## Q237942: Resolution of Unqualified Host Name May Not Succeed with SP5

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195021: FIX: &quot;Version not found&quot; After Running ssarc -d -v"
-permalink: kb/195/Q195021/
+permalink: /kb/195/Q195021/
 ---
 
 ## Q195021: FIX: &quot;Version not found&quot; After Running ssarc -d -v

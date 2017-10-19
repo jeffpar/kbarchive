@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126622: Automap Streets: Overview Window Missing on Toolbar"
-permalink: kb/126/Q126622/
+permalink: /kb/126/Q126622/
 ---
 
 ## Q126622: Automap Streets: Overview Window Missing on Toolbar

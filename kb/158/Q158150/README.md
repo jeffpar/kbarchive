@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158150: Oracle 8 Utilities May Not Run"
-permalink: kb/158/Q158150/
+permalink: /kb/158/Q158150/
 ---
 
 ## Q158150: Oracle 8 Utilities May Not Run

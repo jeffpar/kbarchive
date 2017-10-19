@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173384: HOWTO: Recover from Deleting the Repair Directory and Setup.log"
-permalink: kb/173/Q173384/
+permalink: /kb/173/Q173384/
 ---
 
 ## Q173384: HOWTO: Recover from Deleting the Repair Directory and Setup.log

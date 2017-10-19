@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225053: Microsoft Windows 95 Year 2000 Update Readme File"
-permalink: kb/225/Q225053/
+permalink: /kb/225/Q225053/
 ---
 
 ## Q225053: Microsoft Windows 95 Year 2000 Update Readme File

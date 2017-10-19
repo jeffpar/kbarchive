@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129802: PRB: Can't Have Fixed Length Strings &gt;32K in 32-bit Windows"
-permalink: kb/129/Q129802/
+permalink: /kb/129/Q129802/
 ---
 
 ## Q129802: PRB: Can't Have Fixed Length Strings &gt;32K in 32-bit Windows

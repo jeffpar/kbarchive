@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135113: How to Create a Form that Has No Title Bar"
-permalink: kb/135/Q135113/
+permalink: /kb/135/Q135113/
 ---
 
 ## Q135113: How to Create a Form that Has No Title Bar

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95531: SMARTDrive: Maximum Cache Size"
-permalink: kb/095/Q95531/
+permalink: /kb/095/Q95531/
 ---
 
 ## Q95531: SMARTDrive: Maximum Cache Size

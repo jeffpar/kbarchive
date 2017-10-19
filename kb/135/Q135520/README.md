@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135520: DOCERR: Syntax Error When Using INSERT INTO Example Code"
-permalink: kb/135/Q135520/
+permalink: /kb/135/Q135520/
 ---
 
 ## Q135520: DOCERR: Syntax Error When Using INSERT INTO Example Code

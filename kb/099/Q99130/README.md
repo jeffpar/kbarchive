@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99130: DocErr: IsDomainMasterBrowser Not Valid Key in Windows NT 3.5"
-permalink: kb/099/Q99130/
+permalink: /kb/099/Q99130/
 ---
 
 ## Q99130: DocErr: IsDomainMasterBrowser Not Valid Key in Windows NT 3.5

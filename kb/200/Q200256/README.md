@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200256: INFO: Assembly Output from Visual C++ Compiler May Not Assemble"
-permalink: kb/200/Q200256/
+permalink: /kb/200/Q200256/
 ---
 
 ## Q200256: INFO: Assembly Output from Visual C++ Compiler May Not Assemble

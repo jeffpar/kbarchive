@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61848: How to Swap Drive Letters with ASSIGN"
-permalink: kb/061/Q61848/
+permalink: /kb/061/Q61848/
 ---
 
 ## Q61848: How to Swap Drive Letters with ASSIGN

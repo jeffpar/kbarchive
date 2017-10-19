@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195144: Copying Files with Mix of LFN and SFN May Lead to Data Loss"
-permalink: kb/195/Q195144/
+permalink: /kb/195/Q195144/
 ---
 
 ## Q195144: Copying Files with Mix of LFN and SFN May Lead to Data Loss

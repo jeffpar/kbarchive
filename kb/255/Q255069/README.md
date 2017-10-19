@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255069: XADM: Error Message Opening Address Book When Running Pfinfo.exe"
-permalink: kb/255/Q255069/
+permalink: /kb/255/Q255069/
 ---
 
 ## Q255069: XADM: Error Message Opening Address Book When Running Pfinfo.exe

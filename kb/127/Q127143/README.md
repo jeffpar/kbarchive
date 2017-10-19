@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127143: SMARTMON.EXE Does Not Report Cache Information"
-permalink: kb/127/Q127143/
+permalink: /kb/127/Q127143/
 ---
 
 ## Q127143: SMARTMON.EXE Does Not Report Cache Information

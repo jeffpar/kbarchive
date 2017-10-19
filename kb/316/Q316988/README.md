@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316988: PRB: &quot;Parameter Not Optional&quot; Err with Outlook 2000 Move Method"
-permalink: kb/316/Q316988/
+permalink: /kb/316/Q316988/
 ---
 
 ## Q316988: PRB: &quot;Parameter Not Optional&quot; Err with Outlook 2000 Move Method

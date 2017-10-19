@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252941: No &quot;NTLM&quot; Authentication Method Available in IIS 5.0"
-permalink: kb/252/Q252941/
+permalink: /kb/252/Q252941/
 ---
 
 ## Q252941: No &quot;NTLM&quot; Authentication Method Available in IIS 5.0

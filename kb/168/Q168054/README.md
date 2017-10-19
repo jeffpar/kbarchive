@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168054: PRB: &quot;Cannot activate OLE Server&quot; or &quot;Moniker cannot open file&quot;"
-permalink: kb/168/Q168054/
+permalink: /kb/168/Q168054/
 ---
 
 ## Q168054: PRB: &quot;Cannot activate OLE Server&quot; or &quot;Moniker cannot open file&quot;

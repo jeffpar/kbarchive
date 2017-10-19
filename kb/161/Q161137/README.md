@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161137: HOWTO: Use Project and Binary Compatibility"
-permalink: kb/161/Q161137/
+permalink: /kb/161/Q161137/
 ---
 
 ## Q161137: HOWTO: Use Project and Binary Compatibility

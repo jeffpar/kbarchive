@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274806: Browser Loops When User Password Expires"
-permalink: kb/274/Q274806/
+permalink: /kb/274/Q274806/
 ---
 
 ## Q274806: Browser Loops When User Password Expires

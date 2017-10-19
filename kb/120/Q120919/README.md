@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120919: Visual C++ Vers 2.0 README.WRI, Part 3 Compiler"
-permalink: kb/120/Q120919/
+permalink: /kb/120/Q120919/
 ---
 
 ## Q120919: Visual C++ Vers 2.0 README.WRI, Part 3 Compiler

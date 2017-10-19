@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178049: Encarta 98 Err Msg: Error Registering the OCX..."
-permalink: kb/178/Q178049/
+permalink: /kb/178/Q178049/
 ---
 
 ## Q178049: Encarta 98 Err Msg: Error Registering the OCX...

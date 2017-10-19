@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287036: Slow Connection of Outlook Client to Exchange Server When You Us"
-permalink: kb/287/Q287036/
+permalink: /kb/287/Q287036/
 ---
 
 ## Q287036: Slow Connection of Outlook Client to Exchange Server When You Us

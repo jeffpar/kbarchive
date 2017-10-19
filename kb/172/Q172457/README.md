@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172457: MSN Home Page Is Not Loaded When Starting Internet Explorer"
-permalink: kb/172/Q172457/
+permalink: /kb/172/Q172457/
 ---
 
 ## Q172457: MSN Home Page Is Not Loaded When Starting Internet Explorer

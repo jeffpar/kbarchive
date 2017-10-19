@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237187: XCON: Excessive Context Switching During Heavy Message Traffic"
-permalink: kb/237/Q237187/
+permalink: /kb/237/Q237187/
 ---
 
 ## Q237187: XCON: Excessive Context Switching During Heavy Message Traffic

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200491: BUG: Incorrect Coordinates Passed to OLEDragDrop/OLEDragOver"
-permalink: kb/200/Q200491/
+permalink: /kb/200/Q200491/
 ---
 
 ## Q200491: BUG: Incorrect Coordinates Passed to OLEDragDrop/OLEDragOver

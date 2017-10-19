@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272535: XFOR: Notes Dirsync Does Not Work After Resetting Pcta.tbl Files"
-permalink: kb/272/Q272535/
+permalink: /kb/272/Q272535/
 ---
 
 ## Q272535: XFOR: Notes Dirsync Does Not Work After Resetting Pcta.tbl Files

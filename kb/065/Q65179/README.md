@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65179: Mac Gty: Err Msg: Account &quot;##&quot; Already Contains &quot;Name&quot;"
-permalink: kb/065/Q65179/
+permalink: /kb/065/Q65179/
 ---
 
 ## Q65179: Mac Gty: Err Msg: Account &quot;##&quot; Already Contains &quot;Name&quot;

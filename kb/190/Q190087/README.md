@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190087: BUG: Stop a Running Project From Immediate Window Crashes IDE"
-permalink: kb/190/Q190087/
+permalink: /kb/190/Q190087/
 ---
 
 ## Q190087: BUG: Stop a Running Project From Immediate Window Crashes IDE

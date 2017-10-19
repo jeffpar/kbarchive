@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153953: Log on Locally Permission Not Required for Client Access"
-permalink: kb/153/Q153953/
+permalink: /kb/153/Q153953/
 ---
 
 ## Q153953: Log on Locally Permission Not Required for Client Access

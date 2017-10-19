@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172609: FIX: /GX May Cause C1001 When Using Base Class' Operator Delete"
-permalink: kb/172/Q172609/
+permalink: /kb/172/Q172609/
 ---
 
 ## Q172609: FIX: /GX May Cause C1001 When Using Base Class' Operator Delete

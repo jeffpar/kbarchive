@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141558: FIX: WindowType Changed at Run Time Can't Be Changed Back"
-permalink: kb/141/Q141558/
+permalink: /kb/141/Q141558/
 ---
 
 ## Q141558: FIX: WindowType Changed at Run Time Can't Be Changed Back

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77880: Nth Group Peripherals Device Drivers, PS/2, and MS-DOS 5.0"
-permalink: kb/077/Q77880/
+permalink: /kb/077/Q77880/
 ---
 
 ## Q77880: Nth Group Peripherals Device Drivers, PS/2, and MS-DOS 5.0

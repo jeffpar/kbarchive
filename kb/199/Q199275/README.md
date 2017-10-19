@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199275: Inside SQL Server 6.5: Comments and Corrections"
-permalink: kb/199/Q199275/
+permalink: /kb/199/Q199275/
 ---
 
 ## Q199275: Inside SQL Server 6.5: Comments and Corrections

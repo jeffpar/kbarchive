@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82594: Minimum Space Required for Windows 3.1 Setup"
-permalink: kb/082/Q82594/
+permalink: /kb/082/Q82594/
 ---
 
 ## Q82594: Minimum Space Required for Windows 3.1 Setup

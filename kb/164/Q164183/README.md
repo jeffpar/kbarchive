@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164183: .HTM Files Are Indexed by Text Filter Instead of HTML Filter"
-permalink: kb/164/Q164183/
+permalink: /kb/164/Q164183/
 ---
 
 ## Q164183: .HTM Files Are Indexed by Text Filter Instead of HTML Filter

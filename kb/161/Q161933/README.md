@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161933: XFOR: MSMI Message Sent Time Stamp Is Incorrect"
-permalink: kb/161/Q161933/
+permalink: /kb/161/Q161933/
 ---
 
 ## Q161933: XFOR: MSMI Message Sent Time Stamp Is Incorrect

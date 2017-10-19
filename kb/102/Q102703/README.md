@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102703: PRB: &quot;Error Creating OLE Object&quot; with Paintbrush &amp; Windows 3.0"
-permalink: kb/102/Q102703/
+permalink: /kb/102/Q102703/
 ---
 
 ## Q102703: PRB: &quot;Error Creating OLE Object&quot; with Paintbrush &amp; Windows 3.0

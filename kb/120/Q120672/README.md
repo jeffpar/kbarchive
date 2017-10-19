@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120672: RAS: X.3 PAD Parameters for X.25 Networks"
-permalink: kb/120/Q120672/
+permalink: /kb/120/Q120672/
 ---
 
 ## Q120672: RAS: X.3 PAD Parameters for X.25 Networks

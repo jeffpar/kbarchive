@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156656: Err Msg: Remote Server Disconnect"
-permalink: kb/156/Q156656/
+permalink: /kb/156/Q156656/
 ---
 
 ## Q156656: Err Msg: Remote Server Disconnect

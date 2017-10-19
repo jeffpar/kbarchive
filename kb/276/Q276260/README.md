@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276260: User Record Is Not Updated If Remote LU Alias Is Removed"
-permalink: kb/276/Q276260/
+permalink: /kb/276/Q276260/
 ---
 
 ## Q276260: User Record Is Not Updated If Remote LU Alias Is Removed

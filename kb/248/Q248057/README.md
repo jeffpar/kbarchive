@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248057: How to Remove and Reinstall the Workstation Service"
-permalink: kb/248/Q248057/
+permalink: /kb/248/Q248057/
 ---
 
 ## Q248057: How to Remove and Reinstall the Workstation Service

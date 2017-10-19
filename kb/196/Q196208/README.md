@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196208: INFO: DCOM98 Release Notes"
-permalink: kb/196/Q196208/
+permalink: /kb/196/Q196208/
 ---
 
 ## Q196208: INFO: DCOM98 Release Notes

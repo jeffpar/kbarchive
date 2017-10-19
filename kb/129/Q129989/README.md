@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129989: MS WIN NT RESOURCE GUIDE 2ED  V1 Corrections and Comments"
-permalink: kb/129/Q129989/
+permalink: /kb/129/Q129989/
 ---
 
 ## Q129989: MS WIN NT RESOURCE GUIDE 2ED  V1 Corrections and Comments

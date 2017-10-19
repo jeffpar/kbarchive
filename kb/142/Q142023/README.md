@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142023: GSNW &quot;User Already Logged On&quot; to MS-Mail Post Office"
-permalink: kb/142/Q142023/
+permalink: /kb/142/Q142023/
 ---
 
 ## Q142023: GSNW &quot;User Already Logged On&quot; to MS-Mail Post Office

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q58383: Windows 3.0 SYSTEM.INI [386Enh] Section"
-permalink: kb/058/Q58383/
+title: "Q58383: Windows 3.0 SYSTEM.INI &#91;386Enh&#93; Section"
+permalink: /kb/058/Q58383/
 ---
 
-## Q58383: Windows 3.0 SYSTEM.INI [386Enh] Section
+## Q58383: Windows 3.0 SYSTEM.INI &#91;386Enh&#93; Section
 
 	Article: Q58383
 	Product(s): Microsoft Windows 3.x Retail Product

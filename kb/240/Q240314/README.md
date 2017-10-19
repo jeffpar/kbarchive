@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240314: INFO: Concurrent I/O Requests Number Setting Restrictions"
-permalink: kb/240/Q240314/
+permalink: /kb/240/Q240314/
 ---
 
 ## Q240314: INFO: Concurrent I/O Requests Number Setting Restrictions

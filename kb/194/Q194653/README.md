@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194653: FIX: MSHFLexGrid Does Not Display More Than 2048 Rows"
-permalink: kb/194/Q194653/
+permalink: /kb/194/Q194653/
 ---
 
 ## Q194653: FIX: MSHFLexGrid Does Not Display More Than 2048 Rows

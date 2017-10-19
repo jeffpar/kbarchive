@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189738: HOWTO: Run Setup1.vbp in the Design Environment"
-permalink: kb/189/Q189738/
+permalink: /kb/189/Q189738/
 ---
 
 ## Q189738: HOWTO: Run Setup1.vbp in the Design Environment

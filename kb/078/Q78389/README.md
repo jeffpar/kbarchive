@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78389: PRB: Cannot Print Object from an Embedded Window in Viewer"
-permalink: kb/078/Q78389/
+permalink: /kb/078/Q78389/
 ---
 
 ## Q78389: PRB: Cannot Print Object from an Embedded Window in Viewer

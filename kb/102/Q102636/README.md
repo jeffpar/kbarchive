@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102636: Video for Windows VidEdit Doesn't Run on Windows NT"
-permalink: kb/102/Q102636/
+permalink: /kb/102/Q102636/
 ---
 
 ## Q102636: Video for Windows VidEdit Doesn't Run on Windows NT

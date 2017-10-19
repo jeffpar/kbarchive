@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315673: HOW TO: Use the Security Planning Tool in IIS"
-permalink: kb/315/Q315673/
+permalink: /kb/315/Q315673/
 ---
 
 ## Q315673: HOW TO: Use the Security Planning Tool in IIS

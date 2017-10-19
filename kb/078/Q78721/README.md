@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78721: MS-DOS Editor Can Edit Lines Greater than 256 Characters"
-permalink: kb/078/Q78721/
+permalink: /kb/078/Q78721/
 ---
 
 ## Q78721: MS-DOS Editor Can Edit Lines Greater than 256 Characters

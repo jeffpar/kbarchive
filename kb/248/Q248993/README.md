@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248993: PRB: Performance Object Is Not Displayed in Performance Monitor"
-permalink: kb/248/Q248993/
+permalink: /kb/248/Q248993/
 ---
 
 ## Q248993: PRB: Performance Object Is Not Displayed in Performance Monitor

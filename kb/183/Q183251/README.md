@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183251: Files Included in the 32-Bit DLC Upgrade Download (Dlc32upd.exe)"
-permalink: kb/183/Q183251/
+permalink: /kb/183/Q183251/
 ---
 
 ## Q183251: Files Included in the 32-Bit DLC Upgrade Download (Dlc32upd.exe)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193928: XCON:Internet Mail Service Won't Start - Event ID 4007 &amp; 4020"
-permalink: kb/193/Q193928/
+permalink: /kb/193/Q193928/
 ---
 
 ## Q193928: XCON:Internet Mail Service Won't Start - Event ID 4007 &amp; 4020

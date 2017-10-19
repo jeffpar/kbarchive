@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192711: Users Unable to Update Their Host Cache Using UDConfig"
-permalink: kb/192/Q192711/
+permalink: /kb/192/Q192711/
 ---
 
 ## Q192711: Users Unable to Update Their Host Cache Using UDConfig

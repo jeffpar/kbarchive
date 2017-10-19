@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199974: SMS: Event to Trap Translator Error-Can't Load Message File"
-permalink: kb/199/Q199974/
+permalink: /kb/199/Q199974/
 ---
 
 ## Q199974: SMS: Event to Trap Translator Error-Can't Load Message File

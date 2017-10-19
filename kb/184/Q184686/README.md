@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184686: HOWTO: Disable the Close Option on Control Menu of a VB Form"
-permalink: kb/184/Q184686/
+permalink: /kb/184/Q184686/
 ---
 
 ## Q184686: HOWTO: Disable the Close Option on Control Menu of a VB Form

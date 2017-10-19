@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173087: Classic and New MSN Icons Appear on Desktop"
-permalink: kb/173/Q173087/
+permalink: /kb/173/Q173087/
 ---
 
 ## Q173087: Classic and New MSN Icons Appear on Desktop

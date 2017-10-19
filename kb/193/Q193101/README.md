@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193101: FIX: Unhandled Exception Using MFC Sockets in Visual C++ 6.0"
-permalink: kb/193/Q193101/
+permalink: /kb/193/Q193101/
 ---
 
 ## Q193101: FIX: Unhandled Exception Using MFC Sockets in Visual C++ 6.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122869: 16-Bit Applications That Ship with Windows 95"
-permalink: kb/122/Q122869/
+permalink: /kb/122/Q122869/
 ---
 
 ## Q122869: 16-Bit Applications That Ship with Windows 95

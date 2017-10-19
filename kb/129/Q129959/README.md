@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129959: Baseball '95: Biography Search Returns to Default Biography"
-permalink: kb/129/Q129959/
+permalink: /kb/129/Q129959/
 ---
 
 ## Q129959: Baseball '95: Biography Search Returns to Default Biography

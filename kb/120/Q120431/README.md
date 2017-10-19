@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120431: Photoshop 2.5 Causes a GPF When Opening an EPS"
-permalink: kb/120/Q120431/
+permalink: /kb/120/Q120431/
 ---
 
 ## Q120431: Photoshop 2.5 Causes a GPF When Opening an EPS

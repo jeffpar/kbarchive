@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223053: SMS: Installation Does Not Finish If Spaces Exist in Folder Name"
-permalink: kb/223/Q223053/
+permalink: /kb/223/Q223053/
 ---
 
 ## Q223053: SMS: Installation Does Not Finish If Spaces Exist in Folder Name

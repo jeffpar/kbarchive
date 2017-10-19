@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102786: HOWTO: Optimize FoxPro Performance on a Network"
-permalink: kb/102/Q102786/
+permalink: /kb/102/Q102786/
 ---
 
 ## Q102786: HOWTO: Optimize FoxPro Performance on a Network

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303496: Err Msg: Microsoft Train Simulator Has Encountered a Problem ..."
-permalink: kb/303/Q303496/
+permalink: /kb/303/Q303496/
 ---
 
 ## Q303496: Err Msg: Microsoft Train Simulator Has Encountered a Problem ...

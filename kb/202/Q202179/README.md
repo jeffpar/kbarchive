@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202179: HOWTO: Call Windows APIs with Special Requirements from VB"
-permalink: kb/202/Q202179/
+permalink: /kb/202/Q202179/
 ---
 
 ## Q202179: HOWTO: Call Windows APIs with Special Requirements from VB

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259529: INFO: How Visual Basic Classes Map to COM"
-permalink: kb/259/Q259529/
+permalink: /kb/259/Q259529/
 ---
 
 ## Q259529: INFO: How Visual Basic Classes Map to COM

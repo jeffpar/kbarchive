@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164840: XFOR: NDRs Stay in MS Mail Connector Queue"
-permalink: kb/164/Q164840/
+permalink: /kb/164/Q164840/
 ---
 
 ## Q164840: XFOR: NDRs Stay in MS Mail Connector Queue

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171841: FIX: Dragging Multiple Controls on a Form May Cause Crash"
-permalink: kb/171/Q171841/
+permalink: /kb/171/Q171841/
 ---
 
 ## Q171841: FIX: Dragging Multiple Controls on a Form May Cause Crash

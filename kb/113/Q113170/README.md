@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113170: CG: Refreshing ClipArt Gallery Thumbnail Images"
-permalink: kb/113/Q113170/
+permalink: /kb/113/Q113170/
 ---
 
 ## Q113170: CG: Refreshing ClipArt Gallery Thumbnail Images

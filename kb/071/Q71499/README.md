@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71499: INFO: Menus Supported in Dialog Boxes w/o DS_MODALFRAME Style"
-permalink: kb/071/Q71499/
+permalink: /kb/071/Q71499/
 ---
 
 ## Q71499: INFO: Menus Supported in Dialog Boxes w/o DS_MODALFRAME Style

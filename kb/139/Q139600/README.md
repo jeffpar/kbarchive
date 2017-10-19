@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139600: Registry Editor Save Key Saves Key on Wrong Computer"
-permalink: kb/139/Q139600/
+permalink: /kb/139/Q139600/
 ---
 
 ## Q139600: Registry Editor Save Key Saves Key on Wrong Computer

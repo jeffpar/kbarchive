@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155587: No Administrative Tools or Common Folders Available"
-permalink: kb/155/Q155587/
+permalink: /kb/155/Q155587/
 ---
 
 ## Q155587: No Administrative Tools or Common Folders Available

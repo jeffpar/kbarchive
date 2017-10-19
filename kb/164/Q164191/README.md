@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164191: Msbatch.inf Parameters: Bypassing Network Logon"
-permalink: kb/164/Q164191/
+permalink: /kb/164/Q164191/
 ---
 
 ## Q164191: Msbatch.inf Parameters: Bypassing Network Logon

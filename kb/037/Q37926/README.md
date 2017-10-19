@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q37926: Mac DOS: Using the MS-DOS PRINT Command with Mail"
-permalink: kb/037/Q37926/
+permalink: /kb/037/Q37926/
 ---
 
 ## Q37926: Mac DOS: Using the MS-DOS PRINT Command with Mail

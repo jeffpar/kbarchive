@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184451: Web Advertising &amp; Marketing by Design Comments and Corrections"
-permalink: kb/184/Q184451/
+permalink: /kb/184/Q184451/
 ---
 
 ## Q184451: Web Advertising &amp; Marketing by Design Comments and Corrections

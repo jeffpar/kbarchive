@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104021: Removing the Workgroup MS Mail Postoffice"
-permalink: kb/104/Q104021/
+permalink: /kb/104/Q104021/
 ---
 
 ## Q104021: Removing the Workgroup MS Mail Postoffice

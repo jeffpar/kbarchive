@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88567: Seagate SCSI Adapters ST-01 and ST-02 and Windows"
-permalink: kb/088/Q88567/
+permalink: /kb/088/Q88567/
 ---
 
 ## Q88567: Seagate SCSI Adapters ST-01 and ST-02 and Windows

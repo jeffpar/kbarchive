@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173065: PRB: Problems After Branching Integrated DevStudio Projects"
-permalink: kb/173/Q173065/
+permalink: /kb/173/Q173065/
 ---
 
 ## Q173065: PRB: Problems After Branching Integrated DevStudio Projects

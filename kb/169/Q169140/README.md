@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169140: Using DHCP to Assign IP Addresses to Secondary Networks"
-permalink: kb/169/Q169140/
+permalink: /kb/169/Q169140/
 ---
 
 ## Q169140: Using DHCP to Assign IP Addresses to Secondary Networks

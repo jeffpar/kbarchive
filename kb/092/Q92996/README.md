@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92996: Local Printer Causes 1st Network Print Job to Disappear"
-permalink: kb/092/Q92996/
+permalink: /kb/092/Q92996/
 ---
 
 ## Q92996: Local Printer Causes 1st Network Print Job to Disappear

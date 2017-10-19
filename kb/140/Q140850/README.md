@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140850: HOWTO: Properly Export Functions Using the MFC Shared Library"
-permalink: kb/140/Q140850/
+permalink: /kb/140/Q140850/
 ---
 
 ## Q140850: HOWTO: Properly Export Functions Using the MFC Shared Library

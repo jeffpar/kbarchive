@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150593: PRB: Syntax Error When You Modify Local View w/ Reserved Words"
-permalink: kb/150/Q150593/
+permalink: /kb/150/Q150593/
 ---
 
 ## Q150593: PRB: Syntax Error When You Modify Local View w/ Reserved Words

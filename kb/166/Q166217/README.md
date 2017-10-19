@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166217: PRB: ATL EXE Server Built On Windows 95 Errors While Registering"
-permalink: kb/166/Q166217/
+permalink: /kb/166/Q166217/
 ---
 
 ## Q166217: PRB: ATL EXE Server Built On Windows 95 Errors While Registering

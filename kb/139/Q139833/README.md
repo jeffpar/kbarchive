@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139833: Multimedia: No Icons or Groups Created in Program Manager"
-permalink: kb/139/Q139833/
+permalink: /kb/139/Q139833/
 ---
 
 ## Q139833: Multimedia: No Icons or Groups Created in Program Manager

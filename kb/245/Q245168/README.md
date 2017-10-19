@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245168: WINS, DHCP Do Not Start After Upgrade to Command AntiVirus 4.54."
-permalink: kb/245/Q245168/
+permalink: /kb/245/Q245168/
 ---
 
 ## Q245168: WINS, DHCP Do Not Start After Upgrade to Command AntiVirus 4.54.

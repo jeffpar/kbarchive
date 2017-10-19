@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101094: Err Msg: Invalid Catalog Name in Temporary File"
-permalink: kb/101/Q101094/
+permalink: /kb/101/Q101094/
 ---
 
 ## Q101094: Err Msg: Invalid Catalog Name in Temporary File

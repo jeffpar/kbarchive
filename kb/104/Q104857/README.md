@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104857: Flight Simulator: Aircraft Pulls to the Left"
-permalink: kb/104/Q104857/
+permalink: /kb/104/Q104857/
 ---
 
 ## Q104857: Flight Simulator: Aircraft Pulls to the Left

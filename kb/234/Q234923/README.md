@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234923: Err Msg: HTTP/1.1 501 Not Supported"
-permalink: kb/234/Q234923/
+permalink: /kb/234/Q234923/
 ---
 
 ## Q234923: Err Msg: HTTP/1.1 501 Not Supported

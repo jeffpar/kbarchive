@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128918: Device Manager Lists Unknown Hardware"
-permalink: kb/128/Q128918/
+permalink: /kb/128/Q128918/
 ---
 
 ## Q128918: Device Manager Lists Unknown Hardware

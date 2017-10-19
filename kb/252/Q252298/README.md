@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252298: Error Msg &quot;Browser Error: Your Browser Sent a Malformed Request"
-permalink: kb/252/Q252298/
+permalink: /kb/252/Q252298/
 ---
 
 ## Q252298: Error Msg &quot;Browser Error: Your Browser Sent a Malformed Request

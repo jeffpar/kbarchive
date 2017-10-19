@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170906: WD97: Widow/Orphan Setting Not Preserved Saving As Word 6.0/95"
-permalink: kb/170/Q170906/
+permalink: /kb/170/Q170906/
 ---
 
 ## Q170906: WD97: Widow/Orphan Setting Not Preserved Saving As Word 6.0/95

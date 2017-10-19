@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104062: PC WSPlus: IBM Matrix Incorrectly Prints Right Border"
-permalink: kb/104/Q104062/
+permalink: /kb/104/Q104062/
 ---
 
 ## Q104062: PC WSPlus: IBM Matrix Incorrectly Prints Right Border

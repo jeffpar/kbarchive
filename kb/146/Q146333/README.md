@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146333: How to Remove Network Adapters from the Registry"
-permalink: kb/146/Q146333/
+permalink: /kb/146/Q146333/
 ---
 
 ## Q146333: How to Remove Network Adapters from the Registry

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295534: Superfluous Decoding Operation Can Allow Command Execution"
-permalink: kb/295/Q295534/
+permalink: /kb/295/Q295534/
 ---
 
 ## Q295534: Superfluous Decoding Operation Can Allow Command Execution

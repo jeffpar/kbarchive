@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221642: FIX: Memory Leak With SET SYSMENU TO DEFAULT"
-permalink: kb/221/Q221642/
+permalink: /kb/221/Q221642/
 ---
 
 ## Q221642: FIX: Memory Leak With SET SYSMENU TO DEFAULT

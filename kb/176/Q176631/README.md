@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176631: DOCFIX: FlexGrid Constants Incorrect in Help and Books Online"
-permalink: kb/176/Q176631/
+permalink: /kb/176/Q176631/
 ---
 
 ## Q176631: DOCFIX: FlexGrid Constants Incorrect in Help and Books Online

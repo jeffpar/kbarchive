@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172514: Silent RIP for IP Available for Windows NT Workstation"
-permalink: kb/172/Q172514/
+permalink: /kb/172/Q172514/
 ---
 
 ## Q172514: Silent RIP for IP Available for Windows NT Workstation

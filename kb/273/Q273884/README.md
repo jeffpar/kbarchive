@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273884: XADM: How to Stop Address Book View Intersite Replication"
-permalink: kb/273/Q273884/
+permalink: /kb/273/Q273884/
 ---
 
 ## Q273884: XADM: How to Stop Address Book View Intersite Replication

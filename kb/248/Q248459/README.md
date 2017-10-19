@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248459: PRB: eading Spaces Trimmed in DataReport Label Multi-Line Captio"
-permalink: kb/248/Q248459/
+permalink: /kb/248/Q248459/
 ---
 
 ## Q248459: PRB: eading Spaces Trimmed in DataReport Label Multi-Line Captio

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186920: HOWTO: Change the Report Designer Ruler Measurement"
-permalink: kb/186/Q186920/
+permalink: /kb/186/Q186920/
 ---
 
 ## Q186920: HOWTO: Change the Report Designer Ruler Measurement

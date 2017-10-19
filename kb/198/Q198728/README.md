@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198728: SMS: Cannot Remote Control Clients Using DirectX"
-permalink: kb/198/Q198728/
+permalink: /kb/198/Q198728/
 ---
 
 ## Q198728: SMS: Cannot Remote Control Clients Using DirectX

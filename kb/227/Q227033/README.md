@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227033: Changing the SMSClient_&lt;SiteCode&gt; Password Can Cause Lockouts"
-permalink: kb/227/Q227033/
+permalink: /kb/227/Q227033/
 ---
 
 ## Q227033: Changing the SMSClient_&lt;SiteCode&gt; Password Can Cause Lockouts

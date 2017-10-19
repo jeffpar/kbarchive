@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77984: Which MS-DOS Version Should I Boot to Run MS-DOS Setup?"
-permalink: kb/077/Q77984/
+permalink: /kb/077/Q77984/
 ---
 
 ## Q77984: Which MS-DOS Version Should I Boot to Run MS-DOS Setup?

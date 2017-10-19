@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171111: Audio Options Disabled with Gravis Sound Card"
-permalink: kb/171/Q171111/
+permalink: /kb/171/Q171111/
 ---
 
 ## Q171111: Audio Options Disabled with Gravis Sound Card

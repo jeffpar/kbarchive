@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139633: STOP: 0x0000000A After Installing Cheyenne ArcServe 1.0"
-permalink: kb/139/Q139633/
+permalink: /kb/139/Q139633/
 ---
 
 ## Q139633: STOP: 0x0000000A After Installing Cheyenne ArcServe 1.0

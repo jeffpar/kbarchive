@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149213: How Resource Accounts Automatically Accept Meeting Requests"
-permalink: kb/149/Q149213/
+permalink: /kb/149/Q149213/
 ---
 
 ## Q149213: How Resource Accounts Automatically Accept Meeting Requests

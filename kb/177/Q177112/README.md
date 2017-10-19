@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177112: Unable to Send Message to RAS Clients from RAS Admin"
-permalink: kb/177/Q177112/
+permalink: /kb/177/Q177112/
 ---
 
 ## Q177112: Unable to Send Message to RAS Clients from RAS Admin

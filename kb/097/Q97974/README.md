@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97974: PRB: CV1053 Warning: TOOLS.INI Not Found"
-permalink: kb/097/Q97974/
+permalink: /kb/097/Q97974/
 ---
 
 ## Q97974: PRB: CV1053 Warning: TOOLS.INI Not Found

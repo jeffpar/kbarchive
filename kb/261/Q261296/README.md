@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261296: Asheron's Call: How to Improve Game Performance"
-permalink: kb/261/Q261296/
+permalink: /kb/261/Q261296/
 ---
 
 ## Q261296: Asheron's Call: How to Improve Game Performance

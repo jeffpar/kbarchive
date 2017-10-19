@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217136: DNS Converts Host Names to Lowercase"
-permalink: kb/217/Q217136/
+permalink: /kb/217/Q217136/
 ---
 
 ## Q217136: DNS Converts Host Names to Lowercase

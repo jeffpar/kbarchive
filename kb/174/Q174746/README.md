@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174746: XADM: Err Msg: Unexpected NT API Error: 0xC000000D"
-permalink: kb/174/Q174746/
+permalink: /kb/174/Q174746/
 ---
 
 ## Q174746: XADM: Err Msg: Unexpected NT API Error: 0xC000000D

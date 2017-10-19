@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322121: Windows May Drop UDP Packets During a RAS Connection"
-permalink: kb/322/Q322121/
+permalink: /kb/322/Q322121/
 ---
 
 ## Q322121: Windows May Drop UDP Packets During a RAS Connection

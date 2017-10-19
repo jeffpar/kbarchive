@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161992: Extra Noise Playing MPEG Files with Zoomed Video Card"
-permalink: kb/161/Q161992/
+permalink: /kb/161/Q161992/
 ---
 
 ## Q161992: Extra Noise Playing MPEG Files with Zoomed Video Card

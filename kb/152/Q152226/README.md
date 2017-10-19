@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152226: XCLN: Inbox and OOF Assistants Missing from Tools Menu"
-permalink: kb/152/Q152226/
+permalink: /kb/152/Q152226/
 ---
 
 ## Q152226: XCLN: Inbox and OOF Assistants Missing from Tools Menu

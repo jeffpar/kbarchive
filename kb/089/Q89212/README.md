@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89212: Maintenance Mode Setup Can Cause Corrupted WIN.COM"
-permalink: kb/089/Q89212/
+permalink: /kb/089/Q89212/
 ---
 
 ## Q89212: Maintenance Mode Setup Can Cause Corrupted WIN.COM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130515: NetBIOS Parameter Ignored in Windows NT Mail"
-permalink: kb/130/Q130515/
+permalink: /kb/130/Q130515/
 ---
 
 ## Q130515: NetBIOS Parameter Ignored in Windows NT Mail

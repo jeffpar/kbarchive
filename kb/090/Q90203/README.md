@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90203: EXP16.DOS Configures Intel EtherExpress 16 in WFWG"
-permalink: kb/090/Q90203/
+permalink: /kb/090/Q90203/
 ---
 
 ## Q90203: EXP16.DOS Configures Intel EtherExpress 16 in WFWG

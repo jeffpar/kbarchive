@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97701: VidEdit: Indeo Supports 24-Bit Color Only"
-permalink: kb/097/Q97701/
+permalink: /kb/097/Q97701/
 ---
 
 ## Q97701: VidEdit: Indeo Supports 24-Bit Color Only

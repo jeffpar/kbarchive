@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246124: MS-DOS 6.22 Year 2000 Information"
-permalink: kb/246/Q246124/
+permalink: /kb/246/Q246124/
 ---
 
 ## Q246124: MS-DOS 6.22 Year 2000 Information

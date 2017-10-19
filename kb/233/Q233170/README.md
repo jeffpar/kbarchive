@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233170: Error: 'Top.Opener.Document.Userform.HdnPort' Is Not an Object"
-permalink: kb/233/Q233170/
+permalink: /kb/233/Q233170/
 ---
 
 ## Q233170: Error: 'Top.Opener.Document.Userform.HdnPort' Is Not an Object

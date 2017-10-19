@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120439: Cannot Insert Excel OLE Object into Packrat on RISC Computer"
-permalink: kb/120/Q120439/
+permalink: /kb/120/Q120439/
 ---
 
 ## Q120439: Cannot Insert Excel OLE Object into Packrat on RISC Computer

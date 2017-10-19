@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173240: Multihomed Agent Sends SNMP Trap with Incorrect IP Source"
-permalink: kb/173/Q173240/
+permalink: /kb/173/Q173240/
 ---
 
 ## Q173240: Multihomed Agent Sends SNMP Trap with Incorrect IP Source

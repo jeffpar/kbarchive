@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104733: ScanDisk /CHECKONLY Mode on Third-Party Compressed Disks"
-permalink: kb/104/Q104733/
+permalink: /kb/104/Q104733/
 ---
 
 ## Q104733: ScanDisk /CHECKONLY Mode on Third-Party Compressed Disks

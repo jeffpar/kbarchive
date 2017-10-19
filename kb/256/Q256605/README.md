@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256605: Session Timeout Occurs from Server Behind a Cisco LocalDirector"
-permalink: kb/256/Q256605/
+permalink: /kb/256/Q256605/
 ---
 
 ## Q256605: Session Timeout Occurs from Server Behind a Cisco LocalDirector

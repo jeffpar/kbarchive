@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258662: Availability of FAT32 Support in Windows 95"
-permalink: kb/258/Q258662/
+permalink: /kb/258/Q258662/
 ---
 
 ## Q258662: Availability of FAT32 Support in Windows 95

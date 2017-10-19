@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235256: Microsoft Outlook 2000 At A Glance Comments and Corrections"
-permalink: kb/235/Q235256/
+permalink: /kb/235/Q235256/
 ---
 
 ## Q235256: Microsoft Outlook 2000 At A Glance Comments and Corrections

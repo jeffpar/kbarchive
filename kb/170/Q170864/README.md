@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170864: Error Trying to Run ADO When ASP Installed w/ SQL Server Running"
-permalink: kb/170/Q170864/
+permalink: /kb/170/Q170864/
 ---
 
 ## Q170864: Error Trying to Run ADO When ASP Installed w/ SQL Server Running

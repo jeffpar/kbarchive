@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184993: XFOR: ReadReceipts and NDRs Appear with Message Class Icon"
-permalink: kb/184/Q184993/
+permalink: /kb/184/Q184993/
 ---
 
 ## Q184993: XFOR: ReadReceipts and NDRs Appear with Message Class Icon

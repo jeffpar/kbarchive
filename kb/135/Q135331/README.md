@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135331: PRB: ALTER COLUMN Clause Applies Only to First SET After It"
-permalink: kb/135/Q135331/
+permalink: /kb/135/Q135331/
 ---
 
 ## Q135331: PRB: ALTER COLUMN Clause Applies Only to First SET After It

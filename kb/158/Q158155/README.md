@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158155: SAS Window: Winlogon.exe Error"
-permalink: kb/158/Q158155/
+permalink: /kb/158/Q158155/
 ---
 
 ## Q158155: SAS Window: Winlogon.exe Error

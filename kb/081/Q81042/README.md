@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81042: Terminal: Cannot Save Files with MS-DOS Device Driver Names"
-permalink: kb/081/Q81042/
+permalink: /kb/081/Q81042/
 ---
 
 ## Q81042: Terminal: Cannot Save Files with MS-DOS Device Driver Names

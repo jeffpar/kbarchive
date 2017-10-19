@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172971: XCLN: Changing the Binding Order Of the Macintosh Client"
-permalink: kb/172/Q172971/
+permalink: /kb/172/Q172971/
 ---
 
 ## Q172971: XCLN: Changing the Binding Order Of the Macintosh Client

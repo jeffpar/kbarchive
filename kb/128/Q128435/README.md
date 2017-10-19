@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128435: Error Printing From Lotus Notes in Windows NT"
-permalink: kb/128/Q128435/
+permalink: /kb/128/Q128435/
 ---
 
 ## Q128435: Error Printing From Lotus Notes in Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222060: Err Msg: &quot;Error 5: Access denied&quot; When Using PPTP with RAS"
-permalink: kb/222/Q222060/
+permalink: /kb/222/Q222060/
 ---
 
 ## Q222060: Err Msg: &quot;Error 5: Access denied&quot; When Using PPTP with RAS

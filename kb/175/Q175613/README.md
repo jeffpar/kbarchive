@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175613: FIX: Combo Box ItemTips Prevents Selection and DisplayValue"
-permalink: kb/175/Q175613/
+permalink: /kb/175/Q175613/
 ---
 
 ## Q175613: FIX: Combo Box ItemTips Prevents Selection and DisplayValue

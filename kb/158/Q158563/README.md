@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158563: Cannot Open HKEY_DYN_DATA Key with Regedit.exe"
-permalink: kb/158/Q158563/
+permalink: /kb/158/Q158563/
 ---
 
 ## Q158563: Cannot Open HKEY_DYN_DATA Key with Regedit.exe

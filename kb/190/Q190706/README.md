@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190706: XADM: Exported Multi-valued Fields May Vary in Order Listed"
-permalink: kb/190/Q190706/
+permalink: /kb/190/Q190706/
 ---
 
 ## Q190706: XADM: Exported Multi-valued Fields May Vary in Order Listed

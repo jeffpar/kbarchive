@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221736: FIX: WriteExpression Fails With Unknown Error Code -5"
-permalink: kb/221/Q221736/
+permalink: /kb/221/Q221736/
 ---
 
 ## Q221736: FIX: WriteExpression Fails With Unknown Error Code -5

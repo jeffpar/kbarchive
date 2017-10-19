@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q206904: BUG: Copying the Tab Control Does Not Display All Child Controls"
-permalink: kb/206/Q206904/
+permalink: /kb/206/Q206904/
 ---
 
 ## Q206904: BUG: Copying the Tab Control Does Not Display All Child Controls

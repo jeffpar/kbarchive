@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129267: Windows NT 3.5 Hangs on Ambra DP60 with Genoa Systems 8900"
-permalink: kb/129/Q129267/
+permalink: /kb/129/Q129267/
 ---
 
 ## Q129267: Windows NT 3.5 Hangs on Ambra DP60 with Genoa Systems 8900

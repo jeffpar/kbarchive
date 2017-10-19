@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274687: MGS Error Message: Mgsi Executed an Invalid Instruction..."
-permalink: kb/274/Q274687/
+permalink: /kb/274/Q274687/
 ---
 
 ## Q274687: MGS Error Message: Mgsi Executed an Invalid Instruction...

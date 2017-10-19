@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154825: HOWTO: Extract Multiple RDO Resultsets from Stored Procedures"
-permalink: kb/154/Q154825/
+permalink: /kb/154/Q154825/
 ---
 
 ## Q154825: HOWTO: Extract Multiple RDO Resultsets from Stored Procedures

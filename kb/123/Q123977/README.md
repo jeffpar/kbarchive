@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123977: PRB: &quot;Unexpected column data types were returned from query&quot;"
-permalink: kb/123/Q123977/
+permalink: /kb/123/Q123977/
 ---
 
 ## Q123977: PRB: &quot;Unexpected column data types were returned from query&quot;

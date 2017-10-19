@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199297: XCLN: How to Stop Publishing Free and Busy Times in Outlook"
-permalink: kb/199/Q199297/
+permalink: /kb/199/Q199297/
 ---
 
 ## Q199297: XCLN: How to Stop Publishing Free and Busy Times in Outlook

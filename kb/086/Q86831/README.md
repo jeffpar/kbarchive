@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86831: 32-Bit Disk Access and Western Digital 1003 Controller Cards"
-permalink: kb/086/Q86831/
+permalink: /kb/086/Q86831/
 ---
 
 ## Q86831: 32-Bit Disk Access and Western Digital 1003 Controller Cards

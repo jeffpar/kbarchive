@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65979: PRB: C Pragma Comment &amp; #ident Strings Missing from Executable"
-permalink: kb/065/Q65979/
+permalink: /kb/065/Q65979/
 ---
 
 ## Q65979: PRB: C Pragma Comment &amp; #ident Strings Missing from Executable

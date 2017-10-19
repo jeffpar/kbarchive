@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154696: Starting MS-DOS from Office 95 Shortcut Bar May Fail"
-permalink: kb/154/Q154696/
+permalink: /kb/154/Q154696/
 ---
 
 ## Q154696: Starting MS-DOS from Office 95 Shortcut Bar May Fail

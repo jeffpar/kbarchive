@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148865: PRB: Can't Access Stored Procedures in Visual FoxPro Database"
-permalink: kb/148/Q148865/
+permalink: /kb/148/Q148865/
 ---
 
 ## Q148865: PRB: Can't Access Stored Procedures in Visual FoxPro Database

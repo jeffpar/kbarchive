@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134300: APM Not Installed on Midwest Micro Elite Soundbook"
-permalink: kb/134/Q134300/
+permalink: /kb/134/Q134300/
 ---
 
 ## Q134300: APM Not Installed on Midwest Micro Elite Soundbook

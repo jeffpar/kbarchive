@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187714: Domain Controllers Being Replaced in 1C List"
-permalink: kb/187/Q187714/
+permalink: /kb/187/Q187714/
 ---
 
 ## Q187714: Domain Controllers Being Replaced in 1C List

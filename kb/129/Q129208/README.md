@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129208: Pixel Replaces Foxel as Default Scale Value in Design Mode"
-permalink: kb/129/Q129208/
+permalink: /kb/129/Q129208/
 ---
 
 ## Q129208: Pixel Replaces Foxel as Default Scale Value in Design Mode

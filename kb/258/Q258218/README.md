@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258218: Error Message &quot;Pathname Not Normalized&quot; When Installing Interix"
-permalink: kb/258/Q258218/
+permalink: /kb/258/Q258218/
 ---
 
 ## Q258218: Error Message &quot;Pathname Not Normalized&quot; When Installing Interix

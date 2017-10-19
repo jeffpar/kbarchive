@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306735: SMS: &quot;Element Not Found&quot; Error Message Displaying Site Hierarchy"
-permalink: kb/306/Q306735/
+permalink: /kb/306/Q306735/
 ---
 
 ## Q306735: SMS: &quot;Element Not Found&quot; Error Message Displaying Site Hierarchy

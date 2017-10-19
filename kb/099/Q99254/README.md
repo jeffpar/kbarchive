@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99254: Problems with Compaq 486/C LTEs and Megahertz 14.4k Modems"
-permalink: kb/099/Q99254/
+permalink: /kb/099/Q99254/
 ---
 
 ## Q99254: Problems with Compaq 486/C LTEs and Megahertz 14.4k Modems

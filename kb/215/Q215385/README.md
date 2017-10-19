@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215385: BUG:ItemClick Event Fires After First ListItem Added to ListView"
-permalink: kb/215/Q215385/
+permalink: /kb/215/Q215385/
 ---
 
 ## Q215385: BUG:ItemClick Event Fires After First ListItem Added to ListView

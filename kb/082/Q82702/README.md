@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82702: LanFax Redirector Appends Extra Extension to Filename"
-permalink: kb/082/Q82702/
+permalink: /kb/082/Q82702/
 ---
 
 ## Q82702: LanFax Redirector Appends Extra Extension to Filename

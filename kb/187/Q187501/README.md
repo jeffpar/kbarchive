@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187501: Different Directory Types That Can Be Added To a Catalog"
-permalink: kb/187/Q187501/
+permalink: /kb/187/Q187501/
 ---
 
 ## Q187501: Different Directory Types That Can Be Added To a Catalog

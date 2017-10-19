@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301989: HOW TO: Capture WAN Traffic with Network Monitor in Windows"
-permalink: kb/301/Q301989/
+permalink: /kb/301/Q301989/
 ---
 
 ## Q301989: HOW TO: Capture WAN Traffic with Network Monitor in Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151284: Top Articles on Troubleshooting Windows 95"
-permalink: kb/151/Q151284/
+permalink: /kb/151/Q151284/
 ---
 
 ## Q151284: Top Articles on Troubleshooting Windows 95

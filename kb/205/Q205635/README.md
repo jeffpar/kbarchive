@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q205635: HOWTO: Save Bitmap File as OLE Object in Access OLE Object Field"
-permalink: kb/205/Q205635/
+permalink: /kb/205/Q205635/
 ---
 
 ## Q205635: HOWTO: Save Bitmap File as OLE Object in Access OLE Object Field

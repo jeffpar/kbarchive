@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117139: Hard Disk Access Disappears with Ultrastor 34F Local Bus"
-permalink: kb/117/Q117139/
+permalink: /kb/117/Q117139/
 ---
 
 ## Q117139: Hard Disk Access Disappears with Ultrastor 34F Local Bus

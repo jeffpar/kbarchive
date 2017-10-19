@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198077: WD97: Tab Leaders Unavailable in Format Tabs Dialog Box"
-permalink: kb/198/Q198077/
+permalink: /kb/198/Q198077/
 ---
 
 ## Q198077: WD97: Tab Leaders Unavailable in Format Tabs Dialog Box

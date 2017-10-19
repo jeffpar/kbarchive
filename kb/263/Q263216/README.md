@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263216: Dr. Watson Error in Cluster Administrator"
-permalink: kb/263/Q263216/
+permalink: /kb/263/Q263216/
 ---
 
 ## Q263216: Dr. Watson Error in Cluster Administrator

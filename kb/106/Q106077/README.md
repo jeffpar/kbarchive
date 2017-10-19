@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106077: BUG: System-Wide WH_DEBUG Hook Causes a GP Fault"
-permalink: kb/106/Q106077/
+permalink: /kb/106/Q106077/
 ---
 
 ## Q106077: BUG: System-Wide WH_DEBUG Hook Causes a GP Fault

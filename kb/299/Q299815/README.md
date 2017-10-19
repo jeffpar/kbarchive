@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299815: Train Simulator: Clicking Cancel Turns Off Keyboard Assignment"
-permalink: kb/299/Q299815/
+permalink: /kb/299/Q299815/
 ---
 
 ## Q299815: Train Simulator: Clicking Cancel Turns Off Keyboard Assignment

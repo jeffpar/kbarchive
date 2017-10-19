@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q44128: How to Search for PowerPoint Articles by KBSubcategory"
-permalink: kb/044/Q44128/
+permalink: /kb/044/Q44128/
 ---
 
 ## Q44128: How to Search for PowerPoint Articles by KBSubcategory

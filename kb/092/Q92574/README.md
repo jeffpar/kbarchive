@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92574: NULL Character Causes Loss of Data in INI Files"
-permalink: kb/092/Q92574/
+permalink: /kb/092/Q92574/
 ---
 
 ## Q92574: NULL Character Causes Loss of Data in INI Files

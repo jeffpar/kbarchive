@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140284: Bidirectional Printers Supported in Windows 95"
-permalink: kb/140/Q140284/
+permalink: /kb/140/Q140284/
 ---
 
 ## Q140284: Bidirectional Printers Supported in Windows 95

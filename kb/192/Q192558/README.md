@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192558: Games Err Msg: Unable to Find Specific Language .Dll"
-permalink: kb/192/Q192558/
+permalink: /kb/192/Q192558/
 ---
 
 ## Q192558: Games Err Msg: Unable to Find Specific Language .Dll

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162447: Multiple Print Jobs When Printing Single Document"
-permalink: kb/162/Q162447/
+permalink: /kb/162/Q162447/
 ---
 
 ## Q162447: Multiple Print Jobs When Printing Single Document

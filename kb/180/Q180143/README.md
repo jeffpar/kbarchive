@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180143: Err Msg: The Microsoft Dial-Up Adapter Is Not Installed..."
-permalink: kb/180/Q180143/
+permalink: /kb/180/Q180143/
 ---
 
 ## Q180143: Err Msg: The Microsoft Dial-Up Adapter Is Not Installed...

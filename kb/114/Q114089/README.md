@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114089: Using the Windows NT NetDDE Share Manager"
-permalink: kb/114/Q114089/
+permalink: /kb/114/Q114089/
 ---
 
 ## Q114089: Using the Windows NT NetDDE Share Manager

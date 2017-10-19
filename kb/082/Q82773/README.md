@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82773: How Setup Determines a File Version"
-permalink: kb/082/Q82773/
+permalink: /kb/082/Q82773/
 ---
 
 ## Q82773: How Setup Determines a File Version

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153930: ADT95: &quot;Item Not Found In This Collection&quot; with ADT Setup Wizard"
-permalink: kb/153/Q153930/
+permalink: /kb/153/Q153930/
 ---
 
 ## Q153930: ADT95: &quot;Item Not Found In This Collection&quot; with ADT Setup Wizard

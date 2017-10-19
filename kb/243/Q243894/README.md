@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243894: XFOR: Exchange Server 4.0, 5.0, 5.5 Do Not Support 8-Bit Mime"
-permalink: kb/243/Q243894/
+permalink: /kb/243/Q243894/
 ---
 
 ## Q243894: XFOR: Exchange Server 4.0, 5.0, 5.5 Do Not Support 8-Bit Mime

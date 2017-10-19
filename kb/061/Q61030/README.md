@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61030: WD97: Setting Custom Superscipt/Subscript Font Size and Position"
-permalink: kb/061/Q61030/
+permalink: /kb/061/Q61030/
 ---
 
 ## Q61030: WD97: Setting Custom Superscipt/Subscript Font Size and Position

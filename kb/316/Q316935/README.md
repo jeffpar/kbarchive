@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316935: INFO: Using Resource Pooling with the OLE DB Provider for DB2"
-permalink: kb/316/Q316935/
+permalink: /kb/316/Q316935/
 ---
 
 ## Q316935: INFO: Using Resource Pooling with the OLE DB Provider for DB2

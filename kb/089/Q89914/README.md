@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89914: 256-Color Bitmap Problems with Quick Recorder"
-permalink: kb/089/Q89914/
+permalink: /kb/089/Q89914/
 ---
 
 ## Q89914: 256-Color Bitmap Problems with Quick Recorder

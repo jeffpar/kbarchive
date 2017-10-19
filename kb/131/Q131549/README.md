@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131549: INFO: Use Place-Holder Commas in Calls with Missing Parameters"
-permalink: kb/131/Q131549/
+permalink: /kb/131/Q131549/
 ---
 
 ## Q131549: INFO: Use Place-Holder Commas in Calls with Missing Parameters

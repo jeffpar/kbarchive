@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123400: NCC/CSNW Product Description and Download Locations"
-permalink: kb/123/Q123400/
+permalink: /kb/123/Q123400/
 ---
 
 ## Q123400: NCC/CSNW Product Description and Download Locations

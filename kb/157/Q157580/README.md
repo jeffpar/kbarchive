@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157580: WD97: Some Wizards Don't Show Finish On Progress Indicator"
-permalink: kb/157/Q157580/
+permalink: /kb/157/Q157580/
 ---
 
 ## Q157580: WD97: Some Wizards Don't Show Finish On Progress Indicator

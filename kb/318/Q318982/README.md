@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318982: FIX:Fatal Exception Activating Properties Window w/ MSAA Watcher"
-permalink: kb/318/Q318982/
+permalink: /kb/318/Q318982/
 ---
 
 ## Q318982: FIX:Fatal Exception Activating Properties Window w/ MSAA Watcher

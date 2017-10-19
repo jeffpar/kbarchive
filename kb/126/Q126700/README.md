@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126700: Sound Problems with the Monte Carlo Sound Card"
-permalink: kb/126/Q126700/
+permalink: /kb/126/Q126700/
 ---
 
 ## Q126700: Sound Problems with the Monte Carlo Sound Card

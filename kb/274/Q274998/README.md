@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274998: XADM:  How to Change an E-mail  Alias in the SMTP Address"
-permalink: kb/274/Q274998/
+permalink: /kb/274/Q274998/
 ---
 
 ## Q274998: XADM:  How to Change an E-mail  Alias in the SMTP Address

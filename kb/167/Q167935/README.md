@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167935: XCLN: Able to Log On with Incorrect Windows NT Credentials"
-permalink: kb/167/Q167935/
+permalink: /kb/167/Q167935/
 ---
 
 ## Q167935: XCLN: Able to Log On with Incorrect Windows NT Credentials

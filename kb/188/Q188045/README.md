@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188045: SMS: Smsls.ini Fails If Used in a Domain with Multiple Sites"
-permalink: kb/188/Q188045/
+permalink: /kb/188/Q188045/
 ---
 
 ## Q188045: SMS: Smsls.ini Fails If Used in a Domain with Multiple Sites

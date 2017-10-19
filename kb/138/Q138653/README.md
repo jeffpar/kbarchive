@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138653: Part 2 of 2 Visual FoxPro Prof Files After Installation"
-permalink: kb/138/Q138653/
+permalink: /kb/138/Q138653/
 ---
 
 ## Q138653: Part 2 of 2 Visual FoxPro Prof Files After Installation

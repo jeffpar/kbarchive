@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150202: BUG: Sheridan Frame and Panel Stretch Font with Move Method"
-permalink: kb/150/Q150202/
+permalink: /kb/150/Q150202/
 ---
 
 ## Q150202: BUG: Sheridan Frame and Panel Stretch Font with Move Method

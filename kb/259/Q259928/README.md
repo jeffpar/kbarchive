@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259928: PRB: REPLACE Command Runs Slowly When Applied to a Remote Table"
-permalink: kb/259/Q259928/
+permalink: /kb/259/Q259928/
 ---
 
 ## Q259928: PRB: REPLACE Command Runs Slowly When Applied to a Remote Table

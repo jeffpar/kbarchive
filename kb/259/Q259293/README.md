@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259293: Allocate Request May Stop Responding When Host Rejects SNASVCMG"
-permalink: kb/259/Q259293/
+permalink: /kb/259/Q259293/
 ---
 
 ## Q259293: Allocate Request May Stop Responding When Host Rejects SNASVCMG

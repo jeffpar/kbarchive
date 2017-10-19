@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232035: AS/400 Password Change Using Host Security May Not Complete"
-permalink: kb/232/Q232035/
+permalink: /kb/232/Q232035/
 ---
 
 ## Q232035: AS/400 Password Change Using Host Security May Not Complete

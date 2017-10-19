@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247553: Windows NT Option Pack (NTOP) Downgrades MDAC Components"
-permalink: kb/247/Q247553/
+permalink: /kb/247/Q247553/
 ---
 
 ## Q247553: Windows NT Option Pack (NTOP) Downgrades MDAC Components

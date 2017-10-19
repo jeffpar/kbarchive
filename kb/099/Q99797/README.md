@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99797: Simple Training Techniques for a Recognizer"
-permalink: kb/099/Q99797/
+permalink: /kb/099/Q99797/
 ---
 
 ## Q99797: Simple Training Techniques for a Recognizer

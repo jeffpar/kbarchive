@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112341: FIX: LOC Fails on Double COMPLEX Structure Element"
-permalink: kb/112/Q112341/
+permalink: /kb/112/Q112341/
 ---
 
 ## Q112341: FIX: LOC Fails on Double COMPLEX Structure Element

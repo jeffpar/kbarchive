@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141809: BUG: 2nd Insert Statement Fails On a Recreated Table in Excel"
-permalink: kb/141/Q141809/
+permalink: /kb/141/Q141809/
 ---
 
 ## Q141809: BUG: 2nd Insert Statement Fails On a Recreated Table in Excel

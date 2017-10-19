@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149948: Changing Properties for Many Users Resets Logon Password Flag"
-permalink: kb/149/Q149948/
+permalink: /kb/149/Q149948/
 ---
 
 ## Q149948: Changing Properties for Many Users Resets Logon Password Flag

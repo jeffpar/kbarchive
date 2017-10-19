@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300850: BUG: GlobalMultiUse Class Doesn't End in Multithreaded Environmt"
-permalink: kb/300/Q300850/
+permalink: /kb/300/Q300850/
 ---
 
 ## Q300850: BUG: GlobalMultiUse Class Doesn't End in Multithreaded Environmt

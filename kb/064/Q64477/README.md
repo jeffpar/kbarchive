@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64477: Windows 3.0: Microsoft MusicBox Windows Version Won't Run"
-permalink: kb/064/Q64477/
+permalink: /kb/064/Q64477/
 ---
 
 ## Q64477: Windows 3.0: Microsoft MusicBox Windows Version Won't Run

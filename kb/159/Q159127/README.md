@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159127: Bugcheck in Windows NT While Running POSIX Applications"
-permalink: kb/159/Q159127/
+permalink: /kb/159/Q159127/
 ---
 
 ## Q159127: Bugcheck in Windows NT While Running POSIX Applications

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163211: XCLN: Setup: WNetEnumCachedPasswords Could Not Be Located"
-permalink: kb/163/Q163211/
+permalink: /kb/163/Q163211/
 ---
 
 ## Q163211: XCLN: Setup: WNetEnumCachedPasswords Could Not Be Located

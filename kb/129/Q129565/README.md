@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129565: PC WSPlus: Change of Status Not Always Reflected in POF File"
-permalink: kb/129/Q129565/
+permalink: /kb/129/Q129565/
 ---
 
 ## Q129565: PC WSPlus: Change of Status Not Always Reflected in POF File

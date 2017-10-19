@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314152: Microsoft SharePoint Portal Server 2001 Resource Kit Comments an"
-permalink: kb/314/Q314152/
+permalink: /kb/314/Q314152/
 ---
 
 ## Q314152: Microsoft SharePoint Portal Server 2001 Resource Kit Comments an

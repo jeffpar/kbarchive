@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85359: FAX: What the Microsoft Mail Gateway to Fax Does"
-permalink: kb/085/Q85359/
+permalink: /kb/085/Q85359/
 ---
 
 ## Q85359: FAX: What the Microsoft Mail Gateway to Fax Does

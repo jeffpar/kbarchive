@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140514: Using the Operator Agent Tool Included with Unimodem V"
-permalink: kb/140/Q140514/
+permalink: /kb/140/Q140514/
 ---
 
 ## Q140514: Using the Operator Agent Tool Included with Unimodem V

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148222: HOWTO: Update Property Values in a Property Page"
-permalink: kb/148/Q148222/
+permalink: /kb/148/Q148222/
 ---
 
 ## Q148222: HOWTO: Update Property Values in a Property Page

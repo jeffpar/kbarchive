@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146049: XCLN: User Permissions Not Migrated Over to New .SCD File"
-permalink: kb/146/Q146049/
+permalink: /kb/146/Q146049/
 ---
 
 ## Q146049: XCLN: User Permissions Not Migrated Over to New .SCD File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106068: PC MAPI: Compose Requires Compose and Read Values Set to 1"
-permalink: kb/106/Q106068/
+permalink: /kb/106/Q106068/
 ---
 
 ## Q106068: PC MAPI: Compose Requires Compose and Read Values Set to 1

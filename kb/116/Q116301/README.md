@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116301: PRB: Visual WB Matches Enclosure Symbols in Comments"
-permalink: kb/116/Q116301/
+permalink: /kb/116/Q116301/
 ---
 
 ## Q116301: PRB: Visual WB Matches Enclosure Symbols in Comments

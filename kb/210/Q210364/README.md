@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210364: SMS: SMS Executive Service Stops if SMS Database Transaction Log"
-permalink: kb/210/Q210364/
+permalink: /kb/210/Q210364/
 ---
 
 ## Q210364: SMS: SMS Executive Service Stops if SMS Database Transaction Log

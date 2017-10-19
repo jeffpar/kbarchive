@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254725: XCON: (040) and (041) in DDA Addresses Cause NDRs"
-permalink: kb/254/Q254725/
+permalink: /kb/254/Q254725/
 ---
 
 ## Q254725: XCON: (040) and (041) in DDA Addresses Cause NDRs

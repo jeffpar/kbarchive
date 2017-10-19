@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177334: How to Select the Default Web Browser for MSN"
-permalink: kb/177/Q177334/
+permalink: /kb/177/Q177334/
 ---
 
 ## Q177334: How to Select the Default Web Browser for MSN

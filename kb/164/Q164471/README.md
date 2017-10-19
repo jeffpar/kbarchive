@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164471: Replacing System Files Using a Modified Emergency Repair Disk"
-permalink: kb/164/Q164471/
+permalink: /kb/164/Q164471/
 ---
 
 ## Q164471: Replacing System Files Using a Modified Emergency Repair Disk

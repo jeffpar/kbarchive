@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300152: Troubleshooting Passport Using the Microsoft Windows NT Event Mo"
-permalink: kb/300/Q300152/
+permalink: /kb/300/Q300152/
 ---
 
 ## Q300152: Troubleshooting Passport Using the Microsoft Windows NT Event Mo

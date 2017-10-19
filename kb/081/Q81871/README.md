@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81871: Controlling the CD Using mciSendCommand()"
-permalink: kb/081/Q81871/
+permalink: /kb/081/Q81871/
 ---
 
 ## Q81871: Controlling the CD Using mciSendCommand()

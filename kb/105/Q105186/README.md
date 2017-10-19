@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105186: DBLSPACE /MAXFILEFRAGMENTS May Not Display Error Message"
-permalink: kb/105/Q105186/
+permalink: /kb/105/Q105186/
 ---
 
 ## Q105186: DBLSPACE /MAXFILEFRAGMENTS May Not Display Error Message

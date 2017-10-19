@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322104: Streets and Trips 2002: Program Stops Responding at Startup"
-permalink: kb/322/Q322104/
+permalink: /kb/322/Q322104/
 ---
 
 ## Q322104: Streets and Trips 2002: Program Stops Responding at Startup

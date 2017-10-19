@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265720: EnhancedSecurityLevel of 1 Causes &quot;Stop 0x1E&quot; at Password Change"
-permalink: kb/265/Q265720/
+permalink: /kb/265/Q265720/
 ---
 
 ## Q265720: EnhancedSecurityLevel of 1 Causes &quot;Stop 0x1E&quot; at Password Change

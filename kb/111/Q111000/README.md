@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111000: PC WRmt: Summary List of Mail Remote for Windows 3.2 Bugs"
-permalink: kb/111/Q111000/
+permalink: /kb/111/Q111000/
 ---
 
 ## Q111000: PC WRmt: Summary List of Mail Remote for Windows 3.2 Bugs

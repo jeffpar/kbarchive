@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158000: STL Sample for the nth_element Function"
-permalink: kb/158/Q158000/
+permalink: /kb/158/Q158000/
 ---
 
 ## Q158000: STL Sample for the nth_element Function

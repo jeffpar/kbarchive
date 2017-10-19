@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84900: PRB: Vertical Bars Displayed in Message Box, Control Text"
-permalink: kb/084/Q84900/
+permalink: /kb/084/Q84900/
 ---
 
 ## Q84900: PRB: Vertical Bars Displayed in Message Box, Control Text

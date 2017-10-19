@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139786: Event 582 may occur when running Win 3.x APPC or CPIC App"
-permalink: kb/139/Q139786/
+permalink: /kb/139/Q139786/
 ---
 
 ## Q139786: Event 582 may occur when running Win 3.x APPC or CPIC App

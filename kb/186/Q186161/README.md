@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186161: Zone: How to Remove and Reinstall the Zone Software"
-permalink: kb/186/Q186161/
+permalink: /kb/186/Q186161/
 ---
 
 ## Q186161: Zone: How to Remove and Reinstall the Zone Software

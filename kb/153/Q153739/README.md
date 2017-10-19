@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153739: Do-It-Yourself Guide: Comdlg32.dll File Cannot Start"
-permalink: kb/153/Q153739/
+permalink: /kb/153/Q153739/
 ---
 
 ## Q153739: Do-It-Yourself Guide: Comdlg32.dll File Cannot Start

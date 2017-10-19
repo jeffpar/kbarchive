@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143024: PPT7: Files Installed by PowerPoint Viewer for Windows 95"
-permalink: kb/143/Q143024/
+permalink: /kb/143/Q143024/
 ---
 
 ## Q143024: PPT7: Files Installed by PowerPoint Viewer for Windows 95

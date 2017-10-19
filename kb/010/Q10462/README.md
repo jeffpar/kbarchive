@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q10462: The MASM ASSUME Directive Does Not Generate Code"
-permalink: kb/010/Q10462/
+permalink: /kb/010/Q10462/
 ---
 
 ## Q10462: The MASM ASSUME Directive Does Not Generate Code

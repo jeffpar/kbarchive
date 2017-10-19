@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138817: FIX: ODBC SDK May Overwrite Latest Version of Msvcrt20.dll"
-permalink: kb/138/Q138817/
+permalink: /kb/138/Q138817/
 ---
 
 ## Q138817: FIX: ODBC SDK May Overwrite Latest Version of Msvcrt20.dll

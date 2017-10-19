@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166556: XADM: Modifying cc:Mail Proxy Address Can Cause Double Escapes"
-permalink: kb/166/Q166556/
+permalink: /kb/166/Q166556/
 ---
 
 ## Q166556: XADM: Modifying cc:Mail Proxy Address Can Cause Double Escapes

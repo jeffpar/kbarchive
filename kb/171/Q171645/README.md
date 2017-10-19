@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171645: MS Outlook 97 Step by Step Corrections and Comments"
-permalink: kb/171/Q171645/
+permalink: /kb/171/Q171645/
 ---
 
 ## Q171645: MS Outlook 97 Step by Step Corrections and Comments

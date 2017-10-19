@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143148: Minimum Disk Partition Size Allowed Varies Among Drives"
-permalink: kb/143/Q143148/
+permalink: /kb/143/Q143148/
 ---
 
 ## Q143148: Minimum Disk Partition Size Allowed Varies Among Drives

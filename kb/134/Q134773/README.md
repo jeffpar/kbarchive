@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134773: Printer Name Does Not Appear During Drag-and-Drop Printing"
-permalink: kb/134/Q134773/
+permalink: /kb/134/Q134773/
 ---
 
 ## Q134773: Printer Name Does Not Appear During Drag-and-Drop Printing

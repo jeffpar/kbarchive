@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128235: Resource Kit Command Scheduler Hangs on MIPS Machine"
-permalink: kb/128/Q128235/
+permalink: /kb/128/Q128235/
 ---
 
 ## Q128235: Resource Kit Command Scheduler Hangs on MIPS Machine

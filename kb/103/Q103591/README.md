@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103591: How to Use _GetNewItemId() API Function"
-permalink: kb/103/Q103591/
+permalink: /kb/103/Q103591/
 ---
 
 ## Q103591: How to Use _GetNewItemId() API Function

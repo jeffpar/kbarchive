@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108460: FIX: Carriage Control 1 Prints an Ankh Symbol to Screen"
-permalink: kb/108/Q108460/
+permalink: /kb/108/Q108460/
 ---
 
 ## Q108460: FIX: Carriage Control 1 Prints an Ankh Symbol to Screen

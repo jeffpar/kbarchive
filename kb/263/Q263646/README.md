@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263646: XCON: Mail for Local Mailbox Remains in Queue Folder"
-permalink: kb/263/Q263646/
+permalink: /kb/263/Q263646/
 ---
 
 ## Q263646: XCON: Mail for Local Mailbox Remains in Queue Folder

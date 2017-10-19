@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254650: HTML Documents Tagged for Robot Exclusion Appear in Query Result"
-permalink: kb/254/Q254650/
+permalink: /kb/254/Q254650/
 ---
 
 ## Q254650: HTML Documents Tagged for Robot Exclusion Appear in Query Result

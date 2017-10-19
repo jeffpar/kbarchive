@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260338: XADM: Error 5 &quot;Access Denied&quot; After Upgrade to Windows 2000"
-permalink: kb/260/Q260338/
+permalink: /kb/260/Q260338/
 ---
 
 ## Q260338: XADM: Error 5 &quot;Access Denied&quot; After Upgrade to Windows 2000

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189099: RRAS Could Forward IP Fragments Without Filtering"
-permalink: kb/189/Q189099/
+permalink: /kb/189/Q189099/
 ---
 
 ## Q189099: RRAS Could Forward IP Fragments Without Filtering

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127942: How to Place a Timer in the Main Window"
-permalink: kb/127/Q127942/
+permalink: /kb/127/Q127942/
 ---
 
 ## Q127942: How to Place a Timer in the Main Window

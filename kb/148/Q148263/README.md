@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148263: Invalid Audit and History Records"
-permalink: kb/148/Q148263/
+permalink: /kb/148/Q148263/
 ---
 
 ## Q148263: Invalid Audit and History Records

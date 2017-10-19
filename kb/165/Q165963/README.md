@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165963: HP Vectra Pauses During WinNT Install or During Cold Restarts"
-permalink: kb/165/Q165963/
+permalink: /kb/165/Q165963/
 ---
 
 ## Q165963: HP Vectra Pauses During WinNT Install or During Cold Restarts

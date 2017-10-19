@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258139: Outlook 97 Included In Exchange Server Training Kit Has Expired"
-permalink: kb/258/Q258139/
+permalink: /kb/258/Q258139/
 ---
 
 ## Q258139: Outlook 97 Included In Exchange Server Training Kit Has Expired

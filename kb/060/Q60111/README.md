@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60111: Mac Form: Objects That Cannot Transfer to the Read Screen"
-permalink: kb/060/Q60111/
+permalink: /kb/060/Q60111/
 ---
 
 ## Q60111: Mac Form: Objects That Cannot Transfer to the Read Screen

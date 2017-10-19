@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135360: Periodic Re-Transmit Times for Packets"
-permalink: kb/135/Q135360/
+permalink: /kb/135/Q135360/
 ---
 
 ## Q135360: Periodic Re-Transmit Times for Packets

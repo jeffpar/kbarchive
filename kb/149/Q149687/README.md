@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149687: MSN Error Message: The MAPI Spooler Has Unexpectedly Exited"
-permalink: kb/149/Q149687/
+permalink: /kb/149/Q149687/
 ---
 
 ## Q149687: MSN Error Message: The MAPI Spooler Has Unexpectedly Exited

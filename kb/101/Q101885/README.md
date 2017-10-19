@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101885: Backup Err Msg: Cannot Read Volume Information from Diskette"
-permalink: kb/101/Q101885/
+permalink: /kb/101/Q101885/
 ---
 
 ## Q101885: Backup Err Msg: Cannot Read Volume Information from Diskette

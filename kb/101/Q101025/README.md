@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101025: How FoxPro Passes Parameters to Subroutines"
-permalink: kb/101/Q101025/
+permalink: /kb/101/Q101025/
 ---
 
 ## Q101025: How FoxPro Passes Parameters to Subroutines

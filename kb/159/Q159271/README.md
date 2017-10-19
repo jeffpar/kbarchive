@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159271: HOWTO: Set the BackColor Property to Same Color as Title Bar"
-permalink: kb/159/Q159271/
+permalink: /kb/159/Q159271/
 ---
 
 ## Q159271: HOWTO: Set the BackColor Property to Same Color as Title Bar

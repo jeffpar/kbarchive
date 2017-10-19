@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139813: Event ID 2453 Appears When Using Tabs For USRTOGRP"
-permalink: kb/139/Q139813/
+permalink: /kb/139/Q139813/
 ---
 
 ## Q139813: Event ID 2453 Appears When Using Tabs For USRTOGRP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185136: XCLN: Synchronization Codes For Offline Storage Folders"
-permalink: kb/185/Q185136/
+permalink: /kb/185/Q185136/
 ---
 
 ## Q185136: XCLN: Synchronization Codes For Offline Storage Folders

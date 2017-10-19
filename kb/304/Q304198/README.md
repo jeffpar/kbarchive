@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304198: BUG: IIS 5.1: Icon Does Not Change When You Create an IIS App"
-permalink: kb/304/Q304198/
+permalink: /kb/304/Q304198/
 ---
 
 ## Q304198: BUG: IIS 5.1: Icon Does Not Change When You Create an IIS App

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88375: Testing Serial Plotter Connections"
-permalink: kb/088/Q88375/
+permalink: /kb/088/Q88375/
 ---
 
 ## Q88375: Testing Serial Plotter Connections

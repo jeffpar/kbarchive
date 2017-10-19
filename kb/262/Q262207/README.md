@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262207: Allegiance: Squad Member Is Unable to Join a Squad Game"
-permalink: kb/262/Q262207/
+permalink: /kb/262/Q262207/
 ---
 
 ## Q262207: Allegiance: Squad Member Is Unable to Join a Squad Game

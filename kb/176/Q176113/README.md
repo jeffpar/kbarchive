@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176113: BUG: Set-Cookie Is Ignored in CGI When Combined With Location"
-permalink: kb/176/Q176113/
+permalink: /kb/176/Q176113/
 ---
 
 ## Q176113: BUG: Set-Cookie Is Ignored in CGI When Combined With Location

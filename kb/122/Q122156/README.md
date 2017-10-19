@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122156: How to Save (or Not Save) TrueType Fonts with Your Publication"
-permalink: kb/122/Q122156/
+permalink: /kb/122/Q122156/
 ---
 
 ## Q122156: How to Save (or Not Save) TrueType Fonts with Your Publication

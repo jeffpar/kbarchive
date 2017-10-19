@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83732: Wrong Tray Selection Causes Epson Printer Error in Windows 3.1"
-permalink: kb/083/Q83732/
+permalink: /kb/083/Q83732/
 ---
 
 ## Q83732: Wrong Tray Selection Causes Epson Printer Error in Windows 3.1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168486: 16-bit Applications May Fail after HP ScanJet Installation"
-permalink: kb/168/Q168486/
+permalink: /kb/168/Q168486/
 ---
 
 ## Q168486: 16-bit Applications May Fail after HP ScanJet Installation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141844: How to Change the Current Network Configuration"
-permalink: kb/141/Q141844/
+permalink: /kb/141/Q141844/
 ---
 
 ## Q141844: How to Change the Current Network Configuration

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245321: SMS: &quot;Stop 0x0000000A&quot; with SMS Remote Control Installed"
-permalink: kb/245/Q245321/
+permalink: /kb/245/Q245321/
 ---
 
 ## Q245321: SMS: &quot;Stop 0x0000000A&quot; with SMS Remote Control Installed

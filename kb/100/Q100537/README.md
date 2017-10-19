@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100537: Using MS-DOS 6 with IBM Lan Server 2.0 Remote Boot"
-permalink: kb/100/Q100537/
+permalink: /kb/100/Q100537/
 ---
 
 ## Q100537: Using MS-DOS 6 with IBM Lan Server 2.0 Remote Boot

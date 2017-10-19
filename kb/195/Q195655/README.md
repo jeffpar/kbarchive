@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195655: HOWTO: How to Set a Screen Saver Through a System Policy"
-permalink: kb/195/Q195655/
+permalink: /kb/195/Q195655/
 ---
 
 ## Q195655: HOWTO: How to Set a Screen Saver Through a System Policy

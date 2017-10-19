@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167322: PRB: Cannot Load Een0swt.dll When Installing Visual C++ 4.x"
-permalink: kb/167/Q167322/
+permalink: /kb/167/Q167322/
 ---
 
 ## Q167322: PRB: Cannot Load Een0swt.dll When Installing Visual C++ 4.x

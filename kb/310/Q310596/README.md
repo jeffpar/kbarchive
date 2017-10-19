@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310596: ST2002/MapPoint2002: Err Msg: Program Has Encountered an Error"
-permalink: kb/310/Q310596/
+permalink: /kb/310/Q310596/
 ---
 
 ## Q310596: ST2002/MapPoint2002: Err Msg: Program Has Encountered an Error

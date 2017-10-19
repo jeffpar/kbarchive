@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245785: XADM: Installing Exchange Server from Select CD on Windows 2000"
-permalink: kb/245/Q245785/
+permalink: /kb/245/Q245785/
 ---
 
 ## Q245785: XADM: Installing Exchange Server from Select CD on Windows 2000

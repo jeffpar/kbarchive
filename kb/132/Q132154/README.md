@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132154: Using Iomega SCSI ZIP Drives with Windows NT"
-permalink: kb/132/Q132154/
+permalink: /kb/132/Q132154/
 ---
 
 ## Q132154: Using Iomega SCSI ZIP Drives with Windows NT

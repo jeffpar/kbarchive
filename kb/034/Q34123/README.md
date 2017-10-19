@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q34123: Definition of the Localizer in Flight Simulator"
-permalink: kb/034/Q34123/
+permalink: /kb/034/Q34123/
 ---
 
 ## Q34123: Definition of the Localizer in Flight Simulator

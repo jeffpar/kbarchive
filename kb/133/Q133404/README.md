@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133404: Timex Data Link Stores Phone Numbers of Up to 12 Digits"
-permalink: kb/133/Q133404/
+permalink: /kb/133/Q133404/
 ---
 
 ## Q133404: Timex Data Link Stores Phone Numbers of Up to 12 Digits

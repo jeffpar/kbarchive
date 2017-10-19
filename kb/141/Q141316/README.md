@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141316: FIX: Report Is Wrong When You Relate Tables on Currency Field"
-permalink: kb/141/Q141316/
+permalink: /kb/141/Q141316/
 ---
 
 ## Q141316: FIX: Report Is Wrong When You Relate Tables on Currency Field

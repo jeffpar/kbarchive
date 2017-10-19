@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135153: Cannot Access Macintosh Files on Windows NT Server"
-permalink: kb/135/Q135153/
+permalink: /kb/135/Q135153/
 ---
 
 ## Q135153: Cannot Access Macintosh Files on Windows NT Server

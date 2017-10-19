@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82911: PC OS2: Group Boxes in Options Dialog Are Unavailable"
-permalink: kb/082/Q82911/
+permalink: /kb/082/Q82911/
 ---
 
 ## Q82911: PC OS2: Group Boxes in Options Dialog Are Unavailable

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129134: XCLN: Cursor Position May Be Incorrect When Deleting Text"
-permalink: kb/129/Q129134/
+permalink: /kb/129/Q129134/
 ---
 
 ## Q129134: XCLN: Cursor Position May Be Incorrect When Deleting Text

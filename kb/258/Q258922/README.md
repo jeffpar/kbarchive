@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258922: Description of the GEX Cheat Codes"
-permalink: kb/258/Q258922/
+permalink: /kb/258/Q258922/
 ---
 
 ## Q258922: Description of the GEX Cheat Codes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187940: Input Filters over IPX WAN Routing May Fail to Filter Packets"
-permalink: kb/187/Q187940/
+permalink: /kb/187/Q187940/
 ---
 
 ## Q187940: Input Filters over IPX WAN Routing May Fail to Filter Packets

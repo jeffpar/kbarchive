@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196186: XADM: Move Server Fails if IP Address Used to Join Another Site"
-permalink: kb/196/Q196186/
+permalink: /kb/196/Q196186/
 ---
 
 ## Q196186: XADM: Move Server Fails if IP Address Used to Join Another Site

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86251: Kingston SX/NOW 386 Upgrade Board Requires Windows Reinstall"
-permalink: kb/086/Q86251/
+permalink: /kb/086/Q86251/
 ---
 
 ## Q86251: Kingston SX/NOW 386 Upgrade Board Requires Windows Reinstall

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106054: SPX-Compatible Applications and Windows for Workgroups 3.11"
-permalink: kb/106/Q106054/
+permalink: /kb/106/Q106054/
 ---
 
 ## Q106054: SPX-Compatible Applications and Windows for Workgroups 3.11

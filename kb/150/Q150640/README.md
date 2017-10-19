@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150640: Joystick Uncontrollable in Fury3"
-permalink: kb/150/Q150640/
+permalink: /kb/150/Q150640/
 ---
 
 ## Q150640: Joystick Uncontrollable in Fury3

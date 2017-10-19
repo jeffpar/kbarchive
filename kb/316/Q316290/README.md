@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316290: PRB: Config Err Msg When You Create Web Sites or Expand MTS"
-permalink: kb/316/Q316290/
+permalink: /kb/316/Q316290/
 ---
 
 ## Q316290: PRB: Config Err Msg When You Create Web Sites or Expand MTS

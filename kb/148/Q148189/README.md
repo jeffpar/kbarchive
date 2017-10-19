@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148189: Free/Busy Time Planner Doesn't Translate Time Zones"
-permalink: kb/148/Q148189/
+permalink: /kb/148/Q148189/
 ---
 
 ## Q148189: Free/Busy Time Planner Doesn't Translate Time Zones

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157917: SMS: PCM Windows 95 Setup Error: Corrupt CAB File"
-permalink: kb/157/Q157917/
+permalink: /kb/157/Q157917/
 ---
 
 ## Q157917: SMS: PCM Windows 95 Setup Error: Corrupt CAB File

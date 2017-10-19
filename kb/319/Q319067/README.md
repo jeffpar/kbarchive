@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319067: HOW TO: Run Applications Not in the Context of the System Accoun"
-permalink: kb/319/Q319067/
+permalink: /kb/319/Q319067/
 ---
 
 ## Q319067: HOW TO: Run Applications Not in the Context of the System Accoun

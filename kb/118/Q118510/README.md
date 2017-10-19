@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118510: PC Adm: Microsoft Mail MOVEUSER.EXE Version 3.2.8 Update"
-permalink: kb/118/Q118510/
+permalink: /kb/118/Q118510/
 ---
 
 ## Q118510: PC Adm: Microsoft Mail MOVEUSER.EXE Version 3.2.8 Update

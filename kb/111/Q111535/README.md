@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111535: Connect from WfWG Computer Without Network Policy"
-permalink: kb/111/Q111535/
+permalink: /kb/111/Q111535/
 ---
 
 ## Q111535: Connect from WfWG Computer Without Network Policy

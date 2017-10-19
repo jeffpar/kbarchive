@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171310: Learn Java Now: No Bolded Text in Code Samples"
-permalink: kb/171/Q171310/
+permalink: /kb/171/Q171310/
 ---
 
 ## Q171310: Learn Java Now: No Bolded Text in Code Samples

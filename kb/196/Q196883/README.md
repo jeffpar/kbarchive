@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196883: WD97: Invalid Field Name Can Be Added to Word Data Source"
-permalink: kb/196/Q196883/
+permalink: /kb/196/Q196883/
 ---
 
 ## Q196883: WD97: Invalid Field Name Can Be Added to Word Data Source

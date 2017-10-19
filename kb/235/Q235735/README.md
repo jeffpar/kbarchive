@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235735: SMS: Scheduled Site Backup Fails to Run Daily"
-permalink: kb/235/Q235735/
+permalink: /kb/235/Q235735/
 ---
 
 ## Q235735: SMS: Scheduled Site Backup Fails to Run Daily

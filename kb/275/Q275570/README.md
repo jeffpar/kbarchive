@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275570: Learn Visual J++ 6.0 Now Comments and Corrections"
-permalink: kb/275/Q275570/
+permalink: /kb/275/Q275570/
 ---
 
 ## Q275570: Learn Visual J++ 6.0 Now Comments and Corrections

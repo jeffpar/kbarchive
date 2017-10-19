@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278654: MSN Companion Access Numbers"
-permalink: kb/278/Q278654/
+permalink: /kb/278/Q278654/
 ---
 
 ## Q278654: MSN Companion Access Numbers

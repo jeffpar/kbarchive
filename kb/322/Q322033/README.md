@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322033: How To Import E-mail From Netscape Mail to Microsoft Entourage"
-permalink: kb/322/Q322033/
+permalink: /kb/322/Q322033/
 ---
 
 ## Q322033: How To Import E-mail From Netscape Mail to Microsoft Entourage

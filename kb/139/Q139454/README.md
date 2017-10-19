@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139454: &quot;Rundll32&quot; Error After Viewing Properties for Network Adapter"
-permalink: kb/139/Q139454/
+permalink: /kb/139/Q139454/
 ---
 
 ## Q139454: &quot;Rundll32&quot; Error After Viewing Properties for Network Adapter

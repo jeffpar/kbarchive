@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272768: Objects from Active Directory are Ignored When Running the AD MA"
-permalink: kb/272/Q272768/
+permalink: /kb/272/Q272768/
 ---
 
 ## Q272768: Objects from Active Directory are Ignored When Running the AD MA

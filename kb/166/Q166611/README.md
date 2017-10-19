@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166611: XCON: No Rerouting Needed When OU Field is Empty"
-permalink: kb/166/Q166611/
+permalink: /kb/166/Q166611/
 ---
 
 ## Q166611: XCON: No Rerouting Needed When OU Field is Empty

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136580: PRB: Saving a Form File Takes a Long Time"
-permalink: kb/136/Q136580/
+permalink: /kb/136/Q136580/
 ---
 
 ## Q136580: PRB: Saving a Form File Takes a Long Time

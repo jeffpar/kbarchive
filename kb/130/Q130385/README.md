@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130385: PC Mac: Err Msg: Error 43: Unable to Create Working Directory"
-permalink: kb/130/Q130385/
+permalink: /kb/130/Q130385/
 ---
 
 ## Q130385: PC Mac: Err Msg: Error 43: Unable to Create Working Directory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163313: DCA ISCA SDLC Link Service Sets Incorrect Registry Entries"
-permalink: kb/163/Q163313/
+permalink: /kb/163/Q163313/
 ---
 
 ## Q163313: DCA ISCA SDLC Link Service Sets Incorrect Registry Entries

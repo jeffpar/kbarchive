@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169916: Linksnif.exe does not Contain Scroll Bars"
-permalink: kb/169/Q169916/
+permalink: /kb/169/Q169916/
 ---
 
 ## Q169916: Linksnif.exe does not Contain Scroll Bars

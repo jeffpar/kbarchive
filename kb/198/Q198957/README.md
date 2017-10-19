@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198957: XFOR: Command Line Parameters for the Latest Migration Wizard"
-permalink: kb/198/Q198957/
+permalink: /kb/198/Q198957/
 ---
 
 ## Q198957: XFOR: Command Line Parameters for the Latest Migration Wizard

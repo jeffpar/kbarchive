@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157963: Setacl.exe Not Available in Windows NT 4.0"
-permalink: kb/157/Q157963/
+permalink: /kb/157/Q157963/
 ---
 
 ## Q157963: Setacl.exe Not Available in Windows NT 4.0

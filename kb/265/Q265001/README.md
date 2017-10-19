@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265001: PRB: SNA Server Invokable Transaction Programs Are Not Supported"
-permalink: kb/265/Q265001/
+permalink: /kb/265/Q265001/
 ---
 
 ## Q265001: PRB: SNA Server Invokable Transaction Programs Are Not Supported

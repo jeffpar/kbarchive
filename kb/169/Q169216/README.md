@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169216: Using Winscl.exe to Remove Corrupted WINS Entries by Version ID"
-permalink: kb/169/Q169216/
+permalink: /kb/169/Q169216/
 ---
 
 ## Q169216: Using Winscl.exe to Remove Corrupted WINS Entries by Version ID

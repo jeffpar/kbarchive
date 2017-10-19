@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117239: Windows 3.11 Directory Listing for Disk 7 (5.25 Inch 1.2 MB)"
-permalink: kb/117/Q117239/
+permalink: /kb/117/Q117239/
 ---
 
 ## Q117239: Windows 3.11 Directory Listing for Disk 7 (5.25 Inch 1.2 MB)

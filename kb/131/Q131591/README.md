@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131591: Multimedia Applications: Solid Line Appears on Laser Printout"
-permalink: kb/131/Q131591/
+permalink: /kb/131/Q131591/
 ---
 
 ## Q131591: Multimedia Applications: Solid Line Appears on Laser Printout

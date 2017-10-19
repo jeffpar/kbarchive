@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90379: Novell Driver Change in Setup Clears WIN.INI &quot;Load=&quot; Line"
-permalink: kb/090/Q90379/
+permalink: /kb/090/Q90379/
 ---
 
 ## Q90379: Novell Driver Change in Setup Clears WIN.INI &quot;Load=&quot; Line

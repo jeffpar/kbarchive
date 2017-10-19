@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66186: Flight Simulator: Coordinates for the Space Needle"
-permalink: kb/066/Q66186/
+permalink: /kb/066/Q66186/
 ---
 
 ## Q66186: Flight Simulator: Coordinates for the Space Needle

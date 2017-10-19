@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274571: Games: Font Related Issues in Microsoft Games"
-permalink: kb/274/Q274571/
+permalink: /kb/274/Q274571/
 ---
 
 ## Q274571: Games: Font Related Issues in Microsoft Games

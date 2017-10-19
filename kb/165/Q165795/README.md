@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165795: PPT: Sample VB Code to Create Shape Using FreeForm Tool"
-permalink: kb/165/Q165795/
+permalink: /kb/165/Q165795/
 ---
 
 ## Q165795: PPT: Sample VB Code to Create Shape Using FreeForm Tool

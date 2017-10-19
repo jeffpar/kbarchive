@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128206: PRB: Function Requires Row or Table Buffering Mode"
-permalink: kb/128/Q128206/
+permalink: /kb/128/Q128206/
 ---
 
 ## Q128206: PRB: Function Requires Row or Table Buffering Mode

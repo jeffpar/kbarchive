@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163273: User Manager Disables RAS Dial-in Permissions After Applying SP5"
-permalink: kb/163/Q163273/
+permalink: /kb/163/Q163273/
 ---
 
 ## Q163273: User Manager Disables RAS Dial-in Permissions After Applying SP5

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141626: ADT/ODE: Invalid Page Fault in Module ACMSETUP.EXE"
-permalink: kb/141/Q141626/
+permalink: /kb/141/Q141626/
 ---
 
 ## Q141626: ADT/ODE: Invalid Page Fault in Module ACMSETUP.EXE

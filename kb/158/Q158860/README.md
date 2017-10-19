@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158860: Xircom CE2ps Network Card Is Not Detected On Insertion"
-permalink: kb/158/Q158860/
+permalink: /kb/158/Q158860/
 ---
 
 ## Q158860: Xircom CE2ps Network Card Is Not Detected On Insertion

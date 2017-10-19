@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155317: INFO: File Manipulation Commands Now Support MS-DOS Wildcards"
-permalink: kb/155/Q155317/
+permalink: /kb/155/Q155317/
 ---
 
 ## Q155317: INFO: File Manipulation Commands Now Support MS-DOS Wildcards

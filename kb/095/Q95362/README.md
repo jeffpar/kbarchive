@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95362: AST Cupid 386 or 486 May Need BIOS Upgrade"
-permalink: kb/095/Q95362/
+permalink: /kb/095/Q95362/
 ---
 
 ## Q95362: AST Cupid 386 or 486 May Need BIOS Upgrade

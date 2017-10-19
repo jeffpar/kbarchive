@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88754: RM/COBOL-85 Is Incompatible with SMARTDrive 4.0"
-permalink: kb/088/Q88754/
+permalink: /kb/088/Q88754/
 ---
 
 ## Q88754: RM/COBOL-85 Is Incompatible with SMARTDrive 4.0

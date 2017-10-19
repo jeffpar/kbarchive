@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143114: PRB: Trouble Installing Multiple Servers from Single Computer"
-permalink: kb/143/Q143114/
+permalink: /kb/143/Q143114/
 ---
 
 ## Q143114: PRB: Trouble Installing Multiple Servers from Single Computer

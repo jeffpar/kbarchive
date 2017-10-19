@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95118: Windows for Workgroups Open File Handle Limits"
-permalink: kb/095/Q95118/
+permalink: /kb/095/Q95118/
 ---
 
 ## Q95118: Windows for Workgroups Open File Handle Limits

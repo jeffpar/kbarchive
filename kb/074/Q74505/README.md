@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74505: Setting Default Margins, Font, and Point Size in Write"
-permalink: kb/074/Q74505/
+permalink: /kb/074/Q74505/
 ---
 
 ## Q74505: Setting Default Margins, Font, and Point Size in Write

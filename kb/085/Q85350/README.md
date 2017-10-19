@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85350: FAX: How Mail Gets from Downstream PO to Fax Gateway PO"
-permalink: kb/085/Q85350/
+permalink: /kb/085/Q85350/
 ---
 
 ## Q85350: FAX: How Mail Gets from Downstream PO to Fax Gateway PO

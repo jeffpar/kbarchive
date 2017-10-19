@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139351: STOP Msg: c000021a - Using Mandatory Profile w/o Access Rights"
-permalink: kb/139/Q139351/
+permalink: /kb/139/Q139351/
 ---
 
 ## Q139351: STOP Msg: c000021a - Using Mandatory Profile w/o Access Rights

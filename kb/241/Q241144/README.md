@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241144: ARCserve for Small Business Server Not Compatible with SBS 4.5"
-permalink: kb/241/Q241144/
+permalink: /kb/241/Q241144/
 ---
 
 ## Q241144: ARCserve for Small Business Server Not Compatible with SBS 4.5

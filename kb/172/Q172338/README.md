@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172338: HOWTO: Use QueryPerformanceCounter to Time Code"
-permalink: kb/172/Q172338/
+permalink: /kb/172/Q172338/
 ---
 
 ## Q172338: HOWTO: Use QueryPerformanceCounter to Time Code

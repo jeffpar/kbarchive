@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281687: Combat Flight Simulator: Known Video Issues"
-permalink: kb/281/Q281687/
+permalink: /kb/281/Q281687/
 ---
 
 ## Q281687: Combat Flight Simulator: Known Video Issues

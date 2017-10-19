@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134465: PRB: &quot;File Access Denied&quot; Using Grid or AutoFormat Builders"
-permalink: kb/134/Q134465/
+permalink: /kb/134/Q134465/
 ---
 
 ## Q134465: PRB: &quot;File Access Denied&quot; Using Grid or AutoFormat Builders

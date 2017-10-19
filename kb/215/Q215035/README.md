@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215035: SMS: Various Components Report Errors on Initial Site Startup"
-permalink: kb/215/Q215035/
+permalink: /kb/215/Q215035/
 ---
 
 ## Q215035: SMS: Various Components Report Errors on Initial Site Startup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137836: Encarta 1996: Could Not Open Mplayer.ini"
-permalink: kb/137/Q137836/
+permalink: /kb/137/Q137836/
 ---
 
 ## Q137836: Encarta 1996: Could Not Open Mplayer.ini

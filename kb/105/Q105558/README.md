@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105558: MS-DOS 6.2 MEMMAKER.INF File"
-permalink: kb/105/Q105558/
+permalink: /kb/105/Q105558/
 ---
 
 ## Q105558: MS-DOS 6.2 MEMMAKER.INF File

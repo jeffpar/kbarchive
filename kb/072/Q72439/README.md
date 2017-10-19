@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72439: Automatically Running Recorder Macros, Command Line Parameters"
-permalink: kb/072/Q72439/
+permalink: /kb/072/Q72439/
 ---
 
 ## Q72439: Automatically Running Recorder Macros, Command Line Parameters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134750: Err Msg: SCANDISK Will Work Only with MS-DOS Versions..."
-permalink: kb/134/Q134750/
+permalink: /kb/134/Q134750/
 ---
 
 ## Q134750: Err Msg: SCANDISK Will Work Only with MS-DOS Versions...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179017: How to Migrate an Existing SNA Server to a New Hardware Platform"
-permalink: kb/179/Q179017/
+permalink: /kb/179/Q179017/
 ---
 
 ## Q179017: How to Migrate an Existing SNA Server to a New Hardware Platform

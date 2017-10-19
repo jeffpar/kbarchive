@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250395: Stopping TN3270 LU from SNA Manager Fails to Clean Out Session"
-permalink: kb/250/Q250395/
+permalink: /kb/250/Q250395/
 ---
 
 ## Q250395: Stopping TN3270 LU from SNA Manager Fails to Clean Out Session

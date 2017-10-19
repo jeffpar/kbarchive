@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190193: HOWTO: Use a Satellite DLL to Localize an Add-In"
-permalink: kb/190/Q190193/
+permalink: /kb/190/Q190193/
 ---
 
 ## Q190193: HOWTO: Use a Satellite DLL to Localize an Add-In

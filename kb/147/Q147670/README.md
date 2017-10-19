@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147670: HOWTO: Add and Register Custom OCXs with Setup Wizard"
-permalink: kb/147/Q147670/
+permalink: /kb/147/Q147670/
 ---
 
 ## Q147670: HOWTO: Add and Register Custom OCXs with Setup Wizard

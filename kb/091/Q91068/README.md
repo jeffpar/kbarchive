@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91068: After Installing Novell Netware Support, NET.CFG Ignored"
-permalink: kb/091/Q91068/
+permalink: /kb/091/Q91068/
 ---
 
 ## Q91068: After Installing Novell Netware Support, NET.CFG Ignored

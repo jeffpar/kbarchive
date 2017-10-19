@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191309: ALT+Numeric Keypad Problem When CHCP Command is Used"
-permalink: kb/191/Q191309/
+permalink: /kb/191/Q191309/
 ---
 
 ## Q191309: ALT+Numeric Keypad Problem When CHCP Command is Used

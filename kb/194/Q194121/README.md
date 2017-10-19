@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194121: XADM: Update DLs When Their Expansion Server is Moved"
-permalink: kb/194/Q194121/
+permalink: /kb/194/Q194121/
 ---
 
 ## Q194121: XADM: Update DLs When Their Expansion Server is Moved

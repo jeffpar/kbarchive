@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69994: Using argv and envp Variables in a LAN Manager 2.00 Service"
-permalink: kb/069/Q69994/
+permalink: /kb/069/Q69994/
 ---
 
 ## Q69994: Using argv and envp Variables in a LAN Manager 2.00 Service

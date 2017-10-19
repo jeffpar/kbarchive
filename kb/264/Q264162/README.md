@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264162: XFOR: Internet Mail Service Won't Start on Windows 2000 Cluster"
-permalink: kb/264/Q264162/
+permalink: /kb/264/Q264162/
 ---
 
 ## Q264162: XFOR: Internet Mail Service Won't Start on Windows 2000 Cluster

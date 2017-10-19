@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166305: HOWTO: Reconnecting a Visual C++ Project to Source Control"
-permalink: kb/166/Q166305/
+permalink: /kb/166/Q166305/
 ---
 
 ## Q166305: HOWTO: Reconnecting a Visual C++ Project to Source Control

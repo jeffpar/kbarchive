@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266049: XADM: The &quot;Planning and Deploying Outlook Web Access&quot; WP"
-permalink: kb/266/Q266049/
+permalink: /kb/266/Q266049/
 ---
 
 ## Q266049: XADM: The &quot;Planning and Deploying Outlook Web Access&quot; WP

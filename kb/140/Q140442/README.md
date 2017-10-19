@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140442: Err Msg: Client Service for NetWare. Unable to Complete..."
-permalink: kb/140/Q140442/
+permalink: /kb/140/Q140442/
 ---
 
 ## Q140442: Err Msg: Client Service for NetWare. Unable to Complete...

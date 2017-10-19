@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246014: XCLN: Outlook Y2K Information &amp; Compliancy with Exchange Server"
-permalink: kb/246/Q246014/
+permalink: /kb/246/Q246014/
 ---
 
 ## Q246014: XCLN: Outlook Y2K Information &amp; Compliancy with Exchange Server

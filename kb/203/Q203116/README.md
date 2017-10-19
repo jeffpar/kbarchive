@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203116: XFOR: TCP/IP Listener Socket Error Message When Starting IMS"
-permalink: kb/203/Q203116/
+permalink: /kb/203/Q203116/
 ---
 
 ## Q203116: XFOR: TCP/IP Listener Socket Error Message When Starting IMS

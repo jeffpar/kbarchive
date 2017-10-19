@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191997: BUG: BackColor/ForeColor of Grid Not Carried Over to Subclass"
-permalink: kb/191/Q191997/
+permalink: /kb/191/Q191997/
 ---
 
 ## Q191997: BUG: BackColor/ForeColor of Grid Not Carried Over to Subclass

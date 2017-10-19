@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236426: XADM: Information Store or Directory Service Appear Hung"
-permalink: kb/236/Q236426/
+permalink: /kb/236/Q236426/
 ---
 
 ## Q236426: XADM: Information Store or Directory Service Appear Hung

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q209397: The Web Proxy Service Stops Responding"
-permalink: kb/209/Q209397/
+permalink: /kb/209/Q209397/
 ---
 
 ## Q209397: The Web Proxy Service Stops Responding

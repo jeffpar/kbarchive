@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239604: Unreadable Text in Regional Settings After Language Pack Install"
-permalink: kb/239/Q239604/
+permalink: /kb/239/Q239604/
 ---
 
 ## Q239604: Unreadable Text in Regional Settings After Language Pack Install

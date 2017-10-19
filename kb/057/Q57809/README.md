@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57809: SYSTEM.INI Entry Required for Zenith 386"
-permalink: kb/057/Q57809/
+permalink: /kb/057/Q57809/
 ---
 
 ## Q57809: SYSTEM.INI Entry Required for Zenith 386

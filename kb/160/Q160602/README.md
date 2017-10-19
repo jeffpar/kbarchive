@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160602: XADM: Exporting from Command Line Produces Only Mailboxes"
-permalink: kb/160/Q160602/
+permalink: /kb/160/Q160602/
 ---
 
 ## Q160602: XADM: Exporting from Command Line Produces Only Mailboxes

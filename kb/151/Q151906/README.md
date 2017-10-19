@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151906: FPNW: Home Directory Root Path Does Not Change"
-permalink: kb/151/Q151906/
+permalink: /kb/151/Q151906/
 ---
 
 ## Q151906: FPNW: Home Directory Root Path Does Not Change

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280467: PRB: DDE Support Disabled While MFC App Displays Modal Dialog"
-permalink: kb/280/Q280467/
+permalink: /kb/280/Q280467/
 ---
 
 ## Q280467: PRB: DDE Support Disabled While MFC App Displays Modal Dialog

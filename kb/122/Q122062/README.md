@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122062: Err Msg: This Version of Mail Is Too Old..."
-permalink: kb/122/Q122062/
+permalink: /kb/122/Q122062/
 ---
 
 ## Q122062: Err Msg: This Version of Mail Is Too Old...

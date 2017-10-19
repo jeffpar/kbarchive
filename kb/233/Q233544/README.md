@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233544: Certain Invalid Date Fields Are Converted to Valid Dates"
-permalink: kb/233/Q233544/
+permalink: /kb/233/Q233544/
 ---
 
 ## Q233544: Certain Invalid Date Fields Are Converted to Valid Dates

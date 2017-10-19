@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153469: Policy Editor Causes Page Fault in Comctl32.dll"
-permalink: kb/153/Q153469/
+permalink: /kb/153/Q153469/
 ---
 
 ## Q153469: Policy Editor Causes Page Fault in Comctl32.dll

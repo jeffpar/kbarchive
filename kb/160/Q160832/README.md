@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160832: FP: &quot;Center&quot; Alignment Not Supported for ActiveX Objects"
-permalink: kb/160/Q160832/
+permalink: /kb/160/Q160832/
 ---
 
 ## Q160832: FP: &quot;Center&quot; Alignment Not Supported for ActiveX Objects

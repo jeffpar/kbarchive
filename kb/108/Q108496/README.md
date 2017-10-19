@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108496: Running SCANDISK /ALL While a Virtual Drive Exists"
-permalink: kb/108/Q108496/
+permalink: /kb/108/Q108496/
 ---
 
 ## Q108496: Running SCANDISK /ALL While a Virtual Drive Exists

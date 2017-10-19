@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262572: BUG: FormSet from Functional Conversion Closes Unexpectedly"
-permalink: kb/262/Q262572/
+permalink: /kb/262/Q262572/
 ---
 
 ## Q262572: BUG: FormSet from Functional Conversion Closes Unexpectedly

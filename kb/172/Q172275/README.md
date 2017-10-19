@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172275: FIX: DBCombo's Drop-Down Does Not Work with Mouse in Modal Form"
-permalink: kb/172/Q172275/
+permalink: /kb/172/Q172275/
 ---
 
 ## Q172275: FIX: DBCombo's Drop-Down Does Not Work with Mouse in Modal Form

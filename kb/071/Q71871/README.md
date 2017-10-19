@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71871: MS-DOS 5 Upgrade README.TXT: Documentation"
-permalink: kb/071/Q71871/
+permalink: /kb/071/Q71871/
 ---
 
 ## Q71871: MS-DOS 5 Upgrade README.TXT: Documentation

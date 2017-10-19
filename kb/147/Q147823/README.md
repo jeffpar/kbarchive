@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147823: Automated Procedure for Updating WFW Clients"
-permalink: kb/147/Q147823/
+permalink: /kb/147/Q147823/
 ---
 
 ## Q147823: Automated Procedure for Updating WFW Clients

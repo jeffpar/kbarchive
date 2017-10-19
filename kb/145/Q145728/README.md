@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145728: HOWTO: Create a Listbox with Clickable Checkboxes"
-permalink: kb/145/Q145728/
+permalink: /kb/145/Q145728/
 ---
 
 ## Q145728: HOWTO: Create a Listbox with Clickable Checkboxes

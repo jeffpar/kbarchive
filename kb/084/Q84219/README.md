@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q84219: SYSTEM.INI [386enh] Entries Not Removed When Driver Is Removed"
-permalink: kb/084/Q84219/
+title: "Q84219: SYSTEM.INI &#91;386enh&#93; Entries Not Removed When Driver Is Removed"
+permalink: /kb/084/Q84219/
 ---
 
-## Q84219: SYSTEM.INI [386enh] Entries Not Removed When Driver Is Removed
+## Q84219: SYSTEM.INI &#91;386enh&#93; Entries Not Removed When Driver Is Removed
 
 	Article: Q84219
 	Product(s): Microsoft Windows 95.x Retail Product

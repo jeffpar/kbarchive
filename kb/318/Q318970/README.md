@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318970: FIX:Bound optionbutton Not Checked in MS Active Accessibility"
-permalink: kb/318/Q318970/
+permalink: /kb/318/Q318970/
 ---
 
 ## Q318970: FIX:Bound optionbutton Not Checked in MS Active Accessibility

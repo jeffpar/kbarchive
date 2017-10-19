@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151661: Encarta World Atlas: How To Disable Cosmo In The Registry"
-permalink: kb/151/Q151661/
+permalink: /kb/151/Q151661/
 ---
 
 ## Q151661: Encarta World Atlas: How To Disable Cosmo In The Registry

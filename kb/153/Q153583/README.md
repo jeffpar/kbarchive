@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153583: HOWTO: How to Change Case of a Control Name Within the Code Wind"
-permalink: kb/153/Q153583/
+permalink: /kb/153/Q153583/
 ---
 
 ## Q153583: HOWTO: How to Change Case of a Control Name Within the Code Wind

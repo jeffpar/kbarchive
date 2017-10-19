@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186613: Using the Start Command with Long File Names"
-permalink: kb/186/Q186613/
+permalink: /kb/186/Q186613/
 ---
 
 ## Q186613: Using the Start Command with Long File Names

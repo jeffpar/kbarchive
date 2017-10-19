@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154053: XFOR: How To Change cc:Mail Address Format To &quot;Last, First&quot;"
-permalink: kb/154/Q154053/
+permalink: /kb/154/Q154053/
 ---
 
 ## Q154053: XFOR: How To Change cc:Mail Address Format To &quot;Last, First&quot;

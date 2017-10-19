@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186424: INFO: DateTimePicker CustomFormat Is Case-Sensitive"
-permalink: kb/186/Q186424/
+permalink: /kb/186/Q186424/
 ---
 
 ## Q186424: INFO: DateTimePicker CustomFormat Is Case-Sensitive

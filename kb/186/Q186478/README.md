@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186478: Error Writing to LPT1:"
-permalink: kb/186/Q186478/
+permalink: /kb/186/Q186478/
 ---
 
 ## Q186478: Error Writing to LPT1:

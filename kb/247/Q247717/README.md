@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247717: Repeatedly Loading an XML Document May Crash in MSXML.dll"
-permalink: kb/247/Q247717/
+permalink: /kb/247/Q247717/
 ---
 
 ## Q247717: Repeatedly Loading an XML Document May Crash in MSXML.dll

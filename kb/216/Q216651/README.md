@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216651: Characters Are Faint When Printing to an HP LaserJet Printer"
-permalink: kb/216/Q216651/
+permalink: /kb/216/Q216651/
 ---
 
 ## Q216651: Characters Are Faint When Printing to an HP LaserJet Printer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131038: How to Change Hot-Spot Color at Run Time in MediaView Titles"
-permalink: kb/131/Q131038/
+permalink: /kb/131/Q131038/
 ---
 
 ## Q131038: How to Change Hot-Spot Color at Run Time in MediaView Titles

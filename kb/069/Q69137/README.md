@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69137: SCSI Support in Windows 3.0"
-permalink: kb/069/Q69137/
+permalink: /kb/069/Q69137/
 ---
 
 ## Q69137: SCSI Support in Windows 3.0

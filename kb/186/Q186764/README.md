@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186764: XCLN: Cannot Search For Names That Contain Swedish Characters"
-permalink: kb/186/Q186764/
+permalink: /kb/186/Q186764/
 ---
 
 ## Q186764: XCLN: Cannot Search For Names That Contain Swedish Characters

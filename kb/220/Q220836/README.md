@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220836: Regrgs.exe: Adds Entries to the Registry Using RGS File"
-permalink: kb/220/Q220836/
+permalink: /kb/220/Q220836/
 ---
 
 ## Q220836: Regrgs.exe: Adds Entries to the Registry Using RGS File

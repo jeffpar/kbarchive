@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161230: Resource Leak in StarSQL 32-Bit ODBC Driver"
-permalink: kb/161/Q161230/
+permalink: /kb/161/Q161230/
 ---
 
 ## Q161230: Resource Leak in StarSQL 32-Bit ODBC Driver

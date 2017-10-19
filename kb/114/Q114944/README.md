@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114944: Using WSSCNFG.EXE with Multiple-Configuration System Files"
-permalink: kb/114/Q114944/
+permalink: /kb/114/Q114944/
 ---
 
 ## Q114944: Using WSSCNFG.EXE with Multiple-Configuration System Files

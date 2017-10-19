@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94308: WFWG Err Msg: &quot;You Can Only Share...&quot; Sharing a CD-ROM"
-permalink: kb/094/Q94308/
+permalink: /kb/094/Q94308/
 ---
 
 ## Q94308: WFWG Err Msg: &quot;You Can Only Share...&quot; Sharing a CD-ROM

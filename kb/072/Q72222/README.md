@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72222: SubApp.exe Shows How to Append Menu Items to Other Apps"
-permalink: kb/072/Q72222/
+permalink: /kb/072/Q72222/
 ---
 
 ## Q72222: SubApp.exe Shows How to Append Menu Items to Other Apps

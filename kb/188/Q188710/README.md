@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188710: File Locking Behavior in FPNW"
-permalink: kb/188/Q188710/
+permalink: /kb/188/Q188710/
 ---
 
 ## Q188710: File Locking Behavior in FPNW

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76866: List Separator Under International Setting Not Updated"
-permalink: kb/076/Q76866/
+permalink: /kb/076/Q76866/
 ---
 
 ## Q76866: List Separator Under International Setting Not Updated

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165148: BUG: TN3270 Server Disconnects Clients When a Popup Message Occu"
-permalink: kb/165/Q165148/
+permalink: /kb/165/Q165148/
 ---
 
 ## Q165148: BUG: TN3270 Server Disconnects Clients When a Popup Message Occu

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143230: 3D Movie Maker: Movies Cannot be Saved in AVI Format"
-permalink: kb/143/Q143230/
+permalink: /kb/143/Q143230/
 ---
 
 ## Q143230: 3D Movie Maker: Movies Cannot be Saved in AVI Format

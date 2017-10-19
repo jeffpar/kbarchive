@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136625: PC Mac: Creating a Personal User List and Personal Group"
-permalink: kb/136/Q136625/
+permalink: /kb/136/Q136625/
 ---
 
 ## Q136625: PC Mac: Creating a Personal User List and Personal Group

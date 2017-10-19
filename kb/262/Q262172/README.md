@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262172: Allegiance: Uncontrollable Roll When Using Throttle on Joystick"
-permalink: kb/262/Q262172/
+permalink: /kb/262/Q262172/
 ---
 
 ## Q262172: Allegiance: Uncontrollable Roll When Using Throttle on Joystick

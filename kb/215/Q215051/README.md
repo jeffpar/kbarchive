@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215051: SMS: Removing Primary Site Does Not Remove SMSPKG Package Folder"
-permalink: kb/215/Q215051/
+permalink: /kb/215/Q215051/
 ---
 
 ## Q215051: SMS: Removing Primary Site Does Not Remove SMSPKG Package Folder

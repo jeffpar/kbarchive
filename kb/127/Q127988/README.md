@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127988: Plug and Play NIC Err Msg: Hardware Does Not Respond..."
-permalink: kb/127/Q127988/
+permalink: /kb/127/Q127988/
 ---
 
 ## Q127988: Plug and Play NIC Err Msg: Hardware Does Not Respond...

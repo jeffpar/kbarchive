@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285672: HOWTO: Create VFP Forms That Remember Size and Position"
-permalink: kb/285/Q285672/
+permalink: /kb/285/Q285672/
 ---
 
 ## Q285672: HOWTO: Create VFP Forms That Remember Size and Position

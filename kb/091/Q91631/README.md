@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91631: Problems When Using LapLink Pro 4.0A in 386 Enhanced Mode"
-permalink: kb/091/Q91631/
+permalink: /kb/091/Q91631/
 ---
 
 ## Q91631: Problems When Using LapLink Pro 4.0A in 386 Enhanced Mode

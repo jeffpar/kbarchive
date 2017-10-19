@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156553: Upgrading WinNT 3.51 to 4.0 w/ NCR/Symbios Logic Controller"
-permalink: kb/156/Q156553/
+permalink: /kb/156/Q156553/
 ---
 
 ## Q156553: Upgrading WinNT 3.51 to 4.0 w/ NCR/Symbios Logic Controller

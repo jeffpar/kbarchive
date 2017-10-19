@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79806: Desklink Compatibility with MS-DOS 5.0 or Later"
-permalink: kb/079/Q79806/
+permalink: /kb/079/Q79806/
 ---
 
 ## Q79806: Desklink Compatibility with MS-DOS 5.0 or Later

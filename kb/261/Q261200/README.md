@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261200: HTTP 500 Error Displays Instead of ASP Error from 500-100.asp"
-permalink: kb/261/Q261200/
+permalink: /kb/261/Q261200/
 ---
 
 ## Q261200: HTTP 500 Error Displays Instead of ASP Error from 500-100.asp

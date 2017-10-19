@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136551: Accessibility Options Require Program Compatibility"
-permalink: kb/136/Q136551/
+permalink: /kb/136/Q136551/
 ---
 
 ## Q136551: Accessibility Options Require Program Compatibility

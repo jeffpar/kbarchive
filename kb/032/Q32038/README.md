@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32038: Redirecting the Results of Pressing the PRINT SCREEN Key"
-permalink: kb/032/Q32038/
+permalink: /kb/032/Q32038/
 ---
 
 ## Q32038: Redirecting the Results of Pressing the PRINT SCREEN Key

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95869: Test Button Unavailable for PC Speaker in Control Panel"
-permalink: kb/095/Q95869/
+permalink: /kb/095/Q95869/
 ---
 
 ## Q95869: Test Button Unavailable for PC Speaker in Control Panel

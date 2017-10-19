@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112874: Fonts Look Different When Printed and on Screen"
-permalink: kb/112/Q112874/
+permalink: /kb/112/Q112874/
 ---
 
 ## Q112874: Fonts Look Different When Printed and on Screen

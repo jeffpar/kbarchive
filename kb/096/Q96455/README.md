@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96455: PC Win: Mail Useful Life Cannot Be Configured by User"
-permalink: kb/096/Q96455/
+permalink: /kb/096/Q96455/
 ---
 
 ## Q96455: PC Win: Mail Useful Life Cannot Be Configured by User

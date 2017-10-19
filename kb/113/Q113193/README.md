@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113193: PC Adm: Err Msg: Notice 158 Folder in Use... Not Compressed"
-permalink: kb/113/Q113193/
+permalink: /kb/113/Q113193/
 ---
 
 ## Q113193: PC Adm: Err Msg: Notice 158 Folder in Use... Not Compressed

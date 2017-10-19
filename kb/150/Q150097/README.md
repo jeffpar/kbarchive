@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150097: cc:Mail Clients Lock Up Through FPNW"
-permalink: kb/150/Q150097/
+permalink: /kb/150/Q150097/
 ---
 
 ## Q150097: cc:Mail Clients Lock Up Through FPNW

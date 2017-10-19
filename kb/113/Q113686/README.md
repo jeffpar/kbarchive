@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113686: FIX: Lost MouseDown Event with Command Button &amp; Check Box"
-permalink: kb/113/Q113686/
+permalink: /kb/113/Q113686/
 ---
 
 ## Q113686: FIX: Lost MouseDown Event with Command Button &amp; Check Box

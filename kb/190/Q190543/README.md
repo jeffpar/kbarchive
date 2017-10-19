@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190543: DOC: Commands Missing From the Index List in Help"
-permalink: kb/190/Q190543/
+permalink: /kb/190/Q190543/
 ---
 
 ## Q190543: DOC: Commands Missing From the Index List in Help

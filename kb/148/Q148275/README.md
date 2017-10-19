@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148275: Baseball 95: Minimum System Requirements"
-permalink: kb/148/Q148275/
+permalink: /kb/148/Q148275/
 ---
 
 ## Q148275: Baseball 95: Minimum System Requirements

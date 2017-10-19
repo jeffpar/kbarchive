@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141114: PRB: &quot;NetBIOS AddName Failure&quot; On Remote Boot Workstation"
-permalink: kb/141/Q141114/
+permalink: /kb/141/Q141114/
 ---
 
 ## Q141114: PRB: &quot;NetBIOS AddName Failure&quot; On Remote Boot Workstation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150096: CSNW May Fail to Execute Login Script Map Commands"
-permalink: kb/150/Q150096/
+permalink: /kb/150/Q150096/
 ---
 
 ## Q150096: CSNW May Fail to Execute Login Script Map Commands

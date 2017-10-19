@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122218: BUG: RFX_DATE() May Use Incorrect Precision Value"
-permalink: kb/122/Q122218/
+permalink: /kb/122/Q122218/
 ---
 
 ## Q122218: BUG: RFX_DATE() May Use Incorrect Precision Value

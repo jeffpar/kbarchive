@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183494: XCON: Store Access Violates After Upgrade to Exchange 5.0 SP 2"
-permalink: kb/183/Q183494/
+permalink: /kb/183/Q183494/
 ---
 
 ## Q183494: XCON: Store Access Violates After Upgrade to Exchange 5.0 SP 2

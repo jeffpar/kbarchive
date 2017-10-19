@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85045: FFAPI: The Role of Remote Application FFAPI"
-permalink: kb/085/Q85045/
+permalink: /kb/085/Q85045/
 ---
 
 ## Q85045: FFAPI: The Role of Remote Application FFAPI

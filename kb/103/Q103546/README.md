@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103546: Interactive Boot Displays AUTOEXEC.BAT Messages Twice"
-permalink: kb/103/Q103546/
+permalink: /kb/103/Q103546/
 ---
 
 ## Q103546: Interactive Boot Displays AUTOEXEC.BAT Messages Twice

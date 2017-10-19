@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83896: Using Crosstalk for Windows with Windows 3.1"
-permalink: kb/083/Q83896/
+permalink: /kb/083/Q83896/
 ---
 
 ## Q83896: Using Crosstalk for Windows with Windows 3.1

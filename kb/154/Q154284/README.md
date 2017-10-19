@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154284: SMS: RAWCHECK for SMS 1.2 Does Not Check SMS 1.2 &#42;.RAW Files"
-permalink: kb/154/Q154284/
+permalink: /kb/154/Q154284/
 ---
 
 ## Q154284: SMS: RAWCHECK for SMS 1.2 Does Not Check SMS 1.2 &#42;.RAW Files

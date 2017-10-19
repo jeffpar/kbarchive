@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130551: FIX: C2974 When Explicitly Call Class Template('s) Destructor"
-permalink: kb/130/Q130551/
+permalink: /kb/130/Q130551/
 ---
 
 ## Q130551: FIX: C2974 When Explicitly Call Class Template('s) Destructor

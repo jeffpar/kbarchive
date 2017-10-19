@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168680: XFOR: Replaying CCM files from cc:Mail Connector Store"
-permalink: kb/168/Q168680/
+permalink: /kb/168/Q168680/
 ---
 
 ## Q168680: XFOR: Replaying CCM files from cc:Mail Connector Store

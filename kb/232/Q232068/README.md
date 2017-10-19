@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232068: HOW TO: Download, Install, and Remove IIS MetaEdit 2.2 Utility"
-permalink: kb/232/Q232068/
+permalink: /kb/232/Q232068/
 ---
 
 ## Q232068: HOW TO: Download, Install, and Remove IIS MetaEdit 2.2 Utility

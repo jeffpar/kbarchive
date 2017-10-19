@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141756: How to Play MIDI Files Using API Calls from Visual Basic"
-permalink: kb/141/Q141756/
+permalink: /kb/141/Q141756/
 ---
 
 ## Q141756: How to Play MIDI Files Using API Calls from Visual Basic

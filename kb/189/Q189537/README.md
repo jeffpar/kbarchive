@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189537: Digi SDLC Connection Fails With Event 23, Outage Code=002C"
-permalink: kb/189/Q189537/
+permalink: /kb/189/Q189537/
 ---
 
 ## Q189537: Digi SDLC Connection Fails With Event 23, Outage Code=002C

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140935: XFOR: IMC: Empty or Partial Messages Received"
-permalink: kb/140/Q140935/
+permalink: /kb/140/Q140935/
 ---
 
 ## Q140935: XFOR: IMC: Empty or Partial Messages Received

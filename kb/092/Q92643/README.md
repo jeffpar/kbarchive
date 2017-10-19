@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92643: Some Fonts Are Not Displayed in WordPerfect with Windows 3.1"
-permalink: kb/092/Q92643/
+permalink: /kb/092/Q92643/
 ---
 
 ## Q92643: Some Fonts Are Not Displayed in WordPerfect with Windows 3.1

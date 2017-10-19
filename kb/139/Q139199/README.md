@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139199: PRB: Mastering Visual FoxPro CD Gives Choppy Video Performance"
-permalink: kb/139/Q139199/
+permalink: /kb/139/Q139199/
 ---
 
 ## Q139199: PRB: Mastering Visual FoxPro CD Gives Choppy Video Performance

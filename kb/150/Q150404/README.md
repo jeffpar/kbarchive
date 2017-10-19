@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150404: Complete Gardening: Minimum System Requirements"
-permalink: kb/150/Q150404/
+permalink: /kb/150/Q150404/
 ---
 
 ## Q150404: Complete Gardening: Minimum System Requirements

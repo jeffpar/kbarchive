@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83379: CorelDRAW! Gives WALDO Error Using Extrude or Blend"
-permalink: kb/083/Q83379/
+permalink: /kb/083/Q83379/
 ---
 
 ## Q83379: CorelDRAW! Gives WALDO Error Using Extrude or Blend

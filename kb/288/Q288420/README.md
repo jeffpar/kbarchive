@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288420: XADM: How to Re-create a Directory Object for a System Folder"
-permalink: kb/288/Q288420/
+permalink: /kb/288/Q288420/
 ---
 
 ## Q288420: XADM: How to Re-create a Directory Object for a System Folder

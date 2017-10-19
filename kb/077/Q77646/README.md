@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77646: PC DB: NetWare 286/386 Rights for Mail Database"
-permalink: kb/077/Q77646/
+permalink: /kb/077/Q77646/
 ---
 
 ## Q77646: PC DB: NetWare 286/386 Rights for Mail Database

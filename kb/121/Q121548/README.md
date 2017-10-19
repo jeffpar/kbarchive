@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121548: Problems with Snap To and Focus Enabled with IntelliPoint 1.0"
-permalink: kb/121/Q121548/
+permalink: /kb/121/Q121548/
 ---
 
 ## Q121548: Problems with Snap To and Focus Enabled with IntelliPoint 1.0

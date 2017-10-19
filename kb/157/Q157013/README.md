@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157013: XCON: MTA Terminates Unexpectedly with Event 3080 and 9405"
-permalink: kb/157/Q157013/
+permalink: /kb/157/Q157013/
 ---
 
 ## Q157013: XCON: MTA Terminates Unexpectedly with Event 3080 and 9405

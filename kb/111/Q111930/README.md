@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111930: Unable to Access Machines Other Than the RAS Server"
-permalink: kb/111/Q111930/
+permalink: /kb/111/Q111930/
 ---
 
 ## Q111930: Unable to Access Machines Other Than the RAS Server

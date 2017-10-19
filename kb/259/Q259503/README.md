@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259503: XADM: Event ID 292 When Performing a Directory Import"
-permalink: kb/259/Q259503/
+permalink: /kb/259/Q259503/
 ---
 
 ## Q259503: XADM: Event ID 292 When Performing a Directory Import

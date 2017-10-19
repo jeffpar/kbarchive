@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259042: Handle Leak in WinLogon After Applying Windows NT 4.0 SP6"
-permalink: kb/259/Q259042/
+permalink: /kb/259/Q259042/
 ---
 
 ## Q259042: Handle Leak in WinLogon After Applying Windows NT 4.0 SP6

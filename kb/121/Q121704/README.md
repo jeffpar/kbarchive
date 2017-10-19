@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121704: Unable to Close the Migration Tool for Netware"
-permalink: kb/121/Q121704/
+permalink: /kb/121/Q121704/
 ---
 
 ## Q121704: Unable to Close the Migration Tool for Netware

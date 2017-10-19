@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172787: How to Prevent MSN Quick View from Being Loaded Automatically"
-permalink: kb/172/Q172787/
+permalink: /kb/172/Q172787/
 ---
 
 ## Q172787: How to Prevent MSN Quick View from Being Loaded Automatically

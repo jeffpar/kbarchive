@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137452: Options Not Available When Connecting with Remote Mail"
-permalink: kb/137/Q137452/
+permalink: /kb/137/Q137452/
 ---
 
 ## Q137452: Options Not Available When Connecting with Remote Mail

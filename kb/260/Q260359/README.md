@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260359: PRB: KEYBOARD &quot;{RIGHTMOUSE}&quot; Fails"
-permalink: kb/260/Q260359/
+permalink: /kb/260/Q260359/
 ---
 
 ## Q260359: PRB: KEYBOARD &quot;{RIGHTMOUSE}&quot; Fails

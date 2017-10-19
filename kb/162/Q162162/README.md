@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162162: WD97: Recorded Find Method Not Based on Language Formatting"
-permalink: kb/162/Q162162/
+permalink: /kb/162/Q162162/
 ---
 
 ## Q162162: WD97: Recorded Find Method Not Based on Language Formatting

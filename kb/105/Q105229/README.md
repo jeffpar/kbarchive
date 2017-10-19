@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105229: Can't Start Some Multimedia Applications Minimized"
-permalink: kb/105/Q105229/
+permalink: /kb/105/Q105229/
 ---
 
 ## Q105229: Can't Start Some Multimedia Applications Minimized

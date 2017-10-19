@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248652: Dial-Up Networking Cannot Connect to 56-Bit Windows 2000 Server"
-permalink: kb/248/Q248652/
+permalink: /kb/248/Q248652/
 ---
 
 ## Q248652: Dial-Up Networking Cannot Connect to 56-Bit Windows 2000 Server

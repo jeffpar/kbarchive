@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147836: FIX: Debugger Hangs with Huge Executable with Embedded Symbols"
-permalink: kb/147/Q147836/
+permalink: /kb/147/Q147836/
 ---
 
 ## Q147836: FIX: Debugger Hangs with Huge Executable with Embedded Symbols

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261294: XADM: Using Search Permissions to Suppress Container Views"
-permalink: kb/261/Q261294/
+permalink: /kb/261/Q261294/
 ---
 
 ## Q261294: XADM: Using Search Permissions to Suppress Container Views

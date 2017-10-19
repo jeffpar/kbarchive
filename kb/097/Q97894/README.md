@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97894: PC WRmt: Remote Mail Password Dialogs"
-permalink: kb/097/Q97894/
+permalink: /kb/097/Q97894/
 ---
 
 ## Q97894: PC WRmt: Remote Mail Password Dialogs

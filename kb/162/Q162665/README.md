@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162665: LUA File Transfer Locks Out 3270 User Sessions"
-permalink: kb/162/Q162665/
+permalink: /kb/162/Q162665/
 ---
 
 ## Q162665: LUA File Transfer Locks Out 3270 User Sessions

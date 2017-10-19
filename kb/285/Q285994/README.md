@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285994: MechWarrior 4 Err Msg: Stop: Failed (Dderr_CannotAttachSurface)"
-permalink: kb/285/Q285994/
+permalink: /kb/285/Q285994/
 ---
 
 ## Q285994: MechWarrior 4 Err Msg: Stop: Failed (Dderr_CannotAttachSurface)

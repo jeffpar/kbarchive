@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176682: XADM: System Attendant Uses Unusually Large Amount of Memory"
-permalink: kb/176/Q176682/
+permalink: /kb/176/Q176682/
 ---
 
 ## Q176682: XADM: System Attendant Uses Unusually Large Amount of Memory

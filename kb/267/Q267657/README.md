@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267657: More Than 4.2 GB of Commit Limit Memory Not Displayed Properly"
-permalink: kb/267/Q267657/
+permalink: /kb/267/Q267657/
 ---
 
 ## Q267657: More Than 4.2 GB of Commit Limit Memory Not Displayed Properly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169855: Print Service Doesn't Process Carriage Return Properly"
-permalink: kb/169/Q169855/
+permalink: /kb/169/Q169855/
 ---
 
 ## Q169855: Print Service Doesn't Process Carriage Return Properly

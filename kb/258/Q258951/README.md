@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258951: XADM: Space Not Gained After Changing Deleted Items Retention"
-permalink: kb/258/Q258951/
+permalink: /kb/258/Q258951/
 ---
 
 ## Q258951: XADM: Space Not Gained After Changing Deleted Items Retention

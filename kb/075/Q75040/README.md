@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75040: Flow-of-Control During Recognition"
-permalink: kb/075/Q75040/
+permalink: /kb/075/Q75040/
 ---
 
 ## Q75040: Flow-of-Control During Recognition

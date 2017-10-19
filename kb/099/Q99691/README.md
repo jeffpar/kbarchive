@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99691: ErrMsg: &quot;Printer Fonts are Missing&quot; with HP DeskJet 2.1 Driver"
-permalink: kb/099/Q99691/
+permalink: /kb/099/Q99691/
 ---
 
 ## Q99691: ErrMsg: &quot;Printer Fonts are Missing&quot; with HP DeskJet 2.1 Driver

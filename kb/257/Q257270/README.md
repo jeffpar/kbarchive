@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257270: SMS 2.0 Client Minimizes Full-Screen MS-DOS-Based Program"
-permalink: kb/257/Q257270/
+permalink: /kb/257/Q257270/
 ---
 
 ## Q257270: SMS 2.0 Client Minimizes Full-Screen MS-DOS-Based Program

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296120: INF: OLE DB Provider for AS/400 and VSAM Host Requirements"
-permalink: kb/296/Q296120/
+permalink: /kb/296/Q296120/
 ---
 
 ## Q296120: INF: OLE DB Provider for AS/400 and VSAM Host Requirements

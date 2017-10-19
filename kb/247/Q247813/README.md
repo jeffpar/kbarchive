@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247813: XCLN: Messages Not Saved to Drafts Folder"
-permalink: kb/247/Q247813/
+permalink: /kb/247/Q247813/
 ---
 
 ## Q247813: XCLN: Messages Not Saved to Drafts Folder

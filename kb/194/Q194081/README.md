@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194081: Unable to Cancel TEST_RTS_AND_POST if Verb Issued Synchronously"
-permalink: kb/194/Q194081/
+permalink: /kb/194/Q194081/
 ---
 
 ## Q194081: Unable to Cancel TEST_RTS_AND_POST if Verb Issued Synchronously

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145594: How to Use the FPNWAUTH.EXE Utility"
-permalink: kb/145/Q145594/
+permalink: /kb/145/Q145594/
 ---
 
 ## Q145594: How to Use the FPNWAUTH.EXE Utility

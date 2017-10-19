@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202082: SMS: Software Inventory Does Not List Individual Files"
-permalink: kb/202/Q202082/
+permalink: /kb/202/Q202082/
 ---
 
 ## Q202082: SMS: Software Inventory Does Not List Individual Files

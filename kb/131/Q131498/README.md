@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131498: DLL with PROGRAM Statement Fails to Load"
-permalink: kb/131/Q131498/
+permalink: /kb/131/Q131498/
 ---
 
 ## Q131498: DLL with PROGRAM Statement Fails to Load

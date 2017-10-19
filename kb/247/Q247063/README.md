@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247063: XFOR: DNS Error Installing Internet Mail Service on Windows 2000"
-permalink: kb/247/Q247063/
+permalink: /kb/247/Q247063/
 ---
 
 ## Q247063: XFOR: DNS Error Installing Internet Mail Service on Windows 2000

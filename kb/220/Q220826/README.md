@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220826: Back Button in HTMLA Administration Forms May be Problematic"
-permalink: kb/220/Q220826/
+permalink: /kb/220/Q220826/
 ---
 
 ## Q220826: Back Button in HTMLA Administration Forms May be Problematic

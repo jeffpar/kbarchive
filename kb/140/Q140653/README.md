@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140653: PRB: Cursor-Based Grid Goes Blank If SQL SELECT Resets Cursor"
-permalink: kb/140/Q140653/
+permalink: /kb/140/Q140653/
 ---
 
 ## Q140653: PRB: Cursor-Based Grid Goes Blank If SQL SELECT Resets Cursor

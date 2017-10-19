@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145688: Microsoft Windows 95 Power Toys Readme.txt File"
-permalink: kb/145/Q145688/
+permalink: /kb/145/Q145688/
 ---
 
 ## Q145688: Microsoft Windows 95 Power Toys Readme.txt File

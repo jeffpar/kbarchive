@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180467: SNA Client Does Not Retry Other Sponsors After Error Response"
-permalink: kb/180/Q180467/
+permalink: /kb/180/Q180467/
 ---
 
 ## Q180467: SNA Client Does Not Retry Other Sponsors After Error Response

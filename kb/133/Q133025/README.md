@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133025: HOWTO: How to Store MFC Printer Information in a Document"
-permalink: kb/133/Q133025/
+permalink: /kb/133/Q133025/
 ---
 
 ## Q133025: HOWTO: How to Store MFC Printer Information in a Document

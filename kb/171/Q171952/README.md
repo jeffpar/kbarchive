@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171952: PRB: MSFlexGrid Doesn't Return All Rows w/UseODBC Data Control"
-permalink: kb/171/Q171952/
+permalink: /kb/171/Q171952/
 ---
 
 ## Q171952: PRB: MSFlexGrid Doesn't Return All Rows w/UseODBC Data Control

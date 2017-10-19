@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246872: INFO: Installation Information for Visual SourceSafe 6.0"
-permalink: kb/246/Q246872/
+permalink: /kb/246/Q246872/
 ---
 
 ## Q246872: INFO: Installation Information for Visual SourceSafe 6.0

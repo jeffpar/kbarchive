@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219376: NDIS Does Not Indicate NDIS_RESET_END Status"
-permalink: kb/219/Q219376/
+permalink: /kb/219/Q219376/
 ---
 
 ## Q219376: NDIS Does Not Indicate NDIS_RESET_END Status

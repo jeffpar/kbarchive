@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83506: Productivity Pack Version 3.1 Minimized Icon Won't Move"
-permalink: kb/083/Q83506/
+permalink: /kb/083/Q83506/
 ---
 
 ## Q83506: Productivity Pack Version 3.1 Minimized Icon Won't Move

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84159: Windows: Mouse Trails Only Work at Lower Resolutions"
-permalink: kb/084/Q84159/
+permalink: /kb/084/Q84159/
 ---
 
 ## Q84159: Windows: Mouse Trails Only Work at Lower Resolutions

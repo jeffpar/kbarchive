@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279214: XIMS: Exchange Server Cannot Communicate with IIS over SSL"
-permalink: kb/279/Q279214/
+permalink: /kb/279/Q279214/
 ---
 
 ## Q279214: XIMS: Exchange Server Cannot Communicate with IIS over SSL

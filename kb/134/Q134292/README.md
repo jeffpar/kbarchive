@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134292: Cannot Paste Windows Explorer or Desktop Object into BBS"
-permalink: kb/134/Q134292/
+permalink: /kb/134/Q134292/
 ---
 
 ## Q134292: Cannot Paste Windows Explorer or Desktop Object into BBS

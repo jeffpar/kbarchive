@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172221: How to Move One or More Zone Files to a New WinNT DNS Server"
-permalink: kb/172/Q172221/
+permalink: /kb/172/Q172221/
 ---
 
 ## Q172221: How to Move One or More Zone Files to a New WinNT DNS Server

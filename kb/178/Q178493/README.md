@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178493: SNA Server Status Shows &quot;Off Line&quot; Even Though It's Active"
-permalink: kb/178/Q178493/
+permalink: /kb/178/Q178493/
 ---
 
 ## Q178493: SNA Server Status Shows &quot;Off Line&quot; Even Though It's Active

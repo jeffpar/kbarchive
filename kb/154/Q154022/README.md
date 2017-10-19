@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154022: Wine Guide: Distorted Display When Playing Video Clips"
-permalink: kb/154/Q154022/
+permalink: /kb/154/Q154022/
 ---
 
 ## Q154022: Wine Guide: Distorted Display When Playing Video Clips

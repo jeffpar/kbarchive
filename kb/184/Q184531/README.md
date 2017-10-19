@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184531: XADM: Custom Recipient SMTP Address May Not Change Properly"
-permalink: kb/184/Q184531/
+permalink: /kb/184/Q184531/
 ---
 
 ## Q184531: XADM: Custom Recipient SMTP Address May Not Change Properly

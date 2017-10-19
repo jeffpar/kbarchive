@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192254: BUG: SetWindowPos API Does Not Set Topmost Window in VB"
-permalink: kb/192/Q192254/
+permalink: /kb/192/Q192254/
 ---
 
 ## Q192254: BUG: SetWindowPos API Does Not Set Topmost Window in VB

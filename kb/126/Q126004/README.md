@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126004: MSB Solar and Ocean: Err Msg: Run Magic School Bus Setup Again"
-permalink: kb/126/Q126004/
+permalink: /kb/126/Q126004/
 ---
 
 ## Q126004: MSB Solar and Ocean: Err Msg: Run Magic School Bus Setup Again

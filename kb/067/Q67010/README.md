@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67010: XTs Does Not Install for EGA or VGA Color with Windows 3.0"
-permalink: kb/067/Q67010/
+permalink: /kb/067/Q67010/
 ---
 
 ## Q67010: XTs Does Not Install for EGA or VGA Color with Windows 3.0

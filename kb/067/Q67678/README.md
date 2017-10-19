@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67678: List Box and Combo Box Capacity Limits"
-permalink: kb/067/Q67678/
+permalink: /kb/067/Q67678/
 ---
 
 ## Q67678: List Box and Combo Box Capacity Limits

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139872: PRB: &quot;Expand is not an array&quot; Error When Using Outline Control"
-permalink: kb/139/Q139872/
+permalink: /kb/139/Q139872/
 ---
 
 ## Q139872: PRB: &quot;Expand is not an array&quot; Error When Using Outline Control

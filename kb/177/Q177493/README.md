@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177493: XADM: Outlook Web Access does not Fully Support Thai Characters"
-permalink: kb/177/Q177493/
+permalink: /kb/177/Q177493/
 ---
 
 ## Q177493: XADM: Outlook Web Access does not Fully Support Thai Characters

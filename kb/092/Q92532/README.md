@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92532: PRB: Display Monitor Goes Blank After the Logo Display"
-permalink: kb/092/Q92532/
+permalink: /kb/092/Q92532/
 ---
 
 ## Q92532: PRB: Display Monitor Goes Blank After the Logo Display

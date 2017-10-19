@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156170: PRB: Open Tab on Docked Project Manager Stops Desktop Resize"
-permalink: kb/156/Q156170/
+permalink: /kb/156/Q156170/
 ---
 
 ## Q156170: PRB: Open Tab on Docked Project Manager Stops Desktop Resize

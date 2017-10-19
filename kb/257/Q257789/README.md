@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257789: FIX: Data Source Is Not Updated When PropertyChanged Is Called"
-permalink: kb/257/Q257789/
+permalink: /kb/257/Q257789/
 ---
 
 ## Q257789: FIX: Data Source Is Not Updated When PropertyChanged Is Called

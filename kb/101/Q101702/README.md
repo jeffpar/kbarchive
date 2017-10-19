@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101702: Problems Booting from Shadow Set Secondary Member"
-permalink: kb/101/Q101702/
+permalink: /kb/101/Q101702/
 ---
 
 ## Q101702: Problems Booting from Shadow Set Secondary Member

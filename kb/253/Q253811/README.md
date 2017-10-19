@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253811: Connect Requests Not Seen on All Interfaces on Multihomed Client"
-permalink: kb/253/Q253811/
+permalink: /kb/253/Q253811/
 ---
 
 ## Q253811: Connect Requests Not Seen on All Interfaces on Multihomed Client

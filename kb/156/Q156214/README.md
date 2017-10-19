@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156214: Unclear Error Message Printing from Windows NT Diagnostics"
-permalink: kb/156/Q156214/
+permalink: /kb/156/Q156214/
 ---
 
 ## Q156214: Unclear Error Message Printing from Windows NT Diagnostics

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161870: Maximum Files on SFM Volume Limited by Paged Pool Memory"
-permalink: kb/161/Q161870/
+permalink: /kb/161/Q161870/
 ---
 
 ## Q161870: Maximum Files on SFM Volume Limited by Paged Pool Memory

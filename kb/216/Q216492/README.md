@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216492: XFOR: Extra Space in Notes Proxy Address Causes Mail to NDR"
-permalink: kb/216/Q216492/
+permalink: /kb/216/Q216492/
 ---
 
 ## Q216492: XFOR: Extra Space in Notes Proxy Address Causes Mail to NDR

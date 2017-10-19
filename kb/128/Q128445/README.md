@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128445: Network Clients Cannot Print to Server LPR Printers"
-permalink: kb/128/Q128445/
+permalink: /kb/128/Q128445/
 ---
 
 ## Q128445: Network Clients Cannot Print to Server LPR Printers

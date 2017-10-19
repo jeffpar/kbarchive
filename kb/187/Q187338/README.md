@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187338: Windows Hangs During the Logon Process"
-permalink: kb/187/Q187338/
+permalink: /kb/187/Q187338/
 ---
 
 ## Q187338: Windows Hangs During the Logon Process

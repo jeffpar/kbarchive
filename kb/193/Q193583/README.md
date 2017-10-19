@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193583: INFO: SSInt.exe Is Added to Visual SourceSafe 6.0"
-permalink: kb/193/Q193583/
+permalink: /kb/193/Q193583/
 ---
 
 ## Q193583: INFO: SSInt.exe Is Added to Visual SourceSafe 6.0

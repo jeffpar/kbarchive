@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100314: PRB: SDK Install Makes Microsoft Tools Group Unavailable"
-permalink: kb/100/Q100314/
+permalink: /kb/100/Q100314/
 ---
 
 ## Q100314: PRB: SDK Install Makes Microsoft Tools Group Unavailable

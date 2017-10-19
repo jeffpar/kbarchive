@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177962: SBS Client Add Pack Cannot Be Reused to Upgrade SBS Licenses"
-permalink: kb/177/Q177962/
+permalink: /kb/177/Q177962/
 ---
 
 ## Q177962: SBS Client Add Pack Cannot Be Reused to Upgrade SBS Licenses

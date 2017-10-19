@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69840: Windows Err Msg: Maximum Number of Printers Already Installed"
-permalink: kb/069/Q69840/
+permalink: /kb/069/Q69840/
 ---
 
 ## Q69840: Windows Err Msg: Maximum Number of Printers Already Installed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70211: Problem with Kodak DiconiX 150+ Windows Printer Driver"
-permalink: kb/070/Q70211/
+permalink: /kb/070/Q70211/
 ---
 
 ## Q70211: Problem with Kodak DiconiX 150+ Windows Printer Driver

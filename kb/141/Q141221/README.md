@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141221: Writer/Artist: Stickers Print with Gray Squares Around Them"
-permalink: kb/141/Q141221/
+permalink: /kb/141/Q141221/
 ---
 
 ## Q141221: Writer/Artist: Stickers Print with Gray Squares Around Them

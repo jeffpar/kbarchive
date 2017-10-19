@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167360: SMS: Network Monitor - Print Advanced Should Use Radio Buttons"
-permalink: kb/167/Q167360/
+permalink: /kb/167/Q167360/
 ---
 
 ## Q167360: SMS: Network Monitor - Print Advanced Should Use Radio Buttons

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193019: BUG: Type Mismatch Error Erasing a Fixed-Size Array in UDT"
-permalink: kb/193/Q193019/
+permalink: /kb/193/Q193019/
 ---
 
 ## Q193019: BUG: Type Mismatch Error Erasing a Fixed-Size Array in UDT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135703: PC Win: Changing the Default Directory for Saving Attachments"
-permalink: kb/135/Q135703/
+permalink: /kb/135/Q135703/
 ---
 
 ## Q135703: PC Win: Changing the Default Directory for Saving Attachments

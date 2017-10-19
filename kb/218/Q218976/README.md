@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218976: BUG: COPY FILE TO Command Behaves Differently Based on OS"
-permalink: kb/218/Q218976/
+permalink: /kb/218/Q218976/
 ---
 
 ## Q218976: BUG: COPY FILE TO Command Behaves Differently Based on OS

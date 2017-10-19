@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135246: Mastering Microsoft Visual FoxPro Description and Support"
-permalink: kb/135/Q135246/
+permalink: /kb/135/Q135246/
 ---
 
 ## Q135246: Mastering Microsoft Visual FoxPro Description and Support

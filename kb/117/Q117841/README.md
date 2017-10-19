@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117841: Avoiding Background Palette Flash When Viewing AVI Files"
-permalink: kb/117/Q117841/
+permalink: /kb/117/Q117841/
 ---
 
 ## Q117841: Avoiding Background Palette Flash When Viewing AVI Files

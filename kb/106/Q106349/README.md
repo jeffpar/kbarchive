@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106349: PC WRmt: AT&amp;T Access Plus Folder Conversion Utility"
-permalink: kb/106/Q106349/
+permalink: /kb/106/Q106349/
 ---
 
 ## Q106349: PC WRmt: AT&amp;T Access Plus Folder Conversion Utility

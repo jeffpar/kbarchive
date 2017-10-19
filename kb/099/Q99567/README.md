@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99567: Mac Connectivity with Microsoft Mail and LAN Manager"
-permalink: kb/099/Q99567/
+permalink: /kb/099/Q99567/
 ---
 
 ## Q99567: Mac Connectivity with Microsoft Mail and LAN Manager

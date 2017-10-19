@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125202: Cinemania 1995: Error When Using Long File Names"
-permalink: kb/125/Q125202/
+permalink: /kb/125/Q125202/
 ---
 
 ## Q125202: Cinemania 1995: Error When Using Long File Names

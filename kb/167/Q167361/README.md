@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167361: Drive Details Incorrectly Print on a Compaq Proliant 2500"
-permalink: kb/167/Q167361/
+permalink: /kb/167/Q167361/
 ---
 
 ## Q167361: Drive Details Incorrectly Print on a Compaq Proliant 2500

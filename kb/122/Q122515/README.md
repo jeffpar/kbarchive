@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122515: Notepad ErrMsg Points to Control Panel for Configuring Printer"
-permalink: kb/122/Q122515/
+permalink: /kb/122/Q122515/
 ---
 
 ## Q122515: Notepad ErrMsg Points to Control Panel for Configuring Printer

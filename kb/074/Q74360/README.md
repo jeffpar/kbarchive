@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74360: Three Methods to Import Functions from a DLL"
-permalink: kb/074/Q74360/
+permalink: /kb/074/Q74360/
 ---
 
 ## Q74360: Three Methods to Import Functions from a DLL

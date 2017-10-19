@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66830: ASD: Clearing Scenery"
-permalink: kb/066/Q66830/
+permalink: /kb/066/Q66830/
 ---
 
 ## Q66830: ASD: Clearing Scenery

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186145: Server Performance Degraded by CPQDBG"
-permalink: kb/186/Q186145/
+permalink: /kb/186/Q186145/
 ---
 
 ## Q186145: Server Performance Degraded by CPQDBG

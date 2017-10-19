@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85374: HP LaserJet Does Not Support International Cartridge"
-permalink: kb/085/Q85374/
+permalink: /kb/085/Q85374/
 ---
 
 ## Q85374: HP LaserJet Does Not Support International Cartridge

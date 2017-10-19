@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124643: How to Simulate Client-Server Apps w/Apple Events &amp; FoxPro Mac"
-permalink: kb/124/Q124643/
+permalink: /kb/124/Q124643/
 ---
 
 ## Q124643: How to Simulate Client-Server Apps w/Apple Events &amp; FoxPro Mac

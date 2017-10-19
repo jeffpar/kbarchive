@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82341: Blank Pages Printing on Kyocera F-1010 Laser Printer"
-permalink: kb/082/Q82341/
+permalink: /kb/082/Q82341/
 ---
 
 ## Q82341: Blank Pages Printing on Kyocera F-1010 Laser Printer

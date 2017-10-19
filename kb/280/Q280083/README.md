@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280083: SMS: Collections May Be Missing, Empty, or Partially Empty"
-permalink: kb/280/Q280083/
+permalink: /kb/280/Q280083/
 ---
 
 ## Q280083: SMS: Collections May Be Missing, Empty, or Partially Empty

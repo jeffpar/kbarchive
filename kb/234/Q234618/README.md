@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234618: BUG: MDAC 2.1 GA - ODBC Jet / ISAM Driver Cannot Open Excel 4.0"
-permalink: kb/234/Q234618/
+permalink: /kb/234/Q234618/
 ---
 
 ## Q234618: BUG: MDAC 2.1 GA - ODBC Jet / ISAM Driver Cannot Open Excel 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106024: Windows for Workgroups Hangs at Startup with HP VxD HPVNPD.386"
-permalink: kb/106/Q106024/
+permalink: /kb/106/Q106024/
 ---
 
 ## Q106024: Windows for Workgroups Hangs at Startup with HP VxD HPVNPD.386

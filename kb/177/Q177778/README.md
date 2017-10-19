@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177778: XADM: Events 12000 and 11201 from NNTP"
-permalink: kb/177/Q177778/
+permalink: /kb/177/Q177778/
 ---
 
 ## Q177778: XADM: Events 12000 and 11201 from NNTP

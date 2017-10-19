@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164439: Configuring an HP JetDirect printer to Monitor FPNW Print Queues"
-permalink: kb/164/Q164439/
+permalink: /kb/164/Q164439/
 ---
 
 ## Q164439: Configuring an HP JetDirect printer to Monitor FPNW Print Queues

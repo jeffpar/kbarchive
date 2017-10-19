@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157970: PRB: Event Firing Changes in MFC May Break Some Containers"
-permalink: kb/157/Q157970/
+permalink: /kb/157/Q157970/
 ---
 
 ## Q157970: PRB: Event Firing Changes in MFC May Break Some Containers

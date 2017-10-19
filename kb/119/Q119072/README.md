@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119072: DoubleSpace/DriveSpace Limits on 1028 MB to 1153 MB Partitions"
-permalink: kb/119/Q119072/
+permalink: /kb/119/Q119072/
 ---
 
 ## Q119072: DoubleSpace/DriveSpace Limits on 1028 MB to 1153 MB Partitions

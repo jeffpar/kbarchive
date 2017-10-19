@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263398: ITG: Site Component Manager  Reinstalls Repeatedly"
-permalink: kb/263/Q263398/
+permalink: /kb/263/Q263398/
 ---
 
 ## Q263398: ITG: Site Component Manager  Reinstalls Repeatedly

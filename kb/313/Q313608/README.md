@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313608: HOWTO: Replace a DLL with Its Checked Version for Testing"
-permalink: kb/313/Q313608/
+permalink: /kb/313/Q313608/
 ---
 
 ## Q313608: HOWTO: Replace a DLL with Its Checked Version for Testing

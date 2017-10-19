@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291380: FIX: Redefinition Errors When You Compile an IDL File"
-permalink: kb/291/Q291380/
+permalink: /kb/291/Q291380/
 ---
 
 ## Q291380: FIX: Redefinition Errors When You Compile an IDL File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103154: Nbf Received an Unexpected FRMR Packet in Event Viewer"
-permalink: kb/103/Q103154/
+permalink: /kb/103/Q103154/
 ---
 
 ## Q103154: Nbf Received an Unexpected FRMR Packet in Event Viewer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162669: How to Disable PJL Commands for a PostScript Printer Driver"
-permalink: kb/162/Q162669/
+permalink: /kb/162/Q162669/
 ---
 
 ## Q162669: How to Disable PJL Commands for a PostScript Printer Driver

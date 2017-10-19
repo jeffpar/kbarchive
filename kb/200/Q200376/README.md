@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200376: XFOR: Authentication Package DPA Errors"
-permalink: kb/200/Q200376/
+permalink: /kb/200/Q200376/
 ---
 
 ## Q200376: XFOR: Authentication Package DPA Errors

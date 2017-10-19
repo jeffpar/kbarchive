@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179992: XADM: Exchange Setup Fails with Error File=common&#92;list1.c"
-permalink: kb/179/Q179992/
+permalink: /kb/179/Q179992/
 ---
 
 ## Q179992: XADM: Exchange Setup Fails with Error File=common&#92;list1.c

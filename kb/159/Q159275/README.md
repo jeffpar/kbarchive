@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159275: TN3270E DATA-TYPE Field with a Value of 0x08"
-permalink: kb/159/Q159275/
+permalink: /kb/159/Q159275/
 ---
 
 ## Q159275: TN3270E DATA-TYPE Field with a Value of 0x08

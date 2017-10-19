@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66189: Flight Simulator: Adjusting Barometric Pressure"
-permalink: kb/066/Q66189/
+permalink: /kb/066/Q66189/
 ---
 
 ## Q66189: Flight Simulator: Adjusting Barometric Pressure

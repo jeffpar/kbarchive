@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191479: RRAS API Name Updated"
-permalink: kb/191/Q191479/
+permalink: /kb/191/Q191479/
 ---
 
 ## Q191479: RRAS API Name Updated

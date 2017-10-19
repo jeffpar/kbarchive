@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182419: SMS: SMSEXEC Dr. Watson When Decompressing a Package File"
-permalink: kb/182/Q182419/
+permalink: /kb/182/Q182419/
 ---
 
 ## Q182419: SMS: SMSEXEC Dr. Watson When Decompressing a Package File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95085: Pausing the Windows Sound System 1.0 Voice Pilot"
-permalink: kb/095/Q95085/
+permalink: /kb/095/Q95085/
 ---
 
 ## Q95085: Pausing the Windows Sound System 1.0 Voice Pilot

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141070: PC Win:Attachment Saved as 0 Byte File if First 126 Bytes Null"
-permalink: kb/141/Q141070/
+permalink: /kb/141/Q141070/
 ---
 
 ## Q141070: PC Win:Attachment Saved as 0 Byte File if First 126 Bytes Null

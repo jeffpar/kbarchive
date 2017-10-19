@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120560: Step-Up Runs MAKESYS but Fails SETUP w/Insufficient Memory Err"
-permalink: kb/120/Q120560/
+permalink: /kb/120/Q120560/
 ---
 
 ## Q120560: Step-Up Runs MAKESYS but Fails SETUP w/Insufficient Memory Err

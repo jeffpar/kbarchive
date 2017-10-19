@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122265: BUG: Incorrect Calculations with Both /Og and /G5"
-permalink: kb/122/Q122265/
+permalink: /kb/122/Q122265/
 ---
 
 ## Q122265: BUG: Incorrect Calculations with Both /Og and /G5

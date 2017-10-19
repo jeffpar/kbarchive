@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71502: Cannot Remove WinPopup from Load= Line in WIN.INI"
-permalink: kb/071/Q71502/
+permalink: /kb/071/Q71502/
 ---
 
 ## Q71502: Cannot Remove WinPopup from Load= Line in WIN.INI

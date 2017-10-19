@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97651: PC WRmt Win: Problems Installing with DoubleSpace"
-permalink: kb/097/Q97651/
+permalink: /kb/097/Q97651/
 ---
 
 ## Q97651: PC WRmt Win: Problems Installing with DoubleSpace

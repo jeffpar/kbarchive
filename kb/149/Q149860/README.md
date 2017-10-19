@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149860: Older Version of CTL3D.DLL Causes &quot;Not Enough Memory&quot; Message"
-permalink: kb/149/Q149860/
+permalink: /kb/149/Q149860/
 ---
 
 ## Q149860: Older Version of CTL3D.DLL Causes &quot;Not Enough Memory&quot; Message

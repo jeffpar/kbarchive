@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258423: Preferred Sender Capability Does Not Work with Starburst Sender"
-permalink: kb/258/Q258423/
+permalink: /kb/258/Q258423/
 ---
 
 ## Q258423: Preferred Sender Capability Does Not Work with Starburst Sender

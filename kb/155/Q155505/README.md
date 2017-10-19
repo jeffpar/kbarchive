@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155505: Cinemania 97: Minimum System Requirements"
-permalink: kb/155/Q155505/
+permalink: /kb/155/Q155505/
 ---
 
 ## Q155505: Cinemania 97: Minimum System Requirements

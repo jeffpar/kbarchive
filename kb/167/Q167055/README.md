@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167055: FTP Service Does Not Detect Port Change"
-permalink: kb/167/Q167055/
+permalink: /kb/167/Q167055/
 ---
 
 ## Q167055: FTP Service Does Not Detect Port Change

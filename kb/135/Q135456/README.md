@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135456: DOCERR: How to Set Column Index Correctly for AddColumn Method"
-permalink: kb/135/Q135456/
+permalink: /kb/135/Q135456/
 ---
 
 ## Q135456: DOCERR: How to Set Column Index Correctly for AddColumn Method

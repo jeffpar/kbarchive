@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189682: HOWTO: Bind a DataList or DataCombo to a Recordset at Run-Time"
-permalink: kb/189/Q189682/
+permalink: /kb/189/Q189682/
 ---
 
 ## Q189682: HOWTO: Bind a DataList or DataCombo to a Recordset at Run-Time

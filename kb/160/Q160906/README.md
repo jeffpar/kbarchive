@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160906: HOWTO: Use MFC 4.2 ODBC Classes in an ISAPI DLL"
-permalink: kb/160/Q160906/
+permalink: /kb/160/Q160906/
 ---
 
 ## Q160906: HOWTO: Use MFC 4.2 ODBC Classes in an ISAPI DLL

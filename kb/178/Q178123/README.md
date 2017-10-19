@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178123: Multimedia: Video Clips Do Not Play Properly"
-permalink: kb/178/Q178123/
+permalink: /kb/178/Q178123/
 ---
 
 ## Q178123: Multimedia: Video Clips Do Not Play Properly

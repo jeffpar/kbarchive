@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239044: Removing Application Settings from IISADMIN Causes Error"
-permalink: kb/239/Q239044/
+permalink: /kb/239/Q239044/
 ---
 
 ## Q239044: Removing Application Settings from IISADMIN Causes Error

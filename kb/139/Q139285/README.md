@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139285: XCLN: Specifying Microsoft Word as E-Mail Editor"
-permalink: kb/139/Q139285/
+permalink: /kb/139/Q139285/
 ---
 
 ## Q139285: XCLN: Specifying Microsoft Word as E-Mail Editor

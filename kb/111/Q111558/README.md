@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111558: PC Ext: Microsoft Mail EXTERNAL.EXE Version 3.2.18 Update"
-permalink: kb/111/Q111558/
+permalink: /kb/111/Q111558/
 ---
 
 ## Q111558: PC Ext: Microsoft Mail EXTERNAL.EXE Version 3.2.18 Update

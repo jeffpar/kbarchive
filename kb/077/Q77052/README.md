@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77052: Default Values for Drivers/Commands in CONFIG.SYS"
-permalink: kb/077/Q77052/
+permalink: /kb/077/Q77052/
 ---
 
 ## Q77052: Default Values for Drivers/Commands in CONFIG.SYS

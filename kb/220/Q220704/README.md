@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220704: W3C Logging Defaults to Extended Properties"
-permalink: kb/220/Q220704/
+permalink: /kb/220/Q220704/
 ---
 
 ## Q220704: W3C Logging Defaults to Extended Properties

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197774: Err Msg: This Program Is Set to Run in MS-DOS Mode..."
-permalink: kb/197/Q197774/
+permalink: /kb/197/Q197774/
 ---
 
 ## Q197774: Err Msg: This Program Is Set to Run in MS-DOS Mode...

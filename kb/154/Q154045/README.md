@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154045: INFO: Setup Cannot Access the Source File ..&#92;include&#92;ALGORITHM"
-permalink: kb/154/Q154045/
+permalink: /kb/154/Q154045/
 ---
 
 ## Q154045: INFO: Setup Cannot Access the Source File ..&#92;include&#92;ALGORITHM

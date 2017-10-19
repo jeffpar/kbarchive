@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314207: SMS: Site System Status Summarizer Does Not Update Properly"
-permalink: kb/314/Q314207/
+permalink: /kb/314/Q314207/
 ---
 
 ## Q314207: SMS: Site System Status Summarizer Does Not Update Properly

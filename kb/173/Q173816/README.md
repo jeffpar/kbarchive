@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173816: Desktop Pattern Corruption When Increasing Color Palette"
-permalink: kb/173/Q173816/
+permalink: /kb/173/Q173816/
 ---
 
 ## Q173816: Desktop Pattern Corruption When Increasing Color Palette

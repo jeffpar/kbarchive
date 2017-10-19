@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160230: FP: User Registration File Not Hidden Automatically"
-permalink: kb/160/Q160230/
+permalink: /kb/160/Q160230/
 ---
 
 ## Q160230: FP: User Registration File Not Hidden Automatically

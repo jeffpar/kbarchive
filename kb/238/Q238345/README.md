@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238345: FIX: Visual SourceSafe OLE Automation Returns Out of Memory"
-permalink: kb/238/Q238345/
+permalink: /kb/238/Q238345/
 ---
 
 ## Q238345: FIX: Visual SourceSafe OLE Automation Returns Out of Memory

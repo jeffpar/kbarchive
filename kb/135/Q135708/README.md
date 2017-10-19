@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135708: BUG: Changing PageOrder in PageFrame Gives Incorrect PageName"
-permalink: kb/135/Q135708/
+permalink: /kb/135/Q135708/
 ---
 
 ## Q135708: BUG: Changing PageOrder in PageFrame Gives Incorrect PageName

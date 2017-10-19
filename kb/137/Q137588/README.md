@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137588: TN3270 Service Will Not Start with a Large Config File"
-permalink: kb/137/Q137588/
+permalink: /kb/137/Q137588/
 ---
 
 ## Q137588: TN3270 Service Will Not Start with a Large Config File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125968: Notepad Reduced to Icon in Productivity Pack Demonstration"
-permalink: kb/125/Q125968/
+permalink: /kb/125/Q125968/
 ---
 
 ## Q125968: Notepad Reduced to Icon in Productivity Pack Demonstration

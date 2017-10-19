@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263665: SMS: Travel Mode Switch Prevents New Clients from Being Assigned"
-permalink: kb/263/Q263665/
+permalink: /kb/263/Q263665/
 ---
 
 ## Q263665: SMS: Travel Mode Switch Prevents New Clients from Being Assigned

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182945: PRB: Database Field in Collection Treated Differently in VB"
-permalink: kb/182/Q182945/
+permalink: /kb/182/Q182945/
 ---
 
 ## Q182945: PRB: Database Field in Collection Treated Differently in VB

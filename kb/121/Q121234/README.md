@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121234: Running Macintosh Installer from a Package Subfolder"
-permalink: kb/121/Q121234/
+permalink: /kb/121/Q121234/
 ---
 
 ## Q121234: Running Macintosh Installer from a Package Subfolder

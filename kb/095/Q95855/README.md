@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95855: Backup Err Msg: Not Ready Error Accessing Drive x"
-permalink: kb/095/Q95855/
+permalink: /kb/095/Q95855/
 ---
 
 ## Q95855: Backup Err Msg: Not Ready Error Accessing Drive x

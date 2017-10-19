@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110163: Incoming Faxes Received but Never Appear in Inbox"
-permalink: kb/110/Q110163/
+permalink: /kb/110/Q110163/
 ---
 
 ## Q110163: Incoming Faxes Received but Never Appear in Inbox

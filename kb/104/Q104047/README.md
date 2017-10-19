@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104047: How to Determine the Current DO Nesting Level"
-permalink: kb/104/Q104047/
+permalink: /kb/104/Q104047/
 ---
 
 ## Q104047: How to Determine the Current DO Nesting Level

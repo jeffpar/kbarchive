@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120701: Setup Does Not Copy Files to Disk"
-permalink: kb/120/Q120701/
+permalink: /kb/120/Q120701/
 ---
 
 ## Q120701: Setup Does Not Copy Files to Disk

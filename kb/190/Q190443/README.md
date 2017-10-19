@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190443: XADM: Replication Msg. Can't Be Sent If IS Send Limit Reached"
-permalink: kb/190/Q190443/
+permalink: /kb/190/Q190443/
 ---
 
 ## Q190443: XADM: Replication Msg. Can't Be Sent If IS Send Limit Reached

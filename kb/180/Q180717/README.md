@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180717: SFM: File Date and Time Stamp Change with Get Info"
-permalink: kb/180/Q180717/
+permalink: /kb/180/Q180717/
 ---
 
 ## Q180717: SFM: File Date and Time Stamp Change with Get Info

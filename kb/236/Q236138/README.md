@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236138: BUG: Error Deleting VB ActiveX Control From Test Container"
-permalink: kb/236/Q236138/
+permalink: /kb/236/Q236138/
 ---
 
 ## Q236138: BUG: Error Deleting VB ActiveX Control From Test Container

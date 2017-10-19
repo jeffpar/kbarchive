@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305965: HOW TO:Consume XML Web Service Methods by Using SOAP Toolkit 2.0"
-permalink: kb/305/Q305965/
+permalink: /kb/305/Q305965/
 ---
 
 ## Q305965: HOW TO:Consume XML Web Service Methods by Using SOAP Toolkit 2.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194560: XADM: Store Crashes while Processing Outbound SMTP Message"
-permalink: kb/194/Q194560/
+permalink: /kb/194/Q194560/
 ---
 
 ## Q194560: XADM: Store Crashes while Processing Outbound SMTP Message

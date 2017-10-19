@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242844: FS2000: New Flight Starts as Minimized Task"
-permalink: kb/242/Q242844/
+permalink: /kb/242/Q242844/
 ---
 
 ## Q242844: FS2000: New Flight Starts as Minimized Task

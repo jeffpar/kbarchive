@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142930: HOWTO: RDO: Use ODBC Escape Clauses in Your SQL Syntax"
-permalink: kb/142/Q142930/
+permalink: /kb/142/Q142930/
 ---
 
 ## Q142930: HOWTO: RDO: Use ODBC Escape Clauses in Your SQL Syntax

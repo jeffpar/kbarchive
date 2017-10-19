@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162893: ODE97: System Requirements for Microsoft Office 97 (ODE)"
-permalink: kb/162/Q162893/
+permalink: /kb/162/Q162893/
 ---
 
 ## Q162893: ODE97: System Requirements for Microsoft Office 97 (ODE)

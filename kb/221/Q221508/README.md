@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221508: OL&#92;Exch Mac Client Hangs Wrkstn While Attempting to Find Server"
-permalink: kb/221/Q221508/
+permalink: /kb/221/Q221508/
 ---
 
 ## Q221508: OL&#92;Exch Mac Client Hangs Wrkstn While Attempting to Find Server

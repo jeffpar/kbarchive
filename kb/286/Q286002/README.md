@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286002: Combat Flight Simulator 2: How to Print a Flight Checklist"
-permalink: kb/286/Q286002/
+permalink: /kb/286/Q286002/
 ---
 
 ## Q286002: Combat Flight Simulator 2: How to Print a Flight Checklist

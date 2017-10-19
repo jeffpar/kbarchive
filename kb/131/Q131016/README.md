@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131016: Settings for the 16550 UART FIFO Buffer"
-permalink: kb/131/Q131016/
+permalink: /kb/131/Q131016/
 ---
 
 ## Q131016: Settings for the 16550 UART FIFO Buffer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150388: XCLN: Netware Compatible Shell is not Available"
-permalink: kb/150/Q150388/
+permalink: /kb/150/Q150388/
 ---
 
 ## Q150388: XCLN: Netware Compatible Shell is not Available

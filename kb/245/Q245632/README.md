@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245632: Dial-Up AutoSync2 Link Service Support for SNA Server"
-permalink: kb/245/Q245632/
+permalink: /kb/245/Q245632/
 ---
 
 ## Q245632: Dial-Up AutoSync2 Link Service Support for SNA Server

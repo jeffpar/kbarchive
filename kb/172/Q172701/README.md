@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172701: ODE97: Setup Wizard Requires ODESP2 for Updated ODBC Drivers"
-permalink: kb/172/Q172701/
+permalink: /kb/172/Q172701/
 ---
 
 ## Q172701: ODE97: Setup Wizard Requires ODESP2 for Updated ODBC Drivers

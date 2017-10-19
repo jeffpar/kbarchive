@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167798: FIX: Can Not Attach Process to Debugger from NT Task Manager"
-permalink: kb/167/Q167798/
+permalink: /kb/167/Q167798/
 ---
 
 ## Q167798: FIX: Can Not Attach Process to Debugger from NT Task Manager

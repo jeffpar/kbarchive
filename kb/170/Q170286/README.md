@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170286: Application Hangs if WinRUIStartup Called Before WinAPPCStartup"
-permalink: kb/170/Q170286/
+permalink: /kb/170/Q170286/
 ---
 
 ## Q170286: Application Hangs if WinRUIStartup Called Before WinAPPCStartup

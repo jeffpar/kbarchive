@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101473: Replication Overview in the Windows NT Operating System"
-permalink: kb/101/Q101473/
+permalink: /kb/101/Q101473/
 ---
 
 ## Q101473: Replication Overview in the Windows NT Operating System

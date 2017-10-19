@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133070: PRB: C2059 Error Using extern &quot;C&quot; in .C Source Files"
-permalink: kb/133/Q133070/
+permalink: /kb/133/Q133070/
 ---
 
 ## Q133070: PRB: C2059 Error Using extern &quot;C&quot; in .C Source Files

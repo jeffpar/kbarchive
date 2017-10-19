@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165164: XCLN: Memory Problems After Printing"
-permalink: kb/165/Q165164/
+permalink: /kb/165/Q165164/
 ---
 
 ## Q165164: XCLN: Memory Problems After Printing

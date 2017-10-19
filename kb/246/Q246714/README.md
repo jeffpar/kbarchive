@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246714: Errors When AS/400 Network Attribute DDMACC Is Set to &#42;REJECT"
-permalink: kb/246/Q246714/
+permalink: /kb/246/Q246714/
 ---
 
 ## Q246714: Errors When AS/400 Network Attribute DDMACC Is Set to &#42;REJECT

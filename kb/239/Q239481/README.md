@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239481: ODBC Connection to DB2 Fails from Some Windows 95 Computers"
-permalink: kb/239/Q239481/
+permalink: /kb/239/Q239481/
 ---
 
 ## Q239481: ODBC Connection to DB2 Fails from Some Windows 95 Computers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179833: WD97: Menu Bar Fails to Hide in Full Screen Mode"
-permalink: kb/179/Q179833/
+permalink: /kb/179/Q179833/
 ---
 
 ## Q179833: WD97: Menu Bar Fails to Hide in Full Screen Mode

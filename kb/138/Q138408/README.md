@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138408: Err Msg: DriveSpace Could Not Mount Drive 'X'..."
-permalink: kb/138/Q138408/
+permalink: /kb/138/Q138408/
 ---
 
 ## Q138408: Err Msg: DriveSpace Could Not Mount Drive 'X'...

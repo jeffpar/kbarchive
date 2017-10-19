@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109801: PRB: MDI Child Form Painted Twice When Moved Before Loaded"
-permalink: kb/109/Q109801/
+permalink: /kb/109/Q109801/
 ---
 
 ## Q109801: PRB: MDI Child Form Painted Twice When Moved Before Loaded

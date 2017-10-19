@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157024: XCLN: Err Msg &quot;Your Exchange Server Is Unavailable&quot;"
-permalink: kb/157/Q157024/
+permalink: /kb/157/Q157024/
 ---
 
 ## Q157024: XCLN: Err Msg &quot;Your Exchange Server Is Unavailable&quot;

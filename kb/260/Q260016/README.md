@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260016: StarLancer Err Msg: DirectX 7.0a Is Required to Run StarLancer"
-permalink: kb/260/Q260016/
+permalink: /kb/260/Q260016/
 ---
 
 ## Q260016: StarLancer Err Msg: DirectX 7.0a Is Required to Run StarLancer

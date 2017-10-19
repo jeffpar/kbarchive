@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q58327: Windows 3.0 WIN.INI [windows] Section"
-permalink: kb/058/Q58327/
+title: "Q58327: Windows 3.0 WIN.INI &#91;windows&#93; Section"
+permalink: /kb/058/Q58327/
 ---
 
-## Q58327: Windows 3.0 WIN.INI [windows] Section
+## Q58327: Windows 3.0 WIN.INI &#91;windows&#93; Section
 
 	Article: Q58327
 	Product(s): Microsoft Windows 95.x Retail Product

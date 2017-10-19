@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q41104: DOC: Libraries Added by Comment pragma Appear After Default"
-permalink: kb/041/Q41104/
+permalink: /kb/041/Q41104/
 ---
 
 ## Q41104: DOC: Libraries Added by Comment pragma Appear After Default

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103004: REG: Network Services Entries, Part 8"
-permalink: kb/103/Q103004/
+permalink: /kb/103/Q103004/
 ---
 
 ## Q103004: REG: Network Services Entries, Part 8

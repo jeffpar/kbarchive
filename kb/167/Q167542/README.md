@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167542: PRB: Conflict with EOF and GetUserName Using #import on RDO"
-permalink: kb/167/Q167542/
+permalink: /kb/167/Q167542/
 ---
 
 ## Q167542: PRB: Conflict with EOF and GetUserName Using #import on RDO

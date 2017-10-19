@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260829: XFOR: Date Empty in Meeting Request Sent from Exchange to Notes"
-permalink: kb/260/Q260829/
+permalink: /kb/260/Q260829/
 ---
 
 ## Q260829: XFOR: Date Empty in Meeting Request Sent from Exchange to Notes

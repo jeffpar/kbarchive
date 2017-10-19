@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261053: MCM2: Error Message on Blue Screen When You Start Program"
-permalink: kb/261/Q261053/
+permalink: /kb/261/Q261053/
 ---
 
 ## Q261053: MCM2: Error Message on Blue Screen When You Start Program

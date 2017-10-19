@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186632: Terminal Server Commands: TSPROF"
-permalink: kb/186/Q186632/
+permalink: /kb/186/Q186632/
 ---
 
 ## Q186632: Terminal Server Commands: TSPROF

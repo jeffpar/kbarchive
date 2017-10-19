@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241573: How to Install IIS 4.0 onto a Single Node of MSCS 1.0"
-permalink: kb/241/Q241573/
+permalink: /kb/241/Q241573/
 ---
 
 ## Q241573: How to Install IIS 4.0 onto a Single Node of MSCS 1.0

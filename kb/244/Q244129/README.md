@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244129: XFOR: Notes Connector Rejects Incoming Msgs w/Apostrophe in SMTP"
-permalink: kb/244/Q244129/
+permalink: /kb/244/Q244129/
 ---
 
 ## Q244129: XFOR: Notes Connector Rejects Incoming Msgs w/Apostrophe in SMTP

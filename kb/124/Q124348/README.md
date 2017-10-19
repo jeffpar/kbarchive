@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124348: FIX: Exiting ON SHUTDOWN Window Disables GET Objects"
-permalink: kb/124/Q124348/
+permalink: /kb/124/Q124348/
 ---
 
 ## Q124348: FIX: Exiting ON SHUTDOWN Window Disables GET Objects

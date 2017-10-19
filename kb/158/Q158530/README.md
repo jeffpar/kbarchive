@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158530: XGEN: Build Numbers for Exchange"
-permalink: kb/158/Q158530/
+permalink: /kb/158/Q158530/
 ---
 
 ## Q158530: XGEN: Build Numbers for Exchange

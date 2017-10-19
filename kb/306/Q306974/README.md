@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306974: Software-Metering Agent Heap Operation Fault"
-permalink: kb/306/Q306974/
+permalink: /kb/306/Q306974/
 ---
 
 ## Q306974: Software-Metering Agent Heap Operation Fault

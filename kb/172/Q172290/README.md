@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172290: Routing and Remote Access &quot;Out of Buffers&quot; Event Logs"
-permalink: kb/172/Q172290/
+permalink: /kb/172/Q172290/
 ---
 
 ## Q172290: Routing and Remote Access &quot;Out of Buffers&quot; Event Logs

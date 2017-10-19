@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153332: ECHO Command in a Batch File Does Not Echo /Q"
-permalink: kb/153/Q153332/
+permalink: /kb/153/Q153332/
 ---
 
 ## Q153332: ECHO Command in a Batch File Does Not Echo /Q

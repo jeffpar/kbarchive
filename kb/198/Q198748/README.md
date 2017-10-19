@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198748: Tutor Err Msg: Out of Memory! Please Close Some Applications..."
-permalink: kb/198/Q198748/
+permalink: /kb/198/Q198748/
 ---
 
 ## Q198748: Tutor Err Msg: Out of Memory! Please Close Some Applications...

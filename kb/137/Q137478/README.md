@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137478: Error Browse Server Shares with File Manager: The Interface..."
-permalink: kb/137/Q137478/
+permalink: /kb/137/Q137478/
 ---
 
 ## Q137478: Error Browse Server Shares with File Manager: The Interface...

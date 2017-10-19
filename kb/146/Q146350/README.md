@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146350: XCLN: Shutdown Does Not Ask User to Exit Exchange Client"
-permalink: kb/146/Q146350/
+permalink: /kb/146/Q146350/
 ---
 
 ## Q146350: XCLN: Shutdown Does Not Ask User to Exit Exchange Client

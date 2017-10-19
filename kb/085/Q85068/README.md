@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85068: Displaying Data for Debugging in MASM"
-permalink: kb/085/Q85068/
+permalink: /kb/085/Q85068/
 ---
 
 ## Q85068: Displaying Data for Debugging in MASM

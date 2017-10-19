@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96719: PC WRmt: Demos Not Included Nor Can They Run in Mail Remote"
-permalink: kb/096/Q96719/
+permalink: /kb/096/Q96719/
 ---
 
 ## Q96719: PC WRmt: Demos Not Included Nor Can They Run in Mail Remote

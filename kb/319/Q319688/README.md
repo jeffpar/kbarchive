@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319688: MS02-018: Patch Available for Chunked Encoding Vulnerability"
-permalink: kb/319/Q319688/
+permalink: /kb/319/Q319688/
 ---
 
 ## Q319688: MS02-018: Patch Available for Chunked Encoding Vulnerability

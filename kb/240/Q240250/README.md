@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240250: Migration from SMS 1.2 to 2.0 Uninstalls LANDesk Files"
-permalink: kb/240/Q240250/
+permalink: /kb/240/Q240250/
 ---
 
 ## Q240250: Migration from SMS 1.2 to 2.0 Uninstalls LANDesk Files

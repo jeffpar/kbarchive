@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164468: XFOR: Hebrew or Arabic Microsoft Mail Message Body Corrupted"
-permalink: kb/164/Q164468/
+permalink: /kb/164/Q164468/
 ---
 
 ## Q164468: XFOR: Hebrew or Arabic Microsoft Mail Message Body Corrupted

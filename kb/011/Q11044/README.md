@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q11044: EXEMOD Cannot Be Used with Windows Files"
-permalink: kb/011/Q11044/
+permalink: /kb/011/Q11044/
 ---
 
 ## Q11044: EXEMOD Cannot Be Used with Windows Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147831: How to Install Old MS-DOS Tools in Windows 95"
-permalink: kb/147/Q147831/
+permalink: /kb/147/Q147831/
 ---
 
 ## Q147831: How to Install Old MS-DOS Tools in Windows 95

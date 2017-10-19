@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161485: PPT: Sample Code to Find Slides that Don't Follow Slide Master"
-permalink: kb/161/Q161485/
+permalink: /kb/161/Q161485/
 ---
 
 ## Q161485: PPT: Sample Code to Find Slides that Don't Follow Slide Master

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217391: PRB: Excel Does Not Repaint Highlighted Cells Correctly in MFC"
-permalink: kb/217/Q217391/
+permalink: /kb/217/Q217391/
 ---
 
 ## Q217391: PRB: Excel Does Not Repaint Highlighted Cells Correctly in MFC

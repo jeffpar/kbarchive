@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166160: Stop C000021a after Applying Windows NT 4.0 Service Pack"
-permalink: kb/166/Q166160/
+permalink: /kb/166/Q166160/
 ---
 
 ## Q166160: Stop C000021a after Applying Windows NT 4.0 Service Pack

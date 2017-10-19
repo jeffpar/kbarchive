@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140061: SMS Administrator Not Updating After SQL Server Name Change"
-permalink: kb/140/Q140061/
+permalink: /kb/140/Q140061/
 ---
 
 ## Q140061: SMS Administrator Not Updating After SQL Server Name Change

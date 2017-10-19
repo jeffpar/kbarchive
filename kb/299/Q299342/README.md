@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299342: FP: Confirmation Page Appears, Data Not Added to Database"
-permalink: kb/299/Q299342/
+permalink: /kb/299/Q299342/
 ---
 
 ## Q299342: FP: Confirmation Page Appears, Data Not Added to Database

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69430: Pentax IQ Scanner Does Not Run in Windows 3.0 Enhanced Mode"
-permalink: kb/069/Q69430/
+permalink: /kb/069/Q69430/
 ---
 
 ## Q69430: Pentax IQ Scanner Does Not Run in Windows 3.0 Enhanced Mode

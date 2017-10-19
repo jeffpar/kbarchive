@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151005: MAC Volume Incorrectly Removed Before Last Client Session"
-permalink: kb/151/Q151005/
+permalink: /kb/151/Q151005/
 ---
 
 ## Q151005: MAC Volume Incorrectly Removed Before Last Client Session

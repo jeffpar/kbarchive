@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166532: XFOR: Incorrect Codepage SJIS Used When JIS Set as Default"
-permalink: kb/166/Q166532/
+permalink: /kb/166/Q166532/
 ---
 
 ## Q166532: XFOR: Incorrect Codepage SJIS Used When JIS Set as Default

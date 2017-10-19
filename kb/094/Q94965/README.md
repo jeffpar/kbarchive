@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94965: HiJaak for Windows 1.0 Doesn't Install If SHARE.EXE Is Loaded"
-permalink: kb/094/Q94965/
+permalink: /kb/094/Q94965/
 ---
 
 ## Q94965: HiJaak for Windows 1.0 Doesn't Install If SHARE.EXE Is Loaded

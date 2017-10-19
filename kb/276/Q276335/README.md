@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276335: Casino: Bankroll Must Be Large Enough for Minimum Bet"
-permalink: kb/276/Q276335/
+permalink: /kb/276/Q276335/
 ---
 
 ## Q276335: Casino: Bankroll Must Be Large Enough for Minimum Bet

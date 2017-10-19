@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187469: Win16 RDP Client Only Runs One Instance"
-permalink: kb/187/Q187469/
+permalink: /kb/187/Q187469/
 ---
 
 ## Q187469: Win16 RDP Client Only Runs One Instance

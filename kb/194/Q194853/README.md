@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194853: PC Rmt: Remote Mail Client Can't Address Local FFAPI Gateway PO"
-permalink: kb/194/Q194853/
+permalink: /kb/194/Q194853/
 ---
 
 ## Q194853: PC Rmt: Remote Mail Client Can't Address Local FFAPI Gateway PO

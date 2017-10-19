@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176219: XADM: DXA Objects Do Not Have Support for Hebrew"
-permalink: kb/176/Q176219/
+permalink: /kb/176/Q176219/
 ---
 
 ## Q176219: XADM: DXA Objects Do Not Have Support for Hebrew

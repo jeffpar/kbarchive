@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194916: Restarting Web Services and Scheduled Tasks with a Batch File"
-permalink: kb/194/Q194916/
+permalink: /kb/194/Q194916/
 ---
 
 ## Q194916: Restarting Web Services and Scheduled Tasks with a Batch File

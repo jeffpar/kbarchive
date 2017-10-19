@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192647: INFO: Visual Basic Reserves OCX Resource IDs Starting at 30000"
-permalink: kb/192/Q192647/
+permalink: /kb/192/Q192647/
 ---
 
 ## Q192647: INFO: Visual Basic Reserves OCX Resource IDs Starting at 30000

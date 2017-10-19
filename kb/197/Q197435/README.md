@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197435: WD97: New Custom.dic Is Not Created in the TOOLS-PATH Directory"
-permalink: kb/197/Q197435/
+permalink: /kb/197/Q197435/
 ---
 
 ## Q197435: WD97: New Custom.dic Is Not Created in the TOOLS-PATH Directory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165693: INFO: Visual C++ 5.0 Readme, SQL and SQL Debugging"
-permalink: kb/165/Q165693/
+permalink: /kb/165/Q165693/
 ---
 
 ## Q165693: INFO: Visual C++ 5.0 Readme, SQL and SQL Debugging

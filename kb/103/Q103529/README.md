@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103529: FORMAT Overwrites Compressed Volume File on Floppy Disk"
-permalink: kb/103/Q103529/
+permalink: /kb/103/Q103529/
 ---
 
 ## Q103529: FORMAT Overwrites Compressed Volume File on Floppy Disk

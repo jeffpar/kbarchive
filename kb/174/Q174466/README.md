@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174466: LU1 Print Job Corrupts LU3 Print Jobs"
-permalink: kb/174/Q174466/
+permalink: /kb/174/Q174466/
 ---
 
 ## Q174466: LU1 Print Job Corrupts LU3 Print Jobs

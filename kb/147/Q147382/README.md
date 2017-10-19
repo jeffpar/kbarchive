@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147382: Number of Message Recipients Limited to 64"
-permalink: kb/147/Q147382/
+permalink: /kb/147/Q147382/
 ---
 
 ## Q147382: Number of Message Recipients Limited to 64

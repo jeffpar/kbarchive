@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154341: MSB Dinosaurs: How to Play the Games"
-permalink: kb/154/Q154341/
+permalink: /kb/154/Q154341/
 ---
 
 ## Q154341: MSB Dinosaurs: How to Play the Games

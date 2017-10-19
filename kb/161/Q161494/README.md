@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161494: D-LINK DE-220 ISA Ethernet Adapter .inf File Does Not Work"
-permalink: kb/161/Q161494/
+permalink: /kb/161/Q161494/
 ---
 
 ## Q161494: D-LINK DE-220 ISA Ethernet Adapter .inf File Does Not Work

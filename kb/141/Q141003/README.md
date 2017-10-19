@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141003: INFO: m_templateList Is No Longer Accessible in Visual C++ 4.0"
-permalink: kb/141/Q141003/
+permalink: /kb/141/Q141003/
 ---
 
 ## Q141003: INFO: m_templateList Is No Longer Accessible in Visual C++ 4.0

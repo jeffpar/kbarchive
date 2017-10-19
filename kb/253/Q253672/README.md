@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253672: Expected System and Group Policy Behavior in Windows 2000 Client"
-permalink: kb/253/Q253672/
+permalink: /kb/253/Q253672/
 ---
 
 ## Q253672: Expected System and Group Policy Behavior in Windows 2000 Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71691: What MS-DOS 5 Upgrade Setup Does"
-permalink: kb/071/Q71691/
+permalink: /kb/071/Q71691/
 ---
 
 ## Q71691: What MS-DOS 5 Upgrade Setup Does

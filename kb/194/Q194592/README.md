@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194592: XFOR: OV/VM Connector Diagnostic Logging Registry Settings"
-permalink: kb/194/Q194592/
+permalink: /kb/194/Q194592/
 ---
 
 ## Q194592: XFOR: OV/VM Connector Diagnostic Logging Registry Settings

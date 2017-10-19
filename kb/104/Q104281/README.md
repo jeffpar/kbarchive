@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104281: PROFS: How to Create and Import Customized Templates"
-permalink: kb/104/Q104281/
+permalink: /kb/104/Q104281/
 ---
 
 ## Q104281: PROFS: How to Create and Import Customized Templates

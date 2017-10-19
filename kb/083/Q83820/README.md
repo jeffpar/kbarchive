@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83820: Using CD-ROM Extensions with Windows Permanent Swap Files"
-permalink: kb/083/Q83820/
+permalink: /kb/083/Q83820/
 ---
 
 ## Q83820: Using CD-ROM Extensions with Windows Permanent Swap Files

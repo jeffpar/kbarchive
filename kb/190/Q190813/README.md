@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190813: XADM: Information Store Fails to Start"
-permalink: kb/190/Q190813/
+permalink: /kb/190/Q190813/
 ---
 
 ## Q190813: XADM: Information Store Fails to Start

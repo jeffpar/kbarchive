@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216124: BUG: Reinstalling App Fails To Replace Text File With Same Date"
-permalink: kb/216/Q216124/
+permalink: /kb/216/Q216124/
 ---
 
 ## Q216124: BUG: Reinstalling App Fails To Replace Text File With Same Date

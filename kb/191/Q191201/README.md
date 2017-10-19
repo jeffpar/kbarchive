@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191201: BUG: Cannot Edit User Defined Type in Watch Window"
-permalink: kb/191/Q191201/
+permalink: /kb/191/Q191201/
 ---
 
 ## Q191201: BUG: Cannot Edit User Defined Type in Watch Window

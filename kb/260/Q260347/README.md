@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260347: MS00-060: IIS 4: Fix for Cross-Site Scripting Issues"
-permalink: kb/260/Q260347/
+permalink: /kb/260/Q260347/
 ---
 
 ## Q260347: MS00-060: IIS 4: Fix for Cross-Site Scripting Issues

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230165: Terminal Server User's Home Directory Is Not Set Correctly"
-permalink: kb/230/Q230165/
+permalink: /kb/230/Q230165/
 ---
 
 ## Q230165: Terminal Server User's Home Directory Is Not Set Correctly

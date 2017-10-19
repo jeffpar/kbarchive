@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161679: Kids Plus!: Quit Button Saves Changes to Embedded Objects"
-permalink: kb/161/Q161679/
+permalink: /kb/161/Q161679/
 ---
 
 ## Q161679: Kids Plus!: Quit Button Saves Changes to Embedded Objects

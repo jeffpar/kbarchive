@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95348: Converting Stacker-Compressed Removable Disks"
-permalink: kb/095/Q95348/
+permalink: /kb/095/Q95348/
 ---
 
 ## Q95348: Converting Stacker-Compressed Removable Disks

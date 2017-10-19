@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158337: Could Not Load Kbdus.dll During Installation"
-permalink: kb/158/Q158337/
+permalink: /kb/158/Q158337/
 ---
 
 ## Q158337: Could Not Load Kbdus.dll During Installation

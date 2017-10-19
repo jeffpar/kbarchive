@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224514: SBS Err Msg: No Email Profile Was Found for the Current User..."
-permalink: kb/224/Q224514/
+permalink: /kb/224/Q224514/
 ---
 
 ## Q224514: SBS Err Msg: No Email Profile Was Found for the Current User...

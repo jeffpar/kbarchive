@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134529: Persistent Connection Is Dropped"
-permalink: kb/134/Q134529/
+permalink: /kb/134/Q134529/
 ---
 
 ## Q134529: Persistent Connection Is Dropped

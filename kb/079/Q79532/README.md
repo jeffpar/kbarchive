@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79532: Running Borland C++ 2.0 in Protected Mode Within Windows"
-permalink: kb/079/Q79532/
+permalink: /kb/079/Q79532/
 ---
 
 ## Q79532: Running Borland C++ 2.0 in Protected Mode Within Windows

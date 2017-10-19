@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177874: Age of Empires: Contents of the Strattyp.doc File"
-permalink: kb/177/Q177874/
+permalink: /kb/177/Q177874/
 ---
 
 ## Q177874: Age of Empires: Contents of the Strattyp.doc File

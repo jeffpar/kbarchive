@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140251: ErrMsg When Using Windows NT: Cannot find USER.DLL"
-permalink: kb/140/Q140251/
+permalink: /kb/140/Q140251/
 ---
 
 ## Q140251: ErrMsg When Using Windows NT: Cannot find USER.DLL

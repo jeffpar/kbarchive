@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132499: Error: AIC78xx - Event ID 11"
-permalink: kb/132/Q132499/
+permalink: /kb/132/Q132499/
 ---
 
 ## Q132499: Error: AIC78xx - Event ID 11

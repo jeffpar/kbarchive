@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186408: SMS: Secondary Site Upgrade Fails When Too Many Logon Servers"
-permalink: kb/186/Q186408/
+permalink: /kb/186/Q186408/
 ---
 
 ## Q186408: SMS: Secondary Site Upgrade Fails When Too Many Logon Servers

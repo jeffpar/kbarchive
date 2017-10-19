@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160734: WD97: Errors When Using ODBC to Insert Microsoft Excel Worksheet"
-permalink: kb/160/Q160734/
+permalink: /kb/160/Q160734/
 ---
 
 ## Q160734: WD97: Errors When Using ODBC to Insert Microsoft Excel Worksheet

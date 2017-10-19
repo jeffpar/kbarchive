@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146459: XCLN: Extending Forms Using Microsoft Visual Basic 4.0"
-permalink: kb/146/Q146459/
+permalink: /kb/146/Q146459/
 ---
 
 ## Q146459: XCLN: Extending Forms Using Microsoft Visual Basic 4.0

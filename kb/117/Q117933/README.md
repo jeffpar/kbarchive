@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117933: Encarta: White Line Prints Across Graphics on LaserWriter"
-permalink: kb/117/Q117933/
+permalink: /kb/117/Q117933/
 ---
 
 ## Q117933: Encarta: White Line Prints Across Graphics on LaserWriter

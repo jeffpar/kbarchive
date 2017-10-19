@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107902: Writer 1: Can't Use the Keyboard to Highlight Text"
-permalink: kb/107/Q107902/
+permalink: /kb/107/Q107902/
 ---
 
 ## Q107902: Writer 1: Can't Use the Keyboard to Highlight Text

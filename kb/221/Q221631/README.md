@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221631: FIX: Component Gallery Find/Cancel Leaves &quot;Unknown&quot; Data Session"
-permalink: kb/221/Q221631/
+permalink: /kb/221/Q221631/
 ---
 
 ## Q221631: FIX: Component Gallery Find/Cancel Leaves &quot;Unknown&quot; Data Session

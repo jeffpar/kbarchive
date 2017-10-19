@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190775: INFO: Installation Requirements for Visual Basic 6.0"
-permalink: kb/190/Q190775/
+permalink: /kb/190/Q190775/
 ---
 
 ## Q190775: INFO: Installation Requirements for Visual Basic 6.0

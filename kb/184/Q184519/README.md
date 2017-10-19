@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184519: WD97: Error Updating Table of Contents with Heading Styles"
-permalink: kb/184/Q184519/
+permalink: /kb/184/Q184519/
 ---
 
 ## Q184519: WD97: Error Updating Table of Contents with Heading Styles

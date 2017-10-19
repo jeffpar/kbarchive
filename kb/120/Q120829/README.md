@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120829: XCOPY May Generate Incorrect Error Level"
-permalink: kb/120/Q120829/
+permalink: /kb/120/Q120829/
 ---
 
 ## Q120829: XCOPY May Generate Incorrect Error Level

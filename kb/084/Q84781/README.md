@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84781: Cannot Change Source Disk Location on Express Setup"
-permalink: kb/084/Q84781/
+permalink: /kb/084/Q84781/
 ---
 
 ## Q84781: Cannot Change Source Disk Location on Express Setup

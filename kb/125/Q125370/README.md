@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125370: DBCLEAN Merge Machines Creates Duplicate Records"
-permalink: kb/125/Q125370/
+permalink: /kb/125/Q125370/
 ---
 
 ## Q125370: DBCLEAN Merge Machines Creates Duplicate Records

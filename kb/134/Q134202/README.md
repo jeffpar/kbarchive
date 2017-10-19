@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134202: PC Win: Message Subject Over 40 Characters Not Displayed"
-permalink: kb/134/Q134202/
+permalink: /kb/134/Q134202/
 ---
 
 ## Q134202: PC Win: Message Subject Over 40 Characters Not Displayed

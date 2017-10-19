@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88513: Golf: Cannot Hit Ball More than 80 Yards"
-permalink: kb/088/Q88513/
+permalink: /kb/088/Q88513/
 ---
 
 ## Q88513: Golf: Cannot Hit Ball More than 80 Yards

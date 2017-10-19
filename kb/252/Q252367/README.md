@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252367: Service Pack May Not Install When Run from Remote Console Client"
-permalink: kb/252/Q252367/
+permalink: /kb/252/Q252367/
 ---
 
 ## Q252367: Service Pack May Not Install When Run from Remote Console Client

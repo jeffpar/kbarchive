@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157660: XCON: Troubleshooting w/out MTA Object in Administrator Program"
-permalink: kb/157/Q157660/
+permalink: /kb/157/Q157660/
 ---
 
 ## Q157660: XCON: Troubleshooting w/out MTA Object in Administrator Program

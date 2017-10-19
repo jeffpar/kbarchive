@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58939: Mac Form: Scrolling in FatBits When Making a Custom Form Icon"
-permalink: kb/058/Q58939/
+permalink: /kb/058/Q58939/
 ---
 
 ## Q58939: Mac Form: Scrolling in FatBits When Making a Custom Form Icon

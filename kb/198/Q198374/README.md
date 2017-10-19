@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198374: WD97: Error Message: &quot;This Document Cannot Be Registered&quot;"
-permalink: kb/198/Q198374/
+permalink: /kb/198/Q198374/
 ---
 
 ## Q198374: WD97: Error Message: &quot;This Document Cannot Be Registered&quot;

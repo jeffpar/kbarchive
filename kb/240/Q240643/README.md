@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240643: World Atlas 2000: Web Page Does Not Open When You Click Web Link"
-permalink: kb/240/Q240643/
+permalink: /kb/240/Q240643/
 ---
 
 ## Q240643: World Atlas 2000: Web Page Does Not Open When You Click Web Link

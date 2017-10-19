@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108014: NET USE &#42; /HOME Err Msg: The Syntax Is Incorrect"
-permalink: kb/108/Q108014/
+permalink: /kb/108/Q108014/
 ---
 
 ## Q108014: NET USE &#42; /HOME Err Msg: The Syntax Is Incorrect

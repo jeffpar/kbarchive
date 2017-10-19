@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137611: CLIENT.BAT Added Incorrectly to AUTOEXEC.BAT"
-permalink: kb/137/Q137611/
+permalink: /kb/137/Q137611/
 ---
 
 ## Q137611: CLIENT.BAT Added Incorrectly to AUTOEXEC.BAT

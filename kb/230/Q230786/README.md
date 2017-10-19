@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230786: How to Enable RADIUS Port for Network Monitor"
-permalink: kb/230/Q230786/
+permalink: /kb/230/Q230786/
 ---
 
 ## Q230786: How to Enable RADIUS Port for Network Monitor

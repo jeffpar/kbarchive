@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262202: Cannot Install Printers on Terminal Server w/SP5/SP6 Installed"
-permalink: kb/262/Q262202/
+permalink: /kb/262/Q262202/
 ---
 
 ## Q262202: Cannot Install Printers on Terminal Server w/SP5/SP6 Installed

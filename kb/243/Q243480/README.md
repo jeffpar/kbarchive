@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243480: HOWTO: Changing Background Color of a Dialog Box Using ATL"
-permalink: kb/243/Q243480/
+permalink: /kb/243/Q243480/
 ---
 
 ## Q243480: HOWTO: Changing Background Color of a Dialog Box Using ATL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244978: Event ID 1003 and DHCP Errors with Two DHCP Servers on Network."
-permalink: kb/244/Q244978/
+permalink: /kb/244/Q244978/
 ---
 
 ## Q244978: Event ID 1003 and DHCP Errors with Two DHCP Servers on Network.

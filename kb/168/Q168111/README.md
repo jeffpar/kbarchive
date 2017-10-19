@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168111: FIX: #import Does Not Compensate for Gaps in vtable"
-permalink: kb/168/Q168111/
+permalink: /kb/168/Q168111/
 ---
 
 ## Q168111: FIX: #import Does Not Compensate for Gaps in vtable

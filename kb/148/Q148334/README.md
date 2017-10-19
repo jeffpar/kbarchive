@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148334: Remote Users Can Compress and Uncompress NTFS Files"
-permalink: kb/148/Q148334/
+permalink: /kb/148/Q148334/
 ---
 
 ## Q148334: Remote Users Can Compress and Uncompress NTFS Files

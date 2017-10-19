@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176963: &quot;Tape Drive Error Detected&quot; Error Message with Tecmar Tape Drive"
-permalink: kb/176/Q176963/
+permalink: /kb/176/Q176963/
 ---
 
 ## Q176963: &quot;Tape Drive Error Detected&quot; Error Message with Tecmar Tape Drive

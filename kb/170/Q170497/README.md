@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170497: FP: Cannot Delete Templates in FrontPage"
-permalink: kb/170/Q170497/
+permalink: /kb/170/Q170497/
 ---
 
 ## Q170497: FP: Cannot Delete Templates in FrontPage

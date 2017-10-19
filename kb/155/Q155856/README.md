@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155856: PRB: Stored Procedure PRINT Output May Be Truncated"
-permalink: kb/155/Q155856/
+permalink: /kb/155/Q155856/
 ---
 
 ## Q155856: PRB: Stored Procedure PRINT Output May Be Truncated

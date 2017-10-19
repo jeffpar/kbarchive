@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48242: Mac Form: Label Not Printed with Corresponding Field"
-permalink: kb/048/Q48242/
+permalink: /kb/048/Q48242/
 ---
 
 ## Q48242: Mac Form: Label Not Printed with Corresponding Field

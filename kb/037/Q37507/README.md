@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q37507: PRB: &quot;Floating-point Support Not Loaded&quot; Error with scanf()"
-permalink: kb/037/Q37507/
+permalink: /kb/037/Q37507/
 ---
 
 ## Q37507: PRB: &quot;Floating-point Support Not Loaded&quot; Error with scanf()

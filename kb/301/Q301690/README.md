@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301690: XIMS: Corrupted Message Header Causes Access Violation"
-permalink: kb/301/Q301690/
+permalink: /kb/301/Q301690/
 ---
 
 ## Q301690: XIMS: Corrupted Message Header Causes Access Violation

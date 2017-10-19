@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164961: Network Monitor Setup Doesn't Find Previous Version Installation"
-permalink: kb/164/Q164961/
+permalink: /kb/164/Q164961/
 ---
 
 ## Q164961: Network Monitor Setup Doesn't Find Previous Version Installation

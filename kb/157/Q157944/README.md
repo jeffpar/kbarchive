@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157944: Domain Name Service in DUN Connection Does Not Work"
-permalink: kb/157/Q157944/
+permalink: /kb/157/Q157944/
 ---
 
 ## Q157944: Domain Name Service in DUN Connection Does Not Work

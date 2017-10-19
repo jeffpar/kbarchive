@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123058: Closing Timed-Out Applications Without Choosing End Task"
-permalink: kb/123/Q123058/
+permalink: /kb/123/Q123058/
 ---
 
 ## Q123058: Closing Timed-Out Applications Without Choosing End Task

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69965: Automating Network Setup Video Options via SETUP.INF"
-permalink: kb/069/Q69965/
+permalink: /kb/069/Q69965/
 ---
 
 ## Q69965: Automating Network Setup Video Options via SETUP.INF

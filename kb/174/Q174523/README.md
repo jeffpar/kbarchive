@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174523: BUG: BMP Turns Black on a Disable Button under NT 4.0"
-permalink: kb/174/Q174523/
+permalink: /kb/174/Q174523/
 ---
 
 ## Q174523: BUG: BMP Turns Black on a Disable Button under NT 4.0

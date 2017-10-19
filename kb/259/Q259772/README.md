@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259772: Visual FoxPro 6.0 Sample: Calculates the Number of Business Days"
-permalink: kb/259/Q259772/
+permalink: /kb/259/Q259772/
 ---
 
 ## Q259772: Visual FoxPro 6.0 Sample: Calculates the Number of Business Days

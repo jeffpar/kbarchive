@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60332: INFO: sizeof() Function Returns unsigned Instead of int"
-permalink: kb/060/Q60332/
+permalink: /kb/060/Q60332/
 ---
 
 ## Q60332: INFO: sizeof() Function Returns unsigned Instead of int

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136789: Drive Uncompress Fails Because Drive Letter Change Not Allowed"
-permalink: kb/136/Q136789/
+permalink: /kb/136/Q136789/
 ---
 
 ## Q136789: Drive Uncompress Fails Because Drive Letter Change Not Allowed

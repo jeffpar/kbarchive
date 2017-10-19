@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247544: Understanding Electronic Commerce Comments and Corrections"
-permalink: kb/247/Q247544/
+permalink: /kb/247/Q247544/
 ---
 
 ## Q247544: Understanding Electronic Commerce Comments and Corrections

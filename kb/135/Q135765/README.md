@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135765: PRB: Convert Dialog Doesn't Appear for OLE Object in MS Excel"
-permalink: kb/135/Q135765/
+permalink: /kb/135/Q135765/
 ---
 
 ## Q135765: PRB: Convert Dialog Doesn't Appear for OLE Object in MS Excel

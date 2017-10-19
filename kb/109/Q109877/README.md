@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109877: BUG: Smallest Negative Integers Cause Error on Input"
-permalink: kb/109/Q109877/
+permalink: /kb/109/Q109877/
 ---
 
 ## Q109877: BUG: Smallest Negative Integers Cause Error on Input

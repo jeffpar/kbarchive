@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128529: Kids: Insufficient Resources with Packard Bell"
-permalink: kb/128/Q128529/
+permalink: /kb/128/Q128529/
 ---
 
 ## Q128529: Kids: Insufficient Resources with Packard Bell

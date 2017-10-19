@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120696: SNA Server 2.0 Allows Only 99 LU Pools"
-permalink: kb/120/Q120696/
+permalink: /kb/120/Q120696/
 ---
 
 ## Q120696: SNA Server 2.0 Allows Only 99 LU Pools

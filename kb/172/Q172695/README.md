@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172695: FIX: Visual FoxPro ODBC Driver Creates an Invalid File DSN"
-permalink: kb/172/Q172695/
+permalink: /kb/172/Q172695/
 ---
 
 ## Q172695: FIX: Visual FoxPro ODBC Driver Creates an Invalid File DSN

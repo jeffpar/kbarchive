@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148357: FIX: Class Designer Changes the Width of a Form Class"
-permalink: kb/148/Q148357/
+permalink: /kb/148/Q148357/
 ---
 
 ## Q148357: FIX: Class Designer Changes the Width of a Form Class

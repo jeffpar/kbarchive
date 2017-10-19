@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157819: SMS: Office 97 as Shared Application Requires SP1"
-permalink: kb/157/Q157819/
+permalink: /kb/157/Q157819/
 ---
 
 ## Q157819: SMS: Office 97 as Shared Application Requires SP1

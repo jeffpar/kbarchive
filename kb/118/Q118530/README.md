@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118530: SMTP: When Gateway UUENCODEs Attachments"
-permalink: kb/118/Q118530/
+permalink: /kb/118/Q118530/
 ---
 
 ## Q118530: SMTP: When Gateway UUENCODEs Attachments

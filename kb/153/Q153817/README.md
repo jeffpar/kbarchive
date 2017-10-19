@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153817: SMS: Inventory Fails if Removable Media Drive Has No Disk"
-permalink: kb/153/Q153817/
+permalink: /kb/153/Q153817/
 ---
 
 ## Q153817: SMS: Inventory Fails if Removable Media Drive Has No Disk

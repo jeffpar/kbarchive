@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273458: BUG: Cannot Find Installable ISAM ErrMsg After Localized VS SP4"
-permalink: kb/273/Q273458/
+permalink: /kb/273/Q273458/
 ---
 
 ## Q273458: BUG: Cannot Find Installable ISAM ErrMsg After Localized VS SP4

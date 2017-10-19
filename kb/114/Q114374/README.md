@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114374: PRB: _mktemp() May Return the Same Name Between Threads"
-permalink: kb/114/Q114374/
+permalink: /kb/114/Q114374/
 ---
 
 ## Q114374: PRB: _mktemp() May Return the Same Name Between Threads

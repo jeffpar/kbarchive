@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264795: BUG: _MBCS String Functions of MSVCRT.DLL (version 6.1.8637.0)"
-permalink: kb/264/Q264795/
+permalink: /kb/264/Q264795/
 ---
 
 ## Q264795: BUG: _MBCS String Functions of MSVCRT.DLL (version 6.1.8637.0)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163616: Cannot Unlock Workstation If Password Change Cancelled"
-permalink: kb/163/Q163616/
+permalink: /kb/163/Q163616/
 ---
 
 ## Q163616: Cannot Unlock Workstation If Password Change Cancelled

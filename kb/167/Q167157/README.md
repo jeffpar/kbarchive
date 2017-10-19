@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167157: Cannot Connect to Netcom"
-permalink: kb/167/Q167157/
+permalink: /kb/167/Q167157/
 ---
 
 ## Q167157: Cannot Connect to Netcom

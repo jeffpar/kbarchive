@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241572: Roaming Profile May Not Be Saved to the Server"
-permalink: kb/241/Q241572/
+permalink: /kb/241/Q241572/
 ---
 
 ## Q241572: Roaming Profile May Not Be Saved to the Server

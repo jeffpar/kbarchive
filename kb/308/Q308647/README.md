@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308647: Local TP Entries Not Deleted from TP Table After Process Ends"
-permalink: kb/308/Q308647/
+permalink: /kb/308/Q308647/
 ---
 
 ## Q308647: Local TP Entries Not Deleted from TP Table After Process Ends

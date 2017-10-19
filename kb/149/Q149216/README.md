@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149216: PRB: Not All Build Options Are Available in Project Manager"
-permalink: kb/149/Q149216/
+permalink: /kb/149/Q149216/
 ---
 
 ## Q149216: PRB: Not All Build Options Are Available in Project Manager

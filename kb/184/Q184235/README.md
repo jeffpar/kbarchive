@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184235: PRB: LNK2005 Errors on New and Delete When Defining _ATL_MIN_CRT"
-permalink: kb/184/Q184235/
+permalink: /kb/184/Q184235/
 ---
 
 ## Q184235: PRB: LNK2005 Errors on New and Delete When Defining _ATL_MIN_CRT

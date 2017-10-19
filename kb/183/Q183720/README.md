@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183720: MacDrive 95 and 98 Are Unable to Read Macintosh Formatted Disks"
-permalink: kb/183/Q183720/
+permalink: /kb/183/Q183720/
 ---
 
 ## Q183720: MacDrive 95 and 98 Are Unable to Read Macintosh Formatted Disks

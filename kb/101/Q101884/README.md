@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101884: How to Detect a DoubleSpace Drive from a Batch File"
-permalink: kb/101/Q101884/
+permalink: /kb/101/Q101884/
 ---
 
 ## Q101884: How to Detect a DoubleSpace Drive from a Batch File

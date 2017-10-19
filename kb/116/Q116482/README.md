@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116482: PRB: Inserting OLE Object Causes General Protection Fault"
-permalink: kb/116/Q116482/
+permalink: /kb/116/Q116482/
 ---
 
 ## Q116482: PRB: Inserting OLE Object Causes General Protection Fault

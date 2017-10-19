@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139842: Windows NT 3.51 SP2 Cannot Create Mac Volume for CD-ROM Drives"
-permalink: kb/139/Q139842/
+permalink: /kb/139/Q139842/
 ---
 
 ## Q139842: Windows NT 3.51 SP2 Cannot Create Mac Volume for CD-ROM Drives

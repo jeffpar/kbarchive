@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151037: Disk Contents: Office Pro 7.0b for Windows 95(Disks 11-20)"
-permalink: kb/151/Q151037/
+permalink: /kb/151/Q151037/
 ---
 
 ## Q151037: Disk Contents: Office Pro 7.0b for Windows 95(Disks 11-20)

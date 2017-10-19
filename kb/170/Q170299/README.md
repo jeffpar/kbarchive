@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170299: Mastering: No Access to Favorites List in Internet Explorer"
-permalink: kb/170/Q170299/
+permalink: /kb/170/Q170299/
 ---
 
 ## Q170299: Mastering: No Access to Favorites List in Internet Explorer

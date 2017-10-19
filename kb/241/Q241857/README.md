@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241857: BUG: CComBSTR Does Not Allocate Enough Space Sometimes"
-permalink: kb/241/Q241857/
+permalink: /kb/241/Q241857/
 ---
 
 ## Q241857: BUG: CComBSTR Does Not Allocate Enough Space Sometimes

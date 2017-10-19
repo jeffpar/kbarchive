@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288335: XADM:  Error Messages Occur When You Run Exmerge"
-permalink: kb/288/Q288335/
+permalink: /kb/288/Q288335/
 ---
 
 ## Q288335: XADM:  Error Messages Occur When You Run Exmerge

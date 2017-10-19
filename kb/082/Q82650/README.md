@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82650: OLE: SETUP.REG Can Be Used to Repair REG.DAT"
-permalink: kb/082/Q82650/
+permalink: /kb/082/Q82650/
 ---
 
 ## Q82650: OLE: SETUP.REG Can Be Used to Repair REG.DAT

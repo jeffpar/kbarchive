@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80303: Unable to Use MS-DOS 5.0 BACKUP to NetWare Drive"
-permalink: kb/080/Q80303/
+permalink: /kb/080/Q80303/
 ---
 
 ## Q80303: Unable to Use MS-DOS 5.0 BACKUP to NetWare Drive

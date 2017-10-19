@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257619: Access Violation When Path/File Name Is More Than 260 Characters"
-permalink: kb/257/Q257619/
+permalink: /kb/257/Q257619/
 ---
 
 ## Q257619: Access Violation When Path/File Name Is More Than 260 Characters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157730: Determining DirectX Version Using the DirectX Diagnostic Tool"
-permalink: kb/157/Q157730/
+permalink: /kb/157/Q157730/
 ---
 
 ## Q157730: Determining DirectX Version Using the DirectX Diagnostic Tool

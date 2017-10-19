@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72113: Differences Between DOSSHELL.COM and DOSSHELL.EXE"
-permalink: kb/072/Q72113/
+permalink: /kb/072/Q72113/
 ---
 
 ## Q72113: Differences Between DOSSHELL.COM and DOSSHELL.EXE

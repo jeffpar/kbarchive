@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158826: XCLN: Location of Mapisvc.inf File Not Configurable"
-permalink: kb/158/Q158826/
+permalink: /kb/158/Q158826/
 ---
 
 ## Q158826: XCLN: Location of Mapisvc.inf File Not Configurable

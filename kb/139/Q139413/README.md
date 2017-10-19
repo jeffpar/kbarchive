@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139413: Installing SCSI2GO PCMCIA Card in a Compaq Elite Laptop"
-permalink: kb/139/Q139413/
+permalink: /kb/139/Q139413/
 ---
 
 ## Q139413: Installing SCSI2GO PCMCIA Card in a Compaq Elite Laptop

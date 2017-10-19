@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194499: WD97:How Word Converts WordPerfect 5.x/6.x Hard and Soft Returns"
-permalink: kb/194/Q194499/
+permalink: /kb/194/Q194499/
 ---
 
 ## Q194499: WD97:How Word Converts WordPerfect 5.x/6.x Hard and Soft Returns

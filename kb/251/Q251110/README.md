@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251110: FS2000: Distorted or Incorrect Text in Certain Aircraft Gauges"
-permalink: kb/251/Q251110/
+permalink: /kb/251/Q251110/
 ---
 
 ## Q251110: FS2000: Distorted or Incorrect Text in Certain Aircraft Gauges

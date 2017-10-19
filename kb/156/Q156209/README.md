@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156209: Updated HP Printer Drivers for Windows NT 3.51 SP5"
-permalink: kb/156/Q156209/
+permalink: /kb/156/Q156209/
 ---
 
 ## Q156209: Updated HP Printer Drivers for Windows NT 3.51 SP5

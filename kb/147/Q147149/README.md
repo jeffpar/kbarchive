@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147149: HOWTO: Localize Application Resources with Foundation Classes"
-permalink: kb/147/Q147149/
+permalink: /kb/147/Q147149/
 ---
 
 ## Q147149: HOWTO: Localize Application Resources with Foundation Classes

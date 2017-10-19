@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94811: Common Causes of &quot;Feature Not Available&quot; Error"
-permalink: kb/094/Q94811/
+permalink: /kb/094/Q94811/
 ---
 
 ## Q94811: Common Causes of &quot;Feature Not Available&quot; Error

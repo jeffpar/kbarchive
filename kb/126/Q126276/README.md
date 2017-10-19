@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126276: Video Error Messages Under Windows NT 3.5"
-permalink: kb/126/Q126276/
+permalink: /kb/126/Q126276/
 ---
 
 ## Q126276: Video Error Messages Under Windows NT 3.5

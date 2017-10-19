@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87366: Using WordStar for Windows and Bitstream Facelift"
-permalink: kb/087/Q87366/
+permalink: /kb/087/Q87366/
 ---
 
 ## Q87366: Using WordStar for Windows and Bitstream Facelift

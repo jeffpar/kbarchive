@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138660: PRB: No Event Fires as Focus Moves Out of a System Window"
-permalink: kb/138/Q138660/
+permalink: /kb/138/Q138660/
 ---
 
 ## Q138660: PRB: No Event Fires as Focus Moves Out of a System Window

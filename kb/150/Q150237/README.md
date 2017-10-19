@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150237: BUG: Cell Size of Grid Does Not Change as Font Size Changes"
-permalink: kb/150/Q150237/
+permalink: /kb/150/Q150237/
 ---
 
 ## Q150237: BUG: Cell Size of Grid Does Not Change as Font Size Changes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137447: Form Wizard Default Settings"
-permalink: kb/137/Q137447/
+permalink: /kb/137/Q137447/
 ---
 
 ## Q137447: Form Wizard Default Settings

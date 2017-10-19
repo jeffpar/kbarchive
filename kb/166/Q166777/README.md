@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166777: FPNW 4.0 Update May Fail"
-permalink: kb/166/Q166777/
+permalink: /kb/166/Q166777/
 ---
 
 ## Q166777: FPNW 4.0 Update May Fail

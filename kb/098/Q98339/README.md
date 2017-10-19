@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98339: PROFS: How to Check VM Host for Enabled EXITs"
-permalink: kb/098/Q98339/
+permalink: /kb/098/Q98339/
 ---
 
 ## Q98339: PROFS: How to Check VM Host for Enabled EXITs

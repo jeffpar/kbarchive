@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168667: RADIUS: Remote Authentication Dial In User Service"
-permalink: kb/168/Q168667/
+permalink: /kb/168/Q168667/
 ---
 
 ## Q168667: RADIUS: Remote Authentication Dial In User Service

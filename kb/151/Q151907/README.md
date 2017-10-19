@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151907: PRB: DAO SDK Setup Error 104/105: Cannot Run Intermediate File"
-permalink: kb/151/Q151907/
+permalink: /kb/151/Q151907/
 ---
 
 ## Q151907: PRB: DAO SDK Setup Error 104/105: Cannot Run Intermediate File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74387: Connecting a Tablet to COM2"
-permalink: kb/074/Q74387/
+permalink: /kb/074/Q74387/
 ---
 
 ## Q74387: Connecting a Tablet to COM2

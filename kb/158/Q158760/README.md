@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158760: FIX: Setting Grid RowHeight to Large Number Affects Page Down"
-permalink: kb/158/Q158760/
+permalink: /kb/158/Q158760/
 ---
 
 ## Q158760: FIX: Setting Grid RowHeight to Large Number Affects Page Down

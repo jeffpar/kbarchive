@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187705: Application Error in CorelWEB.GALLERY"
-permalink: kb/187/Q187705/
+permalink: /kb/187/Q187705/
 ---
 
 ## Q187705: Application Error in CorelWEB.GALLERY

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186215: XADM: Cleanup of Items Past Retention Triggers Read Receipts"
-permalink: kb/186/Q186215/
+permalink: /kb/186/Q186215/
 ---
 
 ## Q186215: XADM: Cleanup of Items Past Retention Triggers Read Receipts

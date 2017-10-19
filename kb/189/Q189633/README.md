@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189633: HOWTO: Query a Service for Status and Configuration"
-permalink: kb/189/Q189633/
+permalink: /kb/189/Q189633/
 ---
 
 ## Q189633: HOWTO: Query a Service for Status and Configuration

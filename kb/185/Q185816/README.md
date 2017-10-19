@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185816: DNS Server Event Log IDs Incorrect After Applying SP4"
-permalink: kb/185/Q185816/
+permalink: /kb/185/Q185816/
 ---
 
 ## Q185816: DNS Server Event Log IDs Incorrect After Applying SP4

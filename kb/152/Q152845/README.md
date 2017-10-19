@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152845: XFOR: Moving Messages Between Folders Fails to Delete Original"
-permalink: kb/152/Q152845/
+permalink: /kb/152/Q152845/
 ---
 
 ## Q152845: XFOR: Moving Messages Between Folders Fails to Delete Original

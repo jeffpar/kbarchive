@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151325: Bookshelf '96-'97: Manual Installation On Windows 3.1"
-permalink: kb/151/Q151325/
+permalink: /kb/151/Q151325/
 ---
 
 ## Q151325: Bookshelf '96-'97: Manual Installation On Windows 3.1

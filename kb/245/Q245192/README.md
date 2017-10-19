@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245192: Blank Logon Dialog Box Appears After You Change Drive Letter."
-permalink: kb/245/Q245192/
+permalink: /kb/245/Q245192/
 ---
 
 ## Q245192: Blank Logon Dialog Box Appears After You Change Drive Letter.

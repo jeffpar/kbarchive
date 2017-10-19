@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229781: Prompted for Authentication When No NTFS Restrictions Apply"
-permalink: kb/229/Q229781/
+permalink: /kb/229/Q229781/
 ---
 
 ## Q229781: Prompted for Authentication When No NTFS Restrictions Apply

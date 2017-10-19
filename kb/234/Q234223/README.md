@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234223: File Corruption Saving to NetWare Server with Norton AntiVirus"
-permalink: kb/234/Q234223/
+permalink: /kb/234/Q234223/
 ---
 
 ## Q234223: File Corruption Saving to NetWare Server with Norton AntiVirus

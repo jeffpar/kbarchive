@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258947: WD97: List Item Format Is Not Carried to Next List Item"
-permalink: kb/258/Q258947/
+permalink: /kb/258/Q258947/
 ---
 
 ## Q258947: WD97: List Item Format Is Not Carried to Next List Item

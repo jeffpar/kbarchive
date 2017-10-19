@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66945: PRB: Fatal Exit Code 0x0019 Definition and Causes"
-permalink: kb/066/Q66945/
+permalink: /kb/066/Q66945/
 ---
 
 ## Q66945: PRB: Fatal Exit Code 0x0019 Definition and Causes

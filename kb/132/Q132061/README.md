@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132061: I/O Addresses Not Available with Future Domain 850 Series"
-permalink: kb/132/Q132061/
+permalink: /kb/132/Q132061/
 ---
 
 ## Q132061: I/O Addresses Not Available with Future Domain 850 Series

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171451: Cluster Node May Fail to Join Cluster"
-permalink: kb/171/Q171451/
+permalink: /kb/171/Q171451/
 ---
 
 ## Q171451: Cluster Node May Fail to Join Cluster

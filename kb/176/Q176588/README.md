@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176588: XWEB: Content Advisor Error Occurs When Opening OWA Logon Page"
-permalink: kb/176/Q176588/
+permalink: /kb/176/Q176588/
 ---
 
 ## Q176588: XWEB: Content Advisor Error Occurs When Opening OWA Logon Page

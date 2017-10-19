@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132383: PPT7: Colors and Shaded Fills Dither in PowerPoint"
-permalink: kb/132/Q132383/
+permalink: /kb/132/Q132383/
 ---
 
 ## Q132383: PPT7: Colors and Shaded Fills Dither in PowerPoint

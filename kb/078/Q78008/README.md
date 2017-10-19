@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78008: Troubleshooting Third Party Memory Managers"
-permalink: kb/078/Q78008/
+permalink: /kb/078/Q78008/
 ---
 
 ## Q78008: Troubleshooting Third Party Memory Managers

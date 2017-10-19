@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143382: XCLN: Rule Moving Messages to Public Folder Does Not Work"
-permalink: kb/143/Q143382/
+permalink: /kb/143/Q143382/
 ---
 
 ## Q143382: XCLN: Rule Moving Messages to Public Folder Does Not Work

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176991: RAS Client Registers with WINS Using RAS Server's IP Address"
-permalink: kb/176/Q176991/
+permalink: /kb/176/Q176991/
 ---
 
 ## Q176991: RAS Client Registers with WINS Using RAS Server's IP Address

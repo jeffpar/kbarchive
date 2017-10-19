@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155738: Application Coding Error Results in Error 10038 (WSAENOTSOCK)"
-permalink: kb/155/Q155738/
+permalink: /kb/155/Q155738/
 ---
 
 ## Q155738: Application Coding Error Results in Error 10038 (WSAENOTSOCK)

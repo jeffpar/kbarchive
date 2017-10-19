@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87493: BUG: Setup CreateProgmanItem Does Not Overwrite Item"
-permalink: kb/087/Q87493/
+permalink: /kb/087/Q87493/
 ---
 
 ## Q87493: BUG: Setup CreateProgmanItem Does Not Overwrite Item

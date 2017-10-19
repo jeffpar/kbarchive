@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296626: ASP0201: Invalid Default Script Language"
-permalink: kb/296/Q296626/
+permalink: /kb/296/Q296626/
 ---
 
 ## Q296626: ASP0201: Invalid Default Script Language

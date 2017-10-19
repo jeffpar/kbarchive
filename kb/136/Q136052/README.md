@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136052: PC Mac: Compressing Private Folder File(s)"
-permalink: kb/136/Q136052/
+permalink: /kb/136/Q136052/
 ---
 
 ## Q136052: PC Mac: Compressing Private Folder File(s)

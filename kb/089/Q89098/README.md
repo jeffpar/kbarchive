@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89098: Novell Err Msg: Error Sending on Network, Abort, Retry?"
-permalink: kb/089/Q89098/
+permalink: /kb/089/Q89098/
 ---
 
 ## Q89098: Novell Err Msg: Error Sending on Network, Abort, Retry?

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98492: How to Install Intel EtherExpress Card"
-permalink: kb/098/Q98492/
+permalink: /kb/098/Q98492/
 ---
 
 ## Q98492: How to Install Intel EtherExpress Card

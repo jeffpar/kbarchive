@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128934: LPR Unable to Print to LPD Queue Names with Lowercase Letters"
-permalink: kb/128/Q128934/
+permalink: /kb/128/Q128934/
 ---
 
 ## Q128934: LPR Unable to Print to LPD Queue Names with Lowercase Letters

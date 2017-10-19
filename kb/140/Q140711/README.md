@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140711: Error Messages Indicate Modem When Connected to MSN Using LAN"
-permalink: kb/140/Q140711/
+permalink: /kb/140/Q140711/
 ---
 
 ## Q140711: Error Messages Indicate Modem When Connected to MSN Using LAN

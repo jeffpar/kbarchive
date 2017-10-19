@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138795: Damaged Monotype Sorts Font Causes Display Problems"
-permalink: kb/138/Q138795/
+permalink: /kb/138/Q138795/
 ---
 
 ## Q138795: Damaged Monotype Sorts Font Causes Display Problems

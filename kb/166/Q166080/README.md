@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166080: XFOR: Access Violation During Internet Mail Wizard"
-permalink: kb/166/Q166080/
+permalink: /kb/166/Q166080/
 ---
 
 ## Q166080: XFOR: Access Violation During Internet Mail Wizard

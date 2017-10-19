@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168387: FIX: Exported Makefile May Be Useless if Custom Build Uses &quot;CD&quot;"
-permalink: kb/168/Q168387/
+permalink: /kb/168/Q168387/
 ---
 
 ## Q168387: FIX: Exported Makefile May Be Useless if Custom Build Uses &quot;CD&quot;

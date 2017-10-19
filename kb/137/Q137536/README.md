@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137536: PRB: SQL PacketSize Property May Not Work w/Individual Handles"
-permalink: kb/137/Q137536/
+permalink: /kb/137/Q137536/
 ---
 
 ## Q137536: PRB: SQL PacketSize Property May Not Work w/Individual Handles

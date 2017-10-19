@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130240: How to Use the Caption Field Property"
-permalink: kb/130/Q130240/
+permalink: /kb/130/Q130240/
 ---
 
 ## Q130240: How to Use the Caption Field Property

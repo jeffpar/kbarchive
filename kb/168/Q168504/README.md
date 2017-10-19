@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168504: XGEN: DocErr: Set Archiving to None to Stop Archiving"
-permalink: kb/168/Q168504/
+permalink: /kb/168/Q168504/
 ---
 
 ## Q168504: XGEN: DocErr: Set Archiving to None to Stop Archiving

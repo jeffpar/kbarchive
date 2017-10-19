@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107163: Registering KERNEL Functions in Viewer"
-permalink: kb/107/Q107163/
+permalink: /kb/107/Q107163/
 ---
 
 ## Q107163: Registering KERNEL Functions in Viewer

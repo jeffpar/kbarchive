@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184199: DMM: Envelopes are Printed Incorrectly Using DeskJet Printer"
-permalink: kb/184/Q184199/
+permalink: /kb/184/Q184199/
 ---
 
 ## Q184199: DMM: Envelopes are Printed Incorrectly Using DeskJet Printer

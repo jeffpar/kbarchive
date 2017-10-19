@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169472: File and Printer Sharing for Microsoft Networks Is Unavailable"
-permalink: kb/169/Q169472/
+permalink: /kb/169/Q169472/
 ---
 
 ## Q169472: File and Printer Sharing for Microsoft Networks Is Unavailable

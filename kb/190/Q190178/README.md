@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190178: BUG: PDW Creates an Invalid Setup for a VB 5.0 Project"
-permalink: kb/190/Q190178/
+permalink: /kb/190/Q190178/
 ---
 
 ## Q190178: BUG: PDW Creates an Invalid Setup for a VB 5.0 Project

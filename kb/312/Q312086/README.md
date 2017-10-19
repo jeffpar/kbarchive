@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312086: Indexing Service Office Filter Cannot Process Trademark Symbol"
-permalink: kb/312/Q312086/
+permalink: /kb/312/Q312086/
 ---
 
 ## Q312086: Indexing Service Office Filter Cannot Process Trademark Symbol

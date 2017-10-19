@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258445: English.dat File Listed Instead of English.cas in Casread.txt"
-permalink: kb/258/Q258445/
+permalink: /kb/258/Q258445/
 ---
 
 ## Q258445: English.dat File Listed Instead of English.cas in Casread.txt

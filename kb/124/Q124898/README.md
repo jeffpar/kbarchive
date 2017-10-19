@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124898: FIX: SQLAllocConnect in Console App. Causes Access Violation"
-permalink: kb/124/Q124898/
+permalink: /kb/124/Q124898/
 ---
 
 ## Q124898: FIX: SQLAllocConnect in Console App. Causes Access Violation

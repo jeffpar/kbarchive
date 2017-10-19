@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178113: Specifying a Group Name in LMHOSTS File May Cause STOP 0xA"
-permalink: kb/178/Q178113/
+permalink: /kb/178/Q178113/
 ---
 
 ## Q178113: Specifying a Group Name in LMHOSTS File May Cause STOP 0xA

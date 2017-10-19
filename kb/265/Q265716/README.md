@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265716: XADM: Installing Exchange Server 5.5 SP1 Does Not Update DLLs"
-permalink: kb/265/Q265716/
+permalink: /kb/265/Q265716/
 ---
 
 ## Q265716: XADM: Installing Exchange Server 5.5 SP1 Does Not Update DLLs

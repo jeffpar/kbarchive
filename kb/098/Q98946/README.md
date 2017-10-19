@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98946: Formatting 2.8-MB Floppy Disks from File Manager"
-permalink: kb/098/Q98946/
+permalink: /kb/098/Q98946/
 ---
 
 ## Q98946: Formatting 2.8-MB Floppy Disks from File Manager

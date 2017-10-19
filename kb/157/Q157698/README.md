@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157698: XCON: Exchange Fails to Allow an Incoming X.25 Connection"
-permalink: kb/157/Q157698/
+permalink: /kb/157/Q157698/
 ---
 
 ## Q157698: XCON: Exchange Fails to Allow an Incoming X.25 Connection

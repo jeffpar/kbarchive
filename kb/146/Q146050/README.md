@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146050: Modifying Ntuser.dat Hive So New Users Get Defined Settings"
-permalink: kb/146/Q146050/
+permalink: /kb/146/Q146050/
 ---
 
 ## Q146050: Modifying Ntuser.dat Hive So New Users Get Defined Settings

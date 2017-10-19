@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92578: ClipBook: Paste Link with Ami Pro May Paste Corrupt Data"
-permalink: kb/092/Q92578/
+permalink: /kb/092/Q92578/
 ---
 
 ## Q92578: ClipBook: Paste Link with Ami Pro May Paste Corrupt Data

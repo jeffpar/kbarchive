@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152524: XCLN: SNADS Custom Template Information not Displayed"
-permalink: kb/152/Q152524/
+permalink: /kb/152/Q152524/
 ---
 
 ## Q152524: XCLN: SNADS Custom Template Information not Displayed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301457: HOW TO: View or Change Authentication Methods in IIS"
-permalink: kb/301/Q301457/
+permalink: /kb/301/Q301457/
 ---
 
 ## Q301457: HOW TO: View or Change Authentication Methods in IIS

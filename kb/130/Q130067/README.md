@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130067: PC Ext: Err Msg: Unable to Access :XTN&#92;xxxxxxxx.XTN..."
-permalink: kb/130/Q130067/
+permalink: /kb/130/Q130067/
 ---
 
 ## Q130067: PC Ext: Err Msg: Unable to Access :XTN&#92;xxxxxxxx.XTN...

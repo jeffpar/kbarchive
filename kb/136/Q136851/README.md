@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136851: Cases Where Failed ALTER TABLE Doesn't Revert"
-permalink: kb/136/Q136851/
+permalink: /kb/136/Q136851/
 ---
 
 ## Q136851: Cases Where Failed ALTER TABLE Doesn't Revert

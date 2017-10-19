@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134990: PCMCIA Hard Disks Not Recognized in Windows NT 3.51"
-permalink: kb/134/Q134990/
+permalink: /kb/134/Q134990/
 ---
 
 ## Q134990: PCMCIA Hard Disks Not Recognized in Windows NT 3.51

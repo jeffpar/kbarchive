@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190682: HOWTO: Use the Password Dialog Box Foundation Class"
-permalink: kb/190/Q190682/
+permalink: /kb/190/Q190682/
 ---
 
 ## Q190682: HOWTO: Use the Password Dialog Box Foundation Class

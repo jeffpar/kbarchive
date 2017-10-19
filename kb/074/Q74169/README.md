@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74169: PRB: L4001 Warning May Be Caused by Using Incorrect Linker"
-permalink: kb/074/Q74169/
+permalink: /kb/074/Q74169/
 ---
 
 ## Q74169: PRB: L4001 Warning May Be Caused by Using Incorrect Linker

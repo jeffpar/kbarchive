@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86319: PC Win: Update Message when Closing Unfinished OLE Object"
-permalink: kb/086/Q86319/
+permalink: /kb/086/Q86319/
 ---
 
 ## Q86319: PC Win: Update Message when Closing Unfinished OLE Object

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158500: Updated DAO SDK Required for Visual C++ 4.2"
-permalink: kb/158/Q158500/
+permalink: /kb/158/Q158500/
 ---
 
 ## Q158500: Updated DAO SDK Required for Visual C++ 4.2

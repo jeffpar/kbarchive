@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98656: INFO: Creating a Browser Library for the Foundation Classes"
-permalink: kb/098/Q98656/
+permalink: /kb/098/Q98656/
 ---
 
 ## Q98656: INFO: Creating a Browser Library for the Foundation Classes

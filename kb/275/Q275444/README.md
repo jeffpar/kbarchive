@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275444: INFO: Online Resources for Visual FoxPro Support"
-permalink: kb/275/Q275444/
+permalink: /kb/275/Q275444/
 ---
 
 ## Q275444: INFO: Online Resources for Visual FoxPro Support

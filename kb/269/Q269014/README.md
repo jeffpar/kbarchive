@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269014: XADM: How to Move the Edb.chk File on a Cluster"
-permalink: kb/269/Q269014/
+permalink: /kb/269/Q269014/
 ---
 
 ## Q269014: XADM: How to Move the Edb.chk File on a Cluster

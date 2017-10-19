@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149882: HOWTO: Execute a Stored Procedure on an Oracle Server"
-permalink: kb/149/Q149882/
+permalink: /kb/149/Q149882/
 ---
 
 ## Q149882: HOWTO: Execute a Stored Procedure on an Oracle Server

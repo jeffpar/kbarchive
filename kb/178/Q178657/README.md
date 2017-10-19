@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178657: XADM: Hyperlinks Composed in WordMail 97 Do Not Function"
-permalink: kb/178/Q178657/
+permalink: /kb/178/Q178657/
 ---
 
 ## Q178657: XADM: Hyperlinks Composed in WordMail 97 Do Not Function

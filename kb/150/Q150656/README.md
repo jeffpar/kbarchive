@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150656: Mastering Visual C++ 4: Contents of README.TXT"
-permalink: kb/150/Q150656/
+permalink: /kb/150/Q150656/
 ---
 
 ## Q150656: Mastering Visual C++ 4: Contents of README.TXT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153897: FIX: MFC DAO or ODBC App Crashes on Exit"
-permalink: kb/153/Q153897/
+permalink: /kb/153/Q153897/
 ---
 
 ## Q153897: FIX: MFC DAO or ODBC App Crashes on Exit

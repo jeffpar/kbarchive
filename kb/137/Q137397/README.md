@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137397: NWConv Err Msg: &lt;Ntservername&gt; Is Not a Server"
-permalink: kb/137/Q137397/
+permalink: /kb/137/Q137397/
 ---
 
 ## Q137397: NWConv Err Msg: &lt;Ntservername&gt; Is Not a Server

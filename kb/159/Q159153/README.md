@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159153: Error Messages While Backing Up to Some Floppy Disk Drives"
-permalink: kb/159/Q159153/
+permalink: /kb/159/Q159153/
 ---
 
 ## Q159153: Error Messages While Backing Up to Some Floppy Disk Drives

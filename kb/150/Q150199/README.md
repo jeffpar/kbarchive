@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150199: DOC: ThreadingModel Is Not a Subkey"
-permalink: kb/150/Q150199/
+permalink: /kb/150/Q150199/
 ---
 
 ## Q150199: DOC: ThreadingModel Is Not a Subkey

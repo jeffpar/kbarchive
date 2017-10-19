@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136788: XCLN: Multiple Dictionaries Not Supported"
-permalink: kb/136/Q136788/
+permalink: /kb/136/Q136788/
 ---
 
 ## Q136788: XCLN: Multiple Dictionaries Not Supported

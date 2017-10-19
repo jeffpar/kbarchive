@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164936: Shared Folders Gateway Creates Incorrect Drive &amp; Share Info."
-permalink: kb/164/Q164936/
+permalink: /kb/164/Q164936/
 ---
 
 ## Q164936: Shared Folders Gateway Creates Incorrect Drive &amp; Share Info.

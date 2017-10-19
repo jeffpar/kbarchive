@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119429: ScanDisk Marks Valid Clusters Bad with Incorrect CMOS Settings"
-permalink: kb/119/Q119429/
+permalink: /kb/119/Q119429/
 ---
 
 ## Q119429: ScanDisk Marks Valid Clusters Bad with Incorrect CMOS Settings

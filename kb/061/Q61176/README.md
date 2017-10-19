@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61176: File: Footer Cut Off on LaserWriter Using Print Monitor"
-permalink: kb/061/Q61176/
+permalink: /kb/061/Q61176/
 ---
 
 ## Q61176: File: Footer Cut Off on LaserWriter Using Print Monitor

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122387: ATI Video Fails with Adaptec 2940 SCSI Adapter on PCI Bus"
-permalink: kb/122/Q122387/
+permalink: /kb/122/Q122387/
 ---
 
 ## Q122387: ATI Video Fails with Adaptec 2940 SCSI Adapter on PCI Bus

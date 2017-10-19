@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167247: XFOR: Dirsync Fails to Import Addresses with Template Info"
-permalink: kb/167/Q167247/
+permalink: /kb/167/Q167247/
 ---
 
 ## Q167247: XFOR: Dirsync Fails to Import Addresses with Template Info

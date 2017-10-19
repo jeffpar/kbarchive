@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272506: XFOR: Event 3018 Occurs When Restarting the IMS"
-permalink: kb/272/Q272506/
+permalink: /kb/272/Q272506/
 ---
 
 ## Q272506: XFOR: Event 3018 Occurs When Restarting the IMS

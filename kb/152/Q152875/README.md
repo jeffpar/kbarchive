@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152875: XCON: Failure to Send to Embedded DL with Delivery Restrictions"
-permalink: kb/152/Q152875/
+permalink: /kb/152/Q152875/
 ---
 
 ## Q152875: XCON: Failure to Send to Embedded DL with Delivery Restrictions

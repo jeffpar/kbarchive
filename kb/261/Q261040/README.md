@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261040: Motocross Madness 2: Black Screen When You Start the Program"
-permalink: kb/261/Q261040/
+permalink: /kb/261/Q261040/
 ---
 
 ## Q261040: Motocross Madness 2: Black Screen When You Start the Program

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134876: PPT7: PowerPoint Hangs After Canceling &quot;Print To File&quot;"
-permalink: kb/134/Q134876/
+permalink: /kb/134/Q134876/
 ---
 
 ## Q134876: PPT7: PowerPoint Hangs After Canceling &quot;Print To File&quot;

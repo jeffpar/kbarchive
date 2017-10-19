@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86876: TopDesk Window May Not Retain Its Size or Position"
-permalink: kb/086/Q86876/
+permalink: /kb/086/Q86876/
 ---
 
 ## Q86876: TopDesk Window May Not Retain Its Size or Position

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156206: SMS: OS/2 Inventory Agent Does Not Detect Pentium Processor"
-permalink: kb/156/Q156206/
+permalink: /kb/156/Q156206/
 ---
 
 ## Q156206: SMS: OS/2 Inventory Agent Does Not Detect Pentium Processor

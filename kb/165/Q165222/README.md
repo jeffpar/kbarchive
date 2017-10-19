@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165222: Application Violation Error Occurs on Windows 95 Client"
-permalink: kb/165/Q165222/
+permalink: /kb/165/Q165222/
 ---
 
 ## Q165222: Application Violation Error Occurs on Windows 95 Client

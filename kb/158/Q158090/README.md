@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158090: Setup Runs Slowly; Virus Extension Loaded"
-permalink: kb/158/Q158090/
+permalink: /kb/158/Q158090/
 ---
 
 ## Q158090: Setup Runs Slowly; Virus Extension Loaded

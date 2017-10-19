@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184425: MS Windows Architecture for Developers Training Corrections"
-permalink: kb/184/Q184425/
+permalink: /kb/184/Q184425/
 ---
 
 ## Q184425: MS Windows Architecture for Developers Training Corrections

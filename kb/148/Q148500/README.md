@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148500: XADM: Creating First/Last Names for MS Mail Custom Recipients"
-permalink: kb/148/Q148500/
+permalink: /kb/148/Q148500/
 ---
 
 ## Q148500: XADM: Creating First/Last Names for MS Mail Custom Recipients

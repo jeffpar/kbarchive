@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191376: WD97: Tabs Button Doesn't Work with Envelopes and Labels"
-permalink: kb/191/Q191376/
+permalink: /kb/191/Q191376/
 ---
 
 ## Q191376: WD97: Tabs Button Doesn't Work with Envelopes and Labels

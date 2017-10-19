@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287143: MechWarrior 4: Improve Performance with DMA"
-permalink: kb/287/Q287143/
+permalink: /kb/287/Q287143/
 ---
 
 ## Q287143: MechWarrior 4: Improve Performance with DMA

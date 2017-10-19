@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q205231: FP: How to Search Using LIKE In SQL Statement For ASP"
-permalink: kb/205/Q205231/
+permalink: /kb/205/Q205231/
 ---
 
 ## Q205231: FP: How to Search Using LIKE In SQL Statement For ASP

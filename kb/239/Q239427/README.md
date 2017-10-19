@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239427: XADM: How to Enable Message Journaling in Exchange Server 5.5"
-permalink: kb/239/Q239427/
+permalink: /kb/239/Q239427/
 ---
 
 ## Q239427: XADM: How to Enable Message Journaling in Exchange Server 5.5

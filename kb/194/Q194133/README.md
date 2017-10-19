@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194133: Remote Shell (RSH) Commands Hang w/ Multiple Sessions Running"
-permalink: kb/194/Q194133/
+permalink: /kb/194/Q194133/
 ---
 
 ## Q194133: Remote Shell (RSH) Commands Hang w/ Multiple Sessions Running

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167113: FIX: C2734, C2166: Caused by Template Function with const ref"
-permalink: kb/167/Q167113/
+permalink: /kb/167/Q167113/
 ---
 
 ## Q167113: FIX: C2734, C2166: Caused by Template Function with const ref

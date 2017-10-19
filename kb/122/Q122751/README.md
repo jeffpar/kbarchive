@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122751: PC DirSync: Err Msg: Gateway Not Installed: &lt;Gateway Name&gt;"
-permalink: kb/122/Q122751/
+permalink: /kb/122/Q122751/
 ---
 
 ## Q122751: PC DirSync: Err Msg: Gateway Not Installed: &lt;Gateway Name&gt;

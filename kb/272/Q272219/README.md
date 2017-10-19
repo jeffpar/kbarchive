@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272219: PRB: VFP App Installed with VSI Creates Foxuser Files on Desktop"
-permalink: kb/272/Q272219/
+permalink: /kb/272/Q272219/
 ---
 
 ## Q272219: PRB: VFP App Installed with VSI Creates Foxuser Files on Desktop

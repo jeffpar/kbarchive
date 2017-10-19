@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193785: Naming FPNW Server Same as PDC"
-permalink: kb/193/Q193785/
+permalink: /kb/193/Q193785/
 ---
 
 ## Q193785: Naming FPNW Server Same as PDC

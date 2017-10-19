@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234674: Character Mappings Are Incorrect for Four Definitions"
-permalink: kb/234/Q234674/
+permalink: /kb/234/Q234674/
 ---
 
 ## Q234674: Character Mappings Are Incorrect for Four Definitions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323945: Zoo Tycoon: Guests Appear Stuck to Zoo Objects in Dinosaur Digs"
-permalink: kb/323/Q323945/
+permalink: /kb/323/Q323945/
 ---
 
 ## Q323945: Zoo Tycoon: Guests Appear Stuck to Zoo Objects in Dinosaur Digs

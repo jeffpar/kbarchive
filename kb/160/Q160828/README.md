@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160828: Network Monitor Parses DNS WINS Lookup Queries as DNS Packets"
-permalink: kb/160/Q160828/
+permalink: /kb/160/Q160828/
 ---
 
 ## Q160828: Network Monitor Parses DNS WINS Lookup Queries as DNS Packets

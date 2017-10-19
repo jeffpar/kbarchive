@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61284: Mac Form: Making Info Show in Both the Send and Read Screen"
-permalink: kb/061/Q61284/
+permalink: /kb/061/Q61284/
 ---
 
 ## Q61284: Mac Form: Making Info Show in Both the Send and Read Screen

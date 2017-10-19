@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167865: Err Msg: Error 6117: The Workgroup Name Cannot Be the Same as..."
-permalink: kb/167/Q167865/
+permalink: /kb/167/Q167865/
 ---
 
 ## Q167865: Err Msg: Error 6117: The Workgroup Name Cannot Be the Same as...

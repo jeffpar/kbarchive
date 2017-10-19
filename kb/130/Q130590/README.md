@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130590: Starting SNA Client Applet Can Start CIS Internet Dialer"
-permalink: kb/130/Q130590/
+permalink: /kb/130/Q130590/
 ---
 
 ## Q130590: Starting SNA Client Applet Can Start CIS Internet Dialer

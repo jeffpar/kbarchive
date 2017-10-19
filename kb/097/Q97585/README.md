@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97585: Multiple Identical Drive Icons in File Manager"
-permalink: kb/097/Q97585/
+permalink: /kb/097/Q97585/
 ---
 
 ## Q97585: Multiple Identical Drive Icons in File Manager

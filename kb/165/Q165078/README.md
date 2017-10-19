@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165078: WD97: Some Open Shortcuts Changed"
-permalink: kb/165/Q165078/
+permalink: /kb/165/Q165078/
 ---
 
 ## Q165078: WD97: Some Open Shortcuts Changed

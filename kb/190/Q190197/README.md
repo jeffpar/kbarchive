@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190197: BUG: User Defined Type Not Defined Using Binary Compatibility"
-permalink: kb/190/Q190197/
+permalink: /kb/190/Q190197/
 ---
 
 ## Q190197: BUG: User Defined Type Not Defined Using Binary Compatibility

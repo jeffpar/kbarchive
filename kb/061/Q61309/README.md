@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61309: Steps Needed to Make Source Browser Usable"
-permalink: kb/061/Q61309/
+permalink: /kb/061/Q61309/
 ---
 
 ## Q61309: Steps Needed to Make Source Browser Usable

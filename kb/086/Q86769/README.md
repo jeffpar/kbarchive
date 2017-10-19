@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86769: HP Font Files Created When Printing to File"
-permalink: kb/086/Q86769/
+permalink: /kb/086/Q86769/
 ---
 
 ## Q86769: HP Font Files Created When Printing to File

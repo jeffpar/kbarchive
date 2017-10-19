@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85486: CTRL+ALT+DEL Requires Reboot in Windows Version 3.1"
-permalink: kb/085/Q85486/
+permalink: /kb/085/Q85486/
 ---
 
 ## Q85486: CTRL+ALT+DEL Requires Reboot in Windows Version 3.1

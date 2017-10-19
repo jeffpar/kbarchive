@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145963: XCLN: Text May Be Invisible"
-permalink: kb/145/Q145963/
+permalink: /kb/145/Q145963/
 ---
 
 ## Q145963: XCLN: Text May Be Invisible

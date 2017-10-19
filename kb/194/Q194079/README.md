@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194079: XCLN: ODK:Some Hex Values Not Accepted for DWORD Registry Entry"
-permalink: kb/194/Q194079/
+permalink: /kb/194/Q194079/
 ---
 
 ## Q194079: XCLN: ODK:Some Hex Values Not Accepted for DWORD Registry Entry

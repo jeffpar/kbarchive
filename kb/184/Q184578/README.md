@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184578: XADM: Online Backup Fails to Remove Log Files"
-permalink: kb/184/Q184578/
+permalink: /kb/184/Q184578/
 ---
 
 ## Q184578: XADM: Online Backup Fails to Remove Log Files

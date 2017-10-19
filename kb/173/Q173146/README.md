@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173146: WD97: Run from Network Install for Web Authoring AutoUpdate"
-permalink: kb/173/Q173146/
+permalink: /kb/173/Q173146/
 ---
 
 ## Q173146: WD97: Run from Network Install for Web Authoring AutoUpdate

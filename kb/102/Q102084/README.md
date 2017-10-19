@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102084: Mac Wkst: DateBook Pro 2.0 Incompatibility"
-permalink: kb/102/Q102084/
+permalink: /kb/102/Q102084/
 ---
 
 ## Q102084: Mac Wkst: DateBook Pro 2.0 Incompatibility

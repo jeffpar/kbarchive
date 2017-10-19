@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241988: XFOR: After Dirsync, cc:Mail Address is Missing a Period"
-permalink: kb/241/Q241988/
+permalink: /kb/241/Q241988/
 ---
 
 ## Q241988: XFOR: After Dirsync, cc:Mail Address is Missing a Period

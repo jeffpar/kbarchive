@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192349: XADM: Messages NDR after Applying 5.5 SP or 5.0 Hotfix"
-permalink: kb/192/Q192349/
+permalink: /kb/192/Q192349/
 ---
 
 ## Q192349: XADM: Messages NDR after Applying 5.5 SP or 5.0 Hotfix

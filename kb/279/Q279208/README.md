@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279208: CFS/CFS 2: Troubleshooting Joystick Problems (Part 1)"
-permalink: kb/279/Q279208/
+permalink: /kb/279/Q279208/
 ---
 
 ## Q279208: CFS/CFS 2: Troubleshooting Joystick Problems (Part 1)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174543: Enabling the Shift Lock Feature on Windows NT 4.0"
-permalink: kb/174/Q174543/
+permalink: /kb/174/Q174543/
 ---
 
 ## Q174543: Enabling the Shift Lock Feature on Windows NT 4.0

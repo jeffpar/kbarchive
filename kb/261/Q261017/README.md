@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261017: Motocross Madness 2: Ground Textures Appear in the Sky"
-permalink: kb/261/Q261017/
+permalink: /kb/261/Q261017/
 ---
 
 ## Q261017: Motocross Madness 2: Ground Textures Appear in the Sky

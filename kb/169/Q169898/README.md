@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169898: XGEN: Error Running Rpings&#42;.exe Utilities on WinNT Server 4.0"
-permalink: kb/169/Q169898/
+permalink: /kb/169/Q169898/
 ---
 
 ## Q169898: XGEN: Error Running Rpings&#42;.exe Utilities on WinNT Server 4.0

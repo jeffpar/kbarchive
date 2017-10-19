@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183590: XFOR: Memory Error Encountered in Migration Wizard for cc:Mail"
-permalink: kb/183/Q183590/
+permalink: /kb/183/Q183590/
 ---
 
 ## Q183590: XFOR: Memory Error Encountered in Migration Wizard for cc:Mail

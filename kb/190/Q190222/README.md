@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190222: BUG: UserConnection GPF When Inserting Multiple Queries"
-permalink: kb/190/Q190222/
+permalink: /kb/190/Q190222/
 ---
 
 ## Q190222: BUG: UserConnection GPF When Inserting Multiple Queries

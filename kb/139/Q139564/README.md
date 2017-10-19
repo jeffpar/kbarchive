@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139564: WD97: How to Disable Word AutoFormat Features"
-permalink: kb/139/Q139564/
+permalink: /kb/139/Q139564/
 ---
 
 ## Q139564: WD97: How to Disable Word AutoFormat Features

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149292: XCLN: Cannot Print Messages Linked as Icon"
-permalink: kb/149/Q149292/
+permalink: /kb/149/Q149292/
 ---
 
 ## Q149292: XCLN: Cannot Print Messages Linked as Icon

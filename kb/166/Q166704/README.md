@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166704: Err Msg: Not Enough Storage Is Available to Complete This..."
-permalink: kb/166/Q166704/
+permalink: /kb/166/Q166704/
 ---
 
 ## Q166704: Err Msg: Not Enough Storage Is Available to Complete This...

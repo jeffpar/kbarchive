@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245208: Problem with added SMTP service through Add/Remove"
-permalink: kb/245/Q245208/
+permalink: /kb/245/Q245208/
 ---
 
 ## Q245208: Problem with added SMTP service through Add/Remove

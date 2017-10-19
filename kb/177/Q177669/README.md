@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177669: Changing to UK Regional Settings during an Unattended Install"
-permalink: kb/177/Q177669/
+permalink: /kb/177/Q177669/
 ---
 
 ## Q177669: Changing to UK Regional Settings during an Unattended Install

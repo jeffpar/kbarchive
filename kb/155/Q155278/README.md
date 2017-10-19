@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155278: How to Set the RAS Callback Delay in Windows NT 4.0"
-permalink: kb/155/Q155278/
+permalink: /kb/155/Q155278/
 ---
 
 ## Q155278: How to Set the RAS Callback Delay in Windows NT 4.0

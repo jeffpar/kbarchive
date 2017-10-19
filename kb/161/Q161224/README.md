@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161224: Error Message During Setup on DEC Ultra II Laptop"
-permalink: kb/161/Q161224/
+permalink: /kb/161/Q161224/
 ---
 
 ## Q161224: Error Message During Setup on DEC Ultra II Laptop

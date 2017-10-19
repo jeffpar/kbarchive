@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261063: MCM2: Game Detects Disabled Built-in Video Adapter"
-permalink: kb/261/Q261063/
+permalink: /kb/261/Q261063/
 ---
 
 ## Q261063: MCM2: Game Detects Disabled Built-in Video Adapter

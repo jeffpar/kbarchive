@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152926: XADM: Exchange IS Error 1025"
-permalink: kb/152/Q152926/
+permalink: /kb/152/Q152926/
 ---
 
 ## Q152926: XADM: Exchange IS Error 1025

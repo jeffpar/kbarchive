@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288706: PRB: CLSID {00000010-0000-0010-8000-00AA006D2EA4} Not Found"
-permalink: kb/288/Q288706/
+permalink: /kb/288/Q288706/
 ---
 
 ## Q288706: PRB: CLSID {00000010-0000-0010-8000-00AA006D2EA4} Not Found

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278615: MSN Companion Features"
-permalink: kb/278/Q278615/
+permalink: /kb/278/Q278615/
 ---
 
 ## Q278615: MSN Companion Features

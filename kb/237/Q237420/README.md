@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237420: LPR Command to Remote Printer on RAS Connection Does Not Work"
-permalink: kb/237/Q237420/
+permalink: /kb/237/Q237420/
 ---
 
 ## Q237420: LPR Command to Remote Printer on RAS Connection Does Not Work

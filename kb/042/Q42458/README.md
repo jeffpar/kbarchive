@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q42458: PRB: FatalExit 0x0001 Possible If WM_CTLCOLOR Used Improperly"
-permalink: kb/042/Q42458/
+permalink: /kb/042/Q42458/
 ---
 
 ## Q42458: PRB: FatalExit 0x0001 Possible If WM_CTLCOLOR Used Improperly

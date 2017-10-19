@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148726: INF: ODBC Desktop Drivers and OLE in a Multithreaded App"
-permalink: kb/148/Q148726/
+permalink: /kb/148/Q148726/
 ---
 
 ## Q148726: INF: ODBC Desktop Drivers and OLE in a Multithreaded App

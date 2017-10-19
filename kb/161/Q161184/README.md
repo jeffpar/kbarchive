@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161184: FIX: Combo Box Behaves Erratically with Timer Control"
-permalink: kb/161/Q161184/
+permalink: /kb/161/Q161184/
 ---
 
 ## Q161184: FIX: Combo Box Behaves Erratically with Timer Control

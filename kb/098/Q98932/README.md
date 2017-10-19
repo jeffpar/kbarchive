@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98932: Description of Life Genesis"
-permalink: kb/098/Q98932/
+permalink: /kb/098/Q98932/
 ---
 
 ## Q98932: Description of Life Genesis

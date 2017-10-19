@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152896: XADM: MTA Startup Slow When Database is Large"
-permalink: kb/152/Q152896/
+permalink: /kb/152/Q152896/
 ---
 
 ## Q152896: XADM: MTA Startup Slow When Database is Large

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322681: FTP Server Does Not Support Extended Characters"
-permalink: kb/322/Q322681/
+permalink: /kb/322/Q322681/
 ---
 
 ## Q322681: FTP Server Does Not Support Extended Characters

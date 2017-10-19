@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139744: Desktop Themes Does Not List Available Themes"
-permalink: kb/139/Q139744/
+permalink: /kb/139/Q139744/
 ---
 
 ## Q139744: Desktop Themes Does Not List Available Themes

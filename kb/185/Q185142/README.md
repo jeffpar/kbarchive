@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185142: NetWare API Log Logical Record May Incorrectly Succeed"
-permalink: kb/185/Q185142/
+permalink: /kb/185/Q185142/
 ---
 
 ## Q185142: NetWare API Log Logical Record May Incorrectly Succeed

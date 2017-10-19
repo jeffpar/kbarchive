@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134497: Mavis Beacon Teaches Typing Ver. 3.0 Seems to Hang"
-permalink: kb/134/Q134497/
+permalink: /kb/134/Q134497/
 ---
 
 ## Q134497: Mavis Beacon Teaches Typing Ver. 3.0 Seems to Hang

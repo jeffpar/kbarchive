@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232340: Zone Err Msg: Failed to Download &lt;Filename&gt;"
-permalink: kb/232/Q232340/
+permalink: /kb/232/Q232340/
 ---
 
 ## Q232340: Zone Err Msg: Failed to Download &lt;Filename&gt;

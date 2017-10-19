@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163561: GetLuaReturnCode Mapping Problems and Possible Access Violation"
-permalink: kb/163/Q163561/
+permalink: /kb/163/Q163561/
 ---
 
 ## Q163561: GetLuaReturnCode Mapping Problems and Possible Access Violation

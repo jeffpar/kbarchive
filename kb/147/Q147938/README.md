@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147938: RDO: Getting Data from Temp Tables Created by Stored Procedure"
-permalink: kb/147/Q147938/
+permalink: /kb/147/Q147938/
 ---
 
 ## Q147938: RDO: Getting Data from Temp Tables Created by Stored Procedure

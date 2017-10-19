@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301500: FIX: ASP Session Scope Thread Affinity Problem in IIS 5.0"
-permalink: kb/301/Q301500/
+permalink: /kb/301/Q301500/
 ---
 
 ## Q301500: FIX: ASP Session Scope Thread Affinity Problem in IIS 5.0

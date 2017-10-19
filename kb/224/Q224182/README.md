@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224182: Encarta 99: Cannot Play Some Animations Listed in the Pinpointer"
-permalink: kb/224/Q224182/
+permalink: /kb/224/Q224182/
 ---
 
 ## Q224182: Encarta 99: Cannot Play Some Animations Listed in the Pinpointer

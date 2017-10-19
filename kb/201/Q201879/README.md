@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201879: HOWTO: Determine If an ActiveX Ambient Property Is Implemented"
-permalink: kb/201/Q201879/
+permalink: /kb/201/Q201879/
 ---
 
 ## Q201879: HOWTO: Determine If an ActiveX Ambient Property Is Implemented

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124951: BUG: F2374: Incorrect Reference of the Error in BLOCK DATA"
-permalink: kb/124/Q124951/
+permalink: /kb/124/Q124951/
 ---
 
 ## Q124951: BUG: F2374: Incorrect Reference of the Error in BLOCK DATA

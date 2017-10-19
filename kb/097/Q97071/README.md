@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97071: PC WRmt: Keyboard Problems in Select Headers Dialog Box"
-permalink: kb/097/Q97071/
+permalink: /kb/097/Q97071/
 ---
 
 ## Q97071: PC WRmt: Keyboard Problems in Select Headers Dialog Box

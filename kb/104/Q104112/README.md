@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104112: FAX: Error Message: Could Not Find Setup File"
-permalink: kb/104/Q104112/
+permalink: /kb/104/Q104112/
 ---
 
 ## Q104112: FAX: Error Message: Could Not Find Setup File

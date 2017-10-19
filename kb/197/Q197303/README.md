@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197303: NNTP and SMTP in IIS Fail to Start"
-permalink: kb/197/Q197303/
+permalink: /kb/197/Q197303/
 ---
 
 ## Q197303: NNTP and SMTP in IIS Fail to Start

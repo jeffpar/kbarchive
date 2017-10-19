@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104061: PC WSPlus: Edit Gesture Does Not Work with Appointment Book"
-permalink: kb/104/Q104061/
+permalink: /kb/104/Q104061/
 ---
 
 ## Q104061: PC WSPlus: Edit Gesture Does Not Work with Appointment Book

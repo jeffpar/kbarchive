@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302550: Updated Fail-Safe Information"
-permalink: kb/302/Q302550/
+permalink: /kb/302/Q302550/
 ---
 
 ## Q302550: Updated Fail-Safe Information

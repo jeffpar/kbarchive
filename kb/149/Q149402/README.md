@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149402: PRB: F1 Key Does Not CLEAR READ in Visual FoxPro for Windows"
-permalink: kb/149/Q149402/
+permalink: /kb/149/Q149402/
 ---
 
 ## Q149402: PRB: F1 Key Does Not CLEAR READ in Visual FoxPro for Windows

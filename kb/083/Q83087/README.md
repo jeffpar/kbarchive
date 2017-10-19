@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83087: FIX: MASM Moves Segment Register w/out Generating Error"
-permalink: kb/083/Q83087/
+permalink: /kb/083/Q83087/
 ---
 
 ## Q83087: FIX: MASM Moves Segment Register w/out Generating Error

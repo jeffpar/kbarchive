@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138457: DOC: PUTFILE() Help Topic Says DialogCaption Is at the Top"
-permalink: kb/138/Q138457/
+permalink: /kb/138/Q138457/
 ---
 
 ## Q138457: DOC: PUTFILE() Help Topic Says DialogCaption Is at the Top

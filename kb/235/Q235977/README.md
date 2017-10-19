@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235977: Windows NT Machine Accounts Added to Host Account Cache"
-permalink: kb/235/Q235977/
+permalink: /kb/235/Q235977/
 ---
 
 ## Q235977: Windows NT Machine Accounts Added to Host Account Cache

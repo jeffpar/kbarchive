@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98512: DoubleSpace User Interface Text Not Visible on Plasma Display"
-permalink: kb/098/Q98512/
+permalink: /kb/098/Q98512/
 ---
 
 ## Q98512: DoubleSpace User Interface Text Not Visible on Plasma Display

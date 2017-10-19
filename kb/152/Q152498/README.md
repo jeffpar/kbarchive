@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152498: XADM: Unable to Enable Advanced Security on User Account"
-permalink: kb/152/Q152498/
+permalink: /kb/152/Q152498/
 ---
 
 ## Q152498: XADM: Unable to Enable Advanced Security on User Account

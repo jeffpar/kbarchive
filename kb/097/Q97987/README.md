@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97987: PC WRmt: Font Changes Make Some Text Unreadable"
-permalink: kb/097/Q97987/
+permalink: /kb/097/Q97987/
 ---
 
 ## Q97987: PC WRmt: Font Changes Make Some Text Unreadable

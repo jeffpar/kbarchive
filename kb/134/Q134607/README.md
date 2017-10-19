@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134607: Error Attempting to Specify a DBCS Security Provider"
-permalink: kb/134/Q134607/
+permalink: /kb/134/Q134607/
 ---
 
 ## Q134607: Error Attempting to Specify a DBCS Security Provider

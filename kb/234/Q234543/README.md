@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234543: Internet Explorer Installs Newer Encryption Files on SP3 but Not"
-permalink: kb/234/Q234543/
+permalink: /kb/234/Q234543/
 ---
 
 ## Q234543: Internet Explorer Installs Newer Encryption Files on SP3 but Not

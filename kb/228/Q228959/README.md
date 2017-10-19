@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228959: Midtown Madness: Snow or Traffic Lines Not Displayed Correctly"
-permalink: kb/228/Q228959/
+permalink: /kb/228/Q228959/
 ---
 
 ## Q228959: Midtown Madness: Snow or Traffic Lines Not Displayed Correctly

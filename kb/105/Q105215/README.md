@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105215: SMTP: Inbox Date Does Not Match Message Body Date"
-permalink: kb/105/Q105215/
+permalink: /kb/105/Q105215/
 ---
 
 ## Q105215: SMTP: Inbox Date Does Not Match Message Body Date

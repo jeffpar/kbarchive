@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104926: Peachtree for Windows May Not be Able to Open a Company"
-permalink: kb/104/Q104926/
+permalink: /kb/104/Q104926/
 ---
 
 ## Q104926: Peachtree for Windows May Not be Able to Open a Company

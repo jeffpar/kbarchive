@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142045: Remote Control Fails Over IPX Token-Ring Wide Area Network"
-permalink: kb/142/Q142045/
+permalink: /kb/142/Q142045/
 ---
 
 ## Q142045: Remote Control Fails Over IPX Token-Ring Wide Area Network

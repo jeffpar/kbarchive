@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182024: XFOR: Built-in WinNT System Groups Not Added to Chat Sysop"
-permalink: kb/182/Q182024/
+permalink: /kb/182/Q182024/
 ---
 
 ## Q182024: XFOR: Built-in WinNT System Groups Not Added to Chat Sysop

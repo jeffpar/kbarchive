@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86406: PC MAPI: Excel Call Function Has Incorrect Arguments"
-permalink: kb/086/Q86406/
+permalink: /kb/086/Q86406/
 ---
 
 ## Q86406: PC MAPI: Excel Call Function Has Incorrect Arguments

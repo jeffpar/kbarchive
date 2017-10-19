@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186603: Terminal Server Client Supported Platforms"
-permalink: kb/186/Q186603/
+permalink: /kb/186/Q186603/
 ---
 
 ## Q186603: Terminal Server Client Supported Platforms

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172006: Writer 2: How to Access the User's Guide Located on the CD"
-permalink: kb/172/Q172006/
+permalink: /kb/172/Q172006/
 ---
 
 ## Q172006: Writer 2: How to Access the User's Guide Located on the CD

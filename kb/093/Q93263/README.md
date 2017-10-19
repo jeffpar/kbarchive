@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93263: Using the Tandem TTE Under Windows 3.1"
-permalink: kb/093/Q93263/
+permalink: /kb/093/Q93263/
 ---
 
 ## Q93263: Using the Tandem TTE Under Windows 3.1

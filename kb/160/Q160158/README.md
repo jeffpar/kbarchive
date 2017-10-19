@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160158: Err Msg: Invalid Page Fault in Module Wininet.dll"
-permalink: kb/160/Q160158/
+permalink: /kb/160/Q160158/
 ---
 
 ## Q160158: Err Msg: Invalid Page Fault in Module Wininet.dll

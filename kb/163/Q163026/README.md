@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163026: FIX: OLE Automation with MS Project Depletes User Resources"
-permalink: kb/163/Q163026/
+permalink: /kb/163/Q163026/
 ---
 
 ## Q163026: FIX: OLE Automation with MS Project Depletes User Resources

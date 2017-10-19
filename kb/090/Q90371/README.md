@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90371: NetBIOS Applications and Windows for Workgroups"
-permalink: kb/090/Q90371/
+permalink: /kb/090/Q90371/
 ---
 
 ## Q90371: NetBIOS Applications and Windows for Workgroups

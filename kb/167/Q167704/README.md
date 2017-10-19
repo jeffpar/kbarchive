@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167704: Explanation of Windows NT 4.0 WINS Consistency Checking"
-permalink: kb/167/Q167704/
+permalink: /kb/167/Q167704/
 ---
 
 ## Q167704: Explanation of Windows NT 4.0 WINS Consistency Checking

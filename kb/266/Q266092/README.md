@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266092: XFOR: NDR When Sending an Excel Spreadsheet As an Attachment"
-permalink: kb/266/Q266092/
+permalink: /kb/266/Q266092/
 ---
 
 ## Q266092: XFOR: NDR When Sending an Excel Spreadsheet As an Attachment

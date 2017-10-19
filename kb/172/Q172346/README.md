@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172346: FIX: Unable to Disable IME Box in a Grid at Runtime"
-permalink: kb/172/Q172346/
+permalink: /kb/172/Q172346/
 ---
 
 ## Q172346: FIX: Unable to Disable IME Box in a Grid at Runtime

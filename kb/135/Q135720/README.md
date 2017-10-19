@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135720: PRB: Moving Project in SourceSafe Explorer Causes Error in VB"
-permalink: kb/135/Q135720/
+permalink: /kb/135/Q135720/
 ---
 
 ## Q135720: PRB: Moving Project in SourceSafe Explorer Causes Error in VB

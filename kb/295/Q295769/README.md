@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295769: Slow DDR Processing with a Growing DDM Backlog"
-permalink: kb/295/Q295769/
+permalink: /kb/295/Q295769/
 ---
 
 ## Q295769: Slow DDR Processing with a Growing DDM Backlog

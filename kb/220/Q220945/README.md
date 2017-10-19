@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220945: Undocumented COMTI Methods Are Exposed"
-permalink: kb/220/Q220945/
+permalink: /kb/220/Q220945/
 ---
 
 ## Q220945: Undocumented COMTI Methods Are Exposed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183283: Internet Explorer via Proxy to IIS May Stop on Page with Scripts"
-permalink: kb/183/Q183283/
+permalink: /kb/183/Q183283/
 ---
 
 ## Q183283: Internet Explorer via Proxy to IIS May Stop on Page with Scripts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310673: &quot;Cannot Open&quot; Err Msg Opening File on Shared Folders Gateway"
-permalink: kb/310/Q310673/
+permalink: /kb/310/Q310673/
 ---
 
 ## Q310673: &quot;Cannot Open&quot; Err Msg Opening File on Shared Folders Gateway

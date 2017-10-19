@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150285: XCLN: StarNine Mail Subject and Body Text Truncated"
-permalink: kb/150/Q150285/
+permalink: /kb/150/Q150285/
 ---
 
 ## Q150285: XCLN: StarNine Mail Subject and Body Text Truncated

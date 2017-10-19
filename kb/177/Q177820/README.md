@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177820: XCON: MTA Stops Unexpectedly When Accessing Memory"
-permalink: kb/177/Q177820/
+permalink: /kb/177/Q177820/
 ---
 
 ## Q177820: XCON: MTA Stops Unexpectedly When Accessing Memory

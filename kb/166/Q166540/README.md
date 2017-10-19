@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166540: XFOR: IMC Appears Hung with Improper DN Format"
-permalink: kb/166/Q166540/
+permalink: /kb/166/Q166540/
 ---
 
 ## Q166540: XFOR: IMC Appears Hung with Improper DN Format

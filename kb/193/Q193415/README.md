@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193415: PRB: Setting Decimals to 10 or More Creates Incorrect Result"
-permalink: kb/193/Q193415/
+permalink: /kb/193/Q193415/
 ---
 
 ## Q193415: PRB: Setting Decimals to 10 or More Creates Incorrect Result

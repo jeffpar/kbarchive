@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234918: XADM: No Access to Diagnostics Logging Tab on Server Properties"
-permalink: kb/234/Q234918/
+permalink: /kb/234/Q234918/
 ---
 
 ## Q234918: XADM: No Access to Diagnostics Logging Tab on Server Properties

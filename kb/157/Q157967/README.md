@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157967: XCON: No Delivery Receipt on Msg Sent to Wang via X.400"
-permalink: kb/157/Q157967/
+permalink: /kb/157/Q157967/
 ---
 
 ## Q157967: XCON: No Delivery Receipt on Msg Sent to Wang via X.400

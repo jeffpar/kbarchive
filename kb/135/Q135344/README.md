@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135344: Unable to Install Third-Party Drivers During Windows NT Upgrade"
-permalink: kb/135/Q135344/
+permalink: /kb/135/Q135344/
 ---
 
 ## Q135344: Unable to Install Third-Party Drivers During Windows NT Upgrade

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127159: Attempt to Connect to Telnet Times Out"
-permalink: kb/127/Q127159/
+permalink: /kb/127/Q127159/
 ---
 
 ## Q127159: Attempt to Connect to Telnet Times Out

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315817: Memory Leak When You Are Running Server-to-Server Shadowing"
-permalink: kb/315/Q315817/
+permalink: /kb/315/Q315817/
 ---
 
 ## Q315817: Memory Leak When You Are Running Server-to-Server Shadowing

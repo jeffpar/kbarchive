@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157628: PRB:Double Quotes in Remote View Filter Expression Cause Error"
-permalink: kb/157/Q157628/
+permalink: /kb/157/Q157628/
 ---
 
 ## Q157628: PRB:Double Quotes in Remote View Filter Expression Cause Error

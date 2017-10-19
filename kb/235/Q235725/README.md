@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235725: SMSINST: Sleep Functionality Now Built Into SMS Installer"
-permalink: kb/235/Q235725/
+permalink: /kb/235/Q235725/
 ---
 
 ## Q235725: SMSINST: Sleep Functionality Now Built Into SMS Installer

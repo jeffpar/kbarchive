@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146874: PRB: Sizebox Property Has Different Value in FoxPro for Mac"
-permalink: kb/146/Q146874/
+permalink: /kb/146/Q146874/
 ---
 
 ## Q146874: PRB: Sizebox Property Has Different Value in FoxPro for Mac

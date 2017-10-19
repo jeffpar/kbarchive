@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63583: Altering Icons for MS-DOS Applications in Windows"
-permalink: kb/063/Q63583/
+permalink: /kb/063/Q63583/
 ---
 
 ## Q63583: Altering Icons for MS-DOS Applications in Windows

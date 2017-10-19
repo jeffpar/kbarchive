@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132769: Cannot Play Wave Files on HP Vectra with Sound Blaster"
-permalink: kb/132/Q132769/
+permalink: /kb/132/Q132769/
 ---
 
 ## Q132769: Cannot Play Wave Files on HP Vectra with Sound Blaster

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85608: FAX: Typical Support Issues"
-permalink: kb/085/Q85608/
+permalink: /kb/085/Q85608/
 ---
 
 ## Q85608: FAX: Typical Support Issues

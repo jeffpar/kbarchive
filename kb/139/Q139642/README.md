@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139642: XCLN: Err Msg: TCP/IP Is Required to Run Internet Mail"
-permalink: kb/139/Q139642/
+permalink: /kb/139/Q139642/
 ---
 
 ## Q139642: XCLN: Err Msg: TCP/IP Is Required to Run Internet Mail

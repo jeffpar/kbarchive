@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186895: FIX: Custom AppWizard Errors with Applications That Have Help"
-permalink: kb/186/Q186895/
+permalink: /kb/186/Q186895/
 ---
 
 ## Q186895: FIX: Custom AppWizard Errors with Applications That Have Help

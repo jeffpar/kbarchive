@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127188: DOC: SourceSafe Undocumented Command Line Switches"
-permalink: kb/127/Q127188/
+permalink: /kb/127/Q127188/
 ---
 
 ## Q127188: DOC: SourceSafe Undocumented Command Line Switches

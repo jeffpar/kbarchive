@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235428: XCLN: Err. Message: This Feature Requires Internet Explorer 4.01"
-permalink: kb/235/Q235428/
+permalink: /kb/235/Q235428/
 ---
 
 ## Q235428: XCLN: Err. Message: This Feature Requires Internet Explorer 4.01

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130370: FIX: C2676 on Overloaded Operators of Templated Classes"
-permalink: kb/130/Q130370/
+permalink: /kb/130/Q130370/
 ---
 
 ## Q130370: FIX: C2676 on Overloaded Operators of Templated Classes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258641: Baseball 2001: Screen Turns Black When You Start the Program"
-permalink: kb/258/Q258641/
+permalink: /kb/258/Q258641/
 ---
 
 ## Q258641: Baseball 2001: Screen Turns Black When You Start the Program

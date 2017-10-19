@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276591: Error Message: Stop 0x0000001E in Win32k.sys"
-permalink: kb/276/Q276591/
+permalink: /kb/276/Q276591/
 ---
 
 ## Q276591: Error Message: Stop 0x0000001E in Win32k.sys

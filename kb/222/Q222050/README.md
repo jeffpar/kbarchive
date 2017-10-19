@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222050: Microsoft Exchange Missing in Add/Remove Programs Tool"
-permalink: kb/222/Q222050/
+permalink: /kb/222/Q222050/
 ---
 
 ## Q222050: Microsoft Exchange Missing in Add/Remove Programs Tool

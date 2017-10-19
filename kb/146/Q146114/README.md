@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146114: Heavy Load of FTP Service Results in Access Violation"
-permalink: kb/146/Q146114/
+permalink: /kb/146/Q146114/
 ---
 
 ## Q146114: Heavy Load of FTP Service Results in Access Violation

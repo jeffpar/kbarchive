@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156573: WD97: How to Recover Text from Any File"
-permalink: kb/156/Q156573/
+permalink: /kb/156/Q156573/
 ---
 
 ## Q156573: WD97: How to Recover Text from Any File

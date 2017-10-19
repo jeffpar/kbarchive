@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162602: WD97: Questions About Saving in the Word 6.0/95 File Format"
-permalink: kb/162/Q162602/
+permalink: /kb/162/Q162602/
 ---
 
 ## Q162602: WD97: Questions About Saving in the Word 6.0/95 File Format

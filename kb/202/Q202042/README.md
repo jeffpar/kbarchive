@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202042: SMS: How to Get Query Operator to Find Items with NULL Values"
-permalink: kb/202/Q202042/
+permalink: /kb/202/Q202042/
 ---
 
 ## Q202042: SMS: How to Get Query Operator to Find Items with NULL Values

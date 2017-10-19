@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89176: Networking with FoxBASE+/Mac and FoxBASE+ for MS-DOS"
-permalink: kb/089/Q89176/
+permalink: /kb/089/Q89176/
 ---
 
 ## Q89176: Networking with FoxBASE+/Mac and FoxBASE+ for MS-DOS

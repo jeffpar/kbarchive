@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177704: Networking Essentials, 2nd. Ed. Corrections Part 1"
-permalink: kb/177/Q177704/
+permalink: /kb/177/Q177704/
 ---
 
 ## Q177704: Networking Essentials, 2nd. Ed. Corrections Part 1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185711: Stop 0x50 When Shared Folders Gateway (Sffsd.sys) Is Stopped"
-permalink: kb/185/Q185711/
+permalink: /kb/185/Q185711/
 ---
 
 ## Q185711: Stop 0x50 When Shared Folders Gateway (Sffsd.sys) Is Stopped

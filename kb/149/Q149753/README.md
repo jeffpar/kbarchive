@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149753: How to Determine the Size of a User-Defined Data Type"
-permalink: kb/149/Q149753/
+permalink: /kb/149/Q149753/
 ---
 
 ## Q149753: How to Determine the Size of a User-Defined Data Type

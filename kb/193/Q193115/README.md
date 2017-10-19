@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193115: CG3: ClipGallery Opens Slowly After Installing Office SR-2 Patch"
-permalink: kb/193/Q193115/
+permalink: /kb/193/Q193115/
 ---
 
 ## Q193115: CG3: ClipGallery Opens Slowly After Installing Office SR-2 Patch

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285895: No WMI Win32_POTSModem or Win32_POTSModemToSerialPort Returns"
-permalink: kb/285/Q285895/
+permalink: /kb/285/Q285895/
 ---
 
 ## Q285895: No WMI Win32_POTSModem or Win32_POTSModemToSerialPort Returns

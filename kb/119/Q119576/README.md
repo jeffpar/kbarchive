@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119576: PPT: How to Hide Slide Show Annotation and Hidden Slide Buttons"
-permalink: kb/119/Q119576/
+permalink: /kb/119/Q119576/
 ---
 
 ## Q119576: PPT: How to Hide Slide Show Annotation and Hidden Slide Buttons

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122248: Event Id 2000 Errors In System Log"
-permalink: kb/122/Q122248/
+permalink: /kb/122/Q122248/
 ---
 
 ## Q122248: Event Id 2000 Errors In System Log

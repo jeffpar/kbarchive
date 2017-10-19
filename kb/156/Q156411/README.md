@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156411: ENDIF Does Not Work in NetWare Login Script with CSNW/GSNW"
-permalink: kb/156/Q156411/
+permalink: /kb/156/Q156411/
 ---
 
 ## Q156411: ENDIF Does Not Work in NetWare Login Script with CSNW/GSNW

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177659: Security Tab Missing in File Properties in Windows NT Explorer"
-permalink: kb/177/Q177659/
+permalink: /kb/177/Q177659/
 ---
 
 ## Q177659: Security Tab Missing in File Properties in Windows NT Explorer

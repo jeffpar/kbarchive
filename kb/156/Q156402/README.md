@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156402: SMS: PCM Looks in Wrong Path for Default Distribution Server"
-permalink: kb/156/Q156402/
+permalink: /kb/156/Q156402/
 ---
 
 ## Q156402: SMS: PCM Looks in Wrong Path for Default Distribution Server

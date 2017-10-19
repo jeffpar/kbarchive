@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132293: Windows 95 Hangs with Two PCMCIA Network Adapters"
-permalink: kb/132/Q132293/
+permalink: /kb/132/Q132293/
 ---
 
 ## Q132293: Windows 95 Hangs with Two PCMCIA Network Adapters

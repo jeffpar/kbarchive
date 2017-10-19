@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260731: Windows NT Option Pack Document Incorrectly Lists SMTP Version"
-permalink: kb/260/Q260731/
+permalink: /kb/260/Q260731/
 ---
 
 ## Q260731: Windows NT Option Pack Document Incorrectly Lists SMTP Version

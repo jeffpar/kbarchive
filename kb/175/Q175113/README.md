@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175113: XCLN: Deleted Items Folder Does Not Empty on Exit"
-permalink: kb/175/Q175113/
+permalink: /kb/175/Q175113/
 ---
 
 ## Q175113: XCLN: Deleted Items Folder Does Not Empty on Exit

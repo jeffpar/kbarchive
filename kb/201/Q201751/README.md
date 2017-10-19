@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201751: SMS: Documentation Error in Administrator's Guide about Hardware"
-permalink: kb/201/Q201751/
+permalink: /kb/201/Q201751/
 ---
 
 ## Q201751: SMS: Documentation Error in Administrator's Guide about Hardware

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235551: Exiting Full-Screen DOS Session Hangs ICA Session"
-permalink: kb/235/Q235551/
+permalink: /kb/235/Q235551/
 ---
 
 ## Q235551: Exiting Full-Screen DOS Session Hangs ICA Session

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270757: ELL: DirectX Is Not Installed on Windows NT 4.0-Based Computers"
-permalink: kb/270/Q270757/
+permalink: /kb/270/Q270757/
 ---
 
 ## Q270757: ELL: DirectX Is Not Installed on Windows NT 4.0-Based Computers

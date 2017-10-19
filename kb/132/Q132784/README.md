@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132784: Windows 95 Does Not Start on Dell Omniplex"
-permalink: kb/132/Q132784/
+permalink: /kb/132/Q132784/
 ---
 
 ## Q132784: Windows 95 Does Not Start on Dell Omniplex

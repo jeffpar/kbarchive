@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94771: Use Epson FX-80 Driver with Star SG-10 Printer"
-permalink: kb/094/Q94771/
+permalink: /kb/094/Q94771/
 ---
 
 ## Q94771: Use Epson FX-80 Driver with Star SG-10 Printer

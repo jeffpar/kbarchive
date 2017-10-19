@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161066: Permissions on WWW Default File Creates Access Denied Error Msg."
-permalink: kb/161/Q161066/
+permalink: /kb/161/Q161066/
 ---
 
 ## Q161066: Permissions on WWW Default File Creates Access Denied Error Msg.

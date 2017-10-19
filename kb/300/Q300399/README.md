@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300399: Countries Missing from List in the IIS Certificate Wizard"
-permalink: kb/300/Q300399/
+permalink: /kb/300/Q300399/
 ---
 
 ## Q300399: Countries Missing from List in the IIS Certificate Wizard

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273476: SMS: Buffer Overrun Problem in Several Network Monitor Parsers"
-permalink: kb/273/Q273476/
+permalink: /kb/273/Q273476/
 ---
 
 ## Q273476: SMS: Buffer Overrun Problem in Several Network Monitor Parsers

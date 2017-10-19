@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318056: BUG: Shutdown When Config Manager Triggers Checkout of Solution"
-permalink: kb/318/Q318056/
+permalink: /kb/318/Q318056/
 ---
 
 ## Q318056: BUG: Shutdown When Config Manager Triggers Checkout of Solution

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137814: DOC: MFC ODBC Classes and Parameterized Pre-Defined Queries"
-permalink: kb/137/Q137814/
+permalink: /kb/137/Q137814/
 ---
 
 ## Q137814: DOC: MFC ODBC Classes and Parameterized Pre-Defined Queries

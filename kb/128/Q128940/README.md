@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128940: Cannot Install DC21X4.SYS Driver Included in Service Pack 2"
-permalink: kb/128/Q128940/
+permalink: /kb/128/Q128940/
 ---
 
 ## Q128940: Cannot Install DC21X4.SYS Driver Included in Service Pack 2

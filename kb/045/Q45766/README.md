@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q45766: Mac Wkst: Sending Bcc (Blind Carbon Copy) Messages"
-permalink: kb/045/Q45766/
+permalink: /kb/045/Q45766/
 ---
 
 ## Q45766: Mac Wkst: Sending Bcc (Blind Carbon Copy) Messages

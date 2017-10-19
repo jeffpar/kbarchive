@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199220: Err Msg: The System Cannot Find the Path Specified"
-permalink: kb/199/Q199220/
+permalink: /kb/199/Q199220/
 ---
 
 ## Q199220: Err Msg: The System Cannot Find the Path Specified

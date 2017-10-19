@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134570: Network Adapter Errors Using Proteon 1346 ISA TokenRing Card"
-permalink: kb/134/Q134570/
+permalink: /kb/134/Q134570/
 ---
 
 ## Q134570: Network Adapter Errors Using Proteon 1346 ISA TokenRing Card

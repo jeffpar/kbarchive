@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246671: MapPoint: Helpful Web Sites for Creating Maps"
-permalink: kb/246/Q246671/
+permalink: /kb/246/Q246671/
 ---
 
 ## Q246671: MapPoint: Helpful Web Sites for Creating Maps

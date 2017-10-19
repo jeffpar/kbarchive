@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113783: Ndkwiz.exe Contains Latest Version of Dksetup.prg"
-permalink: kb/113/Q113783/
+permalink: /kb/113/Q113783/
 ---
 
 ## Q113783: Ndkwiz.exe Contains Latest Version of Dksetup.prg

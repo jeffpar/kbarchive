@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180145: WD97: &quot;Not Enough Memory&quot; Error When Printing from Photo Editor"
-permalink: kb/180/Q180145/
+permalink: /kb/180/Q180145/
 ---
 
 ## Q180145: WD97: &quot;Not Enough Memory&quot; Error When Printing from Photo Editor

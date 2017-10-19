@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180527: BUG: Setting WindowState = 0 Doesn't Set Window State to Normal"
-permalink: kb/180/Q180527/
+permalink: /kb/180/Q180527/
 ---
 
 ## Q180527: BUG: Setting WindowState = 0 Doesn't Set Window State to Normal

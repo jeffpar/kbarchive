@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139183: BUG: View Not Accurate with One-to-Many Grandchild Relation"
-permalink: kb/139/Q139183/
+permalink: /kb/139/Q139183/
 ---
 
 ## Q139183: BUG: View Not Accurate with One-to-Many Grandchild Relation

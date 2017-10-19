@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185950: Updating User Profiles in Mixed Environments"
-permalink: kb/185/Q185950/
+permalink: /kb/185/Q185950/
 ---
 
 ## Q185950: Updating User Profiles in Mixed Environments

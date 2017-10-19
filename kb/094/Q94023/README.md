@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94023: MS-DOS Kernel Is Larger Than 60K"
-permalink: kb/094/Q94023/
+permalink: /kb/094/Q94023/
 ---
 
 ## Q94023: MS-DOS Kernel Is Larger Than 60K

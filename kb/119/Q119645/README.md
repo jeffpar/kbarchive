@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119645: PC Win: SMTP Address Generates a Non-Delivery Report"
-permalink: kb/119/Q119645/
+permalink: /kb/119/Q119645/
 ---
 
 ## Q119645: PC Win: SMTP Address Generates a Non-Delivery Report

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181795: XADM: Directory Service Does Not Start with Event ID 1196"
-permalink: kb/181/Q181795/
+permalink: /kb/181/Q181795/
 ---
 
 ## Q181795: XADM: Directory Service Does Not Start with Event ID 1196

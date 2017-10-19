@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156355: XADM: IS Incorrectly Handles a Forward Slash in DDA Value"
-permalink: kb/156/Q156355/
+permalink: /kb/156/Q156355/
 ---
 
 ## Q156355: XADM: IS Incorrectly Handles a Forward Slash in DDA Value

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101789: Reconstructing BOOTSECT.DOS"
-permalink: kb/101/Q101789/
+permalink: /kb/101/Q101789/
 ---
 
 ## Q101789: Reconstructing BOOTSECT.DOS

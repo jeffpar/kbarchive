@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171848: FIX: Source Control Info Not Preserved During Project Conversion"
-permalink: kb/171/Q171848/
+permalink: /kb/171/Q171848/
 ---
 
 ## Q171848: FIX: Source Control Info Not Preserved During Project Conversion

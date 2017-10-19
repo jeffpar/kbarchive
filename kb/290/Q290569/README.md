@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290569: PRB: #exec with IIS Buffering Displays HTTP Headers in Browser"
-permalink: kb/290/Q290569/
+permalink: /kb/290/Q290569/
 ---
 
 ## Q290569: PRB: #exec with IIS Buffering Displays HTTP Headers in Browser

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174059: XADM: Cannot Create Custom Recipient with ^ as First Character"
-permalink: kb/174/Q174059/
+permalink: /kb/174/Q174059/
 ---
 
 ## Q174059: XADM: Cannot Create Custom Recipient with ^ as First Character

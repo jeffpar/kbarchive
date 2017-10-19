@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128234: Scheduling Windows NT Backup Fails and Locks Backup Process"
-permalink: kb/128/Q128234/
+permalink: /kb/128/Q128234/
 ---
 
 ## Q128234: Scheduling Windows NT Backup Fails and Locks Backup Process

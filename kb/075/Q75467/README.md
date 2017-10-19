@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75467: Problems Installing Number Nine Drivers"
-permalink: kb/075/Q75467/
+permalink: /kb/075/Q75467/
 ---
 
 ## Q75467: Problems Installing Number Nine Drivers

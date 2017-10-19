@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114472: PRB: Viewer Errors 6181 and 6182"
-permalink: kb/114/Q114472/
+permalink: /kb/114/Q114472/
 ---
 
 ## Q114472: PRB: Viewer Errors 6181 and 6182

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246903: Zone Err Msg: An Incomplete Zone Install Was Detected"
-permalink: kb/246/Q246903/
+permalink: /kb/246/Q246903/
 ---
 
 ## Q246903: Zone Err Msg: An Incomplete Zone Install Was Detected

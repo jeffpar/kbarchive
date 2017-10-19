@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66421: HP ThinkJet Fonts Split Characters Over Two Lines"
-permalink: kb/066/Q66421/
+permalink: /kb/066/Q66421/
 ---
 
 ## Q66421: HP ThinkJet Fonts Split Characters Over Two Lines

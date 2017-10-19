@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258981: Error When You Add LU to Connection and Pool by Using Snacfg.exe"
-permalink: kb/258/Q258981/
+permalink: /kb/258/Q258981/
 ---
 
 ## Q258981: Error When You Add LU to Connection and Pool by Using Snacfg.exe

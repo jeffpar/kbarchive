@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84114: Incorrect Extended Characters with Mixed Device and TrueType"
-permalink: kb/084/Q84114/
+permalink: /kb/084/Q84114/
 ---
 
 ## Q84114: Incorrect Extended Characters with Mixed Device and TrueType

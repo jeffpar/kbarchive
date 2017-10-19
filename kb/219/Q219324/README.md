@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219324: Access Violation When You Run 16-Bit Parent and Child Programs"
-permalink: kb/219/Q219324/
+permalink: /kb/219/Q219324/
 ---
 
 ## Q219324: Access Violation When You Run 16-Bit Parent and Child Programs

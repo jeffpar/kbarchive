@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185534: MSN Shortcut in Online Services Folder on Desktop Does Not Work"
-permalink: kb/185/Q185534/
+permalink: /kb/185/Q185534/
 ---
 
 ## Q185534: MSN Shortcut in Online Services Folder on Desktop Does Not Work

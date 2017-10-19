@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103800: MHS: INPOST.EXE Strips Local User Aliases from To: Line"
-permalink: kb/103/Q103800/
+permalink: /kb/103/Q103800/
 ---
 
 ## Q103800: MHS: INPOST.EXE Strips Local User Aliases from To: Line

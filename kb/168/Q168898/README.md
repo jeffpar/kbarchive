@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168898: PRB: Wizstyle Add Button Does Not Add Child Record"
-permalink: kb/168/Q168898/
+permalink: /kb/168/Q168898/
 ---
 
 ## Q168898: PRB: Wizstyle Add Button Does Not Add Child Record

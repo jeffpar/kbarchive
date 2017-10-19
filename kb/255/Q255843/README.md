@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255843: XCLN: Unable to Log on Exchange Server from Windows 2000 Client"
-permalink: kb/255/Q255843/
+permalink: /kb/255/Q255843/
 ---
 
 ## Q255843: XCLN: Unable to Log on Exchange Server from Windows 2000 Client

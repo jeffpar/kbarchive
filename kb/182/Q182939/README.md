@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182939: ODE97: Name &amp; Product ID Are Incorrect After Install of ODE App"
-permalink: kb/182/Q182939/
+permalink: /kb/182/Q182939/
 ---
 
 ## Q182939: ODE97: Name &amp; Product ID Are Incorrect After Install of ODE App

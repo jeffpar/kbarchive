@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130146: How to Create a Scrolling Field in a BROWSE Window"
-permalink: kb/130/Q130146/
+permalink: /kb/130/Q130146/
 ---
 
 ## Q130146: How to Create a Scrolling Field in a BROWSE Window

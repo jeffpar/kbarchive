@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114477: Cannot See Files on Shared CD-ROM Drives with Corel SCSI"
-permalink: kb/114/Q114477/
+permalink: /kb/114/Q114477/
 ---
 
 ## Q114477: Cannot See Files on Shared CD-ROM Drives with Corel SCSI

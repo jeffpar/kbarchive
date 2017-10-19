@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154086: XCLN: Err Msg: This Program has Performed an Illegal Operation"
-permalink: kb/154/Q154086/
+permalink: /kb/154/Q154086/
 ---
 
 ## Q154086: XCLN: Err Msg: This Program has Performed an Illegal Operation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190795: DOCERR: cAlias Property Missing in _login Class"
-permalink: kb/190/Q190795/
+permalink: /kb/190/Q190795/
 ---
 
 ## Q190795: DOCERR: cAlias Property Missing in _login Class

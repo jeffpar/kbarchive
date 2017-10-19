@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90206: WFWG Setup Hangs If Cabletron E2000 Series Active"
-permalink: kb/090/Q90206/
+permalink: /kb/090/Q90206/
 ---
 
 ## Q90206: WFWG Setup Hangs If Cabletron E2000 Series Active

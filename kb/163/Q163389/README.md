@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163389: &quot;Error Reading Disk...&quot; Unpacking Multi-Disk Pack And Go File"
-permalink: kb/163/Q163389/
+permalink: /kb/163/Q163389/
 ---
 
 ## Q163389: &quot;Error Reading Disk...&quot; Unpacking Multi-Disk Pack And Go File

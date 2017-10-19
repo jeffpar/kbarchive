@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149326: FIX: Multiselect with ListView Causes Lost Mouse Events"
-permalink: kb/149/Q149326/
+permalink: /kb/149/Q149326/
 ---
 
 ## Q149326: FIX: Multiselect with ListView Causes Lost Mouse Events

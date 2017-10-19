@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71785: Qualitas 386-to-the-Max Does Not Support Standard Mode"
-permalink: kb/071/Q71785/
+permalink: /kb/071/Q71785/
 ---
 
 ## Q71785: Qualitas 386-to-the-Max Does Not Support Standard Mode

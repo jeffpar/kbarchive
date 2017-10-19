@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85420: PRINTERS.WRI Assumes Device Contention for LPT Ports"
-permalink: kb/085/Q85420/
+permalink: /kb/085/Q85420/
 ---
 
 ## Q85420: PRINTERS.WRI Assumes Device Contention for LPT Ports

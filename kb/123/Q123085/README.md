@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123085: ADT2: Creating Custom Setup That Does Not Create Program Group"
-permalink: kb/123/Q123085/
+permalink: /kb/123/Q123085/
 ---
 
 ## Q123085: ADT2: Creating Custom Setup That Does Not Create Program Group

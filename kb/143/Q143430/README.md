@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143430: FIX: Pointer to Member Function Is Not Shown as Reference"
-permalink: kb/143/Q143430/
+permalink: /kb/143/Q143430/
 ---
 
 ## Q143430: FIX: Pointer to Member Function Is Not Shown as Reference

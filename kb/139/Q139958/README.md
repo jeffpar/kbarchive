@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139958: How to Update a Table from a List Box with Mover Bars"
-permalink: kb/139/Q139958/
+permalink: /kb/139/Q139958/
 ---
 
 ## Q139958: How to Update a Table from a List Box with Mover Bars

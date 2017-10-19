@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185221: XFOR: How To Specify The Font Type Used For SMTP Inbound Mails"
-permalink: kb/185/Q185221/
+permalink: /kb/185/Q185221/
 ---
 
 ## Q185221: XFOR: How To Specify The Font Type Used For SMTP Inbound Mails

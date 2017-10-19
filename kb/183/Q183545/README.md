@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183545: XWEB: NTLM Authentication Fails Between Two Computers with OWA"
-permalink: kb/183/Q183545/
+permalink: /kb/183/Q183545/
 ---
 
 ## Q183545: XWEB: NTLM Authentication Fails Between Two Computers with OWA

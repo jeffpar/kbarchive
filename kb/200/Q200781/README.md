@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200781: FP: Save Results File Name Is Accessible from HTML Source"
-permalink: kb/200/Q200781/
+permalink: /kb/200/Q200781/
 ---
 
 ## Q200781: FP: Save Results File Name Is Accessible from HTML Source

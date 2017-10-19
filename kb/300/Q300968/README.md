@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300968: Train Simulator: Installation Uses More Disk Space Than Expected"
-permalink: kb/300/Q300968/
+permalink: /kb/300/Q300968/
 ---
 
 ## Q300968: Train Simulator: Installation Uses More Disk Space Than Expected

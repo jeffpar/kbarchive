@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165076: INFO: LNK2001 on CRT Symbols in ATL Release Build"
-permalink: kb/165/Q165076/
+permalink: /kb/165/Q165076/
 ---
 
 ## Q165076: INFO: LNK2001 on CRT Symbols in ATL Release Build

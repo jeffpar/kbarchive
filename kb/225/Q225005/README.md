@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225005: Streets and Trips 2000: Error When You Print to Canon Printer"
-permalink: kb/225/Q225005/
+permalink: /kb/225/Q225005/
 ---
 
 ## Q225005: Streets and Trips 2000: Error When You Print to Canon Printer

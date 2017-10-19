@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216397: XCLN: Can't Auto Forward Messages to SMTP Address with OOF"
-permalink: kb/216/Q216397/
+permalink: /kb/216/Q216397/
 ---
 
 ## Q216397: XCLN: Can't Auto Forward Messages to SMTP Address with OOF

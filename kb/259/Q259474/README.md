@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259474: Australian Daylight Saving Time Changes for Microsoft Products"
-permalink: kb/259/Q259474/
+permalink: /kb/259/Q259474/
 ---
 
 ## Q259474: Australian Daylight Saving Time Changes for Microsoft Products

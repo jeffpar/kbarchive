@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165662: LUA LUs Not Allocated from Pools in Order of Their LU Number"
-permalink: kb/165/Q165662/
+permalink: /kb/165/Q165662/
 ---
 
 ## Q165662: LUA LUs Not Allocated from Pools in Order of Their LU Number

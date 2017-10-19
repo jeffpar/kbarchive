@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197286: Third-Party Services May Fail to Start After Upgrade to NT SP4"
-permalink: kb/197/Q197286/
+permalink: /kb/197/Q197286/
 ---
 
 ## Q197286: Third-Party Services May Fail to Start After Upgrade to NT SP4

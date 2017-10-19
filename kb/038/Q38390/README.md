@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q38390: Mac DOS: Notifier Should Not Be Started from a MS-DOS Shell"
-permalink: kb/038/Q38390/
+permalink: /kb/038/Q38390/
 ---
 
 ## Q38390: Mac DOS: Notifier Should Not Be Started from a MS-DOS Shell

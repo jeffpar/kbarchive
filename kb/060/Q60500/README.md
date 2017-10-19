@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60500: How to Abort Compilation When Using PWB"
-permalink: kb/060/Q60500/
+permalink: /kb/060/Q60500/
 ---
 
 ## Q60500: How to Abort Compilation When Using PWB

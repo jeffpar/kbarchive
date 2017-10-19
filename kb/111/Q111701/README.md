@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111701: Microsoft Mail REBUILD.EXE 3.2.16 Update"
-permalink: kb/111/Q111701/
+permalink: /kb/111/Q111701/
 ---
 
 ## Q111701: Microsoft Mail REBUILD.EXE 3.2.16 Update

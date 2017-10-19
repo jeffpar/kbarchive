@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239081: XADM: Event 1016 Logged During Mailbox Manager Cleanup"
-permalink: kb/239/Q239081/
+permalink: /kb/239/Q239081/
 ---
 
 ## Q239081: XADM: Event 1016 Logged During Mailbox Manager Cleanup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197629: SLI Application Fails With LUA_RESERVED_FIELD_NOT_ZERO"
-permalink: kb/197/Q197629/
+permalink: /kb/197/Q197629/
 ---
 
 ## Q197629: SLI Application Fails With LUA_RESERVED_FIELD_NOT_ZERO

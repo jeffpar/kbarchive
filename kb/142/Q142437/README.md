@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142437: Error Adding Global Group to Local Group of Another Domain"
-permalink: kb/142/Q142437/
+permalink: /kb/142/Q142437/
 ---
 
 ## Q142437: Error Adding Global Group to Local Group of Another Domain

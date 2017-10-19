@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200967: SMS: How to T-shoot Advertisements That Are Not Seen by Clients"
-permalink: kb/200/Q200967/
+permalink: /kb/200/Q200967/
 ---
 
 ## Q200967: SMS: How to T-shoot Advertisements That Are Not Seen by Clients

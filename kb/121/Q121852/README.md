@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121852: Network Client Support for Systems Management Server"
-permalink: kb/121/Q121852/
+permalink: /kb/121/Q121852/
 ---
 
 ## Q121852: Network Client Support for Systems Management Server

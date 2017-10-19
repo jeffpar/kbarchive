@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240366: NFL Fever: Unexpectedly Minimized When You Open Players Guide"
-permalink: kb/240/Q240366/
+permalink: /kb/240/Q240366/
 ---
 
 ## Q240366: NFL Fever: Unexpectedly Minimized When You Open Players Guide

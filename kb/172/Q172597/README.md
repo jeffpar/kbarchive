@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172597: How to Manually Uninstall the NT 4.0 Resource Kit"
-permalink: kb/172/Q172597/
+permalink: /kb/172/Q172597/
 ---
 
 ## Q172597: How to Manually Uninstall the NT 4.0 Resource Kit

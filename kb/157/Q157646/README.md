@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157646: XCLN: Custom Install Proceeds Even When no Options are Selected"
-permalink: kb/157/Q157646/
+permalink: /kb/157/Q157646/
 ---
 
 ## Q157646: XCLN: Custom Install Proceeds Even When no Options are Selected

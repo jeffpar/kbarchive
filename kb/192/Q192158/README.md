@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192158: Y2K: NTMMTA Dirsync Process Incorrectly Logs Dates Beyond 1999"
-permalink: kb/192/Q192158/
+permalink: /kb/192/Q192158/
 ---
 
 ## Q192158: Y2K: NTMMTA Dirsync Process Incorrectly Logs Dates Beyond 1999

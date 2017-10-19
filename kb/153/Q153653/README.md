@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153653: Remote Control: File Transfer Display Field Is Small"
-permalink: kb/153/Q153653/
+permalink: /kb/153/Q153653/
 ---
 
 ## Q153653: Remote Control: File Transfer Display Field Is Small

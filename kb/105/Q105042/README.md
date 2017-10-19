@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105042: HOWTO: Add/Remove Network Connections in FoxPro"
-permalink: kb/105/Q105042/
+permalink: /kb/105/Q105042/
 ---
 
 ## Q105042: HOWTO: Add/Remove Network Connections in FoxPro

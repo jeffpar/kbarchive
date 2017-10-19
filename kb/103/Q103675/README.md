@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103675: Err Msg: This Operation is Not Allowed in this Special Group"
-permalink: kb/103/Q103675/
+permalink: /kb/103/Q103675/
 ---
 
 ## Q103675: Err Msg: This Operation is Not Allowed in this Special Group

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71980: DOCERR: MASM 6.0 Makefile BELL.MAK Gives C1024 Compiler Error"
-permalink: kb/071/Q71980/
+permalink: /kb/071/Q71980/
 ---
 
 ## Q71980: DOCERR: MASM 6.0 Makefile BELL.MAK Gives C1024 Compiler Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289794: HTMLA with SSL Incorrectly Warns of a Non-Secure Connection"
-permalink: kb/289/Q289794/
+permalink: /kb/289/Q289794/
 ---
 
 ## Q289794: HTMLA with SSL Incorrectly Warns of a Non-Secure Connection

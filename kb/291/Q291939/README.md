@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291939: Reader: Error Messages Appear When Attempting to Delete eBook"
-permalink: kb/291/Q291939/
+permalink: /kb/291/Q291939/
 ---
 
 ## Q291939: Reader: Error Messages Appear When Attempting to Delete eBook

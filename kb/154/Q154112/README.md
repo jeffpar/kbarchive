@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154112: FIX: ClassView Cannot Find Template Member Function Definition"
-permalink: kb/154/Q154112/
+permalink: /kb/154/Q154112/
 ---
 
 ## Q154112: FIX: ClassView Cannot Find Template Member Function Definition

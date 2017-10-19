@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90343: LAN Manager Logon Scripts Cause System Integrity Violations"
-permalink: kb/090/Q90343/
+permalink: /kb/090/Q90343/
 ---
 
 ## Q90343: LAN Manager Logon Scripts Cause System Integrity Violations

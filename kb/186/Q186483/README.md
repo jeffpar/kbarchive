@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186483: NetDDE Service: Error 2185 - The Service Name is Invalid"
-permalink: kb/186/Q186483/
+permalink: /kb/186/Q186483/
 ---
 
 ## Q186483: NetDDE Service: Error 2185 - The Service Name is Invalid

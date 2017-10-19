@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145851: Pregnancy: Keyboard Shortcuts"
-permalink: kb/145/Q145851/
+permalink: /kb/145/Q145851/
 ---
 
 ## Q145851: Pregnancy: Keyboard Shortcuts

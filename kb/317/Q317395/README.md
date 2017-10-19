@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317395: Reader: How to Transfer E-books to Your Pocket PC"
-permalink: kb/317/Q317395/
+permalink: /kb/317/Q317395/
 ---
 
 ## Q317395: Reader: How to Transfer E-books to Your Pocket PC

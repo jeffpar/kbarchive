@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239715: IAS Does Not Proxy Digital Signatures"
-permalink: kb/239/Q239715/
+permalink: /kb/239/Q239715/
 ---
 
 ## Q239715: IAS Does Not Proxy Digital Signatures

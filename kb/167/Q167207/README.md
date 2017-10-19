@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167207: XADM: Incorrect Status for Storage Limits in Mailbox Resources"
-permalink: kb/167/Q167207/
+permalink: /kb/167/Q167207/
 ---
 
 ## Q167207: XADM: Incorrect Status for Storage Limits in Mailbox Resources

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157716: BUG: Invalid Handle Message When Attempting a Show Diffs"
-permalink: kb/157/Q157716/
+permalink: /kb/157/Q157716/
 ---
 
 ## Q157716: BUG: Invalid Handle Message When Attempting a Show Diffs

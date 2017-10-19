@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231531: MapPoint: Cannot Save Map as Web Page to Network Server"
-permalink: kb/231/Q231531/
+permalink: /kb/231/Q231531/
 ---
 
 ## Q231531: MapPoint: Cannot Save Map as Web Page to Network Server

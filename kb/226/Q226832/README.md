@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226832: SMS: Software Licensing Offline Uploads Cease w/Synchronization"
-permalink: kb/226/Q226832/
+permalink: /kb/226/Q226832/
 ---
 
 ## Q226832: SMS: Software Licensing Offline Uploads Cease w/Synchronization

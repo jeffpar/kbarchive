@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162175: PPT: Sample VB Code to Reverse Order of Slides"
-permalink: kb/162/Q162175/
+permalink: /kb/162/Q162175/
 ---
 
 ## Q162175: PPT: Sample VB Code to Reverse Order of Slides

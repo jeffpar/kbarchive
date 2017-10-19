@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224008: Print Services for Macintosh Do Not Work at Times"
-permalink: kb/224/Q224008/
+permalink: /kb/224/Q224008/
 ---
 
 ## Q224008: Print Services for Macintosh Do Not Work at Times

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314434: SMS: SNMPELEA Event Errors on Client Install to Windows 2000"
-permalink: kb/314/Q314434/
+permalink: /kb/314/Q314434/
 ---
 
 ## Q314434: SMS: SNMPELEA Event Errors on Client Install to Windows 2000

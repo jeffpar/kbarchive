@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187655: Err Msg: System Error 224 Occurred"
-permalink: kb/187/Q187655/
+permalink: /kb/187/Q187655/
 ---
 
 ## Q187655: Err Msg: System Error 224 Occurred

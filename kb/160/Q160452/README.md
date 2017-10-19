@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160452: NVAlert Service Logs Event 3006 and Stops Responding"
-permalink: kb/160/Q160452/
+permalink: /kb/160/Q160452/
 ---
 
 ## Q160452: NVAlert Service Logs Event 3006 and Stops Responding

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q284112: File Names Not Listed When You Query with Descending Sorted Rank"
-permalink: kb/284/Q284112/
+permalink: /kb/284/Q284112/
 ---
 
 ## Q284112: File Names Not Listed When You Query with Descending Sorted Rank

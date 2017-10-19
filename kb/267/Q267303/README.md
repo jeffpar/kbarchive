@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267303: BUG: Creating Project Under Template Folder Excludes Files"
-permalink: kb/267/Q267303/
+permalink: /kb/267/Q267303/
 ---
 
 ## Q267303: BUG: Creating Project Under Template Folder Excludes Files

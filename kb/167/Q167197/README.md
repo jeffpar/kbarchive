@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167197: XFOR: Using Imcext.dll May Incorrectly Format Message Headers"
-permalink: kb/167/Q167197/
+permalink: /kb/167/Q167197/
 ---
 
 ## Q167197: XFOR: Using Imcext.dll May Incorrectly Format Message Headers

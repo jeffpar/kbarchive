@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210533: Golf 99: Program Hangs Drawing Fifth Hole in Donald Ross Course"
-permalink: kb/210/Q210533/
+permalink: /kb/210/Q210533/
 ---
 
 ## Q210533: Golf 99: Program Hangs Drawing Fifth Hole in Donald Ross Course

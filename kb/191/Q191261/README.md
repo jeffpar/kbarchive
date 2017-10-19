@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191261: XFOR: All Outbound IMC Mail NDRs: &quot;We Do Not Relay&quot;"
-permalink: kb/191/Q191261/
+permalink: /kb/191/Q191261/
 ---
 
 ## Q191261: XFOR: All Outbound IMC Mail NDRs: &quot;We Do Not Relay&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140822: Winlogon Traps Running Performance Monitor Against SNA Server"
-permalink: kb/140/Q140822/
+permalink: /kb/140/Q140822/
 ---
 
 ## Q140822: Winlogon Traps Running Performance Monitor Against SNA Server

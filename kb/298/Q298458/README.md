@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298458: Frequently Asked Questions for Windows NT 4.0"
-permalink: kb/298/Q298458/
+permalink: /kb/298/Q298458/
 ---
 
 ## Q298458: Frequently Asked Questions for Windows NT 4.0

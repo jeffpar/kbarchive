@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157147: FP: TCP/IP Test Fails But Other Internet Programs Run"
-permalink: kb/157/Q157147/
+permalink: /kb/157/Q157147/
 ---
 
 ## Q157147: FP: TCP/IP Test Fails But Other Internet Programs Run

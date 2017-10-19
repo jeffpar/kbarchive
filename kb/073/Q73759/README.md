@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73759: Mac Hyp: Getting the Zone of the Current Server"
-permalink: kb/073/Q73759/
+permalink: /kb/073/Q73759/
 ---
 
 ## Q73759: Mac Hyp: Getting the Zone of the Current Server

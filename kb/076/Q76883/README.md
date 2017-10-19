@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76883: Performing a Search While Playing Atlas MIDI Anthems"
-permalink: kb/076/Q76883/
+permalink: /kb/076/Q76883/
 ---
 
 ## Q76883: Performing a Search While Playing Atlas MIDI Anthems

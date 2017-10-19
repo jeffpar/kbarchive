@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255672: CAPS LOCK Functionality Is Inverted When Client Logs On"
-permalink: kb/255/Q255672/
+permalink: /kb/255/Q255672/
 ---
 
 ## Q255672: CAPS LOCK Functionality Is Inverted When Client Logs On

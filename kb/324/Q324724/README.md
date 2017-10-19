@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q324724: BUG: Backup Sponsor Servers Added to Client's Sponsor Server Lis"
-permalink: kb/324/Q324724/
+permalink: /kb/324/Q324724/
 ---
 
 ## Q324724: BUG: Backup Sponsor Servers Added to Client's Sponsor Server Lis

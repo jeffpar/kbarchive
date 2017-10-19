@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153150: XFOR: Err Msg: IMC The Following Recipient Couldn't Be Reached"
-permalink: kb/153/Q153150/
+permalink: /kb/153/Q153150/
 ---
 
 ## Q153150: XFOR: Err Msg: IMC The Following Recipient Couldn't Be Reached

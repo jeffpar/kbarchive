@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287147: FP: ErrMsg: &quot;Database Results Error&quot; Updating Database Record"
-permalink: kb/287/Q287147/
+permalink: /kb/287/Q287147/
 ---
 
 ## Q287147: FP: ErrMsg: &quot;Database Results Error&quot; Updating Database Record

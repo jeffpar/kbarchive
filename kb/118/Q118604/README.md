@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118604: WFWG 3.11 NDIS 2 Net Adapter Drivers Not Included in WGAO 3.11"
-permalink: kb/118/Q118604/
+permalink: /kb/118/Q118604/
 ---
 
 ## Q118604: WFWG 3.11 NDIS 2 Net Adapter Drivers Not Included in WGAO 3.11

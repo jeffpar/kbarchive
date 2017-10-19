@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171818: FIX: IDE Crashes When Repeatedly Placing a Control on a Form"
-permalink: kb/171/Q171818/
+permalink: /kb/171/Q171818/
 ---
 
 ## Q171818: FIX: IDE Crashes When Repeatedly Placing a Control on a Form

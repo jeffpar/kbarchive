@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180841: HOWTO: Common DDL SQL for the Microsoft Access Database Engine"
-permalink: kb/180/Q180841/
+permalink: /kb/180/Q180841/
 ---
 
 ## Q180841: HOWTO: Common DDL SQL for the Microsoft Access Database Engine

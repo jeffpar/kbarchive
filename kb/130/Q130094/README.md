@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130094: HyperTerminal Defaults to Courier New 8 Point"
-permalink: kb/130/Q130094/
+permalink: /kb/130/Q130094/
 ---
 
 ## Q130094: HyperTerminal Defaults to Courier New 8 Point

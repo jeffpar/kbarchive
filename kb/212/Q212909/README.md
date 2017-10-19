@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q212909: SMS: How to Confirm Number of Resources Contained in Collections"
-permalink: kb/212/Q212909/
+permalink: /kb/212/Q212909/
 ---
 
 ## Q212909: SMS: How to Confirm Number of Resources Contained in Collections

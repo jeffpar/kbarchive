@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173944: Err Msg: Windows Cannot Find the File Program.exe. This..."
-permalink: kb/173/Q173944/
+permalink: /kb/173/Q173944/
 ---
 
 ## Q173944: Err Msg: Windows Cannot Find the File Program.exe. This...

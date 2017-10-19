@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301461: Ad Rotator Does Not Connect Through a Proxy"
-permalink: kb/301/Q301461/
+permalink: /kb/301/Q301461/
 ---
 
 ## Q301461: Ad Rotator Does Not Connect Through a Proxy

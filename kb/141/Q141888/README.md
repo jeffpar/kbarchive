@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141888: Blocks32: Demonstrates CRectTracker Class"
-permalink: kb/141/Q141888/
+permalink: /kb/141/Q141888/
 ---
 
 ## Q141888: Blocks32: Demonstrates CRectTracker Class

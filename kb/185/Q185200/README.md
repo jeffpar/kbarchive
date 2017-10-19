@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185200: How to Share a Common List of Fax Numbers in Exchange"
-permalink: kb/185/Q185200/
+permalink: /kb/185/Q185200/
 ---
 
 ## Q185200: How to Share a Common List of Fax Numbers in Exchange

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105061: ScanDisk Fails to Reset Video Mode Correctly"
-permalink: kb/105/Q105061/
+permalink: /kb/105/Q105061/
 ---
 
 ## Q105061: ScanDisk Fails to Reset Video Mode Correctly

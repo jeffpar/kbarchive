@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189950: HOWTO: Install the Microsoft Windowless Controls for VB6"
-permalink: kb/189/Q189950/
+permalink: /kb/189/Q189950/
 ---
 
 ## Q189950: HOWTO: Install the Microsoft Windowless Controls for VB6

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85616: FAX: Major Limitations of Microsoft Mail Gateway to Fax"
-permalink: kb/085/Q85616/
+permalink: /kb/085/Q85616/
 ---
 
 ## Q85616: FAX: Major Limitations of Microsoft Mail Gateway to Fax

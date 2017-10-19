@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194221: HOWTO: Use the UniformAxis Property to Control Chart Scaling"
-permalink: kb/194/Q194221/
+permalink: /kb/194/Q194221/
 ---
 
 ## Q194221: HOWTO: Use the UniformAxis Property to Control Chart Scaling

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183179: Using PL/I Programs with COM Transaction Integrator"
-permalink: kb/183/Q183179/
+permalink: /kb/183/Q183179/
 ---
 
 ## Q183179: Using PL/I Programs with COM Transaction Integrator

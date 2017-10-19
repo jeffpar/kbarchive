@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242081: NT 4.0 SP4 causes computer with Adaptec AAA-13x adapter to hang."
-permalink: kb/242/Q242081/
+permalink: /kb/242/Q242081/
 ---
 
 ## Q242081: NT 4.0 SP4 causes computer with Adaptec AAA-13x adapter to hang.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258096: Programming the Microsoft Windows Driver Model Comments and Corr"
-permalink: kb/258/Q258096/
+permalink: /kb/258/Q258096/
 ---
 
 ## Q258096: Programming the Microsoft Windows Driver Model Comments and Corr

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314613: Asheron's Call: Known Video Issues"
-permalink: kb/314/Q314613/
+permalink: /kb/314/Q314613/
 ---
 
 ## Q314613: Asheron's Call: Known Video Issues

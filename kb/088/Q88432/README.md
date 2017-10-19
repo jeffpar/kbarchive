@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88432: STB Video Cards and Windows"
-permalink: kb/088/Q88432/
+permalink: /kb/088/Q88432/
 ---
 
 ## Q88432: STB Video Cards and Windows

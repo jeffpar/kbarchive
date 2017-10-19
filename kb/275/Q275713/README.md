@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275713: Access Violation When RAS Is Disabled"
-permalink: kb/275/Q275713/
+permalink: /kb/275/Q275713/
 ---
 
 ## Q275713: Access Violation When RAS Is Disabled

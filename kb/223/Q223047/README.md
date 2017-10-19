@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223047: XCLN: AutoArchive Settings Do Not Work For Additional Mailboxes"
-permalink: kb/223/Q223047/
+permalink: /kb/223/Q223047/
 ---
 
 ## Q223047: XCLN: AutoArchive Settings Do Not Work For Additional Mailboxes

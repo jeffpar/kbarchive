@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94387: Setup Creates OLD_DOS.x Directory with /G &amp; /H Switches"
-permalink: kb/094/Q94387/
+permalink: /kb/094/Q94387/
 ---
 
 ## Q94387: Setup Creates OLD_DOS.x Directory with /G &amp; /H Switches

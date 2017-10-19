@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217174: FIX: APPEND FROM TYPE XL8 Makes VFP 6 Disappear"
-permalink: kb/217/Q217174/
+permalink: /kb/217/Q217174/
 ---
 
 ## Q217174: FIX: APPEND FROM TYPE XL8 Makes VFP 6 Disappear

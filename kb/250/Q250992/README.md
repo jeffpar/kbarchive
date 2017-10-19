@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250992: SMS Provider Hangs Under Stress from Multiple Admin Consoles"
-permalink: kb/250/Q250992/
+permalink: /kb/250/Q250992/
 ---
 
 ## Q250992: SMS Provider Hangs Under Stress from Multiple Admin Consoles

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240029: Encarta 98: Computer Hangs During Playback of Video Clips"
-permalink: kb/240/Q240029/
+permalink: /kb/240/Q240029/
 ---
 
 ## Q240029: Encarta 98: Computer Hangs During Playback of Video Clips

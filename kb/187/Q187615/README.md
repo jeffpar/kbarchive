@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187615: Setup Hangs When System Includes More Than Two RAW Drives"
-permalink: kb/187/Q187615/
+permalink: /kb/187/Q187615/
 ---
 
 ## Q187615: Setup Hangs When System Includes More Than Two RAW Drives

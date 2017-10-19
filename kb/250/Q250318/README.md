@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250318: Windows NT Explorer Reports &quot;The Parameter Is Incorrect&quot;"
-permalink: kb/250/Q250318/
+permalink: /kb/250/Q250318/
 ---
 
 ## Q250318: Windows NT Explorer Reports &quot;The Parameter Is Incorrect&quot;

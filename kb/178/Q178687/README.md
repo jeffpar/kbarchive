@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178687: WINS Resolution Is Automatically Disabled"
-permalink: kb/178/Q178687/
+permalink: /kb/178/Q178687/
 ---
 
 ## Q178687: WINS Resolution Is Automatically Disabled

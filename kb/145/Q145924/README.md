@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145924: XCLN: Insert Message View Shows Incorrect List"
-permalink: kb/145/Q145924/
+permalink: /kb/145/Q145924/
 ---
 
 ## Q145924: XCLN: Insert Message View Shows Incorrect List

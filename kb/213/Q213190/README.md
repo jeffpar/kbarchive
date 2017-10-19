@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213190: SMS: Can't Register Apps with No Extension in Original Name Mode"
-permalink: kb/213/Q213190/
+permalink: /kb/213/Q213190/
 ---
 
 ## Q213190: SMS: Can't Register Apps with No Extension in Original Name Mode

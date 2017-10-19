@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145732: FIX: Cannot Enter All Ten Digits of CD Key at Setup Time"
-permalink: kb/145/Q145732/
+permalink: /kb/145/Q145732/
 ---
 
 ## Q145732: FIX: Cannot Enter All Ten Digits of CD Key at Setup Time

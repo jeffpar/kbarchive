@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140933: XFOR: SMTP Proxy Address Generated Incorrectly"
-permalink: kb/140/Q140933/
+permalink: /kb/140/Q140933/
 ---
 
 ## Q140933: XFOR: SMTP Proxy Address Generated Incorrectly

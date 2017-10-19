@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163464: XCON: Free Form Name Attribute Not Handled By Sprint"
-permalink: kb/163/Q163464/
+permalink: /kb/163/Q163464/
 ---
 
 ## Q163464: XCON: Free Form Name Attribute Not Handled By Sprint

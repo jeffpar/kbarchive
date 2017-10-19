@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141504: HOWTO: Make SourceSafe Keyword Expansion Work in Text Docs"
-permalink: kb/141/Q141504/
+permalink: /kb/141/Q141504/
 ---
 
 ## Q141504: HOWTO: Make SourceSafe Keyword Expansion Work in Text Docs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168656: XCON: Given and Surnames Moved to the Front of FROM: Line"
-permalink: kb/168/Q168656/
+permalink: /kb/168/Q168656/
 ---
 
 ## Q168656: XCON: Given and Surnames Moved to the Front of FROM: Line

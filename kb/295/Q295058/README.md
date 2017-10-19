@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295058: SMS: Memory Leak During SMS_Advertisement Instance Enumeration"
-permalink: kb/295/Q295058/
+permalink: /kb/295/Q295058/
 ---
 
 ## Q295058: SMS: Memory Leak During SMS_Advertisement Instance Enumeration

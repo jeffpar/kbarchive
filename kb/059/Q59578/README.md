@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59578: Maximum File Size Limits for Notepad"
-permalink: kb/059/Q59578/
+permalink: /kb/059/Q59578/
 ---
 
 ## Q59578: Maximum File Size Limits for Notepad

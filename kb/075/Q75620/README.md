@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75620: LAN Manager/MS-DOS 5.0 Supplemental Disks"
-permalink: kb/075/Q75620/
+permalink: /kb/075/Q75620/
 ---
 
 ## Q75620: LAN Manager/MS-DOS 5.0 Supplemental Disks

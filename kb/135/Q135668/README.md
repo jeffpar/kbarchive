@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135668: Hardware Detection Hangs with Xircom Pocket Ethernet Adapter"
-permalink: kb/135/Q135668/
+permalink: /kb/135/Q135668/
 ---
 
 ## Q135668: Hardware Detection Hangs with Xircom Pocket Ethernet Adapter

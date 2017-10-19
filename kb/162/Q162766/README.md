@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162766: WINS Records Are Timestamped Incorrectly"
-permalink: kb/162/Q162766/
+permalink: /kb/162/Q162766/
 ---
 
 ## Q162766: WINS Records Are Timestamped Incorrectly

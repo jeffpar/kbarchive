@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167035: Print Queue May Stop Responding When Running LPR on Server"
-permalink: kb/167/Q167035/
+permalink: /kb/167/Q167035/
 ---
 
 ## Q167035: Print Queue May Stop Responding When Running LPR on Server

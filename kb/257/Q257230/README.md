@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257230: HOWTO: Display a Form in a Top-Level Form on Startup"
-permalink: kb/257/Q257230/
+permalink: /kb/257/Q257230/
 ---
 
 ## Q257230: HOWTO: Display a Form in a Top-Level Form on Startup

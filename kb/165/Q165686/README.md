@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165686: INFO: Visual C++ 5.0 Readme, Wizard and User-Interface Issues"
-permalink: kb/165/Q165686/
+permalink: /kb/165/Q165686/
 ---
 
 ## Q165686: INFO: Visual C++ 5.0 Readme, Wizard and User-Interface Issues

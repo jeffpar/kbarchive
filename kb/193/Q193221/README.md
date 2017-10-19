@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193221: XADM: Per-Entity MTA Counters Not Working After Upgrade"
-permalink: kb/193/Q193221/
+permalink: /kb/193/Q193221/
 ---
 
 ## Q193221: XADM: Per-Entity MTA Counters Not Working After Upgrade

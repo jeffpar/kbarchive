@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268886: XADM: Exchange Server 5.5 Post-SP3 Emsmdb32.dll Fixes Available"
-permalink: kb/268/Q268886/
+permalink: /kb/268/Q268886/
 ---
 
 ## Q268886: XADM: Exchange Server 5.5 Post-SP3 Emsmdb32.dll Fixes Available

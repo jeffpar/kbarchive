@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177258: WWW Service Stops Responding When You Stop Web Site in MMC"
-permalink: kb/177/Q177258/
+permalink: /kb/177/Q177258/
 ---
 
 ## Q177258: WWW Service Stops Responding When You Stop Web Site in MMC

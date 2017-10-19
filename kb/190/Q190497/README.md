@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190497: PRB: List Box Becomes Distorted Counting the Selected Items"
-permalink: kb/190/Q190497/
+permalink: /kb/190/Q190497/
 ---
 
 ## Q190497: PRB: List Box Becomes Distorted Counting the Selected Items

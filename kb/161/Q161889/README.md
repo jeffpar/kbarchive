@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161889: XCLN: OST and PST Quick Reference"
-permalink: kb/161/Q161889/
+permalink: /kb/161/Q161889/
 ---
 
 ## Q161889: XCLN: OST and PST Quick Reference

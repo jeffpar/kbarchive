@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100089: Updated MS-AV Files Create CHKLIST.CPS Files, Not .MS Files"
-permalink: kb/100/Q100089/
+permalink: /kb/100/Q100089/
 ---
 
 ## Q100089: Updated MS-AV Files Create CHKLIST.CPS Files, Not .MS Files

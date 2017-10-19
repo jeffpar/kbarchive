@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103704: How to Change a Windows NT Computer Name in an NT AS Domain"
-permalink: kb/103/Q103704/
+permalink: /kb/103/Q103704/
 ---
 
 ## Q103704: How to Change a Windows NT Computer Name in an NT AS Domain

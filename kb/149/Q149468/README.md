@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149468: CSNW Clients May Cause Clipper Index Corruption"
-permalink: kb/149/Q149468/
+permalink: /kb/149/Q149468/
 ---
 
 ## Q149468: CSNW Clients May Cause Clipper Index Corruption

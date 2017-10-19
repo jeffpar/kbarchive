@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186054: SLI_SEND/SLI_RECEIVE Can Send/Receive A Maximum Of 65 KB Of Data"
-permalink: kb/186/Q186054/
+permalink: /kb/186/Q186054/
 ---
 
 ## Q186054: SLI_SEND/SLI_RECEIVE Can Send/Receive A Maximum Of 65 KB Of Data

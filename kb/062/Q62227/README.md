@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62227: Optimum Hardware for Running Flight Simulator"
-permalink: kb/062/Q62227/
+permalink: /kb/062/Q62227/
 ---
 
 ## Q62227: Optimum Hardware for Running Flight Simulator

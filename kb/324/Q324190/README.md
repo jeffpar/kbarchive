@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q324190: Cannot Map Groups with a GID That Is Longer Than 999,999"
-permalink: kb/324/Q324190/
+permalink: /kb/324/Q324190/
 ---
 
 ## Q324190: Cannot Map Groups with a GID That Is Longer Than 999,999

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253358: XWEB: OWA Issue Generates Stack That Contains CDO!FEqBin+0xa"
-permalink: kb/253/Q253358/
+permalink: /kb/253/Q253358/
 ---
 
 ## Q253358: XWEB: OWA Issue Generates Stack That Contains CDO!FEqBin+0xa

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104988: How to Recover from a Failed MS-DOS 6.2 Step-Up Installation"
-permalink: kb/104/Q104988/
+permalink: /kb/104/Q104988/
 ---
 
 ## Q104988: How to Recover from a Failed MS-DOS 6.2 Step-Up Installation

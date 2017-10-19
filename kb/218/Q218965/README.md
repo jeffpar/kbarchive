@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218965: HOWTO: Obtain the Owner of a File on Windows NT"
-permalink: kb/218/Q218965/
+permalink: /kb/218/Q218965/
 ---
 
 ## Q218965: HOWTO: Obtain the Owner of a File on Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119507: Problems Accessing Extended Characters When Using KBDUSX.DLL"
-permalink: kb/119/Q119507/
+permalink: /kb/119/Q119507/
 ---
 
 ## Q119507: Problems Accessing Extended Characters When Using KBDUSX.DLL

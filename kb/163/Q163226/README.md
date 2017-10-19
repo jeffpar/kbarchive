@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163226: PaperPort Driver Setup Button May Be Unavailable"
-permalink: kb/163/Q163226/
+permalink: /kb/163/Q163226/
 ---
 
 ## Q163226: PaperPort Driver Setup Button May Be Unavailable

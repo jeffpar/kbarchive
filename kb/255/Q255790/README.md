@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255790: HOWTO: Use a DataCombo ActiveX Control in Visual FoxPro"
-permalink: kb/255/Q255790/
+permalink: /kb/255/Q255790/
 ---
 
 ## Q255790: HOWTO: Use a DataCombo ActiveX Control in Visual FoxPro

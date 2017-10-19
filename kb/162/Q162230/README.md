@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162230: Fragmentation and Performance Issues with PPTP Connections"
-permalink: kb/162/Q162230/
+permalink: /kb/162/Q162230/
 ---
 
 ## Q162230: Fragmentation and Performance Issues with PPTP Connections

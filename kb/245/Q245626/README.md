@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245626: INFO: Use &quot;-localquorum&quot; Switch Install Single-Node MSCS Cluster"
-permalink: kb/245/Q245626/
+permalink: /kb/245/Q245626/
 ---
 
 ## Q245626: INFO: Use &quot;-localquorum&quot; Switch Install Single-Node MSCS Cluster

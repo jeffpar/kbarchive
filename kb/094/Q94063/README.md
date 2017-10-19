@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q94063: LAN Man Setup Hangs with Two [tcpip_node] Sections"
-permalink: kb/094/Q94063/
+title: "Q94063: LAN Man Setup Hangs with Two &#91;tcpip_node&#93; Sections"
+permalink: /kb/094/Q94063/
 ---
 
-## Q94063: LAN Man Setup Hangs with Two [tcpip_node] Sections
+## Q94063: LAN Man Setup Hangs with Two &#91;tcpip_node&#93; Sections
 
 	Article: Q94063
 	Product(s): Microsoft LAN Manager

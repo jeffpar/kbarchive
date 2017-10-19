@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82253: Applications Appearing in Windows 3.1 APPS.HLP (A-C)"
-permalink: kb/082/Q82253/
+permalink: /kb/082/Q82253/
 ---
 
 ## Q82253: Applications Appearing in Windows 3.1 APPS.HLP (A-C)

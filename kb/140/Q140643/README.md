@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140643: STOP 0x0000000A Using STB Video Card and Adaptec Controller"
-permalink: kb/140/Q140643/
+permalink: /kb/140/Q140643/
 ---
 
 ## Q140643: STOP 0x0000000A Using STB Video Card and Adaptec Controller

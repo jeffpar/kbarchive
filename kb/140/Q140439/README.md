@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140439: FIX: Namespace Scoped Classes Don't Show Up in ClassView"
-permalink: kb/140/Q140439/
+permalink: /kb/140/Q140439/
 ---
 
 ## Q140439: FIX: Namespace Scoped Classes Don't Show Up in ClassView

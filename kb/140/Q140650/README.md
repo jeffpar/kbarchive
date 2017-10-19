@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140650: PPT: PowerPoint Overrides Default Graph Color Scheme"
-permalink: kb/140/Q140650/
+permalink: /kb/140/Q140650/
 ---
 
 ## Q140650: PPT: PowerPoint Overrides Default Graph Color Scheme

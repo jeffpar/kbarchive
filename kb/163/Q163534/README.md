@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163534: ODE97: MSDN Sampler What's New and Whats32 Help Topics Empty"
-permalink: kb/163/Q163534/
+permalink: /kb/163/Q163534/
 ---
 
 ## Q163534: ODE97: MSDN Sampler What's New and Whats32 Help Topics Empty

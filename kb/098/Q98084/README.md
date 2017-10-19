@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98084: LAN Manager MS-DOS NET LOGON: LANAs and Validation"
-permalink: kb/098/Q98084/
+permalink: /kb/098/Q98084/
 ---
 
 ## Q98084: LAN Manager MS-DOS NET LOGON: LANAs and Validation

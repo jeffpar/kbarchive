@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139503: Alarm Will Not Activate on an Archive File with Reminders"
-permalink: kb/139/Q139503/
+permalink: /kb/139/Q139503/
 ---
 
 ## Q139503: Alarm Will Not Activate on an Archive File with Reminders

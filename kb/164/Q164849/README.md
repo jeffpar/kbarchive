@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164849: XFOR: Migration Error Event ID 145"
-permalink: kb/164/Q164849/
+permalink: /kb/164/Q164849/
 ---
 
 ## Q164849: XFOR: Migration Error Event ID 145

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93199: SAMPLE: ChildMnu.exe Implements a Child Window with Menus"
-permalink: kb/093/Q93199/
+permalink: /kb/093/Q93199/
 ---
 
 ## Q93199: SAMPLE: ChildMnu.exe Implements a Child Window with Menus

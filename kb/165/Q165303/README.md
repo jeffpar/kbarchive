@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165303: WD97: Unable to Apply Bullets, Numbers (Tracked Changes Enabled)"
-permalink: kb/165/Q165303/
+permalink: /kb/165/Q165303/
 ---
 
 ## Q165303: WD97: Unable to Apply Bullets, Numbers (Tracked Changes Enabled)

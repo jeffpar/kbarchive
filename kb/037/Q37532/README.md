@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q37532: Meanings of Resource Compiler Messages"
-permalink: kb/037/Q37532/
+permalink: /kb/037/Q37532/
 ---
 
 ## Q37532: Meanings of Resource Compiler Messages

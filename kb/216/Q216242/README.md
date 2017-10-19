@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216242: SMS: View Troubleshooting Information in Administrator Console"
-permalink: kb/216/Q216242/
+permalink: /kb/216/Q216242/
 ---
 
 ## Q216242: SMS: View Troubleshooting Information in Administrator Console

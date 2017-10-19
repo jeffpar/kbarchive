@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183695: BUG: Error Occurs When Placing an MFC-Based Control on a Form"
-permalink: kb/183/Q183695/
+permalink: /kb/183/Q183695/
 ---
 
 ## Q183695: BUG: Error Occurs When Placing an MFC-Based Control on a Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256884: TCP and UDP Ports Used by Remote Control Have Changed in SP2"
-permalink: kb/256/Q256884/
+permalink: /kb/256/Q256884/
 ---
 
 ## Q256884: TCP and UDP Ports Used by Remote Control Have Changed in SP2

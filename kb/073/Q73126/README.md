@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73126: SysEdit Creates Backup Files with SYD Extension"
-permalink: kb/073/Q73126/
+permalink: /kb/073/Q73126/
 ---
 
 ## Q73126: SysEdit Creates Backup Files with SYD Extension

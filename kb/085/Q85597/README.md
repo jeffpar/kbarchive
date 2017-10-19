@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85597: Setup Toolkit for Windows Compatible with Windows 3.0"
-permalink: kb/085/Q85597/
+permalink: /kb/085/Q85597/
 ---
 
 ## Q85597: Setup Toolkit for Windows Compatible with Windows 3.0

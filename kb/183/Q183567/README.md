@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183567: BUG: GetChunk/AppendChunk Error: Not Allowed In This Context"
-permalink: kb/183/Q183567/
+permalink: /kb/183/Q183567/
 ---
 
 ## Q183567: BUG: GetChunk/AppendChunk Error: Not Allowed In This Context

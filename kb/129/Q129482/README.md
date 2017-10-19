@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129482: Systems Management Server Inventory Via RAS Causes STOP Screen"
-permalink: kb/129/Q129482/
+permalink: /kb/129/Q129482/
 ---
 
 ## Q129482: Systems Management Server Inventory Via RAS Causes STOP Screen

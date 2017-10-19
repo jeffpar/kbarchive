@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317364: FIX: A Second TABLEUPDATE After Failure May Corrupt Index"
-permalink: kb/317/Q317364/
+permalink: /kb/317/Q317364/
 ---
 
 ## Q317364: FIX: A Second TABLEUPDATE After Failure May Corrupt Index

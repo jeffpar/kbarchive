@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226367: Content Expiration Shows Date as Question Marks in Some Language"
-permalink: kb/226/Q226367/
+permalink: /kb/226/Q226367/
 ---
 
 ## Q226367: Content Expiration Shows Date as Question Marks in Some Language

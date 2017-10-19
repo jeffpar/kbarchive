@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228821: Generating a Certificate Request File Using Certificate Wizard"
-permalink: kb/228/Q228821/
+permalink: /kb/228/Q228821/
 ---
 
 ## Q228821: Generating a Certificate Request File Using Certificate Wizard

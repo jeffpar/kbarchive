@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312439: Err Msg: Internet Mail Server Requires DNS to Be Configured"
-permalink: kb/312/Q312439/
+permalink: /kb/312/Q312439/
 ---
 
 ## Q312439: Err Msg: Internet Mail Server Requires DNS to Be Configured

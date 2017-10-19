@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257628: XFOR: Event 5017 When Starting GWise Router w/ Novell Client 4.7"
-permalink: kb/257/Q257628/
+permalink: /kb/257/Q257628/
 ---
 
 ## Q257628: XFOR: Event 5017 When Starting GWise Router w/ Novell Client 4.7

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170637: XCLN: Error Message: Unable to Open Your Default Mail Folder"
-permalink: kb/170/Q170637/
+permalink: /kb/170/Q170637/
 ---
 
 ## Q170637: XCLN: Error Message: Unable to Open Your Default Mail Folder

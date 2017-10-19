@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163052: WD97: Macro Error When Opening Template with Toolbar"
-permalink: kb/163/Q163052/
+permalink: /kb/163/Q163052/
 ---
 
 ## Q163052: WD97: Macro Error When Opening Template with Toolbar

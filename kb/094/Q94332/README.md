@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94332: System Restarts When DoubleSpace Commands Are Issued"
-permalink: kb/094/Q94332/
+permalink: /kb/094/Q94332/
 ---
 
 ## Q94332: System Restarts When DoubleSpace Commands Are Issued

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259116: SFU Telnet Server Connections Limited to License Server Limits"
-permalink: kb/259/Q259116/
+permalink: /kb/259/Q259116/
 ---
 
 ## Q259116: SFU Telnet Server Connections Limited to License Server Limits

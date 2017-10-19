@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78009: Troubleshooting When TSRs Are Loaded"
-permalink: kb/078/Q78009/
+permalink: /kb/078/Q78009/
 ---
 
 ## Q78009: Troubleshooting When TSRs Are Loaded

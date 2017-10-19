@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262225: XADM: Unable to Limit Logons When You Use the Exmerge Utility"
-permalink: kb/262/Q262225/
+permalink: /kb/262/Q262225/
 ---
 
 ## Q262225: XADM: Unable to Limit Logons When You Use the Exmerge Utility

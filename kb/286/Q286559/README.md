@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286559: XFOR:&quot;No Mapping Between Account Names &amp; Security IDs Was Done&quot;"
-permalink: kb/286/Q286559/
+permalink: /kb/286/Q286559/
 ---
 
 ## Q286559: XFOR:&quot;No Mapping Between Account Names &amp; Security IDs Was Done&quot;

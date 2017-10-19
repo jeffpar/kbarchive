@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259834: StarLancer Err Msg: Invalid Page Fault in Module Lancer.exe"
-permalink: kb/259/Q259834/
+permalink: /kb/259/Q259834/
 ---
 
 ## Q259834: StarLancer Err Msg: Invalid Page Fault in Module Lancer.exe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184694: SMS: Events Prior to Initialization of SNMP Agent Not Translated"
-permalink: kb/184/Q184694/
+permalink: /kb/184/Q184694/
 ---
 
 ## Q184694: SMS: Events Prior to Initialization of SNMP Agent Not Translated

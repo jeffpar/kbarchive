@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103460: PC Ext: Running EXTERNAL.EXE Clears the Keyboard Buffer"
-permalink: kb/103/Q103460/
+permalink: /kb/103/Q103460/
 ---
 
 ## Q103460: PC Ext: Running EXTERNAL.EXE Clears the Keyboard Buffer

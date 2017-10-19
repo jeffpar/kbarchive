@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130346: How to Manipulate DateTime Fields in a Browse"
-permalink: kb/130/Q130346/
+permalink: /kb/130/Q130346/
 ---
 
 ## Q130346: How to Manipulate DateTime Fields in a Browse

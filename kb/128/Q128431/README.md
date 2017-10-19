@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128431: MHS: Err Msg: Gateway Doesn't Support Gateway &quot;{}&quot; Originators"
-permalink: kb/128/Q128431/
+permalink: /kb/128/Q128431/
 ---
 
 ## Q128431: MHS: Err Msg: Gateway Doesn't Support Gateway &quot;{}&quot; Originators

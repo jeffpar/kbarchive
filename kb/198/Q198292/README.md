@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198292: WD97: Default AutoCaption Label for Equation Uses Figure"
-permalink: kb/198/Q198292/
+permalink: /kb/198/Q198292/
 ---
 
 ## Q198292: WD97: Default AutoCaption Label for Equation Uses Figure

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105934: FORTRAN PowerStation ERRORS.TXT"
-permalink: kb/105/Q105934/
+permalink: /kb/105/Q105934/
 ---
 
 ## Q105934: FORTRAN PowerStation ERRORS.TXT

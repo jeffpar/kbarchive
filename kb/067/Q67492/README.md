@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67492: Installing PageMaker 3.0, 3.01 with Windows"
-permalink: kb/067/Q67492/
+permalink: /kb/067/Q67492/
 ---
 
 ## Q67492: Installing PageMaker 3.0, 3.01 with Windows

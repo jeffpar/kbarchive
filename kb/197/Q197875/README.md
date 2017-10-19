@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197875: XWEB: OWA Send Note Applet Doesn't Display Scroll Bars, Buttons"
-permalink: kb/197/Q197875/
+permalink: /kb/197/Q197875/
 ---
 
 ## Q197875: XWEB: OWA Send Note Applet Doesn't Display Scroll Bars, Buttons

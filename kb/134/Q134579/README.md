@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134579: PCMCIA Devices Stop Working on Compaq Elite Laptop"
-permalink: kb/134/Q134579/
+permalink: /kb/134/Q134579/
 ---
 
 ## Q134579: PCMCIA Devices Stop Working on Compaq Elite Laptop

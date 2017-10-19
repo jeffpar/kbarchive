@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166629: XADM: Store Defrag Fails with Access Violation"
-permalink: kb/166/Q166629/
+permalink: /kb/166/Q166629/
 ---
 
 ## Q166629: XADM: Store Defrag Fails with Access Violation

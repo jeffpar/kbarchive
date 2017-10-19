@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78896: SysEdit Does Not Save Read-Only Configuration Files"
-permalink: kb/078/Q78896/
+permalink: /kb/078/Q78896/
 ---
 
 ## Q78896: SysEdit Does Not Save Read-Only Configuration Files

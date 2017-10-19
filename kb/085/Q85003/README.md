@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85003: Character Map Does Not Show Italic or Bold Fonts"
-permalink: kb/085/Q85003/
+permalink: /kb/085/Q85003/
 ---
 
 ## Q85003: Character Map Does Not Show Italic or Bold Fonts

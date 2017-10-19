@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166149: PRB: RAS Reserves DHCP Addresses for Dial-Out Only Clients"
-permalink: kb/166/Q166149/
+permalink: /kb/166/Q166149/
 ---
 
 ## Q166149: PRB: RAS Reserves DHCP Addresses for Dial-Out Only Clients

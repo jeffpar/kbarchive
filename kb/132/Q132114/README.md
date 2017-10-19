@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132114: Sound Blaster 16 Incorrectly Detected After Being Removed"
-permalink: kb/132/Q132114/
+permalink: /kb/132/Q132114/
 ---
 
 ## Q132114: Sound Blaster 16 Incorrectly Detected After Being Removed

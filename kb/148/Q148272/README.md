@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148272: XADM: Exchange Server Setup Halts Copying MAPI32.DLL"
-permalink: kb/148/Q148272/
+permalink: /kb/148/Q148272/
 ---
 
 ## Q148272: XADM: Exchange Server Setup Halts Copying MAPI32.DLL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157695: XFOR: MTA can't Communicate with Another MTA via French X.25"
-permalink: kb/157/Q157695/
+permalink: /kb/157/Q157695/
 ---
 
 ## Q157695: XFOR: MTA can't Communicate with Another MTA via French X.25

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127806: Setup Remarks Out Lines in AUTOEXEC.BAT File"
-permalink: kb/127/Q127806/
+permalink: /kb/127/Q127806/
 ---
 
 ## Q127806: Setup Remarks Out Lines in AUTOEXEC.BAT File

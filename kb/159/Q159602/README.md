@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159602: &quot;The Path Specified...Does Not Contain A Valid....&quot;"
-permalink: kb/159/Q159602/
+permalink: /kb/159/Q159602/
 ---
 
 ## Q159602: &quot;The Path Specified...Does Not Contain A Valid....&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176081: Access Violation in Explorer.exe Removing a Share"
-permalink: kb/176/Q176081/
+permalink: /kb/176/Q176081/
 ---
 
 ## Q176081: Access Violation in Explorer.exe Removing a Share

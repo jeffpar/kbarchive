@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125016: Why SMS Creates Macintosh Volumes for Shared Applications"
-permalink: kb/125/Q125016/
+permalink: /kb/125/Q125016/
 ---
 
 ## Q125016: Why SMS Creates Macintosh Volumes for Shared Applications

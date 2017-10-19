@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151205: Configure Downstream Leased SDLC Connection Causes Error 3992"
-permalink: kb/151/Q151205/
+permalink: /kb/151/Q151205/
 ---
 
 ## Q151205: Configure Downstream Leased SDLC Connection Causes Error 3992

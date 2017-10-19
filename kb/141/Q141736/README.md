@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141736: How to Create a Clock Class to Show Time in AM/PM Format"
-permalink: kb/141/Q141736/
+permalink: /kb/141/Q141736/
 ---
 
 ## Q141736: How to Create a Clock Class to Show Time in AM/PM Format

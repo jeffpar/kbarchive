@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141189: BUG: Wrong Error Code on NetBIOS Call When Using NWNBLNK"
-permalink: kb/141/Q141189/
+permalink: /kb/141/Q141189/
 ---
 
 ## Q141189: BUG: Wrong Error Code on NetBIOS Call When Using NWNBLNK

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195402: Absolute Vertical Move Command Handled Incorrectly If PDT Used"
-permalink: kb/195/Q195402/
+permalink: /kb/195/Q195402/
 ---
 
 ## Q195402: Absolute Vertical Move Command Handled Incorrectly If PDT Used

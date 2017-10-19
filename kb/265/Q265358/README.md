@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265358: &quot;Site Config Last Checked&quot; Registry Value Is Missing"
-permalink: kb/265/Q265358/
+permalink: /kb/265/Q265358/
 ---
 
 ## Q265358: &quot;Site Config Last Checked&quot; Registry Value Is Missing

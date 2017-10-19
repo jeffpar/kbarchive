@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160335: RealAudio Plays at 14,400 bps"
-permalink: kb/160/Q160335/
+permalink: /kb/160/Q160335/
 ---
 
 ## Q160335: RealAudio Plays at 14,400 bps

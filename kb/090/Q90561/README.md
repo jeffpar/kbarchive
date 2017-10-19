@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90561: New Files Included with Windows for Workgroups 3.1"
-permalink: kb/090/Q90561/
+permalink: /kb/090/Q90561/
 ---
 
 ## Q90561: New Files Included with Windows for Workgroups 3.1

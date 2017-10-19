@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238489: XCLN: Icon Selected for Custom Form Does Not Appear As Expected"
-permalink: kb/238/Q238489/
+permalink: /kb/238/Q238489/
 ---
 
 ## Q238489: XCLN: Icon Selected for Custom Form Does Not Appear As Expected

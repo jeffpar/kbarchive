@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q292183: XCLN: How to Troubleshoot Reminders and Free/Busy Issues"
-permalink: kb/292/Q292183/
+permalink: /kb/292/Q292183/
 ---
 
 ## Q292183: XCLN: How to Troubleshoot Reminders and Free/Busy Issues

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319055: How To Set Internet Explorer As The Default Browser In Macintosh"
-permalink: kb/319/Q319055/
+permalink: /kb/319/Q319055/
 ---
 
 ## Q319055: How To Set Internet Explorer As The Default Browser In Macintosh

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171267: How to Install Remote Access Service in Windows NT 3.51"
-permalink: kb/171/Q171267/
+permalink: /kb/171/Q171267/
 ---
 
 ## Q171267: How to Install Remote Access Service in Windows NT 3.51

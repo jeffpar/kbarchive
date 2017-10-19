@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60956: Instruction: The Spin Lesson Needs Ground References"
-permalink: kb/060/Q60956/
+permalink: /kb/060/Q60956/
 ---
 
 ## Q60956: Instruction: The Spin Lesson Needs Ground References

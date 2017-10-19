@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201762: SMS: Software Metering Clients Receive Error in liccli.log"
-permalink: kb/201/Q201762/
+permalink: /kb/201/Q201762/
 ---
 
 ## Q201762: SMS: Software Metering Clients Receive Error in liccli.log

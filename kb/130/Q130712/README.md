@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130712: PRB: Win32s Errors During Visual FoxPro Installation"
-permalink: kb/130/Q130712/
+permalink: /kb/130/Q130712/
 ---
 
 ## Q130712: PRB: Win32s Errors During Visual FoxPro Installation

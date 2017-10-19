@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q28244: INFO: qsort() Can Sort Data Structures Based on Multiple Fields"
-permalink: kb/028/Q28244/
+permalink: /kb/028/Q28244/
 ---
 
 ## Q28244: INFO: qsort() Can Sort Data Structures Based on Multiple Fields

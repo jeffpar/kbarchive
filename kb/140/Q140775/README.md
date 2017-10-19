@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140775: BBS Messages Marked as Read Appear as Not Read"
-permalink: kb/140/Q140775/
+permalink: /kb/140/Q140775/
 ---
 
 ## Q140775: BBS Messages Marked as Read Appear as Not Read

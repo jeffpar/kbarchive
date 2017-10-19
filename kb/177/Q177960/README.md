@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177960: Bookshelf 98: Bookshelf Daily Displays Empty Dialog Box"
-permalink: kb/177/Q177960/
+permalink: /kb/177/Q177960/
 ---
 
 ## Q177960: Bookshelf 98: Bookshelf Daily Displays Empty Dialog Box

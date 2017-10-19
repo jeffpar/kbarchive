@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100333: Windows SDK Install Makes Microsoft Tools Group Unavailable"
-permalink: kb/100/Q100333/
+permalink: /kb/100/Q100333/
 ---
 
 ## Q100333: Windows SDK Install Makes Microsoft Tools Group Unavailable

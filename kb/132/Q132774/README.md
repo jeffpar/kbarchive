@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132774: U.S. Atlas Version 4.0 Does Not Play Video Clips in Windows 95"
-permalink: kb/132/Q132774/
+permalink: /kb/132/Q132774/
 ---
 
 ## Q132774: U.S. Atlas Version 4.0 Does Not Play Video Clips in Windows 95

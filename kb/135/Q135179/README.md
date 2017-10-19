@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135179: Cannot Copy File Whose Filename Begins with a Period"
-permalink: kb/135/Q135179/
+permalink: /kb/135/Q135179/
 ---
 
 ## Q135179: Cannot Copy File Whose Filename Begins with a Period

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65066: Mac Srv: Server INIT Beeps Twice on Start-Up"
-permalink: kb/065/Q65066/
+permalink: /kb/065/Q65066/
 ---
 
 ## Q65066: Mac Srv: Server INIT Beeps Twice on Start-Up

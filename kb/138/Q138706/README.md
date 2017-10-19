@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138706: Files installed by Visual FoxPro Professional in Windows NT"
-permalink: kb/138/Q138706/
+permalink: /kb/138/Q138706/
 ---
 
 ## Q138706: Files installed by Visual FoxPro Professional in Windows NT

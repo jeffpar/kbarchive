@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254790: Desktop Refreshes When You Access the Control Panel"
-permalink: kb/254/Q254790/
+permalink: /kb/254/Q254790/
 ---
 
 ## Q254790: Desktop Refreshes When You Access the Control Panel

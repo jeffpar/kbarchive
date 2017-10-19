@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124294: Windows NT Help Err Msg: Cannot Open Help File"
-permalink: kb/124/Q124294/
+permalink: /kb/124/Q124294/
 ---
 
 ## Q124294: Windows NT Help Err Msg: Cannot Open Help File

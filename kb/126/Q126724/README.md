@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126724: NPMCA.SYS Causes STOP 0x0A in TCPIP.SYS"
-permalink: kb/126/Q126724/
+permalink: /kb/126/Q126724/
 ---
 
 ## Q126724: NPMCA.SYS Causes STOP 0x0A in TCPIP.SYS

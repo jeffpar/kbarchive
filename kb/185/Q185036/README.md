@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185036: WD97: Single-Spaced Paragraphs Convert to Double-Spaced in HTML"
-permalink: kb/185/Q185036/
+permalink: /kb/185/Q185036/
 ---
 
 ## Q185036: WD97: Single-Spaced Paragraphs Convert to Double-Spaced in HTML

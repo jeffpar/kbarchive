@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152395: HOWTO: Using Setup Wizard to Distribute VFP App on CD-ROM"
-permalink: kb/152/Q152395/
+permalink: /kb/152/Q152395/
 ---
 
 ## Q152395: HOWTO: Using Setup Wizard to Distribute VFP App on CD-ROM

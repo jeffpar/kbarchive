@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85866: MS-DOS Shell May Create #.1 File"
-permalink: kb/085/Q85866/
+permalink: /kb/085/Q85866/
 ---
 
 ## Q85866: MS-DOS Shell May Create #.1 File

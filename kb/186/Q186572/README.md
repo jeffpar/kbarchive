@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186572: Terminal Svr Walkthrough: Startup, Connection, and Application"
-permalink: kb/186/Q186572/
+permalink: /kb/186/Q186572/
 ---
 
 ## Q186572: Terminal Svr Walkthrough: Startup, Connection, and Application

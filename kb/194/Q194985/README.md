@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194985: Glide API Features Disabled on Video Adapter"
-permalink: kb/194/Q194985/
+permalink: /kb/194/Q194985/
 ---
 
 ## Q194985: Glide API Features Disabled on Video Adapter

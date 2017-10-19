@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281530: Reader: &quot;Activation Error&quot; When You Activate in Network Domain"
-permalink: kb/281/Q281530/
+permalink: /kb/281/Q281530/
 ---
 
 ## Q281530: Reader: &quot;Activation Error&quot; When You Activate in Network Domain

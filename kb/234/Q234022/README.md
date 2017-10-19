@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234022: XCLN: Configuring Exchange OWA to Use SSL"
-permalink: kb/234/Q234022/
+permalink: /kb/234/Q234022/
 ---
 
 ## Q234022: XCLN: Configuring Exchange OWA to Use SSL

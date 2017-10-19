@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179688: FIX: ATL Servers Do Not Unregister Their Type Library"
-permalink: kb/179/Q179688/
+permalink: /kb/179/Q179688/
 ---
 
 ## Q179688: FIX: ATL Servers Do Not Unregister Their Type Library

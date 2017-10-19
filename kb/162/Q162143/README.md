@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162143: PRB: MSDataList/MSDataCombo Controls Do Not Work in VFP"
-permalink: kb/162/Q162143/
+permalink: /kb/162/Q162143/
 ---
 
 ## Q162143: PRB: MSDataList/MSDataCombo Controls Do Not Work in VFP

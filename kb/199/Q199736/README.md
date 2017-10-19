@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199736: FIX: C1013: Too Many Open Parentheses"
-permalink: kb/199/Q199736/
+permalink: /kb/199/Q199736/
 ---
 
 ## Q199736: FIX: C1013: Too Many Open Parentheses

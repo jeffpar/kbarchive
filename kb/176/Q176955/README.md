@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176955: Active Server Pages Supported Configurations"
-permalink: kb/176/Q176955/
+permalink: /kb/176/Q176955/
 ---
 
 ## Q176955: Active Server Pages Supported Configurations

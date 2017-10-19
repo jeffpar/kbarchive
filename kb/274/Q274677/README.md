@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274677: Crimson Skies: Description of Enhancement (Cheat) Codes"
-permalink: kb/274/Q274677/
+permalink: /kb/274/Q274677/
 ---
 
 ## Q274677: Crimson Skies: Description of Enhancement (Cheat) Codes

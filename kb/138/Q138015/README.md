@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138015: TN3270 Server Rejects Client Model Types"
-permalink: kb/138/Q138015/
+permalink: /kb/138/Q138015/
 ---
 
 ## Q138015: TN3270 Server Rejects Client Model Types

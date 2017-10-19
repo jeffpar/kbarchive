@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119812: BUG: SQLSRVR.DLL GP Fault on Vines When SQL Server Not Running"
-permalink: kb/119/Q119812/
+permalink: /kb/119/Q119812/
 ---
 
 ## Q119812: BUG: SQLSRVR.DLL GP Fault on Vines When SQL Server Not Running

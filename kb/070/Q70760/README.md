@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70760: Windows 3.0a Disk Directories (5.25 Inch, 1.2 MB)"
-permalink: kb/070/Q70760/
+permalink: /kb/070/Q70760/
 ---
 
 ## Q70760: Windows 3.0a Disk Directories (5.25 Inch, 1.2 MB)

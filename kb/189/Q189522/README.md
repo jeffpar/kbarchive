@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189522: Network Drive Letters in PATH Statement Causes Excessive Traffic"
-permalink: kb/189/Q189522/
+permalink: /kb/189/Q189522/
 ---
 
 ## Q189522: Network Drive Letters in PATH Statement Causes Excessive Traffic

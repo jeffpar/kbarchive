@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116220: WD97: Character Formatting in Data Source Not Retained In Merge"
-permalink: kb/116/Q116220/
+permalink: /kb/116/Q116220/
 ---
 
 ## Q116220: WD97: Character Formatting in Data Source Not Retained In Merge

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96253: Mac Srv Wkst: Compatibility with A/UX"
-permalink: kb/096/Q96253/
+permalink: /kb/096/Q96253/
 ---
 
 ## Q96253: Mac Srv Wkst: Compatibility with A/UX

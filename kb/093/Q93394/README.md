@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93394: DOCERR: CITATION .HPJ Statement Incorrectly Documented"
-permalink: kb/093/Q93394/
+permalink: /kb/093/Q93394/
 ---
 
 ## Q93394: DOCERR: CITATION .HPJ Statement Incorrectly Documented

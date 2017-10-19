@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156784: SMS: Appstart Corrupts New Process Environment on Windows NT"
-permalink: kb/156/Q156784/
+permalink: /kb/156/Q156784/
 ---
 
 ## Q156784: SMS: Appstart Corrupts New Process Environment on Windows NT

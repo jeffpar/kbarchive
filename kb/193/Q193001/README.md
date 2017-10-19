@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193001: Encarta Virtual Globe 99: Cannot Disable Sounds in Game"
-permalink: kb/193/Q193001/
+permalink: /kb/193/Q193001/
 ---
 
 ## Q193001: Encarta Virtual Globe 99: Cannot Disable Sounds in Game

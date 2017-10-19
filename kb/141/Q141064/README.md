@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141064: Problems w/ Automatic Adjust Clock for Daylight Saving Time"
-permalink: kb/141/Q141064/
+permalink: /kb/141/Q141064/
 ---
 
 ## Q141064: Problems w/ Automatic Adjust Clock for Daylight Saving Time

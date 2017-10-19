@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241346: Compaq Array Configuration Tool May Not Work on Terminal Server"
-permalink: kb/241/Q241346/
+permalink: /kb/241/Q241346/
 ---
 
 ## Q241346: Compaq Array Configuration Tool May Not Work on Terminal Server

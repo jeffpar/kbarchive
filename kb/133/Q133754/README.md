@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133754: Julia Child Chef's Tips: No Text with ATI Video Drivers in NT"
-permalink: kb/133/Q133754/
+permalink: /kb/133/Q133754/
 ---
 
 ## Q133754: Julia Child Chef's Tips: No Text with ATI Video Drivers in NT

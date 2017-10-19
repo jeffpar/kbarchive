@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110723: Documentation and Features for Visual Basic's 3.0 Data Manager"
-permalink: kb/110/Q110723/
+permalink: /kb/110/Q110723/
 ---
 
 ## Q110723: Documentation and Features for Visual Basic's 3.0 Data Manager

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184322: BUG: Error &quot;438&quot; When Implementing Base Class in ActiveX Exe"
-permalink: kb/184/Q184322/
+permalink: /kb/184/Q184322/
 ---
 
 ## Q184322: BUG: Error &quot;438&quot; When Implementing Base Class in ActiveX Exe

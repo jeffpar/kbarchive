@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q128872: PC DirSync: Err Msg: Error [ 81] No Mailbox Name Net/PO/"
-permalink: kb/128/Q128872/
+title: "Q128872: PC DirSync: Err Msg: Error &#91; 81&#93; No Mailbox Name Net/PO/"
+permalink: /kb/128/Q128872/
 ---
 
-## Q128872: PC DirSync: Err Msg: Error [ 81] No Mailbox Name Net/PO/
+## Q128872: PC DirSync: Err Msg: Error &#91; 81&#93; No Mailbox Name Net/PO/
 
 	Article: Q128872
 	Product(s): Microsoft Mail For PC Networks

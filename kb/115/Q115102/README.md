@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115102: Err Msg: Error 530: Invalid Logon Sequence"
-permalink: kb/115/Q115102/
+permalink: /kb/115/Q115102/
 ---
 
 ## Q115102: Err Msg: Error 530: Invalid Logon Sequence

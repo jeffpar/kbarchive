@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131884: Cannot Restore Minimized NetWare Logon Script Console Window"
-permalink: kb/131/Q131884/
+permalink: /kb/131/Q131884/
 ---
 
 ## Q131884: Cannot Restore Minimized NetWare Logon Script Console Window

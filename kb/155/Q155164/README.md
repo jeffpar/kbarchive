@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155164: FIX: C2678 on Overloaded Functions When Using a Namespace"
-permalink: kb/155/Q155164/
+permalink: /kb/155/Q155164/
 ---
 
 ## Q155164: FIX: C2678 on Overloaded Functions When Using a Namespace

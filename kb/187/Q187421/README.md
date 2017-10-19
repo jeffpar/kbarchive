@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187421: TC Manager Puts Icons in the Program Group"
-permalink: kb/187/Q187421/
+permalink: /kb/187/Q187421/
 ---
 
 ## Q187421: TC Manager Puts Icons in the Program Group

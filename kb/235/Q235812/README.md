@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235812: SMS: DDM Fails to Process DDR w/ Assigned Sites Set to &lt;Unknown&gt;"
-permalink: kb/235/Q235812/
+permalink: /kb/235/Q235812/
 ---
 
 ## Q235812: SMS: DDM Fails to Process DDR w/ Assigned Sites Set to &lt;Unknown&gt;

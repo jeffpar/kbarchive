@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245176: Cached Terminal Server Roaming Profiles Use Too Much Disk Space."
-permalink: kb/245/Q245176/
+permalink: /kb/245/Q245176/
 ---
 
 ## Q245176: Cached Terminal Server Roaming Profiles Use Too Much Disk Space.

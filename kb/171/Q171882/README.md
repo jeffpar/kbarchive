@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171882: Error 2184: The Service has not been Started"
-permalink: kb/171/Q171882/
+permalink: /kb/171/Q171882/
 ---
 
 ## Q171882: Error 2184: The Service has not been Started

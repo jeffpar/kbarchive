@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85340: FAX: Role of the Fax Board and Software"
-permalink: kb/085/Q85340/
+permalink: /kb/085/Q85340/
 ---
 
 ## Q85340: FAX: Role of the Fax Board and Software

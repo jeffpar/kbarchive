@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66498: Productivity Pack Setup Must Be Run from MS-DOS Command Prompt"
-permalink: kb/066/Q66498/
+permalink: /kb/066/Q66498/
 ---
 
 ## Q66498: Productivity Pack Setup Must Be Run from MS-DOS Command Prompt

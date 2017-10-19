@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154704: Connection Will Not Clear From The Novell Server"
-permalink: kb/154/Q154704/
+permalink: /kb/154/Q154704/
 ---
 
 ## Q154704: Connection Will Not Clear From The Novell Server

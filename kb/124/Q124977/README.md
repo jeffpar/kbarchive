@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124977: Protocol Services Change Connecting Over RAS"
-permalink: kb/124/Q124977/
+permalink: /kb/124/Q124977/
 ---
 
 ## Q124977: Protocol Services Change Connecting Over RAS

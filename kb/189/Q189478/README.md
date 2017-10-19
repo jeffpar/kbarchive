@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189478: INFO: What Do eVB/VBCE Have That Visual Basic Doesn't Have?"
-permalink: kb/189/Q189478/
+permalink: /kb/189/Q189478/
 ---
 
 ## Q189478: INFO: What Do eVB/VBCE Have That Visual Basic Doesn't Have?

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151900: PRB: SeeThru Property of Graph Control Was Not Implemented"
-permalink: kb/151/Q151900/
+permalink: /kb/151/Q151900/
 ---
 
 ## Q151900: PRB: SeeThru Property of Graph Control Was Not Implemented

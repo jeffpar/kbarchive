@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138854: Connecting Using NBT.SYS Causes Windows NT Session to Hang"
-permalink: kb/138/Q138854/
+permalink: /kb/138/Q138854/
 ---
 
 ## Q138854: Connecting Using NBT.SYS Causes Windows NT Session to Hang

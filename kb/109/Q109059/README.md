@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109059: HOWTO: Prevent Multiple Instances of an Application"
-permalink: kb/109/Q109059/
+permalink: /kb/109/Q109059/
 ---
 
 ## Q109059: HOWTO: Prevent Multiple Instances of an Application

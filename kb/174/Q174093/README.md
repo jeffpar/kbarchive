@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174093: How to Compose and Send MSN E-mail Messages Using Internet Mail"
-permalink: kb/174/Q174093/
+permalink: /kb/174/Q174093/
 ---
 
 ## Q174093: How to Compose and Send MSN E-mail Messages Using Internet Mail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96707: Installing MS-DOS from Drive B"
-permalink: kb/096/Q96707/
+permalink: /kb/096/Q96707/
 ---
 
 ## Q96707: Installing MS-DOS from Drive B

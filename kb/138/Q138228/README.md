@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138228: Accessibility High Contrast Setting Reverts to Custom"
-permalink: kb/138/Q138228/
+permalink: /kb/138/Q138228/
 ---
 
 ## Q138228: Accessibility High Contrast Setting Reverts to Custom

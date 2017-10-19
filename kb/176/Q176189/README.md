@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176189: WD97: Shading of Solid Black or Gray Wont Print Duplex on NT"
-permalink: kb/176/Q176189/
+permalink: /kb/176/Q176189/
 ---
 
 ## Q176189: WD97: Shading of Solid Black or Gray Wont Print Duplex on NT

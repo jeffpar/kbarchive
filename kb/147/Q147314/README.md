@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147314: GlobalFlags for Windows NT 3.51"
-permalink: kb/147/Q147314/
+permalink: /kb/147/Q147314/
 ---
 
 ## Q147314: GlobalFlags for Windows NT 3.51

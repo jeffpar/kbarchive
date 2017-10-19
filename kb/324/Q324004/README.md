@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q324004: Games: &quot;SynthCore License Is Invalid&quot; Err Msg When Starting Game"
-permalink: kb/324/Q324004/
+permalink: /kb/324/Q324004/
 ---
 
 ## Q324004: Games: &quot;SynthCore License Is Invalid&quot; Err Msg When Starting Game

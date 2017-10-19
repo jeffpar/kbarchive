@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178209: Encarta 97 Err Msg: Math Co-Processor Not Found (Voxware)"
-permalink: kb/178/Q178209/
+permalink: /kb/178/Q178209/
 ---
 
 ## Q178209: Encarta 97 Err Msg: Math Co-Processor Not Found (Voxware)

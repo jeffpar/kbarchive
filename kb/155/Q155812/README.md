@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155812: XADM: NDR from Japanese Microsoft Exchange Server is Corrupt"
-permalink: kb/155/Q155812/
+permalink: /kb/155/Q155812/
 ---
 
 ## Q155812: XADM: NDR from Japanese Microsoft Exchange Server is Corrupt

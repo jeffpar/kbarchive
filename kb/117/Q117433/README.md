@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117433: WD97: Field in Table Heading Row May Not Update on Second Page"
-permalink: kb/117/Q117433/
+permalink: /kb/117/Q117433/
 ---
 
 ## Q117433: WD97: Field in Table Heading Row May Not Update on Second Page

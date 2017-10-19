@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196079: API Tracing May Cause Access Violation With CMETPN() Function"
-permalink: kb/196/Q196079/
+permalink: /kb/196/Q196079/
 ---
 
 ## Q196079: API Tracing May Cause Access Violation With CMETPN() Function

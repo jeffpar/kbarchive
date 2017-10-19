@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177780: XADM: Storage Limit Warning Not Generated"
-permalink: kb/177/Q177780/
+permalink: /kb/177/Q177780/
 ---
 
 ## Q177780: XADM: Storage Limit Warning Not Generated

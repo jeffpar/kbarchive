@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148666: CONN: Manually Removing PC Side of a Connection 3.2 Gateway"
-permalink: kb/148/Q148666/
+permalink: /kb/148/Q148666/
 ---
 
 ## Q148666: CONN: Manually Removing PC Side of a Connection 3.2 Gateway

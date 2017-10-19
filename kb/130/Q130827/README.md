@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130827: FIX: MFC Reports Memory Leaks When cout and cin Are Used"
-permalink: kb/130/Q130827/
+permalink: /kb/130/Q130827/
 ---
 
 ## Q130827: FIX: MFC Reports Memory Leaks When cout and cin Are Used

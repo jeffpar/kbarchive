@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172435: Err Msg: Winhlp32 Caused an Invalid Page Fault in Module..."
-permalink: kb/172/Q172435/
+permalink: /kb/172/Q172435/
 ---
 
 ## Q172435: Err Msg: Winhlp32 Caused an Invalid Page Fault in Module...

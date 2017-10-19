@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80795: Data Graphics Nicolet Plotters and Windows"
-permalink: kb/080/Q80795/
+permalink: /kb/080/Q80795/
 ---
 
 ## Q80795: Data Graphics Nicolet Plotters and Windows

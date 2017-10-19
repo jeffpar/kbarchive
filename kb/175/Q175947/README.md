@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175947: FILE: White Paper: Choosing the Right VB5 Data Access Interface"
-permalink: kb/175/Q175947/
+permalink: /kb/175/Q175947/
 ---
 
 ## Q175947: FILE: White Paper: Choosing the Right VB5 Data Access Interface

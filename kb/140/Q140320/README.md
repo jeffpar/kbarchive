@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140320: HOWTO: List the Current Version of All Files in a Project"
-permalink: kb/140/Q140320/
+permalink: /kb/140/Q140320/
 ---
 
 ## Q140320: HOWTO: List the Current Version of All Files in a Project

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122258: BUG: Cannot Disconnect From Network Drive After Running Setup"
-permalink: kb/122/Q122258/
+permalink: /kb/122/Q122258/
 ---
 
 ## Q122258: BUG: Cannot Disconnect From Network Drive After Running Setup

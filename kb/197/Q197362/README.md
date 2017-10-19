@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197362: FIX: FormatString Ignored for Fixed Columns in MSHFlexGrid"
-permalink: kb/197/Q197362/
+permalink: /kb/197/Q197362/
 ---
 
 ## Q197362: FIX: FormatString Ignored for Fixed Columns in MSHFlexGrid

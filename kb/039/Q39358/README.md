@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39358: Non-Directional Beacons Do Not Work with Scenery Disks"
-permalink: kb/039/Q39358/
+permalink: /kb/039/Q39358/
 ---
 
 ## Q39358: Non-Directional Beacons Do Not Work with Scenery Disks

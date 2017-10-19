@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172812: XADM: Event ID 9031 Database Resource Failure Error -1011"
-permalink: kb/172/Q172812/
+permalink: /kb/172/Q172812/
 ---
 
 ## Q172812: XADM: Event ID 9031 Database Resource Failure Error -1011

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162705: Incorrect Colors Printed on HP Laserjet Color 5"
-permalink: kb/162/Q162705/
+permalink: /kb/162/Q162705/
 ---
 
 ## Q162705: Incorrect Colors Printed on HP Laserjet Color 5

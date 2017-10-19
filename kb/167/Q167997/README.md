@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167997: WD97: Invalid Page Fault in KERNEL32.DLL with Browser Control"
-permalink: kb/167/Q167997/
+permalink: /kb/167/Q167997/
 ---
 
 ## Q167997: WD97: Invalid Page Fault in KERNEL32.DLL with Browser Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163299: WD97: Web Page Authoring Tools AutoUpdate"
-permalink: kb/163/Q163299/
+permalink: /kb/163/Q163299/
 ---
 
 ## Q163299: WD97: Web Page Authoring Tools AutoUpdate

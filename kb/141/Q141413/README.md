@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141413: FIX: MSDEV Does Not Prompt for Executable for Debug Session"
-permalink: kb/141/Q141413/
+permalink: /kb/141/Q141413/
 ---
 
 ## Q141413: FIX: MSDEV Does Not Prompt for Executable for Debug Session

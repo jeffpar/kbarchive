@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216146: HOWTO:Get Number of Windows NT Event Log Records in Visual Basic"
-permalink: kb/216/Q216146/
+permalink: /kb/216/Q216146/
 ---
 
 ## Q216146: HOWTO:Get Number of Windows NT Event Log Records in Visual Basic

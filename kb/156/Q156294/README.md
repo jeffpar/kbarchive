@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156294: XCLN: Obtaining the Current User from an EFD Form"
-permalink: kb/156/Q156294/
+permalink: /kb/156/Q156294/
 ---
 
 ## Q156294: XCLN: Obtaining the Current User from an EFD Form

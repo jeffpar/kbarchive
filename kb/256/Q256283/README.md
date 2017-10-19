@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256283: Error Message: The Pipe Has Ended"
-permalink: kb/256/Q256283/
+permalink: /kb/256/Q256283/
 ---
 
 ## Q256283: Error Message: The Pipe Has Ended

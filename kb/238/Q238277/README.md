@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238277: Very Slow Scrolling in Excel 97, 2000 and Internet Explorer 4.0"
-permalink: kb/238/Q238277/
+permalink: /kb/238/Q238277/
 ---
 
 ## Q238277: Very Slow Scrolling in Excel 97, 2000 and Internet Explorer 4.0

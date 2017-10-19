@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318990: FIX: Reserved Word &quot;IsDataSet&quot; in CURSORTOXML Schema Is Misspell"
-permalink: kb/318/Q318990/
+permalink: /kb/318/Q318990/
 ---
 
 ## Q318990: FIX: Reserved Word &quot;IsDataSet&quot; in CURSORTOXML Schema Is Misspell

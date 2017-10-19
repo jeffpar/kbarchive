@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129754: How to Remap FoxPro 2.x Connectivity Kit Functions to 3.0"
-permalink: kb/129/Q129754/
+permalink: /kb/129/Q129754/
 ---
 
 ## Q129754: How to Remap FoxPro 2.x Connectivity Kit Functions to 3.0

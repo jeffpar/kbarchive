@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85624: How to Disable FaceLift 2.0 in Windows"
-permalink: kb/085/Q85624/
+permalink: /kb/085/Q85624/
 ---
 
 ## Q85624: How to Disable FaceLift 2.0 in Windows

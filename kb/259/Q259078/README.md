@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259078: INFO: Logo FAQ: 2-Tier Client/Server App Desktop or Server Logo?"
-permalink: kb/259/Q259078/
+permalink: /kb/259/Q259078/
 ---
 
 ## Q259078: INFO: Logo FAQ: 2-Tier Client/Server App Desktop or Server Logo?

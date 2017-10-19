@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278512: BUG: Visual FoxPro May Ignore DDE Messages"
-permalink: kb/278/Q278512/
+permalink: /kb/278/Q278512/
 ---
 
 ## Q278512: BUG: Visual FoxPro May Ignore DDE Messages

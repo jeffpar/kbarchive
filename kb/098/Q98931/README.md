@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98931: Description of Go Figure!"
-permalink: kb/098/Q98931/
+permalink: /kb/098/Q98931/
 ---
 
 ## Q98931: Description of Go Figure!

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126578: Incorrect Amount of Memory Detected on EISA Computers"
-permalink: kb/126/Q126578/
+permalink: /kb/126/Q126578/
 ---
 
 ## Q126578: Incorrect Amount of Memory Detected on EISA Computers

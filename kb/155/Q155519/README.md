@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155519: Using the Shortcut Key to Enable FilterKeys"
-permalink: kb/155/Q155519/
+permalink: /kb/155/Q155519/
 ---
 
 ## Q155519: Using the Shortcut Key to Enable FilterKeys

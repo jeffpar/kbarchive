@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246388: XCON: Event ID 290 and NDR Returned When Sending to Large DL"
-permalink: kb/246/Q246388/
+permalink: /kb/246/Q246388/
 ---
 
 ## Q246388: XCON: Event ID 290 and NDR Returned When Sending to Large DL

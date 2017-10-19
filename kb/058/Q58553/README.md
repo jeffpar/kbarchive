@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58553: Mac GW: How Gateway-Access Servers Work"
-permalink: kb/058/Q58553/
+permalink: /kb/058/Q58553/
 ---
 
 ## Q58553: Mac GW: How Gateway-Access Servers Work

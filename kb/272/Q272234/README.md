@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272234: XADM: Overview of Maintenance, Backup, and Disaster Recovery for"
-permalink: kb/272/Q272234/
+permalink: /kb/272/Q272234/
 ---
 
 ## Q272234: XADM: Overview of Maintenance, Backup, and Disaster Recovery for

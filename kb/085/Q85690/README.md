@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85690: Cannot Bold Device Fonts Unless the Device Supports Bold"
-permalink: kb/085/Q85690/
+permalink: /kb/085/Q85690/
 ---
 
 ## Q85690: Cannot Bold Device Fonts Unless the Device Supports Bold

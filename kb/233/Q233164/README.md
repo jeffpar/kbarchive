@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233164: XFOR: Event ID 14005 and Event ID 59 During cc:Mail Dirsync"
-permalink: kb/233/Q233164/
+permalink: /kb/233/Q233164/
 ---
 
 ## Q233164: XFOR: Event ID 14005 and Event ID 59 During cc:Mail Dirsync

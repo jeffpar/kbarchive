@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187532: HOWTO: Use the Remote Tools Installed with VBCE"
-permalink: kb/187/Q187532/
+permalink: /kb/187/Q187532/
 ---
 
 ## Q187532: HOWTO: Use the Remote Tools Installed with VBCE
