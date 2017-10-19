@@ -1,0 +1,28 @@
+---
+layout: page
+title: "Q66213: &#92;&quot; Sequence Must Be Used to Define Strings with /D Switch"
+permalink: /kb/066/Q66213/
+---
+
+## Q66213: &#92;&quot; Sequence Must Be Used to Define Strings with /D Switch
+
+	Article: Q66213
+	Product(s): See article
+	Version(s): 5.10 6.00 | 5.10 6.00
+	Operating System(s): MS-DOS | OS/2
+	Keyword(s): ENDUSER | docerr | mspl13_c
+	Last Modified: 24-OCT-1990
+	
+	The /D compiler switch is used to define a constant value to the
+	preprocessor. It is equivalent to using a #define statement in the
+	source code. The C version 6.00 "Microsoft C Reference" manual gives
+	the syntax as follows:
+	
+	   /Did[=[value]]
+	
+	"Value" can be a number, character, or string constant such as "foo".
+	In order to define a string constant, the '\"' escape sequence must be
+	used. This requirement is undocumented. Please see the example shown
+	below, where FOO is defined as "bar":
+	
+	   cl /DFOO=\"bar\" s.c

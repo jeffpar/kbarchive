@@ -1,0 +1,22 @@
+---
+layout: page
+title: "Q31490: Resizing Windows"
+permalink: /kb/031/Q31490/
+---
+
+## Q31490: Resizing Windows
+
+	Article: Q31490
+	Product(s): See article
+	Version(s): 1.00   | 1.00
+	Operating System(s): MS-DOS | OS/2
+	Keyword(s): ENDUSER | tar63957 | mspl13_basic
+	Last Modified: 1-SEP-1988
+	
+	It is not possible to directly resize windows in the Microsoft Editor.
+	A window can only be opened or closed. To resize a window, it must be
+	closed and then reopened. Direct resizing of windows is not currently
+	possible.
+	
+	This feature is under review and will be considered for inclusion in a
+	future release.

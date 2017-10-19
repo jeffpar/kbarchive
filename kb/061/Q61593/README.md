@@ -1,0 +1,31 @@
+---
+layout: page
+title: "Q61593: Pin-Outs of the 9-Pin Hosiden Socket"
+permalink: /kb/061/Q61593/
+---
+
+## Q61593: Pin-Outs of the 9-Pin Hosiden Socket
+
+	Article: Q61593
+	Product(s): See article
+	Version(s): 1.00
+	Operating System(s): MS-DOS
+	Keyword(s): ENDUSER | | mspl13_basic
+	Last Modified: 8-MAY-1990
+	
+	The following is the signal configuration of the 9-pin Hosiden socket
+	on the bus adapter of the Microsoft Mouse:
+	
+	   Pin          Signal
+	   ---        ------
+	
+	   1          +5v
+	   2           XA
+	   3           XB
+	   4           YA
+	   5           YB
+	   6           SW1
+	   7           SW2
+	   8           SW3
+	   9           Signal ground
+	   E           Shield ground

@@ -1,0 +1,23 @@
+---
+layout: page
+title: "Q38314: Interrupt Conflict with Greenleaf Libraries"
+permalink: /kb/038/Q38314/
+---
+
+## Q38314: Interrupt Conflict with Greenleaf Libraries
+
+	Article: Q38314
+	Product(s): See article
+	Version(s): 2.20    | 2.20
+	Operating System(s): MS-DOS | OS/2
+	Keyword(s): ENDUSER | CV CVP | mspl13_basic
+	Last Modified: 23-NOV-1988
+	
+	The Greenleaf Comm Library, a collection of asynchronous
+	communications functions for use with the C compiler, causes severe
+	complications with CodeView (e.g. crashes, lockups) due to interrupt
+	conflicts. Greenleaf Software is aware of this difficulty and will
+	advise customers of the incompatibility.
+	
+	No workarounds are available. Greenleaf Software is located in
+	Carrollton, TX, and can be reached at (214) 248-2561.

@@ -1,0 +1,24 @@
+---
+layout: page
+title: "Q31293: Using Mouse Menus with WordPerfect Version 5.00"
+permalink: /kb/031/Q31293/
+---
+
+## Q31293: Using Mouse Menus with WordPerfect Version 5.00
+
+	Article: Q31293
+	Product(s): See article
+	Version(s): 1.00
+	Operating System(s): MS-DOS
+	Keyword(s): ENDUSER | | mspl13_basic
+	Last Modified: 28-JUN-1988
+	
+	When using a Mouse menu with WordPerfect Version 5.00, the menu
+	opens; however, no text appears at the current cursor location when a
+	selection is made. Upon exiting WordPerfect, the characters from the
+	menu appear at the DOS command prompt.
+	   WordPerfect Version 5.00 has keyboard macros that disable the Mouse
+	menu while in WordPerfect. To use a Mouse menu with WordPerfect
+	Version 5.00, you must start WordPerfect with the /nk switch. This
+	will disable the keyboard macros and allow the Mouse menu to function
+	normally.
